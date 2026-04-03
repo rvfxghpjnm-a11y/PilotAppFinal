@@ -2,7 +2,7 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>PilotApp – Workstart Verlauf</title>
+  <title>PilotAppFinal</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="css/style.css">
@@ -10,17 +10,25 @@
   <!-- Chart.js mit Fallback -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
   <script>
-    // Fallback zu unpkg CDN wenn jsdelivr fehlschlägt
     if (!window.Chart) {
       document.write('<script src="https://unpkg.com/chart.js@4.4.1/dist/chart.umd.min.js"><\/script>');
     }
   </script>
   <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@3.0.0/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+
+  <!-- AUTO_PERSONS_START -->
+  <script>
+  const PERSONS = [
+    "konietzka_stefan",
+    "crotogino_philipp",
+  ];
+  </script>
+  <!-- AUTO_PERSONS_END -->
 </head>
 <body>
 
 <header>
-  <h1>PilotApp</h1>
+  <h1>PilotAppFinal</h1>
 
   <!-- Personen -->
   <div class="row" id="persons">
@@ -29,7 +37,8 @@
 
   <!-- Views -->
   <div class="row">
-    <button data-view="short" class="active">Short</button>
+    <button data-view="dashboard" class="active">Dashboard</button>
+    <button data-view="short">Short</button>
     <button data-view="long">Long</button>
     <button data-view="graph">Graph</button>
     <button data-view="seelotse">Seelotse</button>
@@ -43,9 +52,8 @@
     <button data-hours="12">12h</button>
     <button data-hours="24" class="active">24h</button>
   </div>
-  
-  
-  <!-- BOERT TIME RANGE FILTER (UI ONLY – STEP 1) -->
+
+  <!-- BOERT TIME RANGE FILTER -->
   <div class="row" id="boertRange" style="display:none; gap:12px;">
     <label>
       Von:
@@ -56,13 +64,12 @@
       Bis:
       <input type="datetime-local" id="boertTo">
     </label>
-	
+
     <button id="boertApply">Suchen</button>
     <button id="boertReset">Reset</button>
   </div>
-  
-  
-  <!-- Refresh & Status (IMMER sichtbar) -->
+
+  <!-- Refresh & Status -->
   <div class="row" id="refreshControls">
     <button id="refreshNow">↻</button>
     <div id="status">–</div>

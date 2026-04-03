@@ -1,6 +1,9 @@
 /* =========================================================
-   PilotApp – app.js
-   Fokus: Short, Long & Graph STABIL + SICHTBAR
+   PilotAppFinal – app.js
+   Neuer erster Schritt:
+   - Dashboard aus *_bundle.json
+   - short / long / graph / seelotse / boert bleiben erhalten
+   - Personen aus PERSONS (index.html), also indirekt aus config
    ========================================================= */
 
 import { renderWorkstartChart } from "./graph.js";
@@ -13,8 +16,9 @@ console.log("APP.JS LOADED");
 let boertFromDate = null;
 let boertToDate   = null;
 let currentPerson = null;
-let currentView   = "short";
+let currentView   = "dashboard";
 let currentHours  = 24;
+let personsData   = [];
 
 // ---------------------------------------------------------
 // DOM
@@ -23,12 +27,12 @@ const personsEl = document.getElementById("persons");
 const contentEl = document.getElementById("content");
 const statusEl  = document.getElementById("status");
 const boertRangeEl = document.getElementById("boertRange");
+
 // ---------------------------------------------------------
 // INIT
 // ---------------------------------------------------------
 init();
 
-// Auto-Refresh alle 60 Sekunden
 setInterval(() => {
   if (currentPerson) {
     renderView();
@@ -39,8 +43,8 @@ function init() {
   bindViewButtons();
   bindHourButtons();
   bindRefreshButton();
-  loadPersons();
   bindBoertRangeButtons();
+  loadPersons();
 }
 
 // ---------------------------------------------------------
@@ -48,78 +52,105 @@ function init() {
 // ---------------------------------------------------------
 async function loadPersons() {
   try {
-    const res = await fetch("data/workstart_index.json", { cache: "no-store" });
-    const data = await res.json();
-    console.log("DEBUG workstart_index:", data);
-    // 🔑 Sicherstellen, dass key zu Dateinamen passt (nachname_vorname)
-    data.persons.forEach(p => {
-      if (!p.key && p.vorname && p.nachname) {
-        p.key = `${p.nachname.toLowerCase()}_${p.vorname.toLowerCase()}`;
-      }
-    });
-	
-    personsEl.innerHTML = "";
+    personsData = buildPersonsFromGlobal();
 
-    data.persons.forEach((p, idx) => {
+    if (!personsData.length) {
+      personsData = await buildPersonsFromWorkstartIndex();
+    }
 
-      // 🔑 WICHTIG: key sicherstellen (Dateiname!)
-      if (!p.key && p.vorname && p.nachname) {
-        p.key = `${p.nachname.toLowerCase()}_${p.vorname.toLowerCase()}`;
-      }
+    if (!personsData.length) {
+      throw new Error("Keine Personen verfügbar");
+    }
 
-      const btn = document.createElement("button");
-      btn.textContent = `${p.vorname} ${p.nachname}`;
-      btn.onclick = (e) => selectPerson(p, e);
-
-      if (idx === 0) {
-        btn.classList.add("active");
-        currentPerson = p;
-      }
-
-      personsEl.appendChild(btn);
-    });
-    
-	
     const saved = loadAppState();
 
     if (saved) {
-      const found = data.persons.find(p => p.key === saved.personKey);
+      const found = personsData.find(p => p.key === saved.personKey);
       if (found) {
         currentPerson = found;
         currentView = saved.view || currentView;
       }
     }
-	
-	
-    [...personsEl.children].forEach((btn, idx) => {
-      btn.classList.toggle(
-        "active",
-        data.persons[idx].key === currentPerson?.key
-      );
-    });
 
-    document.querySelectorAll("[data-view]").forEach(btn => {
-      btn.classList.toggle(
-        "active",
-        btn.dataset.view === currentView
-      );
-    });
-	
-	
-	
-    if (currentPerson) renderView();
+    if (!currentPerson) {
+      currentPerson = personsData[0];
+    }
+
+    renderPersonButtons();
+    syncViewButtons();
+    renderView();
 
   } catch (e) {
     personsEl.innerHTML = "<b>❌ Personen konnten nicht geladen werden</b>";
+    contentEl.innerHTML = `<div class="error">❌ Frontend-Init fehlgeschlagen: ${escapeHtml(e.message)}</div>`;
     console.error(e);
   }
 }
 
-function selectPerson(person, e) {
+function buildPersonsFromGlobal() {
+  const raw = Array.isArray(window.PERSONS) ? window.PERSONS : [];
+  return raw.map(key => buildPersonFromKey(key)).filter(Boolean);
+}
+
+async function buildPersonsFromWorkstartIndex() {
+  try {
+    const res = await fetch("data/workstart_index.json", { cache: "no-store" });
+    if (!res.ok) return [];
+
+    const data = await res.json();
+    const persons = Array.isArray(data.persons) ? data.persons : [];
+
+    return persons.map(p => {
+      const key = p.key || `${(p.nachname || "").toLowerCase()}_${(p.vorname || "").toLowerCase()}`;
+      return {
+        key,
+        vorname: p.vorname || splitKey(key).vorname,
+        nachname: p.nachname || splitKey(key).nachname,
+        file: p.file || `workstart_history_${key}.json`,
+      };
+    });
+  } catch {
+    return [];
+  }
+}
+
+function splitKey(key) {
+  const parts = String(key || "").split("_");
+  if (parts.length < 2) {
+    return { nachname: key || "?", vorname: "?" };
+  }
+  const nachname = parts[0];
+  const vorname = parts.slice(1).join(" ");
+  return { nachname, vorname };
+}
+
+function buildPersonFromKey(key) {
+  if (!key) return null;
+  const parts = splitKey(key);
+  return {
+    key,
+    nachname: parts.nachname,
+    vorname: parts.vorname,
+    file: `workstart_history_${key}.json`,
+  };
+}
+
+function renderPersonButtons() {
+  personsEl.innerHTML = "";
+
+  personsData.forEach((p) => {
+    const btn = document.createElement("button");
+    btn.textContent = `${capitalizeWords(p.vorname)} ${capitalizeWords(p.nachname)}`;
+    btn.classList.toggle("active", p.key === currentPerson?.key);
+    btn.onclick = () => selectPerson(p);
+    personsEl.appendChild(btn);
+  });
+}
+
+function selectPerson(person) {
   currentPerson = person;
   saveAppState();
-  [...personsEl.children].forEach(b => b.classList.remove("active"));
-  e.target.classList.add("active");
+  renderPersonButtons();
   renderView();
 }
 
@@ -138,29 +169,29 @@ function bindViewButtons() {
   });
 }
 
+function syncViewButtons() {
+  document.querySelectorAll("[data-view]").forEach(btn => {
+    btn.classList.toggle("active", btn.dataset.view === currentView);
+  });
+}
 
-
-
-
-
+// ---------------------------------------------------------
+// RENDER
+// ---------------------------------------------------------
 function renderView() {
   if (!currentPerson) {
     contentEl.textContent = "Bitte Person auswählen";
     return;
   }
 
-  // Zeitfilter nur für Graph anzeigen
   const timeControls = document.getElementById("timeControls");
-  if (currentView === "graph") {
-    timeControls.style.display = "flex";
-  } else {
-    timeControls.style.display = "none";
-  }
-// Bört-Zeitraum nur im Bört-View anzeigen
+  timeControls.style.display = currentView === "graph" ? "flex" : "none";
+
   if (boertRangeEl) {
-    boertRangeEl.style.display =
-      currentView === "boert" ? "flex" : "none";
+    boertRangeEl.style.display = currentView === "boert" ? "flex" : "none";
   }
+
+  if (currentView === "dashboard") loadDashboard();
   if (currentView === "short") loadShort();
   if (currentView === "long")  loadLong();
   if (currentView === "graph") loadGraph();
@@ -169,12 +200,210 @@ function renderView() {
 }
 
 // ---------------------------------------------------------
+// DASHBOARD
+// ---------------------------------------------------------
+async function loadDashboard() {
+  try {
+    const res = await fetch(`data/${currentPerson.key}_bundle.json`, { cache: "no-store" });
+    if (!res.ok) throw new Error(`${currentPerson.key}_bundle.json nicht ladbar`);
+
+    const bundle = await res.json();
+    const card = bundle.action_card || {};
+    const state = bundle.state || {};
+    const workstart = bundle.workstart || null;
+    const relatedShips = Array.isArray(bundle.related_ships) ? bundle.related_ships : [];
+    const seelotsen = bundle.seelotsen || {};
+    const boert = bundle.boert || {};
+    const sourceMeta = bundle.source_meta || {};
+
+    let html = '<div style="max-width:1200px">';
+
+    // Hauptkarte
+    html += `
+      <div class="view-header" style="margin-bottom:18px;">
+        <div class="view-title">${escapeHtml(card.title || `${currentPerson.nachname}, ${currentPerson.vorname}`)}</div>
+        <div style="font-size:15px; opacity:.9; margin-bottom:10px;">
+          ${escapeHtml(card.subtitle || card.state_label || "Ziellotse")}
+        </div>
+        <div class="badges-row">
+          ${(Array.isArray(card.badges) ? card.badges : []).map(b => `<span class="badge info">${escapeHtml(b)}</span>`).join("")}
+        </div>
+        ${
+          Array.isArray(card.lines) && card.lines.length
+            ? `<div style="display:grid; gap:6px; margin-top:10px;">
+                ${card.lines.map(line => `<div style="font-size:14px;">${escapeHtml(line)}</div>`).join("")}
+              </div>`
+            : ""
+        }
+        <div style="display:flex; flex-wrap:wrap; gap:8px; margin-top:14px;">
+          <button class="jump-view" data-jump="boert">Bört</button>
+          <button class="jump-view" data-jump="seelotse">Seelotse</button>
+          <button class="jump-view" data-jump="graph">Graph</button>
+          <button class="jump-view" data-jump="short">Short</button>
+          <button class="jump-view" data-jump="long">Long</button>
+        </div>
+      </div>
+    `;
+
+    html += '<div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:16px;">';
+
+    // Zustand
+    html += `
+      <div class="card expanded">
+        <div class="card-header">
+          <strong>Zustand</strong>
+          <span class="expand-icon">▼</span>
+        </div>
+        <div class="card-content" style="display:block;">
+          ${detailRow("Art", state.kind || "—")}
+          ${detailRow("Quelle", state.source || "—")}
+          ${detailRow("Pos", state.pos || card.pos || "—")}
+          ${detailRow("Takt", state.takt || card.takt || "—")}
+          ${detailRow("Q", bundle.q_gruppe || card.q_gruppe || "—")}
+        </div>
+      </div>
+    `;
+
+    // Workstart
+    html += `
+      <div class="card expanded">
+        <div class="card-header">
+          <strong>Workstart</strong>
+          <span class="expand-icon">▼</span>
+        </div>
+        <div class="card-content" style="display:block;">
+          ${
+            workstart
+              ? [
+                  detailRow("Berechnet", workstart.ts_calc || "—"),
+                  detailRow("Pos", valueOrDash(workstart.pos)),
+                  detailRow("Meldung", workstart.from_meldung || "—"),
+                  detailRow("Meldung alt", workstart.from_meldung_alt || "—"),
+                  detailRow("Calc /2", workstart.calc_div2 || "—"),
+                  detailRow("Calc /3", workstart.calc_div3 || "—"),
+                ].join("")
+              : '<div style="opacity:.7;">Kein Workstart-Eintrag vorhanden</div>'
+          }
+        </div>
+      </div>
+    `;
+
+    // Bört / Seelotse kompakt
+    html += `
+      <div class="card expanded">
+        <div class="card-header">
+          <strong>Ziellotse kompakt</strong>
+          <span class="expand-icon">▼</span>
+        </div>
+        <div class="card-content" style="display:block;">
+          ${detailRow("Bört-Eintrag", valueOrDash(boert.entry_count))}
+          ${detailRow("Seelotsen-Einträge", valueOrDash(seelotsen.entry_count))}
+          ${
+            boert.entry
+              ? [
+                  detailRow("Was", boert.entry.was || "—"),
+                  detailRow("Zeit", boert.entry.zeit || "—"),
+                  detailRow("Bemerkung", boert.entry.bemerkung || "—"),
+                ].join("")
+              : ""
+          }
+        </div>
+      </div>
+    `;
+
+    // Verknüpfte Schiffe
+    html += `
+      <div class="card expanded">
+        <div class="card-header">
+          <strong>Verknüpfte Schiffe</strong>
+          <span class="expand-icon">▼</span>
+        </div>
+        <div class="card-content" style="display:block;">
+          ${
+            relatedShips.length
+              ? relatedShips.slice(0, 3).map(ship => {
+                  const s = ship.summary || {};
+                  return `
+                    <div style="padding:10px 0; border-bottom:1px solid #374151;">
+                      <div style="font-weight:600; margin-bottom:6px;">${escapeHtml(ship.name || "—")}</div>
+                      ${detailRow("Richtung", s.zulauf_richtung || "—")}
+                      ${detailRow("Queue", s.queue_title || "—")}
+                      ${detailRow("ETA Schleuse", s.eta_schleuse || "—")}
+                      ${detailRow("ETA RÜB", s.eta_rueb || "—")}
+                      ${detailRow("VG", s.vg || "—")}
+                      ${detailRow("Q Schiff", s.q_gruppe || "—")}
+                      ${detailRow("Tiefgang", s.draft || "—")}
+                    </div>
+                  `;
+                }).join("")
+              : '<div style="opacity:.7;">Keine verknüpften Schiffe</div>'
+          }
+        </div>
+      </div>
+    `;
+
+    html += '</div>';
+
+    // Quellen unten
+    html += `
+      <div class="card expanded" style="margin-top:18px;">
+        <div class="card-header">
+          <strong>Datenquellen</strong>
+          <span class="expand-icon">▼</span>
+        </div>
+        <div class="card-content" style="display:block;">
+          ${renderSourceMeta(sourceMeta)}
+        </div>
+      </div>
+    `;
+
+    html += '</div>';
+
+    contentEl.innerHTML = html;
+
+    document.querySelectorAll(".jump-view").forEach(btn => {
+      btn.onclick = () => {
+        currentView = btn.dataset.jump;
+        saveAppState();
+        syncViewButtons();
+        renderView();
+      };
+    });
+
+    statusEl.textContent = "Dashboard " + new Date().toLocaleTimeString("de-DE");
+
+  } catch (err) {
+    contentEl.innerHTML = `<div class="error">❌ Dashboard-Fehler: ${escapeHtml(err.message)}</div>`;
+    console.error(err);
+  }
+}
+
+function renderSourceMeta(sourceMeta) {
+  const entries = Object.entries(sourceMeta || {});
+  if (!entries.length) {
+    return '<div style="opacity:.7;">Keine Source-Meta vorhanden</div>';
+  }
+
+  return entries.map(([key, val]) => {
+    return `
+      <div style="padding:8px 0; border-bottom:1px solid #374151;">
+        <div style="font-weight:600; margin-bottom:4px;">${escapeHtml(key)}</div>
+        ${detailRow("Datei", val.file || "—")}
+        ${detailRow("Vorhanden", val.exists ? "ja" : "nein")}
+        ${detailRow("Generated", val.generated_at || "—")}
+        ${detailRow("Count", valueOrDash(val.count))}
+      </div>
+    `;
+  }).join("");
+}
+
+// ---------------------------------------------------------
 // SHORT
 // ---------------------------------------------------------
 async function loadShort() {
   const res = await fetch(`data/${currentPerson.key}_short.json`, { cache: "no-store" });
   const data = await res.json();
-  contentEl.innerHTML = `<pre>${data.short}</pre>`;
+  contentEl.innerHTML = `<pre>${escapeHtml(data.short || "")}</pre>`;
   statusEl.textContent = "Aktualisiert " + new Date().toLocaleTimeString("de-DE");
 }
 
@@ -184,7 +413,7 @@ async function loadShort() {
 async function loadLong() {
   const res = await fetch(`data/${currentPerson.key}_long.json`, { cache: "no-store" });
   const data = await res.json();
-  contentEl.innerHTML = `<pre>${data.long}</pre>`;
+  contentEl.innerHTML = `<pre>${escapeHtml(data.long || "")}</pre>`;
   statusEl.textContent = "Aktualisiert " + new Date().toLocaleTimeString("de-DE");
 }
 
@@ -192,16 +421,18 @@ async function loadLong() {
 // GRAPH
 // ---------------------------------------------------------
 async function loadGraph() {
+  const file = currentPerson.file || `workstart_history_${currentPerson.key}.json`;
+
   contentEl.innerHTML = `
     <div style="padding:8px; font-size:13px; opacity:.8">
-      Lade Graph für <b>${currentPerson.key}</b><br>
-      Datei: <code>${currentPerson.file}</code>
+      Lade Graph für <b>${escapeHtml(currentPerson.key)}</b><br>
+      Datei: <code>${escapeHtml(file)}</code>
     </div>
     <canvas id="workstartChart" style="height:520px"></canvas>
   `;
 
   try {
-    const res = await fetch(`data/${currentPerson.file}`, { cache: "no-store" });
+    const res = await fetch(`data/${file}`, { cache: "no-store" });
     if (!res.ok) throw new Error("Fetch fehlgeschlagen");
 
     const data = await res.json();
@@ -220,7 +451,7 @@ async function loadGraph() {
   } catch (err) {
     contentEl.insertAdjacentHTML(
       "afterbegin",
-      `<div style="color:#f87171">❌ Graph-Fehler: ${err.message}</div>`
+      `<div style="color:#f87171">❌ Graph-Fehler: ${escapeHtml(err.message)}</div>`
     );
     console.error(err);
   }
@@ -249,8 +480,6 @@ function bindRefreshButton() {
   }
 }
 
-
-
 function bindBoertRangeButtons() {
   const fromEl = document.getElementById("boertFrom");
   const toEl   = document.getElementById("boertTo");
@@ -262,7 +491,7 @@ function bindBoertRangeButtons() {
   apply.onclick = () => {
     boertFromDate = fromEl.value ? new Date(fromEl.value) : null;
     boertToDate   = toEl.value   ? new Date(toEl.value)   : null;
-    loadBoert(); // 🔑 Filter anwenden
+    loadBoert();
   };
 
   reset.onclick = () => {
@@ -270,9 +499,10 @@ function bindBoertRangeButtons() {
     toEl.value   = "";
     boertFromDate = null;
     boertToDate   = null;
-    loadBoert(); // 🔑 zurück zur Gesamtansicht
+    loadBoert();
   };
 }
+
 // ---------------------------------------------------------
 // SEELOTSE VIEW
 // ---------------------------------------------------------
@@ -280,82 +510,76 @@ async function loadSeelotse() {
   try {
     const res = await fetch(`data/${currentPerson.key}_seelotse.json`, { cache: "no-store" });
     const data = await res.json();
-    
+
     let html = '<div style="max-width: 1200px;">';
-    
-    // Header Section
+
     html += '<div class="view-header">';
     html += '<div class="view-title">Seelotse</div>';
     html += '<div class="badges-row">';
-    
-    // Status Badge
+
     if (data.status === "in_seelotse") {
       html += '<span class="badge success">✓ In Seelotse</span>';
     } else {
       html += '<span class="badge gray">Nicht in Seelotse</span>';
     }
-    
-    // Gruppen Badges
+
     if (data.gruppen) {
-      html += `<span class="badge info">Kanal: ${data.gruppen.kanal}</span>`;
-      html += `<span class="badge info">Wach: ${data.gruppen.wach}</span>`;
-      html += `<span class="badge info">See: ${data.gruppen.see}</span>`;
+      html += `<span class="badge info">Kanal: ${escapeHtml(data.gruppen.kanal)}</span>`;
+      html += `<span class="badge info">Wach: ${escapeHtml(data.gruppen.wach)}</span>`;
+      html += `<span class="badge info">See: ${escapeHtml(data.gruppen.see)}</span>`;
     }
-    
+
     html += '</div>';
     html += `<div class="meta-info">Generiert: ${formatDateTime(data.generated_at)}</div>`;
     html += '</div>';
-    
-    // Lotsen Liste
+
     if (data.lotsen && data.lotsen.length > 0) {
       html += '<div class="section-header">Lotsen</div>';
-      
+
       data.lotsen.forEach((lotse, idx) => {
         const targetClass = lotse.is_target ? ' target' : '';
         html += `<div class="lotse-item${targetClass}" data-lotse="${idx}">`;
         html += '<div class="lotse-header">';
-        html += `<div class="lotse-nr">${lotse.nr || '—'}</div>`;
-        html += `<div class="lotse-name">${escapeHtml(lotse.name)}</div>`;
+        html += `<div class="lotse-nr">${escapeHtml(lotse.nr || '—')}</div>`;
+        html += `<div class="lotse-name">${escapeHtml(lotse.name || "")}</div>`;
         html += `<div class="lotse-info">${escapeHtml(lotse.aufgabe || '')}</div>`;
         html += `<div class="lotse-info">${escapeHtml(lotse.fahrzeug || '')}</div>`;
         html += `<div class="lotse-info">${escapeHtml(lotse.route || '')}</div>`;
         html += '<span class="expand-icon">▼</span>';
         html += '</div>';
-        
-        // Details (expandable)
+
         html += '<div class="lotse-details">';
         if (lotse.times) {
           html += '<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 8px; margin-top: 8px;">';
           if (lotse.times.eta_schleuse) {
-            html += `<div class="detail-row"><div class="detail-label">ETA Schleuse:</div><div class="detail-value">${lotse.times.eta_schleuse}</div></div>`;
+            html += detailRow("ETA Schleuse", lotse.times.eta_schleuse);
           }
           if (lotse.times.eta_rueb) {
-            html += `<div class="detail-row"><div class="detail-label">ETA Rüb:</div><div class="detail-value">${lotse.times.eta_rueb}</div></div>`;
+            html += detailRow("ETA Rüb", lotse.times.eta_rueb);
           }
           if (lotse.times.delta_rueb_schleuse) {
-            html += `<div class="detail-row"><div class="detail-label">Δ Rüb-Schleuse:</div><div class="detail-value">${lotse.times.delta_rueb_schleuse}</div></div>`;
+            html += detailRow("Δ Rüb-Schleuse", lotse.times.delta_rueb_schleuse);
           }
           if (lotse.times.delta_start_rueb) {
-            html += `<div class="detail-row"><div class="detail-label">Δ Start-Rüb:</div><div class="detail-value">${lotse.times.delta_start_rueb}</div></div>`;
+            html += detailRow("Δ Start-Rüb", lotse.times.delta_start_rueb);
           }
           html += '</div>';
         } else {
           html += '<div class="detail-row" style="color: #9ca3af;">Keine Zeitinformationen verfügbar</div>';
         }
         if (lotse.time) {
-          html += `<div class="detail-row"><div class="detail-label">Zeit:</div><div class="detail-value">${escapeHtml(lotse.time)}</div></div>`;
+          html += detailRow("Zeit", lotse.time);
         }
         html += '</div>';
-        
+
         html += '</div>';
       });
     }
-    
-    // Rüsterbergen
+
     if (data.ruesterbergen && data.ruesterbergen.length > 0) {
       html += '<div class="section-header">Rüsterbergen - Kommende Schiffe</div>';
       html += '<div class="ruesterbergen-list">';
-      
+
       data.ruesterbergen.forEach(ship => {
         html += '<div class="ruesterbergen-item">';
         html += `<div class="ruesterbergen-eta">${escapeHtml(ship.eta_rueb || '—')}</div>`;
@@ -364,25 +588,24 @@ async function loadSeelotse() {
         html += `<div class="ruesterbergen-route">${escapeHtml(ship.route || '—')}</div>`;
         html += '</div>';
       });
-      
+
       html += '</div>';
     }
-    
+
     html += '</div>';
-    
+
     contentEl.innerHTML = html;
-    
-    // Add click handlers for expandable items
+
     document.querySelectorAll('.lotse-item').forEach(item => {
       item.querySelector('.lotse-header').addEventListener('click', () => {
         item.classList.toggle('expanded');
       });
     });
-    
+
     statusEl.textContent = "Aktualisiert " + new Date().toLocaleTimeString("de-DE");
-    
+
   } catch (err) {
-    contentEl.innerHTML = `<div class="error">❌ Seelotse-Fehler: ${err.message}</div>`;
+    contentEl.innerHTML = `<div class="error">❌ Seelotse-Fehler: ${escapeHtml(err.message)}</div>`;
     console.error(err);
   }
 }
@@ -394,7 +617,6 @@ async function loadBoert() {
   try {
     const res = await fetch(`data/${currentPerson.key}_boert.json`, { cache: "no-store" });
     const data = await res.json();
-    
 
     let filteredLotsen = data.lotsen || [];
 
@@ -423,53 +645,41 @@ async function loadBoert() {
       });
     }
 
-	
     let filteredTauschpartner = Array.isArray(data.tauschpartner)
       ? data.tauschpartner.filter(tp =>
-          filteredLotsen.some(l =>
-            l.pos === tp.pos
-          )
+          filteredLotsen.some(l => l.pos === tp.pos)
         )
       : [];
-	
-	
+
     const totalLotsen = (data.lotsen || []).length;
     const shownLotsen = filteredLotsen.length;
-    
-	
+
     let html = '<div style="max-width: 1200px;">';
-    
-    // Header with Status
+
     html += '<div class="view-header">';
     html += '<div class="view-title">Bört</div>';
     html += '<div class="badges-row">';
-    html += `<div class="meta-info">
-      ${filterActive ? "🔎 Filter aktiv – " : ""}
-      Anzeige ${shownLotsen} von ${totalLotsen} Lotsen
-    </div>`;
-	
-	
+    html += `<div class="meta-info">${filterActive ? "🔎 Filter aktiv – " : ""}Anzeige ${shownLotsen} von ${totalLotsen} Lotsen</div>`;
+
     if (data.status === "boert") {
       html += '<span class="badge success">✓ Im Bört</span>';
     } else {
       html += '<span class="badge gray">Nicht im Bört</span>';
     }
-    
+
     html += '</div>';
     html += `<div class="meta-info">Generiert: ${formatDateTime(data.generated_at)}</div>`;
     html += '</div>';
-    
-    // Person Card (Always visible)
+
     if (data.person || data.target) {
       const p = data.person || data.target;
       html += '<div class="person-card">';
       html += `<div class="person-name">${escapeHtml(p.vorname)} ${escapeHtml(p.nachname)}</div>`;
-      html += `<div class="person-pos">Position ${p.pos}</div>`;
+      html += `<div class="person-pos">Position ${escapeHtml(p.pos)}</div>`;
       if (p.takt) {
         html += `<div class="person-takt">Takt: ${escapeHtml(p.takt)}</div>`;
       }
-      
-      // Times
+
       if (p.times) {
         html += '<div class="times-grid">';
         if (p.times.from_meldung) {
@@ -486,15 +696,14 @@ async function loadBoert() {
         }
         html += '</div>';
       }
-      
+
       if (p.bemerkung) {
         html += `<div style="margin-top: 12px; padding: 8px; background: rgba(0,0,0,0.2); border-radius: 6px; font-size: 14px;">📝 ${escapeHtml(p.bemerkung)}</div>`;
       }
-      
+
       html += '</div>';
     }
-    
-    // Tauschpartner
+
     if (filteredTauschpartner.length > 0) {
       html += '<div class="section-header">Tauschpartner</div>';
       html += '<div class="tauschpartner-grid">';
@@ -511,7 +720,7 @@ async function loadBoert() {
 
         html += `<div class="${cardClass}">`;
         html += `<div class="tauschpartner-name">${escapeHtml(tp.vorname)} ${escapeHtml(tp.nachname)}</div>`;
-        html += `<div class="tauschpartner-info">Pos ${tp.pos}</div>`;
+        html += `<div class="tauschpartner-info">Pos ${escapeHtml(tp.pos)}</div>`;
         html += '</div>';
       });
 
@@ -521,91 +730,96 @@ async function loadBoert() {
       html += '<div style="opacity:.6; padding:8px">Keine Tauschpartner gefunden</div>';
     }
 
-	
-    
-    // Lotsen Liste (expandable)
     if (filteredLotsen.length > 0) {
       html += '<div class="section-header">Alle Lotsen</div>';
-      
+
       filteredLotsen.forEach((lotse, idx) => {
         const targetClass = lotse.is_target ? ' target' : '';
         html += `<div class="lotse-item${targetClass}" data-lotse="${idx}">`;
         html += '<div class="lotse-header">';
-        html += `<div class="lotse-nr">${lotse.pos}</div>`;
+        html += `<div class="lotse-nr">${escapeHtml(lotse.pos)}</div>`;
         html += `<div class="lotse-name">${escapeHtml(lotse.vorname)} ${escapeHtml(lotse.nachname)}</div>`;
-        
-        // Arrow
+
         if (lotse.arrow) {
           const arrowClass = lotse.arrow.includes('↑') ? 'arrow-up' : (lotse.arrow.includes('↓') ? 'arrow-down' : '');
           html += `<div class="lotse-info"><span class="${arrowClass}">${escapeHtml(lotse.arrow)}</span></div>`;
         }
-        
-        // From Meldung time
+
         if (lotse.times && lotse.times.from_meldung) {
           html += `<div class="lotse-info">${escapeHtml(lotse.times.from_meldung)}</div>`;
         }
-        
-        // Verguetung
+
         if (lotse.verguetung) {
           html += '<div class="lotse-info"><span class="verguetung">$$</span></div>';
         }
-        
+
         html += '<span class="expand-icon">▼</span>';
         html += '</div>';
-        
-        // Details (expandable)
+
         html += '<div class="lotse-details">';
         if (lotse.times) {
           html += '<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 8px; margin-top: 8px;">';
           if (lotse.times.from_meldung) {
-            html += `<div class="detail-row"><div class="detail-label">von Meldung:</div><div class="detail-value">${escapeHtml(lotse.times.from_meldung)}</div></div>`;
+            html += detailRow("von Meldung", lotse.times.from_meldung);
           }
           if (lotse.times.calc_div2) {
-            html += `<div class="detail-row"><div class="detail-label">calc div2:</div><div class="detail-value">${escapeHtml(lotse.times.calc_div2)}</div></div>`;
+            html += detailRow("calc div2", lotse.times.calc_div2);
           }
           if (lotse.times.calc_div3) {
-            html += `<div class="detail-row"><div class="detail-label">calc div3:</div><div class="detail-value">${escapeHtml(lotse.times.calc_div3)}</div></div>`;
+            html += detailRow("calc div3", lotse.times.calc_div3);
           }
           if (lotse.times.from_meldung_alt) {
-            html += `<div class="detail-row"><div class="detail-label">von Meldung alt:</div><div class="detail-value">${escapeHtml(lotse.times.from_meldung_alt)}</div></div>`;
+            html += detailRow("von Meldung alt", lotse.times.from_meldung_alt);
           }
           html += '</div>';
         }
         if (lotse.bemerkung) {
-          html += `<div class="detail-row"><div class="detail-label">Bemerkung:</div><div class="detail-value">${escapeHtml(lotse.bemerkung)}</div></div>`;
+          html += detailRow("Bemerkung", lotse.bemerkung);
         }
         html += '</div>';
-        
+
         html += '</div>';
       });
     }
-    
+
     html += '</div>';
-    
+
     contentEl.innerHTML = html;
-    
-    // Add click handlers for expandable items
+
     document.querySelectorAll('.lotse-item').forEach(item => {
       item.querySelector('.lotse-header').addEventListener('click', () => {
         item.classList.toggle('expanded');
       });
     });
-    
+
     statusEl.textContent = "Aktualisiert " + new Date().toLocaleTimeString("de-DE");
-    
+
   } catch (err) {
-    contentEl.innerHTML = `<div class="error">❌ Bört-Fehler: ${err.message}</div>`;
+    contentEl.innerHTML = `<div class="error">❌ Bört-Fehler: ${escapeHtml(err.message)}</div>`;
     console.error(err);
   }
 }
 
 // ---------------------------------------------------------
-// HELPER FUNCTIONS
+// HELPER
 // ---------------------------------------------------------
+function detailRow(label, value) {
+  return `
+    <div class="detail-row">
+      <div class="detail-label">${escapeHtml(label)}</div>
+      <div class="detail-value">${escapeHtml(valueOrDash(value))}</div>
+    </div>
+  `;
+}
+
+function valueOrDash(v) {
+  return v === null || v === undefined || v === "" ? "—" : String(v);
+}
+
 function escapeHtml(text) {
-  if (!text) return '';
+  if (text === null || text === undefined) return "";
   const div = document.createElement('div');
-  div.textContent = text;
+  div.textContent = String(text);
   return div.innerHTML;
 }
 
@@ -613,53 +827,23 @@ function formatDateTime(dateStr) {
   if (!dateStr) return '—';
   try {
     const date = new Date(dateStr);
+    if (Number.isNaN(date.getTime())) return dateStr;
     return date.toLocaleString('de-DE');
   } catch {
     return dateStr;
   }
 }
 
-
-function getLotseRelevantDate(lotse) {
-  if (!lotse || !lotse.times) return null;
-
-  const val =
-    lotse.times.from_meldung_alt ||
-    lotse.times.from_meldung ||
-    lotse.times.calc_div2 ||
-    lotse.times.calc_div3;
-
-  if (!val) return null;
-
-  // Erwartet z.B. "Mi23:00"
-  const m = val.match(/^([A-Z][a-z])(\d{2}):(\d{2})$/);
-  if (!m) return null;
-
-  const wdMap = { Mo:1, Di:2, Mi:3, Do:4, Fr:5, Sa:6, So:0 };
-  const wdTarget = wdMap[m[1]];
-  const hh = Number(m[2]);
-  const mm = Number(m[3]);
-
-  const now = new Date();
-  const d = new Date(now);
-
-  // auf richtigen Wochentag springen
-  const diff =
-    (wdTarget - d.getDay() + 7) % 7;
-  d.setDate(d.getDate() + diff);
-  d.setHours(hh, mm, 0, 0);
-
-  // falls Zeit in Zukunft liegt, aber logisch gestern war → zurück
-  if (d.getTime() - now.getTime() > 12 * 3600 * 1000) {
-    d.setDate(d.getDate() - 7);
-  }
-
-  return d;
+function capitalizeWords(text) {
+  return String(text || "")
+    .split(" ")
+    .filter(Boolean)
+    .map(x => x.charAt(0).toUpperCase() + x.slice(1))
+    .join(" ");
 }
 
-
 function parseLotseTime(val) {
-  const m = val.match(/^([A-Z][a-z])(\d{2}):(\d{2})$/);
+  const m = String(val || "").match(/^([A-Z][a-z])(\d{2}):(\d{2})$/);
   if (!m) return null;
 
   const wdMap = { Mo:1, Di:2, Mi:3, Do:4, Fr:5, Sa:6, So:0 };
@@ -676,19 +860,15 @@ function parseLotseTime(val) {
   d.setDate(d.getDate() + diff);
   d.setHours(hh, mm, 0, 0);
 
-  // ❌ KEIN automatisches Zurückspringen um 7 Tage
-// Zeiten dürfen bis +36h in der Zukunft liegen
   if (d.getTime() - now.getTime() > 36 * 3600 * 1000) {
     return null;
   }
-  
 
   return d;
 }
 
-
 // ---------------------------------------------------------
-// STATE PERSISTENCE (localStorage)
+// STATE PERSISTENCE
 // ---------------------------------------------------------
 function saveAppState() {
   if (!currentPerson) return;
