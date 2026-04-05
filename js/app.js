@@ -1,6 +1,11 @@
 /* =========================================================
    PilotAppFinal – app.js
    Personen ausschließlich aus data/persons.json
+   Dashboard erweitert:
+   - Status / Urlaub
+   - Gesamtbört / Tauschpartner
+   - Seelotsen / Schiff
+   - Workstart mit 4 Zeiten
    ========================================================= */
 
 import { renderWorkstartChart } from "./graph.js";
@@ -176,10 +181,20 @@ function renderView() {
 // ---------------------------------------------------------
 async function loadDashboard() {
   try {
-    const res = await fetch(`data/${currentPerson.key}_bundle.json`, { cache: "no-store" });
-    if (!res.ok) throw new Error(`${currentPerson.key}_bundle.json nicht ladbar`);
+    const [bundleRes, boertRes, seelotseRes] = await Promise.allSettled([
+      fetch(`data/${currentPerson.key}_bundle.json`, { cache: "no-store" }),
+      fetch(`data/${currentPerson.key}_boert.json`, { cache: "no-store" }),
+      fetch(`data/${currentPerson.key}_seelotse.json`, { cache: "no-store" }),
+    ]);
 
-    const bundle = await res.json();
+    if (bundleRes.status !== "fulfilled" || !bundleRes.value.ok) {
+      throw new Error(`${currentPerson.key}_bundle.json nicht ladbar`);
+    }
+
+    const bundle = await bundleRes.value.json();
+    const boertData = await safeJsonFromSettled(boertRes);
+    const seelotseData = await safeJsonFromSettled(seelotseRes);
+
     const card = bundle.action_card || {};
     const state = bundle.state || {};
     const workstart = bundle.workstart || null;
@@ -187,9 +202,17 @@ async function loadDashboard() {
     const seelotsen = bundle.seelotsen || {};
     const boert = bundle.boert || {};
     const sourceMeta = bundle.source_meta || {};
+    const snapshots = bundle.snapshots || {};
+    const statusSnap = snapshots.status || {};
+    const statusInfo = statusSnap.status || {};
+
+    const tauschpartnerCount = Array.isArray(boertData?.tauschpartner) ? boertData.tauschpartner.length : 0;
+    const firstSeelotse = Array.isArray(seelotsen.entries) && seelotsen.entries.length ? seelotsen.entries[0] : null;
+    const firstShipSummary = relatedShips.length ? (relatedShips[0].summary || {}) : {};
 
     let html = '<div style="max-width:1200px">';
 
+    // Hauptkarte
     html += `
       <div class="view-header" style="margin-bottom:18px;">
         <div class="view-title">${escapeHtml(card.title || `${currentPerson.nachname}, ${currentPerson.vorname}`)}</div>
@@ -198,6 +221,8 @@ async function loadDashboard() {
         </div>
         <div class="badges-row">
           ${(Array.isArray(card.badges) ? card.badges : []).map(b => `<span class="badge info">${escapeHtml(b)}</span>`).join("")}
+          ${state.kind ? `<span class="badge gray">${escapeHtml(state.kind)}</span>` : ""}
+          ${tauschpartnerCount ? `<span class="badge success">${tauschpartnerCount} TP</span>` : ""}
         </div>
         ${
           Array.isArray(card.lines) && card.lines.length
@@ -218,6 +243,7 @@ async function loadDashboard() {
 
     html += '<div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:16px;">';
 
+    // Zustand / Action Card
     html += `
       <div class="card expanded">
         <div class="card-header">
@@ -230,10 +256,28 @@ async function loadDashboard() {
           ${detailRow("Pos", state.pos || card.pos || "—")}
           ${detailRow("Takt", state.takt || card.takt || "—")}
           ${detailRow("Q", bundle.q_gruppe || card.q_gruppe || "—")}
+          ${detailRow("Zuletzt", statusInfo.zuletzt || "—")}
         </div>
       </div>
     `;
 
+    // Status / Urlaub
+    html += `
+      <div class="card expanded">
+        <div class="card-header">
+          <strong>Status / Urlaub</strong>
+          <span class="expand-icon">▼</span>
+        </div>
+        <div class="card-content" style="display:block;">
+          ${detailRow("Willkommen", statusInfo.willkommen || "—")}
+          ${detailRow("Zuletzt", statusInfo.zuletzt || "—")}
+          ${detailRow("Urlaub", statusInfo.naechster_urlaub || "—")}
+          ${detailRow("Status-Datei", statusSnap.generated_at || "—")}
+        </div>
+      </div>
+    `;
+
+    // Workstart
     html += `
       <div class="card expanded">
         <div class="card-header">
@@ -257,28 +301,52 @@ async function loadDashboard() {
       </div>
     `;
 
+    // Gesamtbört / Tauschpartner
     html += `
       <div class="card expanded">
         <div class="card-header">
-          <strong>Ziellotse kompakt</strong>
+          <strong>Gesamtbört / Tauschpartner</strong>
           <span class="expand-icon">▼</span>
         </div>
         <div class="card-content" style="display:block;">
           ${detailRow("Bört-Eintrag", valueOrDash(boert.entry_count))}
-          ${detailRow("Seelotsen-Einträge", valueOrDash(seelotsen.entry_count))}
+          ${detailRow("Tauschpartner", valueOrDash(tauschpartnerCount))}
           ${
             boert.entry
               ? [
                   detailRow("Was", boert.entry.was || "—"),
                   detailRow("Zeit", boert.entry.zeit || "—"),
+                  detailRow("Pfeil", boert.entry.arrow || "—"),
                   detailRow("Bemerkung", boert.entry.bemerkung || "—"),
                 ].join("")
-              : ""
+              : '<div style="opacity:.7;">Kein aktueller Gesamtbört-Eintrag</div>'
           }
         </div>
       </div>
     `;
 
+    // Seelotse / Schiff
+    html += `
+      <div class="card expanded">
+        <div class="card-header">
+          <strong>Seelotse / Schiff</strong>
+          <span class="expand-icon">▼</span>
+        </div>
+        <div class="card-content" style="display:block;">
+          ${detailRow("Seelotsen-Einträge", valueOrDash(seelotsen.entry_count))}
+          ${detailRow("Aufgabe", firstSeelotse?.aufgabe || "—")}
+          ${detailRow("Fahrzeug", firstSeelotse?.fahrzeug || "—")}
+          ${detailRow("Route", buildRoute(firstSeelotse?.from, firstSeelotse?.to))}
+          ${detailRow("Schiff", relatedShips[0]?.name || "—")}
+          ${detailRow("VG", firstShipSummary.vg || "—")}
+          ${detailRow("Tiefgang", firstShipSummary.draft || "—")}
+          ${detailRow("ETA Schleuse", firstShipSummary.eta_schleuse || "—")}
+          ${detailRow("ETA RÜB", firstShipSummary.eta_rueb || "—")}
+        </div>
+      </div>
+    `;
+
+    // Verknüpfte Schiffe
     html += `
       <div class="card expanded">
         <div class="card-header">
@@ -311,6 +379,7 @@ async function loadDashboard() {
 
     html += '</div>';
 
+    // Quellen
     html += `
       <div class="card expanded" style="margin-top:18px;">
         <div class="card-header">
@@ -769,6 +838,23 @@ async function loadBoert() {
 // ---------------------------------------------------------
 // HELPER
 // ---------------------------------------------------------
+async function safeJsonFromSettled(result) {
+  try {
+    if (result.status !== "fulfilled") return null;
+    if (!result.value?.ok) return null;
+    return await result.value.json();
+  } catch {
+    return null;
+  }
+}
+
+function buildRoute(from, to) {
+  const f = valueOrDash(from);
+  const t = valueOrDash(to);
+  if (f === "—" && t === "—") return "—";
+  return `${f} → ${t}`;
+}
+
 function detailRow(label, value) {
   return `
     <div class="detail-row">
