@@ -1,9 +1,6 @@
 /* =========================================================
    PilotAppFinal – app.js
-   Neuer erster Schritt:
-   - Dashboard aus *_bundle.json
-   - short / long / graph / seelotse / boert bleiben erhalten
-   - Personen aus PERSONS (index.html), also indirekt aus config
+   Personen ausschließlich aus data/persons.json
    ========================================================= */
 
 import { renderWorkstartChart } from "./graph.js";
@@ -48,18 +45,24 @@ function init() {
 }
 
 // ---------------------------------------------------------
-// PERSONEN
+// PERSONEN – NUR AUS persons.json
 // ---------------------------------------------------------
 async function loadPersons() {
   try {
-    personsData = buildPersonsFromGlobal();
-
-    if (!personsData.length) {
-      personsData = await buildPersonsFromWorkstartIndex();
+    const res = await fetch("data/persons.json", { cache: "no-store" });
+    if (!res.ok) {
+      throw new Error("persons.json nicht ladbar");
     }
 
+    const data = await res.json();
+    const rawPersons = Array.isArray(data.persons) ? data.persons : [];
+
+    personsData = rawPersons
+      .map(p => buildPersonFromConfigEntry(p))
+      .filter(Boolean);
+
     if (!personsData.length) {
-      throw new Error("Keine Personen verfügbar");
+      throw new Error("Keine Personen in persons.json");
     }
 
     const saved = loadAppState();
@@ -87,50 +90,19 @@ async function loadPersons() {
   }
 }
 
-function buildPersonsFromGlobal() {
-  const raw = Array.isArray(window.PERSONS) ? window.PERSONS : [];
-  return raw.map(key => buildPersonFromKey(key)).filter(Boolean);
-}
+function buildPersonFromConfigEntry(p) {
+  const key = String(p?.key || "").trim();
+  const vorname = String(p?.vorname || "").trim().toLowerCase();
+  const nachname = String(p?.nachname || "").trim().toLowerCase();
 
-async function buildPersonsFromWorkstartIndex() {
-  try {
-    const res = await fetch("data/workstart_index.json", { cache: "no-store" });
-    if (!res.ok) return [];
-
-    const data = await res.json();
-    const persons = Array.isArray(data.persons) ? data.persons : [];
-
-    return persons.map(p => {
-      const key = p.key || `${(p.nachname || "").toLowerCase()}_${(p.vorname || "").toLowerCase()}`;
-      return {
-        key,
-        vorname: p.vorname || splitKey(key).vorname,
-        nachname: p.nachname || splitKey(key).nachname,
-        file: p.file || `workstart_history_${key}.json`,
-      };
-    });
-  } catch {
-    return [];
+  if (!key || !vorname || !nachname) {
+    return null;
   }
-}
 
-function splitKey(key) {
-  const parts = String(key || "").split("_");
-  if (parts.length < 2) {
-    return { nachname: key || "?", vorname: "?" };
-  }
-  const nachname = parts[0];
-  const vorname = parts.slice(1).join(" ");
-  return { nachname, vorname };
-}
-
-function buildPersonFromKey(key) {
-  if (!key) return null;
-  const parts = splitKey(key);
   return {
     key,
-    nachname: parts.nachname,
-    vorname: parts.vorname,
+    vorname,
+    nachname,
     file: `workstart_history_${key}.json`,
   };
 }
@@ -218,7 +190,6 @@ async function loadDashboard() {
 
     let html = '<div style="max-width:1200px">';
 
-    // Hauptkarte
     html += `
       <div class="view-header" style="margin-bottom:18px;">
         <div class="view-title">${escapeHtml(card.title || `${currentPerson.nachname}, ${currentPerson.vorname}`)}</div>
@@ -247,7 +218,6 @@ async function loadDashboard() {
 
     html += '<div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:16px;">';
 
-    // Zustand
     html += `
       <div class="card expanded">
         <div class="card-header">
@@ -264,7 +234,6 @@ async function loadDashboard() {
       </div>
     `;
 
-    // Workstart
     html += `
       <div class="card expanded">
         <div class="card-header">
@@ -288,7 +257,6 @@ async function loadDashboard() {
       </div>
     `;
 
-    // Bört / Seelotse kompakt
     html += `
       <div class="card expanded">
         <div class="card-header">
@@ -311,7 +279,6 @@ async function loadDashboard() {
       </div>
     `;
 
-    // Verknüpfte Schiffe
     html += `
       <div class="card expanded">
         <div class="card-header">
@@ -344,7 +311,6 @@ async function loadDashboard() {
 
     html += '</div>';
 
-    // Quellen unten
     html += `
       <div class="card expanded" style="margin-top:18px;">
         <div class="card-header">
