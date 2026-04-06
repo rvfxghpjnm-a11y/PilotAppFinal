@@ -1,11 +1,10 @@
 /* =========================================================
    PilotAppFinal – app.js
    Personen ausschließlich aus data/persons.json
-   Dashboard erweitert:
-   - Status / Urlaub
-   - Gesamtbört / Tauschpartner
-   - Seelotsen / Schiff
-   - Workstart mit 4 Zeiten
+   Dashboard zustandsabhängig:
+   - Gesamtbört: Fokus auf Pos / Takt / Start / TP
+   - Seelotsen: Fokus auf Aufgabe / Fahrzeug / Schiff / ETA
+   - Short / Long / Graph / Seelotse / Bört bleiben erhalten
    ========================================================= */
 
 import { renderWorkstartChart } from "./graph.js";
@@ -208,178 +207,94 @@ async function loadDashboard() {
 
     const tauschpartnerCount = Array.isArray(boertData?.tauschpartner) ? boertData.tauschpartner.length : 0;
     const firstSeelotse = Array.isArray(seelotsen.entries) && seelotsen.entries.length ? seelotsen.entries[0] : null;
-    const firstShipSummary = relatedShips.length ? (relatedShips[0].summary || {}) : {};
+    const firstShip = relatedShips.length ? relatedShips[0] : null;
+    const firstShipSummary = firstShip?.summary || {};
+
+    const stateKind = normalizeStateKind(state.kind);
+    const isBoert = stateKind === "gesamtboert";
+    const isSeelotse = stateKind === "seelotsen";
+    const isFree = !isBoert && !isSeelotse;
 
     let html = '<div style="max-width:1200px">';
 
+    // -----------------------------------------------------
     // Hauptkarte
-    html += `
-      <div class="view-header" style="margin-bottom:18px;">
-        <div class="view-title">${escapeHtml(card.title || `${currentPerson.nachname}, ${currentPerson.vorname}`)}</div>
-        <div style="font-size:15px; opacity:.9; margin-bottom:10px;">
-          ${escapeHtml(card.subtitle || card.state_label || "Ziellotse")}
-        </div>
-        <div class="badges-row">
-          ${(Array.isArray(card.badges) ? card.badges : []).map(b => `<span class="badge info">${escapeHtml(b)}</span>`).join("")}
-          ${state.kind ? `<span class="badge gray">${escapeHtml(state.kind)}</span>` : ""}
-          ${tauschpartnerCount ? `<span class="badge success">${tauschpartnerCount} TP</span>` : ""}
-        </div>
-        ${
-          Array.isArray(card.lines) && card.lines.length
-            ? `<div style="display:grid; gap:6px; margin-top:10px;">
-                ${card.lines.map(line => `<div style="font-size:14px;">${escapeHtml(line)}</div>`).join("")}
-              </div>`
-            : ""
-        }
-        <div style="display:flex; flex-wrap:wrap; gap:8px; margin-top:14px;">
-          <button class="jump-view" data-jump="boert">Bört</button>
-          <button class="jump-view" data-jump="seelotse">Seelotse</button>
-          <button class="jump-view" data-jump="graph">Graph</button>
-          <button class="jump-view" data-jump="short">Short</button>
-          <button class="jump-view" data-jump="long">Long</button>
-        </div>
-      </div>
-    `;
+    // -----------------------------------------------------
+    html += renderHeroCard({
+      card,
+      state,
+      bundle,
+      tauschpartnerCount,
+      isBoert,
+      isSeelotse,
+      isFree,
+      workstart,
+      firstSeelotse,
+      firstShip,
+      firstShipSummary,
+    });
 
+    // -----------------------------------------------------
+    // Fokus-Zeile abhängig vom Zustand
+    // -----------------------------------------------------
     html += '<div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:16px;">';
 
-    // Zustand / Action Card
-    html += `
-      <div class="card expanded">
-        <div class="card-header">
-          <strong>Zustand</strong>
-          <span class="expand-icon">▼</span>
-        </div>
-        <div class="card-content" style="display:block;">
-          ${detailRow("Art", state.kind || "—")}
-          ${detailRow("Quelle", state.source || "—")}
-          ${detailRow("Pos", state.pos || card.pos || "—")}
-          ${detailRow("Takt", state.takt || card.takt || "—")}
-          ${detailRow("Q", bundle.q_gruppe || card.q_gruppe || "—")}
-          ${detailRow("Zuletzt", statusInfo.zuletzt || "—")}
-        </div>
-      </div>
-    `;
-
-    // Status / Urlaub
-    html += `
-      <div class="card expanded">
-        <div class="card-header">
-          <strong>Status / Urlaub</strong>
-          <span class="expand-icon">▼</span>
-        </div>
-        <div class="card-content" style="display:block;">
-          ${detailRow("Willkommen", statusInfo.willkommen || "—")}
-          ${detailRow("Zuletzt", statusInfo.zuletzt || "—")}
-          ${detailRow("Urlaub", statusInfo.naechster_urlaub || "—")}
-          ${detailRow("Status-Datei", statusSnap.generated_at || "—")}
-        </div>
-      </div>
-    `;
-
-    // Workstart
-    html += `
-      <div class="card expanded">
-        <div class="card-header">
-          <strong>Workstart</strong>
-          <span class="expand-icon">▼</span>
-        </div>
-        <div class="card-content" style="display:block;">
-          ${
-            workstart
-              ? [
-                  detailRow("Berechnet", workstart.ts_calc || "—"),
-                  detailRow("Pos", valueOrDash(workstart.pos)),
-                  detailRow("Meldung", workstart.from_meldung || "—"),
-                  detailRow("Meldung alt", workstart.from_meldung_alt || "—"),
-                  detailRow("Calc /2", workstart.calc_div2 || "—"),
-                  detailRow("Calc /3", workstart.calc_div3 || "—"),
-                ].join("")
-              : '<div style="opacity:.7;">Kein Workstart-Eintrag vorhanden</div>'
-          }
-        </div>
-      </div>
-    `;
-
-    // Gesamtbört / Tauschpartner
-    html += `
-      <div class="card expanded">
-        <div class="card-header">
-          <strong>Gesamtbört / Tauschpartner</strong>
-          <span class="expand-icon">▼</span>
-        </div>
-        <div class="card-content" style="display:block;">
-          ${detailRow("Bört-Eintrag", valueOrDash(boert.entry_count))}
-          ${detailRow("Tauschpartner", valueOrDash(tauschpartnerCount))}
-          ${
-            boert.entry
-              ? [
-                  detailRow("Was", boert.entry.was || "—"),
-                  detailRow("Zeit", boert.entry.zeit || "—"),
-                  detailRow("Pfeil", boert.entry.arrow || "—"),
-                  detailRow("Bemerkung", boert.entry.bemerkung || "—"),
-                ].join("")
-              : '<div style="opacity:.7;">Kein aktueller Gesamtbört-Eintrag</div>'
-          }
-        </div>
-      </div>
-    `;
-
-    // Seelotse / Schiff
-    html += `
-      <div class="card expanded">
-        <div class="card-header">
-          <strong>Seelotse / Schiff</strong>
-          <span class="expand-icon">▼</span>
-        </div>
-        <div class="card-content" style="display:block;">
-          ${detailRow("Seelotsen-Einträge", valueOrDash(seelotsen.entry_count))}
-          ${detailRow("Aufgabe", firstSeelotse?.aufgabe || "—")}
-          ${detailRow("Fahrzeug", firstSeelotse?.fahrzeug || "—")}
-          ${detailRow("Route", buildRoute(firstSeelotse?.from, firstSeelotse?.to))}
-          ${detailRow("Schiff", relatedShips[0]?.name || "—")}
-          ${detailRow("VG", firstShipSummary.vg || "—")}
-          ${detailRow("Tiefgang", firstShipSummary.draft || "—")}
-          ${detailRow("ETA Schleuse", firstShipSummary.eta_schleuse || "—")}
-          ${detailRow("ETA RÜB", firstShipSummary.eta_rueb || "—")}
-        </div>
-      </div>
-    `;
-
-    // Verknüpfte Schiffe
-    html += `
-      <div class="card expanded">
-        <div class="card-header">
-          <strong>Verknüpfte Schiffe</strong>
-          <span class="expand-icon">▼</span>
-        </div>
-        <div class="card-content" style="display:block;">
-          ${
-            relatedShips.length
-              ? relatedShips.slice(0, 3).map(ship => {
-                  const s = ship.summary || {};
-                  return `
-                    <div style="padding:10px 0; border-bottom:1px solid #374151;">
-                      <div style="font-weight:600; margin-bottom:6px;">${escapeHtml(ship.name || "—")}</div>
-                      ${detailRow("Richtung", s.zulauf_richtung || "—")}
-                      ${detailRow("Queue", s.queue_title || "—")}
-                      ${detailRow("ETA Schleuse", s.eta_schleuse || "—")}
-                      ${detailRow("ETA RÜB", s.eta_rueb || "—")}
-                      ${detailRow("VG", s.vg || "—")}
-                      ${detailRow("Q Schiff", s.q_gruppe || "—")}
-                      ${detailRow("Tiefgang", s.draft || "—")}
-                    </div>
-                  `;
-                }).join("")
-              : '<div style="opacity:.7;">Keine verknüpften Schiffe</div>'
-          }
-        </div>
-      </div>
-    `;
+    if (isBoert) {
+      html += renderBoertFocusCard(boert, boertData, tauschpartnerCount);
+      html += renderWorkstartCard(workstart);
+      html += renderStatusCard(statusInfo, statusSnap);
+      html += renderStateCard(state, bundle, card, statusInfo);
+    } else if (isSeelotse) {
+      html += renderSeelotseShipCard(seelotsen, firstSeelotse, firstShip, firstShipSummary);
+      html += renderStatusCard(statusInfo, statusSnap);
+      html += renderWorkstartCard(workstart);
+      html += renderStateCard(state, bundle, card, statusInfo);
+    } else {
+      html += renderStatusCard(statusInfo, statusSnap);
+      html += renderWorkstartCard(workstart);
+      html += renderStateCard(state, bundle, card, statusInfo);
+      html += renderBoertFocusCard(boert, boertData, tauschpartnerCount);
+    }
 
     html += '</div>';
 
-    // Quellen
+    // -----------------------------------------------------
+    // Sekundär-Zeile
+    // -----------------------------------------------------
+    html += '<div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:16px; margin-top:16px;">';
+
+    if (isBoert) {
+      html += renderSecondaryCard(
+        "Seelotse / Schiff",
+        renderSeelotseShipInner(seelotsen, firstSeelotse, firstShip, firstShipSummary),
+        "Derzeit sekundär"
+      );
+      html += renderLinkedShipsCard(relatedShips);
+    } else if (isSeelotse) {
+      html += renderSecondaryCard(
+        "Gesamtbört / Tauschpartner",
+        renderBoertFocusInner(boert, boertData, tauschpartnerCount),
+        "Derzeit sekundär"
+      );
+      html += renderLinkedShipsCard(relatedShips);
+    } else {
+      html += renderSecondaryCard(
+        "Gesamtbört / Tauschpartner",
+        renderBoertFocusInner(boert, boertData, tauschpartnerCount),
+        "Optional"
+      );
+      html += renderSecondaryCard(
+        "Seelotse / Schiff",
+        renderSeelotseShipInner(seelotsen, firstSeelotse, firstShip, firstShipSummary),
+        "Optional"
+      );
+    }
+
+    html += '</div>';
+
+    // -----------------------------------------------------
+    // Quellen unten
+    // -----------------------------------------------------
     html += `
       <div class="card expanded" style="margin-top:18px;">
         <div class="card-header">
@@ -411,6 +326,242 @@ async function loadDashboard() {
     contentEl.innerHTML = `<div class="error">❌ Dashboard-Fehler: ${escapeHtml(err.message)}</div>`;
     console.error(err);
   }
+}
+
+function renderHeroCard({
+  card,
+  state,
+  bundle,
+  tauschpartnerCount,
+  isBoert,
+  isSeelotse,
+  isFree,
+  workstart,
+  firstSeelotse,
+  firstShip,
+  firstShipSummary,
+}) {
+  let subtitle = card.subtitle || card.state_label || "Ziellotse";
+  let extraLines = Array.isArray(card.lines) ? [...card.lines] : [];
+  let extraBadges = [];
+
+  if (isBoert) {
+    if (tauschpartnerCount) extraBadges.push(`${tauschpartnerCount} TP`);
+  }
+
+  if (isSeelotse) {
+    if (firstSeelotse?.aufgabe) extraBadges.push(firstSeelotse.aufgabe);
+    if (firstShip?.name) extraLines.unshift(`Schiff: ${firstShip.name}`);
+    if (firstShipSummary?.eta_schleuse) extraLines.push(`ETA Schleuse: ${firstShipSummary.eta_schleuse}`);
+    if (firstShipSummary?.draft) extraLines.push(`Tiefgang: ${firstShipSummary.draft}`);
+  }
+
+  if (isFree && workstart?.from_meldung) {
+    extraLines.push(`Nächster bekannter Start: ${workstart.from_meldung}`);
+  }
+
+  return `
+    <div class="view-header" style="margin-bottom:18px;">
+      <div class="view-title">${escapeHtml(card.title || `${currentPerson.nachname}, ${currentPerson.vorname}`)}</div>
+      <div style="font-size:15px; opacity:.9; margin-bottom:10px;">
+        ${escapeHtml(subtitle)}
+      </div>
+      <div class="badges-row">
+        ${(Array.isArray(card.badges) ? card.badges : []).map(b => `<span class="badge info">${escapeHtml(b)}</span>`).join("")}
+        ${state.kind ? `<span class="badge gray">${escapeHtml(state.kind)}</span>` : ""}
+        ${extraBadges.map(b => `<span class="badge success">${escapeHtml(b)}</span>`).join("")}
+      </div>
+      ${
+        extraLines.length
+          ? `<div style="display:grid; gap:6px; margin-top:10px;">
+              ${extraLines.map(line => `<div style="font-size:14px;">${escapeHtml(line)}</div>`).join("")}
+            </div>`
+          : ""
+      }
+      <div style="display:flex; flex-wrap:wrap; gap:8px; margin-top:14px;">
+        <button class="jump-view" data-jump="boert">Bört</button>
+        <button class="jump-view" data-jump="seelotse">Seelotse</button>
+        <button class="jump-view" data-jump="graph">Graph</button>
+        <button class="jump-view" data-jump="short">Short</button>
+        <button class="jump-view" data-jump="long">Long</button>
+      </div>
+    </div>
+  `;
+}
+
+function renderStateCard(state, bundle, card, statusInfo) {
+  return `
+    <div class="card expanded">
+      <div class="card-header">
+        <strong>Zustand</strong>
+        <span class="expand-icon">▼</span>
+      </div>
+      <div class="card-content" style="display:block;">
+        ${detailRow("Art", state.kind || "—")}
+        ${detailRow("Quelle", state.source || "—")}
+        ${detailRow("Pos", state.pos || card.pos || "—")}
+        ${detailRow("Takt", state.takt || card.takt || "—")}
+        ${detailRow("Q", bundle.q_gruppe || card.q_gruppe || "—")}
+        ${detailRow("Zuletzt", statusInfo.zuletzt || "—")}
+      </div>
+    </div>
+  `;
+}
+
+function renderStatusCard(statusInfo, statusSnap) {
+  return `
+    <div class="card expanded">
+      <div class="card-header">
+        <strong>Status / Urlaub</strong>
+        <span class="expand-icon">▼</span>
+      </div>
+      <div class="card-content" style="display:block;">
+        ${detailRow("Willkommen", statusInfo.willkommen || "—")}
+        ${detailRow("Zuletzt", statusInfo.zuletzt || "—")}
+        ${detailRow("Urlaub", statusInfo.naechster_urlaub || "—")}
+        ${detailRow("Status-Datei", statusSnap.generated_at || "—")}
+      </div>
+    </div>
+  `;
+}
+
+function renderWorkstartCard(workstart) {
+  return `
+    <div class="card expanded">
+      <div class="card-header">
+        <strong>Workstart</strong>
+        <span class="expand-icon">▼</span>
+      </div>
+      <div class="card-content" style="display:block;">
+        ${
+          workstart
+            ? [
+                detailRow("Berechnet", workstart.ts_calc || "—"),
+                detailRow("Pos", valueOrDash(workstart.pos)),
+                detailRow("Meldung", workstart.from_meldung || "—"),
+                detailRow("Meldung alt", workstart.from_meldung_alt || "—"),
+                detailRow("Calc /2", workstart.calc_div2 || "—"),
+                detailRow("Calc /3", workstart.calc_div3 || "—"),
+              ].join("")
+            : '<div style="opacity:.7;">Kein Workstart-Eintrag vorhanden</div>'
+        }
+      </div>
+    </div>
+  `;
+}
+
+function renderBoertFocusCard(boert, boertData, tauschpartnerCount) {
+  return renderPrimaryCard(
+    "Gesamtbört / Tauschpartner",
+    renderBoertFocusInner(boert, boertData, tauschpartnerCount)
+  );
+}
+
+function renderBoertFocusInner(boert, boertData, tauschpartnerCount) {
+  const firstTp = Array.isArray(boertData?.tauschpartner) && boertData.tauschpartner.length
+    ? boertData.tauschpartner[0]
+    : null;
+
+  return `
+    ${detailRow("Bört-Eintrag", valueOrDash(boert.entry_count))}
+    ${detailRow("Tauschpartner", valueOrDash(tauschpartnerCount))}
+    ${
+      boert.entry
+        ? [
+            detailRow("Was", boert.entry.was || "—"),
+            detailRow("Zeit", boert.entry.zeit || "—"),
+            detailRow("Pfeil", boert.entry.arrow || "—"),
+            detailRow("Bemerkung", boert.entry.bemerkung || "—"),
+          ].join("")
+        : '<div style="opacity:.7;">Kein aktueller Gesamtbört-Eintrag</div>'
+    }
+    ${firstTp ? `<hr style="border:none; border-top:1px solid #374151; margin:10px 0;">` : ""}
+    ${firstTp ? detailRow("1. TP", `${firstTp.vorname || ""} ${firstTp.nachname || ""}`.trim() || "—") : ""}
+    ${firstTp ? detailRow("TP Pos", firstTp.pos || "—") : ""}
+    ${firstTp ? detailRow("TP Pfeil", firstTp.arrow || firstTp.richtung || "—") : ""}
+  `;
+}
+
+function renderSeelotseShipCard(seelotsen, firstSeelotse, firstShip, firstShipSummary) {
+  return renderPrimaryCard(
+    "Seelotse / Schiff",
+    renderSeelotseShipInner(seelotsen, firstSeelotse, firstShip, firstShipSummary)
+  );
+}
+
+function renderSeelotseShipInner(seelotsen, firstSeelotse, firstShip, firstShipSummary) {
+  return `
+    ${detailRow("Seelotsen-Einträge", valueOrDash(seelotsen.entry_count))}
+    ${detailRow("Aufgabe", firstSeelotse?.aufgabe || "—")}
+    ${detailRow("Fahrzeug", firstSeelotse?.fahrzeug || "—")}
+    ${detailRow("Route", buildRoute(firstSeelotse?.from, firstSeelotse?.to))}
+    ${detailRow("Schiff", firstShip?.name || "—")}
+    ${detailRow("VG", firstShipSummary.vg || "—")}
+    ${detailRow("Tiefgang", firstShipSummary.draft || "—")}
+    ${detailRow("ETA Schleuse", firstShipSummary.eta_schleuse || "—")}
+    ${detailRow("ETA RÜB", firstShipSummary.eta_rueb || "—")}
+  `;
+}
+
+function renderLinkedShipsCard(relatedShips) {
+  return `
+    <div class="card expanded">
+      <div class="card-header">
+        <strong>Verknüpfte Schiffe</strong>
+        <span class="expand-icon">▼</span>
+      </div>
+      <div class="card-content" style="display:block;">
+        ${
+          relatedShips.length
+            ? relatedShips.slice(0, 3).map(ship => {
+                const s = ship.summary || {};
+                return `
+                  <div style="padding:10px 0; border-bottom:1px solid #374151;">
+                    <div style="font-weight:600; margin-bottom:6px;">${escapeHtml(ship.name || "—")}</div>
+                    ${detailRow("Richtung", s.zulauf_richtung || "—")}
+                    ${detailRow("Queue", s.queue_title || "—")}
+                    ${detailRow("ETA Schleuse", s.eta_schleuse || "—")}
+                    ${detailRow("ETA RÜB", s.eta_rueb || "—")}
+                    ${detailRow("VG", s.vg || "—")}
+                    ${detailRow("Q Schiff", s.q_gruppe || "—")}
+                    ${detailRow("Tiefgang", s.draft || "—")}
+                  </div>
+                `;
+              }).join("")
+            : '<div style="opacity:.7;">Keine verknüpften Schiffe</div>'
+        }
+      </div>
+    </div>
+  `;
+}
+
+function renderPrimaryCard(title, innerHtml) {
+  return `
+    <div class="card expanded">
+      <div class="card-header">
+        <strong>${escapeHtml(title)}</strong>
+        <span class="expand-icon">▼</span>
+      </div>
+      <div class="card-content" style="display:block;">
+        ${innerHtml}
+      </div>
+    </div>
+  `;
+}
+
+function renderSecondaryCard(title, innerHtml, note = "") {
+  return `
+    <div class="card expanded">
+      <div class="card-header">
+        <strong>${escapeHtml(title)}</strong>
+        <span class="expand-icon">▼</span>
+      </div>
+      <div class="card-content" style="display:block;">
+        ${note ? `<div style="font-size:12px; opacity:.65; margin-bottom:8px;">${escapeHtml(note)}</div>` : ""}
+        ${innerHtml}
+      </div>
+    </div>
+  `;
 }
 
 function renderSourceMeta(sourceMeta) {
@@ -846,6 +997,15 @@ async function safeJsonFromSettled(result) {
   } catch {
     return null;
   }
+}
+
+function normalizeStateKind(kind) {
+  const k = String(kind || "").toLowerCase();
+  if (k.includes("gesamt")) return "gesamtboert";
+  if (k.includes("boert")) return "gesamtboert";
+  if (k.includes("see")) return "seelotsen";
+  if (k.includes("lotse")) return "seelotsen";
+  return "";
 }
 
 function buildRoute(from, to) {
