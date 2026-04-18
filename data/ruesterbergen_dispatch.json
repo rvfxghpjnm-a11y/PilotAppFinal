@@ -1,0 +1,899 @@
+{
+  "generated_at": "2026-04-18T13:11:51",
+  "rules_version": "v4",
+  "rules": [
+    "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
+    "Lotsen nur mit Ziel RÜB, RDP oder KRH",
+    "Ein Lotse ist nur nutzbar, wenn ETA RÜB seines aktuell zugeteilten Schiffes vor ETA RÜB des neuen Schiffes liegt",
+    "Variante A ist korrekt: Q0 darf alles fahren",
+    "Für Q > 0 gilt zusätzlich: Lotse_Q <= Schiff_Q",
+    "Älteste Arbeitszeit gewinnt",
+    "Fehlende Quali = 0",
+    "Jeder Lotse wird nur einmal vergeben",
+    "Lotsen ohne ETA RÜB ihres aktuellen Schiffes werden separat sichtbar gehalten, aber nicht automatisch disponiert"
+  ],
+  "source_meta": {
+    "meldungen_ruesterbergen": {
+      "file": "Meldungen_Ruesterbergen.json",
+      "exists": true
+    },
+    "seelotsen": {
+      "file": "Seelotsen.json",
+      "exists": true
+    },
+    "schiffe_merged": {
+      "file": "schiffe_merged.json",
+      "exists": true
+    },
+    "q_gruppen_lotsen": {
+      "file": "q_gruppen_lotsen.json",
+      "exists": true
+    }
+  },
+  "counts": {
+    "ships_for_ruesterbergen": 7,
+    "pilots_total": 6,
+    "pilots_dispatchable": 5,
+    "pilots_visible_only": 1,
+    "assignments": 5,
+    "unassigned_ships": 2,
+    "unused_pilots": 0
+  },
+  "ships": [
+    {
+      "ship_key": "LADY HANNEKE",
+      "ship_name": "LADY HANNEKE",
+      "eta_rueb": "2026-04-18 14:51",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 5,
+      "meldung": {
+        "nr": "1",
+        "time": "Sat Apr 18 14:40:00 CEST 2026",
+        "draft": "5.6",
+        "q_gruppe": "5",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "5",
+        "vg": "3",
+        "draft": "5.60",
+        "length_m": "98.2",
+        "beam_m": "13.4",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "P",
+        "pilot_1_name": "Gehrig, Matthias",
+        "travel_status": "SAILING_NOK",
+        "makler": "UCA",
+        "dangerous_vessel": "-",
+        "type_of_loading": "Stueckgueter"
+      }
+    },
+    {
+      "ship_key": "ALEXANDER B",
+      "ship_name": "ALEXANDER B",
+      "eta_rueb": "2026-04-18 14:55",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 1,
+      "meldung": {
+        "nr": "2",
+        "time": "Sat Apr 18 14:55:00 CEST 2026",
+        "draft": "7.7",
+        "q_gruppe": "1",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "1",
+        "draft": "7.7"
+      }
+    },
+    {
+      "ship_key": "INA LEHMANN",
+      "ship_name": "INA LEHMANN",
+      "eta_rueb": "2026-04-18 17:07",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 4,
+      "meldung": {
+        "nr": "3",
+        "time": "Sat Apr 18 16:30:00 CEST 2026",
+        "draft": "5.6",
+        "q_gruppe": "4",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "4",
+        "vg": "3",
+        "draft": "5.60",
+        "length_m": "89.98",
+        "beam_m": "15.200",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "false",
+        "pilot_status": "P",
+        "pilot_1_name": "Babinsky, Ralf",
+        "travel_status": "SAILING_NOK",
+        "makler": "NIK",
+        "dangerous_vessel": "-",
+        "type_of_loading": "Holz"
+      }
+    },
+    {
+      "ship_key": "MONA SWAN",
+      "ship_name": "MONA SWAN",
+      "eta_rueb": "2026-04-18 17:11",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 3,
+      "meldung": {
+        "nr": "4",
+        "time": "Sat Apr 18 16:35:00 CEST 2026",
+        "draft": "5.7",
+        "q_gruppe": "3",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "3",
+        "vg": "4",
+        "draft": "5.70",
+        "length_m": "129.750",
+        "beam_m": "19.63",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "U",
+        "pilot_1_name": "B�pple, Lennart",
+        "travel_status": "SAILING_NOK",
+        "makler": "UCA",
+        "dangerous_vessel": "-",
+        "type_of_loading": "Ballastfahrt"
+      }
+    },
+    {
+      "ship_key": "NIMBUS",
+      "ship_name": "NIMBUS",
+      "eta_rueb": "2026-04-18 17:14",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 4,
+      "meldung": {
+        "nr": "5",
+        "time": "Sat Apr 18 16:35:00 CEST 2026",
+        "draft": "5.2",
+        "q_gruppe": "4",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "4",
+        "vg": "3",
+        "draft": "5.20",
+        "length_m": "119.100",
+        "beam_m": "16.9",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "U",
+        "pilot_1_name": "Schr�der, Kay",
+        "travel_status": "SAILING_NOK",
+        "makler": "UCA",
+        "dangerous_vessel": "-",
+        "type_of_loading": "Ballast"
+      }
+    },
+    {
+      "ship_key": "SVENDBORG",
+      "ship_name": "SVENDBORG",
+      "eta_rueb": "2026-04-18 17:17",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 1,
+      "meldung": {
+        "nr": "6",
+        "time": "Sat Apr 18 16:35:00 CEST 2026",
+        "draft": "8.5",
+        "q_gruppe": "1",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "1",
+        "vg": "5",
+        "draft": "8.50",
+        "length_m": "157.93",
+        "beam_m": "23.500",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "U",
+        "pilot_1_name": "Hentschke, Sven-Patrick",
+        "travel_status": "SAILING_NOK",
+        "makler": "UCA",
+        "dangerous_vessel": "-",
+        "type_of_loading": "Container"
+      }
+    },
+    {
+      "ship_key": "MAINTAL",
+      "ship_name": "MAINTAL",
+      "eta_rueb": "2026-04-18 17:20",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 5,
+      "meldung": {
+        "nr": "7",
+        "time": "Sat Apr 18 16:35:00 CEST 2026",
+        "draft": "6.1",
+        "q_gruppe": "5",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "5",
+        "vg": "3",
+        "draft": "6.10",
+        "length_m": "87.83",
+        "beam_m": "12.800",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "T",
+        "pilot_1_name": "Lilienthal, Andreas",
+        "travel_status": "SAILING_NOK",
+        "makler": "UCA",
+        "dangerous_vessel": "-",
+        "type_of_loading": "Bulk"
+      }
+    }
+  ],
+  "pilots": [
+    {
+      "pilot_key": "domeier_stefan",
+      "vorname": "Stefan",
+      "nachname": "Domeier",
+      "pilot_name": "Domeier, Stefan",
+      "abteilungszeit": "2026-04-18 07:42",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "aufgabe": "Kanalbört",
+      "from": "HOR",
+      "to": "RÜB",
+      "nr": 11,
+      "raw_time": "Sat Apr 18 07:42:00 CEST 2026",
+      "current_ship_name": "MAUREEN S",
+      "current_ship_eta_rueb": "2026-04-18 12:52",
+      "current_ship_q": 0,
+      "current_ship_route": "HOR → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen"
+    },
+    {
+      "pilot_key": "hewig_marius paul",
+      "vorname": "Marius Paul",
+      "nachname": "Hewig",
+      "pilot_name": "Hewig, Marius Paul",
+      "abteilungszeit": "2026-04-18 08:25",
+      "pilot_q": 3,
+      "q_source": "q_gruppen_lotsen.entries",
+      "aufgabe": "Kanalbört",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 9,
+      "raw_time": "Sat Apr 18 08:25:00 CEST 2026",
+      "current_ship_name": "ANINA",
+      "current_ship_eta_rueb": "2026-04-18 13:26",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen"
+    },
+    {
+      "pilot_key": "suermann_nik",
+      "vorname": "Nik",
+      "nachname": "Suermann",
+      "pilot_name": "Suermann, Nik",
+      "abteilungszeit": "2026-04-18 09:14",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "aufgabe": "Kanalbört",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 8,
+      "raw_time": "Sat Apr 18 09:14:00 CEST 2026",
+      "current_ship_name": "CELLUS",
+      "current_ship_eta_rueb": "2026-04-18 13:51",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen"
+    },
+    {
+      "pilot_key": "wachsmuth_martin",
+      "vorname": "Martin",
+      "nachname": "Wachsmuth",
+      "pilot_name": "Wachsmuth, Martin",
+      "abteilungszeit": "2026-04-18 09:51",
+      "pilot_q": 4,
+      "q_source": "q_gruppen_lotsen.entries",
+      "aufgabe": "Kanalbört",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 7,
+      "raw_time": "Sat Apr 18 09:51:00 CEST 2026",
+      "current_ship_name": "BAYMAR",
+      "current_ship_eta_rueb": "2026-04-18 14:10",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen"
+    },
+    {
+      "pilot_key": "spiekermann_fred",
+      "vorname": "Fred",
+      "nachname": "Spiekermann",
+      "pilot_name": "Spiekermann, Fred",
+      "abteilungszeit": "2026-04-18 11:18",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "aufgabe": "Kanalbört",
+      "from": "HOR",
+      "to": "RÜB",
+      "nr": 4,
+      "raw_time": "Sat Apr 18 11:18:00 CEST 2026",
+      "current_ship_name": "SIMON B",
+      "current_ship_eta_rueb": "2026-04-18 16:00",
+      "current_ship_q": 0,
+      "current_ship_route": "HOR → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen"
+    },
+    {
+      "pilot_key": "steinbach_daniel",
+      "vorname": "Daniel",
+      "nachname": "Steinbach",
+      "pilot_name": "Steinbach, Daniel",
+      "abteilungszeit": "2026-04-18 11:53",
+      "pilot_q": 0,
+      "q_source": "fallback_q0",
+      "aufgabe": "Kanalbört",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 1,
+      "raw_time": "Sat Apr 18 11:53:00 CEST 2026",
+      "current_ship_name": "WILSON ECO 2",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen"
+    }
+  ],
+  "dispatchable_pilots": [
+    {
+      "pilot_key": "domeier_stefan",
+      "vorname": "Stefan",
+      "nachname": "Domeier",
+      "pilot_name": "Domeier, Stefan",
+      "abteilungszeit": "2026-04-18 07:42",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "aufgabe": "Kanalbört",
+      "from": "HOR",
+      "to": "RÜB",
+      "nr": 11,
+      "raw_time": "Sat Apr 18 07:42:00 CEST 2026",
+      "current_ship_name": "MAUREEN S",
+      "current_ship_eta_rueb": "2026-04-18 12:52",
+      "current_ship_q": 0,
+      "current_ship_route": "HOR → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen"
+    },
+    {
+      "pilot_key": "hewig_marius paul",
+      "vorname": "Marius Paul",
+      "nachname": "Hewig",
+      "pilot_name": "Hewig, Marius Paul",
+      "abteilungszeit": "2026-04-18 08:25",
+      "pilot_q": 3,
+      "q_source": "q_gruppen_lotsen.entries",
+      "aufgabe": "Kanalbört",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 9,
+      "raw_time": "Sat Apr 18 08:25:00 CEST 2026",
+      "current_ship_name": "ANINA",
+      "current_ship_eta_rueb": "2026-04-18 13:26",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen"
+    },
+    {
+      "pilot_key": "suermann_nik",
+      "vorname": "Nik",
+      "nachname": "Suermann",
+      "pilot_name": "Suermann, Nik",
+      "abteilungszeit": "2026-04-18 09:14",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "aufgabe": "Kanalbört",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 8,
+      "raw_time": "Sat Apr 18 09:14:00 CEST 2026",
+      "current_ship_name": "CELLUS",
+      "current_ship_eta_rueb": "2026-04-18 13:51",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen"
+    },
+    {
+      "pilot_key": "wachsmuth_martin",
+      "vorname": "Martin",
+      "nachname": "Wachsmuth",
+      "pilot_name": "Wachsmuth, Martin",
+      "abteilungszeit": "2026-04-18 09:51",
+      "pilot_q": 4,
+      "q_source": "q_gruppen_lotsen.entries",
+      "aufgabe": "Kanalbört",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 7,
+      "raw_time": "Sat Apr 18 09:51:00 CEST 2026",
+      "current_ship_name": "BAYMAR",
+      "current_ship_eta_rueb": "2026-04-18 14:10",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen"
+    },
+    {
+      "pilot_key": "spiekermann_fred",
+      "vorname": "Fred",
+      "nachname": "Spiekermann",
+      "pilot_name": "Spiekermann, Fred",
+      "abteilungszeit": "2026-04-18 11:18",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "aufgabe": "Kanalbört",
+      "from": "HOR",
+      "to": "RÜB",
+      "nr": 4,
+      "raw_time": "Sat Apr 18 11:18:00 CEST 2026",
+      "current_ship_name": "SIMON B",
+      "current_ship_eta_rueb": "2026-04-18 16:00",
+      "current_ship_q": 0,
+      "current_ship_route": "HOR → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen"
+    }
+  ],
+  "visible_but_not_dispatchable_pilots": [
+    {
+      "pilot_key": "steinbach_daniel",
+      "pilot_name": "Steinbach, Daniel",
+      "pilot_q": 0,
+      "abteilungszeit": "2026-04-18 11:53",
+      "aufgabe": "Kanalbört",
+      "from": "HOS",
+      "to": "RÜB",
+      "current_ship_name": "WILSON ECO 2",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
+    }
+  ],
+  "assignments": [
+    {
+      "ship_key": "LADY HANNEKE",
+      "ship_name": "LADY HANNEKE",
+      "eta_rueb": "2026-04-18 14:51",
+      "ship_q": 5,
+      "assigned_pilot": "Domeier, Stefan",
+      "assigned_pilot_q": 0,
+      "assigned_abteilungszeit": "2026-04-18 07:42",
+      "assigned_current_ship_name": "MAUREEN S",
+      "assigned_current_ship_eta_rueb": "2026-04-18 12:52",
+      "reason": "älteste Arbeitszeit unter allen Lotsen, deren aktuelles Schiff früher in RÜB ankommt und deren Quali passt",
+      "candidate_count": 4,
+      "candidates": [
+        {
+          "pilot_name": "Domeier, Stefan",
+          "pilot_q": 0,
+          "abteilungszeit": "2026-04-18 07:42",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "MAUREEN S",
+          "current_ship_eta_rueb": "2026-04-18 12:52"
+        },
+        {
+          "pilot_name": "Hewig, Marius Paul",
+          "pilot_q": 3,
+          "abteilungszeit": "2026-04-18 08:25",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ANINA",
+          "current_ship_eta_rueb": "2026-04-18 13:26"
+        },
+        {
+          "pilot_name": "Suermann, Nik",
+          "pilot_q": 0,
+          "abteilungszeit": "2026-04-18 09:14",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "CELLUS",
+          "current_ship_eta_rueb": "2026-04-18 13:51"
+        },
+        {
+          "pilot_name": "Wachsmuth, Martin",
+          "pilot_q": 4,
+          "abteilungszeit": "2026-04-18 09:51",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "BAYMAR",
+          "current_ship_eta_rueb": "2026-04-18 14:10"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Spiekermann, Fred",
+          "reason": "aktuelles Schiff kommt nicht vor dem neuen Schiff in RÜB an",
+          "pilot_current_ship": "SIMON B",
+          "pilot_current_ship_eta_rueb": "2026-04-18 16:00",
+          "ship_eta_rueb": "2026-04-18 14:51"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "1",
+          "time": "Sat Apr 18 14:40:00 CEST 2026",
+          "draft": "5.6",
+          "q_gruppe": "5",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "HOS → KLT",
+          "routes": [
+            "HOS → KLT",
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "5",
+          "vg": "3",
+          "draft": "5.60",
+          "length_m": "98.2",
+          "beam_m": "13.4",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "P",
+          "pilot_1_name": "Gehrig, Matthias",
+          "travel_status": "SAILING_NOK",
+          "makler": "UCA",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Stueckgueter"
+        }
+      }
+    },
+    {
+      "ship_key": "ALEXANDER B",
+      "ship_name": "ALEXANDER B",
+      "eta_rueb": "2026-04-18 14:55",
+      "ship_q": 1,
+      "assigned_pilot": "Suermann, Nik",
+      "assigned_pilot_q": 0,
+      "assigned_abteilungszeit": "2026-04-18 09:14",
+      "assigned_current_ship_name": "CELLUS",
+      "assigned_current_ship_eta_rueb": "2026-04-18 13:51",
+      "reason": "älteste Arbeitszeit unter allen Lotsen, deren aktuelles Schiff früher in RÜB ankommt und deren Quali passt",
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "pilot_name": "Suermann, Nik",
+          "pilot_q": 0,
+          "abteilungszeit": "2026-04-18 09:14",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "CELLUS",
+          "current_ship_eta_rueb": "2026-04-18 13:51"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Hewig, Marius Paul",
+          "reason": "Quali passt nicht (3 > 1)",
+          "pilot_q": 3,
+          "ship_q": 1
+        },
+        {
+          "pilot_name": "Wachsmuth, Martin",
+          "reason": "Quali passt nicht (4 > 1)",
+          "pilot_q": 4,
+          "ship_q": 1
+        },
+        {
+          "pilot_name": "Spiekermann, Fred",
+          "reason": "aktuelles Schiff kommt nicht vor dem neuen Schiff in RÜB an",
+          "pilot_current_ship": "SIMON B",
+          "pilot_current_ship_eta_rueb": "2026-04-18 16:00",
+          "ship_eta_rueb": "2026-04-18 14:55"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "2",
+          "time": "Sat Apr 18 14:55:00 CEST 2026",
+          "draft": "7.7",
+          "q_gruppe": "1",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "HOS → KLT",
+          "routes": [
+            "HOS → KLT",
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "1",
+          "draft": "7.7"
+        }
+      }
+    },
+    {
+      "ship_key": "INA LEHMANN",
+      "ship_name": "INA LEHMANN",
+      "eta_rueb": "2026-04-18 17:07",
+      "ship_q": 4,
+      "assigned_pilot": "Hewig, Marius Paul",
+      "assigned_pilot_q": 3,
+      "assigned_abteilungszeit": "2026-04-18 08:25",
+      "assigned_current_ship_name": "ANINA",
+      "assigned_current_ship_eta_rueb": "2026-04-18 13:26",
+      "reason": "älteste Arbeitszeit unter allen Lotsen, deren aktuelles Schiff früher in RÜB ankommt und deren Quali passt",
+      "candidate_count": 3,
+      "candidates": [
+        {
+          "pilot_name": "Hewig, Marius Paul",
+          "pilot_q": 3,
+          "abteilungszeit": "2026-04-18 08:25",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ANINA",
+          "current_ship_eta_rueb": "2026-04-18 13:26"
+        },
+        {
+          "pilot_name": "Wachsmuth, Martin",
+          "pilot_q": 4,
+          "abteilungszeit": "2026-04-18 09:51",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "BAYMAR",
+          "current_ship_eta_rueb": "2026-04-18 14:10"
+        },
+        {
+          "pilot_name": "Spiekermann, Fred",
+          "pilot_q": 0,
+          "abteilungszeit": "2026-04-18 11:18",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "SIMON B",
+          "current_ship_eta_rueb": "2026-04-18 16:00"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "3",
+          "time": "Sat Apr 18 16:30:00 CEST 2026",
+          "draft": "5.6",
+          "q_gruppe": "4",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "HOS → KLT",
+          "routes": [
+            "HOS → KLT",
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "4",
+          "vg": "3",
+          "draft": "5.60",
+          "length_m": "89.98",
+          "beam_m": "15.200",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "false",
+          "pilot_status": "P",
+          "pilot_1_name": "Babinsky, Ralf",
+          "travel_status": "SAILING_NOK",
+          "makler": "NIK",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Holz"
+        }
+      }
+    },
+    {
+      "ship_key": "MONA SWAN",
+      "ship_name": "MONA SWAN",
+      "eta_rueb": "2026-04-18 17:11",
+      "ship_q": 3,
+      "assigned_pilot": "Spiekermann, Fred",
+      "assigned_pilot_q": 0,
+      "assigned_abteilungszeit": "2026-04-18 11:18",
+      "assigned_current_ship_name": "SIMON B",
+      "assigned_current_ship_eta_rueb": "2026-04-18 16:00",
+      "reason": "älteste Arbeitszeit unter allen Lotsen, deren aktuelles Schiff früher in RÜB ankommt und deren Quali passt",
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "pilot_name": "Spiekermann, Fred",
+          "pilot_q": 0,
+          "abteilungszeit": "2026-04-18 11:18",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "SIMON B",
+          "current_ship_eta_rueb": "2026-04-18 16:00"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Wachsmuth, Martin",
+          "reason": "Quali passt nicht (4 > 3)",
+          "pilot_q": 4,
+          "ship_q": 3
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "4",
+          "time": "Sat Apr 18 16:35:00 CEST 2026",
+          "draft": "5.7",
+          "q_gruppe": "3",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "HOS → KLT",
+          "routes": [
+            "HOS → KLT",
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "3",
+          "vg": "4",
+          "draft": "5.70",
+          "length_m": "129.750",
+          "beam_m": "19.63",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "U",
+          "pilot_1_name": "B�pple, Lennart",
+          "travel_status": "SAILING_NOK",
+          "makler": "UCA",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Ballastfahrt"
+        }
+      }
+    },
+    {
+      "ship_key": "NIMBUS",
+      "ship_name": "NIMBUS",
+      "eta_rueb": "2026-04-18 17:14",
+      "ship_q": 4,
+      "assigned_pilot": "Wachsmuth, Martin",
+      "assigned_pilot_q": 4,
+      "assigned_abteilungszeit": "2026-04-18 09:51",
+      "assigned_current_ship_name": "BAYMAR",
+      "assigned_current_ship_eta_rueb": "2026-04-18 14:10",
+      "reason": "älteste Arbeitszeit unter allen Lotsen, deren aktuelles Schiff früher in RÜB ankommt und deren Quali passt",
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "pilot_name": "Wachsmuth, Martin",
+          "pilot_q": 4,
+          "abteilungszeit": "2026-04-18 09:51",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "BAYMAR",
+          "current_ship_eta_rueb": "2026-04-18 14:10"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "5",
+          "time": "Sat Apr 18 16:35:00 CEST 2026",
+          "draft": "5.2",
+          "q_gruppe": "4",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "HOS → KLT",
+          "routes": [
+            "HOS → KLT",
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "4",
+          "vg": "3",
+          "draft": "5.20",
+          "length_m": "119.100",
+          "beam_m": "16.9",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "U",
+          "pilot_1_name": "Schr�der, Kay",
+          "travel_status": "SAILING_NOK",
+          "makler": "UCA",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Ballast"
+        }
+      }
+    }
+  ],
+  "unassigned_ships": [
+    {
+      "ship_key": "SVENDBORG",
+      "ship_name": "SVENDBORG",
+      "eta_rueb": "2026-04-18 17:17",
+      "ship_q": 1,
+      "reason": "kein passender Lotse verfügbar"
+    },
+    {
+      "ship_key": "MAINTAL",
+      "ship_name": "MAINTAL",
+      "eta_rueb": "2026-04-18 17:20",
+      "ship_q": 5,
+      "reason": "kein passender Lotse verfügbar"
+    }
+  ],
+  "unused_pilots": []
+}
