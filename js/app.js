@@ -932,10 +932,20 @@ function bindBoertRangeButtons() {
 // ---------------------------------------------------------
 // SEELOTSE VIEW
 // ---------------------------------------------------------
+// ===== BEGIN ERSATZ-FUNKTION loadSeelotse() =====
 async function loadSeelotse() {
   try {
-    const res = await fetch(`data/${currentPerson.key}_seelotse.json`, { cache: "no-store" });
-    const data = await res.json();
+    const [resSeelotse, resDispatch] = await Promise.allSettled([
+      fetch(`data/${currentPerson.key}_seelotse.json`, { cache: "no-store" }),
+      fetch("data/ruesterbergen_dispatch.json", { cache: "no-store" }),
+    ]);
+
+    if (resSeelotse.status !== "fulfilled" || !resSeelotse.value.ok) {
+      throw new Error(`${currentPerson.key}_seelotse.json nicht ladbar`);
+    }
+
+    const data = await resSeelotse.value.json();
+    const dispatchData = await safeJsonFromSettled(resDispatch);
 
     let html = '<div style="max-width: 1200px;">';
 
@@ -955,10 +965,21 @@ async function loadSeelotse() {
       html += `<span class="badge info">See: ${escapeHtml(data.gruppen.see)}</span>`;
     }
 
+    if (dispatchData?.counts) {
+      html += `<span class="badge info">RÜB-Schiffe: ${escapeHtml(dispatchData.counts.ships_for_ruesterbergen)}</span>`;
+      html += `<span class="badge success">Zuordnungen: ${escapeHtml(dispatchData.counts.assignments)}</span>`;
+      if (dispatchData.counts.unassigned_ships > 0) {
+        html += `<span class="badge gray">Offen: ${escapeHtml(dispatchData.counts.unassigned_ships)}</span>`;
+      }
+    }
+
     html += '</div>';
     html += `<div class="meta-info">Generiert: ${formatDateTime(data.generated_at)}</div>`;
     html += '</div>';
 
+    // -----------------------------------------------------
+    // SEELOTSEN-LISTE
+    // -----------------------------------------------------
     if (data.lotsen && data.lotsen.length > 0) {
       html += '<div class="section-header">Lotsen</div>';
 
@@ -1002,6 +1023,9 @@ async function loadSeelotse() {
       });
     }
 
+    // -----------------------------------------------------
+    // BISHERIGE RÜSTERBERGEN-LISTE AUS SEELOTSE-DATEI
+    // -----------------------------------------------------
     if (data.ruesterbergen && data.ruesterbergen.length > 0) {
       html += '<div class="section-header">Rüsterbergen - Kommende Schiffe</div>';
       html += '<div class="ruesterbergen-list">';
@@ -1018,14 +1042,161 @@ async function loadSeelotse() {
       html += '</div>';
     }
 
+    // -----------------------------------------------------
+    // NEU: DISPATCH-ÜBERSICHT
+    // -----------------------------------------------------
+    if (dispatchData) {
+      html += '<div class="section-header">Rüsterbergen-Disposition</div>';
+
+      if (Array.isArray(dispatchData.ships) && dispatchData.ships.length > 0) {
+        dispatchData.ships.forEach((ship, idx) => {
+          const assignment = Array.isArray(dispatchData.assignments)
+            ? dispatchData.assignments.find(a => a.ship_key === ship.ship_key)
+            : null;
+
+          html += `<div class="lotse-item expanded" data-dispatch-ship="${idx}">`;
+          html += '<div class="lotse-header">';
+          html += `<div class="lotse-nr">${escapeHtml(ship.meldung?.nr || '—')}</div>`;
+          html += `<div class="lotse-name">${escapeHtml(ship.ship_name || '—')}</div>`;
+          html += `<div class="lotse-info">ETA RÜB: ${escapeHtml(ship.eta_rueb || '—')}</div>`;
+          html += `<div class="lotse-info">Q${escapeHtml(ship.ship_q ?? '—')}</div>`;
+          html += `<div class="lotse-info">${escapeHtml(ship.meldung?.route || ship.summary?.route || '—')}</div>`;
+          html += '<span class="expand-icon">▼</span>';
+          html += '</div>';
+
+          html += '<div class="lotse-details" style="display:block;">';
+
+          html += '<div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:8px; margin-top:8px;">';
+          html += detailRow("Meldung Zeit", ship.meldung?.time || "—");
+          html += detailRow("ETA RÜB", ship.eta_rueb || "—");
+          html += detailRow("ETA Quelle", ship.eta_rueb_source || "—");
+          html += detailRow("Q Schiff", ship.ship_q ?? "—");
+          html += detailRow("Tiefgang", ship.summary?.draft || ship.meldung?.draft || "—");
+          html += detailRow("VG", ship.summary?.vg || "—");
+          html += detailRow("Route", ship.summary?.route || ship.meldung?.route || "—");
+          html += detailRow("Status", ship.summary?.travel_status || "—");
+          html += detailRow("Makler", ship.summary?.makler || "—");
+          html += detailRow("Beladung", ship.summary?.type_of_loading || "—");
+          html += '</div>';
+
+          html += '<hr style="border:none; border-top:1px solid #374151; margin:12px 0;">';
+
+          if (assignment) {
+            html += `<div style="font-weight:700; margin-bottom:8px;">Zugeordneter Lotse: ${escapeHtml(assignment.assigned_pilot || '—')}</div>`;
+            html += '<div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:8px;">';
+            html += detailRow("Lotse", assignment.assigned_pilot || "—");
+            html += detailRow("Q Lotse", assignment.assigned_pilot_q ?? "—");
+            html += detailRow("Abteilungszeit", assignment.assigned_abteilungszeit || "—");
+            html += detailRow("Aktuelles Schiff", assignment.assigned_current_ship_name || "—");
+            html += detailRow("Aktuelle ETA RÜB", assignment.assigned_current_ship_eta_rueb || "—");
+            html += detailRow("Begründung", assignment.reason || "—");
+            html += '</div>';
+
+            if (Array.isArray(assignment.candidates) && assignment.candidates.length > 0) {
+              html += '<div style="margin-top:12px; font-weight:700;">Kandidaten</div>';
+              assignment.candidates.forEach(candidate => {
+                html += `
+                  <div style="padding:8px 0; border-bottom:1px solid #374151;">
+                    ${detailRow("Lotse", candidate.pilot_name || "—")}
+                    ${detailRow("Q", candidate.pilot_q ?? "—")}
+                    ${detailRow("Abteilungszeit", candidate.abteilungszeit || "—")}
+                    ${detailRow("Ziel", candidate.to || "—")}
+                    ${detailRow("Aufgabe", candidate.aufgabe || "—")}
+                    ${detailRow("Aktuelles Schiff", candidate.current_ship_name || "—")}
+                    ${detailRow("ETA RÜB aktuell", candidate.current_ship_eta_rueb || "—")}
+                  </div>
+                `;
+              });
+            }
+
+            if (Array.isArray(assignment.excluded) && assignment.excluded.length > 0) {
+              html += '<div style="margin-top:12px; font-weight:700;">Ausgeschlossene Lotsen</div>';
+              assignment.excluded.forEach(ex => {
+                html += `
+                  <div style="padding:8px 0; border-bottom:1px solid #374151;">
+                    ${detailRow("Lotse", ex.pilot_name || "—")}
+                    ${detailRow("Grund", ex.reason || "—")}
+                    ${detailRow("Pilot ETA", ex.pilot_eta || ex.current_ship_eta_rueb || "—")}
+                    ${detailRow("Schiff ETA", ex.ship_eta_rueb || "—")}
+                    ${detailRow("Pilot Q", ex.pilot_q ?? "—")}
+                    ${detailRow("Schiff Q", ex.ship_q ?? "—")}
+                    ${detailRow("Aktuelles Schiff", ex.current_ship_name || "—")}
+                  </div>
+                `;
+              });
+            }
+          } else {
+            html += '<div style="color:#f87171; font-weight:700; margin-bottom:8px;">Kein Lotse zugeordnet</div>';
+
+            const unassigned = Array.isArray(dispatchData.unassigned_ships)
+              ? dispatchData.unassigned_ships.find(u => u.ship_key === ship.ship_key)
+              : null;
+
+            if (unassigned?.reason) {
+              html += detailRow("Grund", unassigned.reason);
+            }
+
+            if (Array.isArray(unassigned?.excluded) && unassigned.excluded.length > 0) {
+              html += '<div style="margin-top:12px; font-weight:700;">Ausgeschlossene Lotsen</div>';
+              unassigned.excluded.forEach(ex => {
+                html += `
+                  <div style="padding:8px 0; border-bottom:1px solid #374151;">
+                    ${detailRow("Lotse", ex.pilot_name || "—")}
+                    ${detailRow("Grund", ex.reason || "—")}
+                    ${detailRow("Pilot ETA", ex.pilot_eta || ex.current_ship_eta_rueb || "—")}
+                    ${detailRow("Schiff ETA", ex.ship_eta_rueb || "—")}
+                    ${detailRow("Pilot Q", ex.pilot_q ?? "—")}
+                    ${detailRow("Schiff Q", ex.ship_q ?? "—")}
+                    ${detailRow("Aktuelles Schiff", ex.current_ship_name || "—")}
+                  </div>
+                `;
+              });
+            }
+          }
+
+          html += '</div>';
+          html += '</div>';
+        });
+      } else {
+        html += '<div style="opacity:.7; padding:8px 0;">Keine Rüsterbergen-Schiffe vorhanden</div>';
+      }
+
+      // Nur sichtbar, nicht disponierbar
+      if (Array.isArray(dispatchData.visible_only_pilots) && dispatchData.visible_only_pilots.length > 0) {
+        html += '<div class="section-header">Nur sichtbar (noch nicht automatisch disponierbar)</div>';
+
+        dispatchData.visible_only_pilots.forEach(pilot => {
+          html += `
+            <div class="card expanded">
+              <div class="card-header">
+                <strong>${escapeHtml(pilot.pilot_name || '—')}</strong>
+                <span class="expand-icon">▼</span>
+              </div>
+              <div class="card-content" style="display:block;">
+                ${detailRow("Abteilungszeit", pilot.abteilungszeit || "—")}
+                ${detailRow("Q", pilot.pilot_q ?? "—")}
+                ${detailRow("Aufgabe", pilot.aufgabe || "—")}
+                ${detailRow("Route", pilot.route || "—")}
+                ${detailRow("Aktuelles Schiff", pilot.current_ship_name || "—")}
+                ${detailRow("ETA RÜB aktuell", pilot.current_ship_eta_rueb || "—")}
+              </div>
+            </div>
+          `;
+        });
+      }
+    }
+
     html += '</div>';
 
     contentEl.innerHTML = html;
 
     document.querySelectorAll('.lotse-item').forEach(item => {
-      item.querySelector('.lotse-header').addEventListener('click', () => {
-        item.classList.toggle('expanded');
-      });
+      const header = item.querySelector('.lotse-header');
+      if (header) {
+        header.addEventListener('click', () => {
+          item.classList.toggle('expanded');
+        });
+      }
     });
 
     statusEl.textContent = "Aktualisiert " + new Date().toLocaleTimeString("de-DE");
@@ -1035,6 +1206,7 @@ async function loadSeelotse() {
     console.error(err);
   }
 }
+// ===== END ERSATZ-FUNKTION loadSeelotse() =====
 
 // ---------------------------------------------------------
 // BÖRT VIEW
