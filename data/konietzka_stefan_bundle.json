@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-08T17:01:02",
+  "generated_at": "2026-04-18T13:12:07",
   "target": {
     "slug": "konietzka_stefan",
     "display_name": "konietzka, stefan",
@@ -8,25 +8,32 @@
     "watch_user_key": "ubgbxnv8qjmbu5mjaoksxahte2725p"
   },
   "state": {
-    "kind": "frei",
-    "source": "status.json",
-    "zuletzt": "07.04.-04:00 KRA",
-    "naechster_urlaub": "13.04.2026"
+    "kind": "seelotsen",
+    "source": "Seelotsen.json",
+    "aufgabe": "Seebört",
+    "fahrzeug": "WL-SEE",
+    "time": "Sat Apr 18 11:00:00 CEST 2026"
   },
   "action_card": {
     "title": "konietzka, stefan",
-    "subtitle": "Frei / Status",
-    "state_kind": "frei",
-    "state_label": "Frei / Status",
+    "subtitle": "Seelotsen",
+    "state_kind": "seelotsen",
+    "state_label": "Seelotsen",
     "q_gruppe": "5",
+    "aufgabe": "Seebört",
+    "fahrzeug": "WL-SEE",
+    "route": "HOS → HOS",
     "workstart_label": "Start: 2026-04-03 18:00",
+    "ship_hint": "WL-SEE",
     "badges": [
-      "Q 5"
+      "Q 5",
+      "Seebört"
     ],
     "lines": [
-      "Zuletzt: 07.04.-04:00 KRA",
-      "Urlaub: 13.04.2026",
-      "Start: 2026-04-03 18:00"
+      "WL-SEE",
+      "HOS → HOS",
+      "Start: 2026-04-03 18:00",
+      "Schiff: WL-SEE"
     ]
   },
   "q_gruppe": "5",
@@ -50,15 +57,52 @@
     "entry_count": 0
   },
   "seelotsen": {
-    "entries": [],
-    "entry_count": 0
+    "entries": [
+      {
+        "nr": 5,
+        "time": "Sat Apr 18 11:00:00 CEST 2026",
+        "nachname": "Konietzka",
+        "vorname": "Stefan",
+        "aufgabe": "Seebört",
+        "fahrzeug": "WL-SEE",
+        "from": "HOS",
+        "to": "HOS"
+      }
+    ],
+    "entry_count": 1
   },
-  "related_ships": [],
+  "related_ships": [
+    {
+      "name": "WL-SEE",
+      "summary": {
+        "name": "WL-SEE",
+        "special_entry": true,
+        "sources": [
+          "meldungen_kiel",
+          "seelotsen"
+        ],
+        "route": "HOS → HOS",
+        "routes": [
+          "HOS → HOS"
+        ],
+        "q_gruppe": "5",
+        "draft": "0.1",
+        "assigned_pilots": [
+          "Konietzka, Stefan"
+        ],
+        "aufgaben": [
+          "Seebört"
+        ],
+        "lotsen_anzahl_kiel": 1,
+        "confirmed_kiel": false
+      }
+    }
+  ],
   "person_files": {
     "status": {
       "file": "konietzka_stefan_status.json",
       "exists": true,
-      "generated_at": "2026-04-08 16:59"
+      "generated_at": "2026-04-18 13:10"
     },
     "pos": {
       "file": "konietzka_stefan_pos.json",
@@ -84,65 +128,65 @@
   },
   "snapshots": {
     "status": {
-      "generated_at": "2026-04-08 16:59",
+      "generated_at": "2026-04-18 13:10",
       "nachname": "konietzka",
       "vorname": "stefan",
       "status": {
         "willkommen": "Willkommen Stefan Konietzka",
-        "zuletzt": "07.04.-04:00 KRA",
-        "naechster_urlaub": "13.04.2026"
+        "zuletzt": "18.04.-11:00 ASS",
+        "naechster_urlaub": "18.05.2026"
       }
     },
     "pos": {
-      "pos": 53
+      "pos": null
     },
     "short": {
       "key": "konietzka_stefan",
-      "status": "boert",
-      "short": "Gesamtbört – Pos 53\n18:00\nPos/2: 21:36 (+1d)\nPos/3: 12:46 (+1d)\nAkt.: 19:06"
+      "status": "seelotse",
+      "short": "Seelotse – Seebört\nWL-SEE\nRoute: HOS → HOS\nAkt.: 13:11"
     },
     "long": {
       "key": "konietzka_stefan",
-      "status": "boert",
-      "long": "Gesamtbört\n----------\nKiel 59 / RÜB 3\n\n 35 | Koch    | Sa07:30 / Sa14:30 / Sa06:46~Sa12:36\n      | ↓   | –                    \n▶53 | Konietzka | 18:00 / 12:46 (+1d)~21:36 (+1d)\n      | –   | –                    \n 54 | Groen   | Sa18:00 / Sa13:06~Sa22:06\n      | ↑$$ | max.takt. 49         \n 65 | Heeren  | Sa16:46~So03:36\n      | ↑$$ | –                    \n\nAkt.: 19:06"
+      "status": "seelotse",
+      "long": "Seelotse\n--------\n   Nr | ETA   | Name        | Fahrzeug         | Route      | Schl | ΔR-S | ΔS-R\n------------------------------------------------------------------------------------------\n\nKanalbört\n---------\n 1  | –     | Steinbach  | WILSON ECO 2 | HOS → RÜB  | –    | –    | –   \n 4  | 16:00 | Spiekerman | SIMON B      | HOR → RÜB  | 20:32 | 04:32 | 02:49\n 7  | 14:10 | Wachsmuth  | BAYMAR       | HOS → RÜB  | 20:28 | 06:18 | 00:59\n 8  | 13:51 | Suermann   | CELLUS       | HOS → RÜB  | 18:19 | 04:28 | 00:40\n 9  | 13:26 | Hewig      | ANINA        | HOS → RÜB  | 18:15 | 04:49 | 00:15\n 10 | 12:51 | Jeske      | HEIKE LEHMAN | RÜB → HOS  | 16:55 | 04:04 | 00:20\n 11 | 12:52 | Domeier    | MAUREEN S    | HOR → RÜB  | 18:11 | 05:19 | 236:04\n 14 | –     | Skairies   | ANTJE K      | RÜB → HOS  | –    | –    | –   \n 15 | 10:19 | Pietsch    | TUNA         | RÜB → HOS  | 13:53 | 03:34 | 02:52\n\nMeldungen Rüsterbergen\n----------------------\nETA  | Schiff            | Q | Route\n----------------------------------------------\n14:51 | LADY HANNEKE      | 5 | RÜB → HOS\n14:55 | ALEXANDER B       | 1 | RÜB → HOS\n17:07 | INA LEHMANN       | 4 | RÜB → HOS\n17:11 | MONA SWAN         | 3 | RÜB → HOS\n17:14 | NIMBUS            | 4 | RÜB → HOS\n17:17 | SVENDBORG         | 1 | RÜB → HOS\n17:20 | MAINTAL           | 5 | RÜB → HOS\n\nAkt.: 13:11"
     }
   },
   "source_meta": {
     "gesamtboert": {
       "file": "Gesamtboert.json",
       "exists": true,
-      "generated_at": "2026-04-08 16:59",
-      "count": 66
+      "generated_at": "2026-04-18 13:10",
+      "count": 76
     },
     "seelotsen": {
       "file": "Seelotsen.json",
       "exists": true,
-      "generated_at": "2026-04-08 17:00",
-      "count": 22
+      "generated_at": "2026-04-18 13:10",
+      "count": 17
     },
     "meldungen_kiel": {
       "file": "Meldungen_Kiel.json",
       "exists": true,
-      "generated_at": "2026-04-08 17:00",
-      "count": 34
+      "generated_at": "2026-04-18 13:11",
+      "count": 57
     },
     "meldungen_ruesterbergen": {
       "file": "Meldungen_Ruesterbergen.json",
       "exists": true,
-      "generated_at": "2026-04-08 17:00",
-      "count": 3
+      "generated_at": "2026-04-18 13:11",
+      "count": 7
     },
     "q_gruppen": {
       "file": "q_gruppen_lotsen.json",
       "exists": true,
-      "generated_at": "2026-04-08T17:00:47",
-      "count": 97
+      "generated_at": "2026-04-18T13:11:51",
+      "count": 118
     },
     "schiffe_merged": {
       "file": "schiffe_merged.json",
       "exists": true,
-      "generated_at": "2026-04-08T17:00:47",
-      "count": 46
+      "generated_at": "2026-04-18T13:11:51",
+      "count": 63
     },
     "workstart_history_json": {
       "file": "workstart_history_konietzka_stefan.json",
