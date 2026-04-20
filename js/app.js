@@ -13,6 +13,7 @@
 
 import { renderWorkstartChart } from "./graph.js";
 import { loadRuesterbergenView } from "./views/ruesterbergen.js";
+import { loadSeelotseView } from "./views/seelotse.js";
 
 console.log("APP.JS LOADED");
 
@@ -176,7 +177,7 @@ function renderView() {
   if (currentView === "short") loadShort();
   if (currentView === "long")  loadLong();
   if (currentView === "graph") loadGraph();
-  if (currentView === "seelotse") loadSeelotse();
+  if (currentView === "seelotse") loadSeelotseView(contentEl, statusEl, detailRow, escapeHtml, formatDateTime, safeJsonFromSettled);
   if (currentView === "ruesterbergen") loadRuesterbergenView(contentEl, statusEl, detailRow, escapeHtml);
   if (currentView === "boert") loadBoert();
 }
@@ -931,53 +932,7 @@ function bindBoertRangeButtons() {
   };
 }
 
-// ---------------------------------------------------------
-// SEELOTSE VIEW
-// ---------------------------------------------------------
-// ===== BEGIN ERSATZ-FUNKTION loadSeelotse() =====
-async function loadSeelotse() {
-  try {
-    const [resSeelotse, resDispatch] = await Promise.allSettled([
-      fetch(`data/${currentPerson.key}_seelotse.json`, { cache: "no-store" }),
-      fetch("data/ruesterbergen_dispatch.json", { cache: "no-store" }),
-    ]);
 
-    if (resSeelotse.status !== "fulfilled" || !resSeelotse.value.ok) {
-      throw new Error(`${currentPerson.key}_seelotse.json nicht ladbar`);
-    }
-
-    const data = await resSeelotse.value.json();
-    const dispatchData = await safeJsonFromSettled(resDispatch);
-
-    let html = '<div style="max-width: 1200px;">';
-
-    html += '<div class="view-header">';
-    html += '<div class="view-title">Seelotse</div>';
-    html += '<div class="badges-row">';
-
-    if (data.status === "in_seelotse") {
-      html += '<span class="badge success">✓ In Seelotse</span>';
-    } else {
-      html += '<span class="badge gray">Nicht in Seelotse</span>';
-    }
-
-    if (data.gruppen) {
-      html += `<span class="badge info">Kanal: ${escapeHtml(data.gruppen.kanal)}</span>`;
-      html += `<span class="badge info">Wach: ${escapeHtml(data.gruppen.wach)}</span>`;
-      html += `<span class="badge info">See: ${escapeHtml(data.gruppen.see)}</span>`;
-    }
-
-    if (dispatchData?.counts) {
-      html += `<span class="badge info">RÜB-Schiffe: ${escapeHtml(dispatchData.counts.ships_for_ruesterbergen)}</span>`;
-      html += `<span class="badge success">Zuordnungen: ${escapeHtml(dispatchData.counts.assignments)}</span>`;
-      if (dispatchData.counts.unassigned_ships > 0) {
-        html += `<span class="badge gray">Offen: ${escapeHtml(dispatchData.counts.unassigned_ships)}</span>`;
-      }
-    }
-
-    html += '</div>';
-    html += `<div class="meta-info">Generiert: ${formatDateTime(data.generated_at)}</div>`;
-    html += '</div>';
 
     // -----------------------------------------------------
     // SEELOTSEN-LISTE
