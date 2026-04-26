@@ -177,7 +177,7 @@ function renderView() {
   if (currentView === "short") loadShort();
   if (currentView === "long")  loadLong();
   if (currentView === "graph") loadGraph();
-  if (currentView === "seelotse") loadSeelotseView(contentEl, statusEl, detailRow, escapeHtml, formatDateTime, safeJsonFromSettled);
+  if (currentView === "seelotse") loadSeelotseView(contentEl, statusEl, detailRow, escapeHtml, formatDateTime, safeJsonFromSettled, currentPerson);
   if (currentView === "ruesterbergen") loadRuesterbergenView(contentEl, statusEl, detailRow, escapeHtml);
   if (currentView === "boert") loadBoert();
 }
@@ -932,9 +932,6 @@ function bindBoertRangeButtons() {
   };
 }
 
-
-
-
 // ---------------------------------------------------------
 // BÖRT VIEW
 // ---------------------------------------------------------
@@ -1439,10 +1436,3 @@ function loadAppState() {
     return null;
   }
 }
-
-
-
-
-
-
-
