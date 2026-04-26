@@ -1,20 +1,15 @@
 /* =========================================================
    PilotAppFinal – app.js
-   Personen ausschließlich aus data/persons.json
-   Dashboard zustandsabhängig:
-   - Gesamtbört: Fokus auf Pos / Takt / Start / TP
-   - Seelotsen: Fokus auf Aufgabe / Fahrzeug / Schiff / ETA
-   - Short / Long / Graph / Seelotse / Bört bleiben erhalten
-   Neu:
-   - Dashboard nutzt die neuen Merge-/WSV-Felder deutlich stärker
-   - Schiffsdaten, Passage, Mooring, Lotse/Steuerer, Billing,
-     Weichenzeiten werden direkt angezeigt, wenn vorhanden
+   Zentraler Einstieg
+   - Personen aus data/persons.json
+   - Dashboard / Seelotse / Rüsterbergen / Bört als eigene Views
    ========================================================= */
 
 import { renderWorkstartChart } from "./graph.js";
 import { loadRuesterbergenView } from "./views/ruesterbergen.js";
 import { loadSeelotseView } from "./views/seelotse.js";
 import { loadDashboardView } from "./views/dashboard.js";
+import { loadBoertView } from "./views/boert.js";
 
 console.log("APP.JS LOADED");
 
@@ -69,7 +64,7 @@ async function loadPersons() {
     const rawPersons = Array.isArray(data.persons) ? data.persons : [];
 
     personsData = rawPersons
-      .map(p => buildPersonFromConfigEntry(p))
+      .map((p) => buildPersonFromConfigEntry(p))
       .filter(Boolean);
 
     if (!personsData.length) {
@@ -79,7 +74,7 @@ async function loadPersons() {
     const saved = loadAppState();
 
     if (saved) {
-      const found = personsData.find(p => p.key === saved.personKey);
+      const found = personsData.find((p) => p.key === saved.personKey);
       if (found) {
         currentPerson = found;
         currentView = saved.view || currentView;
@@ -141,9 +136,9 @@ function selectPerson(person) {
 // VIEW SWITCH
 // ---------------------------------------------------------
 function bindViewButtons() {
-  document.querySelectorAll("[data-view]").forEach(btn => {
+  document.querySelectorAll("[data-view]").forEach((btn) => {
     btn.onclick = () => {
-      document.querySelectorAll("[data-view]").forEach(b => b.classList.remove("active"));
+      document.querySelectorAll("[data-view]").forEach((b) => b.classList.remove("active"));
       btn.classList.add("active");
       currentView = btn.dataset.view;
       saveAppState();
@@ -153,7 +148,7 @@ function bindViewButtons() {
 }
 
 function syncViewButtons() {
-  document.querySelectorAll("[data-view]").forEach(btn => {
+  document.querySelectorAll("[data-view]").forEach((btn) => {
     btn.classList.toggle("active", btn.dataset.view === currentView);
   });
 }
@@ -190,14 +185,55 @@ function renderView() {
         renderView();
       }
     );
+    return;
   }
 
-  if (currentView === "short") loadShort();
-  if (currentView === "long")  loadLong();
-  if (currentView === "graph") loadGraph();
-  if (currentView === "seelotse") loadSeelotseView(contentEl, statusEl, detailRow, escapeHtml, formatDateTime, safeJsonFromSettled, currentPerson);
-  if (currentView === "ruesterbergen") loadRuesterbergenView(contentEl, statusEl, detailRow, escapeHtml);
-  if (currentView === "boert") loadBoert();
+  if (currentView === "short") {
+    loadShort();
+    return;
+  }
+
+  if (currentView === "long") {
+    loadLong();
+    return;
+  }
+
+  if (currentView === "graph") {
+    loadGraph();
+    return;
+  }
+
+  if (currentView === "seelotse") {
+    loadSeelotseView(
+      contentEl,
+      statusEl,
+      detailRow,
+      escapeHtml,
+      formatDateTime,
+      safeJsonFromSettled,
+      currentPerson
+    );
+    return;
+  }
+
+  if (currentView === "ruesterbergen") {
+    loadRuesterbergenView(contentEl, statusEl, detailRow, escapeHtml);
+    return;
+  }
+
+  if (currentView === "boert") {
+    loadBoertView(
+      contentEl,
+      statusEl,
+      currentPerson,
+      boertFromDate,
+      boertToDate,
+      detailRow,
+      escapeHtml,
+      formatDateTime,
+      parseLotseTime
+    );
+  }
 }
 
 // ---------------------------------------------------------
@@ -264,9 +300,9 @@ async function loadGraph() {
 // ZEITFILTER
 // ---------------------------------------------------------
 function bindHourButtons() {
-  document.querySelectorAll("[data-hours]").forEach(btn => {
+  document.querySelectorAll("[data-hours]").forEach((btn) => {
     btn.onclick = () => {
-      document.querySelectorAll("[data-hours]").forEach(b => b.classList.remove("active"));
+      document.querySelectorAll("[data-hours]").forEach((b) => b.classList.remove("active"));
       btn.classList.add("active");
       currentHours = Number(btn.dataset.hours);
       if (currentView === "graph") loadGraph();
@@ -294,7 +330,7 @@ function bindBoertRangeButtons() {
   apply.onclick = () => {
     boertFromDate = fromEl.value ? new Date(fromEl.value) : null;
     boertToDate   = toEl.value   ? new Date(toEl.value)   : null;
-    loadBoert();
+    renderView();
   };
 
   reset.onclick = () => {
@@ -302,198 +338,8 @@ function bindBoertRangeButtons() {
     toEl.value   = "";
     boertFromDate = null;
     boertToDate   = null;
-    loadBoert();
+    renderView();
   };
-}
-
-// ---------------------------------------------------------
-// BÖRT VIEW
-// ---------------------------------------------------------
-async function loadBoert() {
-  try {
-    const res = await fetch(`data/${currentPerson.key}_boert.json`, { cache: "no-store" });
-    const data = await res.json();
-
-    let filteredLotsen = data.lotsen || [];
-
-    const filterActive = Boolean(boertFromDate || boertToDate);
-
-    if (filterActive) {
-      const fromTs = boertFromDate ? boertFromDate.getTime() : null;
-      const toTs   = boertToDate   ? boertToDate.getTime()   : null;
-
-      filteredLotsen = filteredLotsen.filter(lotse => {
-        if (!lotse.times) return false;
-
-        return Object.values(lotse.times).some(val => {
-          if (!val) return false;
-
-          const d = parseLotseTime(val);
-          if (!d) return false;
-
-          const ts = d.getTime();
-
-          if (fromTs && ts < fromTs) return false;
-          if (toTs   && ts > toTs)   return false;
-
-          return true;
-        });
-      });
-    }
-
-    let filteredTauschpartner = Array.isArray(data.tauschpartner)
-      ? data.tauschpartner.filter(tp =>
-          filteredLotsen.some(l => l.pos === tp.pos)
-        )
-      : [];
-
-    const totalLotsen = (data.lotsen || []).length;
-    const shownLotsen = filteredLotsen.length;
-
-    let html = '<div style="max-width: 1200px;">';
-
-    html += '<div class="view-header">';
-    html += '<div class="view-title">Bört</div>';
-    html += '<div class="badges-row">';
-    html += `<div class="meta-info">${filterActive ? "🔎 Filter aktiv – " : ""}Anzeige ${shownLotsen} von ${totalLotsen} Lotsen</div>`;
-
-    if (data.status === "boert") {
-      html += '<span class="badge success">✓ Im Bört</span>';
-    } else {
-      html += '<span class="badge gray">Nicht im Bört</span>';
-    }
-
-    html += '</div>';
-    html += `<div class="meta-info">Generiert: ${formatDateTime(data.generated_at)}</div>`;
-    html += '</div>';
-
-    if (data.person || data.target) {
-      const p = data.person || data.target;
-      html += '<div class="person-card">';
-      html += `<div class="person-name">${escapeHtml(p.vorname)} ${escapeHtml(p.nachname)}</div>`;
-      html += `<div class="person-pos">Position ${escapeHtml(p.pos)}</div>`;
-      if (p.takt) {
-        html += `<div class="person-takt">Takt: ${escapeHtml(p.takt)}</div>`;
-      }
-
-      if (p.times) {
-        html += '<div class="times-grid">';
-        if (p.times.from_meldung) {
-          html += `<div class="time-item"><div class="time-label">von Meldung</div><div class="time-value">${escapeHtml(p.times.from_meldung)}</div></div>`;
-        }
-        if (p.times.calc_div2) {
-          html += `<div class="time-item"><div class="time-label">calc div2</div><div class="time-value">${escapeHtml(p.times.calc_div2)}</div></div>`;
-        }
-        if (p.times.calc_div3) {
-          html += `<div class="time-item"><div class="time-label">calc div3</div><div class="time-value">${escapeHtml(p.times.calc_div3)}</div></div>`;
-        }
-        if (p.times.from_meldung_alt) {
-          html += `<div class="time-item"><div class="time-label">von Meldung alt</div><div class="time-value">${escapeHtml(p.times.from_meldung_alt)}</div></div>`;
-        }
-        html += '</div>';
-      }
-
-      if (p.bemerkung) {
-        html += `<div style="margin-top: 12px; padding: 8px; background: rgba(0,0,0,0.2); border-radius: 6px; font-size: 14px;">📝 ${escapeHtml(p.bemerkung)}</div>`;
-      }
-
-      html += '</div>';
-    }
-
-    if (filteredTauschpartner.length > 0) {
-      html += '<div class="section-header">Tauschpartner</div>';
-      html += '<div class="tauschpartner-grid">';
-
-      filteredTauschpartner.forEach(tp => {
-        let cardClass = 'tauschpartner-card';
-        if (tp.verguetung) {
-          cardClass += ' verguetung';
-        } else if (tp.arrow === '↑' || tp.richtung === '↑') {
-          cardClass += ' arrow-up';
-        } else if (tp.arrow === '↓' || tp.richtung === '↓') {
-          cardClass += ' arrow-down';
-        }
-
-        html += `<div class="${cardClass}">`;
-        html += `<div class="tauschpartner-name">${escapeHtml(tp.vorname)} ${escapeHtml(tp.nachname)}</div>`;
-        html += `<div class="tauschpartner-info">Pos ${escapeHtml(tp.pos)}</div>`;
-        html += '</div>';
-      });
-
-      html += '</div>';
-    } else {
-      html += '<div class="section-header">Tauschpartner</div>';
-      html += '<div style="opacity:.6; padding:8px">Keine Tauschpartner gefunden</div>';
-    }
-
-    if (filteredLotsen.length > 0) {
-      html += '<div class="section-header">Alle Lotsen</div>';
-
-      filteredLotsen.forEach((lotse, idx) => {
-        const targetClass = lotse.is_target ? ' target' : '';
-        html += `<div class="lotse-item${targetClass}" data-lotse="${idx}">`;
-        html += '<div class="lotse-header">';
-        html += `<div class="lotse-nr">${escapeHtml(lotse.pos)}</div>`;
-        html += `<div class="lotse-name">${escapeHtml(lotse.vorname)} ${escapeHtml(lotse.nachname)}</div>`;
-
-        if (lotse.arrow) {
-          const arrowClass = lotse.arrow.includes('↑') ? 'arrow-up' : (lotse.arrow.includes('↓') ? 'arrow-down' : '');
-          html += `<div class="lotse-info"><span class="${arrowClass}">${escapeHtml(lotse.arrow)}</span></div>`;
-        }
-
-        if (lotse.times && lotse.times.from_meldung) {
-          html += `<div class="lotse-info">${escapeHtml(lotse.times.from_meldung)}</div>`;
-        }
-
-        if (lotse.verguetung) {
-          html += '<div class="lotse-info"><span class="verguetung">$$</span></div>';
-        }
-
-        html += '<span class="expand-icon">▼</span>';
-        html += '</div>';
-
-        html += '<div class="lotse-details">';
-        if (lotse.times) {
-          html += '<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 8px; margin-top: 8px;">';
-          if (lotse.times.from_meldung) {
-            html += detailRow("von Meldung", lotse.times.from_meldung);
-          }
-          if (lotse.times.calc_div2) {
-            html += detailRow("calc div2", lotse.times.calc_div2);
-          }
-          if (lotse.times.calc_div3) {
-            html += detailRow("calc div3", lotse.times.calc_div3);
-          }
-          if (lotse.times.from_meldung_alt) {
-            html += detailRow("von Meldung alt", lotse.times.from_meldung_alt);
-          }
-          html += '</div>';
-        }
-        if (lotse.bemerkung) {
-          html += detailRow("Bemerkung", lotse.bemerkung);
-        }
-        html += '</div>';
-
-        html += '</div>';
-      });
-    }
-
-    html += '</div>';
-
-    contentEl.innerHTML = html;
-
-    document.querySelectorAll('.lotse-item').forEach(item => {
-      item.querySelector('.lotse-header').addEventListener('click', () => {
-        item.classList.toggle('expanded');
-      });
-    });
-
-    statusEl.textContent = "Aktualisiert " + new Date().toLocaleTimeString("de-DE");
-
-  } catch (err) {
-    contentEl.innerHTML = `<div class="error">❌ Bört-Fehler: ${escapeHtml(err.message)}</div>`;
-    console.error(err);
-  }
 }
 
 // ---------------------------------------------------------
@@ -507,22 +353,6 @@ async function safeJsonFromSettled(result) {
   } catch {
     return null;
   }
-}
-
-function normalizeStateKind(kind) {
-  const k = String(kind || "").toLowerCase();
-  if (k.includes("gesamt")) return "gesamtboert";
-  if (k.includes("boert")) return "gesamtboert";
-  if (k.includes("see")) return "seelotsen";
-  if (k.includes("lotse")) return "seelotsen";
-  return "";
-}
-
-function buildRoute(from, to) {
-  const f = valueOrDash(from);
-  const t = valueOrDash(to);
-  if (f === "—" && t === "—") return "—";
-  return `${f} → ${t}`;
 }
 
 function detailRow(label, value) {
@@ -540,17 +370,17 @@ function valueOrDash(v) {
 
 function escapeHtml(text) {
   if (text === null || text === undefined) return "";
-  const div = document.createElement('div');
+  const div = document.createElement("div");
   div.textContent = String(text);
   return div.innerHTML;
 }
 
 function formatDateTime(dateStr) {
-  if (!dateStr) return '—';
+  if (!dateStr) return "—";
   try {
     const date = new Date(dateStr);
     if (Number.isNaN(date.getTime())) return dateStr;
-    return date.toLocaleString('de-DE');
+    return date.toLocaleString("de-DE");
   } catch {
     return dateStr;
   }
@@ -560,7 +390,7 @@ function capitalizeWords(text) {
   return String(text || "")
     .split(" ")
     .filter(Boolean)
-    .map(x => x.charAt(0).toUpperCase() + x.slice(1))
+    .map((x) => x.charAt(0).toUpperCase() + x.slice(1))
     .join(" ");
 }
 
@@ -568,7 +398,7 @@ function parseLotseTime(val) {
   const m = String(val || "").match(/^([A-Z][a-z])(\d{2}):(\d{2})$/);
   if (!m) return null;
 
-  const wdMap = { Mo:1, Di:2, Mi:3, Do:4, Fr:5, Sa:6, So:0 };
+  const wdMap = { Mo: 1, Di: 2, Mi: 3, Do: 4, Fr: 5, Sa: 6, So: 0 };
   const wdTarget = wdMap[m[1]];
   if (wdTarget === undefined) return null;
 
@@ -597,7 +427,7 @@ function saveAppState() {
 
   localStorage.setItem("pilotapp_state", JSON.stringify({
     personKey: currentPerson.key,
-    view: currentView
+    view: currentView,
   }));
 }
 
