@@ -8,8 +8,7 @@ export async function loadRuesterbergenView(contentEl, statusEl, detailRow, esca
     const assignments = Array.isArray(data.assignments) ? data.assignments : [];
     const unassignedShips = Array.isArray(data.unassigned_ships) ? data.unassigned_ships : [];
     const visibleOnlyPilots = Array.isArray(data.visible_only_pilots) ? data.visible_only_pilots : [];
-    const ships = Array.isArray(data.ships) ?
-	data.ships : [];
+    const ships = Array.isArray(data.ships) ? data.ships : [];
 
     const assignmentMap = new Map(assignments.map(a => [a.ship_key, a]));
     const unassignedMap = new Map(unassignedShips.map(u => [u.ship_key, u]));
@@ -27,7 +26,6 @@ export async function loadRuesterbergenView(contentEl, statusEl, detailRow, esca
       html += badge("info", `Schiffe: ${valueOrDash(data.counts.ships_for_ruesterbergen)}`);
       html += badge("success", `Zugeordnet: ${valueOrDash(data.counts.assignments)}`);
       html += badge("gray", `Offen: ${valueOrDash(data.counts.unassigned_ships)}`);
-
       if (data.counts.pilots_dispatchable !== undefined) {
         html += badge("info", `Disponierbar: ${valueOrDash(data.counts.pilots_dispatchable)}`);
       }
@@ -43,16 +41,12 @@ export async function loadRuesterbergenView(contentEl, statusEl, detailRow, esca
     html += renderShipSection(
       "Offene Schiffe",
       openShips,
-      "❌",
-      "Kein Lotse zugeordnet",
       ship => renderOpenShipCard(ship, unassignedMap.get(ship.ship_key), detailRow, escapeHtml)
     );
 
     html += renderShipSection(
       "Zugeordnete Schiffe",
       assignedShips,
-      "✓",
-      "Lotse zugeordnet",
       ship => renderAssignedShipCard(ship, assignmentMap.get(ship.ship_key), detailRow, escapeHtml)
     );
 
@@ -70,7 +64,7 @@ export async function loadRuesterbergenView(contentEl, statusEl, detailRow, esca
   }
 }
 
-function renderShipSection(title, ships, icon, subtitle, renderCard) {
+function renderShipSection(title, ships, renderCard) {
   let html = `<div class="section-header">${title}</div>`;
 
   if (!ships.length) {
@@ -79,47 +73,43 @@ function renderShipSection(title, ships, icon, subtitle, renderCard) {
   }
 
   ships.forEach(ship => {
-    html += renderCard(ship, icon, subtitle);
+    html += renderCard(ship);
   });
 
   return html;
 }
 
 function renderAssignedShipCard(ship, assignment, detailRow, escapeHtml) {
-  const route = buildRouteFromMeldung(ship);
   const etaRueb = ship?.eta_rueb || "—";
+  const shipName = ship?.ship_name || "—";
   const q = ship?.meldung?.q_gruppe ?? ship?.ship_q ?? "—";
   const draft = ship?.meldung?.draft || ship?.summary?.draft || "—";
-  const vg = ship?.summary?.vg || "—";
   const lotse = assignment?.assigned_pilot || "—";
-  const abt = assignment?.assigned_abteilungszeit || "—";
-  const currentShip = assignment?.assigned_current_ship_name || "—";
-  const currentEta = assignment?.assigned_current_ship_eta_rueb || "—";
+  const route = buildRouteFromMeldung(ship);
+  const vg = ship?.summary?.vg || "—";
   const reason = assignment?.reason || "—";
 
   return `
-    <div class="card ruest-card expanded" style="margin-bottom:12px;">
-      <div class="card-header ruest-header" style="cursor:pointer;">
-        <div style="display:flex; flex-direction:column; gap:4px; min-width:0;">
-          <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
-            <strong>${escapeHtml(ship?.ship_name || "—")}</strong>
-            <span class="badge success">✓ zugeordnet</span>
-          </div>
-          <div style="font-size:13px; opacity:.85;">
-            ETA RÜB ${escapeHtml(etaRueb)} · ${escapeHtml(route)} · Q ${escapeHtml(q)} · TG ${escapeHtml(draft)} · VG ${escapeHtml(vg)}
-          </div>
-          <div style="font-size:13px; opacity:.9;">
-            Lotse: <b>${escapeHtml(lotse)}</b>
+    <div class="card ruest-card" style="margin-bottom:12px;">
+      <div class="card-header ruest-header" style="cursor:pointer; display:block;">
+        <div style="display:grid; grid-template-columns:minmax(90px,120px) minmax(180px,1.6fr) minmax(60px,80px) minmax(90px,110px) minmax(180px,1.5fr) auto; gap:10px; align-items:center;">
+          <div style="font-weight:700;">${escapeHtml(etaRueb)}</div>
+          <div style="font-weight:700;">${escapeHtml(shipName)}</div>
+          <div>Q ${escapeHtml(q)}</div>
+          <div>TG ${escapeHtml(draft)}</div>
+          <div>Lotse: <b>${escapeHtml(lotse)}</b></div>
+          <div style="text-align:right;">
+            <span class="badge success">zugeordnet</span>
+            <span class="expand-icon" style="margin-left:8px;">▼</span>
           </div>
         </div>
-        <span class="expand-icon">▼</span>
       </div>
 
-      <div class="card-content" style="display:block;">
+      <div class="card-content" style="display:none;">
         <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:14px;">
           <div>
-            ${detailRow("Schiff", ship?.ship_name || "—")}
             ${detailRow("ETA RÜB", etaRueb)}
+            ${detailRow("Schiff", shipName)}
             ${detailRow("Route", route)}
             ${detailRow("Q", q)}
             ${detailRow("Tiefgang", draft)}
@@ -128,9 +118,9 @@ function renderAssignedShipCard(ship, assignment, detailRow, escapeHtml) {
 
           <div>
             ${detailRow("Lotse", lotse)}
-            ${detailRow("Abt.", abt)}
-            ${detailRow("Aktuelles Schiff", currentShip)}
-            ${detailRow("ETA aktuell", currentEta)}
+            ${detailRow("Abt.", assignment?.assigned_abteilungszeit || "—")}
+            ${detailRow("Aktuelles Schiff", assignment?.assigned_current_ship_name || "—")}
+            ${detailRow("ETA aktuell", assignment?.assigned_current_ship_eta_rueb || "—")}
             ${detailRow("Grund", reason)}
           </div>
         </div>
@@ -142,36 +132,39 @@ function renderAssignedShipCard(ship, assignment, detailRow, escapeHtml) {
 }
 
 function renderOpenShipCard(ship, unassigned, detailRow, escapeHtml) {
-  const route = buildRouteFromMeldung(ship);
   const etaRueb = ship?.eta_rueb || "—";
+  const shipName = ship?.ship_name || "—";
   const q = ship?.meldung?.q_gruppe ?? ship?.ship_q ?? "—";
   const draft = ship?.meldung?.draft || ship?.summary?.draft || "—";
+  const route = buildRouteFromMeldung(ship);
   const vg = ship?.summary?.vg || "—";
   const reason = unassigned?.reason || "Kein passender Lotse rechtzeitig verfügbar";
 
+  const possiblePilot =
+    guessPossiblePilotFromExcluded(unassigned?.excluded) ||
+    "kein Lotse";
+
   return `
-    <div class="card ruest-card expanded" style="margin-bottom:12px;">
-      <div class="card-header ruest-header" style="cursor:pointer;">
-        <div style="display:flex; flex-direction:column; gap:4px; min-width:0;">
-          <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
-            <strong>${escapeHtml(ship?.ship_name || "—")}</strong>
+    <div class="card ruest-card" style="margin-bottom:12px;">
+      <div class="card-header ruest-header" style="cursor:pointer; display:block;">
+        <div style="display:grid; grid-template-columns:minmax(90px,120px) minmax(180px,1.6fr) minmax(60px,80px) minmax(90px,110px) minmax(180px,1.5fr) auto; gap:10px; align-items:center;">
+          <div style="font-weight:700;">${escapeHtml(etaRueb)}</div>
+          <div style="font-weight:700;">${escapeHtml(shipName)}</div>
+          <div>Q ${escapeHtml(q)}</div>
+          <div>TG ${escapeHtml(draft)}</div>
+          <div>Möglich: <b>${escapeHtml(possiblePilot)}</b></div>
+          <div style="text-align:right;">
             <span class="badge gray">offen</span>
-          </div>
-          <div style="font-size:13px; opacity:.85;">
-            ETA RÜB ${escapeHtml(etaRueb)} · ${escapeHtml(route)} · Q ${escapeHtml(q)} · TG ${escapeHtml(draft)} · VG ${escapeHtml(vg)}
-          </div>
-          <div style="font-size:13px; color:#fca5a5;">
-            ${escapeHtml(reason)}
+            <span class="expand-icon" style="margin-left:8px;">▼</span>
           </div>
         </div>
-        <span class="expand-icon">▼</span>
       </div>
 
-      <div class="card-content" style="display:block;">
+      <div class="card-content" style="display:none;">
         <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:14px;">
           <div>
-            ${detailRow("Schiff", ship?.ship_name || "—")}
             ${detailRow("ETA RÜB", etaRueb)}
+            ${detailRow("Schiff", shipName)}
             ${detailRow("Route", route)}
             ${detailRow("Q", q)}
             ${detailRow("Tiefgang", draft)}
@@ -179,11 +172,11 @@ function renderOpenShipCard(ship, unassigned, detailRow, escapeHtml) {
           </div>
 
           <div>
+            ${detailRow("Mögliche Zuordnung", possiblePilot)}
             ${detailRow("Grund", reason)}
             ${detailRow("Pilotstatus", ship?.summary?.pilot_status || "—")}
             ${detailRow("Pilot 1", ship?.summary?.pilot_1_name || "—")}
             ${detailRow("Makler", ship?.summary?.makler || "—")}
-            ${detailRow("Beladung", ship?.summary?.type_of_loading || "—")}
           </div>
         </div>
 
@@ -203,23 +196,29 @@ function renderVisibleOnlyPilotsSection(pilots, detailRow, escapeHtml) {
 
   pilots.forEach(pilot => {
     html += `
-      <div class="card" style="margin-bottom:12px;">
-        <div class="card-header">
-          <div style="display:flex; flex-direction:column; gap:4px; min-width:0;">
-            <strong>${escapeHtml(pilot?.pilot_name || "—")}</strong>
-            <div style="font-size:13px; opacity:.85;">
-              ${escapeHtml(buildPilotRoute(pilot))} · Q ${escapeHtml(pilot?.pilot_q ?? "—")}
+      <div class="card ruest-card" style="margin-bottom:12px;">
+        <div class="card-header ruest-header" style="cursor:pointer; display:block;">
+          <div style="display:grid; grid-template-columns:minmax(90px,120px) minmax(180px,1.6fr) minmax(60px,80px) minmax(90px,110px) minmax(180px,1.5fr) auto; gap:10px; align-items:center;">
+            <div style="font-weight:700;">${escapeHtml(pilot?.abteilungszeit || "—")}</div>
+            <div style="font-weight:700;">${escapeHtml(pilot?.pilot_name || "—")}</div>
+            <div>Q ${escapeHtml(pilot?.pilot_q ?? "—")}</div>
+            <div>${escapeHtml(pilot?.aufgabe || "—")}</div>
+            <div>${escapeHtml(buildPilotRoute(pilot))}</div>
+            <div style="text-align:right;">
+              <span class="badge gray">sichtbar</span>
+              <span class="expand-icon" style="margin-left:8px;">▼</span>
             </div>
           </div>
-          <span class="badge gray">sichtbar</span>
         </div>
-        <div class="card-content" style="display:block;">
+
+        <div class="card-content" style="display:none;">
           <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:14px;">
             <div>
               ${detailRow("Abt.", pilot?.abteilungszeit || "—")}
+              ${detailRow("Lotse", pilot?.pilot_name || "—")}
+              ${detailRow("Q", pilot?.pilot_q ?? "—")}
               ${detailRow("Aufgabe", pilot?.aufgabe || "—")}
               ${detailRow("Route", buildPilotRoute(pilot))}
-              ${detailRow("Q", pilot?.pilot_q ?? "—")}
             </div>
             <div>
               ${detailRow("Aktuelles Schiff", pilot?.current_ship_name || "—")}
@@ -262,7 +261,7 @@ function renderExcludedBlock(excluded, detailRow, escapeHtml) {
 
   return `
     <div style="margin-top:14px;">
-      <div style="font-weight:700; margin-bottom:8px;">Warum andere Lotsen ausschieden</div>
+      <div style="font-weight:700; margin-bottom:8px;">Weitere Informationen</div>
       ${excluded.slice(0, 8).map(ex => `
         <div style="padding:8px 0; border-top:1px solid #374151;">
           ${detailRow("Lotse", ex?.pilot_name || "—")}
@@ -279,7 +278,15 @@ function bindExpandableCards(root) {
   root.querySelectorAll(".ruest-card .ruest-header").forEach(header => {
     header.addEventListener("click", () => {
       const card = header.closest(".ruest-card");
-      if (card) card.classList.toggle("expanded");
+      if (!card) return;
+
+      const content = card.querySelector(".card-content");
+      const icon = card.querySelector(".expand-icon");
+      if (!content) return;
+
+      const isOpen = content.style.display !== "none";
+      content.style.display = isOpen ? "none" : "block";
+      if (icon) icon.textContent = isOpen ? "▼" : "▲";
     });
   });
 }
@@ -309,6 +316,18 @@ function buildPilotRoute(pilot) {
   }
 
   return normalizeText(pilot?.route) || "—";
+}
+
+function guessPossiblePilotFromExcluded(excluded) {
+  if (!Array.isArray(excluded) || !excluded.length) return "";
+
+  const possible = excluded.find(ex => {
+    const reason = String(ex?.reason || "").toLowerCase();
+    return !reason.includes("quali") && !reason.includes("keine eta") && !reason.includes("kommt nicht rechtzeitig");
+  });
+
+  if (possible?.pilot_name) return possible.pilot_name;
+  return excluded[0]?.pilot_name || "";
 }
 
 function normalizeText(value) {
