@@ -133,10 +133,13 @@ export async function loadBoertView(
 
       filteredLotsen.forEach((lotse, idx) => {
         const targetClass = lotse.is_target ? " target" : "";
+        const lotseTakt = firstNonEmpty(lotse.takt, lotse.taktische_nummer, lotse.nr, "—");
+
         html += `<div class="lotse-item${targetClass}" data-lotse="${idx}">`;
         html += '<div class="lotse-header">';
         html += `<div class="lotse-nr">${escapeHtml(lotse.pos)}</div>`;
         html += `<div class="lotse-name">${escapeHtml(lotse.vorname)} ${escapeHtml(lotse.nachname)}</div>`;
+        html += `<div class="lotse-info">Takt ${escapeHtml(lotseTakt)}</div>`;
 
         if (lotse.arrow) {
           const arrowClass = lotse.arrow.includes("↑")
@@ -157,8 +160,11 @@ export async function loadBoertView(
         html += "</div>";
 
         html += '<div class="lotse-details">';
+        html += '<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 8px; margin-top: 8px;">';
+        html += detailRow("Positionsnummer", firstNonEmpty(lotse.pos, "—"));
+        html += detailRow("Taktische Nummer", lotseTakt);
+
         if (lotse.times) {
-          html += '<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 8px; margin-top: 8px;">';
           if (lotse.times.from_meldung) {
             html += detailRow("von Meldung", lotse.times.from_meldung);
           }
@@ -171,8 +177,9 @@ export async function loadBoertView(
           if (lotse.times.from_meldung_alt) {
             html += detailRow("von Meldung alt", lotse.times.from_meldung_alt);
           }
-          html += "</div>";
         }
+        html += "</div>";
+
         if (lotse.bemerkung) {
           html += detailRow("Bemerkung", lotse.bemerkung);
         }
@@ -281,7 +288,7 @@ function renderTpTimes(tp, detailRow) {
 
     Object.entries(tp.times).forEach(([key, value]) => {
       if (!value) return;
-      if (["from_meldung", "from_meldung_alt", "calc_div2", "calc_div3"].includes(key)) return;
+      if (["from_meldung", "from_meldung_alt", "calc div2", "calc_div2", "calc div3", "calc_div3"].includes(key)) return;
       rows.push(detailRow(humanizeKey(key), value));
     });
   }
