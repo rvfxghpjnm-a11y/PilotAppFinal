@@ -8,7 +8,8 @@ export async function loadRuesterbergenView(contentEl, statusEl, detailRow, esca
     const assignments = Array.isArray(data.assignments) ? data.assignments : [];
     const unassignedShips = Array.isArray(data.unassigned_ships) ? data.unassigned_ships : [];
     const visibleOnlyPilots = Array.isArray(data.visible_only_pilots) ? data.visible_only_pilots : [];
-    const ships = Array.isArray(data.ships) ? data.ships : [];
+    const ships = Array.isArray(data.ships) ?
+	data.ships : [];
 
     const assignmentMap = new Map(assignments.map(a => [a.ship_key, a]));
     const unassignedMap = new Map(unassignedShips.map(u => [u.ship_key, u]));
