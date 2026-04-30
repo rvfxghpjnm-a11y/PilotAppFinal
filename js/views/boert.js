@@ -1,6 +1,14 @@
 /* =========================================================
    PilotAppFinal – boert.js
    Bört-View ausgelagert aus app.js
+   Tauschpartner erweitert:
+   - Pfeil
+   - mit/ohne Vergütung
+   - voraus/achtern
+   - mögliche Uhrzeiten
+   - taktische Nummer
+   - Positionsnummer
+   - Bemerkung
    ========================================================= */
 
 export async function loadBoertView(
@@ -50,12 +58,14 @@ export async function loadBoertView(
 
     const filteredTauschpartner = Array.isArray(data.tauschpartner)
       ? data.tauschpartner.filter((tp) =>
-          filteredLotsen.some((l) => l.pos === tp.pos)
+          filteredLotsen.some((l) => String(l.pos) === String(tp.pos))
         )
       : [];
 
     const totalLotsen = (data.lotsen || []).length;
     const shownLotsen = filteredLotsen.length;
+    const targetPerson = data.person || data.target || {};
+    const targetPos = toInt(targetPerson.pos);
 
     let html = '<div style="max-width: 1200px;">';
 
@@ -111,25 +121,9 @@ export async function loadBoertView(
     html += '<div class="section-header">Tauschpartner</div>';
 
     if (filteredTauschpartner.length > 0) {
-      html += '<div class="tauschpartner-grid">';
-
-      filteredTauschpartner.forEach((tp) => {
-        let cardClass = "tauschpartner-card";
-        if (tp.verguetung) {
-          cardClass += " verguetung";
-        } else if (tp.arrow === "↑" || tp.richtung === "↑") {
-          cardClass += " arrow-up";
-        } else if (tp.arrow === "↓" || tp.richtung === "↓") {
-          cardClass += " arrow-down";
-        }
-
-        html += `<div class="${cardClass}">`;
-        html += `<div class="tauschpartner-name">${escapeHtml(tp.vorname)} ${escapeHtml(tp.nachname)}</div>`;
-        html += `<div class="tauschpartner-info">Pos ${escapeHtml(tp.pos)}</div>`;
-        html += "</div>";
+      filteredTauschpartner.forEach((tp, idx) => {
+        html += renderTauschpartnerCard(tp, idx, targetPos, detailRow, escapeHtml);
       });
-
-      html += "</div>";
     } else {
       html += '<div style="opacity:.6; padding:8px">Keine Tauschpartner gefunden</div>';
     }
@@ -201,10 +195,203 @@ export async function loadBoertView(
       }
     });
 
+    document.querySelectorAll(".tp-item").forEach((item) => {
+      const header = item.querySelector(".tp-header");
+      if (header) {
+        header.addEventListener("click", () => {
+          item.classList.toggle("expanded");
+        });
+      }
+    });
+
     statusEl.textContent = "Aktualisiert " + new Date().toLocaleTimeString("de-DE");
 
   } catch (err) {
     contentEl.innerHTML = `<div class="error">❌ Bört-Fehler: ${escapeHtml(err.message)}</div>`;
     console.error(err);
   }
+}
+
+function renderTauschpartnerCard(tp, idx, targetPos, detailRow, escapeHtml) {
+  const arrow = getArrow(tp);
+  const verguetung = hasVerguetung(tp);
+  const pos = firstNonEmpty(tp.pos, tp.position, tp.positionsnummer, "—");
+  const takt = firstNonEmpty(tp.takt, tp.taktische_nummer, tp.nr, "—");
+  const bemerkung = firstNonEmpty(tp.bemerkung, tp.remark, tp.bemerkungen, "—");
+  const relation = getRelationLabel(tp, targetPos);
+  const arrowText = getArrowLabel(arrow, verguetung);
+  const name = `${firstNonEmpty(tp.vorname, "")} ${firstNonEmpty(tp.nachname, "")}`.trim() || firstNonEmpty(tp.name, "—");
+  const timeRows = renderTpTimes(tp, detailRow);
+  const summaryTime = getSummaryTime(tp);
+
+  let cardClass = "tp-item";
+  if (verguetung) {
+    cardClass += " verguetung";
+  } else if (arrow === "↑") {
+    cardClass += " arrow-up";
+  } else if (arrow === "↓") {
+    cardClass += " arrow-down";
+  }
+
+  return `
+    <div class="${cardClass}" data-tp="${idx}" style="margin-bottom:12px; border:1px solid #374151; border-radius:10px; overflow:hidden; background:rgba(255,255,255,0.02);">
+      <div class="tp-header" style="display:grid; grid-template-columns:minmax(170px,1.5fr) minmax(90px,0.7fr) minmax(90px,0.8fr) minmax(150px,1.2fr) minmax(120px,1fr) auto; gap:10px; align-items:center; padding:12px; cursor:pointer;">
+        <div style="font-weight:700;">${escapeHtml(name)}</div>
+        <div>Pos ${escapeHtml(pos)}</div>
+        <div>Takt ${escapeHtml(takt)}</div>
+        <div>${escapeHtml(arrowText)}</div>
+        <div>${escapeHtml(summaryTime)}</div>
+        <div style="text-align:right;"><span class="expand-icon">▼</span></div>
+      </div>
+
+      <div class="tp-details" style="display:none; padding:0 12px 12px 12px; border-top:1px solid #374151;">
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:10px; margin-top:10px;">
+          ${detailRow("Name", name)}
+          ${detailRow("Positionsnummer", pos)}
+          ${detailRow("Taktische Nummer", takt)}
+          ${detailRow("Pfeil", arrow || "—")}
+          ${detailRow("Vergütung", verguetung ? "mit Vergütung" : "ohne Vergütung")}
+          ${detailRow("Lage", relation)}
+          ${detailRow("Bemerkung", bemerkung)}
+        </div>
+
+        ${timeRows ? `
+          <div style="margin-top:12px;">
+            <div style="font-weight:700; margin-bottom:8px;">Mögliche Uhrzeiten</div>
+            <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:8px;">
+              ${timeRows}
+            </div>
+          </div>
+        ` : ""}
+
+        ${renderAdditionalTpFields(tp, detailRow)}
+      </div>
+    </div>
+  `;
+}
+
+function renderTpTimes(tp, detailRow) {
+  const rows = [];
+
+  if (tp.times && typeof tp.times === "object") {
+    if (tp.times.from_meldung) rows.push(detailRow("von Meldung", tp.times.from_meldung));
+    if (tp.times.from_meldung_alt) rows.push(detailRow("von Meldung alt", tp.times.from_meldung_alt));
+    if (tp.times.calc_div2) rows.push(detailRow("calc div2", tp.times.calc_div2));
+    if (tp.times.calc_div3) rows.push(detailRow("calc div3", tp.times.calc_div3));
+
+    Object.entries(tp.times).forEach(([key, value]) => {
+      if (!value) return;
+      if (["from_meldung", "from_meldung_alt", "calc_div2", "calc_div3"].includes(key)) return;
+      rows.push(detailRow(humanizeKey(key), value));
+    });
+  }
+
+  const directTimeFields = [
+    ["Zeit", tp.time],
+    ["Uhrzeit", tp.uhrzeit],
+    ["ETA", tp.eta],
+  ];
+
+  directTimeFields.forEach(([label, value]) => {
+    if (value) rows.push(detailRow(label, value));
+  });
+
+  return rows.join("");
+}
+
+function renderAdditionalTpFields(tp, detailRow) {
+  const usedKeys = new Set([
+    "vorname", "nachname", "name",
+    "pos", "position", "positionsnummer",
+    "takt", "taktische_nummer", "nr",
+    "arrow", "richtung",
+    "verguetung",
+    "bemerkung", "bemerkungen", "remark",
+    "times", "time", "uhrzeit", "eta"
+  ]);
+
+  const extraRows = [];
+
+  Object.entries(tp || {}).forEach(([key, value]) => {
+    if (usedKeys.has(key)) return;
+    if (value === null || value === undefined || value === "") return;
+    if (typeof value === "object") return;
+    extraRows.push(detailRow(humanizeKey(key), value));
+  });
+
+  if (!extraRows.length) return "";
+
+  return `
+    <div style="margin-top:12px;">
+      <div style="font-weight:700; margin-bottom:8px;">Weitere Felder</div>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:8px;">
+        ${extraRows.join("")}
+      </div>
+    </div>
+  `;
+}
+
+function getArrow(tp) {
+  const raw = firstNonEmpty(tp.arrow, tp.richtung, "");
+  const text = String(raw);
+  if (text.includes("↑")) return "↑";
+  if (text.includes("↓")) return "↓";
+  return text || "";
+}
+
+function hasVerguetung(tp) {
+  if (tp.verguetung === true) return true;
+  if (tp.verguetung === false) return false;
+
+  const arrowText = String(firstNonEmpty(tp.arrow, tp.richtung, ""));
+  if (arrowText.includes("$$")) return true;
+
+  const verg = String(tp.verguetung ?? "").toLowerCase();
+  return ["1", "true", "ja", "yes", "$$", "mit"].includes(verg);
+}
+
+function getRelationLabel(tp, targetPos) {
+  const tpPos = toInt(firstNonEmpty(tp.pos, tp.position, tp.positionsnummer, null));
+  if (tpPos === null || targetPos === null) return "—";
+  if (tpPos < targetPos) return "voraus";
+  if (tpPos > targetPos) return "achtern";
+  return "gleiche Position";
+}
+
+function getArrowLabel(arrow, verguetung) {
+  if (!arrow) return "kein Pfeil";
+  if (arrow === "↑") return verguetung ? "↑ mit Vergütung" : "↑ ohne Vergütung";
+  if (arrow === "↓") return verguetung ? "↓ mit Vergütung" : "↓ ohne Vergütung";
+  return verguetung ? `${arrow} mit Vergütung` : `${arrow} ohne Vergütung`;
+}
+
+function getSummaryTime(tp) {
+  if (tp?.times?.from_meldung) return String(tp.times.from_meldung);
+  if (tp?.times?.from_meldung_alt) return String(tp.times.from_meldung_alt);
+  if (tp?.times?.calc_div2) return String(tp.times.calc_div2);
+  if (tp?.times?.calc_div3) return String(tp.times.calc_div3);
+  if (tp?.time) return String(tp.time);
+  if (tp?.uhrzeit) return String(tp.uhrzeit);
+  return "keine Zeit";
+}
+
+function firstNonEmpty(...values) {
+  for (const value of values) {
+    if (value !== null && value !== undefined && value !== "") {
+      return value;
+    }
+  }
+  return "";
+}
+
+function toInt(value) {
+  if (value === null || value === undefined || value === "") return null;
+  const n = parseInt(String(value), 10);
+  return Number.isNaN(n) ? null : n;
+}
+
+function humanizeKey(key) {
+  return String(key || "")
+    .replace(/_/g, " ")
+    .replace(/\b\w/g, (c) => c.toUpperCase());
 }
