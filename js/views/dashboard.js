@@ -3,35 +3,18 @@
    Dashboard-View ausgelagert aus app.js
    ========================================================= */
 
-let _detailRow = (label, value) => `
-  <div class="detail-row">
-    <div class="detail-label">${escapeHtmlLocal(label)}</div>
-    <div class="detail-value">${escapeHtmlLocal(valueOrDash(value))}</div>
-  </div>
-`;
-
-let _escapeHtml = escapeHtmlLocal;
-let _formatDateTime = formatDateTimeLocal;
+import { detailRow, escapeHtml, formatDateTime, valueOrDash, safeJsonFromSettled } from "../utils.js";
 
 export async function loadDashboardView(
   contentEl,
   statusEl,
   currentPerson,
-  detailRow,
-  escapeHtml,
-  formatDateTime,
-  safeJsonFromSettled,
   setView
 ) {
   try {
-    if (typeof detailRow === "function") _detailRow = detailRow;
-    if (typeof escapeHtml === "function") _escapeHtml = escapeHtml;
-    if (typeof formatDateTime === "function") _formatDateTime = formatDateTime;
-
-    const [bundleRes, boertRes, seelotseRes, mergedRes] = await Promise.allSettled([
+    const [bundleRes, boertRes, mergedRes] = await Promise.allSettled([
       fetch(`data/${currentPerson.key}_bundle.json`, { cache: "no-store" }),
       fetch(`data/${currentPerson.key}_boert.json`, { cache: "no-store" }),
-      fetch(`data/${currentPerson.key}_seelotse.json`, { cache: "no-store" }),
       fetch(`data/schiffe_merged.json`, { cache: "no-store" }),
     ]);
 
@@ -76,7 +59,6 @@ export async function loadDashboardView(
     html += renderHeroCard({
       card,
       state,
-      bundle,
       tauschpartnerCount,
       isBoert,
       isSeelotse,
@@ -170,7 +152,7 @@ export async function loadDashboardView(
     statusEl.textContent = "Dashboard " + new Date().toLocaleTimeString("de-DE");
 
   } catch (err) {
-    contentEl.innerHTML = `<div class="error">❌ Dashboard-Fehler: ${_escapeHtml(err.message)}</div>`;
+    contentEl.innerHTML = `<div class="error">❌ Dashboard-Fehler: ${escapeHtml(err.message)}</div>`;
     console.error(err);
   }
 }
@@ -209,19 +191,19 @@ function renderHeroCard({
 
   return `
     <div class="view-header" style="margin-bottom:18px;">
-      <div class="view-title">${_escapeHtml(card.title || `${currentPerson.nachname}, ${currentPerson.vorname}`)}</div>
+      <div class="view-title">${escapeHtml(card.title || `${currentPerson.nachname}, ${currentPerson.vorname}`)}</div>
       <div style="font-size:15px; opacity:.9; margin-bottom:10px;">
-        ${_escapeHtml(subtitle)}
+        ${escapeHtml(subtitle)}
       </div>
       <div class="badges-row">
-        ${(Array.isArray(card.badges) ? card.badges : []).map((b) => `<span class="badge info">${_escapeHtml(b)}</span>`).join("")}
-        ${state.kind ? `<span class="badge gray">${_escapeHtml(state.kind)}</span>` : ""}
-        ${extraBadges.map((b) => `<span class="badge success">${_escapeHtml(b)}</span>`).join("")}
+        ${(Array.isArray(card.badges) ? card.badges : []).map((b) => `<span class="badge info">${escapeHtml(b)}</span>`).join("")}
+        ${state.kind ? `<span class="badge gray">${escapeHtml(state.kind)}</span>` : ""}
+        ${extraBadges.map((b) => `<span class="badge success">${escapeHtml(b)}</span>`).join("")}
       </div>
       ${
         extraLines.length
           ? `<div style="display:grid; gap:6px; margin-top:10px;">
-              ${extraLines.map((line) => `<div style="font-size:14px;">${_escapeHtml(line)}</div>`).join("")}
+              ${extraLines.map((line) => `<div style="font-size:14px;">${escapeHtml(line)}</div>`).join("")}
             </div>`
           : ""
       }
@@ -244,12 +226,12 @@ function renderStateCard(state, bundle, card, statusInfo) {
         <span class="expand-icon">▼</span>
       </div>
       <div class="card-content" style="display:block;">
-        ${_detailRow("Art", state.kind || "—")}
-        ${_detailRow("Quelle", state.source || "—")}
-        ${_detailRow("Pos", state.pos || card.pos || "—")}
-        ${_detailRow("Takt", state.takt || card.takt || "—")}
-        ${_detailRow("Q", bundle.q_gruppe || card.q_gruppe || "—")}
-        ${_detailRow("Zuletzt", statusInfo.zuletzt || "—")}
+        ${detailRow("Art", state.kind || "—")}
+        ${detailRow("Quelle", state.source || "—")}
+        ${detailRow("Pos", state.pos || card.pos || "—")}
+        ${detailRow("Takt", state.takt || card.takt || "—")}
+        ${detailRow("Q", bundle.q_gruppe || card.q_gruppe || "—")}
+        ${detailRow("Zuletzt", statusInfo.zuletzt || "—")}
       </div>
     </div>
   `;
@@ -263,10 +245,10 @@ function renderStatusCard(statusInfo, statusSnap) {
         <span class="expand-icon">▼</span>
       </div>
       <div class="card-content" style="display:block;">
-        ${_detailRow("Willkommen", statusInfo.willkommen || "—")}
-        ${_detailRow("Zuletzt", statusInfo.zuletzt || "—")}
-        ${_detailRow("Urlaub", statusInfo.naechster_urlaub || "—")}
-        ${_detailRow("Status-Datei", statusSnap.generated_at || "—")}
+        ${detailRow("Willkommen", statusInfo.willkommen || "—")}
+        ${detailRow("Zuletzt", statusInfo.zuletzt || "—")}
+        ${detailRow("Urlaub", statusInfo.naechster_urlaub || "—")}
+        ${detailRow("Status-Datei", statusSnap.generated_at || "—")}
       </div>
     </div>
   `;
@@ -283,12 +265,12 @@ function renderWorkstartCard(workstart) {
         ${
           workstart
             ? [
-                _detailRow("Berechnet", workstart.ts_calc || "—"),
-                _detailRow("Pos", valueOrDash(workstart.pos)),
-                _detailRow("Meldung", workstart.from_meldung || "—"),
-                _detailRow("Meldung alt", workstart.from_meldung_alt || "—"),
-                _detailRow("Calc /2", workstart.calc_div2 || "—"),
-                _detailRow("Calc /3", workstart.calc_div3 || "—"),
+                detailRow("Berechnet", workstart.ts_calc || "—"),
+                detailRow("Pos", valueOrDash(workstart.pos)),
+                detailRow("Meldung", workstart.from_meldung || "—"),
+                detailRow("Meldung alt", workstart.from_meldung_alt || "—"),
+                detailRow("Calc /2", workstart.calc_div2 || "—"),
+                detailRow("Calc /3", workstart.calc_div3 || "—"),
               ].join("")
             : '<div style="opacity:.7;">Kein Workstart-Eintrag vorhanden</div>'
         }
@@ -310,22 +292,22 @@ function renderBoertFocusInner(boert, boertData, tauschpartnerCount) {
     : null;
 
   return `
-    ${_detailRow("Bört-Eintrag", valueOrDash(boert.entry_count))}
-    ${_detailRow("Tauschpartner", valueOrDash(tauschpartnerCount))}
+    ${detailRow("Bört-Eintrag", valueOrDash(boert.entry_count))}
+    ${detailRow("Tauschpartner", valueOrDash(tauschpartnerCount))}
     ${
       boert.entry
         ? [
-            _detailRow("Was", boert.entry.was || "—"),
-            _detailRow("Zeit", boert.entry.zeit || "—"),
-            _detailRow("Pfeil", boert.entry.arrow || "—"),
-            _detailRow("Bemerkung", boert.entry.bemerkung || "—"),
+            detailRow("Was", boert.entry.was || "—"),
+            detailRow("Zeit", boert.entry.zeit || "—"),
+            detailRow("Pfeil", boert.entry.arrow || "—"),
+            detailRow("Bemerkung", boert.entry.bemerkung || "—"),
           ].join("")
         : '<div style="opacity:.7;">Kein aktueller Gesamtbört-Eintrag</div>'
     }
     ${firstTp ? `<hr style="border:none; border-top:1px solid #374151; margin:10px 0;">` : ""}
-    ${firstTp ? _detailRow("1. TP", `${firstTp.vorname || ""} ${firstTp.nachname || ""}`.trim() || "—") : ""}
-    ${firstTp ? _detailRow("TP Pos", firstTp.pos || "—") : ""}
-    ${firstTp ? _detailRow("TP Pfeil", firstTp.arrow || firstTp.richtung || "—") : ""}
+    ${firstTp ? detailRow("1. TP", `${firstTp.vorname || ""} ${firstTp.nachname || ""}`.trim() || "—") : ""}
+    ${firstTp ? detailRow("TP Pos", firstTp.pos || "—") : ""}
+    ${firstTp ? detailRow("TP Pfeil", firstTp.arrow || firstTp.richtung || "—") : ""}
   `;
 }
 
@@ -338,17 +320,17 @@ function renderSeelotseShipCard(seelotsen, firstSeelotse, primaryShipNorm) {
 
 function renderSeelotseShipInner(seelotsen, firstSeelotse, primaryShipNorm) {
   return `
-    ${_detailRow("Seelotsen-Einträge", valueOrDash(seelotsen.entry_count))}
-    ${_detailRow("Aufgabe", firstSeelotse?.aufgabe || "—")}
-    ${_detailRow("Fahrzeug", firstSeelotse?.fahrzeug || "—")}
-    ${_detailRow("Route", buildRoute(firstSeelotse?.from, firstSeelotse?.to))}
-    ${_detailRow("Schiff", primaryShipNorm.name || "—")}
-    ${_detailRow("VG", primaryShipNorm.vg || "—")}
-    ${_detailRow("Tiefgang", primaryShipNorm.draft || "—")}
-    ${_detailRow("ETA Schleuse", primaryShipNorm.eta_schleuse || "—")}
-    ${_detailRow("ETA RÜB", primaryShipNorm.eta_rueb || "—")}
-    ${_detailRow("Pilot", primaryShipNorm.pilot_1_name || "—")}
-    ${_detailRow("Steuerer", primaryShipNorm.steererNames || "—")}
+    ${detailRow("Seelotsen-Einträge", valueOrDash(seelotsen.entry_count))}
+    ${detailRow("Aufgabe", firstSeelotse?.aufgabe || "—")}
+    ${detailRow("Fahrzeug", firstSeelotse?.fahrzeug || "—")}
+    ${detailRow("Route", buildRoute(firstSeelotse?.from, firstSeelotse?.to))}
+    ${detailRow("Schiff", primaryShipNorm.name || "—")}
+    ${detailRow("VG", primaryShipNorm.vg || "—")}
+    ${detailRow("Tiefgang", primaryShipNorm.draft || "—")}
+    ${detailRow("ETA Schleuse", primaryShipNorm.eta_schleuse || "—")}
+    ${detailRow("ETA RÜB", primaryShipNorm.eta_rueb || "—")}
+    ${detailRow("Pilot", primaryShipNorm.pilot_1_name || "—")}
+    ${detailRow("Steuerer", primaryShipNorm.steererNames || "—")}
   `;
 }
 
@@ -361,67 +343,67 @@ function renderShipDetailCard(ship) {
       </div>
       <div class="card-content" style="display:block;">
         <div style="font-size:18px; font-weight:700; margin-bottom:10px;">
-          ${_escapeHtml(ship.name || "—")}
+          ${escapeHtml(ship.name || "—")}
         </div>
 
         <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:16px;">
           ${renderMiniSection("Kern", [
-            _detailRow("Richtung", ship.zulauf_richtung),
-            _detailRow("Queue", ship.queue_title),
-            _detailRow("Status", ship.travel_status),
-            _detailRow("ETA Schleuse", ship.eta_schleuse),
-            _detailRow("ETA RÜB", ship.eta_rueb),
-            _detailRow("ETA Text", ship.eta_text),
-            _detailRow("First Seen", ship.first_seen),
-            _detailRow("VG", ship.vg),
-            _detailRow("Q", ship.q_gruppe),
-            _detailRow("Tiefgang", ship.draft),
-            _detailRow("Länge", ship.length_m),
-            _detailRow("Breite", ship.beam_m),
-            _detailRow("Typ", ship.vessel_type),
+            detailRow("Richtung", ship.zulauf_richtung),
+            detailRow("Queue", ship.queue_title),
+            detailRow("Status", ship.travel_status),
+            detailRow("ETA Schleuse", ship.eta_schleuse),
+            detailRow("ETA RÜB", ship.eta_rueb),
+            detailRow("ETA Text", ship.eta_text),
+            detailRow("First Seen", ship.first_seen),
+            detailRow("VG", ship.vg),
+            detailRow("Q", ship.q_gruppe),
+            detailRow("Tiefgang", ship.draft),
+            detailRow("Länge", ship.length_m),
+            detailRow("Breite", ship.beam_m),
+            detailRow("Typ", ship.vessel_type),
           ])}
 
           ${renderMiniSection("Passage / Liegeplatz", [
-            _detailRow("Passage Start", ship.passage_start),
-            _detailRow("Passage Ziel", ship.passage_destination),
-            _detailRow("Destination", ship.destination),
-            _detailRow("Mooring Area", ship.mooring_area),
-            _detailRow("Mooring Place", ship.mooring_place),
-            _detailRow("Mooring Short", ship.mooring_place_short),
-            _detailRow("Section", ship.mooring_section),
-            _detailRow("Seite", ship.preferred_mooring_side),
-            _detailRow("Locking", ship.locking_location),
-            _detailRow("Lock Wall", ship.locking_wall),
-            _detailRow("Lock Chamber", ship.locking_chamber),
-            _detailRow("Mooring Reason", ship.mooring_reason),
+            detailRow("Passage Start", ship.passage_start),
+            detailRow("Passage Ziel", ship.passage_destination),
+            detailRow("Destination", ship.destination),
+            detailRow("Mooring Area", ship.mooring_area),
+            detailRow("Mooring Place", ship.mooring_place),
+            detailRow("Mooring Short", ship.mooring_place_short),
+            detailRow("Section", ship.mooring_section),
+            detailRow("Seite", ship.preferred_mooring_side),
+            detailRow("Locking", ship.locking_location),
+            detailRow("Lock Wall", ship.locking_wall),
+            detailRow("Lock Chamber", ship.locking_chamber),
+            detailRow("Mooring Reason", ship.mooring_reason),
           ])}
 
           ${renderMiniSection("Lotse / Steuerer", [
-            _detailRow("Lotspflicht", ship.pilot_required),
-            _detailRow("Förde", ship.pilot_foerde),
-            _detailRow("Pilot Order", ship.pilot_order),
-            _detailRow("Pilot Status", ship.pilot_status),
-            _detailRow("Pilot 1", ship.pilot_1_name),
-            _detailRow("Pilots", ship.num_of_pilots),
-            _detailRow("Steuerer pflichtig", ship.canal_steerer_required),
-            _detailRow("Steuerer Anzahl", ship.num_of_steerer),
-            _detailRow("Steuerer 1", ship.steerer_1_name),
-            _detailRow("Steuerer 2", ship.steerer_2_name),
+            detailRow("Lotspflicht", ship.pilot_required),
+            detailRow("Förde", ship.pilot_foerde),
+            detailRow("Pilot Order", ship.pilot_order),
+            detailRow("Pilot Status", ship.pilot_status),
+            detailRow("Pilot 1", ship.pilot_1_name),
+            detailRow("Pilots", ship.num_of_pilots),
+            detailRow("Steuerer pflichtig", ship.canal_steerer_required),
+            detailRow("Steuerer Anzahl", ship.num_of_steerer),
+            detailRow("Steuerer 1", ship.steerer_1_name),
+            detailRow("Steuerer 2", ship.steerer_2_name),
           ])}
 
           ${renderMiniSection("Abrechnung / Operativ", [
-            _detailRow("Makler", ship.makler),
-            _detailRow("Payer", ship.payer),
-            _detailRow("Beladung", ship.type_of_loading),
-            _detailRow("Cargo", ship.cargo_name),
-            _detailRow("UN", ship.un_number),
-            _detailRow("Dangerous", ship.dangerous_vessel),
-            _detailRow("Abfahrt", ship.port_of_departure),
-            _detailRow("Zielhafen", ship.port_of_destination),
-            _detailRow("Reeder", ship.shipowner),
-            _detailRow("Callsign", ship.callsign),
-            _detailRow("IMO", ship.imo),
-            _detailRow("MMSI", ship.mmsi),
+            detailRow("Makler", ship.makler),
+            detailRow("Payer", ship.payer),
+            detailRow("Beladung", ship.type_of_loading),
+            detailRow("Cargo", ship.cargo_name),
+            detailRow("UN", ship.un_number),
+            detailRow("Dangerous", ship.dangerous_vessel),
+            detailRow("Abfahrt", ship.port_of_departure),
+            detailRow("Zielhafen", ship.port_of_destination),
+            detailRow("Reeder", ship.shipowner),
+            detailRow("Callsign", ship.callsign),
+            detailRow("IMO", ship.imo),
+            detailRow("MMSI", ship.mmsi),
           ])}
         </div>
 
@@ -460,7 +442,7 @@ function renderMiniSection(title, rows) {
   const inner = Array.isArray(rows) ? rows.join("") : rows;
   return `
     <div style="padding:12px; border:1px solid #374151; border-radius:10px; background:rgba(255,255,255,0.02);">
-      <div style="font-size:14px; font-weight:700; margin-bottom:8px;">${_escapeHtml(title)}</div>
+      <div style="font-size:14px; font-weight:700; margin-bottom:8px;">${escapeHtml(title)}</div>
       ${inner || '<div style="opacity:.6;">Keine Daten</div>'}
     </div>
   `;
@@ -476,7 +458,7 @@ function renderObjectRows(obj) {
   Object.entries(obj).forEach(([key, value]) => {
     if (Array.isArray(value)) {
       if (!value.length) return;
-      rows.push(_detailRow(humanizeKey(key), value.map((v) => {
+      rows.push(detailRow(humanizeKey(key), value.map((v) => {
         if (v && typeof v === "object") {
           return Object.values(v).filter(Boolean).join(" | ");
         }
@@ -486,11 +468,11 @@ function renderObjectRows(obj) {
     }
 
     if (value && typeof value === "object") {
-      rows.push(_detailRow(humanizeKey(key), flattenObjectToText(value)));
+      rows.push(detailRow(humanizeKey(key), flattenObjectToText(value)));
       return;
     }
 
-    rows.push(_detailRow(humanizeKey(key), value));
+    rows.push(detailRow(humanizeKey(key), value));
   });
 
   return rows.length ? rows.join("") : '<div style="opacity:.6;">Keine Daten</div>';
@@ -539,8 +521,8 @@ function renderWeichenzeitenSide(title, sideObj, order) {
       if (!item || (!item.in && !item.out)) return "";
       return `
         <div class="detail-row">
-          <div class="detail-label">${_escapeHtml(label)}</div>
-          <div class="detail-value">${_escapeHtml(formatInOut(item.in, item.out))}</div>
+          <div class="detail-label">${escapeHtml(label)}</div>
+          <div class="detail-value">${escapeHtml(formatInOut(item.in, item.out))}</div>
         </div>
       `;
     })
@@ -551,7 +533,7 @@ function renderWeichenzeitenSide(title, sideObj, order) {
 
   return `
     <div style="padding:12px; border:1px solid #374151; border-radius:10px; background:rgba(255,255,255,0.02);">
-      <div style="font-size:14px; font-weight:700; margin-bottom:8px;">${_escapeHtml(title)}</div>
+      <div style="font-size:14px; font-weight:700; margin-bottom:8px;">${escapeHtml(title)}</div>
       ${rows}
     </div>
   `;
@@ -583,17 +565,17 @@ function renderLinkedShipsCard(relatedShips) {
           const s = normalizeShipRecord(ship);
           return `
             <div style="padding:10px 0; border-bottom:1px solid #374151;">
-              <div style="font-weight:700; margin-bottom:6px;">${_escapeHtml(s.name || "—")}</div>
-              ${_detailRow("Richtung", s.zulauf_richtung)}
-              ${_detailRow("Queue", s.queue_title)}
-              ${_detailRow("ETA Schleuse", s.eta_schleuse)}
-              ${_detailRow("ETA RÜB", s.eta_rueb)}
-              ${_detailRow("Status", s.travel_status)}
-              ${_detailRow("Pilot", s.pilot_1_name)}
-              ${_detailRow("Steuerer", s.steererNames)}
-              ${_detailRow("Q / VG", `${valueOrDash(s.q_gruppe)} / ${valueOrDash(s.vg)}`)}
-              ${_detailRow("Tiefgang", s.draft)}
-              ${_detailRow("Passage", [s.passage_start, s.passage_destination].filter(Boolean).join(" → ") || "—")}
+              <div style="font-weight:700; margin-bottom:6px;">${escapeHtml(s.name || "—")}</div>
+              ${detailRow("Richtung", s.zulauf_richtung)}
+              ${detailRow("Queue", s.queue_title)}
+              ${detailRow("ETA Schleuse", s.eta_schleuse)}
+              ${detailRow("ETA RÜB", s.eta_rueb)}
+              ${detailRow("Status", s.travel_status)}
+              ${detailRow("Pilot", s.pilot_1_name)}
+              ${detailRow("Steuerer", s.steererNames)}
+              ${detailRow("Q / VG", `${valueOrDash(s.q_gruppe)} / ${valueOrDash(s.vg)}`)}
+              ${detailRow("Tiefgang", s.draft)}
+              ${detailRow("Passage", [s.passage_start, s.passage_destination].filter(Boolean).join(" → ") || "—")}
             </div>
           `;
         }).join("")}
@@ -606,7 +588,7 @@ function renderPrimaryCard(title, innerHtml) {
   return `
     <div class="card expanded">
       <div class="card-header">
-        <strong>${_escapeHtml(title)}</strong>
+        <strong>${escapeHtml(title)}</strong>
         <span class="expand-icon">▼</span>
       </div>
       <div class="card-content" style="display:block;">
@@ -620,11 +602,11 @@ function renderSecondaryCard(title, innerHtml, note = "") {
   return `
     <div class="card expanded">
       <div class="card-header">
-        <strong>${_escapeHtml(title)}</strong>
+        <strong>${escapeHtml(title)}</strong>
         <span class="expand-icon">▼</span>
       </div>
       <div class="card-content" style="display:block;">
-        ${note ? `<div style="font-size:12px; opacity:.65; margin-bottom:8px;">${_escapeHtml(note)}</div>` : ""}
+        ${note ? `<div style="font-size:12px; opacity:.65; margin-bottom:8px;">${escapeHtml(note)}</div>` : ""}
         ${innerHtml}
       </div>
     </div>
@@ -639,11 +621,11 @@ function renderSourceMeta(sourceMeta) {
 
   return entries.map(([key, val]) => `
       <div style="padding:8px 0; border-bottom:1px solid #374151;">
-        <div style="font-weight:600; margin-bottom:4px;">${_escapeHtml(key)}</div>
-        ${_detailRow("Datei", val.file || "—")}
-        ${_detailRow("Vorhanden", val.exists ? "ja" : "nein")}
-        ${_detailRow("Generated", val.generated_at || "—")}
-        ${_detailRow("Count", valueOrDash(val.count))}
+        <div style="font-weight:600; margin-bottom:4px;">${escapeHtml(key)}</div>
+        ${detailRow("Datei", val.file || "—")}
+        ${detailRow("Vorhanden", val.exists ? "ja" : "nein")}
+        ${detailRow("Generated", val.generated_at || "—")}
+        ${detailRow("Count", valueOrDash(val.count))}
       </div>
     `).join("");
 }
@@ -861,26 +843,4 @@ function buildRoute(from, to) {
   const t = valueOrDash(to);
   if (f === "—" && t === "—") return "—";
   return `${f} → ${t}`;
-}
-
-function valueOrDash(v) {
-  return v === null || v === undefined || v === "" ? "—" : String(v);
-}
-
-function escapeHtmlLocal(text) {
-  if (text === null || text === undefined) return "";
-  const div = document.createElement("div");
-  div.textContent = String(text);
-  return div.innerHTML;
-}
-
-function formatDateTimeLocal(dateStr) {
-  if (!dateStr) return "—";
-  try {
-    const date = new Date(dateStr);
-    if (Number.isNaN(date.getTime())) return dateStr;
-    return date.toLocaleString("de-DE");
-  } catch {
-    return dateStr;
-  }
 }
