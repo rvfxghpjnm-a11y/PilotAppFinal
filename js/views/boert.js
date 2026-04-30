@@ -1,18 +1,18 @@
 /* =========================================================
    PilotAppFinal – boert.js
    Bört-View ausgelagert aus app.js
-   Tauschpartner erweitert:
-   - Pfeil
-   - mit/ohne Vergütung
-   - voraus/achtern
-   - mögliche Uhrzeiten
-   - taktische Nummer
-   - Positionsnummer
-   - Bemerkung
 
-   Mobile-Fix:
-   - Header umbrechen auf iPhone
-   - nichts mehr rechts abschneiden
+   Tauschpartner:
+   - kein Aufklappen mehr
+   - kein Pfeil rechts mehr
+   - vier Zeiten direkt sichtbar
+   - mobil mit Umbruch
+
+   Alle Lotsen:
+   - taktische Nummer
+   - Pfeil
+   - Vergütung
+   - aufklappbar
    ========================================================= */
 
 export async function loadBoertView(
@@ -100,18 +100,10 @@ export async function loadBoertView(
 
       if (p.times) {
         html += '<div class="times-grid">';
-        if (p.times.from_meldung) {
-          html += `<div class="time-item"><div class="time-label">von Meldung</div><div class="time-value">${escapeHtml(p.times.from_meldung)}</div></div>`;
-        }
-        if (p.times.calc_div2) {
-          html += `<div class="time-item"><div class="time-label">calc div2</div><div class="time-value">${escapeHtml(p.times.calc_div2)}</div></div>`;
-        }
-        if (p.times.calc_div3) {
-          html += `<div class="time-item"><div class="time-label">calc div3</div><div class="time-value">${escapeHtml(p.times.calc_div3)}</div></div>`;
-        }
-        if (p.times.from_meldung_alt) {
-          html += `<div class="time-item"><div class="time-label">von Meldung alt</div><div class="time-value">${escapeHtml(p.times.from_meldung_alt)}</div></div>`;
-        }
+        html += renderTimeBox("von Meldung", p.times.from_meldung, escapeHtml);
+        html += renderTimeBox("calc div2", p.times.calc_div2, escapeHtml);
+        html += renderTimeBox("calc div3", p.times.calc_div3, escapeHtml);
+        html += renderTimeBox("von Meldung alt", p.times.from_meldung_alt, escapeHtml);
         html += "</div>";
       }
 
@@ -146,15 +138,6 @@ export async function loadBoertView(
 
     document.querySelectorAll(".lotse-item").forEach((item) => {
       const header = item.querySelector(".lotse-header");
-      if (header) {
-        header.addEventListener("click", () => {
-          item.classList.toggle("expanded");
-        });
-      }
-    });
-
-    document.querySelectorAll(".tp-item").forEach((item) => {
-      const header = item.querySelector(".tp-header");
       if (header) {
         header.addEventListener("click", () => {
           item.classList.toggle("expanded");
@@ -206,10 +189,10 @@ function renderLotseCard(lotse, idx, detailRow, escapeHtml) {
           lotse.times
             ? `
               <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:8px; margin-top:12px;">
-                ${lotse.times.from_meldung ? detailRow("von Meldung", lotse.times.from_meldung) : ""}
-                ${lotse.times.calc_div2 ? detailRow("calc div2", lotse.times.calc_div2) : ""}
-                ${lotse.times.calc_div3 ? detailRow("calc div3", lotse.times.calc_div3) : ""}
-                ${lotse.times.from_meldung_alt ? detailRow("von Meldung alt", lotse.times.from_meldung_alt) : ""}
+                ${detailRow("von Meldung", firstNonEmpty(lotse.times.from_meldung, "—"))}
+                ${detailRow("calc div2", firstNonEmpty(lotse.times.calc_div2, "—"))}
+                ${detailRow("calc div3", firstNonEmpty(lotse.times.calc_div3, "—"))}
+                ${detailRow("von Meldung alt", firstNonEmpty(lotse.times.from_meldung_alt, "—"))}
               </div>
             `
             : ""
@@ -230,8 +213,6 @@ function renderTauschpartnerCard(tp, idx, targetPos, detailRow, escapeHtml) {
   const relation = getRelationLabel(tp, targetPos);
   const arrowText = getArrowLabel(arrow, verguetung);
   const name = `${firstNonEmpty(tp.vorname, "")} ${firstNonEmpty(tp.nachname, "")}`.trim() || firstNonEmpty(tp.name, "—");
-  const timeRows = renderTpTimes(tp, detailRow);
-  const summaryTime = getSummaryTime(tp);
 
   let cardClass = "tp-item";
   if (verguetung) {
@@ -244,100 +225,37 @@ function renderTauschpartnerCard(tp, idx, targetPos, detailRow, escapeHtml) {
 
   return `
     <div class="${cardClass}" data-tp="${idx}" style="margin-bottom:12px; border:1px solid #374151; border-radius:10px; overflow:hidden; background:rgba(255,255,255,0.02);">
-      <div class="tp-header" style="padding:12px; cursor:pointer;">
+      <div style="padding:12px;">
         <div style="display:flex; flex-wrap:wrap; gap:10px 16px; align-items:center; width:100%;">
           <div style="font-weight:700; min-width:180px; flex:1 1 220px; min-width:0; overflow-wrap:anywhere;">${escapeHtml(name)}</div>
           <div style="flex:0 1 auto;">Pos ${escapeHtml(pos)}</div>
           <div style="flex:0 1 auto;">Takt ${escapeHtml(takt)}</div>
           <div style="flex:0 1 auto; overflow-wrap:anywhere;">${escapeHtml(arrowText)}</div>
-          <div style="flex:0 1 auto;">${escapeHtml(summaryTime)}</div>
-          <div style="margin-left:auto; flex:0 0 auto;"><span class="expand-icon">▼</span></div>
-        </div>
-      </div>
-
-      <div class="tp-details" style="display:none; padding:0 12px 12px 12px; border-top:1px solid #374151;">
-        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:10px; margin-top:10px;">
-          ${detailRow("Name", name)}
-          ${detailRow("Positionsnummer", pos)}
-          ${detailRow("Taktische Nummer", takt)}
-          ${detailRow("Pfeil", arrow || "—")}
-          ${detailRow("Vergütung", verguetung ? "mit Vergütung" : "ohne Vergütung")}
-          ${detailRow("Lage", relation)}
-          ${detailRow("Bemerkung", bemerkung)}
+          <div style="flex:0 1 auto;">${escapeHtml(relation)}</div>
         </div>
 
-        ${timeRows ? `
-          <div style="margin-top:12px;">
-            <div style="font-weight:700; margin-bottom:8px;">Mögliche Uhrzeiten</div>
-            <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:8px;">
-              ${timeRows}
-            </div>
-          </div>
-        ` : ""}
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(180px, 1fr)); gap:8px; margin-top:12px;">
+          ${renderTimeBox("von Meldung", tp?.times?.from_meldung, escapeHtml)}
+          ${renderTimeBox("calc div2", tp?.times?.calc_div2, escapeHtml)}
+          ${renderTimeBox("calc div3", tp?.times?.calc_div3, escapeHtml)}
+          ${renderTimeBox("von Meldung alt", tp?.times?.from_meldung_alt, escapeHtml)}
+        </div>
 
-        ${renderAdditionalTpFields(tp, detailRow)}
+        ${
+          bemerkung
+            ? `<div style="margin-top:12px;">${detailRow("Bemerkung", bemerkung)}</div>`
+            : ""
+        }
       </div>
     </div>
   `;
 }
 
-function renderTpTimes(tp, detailRow) {
-  const rows = [];
-
-  if (tp.times && typeof tp.times === "object") {
-    if (tp.times.from_meldung) rows.push(detailRow("von Meldung", tp.times.from_meldung));
-    if (tp.times.from_meldung_alt) rows.push(detailRow("von Meldung alt", tp.times.from_meldung_alt));
-    if (tp.times.calc_div2) rows.push(detailRow("calc div2", tp.times.calc_div2));
-    if (tp.times.calc_div3) rows.push(detailRow("calc div3", tp.times.calc_div3));
-
-    Object.entries(tp.times).forEach(([key, value]) => {
-      if (!value) return;
-      if (["from_meldung", "from_meldung_alt", "calc_div2", "calc_div3"].includes(key)) return;
-      rows.push(detailRow(humanizeKey(key), value));
-    });
-  }
-
-  const directTimeFields = [
-    ["Zeit", tp.time],
-    ["Uhrzeit", tp.uhrzeit],
-    ["ETA", tp.eta],
-  ];
-
-  directTimeFields.forEach(([label, value]) => {
-    if (value) rows.push(detailRow(label, value));
-  });
-
-  return rows.join("");
-}
-
-function renderAdditionalTpFields(tp, detailRow) {
-  const usedKeys = new Set([
-    "vorname", "nachname", "name",
-    "pos", "position", "positionsnummer",
-    "takt", "taktische_nummer", "nr",
-    "arrow", "richtung",
-    "verguetung",
-    "bemerkung", "bemerkungen", "remark",
-    "times", "time", "uhrzeit", "eta"
-  ]);
-
-  const extraRows = [];
-
-  Object.entries(tp || {}).forEach(([key, value]) => {
-    if (usedKeys.has(key)) return;
-    if (value === null || value === undefined || value === "") return;
-    if (typeof value === "object") return;
-    extraRows.push(detailRow(humanizeKey(key), value));
-  });
-
-  if (!extraRows.length) return "";
-
+function renderTimeBox(label, value, escapeHtml) {
   return `
-    <div style="margin-top:12px;">
-      <div style="font-weight:700; margin-bottom:8px;">Weitere Felder</div>
-      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:8px;">
-        ${extraRows.join("")}
-      </div>
+    <div style="padding:10px 12px; border:1px solid #374151; border-radius:8px; background:rgba(255,255,255,0.03);">
+      <div style="font-size:12px; opacity:.75; margin-bottom:4px;">${escapeHtml(label)}</div>
+      <div style="font-size:20px; font-weight:700;">${escapeHtml(firstNonEmpty(value, "—"))}</div>
     </div>
   `;
 }
@@ -399,10 +317,4 @@ function toInt(value) {
   if (value === null || value === undefined || value === "") return null;
   const n = parseInt(String(value), 10);
   return Number.isNaN(n) ? null : n;
-}
-
-function humanizeKey(key) {
-  return String(key || "")
-    .replace(/_/g, " ")
-    .replace(/\b\w/g, (c) => c.toUpperCase());
 }
