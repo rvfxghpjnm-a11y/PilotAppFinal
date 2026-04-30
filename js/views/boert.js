@@ -9,6 +9,11 @@
    - taktische Nummer
    - Positionsnummer
    - Bemerkung
+
+   Alle Lotsen erweitert:
+   - taktische Nummer
+   - Pfeil
+   - Vergütung
    ========================================================= */
 
 export async function loadBoertView(
@@ -132,60 +137,7 @@ export async function loadBoertView(
       html += '<div class="section-header">Alle Lotsen</div>';
 
       filteredLotsen.forEach((lotse, idx) => {
-        const targetClass = lotse.is_target ? " target" : "";
-        const lotseTakt = firstNonEmpty(lotse.takt, lotse.taktische_nummer, lotse.nr, "—");
-
-        html += `<div class="lotse-item${targetClass}" data-lotse="${idx}">`;
-        html += '<div class="lotse-header">';
-        html += `<div class="lotse-nr">${escapeHtml(lotse.pos)}</div>`;
-        html += `<div class="lotse-name">${escapeHtml(lotse.vorname)} ${escapeHtml(lotse.nachname)}</div>`;
-        html += `<div class="lotse-info">Takt ${escapeHtml(lotseTakt)}</div>`;
-
-        if (lotse.arrow) {
-          const arrowClass = lotse.arrow.includes("↑")
-            ? "arrow-up"
-            : (lotse.arrow.includes("↓") ? "arrow-down" : "");
-          html += `<div class="lotse-info"><span class="${arrowClass}">${escapeHtml(lotse.arrow)}</span></div>`;
-        }
-
-        if (lotse.times && lotse.times.from_meldung) {
-          html += `<div class="lotse-info">${escapeHtml(lotse.times.from_meldung)}</div>`;
-        }
-
-        if (lotse.verguetung) {
-          html += '<div class="lotse-info"><span class="verguetung">$$</span></div>';
-        }
-
-        html += '<span class="expand-icon">▼</span>';
-        html += "</div>";
-
-        html += '<div class="lotse-details">';
-        html += '<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 8px; margin-top: 8px;">';
-        html += detailRow("Positionsnummer", firstNonEmpty(lotse.pos, "—"));
-        html += detailRow("Taktische Nummer", lotseTakt);
-
-        if (lotse.times) {
-          if (lotse.times.from_meldung) {
-            html += detailRow("von Meldung", lotse.times.from_meldung);
-          }
-          if (lotse.times.calc_div2) {
-            html += detailRow("calc div2", lotse.times.calc_div2);
-          }
-          if (lotse.times.calc_div3) {
-            html += detailRow("calc div3", lotse.times.calc_div3);
-          }
-          if (lotse.times.from_meldung_alt) {
-            html += detailRow("von Meldung alt", lotse.times.from_meldung_alt);
-          }
-        }
-        html += "</div>";
-
-        if (lotse.bemerkung) {
-          html += detailRow("Bemerkung", lotse.bemerkung);
-        }
-        html += "</div>";
-
-        html += "</div>";
+        html += renderLotseCard(lotse, idx, detailRow, escapeHtml);
       });
     }
 
@@ -217,6 +169,55 @@ export async function loadBoertView(
     contentEl.innerHTML = `<div class="error">❌ Bört-Fehler: ${escapeHtml(err.message)}</div>`;
     console.error(err);
   }
+}
+
+function renderLotseCard(lotse, idx, detailRow, escapeHtml) {
+  const targetClass = lotse.is_target ? " target" : "";
+  const pos = firstNonEmpty(lotse.pos, lotse.position, "—");
+  const name = `${firstNonEmpty(lotse.vorname, "")} ${firstNonEmpty(lotse.nachname, "")}`.trim() || firstNonEmpty(lotse.name, "—");
+  const takt = firstNonEmpty(lotse.takt, lotse.taktische_nummer, lotse.nr, "—");
+  const arrow = getArrow(lotse);
+  const verguetung = hasVerguetung(lotse);
+  const arrowText = getArrowLabel(arrow, verguetung);
+  const summaryTime = getSummaryTime(lotse);
+
+  return `
+    <div class="lotse-item${targetClass}" data-lotse="${idx}" style="margin-bottom:12px; border:1px solid #374151; border-radius:10px; overflow:hidden; background:rgba(255,255,255,0.02);">
+      <div class="lotse-header" style="display:grid; grid-template-columns:minmax(70px,90px) minmax(190px,1.5fr) minmax(110px,120px) minmax(170px,1.2fr) minmax(120px,130px) auto; gap:10px; align-items:center; padding:12px; cursor:pointer;">
+        <div style="font-weight:700;">Pos ${escapeHtml(pos)}</div>
+        <div style="font-weight:700;">${escapeHtml(name)}</div>
+        <div>Takt ${escapeHtml(takt)}</div>
+        <div>${escapeHtml(arrowText)}</div>
+        <div>${escapeHtml(summaryTime)}</div>
+        <div style="text-align:right;"><span class="expand-icon">▼</span></div>
+      </div>
+
+      <div class="lotse-details">
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:8px; margin-top:8px;">
+          ${detailRow("Positionsnummer", pos)}
+          ${detailRow("Taktische Nummer", takt)}
+          ${detailRow("Pfeil", arrow || "—")}
+          ${detailRow("Vergütung", verguetung ? "mit Vergütung" : "ohne Vergütung")}
+          ${detailRow("Zeit", firstNonEmpty(lotse.zeit, "—"))}
+        </div>
+
+        ${
+          lotse.times
+            ? `
+              <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:8px; margin-top:12px;">
+                ${lotse.times.from_meldung ? detailRow("von Meldung", lotse.times.from_meldung) : ""}
+                ${lotse.times.calc_div2 ? detailRow("calc div2", lotse.times.calc_div2) : ""}
+                ${lotse.times.calc_div3 ? detailRow("calc div3", lotse.times.calc_div3) : ""}
+                ${lotse.times.from_meldung_alt ? detailRow("von Meldung alt", lotse.times.from_meldung_alt) : ""}
+              </div>
+            `
+            : ""
+        }
+
+        ${lotse.bemerkung ? `<div style="margin-top:12px;">${detailRow("Bemerkung", lotse.bemerkung)}</div>` : ""}
+      </div>
+    </div>
+  `;
 }
 
 function renderTauschpartnerCard(tp, idx, targetPos, detailRow, escapeHtml) {
@@ -288,7 +289,7 @@ function renderTpTimes(tp, detailRow) {
 
     Object.entries(tp.times).forEach(([key, value]) => {
       if (!value) return;
-      if (["from_meldung", "from_meldung_alt", "calc div2", "calc_div2", "calc div3", "calc_div3"].includes(key)) return;
+      if (["from_meldung", "from_meldung_alt", "calc_div2", "calc_div3"].includes(key)) return;
       rows.push(detailRow(humanizeKey(key), value));
     });
   }
@@ -379,6 +380,8 @@ function getSummaryTime(tp) {
   if (tp?.times?.calc_div3) return String(tp.times.calc_div3);
   if (tp?.time) return String(tp.time);
   if (tp?.uhrzeit) return String(tp.uhrzeit);
+
+  if (tp?.times?.from_meldung) return String(tp.times.from_meldung);
   return "keine Zeit";
 }
 
