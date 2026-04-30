@@ -23,7 +23,6 @@ export async function loadRuesterbergenView(contentEl, statusEl, detailRow, esca
 
     if (Array.isArray(data.ships)) {
       data.ships.forEach(ship => {
-
         const assignment = data.assignments?.find(a => a.ship_key === ship.ship_key);
 
         html += `
@@ -34,23 +33,21 @@ export async function loadRuesterbergenView(contentEl, statusEl, detailRow, esca
             </div>
 
             <div class="card-content" style="display:block;">
-              
-              ${detailRow("Route", ship.summary?.route || "—")}
-              ${detailRow("Q", ship.ship_q ?? "—")}
-              ${detailRow("Tiefgang", ship.summary?.draft || "—")}
+              ${detailRow("Route", buildRouteFromMeldung(ship))}
+              ${detailRow("Q", ship.meldung?.q_gruppe ?? ship.ship_q ?? "—")}
+              ${detailRow("Tiefgang", ship.meldung?.draft || ship.summary?.draft || "—")}
 
               <hr style="border:none; border-top:1px solid #374151; margin:8px 0;">
 
               ${
                 assignment
                   ? `
-                    ${detailRow("Lotse", assignment.assigned_pilot)}
-                    ${detailRow("Abt.", assignment.assigned_abteilungszeit)}
-                    ${detailRow("ETA aktuell", assignment.assigned_current_ship_eta_rueb)}
+                    ${detailRow("Lotse", assignment.assigned_pilot || "—")}
+                    ${detailRow("Abt.", assignment.assigned_abteilungszeit || "—")}
+                    ${detailRow("ETA aktuell", assignment.assigned_current_ship_eta_rueb || "—")}
                   `
                   : `<div style="color:#f87171;">❌ Kein Lotse</div>`
               }
-
             </div>
           </div>
         `;
@@ -66,4 +63,25 @@ export async function loadRuesterbergenView(contentEl, statusEl, detailRow, esca
     contentEl.innerHTML = `<div class="error">❌ Fehler: ${escapeHtml(err.message)}</div>`;
     console.error(err);
   }
+}
+
+function buildRouteFromMeldung(ship) {
+  const from = normalizeText(ship?.meldung?.from);
+  const to = normalizeText(ship?.meldung?.to);
+
+  if (from || to) {
+    return `${from || "—"} → ${to || "—"}`;
+  }
+
+  const route = normalizeText(ship?.meldung?.route);
+  if (route) {
+    return route;
+  }
+
+  return "—";
+}
+
+function normalizeText(value) {
+  if (value === null || value === undefined) return "";
+  return String(value).trim();
 }
