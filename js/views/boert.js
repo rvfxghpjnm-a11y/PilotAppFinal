@@ -10,10 +10,9 @@
    - Positionsnummer
    - Bemerkung
 
-   Alle Lotsen erweitert:
-   - taktische Nummer
-   - Pfeil
-   - Vergütung
+   Mobile-Fix:
+   - Header umbrechen auf iPhone
+   - nichts mehr rechts abschneiden
    ========================================================= */
 
 export async function loadBoertView(
@@ -72,7 +71,7 @@ export async function loadBoertView(
     const targetPerson = data.person || data.target || {};
     const targetPos = toInt(targetPerson.pos);
 
-    let html = '<div style="max-width: 1200px;">';
+    let html = '<div style="max-width:1200px;">';
 
     html += '<div class="view-header">';
     html += '<div class="view-title">Bört</div>';
@@ -117,7 +116,7 @@ export async function loadBoertView(
       }
 
       if (p.bemerkung) {
-        html += `<div style="margin-top: 12px; padding: 8px; background: rgba(0,0,0,0.2); border-radius: 6px; font-size: 14px;">📝 ${escapeHtml(p.bemerkung)}</div>`;
+        html += `<div style="margin-top:12px; padding:8px; background:rgba(0,0,0,0.2); border-radius:6px; font-size:14px;">📝 ${escapeHtml(p.bemerkung)}</div>`;
       }
 
       html += "</div>";
@@ -183,13 +182,15 @@ function renderLotseCard(lotse, idx, detailRow, escapeHtml) {
 
   return `
     <div class="lotse-item${targetClass}" data-lotse="${idx}" style="margin-bottom:12px; border:1px solid #374151; border-radius:10px; overflow:hidden; background:rgba(255,255,255,0.02);">
-      <div class="lotse-header" style="display:grid; grid-template-columns:minmax(70px,90px) minmax(190px,1.5fr) minmax(110px,120px) minmax(170px,1.2fr) minmax(120px,130px) auto; gap:10px; align-items:center; padding:12px; cursor:pointer;">
-        <div style="font-weight:700;">Pos ${escapeHtml(pos)}</div>
-        <div style="font-weight:700;">${escapeHtml(name)}</div>
-        <div>Takt ${escapeHtml(takt)}</div>
-        <div>${escapeHtml(arrowText)}</div>
-        <div>${escapeHtml(summaryTime)}</div>
-        <div style="text-align:right;"><span class="expand-icon">▼</span></div>
+      <div class="lotse-header" style="padding:12px; cursor:pointer;">
+        <div style="display:flex; flex-wrap:wrap; gap:10px 16px; align-items:center; width:100%;">
+          <div style="font-weight:700; min-width:70px; flex:0 1 auto;">Pos ${escapeHtml(pos)}</div>
+          <div style="font-weight:700; min-width:180px; flex:1 1 220px; min-width:0; overflow-wrap:anywhere;">${escapeHtml(name)}</div>
+          <div style="flex:0 1 auto;">Takt ${escapeHtml(takt)}</div>
+          <div style="flex:0 1 auto; overflow-wrap:anywhere;">${escapeHtml(arrowText)}</div>
+          <div style="flex:0 1 auto;">${escapeHtml(summaryTime)}</div>
+          <div style="margin-left:auto; flex:0 0 auto;"><span class="expand-icon">▼</span></div>
+        </div>
       </div>
 
       <div class="lotse-details">
@@ -243,13 +244,15 @@ function renderTauschpartnerCard(tp, idx, targetPos, detailRow, escapeHtml) {
 
   return `
     <div class="${cardClass}" data-tp="${idx}" style="margin-bottom:12px; border:1px solid #374151; border-radius:10px; overflow:hidden; background:rgba(255,255,255,0.02);">
-      <div class="tp-header" style="display:grid; grid-template-columns:minmax(170px,1.5fr) minmax(90px,0.7fr) minmax(90px,0.8fr) minmax(150px,1.2fr) minmax(120px,1fr) auto; gap:10px; align-items:center; padding:12px; cursor:pointer;">
-        <div style="font-weight:700;">${escapeHtml(name)}</div>
-        <div>Pos ${escapeHtml(pos)}</div>
-        <div>Takt ${escapeHtml(takt)}</div>
-        <div>${escapeHtml(arrowText)}</div>
-        <div>${escapeHtml(summaryTime)}</div>
-        <div style="text-align:right;"><span class="expand-icon">▼</span></div>
+      <div class="tp-header" style="padding:12px; cursor:pointer;">
+        <div style="display:flex; flex-wrap:wrap; gap:10px 16px; align-items:center; width:100%;">
+          <div style="font-weight:700; min-width:180px; flex:1 1 220px; min-width:0; overflow-wrap:anywhere;">${escapeHtml(name)}</div>
+          <div style="flex:0 1 auto;">Pos ${escapeHtml(pos)}</div>
+          <div style="flex:0 1 auto;">Takt ${escapeHtml(takt)}</div>
+          <div style="flex:0 1 auto; overflow-wrap:anywhere;">${escapeHtml(arrowText)}</div>
+          <div style="flex:0 1 auto;">${escapeHtml(summaryTime)}</div>
+          <div style="margin-left:auto; flex:0 0 auto;"><span class="expand-icon">▼</span></div>
+        </div>
       </div>
 
       <div class="tp-details" style="display:none; padding:0 12px 12px 12px; border-top:1px solid #374151;">
@@ -380,8 +383,6 @@ function getSummaryTime(tp) {
   if (tp?.times?.calc_div3) return String(tp.times.calc_div3);
   if (tp?.time) return String(tp.time);
   if (tp?.uhrzeit) return String(tp.uhrzeit);
-
-  if (tp?.times?.from_meldung) return String(tp.times.from_meldung);
   return "keine Zeit";
 }
 
