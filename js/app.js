@@ -10,7 +10,6 @@ import { loadRuesterbergenView } from "./views/ruesterbergen.js";
 import { loadSeelotseView } from "./views/seelotse.js";
 import { loadDashboardView } from "./views/dashboard.js";
 import { loadBoertView } from "./views/boert.js";
-import { loadKielView } from "./views/kiel.js";
 import {
   detailRow,
   escapeHtml,
@@ -229,12 +228,7 @@ function renderView() {
   }
 
   if (currentView === "kiel") {
-    loadKielView(
-      contentEl,
-      statusEl,
-      escapeHtml,
-      formatDateTime
-    );
+    loadKielDynamic();
     return;
   }
 
@@ -250,6 +244,25 @@ function renderView() {
       formatDateTime,
       parseLotseTime
     );
+  }
+}
+
+// ---------------------------------------------------------
+// KIEL
+// ---------------------------------------------------------
+async function loadKielDynamic() {
+  try {
+    const mod = await import(`./views/kiel.js?v=${Date.now()}`);
+    await mod.loadKielView(
+      contentEl,
+      statusEl,
+      escapeHtml,
+      formatDateTime
+    );
+  } catch (err) {
+    contentEl.innerHTML = `<div class="error">❌ Kiel-Fehler: ${escapeHtml(err.message)}</div>`;
+    statusEl.textContent = "Kiel Fehler";
+    console.error(err);
   }
 }
 
