@@ -325,7 +325,7 @@ function computeStableEstimate(historyData) {
     { key: "calc_div3", label: "calc div3" },
   ];
 
-  const recent = entries.slice(-8);
+  const recent = entries.slice(-30);
   const results = [];
 
   series.forEach((s) => {
