@@ -28,7 +28,7 @@ export async function loadSeelotseView(
 
     const lotsen = Array.isArray(data.lotsen) ? data.lotsen : [];
     const grouped = groupLotsen(lotsen);
-    const metaIndex = buildPilotMetaIndex(dispatchData, qData);
+    const metaIndex = buildPilotMetaIndex(qData);
 
     let html = '<div style="max-width:1200px;">';
 
@@ -41,8 +41,6 @@ export async function loadSeelotseView(
     if (grouped.sonstige.length > 0) {
       html += renderGroup("Sonstige", grouped.sonstige, metaIndex, escapeHtml);
     }
-
-    html += renderRuebCompact(dispatchData, escapeHtml);
 
     html += "</div>";
 
@@ -124,18 +122,22 @@ function renderGroup(title, lotsen, metaIndex, escapeHtml) {
     const etaSchleuse = lotse?.times?.eta_schleuse || "—";
 
     const q = firstNonEmpty(
-      lotse.q,
-      lotse.q_gruppe,
-      lotse.pilot_q,
       meta.q,
+      lotse.q_gruppe,
+      lotse.q,
+      lotse.pilot_q,
+      lotse.qualifikation,
+      lotse.quali,
       "—"
     );
 
     const takt = firstNonEmpty(
-      lotse.takt,
-      lotse.taktische_nummer,
-      lotse.nr,
-      meta.takt,
+      meta.last_takt,
+      "—"
+    );
+
+    const lastPos = firstNonEmpty(
+      meta.last_pos,
       "—"
     );
 
@@ -148,6 +150,7 @@ function renderGroup(title, lotsen, metaIndex, escapeHtml) {
           <span class="badge info" style="font-size:12px;">${escapeHtml(aufgabe)}</span>
           <span class="badge gray" style="font-size:12px;">Q ${escapeHtml(q)}</span>
           <span class="badge gray" style="font-size:12px;">Takt ${escapeHtml(takt)}</span>
+          <span class="badge gray" style="font-size:12px;">GB-Pos ${escapeHtml(lastPos)}</span>
         </div>
 
         <div style="margin-top:4px; display:flex; gap:8px 14px; flex-wrap:wrap; font-size:13px; opacity:.86; line-height:1.25;">
@@ -155,47 +158,6 @@ function renderGroup(title, lotsen, metaIndex, escapeHtml) {
           <span>${escapeHtml(route)}</span>
           <span>RÜB ${escapeHtml(etaRueb)}</span>
           <span>SL ${escapeHtml(etaSchleuse)}</span>
-        </div>
-      </div>
-    `;
-  });
-
-  return html;
-}
-
-function renderRuebCompact(dispatchData, escapeHtml) {
-  if (!dispatchData?.ships?.length) return "";
-
-  let html = `
-    <div class="section-header" style="margin-top:14px; margin-bottom:6px;">
-      Rüsterbergen kurz
-    </div>
-  `;
-
-  dispatchData.ships.slice(0, 8).forEach((ship, index) => {
-    const assignment = Array.isArray(dispatchData.assignments)
-      ? dispatchData.assignments.find((x) => x.ship_key === ship.ship_key)
-      : null;
-
-    const route = buildShipRoute(ship);
-    const q = ship.ship_q ?? "—";
-    const draft = ship.summary?.draft || ship.meldung?.draft || "—";
-
-    html += `
-      <div class="card" style="margin-bottom:6px; padding:8px 10px;">
-        <div style="display:flex; gap:8px 12px; flex-wrap:wrap; align-items:baseline; line-height:1.25;">
-          <span style="font-weight:800; opacity:.75; min-width:26px;">${index + 1}.</span>
-          <span style="font-weight:800; min-width:48px;">${escapeHtml(shortTime(ship.eta_rueb))}</span>
-          <span style="font-weight:800; flex:1 1 180px; min-width:0; overflow-wrap:anywhere;">${escapeHtml(ship.ship_name || "—")}</span>
-          <span class="badge gray" style="font-size:12px;">Q ${escapeHtml(q)}</span>
-          <span class="badge gray" style="font-size:12px;">TG ${escapeHtml(draft)}</span>
-        </div>
-
-        <div style="margin-top:4px; display:flex; gap:8px 14px; flex-wrap:wrap; font-size:13px; opacity:.86; line-height:1.25;">
-          <span>${escapeHtml(route)}</span>
-          <span>Lotse ${escapeHtml(assignment?.assigned_pilot || "—")}</span>
-          <span>Abt. ${escapeHtml(shortTime(assignment?.assigned_abteilungszeit))}</span>
-          <span>ETA aktuell ${escapeHtml(shortTime(assignment?.assigned_current_ship_eta_rueb))}</span>
         </div>
       </div>
     `;
@@ -229,103 +191,77 @@ function groupLotsen(lotsen) {
   return grouped;
 }
 
-function buildPilotMetaIndex(dispatchData, qData) {
+function buildPilotMetaIndex(qData) {
   const index = new Map();
 
-  function add(name, q, takt) {
+  function addMetaForName(name, meta) {
     if (!name) return;
 
-    const keys = makeNameKeys(name);
-
-    keys.forEach((key) => {
+    makeNameKeys(name).forEach((key) => {
       if (!key) return;
-
-      const existing = index.get(key) || {};
-      index.set(key, {
-        q: firstNonEmpty(existing.q, q, ""),
-        takt: firstNonEmpty(existing.takt, takt, ""),
-      });
+      index.set(key, meta);
     });
   }
 
-  const pilotArrays = [
-    dispatchData?.pilots,
-    dispatchData?.dispatchable_pilots,
-    dispatchData?.visible_but_not_dispatchable_pilots,
-    dispatchData?.unused_pilots,
-  ];
+  function addFromEntry(entry) {
+    if (!entry) return;
 
-  pilotArrays.forEach((arr) => {
-    if (!Array.isArray(arr)) return;
+    const meta = {
+      q: firstNonEmpty(entry.q_gruppe, entry.q, entry.qualifikation, entry.quali, ""),
+      last_takt: firstNonEmpty(entry.last_takt, entry.takt, entry.taktische_nummer, entry.nr, ""),
+      last_pos: firstNonEmpty(entry.last_pos, entry.pos, entry.position, ""),
+      last_seen: firstNonEmpty(entry.last_seen, ""),
+    };
 
-    arr.forEach((p) => {
-      add(
-        p.pilot_name || p.name,
-        p.pilot_q ?? p.q ?? p.q_gruppe,
-        p.pilot_tactical_nr ?? p.tactical ?? p.takt
-      );
-    });
-  });
+    const names = [];
 
-  if (Array.isArray(dispatchData?.assignments)) {
-    dispatchData.assignments.forEach((a) => {
-      add(
-        a.assigned_pilot,
-        a.assigned_pilot_q,
-        a.assigned_tactical_nr
-      );
+    if (entry.name) {
+      names.push(entry.name);
+    }
 
-      if (Array.isArray(a.candidates)) {
-        a.candidates.forEach((c) => {
-          add(
-            c.pilot_name,
-            c.pilot_q,
-            c.pilot_tactical_nr
-          );
-        });
-      }
-    });
+    if (entry.vorname || entry.nachname) {
+      names.push(`${entry.vorname || ""} ${entry.nachname || ""}`.trim());
+      names.push(`${entry.nachname || ""}, ${entry.vorname || ""}`.trim());
+      names.push(`${entry.nachname || ""} ${entry.vorname || ""}`.trim());
+    }
+
+    names.forEach((name) => addMetaForName(name, meta));
   }
 
   if (Array.isArray(qData?.entries)) {
-    qData.entries.forEach((x) => {
-      add(
-        x.name,
-        x.q_gruppe ?? x.q,
-        x.takt ?? x.taktische_nummer ?? x.nr
-      );
-    });
+    qData.entries.forEach(addFromEntry);
   }
 
   if (Array.isArray(qData?.lotsen)) {
-    qData.lotsen.forEach((x) => {
-      const name = `${x.nachname || ""}, ${x.vorname || ""}`.trim();
-      add(
-        name,
-        x.q_gruppe ?? x.q,
-        x.takt ?? x.taktische_nummer ?? x.nr
-      );
-    });
+    qData.lotsen.forEach(addFromEntry);
   }
 
   return index;
 }
 
 function findPilotMeta(lotse, metaIndex) {
-  const keys = [];
+  const names = [];
 
   if (lotse.name) {
-    keys.push(...makeNameKeys(lotse.name));
+    names.push(lotse.name);
   }
 
   const builtName = buildName(lotse);
   if (builtName) {
-    keys.push(...makeNameKeys(builtName));
+    names.push(builtName);
   }
 
-  for (const key of keys) {
-    const found = metaIndex.get(key);
-    if (found) return found;
+  if (lotse.vorname || lotse.nachname) {
+    names.push(`${lotse.nachname || ""}, ${lotse.vorname || ""}`.trim());
+    names.push(`${lotse.nachname || ""} ${lotse.vorname || ""}`.trim());
+    names.push(`${lotse.vorname || ""} ${lotse.nachname || ""}`.trim());
+  }
+
+  for (const name of names) {
+    for (const key of makeNameKeys(name)) {
+      const found = metaIndex.get(key);
+      if (found) return found;
+    }
   }
 
   return {};
@@ -336,15 +272,25 @@ function makeNameKeys(name) {
   if (!raw) return [];
 
   const normalized = normalizeName(raw);
-
   const withoutComma = normalizeName(raw.replace(",", " "));
-  const tokensSorted = withoutComma
-    .split(" ")
-    .filter(Boolean)
-    .sort()
-    .join(" ");
 
-  return [...new Set([normalized, withoutComma, tokensSorted])];
+  const tokens = withoutComma
+    .split(" ")
+    .filter(Boolean);
+
+  const tokensSorted = [...tokens].sort().join(" ");
+  const firstLast = tokens.join(" ");
+  const lastFirst = tokens.length >= 2
+    ? [tokens[tokens.length - 1], ...tokens.slice(0, tokens.length - 1)].join(" ")
+    : "";
+
+  return [...new Set([
+    normalized,
+    withoutComma,
+    tokensSorted,
+    firstLast,
+    lastFirst,
+  ].filter(Boolean))];
 }
 
 function normalizeName(value) {
@@ -352,7 +298,7 @@ function normalizeName(value) {
     .normalize("NFD")
     .replace(/[\u0300-\u036f]/g, "")
     .toLowerCase()
-    .replace(/[,.;:]/g, " ")
+    .replace(/[,.;:()]/g, " ")
     .replace(/\s+/g, " ")
     .trim();
 }
@@ -397,17 +343,6 @@ function parseTimeForSort(value) {
   const now = new Date();
   now.setHours(Number(m[1]), Number(m[2]), 0, 0);
   return now.getTime();
-}
-
-function buildShipRoute(ship) {
-  const from = ship?.meldung?.from || "";
-  const to = ship?.meldung?.to || "";
-
-  if (from || to) {
-    return `${from || "—"} → ${to || "—"}`;
-  }
-
-  return ship?.summary?.route || ship?.meldung?.route || "—";
 }
 
 function firstNonEmpty(...values) {
