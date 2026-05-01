@@ -1,5 +1,4 @@
 
-cat > js/views/kiel.js <<'EOF'
 export async function loadKielView(
   contentEl,
   statusEl,
@@ -256,4 +255,3 @@ function normalizeShipName(value) {
     .toUpperCase()
     .replace(/\s+/g, "_");
 }
-EOF
