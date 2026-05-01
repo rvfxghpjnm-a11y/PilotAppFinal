@@ -10,6 +10,7 @@ import { loadRuesterbergenView } from "./views/ruesterbergen.js";
 import { loadSeelotseView } from "./views/seelotse.js";
 import { loadDashboardView } from "./views/dashboard.js";
 import { loadBoertView } from "./views/boert.js";
+import { loadKielView } from "./views/kiel.js";
 import {
   detailRow,
   escapeHtml,
@@ -224,6 +225,16 @@ function renderView() {
 
   if (currentView === "ruesterbergen") {
     loadRuesterbergenView(contentEl, statusEl, detailRow, escapeHtml);
+    return;
+  }
+
+  if (currentView === "kiel") {
+    loadKielView(
+      contentEl,
+      statusEl,
+      escapeHtml,
+      formatDateTime
+    );
     return;
   }
 
