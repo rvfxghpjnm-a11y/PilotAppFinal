@@ -136,11 +136,6 @@ function renderGroup(title, lotsen, metaIndex, escapeHtml) {
       "—"
     );
 
-    const lastPos = firstNonEmpty(
-      meta.last_pos,
-      "—"
-    );
-
     html += `
       <div class="card" style="margin-bottom:6px; padding:8px 10px;">
         <div style="display:flex; align-items:baseline; gap:8px 12px; flex-wrap:wrap; line-height:1.25;">
@@ -150,7 +145,6 @@ function renderGroup(title, lotsen, metaIndex, escapeHtml) {
           <span class="badge info" style="font-size:12px;">${escapeHtml(aufgabe)}</span>
           <span class="badge gray" style="font-size:12px;">Q ${escapeHtml(q)}</span>
           <span class="badge gray" style="font-size:12px;">Takt ${escapeHtml(takt)}</span>
-          <span class="badge gray" style="font-size:12px;">GB-Pos ${escapeHtml(lastPos)}</span>
         </div>
 
         <div style="margin-top:4px; display:flex; gap:8px 14px; flex-wrap:wrap; font-size:13px; opacity:.86; line-height:1.25;">
