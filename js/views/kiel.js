@@ -1,4 +1,3 @@
-cd ~/PilotAppFinal/PilotApp-View
 
 cat > js/views/kiel.js <<'EOF'
 export async function loadKielView(
@@ -90,7 +89,7 @@ function buildKielRows(entries) {
         q: firstNonEmpty(meldung.q_gruppe, summary.q_gruppe, "—"),
         draft: firstNonEmpty(meldung.draft, summary.draft, "—"),
         lotsen: firstNonEmpty(meldung.lotsen_anzahl, summary.lotsen_anzahl_kiel, "—"),
-        confirmed: Boolean(meldung.confirmed ?? summary.confirmed_kiel),
+        confirmed: Boolean(meldung.confirmed !== undefined && meldung.confirmed !== null ? meldung.confirmed : summary.confirmed_kiel),
         remark,
         liegeplatz: extractLiegeplatz(remark),
         agentur: firstNonEmpty(
@@ -247,7 +246,7 @@ function firstNonEmpty(...values) {
 }
 
 function isMeaningful(value) {
-  const text = String(value ?? "").trim();
+  const text = String(value !== undefined && value !== null ? value : "").trim();
   return text !== "" && text !== "—";
 }
 
