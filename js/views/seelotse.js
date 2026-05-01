@@ -208,7 +208,7 @@ function buildPilotMetaIndex(qData) {
 
     const meta = {
       q: firstNonEmpty(entry.q_gruppe, entry.q, entry.qualifikation, entry.quali, ""),
-      last_takt: firstNonEmpty(entry.last_takt, entry.takt, entry.taktische_nummer, entry.nr, ""),
+      last_takt: firstNonEmpty(entry.last_takt, ""),
       last_pos: firstNonEmpty(entry.last_pos, entry.pos, entry.position, ""),
       last_seen: firstNonEmpty(entry.last_seen, ""),
     };
