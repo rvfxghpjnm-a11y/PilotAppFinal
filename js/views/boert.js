@@ -13,6 +13,10 @@
    - Pfeil
    - Vergütung
    - aufklappbar
+
+   Neu:
+   - stabilste Ziellotsen-Zeit aus Workstart-History markieren
+   - Bört-Status oben zusätzlich aus Bundle prüfen
    ========================================================= */
 
 export async function loadBoertView(
@@ -27,12 +31,19 @@ export async function loadBoertView(
   parseLotseTime
 ) {
   try {
-    const res = await fetch(`data/${currentPerson.key}_boert.json`, { cache: "no-store" });
-    if (!res.ok) {
+    const [boertRes, historyRes, bundleRes] = await Promise.allSettled([
+      fetch(`data/${currentPerson.key}_boert.json`, { cache: "no-store" }),
+      fetch(`data/workstart_history_${currentPerson.key}.json`, { cache: "no-store" }),
+      fetch(`data/${currentPerson.key}_bundle.json`, { cache: "no-store" }),
+    ]);
+
+    if (boertRes.status !== "fulfilled" || !boertRes.value.ok) {
       throw new Error(`${currentPerson.key}_boert.json nicht ladbar`);
     }
 
-    const data = await res.json();
+    const data = await boertRes.value.json();
+    const historyData = await safeJsonFromSettled(historyRes);
+    const bundleData = await safeJsonFromSettled(bundleRes);
 
     let filteredLotsen = data.lotsen || [];
     const filterActive = Boolean(boertFromDate || boertToDate);
@@ -70,6 +81,7 @@ export async function loadBoertView(
     const shownLotsen = filteredLotsen.length;
     const targetPerson = data.person || data.target || {};
     const targetPos = toInt(targetPerson.pos);
+    const stableEstimate = computeStableEstimate(historyData);
 
     let html = '<div style="max-width:1200px;">';
 
@@ -78,11 +90,7 @@ export async function loadBoertView(
     html += '<div class="badges-row">';
     html += `<div class="meta-info">${filterActive ? "🔎 Filter aktiv – " : ""}Anzeige ${shownLotsen} von ${totalLotsen} Lotsen</div>`;
 
-    if (data.status === "boert") {
-      html += '<span class="badge success">✓ Im Bört</span>';
-    } else {
-      html += '<span class="badge gray">Nicht im Bört</span>';
-    }
+    html += renderBoertStatusBadge(data, bundleData);
 
     html += "</div>";
     html += `<div class="meta-info">Generiert: ${formatDateTime(data.generated_at)}</div>`;
@@ -100,14 +108,23 @@ export async function loadBoertView(
 
       if (p.times) {
         html += '<div class="times-grid">';
-        html += renderTimeBox("von Meldung", p.times.from_meldung, escapeHtml);
-        html += renderTimeBox("calc div2", p.times.calc_div2, escapeHtml);
-        html += renderTimeBox("calc div3", p.times.calc_div3, escapeHtml);
-        html += renderTimeBox("von Meldung alt", p.times.from_meldung_alt, escapeHtml);
+        html += renderTimeBox("von Meldung", p.times.from_meldung, escapeHtml, stableEstimate?.key === "from_meldung");
+        html += renderTimeBox("calc div2", p.times.calc_div2, escapeHtml, stableEstimate?.key === "calc_div2");
+        html += renderTimeBox("calc div3", p.times.calc_div3, escapeHtml, stableEstimate?.key === "calc_div3");
+        html += renderTimeBox("von Meldung alt", p.times.from_meldung_alt, escapeHtml, stableEstimate?.key === "from_meldung_alt");
         html += "</div>";
+
+        if (stableEstimate) {
+          html += `
+            <div style="margin-top:10px; font-size:13px; opacity:.85;">
+              ⭐ Stabilste Schätzung aktuell: <b>${escapeHtml(stableEstimate.label)}</b>
+              <span style="opacity:.7;">(${escapeHtml(stableEstimate.detail)})</span>
+            </div>
+          `;
+        }
       }
 
-      if (p.bemerkung) {
+      if (isMeaningfulText(p.bemerkung)) {
         html += `<div style="margin-top:12px; padding:8px; background:rgba(0,0,0,0.2); border-radius:6px; font-size:14px;">📝 ${escapeHtml(p.bemerkung)}</div>`;
       }
 
@@ -151,6 +168,24 @@ export async function loadBoertView(
     contentEl.innerHTML = `<div class="error">❌ Bört-Fehler: ${escapeHtml(err.message)}</div>`;
     console.error(err);
   }
+}
+
+function renderBoertStatusBadge(data, bundleData) {
+  const kind = normalizeStateKind(bundleData?.state?.kind || bundleData?.action_card?.state_label || "");
+
+  if (kind === "gesamtboert") {
+    return '<span class="badge success">✓ Im Bört</span>';
+  }
+
+  if (kind === "seelotsen") {
+    return '<span class="badge info">Aktuell Seelotse</span>';
+  }
+
+  if (data.status === "boert" && data.person) {
+    return '<span class="badge success">✓ Im Bört</span>';
+  }
+
+  return '<span class="badge gray">Nicht im Bört</span>';
 }
 
 function renderLotseCard(lotse, idx, detailRow, escapeHtml) {
@@ -198,7 +233,7 @@ function renderLotseCard(lotse, idx, detailRow, escapeHtml) {
             : ""
         }
 
-        ${lotse.bemerkung ? `<div style="margin-top:12px;">${detailRow("Bemerkung", lotse.bemerkung)}</div>` : ""}
+        ${isMeaningfulText(lotse.bemerkung) ? `<div style="margin-top:12px;">${detailRow("Bemerkung", lotse.bemerkung)}</div>` : ""}
       </div>
     </div>
   `;
@@ -209,7 +244,7 @@ function renderTauschpartnerCard(tp, idx, targetPos, detailRow, escapeHtml) {
   const verguetung = hasVerguetung(tp);
   const pos = firstNonEmpty(tp.pos, tp.position, tp.positionsnummer, "—");
   const takt = firstNonEmpty(tp.takt, tp.taktische_nummer, tp.nr, "—");
-  const bemerkung = firstNonEmpty(tp.bemerkung, tp.remark, tp.bemerkungen, "—");
+  const bemerkung = firstNonEmpty(tp.bemerkung, tp.remark, tp.bemerkungen, "");
   const relation = getRelationLabel(tp, targetPos);
   const arrowText = getArrowLabel(arrow, verguetung);
   const name = `${firstNonEmpty(tp.vorname, "")} ${firstNonEmpty(tp.nachname, "")}`.trim() || firstNonEmpty(tp.name, "—");
@@ -235,14 +270,14 @@ function renderTauschpartnerCard(tp, idx, targetPos, detailRow, escapeHtml) {
         </div>
 
         <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(180px, 1fr)); gap:8px; margin-top:12px;">
-          ${renderTimeBox("von Meldung", tp?.times?.from_meldung, escapeHtml)}
-          ${renderTimeBox("calc div2", tp?.times?.calc_div2, escapeHtml)}
-          ${renderTimeBox("calc div3", tp?.times?.calc_div3, escapeHtml)}
-          ${renderTimeBox("von Meldung alt", tp?.times?.from_meldung_alt, escapeHtml)}
+          ${renderTimeBox("von Meldung", tp?.times?.from_meldung, escapeHtml, false)}
+          ${renderTimeBox("calc div2", tp?.times?.calc_div2, escapeHtml, false)}
+          ${renderTimeBox("calc div3", tp?.times?.calc_div3, escapeHtml, false)}
+          ${renderTimeBox("von Meldung alt", tp?.times?.from_meldung_alt, escapeHtml, false)}
         </div>
 
         ${
-          bemerkung
+          isMeaningfulText(bemerkung)
             ? `<div style="margin-top:12px;">${detailRow("Bemerkung", bemerkung)}</div>`
             : ""
         }
@@ -251,13 +286,133 @@ function renderTauschpartnerCard(tp, idx, targetPos, detailRow, escapeHtml) {
   `;
 }
 
-function renderTimeBox(label, value, escapeHtml) {
+function renderTimeBox(label, value, escapeHtml, isStable = false) {
+  const stableStyle = isStable
+    ? "border-color:#facc15; background:rgba(250,204,21,0.10);"
+    : "";
+
   return `
-    <div style="padding:10px 12px; border:1px solid #374151; border-radius:8px; background:rgba(255,255,255,0.03);">
+    <div style="padding:10px 12px; border:1px solid #374151; border-radius:8px; background:rgba(255,255,255,0.03); ${stableStyle}">
       <div style="font-size:12px; opacity:.75; margin-bottom:4px;">${escapeHtml(label)}</div>
       <div style="font-size:20px; font-weight:700;">${escapeHtml(firstNonEmpty(value, "—"))}</div>
+      ${
+        isStable
+          ? `<div style="font-size:11px; margin-top:4px; font-weight:700;">⭐ stabilste Schätzung</div>`
+          : ""
+      }
     </div>
   `;
+}
+
+async function safeJsonFromSettled(result) {
+  try {
+    if (result.status !== "fulfilled") return null;
+    if (!result.value?.ok) return null;
+    return await result.value.json();
+  } catch {
+    return null;
+  }
+}
+
+function computeStableEstimate(historyData) {
+  const entries = Array.isArray(historyData?.entries) ? historyData.entries : [];
+  if (entries.length < 2) return null;
+
+  const series = [
+    { key: "from_meldung", label: "von Meldung" },
+    { key: "from_meldung_alt", label: "von Meldung alt" },
+    { key: "calc_div2", label: "calc div2" },
+    { key: "calc_div3", label: "calc div3" },
+  ];
+
+  const recent = entries.slice(-8);
+  const results = [];
+
+  series.forEach((s) => {
+    const points = recent
+      .map((row) => ({
+        ts: parseDateTime(row.ts_calc),
+        value: parseDateTime(row[s.key]),
+      }))
+      .filter((p) => p.ts && p.value)
+      .sort((a, b) => a.ts.getTime() - b.ts.getTime());
+
+    if (points.length < 2) return;
+
+    const slopes = [];
+    const deltas = [];
+
+    for (let i = 1; i < points.length; i++) {
+      const elapsedMin = Math.abs(points[i].ts.getTime() - points[i - 1].ts.getTime()) / 60000;
+      const valueDeltaMin = Math.abs(points[i].value.getTime() - points[i - 1].value.getTime()) / 60000;
+
+      if (elapsedMin <= 0) continue;
+
+      slopes.push(valueDeltaMin / elapsedMin);
+      deltas.push(valueDeltaMin);
+    }
+
+    if (!slopes.length) return;
+
+    const avgSlope = slopes.reduce((a, b) => a + b, 0) / slopes.length;
+    const lastDelta = deltas[deltas.length - 1] || 0;
+
+    results.push({
+      key: s.key,
+      label: s.label,
+      score: avgSlope,
+      lastDelta,
+      detail: `letzte Bewegung ${Math.round(lastDelta)} min`,
+    });
+  });
+
+  if (!results.length) return null;
+
+  results.sort((a, b) => {
+    if (a.score !== b.score) return a.score - b.score;
+
+    const priority = {
+      from_meldung: 0,
+      from_meldung_alt: 1,
+      calc_div3: 2,
+      calc_div2: 3,
+    };
+
+    return (priority[a.key] ?? 99) - (priority[b.key] ?? 99);
+  });
+
+  return results[0];
+}
+
+function parseDateTime(value) {
+  if (!value) return null;
+
+  const text = String(value).trim();
+  if (!text) return null;
+
+  let normalized = text;
+
+  if (/^\d{4}-\d{2}-\d{2} \d{2}:\d{2}/.test(text)) {
+    normalized = text.replace(" ", "T");
+  }
+
+  const d = new Date(normalized);
+  if (Number.isNaN(d.getTime())) return null;
+
+  return d;
+}
+
+function normalizeStateKind(kind) {
+  const k = String(kind || "").toLowerCase();
+
+  if (k.includes("gesamt")) return "gesamtboert";
+  if (k.includes("bört")) return "gesamtboert";
+  if (k.includes("boert")) return "gesamtboert";
+
+  if (k.includes("see")) return "seelotsen";
+  if (k.includes("lotse")) return "seelotsen";
+
+  return "";
 }
 
 function getArrow(tp) {
@@ -317,4 +472,9 @@ function toInt(value) {
   if (value === null || value === undefined || value === "") return null;
   const n = parseInt(String(value), 10);
   return Number.isNaN(n) ? null : n;
+}
+
+function isMeaningfulText(value) {
+  const text = String(value ?? "").trim();
+  return text !== "" && text !== "—";
 }
