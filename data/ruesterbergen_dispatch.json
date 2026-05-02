@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-02T13:09:13",
+  "generated_at": "2026-05-02T13:11:17",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,13 +32,13 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 3,
+    "ships_for_ruesterbergen": 4,
     "pilots_total": 8,
     "pilots_dispatchable": 5,
     "pilots_visible_only": 3,
-    "assignments": 3,
+    "assignments": 4,
     "unassigned_ships": 0,
-    "unused_pilots": 2
+    "unused_pilots": 1
   },
   "ships": [
     {
@@ -118,9 +118,47 @@
       }
     },
     {
+      "ship_key": "SCANDIC",
+      "ship_name": "SCANDIC",
+      "eta_rueb": "2026-05-02 18:43",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 3,
+      "meldung": {
+        "nr": "4",
+        "time": "Sat May 02 18:43:00 CEST 2026",
+        "draft": "8.2",
+        "q_gruppe": "3",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "3",
+        "vg": "4",
+        "draft": "8.20",
+        "length_m": "130.12",
+        "beam_m": "19.6",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "U",
+        "pilot_1_name": "Scholz, Burghard",
+        "travel_status": "SAILING_NOK",
+        "makler": "UCA",
+        "dangerous_vessel": "ja",
+        "type_of_loading": "Erdoel und Derivate"
+      }
+    },
+    {
       "ship_key": "ELBWIND",
       "ship_name": "ELBWIND",
-      "eta_rueb": "2026-05-02 19:05",
+      "eta_rueb": "2026-05-02 19:03",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 1,
       "meldung": {
@@ -711,10 +749,10 @@
       }
     },
     {
-      "ship_key": "ELBWIND",
-      "ship_name": "ELBWIND",
-      "eta_rueb": "2026-05-02 19:05",
-      "ship_q": 1,
+      "ship_key": "SCANDIC",
+      "ship_name": "SCANDIC",
+      "eta_rueb": "2026-05-02 18:43",
+      "ship_q": 3,
       "assigned_pilot": "Jeschek, Hauke",
       "assigned_pilot_q": 0,
       "assigned_tactical_nr": 11,
@@ -739,6 +777,79 @@
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
+        {
+          "pilot_name": "Schulz, Arne",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 10,
+          "abteilungszeit": "2026-05-02 09:45",
+          "fahrzeug": "JOHANN ESSBERGER",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "JOHANN ESSBERGER",
+          "current_ship_eta_rueb": "2026-05-02 14:33",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Wachsmuth, Martin",
+          "pilot_tactical_nr": 17,
+          "reason": "Quali passt nicht (4 > 3)",
+          "pilot_q": 4,
+          "ship_q": 3
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "4",
+          "time": "Sat May 02 18:43:00 CEST 2026",
+          "draft": "8.2",
+          "q_gruppe": "3",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "HOS → KLT",
+          "routes": [
+            "HOS → KLT",
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "3",
+          "vg": "4",
+          "draft": "8.20",
+          "length_m": "130.12",
+          "beam_m": "19.6",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "U",
+          "pilot_1_name": "Scholz, Burghard",
+          "travel_status": "SAILING_NOK",
+          "makler": "UCA",
+          "dangerous_vessel": "ja",
+          "type_of_loading": "Erdoel und Derivate"
+        }
+      }
+    },
+    {
+      "ship_key": "ELBWIND",
+      "ship_name": "ELBWIND",
+      "eta_rueb": "2026-05-02 19:03",
+      "ship_q": 1,
+      "assigned_pilot": "Schulz, Arne",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 10,
+      "assigned_abteilungszeit": "2026-05-02 09:45",
+      "assigned_current_ship_name": "JOHANN ESSBERGER",
+      "assigned_current_ship_eta_rueb": "2026-05-02 14:33",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 1,
+      "candidates": [
         {
           "pilot_name": "Schulz, Arne",
           "pilot_q": 0,
@@ -818,28 +929,6 @@
       "current_ship_eta_rueb": "2026-05-02 12:26",
       "current_ship_q": 4,
       "current_ship_route": "RÜB → HOS",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
-    },
-    {
-      "pilot_key": "schulz_arne",
-      "vorname": "Arne",
-      "nachname": "Schulz",
-      "pilot_name": "Schulz, Arne",
-      "abteilungszeit": "2026-05-02 09:45",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 10,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "JOHANN ESSBERGER",
-      "from": "UTG",
-      "to": "RÜB",
-      "nr": 10,
-      "raw_time": "Sat May 02 09:45:00 CEST 2026",
-      "current_ship_name": "JOHANN ESSBERGER",
-      "current_ship_eta_rueb": "2026-05-02 14:33",
-      "current_ship_q": 0,
-      "current_ship_route": "UTG → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     }
