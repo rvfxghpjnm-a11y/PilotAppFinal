@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-03T00:45:18",
+  "generated_at": "2026-05-03T00:47:16",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,55 +32,15 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 1,
+    "ships_for_ruesterbergen": 0,
     "pilots_total": 12,
     "pilots_dispatchable": 9,
     "pilots_visible_only": 3,
-    "assignments": 1,
+    "assignments": 0,
     "unassigned_ships": 0,
-    "unused_pilots": 8
+    "unused_pilots": 9
   },
-  "ships": [
-    {
-      "ship_key": "TARNBRIS",
-      "ship_name": "TARNBRIS",
-      "eta_rueb": "2026-05-03 01:13",
-      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
-      "ship_q": 3,
-      "meldung": {
-        "nr": "1",
-        "time": "Sun May 03 01:06:00 CEST 2026",
-        "draft": "8.2",
-        "q_gruppe": "3",
-        "lotsen_anzahl": 1,
-        "confirmed": false,
-        "from": "RÜB",
-        "to": "HOS",
-        "remark": "Pax"
-      },
-      "summary": {
-        "route": "HOS → KLT",
-        "routes": [
-          "HOS → KLT",
-          "RÜB → HOS"
-        ],
-        "q_gruppe": "3",
-        "vg": "4",
-        "draft": "8.20",
-        "length_m": "129.50",
-        "beam_m": "19.79",
-        "queue_title": "Zulauf vom Kanal in Kiel",
-        "zulauf_richtung": "vom_kanal",
-        "pilot_required": "true",
-        "pilot_status": "U",
-        "pilot_1_name": "Marth, Jürgen",
-        "travel_status": "SAILING_NOK",
-        "makler": "SUB",
-        "dangerous_vessel": "-",
-        "type_of_loading": "Chemikalien fluessig"
-      }
-    }
-  ],
+  "ships": [],
   "pilots": [
     {
       "pilot_key": "haala_klaus werner",
@@ -268,14 +228,16 @@
       "q_source": "q_gruppen_lotsen.entries",
       "pilot_tactical_nr": 4,
       "aufgabe": "Kanalbört",
-      "fahrzeug": "RÜB",
+      "fahrzeug": "TARNBRIS",
+      "from": "RÜB",
+      "to": "HOS",
       "nr": 4,
       "raw_time": "Sat May 02 23:40:00 CEST 2026",
       "current_ship_name": "TARNBRIS",
       "current_ship_eta_rueb": "2026-05-03 01:13",
       "current_ship_q": 3,
-      "current_ship_route": "HOS → KLT",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_route": "RÜB → HOS",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
@@ -529,14 +491,16 @@
       "q_source": "q_gruppen_lotsen.entries",
       "pilot_tactical_nr": 4,
       "aufgabe": "Kanalbört",
-      "fahrzeug": "RÜB",
+      "fahrzeug": "TARNBRIS",
+      "from": "RÜB",
+      "to": "HOS",
       "nr": 4,
       "raw_time": "Sat May 02 23:40:00 CEST 2026",
       "current_ship_name": "TARNBRIS",
       "current_ship_eta_rueb": "2026-05-03 01:13",
       "current_ship_q": 3,
-      "current_ship_route": "HOS → KLT",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_route": "RÜB → HOS",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     }
   ],
@@ -587,176 +551,31 @@
       "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
     }
   ],
-  "assignments": [
-    {
-      "ship_key": "TARNBRIS",
-      "ship_name": "TARNBRIS",
-      "eta_rueb": "2026-05-03 01:13",
-      "ship_q": 3,
-      "assigned_pilot": "Haala, Klaus Werner",
-      "assigned_pilot_q": 0,
-      "assigned_tactical_nr": 17,
-      "assigned_abteilungszeit": "2026-05-02 16:12",
-      "assigned_current_ship_name": "ECO PAMPERO",
-      "assigned_current_ship_eta_rueb": "2026-05-02 22:59",
-      "assigned_current_ship_source": "schiffe_merged.seelotsen",
-      "assigned_availability_kind": "merged_eta",
-      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 8,
-      "candidates": [
-        {
-          "pilot_name": "Haala, Klaus Werner",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 17,
-          "abteilungszeit": "2026-05-02 16:12",
-          "fahrzeug": "ECO PAMPERO",
-          "to": "HOS",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "ECO PAMPERO",
-          "current_ship_eta_rueb": "2026-05-02 22:59",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Böttger, Oleif Johann",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 16,
-          "abteilungszeit": "2026-05-02 16:26",
-          "fahrzeug": "KRISTIN SCHEPERS",
-          "to": "HOS",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "KRISTIN SCHEPERS",
-          "current_ship_eta_rueb": "2026-05-02 23:02",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Koslik, Kevin",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 15,
-          "abteilungszeit": "2026-05-02 16:31",
-          "fahrzeug": "MIRAMAR",
-          "to": "UTG",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "MIRAMAR",
-          "current_ship_eta_rueb": "2026-05-02 21:25",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Hansen, Hinnerk",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 14,
-          "abteilungszeit": "2026-05-02 18:28",
-          "fahrzeug": "NELLI",
-          "to": "UTG",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "NELLI",
-          "current_ship_eta_rueb": "2026-05-03 00:53",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Klüver, Knut Paul",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 13,
-          "abteilungszeit": "2026-05-02 18:37",
-          "fahrzeug": "BOTHNIABORG",
-          "to": "HOS",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "BOTHNIABORG",
-          "current_ship_eta_rueb": "2026-05-03 01:04",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Munz, Joachim",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 12,
-          "abteilungszeit": "2026-05-02 18:54",
-          "fahrzeug": "MAXIMAR",
-          "to": "UTG",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "MAXIMAR",
-          "current_ship_eta_rueb": "2026-05-03 01:08",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Bodmann, Christoph",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 9,
-          "abteilungszeit": "2026-05-02 19:25",
-          "fahrzeug": "LADY MONIQUE",
-          "to": "KLT",
-          "aufgabe": "Seebört",
-          "current_ship_name": "LADY MONIQUE",
-          "current_ship_eta_rueb": "2026-05-02 21:02",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Marth, Jürgen",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 4,
-          "abteilungszeit": "2026-05-02 23:40",
-          "fahrzeug": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "TARNBRIS",
-          "current_ship_eta_rueb": "2026-05-03 01:13",
-          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-          "availability_kind": "merged_eta"
-        }
-      ],
-      "excluded": [
-        {
-          "pilot_name": "Klein, Sebastian",
-          "pilot_tactical_nr": 6,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "UHL FLAIR",
-          "pilot_current_ship_eta_rueb": "2026-05-03 01:48",
-          "ship_eta_rueb": "2026-05-03 01:13",
-          "availability_kind": "merged_eta"
-        }
-      ],
-      "ship": {
-        "meldung": {
-          "nr": "1",
-          "time": "Sun May 03 01:06:00 CEST 2026",
-          "draft": "8.2",
-          "q_gruppe": "3",
-          "lotsen_anzahl": 1,
-          "confirmed": false,
-          "from": "RÜB",
-          "to": "HOS",
-          "remark": "Pax"
-        },
-        "summary": {
-          "route": "HOS → KLT",
-          "routes": [
-            "HOS → KLT",
-            "RÜB → HOS"
-          ],
-          "q_gruppe": "3",
-          "vg": "4",
-          "draft": "8.20",
-          "length_m": "129.50",
-          "beam_m": "19.79",
-          "queue_title": "Zulauf vom Kanal in Kiel",
-          "zulauf_richtung": "vom_kanal",
-          "pilot_required": "true",
-          "pilot_status": "U",
-          "pilot_1_name": "Marth, Jürgen",
-          "travel_status": "SAILING_NOK",
-          "makler": "SUB",
-          "dangerous_vessel": "-",
-          "type_of_loading": "Chemikalien fluessig"
-        }
-      }
-    }
-  ],
+  "assignments": [],
   "unassigned_ships": [],
   "unused_pilots": [
+    {
+      "pilot_key": "haala_klaus werner",
+      "vorname": "Klaus Werner",
+      "nachname": "Haala",
+      "pilot_name": "Haala, Klaus Werner",
+      "abteilungszeit": "2026-05-02 16:12",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 17,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "ECO PAMPERO",
+      "from": "RÜB",
+      "to": "HOS",
+      "nr": 17,
+      "raw_time": "Sat May 02 16:12:00 CEST 2026",
+      "current_ship_name": "ECO PAMPERO",
+      "current_ship_eta_rueb": "2026-05-02 22:59",
+      "current_ship_q": 0,
+      "current_ship_route": "RÜB → HOS",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
     {
       "pilot_key": "böttger_oleif johann",
       "vorname": "Oleif Johann",
@@ -921,14 +740,16 @@
       "q_source": "q_gruppen_lotsen.entries",
       "pilot_tactical_nr": 4,
       "aufgabe": "Kanalbört",
-      "fahrzeug": "RÜB",
+      "fahrzeug": "TARNBRIS",
+      "from": "RÜB",
+      "to": "HOS",
       "nr": 4,
       "raw_time": "Sat May 02 23:40:00 CEST 2026",
       "current_ship_name": "TARNBRIS",
       "current_ship_eta_rueb": "2026-05-03 01:13",
       "current_ship_q": 3,
-      "current_ship_route": "HOS → KLT",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_route": "RÜB → HOS",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     }
   ]
