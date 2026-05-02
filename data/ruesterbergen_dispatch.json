@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-02T15:47:12",
+  "generated_at": "2026-05-02T15:49:14",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,11 +32,11 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 6,
-    "pilots_total": 9,
-    "pilots_dispatchable": 9,
+    "ships_for_ruesterbergen": 7,
+    "pilots_total": 10,
+    "pilots_dispatchable": 10,
     "pilots_visible_only": 0,
-    "assignments": 6,
+    "assignments": 7,
     "unassigned_ships": 0,
     "unused_pilots": 3
   },
@@ -266,6 +266,43 @@
         "travel_status": "SAILING_NOK",
         "dangerous_vessel": "-"
       }
+    },
+    {
+      "ship_key": "ODIN",
+      "ship_name": "ODIN",
+      "eta_rueb": "2026-05-02 20:50",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 4,
+      "meldung": {
+        "nr": "7",
+        "time": "Sat May 02 20:50:00 CEST 2026",
+        "draft": "6.2",
+        "q_gruppe": "4",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "RÜB → HOS",
+        "routes": [
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "4",
+        "vg": "4",
+        "draft": "6.20",
+        "length_m": "97.51",
+        "beam_m": "15.9",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "T",
+        "pilot_1_name": "Litmeyer, Hermann",
+        "travel_status": "SAILING_NOK",
+        "makler": "UCA",
+        "dangerous_vessel": "-",
+        "type_of_loading": "Container"
+      }
     }
   ],
   "pilots": [
@@ -286,7 +323,7 @@
       "raw_time": "Sat May 02 03:44:00 CEST 2026",
       "current_ship_name": "ALMA",
       "current_ship_eta_rueb": "2026-05-02 11:59",
-      "current_ship_q": 5,
+      "current_ship_q": 0,
       "current_ship_route": "RÜB → HOS",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
@@ -373,6 +410,28 @@
       "current_ship_q": 5,
       "current_ship_route": "HOS → KLT",
       "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "hewig_marius paul",
+      "vorname": "Marius Paul",
+      "nachname": "Hewig",
+      "pilot_name": "Hewig, Marius Paul",
+      "abteilungszeit": "2026-05-02 11:38",
+      "pilot_q": 2,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 8,
+      "aufgabe": "Seebört",
+      "fahrzeug": "ALMA",
+      "from": "HOS",
+      "to": "KLT",
+      "nr": 8,
+      "raw_time": "Sat May 02 11:38:00 CEST 2026",
+      "current_ship_name": "ALMA",
+      "current_ship_eta_rueb": "2026-05-02 11:59",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → KLT",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
@@ -482,7 +541,7 @@
       "raw_time": "Sat May 02 03:44:00 CEST 2026",
       "current_ship_name": "ALMA",
       "current_ship_eta_rueb": "2026-05-02 11:59",
-      "current_ship_q": 5,
+      "current_ship_q": 0,
       "current_ship_route": "RÜB → HOS",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
@@ -569,6 +628,28 @@
       "current_ship_q": 5,
       "current_ship_route": "HOS → KLT",
       "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "hewig_marius paul",
+      "vorname": "Marius Paul",
+      "nachname": "Hewig",
+      "pilot_name": "Hewig, Marius Paul",
+      "abteilungszeit": "2026-05-02 11:38",
+      "pilot_q": 2,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 8,
+      "aufgabe": "Seebört",
+      "fahrzeug": "ALMA",
+      "from": "HOS",
+      "to": "KLT",
+      "nr": 8,
+      "raw_time": "Sat May 02 11:38:00 CEST 2026",
+      "current_ship_name": "ALMA",
+      "current_ship_eta_rueb": "2026-05-02 11:59",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → KLT",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
@@ -676,7 +757,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 4,
+      "candidate_count": 5,
       "candidates": [
         {
           "pilot_name": "Weise, Tom",
@@ -727,6 +808,19 @@
           "current_ship_name": "GEULBORG",
           "current_ship_eta_rueb": "2026-05-02 16:39",
           "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Hewig, Marius Paul",
+          "pilot_q": 2,
+          "pilot_tactical_nr": 8,
+          "abteilungszeit": "2026-05-02 11:38",
+          "fahrzeug": "ALMA",
+          "to": "KLT",
+          "aufgabe": "Seebört",
+          "current_ship_name": "ALMA",
+          "current_ship_eta_rueb": "2026-05-02 11:59",
+          "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
       ],
@@ -826,7 +920,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 4,
+      "candidate_count": 5,
       "candidates": [
         {
           "pilot_name": "Skawianczyk, Artur",
@@ -876,6 +970,19 @@
           "current_ship_name": "SKAGENBANK",
           "current_ship_eta_rueb": "2026-05-02 16:51",
           "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Hewig, Marius Paul",
+          "pilot_q": 2,
+          "pilot_tactical_nr": 8,
+          "abteilungszeit": "2026-05-02 11:38",
+          "fahrzeug": "ALMA",
+          "to": "KLT",
+          "aufgabe": "Seebört",
+          "current_ship_name": "ALMA",
+          "current_ship_eta_rueb": "2026-05-02 11:59",
+          "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
       ],
@@ -1052,6 +1159,13 @@
           "reason": "Quali passt nicht (4 > 1)",
           "pilot_q": 4,
           "ship_q": 1
+        },
+        {
+          "pilot_name": "Hewig, Marius Paul",
+          "pilot_tactical_nr": 8,
+          "reason": "Quali passt nicht (2 > 1)",
+          "pilot_q": 2,
+          "ship_q": 1
         }
       ],
       "ship": {
@@ -1102,7 +1216,7 @@
       "assigned_current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 5,
+      "candidate_count": 6,
       "candidates": [
         {
           "pilot_name": "Schulz, Arne",
@@ -1114,6 +1228,19 @@
           "current_ship_name": "SKAGENBANK",
           "current_ship_eta_rueb": "2026-05-02 16:51",
           "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Hewig, Marius Paul",
+          "pilot_q": 2,
+          "pilot_tactical_nr": 8,
+          "abteilungszeit": "2026-05-02 11:38",
+          "fahrzeug": "ALMA",
+          "to": "KLT",
+          "aufgabe": "Seebört",
+          "current_ship_name": "ALMA",
+          "current_ship_eta_rueb": "2026-05-02 11:59",
+          "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
         {
@@ -1226,7 +1353,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 5,
+      "candidate_count": 6,
       "candidates": [
         {
           "pilot_name": "Wachsmuth, Martin",
@@ -1238,6 +1365,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "CORAL PEARL",
           "current_ship_eta_rueb": "2026-05-02 12:26",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Hewig, Marius Paul",
+          "pilot_q": 2,
+          "pilot_tactical_nr": 8,
+          "abteilungszeit": "2026-05-02 11:38",
+          "fahrzeug": "ALMA",
+          "to": "KLT",
+          "aufgabe": "Seebört",
+          "current_ship_name": "ALMA",
+          "current_ship_eta_rueb": "2026-05-02 11:59",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1332,17 +1472,30 @@
       "ship_name": "INGRID B",
       "eta_rueb": "2026-05-02 19:07",
       "ship_q": 5,
-      "assigned_pilot": "Pitschmann, Gerd",
-      "assigned_pilot_q": 0,
-      "assigned_tactical_nr": 4,
-      "assigned_abteilungszeit": "2026-05-02 12:35",
-      "assigned_current_ship_name": "KRISTELLA",
-      "assigned_current_ship_eta_rueb": "2026-05-02 17:31",
+      "assigned_pilot": "Hewig, Marius Paul",
+      "assigned_pilot_q": 2,
+      "assigned_tactical_nr": 8,
+      "assigned_abteilungszeit": "2026-05-02 11:38",
+      "assigned_current_ship_name": "ALMA",
+      "assigned_current_ship_eta_rueb": "2026-05-02 11:59",
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 4,
+      "candidate_count": 5,
       "candidates": [
+        {
+          "pilot_name": "Hewig, Marius Paul",
+          "pilot_q": 2,
+          "pilot_tactical_nr": 8,
+          "abteilungszeit": "2026-05-02 11:38",
+          "fahrzeug": "ALMA",
+          "to": "KLT",
+          "aufgabe": "Seebört",
+          "current_ship_name": "ALMA",
+          "current_ship_eta_rueb": "2026-05-02 11:59",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
         {
           "pilot_name": "Pitschmann, Gerd",
           "pilot_q": 0,
@@ -1424,6 +1577,108 @@
           "pilot_1_name": "H�nisch, Gero",
           "travel_status": "SAILING_NOK",
           "dangerous_vessel": "-"
+        }
+      }
+    },
+    {
+      "ship_key": "ODIN",
+      "ship_name": "ODIN",
+      "eta_rueb": "2026-05-02 20:50",
+      "ship_q": 4,
+      "assigned_pilot": "Pitschmann, Gerd",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 4,
+      "assigned_abteilungszeit": "2026-05-02 12:35",
+      "assigned_current_ship_name": "KRISTELLA",
+      "assigned_current_ship_eta_rueb": "2026-05-02 17:31",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 4,
+      "candidates": [
+        {
+          "pilot_name": "Pitschmann, Gerd",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 4,
+          "abteilungszeit": "2026-05-02 12:35",
+          "fahrzeug": "KRISTELLA",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "KRISTELLA",
+          "current_ship_eta_rueb": "2026-05-02 17:31",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Föhring, Nils",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 3,
+          "abteilungszeit": "2026-05-02 12:57",
+          "fahrzeug": "ELBRUNNER",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ELBRUNNER",
+          "current_ship_eta_rueb": "2026-05-02 17:41",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Kordt, Remo",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-05-02 13:00",
+          "fahrzeug": "SEA CARRIER",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "SEA CARRIER",
+          "current_ship_eta_rueb": "2026-05-02 17:45",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Kaschke, Henning",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 1,
+          "abteilungszeit": "2026-05-02 13:45",
+          "fahrzeug": "KAIRIT",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "KAIRIT",
+          "current_ship_eta_rueb": "2026-05-02 17:48",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "7",
+          "time": "Sat May 02 20:50:00 CEST 2026",
+          "draft": "6.2",
+          "q_gruppe": "4",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "RÜB → HOS",
+          "routes": [
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "4",
+          "vg": "4",
+          "draft": "6.20",
+          "length_m": "97.51",
+          "beam_m": "15.9",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "T",
+          "pilot_1_name": "Litmeyer, Hermann",
+          "travel_status": "SAILING_NOK",
+          "makler": "UCA",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Container"
         }
       }
     }
