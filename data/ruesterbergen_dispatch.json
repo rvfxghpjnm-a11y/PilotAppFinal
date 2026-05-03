@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-03T21:03:11",
+  "generated_at": "2026-05-03T21:05:14",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,19 +32,19 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 3,
+    "ships_for_ruesterbergen": 4,
     "pilots_total": 16,
     "pilots_dispatchable": 15,
     "pilots_visible_only": 1,
-    "assignments": 3,
+    "assignments": 4,
     "unassigned_ships": 0,
-    "unused_pilots": 12
+    "unused_pilots": 11
   },
   "ships": [
     {
       "ship_key": "NORDICA",
       "ship_name": "NORDICA",
-      "eta_rueb": "2026-05-03 22:10",
+      "eta_rueb": "2026-05-03 22:08",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 1,
       "meldung": {
@@ -155,6 +155,44 @@
         "makler": "UCA",
         "dangerous_vessel": "-",
         "type_of_loading": "Bulk"
+      }
+    },
+    {
+      "ship_key": "FWN SUN",
+      "ship_name": "FWN SUN",
+      "eta_rueb": "2026-05-04 01:30",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 3,
+      "meldung": {
+        "nr": "4",
+        "time": "Mon May 04 01:30:00 CEST 2026",
+        "draft": "6.6",
+        "q_gruppe": "3",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "3",
+        "vg": "4",
+        "draft": "6.60",
+        "length_m": "122.5",
+        "beam_m": "17",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "U",
+        "pilot_1_name": "Litmeyer, Hermann",
+        "travel_status": "SAILING_NOK",
+        "makler": "UCA",
+        "dangerous_vessel": "-",
+        "type_of_loading": "Stueckgueter"
       }
     }
   ],
@@ -870,7 +908,7 @@
     {
       "ship_key": "NORDICA",
       "ship_name": "NORDICA",
-      "eta_rueb": "2026-05-03 22:10",
+      "eta_rueb": "2026-05-03 22:08",
       "ship_q": 1,
       "assigned_pilot": "Hüpers, Peter",
       "assigned_pilot_q": 0,
@@ -1024,7 +1062,7 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "PEAK BILBAO",
           "pilot_current_ship_eta_rueb": "2026-05-03 22:42",
-          "ship_eta_rueb": "2026-05-03 22:10",
+          "ship_eta_rueb": "2026-05-03 22:08",
           "availability_kind": "merged_eta"
         },
         {
@@ -1033,7 +1071,7 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "ELBMOON",
           "pilot_current_ship_eta_rueb": "2026-05-03 22:45",
-          "ship_eta_rueb": "2026-05-03 22:10",
+          "ship_eta_rueb": "2026-05-03 22:08",
           "availability_kind": "merged_eta"
         },
         {
@@ -1508,32 +1546,215 @@
           "type_of_loading": "Bulk"
         }
       }
+    },
+    {
+      "ship_key": "FWN SUN",
+      "ship_name": "FWN SUN",
+      "eta_rueb": "2026-05-04 01:30",
+      "ship_q": 3,
+      "assigned_pilot": "Schran, Oliver",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 15,
+      "assigned_abteilungszeit": "2026-05-03 16:20",
+      "assigned_current_ship_name": "ESTEMAR",
+      "assigned_current_ship_eta_rueb": "2026-05-03 17:52",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 11,
+      "candidates": [
+        {
+          "pilot_name": "Schran, Oliver",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 15,
+          "abteilungszeit": "2026-05-03 16:20",
+          "fahrzeug": "ESTEMAR",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ESTEMAR",
+          "current_ship_eta_rueb": "2026-05-03 17:52",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Woitanowski, Tim",
+          "pilot_q": 2,
+          "pilot_tactical_nr": 16,
+          "abteilungszeit": "2026-05-03 16:20",
+          "fahrzeug": "FL STOROE",
+          "to": "KLT",
+          "aufgabe": "Seebört",
+          "current_ship_name": "FL STOROE",
+          "current_ship_eta_rueb": "2026-05-03 17:56",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Wulff, Stephan",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 17,
+          "abteilungszeit": "2026-05-03 16:20",
+          "fahrzeug": "NETA A.",
+          "to": "KLT",
+          "aufgabe": "Seebört",
+          "current_ship_name": "NETA A",
+          "current_ship_eta_rueb": "2026-05-03 18:00",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Kubica, Gregor",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 11,
+          "abteilungszeit": "2026-05-03 16:30",
+          "fahrzeug": "BBC LONDON",
+          "to": "KLT",
+          "aufgabe": "Seebört",
+          "current_ship_name": "BBC LONDON",
+          "current_ship_eta_rueb": "2026-05-03 17:49",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Böttcher, Peter",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 12,
+          "abteilungszeit": "2026-05-03 16:30",
+          "fahrzeug": "ESTEMAR",
+          "to": "KLT",
+          "aufgabe": "Seebört",
+          "current_ship_name": "ESTEMAR",
+          "current_ship_eta_rueb": "2026-05-03 17:52",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Wald, Mark",
+          "pilot_q": 3,
+          "pilot_tactical_nr": 10,
+          "abteilungszeit": "2026-05-03 17:08",
+          "fahrzeug": "PEAK BILBAO",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "PEAK BILBAO",
+          "current_ship_eta_rueb": "2026-05-03 22:42",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Röhl, Jens",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 9,
+          "abteilungszeit": "2026-05-03 17:32",
+          "fahrzeug": "ELBMOON",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ELBMOON",
+          "current_ship_eta_rueb": "2026-05-03 22:45",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Krügel, Mathias",
+          "pilot_q": 1,
+          "pilot_tactical_nr": 8,
+          "abteilungszeit": "2026-05-03 18:35",
+          "fahrzeug": "ELBOCEAN",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ELBOCEAN",
+          "current_ship_eta_rueb": "2026-05-03 20:06",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Kurfeld, Jan",
+          "pilot_q": 2,
+          "pilot_tactical_nr": 5,
+          "abteilungszeit": "2026-05-03 19:25",
+          "fahrzeug": "FREJ",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "FREJ",
+          "current_ship_eta_rueb": "2026-05-03 20:49",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Skawianczyk, Artur",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-05-03 20:35",
+          "fahrzeug": "Leerfahrt",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "Leerfahrt",
+          "current_ship_eta_rueb": "2026-05-03 21:35",
+          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
+          "availability_kind": "leerfahrt_hos_rueb_plus60",
+          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+        },
+        {
+          "pilot_name": "Schulz, Arne",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 3,
+          "abteilungszeit": "2026-05-03 20:35",
+          "fahrzeug": "Leerfahrt",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "Leerfahrt",
+          "current_ship_eta_rueb": "2026-05-03 21:35",
+          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
+          "availability_kind": "leerfahrt_hos_rueb_plus60",
+          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Demant, Tom",
+          "pilot_tactical_nr": 1,
+          "reason": "Quali passt nicht (4 > 3)",
+          "pilot_q": 4,
+          "ship_q": 3
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "4",
+          "time": "Mon May 04 01:30:00 CEST 2026",
+          "draft": "6.6",
+          "q_gruppe": "3",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "HOS → KLT",
+          "routes": [
+            "HOS → KLT",
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "3",
+          "vg": "4",
+          "draft": "6.60",
+          "length_m": "122.5",
+          "beam_m": "17",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "U",
+          "pilot_1_name": "Litmeyer, Hermann",
+          "travel_status": "SAILING_NOK",
+          "makler": "UCA",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Stueckgueter"
+        }
+      }
     }
   ],
   "unassigned_ships": [],
   "unused_pilots": [
-    {
-      "pilot_key": "schran_oliver",
-      "vorname": "Oliver",
-      "nachname": "Schran",
-      "pilot_name": "Schran, Oliver",
-      "abteilungszeit": "2026-05-03 16:20",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 15,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "ESTEMAR",
-      "from": "RÜB",
-      "to": "HOS",
-      "nr": 15,
-      "raw_time": "Sun May 03 16:20:00 CEST 2026",
-      "current_ship_name": "ESTEMAR",
-      "current_ship_eta_rueb": "2026-05-03 17:52",
-      "current_ship_q": 0,
-      "current_ship_route": "RÜB → HOS",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
-    },
     {
       "pilot_key": "woitanowski_tim",
       "vorname": "Tim",
