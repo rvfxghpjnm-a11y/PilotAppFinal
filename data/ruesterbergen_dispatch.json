@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-03T08:17:15",
+  "generated_at": "2026-05-03T08:19:17",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,13 +32,13 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 9,
+    "ships_for_ruesterbergen": 10,
     "pilots_total": 10,
     "pilots_dispatchable": 9,
     "pilots_visible_only": 1,
-    "assignments": 8,
+    "assignments": 9,
     "unassigned_ships": 1,
-    "unused_pilots": 1
+    "unused_pilots": 0
   },
   "ships": [
     {
@@ -379,6 +379,44 @@
         "makler": "UCA",
         "dangerous_vessel": "-",
         "type_of_loading": "Bulk"
+      }
+    },
+    {
+      "ship_key": "SCANDINAVIA",
+      "ship_name": "SCANDINAVIA",
+      "eta_rueb": "2026-05-03 12:59",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 5,
+      "meldung": {
+        "nr": "10",
+        "time": "Sun May 03 12:40:00 CEST 2026",
+        "draft": "5.6",
+        "q_gruppe": "5",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "5",
+        "vg": "3",
+        "draft": "5.60",
+        "length_m": "83.400",
+        "beam_m": "12.960",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "P",
+        "pilot_1_name": "Kuberczyk, Cliff",
+        "travel_status": "SAILING_NOK",
+        "makler": "UCA",
+        "dangerous_vessel": "-",
+        "type_of_loading": "Erdoel und Derivate"
       }
     }
   ],
@@ -1755,6 +1793,70 @@
           "type_of_loading": "Container"
         }
       }
+    },
+    {
+      "ship_key": "SCANDINAVIA",
+      "ship_name": "SCANDINAVIA",
+      "eta_rueb": "2026-05-03 12:59",
+      "ship_q": 5,
+      "assigned_pilot": "Ehlers, Sören",
+      "assigned_pilot_q": 3,
+      "assigned_tactical_nr": 2,
+      "assigned_abteilungszeit": "2026-05-03 06:09",
+      "assigned_current_ship_name": "SCOT EXPLORER",
+      "assigned_current_ship_eta_rueb": "2026-05-03 10:34",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "pilot_name": "Ehlers, Sören",
+          "pilot_q": 3,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-05-03 06:09",
+          "fahrzeug": "SCOT EXPLORER",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "SCOT EXPLORER",
+          "current_ship_eta_rueb": "2026-05-03 10:34",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "10",
+          "time": "Sun May 03 12:40:00 CEST 2026",
+          "draft": "5.6",
+          "q_gruppe": "5",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "HOS → KLT",
+          "routes": [
+            "HOS → KLT",
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "5",
+          "vg": "3",
+          "draft": "5.60",
+          "length_m": "83.400",
+          "beam_m": "12.960",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "P",
+          "pilot_1_name": "Kuberczyk, Cliff",
+          "travel_status": "SAILING_NOK",
+          "makler": "UCA",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Erdoel und Derivate"
+        }
+      }
     }
   ],
   "unassigned_ships": [
@@ -1775,28 +1877,5 @@
       ]
     }
   ],
-  "unused_pilots": [
-    {
-      "pilot_key": "ehlers_sören",
-      "vorname": "Sören",
-      "nachname": "Ehlers",
-      "pilot_name": "Ehlers, Sören",
-      "abteilungszeit": "2026-05-03 06:09",
-      "pilot_q": 3,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 2,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "SCOT EXPLORER",
-      "from": "HOS",
-      "to": "RÜB",
-      "nr": 2,
-      "raw_time": "Sun May 03 06:09:00 CEST 2026",
-      "current_ship_name": "SCOT EXPLORER",
-      "current_ship_eta_rueb": "2026-05-03 10:34",
-      "current_ship_q": 0,
-      "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
-    }
-  ]
+  "unused_pilots": []
 }
