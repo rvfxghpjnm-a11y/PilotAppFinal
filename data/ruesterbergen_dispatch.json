@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-03T20:19:17",
+  "generated_at": "2026-05-03T20:21:21",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -44,12 +44,12 @@
     {
       "ship_key": "LEERFAHRT",
       "ship_name": "Leerfahrt",
-      "eta_rueb": "2026-05-03 20:20",
+      "eta_rueb": "2026-05-03 20:25",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 0,
       "meldung": {
         "nr": "1",
-        "time": "Sun May 03 20:20:00 CEST 2026",
+        "time": "Sun May 03 20:25:00 CEST 2026",
         "lotsen_anzahl": 1,
         "confirmed": false,
         "from": "RÜB",
@@ -105,7 +105,7 @@
     {
       "ship_key": "NORDICA",
       "ship_name": "NORDICA",
-      "eta_rueb": "2026-05-03 22:12",
+      "eta_rueb": "2026-05-03 22:11",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 1,
       "meldung": {
@@ -250,17 +250,16 @@
       "q_source": "q_gruppen_lotsen.entries",
       "pilot_tactical_nr": 19,
       "aufgabe": "Kanalbört",
-      "fahrzeug": "NORRLAND",
-      "from": "HOS",
-      "to": "RÜB",
+      "fahrzeug": "RÜB",
       "nr": 19,
       "raw_time": "Sun May 03 13:37:00 CEST 2026",
-      "current_ship_name": "NORRLAND",
-      "current_ship_eta_rueb": "2026-05-03 20:23",
+      "current_ship_name": "RÜB",
+      "current_ship_eta_rueb": "2026-05-03 13:37",
       "current_ship_q": 0,
-      "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
+      "current_ship_route": "RÜB",
+      "current_ship_source": "special.already_in_rueb",
+      "availability_kind": "already_in_rueb",
+      "availability_hint": "Lotse gilt als bereits in RÜB"
     },
     {
       "pilot_key": "woitanowski_tim",
@@ -513,17 +512,16 @@
       "q_source": "q_gruppen_lotsen.entries",
       "pilot_tactical_nr": 19,
       "aufgabe": "Kanalbört",
-      "fahrzeug": "NORRLAND",
-      "from": "HOS",
-      "to": "RÜB",
+      "fahrzeug": "RÜB",
       "nr": 19,
       "raw_time": "Sun May 03 13:37:00 CEST 2026",
-      "current_ship_name": "NORRLAND",
-      "current_ship_eta_rueb": "2026-05-03 20:23",
+      "current_ship_name": "RÜB",
+      "current_ship_eta_rueb": "2026-05-03 13:37",
       "current_ship_q": 0,
-      "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
+      "current_ship_route": "RÜB",
+      "current_ship_source": "special.already_in_rueb",
+      "availability_kind": "already_in_rueb",
+      "availability_hint": "Lotse gilt als bereits in RÜB"
     },
     {
       "pilot_key": "woitanowski_tim",
@@ -743,19 +741,33 @@
     {
       "ship_key": "LEERFAHRT",
       "ship_name": "Leerfahrt",
-      "eta_rueb": "2026-05-03 20:20",
+      "eta_rueb": "2026-05-03 20:25",
       "ship_q": 0,
-      "assigned_pilot": "Hüpers, Peter",
+      "assigned_pilot": "Vogel, Peter",
       "assigned_pilot_q": 0,
-      "assigned_tactical_nr": 11,
-      "assigned_abteilungszeit": "2026-05-03 16:20",
-      "assigned_current_ship_name": "PRIMA QUEEN",
-      "assigned_current_ship_eta_rueb": "2026-05-03 18:19",
-      "assigned_current_ship_source": "schiffe_merged.seelotsen",
-      "assigned_availability_kind": "merged_eta",
+      "assigned_tactical_nr": 19,
+      "assigned_abteilungszeit": "2026-05-03 13:37",
+      "assigned_current_ship_name": "RÜB",
+      "assigned_current_ship_eta_rueb": "2026-05-03 13:37",
+      "assigned_current_ship_source": "special.already_in_rueb",
+      "assigned_availability_kind": "already_in_rueb",
+      "assigned_availability_hint": "Lotse gilt als bereits in RÜB",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 4,
+      "candidate_count": 5,
       "candidates": [
+        {
+          "pilot_name": "Vogel, Peter",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 19,
+          "abteilungszeit": "2026-05-03 13:37",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-03 13:37",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
+        },
         {
           "pilot_name": "Hüpers, Peter",
           "pilot_q": 0,
@@ -818,15 +830,6 @@
           "ship_q": 0
         },
         {
-          "pilot_name": "Vogel, Peter",
-          "pilot_tactical_nr": 19,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "NORRLAND",
-          "pilot_current_ship_eta_rueb": "2026-05-03 20:23",
-          "ship_eta_rueb": "2026-05-03 20:20",
-          "availability_kind": "merged_eta"
-        },
-        {
           "pilot_name": "Woitanowski, Tim",
           "pilot_tactical_nr": 10,
           "reason": "Quali passt nicht (2 > 0)",
@@ -839,7 +842,7 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "PEAK BILBAO",
           "pilot_current_ship_eta_rueb": "2026-05-03 22:45",
-          "ship_eta_rueb": "2026-05-03 20:20",
+          "ship_eta_rueb": "2026-05-03 20:25",
           "availability_kind": "merged_eta"
         },
         {
@@ -848,7 +851,7 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "ELBMOON",
           "pilot_current_ship_eta_rueb": "2026-05-03 22:48",
-          "ship_eta_rueb": "2026-05-03 20:20",
+          "ship_eta_rueb": "2026-05-03 20:25",
           "availability_kind": "merged_eta"
         },
         {
@@ -864,14 +867,14 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "FREJ",
           "pilot_current_ship_eta_rueb": "2026-05-03 20:50",
-          "ship_eta_rueb": "2026-05-03 20:20",
+          "ship_eta_rueb": "2026-05-03 20:25",
           "availability_kind": "merged_eta"
         }
       ],
       "ship": {
         "meldung": {
           "nr": "1",
-          "time": "Sun May 03 20:20:00 CEST 2026",
+          "time": "Sun May 03 20:25:00 CEST 2026",
           "lotsen_anzahl": 1,
           "confirmed": false,
           "from": "RÜB",
@@ -892,30 +895,17 @@
       "ship_name": "FREJ",
       "eta_rueb": "2026-05-03 20:50",
       "ship_q": 4,
-      "assigned_pilot": "Vogel, Peter",
-      "assigned_pilot_q": 0,
-      "assigned_tactical_nr": 19,
-      "assigned_abteilungszeit": "2026-05-03 13:37",
-      "assigned_current_ship_name": "NORRLAND",
-      "assigned_current_ship_eta_rueb": "2026-05-03 20:23",
+      "assigned_pilot": "Woitanowski, Tim",
+      "assigned_pilot_q": 2,
+      "assigned_tactical_nr": 10,
+      "assigned_abteilungszeit": "2026-05-03 16:20",
+      "assigned_current_ship_name": "FL STOROE",
+      "assigned_current_ship_eta_rueb": "2026-05-03 17:56",
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
       "candidate_count": 7,
       "candidates": [
-        {
-          "pilot_name": "Vogel, Peter",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 19,
-          "abteilungszeit": "2026-05-03 13:37",
-          "fahrzeug": "NORRLAND",
-          "to": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "NORRLAND",
-          "current_ship_eta_rueb": "2026-05-03 20:23",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
         {
           "pilot_name": "Woitanowski, Tim",
           "pilot_q": 2,
@@ -926,6 +916,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "FL STOROE",
           "current_ship_eta_rueb": "2026-05-03 17:56",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Hüpers, Peter",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 11,
+          "abteilungszeit": "2026-05-03 16:20",
+          "fahrzeug": "PRIMA QUEEN",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "PRIMA QUEEN",
+          "current_ship_eta_rueb": "2026-05-03 18:19",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1058,7 +1061,157 @@
     {
       "ship_key": "NORDICA",
       "ship_name": "NORDICA",
-      "eta_rueb": "2026-05-03 22:12",
+      "eta_rueb": "2026-05-03 22:11",
+      "ship_q": 1,
+      "assigned_pilot": "Hüpers, Peter",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 11,
+      "assigned_abteilungszeit": "2026-05-03 16:20",
+      "assigned_current_ship_name": "PRIMA QUEEN",
+      "assigned_current_ship_eta_rueb": "2026-05-03 18:19",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 5,
+      "candidates": [
+        {
+          "pilot_name": "Hüpers, Peter",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 11,
+          "abteilungszeit": "2026-05-03 16:20",
+          "fahrzeug": "PRIMA QUEEN",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "PRIMA QUEEN",
+          "current_ship_eta_rueb": "2026-05-03 18:19",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Wulff, Stephan",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 12,
+          "abteilungszeit": "2026-05-03 16:20",
+          "fahrzeug": "NETA A.",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "NETA A",
+          "current_ship_eta_rueb": "2026-05-03 18:00",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Hoffmann, Heiko",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 13,
+          "abteilungszeit": "2026-05-03 16:20",
+          "fahrzeug": "BBC LONDON",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "BBC LONDON",
+          "current_ship_eta_rueb": "2026-05-03 17:49",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Schran, Oliver",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 14,
+          "abteilungszeit": "2026-05-03 16:20",
+          "fahrzeug": "ESTEMAR",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ESTEMAR",
+          "current_ship_eta_rueb": "2026-05-03 17:52",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Krügel, Mathias",
+          "pilot_q": 1,
+          "pilot_tactical_nr": 5,
+          "abteilungszeit": "2026-05-03 18:35",
+          "fahrzeug": "ELBOCEAN",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ELBOCEAN",
+          "current_ship_eta_rueb": "2026-05-03 20:06",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Konietzka, Stefan",
+          "pilot_tactical_nr": 23,
+          "reason": "Quali passt nicht (5 > 1)",
+          "pilot_q": 5,
+          "ship_q": 1
+        },
+        {
+          "pilot_name": "Wald, Mark",
+          "pilot_tactical_nr": 7,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "PEAK BILBAO",
+          "pilot_current_ship_eta_rueb": "2026-05-03 22:45",
+          "ship_eta_rueb": "2026-05-03 22:11",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Röhl, Jens",
+          "pilot_tactical_nr": 6,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "ELBMOON",
+          "pilot_current_ship_eta_rueb": "2026-05-03 22:48",
+          "ship_eta_rueb": "2026-05-03 22:11",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Kurfeld, Jan",
+          "pilot_tactical_nr": 2,
+          "reason": "Quali passt nicht (2 > 1)",
+          "pilot_q": 2,
+          "ship_q": 1
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "3",
+          "time": "Sun May 03 22:00:00 CEST 2026",
+          "draft": "6.8",
+          "q_gruppe": "1",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "HOS → KLT",
+          "routes": [
+            "HOS → KLT",
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "1",
+          "vg": "5",
+          "draft": "6.80",
+          "length_m": "151.72",
+          "beam_m": "23.4",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "T",
+          "pilot_1_name": "Scholz, Burghard",
+          "travel_status": "SAILING_NOK",
+          "makler": "UCA",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Container"
+        }
+      }
+    },
+    {
+      "ship_key": "CONTAINERSHIPS AURORA",
+      "ship_name": "CONTAINERSHIPS AURORA",
+      "eta_rueb": "2026-05-03 22:24",
       "ship_q": 1,
       "assigned_pilot": "Wulff, Stephan",
       "assigned_pilot_q": 0,
@@ -1130,144 +1283,6 @@
           "pilot_tactical_nr": 23,
           "reason": "Quali passt nicht (5 > 1)",
           "pilot_q": 5,
-          "ship_q": 1
-        },
-        {
-          "pilot_name": "Woitanowski, Tim",
-          "pilot_tactical_nr": 10,
-          "reason": "Quali passt nicht (2 > 1)",
-          "pilot_q": 2,
-          "ship_q": 1
-        },
-        {
-          "pilot_name": "Wald, Mark",
-          "pilot_tactical_nr": 7,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "PEAK BILBAO",
-          "pilot_current_ship_eta_rueb": "2026-05-03 22:45",
-          "ship_eta_rueb": "2026-05-03 22:12",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Röhl, Jens",
-          "pilot_tactical_nr": 6,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "ELBMOON",
-          "pilot_current_ship_eta_rueb": "2026-05-03 22:48",
-          "ship_eta_rueb": "2026-05-03 22:12",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Kurfeld, Jan",
-          "pilot_tactical_nr": 2,
-          "reason": "Quali passt nicht (2 > 1)",
-          "pilot_q": 2,
-          "ship_q": 1
-        }
-      ],
-      "ship": {
-        "meldung": {
-          "nr": "3",
-          "time": "Sun May 03 22:00:00 CEST 2026",
-          "draft": "6.8",
-          "q_gruppe": "1",
-          "lotsen_anzahl": 1,
-          "confirmed": false,
-          "from": "RÜB",
-          "to": "HOS"
-        },
-        "summary": {
-          "route": "HOS → KLT",
-          "routes": [
-            "HOS → KLT",
-            "RÜB → HOS"
-          ],
-          "q_gruppe": "1",
-          "vg": "5",
-          "draft": "6.80",
-          "length_m": "151.72",
-          "beam_m": "23.4",
-          "queue_title": "Zulauf vom Kanal in Kiel",
-          "zulauf_richtung": "vom_kanal",
-          "pilot_required": "true",
-          "pilot_status": "T",
-          "pilot_1_name": "Scholz, Burghard",
-          "travel_status": "SAILING_NOK",
-          "makler": "UCA",
-          "dangerous_vessel": "-",
-          "type_of_loading": "Container"
-        }
-      }
-    },
-    {
-      "ship_key": "CONTAINERSHIPS AURORA",
-      "ship_name": "CONTAINERSHIPS AURORA",
-      "eta_rueb": "2026-05-03 22:24",
-      "ship_q": 1,
-      "assigned_pilot": "Hoffmann, Heiko",
-      "assigned_pilot_q": 0,
-      "assigned_tactical_nr": 13,
-      "assigned_abteilungszeit": "2026-05-03 16:20",
-      "assigned_current_ship_name": "BBC LONDON",
-      "assigned_current_ship_eta_rueb": "2026-05-03 17:49",
-      "assigned_current_ship_source": "schiffe_merged.seelotsen",
-      "assigned_availability_kind": "merged_eta",
-      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 3,
-      "candidates": [
-        {
-          "pilot_name": "Hoffmann, Heiko",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 13,
-          "abteilungszeit": "2026-05-03 16:20",
-          "fahrzeug": "BBC LONDON",
-          "to": "HOS",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "BBC LONDON",
-          "current_ship_eta_rueb": "2026-05-03 17:49",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Schran, Oliver",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 14,
-          "abteilungszeit": "2026-05-03 16:20",
-          "fahrzeug": "ESTEMAR",
-          "to": "HOS",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "ESTEMAR",
-          "current_ship_eta_rueb": "2026-05-03 17:52",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Krügel, Mathias",
-          "pilot_q": 1,
-          "pilot_tactical_nr": 5,
-          "abteilungszeit": "2026-05-03 18:35",
-          "fahrzeug": "ELBOCEAN",
-          "to": "HOS",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "ELBOCEAN",
-          "current_ship_eta_rueb": "2026-05-03 20:06",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        }
-      ],
-      "excluded": [
-        {
-          "pilot_name": "Konietzka, Stefan",
-          "pilot_tactical_nr": 23,
-          "reason": "Quali passt nicht (5 > 1)",
-          "pilot_q": 5,
-          "ship_q": 1
-        },
-        {
-          "pilot_name": "Woitanowski, Tim",
-          "pilot_tactical_nr": 10,
-          "reason": "Quali passt nicht (2 > 1)",
-          "pilot_q": 2,
           "ship_q": 1
         },
         {
@@ -1360,15 +1375,15 @@
           "availability_kind": "merged_eta"
         },
         {
-          "pilot_name": "Woitanowski, Tim",
-          "pilot_q": 2,
-          "pilot_tactical_nr": 10,
+          "pilot_name": "Hoffmann, Heiko",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 13,
           "abteilungszeit": "2026-05-03 16:20",
-          "fahrzeug": "FL STOROE",
+          "fahrzeug": "BBC LONDON",
           "to": "HOS",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "FL STOROE",
-          "current_ship_eta_rueb": "2026-05-03 17:56",
+          "current_ship_name": "BBC LONDON",
+          "current_ship_eta_rueb": "2026-05-03 17:49",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1469,23 +1484,23 @@
   "unassigned_ships": [],
   "unused_pilots": [
     {
-      "pilot_key": "woitanowski_tim",
-      "vorname": "Tim",
-      "nachname": "Woitanowski",
-      "pilot_name": "Woitanowski, Tim",
+      "pilot_key": "hoffmann_heiko",
+      "vorname": "Heiko",
+      "nachname": "Hoffmann",
+      "pilot_name": "Hoffmann, Heiko",
       "abteilungszeit": "2026-05-03 16:20",
-      "pilot_q": 2,
+      "pilot_q": 0,
       "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 10,
+      "pilot_tactical_nr": 13,
       "aufgabe": "Kanalbört",
-      "fahrzeug": "FL STOROE",
+      "fahrzeug": "BBC LONDON",
       "from": "RÜB",
       "to": "HOS",
-      "nr": 10,
+      "nr": 13,
       "raw_time": "Sun May 03 16:20:00 CEST 2026",
-      "current_ship_name": "FL STOROE",
-      "current_ship_eta_rueb": "2026-05-03 17:56",
-      "current_ship_q": 4,
+      "current_ship_name": "BBC LONDON",
+      "current_ship_eta_rueb": "2026-05-03 17:49",
+      "current_ship_q": 3,
       "current_ship_route": "RÜB → HOS",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
