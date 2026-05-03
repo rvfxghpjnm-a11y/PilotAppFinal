@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-04T00:33:14",
+  "generated_at": "2026-05-04T00:35:16",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,17 +34,17 @@
   "counts": {
     "ships_for_ruesterbergen": 2,
     "pilots_total": 9,
-    "pilots_dispatchable": 7,
-    "pilots_visible_only": 2,
+    "pilots_dispatchable": 8,
+    "pilots_visible_only": 1,
     "assignments": 2,
     "unassigned_ships": 0,
-    "unused_pilots": 5
+    "unused_pilots": 6
   },
   "ships": [
     {
       "ship_key": "FWN SUN",
       "ship_name": "FWN SUN",
-      "eta_rueb": "2026-05-04 01:20",
+      "eta_rueb": "2026-05-04 01:19",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 3,
       "meldung": {
@@ -84,7 +84,7 @@
     {
       "ship_key": "PAULA",
       "ship_name": "PAULA",
-      "eta_rueb": "2026-05-04 02:33",
+      "eta_rueb": "2026-05-04 02:32",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
@@ -288,9 +288,10 @@
       "nr": 3,
       "raw_time": "Sun May 03 23:02:00 CEST 2026",
       "current_ship_name": "SKALAR",
+      "current_ship_eta_rueb": "2026-05-04 05:13",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
@@ -467,24 +468,31 @@
       "current_ship_route": "HOS → KLT",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
-    }
-  ],
-  "visible_but_not_dispatchable_pilots": [
+    },
     {
       "pilot_key": "doering_lars",
+      "vorname": "Lars",
+      "nachname": "Doering",
       "pilot_name": "Doering, Lars",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 3,
       "abteilungszeit": "2026-05-03 23:02",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 3,
       "aufgabe": "Kanalbört",
       "fahrzeug": "SKALAR",
       "from": "HOR",
       "to": "RÜB",
+      "nr": 3,
+      "raw_time": "Sun May 03 23:02:00 CEST 2026",
       "current_ship_name": "SKALAR",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    },
+      "current_ship_eta_rueb": "2026-05-04 05:13",
+      "current_ship_q": 0,
+      "current_ship_route": "HOR → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    }
+  ],
+  "visible_but_not_dispatchable_pilots": [
     {
       "pilot_key": "petersen_yannick",
       "pilot_name": "Petersen, Yannick",
@@ -505,7 +513,7 @@
     {
       "ship_key": "FWN SUN",
       "ship_name": "FWN SUN",
-      "eta_rueb": "2026-05-04 01:20",
+      "eta_rueb": "2026-05-04 01:19",
       "ship_q": 3,
       "assigned_pilot": "Wald, Mark",
       "assigned_pilot_q": 3,
@@ -592,7 +600,7 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "PULPCA",
           "pilot_current_ship_eta_rueb": "2026-05-04 01:33",
-          "ship_eta_rueb": "2026-05-04 01:20",
+          "ship_eta_rueb": "2026-05-04 01:19",
           "availability_kind": "merged_eta"
         },
         {
@@ -601,6 +609,15 @@
           "reason": "Quali passt nicht (4 > 3)",
           "pilot_q": 4,
           "ship_q": 3
+        },
+        {
+          "pilot_name": "Doering, Lars",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "SKALAR",
+          "pilot_current_ship_eta_rueb": "2026-05-04 05:13",
+          "ship_eta_rueb": "2026-05-04 01:19",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -642,7 +659,7 @@
     {
       "ship_key": "PAULA",
       "ship_name": "PAULA",
-      "eta_rueb": "2026-05-04 02:33",
+      "eta_rueb": "2026-05-04 02:32",
       "ship_q": 5,
       "assigned_pilot": "Röhl, Jens",
       "assigned_pilot_q": 0,
@@ -732,6 +749,17 @@
           "current_ship_name": "NORDICA",
           "current_ship_eta_rueb": "2026-05-03 22:08",
           "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Doering, Lars",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "SKALAR",
+          "pilot_current_ship_eta_rueb": "2026-05-04 05:13",
+          "ship_eta_rueb": "2026-05-04 02:32",
           "availability_kind": "merged_eta"
         }
       ],
@@ -878,6 +906,28 @@
       "current_ship_eta_rueb": "2026-05-03 22:08",
       "current_ship_q": 0,
       "current_ship_route": "HOS → KLT",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "doering_lars",
+      "vorname": "Lars",
+      "nachname": "Doering",
+      "pilot_name": "Doering, Lars",
+      "abteilungszeit": "2026-05-03 23:02",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 3,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "SKALAR",
+      "from": "HOR",
+      "to": "RÜB",
+      "nr": 3,
+      "raw_time": "Sun May 03 23:02:00 CEST 2026",
+      "current_ship_name": "SKALAR",
+      "current_ship_eta_rueb": "2026-05-04 05:13",
+      "current_ship_q": 0,
+      "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     }
