@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-03T22:15:14",
+  "generated_at": "2026-05-03T22:17:18",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -36,48 +36,11 @@
     "pilots_total": 9,
     "pilots_dispatchable": 9,
     "pilots_visible_only": 0,
-    "assignments": 1,
-    "unassigned_ships": 1,
-    "unused_pilots": 8
+    "assignments": 2,
+    "unassigned_ships": 0,
+    "unused_pilots": 7
   },
   "ships": [
-    {
-      "ship_key": "PAULA",
-      "ship_name": "PAULA",
-      "eta_rueb": "2026-05-03 02:25",
-      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
-      "ship_q": 5,
-      "meldung": {
-        "nr": "1",
-        "time": "Sun May 03 02:25:00 CEST 2026",
-        "draft": "3.0",
-        "q_gruppe": "5",
-        "lotsen_anzahl": 1,
-        "confirmed": false,
-        "from": "RÜB",
-        "to": "UTG"
-      },
-      "summary": {
-        "route": "RÜB → UTG",
-        "routes": [
-          "RÜB → UTG"
-        ],
-        "q_gruppe": "5",
-        "vg": "2",
-        "draft": "3.00",
-        "length_m": "85.8",
-        "beam_m": "9.6",
-        "queue_title": "Zulauf vom Kanal in Kiel",
-        "zulauf_richtung": "vom_kanal",
-        "pilot_required": "true",
-        "pilot_status": "H",
-        "pilot_1_name": "Piwek, Simon",
-        "travel_status": "SAILING_NOK",
-        "makler": "NIK",
-        "dangerous_vessel": "-",
-        "type_of_loading": "Erdoel und Derivate"
-      }
-    },
     {
       "ship_key": "FWN SUN",
       "ship_name": "FWN SUN",
@@ -116,6 +79,43 @@
         "makler": "UCA",
         "dangerous_vessel": "-",
         "type_of_loading": "Stueckgueter"
+      }
+    },
+    {
+      "ship_key": "PAULA",
+      "ship_name": "PAULA",
+      "eta_rueb": "2026-05-04 02:39",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 5,
+      "meldung": {
+        "nr": "1",
+        "time": "Sun May 03 02:25:00 CEST 2026",
+        "draft": "3.0",
+        "q_gruppe": "5",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "UTG"
+      },
+      "summary": {
+        "route": "RÜB → UTG",
+        "routes": [
+          "RÜB → UTG"
+        ],
+        "q_gruppe": "5",
+        "vg": "2",
+        "draft": "3.00",
+        "length_m": "85.8",
+        "beam_m": "9.6",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "H",
+        "pilot_1_name": "Piwek, Simon",
+        "travel_status": "SAILING_NOK",
+        "makler": "NIK",
+        "dangerous_vessel": "-",
+        "type_of_loading": "Erdoel und Derivate"
       }
     }
   ],
@@ -686,123 +686,164 @@
           "type_of_loading": "Stueckgueter"
         }
       }
-    }
-  ],
-  "unassigned_ships": [
+    },
     {
       "ship_key": "PAULA",
       "ship_name": "PAULA",
-      "eta_rueb": "2026-05-03 02:25",
+      "eta_rueb": "2026-05-04 02:39",
       "ship_q": 5,
-      "reason": "kein passender Lotse verfügbar",
-      "excluded": [
-        {
-          "pilot_name": "Hüpers, Peter",
-          "pilot_tactical_nr": 13,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "PRIMA QUEEN",
-          "pilot_current_ship_eta_rueb": "2026-05-03 18:19",
-          "ship_eta_rueb": "2026-05-03 02:25",
-          "availability_kind": "merged_eta"
-        },
+      "assigned_pilot": "Wald, Mark",
+      "assigned_pilot_q": 3,
+      "assigned_tactical_nr": 10,
+      "assigned_abteilungszeit": "2026-05-03 17:08",
+      "assigned_current_ship_name": "PEAK BILBAO",
+      "assigned_current_ship_eta_rueb": "2026-05-03 22:38",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 8,
+      "candidates": [
         {
           "pilot_name": "Wald, Mark",
+          "pilot_q": 3,
           "pilot_tactical_nr": 10,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "PEAK BILBAO",
-          "pilot_current_ship_eta_rueb": "2026-05-03 22:38",
-          "ship_eta_rueb": "2026-05-03 02:25",
+          "abteilungszeit": "2026-05-03 17:08",
+          "fahrzeug": "PEAK BILBAO",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "PEAK BILBAO",
+          "current_ship_eta_rueb": "2026-05-03 22:38",
+          "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
         {
           "pilot_name": "Röhl, Jens",
+          "pilot_q": 0,
           "pilot_tactical_nr": 9,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "ELBMOON",
-          "pilot_current_ship_eta_rueb": "2026-05-03 22:42",
-          "ship_eta_rueb": "2026-05-03 02:25",
+          "abteilungszeit": "2026-05-03 17:32",
+          "fahrzeug": "ELBMOON",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ELBMOON",
+          "current_ship_eta_rueb": "2026-05-03 22:42",
+          "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
         {
           "pilot_name": "Krügel, Mathias",
+          "pilot_q": 1,
           "pilot_tactical_nr": 8,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "ELBOCEAN",
-          "pilot_current_ship_eta_rueb": "2026-05-03 20:06",
-          "ship_eta_rueb": "2026-05-03 02:25",
+          "abteilungszeit": "2026-05-03 18:35",
+          "fahrzeug": "ELBOCEAN",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ELBOCEAN",
+          "current_ship_eta_rueb": "2026-05-03 20:06",
+          "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
         {
           "pilot_name": "Kurfeld, Jan",
+          "pilot_q": 2,
           "pilot_tactical_nr": 5,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "FREJ",
-          "pilot_current_ship_eta_rueb": "2026-05-03 20:49",
-          "ship_eta_rueb": "2026-05-03 02:25",
+          "abteilungszeit": "2026-05-03 19:25",
+          "fahrzeug": "FREJ",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "FREJ",
+          "current_ship_eta_rueb": "2026-05-03 20:49",
+          "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
         {
           "pilot_name": "Münker, Niels",
+          "pilot_q": 0,
           "pilot_tactical_nr": 4,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "PULPCA",
-          "pilot_current_ship_eta_rueb": "2026-05-04 00:55",
-          "ship_eta_rueb": "2026-05-03 02:25",
+          "abteilungszeit": "2026-05-03 19:47",
+          "fahrzeug": "PULPCA",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "PULPCA",
+          "current_ship_eta_rueb": "2026-05-04 00:55",
+          "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
         {
           "pilot_name": "Demant, Tom",
+          "pilot_q": 4,
           "pilot_tactical_nr": 1,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "AURELIE",
-          "pilot_current_ship_eta_rueb": "2026-05-03 22:24",
-          "ship_eta_rueb": "2026-05-03 02:25",
+          "abteilungszeit": "2026-05-03 20:35",
+          "fahrzeug": "AURELIE",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "AURELIE",
+          "current_ship_eta_rueb": "2026-05-03 22:24",
+          "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
         {
           "pilot_name": "Skawianczyk, Artur",
+          "pilot_q": 0,
           "pilot_tactical_nr": 2,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "CONTAINERSHIPS AURORA",
-          "pilot_current_ship_eta_rueb": "2026-05-03 22:18",
-          "ship_eta_rueb": "2026-05-03 02:25",
+          "abteilungszeit": "2026-05-03 20:35",
+          "fahrzeug": "CONTAINERSHIPS AURORA",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "CONTAINERSHIPS AURORA",
+          "current_ship_eta_rueb": "2026-05-03 22:18",
+          "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
         {
           "pilot_name": "Schulz, Arne",
+          "pilot_q": 0,
           "pilot_tactical_nr": 3,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "NORDICA",
-          "pilot_current_ship_eta_rueb": "2026-05-03 22:08",
-          "ship_eta_rueb": "2026-05-03 02:25",
+          "abteilungszeit": "2026-05-03 20:35",
+          "fahrzeug": "NORDICA",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "NORDICA",
+          "current_ship_eta_rueb": "2026-05-03 22:08",
+          "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
-      ]
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "1",
+          "time": "Sun May 03 02:25:00 CEST 2026",
+          "draft": "3.0",
+          "q_gruppe": "5",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "UTG"
+        },
+        "summary": {
+          "route": "RÜB → UTG",
+          "routes": [
+            "RÜB → UTG"
+          ],
+          "q_gruppe": "5",
+          "vg": "2",
+          "draft": "3.00",
+          "length_m": "85.8",
+          "beam_m": "9.6",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "H",
+          "pilot_1_name": "Piwek, Simon",
+          "travel_status": "SAILING_NOK",
+          "makler": "NIK",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Erdoel und Derivate"
+        }
+      }
     }
   ],
+  "unassigned_ships": [],
   "unused_pilots": [
-    {
-      "pilot_key": "wald_mark",
-      "vorname": "Mark",
-      "nachname": "Wald",
-      "pilot_name": "Wald, Mark",
-      "abteilungszeit": "2026-05-03 17:08",
-      "pilot_q": 3,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 10,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "PEAK BILBAO",
-      "from": "HOS",
-      "to": "RÜB",
-      "nr": 10,
-      "raw_time": "Sun May 03 17:08:00 CEST 2026",
-      "current_ship_name": "PEAK BILBAO",
-      "current_ship_eta_rueb": "2026-05-03 22:38",
-      "current_ship_q": 0,
-      "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
-    },
     {
       "pilot_key": "röhl_jens",
       "vorname": "Jens",
