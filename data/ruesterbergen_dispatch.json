@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-03T18:55:12",
+  "generated_at": "2026-05-03T18:57:12",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 5,
     "pilots_total": 14,
-    "pilots_dispatchable": 13,
-    "pilots_visible_only": 1,
+    "pilots_dispatchable": 14,
+    "pilots_visible_only": 0,
     "assignments": 5,
     "unassigned_ships": 0,
-    "unused_pilots": 8
+    "unused_pilots": 9
   },
   "ships": [
     {
@@ -158,7 +158,7 @@
     {
       "ship_key": "CONTAINERSHIPS AURORA",
       "ship_name": "CONTAINERSHIPS AURORA",
-      "eta_rueb": "2026-05-03 22:28",
+      "eta_rueb": "2026-05-03 22:27",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 1,
       "meldung": {
@@ -315,7 +315,7 @@
       "nr": 15,
       "raw_time": "Sun May 03 13:37:00 CEST 2026",
       "current_ship_name": "NORRLAND",
-      "current_ship_eta_rueb": "2026-05-03 20:24",
+      "current_ship_eta_rueb": "2026-05-03 20:23",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -513,9 +513,10 @@
       "nr": 2,
       "raw_time": "Sun May 03 17:32:00 CEST 2026",
       "current_ship_name": "ELBMOON",
+      "current_ship_eta_rueb": "2026-05-03 22:54",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
@@ -625,7 +626,7 @@
       "nr": 15,
       "raw_time": "Sun May 03 13:37:00 CEST 2026",
       "current_ship_name": "NORRLAND",
-      "current_ship_eta_rueb": "2026-05-03 20:24",
+      "current_ship_eta_rueb": "2026-05-03 20:23",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -808,6 +809,28 @@
       "availability_kind": "merged_eta"
     },
     {
+      "pilot_key": "röhl_jens",
+      "vorname": "Jens",
+      "nachname": "Röhl",
+      "pilot_name": "Röhl, Jens",
+      "abteilungszeit": "2026-05-03 17:32",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 2,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "ELBMOON",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 2,
+      "raw_time": "Sun May 03 17:32:00 CEST 2026",
+      "current_ship_name": "ELBMOON",
+      "current_ship_eta_rueb": "2026-05-03 22:54",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
       "pilot_key": "krügel_mathias",
       "vorname": "Mathias",
       "nachname": "Krügel",
@@ -831,23 +854,7 @@
       "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
     }
   ],
-  "visible_but_not_dispatchable_pilots": [
-    {
-      "pilot_key": "röhl_jens",
-      "pilot_name": "Röhl, Jens",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 2,
-      "abteilungszeit": "2026-05-03 17:32",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "ELBMOON",
-      "from": "HOS",
-      "to": "RÜB",
-      "current_ship_name": "ELBMOON",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    }
-  ],
+  "visible_but_not_dispatchable_pilots": [],
   "assignments": [
     {
       "ship_key": "ELBOCEAN",
@@ -991,7 +998,7 @@
           "pilot_tactical_nr": 15,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "NORRLAND",
-          "pilot_current_ship_eta_rueb": "2026-05-03 20:24",
+          "pilot_current_ship_eta_rueb": "2026-05-03 20:23",
           "ship_eta_rueb": "2026-05-03 20:09",
           "availability_kind": "merged_eta"
         },
@@ -1008,6 +1015,15 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "PEAK BILBAO",
           "pilot_current_ship_eta_rueb": "2026-05-03 22:51",
+          "ship_eta_rueb": "2026-05-03 20:09",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Röhl, Jens",
+          "pilot_tactical_nr": 2,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "ELBMOON",
+          "pilot_current_ship_eta_rueb": "2026-05-03 22:54",
           "ship_eta_rueb": "2026-05-03 20:09",
           "availability_kind": "merged_eta"
         }
@@ -1084,7 +1100,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "NORRLAND",
-          "current_ship_eta_rueb": "2026-05-03 20:24",
+          "current_ship_eta_rueb": "2026-05-03 20:23",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1210,6 +1226,15 @@
           "pilot_current_ship_eta_rueb": "2026-05-03 22:51",
           "ship_eta_rueb": "2026-05-03 20:54",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Röhl, Jens",
+          "pilot_tactical_nr": 2,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "ELBMOON",
+          "pilot_current_ship_eta_rueb": "2026-05-03 22:54",
+          "ship_eta_rueb": "2026-05-03 20:54",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -1256,7 +1281,7 @@
       "assigned_tactical_nr": 15,
       "assigned_abteilungszeit": "2026-05-03 13:37",
       "assigned_current_ship_name": "NORRLAND",
-      "assigned_current_ship_eta_rueb": "2026-05-03 20:24",
+      "assigned_current_ship_eta_rueb": "2026-05-03 20:23",
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
@@ -1271,7 +1296,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "NORRLAND",
-          "current_ship_eta_rueb": "2026-05-03 20:24",
+          "current_ship_eta_rueb": "2026-05-03 20:23",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1391,6 +1416,15 @@
           "pilot_current_ship_eta_rueb": "2026-05-03 22:51",
           "ship_eta_rueb": "2026-05-03 22:16",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Röhl, Jens",
+          "pilot_tactical_nr": 2,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "ELBMOON",
+          "pilot_current_ship_eta_rueb": "2026-05-03 22:54",
+          "ship_eta_rueb": "2026-05-03 22:16",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -1430,7 +1464,7 @@
     {
       "ship_key": "CONTAINERSHIPS AURORA",
       "ship_name": "CONTAINERSHIPS AURORA",
-      "eta_rueb": "2026-05-03 22:28",
+      "eta_rueb": "2026-05-03 22:27",
       "ship_q": 1,
       "assigned_pilot": "Dalecki, Niklas",
       "assigned_pilot_q": 0,
@@ -1557,7 +1591,16 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "PEAK BILBAO",
           "pilot_current_ship_eta_rueb": "2026-05-03 22:51",
-          "ship_eta_rueb": "2026-05-03 22:28",
+          "ship_eta_rueb": "2026-05-03 22:27",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Röhl, Jens",
+          "pilot_tactical_nr": 2,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "ELBMOON",
+          "pilot_current_ship_eta_rueb": "2026-05-03 22:54",
+          "ship_eta_rueb": "2026-05-03 22:27",
           "availability_kind": "merged_eta"
         }
       ],
@@ -1724,6 +1767,15 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "PEAK BILBAO",
           "pilot_current_ship_eta_rueb": "2026-05-03 22:51",
+          "ship_eta_rueb": "2026-05-03 22:32",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Röhl, Jens",
+          "pilot_tactical_nr": 2,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "ELBMOON",
+          "pilot_current_ship_eta_rueb": "2026-05-03 22:54",
           "ship_eta_rueb": "2026-05-03 22:32",
           "availability_kind": "merged_eta"
         }
@@ -1914,6 +1966,28 @@
       "raw_time": "Sun May 03 17:08:00 CEST 2026",
       "current_ship_name": "PEAK BILBAO",
       "current_ship_eta_rueb": "2026-05-03 22:51",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "röhl_jens",
+      "vorname": "Jens",
+      "nachname": "Röhl",
+      "pilot_name": "Röhl, Jens",
+      "abteilungszeit": "2026-05-03 17:32",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 2,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "ELBMOON",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 2,
+      "raw_time": "Sun May 03 17:32:00 CEST 2026",
+      "current_ship_name": "ELBMOON",
+      "current_ship_eta_rueb": "2026-05-03 22:54",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
