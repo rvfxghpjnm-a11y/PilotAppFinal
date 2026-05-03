@@ -1,47 +1,47 @@
 {
-  "generated_at": "2026-05-03T14:59:12",
+  "generated_at": "2026-05-03T15:01:12",
   "source_meta": {
     "zulauf_kiel_innen": {
       "file": "Zulauf_kiel_innen.json",
-      "generated_at": "2026-05-03 14:58",
+      "generated_at": "2026-05-03 15:00",
       "queue": "kiel_innen",
       "title": "Zulauf vom Kanal in Kiel",
       "count": 22
     },
     "zulauf_kiel_aussen": {
       "file": "Zulauf_kiel_aussen.json",
-      "generated_at": "2026-05-03 14:58",
+      "generated_at": "2026-05-03 15:00",
       "queue": "kiel_aussen",
       "title": "Zulauf von See in Kiel",
       "count": 0
     },
     "zulauf_brb_innen": {
       "file": "Zulauf_brb_innen.json",
-      "generated_at": "2026-05-03 14:58",
+      "generated_at": "2026-05-03 15:00",
       "queue": "brb_innen",
       "title": "Zulauf vom Kanal in Brunsbüttel",
       "count": 7
     },
     "zulauf_brb_aussen": {
       "file": "Zulauf_brb_aussen.json",
-      "generated_at": "2026-05-03 14:58",
+      "generated_at": "2026-05-03 15:00",
       "queue": "brb_aussen",
       "title": "Zulauf von See in Brunsbüttel",
       "count": 6
     },
     "meldungen_kiel": {
       "file": "Meldungen_Kiel.json",
-      "generated_at": "2026-05-03 14:58",
-      "count": 56
+      "generated_at": "2026-05-03 15:00",
+      "count": 59
     },
     "meldungen_ruesterbergen": {
       "file": "Meldungen_Ruesterbergen.json",
-      "generated_at": "2026-05-03 14:58",
+      "generated_at": "2026-05-03 15:00",
       "count": 11
     },
     "seelotsen": {
       "file": "Seelotsen.json",
-      "generated_at": "2026-05-03 14:58",
+      "generated_at": "2026-05-03 15:00",
       "count": 21
     }
   },
@@ -104,7 +104,8 @@
         ],
         "route": "HOR → UTG",
         "routes": [
-          "HOR → UTG"
+          "HOR → UTG",
+          "UTG → RÜB"
         ],
         "q_gruppe": "5",
         "draft": "4.3",
@@ -125,6 +126,19 @@
           "from": "HOR",
           "to": "UTG",
           "route": "HOR → UTG",
+          "remark": "40t"
+        },
+        {
+          "source": "meldungen_kiel",
+          "nr": "59",
+          "time": "2026-05-04 15:00",
+          "draft": "4.3",
+          "q_gruppe": "5",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "UTG",
+          "to": "RÜB",
+          "route": "UTG → RÜB",
           "remark": "40t"
         }
       ],
@@ -4979,7 +4993,8 @@
               "out": "2026-05-03 14:17"
             },
             "koenigsfoerde": {
-              "in": "2026-05-03 14:52"
+              "in": "2026-05-03 14:52",
+              "out": "2026-05-03 14:56"
             }
           }
         }
@@ -5045,7 +5060,8 @@
                 "out": "2026-05-03 14:17"
               },
               "koenigsfoerde": {
-                "in": "2026-05-03 14:52"
+                "in": "2026-05-03 14:52",
+                "out": "2026-05-03 14:56"
               }
             }
           },
@@ -6255,6 +6271,7 @@
           "engine_type": "Dieselmotor",
           "engine_power": "3000",
           "construction_draught": "7.81",
+          "airdraught": "37.90",
           "number_of_props": "1",
           "bow_thruster": "true",
           "stern_thruster": "false",
@@ -6311,6 +6328,7 @@
             "engine_type": "Dieselmotor",
             "engine_power": "3000",
             "construction_draught": "7.81",
+            "airdraught": "37.90",
             "number_of_props": "1",
             "bow_thruster": "true",
             "stern_thruster": "false",
@@ -7486,6 +7504,9 @@
             "kudensee": {
               "in": "2026-05-03 12:41",
               "out": "2026-05-03 14:05"
+            },
+            "duekerswisch": {
+              "in": "2026-05-03 14:57"
             }
           }
         }
@@ -7523,6 +7544,9 @@
               "kudensee": {
                 "in": "2026-05-03 12:41",
                 "out": "2026-05-03 14:05"
+              },
+              "duekerswisch": {
+                "in": "2026-05-03 14:57"
               }
             }
           },
@@ -8247,7 +8271,8 @@
         ],
         "route": "KLT → HOS",
         "routes": [
-          "KLT → HOS"
+          "KLT → HOS",
+          "HOS → RÜB"
         ],
         "q_gruppe": "1",
         "draft": "5.0",
@@ -8258,7 +8283,7 @@
       "meldungen_kiel": [
         {
           "source": "meldungen_kiel",
-          "nr": "55",
+          "nr": "56",
           "time": "2026-05-04 14:00",
           "draft": "5.0",
           "q_gruppe": "1",
@@ -8267,6 +8292,18 @@
           "from": "KLT",
           "to": "HOS",
           "route": "KLT → HOS"
+        },
+        {
+          "source": "meldungen_kiel",
+          "nr": "57",
+          "time": "2026-05-04 15:00",
+          "draft": "5.0",
+          "q_gruppe": "1",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "HOS",
+          "to": "RÜB",
+          "route": "HOS → RÜB"
         }
       ],
       "meldungen_ruesterbergen": [],
@@ -10742,7 +10779,8 @@
         ],
         "route": "KLT → HOS",
         "routes": [
-          "KLT → HOS"
+          "KLT → HOS",
+          "HOS → UTG"
         ],
         "q_gruppe": "5",
         "draft": "5.9",
@@ -10754,7 +10792,7 @@
       "meldungen_kiel": [
         {
           "source": "meldungen_kiel",
-          "nr": "56",
+          "nr": "55",
           "time": "2026-05-04 14:00",
           "draft": "5.9",
           "q_gruppe": "5",
@@ -10763,6 +10801,19 @@
           "from": "KLT",
           "to": "HOS",
           "route": "KLT → HOS",
+          "remark": "wünscht Fördelotsen\r\nca. 100 t UTG"
+        },
+        {
+          "source": "meldungen_kiel",
+          "nr": "58",
+          "time": "2026-05-04 15:00",
+          "draft": "5.9",
+          "q_gruppe": "5",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "HOS",
+          "to": "UTG",
+          "route": "HOS → UTG",
           "remark": "wünscht Fördelotsen\r\nca. 100 t UTG"
         }
       ],
@@ -11610,10 +11661,10 @@
           "zulauf_brb_innen"
         ],
         "eta_rueb": "2026-05-03 10:27",
-        "eta_schleuse": "2026-05-03 14:58",
-        "eta_text": "14:58",
+        "eta_schleuse": "2026-05-03 15:00",
+        "eta_text": "15:00",
         "first_seen": "2026-05-03 07:00",
-        "delta_rueb_schleuse": "04:32",
+        "delta_rueb_schleuse": "04:34",
         "delta_start_rueb": "03:27",
         "queue_key": "brb_innen",
         "queue_title": "Zulauf vom Kanal in Brunsbüttel",
@@ -11805,10 +11856,10 @@
       "zulauf": [
         {
           "name": "SCOT EXPLORER",
-          "eta_schleuse": "2026-05-03 14:58",
+          "eta_schleuse": "2026-05-03 15:00",
           "eta_rueb": "2026-05-03 10:27",
           "first_seen": "2026-05-03 07:00",
-          "delta_rueb_schleuse": "04:32",
+          "delta_rueb_schleuse": "04:34",
           "delta_start_rueb": "03:27",
           "ship_name": "SCOT EXPLORER",
           "vg": "3",
@@ -11822,7 +11873,7 @@
           "pilot_required": "true",
           "pilot_foerde": "true",
           "pilot_order": "NOK-ESEE-KF",
-          "eta_text": "14:58",
+          "eta_text": "15:00",
           "mooring_place": "Neue Nord Mittelmauer",
           "destination": "Brunsbüttel",
           "makler": "UCA",
