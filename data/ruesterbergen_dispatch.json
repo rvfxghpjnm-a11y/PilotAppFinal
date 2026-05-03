@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-03T07:29:12",
+  "generated_at": "2026-05-03T07:31:14",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,13 +32,13 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 4,
+    "ships_for_ruesterbergen": 5,
     "pilots_total": 9,
     "pilots_dispatchable": 9,
     "pilots_visible_only": 0,
-    "assignments": 4,
+    "assignments": 5,
     "unassigned_ships": 0,
-    "unused_pilots": 5
+    "unused_pilots": 4
   },
   "ships": [
     {
@@ -157,7 +157,7 @@
     {
       "ship_key": "NORDBORG",
       "ship_name": "NORDBORG",
-      "eta_rueb": "2026-05-03 11:27",
+      "eta_rueb": "2026-05-03 11:26",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
@@ -190,6 +190,43 @@
         "makler": "UCA",
         "dangerous_vessel": "-",
         "type_of_loading": "Bulk"
+      }
+    },
+    {
+      "ship_key": "LADY ANNEKE",
+      "ship_name": "LADY ANNEKE",
+      "eta_rueb": "2026-05-03 11:45",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 5,
+      "meldung": {
+        "nr": "5",
+        "time": "Sun May 03 11:30:00 CEST 2026",
+        "draft": "5.3",
+        "q_gruppe": "5",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "5",
+        "vg": "3",
+        "draft": "5.30",
+        "length_m": "88.000",
+        "beam_m": "13.390",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "P",
+        "travel_status": "SAILING_NOK",
+        "makler": "UCA",
+        "dangerous_vessel": "-",
+        "type_of_loading": "Eisen und Stahl"
       }
     }
   ],
@@ -1018,7 +1055,7 @@
     {
       "ship_key": "NORDBORG",
       "ship_name": "NORDBORG",
-      "eta_rueb": "2026-05-03 11:27",
+      "eta_rueb": "2026-05-03 11:26",
       "ship_q": 5,
       "assigned_pilot": "Dietrich, Thomas",
       "assigned_pilot_q": 0,
@@ -1143,31 +1180,126 @@
           "type_of_loading": "Bulk"
         }
       }
+    },
+    {
+      "ship_key": "LADY ANNEKE",
+      "ship_name": "LADY ANNEKE",
+      "eta_rueb": "2026-05-03 11:45",
+      "ship_q": 5,
+      "assigned_pilot": "Schuh, Erskine",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 11,
+      "assigned_abteilungszeit": "2026-05-03 02:06",
+      "assigned_current_ship_name": "RÜB",
+      "assigned_current_ship_eta_rueb": "2026-05-03 02:06",
+      "assigned_current_ship_source": "special.already_in_rueb",
+      "assigned_availability_kind": "already_in_rueb",
+      "assigned_availability_hint": "Lotse gilt als bereits in RÜB",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 5,
+      "candidates": [
+        {
+          "pilot_name": "Schuh, Erskine",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 11,
+          "abteilungszeit": "2026-05-03 02:06",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-03 02:06",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
+        },
+        {
+          "pilot_name": "Blome, Henning",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 4,
+          "abteilungszeit": "2026-05-03 04:41",
+          "fahrzeug": "LADY IRINA",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "LADY IRINA",
+          "current_ship_eta_rueb": "2026-05-03 10:23",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Diekmann, Ulrich",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 3,
+          "abteilungszeit": "2026-05-03 04:48",
+          "fahrzeug": "ECO MAESTRO",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ECO MAESTRO",
+          "current_ship_eta_rueb": "2026-05-03 10:27",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Hren, Alexander",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-05-03 05:45",
+          "fahrzeug": "UNITAR",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "UNITAR",
+          "current_ship_eta_rueb": "2026-05-03 10:32",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Ehlers, Sören",
+          "pilot_q": 3,
+          "pilot_tactical_nr": 1,
+          "abteilungszeit": "2026-05-03 06:09",
+          "fahrzeug": "SCOT EXPLORER",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "SCOT EXPLORER",
+          "current_ship_eta_rueb": "2026-05-03 10:34",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "5",
+          "time": "Sun May 03 11:30:00 CEST 2026",
+          "draft": "5.3",
+          "q_gruppe": "5",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "HOS → KLT",
+          "routes": [
+            "HOS → KLT",
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "5",
+          "vg": "3",
+          "draft": "5.30",
+          "length_m": "88.000",
+          "beam_m": "13.390",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "P",
+          "travel_status": "SAILING_NOK",
+          "makler": "UCA",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Eisen und Stahl"
+        }
+      }
     }
   ],
   "unassigned_ships": [],
   "unused_pilots": [
-    {
-      "pilot_key": "schuh_erskine",
-      "vorname": "Erskine",
-      "nachname": "Schuh",
-      "pilot_name": "Schuh, Erskine",
-      "abteilungszeit": "2026-05-03 02:06",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 11,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "RÜB",
-      "nr": 11,
-      "raw_time": "Sun May 03 02:06:00 CEST 2026",
-      "current_ship_name": "RÜB",
-      "current_ship_eta_rueb": "2026-05-03 02:06",
-      "current_ship_q": 0,
-      "current_ship_route": "RÜB",
-      "current_ship_source": "special.already_in_rueb",
-      "availability_kind": "already_in_rueb",
-      "availability_hint": "Lotse gilt als bereits in RÜB"
-    },
     {
       "pilot_key": "blome_henning",
       "vorname": "Henning",
