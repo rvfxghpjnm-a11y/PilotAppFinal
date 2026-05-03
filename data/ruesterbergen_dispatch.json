@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-03T21:13:11",
+  "generated_at": "2026-05-03T21:15:28",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 4,
     "pilots_total": 16,
-    "pilots_dispatchable": 15,
-    "pilots_visible_only": 1,
+    "pilots_dispatchable": 16,
+    "pilots_visible_only": 0,
     "assignments": 4,
     "unassigned_ships": 0,
-    "unused_pilots": 11
+    "unused_pilots": 12
   },
   "ships": [
     {
@@ -477,9 +477,10 @@
       "nr": 4,
       "raw_time": "Sun May 03 19:47:00 CEST 2026",
       "current_ship_name": "PULPCA",
+      "current_ship_eta_rueb": "2026-05-04 00:58",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
@@ -818,6 +819,28 @@
       "availability_kind": "merged_eta"
     },
     {
+      "pilot_key": "münker_niels",
+      "vorname": "Niels",
+      "nachname": "Münker",
+      "pilot_name": "Münker, Niels",
+      "abteilungszeit": "2026-05-03 19:47",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 4,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "PULPCA",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 4,
+      "raw_time": "Sun May 03 19:47:00 CEST 2026",
+      "current_ship_name": "PULPCA",
+      "current_ship_eta_rueb": "2026-05-04 00:58",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
       "pilot_key": "demant_tom",
       "vorname": "Tom",
       "nachname": "Demant",
@@ -887,23 +910,7 @@
       "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
     }
   ],
-  "visible_but_not_dispatchable_pilots": [
-    {
-      "pilot_key": "münker_niels",
-      "pilot_name": "Münker, Niels",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 4,
-      "abteilungszeit": "2026-05-03 19:47",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "PULPCA",
-      "from": "HOS",
-      "to": "RÜB",
-      "current_ship_name": "PULPCA",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    }
-  ],
+  "visible_but_not_dispatchable_pilots": [],
   "assignments": [
     {
       "ship_key": "NORDICA",
@@ -1080,6 +1087,15 @@
           "reason": "Quali passt nicht (2 > 1)",
           "pilot_q": 2,
           "ship_q": 1
+        },
+        {
+          "pilot_name": "Münker, Niels",
+          "pilot_tactical_nr": 4,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "PULPCA",
+          "pilot_current_ship_eta_rueb": "2026-05-04 00:58",
+          "ship_eta_rueb": "2026-05-03 22:08",
+          "availability_kind": "merged_eta"
         },
         {
           "pilot_name": "Demant, Tom",
@@ -1285,6 +1301,15 @@
           "reason": "Quali passt nicht (2 > 1)",
           "pilot_q": 2,
           "ship_q": 1
+        },
+        {
+          "pilot_name": "Münker, Niels",
+          "pilot_tactical_nr": 4,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "PULPCA",
+          "pilot_current_ship_eta_rueb": "2026-05-04 00:58",
+          "ship_eta_rueb": "2026-05-03 22:21",
+          "availability_kind": "merged_eta"
         },
         {
           "pilot_name": "Demant, Tom",
@@ -1510,6 +1535,15 @@
           "pilot_current_ship_eta_rueb": "2026-05-03 22:45",
           "ship_eta_rueb": "2026-05-03 22:26",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Münker, Niels",
+          "pilot_tactical_nr": 4,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "PULPCA",
+          "pilot_current_ship_eta_rueb": "2026-05-04 00:58",
+          "ship_eta_rueb": "2026-05-03 22:26",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -1561,7 +1595,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 11,
+      "candidate_count": 12,
       "candidates": [
         {
           "pilot_name": "Schran, Oliver",
@@ -1677,6 +1711,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "FREJ",
           "current_ship_eta_rueb": "2026-05-03 20:49",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Münker, Niels",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 4,
+          "abteilungszeit": "2026-05-03 19:47",
+          "fahrzeug": "PULPCA",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "PULPCA",
+          "current_ship_eta_rueb": "2026-05-04 00:58",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1928,6 +1975,28 @@
       "current_ship_eta_rueb": "2026-05-03 20:49",
       "current_ship_q": 4,
       "current_ship_route": "RÜB → HOS",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "münker_niels",
+      "vorname": "Niels",
+      "nachname": "Münker",
+      "pilot_name": "Münker, Niels",
+      "abteilungszeit": "2026-05-03 19:47",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 4,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "PULPCA",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 4,
+      "raw_time": "Sun May 03 19:47:00 CEST 2026",
+      "current_ship_name": "PULPCA",
+      "current_ship_eta_rueb": "2026-05-04 00:58",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
