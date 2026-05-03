@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-03T16:47:12",
+  "generated_at": "2026-05-03T16:49:11",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,13 +32,13 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 8,
+    "ships_for_ruesterbergen": 9,
     "pilots_total": 12,
     "pilots_dispatchable": 12,
     "pilots_visible_only": 0,
-    "assignments": 8,
+    "assignments": 9,
     "unassigned_ships": 0,
-    "unused_pilots": 4
+    "unused_pilots": 3
   },
   "ships": [
     {
@@ -221,7 +221,7 @@
     {
       "ship_key": "PRIMA QUEEN",
       "ship_name": "PRIMA QUEEN",
-      "eta_rueb": "2026-05-03 18:27",
+      "eta_rueb": "2026-05-03 18:25",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
@@ -325,6 +325,44 @@
         "pilot_required": "true",
         "pilot_status": "U",
         "pilot_1_name": "Hansen, Constantin",
+        "travel_status": "SAILING_NOK",
+        "makler": "UCA",
+        "dangerous_vessel": "-",
+        "type_of_loading": "Container"
+      }
+    },
+    {
+      "ship_key": "NORDICA",
+      "ship_name": "NORDICA",
+      "eta_rueb": "2026-05-03 22:18",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 1,
+      "meldung": {
+        "nr": "9",
+        "time": "Sun May 03 22:00:00 CEST 2026",
+        "draft": "6.8",
+        "q_gruppe": "1",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "1",
+        "vg": "5",
+        "draft": "6.80",
+        "length_m": "151.72",
+        "beam_m": "23.4",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "T",
+        "pilot_1_name": "Scholz, Burghard",
         "travel_status": "SAILING_NOK",
         "makler": "UCA",
         "dangerous_vessel": "-",
@@ -1761,7 +1799,7 @@
     {
       "ship_key": "PRIMA QUEEN",
       "ship_name": "PRIMA QUEEN",
-      "eta_rueb": "2026-05-03 18:27",
+      "eta_rueb": "2026-05-03 18:25",
       "ship_q": 5,
       "assigned_pilot": "Woitanowski, Tim",
       "assigned_pilot_q": 2,
@@ -1866,7 +1904,7 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "NORRLAND",
           "pilot_current_ship_eta_rueb": "2026-05-03 20:29",
-          "ship_eta_rueb": "2026-05-03 18:27",
+          "ship_eta_rueb": "2026-05-03 18:25",
           "availability_kind": "merged_eta"
         }
       ],
@@ -2153,33 +2191,117 @@
           "type_of_loading": "Container"
         }
       }
+    },
+    {
+      "ship_key": "NORDICA",
+      "ship_name": "NORDICA",
+      "eta_rueb": "2026-05-03 22:18",
+      "ship_q": 1,
+      "assigned_pilot": "Wulff, Stephan",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 5,
+      "assigned_abteilungszeit": "2026-05-03 16:20",
+      "assigned_current_ship_name": "Leerfahrt",
+      "assigned_current_ship_eta_rueb": "2026-05-03 17:20",
+      "assigned_current_ship_source": "special.leerfahrt_hos_rueb_plus60",
+      "assigned_availability_kind": "leerfahrt_hos_rueb_plus60",
+      "assigned_availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 4,
+      "candidates": [
+        {
+          "pilot_name": "Wulff, Stephan",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 5,
+          "abteilungszeit": "2026-05-03 16:20",
+          "fahrzeug": "Leerfahrt",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "Leerfahrt",
+          "current_ship_eta_rueb": "2026-05-03 17:20",
+          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
+          "availability_kind": "leerfahrt_hos_rueb_plus60",
+          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+        },
+        {
+          "pilot_name": "Hoffmann, Heiko",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 6,
+          "abteilungszeit": "2026-05-03 16:20",
+          "fahrzeug": "Leerfahrt",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "Leerfahrt",
+          "current_ship_eta_rueb": "2026-05-03 17:20",
+          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
+          "availability_kind": "leerfahrt_hos_rueb_plus60",
+          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+        },
+        {
+          "pilot_name": "Schran, Oliver",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 7,
+          "abteilungszeit": "2026-05-03 16:20",
+          "fahrzeug": "Leerfahrt",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "Leerfahrt",
+          "current_ship_eta_rueb": "2026-05-03 17:20",
+          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
+          "availability_kind": "leerfahrt_hos_rueb_plus60",
+          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+        },
+        {
+          "pilot_name": "Kubica, Gregor",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 1,
+          "abteilungszeit": "2026-05-03 16:30",
+          "fahrzeug": "NORDBORG",
+          "to": "HOS",
+          "aufgabe": "Seebört",
+          "current_ship_name": "NORDBORG",
+          "current_ship_eta_rueb": "2026-05-03 11:19",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "9",
+          "time": "Sun May 03 22:00:00 CEST 2026",
+          "draft": "6.8",
+          "q_gruppe": "1",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "HOS → KLT",
+          "routes": [
+            "HOS → KLT",
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "1",
+          "vg": "5",
+          "draft": "6.80",
+          "length_m": "151.72",
+          "beam_m": "23.4",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "T",
+          "pilot_1_name": "Scholz, Burghard",
+          "travel_status": "SAILING_NOK",
+          "makler": "UCA",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Container"
+        }
+      }
     }
   ],
   "unassigned_ships": [],
   "unused_pilots": [
-    {
-      "pilot_key": "wulff_stephan",
-      "vorname": "Stephan",
-      "nachname": "Wulff",
-      "pilot_name": "Wulff, Stephan",
-      "abteilungszeit": "2026-05-03 16:20",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 5,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "Leerfahrt",
-      "from": "HOS",
-      "to": "RÜB",
-      "nr": 5,
-      "raw_time": "Sun May 03 16:20:00 CEST 2026",
-      "current_ship_name": "Leerfahrt",
-      "current_ship_eta_rueb": "2026-05-03 17:20",
-      "current_ship_q": 0,
-      "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-      "availability_kind": "leerfahrt_hos_rueb_plus60",
-      "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
-    },
     {
       "pilot_key": "hoffmann_heiko",
       "vorname": "Heiko",
