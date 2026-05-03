@@ -1,47 +1,47 @@
 {
-  "generated_at": "2026-05-04T00:49:10",
+  "generated_at": "2026-05-04T00:51:10",
   "source_meta": {
     "zulauf_kiel_innen": {
       "file": "Zulauf_kiel_innen.json",
-      "generated_at": "2026-05-04 00:48",
+      "generated_at": "2026-05-04 00:50",
       "queue": "kiel_innen",
       "title": "Zulauf vom Kanal in Kiel",
       "count": 6
     },
     "zulauf_kiel_aussen": {
       "file": "Zulauf_kiel_aussen.json",
-      "generated_at": "2026-05-04 00:48",
+      "generated_at": "2026-05-04 00:50",
       "queue": "kiel_aussen",
       "title": "Zulauf von See in Kiel",
       "count": 0
     },
     "zulauf_brb_innen": {
       "file": "Zulauf_brb_innen.json",
-      "generated_at": "2026-05-04 00:48",
+      "generated_at": "2026-05-04 00:50",
       "queue": "brb_innen",
       "title": "Zulauf vom Kanal in Brunsbüttel",
       "count": 6
     },
     "zulauf_brb_aussen": {
       "file": "Zulauf_brb_aussen.json",
-      "generated_at": "2026-05-04 00:48",
+      "generated_at": "2026-05-04 00:50",
       "queue": "brb_aussen",
       "title": "Zulauf von See in Brunsbüttel",
       "count": 3
     },
     "meldungen_kiel": {
       "file": "Meldungen_Kiel.json",
-      "generated_at": "2026-05-04 00:48",
+      "generated_at": "2026-05-04 00:50",
       "count": 45
     },
     "meldungen_ruesterbergen": {
       "file": "Meldungen_Ruesterbergen.json",
-      "generated_at": "2026-05-04 00:48",
-      "count": 3
+      "generated_at": "2026-05-04 00:50",
+      "count": 2
     },
     "seelotsen": {
       "file": "Seelotsen.json",
-      "generated_at": "2026-05-04 00:48",
+      "generated_at": "2026-05-04 00:50",
       "count": 12
     }
   },
@@ -418,6 +418,9 @@
             "koenigsfoerde": {
               "in": "2026-05-04 00:22",
               "out": "2026-05-04 00:26"
+            },
+            "gross_nordsee": {
+              "in": "2026-05-04 00:47"
             }
           }
         }
@@ -486,6 +489,9 @@
               "koenigsfoerde": {
                 "in": "2026-05-04 00:22",
                 "out": "2026-05-04 00:26"
+              },
+              "gross_nordsee": {
+                "in": "2026-05-04 00:47"
               }
             }
           },
@@ -1923,7 +1929,7 @@
       "name": "FWN SUN",
       "sources": [
         "meldungen_kiel",
-        "meldungen_ruesterbergen",
+        "seelotsen",
         "zulauf_kiel_innen"
       ],
       "special_entry": false,
@@ -1932,7 +1938,7 @@
         "special_entry": false,
         "sources": [
           "meldungen_kiel",
-          "meldungen_ruesterbergen",
+          "seelotsen",
           "zulauf_kiel_innen"
         ],
         "route": "UTG → HOS",
@@ -1990,6 +1996,12 @@
         "dangerous_vessel": "-",
         "port_of_departure": "TR ISK",
         "port_of_destination": "PL GDN",
+        "assigned_pilots": [
+          "Wald, Mark"
+        ],
+        "aufgaben": [
+          "Kanalbört"
+        ],
         "lotsen_anzahl_kiel": 1,
         "confirmed_kiel": false,
         "remark_kiel": "90t",
@@ -2123,7 +2135,8 @@
               "out": "2026-05-04 00:09"
             },
             "breiholz": {
-              "in": "2026-05-04 00:40"
+              "in": "2026-05-04 00:40",
+              "out": "2026-05-04 00:47"
             }
           }
         }
@@ -2176,7 +2189,8 @@
                 "out": "2026-05-04 00:09"
               },
               "breiholz": {
-                "in": "2026-05-04 00:40"
+                "in": "2026-05-04 00:40",
+                "out": "2026-05-04 00:47"
               }
             }
           },
@@ -2332,22 +2346,20 @@
           "remark": "90t"
         }
       ],
-      "meldungen_ruesterbergen": [
+      "meldungen_ruesterbergen": [],
+      "seelotsen": [
         {
-          "source": "meldungen_ruesterbergen",
-          "nr": "1",
-          "time": "2026-05-04 01:20",
-          "draft": "6.6",
-          "q_gruppe": "3",
-          "lotsen_anzahl": 1,
-          "confirmed": false,
+          "nr": 12,
+          "time": "2026-05-03 17:08",
+          "pilot_name": "Wald, Mark",
+          "nachname": "Wald",
+          "vorname": "Mark",
+          "aufgabe": "Kanalbört",
           "from": "RÜB",
           "to": "UTG",
-          "route": "RÜB → UTG",
-          "remark": "90t"
+          "route": "RÜB → UTG"
         }
-      ],
-      "seelotsen": []
+      ]
     },
     {
       "ship_key": "GIOCONDA",
@@ -2639,7 +2651,8 @@
         "weichenzeiten": {
           "west": {
             "ostermoor": {
-              "in": "2026-05-04 00:32"
+              "in": "2026-05-04 00:32",
+              "out": "2026-05-04 00:48"
             }
           }
         }
@@ -2671,7 +2684,8 @@
           "weichenzeiten": {
             "west": {
               "ostermoor": {
-                "in": "2026-05-04 00:32"
+                "in": "2026-05-04 00:32",
+                "out": "2026-05-04 00:48"
               }
             }
           },
@@ -2816,7 +2830,7 @@
       "meldungen_ruesterbergen": [
         {
           "source": "meldungen_ruesterbergen",
-          "nr": "3",
+          "nr": "2",
           "time": "2026-05-04 04:45",
           "draft": "6.5",
           "q_gruppe": "4",
@@ -5030,6 +5044,9 @@
             "duekerswisch": {
               "in": "2026-05-03 23:43",
               "out": "2026-05-03 23:50"
+            },
+            "fischerhuette": {
+              "in": "2026-05-04 00:46"
             }
           }
         }
@@ -5072,6 +5089,9 @@
               "duekerswisch": {
                 "in": "2026-05-03 23:43",
                 "out": "2026-05-03 23:50"
+              },
+              "fischerhuette": {
+                "in": "2026-05-04 00:46"
               }
             }
           },
@@ -5173,7 +5193,7 @@
       "meldungen_ruesterbergen": [
         {
           "source": "meldungen_ruesterbergen",
-          "nr": "2",
+          "nr": "1",
           "time": "2026-05-04 02:25",
           "draft": "3.0",
           "q_gruppe": "5",
@@ -5607,12 +5627,12 @@
         "routes": [
           "HOS → RÜB"
         ],
-        "eta_rueb": "2026-05-04 01:31",
-        "eta_schleuse": "2026-05-04 05:59",
-        "eta_text": "05:59",
+        "eta_rueb": "2026-05-04 01:30",
+        "eta_schleuse": "2026-05-04 05:58",
+        "eta_text": "05:58",
         "first_seen": "2026-05-03 21:08",
         "delta_rueb_schleuse": "04:28",
-        "delta_start_rueb": "04:23",
+        "delta_start_rueb": "04:22",
         "queue_key": "brb_innen",
         "queue_title": "Zulauf vom Kanal in Brunsbüttel",
         "area": "brb",
@@ -5797,11 +5817,11 @@
       "zulauf": [
         {
           "name": "PULPCA",
-          "eta_schleuse": "2026-05-04 05:59",
-          "eta_rueb": "2026-05-04 01:31",
+          "eta_schleuse": "2026-05-04 05:58",
+          "eta_rueb": "2026-05-04 01:30",
           "first_seen": "2026-05-03 21:08",
           "delta_rueb_schleuse": "04:28",
-          "delta_start_rueb": "04:23",
+          "delta_start_rueb": "04:22",
           "ship_name": "PULPCA",
           "vg": "6",
           "length_m": "205.26",
@@ -5814,7 +5834,7 @@
           "pilot_required": "true",
           "pilot_foerde": "true",
           "pilot_order": "KS-NOK-ESEE-KF",
-          "eta_text": "05:59",
+          "eta_text": "05:58",
           "destination": "Brunsbüttel",
           "makler": "UCA",
           "preferred_mooring_side": "Beide",
@@ -6068,8 +6088,7 @@
           "seelotsen"
         ],
         "assigned_pilots": [
-          "Röhl, Jens",
-          "Wald, Mark"
+          "Röhl, Jens"
         ],
         "aufgaben": [
           "Kanalbört"
@@ -6085,14 +6104,6 @@
           "pilot_name": "Röhl, Jens",
           "nachname": "Röhl",
           "vorname": "Jens",
-          "aufgabe": "Kanalbört"
-        },
-        {
-          "nr": 12,
-          "time": "2026-05-03 17:08",
-          "pilot_name": "Wald, Mark",
-          "nachname": "Wald",
-          "vorname": "Mark",
           "aufgabe": "Kanalbört"
         }
       ]
@@ -6117,10 +6128,10 @@
           "HOR → RÜB"
         ],
         "eta_rueb": "2026-05-04 05:12",
-        "eta_schleuse": "2026-05-04 10:04",
-        "eta_text": "10:04",
+        "eta_schleuse": "2026-05-04 10:03",
+        "eta_text": "10:03",
         "first_seen": "2026-05-04 00:28",
-        "delta_rueb_schleuse": "04:52",
+        "delta_rueb_schleuse": "04:51",
         "delta_start_rueb": "04:44",
         "queue_key": "brb_innen",
         "queue_title": "Zulauf vom Kanal in Brunsbüttel",
@@ -6286,10 +6297,10 @@
       "zulauf": [
         {
           "name": "SKALAR",
-          "eta_schleuse": "2026-05-04 10:04",
+          "eta_schleuse": "2026-05-04 10:03",
           "eta_rueb": "2026-05-04 05:12",
           "first_seen": "2026-05-04 00:28",
-          "delta_rueb_schleuse": "04:52",
+          "delta_rueb_schleuse": "04:51",
           "delta_start_rueb": "04:44",
           "ship_name": "SKALAR",
           "vg": "5",
@@ -6303,7 +6314,7 @@
           "pilot_required": "true",
           "pilot_foerde": "false",
           "pilot_order": "KS-BÖ-NOK",
-          "eta_text": "10:04",
+          "eta_text": "10:03",
           "destination": "Brunsbüttel",
           "makler": "UCA",
           "preferred_mooring_side": "Stb",
@@ -6624,7 +6635,8 @@
         "weichenzeiten": {
           "ost": {
             "kiel_binnenhafen": {
-              "in": "2026-05-04 00:36"
+              "in": "2026-05-04 00:36",
+              "out": "2026-05-04 00:50"
             }
           }
         }
@@ -6656,7 +6668,8 @@
           "weichenzeiten": {
             "ost": {
               "kiel_binnenhafen": {
-                "in": "2026-05-04 00:36"
+                "in": "2026-05-04 00:36",
+                "out": "2026-05-04 00:50"
               }
             }
           },
