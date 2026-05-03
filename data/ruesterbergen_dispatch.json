@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-03T05:55:19",
+  "generated_at": "2026-05-03T05:57:10",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 3,
     "pilots_total": 8,
-    "pilots_dispatchable": 5,
-    "pilots_visible_only": 3,
+    "pilots_dispatchable": 6,
+    "pilots_visible_only": 2,
     "assignments": 3,
     "unassigned_ships": 0,
-    "unused_pilots": 2
+    "unused_pilots": 3
   },
   "ships": [
     {
@@ -119,7 +119,7 @@
     {
       "ship_key": "TUNDRALAND",
       "ship_name": "TUNDRALAND",
-      "eta_rueb": "2026-05-03 10:12",
+      "eta_rueb": "2026-05-03 10:11",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 0,
       "meldung": {
@@ -172,7 +172,7 @@
       "nr": 16,
       "raw_time": "Sat May 02 20:39:00 CEST 2026",
       "current_ship_name": "JORIX",
-      "current_ship_eta_rueb": "2026-05-03 05:53",
+      "current_ship_eta_rueb": "2026-05-03 05:55",
       "current_ship_q": 4,
       "current_ship_route": "RÜB → HOS",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -238,7 +238,7 @@
       "nr": 11,
       "raw_time": "Sun May 03 00:40:00 CEST 2026",
       "current_ship_name": "VIKSTRAUM",
-      "current_ship_eta_rueb": "2026-05-03 06:05",
+      "current_ship_eta_rueb": "2026-05-03 06:04",
       "current_ship_q": 3,
       "current_ship_route": "RÜB → HOS",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -282,6 +282,7 @@
       "nr": 3,
       "raw_time": "Sun May 03 04:41:00 CEST 2026",
       "current_ship_name": "LADY IRINA",
+      "current_ship_eta_rueb": "2026-05-03 10:25",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -347,7 +348,7 @@
       "nr": 16,
       "raw_time": "Sat May 02 20:39:00 CEST 2026",
       "current_ship_name": "JORIX",
-      "current_ship_eta_rueb": "2026-05-03 05:53",
+      "current_ship_eta_rueb": "2026-05-03 05:55",
       "current_ship_q": 4,
       "current_ship_route": "RÜB → HOS",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -413,7 +414,7 @@
       "nr": 11,
       "raw_time": "Sun May 03 00:40:00 CEST 2026",
       "current_ship_name": "VIKSTRAUM",
-      "current_ship_eta_rueb": "2026-05-03 06:05",
+      "current_ship_eta_rueb": "2026-05-03 06:04",
       "current_ship_q": 3,
       "current_ship_route": "RÜB → HOS",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -440,24 +441,31 @@
       "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
-    }
-  ],
-  "visible_but_not_dispatchable_pilots": [
+    },
     {
       "pilot_key": "blome_henning",
+      "vorname": "Henning",
+      "nachname": "Blome",
       "pilot_name": "Blome, Henning",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 3,
       "abteilungszeit": "2026-05-03 04:41",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 3,
       "aufgabe": "Kanalbört",
       "fahrzeug": "LADY IRINA",
       "from": "HOS",
       "to": "RÜB",
+      "nr": 3,
+      "raw_time": "Sun May 03 04:41:00 CEST 2026",
       "current_ship_name": "LADY IRINA",
+      "current_ship_eta_rueb": "2026-05-03 10:25",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    },
+      "availability_kind": "merged_eta"
+    }
+  ],
+  "visible_but_not_dispatchable_pilots": [
     {
       "pilot_key": "diekmann_ulrich",
       "pilot_name": "Diekmann, Ulrich",
@@ -500,7 +508,7 @@
       "assigned_tactical_nr": 16,
       "assigned_abteilungszeit": "2026-05-02 20:39",
       "assigned_current_ship_name": "JORIX",
-      "assigned_current_ship_eta_rueb": "2026-05-03 05:53",
+      "assigned_current_ship_eta_rueb": "2026-05-03 05:55",
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
@@ -515,7 +523,7 @@
           "to": "HOS",
           "aufgabe": "Kanalbört",
           "current_ship_name": "JORIX",
-          "current_ship_eta_rueb": "2026-05-03 05:53",
+          "current_ship_eta_rueb": "2026-05-03 05:55",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -554,7 +562,7 @@
           "to": "HOS",
           "aufgabe": "Kanalbört",
           "current_ship_name": "VIKSTRAUM",
-          "current_ship_eta_rueb": "2026-05-03 06:05",
+          "current_ship_eta_rueb": "2026-05-03 06:04",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -569,6 +577,17 @@
           "current_ship_name": "MHO ESBJERG",
           "current_ship_eta_rueb": "2026-05-03 06:06",
           "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Blome, Henning",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "LADY IRINA",
+          "pilot_current_ship_eta_rueb": "2026-05-03 10:25",
+          "ship_eta_rueb": "2026-05-03 09:53",
           "availability_kind": "merged_eta"
         }
       ],
@@ -656,7 +675,7 @@
           "to": "HOS",
           "aufgabe": "Kanalbört",
           "current_ship_name": "VIKSTRAUM",
-          "current_ship_eta_rueb": "2026-05-03 06:05",
+          "current_ship_eta_rueb": "2026-05-03 06:04",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -671,6 +690,17 @@
           "current_ship_name": "MHO ESBJERG",
           "current_ship_eta_rueb": "2026-05-03 06:06",
           "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Blome, Henning",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "LADY IRINA",
+          "pilot_current_ship_eta_rueb": "2026-05-03 10:25",
+          "ship_eta_rueb": "2026-05-03 09:56",
           "availability_kind": "merged_eta"
         }
       ],
@@ -711,7 +741,7 @@
     {
       "ship_key": "TUNDRALAND",
       "ship_name": "TUNDRALAND",
-      "eta_rueb": "2026-05-03 10:12",
+      "eta_rueb": "2026-05-03 10:11",
       "ship_q": 0,
       "assigned_pilot": "Wäntig, Lutz",
       "assigned_pilot_q": 0,
@@ -746,7 +776,7 @@
           "to": "HOS",
           "aufgabe": "Kanalbört",
           "current_ship_name": "VIKSTRAUM",
-          "current_ship_eta_rueb": "2026-05-03 06:05",
+          "current_ship_eta_rueb": "2026-05-03 06:04",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -761,6 +791,17 @@
           "current_ship_name": "MHO ESBJERG",
           "current_ship_eta_rueb": "2026-05-03 06:06",
           "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Blome, Henning",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "LADY IRINA",
+          "pilot_current_ship_eta_rueb": "2026-05-03 10:25",
+          "ship_eta_rueb": "2026-05-03 10:11",
           "availability_kind": "merged_eta"
         }
       ],
@@ -817,7 +858,7 @@
       "nr": 11,
       "raw_time": "Sun May 03 00:40:00 CEST 2026",
       "current_ship_name": "VIKSTRAUM",
-      "current_ship_eta_rueb": "2026-05-03 06:05",
+      "current_ship_eta_rueb": "2026-05-03 06:04",
       "current_ship_q": 3,
       "current_ship_route": "RÜB → HOS",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -842,6 +883,28 @@
       "current_ship_eta_rueb": "2026-05-03 06:06",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "blome_henning",
+      "vorname": "Henning",
+      "nachname": "Blome",
+      "pilot_name": "Blome, Henning",
+      "abteilungszeit": "2026-05-03 04:41",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 3,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "LADY IRINA",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 3,
+      "raw_time": "Sun May 03 04:41:00 CEST 2026",
+      "current_ship_name": "LADY IRINA",
+      "current_ship_eta_rueb": "2026-05-03 10:25",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     }
