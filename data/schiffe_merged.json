@@ -1,51 +1,51 @@
 {
-  "generated_at": "2026-05-03T20:25:12",
+  "generated_at": "2026-05-03T20:27:12",
   "source_meta": {
     "zulauf_kiel_innen": {
       "file": "Zulauf_kiel_innen.json",
-      "generated_at": "2026-05-03 20:24",
+      "generated_at": "2026-05-03 20:26",
       "queue": "kiel_innen",
       "title": "Zulauf vom Kanal in Kiel",
       "count": 11
     },
     "zulauf_kiel_aussen": {
       "file": "Zulauf_kiel_aussen.json",
-      "generated_at": "2026-05-03 20:24",
+      "generated_at": "2026-05-03 20:26",
       "queue": "kiel_aussen",
       "title": "Zulauf von See in Kiel",
       "count": 0
     },
     "zulauf_brb_innen": {
       "file": "Zulauf_brb_innen.json",
-      "generated_at": "2026-05-03 20:24",
+      "generated_at": "2026-05-03 20:26",
       "queue": "brb_innen",
       "title": "Zulauf vom Kanal in Brunsbüttel",
       "count": 4
     },
     "zulauf_brb_aussen": {
       "file": "Zulauf_brb_aussen.json",
-      "generated_at": "2026-05-03 20:24",
+      "generated_at": "2026-05-03 20:26",
       "queue": "brb_aussen",
       "title": "Zulauf von See in Brunsbüttel",
       "count": 5
     },
     "meldungen_kiel": {
       "file": "Meldungen_Kiel.json",
-      "generated_at": "2026-05-03 20:24",
+      "generated_at": "2026-05-03 20:26",
       "count": 51
     },
     "meldungen_ruesterbergen": {
       "file": "Meldungen_Ruesterbergen.json",
-      "generated_at": "2026-05-03 20:24",
-      "count": 5
+      "generated_at": "2026-05-03 20:26",
+      "count": 3
     },
     "seelotsen": {
       "file": "Seelotsen.json",
-      "generated_at": "2026-05-03 20:24",
+      "generated_at": "2026-05-03 20:26",
       "count": 23
     }
   },
-  "count": 53,
+  "count": 52,
   "entries": [
     {
       "ship_key": "AILA",
@@ -615,7 +615,7 @@
       "meldungen_ruesterbergen": [
         {
           "source": "meldungen_ruesterbergen",
-          "nr": "5",
+          "nr": "3",
           "time": "2026-05-03 22:23",
           "draft": "4.8",
           "q_gruppe": "5",
@@ -1626,7 +1626,7 @@
       "meldungen_ruesterbergen": [
         {
           "source": "meldungen_ruesterbergen",
-          "nr": "4",
+          "nr": "2",
           "time": "2026-05-03 22:20",
           "draft": "8.3",
           "q_gruppe": "1",
@@ -3854,7 +3854,7 @@
       "name": "FREJ",
       "sources": [
         "meldungen_kiel",
-        "meldungen_ruesterbergen",
+        "seelotsen",
         "zulauf_kiel_innen"
       ],
       "special_entry": false,
@@ -3863,7 +3863,7 @@
         "special_entry": false,
         "sources": [
           "meldungen_kiel",
-          "meldungen_ruesterbergen",
+          "seelotsen",
           "zulauf_kiel_innen"
         ],
         "route": "HOS → KLT",
@@ -3919,6 +3919,12 @@
         "dangerous_vessel": "-",
         "port_of_departure": "NL AMS",
         "port_of_destination": "SE VST",
+        "assigned_pilots": [
+          "Kurfeld, Jan"
+        ],
+        "aufgaben": [
+          "Kanalbört"
+        ],
         "lotsen_anzahl_kiel": 1,
         "confirmed_kiel": false,
         "passage_block": {
@@ -4241,21 +4247,20 @@
           "route": "HOS → KLT"
         }
       ],
-      "meldungen_ruesterbergen": [
+      "meldungen_ruesterbergen": [],
+      "seelotsen": [
         {
-          "source": "meldungen_ruesterbergen",
-          "nr": "2",
-          "time": "2026-05-03 20:45",
-          "draft": "6.0",
-          "q_gruppe": "4",
-          "lotsen_anzahl": 1,
-          "confirmed": false,
+          "nr": 2,
+          "time": "2026-05-03 19:25",
+          "pilot_name": "Kurfeld, Jan",
+          "nachname": "Kurfeld",
+          "vorname": "Jan",
+          "aufgabe": "Kanalbört",
           "from": "RÜB",
           "to": "HOS",
           "route": "RÜB → HOS"
         }
-      ],
-      "seelotsen": []
+      ]
     },
     {
       "ship_key": "FRISIAN OCEAN",
@@ -5837,7 +5842,7 @@
       "name": "Leerfahrt",
       "sources": [
         "meldungen_kiel",
-        "meldungen_ruesterbergen"
+        "seelotsen"
       ],
       "special_entry": true,
       "summary": {
@@ -5845,14 +5850,19 @@
         "special_entry": true,
         "sources": [
           "meldungen_kiel",
-          "meldungen_ruesterbergen"
+          "seelotsen"
         ],
         "route": "HOS → RÜB",
         "routes": [
           "HOS → RÜB",
           "RÜB → HOS"
         ],
-        "eta_rueb": "2026-05-03 20:25",
+        "assigned_pilots": [
+          "Vogel, Peter"
+        ],
+        "aufgaben": [
+          "Kanalbört"
+        ],
         "lotsen_anzahl_kiel": 3,
         "confirmed_kiel": false,
         "remark_kiel": "2xQ1+Q5"
@@ -5871,20 +5881,20 @@
           "remark": "2xQ1+Q5"
         }
       ],
-      "meldungen_ruesterbergen": [
+      "meldungen_ruesterbergen": [],
+      "seelotsen": [
         {
-          "source": "meldungen_ruesterbergen",
-          "nr": "1",
-          "time": "2026-05-03 20:25",
-          "lotsen_anzahl": 1,
-          "confirmed": false,
+          "nr": 19,
+          "time": "2026-05-03 13:37",
+          "pilot_name": "Vogel, Peter",
+          "nachname": "Vogel",
+          "vorname": "Peter",
+          "aufgabe": "Kanalbört",
           "from": "RÜB",
           "to": "HOS",
-          "route": "RÜB → HOS",
-          "remark": "6. Std."
+          "route": "RÜB → HOS"
         }
-      ],
-      "seelotsen": []
+      ]
     },
     {
       "ship_key": "LUETJE HOERN",
@@ -6493,7 +6503,8 @@
               "out": "2026-05-03 19:57"
             },
             "gross_nordsee": {
-              "in": "2026-05-03 20:16"
+              "in": "2026-05-03 20:16",
+              "out": "2026-05-03 20:23"
             }
           }
         }
@@ -6564,7 +6575,8 @@
                 "out": "2026-05-03 19:57"
               },
               "gross_nordsee": {
-                "in": "2026-05-03 20:16"
+                "in": "2026-05-03 20:16",
+                "out": "2026-05-03 20:23"
               }
             }
           },
@@ -7145,7 +7157,7 @@
       "meldungen_ruesterbergen": [
         {
           "source": "meldungen_ruesterbergen",
-          "nr": "3",
+          "nr": "1",
           "time": "2026-05-03 22:00",
           "draft": "6.8",
           "q_gruppe": "1",
@@ -7656,8 +7668,8 @@
         "sources": [
           "zulauf_brb_aussen"
         ],
-        "eta_schleuse": "2026-05-03 21:04",
-        "eta_text": "21:04",
+        "eta_schleuse": "2026-05-03 21:02",
+        "eta_text": "21:02",
         "first_seen": "2026-05-03 17:34",
         "queue_key": "brb_aussen",
         "queue_title": "Zulauf von See in Brunsbüttel",
@@ -7745,7 +7757,7 @@
       "zulauf": [
         {
           "name": "PAULA",
-          "eta_schleuse": "2026-05-03 21:04",
+          "eta_schleuse": "2026-05-03 21:02",
           "first_seen": "2026-05-03 17:34",
           "ship_name": "PAULA",
           "vg": "2",
@@ -7756,7 +7768,7 @@
           "queue_title": "Zulauf von See in Brunsbüttel",
           "area": "brb",
           "zulauf_richtung": "von_see",
-          "eta_text": "21:04",
+          "eta_text": "21:02",
           "mooring_place": "Neue Nord Mittelmauer",
           "destination": "Kiel",
           "preferred_mooring_side": "Beide",
@@ -8673,49 +8685,6 @@
       ],
       "meldungen_ruesterbergen": [],
       "seelotsen": []
-    },
-    {
-      "ship_key": "RUEB",
-      "name": "RÜB",
-      "sources": [
-        "seelotsen"
-      ],
-      "special_entry": true,
-      "summary": {
-        "name": "RÜB",
-        "special_entry": true,
-        "sources": [
-          "seelotsen"
-        ],
-        "assigned_pilots": [
-          "Kurfeld, Jan",
-          "Vogel, Peter"
-        ],
-        "aufgaben": [
-          "Kanalbört"
-        ]
-      },
-      "zulauf": [],
-      "meldungen_kiel": [],
-      "meldungen_ruesterbergen": [],
-      "seelotsen": [
-        {
-          "nr": 2,
-          "time": "2026-05-03 19:25",
-          "pilot_name": "Kurfeld, Jan",
-          "nachname": "Kurfeld",
-          "vorname": "Jan",
-          "aufgabe": "Kanalbört"
-        },
-        {
-          "nr": 19,
-          "time": "2026-05-03 13:37",
-          "pilot_name": "Vogel, Peter",
-          "nachname": "Vogel",
-          "vorname": "Peter",
-          "aufgabe": "Kanalbört"
-        }
-      ]
     },
     {
       "ship_key": "SKALAR",
