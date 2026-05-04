@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-05T01:19:08",
+  "generated_at": "2026-05-05T01:21:06",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 2,
     "pilots_total": 11,
-    "pilots_dispatchable": 11,
-    "pilots_visible_only": 0,
+    "pilots_dispatchable": 10,
+    "pilots_visible_only": 1,
     "assignments": 2,
     "unassigned_ships": 0,
-    "unused_pilots": 9
+    "unused_pilots": 8
   },
   "ships": [
     {
@@ -177,11 +177,10 @@
       "to": "RÜB",
       "nr": 15,
       "raw_time": "Mon May 04 20:35:00 CEST 2026",
-      "current_ship_name": "ALEXANDER B.",
-      "current_ship_eta_rueb": "2026-05-05 02:00",
+      "current_ship_name": "ALEXANDER B",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
@@ -407,28 +406,6 @@
       "availability_kind": "merged_eta"
     },
     {
-      "pilot_key": "dalecki_niklas",
-      "vorname": "Niklas",
-      "nachname": "Dalecki",
-      "pilot_name": "Dalecki, Niklas",
-      "abteilungszeit": "2026-05-04 20:35",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 15,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "ALEXANDER B",
-      "from": "HOS",
-      "to": "RÜB",
-      "nr": 15,
-      "raw_time": "Mon May 04 20:35:00 CEST 2026",
-      "current_ship_name": "ALEXANDER B.",
-      "current_ship_eta_rueb": "2026-05-05 02:00",
-      "current_ship_q": 0,
-      "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-      "availability_kind": "merged_eta"
-    },
-    {
       "pilot_key": "dietrich_thomas",
       "vorname": "Thomas",
       "nachname": "Dietrich",
@@ -605,7 +582,23 @@
       "availability_kind": "merged_eta"
     }
   ],
-  "visible_but_not_dispatchable_pilots": [],
+  "visible_but_not_dispatchable_pilots": [
+    {
+      "pilot_key": "dalecki_niklas",
+      "pilot_name": "Dalecki, Niklas",
+      "pilot_q": 0,
+      "pilot_tactical_nr": 15,
+      "abteilungszeit": "2026-05-04 20:35",
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "ALEXANDER B",
+      "from": "HOS",
+      "to": "RÜB",
+      "current_ship_name": "ALEXANDER B",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta",
+      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
+    }
+  ],
   "assignments": [
     {
       "ship_key": "STOLT SANDPIPER",
@@ -621,7 +614,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 7,
+      "candidate_count": 6,
       "candidates": [
         {
           "pilot_name": "Krügel, Mathias",
@@ -647,19 +640,6 @@
           "current_ship_name": "LADY HANNEKE",
           "current_ship_eta_rueb": "2026-05-05 01:28",
           "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Dalecki, Niklas",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 15,
-          "abteilungszeit": "2026-05-04 20:35",
-          "fahrzeug": "ALEXANDER B",
-          "to": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "ALEXANDER B.",
-          "current_ship_eta_rueb": "2026-05-05 02:00",
-          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
           "availability_kind": "merged_eta"
         },
         {
@@ -801,7 +781,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 10,
+      "candidate_count": 9,
       "candidates": [
         {
           "pilot_name": "Skairies, Thomas",
@@ -814,19 +794,6 @@
           "current_ship_name": "LADY HANNEKE",
           "current_ship_eta_rueb": "2026-05-05 01:28",
           "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Dalecki, Niklas",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 15,
-          "abteilungszeit": "2026-05-04 20:35",
-          "fahrzeug": "ALEXANDER B",
-          "to": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "ALEXANDER B.",
-          "current_ship_eta_rueb": "2026-05-05 02:00",
-          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
           "availability_kind": "merged_eta"
         },
         {
@@ -970,28 +937,6 @@
   ],
   "unassigned_ships": [],
   "unused_pilots": [
-    {
-      "pilot_key": "dalecki_niklas",
-      "vorname": "Niklas",
-      "nachname": "Dalecki",
-      "pilot_name": "Dalecki, Niklas",
-      "abteilungszeit": "2026-05-04 20:35",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 15,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "ALEXANDER B",
-      "from": "HOS",
-      "to": "RÜB",
-      "nr": 15,
-      "raw_time": "Mon May 04 20:35:00 CEST 2026",
-      "current_ship_name": "ALEXANDER B.",
-      "current_ship_eta_rueb": "2026-05-05 02:00",
-      "current_ship_q": 0,
-      "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-      "availability_kind": "merged_eta"
-    },
     {
       "pilot_key": "dietrich_thomas",
       "vorname": "Thomas",
