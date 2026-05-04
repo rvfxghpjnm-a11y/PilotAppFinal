@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-04T12:35:06",
+  "generated_at": "2026-05-04T12:37:08",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -33,12 +33,12 @@
   },
   "counts": {
     "ships_for_ruesterbergen": 3,
-    "pilots_total": 5,
+    "pilots_total": 4,
     "pilots_dispatchable": 4,
-    "pilots_visible_only": 1,
-    "assignments": 3,
-    "unassigned_ships": 0,
-    "unused_pilots": 1
+    "pilots_visible_only": 0,
+    "assignments": 2,
+    "unassigned_ships": 1,
+    "unused_pilots": 2
   },
   "ships": [
     {
@@ -177,28 +177,6 @@
       "availability_hint": "Lotse gilt als bereits in RÜB"
     },
     {
-      "pilot_key": "krebs_michael",
-      "vorname": "Michael",
-      "nachname": "Krebs",
-      "pilot_name": "Krebs, Michael",
-      "abteilungszeit": "2026-05-04 06:28",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 15,
-      "aufgabe": "Seebört",
-      "fahrzeug": "LADY ELA",
-      "from": "HOS",
-      "to": "KLT",
-      "nr": 15,
-      "raw_time": "Mon May 04 06:28:00 CEST 2026",
-      "current_ship_name": "LADY ELA",
-      "current_ship_eta_rueb": "2026-05-04 08:41",
-      "current_ship_q": 0,
-      "current_ship_route": "HOS → KLT",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
-    },
-    {
       "pilot_key": "bruhn_stefan",
       "vorname": "Stefan",
       "nachname": "Bruhn",
@@ -236,6 +214,7 @@
       "nr": 5,
       "raw_time": "Mon May 04 11:14:00 CEST 2026",
       "current_ship_name": "FAIRPLAY 38",
+      "current_ship_eta_rueb": "2026-05-04 16:08",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -287,28 +266,6 @@
       "availability_hint": "Lotse gilt als bereits in RÜB"
     },
     {
-      "pilot_key": "krebs_michael",
-      "vorname": "Michael",
-      "nachname": "Krebs",
-      "pilot_name": "Krebs, Michael",
-      "abteilungszeit": "2026-05-04 06:28",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 15,
-      "aufgabe": "Seebört",
-      "fahrzeug": "LADY ELA",
-      "from": "HOS",
-      "to": "KLT",
-      "nr": 15,
-      "raw_time": "Mon May 04 06:28:00 CEST 2026",
-      "current_ship_name": "LADY ELA",
-      "current_ship_eta_rueb": "2026-05-04 08:41",
-      "current_ship_q": 0,
-      "current_ship_route": "HOS → KLT",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
-    },
-    {
       "pilot_key": "bruhn_stefan",
       "vorname": "Stefan",
       "nachname": "Bruhn",
@@ -327,6 +284,28 @@
       "current_ship_eta_rueb": "2026-05-04 13:29",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "kaschke_henning",
+      "vorname": "Henning",
+      "nachname": "Kaschke",
+      "pilot_name": "Kaschke, Henning",
+      "abteilungszeit": "2026-05-04 11:14",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 5,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "FAIRPLAY 38",
+      "from": "HOR",
+      "to": "RÜB",
+      "nr": 5,
+      "raw_time": "Mon May 04 11:14:00 CEST 2026",
+      "current_ship_name": "FAIRPLAY 38",
+      "current_ship_eta_rueb": "2026-05-04 16:08",
+      "current_ship_q": 0,
+      "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
@@ -353,23 +332,7 @@
       "availability_kind": "merged_eta"
     }
   ],
-  "visible_but_not_dispatchable_pilots": [
-    {
-      "pilot_key": "kaschke_henning",
-      "pilot_name": "Kaschke, Henning",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 5,
-      "abteilungszeit": "2026-05-04 11:14",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "FAIRPLAY 38",
-      "from": "HOR",
-      "to": "RÜB",
-      "current_ship_name": "FAIRPLAY 38",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    }
-  ],
+  "visible_but_not_dispatchable_pilots": [],
   "assignments": [
     {
       "ship_key": "SPANACO RELIABILITY",
@@ -386,7 +349,7 @@
       "assigned_availability_kind": "already_in_rueb",
       "assigned_availability_hint": "Lotse gilt als bereits in RÜB",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 3,
+      "candidate_count": 2,
       "candidates": [
         {
           "pilot_name": "Lielienthal, Jörn",
@@ -400,19 +363,6 @@
           "current_ship_source": "special.already_in_rueb",
           "availability_kind": "already_in_rueb",
           "availability_hint": "Lotse gilt als bereits in RÜB"
-        },
-        {
-          "pilot_name": "Krebs, Michael",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 15,
-          "abteilungszeit": "2026-05-04 06:28",
-          "fahrzeug": "LADY ELA",
-          "to": "KLT",
-          "aufgabe": "Seebört",
-          "current_ship_name": "LADY ELA",
-          "current_ship_eta_rueb": "2026-05-04 08:41",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
         },
         {
           "pilot_name": "Bruhn, Stefan",
@@ -429,6 +379,15 @@
         }
       ],
       "excluded": [
+        {
+          "pilot_name": "Kaschke, Henning",
+          "pilot_tactical_nr": 5,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "FAIRPLAY 38",
+          "pilot_current_ship_eta_rueb": "2026-05-04 16:08",
+          "ship_eta_rueb": "2026-05-04 14:48",
+          "availability_kind": "merged_eta"
+        },
         {
           "pilot_name": "Röhrs, Johannes",
           "pilot_tactical_nr": 2,
@@ -478,30 +437,17 @@
       "ship_name": "TIM",
       "eta_rueb": "2026-05-04 14:51",
       "ship_q": 5,
-      "assigned_pilot": "Krebs, Michael",
+      "assigned_pilot": "Bruhn, Stefan",
       "assigned_pilot_q": 0,
-      "assigned_tactical_nr": 15,
-      "assigned_abteilungszeit": "2026-05-04 06:28",
-      "assigned_current_ship_name": "LADY ELA",
-      "assigned_current_ship_eta_rueb": "2026-05-04 08:41",
+      "assigned_tactical_nr": 8,
+      "assigned_abteilungszeit": "2026-05-04 08:52",
+      "assigned_current_ship_name": "XING HAI WAN",
+      "assigned_current_ship_eta_rueb": "2026-05-04 13:29",
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 2,
+      "candidate_count": 1,
       "candidates": [
-        {
-          "pilot_name": "Krebs, Michael",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 15,
-          "abteilungszeit": "2026-05-04 06:28",
-          "fahrzeug": "LADY ELA",
-          "to": "KLT",
-          "aufgabe": "Seebört",
-          "current_ship_name": "LADY ELA",
-          "current_ship_eta_rueb": "2026-05-04 08:41",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
         {
           "pilot_name": "Bruhn, Stefan",
           "pilot_q": 0,
@@ -517,6 +463,15 @@
         }
       ],
       "excluded": [
+        {
+          "pilot_name": "Kaschke, Henning",
+          "pilot_tactical_nr": 5,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "FAIRPLAY 38",
+          "pilot_current_ship_eta_rueb": "2026-05-04 16:08",
+          "ship_eta_rueb": "2026-05-04 14:51",
+          "availability_kind": "merged_eta"
+        },
         {
           "pilot_name": "Röhrs, Johannes",
           "pilot_tactical_nr": 2,
@@ -559,38 +514,25 @@
           "type_of_loading": "Futtermittel"
         }
       }
-    },
+    }
+  ],
+  "unassigned_ships": [
     {
       "ship_key": "LUISE DEYMANN",
       "ship_name": "LUISE DEYMANN",
       "eta_rueb": "2026-05-04 15:50",
       "ship_q": 5,
-      "assigned_pilot": "Bruhn, Stefan",
-      "assigned_pilot_q": 0,
-      "assigned_tactical_nr": 8,
-      "assigned_abteilungszeit": "2026-05-04 08:52",
-      "assigned_current_ship_name": "XING HAI WAN",
-      "assigned_current_ship_eta_rueb": "2026-05-04 13:29",
-      "assigned_current_ship_source": "schiffe_merged.seelotsen",
-      "assigned_availability_kind": "merged_eta",
-      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 1,
-      "candidates": [
-        {
-          "pilot_name": "Bruhn, Stefan",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 8,
-          "abteilungszeit": "2026-05-04 08:52",
-          "fahrzeug": "XING HAI WAN",
-          "to": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "XING HAI WAN",
-          "current_ship_eta_rueb": "2026-05-04 13:29",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        }
-      ],
+      "reason": "kein passender Lotse verfügbar",
       "excluded": [
+        {
+          "pilot_name": "Kaschke, Henning",
+          "pilot_tactical_nr": 5,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "FAIRPLAY 38",
+          "pilot_current_ship_eta_rueb": "2026-05-04 16:08",
+          "ship_eta_rueb": "2026-05-04 15:50",
+          "availability_kind": "merged_eta"
+        },
         {
           "pilot_name": "Röhrs, Johannes",
           "pilot_tactical_nr": 2,
@@ -600,43 +542,32 @@
           "ship_eta_rueb": "2026-05-04 15:50",
           "availability_kind": "merged_eta"
         }
-      ],
-      "ship": {
-        "meldung": {
-          "nr": "3",
-          "time": "Mon May 04 15:40:00 CEST 2026",
-          "draft": "2.9",
-          "q_gruppe": "5",
-          "lotsen_anzahl": 1,
-          "confirmed": false,
-          "from": "RÜB",
-          "to": "UTG"
-        },
-        "summary": {
-          "route": "RÜB → UTG",
-          "routes": [
-            "RÜB → UTG"
-          ],
-          "q_gruppe": "5",
-          "vg": "2",
-          "draft": "2.90",
-          "length_m": "84.94",
-          "beam_m": "10.0",
-          "queue_title": "Zulauf vom Kanal in Kiel",
-          "zulauf_richtung": "vom_kanal",
-          "pilot_required": "true",
-          "pilot_status": "P",
-          "pilot_1_name": "S�tje, Kai",
-          "travel_status": "SAILING_NOK",
-          "makler": "UCA",
-          "dangerous_vessel": "-",
-          "type_of_loading": "Erdoel und Derivate"
-        }
-      }
+      ]
     }
   ],
-  "unassigned_ships": [],
   "unused_pilots": [
+    {
+      "pilot_key": "kaschke_henning",
+      "vorname": "Henning",
+      "nachname": "Kaschke",
+      "pilot_name": "Kaschke, Henning",
+      "abteilungszeit": "2026-05-04 11:14",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 5,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "FAIRPLAY 38",
+      "from": "HOR",
+      "to": "RÜB",
+      "nr": 5,
+      "raw_time": "Mon May 04 11:14:00 CEST 2026",
+      "current_ship_name": "FAIRPLAY 38",
+      "current_ship_eta_rueb": "2026-05-04 16:08",
+      "current_ship_q": 0,
+      "current_ship_route": "HOR → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
     {
       "pilot_key": "röhrs_johannes",
       "vorname": "Johannes",
