@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-04T19:57:08",
+  "generated_at": "2026-05-04T19:59:13",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 6,
     "pilots_total": 10,
-    "pilots_dispatchable": 8,
-    "pilots_visible_only": 2,
+    "pilots_dispatchable": 9,
+    "pilots_visible_only": 1,
     "assignments": 6,
     "unassigned_ships": 0,
-    "unused_pilots": 2
+    "unused_pilots": 3
   },
   "ships": [
     {
@@ -195,7 +195,7 @@
     {
       "ship_key": "LYDIA",
       "ship_name": "LYDIA",
-      "eta_rueb": "2026-05-04 23:43",
+      "eta_rueb": "2026-05-04 23:42",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 4,
       "meldung": {
@@ -233,7 +233,7 @@
     {
       "ship_key": "SUNSET X",
       "ship_name": "SUNSET X",
-      "eta_rueb": "2026-05-04 23:46",
+      "eta_rueb": "2026-05-04 23:45",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 3,
       "meldung": {
@@ -389,17 +389,16 @@
       "q_source": "q_gruppen_lotsen.entries",
       "pilot_tactical_nr": 7,
       "aufgabe": "Kanalbört",
-      "fahrzeug": "HUMBER SPRINTER",
-      "from": "NHF",
-      "to": "RÜB",
+      "fahrzeug": "RÜB",
       "nr": 7,
       "raw_time": "Mon May 04 15:50:00 CEST 2026",
-      "current_ship_name": "HUMBER SPRINTER",
-      "current_ship_eta_rueb": "2026-05-04 20:03",
+      "current_ship_name": "RÜB",
+      "current_ship_eta_rueb": "2026-05-04 15:50",
       "current_ship_q": 0,
-      "current_ship_route": "NHF → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
+      "current_ship_route": "RÜB",
+      "current_ship_source": "special.already_in_rueb",
+      "availability_kind": "already_in_rueb",
+      "availability_hint": "Lotse gilt als bereits in RÜB"
     },
     {
       "pilot_key": "krügel_mathias",
@@ -461,6 +460,7 @@
       "nr": 3,
       "raw_time": "Mon May 04 18:34:00 CEST 2026",
       "current_ship_name": "GIOCONDA",
+      "current_ship_eta_rueb": "2026-05-04 23:49",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -608,17 +608,16 @@
       "q_source": "q_gruppen_lotsen.entries",
       "pilot_tactical_nr": 7,
       "aufgabe": "Kanalbört",
-      "fahrzeug": "HUMBER SPRINTER",
-      "from": "NHF",
-      "to": "RÜB",
+      "fahrzeug": "RÜB",
       "nr": 7,
       "raw_time": "Mon May 04 15:50:00 CEST 2026",
-      "current_ship_name": "HUMBER SPRINTER",
-      "current_ship_eta_rueb": "2026-05-04 20:03",
+      "current_ship_name": "RÜB",
+      "current_ship_eta_rueb": "2026-05-04 15:50",
       "current_ship_q": 0,
-      "current_ship_route": "NHF → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
+      "current_ship_route": "RÜB",
+      "current_ship_source": "special.already_in_rueb",
+      "availability_kind": "already_in_rueb",
+      "availability_hint": "Lotse gilt als bereits in RÜB"
     },
     {
       "pilot_key": "krügel_mathias",
@@ -663,24 +662,31 @@
       "current_ship_route": "UTG → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
-    }
-  ],
-  "visible_but_not_dispatchable_pilots": [
+    },
     {
       "pilot_key": "escher_franck",
+      "vorname": "Franck",
+      "nachname": "Escher",
       "pilot_name": "Escher, Franck",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 3,
       "abteilungszeit": "2026-05-04 18:34",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 3,
       "aufgabe": "Kanalbört",
       "fahrzeug": "GIOCONDA",
       "from": "HOS",
       "to": "RÜB",
+      "nr": 3,
+      "raw_time": "Mon May 04 18:34:00 CEST 2026",
       "current_ship_name": "GIOCONDA",
+      "current_ship_eta_rueb": "2026-05-04 23:49",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    },
+      "availability_kind": "merged_eta"
+    }
+  ],
+  "visible_but_not_dispatchable_pilots": [
     {
       "pilot_key": "skairies_thomas",
       "pilot_name": "Skairies, Thomas",
@@ -784,13 +790,13 @@
           "pilot_q": 0,
           "pilot_tactical_nr": 7,
           "abteilungszeit": "2026-05-04 15:50",
-          "fahrzeug": "HUMBER SPRINTER",
-          "to": "RÜB",
+          "fahrzeug": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "HUMBER SPRINTER",
-          "current_ship_eta_rueb": "2026-05-04 20:03",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-04 15:50",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
         },
         {
           "pilot_name": "Krügel, Mathias",
@@ -813,6 +819,15 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "RHEINTAL",
           "pilot_current_ship_eta_rueb": "2026-05-04 23:46",
+          "ship_eta_rueb": "2026-05-04 21:18",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Escher, Franck",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "GIOCONDA",
+          "pilot_current_ship_eta_rueb": "2026-05-04 23:49",
           "ship_eta_rueb": "2026-05-04 21:18",
           "availability_kind": "merged_eta"
         }
@@ -924,13 +939,13 @@
           "pilot_q": 0,
           "pilot_tactical_nr": 7,
           "abteilungszeit": "2026-05-04 15:50",
-          "fahrzeug": "HUMBER SPRINTER",
-          "to": "RÜB",
+          "fahrzeug": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "HUMBER SPRINTER",
-          "current_ship_eta_rueb": "2026-05-04 20:03",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-04 15:50",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
         },
         {
           "pilot_name": "Krügel, Mathias",
@@ -953,6 +968,15 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "RHEINTAL",
           "pilot_current_ship_eta_rueb": "2026-05-04 23:46",
+          "ship_eta_rueb": "2026-05-04 23:32",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Escher, Franck",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "GIOCONDA",
+          "pilot_current_ship_eta_rueb": "2026-05-04 23:49",
           "ship_eta_rueb": "2026-05-04 23:32",
           "availability_kind": "merged_eta"
         }
@@ -1051,13 +1075,13 @@
           "pilot_q": 0,
           "pilot_tactical_nr": 7,
           "abteilungszeit": "2026-05-04 15:50",
-          "fahrzeug": "HUMBER SPRINTER",
-          "to": "RÜB",
+          "fahrzeug": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "HUMBER SPRINTER",
-          "current_ship_eta_rueb": "2026-05-04 20:03",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-04 15:50",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
         },
         {
           "pilot_name": "Krügel, Mathias",
@@ -1080,6 +1104,15 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "RHEINTAL",
           "pilot_current_ship_eta_rueb": "2026-05-04 23:46",
+          "ship_eta_rueb": "2026-05-04 23:35",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Escher, Franck",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "GIOCONDA",
+          "pilot_current_ship_eta_rueb": "2026-05-04 23:49",
           "ship_eta_rueb": "2026-05-04 23:35",
           "availability_kind": "merged_eta"
         }
@@ -1164,13 +1197,13 @@
           "pilot_q": 0,
           "pilot_tactical_nr": 7,
           "abteilungszeit": "2026-05-04 15:50",
-          "fahrzeug": "HUMBER SPRINTER",
-          "to": "RÜB",
+          "fahrzeug": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "HUMBER SPRINTER",
-          "current_ship_eta_rueb": "2026-05-04 20:03",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-04 15:50",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
         },
         {
           "pilot_name": "Krügel, Mathias",
@@ -1193,6 +1226,15 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "RHEINTAL",
           "pilot_current_ship_eta_rueb": "2026-05-04 23:46",
+          "ship_eta_rueb": "2026-05-04 23:38",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Escher, Franck",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "GIOCONDA",
+          "pilot_current_ship_eta_rueb": "2026-05-04 23:49",
           "ship_eta_rueb": "2026-05-04 23:38",
           "availability_kind": "merged_eta"
         }
@@ -1234,7 +1276,7 @@
     {
       "ship_key": "LYDIA",
       "ship_name": "LYDIA",
-      "eta_rueb": "2026-05-04 23:43",
+      "eta_rueb": "2026-05-04 23:42",
       "ship_q": 4,
       "assigned_pilot": "Arndt, Michael",
       "assigned_pilot_q": 0,
@@ -1266,13 +1308,13 @@
           "pilot_q": 0,
           "pilot_tactical_nr": 7,
           "abteilungszeit": "2026-05-04 15:50",
-          "fahrzeug": "HUMBER SPRINTER",
-          "to": "RÜB",
+          "fahrzeug": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "HUMBER SPRINTER",
-          "current_ship_eta_rueb": "2026-05-04 20:03",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-04 15:50",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
         },
         {
           "pilot_name": "Krügel, Mathias",
@@ -1295,7 +1337,16 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "RHEINTAL",
           "pilot_current_ship_eta_rueb": "2026-05-04 23:46",
-          "ship_eta_rueb": "2026-05-04 23:43",
+          "ship_eta_rueb": "2026-05-04 23:42",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Escher, Franck",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "GIOCONDA",
+          "pilot_current_ship_eta_rueb": "2026-05-04 23:49",
+          "ship_eta_rueb": "2026-05-04 23:42",
           "availability_kind": "merged_eta"
         }
       ],
@@ -1336,31 +1387,32 @@
     {
       "ship_key": "SUNSET X",
       "ship_name": "SUNSET X",
-      "eta_rueb": "2026-05-04 23:46",
+      "eta_rueb": "2026-05-04 23:45",
       "ship_q": 3,
       "assigned_pilot": "Krämer, Jonas",
       "assigned_pilot_q": 0,
       "assigned_tactical_nr": 7,
       "assigned_abteilungszeit": "2026-05-04 15:50",
-      "assigned_current_ship_name": "HUMBER SPRINTER",
-      "assigned_current_ship_eta_rueb": "2026-05-04 20:03",
-      "assigned_current_ship_source": "schiffe_merged.seelotsen",
-      "assigned_availability_kind": "merged_eta",
+      "assigned_current_ship_name": "RÜB",
+      "assigned_current_ship_eta_rueb": "2026-05-04 15:50",
+      "assigned_current_ship_source": "special.already_in_rueb",
+      "assigned_availability_kind": "already_in_rueb",
+      "assigned_availability_hint": "Lotse gilt als bereits in RÜB",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 3,
+      "candidate_count": 2,
       "candidates": [
         {
           "pilot_name": "Krämer, Jonas",
           "pilot_q": 0,
           "pilot_tactical_nr": 7,
           "abteilungszeit": "2026-05-04 15:50",
-          "fahrzeug": "HUMBER SPRINTER",
-          "to": "RÜB",
+          "fahrzeug": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "HUMBER SPRINTER",
-          "current_ship_eta_rueb": "2026-05-04 20:03",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-04 15:50",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
         },
         {
           "pilot_name": "Krügel, Mathias",
@@ -1374,18 +1426,25 @@
           "current_ship_eta_rueb": "2026-05-04 20:07",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
-        },
+        }
+      ],
+      "excluded": [
         {
           "pilot_name": "Böttcher, Peter",
-          "pilot_q": 0,
           "pilot_tactical_nr": 4,
-          "abteilungszeit": "2026-05-04 18:30",
-          "fahrzeug": "RHEINTAL",
-          "to": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "RHEINTAL",
-          "current_ship_eta_rueb": "2026-05-04 23:46",
-          "current_ship_source": "schiffe_merged.seelotsen",
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "RHEINTAL",
+          "pilot_current_ship_eta_rueb": "2026-05-04 23:46",
+          "ship_eta_rueb": "2026-05-04 23:45",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Escher, Franck",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "GIOCONDA",
+          "pilot_current_ship_eta_rueb": "2026-05-04 23:49",
+          "ship_eta_rueb": "2026-05-04 23:45",
           "availability_kind": "merged_eta"
         }
       ],
@@ -1467,6 +1526,28 @@
       "current_ship_eta_rueb": "2026-05-04 23:46",
       "current_ship_q": 0,
       "current_ship_route": "UTG → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "escher_franck",
+      "vorname": "Franck",
+      "nachname": "Escher",
+      "pilot_name": "Escher, Franck",
+      "abteilungszeit": "2026-05-04 18:34",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 3,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "GIOCONDA",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 3,
+      "raw_time": "Mon May 04 18:34:00 CEST 2026",
+      "current_ship_name": "GIOCONDA",
+      "current_ship_eta_rueb": "2026-05-04 23:49",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     }
