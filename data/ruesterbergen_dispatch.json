@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-04T22:17:07",
+  "generated_at": "2026-05-04T22:19:10",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,13 +32,13 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 4,
+    "ships_for_ruesterbergen": 5,
     "pilots_total": 13,
     "pilots_dispatchable": 13,
     "pilots_visible_only": 0,
-    "assignments": 4,
+    "assignments": 5,
     "unassigned_ships": 0,
-    "unused_pilots": 9
+    "unused_pilots": 8
   },
   "ships": [
     {
@@ -192,6 +192,44 @@
         "dangerous_vessel": "-",
         "type_of_loading": "Bulk"
       }
+    },
+    {
+      "ship_key": "STOLT SANDPIPER",
+      "ship_name": "STOLT SANDPIPER",
+      "eta_rueb": "2026-05-05 03:25",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 4,
+      "meldung": {
+        "nr": "5",
+        "time": "Tue May 05 03:25:00 CEST 2026",
+        "draft": "6.5",
+        "q_gruppe": "4",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "4",
+        "vg": "4",
+        "draft": "6.50",
+        "length_m": "90.900",
+        "beam_m": "15.600",
+        "queue_title": "Zulauf von See in Brunsbüttel",
+        "zulauf_richtung": "von_see",
+        "pilot_required": "true",
+        "pilot_status": "U",
+        "pilot_1_name": "Soeth, Stephan",
+        "travel_status": "APPROACHING_NOK_BRB",
+        "makler": "UCA",
+        "dangerous_vessel": "ja",
+        "type_of_loading": "Chemikalien fluessig"
+      }
     }
   ],
   "pilots": [
@@ -299,7 +337,7 @@
       "nr": 14,
       "raw_time": "Mon May 04 16:30:00 CEST 2026",
       "current_ship_name": "HAV AMETHYST",
-      "current_ship_eta_rueb": "2026-05-04 22:37",
+      "current_ship_eta_rueb": "2026-05-04 22:36",
       "current_ship_q": 4,
       "current_ship_route": "RÜB → HOS",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -590,7 +628,7 @@
       "nr": 14,
       "raw_time": "Mon May 04 16:30:00 CEST 2026",
       "current_ship_name": "HAV AMETHYST",
-      "current_ship_eta_rueb": "2026-05-04 22:37",
+      "current_ship_eta_rueb": "2026-05-04 22:36",
       "current_ship_q": 4,
       "current_ship_route": "RÜB → HOS",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -855,7 +893,7 @@
           "to": "HOS",
           "aufgabe": "Kanalbört",
           "current_ship_name": "HAV AMETHYST",
-          "current_ship_eta_rueb": "2026-05-04 22:37",
+          "current_ship_eta_rueb": "2026-05-04 22:36",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1047,7 +1085,7 @@
           "to": "HOS",
           "aufgabe": "Kanalbört",
           "current_ship_name": "HAV AMETHYST",
-          "current_ship_eta_rueb": "2026-05-04 22:37",
+          "current_ship_eta_rueb": "2026-05-04 22:36",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1226,7 +1264,7 @@
           "to": "HOS",
           "aufgabe": "Kanalbört",
           "current_ship_name": "HAV AMETHYST",
-          "current_ship_eta_rueb": "2026-05-04 22:37",
+          "current_ship_eta_rueb": "2026-05-04 22:36",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1392,7 +1430,7 @@
           "to": "HOS",
           "aufgabe": "Kanalbört",
           "current_ship_name": "HAV AMETHYST",
-          "current_ship_eta_rueb": "2026-05-04 22:37",
+          "current_ship_eta_rueb": "2026-05-04 22:36",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1531,32 +1569,181 @@
           "type_of_loading": "Bulk"
         }
       }
+    },
+    {
+      "ship_key": "STOLT SANDPIPER",
+      "ship_name": "STOLT SANDPIPER",
+      "eta_rueb": "2026-05-05 03:25",
+      "ship_q": 4,
+      "assigned_pilot": "Krügel, Mathias",
+      "assigned_pilot_q": 1,
+      "assigned_tactical_nr": 14,
+      "assigned_abteilungszeit": "2026-05-04 16:30",
+      "assigned_current_ship_name": "HAV AMETHYST",
+      "assigned_current_ship_eta_rueb": "2026-05-04 22:36",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 9,
+      "candidates": [
+        {
+          "pilot_name": "Krügel, Mathias",
+          "pilot_q": 1,
+          "pilot_tactical_nr": 14,
+          "abteilungszeit": "2026-05-04 16:30",
+          "fahrzeug": "HAV AMETHYST",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "HAV AMETHYST",
+          "current_ship_eta_rueb": "2026-05-04 22:36",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Böttcher, Peter",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 13,
+          "abteilungszeit": "2026-05-04 18:30",
+          "fahrzeug": "RHEINTAL",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RHEINTAL",
+          "current_ship_eta_rueb": "2026-05-04 23:44",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Escher, Franck",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 12,
+          "abteilungszeit": "2026-05-04 18:34",
+          "fahrzeug": "GIOCONDA",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "GIOCONDA",
+          "current_ship_eta_rueb": "2026-05-04 23:48",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Skairies, Thomas",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 11,
+          "abteilungszeit": "2026-05-04 18:37",
+          "fahrzeug": "AILA",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "AILA",
+          "current_ship_eta_rueb": "2026-05-04 23:51",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Dalecki, Niklas",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 9,
+          "abteilungszeit": "2026-05-04 20:35",
+          "fahrzeug": "ALEXANDER B",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ALEXANDER B.",
+          "current_ship_eta_rueb": "2026-05-05 02:03",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Dietrich, Thomas",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 8,
+          "abteilungszeit": "2026-05-04 20:54",
+          "fahrzeug": "BIANCA RAMBOW",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "BIANCA RAMBOW",
+          "current_ship_eta_rueb": "2026-05-05 02:07",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Fricke, Michell",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-05-04 21:45",
+          "fahrzeug": "Leerfahrt",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "Leerfahrt",
+          "current_ship_eta_rueb": "2026-05-04 22:45",
+          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
+          "availability_kind": "leerfahrt_hos_rueb_plus60",
+          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+        },
+        {
+          "pilot_name": "Hahn, Peter",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 4,
+          "abteilungszeit": "2026-05-04 21:45",
+          "fahrzeug": "Leerfahrt",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "Leerfahrt",
+          "current_ship_eta_rueb": "2026-05-04 22:45",
+          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
+          "availability_kind": "leerfahrt_hos_rueb_plus60",
+          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+        },
+        {
+          "pilot_name": "Rohn, Jens Michael",
+          "pilot_q": 1,
+          "pilot_tactical_nr": 6,
+          "abteilungszeit": "2026-05-04 21:45",
+          "fahrzeug": "Leerfahrt",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "Leerfahrt",
+          "current_ship_eta_rueb": "2026-05-04 22:45",
+          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
+          "availability_kind": "leerfahrt_hos_rueb_plus60",
+          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "5",
+          "time": "Tue May 05 03:25:00 CEST 2026",
+          "draft": "6.5",
+          "q_gruppe": "4",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "HOS → KLT",
+          "routes": [
+            "HOS → KLT",
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "4",
+          "vg": "4",
+          "draft": "6.50",
+          "length_m": "90.900",
+          "beam_m": "15.600",
+          "queue_title": "Zulauf von See in Brunsbüttel",
+          "zulauf_richtung": "von_see",
+          "pilot_required": "true",
+          "pilot_status": "U",
+          "pilot_1_name": "Soeth, Stephan",
+          "travel_status": "APPROACHING_NOK_BRB",
+          "makler": "UCA",
+          "dangerous_vessel": "ja",
+          "type_of_loading": "Chemikalien fluessig"
+        }
+      }
     }
   ],
   "unassigned_ships": [],
   "unused_pilots": [
-    {
-      "pilot_key": "krügel_mathias",
-      "vorname": "Mathias",
-      "nachname": "Krügel",
-      "pilot_name": "Krügel, Mathias",
-      "abteilungszeit": "2026-05-04 16:30",
-      "pilot_q": 1,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 14,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "HAV AMETHYST",
-      "from": "RÜB",
-      "to": "HOS",
-      "nr": 14,
-      "raw_time": "Mon May 04 16:30:00 CEST 2026",
-      "current_ship_name": "HAV AMETHYST",
-      "current_ship_eta_rueb": "2026-05-04 22:37",
-      "current_ship_q": 4,
-      "current_ship_route": "RÜB → HOS",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
-    },
     {
       "pilot_key": "böttcher_peter",
       "vorname": "Peter",
