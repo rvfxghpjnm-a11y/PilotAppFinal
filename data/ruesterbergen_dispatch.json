@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-04T10:05:06",
+  "generated_at": "2026-05-04T10:07:04",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,15 +32,42 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 0,
-    "pilots_total": 3,
-    "pilots_dispatchable": 2,
-    "pilots_visible_only": 1,
-    "assignments": 0,
+    "ships_for_ruesterbergen": 1,
+    "pilots_total": 4,
+    "pilots_dispatchable": 4,
+    "pilots_visible_only": 0,
+    "assignments": 1,
     "unassigned_ships": 0,
-    "unused_pilots": 2
+    "unused_pilots": 3
   },
-  "ships": [],
+  "ships": [
+    {
+      "ship_key": "LUETJE HOERN",
+      "ship_name": "LÜTJE HÖRN",
+      "eta_rueb": "2026-05-04 10:30",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 5,
+      "meldung": {
+        "nr": "1",
+        "time": "Mon May 04 10:30:00 CEST 2026",
+        "draft": "4.1",
+        "q_gruppe": "5",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "LEM",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "LEM → HOS",
+        "routes": [
+          "LEM → HOS",
+          "HOR → LEM"
+        ],
+        "q_gruppe": "5",
+        "draft": "4.1"
+      }
+    }
+  ],
   "pilots": [
     {
       "pilot_key": "hansen_hinnerk",
@@ -87,6 +114,28 @@
       "availability_kind": "merged_eta"
     },
     {
+      "pilot_key": "pitschmann_gerd",
+      "vorname": "Gerd",
+      "nachname": "Pitschmann",
+      "pilot_name": "Pitschmann, Gerd",
+      "abteilungszeit": "2026-05-04 06:28",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 8,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "LÜTJE HÖRN",
+      "from": "HOR",
+      "to": "LEM",
+      "nr": 8,
+      "raw_time": "Mon May 04 06:28:00 CEST 2026",
+      "current_ship_name": "LÜTJE HÖRN",
+      "current_ship_eta_rueb": "2026-05-04 10:30",
+      "current_ship_q": 5,
+      "current_ship_route": "HOR → LEM",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
       "pilot_key": "bruhn_stefan",
       "vorname": "Stefan",
       "nachname": "Bruhn",
@@ -102,6 +151,7 @@
       "nr": 1,
       "raw_time": "Mon May 04 08:52:00 CEST 2026",
       "current_ship_name": "XING HAI WAN",
+      "current_ship_eta_rueb": "2026-05-04 13:34",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -152,50 +202,142 @@
       "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
-    }
-  ],
-  "visible_but_not_dispatchable_pilots": [
+    },
+    {
+      "pilot_key": "pitschmann_gerd",
+      "vorname": "Gerd",
+      "nachname": "Pitschmann",
+      "pilot_name": "Pitschmann, Gerd",
+      "abteilungszeit": "2026-05-04 06:28",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 8,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "LÜTJE HÖRN",
+      "from": "HOR",
+      "to": "LEM",
+      "nr": 8,
+      "raw_time": "Mon May 04 06:28:00 CEST 2026",
+      "current_ship_name": "LÜTJE HÖRN",
+      "current_ship_eta_rueb": "2026-05-04 10:30",
+      "current_ship_q": 5,
+      "current_ship_route": "HOR → LEM",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
     {
       "pilot_key": "bruhn_stefan",
+      "vorname": "Stefan",
+      "nachname": "Bruhn",
       "pilot_name": "Bruhn, Stefan",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 1,
       "abteilungszeit": "2026-05-04 08:52",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 1,
       "aufgabe": "Kanalbört",
       "fahrzeug": "XING HAI WAN",
       "from": "HOS",
       "to": "RÜB",
+      "nr": 1,
+      "raw_time": "Mon May 04 08:52:00 CEST 2026",
       "current_ship_name": "XING HAI WAN",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    }
-  ],
-  "assignments": [],
-  "unassigned_ships": [],
-  "unused_pilots": [
-    {
-      "pilot_key": "hansen_hinnerk",
-      "vorname": "Hinnerk",
-      "nachname": "Hansen",
-      "pilot_name": "Hansen, Hinnerk",
-      "abteilungszeit": "2026-05-04 01:52",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 12,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "LADY ELA",
-      "from": "RÜB",
-      "to": "HOS",
-      "nr": 12,
-      "raw_time": "Mon May 04 01:52:00 CEST 2026",
-      "current_ship_name": "LADY ELA",
-      "current_ship_eta_rueb": "2026-05-04 08:41",
-      "current_ship_q": 3,
-      "current_ship_route": "RÜB → HOS",
+      "current_ship_eta_rueb": "2026-05-04 13:34",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
-    },
+    }
+  ],
+  "visible_but_not_dispatchable_pilots": [],
+  "assignments": [
+    {
+      "ship_key": "LUETJE HOERN",
+      "ship_name": "LÜTJE HÖRN",
+      "eta_rueb": "2026-05-04 10:30",
+      "ship_q": 5,
+      "assigned_pilot": "Hansen, Hinnerk",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 12,
+      "assigned_abteilungszeit": "2026-05-04 01:52",
+      "assigned_current_ship_name": "LADY ELA",
+      "assigned_current_ship_eta_rueb": "2026-05-04 08:41",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 2,
+      "candidates": [
+        {
+          "pilot_name": "Hansen, Hinnerk",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 12,
+          "abteilungszeit": "2026-05-04 01:52",
+          "fahrzeug": "LADY ELA",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "LADY ELA",
+          "current_ship_eta_rueb": "2026-05-04 08:41",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Pitschmann, Gerd",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 8,
+          "abteilungszeit": "2026-05-04 06:28",
+          "fahrzeug": "LÜTJE HÖRN",
+          "to": "LEM",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "LÜTJE HÖRN",
+          "current_ship_eta_rueb": "2026-05-04 10:30",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Crotogino, Philipp",
+          "pilot_tactical_nr": 10,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "LADY HANNAH",
+          "pilot_current_ship_eta_rueb": "2026-05-04 10:41",
+          "ship_eta_rueb": "2026-05-04 10:30",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Bruhn, Stefan",
+          "pilot_tactical_nr": 1,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "XING HAI WAN",
+          "pilot_current_ship_eta_rueb": "2026-05-04 13:34",
+          "ship_eta_rueb": "2026-05-04 10:30",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "1",
+          "time": "Mon May 04 10:30:00 CEST 2026",
+          "draft": "4.1",
+          "q_gruppe": "5",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "LEM",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "LEM → HOS",
+          "routes": [
+            "LEM → HOS",
+            "HOR → LEM"
+          ],
+          "q_gruppe": "5",
+          "draft": "4.1"
+        }
+      }
+    }
+  ],
+  "unassigned_ships": [],
+  "unused_pilots": [
     {
       "pilot_key": "crotogino_philipp",
       "vorname": "Philipp",
@@ -215,6 +357,50 @@
       "current_ship_eta_rueb": "2026-05-04 10:41",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "pitschmann_gerd",
+      "vorname": "Gerd",
+      "nachname": "Pitschmann",
+      "pilot_name": "Pitschmann, Gerd",
+      "abteilungszeit": "2026-05-04 06:28",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 8,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "LÜTJE HÖRN",
+      "from": "HOR",
+      "to": "LEM",
+      "nr": 8,
+      "raw_time": "Mon May 04 06:28:00 CEST 2026",
+      "current_ship_name": "LÜTJE HÖRN",
+      "current_ship_eta_rueb": "2026-05-04 10:30",
+      "current_ship_q": 5,
+      "current_ship_route": "HOR → LEM",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "bruhn_stefan",
+      "vorname": "Stefan",
+      "nachname": "Bruhn",
+      "pilot_name": "Bruhn, Stefan",
+      "abteilungszeit": "2026-05-04 08:52",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 1,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "XING HAI WAN",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 1,
+      "raw_time": "Mon May 04 08:52:00 CEST 2026",
+      "current_ship_name": "XING HAI WAN",
+      "current_ship_eta_rueb": "2026-05-04 13:34",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     }
