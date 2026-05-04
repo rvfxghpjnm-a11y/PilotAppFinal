@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-04T12:21:06",
+  "generated_at": "2026-05-04T12:23:09",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 3,
     "pilots_total": 6,
-    "pilots_dispatchable": 4,
-    "pilots_visible_only": 2,
+    "pilots_dispatchable": 5,
+    "pilots_visible_only": 1,
     "assignments": 3,
     "unassigned_ships": 0,
-    "unused_pilots": 1
+    "unused_pilots": 2
   },
   "ships": [
     {
@@ -279,9 +279,10 @@
       "nr": 2,
       "raw_time": "Mon May 04 11:50:00 CEST 2026",
       "current_ship_name": "WILSON PORI",
+      "current_ship_eta_rueb": "2026-05-04 15:50",
       "current_ship_q": 0,
       "current_ship_route": "UTG → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     }
   ],
@@ -372,6 +373,28 @@
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "röhrs_johannes",
+      "vorname": "Johannes",
+      "nachname": "Röhrs",
+      "pilot_name": "Röhrs, Johannes",
+      "abteilungszeit": "2026-05-04 11:50",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 2,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "WILSON PORI",
+      "from": "UTG",
+      "to": "RÜB",
+      "nr": 2,
+      "raw_time": "Mon May 04 11:50:00 CEST 2026",
+      "current_ship_name": "WILSON PORI",
+      "current_ship_eta_rueb": "2026-05-04 15:50",
+      "current_ship_q": 0,
+      "current_ship_route": "UTG → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
     }
   ],
   "visible_but_not_dispatchable_pilots": [
@@ -387,21 +410,6 @@
       "to": "RÜB",
       "current_ship_name": "FAIRPLAY 38",
       "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    },
-    {
-      "pilot_key": "röhrs_johannes",
-      "pilot_name": "Röhrs, Johannes",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 2,
-      "abteilungszeit": "2026-05-04 11:50",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "WILSON PORI",
-      "from": "UTG",
-      "to": "RÜB",
-      "current_ship_name": "WILSON PORI",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta",
       "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
     }
@@ -473,6 +481,17 @@
           "current_ship_name": "XING HAI WAN",
           "current_ship_eta_rueb": "2026-05-04 13:31",
           "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Röhrs, Johannes",
+          "pilot_tactical_nr": 2,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "WILSON PORI",
+          "pilot_current_ship_eta_rueb": "2026-05-04 15:50",
+          "ship_eta_rueb": "2026-05-04 14:49",
           "availability_kind": "merged_eta"
         }
       ],
@@ -567,6 +586,17 @@
           "availability_kind": "merged_eta"
         }
       ],
+      "excluded": [
+        {
+          "pilot_name": "Röhrs, Johannes",
+          "pilot_tactical_nr": 2,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "WILSON PORI",
+          "pilot_current_ship_eta_rueb": "2026-05-04 15:50",
+          "ship_eta_rueb": "2026-05-04 14:52",
+          "availability_kind": "merged_eta"
+        }
+      ],
       "ship": {
         "meldung": {
           "nr": "2",
@@ -614,7 +644,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 2,
+      "candidate_count": 3,
       "candidates": [
         {
           "pilot_name": "Krebs, Michael",
@@ -639,6 +669,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "XING HAI WAN",
           "current_ship_eta_rueb": "2026-05-04 13:31",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Röhrs, Johannes",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-05-04 11:50",
+          "fahrzeug": "WILSON PORI",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "WILSON PORI",
+          "current_ship_eta_rueb": "2026-05-04 15:50",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
@@ -698,6 +741,28 @@
       "current_ship_eta_rueb": "2026-05-04 13:31",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "röhrs_johannes",
+      "vorname": "Johannes",
+      "nachname": "Röhrs",
+      "pilot_name": "Röhrs, Johannes",
+      "abteilungszeit": "2026-05-04 11:50",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 2,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "WILSON PORI",
+      "from": "UTG",
+      "to": "RÜB",
+      "nr": 2,
+      "raw_time": "Mon May 04 11:50:00 CEST 2026",
+      "current_ship_name": "WILSON PORI",
+      "current_ship_eta_rueb": "2026-05-04 15:50",
+      "current_ship_q": 0,
+      "current_ship_route": "UTG → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     }
