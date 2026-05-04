@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-04T23:49:04",
+  "generated_at": "2026-05-04T23:51:07",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,36 +32,15 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 3,
-    "pilots_total": 15,
-    "pilots_dispatchable": 11,
+    "ships_for_ruesterbergen": 2,
+    "pilots_total": 14,
+    "pilots_dispatchable": 10,
     "pilots_visible_only": 4,
-    "assignments": 3,
+    "assignments": 2,
     "unassigned_ships": 0,
     "unused_pilots": 8
   },
   "ships": [
-    {
-      "ship_key": "LEERFAHRT",
-      "ship_name": "Leerfahrt",
-      "eta_rueb": "2026-05-04 23:45",
-      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
-      "ship_q": 0,
-      "meldung": {
-        "nr": "1",
-        "time": "Mon May 04 23:45:00 CEST 2026",
-        "lotsen_anzahl": 2,
-        "confirmed": false,
-        "from": "RÜB",
-        "to": "HOS"
-      },
-      "summary": {
-        "route": "RÜB → HOS",
-        "routes": [
-          "RÜB → HOS"
-        ]
-      }
-    },
     {
       "ship_key": "LADY HANNEKE",
       "ship_name": "LADY HANNEKE",
@@ -69,7 +48,7 @@
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
-        "nr": "2",
+        "nr": "1",
         "time": "Tue May 05 01:25:00 CEST 2026",
         "draft": "4.5",
         "q_gruppe": "5",
@@ -107,7 +86,7 @@
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 4,
       "meldung": {
-        "nr": "3",
+        "nr": "2",
         "time": "Tue May 05 03:25:00 CEST 2026",
         "draft": "6.5",
         "q_gruppe": "4",
@@ -205,27 +184,6 @@
       "current_ship_route": "RÜB → HOS",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
-    },
-    {
-      "pilot_key": "böttcher_peter",
-      "vorname": "Peter",
-      "nachname": "Böttcher",
-      "pilot_name": "Böttcher, Peter",
-      "abteilungszeit": "2026-05-04 18:30",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 19,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "RÜB",
-      "nr": 19,
-      "raw_time": "Mon May 04 18:30:00 CEST 2026",
-      "current_ship_name": "RÜB",
-      "current_ship_eta_rueb": "2026-05-04 18:30",
-      "current_ship_q": 0,
-      "current_ship_route": "RÜB",
-      "current_ship_source": "special.already_in_rueb",
-      "availability_kind": "already_in_rueb",
-      "availability_hint": "Lotse gilt als bereits in RÜB"
     },
     {
       "pilot_key": "escher_franck",
@@ -532,27 +490,6 @@
       "availability_kind": "merged_eta"
     },
     {
-      "pilot_key": "böttcher_peter",
-      "vorname": "Peter",
-      "nachname": "Böttcher",
-      "pilot_name": "Böttcher, Peter",
-      "abteilungszeit": "2026-05-04 18:30",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 19,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "RÜB",
-      "nr": 19,
-      "raw_time": "Mon May 04 18:30:00 CEST 2026",
-      "current_ship_name": "RÜB",
-      "current_ship_eta_rueb": "2026-05-04 18:30",
-      "current_ship_q": 0,
-      "current_ship_route": "RÜB",
-      "current_ship_source": "special.already_in_rueb",
-      "availability_kind": "already_in_rueb",
-      "availability_hint": "Lotse gilt als bereits in RÜB"
-    },
-    {
       "pilot_key": "escher_franck",
       "vorname": "Franck",
       "nachname": "Escher",
@@ -769,10 +706,10 @@
   ],
   "assignments": [
     {
-      "ship_key": "LEERFAHRT",
-      "ship_name": "Leerfahrt",
-      "eta_rueb": "2026-05-04 23:45",
-      "ship_q": 0,
+      "ship_key": "LADY HANNEKE",
+      "ship_name": "LADY HANNEKE",
+      "eta_rueb": "2026-05-05 01:34",
+      "ship_q": 5,
       "assigned_pilot": "Arndt, Michael",
       "assigned_pilot_q": 0,
       "assigned_tactical_nr": 23,
@@ -782,7 +719,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 7,
+      "candidate_count": 8,
       "candidates": [
         {
           "pilot_name": "Arndt, Michael",
@@ -811,152 +748,6 @@
           "availability_kind": "merged_eta"
         },
         {
-          "pilot_name": "Böttcher, Peter",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 19,
-          "abteilungszeit": "2026-05-04 18:30",
-          "fahrzeug": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "RÜB",
-          "current_ship_eta_rueb": "2026-05-04 18:30",
-          "current_ship_source": "special.already_in_rueb",
-          "availability_kind": "already_in_rueb",
-          "availability_hint": "Lotse gilt als bereits in RÜB"
-        },
-        {
-          "pilot_name": "Escher, Franck",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 18,
-          "abteilungszeit": "2026-05-04 18:34",
-          "fahrzeug": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "RÜB",
-          "current_ship_eta_rueb": "2026-05-04 18:34",
-          "current_ship_source": "special.already_in_rueb",
-          "availability_kind": "already_in_rueb",
-          "availability_hint": "Lotse gilt als bereits in RÜB"
-        },
-        {
-          "pilot_name": "Skairies, Thomas",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 17,
-          "abteilungszeit": "2026-05-04 18:37",
-          "fahrzeug": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "RÜB",
-          "current_ship_eta_rueb": "2026-05-04 18:37",
-          "current_ship_source": "special.already_in_rueb",
-          "availability_kind": "already_in_rueb",
-          "availability_hint": "Lotse gilt als bereits in RÜB"
-        },
-        {
-          "pilot_name": "Fricke, Michell",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 8,
-          "abteilungszeit": "2026-05-04 21:45",
-          "fahrzeug": "SUNSET X",
-          "to": "HOS",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "SUNSET X",
-          "current_ship_eta_rueb": "2026-05-04 23:30",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Hahn, Peter",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 10,
-          "abteilungszeit": "2026-05-04 21:45",
-          "fahrzeug": "NORTH",
-          "to": "HOS",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "NORTH",
-          "current_ship_eta_rueb": "2026-05-04 23:26",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        }
-      ],
-      "excluded": [
-        {
-          "pilot_name": "Krügel, Mathias",
-          "pilot_tactical_nr": 20,
-          "reason": "Quali passt nicht (1 > 0)",
-          "pilot_q": 1,
-          "ship_q": 0
-        },
-        {
-          "pilot_name": "Dalecki, Niklas",
-          "pilot_tactical_nr": 15,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "ALEXANDER B.",
-          "pilot_current_ship_eta_rueb": "2026-05-05 02:04",
-          "ship_eta_rueb": "2026-05-04 23:45",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Dietrich, Thomas",
-          "pilot_tactical_nr": 14,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "BIANCA RAMBOW",
-          "pilot_current_ship_eta_rueb": "2026-05-05 02:07",
-          "ship_eta_rueb": "2026-05-04 23:45",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Rohn, Jens Michael",
-          "pilot_tactical_nr": 12,
-          "reason": "Quali passt nicht (1 > 0)",
-          "pilot_q": 1,
-          "ship_q": 0
-        }
-      ],
-      "ship": {
-        "meldung": {
-          "nr": "1",
-          "time": "Mon May 04 23:45:00 CEST 2026",
-          "lotsen_anzahl": 2,
-          "confirmed": false,
-          "from": "RÜB",
-          "to": "HOS"
-        },
-        "summary": {
-          "route": "RÜB → HOS",
-          "routes": [
-            "RÜB → HOS"
-          ]
-        }
-      }
-    },
-    {
-      "ship_key": "LADY HANNEKE",
-      "ship_name": "LADY HANNEKE",
-      "eta_rueb": "2026-05-05 01:34",
-      "ship_q": 5,
-      "assigned_pilot": "Krämer, Jonas",
-      "assigned_pilot_q": 0,
-      "assigned_tactical_nr": 22,
-      "assigned_abteilungszeit": "2026-05-04 15:50",
-      "assigned_current_ship_name": "JOLIE",
-      "assigned_current_ship_eta_rueb": "2026-05-04 22:31",
-      "assigned_current_ship_source": "schiffe_merged.seelotsen",
-      "assigned_availability_kind": "merged_eta",
-      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 8,
-      "candidates": [
-        {
-          "pilot_name": "Krämer, Jonas",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 22,
-          "abteilungszeit": "2026-05-04 15:50",
-          "fahrzeug": "JOLIE",
-          "to": "KRH",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "JOLIE",
-          "current_ship_eta_rueb": "2026-05-04 22:31",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
           "pilot_name": "Krügel, Mathias",
           "pilot_q": 1,
           "pilot_tactical_nr": 20,
@@ -968,19 +759,6 @@
           "current_ship_eta_rueb": "2026-05-04 22:38",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Böttcher, Peter",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 19,
-          "abteilungszeit": "2026-05-04 18:30",
-          "fahrzeug": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "RÜB",
-          "current_ship_eta_rueb": "2026-05-04 18:30",
-          "current_ship_source": "special.already_in_rueb",
-          "availability_kind": "already_in_rueb",
-          "availability_hint": "Lotse gilt als bereits in RÜB"
         },
         {
           "pilot_name": "Escher, Franck",
@@ -1070,7 +848,7 @@
       ],
       "ship": {
         "meldung": {
-          "nr": "2",
+          "nr": "1",
           "time": "Tue May 05 01:25:00 CEST 2026",
           "draft": "4.5",
           "q_gruppe": "5",
@@ -1107,17 +885,30 @@
       "ship_name": "STOLT SANDPIPER",
       "eta_rueb": "2026-05-05 03:36",
       "ship_q": 4,
-      "assigned_pilot": "Krügel, Mathias",
-      "assigned_pilot_q": 1,
-      "assigned_tactical_nr": 20,
-      "assigned_abteilungszeit": "2026-05-04 16:30",
-      "assigned_current_ship_name": "HAV AMETHYST",
-      "assigned_current_ship_eta_rueb": "2026-05-04 22:38",
+      "assigned_pilot": "Krämer, Jonas",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 22,
+      "assigned_abteilungszeit": "2026-05-04 15:50",
+      "assigned_current_ship_name": "JOLIE",
+      "assigned_current_ship_eta_rueb": "2026-05-04 22:31",
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
       "candidate_count": 9,
       "candidates": [
+        {
+          "pilot_name": "Krämer, Jonas",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 22,
+          "abteilungszeit": "2026-05-04 15:50",
+          "fahrzeug": "JOLIE",
+          "to": "KRH",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "JOLIE",
+          "current_ship_eta_rueb": "2026-05-04 22:31",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
         {
           "pilot_name": "Krügel, Mathias",
           "pilot_q": 1,
@@ -1130,19 +921,6 @@
           "current_ship_eta_rueb": "2026-05-04 22:38",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Böttcher, Peter",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 19,
-          "abteilungszeit": "2026-05-04 18:30",
-          "fahrzeug": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "RÜB",
-          "current_ship_eta_rueb": "2026-05-04 18:30",
-          "current_ship_source": "special.already_in_rueb",
-          "availability_kind": "already_in_rueb",
-          "availability_hint": "Lotse gilt als bereits in RÜB"
         },
         {
           "pilot_name": "Escher, Franck",
@@ -1238,7 +1016,7 @@
       ],
       "ship": {
         "meldung": {
-          "nr": "3",
+          "nr": "2",
           "time": "Tue May 05 03:25:00 CEST 2026",
           "draft": "6.5",
           "q_gruppe": "4",
@@ -1274,25 +1052,26 @@
   "unassigned_ships": [],
   "unused_pilots": [
     {
-      "pilot_key": "böttcher_peter",
-      "vorname": "Peter",
-      "nachname": "Böttcher",
-      "pilot_name": "Böttcher, Peter",
-      "abteilungszeit": "2026-05-04 18:30",
-      "pilot_q": 0,
+      "pilot_key": "krügel_mathias",
+      "vorname": "Mathias",
+      "nachname": "Krügel",
+      "pilot_name": "Krügel, Mathias",
+      "abteilungszeit": "2026-05-04 16:30",
+      "pilot_q": 1,
       "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 19,
+      "pilot_tactical_nr": 20,
       "aufgabe": "Kanalbört",
-      "fahrzeug": "RÜB",
-      "nr": 19,
-      "raw_time": "Mon May 04 18:30:00 CEST 2026",
-      "current_ship_name": "RÜB",
-      "current_ship_eta_rueb": "2026-05-04 18:30",
-      "current_ship_q": 0,
-      "current_ship_route": "RÜB",
-      "current_ship_source": "special.already_in_rueb",
-      "availability_kind": "already_in_rueb",
-      "availability_hint": "Lotse gilt als bereits in RÜB"
+      "fahrzeug": "HAV AMETHYST",
+      "from": "RÜB",
+      "to": "HOS",
+      "nr": 20,
+      "raw_time": "Mon May 04 16:30:00 CEST 2026",
+      "current_ship_name": "HAV AMETHYST",
+      "current_ship_eta_rueb": "2026-05-04 22:38",
+      "current_ship_q": 4,
+      "current_ship_route": "RÜB → HOS",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
     },
     {
       "pilot_key": "escher_franck",
