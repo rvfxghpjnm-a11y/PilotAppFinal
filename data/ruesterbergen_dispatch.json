@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-04T14:25:12",
+  "generated_at": "2026-05-04T14:27:09",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,13 +32,13 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 4,
+    "ships_for_ruesterbergen": 5,
     "pilots_total": 9,
     "pilots_dispatchable": 5,
     "pilots_visible_only": 4,
-    "assignments": 4,
+    "assignments": 5,
     "unassigned_ships": 0,
-    "unused_pilots": 1
+    "unused_pilots": 0
   },
   "ships": [
     {
@@ -108,7 +108,7 @@
     {
       "ship_key": "SOLEA",
       "ship_name": "SOLEA",
-      "eta_rueb": "2026-05-04 17:17",
+      "eta_rueb": "2026-05-04 17:15",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
@@ -140,6 +140,44 @@
         "makler": "NIK",
         "dangerous_vessel": "-",
         "type_of_loading": "Ballast"
+      }
+    },
+    {
+      "ship_key": "BALTIC WHALE",
+      "ship_name": "BALTIC WHALE",
+      "eta_rueb": "2026-05-04 18:48",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 2,
+      "meldung": {
+        "nr": "5",
+        "time": "Mon May 04 18:48:00 CEST 2026",
+        "draft": "9.0",
+        "q_gruppe": "2",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "2",
+        "vg": "4",
+        "draft": "9.00",
+        "length_m": "134.440",
+        "beam_m": "22.500",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "U",
+        "pilot_1_name": "Bergmann, Arne",
+        "travel_status": "SAILING_NOK",
+        "makler": "UCA",
+        "dangerous_vessel": "-",
+        "type_of_loading": "Container"
       }
     },
     {
@@ -760,7 +798,7 @@
     {
       "ship_key": "SOLEA",
       "ship_name": "SOLEA",
-      "eta_rueb": "2026-05-04 17:17",
+      "eta_rueb": "2026-05-04 17:15",
       "ship_q": 5,
       "assigned_pilot": "Kaschke, Henning",
       "assigned_pilot_q": 0,
@@ -848,9 +886,9 @@
       }
     },
     {
-      "ship_key": "TORC",
-      "ship_name": "TORC",
-      "eta_rueb": "2026-05-04 19:16",
+      "ship_key": "BALTIC WHALE",
+      "ship_name": "BALTIC WHALE",
+      "eta_rueb": "2026-05-04 18:48",
       "ship_q": 2,
       "assigned_pilot": "Röhrs, Johannes",
       "assigned_pilot_q": 0,
@@ -876,6 +914,72 @@
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
+        {
+          "pilot_name": "Rambadt, Helge",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 1,
+          "abteilungszeit": "2026-05-04 14:15",
+          "fahrzeug": "Leerfahrt",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "Leerfahrt",
+          "current_ship_eta_rueb": "2026-05-04 15:15",
+          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
+          "availability_kind": "leerfahrt_hos_rueb_plus60",
+          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "5",
+          "time": "Mon May 04 18:48:00 CEST 2026",
+          "draft": "9.0",
+          "q_gruppe": "2",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "HOS → KLT",
+          "routes": [
+            "HOS → KLT",
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "2",
+          "vg": "4",
+          "draft": "9.00",
+          "length_m": "134.440",
+          "beam_m": "22.500",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "U",
+          "pilot_1_name": "Bergmann, Arne",
+          "travel_status": "SAILING_NOK",
+          "makler": "UCA",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Container"
+        }
+      }
+    },
+    {
+      "ship_key": "TORC",
+      "ship_name": "TORC",
+      "eta_rueb": "2026-05-04 19:16",
+      "ship_q": 2,
+      "assigned_pilot": "Rambadt, Helge",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 1,
+      "assigned_abteilungszeit": "2026-05-04 14:15",
+      "assigned_current_ship_name": "Leerfahrt",
+      "assigned_current_ship_eta_rueb": "2026-05-04 15:15",
+      "assigned_current_ship_source": "special.leerfahrt_hos_rueb_plus60",
+      "assigned_availability_kind": "leerfahrt_hos_rueb_plus60",
+      "assigned_availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 1,
+      "candidates": [
         {
           "pilot_name": "Rambadt, Helge",
           "pilot_q": 0,
@@ -927,29 +1031,5 @@
     }
   ],
   "unassigned_ships": [],
-  "unused_pilots": [
-    {
-      "pilot_key": "rambadt_helge",
-      "vorname": "Helge",
-      "nachname": "Rambadt",
-      "pilot_name": "Rambadt, Helge",
-      "abteilungszeit": "2026-05-04 14:15",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 1,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "Leerfahrt",
-      "from": "HOS",
-      "to": "RÜB",
-      "nr": 1,
-      "raw_time": "Mon May 04 14:15:00 CEST 2026",
-      "current_ship_name": "Leerfahrt",
-      "current_ship_eta_rueb": "2026-05-04 15:15",
-      "current_ship_q": 0,
-      "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-      "availability_kind": "leerfahrt_hos_rueb_plus60",
-      "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
-    }
-  ]
+  "unused_pilots": []
 }

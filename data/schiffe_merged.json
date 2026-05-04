@@ -1,51 +1,51 @@
 {
-  "generated_at": "2026-05-04T14:25:12",
+  "generated_at": "2026-05-04T14:27:09",
   "source_meta": {
     "zulauf_kiel_innen": {
       "file": "Zulauf_kiel_innen.json",
-      "generated_at": "2026-05-04 14:24",
+      "generated_at": "2026-05-04 14:26",
       "queue": "kiel_innen",
       "title": "Zulauf vom Kanal in Kiel",
       "count": 12
     },
     "zulauf_kiel_aussen": {
       "file": "Zulauf_kiel_aussen.json",
-      "generated_at": "2026-05-04 14:24",
+      "generated_at": "2026-05-04 14:26",
       "queue": "kiel_aussen",
       "title": "Zulauf von See in Kiel",
       "count": 0
     },
     "zulauf_brb_innen": {
       "file": "Zulauf_brb_innen.json",
-      "generated_at": "2026-05-04 14:24",
+      "generated_at": "2026-05-04 14:26",
       "queue": "brb_innen",
       "title": "Zulauf vom Kanal in Brunsbüttel",
       "count": 7
     },
     "zulauf_brb_aussen": {
       "file": "Zulauf_brb_aussen.json",
-      "generated_at": "2026-05-04 14:24",
+      "generated_at": "2026-05-04 14:26",
       "queue": "brb_aussen",
       "title": "Zulauf von See in Brunsbüttel",
       "count": 4
     },
     "meldungen_kiel": {
       "file": "Meldungen_Kiel.json",
-      "generated_at": "2026-05-04 14:24",
+      "generated_at": "2026-05-04 14:26",
       "count": 45
     },
     "meldungen_ruesterbergen": {
       "file": "Meldungen_Ruesterbergen.json",
-      "generated_at": "2026-05-04 14:24",
-      "count": 4
+      "generated_at": "2026-05-04 14:26",
+      "count": 5
     },
     "seelotsen": {
       "file": "Seelotsen.json",
-      "generated_at": "2026-05-04 14:24",
+      "generated_at": "2026-05-04 14:26",
       "count": 19
     }
   },
-  "count": 57,
+  "count": 56,
   "entries": [
     {
       "ship_key": "AILA",
@@ -74,7 +74,7 @@
       "meldungen_kiel": [
         {
           "source": "meldungen_kiel",
-          "nr": "4",
+          "nr": "3",
           "time": "2026-05-04 16:00",
           "draft": "8.3",
           "q_gruppe": "2",
@@ -86,7 +86,7 @@
         },
         {
           "source": "meldungen_kiel",
-          "nr": "10",
+          "nr": "9",
           "time": "2026-05-04 17:00",
           "draft": "8.3",
           "q_gruppe": "2",
@@ -127,7 +127,7 @@
       "meldungen_kiel": [
         {
           "source": "meldungen_kiel",
-          "nr": "13",
+          "nr": "12",
           "time": "2026-05-04 18:00",
           "draft": "9.3",
           "q_gruppe": "1",
@@ -139,7 +139,7 @@
         },
         {
           "source": "meldungen_kiel",
-          "nr": "18",
+          "nr": "17",
           "time": "2026-05-04 19:00",
           "draft": "9.3",
           "q_gruppe": "1",
@@ -535,6 +535,8 @@
       "ship_key": "BALTIC WHALE",
       "name": "BALTIC WHALE",
       "sources": [
+        "meldungen_kiel",
+        "meldungen_ruesterbergen",
         "zulauf_kiel_innen"
       ],
       "special_entry": false,
@@ -542,8 +544,16 @@
         "name": "BALTIC WHALE",
         "special_entry": false,
         "sources": [
+          "meldungen_kiel",
+          "meldungen_ruesterbergen",
           "zulauf_kiel_innen"
         ],
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS"
+        ],
+        "eta_rueb": "2026-05-04 18:48",
         "eta_schleuse": "2026-05-04 23:21",
         "eta_text": "23:21",
         "first_seen": "2026-05-04 14:24",
@@ -552,6 +562,7 @@
         "area": "kiel",
         "zulauf_richtung": "vom_kanal",
         "vg": "4",
+        "q_gruppe": "2",
         "draft": "9.00",
         "length_m": "134.440",
         "beam_m": "22.500",
@@ -588,6 +599,8 @@
         "dangerous_vessel": "-",
         "port_of_departure": "NL RTM",
         "port_of_destination": "RU LED",
+        "lotsen_anzahl_kiel": 1,
+        "confirmed_kiel": false,
         "passage_block": {
           "start_text": "Brunsbüttel Schleuse Brb.",
           "start_0": "Brunsbüttel",
@@ -835,8 +848,34 @@
           "source": "zulauf_kiel_innen"
         }
       ],
-      "meldungen_kiel": [],
-      "meldungen_ruesterbergen": [],
+      "meldungen_kiel": [
+        {
+          "source": "meldungen_kiel",
+          "nr": "26",
+          "time": "2026-05-04 22:33",
+          "draft": "9.0",
+          "q_gruppe": "2",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "HOS",
+          "to": "KLT",
+          "route": "HOS → KLT"
+        }
+      ],
+      "meldungen_ruesterbergen": [
+        {
+          "source": "meldungen_ruesterbergen",
+          "nr": "5",
+          "time": "2026-05-04 18:48",
+          "draft": "9.0",
+          "q_gruppe": "2",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS",
+          "route": "RÜB → HOS"
+        }
+      ],
       "seelotsen": []
     },
     {
@@ -866,7 +905,7 @@
       "meldungen_kiel": [
         {
           "source": "meldungen_kiel",
-          "nr": "9",
+          "nr": "8",
           "time": "2026-05-04 17:00",
           "draft": "8.5",
           "q_gruppe": "2",
@@ -878,7 +917,7 @@
         },
         {
           "source": "meldungen_kiel",
-          "nr": "15",
+          "nr": "14",
           "time": "2026-05-04 18:00",
           "draft": "8.5",
           "q_gruppe": "2",
@@ -1001,7 +1040,7 @@
       "meldungen_kiel": [
         {
           "source": "meldungen_kiel",
-          "nr": "23",
+          "nr": "22",
           "time": "2026-05-04 22:00",
           "draft": "5.0",
           "q_gruppe": "4",
@@ -2086,7 +2125,7 @@
       "meldungen_kiel": [
         {
           "source": "meldungen_kiel",
-          "nr": "5",
+          "nr": "4",
           "time": "2026-05-04 16:00",
           "draft": "6.5",
           "q_gruppe": "4",
@@ -2098,7 +2137,7 @@
         },
         {
           "source": "meldungen_kiel",
-          "nr": "11",
+          "nr": "10",
           "time": "2026-05-04 17:00",
           "draft": "6.5",
           "q_gruppe": "4",
@@ -2448,7 +2487,7 @@
       "meldungen_kiel": [
         {
           "source": "meldungen_kiel",
-          "nr": "25",
+          "nr": "24",
           "time": "2026-05-04 22:30",
           "draft": "4.1",
           "q_gruppe": "5",
@@ -2523,7 +2562,7 @@
       "meldungen_kiel": [
         {
           "source": "meldungen_kiel",
-          "nr": "6",
+          "nr": "5",
           "time": "2026-05-04 16:20",
           "draft": "5.0",
           "q_gruppe": "5",
@@ -2867,8 +2906,8 @@
         "sources": [
           "zulauf_brb_aussen"
         ],
-        "eta_schleuse": "2026-05-04 17:04",
-        "eta_text": "17:04",
+        "eta_schleuse": "2026-05-04 17:11",
+        "eta_text": "17:11",
         "first_seen": "2026-05-04 13:22",
         "queue_key": "brb_aussen",
         "queue_title": "Zulauf von See in Brunsbüttel",
@@ -2933,7 +2972,7 @@
       "zulauf": [
         {
           "name": "JOLIE",
-          "eta_schleuse": "2026-05-04 17:04",
+          "eta_schleuse": "2026-05-04 17:11",
           "first_seen": "2026-05-04 13:22",
           "ship_name": "JOLIE",
           "vg": "3",
@@ -2944,7 +2983,7 @@
           "queue_title": "Zulauf von See in Brunsbüttel",
           "area": "brb",
           "zulauf_richtung": "von_see",
-          "eta_text": "17:04",
+          "eta_text": "17:11",
           "preferred_mooring_side": "Bb",
           "vessel_type": "Trocken-Mz-Frachter",
           "travel_status": "APPROACHING_NOK_BRB",
@@ -3612,7 +3651,7 @@
       "meldungen_kiel": [
         {
           "source": "meldungen_kiel",
-          "nr": "20",
+          "nr": "19",
           "time": "2026-05-04 20:00",
           "draft": "5.5",
           "q_gruppe": "4",
@@ -3624,7 +3663,7 @@
         },
         {
           "source": "meldungen_kiel",
-          "nr": "21",
+          "nr": "20",
           "time": "2026-05-04 20:20",
           "draft": "5.5",
           "q_gruppe": "4",
@@ -3650,40 +3689,6 @@
         }
       ],
       "seelotsen": []
-    },
-    {
-      "ship_key": "KLT",
-      "name": "KLT",
-      "sources": [
-        "seelotsen"
-      ],
-      "special_entry": false,
-      "summary": {
-        "name": "KLT",
-        "special_entry": false,
-        "sources": [
-          "seelotsen"
-        ],
-        "assigned_pilots": [
-          "Jenckel, Dolf"
-        ],
-        "aufgaben": [
-          "Seebört"
-        ]
-      },
-      "zulauf": [],
-      "meldungen_kiel": [],
-      "meldungen_ruesterbergen": [],
-      "seelotsen": [
-        {
-          "nr": 15,
-          "time": "2026-05-04 07:42",
-          "pilot_name": "Jenckel, Dolf",
-          "nachname": "Jenckel",
-          "vorname": "Dolf",
-          "aufgabe": "Seebört"
-        }
-      ]
     },
     {
       "ship_key": "LADY HANNAH",
@@ -4180,7 +4185,7 @@
       "meldungen_kiel": [
         {
           "source": "meldungen_kiel",
-          "nr": "22",
+          "nr": "21",
           "time": "2026-05-04 21:00",
           "draft": "5.0",
           "q_gruppe": "4",
@@ -4192,7 +4197,7 @@
         },
         {
           "source": "meldungen_kiel",
-          "nr": "24",
+          "nr": "23",
           "time": "2026-05-04 22:00",
           "draft": "5.0",
           "q_gruppe": "4",
@@ -4368,6 +4373,9 @@
             "fischerhuette": {
               "in": "2026-05-04 13:58",
               "out": "2026-05-04 14:03"
+            },
+            "oldenbuettel": {
+              "in": "2026-05-04 14:24"
             }
           }
         }
@@ -4414,6 +4422,9 @@
               "fischerhuette": {
                 "in": "2026-05-04 13:58",
                 "out": "2026-05-04 14:03"
+              },
+              "oldenbuettel": {
+                "in": "2026-05-04 14:24"
               }
             }
           },
@@ -4533,22 +4544,30 @@
       "ship_key": "MARIELYST",
       "name": "MARIELYST",
       "sources": [
-        "meldungen_kiel"
+        "meldungen_kiel",
+        "seelotsen"
       ],
       "special_entry": false,
       "summary": {
         "name": "MARIELYST",
         "special_entry": false,
         "sources": [
-          "meldungen_kiel"
+          "meldungen_kiel",
+          "seelotsen"
         ],
-        "route": "KLT → HOS",
+        "route": "HOS → RÜB",
         "routes": [
-          "KLT → HOS",
-          "HOS → RÜB"
+          "HOS → RÜB",
+          "KLT → HOS"
         ],
         "q_gruppe": "1",
         "draft": "5.0",
+        "assigned_pilots": [
+          "Jenckel, Dolf"
+        ],
+        "aufgaben": [
+          "Seebört"
+        ],
         "lotsen_anzahl_kiel": 1,
         "confirmed_kiel": true,
         "remark_kiel": "16h 40 idk"
@@ -4557,20 +4576,7 @@
       "meldungen_kiel": [
         {
           "source": "meldungen_kiel",
-          "nr": "1",
-          "time": "2026-05-04 14:40",
-          "draft": "5.0",
-          "q_gruppe": "1",
-          "lotsen_anzahl": 1,
-          "confirmed": true,
-          "from": "KLT",
-          "to": "HOS",
-          "route": "KLT → HOS",
-          "remark": "16h 40 idk"
-        },
-        {
-          "source": "meldungen_kiel",
-          "nr": "3",
+          "nr": "2",
           "time": "2026-05-04 15:40",
           "draft": "5.0",
           "q_gruppe": "1",
@@ -4583,7 +4589,19 @@
         }
       ],
       "meldungen_ruesterbergen": [],
-      "seelotsen": []
+      "seelotsen": [
+        {
+          "nr": 15,
+          "time": "2026-05-04 07:42",
+          "pilot_name": "Jenckel, Dolf",
+          "nachname": "Jenckel",
+          "vorname": "Dolf",
+          "aufgabe": "Seebört",
+          "from": "KLT",
+          "to": "HOS",
+          "route": "KLT → HOS"
+        }
+      ]
     },
     {
       "ship_key": "MISJE IRIS",
@@ -5066,7 +5084,7 @@
       "meldungen_kiel": [
         {
           "source": "meldungen_kiel",
-          "nr": "14",
+          "nr": "13",
           "time": "2026-05-04 18:00",
           "draft": "8.4",
           "q_gruppe": "2",
@@ -5078,7 +5096,7 @@
         },
         {
           "source": "meldungen_kiel",
-          "nr": "19",
+          "nr": "18",
           "time": "2026-05-04 19:00",
           "draft": "8.4",
           "q_gruppe": "2",
@@ -5160,7 +5178,7 @@
       "meldungen_kiel": [
         {
           "source": "meldungen_kiel",
-          "nr": "12",
+          "nr": "11",
           "time": "2026-05-04 17:00",
           "draft": "3.0",
           "q_gruppe": "5",
@@ -5303,6 +5321,9 @@
         },
         "weichenzeiten": {
           "west": {
+            "oldenbuettel": {
+              "in": "2026-05-04 14:25"
+            },
             "breiholz": {
               "in": "2026-05-04 13:44",
               "out": "2026-05-04 13:51"
@@ -5362,6 +5383,9 @@
           "preferred_mooring_side": "Bb",
           "weichenzeiten": {
             "west": {
+              "oldenbuettel": {
+                "in": "2026-05-04 14:25"
+              },
               "breiholz": {
                 "in": "2026-05-04 13:44",
                 "out": "2026-05-04 13:51"
@@ -5513,7 +5537,7 @@
       "meldungen_kiel": [
         {
           "source": "meldungen_kiel",
-          "nr": "2",
+          "nr": "1",
           "time": "2026-05-04 15:30",
           "draft": "5.9",
           "q_gruppe": "5",
@@ -5526,7 +5550,7 @@
         },
         {
           "source": "meldungen_kiel",
-          "nr": "7",
+          "nr": "6",
           "time": "2026-05-04 16:30",
           "draft": "5.9",
           "q_gruppe": "5",
@@ -5539,7 +5563,7 @@
         },
         {
           "source": "meldungen_kiel",
-          "nr": "8",
+          "nr": "7",
           "time": "2026-05-04 16:50",
           "draft": "5.9",
           "q_gruppe": "5",
@@ -5723,12 +5747,12 @@
         "routes": [
           "RÜB → HOS"
         ],
-        "eta_rueb": "2026-05-04 17:17",
+        "eta_rueb": "2026-05-04 17:15",
         "eta_schleuse": "2026-05-04 21:23",
         "eta_text": "21:23",
         "first_seen": "2026-05-04 12:52",
-        "delta_rueb_schleuse": "04:07",
-        "delta_start_rueb": "04:25",
+        "delta_rueb_schleuse": "04:08",
+        "delta_start_rueb": "04:23",
         "queue_key": "kiel_innen",
         "queue_title": "Zulauf vom Kanal in Kiel",
         "area": "kiel",
@@ -5860,6 +5884,9 @@
             "kudensee": {
               "in": "2026-05-04 13:25",
               "out": "2026-05-04 13:30"
+            },
+            "duekerswisch": {
+              "in": "2026-05-04 14:23"
             }
           }
         }
@@ -5868,10 +5895,10 @@
         {
           "name": "SOLEA",
           "eta_schleuse": "2026-05-04 21:23",
-          "eta_rueb": "2026-05-04 17:17",
+          "eta_rueb": "2026-05-04 17:15",
           "first_seen": "2026-05-04 12:52",
-          "delta_rueb_schleuse": "04:07",
-          "delta_start_rueb": "04:25",
+          "delta_rueb_schleuse": "04:08",
+          "delta_start_rueb": "04:23",
           "ship_name": "SOLEA",
           "vg": "3",
           "length_m": "42.700",
@@ -5897,6 +5924,9 @@
               "kudensee": {
                 "in": "2026-05-04 13:25",
                 "out": "2026-05-04 13:30"
+              },
+              "duekerswisch": {
+                "in": "2026-05-04 14:23"
               }
             }
           },
@@ -6409,7 +6439,7 @@
       "meldungen_kiel": [
         {
           "source": "meldungen_kiel",
-          "nr": "16",
+          "nr": "15",
           "time": "2026-05-04 18:30",
           "draft": "4.1",
           "q_gruppe": "5",
@@ -7564,7 +7594,7 @@
       "meldungen_kiel": [
         {
           "source": "meldungen_kiel",
-          "nr": "26",
+          "nr": "25",
           "time": "2026-05-04 22:30",
           "draft": "8.2",
           "q_gruppe": "2",
@@ -8006,7 +8036,7 @@
       "meldungen_kiel": [
         {
           "source": "meldungen_kiel",
-          "nr": "17",
+          "nr": "16",
           "time": "2026-05-04 19:00",
           "draft": "1.0",
           "q_gruppe": "5",
