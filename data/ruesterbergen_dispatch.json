@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-04T07:15:10",
+  "generated_at": "2026-05-04T07:17:17",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 1,
     "pilots_total": 3,
-    "pilots_dispatchable": 2,
-    "pilots_visible_only": 1,
+    "pilots_dispatchable": 3,
+    "pilots_visible_only": 0,
     "assignments": 1,
     "unassigned_ships": 0,
-    "unused_pilots": 1
+    "unused_pilots": 2
   },
   "ships": [
     {
@@ -140,6 +140,7 @@
       "nr": 6,
       "raw_time": "Mon May 04 06:12:00 CEST 2026",
       "current_ship_name": "LADY HANNAH",
+      "current_ship_eta_rueb": "2026-05-04 10:50",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -189,25 +190,31 @@
       "current_ship_source": "special.already_in_rueb",
       "availability_kind": "already_in_rueb",
       "availability_hint": "Lotse gilt als bereits in RÜB"
-    }
-  ],
-  "visible_but_not_dispatchable_pilots": [
+    },
     {
       "pilot_key": "crotogino_philipp",
+      "vorname": "Philipp",
+      "nachname": "Crotogino",
       "pilot_name": "Crotogino, Philipp",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 6,
       "abteilungszeit": "2026-05-04 06:12",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 6,
       "aufgabe": "Kanalbört",
       "fahrzeug": "LADY HANNAH",
       "from": "HOR",
       "to": "RÜB",
+      "nr": 6,
+      "raw_time": "Mon May 04 06:12:00 CEST 2026",
       "current_ship_name": "LADY HANNAH",
+      "current_ship_eta_rueb": "2026-05-04 10:50",
+      "current_ship_q": 0,
+      "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
+      "availability_kind": "merged_eta"
     }
   ],
+  "visible_but_not_dispatchable_pilots": [],
   "assignments": [
     {
       "ship_key": "LADY ELA",
@@ -250,6 +257,17 @@
           "current_ship_source": "special.already_in_rueb",
           "availability_kind": "already_in_rueb",
           "availability_hint": "Lotse gilt als bereits in RÜB"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Crotogino, Philipp",
+          "pilot_tactical_nr": 6,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "LADY HANNAH",
+          "pilot_current_ship_eta_rueb": "2026-05-04 10:50",
+          "ship_eta_rueb": "2026-05-04 08:47",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -309,6 +327,28 @@
       "current_ship_source": "special.already_in_rueb",
       "availability_kind": "already_in_rueb",
       "availability_hint": "Lotse gilt als bereits in RÜB"
+    },
+    {
+      "pilot_key": "crotogino_philipp",
+      "vorname": "Philipp",
+      "nachname": "Crotogino",
+      "pilot_name": "Crotogino, Philipp",
+      "abteilungszeit": "2026-05-04 06:12",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 6,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "LADY HANNAH",
+      "from": "HOR",
+      "to": "RÜB",
+      "nr": 6,
+      "raw_time": "Mon May 04 06:12:00 CEST 2026",
+      "current_ship_name": "LADY HANNAH",
+      "current_ship_eta_rueb": "2026-05-04 10:50",
+      "current_ship_q": 0,
+      "current_ship_route": "HOR → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
     }
   ]
 }
