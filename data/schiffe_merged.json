@@ -1,47 +1,47 @@
 {
-  "generated_at": "2026-05-04T06:45:12",
+  "generated_at": "2026-05-04T06:47:14",
   "source_meta": {
     "zulauf_kiel_innen": {
       "file": "Zulauf_kiel_innen.json",
-      "generated_at": "2026-05-04 06:44",
+      "generated_at": "2026-05-04 06:46",
       "queue": "kiel_innen",
       "title": "Zulauf vom Kanal in Kiel",
       "count": 2
     },
     "zulauf_kiel_aussen": {
       "file": "Zulauf_kiel_aussen.json",
-      "generated_at": "2026-05-04 06:44",
+      "generated_at": "2026-05-04 06:46",
       "queue": "kiel_aussen",
       "title": "Zulauf von See in Kiel",
       "count": 0
     },
     "zulauf_brb_innen": {
       "file": "Zulauf_brb_innen.json",
-      "generated_at": "2026-05-04 06:44",
+      "generated_at": "2026-05-04 06:46",
       "queue": "brb_innen",
       "title": "Zulauf vom Kanal in Brunsbüttel",
       "count": 5
     },
     "zulauf_brb_aussen": {
       "file": "Zulauf_brb_aussen.json",
-      "generated_at": "2026-05-04 06:44",
+      "generated_at": "2026-05-04 06:46",
       "queue": "brb_aussen",
       "title": "Zulauf von See in Brunsbüttel",
       "count": 5
     },
     "meldungen_kiel": {
       "file": "Meldungen_Kiel.json",
-      "generated_at": "2026-05-04 06:44",
+      "generated_at": "2026-05-04 06:46",
       "count": 45
     },
     "meldungen_ruesterbergen": {
       "file": "Meldungen_Ruesterbergen.json",
-      "generated_at": "2026-05-04 06:44",
-      "count": 1
+      "generated_at": "2026-05-04 06:46",
+      "count": 2
     },
     "seelotsen": {
       "file": "Seelotsen.json",
-      "generated_at": "2026-05-04 06:44",
+      "generated_at": "2026-05-04 06:46",
       "count": 13
     }
   },
@@ -851,7 +851,6 @@
       "ship_key": "EMS HIGHWAY",
       "name": "EMS HIGHWAY",
       "sources": [
-        "seelotsen",
         "zulauf_brb_innen"
       ],
       "special_entry": false,
@@ -859,12 +858,7 @@
         "name": "EMS HIGHWAY",
         "special_entry": false,
         "sources": [
-          "seelotsen",
           "zulauf_brb_innen"
-        ],
-        "route": "HOR → RÜB",
-        "routes": [
-          "HOR → RÜB"
         ],
         "eta_rueb": "2026-05-04 06:49",
         "eta_schleuse": "2026-05-04 11:16",
@@ -911,12 +905,6 @@
         "dangerous_vessel": "-",
         "port_of_departure": "PL GDY",
         "port_of_destination": "GB TIL",
-        "assigned_pilots": [
-          "Weise, Tom"
-        ],
-        "aufgaben": [
-          "Kanalbört"
-        ],
         "passage_block": {
           "start_text": "Kiel Schleuse Kiel",
           "start_0": "Kiel",
@@ -1225,19 +1213,7 @@
       ],
       "meldungen_kiel": [],
       "meldungen_ruesterbergen": [],
-      "seelotsen": [
-        {
-          "nr": 9,
-          "time": "2026-05-04 01:45",
-          "pilot_name": "Weise, Tom",
-          "nachname": "Weise",
-          "vorname": "Tom",
-          "aufgabe": "Kanalbört",
-          "from": "HOR",
-          "to": "RÜB",
-          "route": "HOR → RÜB"
-        }
-      ]
+      "seelotsen": []
     },
     {
       "ship_key": "FJORDNES",
@@ -2029,7 +2005,8 @@
               "out": "2026-05-04 06:06"
             },
             "koenigsfoerde": {
-              "in": "2026-05-04 06:41"
+              "in": "2026-05-04 06:41",
+              "out": "2026-05-04 06:45"
             }
           }
         }
@@ -2095,7 +2072,8 @@
                 "out": "2026-05-04 06:06"
               },
               "koenigsfoerde": {
-                "in": "2026-05-04 06:41"
+                "in": "2026-05-04 06:41",
+                "out": "2026-05-04 06:45"
               }
             }
           },
@@ -3182,7 +3160,7 @@
       "meldungen_ruesterbergen": [
         {
           "source": "meldungen_ruesterbergen",
-          "nr": "1",
+          "nr": "2",
           "time": "2026-05-04 08:45",
           "draft": "7.3",
           "q_gruppe": "3",
@@ -3240,19 +3218,23 @@
       "ship_key": "LEERFAHRT",
       "name": "Leerfahrt",
       "sources": [
-        "meldungen_kiel"
+        "meldungen_kiel",
+        "meldungen_ruesterbergen"
       ],
       "special_entry": true,
       "summary": {
         "name": "Leerfahrt",
         "special_entry": true,
         "sources": [
-          "meldungen_kiel"
+          "meldungen_kiel",
+          "meldungen_ruesterbergen"
         ],
         "route": "HOS → KLT",
         "routes": [
-          "HOS → KLT"
+          "HOS → KLT",
+          "RÜB → HOS"
         ],
+        "eta_rueb": "2026-05-04 06:42",
         "lotsen_anzahl_kiel": 2,
         "confirmed_kiel": false,
         "remark_kiel": "PvR 0650 ab Rübe Q0/4"
@@ -3271,7 +3253,19 @@
           "remark": "PvR 0650 ab Rübe Q0/4"
         }
       ],
-      "meldungen_ruesterbergen": [],
+      "meldungen_ruesterbergen": [
+        {
+          "source": "meldungen_ruesterbergen",
+          "nr": "1",
+          "time": "2026-05-04 06:42",
+          "lotsen_anzahl": 2,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS",
+          "route": "RÜB → HOS",
+          "remark": "Abfahrt ca.0650"
+        }
+      ],
       "seelotsen": []
     },
     {
@@ -3395,7 +3389,7 @@
       "meldungen_kiel": [
         {
           "source": "meldungen_kiel",
-          "nr": "21",
+          "nr": "22",
           "time": "2026-05-04 14:00",
           "draft": "5.0",
           "q_gruppe": "1",
@@ -3600,7 +3594,7 @@
       "meldungen_kiel": [
         {
           "source": "meldungen_kiel",
-          "nr": "22",
+          "nr": "21",
           "time": "2026-05-04 14:00",
           "draft": "5.9",
           "q_gruppe": "5",
@@ -3655,6 +3649,7 @@
           "seelotsen"
         ],
         "assigned_pilots": [
+          "Weise, Tom",
           "Steffens, Micha"
         ],
         "aufgaben": [
@@ -3665,6 +3660,14 @@
       "meldungen_kiel": [],
       "meldungen_ruesterbergen": [],
       "seelotsen": [
+        {
+          "nr": 9,
+          "time": "2026-05-04 01:45",
+          "pilot_name": "Weise, Tom",
+          "nachname": "Weise",
+          "vorname": "Tom",
+          "aufgabe": "Kanalbört"
+        },
         {
           "nr": 10,
           "time": "2026-05-04 01:45",
@@ -4320,8 +4323,8 @@
         "sources": [
           "zulauf_brb_aussen"
         ],
-        "eta_schleuse": "2026-05-04 09:19",
-        "eta_text": "09:19",
+        "eta_schleuse": "2026-05-04 09:10",
+        "eta_text": "09:10",
         "first_seen": "2026-05-04 04:06",
         "queue_key": "brb_aussen",
         "queue_title": "Zulauf von See in Brunsbüttel",
@@ -4386,7 +4389,7 @@
       "zulauf": [
         {
           "name": "SPANACO RELIABILITY",
-          "eta_schleuse": "2026-05-04 09:19",
+          "eta_schleuse": "2026-05-04 09:10",
           "first_seen": "2026-05-04 04:06",
           "ship_name": "SPANACO RELIABILITY",
           "vg": "3",
@@ -4397,7 +4400,7 @@
           "queue_title": "Zulauf von See in Brunsbüttel",
           "area": "brb",
           "zulauf_richtung": "von_see",
-          "eta_text": "09:19",
+          "eta_text": "09:10",
           "preferred_mooring_side": "Bb",
           "vessel_type": "Trocken-Mz-Frachter",
           "travel_status": "APPROACHING_NOK_BRB",
@@ -5001,8 +5004,8 @@
         "sources": [
           "zulauf_brb_aussen"
         ],
-        "eta_schleuse": "2026-05-04 10:41",
-        "eta_text": "10:41",
+        "eta_schleuse": "2026-05-04 10:29",
+        "eta_text": "10:29",
         "first_seen": "2026-05-04 05:22",
         "queue_key": "brb_aussen",
         "queue_title": "Zulauf von See in Brunsbüttel",
@@ -5127,7 +5130,7 @@
       "zulauf": [
         {
           "name": "TORC",
-          "eta_schleuse": "2026-05-04 10:41",
+          "eta_schleuse": "2026-05-04 10:29",
           "first_seen": "2026-05-04 05:22",
           "ship_name": "TORC",
           "vg": "4",
@@ -5141,7 +5144,7 @@
           "pilot_required": "true",
           "pilot_foerde": "true",
           "pilot_order": "KS-NOK-KF",
-          "eta_text": "10:41",
+          "eta_text": "10:29",
           "destination": "Kiel",
           "makler": "UCA",
           "preferred_mooring_side": "Bb",
