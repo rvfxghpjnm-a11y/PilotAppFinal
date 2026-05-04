@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-04T10:31:06",
+  "generated_at": "2026-05-04T10:33:06",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,13 +32,13 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 1,
+    "ships_for_ruesterbergen": 2,
     "pilots_total": 3,
     "pilots_dispatchable": 3,
     "pilots_visible_only": 0,
-    "assignments": 1,
+    "assignments": 2,
     "unassigned_ships": 0,
-    "unused_pilots": 2
+    "unused_pilots": 1
   },
   "ships": [
     {
@@ -77,6 +77,43 @@
         "makler": "SUB",
         "dangerous_vessel": "-",
         "type_of_loading": "Ballast"
+      }
+    },
+    {
+      "ship_key": "TIM",
+      "ship_name": "TIM",
+      "eta_rueb": "2026-05-04 15:00",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 5,
+      "meldung": {
+        "nr": "2",
+        "time": "Mon May 04 14:50:00 CEST 2026",
+        "draft": "5.2",
+        "q_gruppe": "5",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "KRH"
+      },
+      "summary": {
+        "route": "RÜB → KRH",
+        "routes": [
+          "RÜB → KRH"
+        ],
+        "q_gruppe": "5",
+        "vg": "3",
+        "draft": "5.20",
+        "length_m": "82.5",
+        "beam_m": "12.6",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "H",
+        "pilot_1_name": "Schmachtel, Armin",
+        "travel_status": "SAILING_NOK",
+        "makler": "NIK",
+        "dangerous_vessel": "-",
+        "type_of_loading": "Futtermittel"
       }
     }
   ],
@@ -119,7 +156,7 @@
       "nr": 10,
       "raw_time": "Mon May 04 06:12:00 CEST 2026",
       "current_ship_name": "LADY HANNAH",
-      "current_ship_eta_rueb": "2026-05-04 10:40",
+      "current_ship_eta_rueb": "2026-05-04 10:39",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -187,7 +224,7 @@
       "nr": 10,
       "raw_time": "Mon May 04 06:12:00 CEST 2026",
       "current_ship_name": "LADY HANNAH",
-      "current_ship_eta_rueb": "2026-05-04 10:40",
+      "current_ship_eta_rueb": "2026-05-04 10:39",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -256,7 +293,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "LADY HANNAH",
-          "current_ship_eta_rueb": "2026-05-04 10:40",
+          "current_ship_eta_rueb": "2026-05-04 10:39",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -307,32 +344,86 @@
           "type_of_loading": "Ballast"
         }
       }
+    },
+    {
+      "ship_key": "TIM",
+      "ship_name": "TIM",
+      "eta_rueb": "2026-05-04 15:00",
+      "ship_q": 5,
+      "assigned_pilot": "Crotogino, Philipp",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 10,
+      "assigned_abteilungszeit": "2026-05-04 06:12",
+      "assigned_current_ship_name": "LADY HANNAH",
+      "assigned_current_ship_eta_rueb": "2026-05-04 10:39",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 2,
+      "candidates": [
+        {
+          "pilot_name": "Crotogino, Philipp",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 10,
+          "abteilungszeit": "2026-05-04 06:12",
+          "fahrzeug": "LADY HANNAH",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "LADY HANNAH",
+          "current_ship_eta_rueb": "2026-05-04 10:39",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Bruhn, Stefan",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 1,
+          "abteilungszeit": "2026-05-04 08:52",
+          "fahrzeug": "XING HAI WAN",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "XING HAI WAN",
+          "current_ship_eta_rueb": "2026-05-04 13:34",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "2",
+          "time": "Mon May 04 14:50:00 CEST 2026",
+          "draft": "5.2",
+          "q_gruppe": "5",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "KRH"
+        },
+        "summary": {
+          "route": "RÜB → KRH",
+          "routes": [
+            "RÜB → KRH"
+          ],
+          "q_gruppe": "5",
+          "vg": "3",
+          "draft": "5.20",
+          "length_m": "82.5",
+          "beam_m": "12.6",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "H",
+          "pilot_1_name": "Schmachtel, Armin",
+          "travel_status": "SAILING_NOK",
+          "makler": "NIK",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Futtermittel"
+        }
+      }
     }
   ],
   "unassigned_ships": [],
   "unused_pilots": [
-    {
-      "pilot_key": "crotogino_philipp",
-      "vorname": "Philipp",
-      "nachname": "Crotogino",
-      "pilot_name": "Crotogino, Philipp",
-      "abteilungszeit": "2026-05-04 06:12",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 10,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "LADY HANNAH",
-      "from": "HOR",
-      "to": "RÜB",
-      "nr": 10,
-      "raw_time": "Mon May 04 06:12:00 CEST 2026",
-      "current_ship_name": "LADY HANNAH",
-      "current_ship_eta_rueb": "2026-05-04 10:40",
-      "current_ship_q": 0,
-      "current_ship_route": "HOR → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
-    },
     {
       "pilot_key": "bruhn_stefan",
       "vorname": "Stefan",
