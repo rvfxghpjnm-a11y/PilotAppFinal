@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-04T04:17:12",
+  "generated_at": "2026-05-04T04:19:13",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,61 +32,23 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 2,
+    "ships_for_ruesterbergen": 1,
     "pilots_total": 8,
     "pilots_dispatchable": 8,
     "pilots_visible_only": 0,
-    "assignments": 2,
+    "assignments": 1,
     "unassigned_ships": 0,
-    "unused_pilots": 6
+    "unused_pilots": 7
   },
   "ships": [
     {
-      "ship_key": "IVER BRILLIANT",
-      "ship_name": "IVER BRILLIANT",
-      "eta_rueb": "2026-05-04 04:46",
-      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
-      "ship_q": 4,
-      "meldung": {
-        "nr": "1",
-        "time": "Mon May 04 04:45:00 CEST 2026",
-        "draft": "6.5",
-        "q_gruppe": "4",
-        "lotsen_anzahl": 1,
-        "confirmed": false,
-        "from": "RÜB",
-        "to": "HOS"
-      },
-      "summary": {
-        "route": "HOS → KLT",
-        "routes": [
-          "HOS → KLT",
-          "RÜB → HOS"
-        ],
-        "q_gruppe": "4",
-        "vg": "4",
-        "draft": "6.50",
-        "length_m": "111.62",
-        "beam_m": "18.230",
-        "queue_title": "Zulauf vom Kanal in Kiel",
-        "zulauf_richtung": "vom_kanal",
-        "pilot_required": "true",
-        "pilot_status": "U",
-        "pilot_1_name": "Wilczynski, Fabian",
-        "travel_status": "SAILING_NOK",
-        "makler": "SUB",
-        "dangerous_vessel": "-",
-        "type_of_loading": "Baustoffe"
-      }
-    },
-    {
       "ship_key": "LADY ELA",
       "ship_name": "LADY ELA",
-      "eta_rueb": "2026-05-04 08:57",
+      "eta_rueb": "2026-05-04 08:56",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 3,
       "meldung": {
-        "nr": "2",
+        "nr": "1",
         "time": "Mon May 04 08:45:00 CEST 2026",
         "draft": "7.3",
         "q_gruppe": "3",
@@ -173,16 +135,17 @@
       "q_source": "q_gruppen_lotsen.entries",
       "pilot_tactical_nr": 8,
       "aufgabe": "Kanalbört",
-      "fahrzeug": "RÜB",
+      "fahrzeug": "IVER BRILLIANT",
+      "from": "RÜB",
+      "to": "HOS",
       "nr": 8,
       "raw_time": "Sun May 03 19:47:00 CEST 2026",
-      "current_ship_name": "RÜB",
-      "current_ship_eta_rueb": "2026-05-03 19:47",
-      "current_ship_q": 0,
-      "current_ship_route": "RÜB",
-      "current_ship_source": "special.already_in_rueb",
-      "availability_kind": "already_in_rueb",
-      "availability_hint": "Lotse gilt als bereits in RÜB"
+      "current_ship_name": "IVER BRILLIANT",
+      "current_ship_eta_rueb": "2026-05-04 04:46",
+      "current_ship_q": 4,
+      "current_ship_route": "RÜB → HOS",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
     },
     {
       "pilot_key": "doering_lars",
@@ -350,16 +313,17 @@
       "q_source": "q_gruppen_lotsen.entries",
       "pilot_tactical_nr": 8,
       "aufgabe": "Kanalbört",
-      "fahrzeug": "RÜB",
+      "fahrzeug": "IVER BRILLIANT",
+      "from": "RÜB",
+      "to": "HOS",
       "nr": 8,
       "raw_time": "Sun May 03 19:47:00 CEST 2026",
-      "current_ship_name": "RÜB",
-      "current_ship_eta_rueb": "2026-05-03 19:47",
-      "current_ship_q": 0,
-      "current_ship_route": "RÜB",
-      "current_ship_source": "special.already_in_rueb",
-      "availability_kind": "already_in_rueb",
-      "availability_hint": "Lotse gilt als bereits in RÜB"
+      "current_ship_name": "IVER BRILLIANT",
+      "current_ship_eta_rueb": "2026-05-04 04:46",
+      "current_ship_q": 4,
+      "current_ship_route": "RÜB → HOS",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
     },
     {
       "pilot_key": "doering_lars",
@@ -475,10 +439,10 @@
   "visible_but_not_dispatchable_pilots": [],
   "assignments": [
     {
-      "ship_key": "IVER BRILLIANT",
-      "ship_name": "IVER BRILLIANT",
-      "eta_rueb": "2026-05-04 04:46",
-      "ship_q": 4,
+      "ship_key": "LADY ELA",
+      "ship_name": "LADY ELA",
+      "eta_rueb": "2026-05-04 08:56",
+      "ship_q": 3,
       "assigned_pilot": "Wald, Mark",
       "assigned_pilot_q": 3,
       "assigned_tactical_nr": 10,
@@ -488,7 +452,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 4,
+      "candidate_count": 7,
       "candidates": [
         {
           "pilot_name": "Wald, Mark",
@@ -521,141 +485,13 @@
           "pilot_q": 0,
           "pilot_tactical_nr": 8,
           "abteilungszeit": "2026-05-03 19:47",
-          "fahrzeug": "RÜB",
+          "fahrzeug": "IVER BRILLIANT",
+          "to": "HOS",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "RÜB",
-          "current_ship_eta_rueb": "2026-05-03 19:47",
-          "current_ship_source": "special.already_in_rueb",
-          "availability_kind": "already_in_rueb",
-          "availability_hint": "Lotse gilt als bereits in RÜB"
-        },
-        {
-          "pilot_name": "Petersen, Yannick",
-          "pilot_q": 2,
-          "pilot_tactical_nr": 6,
-          "abteilungszeit": "2026-05-03 23:16",
-          "fahrzeug": "SPANACO SIMPLICITY",
-          "to": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "SPANACO SIMPLICITY",
-          "current_ship_eta_rueb": "2026-05-04 04:27",
+          "current_ship_name": "IVER BRILLIANT",
+          "current_ship_eta_rueb": "2026-05-04 04:46",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
-        }
-      ],
-      "excluded": [
-        {
-          "pilot_name": "Doering, Lars",
-          "pilot_tactical_nr": 7,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "SKALAR",
-          "pilot_current_ship_eta_rueb": "2026-05-04 05:00",
-          "ship_eta_rueb": "2026-05-04 04:46",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Weise, Tom",
-          "pilot_tactical_nr": 3,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "EMS HIGHWAY",
-          "pilot_current_ship_eta_rueb": "2026-05-04 06:57",
-          "ship_eta_rueb": "2026-05-04 04:46",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Steffens, Micha",
-          "pilot_tactical_nr": 4,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "FRISIAN SPRING",
-          "pilot_current_ship_eta_rueb": "2026-05-04 06:54",
-          "ship_eta_rueb": "2026-05-04 04:46",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Hansen, Hinnerk",
-          "pilot_tactical_nr": 2,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "EAGLE 2",
-          "pilot_current_ship_eta_rueb": "2026-05-04 07:07",
-          "ship_eta_rueb": "2026-05-04 04:46",
-          "availability_kind": "merged_eta"
-        }
-      ],
-      "ship": {
-        "meldung": {
-          "nr": "1",
-          "time": "Mon May 04 04:45:00 CEST 2026",
-          "draft": "6.5",
-          "q_gruppe": "4",
-          "lotsen_anzahl": 1,
-          "confirmed": false,
-          "from": "RÜB",
-          "to": "HOS"
-        },
-        "summary": {
-          "route": "HOS → KLT",
-          "routes": [
-            "HOS → KLT",
-            "RÜB → HOS"
-          ],
-          "q_gruppe": "4",
-          "vg": "4",
-          "draft": "6.50",
-          "length_m": "111.62",
-          "beam_m": "18.230",
-          "queue_title": "Zulauf vom Kanal in Kiel",
-          "zulauf_richtung": "vom_kanal",
-          "pilot_required": "true",
-          "pilot_status": "U",
-          "pilot_1_name": "Wilczynski, Fabian",
-          "travel_status": "SAILING_NOK",
-          "makler": "SUB",
-          "dangerous_vessel": "-",
-          "type_of_loading": "Baustoffe"
-        }
-      }
-    },
-    {
-      "ship_key": "LADY ELA",
-      "ship_name": "LADY ELA",
-      "eta_rueb": "2026-05-04 08:57",
-      "ship_q": 3,
-      "assigned_pilot": "Röhl, Jens",
-      "assigned_pilot_q": 0,
-      "assigned_tactical_nr": 9,
-      "assigned_abteilungszeit": "2026-05-03 17:32",
-      "assigned_current_ship_name": "PAULA",
-      "assigned_current_ship_eta_rueb": "2026-05-04 02:25",
-      "assigned_current_ship_source": "schiffe_merged.seelotsen",
-      "assigned_availability_kind": "merged_eta",
-      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 6,
-      "candidates": [
-        {
-          "pilot_name": "Röhl, Jens",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 9,
-          "abteilungszeit": "2026-05-03 17:32",
-          "fahrzeug": "PAULA",
-          "to": "TOT",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "PAULA",
-          "current_ship_eta_rueb": "2026-05-04 02:25",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Münker, Niels",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 8,
-          "abteilungszeit": "2026-05-03 19:47",
-          "fahrzeug": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "RÜB",
-          "current_ship_eta_rueb": "2026-05-03 19:47",
-          "current_ship_source": "special.already_in_rueb",
-          "availability_kind": "already_in_rueb",
-          "availability_hint": "Lotse gilt als bereits in RÜB"
         },
         {
           "pilot_name": "Doering, Lars",
@@ -721,7 +557,7 @@
       ],
       "ship": {
         "meldung": {
-          "nr": "2",
+          "nr": "1",
           "time": "Mon May 04 08:45:00 CEST 2026",
           "draft": "7.3",
           "q_gruppe": "3",
@@ -757,6 +593,28 @@
   "unassigned_ships": [],
   "unused_pilots": [
     {
+      "pilot_key": "röhl_jens",
+      "vorname": "Jens",
+      "nachname": "Röhl",
+      "pilot_name": "Röhl, Jens",
+      "abteilungszeit": "2026-05-03 17:32",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 9,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "PAULA",
+      "from": "RÜB",
+      "to": "TOT",
+      "nr": 9,
+      "raw_time": "Sun May 03 17:32:00 CEST 2026",
+      "current_ship_name": "PAULA",
+      "current_ship_eta_rueb": "2026-05-04 02:25",
+      "current_ship_q": 5,
+      "current_ship_route": "RÜB → TOT",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
       "pilot_key": "münker_niels",
       "vorname": "Niels",
       "nachname": "Münker",
@@ -766,16 +624,17 @@
       "q_source": "q_gruppen_lotsen.entries",
       "pilot_tactical_nr": 8,
       "aufgabe": "Kanalbört",
-      "fahrzeug": "RÜB",
+      "fahrzeug": "IVER BRILLIANT",
+      "from": "RÜB",
+      "to": "HOS",
       "nr": 8,
       "raw_time": "Sun May 03 19:47:00 CEST 2026",
-      "current_ship_name": "RÜB",
-      "current_ship_eta_rueb": "2026-05-03 19:47",
-      "current_ship_q": 0,
-      "current_ship_route": "RÜB",
-      "current_ship_source": "special.already_in_rueb",
-      "availability_kind": "already_in_rueb",
-      "availability_hint": "Lotse gilt als bereits in RÜB"
+      "current_ship_name": "IVER BRILLIANT",
+      "current_ship_eta_rueb": "2026-05-04 04:46",
+      "current_ship_q": 4,
+      "current_ship_route": "RÜB → HOS",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
     },
     {
       "pilot_key": "doering_lars",
