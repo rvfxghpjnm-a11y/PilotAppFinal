@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-04T03:39:10",
+  "generated_at": "2026-05-04T03:41:15",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,13 +32,13 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 1,
+    "ships_for_ruesterbergen": 2,
     "pilots_total": 8,
     "pilots_dispatchable": 8,
     "pilots_visible_only": 0,
-    "assignments": 1,
+    "assignments": 2,
     "unassigned_ships": 0,
-    "unused_pilots": 7
+    "unused_pilots": 6
   },
   "ships": [
     {
@@ -77,6 +77,43 @@
         "makler": "SUB",
         "dangerous_vessel": "-",
         "type_of_loading": "Baustoffe"
+      }
+    },
+    {
+      "ship_key": "LADY ELA",
+      "ship_name": "LADY ELA",
+      "eta_rueb": "2026-05-04 09:00",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 3,
+      "meldung": {
+        "nr": "2",
+        "time": "Mon May 04 08:45:00 CEST 2026",
+        "draft": "7.3",
+        "q_gruppe": "3",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "3",
+        "vg": "4",
+        "draft": "7.30",
+        "length_m": "123.50",
+        "beam_m": "17.2",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "U",
+        "travel_status": "SAILING_NOK",
+        "makler": "SUB",
+        "dangerous_vessel": "ja",
+        "type_of_loading": "Chemikalien fluessig"
       }
     }
   ],
@@ -576,32 +613,147 @@
           "type_of_loading": "Baustoffe"
         }
       }
+    },
+    {
+      "ship_key": "LADY ELA",
+      "ship_name": "LADY ELA",
+      "eta_rueb": "2026-05-04 09:00",
+      "ship_q": 3,
+      "assigned_pilot": "Röhl, Jens",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 12,
+      "assigned_abteilungszeit": "2026-05-03 17:32",
+      "assigned_current_ship_name": "PAULA",
+      "assigned_current_ship_eta_rueb": "2026-05-04 02:25",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 6,
+      "candidates": [
+        {
+          "pilot_name": "Röhl, Jens",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 12,
+          "abteilungszeit": "2026-05-03 17:32",
+          "fahrzeug": "PAULA",
+          "to": "TOT",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "PAULA",
+          "current_ship_eta_rueb": "2026-05-04 02:25",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Münker, Niels",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 10,
+          "abteilungszeit": "2026-05-03 19:47",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-03 19:47",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
+        },
+        {
+          "pilot_name": "Doering, Lars",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 7,
+          "abteilungszeit": "2026-05-03 23:02",
+          "fahrzeug": "SKALAR",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "SKALAR",
+          "current_ship_eta_rueb": "2026-05-04 05:02",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Petersen, Yannick",
+          "pilot_q": 2,
+          "pilot_tactical_nr": 6,
+          "abteilungszeit": "2026-05-03 23:16",
+          "fahrzeug": "SPANACO SIMPLICITY",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "SPANACO SIMPLICITY",
+          "current_ship_eta_rueb": "2026-05-04 04:29",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Weise, Tom",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 3,
+          "abteilungszeit": "2026-05-04 01:45",
+          "fahrzeug": "EMS HIGHWAY",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "EMS HIGHWAY",
+          "current_ship_eta_rueb": "2026-05-04 06:58",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Hansen, Hinnerk",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-05-04 01:52",
+          "fahrzeug": "EAGLE 2",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "EAGLE 2",
+          "current_ship_eta_rueb": "2026-05-04 07:02",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Steffens, Micha",
+          "pilot_tactical_nr": 4,
+          "reason": "Quali passt nicht (4 > 3)",
+          "pilot_q": 4,
+          "ship_q": 3
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "2",
+          "time": "Mon May 04 08:45:00 CEST 2026",
+          "draft": "7.3",
+          "q_gruppe": "3",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "HOS → KLT",
+          "routes": [
+            "HOS → KLT",
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "3",
+          "vg": "4",
+          "draft": "7.30",
+          "length_m": "123.50",
+          "beam_m": "17.2",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "U",
+          "travel_status": "SAILING_NOK",
+          "makler": "SUB",
+          "dangerous_vessel": "ja",
+          "type_of_loading": "Chemikalien fluessig"
+        }
+      }
     }
   ],
   "unassigned_ships": [],
   "unused_pilots": [
-    {
-      "pilot_key": "röhl_jens",
-      "vorname": "Jens",
-      "nachname": "Röhl",
-      "pilot_name": "Röhl, Jens",
-      "abteilungszeit": "2026-05-03 17:32",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 12,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "PAULA",
-      "from": "RÜB",
-      "to": "TOT",
-      "nr": 12,
-      "raw_time": "Sun May 03 17:32:00 CEST 2026",
-      "current_ship_name": "PAULA",
-      "current_ship_eta_rueb": "2026-05-04 02:25",
-      "current_ship_q": 5,
-      "current_ship_route": "RÜB → TOT",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
-    },
     {
       "pilot_key": "münker_niels",
       "vorname": "Niels",
