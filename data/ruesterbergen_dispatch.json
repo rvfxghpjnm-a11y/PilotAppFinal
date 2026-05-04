@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-04T12:43:14",
+  "generated_at": "2026-05-04T12:45:04",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,13 +32,13 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 3,
+    "ships_for_ruesterbergen": 4,
     "pilots_total": 4,
     "pilots_dispatchable": 4,
     "pilots_visible_only": 0,
-    "assignments": 2,
+    "assignments": 3,
     "unassigned_ships": 1,
-    "unused_pilots": 2
+    "unused_pilots": 1
   },
   "ships": [
     {
@@ -151,6 +151,33 @@
         "makler": "UCA",
         "dangerous_vessel": "-",
         "type_of_loading": "Erdoel und Derivate"
+      }
+    },
+    {
+      "ship_key": "JSP SAMSOE",
+      "ship_name": "JSP SAMSOE",
+      "eta_rueb": "2026-05-04 17:00",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 4,
+      "meldung": {
+        "nr": "4",
+        "time": "Mon May 04 17:00:00 CEST 2026",
+        "draft": "5.5",
+        "q_gruppe": "4",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "UTG"
+      },
+      "summary": {
+        "route": "UTG → HOS",
+        "routes": [
+          "UTG → HOS",
+          "HOS → KLT",
+          "RÜB → UTG"
+        ],
+        "q_gruppe": "4",
+        "draft": "5.5"
       }
     }
   ],
@@ -514,6 +541,72 @@
           "type_of_loading": "Futtermittel"
         }
       }
+    },
+    {
+      "ship_key": "JSP SAMSOE",
+      "ship_name": "JSP SAMSOE",
+      "eta_rueb": "2026-05-04 17:00",
+      "ship_q": 4,
+      "assigned_pilot": "Kaschke, Henning",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 5,
+      "assigned_abteilungszeit": "2026-05-04 11:14",
+      "assigned_current_ship_name": "FAIRPLAY 38",
+      "assigned_current_ship_eta_rueb": "2026-05-04 16:08",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 2,
+      "candidates": [
+        {
+          "pilot_name": "Kaschke, Henning",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 5,
+          "abteilungszeit": "2026-05-04 11:14",
+          "fahrzeug": "FAIRPLAY 38",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "FAIRPLAY 38",
+          "current_ship_eta_rueb": "2026-05-04 16:08",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Röhrs, Johannes",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-05-04 11:50",
+          "fahrzeug": "WILSON PORI",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "WILSON PORI",
+          "current_ship_eta_rueb": "2026-05-04 15:55",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "4",
+          "time": "Mon May 04 17:00:00 CEST 2026",
+          "draft": "5.5",
+          "q_gruppe": "4",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "UTG"
+        },
+        "summary": {
+          "route": "UTG → HOS",
+          "routes": [
+            "UTG → HOS",
+            "HOS → KLT",
+            "RÜB → UTG"
+          ],
+          "q_gruppe": "4",
+          "draft": "5.5"
+        }
+      }
     }
   ],
   "unassigned_ships": [
@@ -546,28 +639,6 @@
     }
   ],
   "unused_pilots": [
-    {
-      "pilot_key": "kaschke_henning",
-      "vorname": "Henning",
-      "nachname": "Kaschke",
-      "pilot_name": "Kaschke, Henning",
-      "abteilungszeit": "2026-05-04 11:14",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 5,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "FAIRPLAY 38",
-      "from": "HOR",
-      "to": "RÜB",
-      "nr": 5,
-      "raw_time": "Mon May 04 11:14:00 CEST 2026",
-      "current_ship_name": "FAIRPLAY 38",
-      "current_ship_eta_rueb": "2026-05-04 16:08",
-      "current_ship_q": 0,
-      "current_ship_route": "HOR → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
-    },
     {
       "pilot_key": "röhrs_johannes",
       "vorname": "Johannes",
