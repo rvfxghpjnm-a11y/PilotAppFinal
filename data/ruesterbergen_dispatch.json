@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-05T14:03:09",
+  "generated_at": "2026-05-05T14:05:10",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 4,
     "pilots_total": 10,
-    "pilots_dispatchable": 9,
-    "pilots_visible_only": 1,
+    "pilots_dispatchable": 10,
+    "pilots_visible_only": 0,
     "assignments": 4,
     "unassigned_ships": 0,
-    "unused_pilots": 5
+    "unused_pilots": 6
   },
   "ships": [
     {
@@ -320,7 +320,7 @@
       "nr": 6,
       "raw_time": "Tue May 05 10:25:00 CEST 2026",
       "current_ship_name": "X-PRESS AGILITY",
-      "current_ship_eta_rueb": "2026-05-05 15:22",
+      "current_ship_eta_rueb": "2026-05-05 15:21",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -408,6 +408,7 @@
       "nr": 1,
       "raw_time": "Tue May 05 13:30:00 CEST 2026",
       "current_ship_name": "BOKA FALCON",
+      "current_ship_eta_rueb": "2026-05-05 17:33",
       "current_ship_q": 0,
       "current_ship_route": "UTG → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -541,7 +542,7 @@
       "nr": 6,
       "raw_time": "Tue May 05 10:25:00 CEST 2026",
       "current_ship_name": "X-PRESS AGILITY",
-      "current_ship_eta_rueb": "2026-05-05 15:22",
+      "current_ship_eta_rueb": "2026-05-05 15:21",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -612,25 +613,31 @@
       "current_ship_route": "HOS → KLT",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
-    }
-  ],
-  "visible_but_not_dispatchable_pilots": [
+    },
     {
       "pilot_key": "hoffmann_heiko",
+      "vorname": "Heiko",
+      "nachname": "Hoffmann",
       "pilot_name": "Hoffmann, Heiko",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 1,
       "abteilungszeit": "2026-05-05 13:30",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 1,
       "aufgabe": "Kanalbört",
       "fahrzeug": "BOKA FALCON",
       "from": "UTG",
       "to": "RÜB",
+      "nr": 1,
+      "raw_time": "Tue May 05 13:30:00 CEST 2026",
       "current_ship_name": "BOKA FALCON",
+      "current_ship_eta_rueb": "2026-05-05 17:33",
+      "current_ship_q": 0,
+      "current_ship_route": "UTG → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
+      "availability_kind": "merged_eta"
     }
   ],
+  "visible_but_not_dispatchable_pilots": [],
   "assignments": [
     {
       "ship_key": "RIX TERRA",
@@ -722,7 +729,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "X-PRESS AGILITY",
-          "current_ship_eta_rueb": "2026-05-05 15:22",
+          "current_ship_eta_rueb": "2026-05-05 15:21",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -763,6 +770,17 @@
           "current_ship_name": "STAV VIKING",
           "current_ship_eta_rueb": "2026-05-05 09:43",
           "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Hoffmann, Heiko",
+          "pilot_tactical_nr": 1,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "BOKA FALCON",
+          "pilot_current_ship_eta_rueb": "2026-05-05 17:33",
+          "ship_eta_rueb": "2026-05-05 16:22",
           "availability_kind": "merged_eta"
         }
       ],
@@ -864,7 +882,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "X-PRESS AGILITY",
-          "current_ship_eta_rueb": "2026-05-05 15:22",
+          "current_ship_eta_rueb": "2026-05-05 15:21",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -915,6 +933,15 @@
           "reason": "Quali passt nicht (5 > 4)",
           "pilot_q": 5,
           "ship_q": 4
+        },
+        {
+          "pilot_name": "Hoffmann, Heiko",
+          "pilot_tactical_nr": 1,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "BOKA FALCON",
+          "pilot_current_ship_eta_rueb": "2026-05-05 17:33",
+          "ship_eta_rueb": "2026-05-05 16:25",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -961,7 +988,7 @@
       "assigned_tactical_nr": 6,
       "assigned_abteilungszeit": "2026-05-05 10:25",
       "assigned_current_ship_name": "X-PRESS AGILITY",
-      "assigned_current_ship_eta_rueb": "2026-05-05 15:22",
+      "assigned_current_ship_eta_rueb": "2026-05-05 15:21",
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
@@ -976,7 +1003,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "X-PRESS AGILITY",
-          "current_ship_eta_rueb": "2026-05-05 15:22",
+          "current_ship_eta_rueb": "2026-05-05 15:21",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1041,6 +1068,15 @@
           "reason": "Quali passt nicht (3 > 1)",
           "pilot_q": 3,
           "ship_q": 1
+        },
+        {
+          "pilot_name": "Hoffmann, Heiko",
+          "pilot_tactical_nr": 1,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "BOKA FALCON",
+          "pilot_current_ship_eta_rueb": "2026-05-05 17:33",
+          "ship_eta_rueb": "2026-05-05 16:28",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -1091,7 +1127,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 6,
+      "candidate_count": 7,
       "candidates": [
         {
           "pilot_name": "Groen, Nickolaj",
@@ -1168,6 +1204,19 @@
           "aufgabe": "Seebört",
           "current_ship_name": "STAV VIKING",
           "current_ship_eta_rueb": "2026-05-05 09:43",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Hoffmann, Heiko",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 1,
+          "abteilungszeit": "2026-05-05 13:30",
+          "fahrzeug": "BOKA FALCON",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "BOKA FALCON",
+          "current_ship_eta_rueb": "2026-05-05 17:33",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
@@ -1315,6 +1364,28 @@
       "current_ship_eta_rueb": "2026-05-05 09:43",
       "current_ship_q": 0,
       "current_ship_route": "HOS → KLT",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "hoffmann_heiko",
+      "vorname": "Heiko",
+      "nachname": "Hoffmann",
+      "pilot_name": "Hoffmann, Heiko",
+      "abteilungszeit": "2026-05-05 13:30",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 1,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "BOKA FALCON",
+      "from": "UTG",
+      "to": "RÜB",
+      "nr": 1,
+      "raw_time": "Tue May 05 13:30:00 CEST 2026",
+      "current_ship_name": "BOKA FALCON",
+      "current_ship_eta_rueb": "2026-05-05 17:33",
+      "current_ship_q": 0,
+      "current_ship_route": "UTG → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     }
