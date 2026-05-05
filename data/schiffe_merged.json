@@ -1,47 +1,47 @@
 {
-  "generated_at": "2026-05-05T11:43:09",
+  "generated_at": "2026-05-05T11:45:16",
   "source_meta": {
     "zulauf_kiel_innen": {
       "file": "Zulauf_kiel_innen.json",
-      "generated_at": "2026-05-05 11:42",
+      "generated_at": "2026-05-05 11:44",
       "queue": "kiel_innen",
       "title": "Zulauf vom Kanal in Kiel",
       "count": 10
     },
     "zulauf_kiel_aussen": {
       "file": "Zulauf_kiel_aussen.json",
-      "generated_at": "2026-05-05 11:42",
+      "generated_at": "2026-05-05 11:44",
       "queue": "kiel_aussen",
       "title": "Zulauf von See in Kiel",
       "count": 0
     },
     "zulauf_brb_innen": {
       "file": "Zulauf_brb_innen.json",
-      "generated_at": "2026-05-05 11:42",
+      "generated_at": "2026-05-05 11:44",
       "queue": "brb_innen",
       "title": "Zulauf vom Kanal in Brunsbüttel",
-      "count": 9
+      "count": 11
     },
     "zulauf_brb_aussen": {
       "file": "Zulauf_brb_aussen.json",
-      "generated_at": "2026-05-05 11:42",
+      "generated_at": "2026-05-05 11:44",
       "queue": "brb_aussen",
       "title": "Zulauf von See in Brunsbüttel",
       "count": 9
     },
     "meldungen_kiel": {
       "file": "Meldungen_Kiel.json",
-      "generated_at": "2026-05-05 11:42",
-      "count": 42
+      "generated_at": "2026-05-05 11:44",
+      "count": 44
     },
     "meldungen_ruesterbergen": {
       "file": "Meldungen_Ruesterbergen.json",
-      "generated_at": "2026-05-05 11:42",
-      "count": 1
+      "generated_at": "2026-05-05 11:44",
+      "count": 3
     },
     "seelotsen": {
       "file": "Seelotsen.json",
-      "generated_at": "2026-05-05 11:42",
+      "generated_at": "2026-05-05 11:44",
       "count": 13
     }
   },
@@ -51,6 +51,8 @@
       "ship_key": "ANNALISA P",
       "name": "ANNALISA P",
       "sources": [
+        "meldungen_kiel",
+        "meldungen_ruesterbergen",
         "zulauf_kiel_innen"
       ],
       "special_entry": false,
@@ -58,7 +60,14 @@
         "name": "ANNALISA P",
         "special_entry": false,
         "sources": [
+          "meldungen_kiel",
+          "meldungen_ruesterbergen",
           "zulauf_kiel_innen"
+        ],
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS"
         ],
         "eta_rueb": "2026-05-05 16:30",
         "eta_schleuse": "2026-05-05 20:04",
@@ -71,6 +80,7 @@
         "area": "kiel",
         "zulauf_richtung": "vom_kanal",
         "vg": "5",
+        "q_gruppe": "1",
         "draft": "9.10",
         "length_m": "166.15",
         "beam_m": "25.26",
@@ -105,6 +115,8 @@
         "dangerous_vessel": "-",
         "port_of_departure": "DE HAM (HBG)",
         "port_of_destination": "PL GDY",
+        "lotsen_anzahl_kiel": 1,
+        "confirmed_kiel": false,
         "passage_block": {
           "start_text": "Brunsbüttel Schleuse Brb.",
           "start_0": "Brunsbüttel",
@@ -333,8 +345,34 @@
           "source": "zulauf_kiel_innen"
         }
       ],
-      "meldungen_kiel": [],
-      "meldungen_ruesterbergen": [],
+      "meldungen_kiel": [
+        {
+          "source": "meldungen_kiel",
+          "nr": "16",
+          "time": "2026-05-05 19:55",
+          "draft": "9.1",
+          "q_gruppe": "1",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "HOS",
+          "to": "KLT",
+          "route": "HOS → KLT"
+        }
+      ],
+      "meldungen_ruesterbergen": [
+        {
+          "source": "meldungen_ruesterbergen",
+          "nr": "3",
+          "time": "2026-05-05 16:10",
+          "draft": "9.1",
+          "q_gruppe": "1",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS",
+          "route": "RÜB → HOS"
+        }
+      ],
       "seelotsen": []
     },
     {
@@ -840,6 +878,8 @@
       "ship_key": "CLIO",
       "name": "CLIO",
       "sources": [
+        "meldungen_kiel",
+        "meldungen_ruesterbergen",
         "zulauf_kiel_innen"
       ],
       "special_entry": false,
@@ -847,7 +887,14 @@
         "name": "CLIO",
         "special_entry": false,
         "sources": [
+          "meldungen_kiel",
+          "meldungen_ruesterbergen",
           "zulauf_kiel_innen"
+        ],
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS"
         ],
         "eta_rueb": "2026-05-05 16:27",
         "eta_schleuse": "2026-05-05 20:00",
@@ -860,6 +907,7 @@
         "area": "kiel",
         "zulauf_richtung": "vom_kanal",
         "vg": "3",
+        "q_gruppe": "4",
         "draft": "3.20",
         "length_m": "100.26",
         "beam_m": "13.900",
@@ -892,6 +940,8 @@
         "dangerous_vessel": "-",
         "port_of_departure": "NL HAR",
         "port_of_destination": "DK NYB",
+        "lotsen_anzahl_kiel": 1,
+        "confirmed_kiel": false,
         "passage_block": {
           "start_text": "Brunsbüttel Schleuse Brb.",
           "start_0": "Brunsbüttel",
@@ -1109,8 +1159,34 @@
           "source": "zulauf_kiel_innen"
         }
       ],
-      "meldungen_kiel": [],
-      "meldungen_ruesterbergen": [],
+      "meldungen_kiel": [
+        {
+          "source": "meldungen_kiel",
+          "nr": "15",
+          "time": "2026-05-05 19:50",
+          "draft": "3.2",
+          "q_gruppe": "4",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "HOS",
+          "to": "KLT",
+          "route": "HOS → KLT"
+        }
+      ],
+      "meldungen_ruesterbergen": [
+        {
+          "source": "meldungen_ruesterbergen",
+          "nr": "2",
+          "time": "2026-05-05 16:05",
+          "draft": "3.2",
+          "q_gruppe": "4",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS",
+          "route": "RÜB → HOS"
+        }
+      ],
       "seelotsen": []
     },
     {
@@ -1126,8 +1202,8 @@
         "sources": [
           "zulauf_brb_aussen"
         ],
-        "eta_schleuse": "2026-05-05 12:31",
-        "eta_text": "12:31",
+        "eta_schleuse": "2026-05-05 12:34",
+        "eta_text": "12:34",
         "first_seen": "2026-05-05 06:06",
         "queue_key": "brb_aussen",
         "queue_title": "Zulauf von See in Brunsbüttel",
@@ -1193,7 +1269,7 @@
       "zulauf": [
         {
           "name": "COE GISELA",
-          "eta_schleuse": "2026-05-05 12:31",
+          "eta_schleuse": "2026-05-05 12:34",
           "first_seen": "2026-05-05 06:06",
           "ship_name": "COE GISELA",
           "vg": "2",
@@ -1204,7 +1280,7 @@
           "queue_title": "Zulauf von See in Brunsbüttel",
           "area": "brb",
           "zulauf_richtung": "von_see",
-          "eta_text": "12:31",
+          "eta_text": "12:34",
           "preferred_mooring_side": "Bb",
           "vessel_type": "Trocken-Mz-Frachter",
           "travel_status": "APPROACHING_NOK_BRB",
@@ -1280,7 +1356,7 @@
       "meldungen_kiel": [
         {
           "source": "meldungen_kiel",
-          "nr": "34",
+          "nr": "36",
           "time": "2026-05-06 08:35",
           "draft": "6.8",
           "q_gruppe": "0",
@@ -1321,7 +1397,7 @@
       "meldungen_kiel": [
         {
           "source": "meldungen_kiel",
-          "nr": "21",
+          "nr": "23",
           "time": "2026-05-05 23:30",
           "draft": "5.0",
           "q_gruppe": "1",
@@ -1333,7 +1409,7 @@
         },
         {
           "source": "meldungen_kiel",
-          "nr": "25",
+          "nr": "27",
           "time": "2026-05-06 00:30",
           "draft": "5.0",
           "q_gruppe": "1",
@@ -1757,7 +1833,7 @@
       "meldungen_kiel": [
         {
           "source": "meldungen_kiel",
-          "nr": "30",
+          "nr": "32",
           "time": "2026-05-06 04:00",
           "draft": "0.1",
           "q_gruppe": "5",
@@ -2228,7 +2304,7 @@
       "meldungen_kiel": [
         {
           "source": "meldungen_kiel",
-          "nr": "22",
+          "nr": "24",
           "time": "2026-05-05 23:59",
           "draft": "1.0",
           "q_gruppe": "0",
@@ -2241,7 +2317,7 @@
         },
         {
           "source": "meldungen_kiel",
-          "nr": "26",
+          "nr": "28",
           "time": "2026-05-06 00:59",
           "draft": "1.0",
           "q_gruppe": "0",
@@ -2269,8 +2345,8 @@
         "sources": [
           "zulauf_brb_aussen"
         ],
-        "eta_schleuse": "2026-05-05 12:08",
-        "eta_text": "12:08",
+        "eta_schleuse": "2026-05-05 13:47",
+        "eta_text": "13:47",
         "first_seen": "2026-05-05 07:26",
         "queue_key": "brb_aussen",
         "queue_title": "Zulauf von See in Brunsbüttel",
@@ -2388,7 +2464,7 @@
       "zulauf": [
         {
           "name": "EVER VIGOROUS",
-          "eta_schleuse": "2026-05-05 12:08",
+          "eta_schleuse": "2026-05-05 13:47",
           "first_seen": "2026-05-05 07:26",
           "ship_name": "EVER VIGOROUS",
           "vg": "5",
@@ -2402,7 +2478,7 @@
           "pilot_required": "true",
           "pilot_foerde": "true",
           "pilot_order": "KS-NOK-ESEE-KF",
-          "eta_text": "12:08",
+          "eta_text": "13:47",
           "destination": "Kiel",
           "makler": "UCA",
           "vessel_type": "Chemie",
@@ -2525,7 +2601,7 @@
       "meldungen_kiel": [
         {
           "source": "meldungen_kiel",
-          "nr": "39",
+          "nr": "41",
           "time": "2026-05-06 10:00",
           "draft": "1.0",
           "q_gruppe": "5",
@@ -2692,7 +2768,7 @@
       "meldungen_kiel": [
         {
           "source": "meldungen_kiel",
-          "nr": "31",
+          "nr": "33",
           "time": "2026-05-06 05:00",
           "draft": "5.2",
           "q_gruppe": "5",
@@ -2733,7 +2809,7 @@
       "meldungen_kiel": [
         {
           "source": "meldungen_kiel",
-          "nr": "35",
+          "nr": "37",
           "time": "2026-05-06 09:00",
           "draft": "5.2",
           "q_gruppe": "5",
@@ -2745,7 +2821,7 @@
         },
         {
           "source": "meldungen_kiel",
-          "nr": "38",
+          "nr": "40",
           "time": "2026-05-06 10:00",
           "draft": "5.2",
           "q_gruppe": "5",
@@ -2786,7 +2862,7 @@
       "meldungen_kiel": [
         {
           "source": "meldungen_kiel",
-          "nr": "32",
+          "nr": "34",
           "time": "2026-05-06 06:00",
           "draft": "1.42",
           "q_gruppe": "0",
@@ -2815,10 +2891,10 @@
           "zulauf_brb_innen"
         ],
         "eta_rueb": "2026-05-05 08:04",
-        "eta_schleuse": "2026-05-05 12:49",
-        "eta_text": "12:49",
+        "eta_schleuse": "2026-05-05 12:50",
+        "eta_text": "12:50",
         "first_seen": "2026-05-05 04:44",
-        "delta_rueb_schleuse": "04:45",
+        "delta_rueb_schleuse": "04:47",
         "delta_start_rueb": "03:20",
         "queue_key": "brb_innen",
         "queue_title": "Zulauf vom Kanal in Brunsbüttel",
@@ -3016,10 +3092,10 @@
       "zulauf": [
         {
           "name": "HAV NORDIC",
-          "eta_schleuse": "2026-05-05 12:49",
+          "eta_schleuse": "2026-05-05 12:50",
           "eta_rueb": "2026-05-05 08:04",
           "first_seen": "2026-05-05 04:44",
-          "delta_rueb_schleuse": "04:45",
+          "delta_rueb_schleuse": "04:47",
           "delta_start_rueb": "03:20",
           "ship_name": "HAV NORDIC",
           "vg": "3",
@@ -3033,7 +3109,7 @@
           "pilot_required": "true",
           "pilot_foerde": "false",
           "pilot_order": "KS-NOK",
-          "eta_text": "12:49",
+          "eta_text": "12:50",
           "destination": "Brunsbüttel",
           "makler": "UCA",
           "preferred_mooring_side": "Bb",
@@ -4420,8 +4496,8 @@
         "sources": [
           "zulauf_brb_aussen"
         ],
-        "eta_schleuse": "2026-05-05 12:10",
-        "eta_text": "12:10",
+        "eta_schleuse": "2026-05-05 12:08",
+        "eta_text": "12:08",
         "first_seen": "2026-05-05 08:40",
         "queue_key": "brb_aussen",
         "queue_title": "Zulauf von See in Brunsbüttel",
@@ -4477,7 +4553,7 @@
       "zulauf": [
         {
           "name": "KARIN",
-          "eta_schleuse": "2026-05-05 12:10",
+          "eta_schleuse": "2026-05-05 12:08",
           "first_seen": "2026-05-05 08:40",
           "ship_name": "KARIN",
           "vg": "1",
@@ -4488,7 +4564,7 @@
           "queue_title": "Zulauf von See in Brunsbüttel",
           "area": "brb",
           "zulauf_richtung": "von_see",
-          "eta_text": "12:10",
+          "eta_text": "12:08",
           "preferred_mooring_side": "Bb",
           "vessel_type": "Spezial-Fz",
           "travel_status": "APPROACHING_NOK_BRB",
@@ -4557,7 +4633,7 @@
       "meldungen_kiel": [
         {
           "source": "meldungen_kiel",
-          "nr": "18",
+          "nr": "20",
           "time": "2026-05-05 23:00",
           "draft": "7.7",
           "q_gruppe": "4",
@@ -4569,7 +4645,7 @@
         },
         {
           "source": "meldungen_kiel",
-          "nr": "23",
+          "nr": "25",
           "time": "2026-05-06 00:00",
           "draft": "7.7",
           "q_gruppe": "4",
@@ -4610,7 +4686,7 @@
       "meldungen_kiel": [
         {
           "source": "meldungen_kiel",
-          "nr": "19",
+          "nr": "21",
           "time": "2026-05-05 23:00",
           "draft": "5.3",
           "q_gruppe": "3",
@@ -4622,7 +4698,7 @@
         },
         {
           "source": "meldungen_kiel",
-          "nr": "24",
+          "nr": "26",
           "time": "2026-05-06 00:00",
           "draft": "5.3",
           "q_gruppe": "3",
@@ -4705,7 +4781,7 @@
       "meldungen_kiel": [
         {
           "source": "meldungen_kiel",
-          "nr": "17",
+          "nr": "19",
           "time": "2026-05-05 22:00",
           "draft": "8.4",
           "q_gruppe": "3",
@@ -4717,7 +4793,7 @@
         },
         {
           "source": "meldungen_kiel",
-          "nr": "20",
+          "nr": "22",
           "time": "2026-05-05 23:00",
           "draft": "8.4",
           "q_gruppe": "3",
@@ -4735,27 +4811,318 @@
       "ship_key": "MARIE LEHMANN",
       "name": "MARIE LEHMANN",
       "sources": [
-        "seelotsen"
+        "seelotsen",
+        "zulauf_brb_innen"
       ],
       "special_entry": false,
       "summary": {
         "name": "MARIE LEHMANN",
         "special_entry": false,
         "sources": [
-          "seelotsen"
+          "seelotsen",
+          "zulauf_brb_innen"
         ],
         "route": "HOS → RÜB",
         "routes": [
           "HOS → RÜB"
         ],
+        "eta_schleuse": "2286-11-20 18:46",
+        "eta_text": "-",
+        "first_seen": "2026-05-05 11:44",
+        "queue_key": "brb_innen",
+        "queue_title": "Zulauf vom Kanal in Brunsbüttel",
+        "area": "brb",
+        "zulauf_richtung": "vom_kanal",
+        "vg": "3",
+        "draft": "5.90",
+        "length_m": "107.23",
+        "beam_m": "15.2",
+        "vessel_type": "Trocken-Mz-Frachter",
+        "seagoing_or_inland_vessel": "Seeschiff",
+        "shipowner": "Orion Shipping Co.",
+        "callsign": "V2IB7",
+        "imo": "9728772",
+        "mmsi": "304957000",
+        "country_name": "Antigua und Barbuda",
+        "port_of_registry": "St Petersburg",
+        "pilot_required": "true",
+        "pilot_foerde": "true",
+        "pilot_order": "KS-NOK-ESEE-KF",
+        "pilot_status": "U",
+        "pilot_1_name": "Engler, Sören",
+        "num_of_pilots": "1",
+        "canal_steerer_required": "true",
+        "num_of_steerer": "1",
+        "steerer_1_name": "Ramm",
+        "steerer_2_name": "noch nicht bekannt",
+        "travel_direction": "Elbe",
+        "travel_status": "SAILING_NOK",
+        "passage_start": "Kiel Schleuse Kiel",
+        "passage_destination": "Brunsbüttel Schleuse Brb.",
+        "destination": "Brunsbüttel",
+        "mooring_area": "Schleuse Brb.",
+        "mooring_place_short": "Schleuse Brb.",
+        "mooring_section": "Brunsbüttel",
+        "preferred_mooring_side": "Bb",
+        "makler": "NIK",
+        "payer": "Reederei Lehmann GmbH & Co. KG",
+        "type_of_loading": "Bulk",
+        "dangerous_vessel": "-",
+        "port_of_departure": "FI RAA",
+        "port_of_destination": "NL SCI",
         "assigned_pilots": [
           "Engler, Sören"
         ],
         "aufgaben": [
           "Kanalbört"
-        ]
+        ],
+        "passage_block": {
+          "start_text": "Kiel Schleuse Kiel",
+          "start_0": "Kiel",
+          "start_1": "Schleuse Kiel",
+          "destination_text": "Brunsbüttel Schleuse Brb.",
+          "destination_0": "Brunsbüttel",
+          "destination_1": "Schleuse Brb.",
+          "passage_start_raw": "DE - / NOK_KIEL",
+          "passage_destination_raw": "DE - / NOK_BRB",
+          "destination_km": "1.700",
+          "passage_cleared": "true",
+          "passage_created": "2026-05-05 11:03",
+          "passage_creator": "GDWS",
+          "entry_time": "11:44"
+        },
+        "mooring_block": {
+          "area": "Schleuse Brb.",
+          "place_full": "Brunsbüttel##Schleuse Brb.",
+          "place_short": "Schleuse Brb.",
+          "section": "Brunsbüttel",
+          "place_km": "1.700",
+          "number_of_moorings": "2",
+          "preferred_side": "Bb"
+        },
+        "voyage_info_block": {
+          "travel_direction": "Elbe",
+          "travel_status": "SAILING_NOK",
+          "type_of_loading": "Bulk",
+          "dangerous_vessel": "-",
+          "port_of_departure": "FI RAA",
+          "port_of_destination": "NL SCI",
+          "pilot_status": "U",
+          "smooth_passage": "true",
+          "complete_passage": "true",
+          "free_passage": "false",
+          "via_nok": "true"
+        },
+        "pilotage_block": {
+          "pilot_required": "true",
+          "pilot_foerde": "true",
+          "pilot_order": "KS-NOK-ESEE-KF",
+          "pilot_status": "U",
+          "num_of_pilots": "1",
+          "num_of_pilots_kf": "1",
+          "pilot_elbe_see": "true",
+          "pilot_nok": "true",
+          "pilot_ostsee": "false",
+          "pilot_uebersee": "false",
+          "pilot_boesch": "false",
+          "pilot_1_id": "449884805023000081",
+          "pilot_1_name": "Engler, Sören"
+        },
+        "steering_block": {
+          "canal_steerer": "true",
+          "steerer_required": "true",
+          "num_of_steerer": "1",
+          "freifahrer_kanalsteurer": "false",
+          "steerer_1_id": "369392407348000081",
+          "steerer_1_name": "Ramm",
+          "steerer_2_id": "369502408536000082",
+          "steerer_2_name": "noch nicht bekannt",
+          "steerers": [
+            {
+              "slot": "steerer_1",
+              "id": "369392407348000081",
+              "name": "Ramm",
+              "time_done": "2022-03-16 02:00",
+              "time_cached": "2026-04-27 10:33"
+            },
+            {
+              "slot": "steerer_2",
+              "id": "369502408536000082",
+              "name": "noch nicht bekannt",
+              "time_done": "2022-03-17 08:33",
+              "time_cached": "2026-04-27 10:33"
+            }
+          ]
+        },
+        "vessel_info_block": {
+          "vessel_type": "Trocken-Mz-Frachter",
+          "seagoing_or_inland_vessel": "Seeschiff",
+          "shipowner": "Orion Shipping Co.",
+          "callsign": "V2IB7",
+          "imo": "9728772",
+          "mmsi": "304957000",
+          "country_name": "Antigua und Barbuda",
+          "port_of_registry": "St Petersburg",
+          "engine_type": "Dieselmotor",
+          "engine_power": "1600",
+          "construction_draught": "5.130",
+          "number_of_props": "1",
+          "bow_thruster": "true",
+          "stern_thruster": "false",
+          "verified": "1773129265194",
+          "year_of_construction": "2025"
+        },
+        "billing_block": {
+          "makler": "NIK",
+          "payer": "Reederei Lehmann GmbH & Co. KG",
+          "invoice_city": "Lübeck",
+          "invoice_nationality": "Deutschland",
+          "invoice_postcode": "23569",
+          "invoice_street": "Seelandstrasse 15"
+        }
       },
-      "zulauf": [],
+      "zulauf": [
+        {
+          "name": "MARIE LEHMANN",
+          "eta_schleuse": "2286-11-20 18:46",
+          "first_seen": "2026-05-05 11:44",
+          "ship_name": "MARIE LEHMANN",
+          "vg": "3",
+          "length_m": "107.23",
+          "beam_m": "15.2",
+          "draft_m": "5.90",
+          "queue_key": "brb_innen",
+          "queue_title": "Zulauf vom Kanal in Brunsbüttel",
+          "area": "brb",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_foerde": "true",
+          "pilot_order": "KS-NOK-ESEE-KF",
+          "eta_text": "-",
+          "destination": "Brunsbüttel",
+          "makler": "NIK",
+          "preferred_mooring_side": "Bb",
+          "pilot_1_name": "Engler, Sören",
+          "steerer_1_name": "Ramm",
+          "steerer_2_name": "noch nicht bekannt",
+          "vessel_type": "Trocken-Mz-Frachter",
+          "travel_direction": "Elbe",
+          "travel_status": "SAILING_NOK",
+          "mooring_area": "Schleuse Brb.",
+          "mooring_place_short": "Schleuse Brb.",
+          "passage_start": "Kiel Schleuse Kiel",
+          "passage_destination": "Brunsbüttel Schleuse Brb.",
+          "canal_steerer_required": "true",
+          "num_of_steerer": "1",
+          "num_of_pilots": "1",
+          "pilot_status": "U",
+          "passage": {
+            "start_text": "Kiel Schleuse Kiel",
+            "start_0": "Kiel",
+            "start_1": "Schleuse Kiel",
+            "destination_text": "Brunsbüttel Schleuse Brb.",
+            "destination_0": "Brunsbüttel",
+            "destination_1": "Schleuse Brb.",
+            "passage_start_raw": "DE - / NOK_KIEL",
+            "passage_destination_raw": "DE - / NOK_BRB",
+            "destination_km": "1.700",
+            "passage_cleared": "true",
+            "passage_created": "2026-05-05 11:03",
+            "passage_creator": "GDWS",
+            "entry_time": "11:44"
+          },
+          "mooring": {
+            "area": "Schleuse Brb.",
+            "place_full": "Brunsbüttel##Schleuse Brb.",
+            "place_short": "Schleuse Brb.",
+            "section": "Brunsbüttel",
+            "place_km": "1.700",
+            "number_of_moorings": "2",
+            "preferred_side": "Bb"
+          },
+          "voyage_info": {
+            "travel_direction": "Elbe",
+            "travel_status": "SAILING_NOK",
+            "type_of_loading": "Bulk",
+            "dangerous_vessel": "-",
+            "port_of_departure": "FI RAA",
+            "port_of_destination": "NL SCI",
+            "pilot_status": "U",
+            "smooth_passage": "true",
+            "complete_passage": "true",
+            "free_passage": "false",
+            "via_nok": "true"
+          },
+          "pilotage": {
+            "pilot_required": "true",
+            "pilot_foerde": "true",
+            "pilot_order": "KS-NOK-ESEE-KF",
+            "pilot_status": "U",
+            "num_of_pilots": "1",
+            "num_of_pilots_kf": "1",
+            "pilot_elbe_see": "true",
+            "pilot_nok": "true",
+            "pilot_ostsee": "false",
+            "pilot_uebersee": "false",
+            "pilot_boesch": "false",
+            "pilot_1_id": "449884805023000081",
+            "pilot_1_name": "Engler, Sören"
+          },
+          "steering": {
+            "canal_steerer": "true",
+            "steerer_required": "true",
+            "num_of_steerer": "1",
+            "freifahrer_kanalsteurer": "false",
+            "steerer_1_id": "369392407348000081",
+            "steerer_1_name": "Ramm",
+            "steerer_2_id": "369502408536000082",
+            "steerer_2_name": "noch nicht bekannt",
+            "steerers": [
+              {
+                "slot": "steerer_1",
+                "id": "369392407348000081",
+                "name": "Ramm",
+                "time_done": "2022-03-16 02:00",
+                "time_cached": "2026-04-27 10:33"
+              },
+              {
+                "slot": "steerer_2",
+                "id": "369502408536000082",
+                "name": "noch nicht bekannt",
+                "time_done": "2022-03-17 08:33",
+                "time_cached": "2026-04-27 10:33"
+              }
+            ]
+          },
+          "vessel_info": {
+            "vessel_type": "Trocken-Mz-Frachter",
+            "seagoing_or_inland_vessel": "Seeschiff",
+            "shipowner": "Orion Shipping Co.",
+            "callsign": "V2IB7",
+            "imo": "9728772",
+            "mmsi": "304957000",
+            "country_name": "Antigua und Barbuda",
+            "port_of_registry": "St Petersburg",
+            "engine_type": "Dieselmotor",
+            "engine_power": "1600",
+            "construction_draught": "5.130",
+            "number_of_props": "1",
+            "bow_thruster": "true",
+            "stern_thruster": "false",
+            "verified": "1773129265194",
+            "year_of_construction": "2025"
+          },
+          "billing": {
+            "makler": "NIK",
+            "payer": "Reederei Lehmann GmbH & Co. KG",
+            "invoice_city": "Lübeck",
+            "invoice_nationality": "Deutschland",
+            "invoice_postcode": "23569",
+            "invoice_street": "Seelandstrasse 15"
+          },
+          "source": "zulauf_brb_innen"
+        }
+      ],
       "meldungen_kiel": [],
       "meldungen_ruesterbergen": [],
       "seelotsen": [
@@ -5140,7 +5507,7 @@
       "meldungen_kiel": [
         {
           "source": "meldungen_kiel",
-          "nr": "33",
+          "nr": "35",
           "time": "2026-05-06 08:00",
           "draft": "5.0",
           "q_gruppe": "5",
@@ -5152,7 +5519,7 @@
         },
         {
           "source": "meldungen_kiel",
-          "nr": "36",
+          "nr": "38",
           "time": "2026-05-06 09:00",
           "draft": "5.0",
           "q_gruppe": "5",
@@ -5562,7 +5929,7 @@
       "meldungen_kiel": [
         {
           "source": "meldungen_kiel",
-          "nr": "40",
+          "nr": "42",
           "time": "2026-05-06 11:00",
           "draft": "5.5",
           "q_gruppe": "4",
@@ -6786,27 +7153,272 @@
       "ship_key": "RIX STAR",
       "name": "RIX STAR",
       "sources": [
-        "seelotsen"
+        "seelotsen",
+        "zulauf_brb_innen"
       ],
       "special_entry": false,
       "summary": {
         "name": "RIX STAR",
         "special_entry": false,
         "sources": [
-          "seelotsen"
+          "seelotsen",
+          "zulauf_brb_innen"
         ],
         "route": "HOR → RÜB",
         "routes": [
           "HOR → RÜB"
         ],
+        "eta_schleuse": "2286-11-20 18:46",
+        "eta_text": "-",
+        "first_seen": "2026-05-05 11:44",
+        "queue_key": "brb_innen",
+        "queue_title": "Zulauf vom Kanal in Brunsbüttel",
+        "area": "brb",
+        "zulauf_richtung": "vom_kanal",
+        "vg": "3",
+        "draft": "5.50",
+        "length_m": "87.85",
+        "beam_m": "12.800",
+        "vessel_type": "Trocken-Mz-Frachter",
+        "seagoing_or_inland_vessel": "Seeschiff",
+        "shipowner": "Rix Ship Management S.I.A.",
+        "callsign": "5BYE4",
+        "imo": "9006277",
+        "mmsi": "209239000",
+        "country_name": "Zypern",
+        "port_of_registry": "Limasol",
+        "pilot_required": "true",
+        "pilot_foerde": "false",
+        "pilot_order": "NOK",
+        "pilot_status": "H",
+        "pilot_1_name": "Wachsmuth, Martin",
+        "num_of_pilots": "1",
+        "canal_steerer_required": "false",
+        "travel_direction": "Elbe",
+        "travel_status": "SAILING_NOK",
+        "passage_start": "Kiel Schleuse Kiel",
+        "passage_destination": "Brunsbüttel Schleuse Brb.",
+        "destination": "Brunsbüttel",
+        "mooring_area": "Schleuse Brb.",
+        "mooring_place_short": "Schleuse Brb.",
+        "mooring_section": "Brunsbüttel",
+        "preferred_mooring_side": "Bb",
+        "makler": "NIK",
+        "payer": "Baltic Shipping Company",
+        "type_of_loading": "Bulk",
+        "dangerous_vessel": "-",
+        "port_of_departure": "SE LAA",
+        "port_of_destination": "DE HAM (HBG)",
         "assigned_pilots": [
           "Wachsmuth, Martin"
         ],
         "aufgaben": [
           "Kanalbört"
-        ]
+        ],
+        "passage_block": {
+          "start_text": "Kiel Schleuse Kiel",
+          "start_0": "Kiel",
+          "start_1": "Schleuse Kiel",
+          "destination_text": "Brunsbüttel Schleuse Brb.",
+          "destination_0": "Brunsbüttel",
+          "destination_1": "Schleuse Brb.",
+          "passage_start_raw": "DE - / NOK_KIEL",
+          "passage_destination_raw": "DE - / NOK_BRB",
+          "destination_km": "1.700",
+          "passage_cleared": "true",
+          "passage_created": "2026-05-05 11:14",
+          "passage_creator": "GDWS",
+          "entry_time": "11:44"
+        },
+        "mooring_block": {
+          "area": "Schleuse Brb.",
+          "place_full": "Brunsbüttel##Schleuse Brb.",
+          "place_short": "Schleuse Brb.",
+          "section": "Brunsbüttel",
+          "place_km": "1.700",
+          "number_of_moorings": "2",
+          "preferred_side": "Bb"
+        },
+        "voyage_info_block": {
+          "travel_direction": "Elbe",
+          "travel_status": "SAILING_NOK",
+          "type_of_loading": "Bulk",
+          "dangerous_vessel": "-",
+          "port_of_departure": "SE LAA",
+          "port_of_destination": "DE HAM (HBG)",
+          "pilot_status": "H",
+          "smooth_passage": "true",
+          "complete_passage": "true",
+          "free_passage": "false",
+          "via_nok": "true"
+        },
+        "pilotage_block": {
+          "pilot_required": "true",
+          "pilot_foerde": "false",
+          "pilot_order": "NOK",
+          "pilot_status": "H",
+          "num_of_pilots": "1",
+          "pilot_elbe_see": "false",
+          "pilot_nok": "true",
+          "pilot_ostsee": "false",
+          "pilot_uebersee": "false",
+          "pilot_boesch": "false",
+          "pilot_1_id": "478775413344000081",
+          "pilot_1_name": "Wachsmuth, Martin"
+        },
+        "steering_block": {
+          "canal_steerer": "false",
+          "steerer_required": "false",
+          "freifahrer_kanalsteurer": "false"
+        },
+        "vessel_info_block": {
+          "vessel_type": "Trocken-Mz-Frachter",
+          "seagoing_or_inland_vessel": "Seeschiff",
+          "shipowner": "Rix Ship Management S.I.A.",
+          "comment": "NOK: Selbstklarierer",
+          "callsign": "5BYE4",
+          "imo": "9006277",
+          "mmsi": "209239000",
+          "country_name": "Zypern",
+          "port_of_registry": "Limasol",
+          "engine_type": "Dieselmotor",
+          "engine_power": "1500",
+          "mast_height": "20.00",
+          "construction_draught": "5.46",
+          "number_of_props": "1",
+          "bow_thruster": "true",
+          "stern_thruster": "false",
+          "verified": "1765383775663",
+          "year_of_construction": "1991"
+        },
+        "billing_block": {
+          "makler": "NIK",
+          "payer": "Baltic Shipping Company",
+          "invoice_city": "Hundested / DK",
+          "invoice_nationality": "dänisch",
+          "invoice_postcode": "3390",
+          "invoice_street": "Ved Isefjorden 24 "
+        }
       },
-      "zulauf": [],
+      "zulauf": [
+        {
+          "name": "RIX STAR",
+          "eta_schleuse": "2286-11-20 18:46",
+          "first_seen": "2026-05-05 11:44",
+          "ship_name": "RIX STAR",
+          "vg": "3",
+          "length_m": "87.85",
+          "beam_m": "12.800",
+          "draft_m": "5.50",
+          "queue_key": "brb_innen",
+          "queue_title": "Zulauf vom Kanal in Brunsbüttel",
+          "area": "brb",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_foerde": "false",
+          "pilot_order": "NOK",
+          "eta_text": "-",
+          "destination": "Brunsbüttel",
+          "makler": "NIK",
+          "preferred_mooring_side": "Bb",
+          "pilot_1_name": "Wachsmuth, Martin",
+          "vessel_type": "Trocken-Mz-Frachter",
+          "travel_direction": "Elbe",
+          "travel_status": "SAILING_NOK",
+          "mooring_area": "Schleuse Brb.",
+          "mooring_place_short": "Schleuse Brb.",
+          "passage_start": "Kiel Schleuse Kiel",
+          "passage_destination": "Brunsbüttel Schleuse Brb.",
+          "canal_steerer_required": "false",
+          "num_of_pilots": "1",
+          "pilot_status": "H",
+          "passage": {
+            "start_text": "Kiel Schleuse Kiel",
+            "start_0": "Kiel",
+            "start_1": "Schleuse Kiel",
+            "destination_text": "Brunsbüttel Schleuse Brb.",
+            "destination_0": "Brunsbüttel",
+            "destination_1": "Schleuse Brb.",
+            "passage_start_raw": "DE - / NOK_KIEL",
+            "passage_destination_raw": "DE - / NOK_BRB",
+            "destination_km": "1.700",
+            "passage_cleared": "true",
+            "passage_created": "2026-05-05 11:14",
+            "passage_creator": "GDWS",
+            "entry_time": "11:44"
+          },
+          "mooring": {
+            "area": "Schleuse Brb.",
+            "place_full": "Brunsbüttel##Schleuse Brb.",
+            "place_short": "Schleuse Brb.",
+            "section": "Brunsbüttel",
+            "place_km": "1.700",
+            "number_of_moorings": "2",
+            "preferred_side": "Bb"
+          },
+          "voyage_info": {
+            "travel_direction": "Elbe",
+            "travel_status": "SAILING_NOK",
+            "type_of_loading": "Bulk",
+            "dangerous_vessel": "-",
+            "port_of_departure": "SE LAA",
+            "port_of_destination": "DE HAM (HBG)",
+            "pilot_status": "H",
+            "smooth_passage": "true",
+            "complete_passage": "true",
+            "free_passage": "false",
+            "via_nok": "true"
+          },
+          "pilotage": {
+            "pilot_required": "true",
+            "pilot_foerde": "false",
+            "pilot_order": "NOK",
+            "pilot_status": "H",
+            "num_of_pilots": "1",
+            "pilot_elbe_see": "false",
+            "pilot_nok": "true",
+            "pilot_ostsee": "false",
+            "pilot_uebersee": "false",
+            "pilot_boesch": "false",
+            "pilot_1_id": "478775413344000081",
+            "pilot_1_name": "Wachsmuth, Martin"
+          },
+          "steering": {
+            "canal_steerer": "false",
+            "steerer_required": "false",
+            "freifahrer_kanalsteurer": "false"
+          },
+          "vessel_info": {
+            "vessel_type": "Trocken-Mz-Frachter",
+            "seagoing_or_inland_vessel": "Seeschiff",
+            "shipowner": "Rix Ship Management S.I.A.",
+            "comment": "NOK: Selbstklarierer",
+            "callsign": "5BYE4",
+            "imo": "9006277",
+            "mmsi": "209239000",
+            "country_name": "Zypern",
+            "port_of_registry": "Limasol",
+            "engine_type": "Dieselmotor",
+            "engine_power": "1500",
+            "mast_height": "20.00",
+            "construction_draught": "5.46",
+            "number_of_props": "1",
+            "bow_thruster": "true",
+            "stern_thruster": "false",
+            "verified": "1765383775663",
+            "year_of_construction": "1991"
+          },
+          "billing": {
+            "makler": "NIK",
+            "payer": "Baltic Shipping Company",
+            "invoice_city": "Hundested / DK",
+            "invoice_nationality": "dänisch",
+            "invoice_postcode": "3390",
+            "invoice_street": "Ved Isefjorden 24 "
+          },
+          "source": "zulauf_brb_innen"
+        }
+      ],
       "meldungen_kiel": [],
       "meldungen_ruesterbergen": [],
       "seelotsen": [
@@ -7661,7 +8273,7 @@
         },
         {
           "source": "meldungen_kiel",
-          "nr": "16",
+          "nr": "18",
           "time": "2026-05-05 20:00",
           "draft": "6.5",
           "q_gruppe": "3",
@@ -7928,7 +8540,8 @@
               "out": "2026-05-05 10:32"
             },
             "audorf_rade": {
-              "in": "2026-05-05 11:10"
+              "in": "2026-05-05 11:10",
+              "out": "2026-05-05 11:41"
             }
           }
         }
@@ -7990,7 +8603,8 @@
                 "out": "2026-05-05 10:32"
               },
               "audorf_rade": {
-                "in": "2026-05-05 11:10"
+                "in": "2026-05-05 11:10",
+                "out": "2026-05-05 11:41"
               }
             }
           },
@@ -8152,7 +8766,7 @@
       "meldungen_kiel": [
         {
           "source": "meldungen_kiel",
-          "nr": "37",
+          "nr": "39",
           "time": "2026-05-06 10:00",
           "draft": "1.0",
           "q_gruppe": "4",
@@ -8164,7 +8778,7 @@
         },
         {
           "source": "meldungen_kiel",
-          "nr": "41",
+          "nr": "43",
           "time": "2026-05-06 11:00",
           "draft": "1.0",
           "q_gruppe": "4",
@@ -8656,7 +9270,7 @@
       "meldungen_kiel": [
         {
           "source": "meldungen_kiel",
-          "nr": "27",
+          "nr": "29",
           "time": "2026-05-06 02:00",
           "draft": "1.0",
           "q_gruppe": "4",
@@ -8668,7 +9282,7 @@
         },
         {
           "source": "meldungen_kiel",
-          "nr": "28",
+          "nr": "30",
           "time": "2026-05-06 03:00",
           "draft": "1.0",
           "q_gruppe": "4",
@@ -9151,8 +9765,8 @@
         "sources": [
           "zulauf_brb_aussen"
         ],
-        "eta_schleuse": "2026-05-05 12:30",
-        "eta_text": "12:30",
+        "eta_schleuse": "2026-05-05 12:09",
+        "eta_text": "12:09",
         "first_seen": "2026-05-05 08:40",
         "queue_key": "brb_aussen",
         "queue_title": "Zulauf von See in Brunsbüttel",
@@ -9209,7 +9823,7 @@
       "zulauf": [
         {
           "name": "TK 10 WAL",
-          "eta_schleuse": "2026-05-05 12:30",
+          "eta_schleuse": "2026-05-05 12:09",
           "first_seen": "2026-05-05 08:40",
           "ship_name": "TK 10 WAL",
           "length_m": "40.03",
@@ -9218,7 +9832,7 @@
           "queue_title": "Zulauf von See in Brunsbüttel",
           "area": "brb",
           "zulauf_richtung": "von_see",
-          "eta_text": "12:30",
+          "eta_text": "12:09",
           "preferred_mooring_side": "Beide",
           "vessel_type": "Spezial-Fz",
           "travel_status": "APPROACHING_NOK_BRB",
@@ -9289,7 +9903,7 @@
       "meldungen_kiel": [
         {
           "source": "meldungen_kiel",
-          "nr": "15",
+          "nr": "17",
           "time": "2026-05-05 20:00",
           "draft": "1.0",
           "q_gruppe": "0",
@@ -9391,7 +10005,7 @@
         },
         {
           "source": "meldungen_kiel",
-          "nr": "29",
+          "nr": "31",
           "time": "2026-05-06 03:00",
           "draft": "1.0",
           "q_gruppe": "5",
@@ -9403,7 +10017,7 @@
         },
         {
           "source": "meldungen_kiel",
-          "nr": "42",
+          "nr": "44",
           "time": "2026-05-06 11:00",
           "draft": "1.0",
           "q_gruppe": "5",
