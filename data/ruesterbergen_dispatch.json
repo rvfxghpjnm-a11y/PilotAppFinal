@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-05T11:19:04",
+  "generated_at": "2026-05-05T11:21:06",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,13 +32,13 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 1,
+    "ships_for_ruesterbergen": 2,
     "pilots_total": 8,
     "pilots_dispatchable": 5,
     "pilots_visible_only": 3,
-    "assignments": 1,
+    "assignments": 2,
     "unassigned_ships": 0,
-    "unused_pilots": 4
+    "unused_pilots": 3
   },
   "ships": [
     {
@@ -76,6 +76,44 @@
         "makler": "UCA",
         "dangerous_vessel": "-",
         "type_of_loading": "Container"
+      }
+    },
+    {
+      "ship_key": "RIX TERRA",
+      "ship_name": "RIX TERRA",
+      "eta_rueb": "2026-05-05 16:00",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 5,
+      "meldung": {
+        "nr": "2",
+        "time": "Tue May 05 16:00:00 CEST 2026",
+        "draft": "4.0",
+        "q_gruppe": "5",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "5",
+        "vg": "3",
+        "draft": "4.00",
+        "length_m": "89.9",
+        "beam_m": "13.17",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "P",
+        "pilot_1_name": "Hönisch, Gero",
+        "travel_status": "SAILING_NOK",
+        "makler": "NIK",
+        "dangerous_vessel": "-",
+        "type_of_loading": "Ballast"
       }
     }
   ],
@@ -513,32 +551,112 @@
           "type_of_loading": "Container"
         }
       }
+    },
+    {
+      "ship_key": "RIX TERRA",
+      "ship_name": "RIX TERRA",
+      "eta_rueb": "2026-05-05 16:00",
+      "ship_q": 5,
+      "assigned_pilot": "Groen, Nickolaj",
+      "assigned_pilot_q": 5,
+      "assigned_tactical_nr": 11,
+      "assigned_abteilungszeit": "2026-05-05 03:34",
+      "assigned_current_ship_name": "SCOT MARINER",
+      "assigned_current_ship_eta_rueb": "2026-05-05 09:37",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 4,
+      "candidates": [
+        {
+          "pilot_name": "Groen, Nickolaj",
+          "pilot_q": 5,
+          "pilot_tactical_nr": 11,
+          "abteilungszeit": "2026-05-05 03:34",
+          "fahrzeug": "SCOT MARINER",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "SCOT MARINER",
+          "current_ship_eta_rueb": "2026-05-05 09:37",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Domeier, Stefan",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 9,
+          "abteilungszeit": "2026-05-05 05:37",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "IDA RAMBOW",
+          "current_ship_eta_rueb": "2026-05-05 12:00",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Spiekermann, Fred",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 8,
+          "abteilungszeit": "2026-05-05 06:12",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-05 06:12",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
+        },
+        {
+          "pilot_name": "Weise, Carsten",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 6,
+          "abteilungszeit": "2026-05-05 07:52",
+          "fahrzeug": "ECO MISTRAL",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ECO MISTRAL",
+          "current_ship_eta_rueb": "2026-05-05 13:06",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "2",
+          "time": "Tue May 05 16:00:00 CEST 2026",
+          "draft": "4.0",
+          "q_gruppe": "5",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "HOS → KLT",
+          "routes": [
+            "HOS → KLT",
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "5",
+          "vg": "3",
+          "draft": "4.00",
+          "length_m": "89.9",
+          "beam_m": "13.17",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "P",
+          "pilot_1_name": "Hönisch, Gero",
+          "travel_status": "SAILING_NOK",
+          "makler": "NIK",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Ballast"
+        }
+      }
     }
   ],
   "unassigned_ships": [],
   "unused_pilots": [
-    {
-      "pilot_key": "groen_nickolaj",
-      "vorname": "Nickolaj",
-      "nachname": "Groen",
-      "pilot_name": "Groen, Nickolaj",
-      "abteilungszeit": "2026-05-05 03:34",
-      "pilot_q": 5,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 11,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "SCOT MARINER",
-      "from": "RÜB",
-      "to": "HOS",
-      "nr": 11,
-      "raw_time": "Tue May 05 03:34:00 CEST 2026",
-      "current_ship_name": "SCOT MARINER",
-      "current_ship_eta_rueb": "2026-05-05 09:37",
-      "current_ship_q": 5,
-      "current_ship_route": "RÜB → HOS",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
-    },
     {
       "pilot_key": "domeier_stefan",
       "vorname": "Stefan",
