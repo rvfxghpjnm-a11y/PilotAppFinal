@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-06T01:39:13",
+  "generated_at": "2026-05-06T01:41:08",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,13 +32,13 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 6,
+    "ships_for_ruesterbergen": 7,
     "pilots_total": 11,
     "pilots_dispatchable": 9,
     "pilots_visible_only": 2,
-    "assignments": 6,
+    "assignments": 7,
     "unassigned_ships": 0,
-    "unused_pilots": 3
+    "unused_pilots": 2
   },
   "ships": [
     {
@@ -196,13 +196,51 @@
       }
     },
     {
+      "ship_key": "KRISLIN",
+      "ship_name": "KRISLIN",
+      "eta_rueb": "2026-05-06 06:04",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 4,
+      "meldung": {
+        "nr": "5",
+        "time": "Wed May 06 05:45:00 CEST 2026",
+        "draft": "5.9",
+        "q_gruppe": "4",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "4",
+        "vg": "3",
+        "draft": "5.90",
+        "length_m": "100.63",
+        "beam_m": "15.2",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "U",
+        "pilot_1_name": "Schmidt, Artur",
+        "travel_status": "SAILING_NOK",
+        "makler": "SUB",
+        "dangerous_vessel": "-",
+        "type_of_loading": "Container"
+      }
+    },
+    {
       "ship_key": "ANNABA",
       "ship_name": "ANNABA",
       "eta_rueb": "2026-05-06 07:09",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 1,
       "meldung": {
-        "nr": "5",
+        "nr": "6",
         "time": "Wed May 06 06:40:00 CEST 2026",
         "draft": "8.4",
         "q_gruppe": "1",
@@ -212,8 +250,9 @@
         "to": "HOS"
       },
       "summary": {
-        "route": "RÜB → HOS",
+        "route": "HOS → KLT",
         "routes": [
+          "HOS → KLT",
           "RÜB → HOS"
         ],
         "q_gruppe": "1",
@@ -239,7 +278,7 @@
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
-        "nr": "6",
+        "nr": "7",
         "time": "Wed May 06 08:00:00 CEST 2026",
         "draft": "3.5",
         "q_gruppe": "5",
@@ -1297,6 +1336,125 @@
       }
     },
     {
+      "ship_key": "KRISLIN",
+      "ship_name": "KRISLIN",
+      "eta_rueb": "2026-05-06 06:04",
+      "ship_q": 4,
+      "assigned_pilot": "Nagel, Volker",
+      "assigned_pilot_q": 2,
+      "assigned_tactical_nr": 8,
+      "assigned_abteilungszeit": "2026-05-05 20:36",
+      "assigned_current_ship_name": "RÜB",
+      "assigned_current_ship_eta_rueb": "2026-05-05 20:36",
+      "assigned_current_ship_source": "special.already_in_rueb",
+      "assigned_availability_kind": "already_in_rueb",
+      "assigned_availability_hint": "Lotse gilt als bereits in RÜB",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 5,
+      "candidates": [
+        {
+          "pilot_name": "Nagel, Volker",
+          "pilot_q": 2,
+          "pilot_tactical_nr": 8,
+          "abteilungszeit": "2026-05-05 20:36",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-05 20:36",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
+        },
+        {
+          "pilot_name": "Röhl, Jens",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 7,
+          "abteilungszeit": "2026-05-05 22:35",
+          "fahrzeug": "MANAS",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "MANAS",
+          "current_ship_eta_rueb": "2026-05-06 03:20",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Krüger, Caspar-Maria",
+          "pilot_q": 4,
+          "pilot_tactical_nr": 6,
+          "abteilungszeit": "2026-05-05 23:15",
+          "fahrzeug": "NORTHERN ROCK",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "NORTHERN ROCK",
+          "current_ship_eta_rueb": "2026-05-06 00:40",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Wille, Christian",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 1,
+          "abteilungszeit": "2026-05-06 01:25",
+          "fahrzeug": "Leerfahrt",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "Leerfahrt",
+          "current_ship_eta_rueb": "2026-05-06 02:25",
+          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
+          "availability_kind": "leerfahrt_hos_rueb_plus60",
+          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+        },
+        {
+          "pilot_name": "Doering, Lars",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-05-06 01:25",
+          "fahrzeug": "Leerfahrt",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "Leerfahrt",
+          "current_ship_eta_rueb": "2026-05-06 02:25",
+          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
+          "availability_kind": "leerfahrt_hos_rueb_plus60",
+          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "5",
+          "time": "Wed May 06 05:45:00 CEST 2026",
+          "draft": "5.9",
+          "q_gruppe": "4",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "HOS → KLT",
+          "routes": [
+            "HOS → KLT",
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "4",
+          "vg": "3",
+          "draft": "5.90",
+          "length_m": "100.63",
+          "beam_m": "15.2",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "U",
+          "pilot_1_name": "Schmidt, Artur",
+          "travel_status": "SAILING_NOK",
+          "makler": "SUB",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Container"
+        }
+      }
+    },
+    {
       "ship_key": "ANNABA",
       "ship_name": "ANNABA",
       "eta_rueb": "2026-05-06 07:09",
@@ -1356,13 +1514,6 @@
       ],
       "excluded": [
         {
-          "pilot_name": "Nagel, Volker",
-          "pilot_tactical_nr": 8,
-          "reason": "Quali passt nicht (2 > 1)",
-          "pilot_q": 2,
-          "ship_q": 1
-        },
-        {
           "pilot_name": "Krüger, Caspar-Maria",
           "pilot_tactical_nr": 6,
           "reason": "Quali passt nicht (4 > 1)",
@@ -1372,7 +1523,7 @@
       ],
       "ship": {
         "meldung": {
-          "nr": "5",
+          "nr": "6",
           "time": "Wed May 06 06:40:00 CEST 2026",
           "draft": "8.4",
           "q_gruppe": "1",
@@ -1382,8 +1533,9 @@
           "to": "HOS"
         },
         "summary": {
-          "route": "RÜB → HOS",
+          "route": "HOS → KLT",
           "routes": [
+            "HOS → KLT",
             "RÜB → HOS"
           ],
           "q_gruppe": "1",
@@ -1408,31 +1560,17 @@
       "ship_name": "TIM",
       "eta_rueb": "2026-05-06 08:00",
       "ship_q": 5,
-      "assigned_pilot": "Nagel, Volker",
-      "assigned_pilot_q": 2,
-      "assigned_tactical_nr": 8,
-      "assigned_abteilungszeit": "2026-05-05 20:36",
-      "assigned_current_ship_name": "RÜB",
-      "assigned_current_ship_eta_rueb": "2026-05-05 20:36",
-      "assigned_current_ship_source": "special.already_in_rueb",
-      "assigned_availability_kind": "already_in_rueb",
-      "assigned_availability_hint": "Lotse gilt als bereits in RÜB",
+      "assigned_pilot": "Krüger, Caspar-Maria",
+      "assigned_pilot_q": 4,
+      "assigned_tactical_nr": 6,
+      "assigned_abteilungszeit": "2026-05-05 23:15",
+      "assigned_current_ship_name": "NORTHERN ROCK",
+      "assigned_current_ship_eta_rueb": "2026-05-06 00:40",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 4,
+      "candidate_count": 3,
       "candidates": [
-        {
-          "pilot_name": "Nagel, Volker",
-          "pilot_q": 2,
-          "pilot_tactical_nr": 8,
-          "abteilungszeit": "2026-05-05 20:36",
-          "fahrzeug": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "RÜB",
-          "current_ship_eta_rueb": "2026-05-05 20:36",
-          "current_ship_source": "special.already_in_rueb",
-          "availability_kind": "already_in_rueb",
-          "availability_hint": "Lotse gilt als bereits in RÜB"
-        },
         {
           "pilot_name": "Krüger, Caspar-Maria",
           "pilot_q": 4,
@@ -1477,7 +1615,7 @@
       ],
       "ship": {
         "meldung": {
-          "nr": "6",
+          "nr": "7",
           "time": "Wed May 06 08:00:00 CEST 2026",
           "draft": "3.5",
           "q_gruppe": "5",
@@ -1501,28 +1639,6 @@
   ],
   "unassigned_ships": [],
   "unused_pilots": [
-    {
-      "pilot_key": "krüger_caspar-maria",
-      "vorname": "Caspar-Maria",
-      "nachname": "Krüger",
-      "pilot_name": "Krüger, Caspar-Maria",
-      "abteilungszeit": "2026-05-05 23:15",
-      "pilot_q": 4,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 6,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "NORTHERN ROCK",
-      "from": "RÜB",
-      "to": "HOS",
-      "nr": 6,
-      "raw_time": "Tue May 05 23:15:00 CEST 2026",
-      "current_ship_name": "NORTHERN ROCK",
-      "current_ship_eta_rueb": "2026-05-06 00:40",
-      "current_ship_q": 5,
-      "current_ship_route": "RÜB → HOS",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
-    },
     {
       "pilot_key": "wille_christian",
       "vorname": "Christian",
