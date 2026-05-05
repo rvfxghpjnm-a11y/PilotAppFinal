@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-05T05:03:07",
+  "generated_at": "2026-05-05T05:05:05",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,52 +32,15 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 3,
+    "ships_for_ruesterbergen": 2,
     "pilots_total": 7,
     "pilots_dispatchable": 7,
     "pilots_visible_only": 0,
-    "assignments": 3,
+    "assignments": 2,
     "unassigned_ships": 0,
-    "unused_pilots": 4
+    "unused_pilots": 5
   },
   "ships": [
-    {
-      "ship_key": "FAST ANNA SOFIA",
-      "ship_name": "FAST ANNA SOFIA",
-      "eta_rueb": "2026-05-05 05:30",
-      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
-      "ship_q": 5,
-      "meldung": {
-        "nr": "1",
-        "time": "Tue May 05 05:30:00 CEST 2026",
-        "draft": "5.9",
-        "q_gruppe": "5",
-        "lotsen_anzahl": 1,
-        "confirmed": false,
-        "from": "RÜB",
-        "to": "HOS"
-      },
-      "summary": {
-        "route": "RÜB → HOS",
-        "routes": [
-          "RÜB → HOS"
-        ],
-        "q_gruppe": "5",
-        "vg": "3",
-        "draft": "5.90",
-        "length_m": "89.72",
-        "beam_m": "12",
-        "queue_title": "Zulauf vom Kanal in Kiel",
-        "zulauf_richtung": "vom_kanal",
-        "pilot_required": "true",
-        "pilot_status": "H",
-        "pilot_1_name": "Blome, Henning",
-        "travel_status": "SAILING_NOK",
-        "makler": "UCA",
-        "dangerous_vessel": "-",
-        "type_of_loading": "Eisen und Stahl"
-      }
-    },
     {
       "ship_key": "SCOT MARINER",
       "ship_name": "SCOT MARINER",
@@ -85,7 +48,7 @@
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
-        "nr": "2",
+        "nr": "1",
         "time": "Tue May 05 09:30:00 CEST 2026",
         "draft": "4.9",
         "q_gruppe": "5",
@@ -123,7 +86,7 @@
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 1,
       "meldung": {
-        "nr": "3",
+        "nr": "2",
         "time": "Tue May 05 09:35:00 CEST 2026",
         "draft": "8.9",
         "q_gruppe": "1",
@@ -232,14 +195,16 @@
       "q_source": "q_gruppen_lotsen.entries",
       "pilot_tactical_nr": 5,
       "aufgabe": "Kanalbört",
-      "fahrzeug": "RÜB",
+      "fahrzeug": "FAST ANNA SOFIA",
+      "from": "RÜB",
+      "to": "HOS",
       "nr": 5,
       "raw_time": "Mon May 04 23:18:00 CEST 2026",
       "current_ship_name": "FAST ANNA SOFIA",
       "current_ship_eta_rueb": "2026-05-05 05:30",
-      "current_ship_q": 5,
+      "current_ship_q": 0,
       "current_ship_route": "RÜB → HOS",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
@@ -386,14 +351,16 @@
       "q_source": "q_gruppen_lotsen.entries",
       "pilot_tactical_nr": 5,
       "aufgabe": "Kanalbört",
-      "fahrzeug": "RÜB",
+      "fahrzeug": "FAST ANNA SOFIA",
+      "from": "RÜB",
+      "to": "HOS",
       "nr": 5,
       "raw_time": "Mon May 04 23:18:00 CEST 2026",
       "current_ship_name": "FAST ANNA SOFIA",
       "current_ship_eta_rueb": "2026-05-05 05:30",
-      "current_ship_q": 5,
+      "current_ship_q": 0,
       "current_ship_route": "RÜB → HOS",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
@@ -466,9 +433,9 @@
   "visible_but_not_dispatchable_pilots": [],
   "assignments": [
     {
-      "ship_key": "FAST ANNA SOFIA",
-      "ship_name": "FAST ANNA SOFIA",
-      "eta_rueb": "2026-05-05 05:30",
+      "ship_key": "SCOT MARINER",
+      "ship_name": "SCOT MARINER",
+      "eta_rueb": "2026-05-05 09:44",
       "ship_q": 5,
       "assigned_pilot": "Skairies, Thomas",
       "assigned_pilot_q": 0,
@@ -479,7 +446,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 4,
+      "candidate_count": 7,
       "candidates": [
         {
           "pilot_name": "Skairies, Thomas",
@@ -525,128 +492,12 @@
           "pilot_q": 0,
           "pilot_tactical_nr": 5,
           "abteilungszeit": "2026-05-04 23:18",
-          "fahrzeug": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "FAST ANNA SOFIA",
-          "current_ship_eta_rueb": "2026-05-05 05:30",
-          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-          "availability_kind": "merged_eta"
-        }
-      ],
-      "excluded": [
-        {
-          "pilot_name": "Röhl, Jens",
-          "pilot_tactical_nr": 4,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "RIX AMBER",
-          "pilot_current_ship_eta_rueb": "2026-05-05 06:12",
-          "ship_eta_rueb": "2026-05-05 05:30",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Groen, Nickolaj",
-          "pilot_tactical_nr": 2,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "HAV NORDIC",
-          "pilot_current_ship_eta_rueb": "2026-05-05 08:18",
-          "ship_eta_rueb": "2026-05-05 05:30",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Ehlers, Sören",
-          "pilot_tactical_nr": 1,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "SALTSTRAUM",
-          "pilot_current_ship_eta_rueb": "2026-05-05 08:53",
-          "ship_eta_rueb": "2026-05-05 05:30",
-          "availability_kind": "merged_eta"
-        }
-      ],
-      "ship": {
-        "meldung": {
-          "nr": "1",
-          "time": "Tue May 05 05:30:00 CEST 2026",
-          "draft": "5.9",
-          "q_gruppe": "5",
-          "lotsen_anzahl": 1,
-          "confirmed": false,
-          "from": "RÜB",
-          "to": "HOS"
-        },
-        "summary": {
-          "route": "RÜB → HOS",
-          "routes": [
-            "RÜB → HOS"
-          ],
-          "q_gruppe": "5",
-          "vg": "3",
-          "draft": "5.90",
-          "length_m": "89.72",
-          "beam_m": "12",
-          "queue_title": "Zulauf vom Kanal in Kiel",
-          "zulauf_richtung": "vom_kanal",
-          "pilot_required": "true",
-          "pilot_status": "H",
-          "pilot_1_name": "Blome, Henning",
-          "travel_status": "SAILING_NOK",
-          "makler": "UCA",
-          "dangerous_vessel": "-",
-          "type_of_loading": "Eisen und Stahl"
-        }
-      }
-    },
-    {
-      "ship_key": "SCOT MARINER",
-      "ship_name": "SCOT MARINER",
-      "eta_rueb": "2026-05-05 09:44",
-      "ship_q": 5,
-      "assigned_pilot": "Dalecki, Niklas",
-      "assigned_pilot_q": 0,
-      "assigned_tactical_nr": 12,
-      "assigned_abteilungszeit": "2026-05-04 20:35",
-      "assigned_current_ship_name": "STOLT SANDPIPER",
-      "assigned_current_ship_eta_rueb": "2026-05-05 03:17",
-      "assigned_current_ship_source": "schiffe_merged.seelotsen",
-      "assigned_availability_kind": "merged_eta",
-      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 6,
-      "candidates": [
-        {
-          "pilot_name": "Dalecki, Niklas",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 12,
-          "abteilungszeit": "2026-05-04 20:35",
-          "fahrzeug": "STOLT SANDPIPER",
+          "fahrzeug": "FAST ANNA SOFIA",
           "to": "HOS",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "STOLT SANDPIPER",
-          "current_ship_eta_rueb": "2026-05-05 03:17",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Krause, Malte",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 6,
-          "abteilungszeit": "2026-05-04 23:13",
-          "fahrzeug": "LADY HANNEKE",
-          "to": "KLT",
-          "aufgabe": "Seebört",
-          "current_ship_name": "LADY HANNEKE",
-          "current_ship_eta_rueb": "2026-05-05 01:28",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Blome, Henning",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 5,
-          "abteilungszeit": "2026-05-04 23:18",
-          "fahrzeug": "RÜB",
-          "aufgabe": "Kanalbört",
           "current_ship_name": "FAST ANNA SOFIA",
           "current_ship_eta_rueb": "2026-05-05 05:30",
-          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
         {
@@ -691,7 +542,7 @@
       ],
       "ship": {
         "meldung": {
-          "nr": "2",
+          "nr": "1",
           "time": "Tue May 05 09:30:00 CEST 2026",
           "draft": "4.9",
           "q_gruppe": "5",
@@ -728,17 +579,30 @@
       "ship_name": "STAV VIKING",
       "eta_rueb": "2026-05-05 09:59",
       "ship_q": 1,
-      "assigned_pilot": "Krause, Malte",
+      "assigned_pilot": "Dalecki, Niklas",
       "assigned_pilot_q": 0,
-      "assigned_tactical_nr": 6,
-      "assigned_abteilungszeit": "2026-05-04 23:13",
-      "assigned_current_ship_name": "LADY HANNEKE",
-      "assigned_current_ship_eta_rueb": "2026-05-05 01:28",
+      "assigned_tactical_nr": 12,
+      "assigned_abteilungszeit": "2026-05-04 20:35",
+      "assigned_current_ship_name": "STOLT SANDPIPER",
+      "assigned_current_ship_eta_rueb": "2026-05-05 03:17",
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 3,
+      "candidate_count": 4,
       "candidates": [
+        {
+          "pilot_name": "Dalecki, Niklas",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 12,
+          "abteilungszeit": "2026-05-04 20:35",
+          "fahrzeug": "STOLT SANDPIPER",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "STOLT SANDPIPER",
+          "current_ship_eta_rueb": "2026-05-05 03:17",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
         {
           "pilot_name": "Krause, Malte",
           "pilot_q": 0,
@@ -757,11 +621,12 @@
           "pilot_q": 0,
           "pilot_tactical_nr": 5,
           "abteilungszeit": "2026-05-04 23:18",
-          "fahrzeug": "RÜB",
+          "fahrzeug": "FAST ANNA SOFIA",
+          "to": "HOS",
           "aufgabe": "Kanalbört",
           "current_ship_name": "FAST ANNA SOFIA",
           "current_ship_eta_rueb": "2026-05-05 05:30",
-          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
         {
@@ -796,7 +661,7 @@
       ],
       "ship": {
         "meldung": {
-          "nr": "3",
+          "nr": "2",
           "time": "Tue May 05 09:35:00 CEST 2026",
           "draft": "8.9",
           "q_gruppe": "1",
@@ -832,6 +697,28 @@
   "unassigned_ships": [],
   "unused_pilots": [
     {
+      "pilot_key": "krause_malte",
+      "vorname": "Malte",
+      "nachname": "Krause",
+      "pilot_name": "Krause, Malte",
+      "abteilungszeit": "2026-05-04 23:13",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 6,
+      "aufgabe": "Seebört",
+      "fahrzeug": "LADY HANNEKE",
+      "from": "HOS",
+      "to": "KLT",
+      "nr": 6,
+      "raw_time": "Mon May 04 23:13:00 CEST 2026",
+      "current_ship_name": "LADY HANNEKE",
+      "current_ship_eta_rueb": "2026-05-05 01:28",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → KLT",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
       "pilot_key": "blome_henning",
       "vorname": "Henning",
       "nachname": "Blome",
@@ -841,14 +728,16 @@
       "q_source": "q_gruppen_lotsen.entries",
       "pilot_tactical_nr": 5,
       "aufgabe": "Kanalbört",
-      "fahrzeug": "RÜB",
+      "fahrzeug": "FAST ANNA SOFIA",
+      "from": "RÜB",
+      "to": "HOS",
       "nr": 5,
       "raw_time": "Mon May 04 23:18:00 CEST 2026",
       "current_ship_name": "FAST ANNA SOFIA",
       "current_ship_eta_rueb": "2026-05-05 05:30",
-      "current_ship_q": 5,
+      "current_ship_q": 0,
       "current_ship_route": "RÜB → HOS",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
