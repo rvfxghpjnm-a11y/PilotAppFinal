@@ -1,51 +1,51 @@
 {
-  "generated_at": "2026-05-06T06:23:09",
+  "generated_at": "2026-05-06T06:25:04",
   "source_meta": {
     "zulauf_kiel_innen": {
       "file": "Zulauf_kiel_innen.json",
-      "generated_at": "2026-05-06 06:22",
+      "generated_at": "2026-05-06 06:24",
       "queue": "kiel_innen",
       "title": "Zulauf vom Kanal in Kiel",
-      "count": 13
+      "count": 14
     },
     "zulauf_kiel_aussen": {
       "file": "Zulauf_kiel_aussen.json",
-      "generated_at": "2026-05-06 06:22",
+      "generated_at": "2026-05-06 06:24",
       "queue": "kiel_aussen",
       "title": "Zulauf von See in Kiel",
       "count": 0
     },
     "zulauf_brb_innen": {
       "file": "Zulauf_brb_innen.json",
-      "generated_at": "2026-05-06 06:22",
+      "generated_at": "2026-05-06 06:24",
       "queue": "brb_innen",
       "title": "Zulauf vom Kanal in Brunsbüttel",
       "count": 7
     },
     "zulauf_brb_aussen": {
       "file": "Zulauf_brb_aussen.json",
-      "generated_at": "2026-05-06 06:22",
+      "generated_at": "2026-05-06 06:24",
       "queue": "brb_aussen",
       "title": "Zulauf von See in Brunsbüttel",
       "count": 5
     },
     "meldungen_kiel": {
       "file": "Meldungen_Kiel.json",
-      "generated_at": "2026-05-06 06:22",
+      "generated_at": "2026-05-06 06:24",
       "count": 47
     },
     "meldungen_ruesterbergen": {
       "file": "Meldungen_Ruesterbergen.json",
-      "generated_at": "2026-05-06 06:22",
-      "count": 7
+      "generated_at": "2026-05-06 06:24",
+      "count": 6
     },
     "seelotsen": {
       "file": "Seelotsen.json",
-      "generated_at": "2026-05-06 06:22",
+      "generated_at": "2026-05-06 06:24",
       "count": 15
     }
   },
-  "count": 54,
+  "count": 55,
   "entries": [
     {
       "ship_key": "ALASCO",
@@ -276,7 +276,7 @@
       "name": "ANNABA",
       "sources": [
         "meldungen_kiel",
-        "meldungen_ruesterbergen",
+        "seelotsen",
         "zulauf_kiel_innen"
       ],
       "special_entry": false,
@@ -285,7 +285,7 @@
         "special_entry": false,
         "sources": [
           "meldungen_kiel",
-          "meldungen_ruesterbergen",
+          "seelotsen",
           "zulauf_kiel_innen"
         ],
         "route": "HOS → KLT",
@@ -341,6 +341,12 @@
         "dangerous_vessel": "-",
         "port_of_departure": "DE HAM (HBG)",
         "port_of_destination": "FI RAU",
+        "assigned_pilots": [
+          "Hüpers, Peter"
+        ],
+        "aufgaben": [
+          "Kanalbört"
+        ],
         "lotsen_anzahl_kiel": 1,
         "confirmed_kiel": false,
         "passage_block": {
@@ -389,13 +395,17 @@
           "pilot_status": "U",
           "num_of_pilots": "1",
           "num_of_pilots_kf": "1",
+          "pilot_change_off_time": "2026-05-06 06:48",
           "pilot_elbe_see": "false",
           "pilot_nok": "true",
           "pilot_ostsee": "false",
           "pilot_uebersee": "false",
           "pilot_boesch": "false",
           "pilot_1_id": "370044652627000081",
-          "pilot_1_name": "Hüpers, Peter"
+          "pilot_1_name": "Hüpers, Peter",
+          "pilot_2_id": "0",
+          "pilot_3_id": "0",
+          "pilot_4_id": "0"
         },
         "steering_block": {
           "canal_steerer": "true",
@@ -590,13 +600,17 @@
             "pilot_status": "U",
             "num_of_pilots": "1",
             "num_of_pilots_kf": "1",
+            "pilot_change_off_time": "2026-05-06 06:48",
             "pilot_elbe_see": "false",
             "pilot_nok": "true",
             "pilot_ostsee": "false",
             "pilot_uebersee": "false",
             "pilot_boesch": "false",
             "pilot_1_id": "370044652627000081",
-            "pilot_1_name": "Hüpers, Peter"
+            "pilot_1_name": "Hüpers, Peter",
+            "pilot_2_id": "0",
+            "pilot_3_id": "0",
+            "pilot_4_id": "0"
           },
           "steering": {
             "canal_steerer": "true",
@@ -667,21 +681,20 @@
           "route": "HOS → KLT"
         }
       ],
-      "meldungen_ruesterbergen": [
+      "meldungen_ruesterbergen": [],
+      "seelotsen": [
         {
-          "source": "meldungen_ruesterbergen",
-          "nr": "1",
-          "time": "2026-05-06 06:50",
-          "draft": "8.4",
-          "q_gruppe": "1",
-          "lotsen_anzahl": 1,
-          "confirmed": false,
+          "nr": 10,
+          "time": "2026-05-06 00:23",
+          "pilot_name": "Hüpers, Peter",
+          "nachname": "Hüpers",
+          "vorname": "Peter",
+          "aufgabe": "Kanalbört",
           "from": "RÜB",
           "to": "HOS",
           "route": "RÜB → HOS"
         }
-      ],
-      "seelotsen": []
+      ]
     },
     {
       "ship_key": "ATLANTIS ALICANTE",
@@ -916,8 +929,8 @@
         "sources": [
           "zulauf_brb_aussen"
         ],
-        "eta_schleuse": "2026-05-06 10:34",
-        "eta_text": "10:34",
+        "eta_schleuse": "2026-05-06 09:36",
+        "eta_text": "09:36",
         "first_seen": "2026-05-06 01:16",
         "queue_key": "brb_aussen",
         "queue_title": "Zulauf von See in Brunsbüttel",
@@ -1025,7 +1038,7 @@
       "zulauf": [
         {
           "name": "CORMORAN P677",
-          "eta_schleuse": "2026-05-06 10:34",
+          "eta_schleuse": "2026-05-06 09:36",
           "first_seen": "2026-05-06 01:16",
           "ship_name": "CORMORAN P677",
           "vg": "3",
@@ -1039,7 +1052,7 @@
           "pilot_required": "true",
           "pilot_foerde": "false",
           "pilot_order": "NOK",
-          "eta_text": "10:34",
+          "eta_text": "09:36",
           "destination": "Kiel",
           "makler": "UCA",
           "preferred_mooring_side": "Beide",
@@ -1256,8 +1269,8 @@
         "routes": [
           "HOR → KRH"
         ],
-        "eta_schleuse": "2026-05-06 09:28",
-        "eta_text": "09:28",
+        "eta_schleuse": "2026-05-06 09:29",
+        "eta_text": "09:29",
         "first_seen": "2026-05-06 06:06",
         "queue_key": "brb_innen",
         "queue_title": "Zulauf vom Kanal in Brunsbüttel",
@@ -1399,7 +1412,7 @@
       "zulauf": [
         {
           "name": "EEMS CARRIER",
-          "eta_schleuse": "2026-05-06 09:28",
+          "eta_schleuse": "2026-05-06 09:29",
           "first_seen": "2026-05-06 06:06",
           "ship_name": "EEMS CARRIER",
           "vg": "3",
@@ -1413,7 +1426,7 @@
           "pilot_required": "true",
           "pilot_foerde": "false",
           "pilot_order": "NOK",
-          "eta_text": "09:28",
+          "eta_text": "09:29",
           "destination": "Strecke NOK",
           "makler": "SUB",
           "preferred_mooring_side": "Bb",
@@ -1605,8 +1618,8 @@
         "sources": [
           "zulauf_brb_aussen"
         ],
-        "eta_schleuse": "2026-05-06 09:48",
-        "eta_text": "09:48",
+        "eta_schleuse": "2026-05-06 09:58",
+        "eta_text": "09:58",
         "first_seen": "2026-05-06 05:26",
         "queue_key": "brb_aussen",
         "queue_title": "Zulauf von See in Brunsbüttel",
@@ -1733,7 +1746,7 @@
       "zulauf": [
         {
           "name": "ELLEN ESSBERGER",
-          "eta_schleuse": "2026-05-06 09:48",
+          "eta_schleuse": "2026-05-06 09:58",
           "first_seen": "2026-05-06 05:26",
           "ship_name": "ELLEN ESSBERGER",
           "vg": "4",
@@ -1747,7 +1760,7 @@
           "pilot_required": "true",
           "pilot_foerde": "true",
           "pilot_order": "KS-NOK-KF",
-          "eta_text": "09:48",
+          "eta_text": "09:58",
           "destination": "Kiel",
           "makler": "UCA",
           "preferred_mooring_side": "Bb",
@@ -2989,7 +3002,7 @@
       "meldungen_ruesterbergen": [
         {
           "source": "meldungen_ruesterbergen",
-          "nr": "7",
+          "nr": "6",
           "time": "2026-05-06 10:00",
           "draft": "4.4",
           "q_gruppe": "4",
@@ -3531,6 +3544,205 @@
           "aufgabe": "Seebört"
         }
       ]
+    },
+    {
+      "ship_key": "IBIS 7",
+      "name": "IBIS 7",
+      "sources": [
+        "zulauf_kiel_innen"
+      ],
+      "special_entry": false,
+      "summary": {
+        "name": "IBIS 7",
+        "special_entry": false,
+        "sources": [
+          "zulauf_kiel_innen"
+        ],
+        "eta_schleuse": "2286-11-20 18:46",
+        "eta_text": "-",
+        "first_seen": "2026-05-06 06:24",
+        "queue_key": "kiel_innen",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "area": "kiel",
+        "zulauf_richtung": "vom_kanal",
+        "vg": "1",
+        "draft": "2.60",
+        "length_m": "44.96",
+        "beam_m": "9.5",
+        "vessel_type": "Bagger etc.",
+        "seagoing_or_inland_vessel": "Binnenschiff",
+        "callsign": "PF6054",
+        "mmsi": "244060081",
+        "country_name": "Niederlande",
+        "pilot_foerde": "false",
+        "pilot_status": "O",
+        "canal_steerer_required": "false",
+        "travel_direction": "KF",
+        "travel_status": "SAILING_NOK",
+        "passage_start": "Kiel Schleuse Kiel",
+        "passage_destination": "Strecke NOK Rendsburg",
+        "destination": "Strecke NOK",
+        "mooring_area": "Rendsburg",
+        "mooring_place_short": "Rendsburg",
+        "mooring_section": "Strecke NOK",
+        "preferred_mooring_side": "Bb",
+        "dangerous_vessel": "-",
+        "port_of_departure": "DE KEL (KSH)",
+        "port_of_destination": "DE REN (REN)",
+        "passage_block": {
+          "start_text": "Kiel Schleuse Kiel",
+          "start_0": "Kiel",
+          "start_1": "Schleuse Kiel",
+          "destination_text": "Strecke NOK Rendsburg",
+          "destination_0": "Strecke NOK",
+          "destination_1": "Rendsburg",
+          "destination_2": "Dalbenreihe Nordhafen",
+          "passage_start_raw": "DE - / NOK_KIEL",
+          "passage_destination_raw": "DE - / NOK_106",
+          "passage_cleared": "true",
+          "entry_time": "15:07"
+        },
+        "mooring_block": {
+          "area": "Rendsburg",
+          "place_full": "Strecke NOK##Rendsburg",
+          "place_short": "Rendsburg",
+          "section": "Strecke NOK",
+          "place_km": "62.200",
+          "time": "2026-05-05 18:16",
+          "number_of_moorings": "2",
+          "preferred_side": "Bb"
+        },
+        "voyage_info_block": {
+          "travel_direction": "KF",
+          "travel_status": "SAILING_NOK",
+          "dangerous_vessel": "-",
+          "port_of_departure": "DE KEL (KSH)",
+          "port_of_destination": "DE REN (REN)",
+          "pilot_status": "O",
+          "complete_passage": "false",
+          "via_nok": "true"
+        },
+        "pilotage_block": {
+          "pilot_foerde": "false",
+          "pilot_status": "O",
+          "pilot_elbe_see": "false",
+          "pilot_nok": "false",
+          "pilot_ostsee": "false",
+          "pilot_uebersee": "false",
+          "pilot_boesch": "false"
+        },
+        "steering_block": {
+          "canal_steerer": "false",
+          "steerer_required": "false",
+          "freifahrer_kanalsteurer": "false"
+        },
+        "vessel_info_block": {
+          "vessel_type": "Bagger etc.",
+          "seagoing_or_inland_vessel": "Binnenschiff",
+          "comment": "Tel. 0031-621 91 44 12",
+          "callsign": "PF6054",
+          "mmsi": "244060081",
+          "country_name": "Niederlande",
+          "engine_type": "Dieselmotor",
+          "number_of_props": "1",
+          "bow_thruster": "true",
+          "stern_thruster": "false",
+          "verified": "1605783339008"
+        }
+      },
+      "zulauf": [
+        {
+          "name": "IBIS 7",
+          "eta_schleuse": "2286-11-20 18:46",
+          "first_seen": "2026-05-06 06:24",
+          "ship_name": "IBIS 7",
+          "vg": "1",
+          "length_m": "44.96",
+          "beam_m": "9.5",
+          "draft_m": "2.60",
+          "queue_key": "kiel_innen",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "area": "kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_foerde": "false",
+          "eta_text": "-",
+          "destination": "Strecke NOK",
+          "preferred_mooring_side": "Bb",
+          "vessel_type": "Bagger etc.",
+          "travel_direction": "KF",
+          "travel_status": "SAILING_NOK",
+          "mooring_area": "Rendsburg",
+          "mooring_place_short": "Rendsburg",
+          "passage_start": "Kiel Schleuse Kiel",
+          "passage_destination": "Strecke NOK Rendsburg",
+          "canal_steerer_required": "false",
+          "pilot_status": "O",
+          "passage": {
+            "start_text": "Kiel Schleuse Kiel",
+            "start_0": "Kiel",
+            "start_1": "Schleuse Kiel",
+            "destination_text": "Strecke NOK Rendsburg",
+            "destination_0": "Strecke NOK",
+            "destination_1": "Rendsburg",
+            "destination_2": "Dalbenreihe Nordhafen",
+            "passage_start_raw": "DE - / NOK_KIEL",
+            "passage_destination_raw": "DE - / NOK_106",
+            "passage_cleared": "true",
+            "entry_time": "15:07"
+          },
+          "mooring": {
+            "area": "Rendsburg",
+            "place_full": "Strecke NOK##Rendsburg",
+            "place_short": "Rendsburg",
+            "section": "Strecke NOK",
+            "place_km": "62.200",
+            "time": "2026-05-05 18:16",
+            "number_of_moorings": "2",
+            "preferred_side": "Bb"
+          },
+          "voyage_info": {
+            "travel_direction": "KF",
+            "travel_status": "SAILING_NOK",
+            "dangerous_vessel": "-",
+            "port_of_departure": "DE KEL (KSH)",
+            "port_of_destination": "DE REN (REN)",
+            "pilot_status": "O",
+            "complete_passage": "false",
+            "via_nok": "true"
+          },
+          "pilotage": {
+            "pilot_foerde": "false",
+            "pilot_status": "O",
+            "pilot_elbe_see": "false",
+            "pilot_nok": "false",
+            "pilot_ostsee": "false",
+            "pilot_uebersee": "false",
+            "pilot_boesch": "false"
+          },
+          "steering": {
+            "canal_steerer": "false",
+            "steerer_required": "false",
+            "freifahrer_kanalsteurer": "false"
+          },
+          "vessel_info": {
+            "vessel_type": "Bagger etc.",
+            "seagoing_or_inland_vessel": "Binnenschiff",
+            "comment": "Tel. 0031-621 91 44 12",
+            "callsign": "PF6054",
+            "mmsi": "244060081",
+            "country_name": "Niederlande",
+            "engine_type": "Dieselmotor",
+            "number_of_props": "1",
+            "bow_thruster": "true",
+            "stern_thruster": "false",
+            "verified": "1605783339008"
+          },
+          "source": "zulauf_kiel_innen"
+        }
+      ],
+      "meldungen_kiel": [],
+      "meldungen_ruesterbergen": [],
+      "seelotsen": []
     },
     {
       "ship_key": "KILLU",
@@ -6300,10 +6512,10 @@
           "zulauf_brb_innen"
         ],
         "eta_rueb": "2026-05-06 01:37",
-        "eta_schleuse": "2026-05-06 06:24",
-        "eta_text": "06:24",
+        "eta_schleuse": "2026-05-06 06:26",
+        "eta_text": "06:26",
         "first_seen": "2026-05-05 21:46",
-        "delta_rueb_schleuse": "04:48",
+        "delta_rueb_schleuse": "04:50",
         "delta_start_rueb": "03:51",
         "queue_key": "brb_innen",
         "queue_title": "Zulauf vom Kanal in Brunsbüttel",
@@ -6499,10 +6711,10 @@
       "zulauf": [
         {
           "name": "MS JUTLAND",
-          "eta_schleuse": "2026-05-06 06:24",
+          "eta_schleuse": "2026-05-06 06:26",
           "eta_rueb": "2026-05-06 01:37",
           "first_seen": "2026-05-05 21:46",
-          "delta_rueb_schleuse": "04:48",
+          "delta_rueb_schleuse": "04:50",
           "delta_start_rueb": "03:51",
           "ship_name": "MS JUTLAND",
           "vg": "3",
@@ -6516,7 +6728,7 @@
           "pilot_required": "true",
           "pilot_foerde": "false",
           "pilot_order": "NOK",
-          "eta_text": "06:24",
+          "eta_text": "06:26",
           "mooring_place": "Alte Süd Seitenmauer",
           "destination": "Brunsbüttel",
           "makler": "NIK",
@@ -7292,8 +7504,7 @@
           "seelotsen"
         ],
         "assigned_pilots": [
-          "Demant, Tom",
-          "Hüpers, Peter"
+          "Demant, Tom"
         ],
         "aufgaben": [
           "Kanalbört"
@@ -7309,14 +7520,6 @@
           "pilot_name": "Demant, Tom",
           "nachname": "Demant",
           "vorname": "Tom",
-          "aufgabe": "Kanalbört"
-        },
-        {
-          "nr": 10,
-          "time": "2026-05-06 00:23",
-          "pilot_name": "Hüpers, Peter",
-          "nachname": "Hüpers",
-          "vorname": "Peter",
           "aufgabe": "Kanalbört"
         }
       ]
@@ -7626,7 +7829,7 @@
       "meldungen_ruesterbergen": [
         {
           "source": "meldungen_ruesterbergen",
-          "nr": "4",
+          "nr": "3",
           "time": "2026-05-06 09:18",
           "draft": "5.2",
           "q_gruppe": "5",
@@ -8017,7 +8220,7 @@
       "meldungen_ruesterbergen": [
         {
           "source": "meldungen_ruesterbergen",
-          "nr": "5",
+          "nr": "4",
           "time": "2026-05-06 09:21",
           "draft": "5.2",
           "q_gruppe": "5",
@@ -8484,7 +8687,7 @@
       "meldungen_ruesterbergen": [
         {
           "source": "meldungen_ruesterbergen",
-          "nr": "6",
+          "nr": "5",
           "time": "2026-05-06 09:24",
           "draft": "4.6",
           "q_gruppe": "4",
@@ -9257,7 +9460,7 @@
       "meldungen_ruesterbergen": [
         {
           "source": "meldungen_ruesterbergen",
-          "nr": "2",
+          "nr": "1",
           "time": "2026-05-06 08:00",
           "draft": "3.5",
           "q_gruppe": "5",
@@ -9431,6 +9634,9 @@
             "duekerswisch": {
               "in": "2026-05-06 05:11",
               "out": "2026-05-06 05:18"
+            },
+            "fischerhuette": {
+              "in": "2026-05-06 06:21"
             }
           }
         }
@@ -9472,6 +9678,9 @@
               "duekerswisch": {
                 "in": "2026-05-06 05:11",
                 "out": "2026-05-06 05:18"
+              },
+              "fischerhuette": {
+                "in": "2026-05-06 06:21"
               }
             }
           },
@@ -9576,7 +9785,7 @@
       "meldungen_ruesterbergen": [
         {
           "source": "meldungen_ruesterbergen",
-          "nr": "3",
+          "nr": "2",
           "time": "2026-05-06 09:15",
           "draft": "6.0",
           "q_gruppe": "5",
