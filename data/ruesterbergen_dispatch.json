@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-06T12:51:10",
+  "generated_at": "2026-05-06T12:53:10",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,13 +32,13 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 3,
+    "ships_for_ruesterbergen": 4,
     "pilots_total": 9,
     "pilots_dispatchable": 9,
     "pilots_visible_only": 0,
-    "assignments": 3,
+    "assignments": 4,
     "unassigned_ships": 0,
-    "unused_pilots": 6
+    "unused_pilots": 5
   },
   "ships": [
     {
@@ -152,6 +152,44 @@
         "makler": "SUB",
         "dangerous_vessel": "-",
         "type_of_loading": "Stueckgueter"
+      }
+    },
+    {
+      "ship_key": "ELLEN ESSBERGER",
+      "ship_name": "ELLEN ESSBERGER",
+      "eta_rueb": "2026-05-06 17:45",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 4,
+      "meldung": {
+        "nr": "4",
+        "time": "Wed May 06 17:25:00 CEST 2026",
+        "draft": "7.4",
+        "q_gruppe": "4",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "4",
+        "vg": "4",
+        "draft": "7.40",
+        "length_m": "118.14",
+        "beam_m": "18.800",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "U",
+        "pilot_1_name": "Meyer, Hannes",
+        "travel_status": "SAILING_NOK",
+        "makler": "UCA",
+        "dangerous_vessel": "ja",
+        "type_of_loading": "Chemikalien fluessig"
       }
     }
   ],
@@ -303,7 +341,7 @@
       "nr": 7,
       "raw_time": "Wed May 06 08:55:00 CEST 2026",
       "current_ship_name": "CONTAINERSHIPS VIII",
-      "current_ship_eta_rueb": "2026-05-06 14:19",
+      "current_ship_eta_rueb": "2026-05-06 14:18",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.summary.pilot_1_name",
@@ -502,7 +540,7 @@
       "nr": 7,
       "raw_time": "Wed May 06 08:55:00 CEST 2026",
       "current_ship_name": "CONTAINERSHIPS VIII",
-      "current_ship_eta_rueb": "2026-05-06 14:19",
+      "current_ship_eta_rueb": "2026-05-06 14:18",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.summary.pilot_1_name",
@@ -658,7 +696,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "CONTAINERSHIPS VIII",
-          "current_ship_eta_rueb": "2026-05-06 14:19",
+          "current_ship_eta_rueb": "2026-05-06 14:18",
           "current_ship_source": "schiffe_merged.summary.pilot_1_name",
           "availability_kind": "merged_eta"
         },
@@ -797,7 +835,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "CONTAINERSHIPS VIII",
-          "current_ship_eta_rueb": "2026-05-06 14:19",
+          "current_ship_eta_rueb": "2026-05-06 14:18",
           "current_ship_source": "schiffe_merged.summary.pilot_1_name",
           "availability_kind": "merged_eta"
         },
@@ -945,7 +983,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "CONTAINERSHIPS VIII",
-          "current_ship_eta_rueb": "2026-05-06 14:19",
+          "current_ship_eta_rueb": "2026-05-06 14:18",
           "current_ship_source": "schiffe_merged.summary.pilot_1_name",
           "availability_kind": "merged_eta"
         },
@@ -1007,32 +1045,139 @@
           "type_of_loading": "Stueckgueter"
         }
       }
+    },
+    {
+      "ship_key": "ELLEN ESSBERGER",
+      "ship_name": "ELLEN ESSBERGER",
+      "eta_rueb": "2026-05-06 17:45",
+      "ship_q": 4,
+      "assigned_pilot": "Hewig, Marius Paul",
+      "assigned_pilot_q": 2,
+      "assigned_tactical_nr": 9,
+      "assigned_abteilungszeit": "2026-05-06 07:35",
+      "assigned_current_ship_name": "STOLT SANDERLING",
+      "assigned_current_ship_eta_rueb": "2026-05-06 09:16",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 6,
+      "candidates": [
+        {
+          "pilot_name": "Hewig, Marius Paul",
+          "pilot_q": 2,
+          "pilot_tactical_nr": 9,
+          "abteilungszeit": "2026-05-06 07:35",
+          "fahrzeug": "STOLT SANDERLING",
+          "to": "KLT",
+          "aufgabe": "Seebört",
+          "current_ship_name": "STOLT SANDERLING",
+          "current_ship_eta_rueb": "2026-05-06 09:16",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Wulff, Stephan",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 10,
+          "abteilungszeit": "2026-05-06 07:35",
+          "fahrzeug": "SONILAND",
+          "to": "KLT",
+          "aufgabe": "Seebört",
+          "current_ship_name": "SONILAND",
+          "current_ship_eta_rueb": "2026-05-06 09:13",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Pitschmann, Gerd",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 8,
+          "abteilungszeit": "2026-05-06 08:53",
+          "fahrzeug": "GT VELA",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "GT VELA",
+          "current_ship_eta_rueb": "2026-05-06 14:10",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Lielienthal, Jörn",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 7,
+          "abteilungszeit": "2026-05-06 08:55",
+          "fahrzeug": "CONTAINERSHIPS 8",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "CONTAINERSHIPS VIII",
+          "current_ship_eta_rueb": "2026-05-06 14:18",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Böttger, Oleif Johann",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 3,
+          "abteilungszeit": "2026-05-06 11:14",
+          "fahrzeug": "SEA EXPLORER",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "SEA EXPLORER",
+          "current_ship_eta_rueb": "2026-05-06 16:07",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Krügel, Mathias",
+          "pilot_q": 1,
+          "pilot_tactical_nr": 1,
+          "abteilungszeit": "2026-05-06 12:35",
+          "fahrzeug": "TIM",
+          "to": "HOS",
+          "aufgabe": "Seebört",
+          "current_ship_name": "TIM",
+          "current_ship_eta_rueb": "2026-05-04 14:42",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "4",
+          "time": "Wed May 06 17:25:00 CEST 2026",
+          "draft": "7.4",
+          "q_gruppe": "4",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "HOS → KLT",
+          "routes": [
+            "HOS → KLT",
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "4",
+          "vg": "4",
+          "draft": "7.40",
+          "length_m": "118.14",
+          "beam_m": "18.800",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "U",
+          "pilot_1_name": "Meyer, Hannes",
+          "travel_status": "SAILING_NOK",
+          "makler": "UCA",
+          "dangerous_vessel": "ja",
+          "type_of_loading": "Chemikalien fluessig"
+        }
+      }
     }
   ],
   "unassigned_ships": [],
   "unused_pilots": [
-    {
-      "pilot_key": "hewig_marius paul",
-      "vorname": "Marius Paul",
-      "nachname": "Hewig",
-      "pilot_name": "Hewig, Marius Paul",
-      "abteilungszeit": "2026-05-06 07:35",
-      "pilot_q": 2,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 9,
-      "aufgabe": "Seebört",
-      "fahrzeug": "STOLT SANDERLING",
-      "from": "HOS",
-      "to": "KLT",
-      "nr": 9,
-      "raw_time": "Wed May 06 07:35:00 CEST 2026",
-      "current_ship_name": "STOLT SANDERLING",
-      "current_ship_eta_rueb": "2026-05-06 09:16",
-      "current_ship_q": 0,
-      "current_ship_route": "HOS → KLT",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
-    },
     {
       "pilot_key": "wulff_stephan",
       "vorname": "Stephan",
@@ -1093,7 +1238,7 @@
       "nr": 7,
       "raw_time": "Wed May 06 08:55:00 CEST 2026",
       "current_ship_name": "CONTAINERSHIPS VIII",
-      "current_ship_eta_rueb": "2026-05-06 14:19",
+      "current_ship_eta_rueb": "2026-05-06 14:18",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.summary.pilot_1_name",
