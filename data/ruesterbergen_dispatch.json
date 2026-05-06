@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-06T04:17:04",
+  "generated_at": "2026-05-06T04:19:14",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 7,
     "pilots_total": 10,
-    "pilots_dispatchable": 8,
-    "pilots_visible_only": 2,
+    "pilots_dispatchable": 9,
+    "pilots_visible_only": 1,
     "assignments": 7,
     "unassigned_ships": 0,
-    "unused_pilots": 1
+    "unused_pilots": 2
   },
   "ships": [
     {
@@ -147,7 +147,7 @@
     {
       "ship_key": "WILSON BRUGGE",
       "ship_name": "WILSON BRUGGE",
-      "eta_rueb": "2026-05-06 08:55",
+      "eta_rueb": "2026-05-06 08:56",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
@@ -185,7 +185,7 @@
     {
       "ship_key": "SALAR",
       "ship_name": "SALAR",
-      "eta_rueb": "2026-05-06 08:58",
+      "eta_rueb": "2026-05-06 09:00",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
@@ -222,7 +222,7 @@
     {
       "ship_key": "SONILAND",
       "ship_name": "SONILAND",
-      "eta_rueb": "2026-05-06 09:01",
+      "eta_rueb": "2026-05-06 09:03",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
@@ -260,7 +260,7 @@
     {
       "ship_key": "STOLT SANDERLING",
       "ship_name": "STOLT SANDERLING",
-      "eta_rueb": "2026-05-06 09:04",
+      "eta_rueb": "2026-05-06 09:06",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 4,
       "meldung": {
@@ -486,10 +486,11 @@
       "to": "RÜB",
       "nr": 2,
       "raw_time": "Wed May 06 03:01:00 CEST 2026",
-      "current_ship_name": "EN AVANT 10 + EN AVANT 1 + H-331",
+      "current_ship_name": "EN AVANT 10 + H 331 + EN AVANT 1",
+      "current_ship_eta_rueb": "2026-05-06 07:57",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta"
     },
     {
@@ -510,7 +511,7 @@
       "current_ship_name": "GT AURIGA",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta"
     }
   ],
@@ -689,24 +690,31 @@
       "current_ship_route": "RÜB → HOS",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
-    }
-  ],
-  "visible_but_not_dispatchable_pilots": [
+    },
     {
       "pilot_key": "kubica_gregor",
+      "vorname": "Gregor",
+      "nachname": "Kubica",
       "pilot_name": "Kubica, Gregor",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 2,
       "abteilungszeit": "2026-05-06 03:01",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 2,
       "aufgabe": "Kanalbört",
       "fahrzeug": "EN AVANT 10 + EN AVANT 1 + H-331",
       "from": "HOS",
       "to": "RÜB",
-      "current_ship_name": "EN AVANT 10 + EN AVANT 1 + H-331",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    },
+      "nr": 2,
+      "raw_time": "Wed May 06 03:01:00 CEST 2026",
+      "current_ship_name": "EN AVANT 10 + H 331 + EN AVANT 1",
+      "current_ship_eta_rueb": "2026-05-06 07:57",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "availability_kind": "merged_eta"
+    }
+  ],
+  "visible_but_not_dispatchable_pilots": [
     {
       "pilot_key": "steffens_micha",
       "pilot_name": "Steffens, Micha",
@@ -718,7 +726,7 @@
       "from": "HOR",
       "to": "RÜB",
       "current_ship_name": "GT AURIGA",
-      "current_ship_source": "schiffe_merged.seelotsen",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta",
       "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
     }
@@ -842,6 +850,17 @@
           "current_ship_name": "TG LEO",
           "current_ship_eta_rueb": "2026-05-06 02:49",
           "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Kubica, Gregor",
+          "pilot_tactical_nr": 2,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "EN AVANT 10 + H 331 + EN AVANT 1",
+          "pilot_current_ship_eta_rueb": "2026-05-06 07:57",
+          "ship_eta_rueb": "2026-05-06 06:08",
           "availability_kind": "merged_eta"
         }
       ],
@@ -970,6 +989,15 @@
           "reason": "Quali passt nicht (4 > 1)",
           "pilot_q": 4,
           "ship_q": 1
+        },
+        {
+          "pilot_name": "Kubica, Gregor",
+          "pilot_tactical_nr": 2,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "EN AVANT 10 + H 331 + EN AVANT 1",
+          "pilot_current_ship_eta_rueb": "2026-05-06 07:57",
+          "ship_eta_rueb": "2026-05-06 06:57",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -1020,7 +1048,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 6,
+      "candidate_count": 7,
       "candidates": [
         {
           "pilot_name": "Nagel, Volker",
@@ -1099,6 +1127,19 @@
           "current_ship_eta_rueb": "2026-05-06 02:49",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Kubica, Gregor",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-05-06 03:01",
+          "fahrzeug": "EN AVANT 10 + EN AVANT 1 + H-331",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "EN AVANT 10 + H 331 + EN AVANT 1",
+          "current_ship_eta_rueb": "2026-05-06 07:57",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -1127,7 +1168,7 @@
     {
       "ship_key": "WILSON BRUGGE",
       "ship_name": "WILSON BRUGGE",
-      "eta_rueb": "2026-05-06 08:55",
+      "eta_rueb": "2026-05-06 08:56",
       "ship_q": 5,
       "assigned_pilot": "Krüger, Caspar-Maria",
       "assigned_pilot_q": 4,
@@ -1138,7 +1179,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 5,
+      "candidate_count": 6,
       "candidates": [
         {
           "pilot_name": "Krüger, Caspar-Maria",
@@ -1204,6 +1245,19 @@
           "current_ship_eta_rueb": "2026-05-06 02:49",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Kubica, Gregor",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-05-06 03:01",
+          "fahrzeug": "EN AVANT 10 + EN AVANT 1 + H-331",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "EN AVANT 10 + H 331 + EN AVANT 1",
+          "current_ship_eta_rueb": "2026-05-06 07:57",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -1243,7 +1297,7 @@
     {
       "ship_key": "SALAR",
       "ship_name": "SALAR",
-      "eta_rueb": "2026-05-06 08:58",
+      "eta_rueb": "2026-05-06 09:00",
       "ship_q": 5,
       "assigned_pilot": "Hüpers, Peter",
       "assigned_pilot_q": 0,
@@ -1254,7 +1308,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 4,
+      "candidate_count": 5,
       "candidates": [
         {
           "pilot_name": "Hüpers, Peter",
@@ -1307,6 +1361,19 @@
           "current_ship_eta_rueb": "2026-05-06 02:49",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Kubica, Gregor",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-05-06 03:01",
+          "fahrzeug": "EN AVANT 10 + EN AVANT 1 + H-331",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "EN AVANT 10 + H 331 + EN AVANT 1",
+          "current_ship_eta_rueb": "2026-05-06 07:57",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -1345,7 +1412,7 @@
     {
       "ship_key": "SONILAND",
       "ship_name": "SONILAND",
-      "eta_rueb": "2026-05-06 09:01",
+      "eta_rueb": "2026-05-06 09:03",
       "ship_q": 5,
       "assigned_pilot": "Demant, Tom",
       "assigned_pilot_q": 4,
@@ -1356,7 +1423,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 3,
+      "candidate_count": 4,
       "candidates": [
         {
           "pilot_name": "Demant, Tom",
@@ -1395,6 +1462,19 @@
           "current_ship_name": "TG LEO",
           "current_ship_eta_rueb": "2026-05-06 02:49",
           "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Kubica, Gregor",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-05-06 03:01",
+          "fahrzeug": "EN AVANT 10 + EN AVANT 1 + H-331",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "EN AVANT 10 + H 331 + EN AVANT 1",
+          "current_ship_eta_rueb": "2026-05-06 07:57",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
           "availability_kind": "merged_eta"
         }
       ],
@@ -1435,7 +1515,7 @@
     {
       "ship_key": "STOLT SANDERLING",
       "ship_name": "STOLT SANDERLING",
-      "eta_rueb": "2026-05-06 09:04",
+      "eta_rueb": "2026-05-06 09:06",
       "ship_q": 4,
       "assigned_pilot": "Wille, Christian",
       "assigned_pilot_q": 0,
@@ -1446,7 +1526,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 2,
+      "candidate_count": 3,
       "candidates": [
         {
           "pilot_name": "Wille, Christian",
@@ -1472,6 +1552,19 @@
           "current_ship_name": "TG LEO",
           "current_ship_eta_rueb": "2026-05-06 02:49",
           "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Kubica, Gregor",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-05-06 03:01",
+          "fahrzeug": "EN AVANT 10 + EN AVANT 1 + H-331",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "EN AVANT 10 + H 331 + EN AVANT 1",
+          "current_ship_eta_rueb": "2026-05-06 07:57",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
           "availability_kind": "merged_eta"
         }
       ],
@@ -1531,6 +1624,28 @@
       "current_ship_q": 1,
       "current_ship_route": "RÜB → HOS",
       "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "kubica_gregor",
+      "vorname": "Gregor",
+      "nachname": "Kubica",
+      "pilot_name": "Kubica, Gregor",
+      "abteilungszeit": "2026-05-06 03:01",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 2,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "EN AVANT 10 + EN AVANT 1 + H-331",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 2,
+      "raw_time": "Wed May 06 03:01:00 CEST 2026",
+      "current_ship_name": "EN AVANT 10 + H 331 + EN AVANT 1",
+      "current_ship_eta_rueb": "2026-05-06 07:57",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta"
     }
   ]
