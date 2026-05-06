@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-06T14:09:08",
+  "generated_at": "2026-05-06T14:11:11",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,10 +34,10 @@
   "counts": {
     "ships_for_ruesterbergen": 5,
     "pilots_total": 7,
-    "pilots_dispatchable": 4,
-    "pilots_visible_only": 3,
-    "assignments": 4,
-    "unassigned_ships": 1,
+    "pilots_dispatchable": 5,
+    "pilots_visible_only": 2,
+    "assignments": 5,
+    "unassigned_ships": 0,
     "unused_pilots": 0
   },
   "ships": [
@@ -295,16 +295,16 @@
       "q_source": "q_gruppen_lotsen.entries",
       "pilot_tactical_nr": 9,
       "aufgabe": "Kanalbört",
-      "fahrzeug": "CONTAINERSHIPS 8",
-      "from": "HOS",
-      "to": "RÜB",
+      "fahrzeug": "RÜB",
       "nr": 9,
       "raw_time": "Wed May 06 08:55:00 CEST 2026",
-      "current_ship_name": "CONTAINERSHIPS 8",
+      "current_ship_name": "RÜB",
+      "current_ship_eta_rueb": "2026-05-06 08:55",
       "current_ship_q": 0,
-      "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
+      "current_ship_route": "RÜB",
+      "current_ship_source": "special.already_in_rueb",
+      "availability_kind": "already_in_rueb",
+      "availability_hint": "Lotse gilt als bereits in RÜB"
     },
     {
       "pilot_key": "böttger_oleif johann",
@@ -437,6 +437,27 @@
       "availability_hint": "Lotse gilt als bereits in RÜB"
     },
     {
+      "pilot_key": "lielienthal_jörn",
+      "vorname": "Jörn",
+      "nachname": "Lielienthal",
+      "pilot_name": "Lielienthal, Jörn",
+      "abteilungszeit": "2026-05-06 08:55",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 9,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "RÜB",
+      "nr": 9,
+      "raw_time": "Wed May 06 08:55:00 CEST 2026",
+      "current_ship_name": "RÜB",
+      "current_ship_eta_rueb": "2026-05-06 08:55",
+      "current_ship_q": 0,
+      "current_ship_route": "RÜB",
+      "current_ship_source": "special.already_in_rueb",
+      "availability_kind": "already_in_rueb",
+      "availability_hint": "Lotse gilt als bereits in RÜB"
+    },
+    {
       "pilot_key": "böttger_oleif johann",
       "vorname": "Oleif Johann",
       "nachname": "Böttger",
@@ -460,21 +481,6 @@
     }
   ],
   "visible_but_not_dispatchable_pilots": [
-    {
-      "pilot_key": "lielienthal_jörn",
-      "pilot_name": "Lielienthal, Jörn",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 9,
-      "abteilungszeit": "2026-05-06 08:55",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "CONTAINERSHIPS 8",
-      "from": "HOS",
-      "to": "RÜB",
-      "current_ship_name": "CONTAINERSHIPS 8",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    },
     {
       "pilot_key": "dalecki_niklas",
       "pilot_name": "Dalecki, Niklas",
@@ -521,7 +527,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 3,
+      "candidate_count": 4,
       "candidates": [
         {
           "pilot_name": "Crotogino, Philipp",
@@ -558,6 +564,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "RÜB",
           "current_ship_eta_rueb": "2026-05-06 08:53",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
+        },
+        {
+          "pilot_name": "Lielienthal, Jörn",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 9,
+          "abteilungszeit": "2026-05-06 08:55",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-06 08:55",
           "current_ship_source": "special.already_in_rueb",
           "availability_kind": "already_in_rueb",
           "availability_hint": "Lotse gilt als bereits in RÜB"
@@ -622,7 +641,7 @@
       "assigned_availability_kind": "already_in_rueb",
       "assigned_availability_hint": "Lotse gilt als bereits in RÜB",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 2,
+      "candidate_count": 3,
       "candidates": [
         {
           "pilot_name": "Bruhn, Stefan",
@@ -646,6 +665,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "RÜB",
           "current_ship_eta_rueb": "2026-05-06 08:53",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
+        },
+        {
+          "pilot_name": "Lielienthal, Jörn",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 9,
+          "abteilungszeit": "2026-05-06 08:55",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-06 08:55",
           "current_ship_source": "special.already_in_rueb",
           "availability_kind": "already_in_rueb",
           "availability_hint": "Lotse gilt als bereits in RÜB"
@@ -711,7 +743,7 @@
       "assigned_availability_kind": "already_in_rueb",
       "assigned_availability_hint": "Lotse gilt als bereits in RÜB",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 1,
+      "candidate_count": 2,
       "candidates": [
         {
           "pilot_name": "Pitschmann, Gerd",
@@ -722,6 +754,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "RÜB",
           "current_ship_eta_rueb": "2026-05-06 08:53",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
+        },
+        {
+          "pilot_name": "Lielienthal, Jörn",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 9,
+          "abteilungszeit": "2026-05-06 08:55",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-06 08:55",
           "current_ship_source": "special.already_in_rueb",
           "availability_kind": "already_in_rueb",
           "availability_hint": "Lotse gilt als bereits in RÜB"
@@ -777,17 +822,31 @@
       "ship_name": "ELLEN ESSBERGER",
       "eta_rueb": "2026-05-06 17:40",
       "ship_q": 4,
-      "assigned_pilot": "Böttger, Oleif Johann",
+      "assigned_pilot": "Lielienthal, Jörn",
       "assigned_pilot_q": 0,
-      "assigned_tactical_nr": 5,
-      "assigned_abteilungszeit": "2026-05-06 11:14",
-      "assigned_current_ship_name": "SEA EXPLORER",
-      "assigned_current_ship_eta_rueb": "2026-05-06 16:03",
-      "assigned_current_ship_source": "schiffe_merged.seelotsen",
-      "assigned_availability_kind": "merged_eta",
+      "assigned_tactical_nr": 9,
+      "assigned_abteilungszeit": "2026-05-06 08:55",
+      "assigned_current_ship_name": "RÜB",
+      "assigned_current_ship_eta_rueb": "2026-05-06 08:55",
+      "assigned_current_ship_source": "special.already_in_rueb",
+      "assigned_availability_kind": "already_in_rueb",
+      "assigned_availability_hint": "Lotse gilt als bereits in RÜB",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 1,
+      "candidate_count": 2,
       "candidates": [
+        {
+          "pilot_name": "Lielienthal, Jörn",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 9,
+          "abteilungszeit": "2026-05-06 08:55",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-06 08:55",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
+        },
         {
           "pilot_name": "Böttger, Oleif Johann",
           "pilot_q": 0,
@@ -835,16 +894,61 @@
           "type_of_loading": "Chemikalien fluessig"
         }
       }
-    }
-  ],
-  "unassigned_ships": [
+    },
     {
       "ship_key": "LUETJE HOERN",
       "ship_name": "LÜTJE HÖRN",
       "eta_rueb": "2026-05-07 09:00",
       "ship_q": 5,
-      "reason": "kein passender Lotse verfügbar"
+      "assigned_pilot": "Böttger, Oleif Johann",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 5,
+      "assigned_abteilungszeit": "2026-05-06 11:14",
+      "assigned_current_ship_name": "SEA EXPLORER",
+      "assigned_current_ship_eta_rueb": "2026-05-06 16:03",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "pilot_name": "Böttger, Oleif Johann",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 5,
+          "abteilungszeit": "2026-05-06 11:14",
+          "fahrzeug": "SEA EXPLORER",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "SEA EXPLORER",
+          "current_ship_eta_rueb": "2026-05-06 16:03",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "5",
+          "time": "Thu May 07 09:00:00 CEST 2026",
+          "draft": "1.0",
+          "q_gruppe": "5",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "LEM",
+          "to": "HOS",
+          "remark": "meldet sich 2 Stunden vorher, holt dort 3 Seehunde ab  ---> HOS"
+        },
+        "summary": {
+          "route": "HOR → LEM",
+          "routes": [
+            "HOR → LEM",
+            "LEM → HOS"
+          ],
+          "q_gruppe": "5",
+          "draft": "1.0"
+        }
+      }
     }
   ],
+  "unassigned_ships": [],
   "unused_pilots": []
 }
