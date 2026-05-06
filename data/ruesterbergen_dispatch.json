@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-06T16:53:26",
+  "generated_at": "2026-05-06T16:55:16",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,12 +32,12 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 7,
+    "ships_for_ruesterbergen": 8,
     "pilots_total": 10,
     "pilots_dispatchable": 7,
     "pilots_visible_only": 3,
     "assignments": 7,
-    "unassigned_ships": 0,
+    "unassigned_ships": 1,
     "unused_pilots": 0
   },
   "ships": [
@@ -108,7 +108,7 @@
     {
       "ship_key": "HEINZ G",
       "ship_name": "HEINZ G",
-      "eta_rueb": "2026-05-06 19:41",
+      "eta_rueb": "2026-05-06 19:39",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
@@ -254,13 +254,51 @@
       }
     },
     {
+      "ship_key": "SOFIA VG",
+      "ship_name": "SOFIA VG",
+      "eta_rueb": "2026-05-06 21:56",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 4,
+      "meldung": {
+        "nr": "7",
+        "time": "Wed May 06 21:05:00 CEST 2026",
+        "draft": "6.2",
+        "q_gruppe": "4",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "4",
+        "vg": "4",
+        "draft": "6.20",
+        "length_m": "104.97",
+        "beam_m": "15",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "U",
+        "pilot_1_name": "Sewastjanow, Nikolai",
+        "travel_status": "SAILING_NOK",
+        "makler": "UCA",
+        "dangerous_vessel": "-",
+        "type_of_loading": "Bulk"
+      }
+    },
+    {
       "ship_key": "LUETJE HOERN",
       "ship_name": "LÜTJE HÖRN",
       "eta_rueb": "2026-05-07 09:00",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
-        "nr": "7",
+        "nr": "8",
         "time": "Thu May 07 09:00:00 CEST 2026",
         "draft": "1.0",
         "q_gruppe": "5",
@@ -956,7 +994,7 @@
     {
       "ship_key": "HEINZ G",
       "ship_name": "HEINZ G",
-      "eta_rueb": "2026-05-06 19:41",
+      "eta_rueb": "2026-05-06 19:39",
       "ship_q": 5,
       "assigned_pilot": "Lielienthal, Jörn",
       "assigned_pilot_q": 0,
@@ -1338,10 +1376,10 @@
       }
     },
     {
-      "ship_key": "LUETJE HOERN",
-      "ship_name": "LÜTJE HÖRN",
-      "eta_rueb": "2026-05-07 09:00",
-      "ship_q": 5,
+      "ship_key": "SOFIA VG",
+      "ship_name": "SOFIA VG",
+      "eta_rueb": "2026-05-06 21:56",
+      "ship_q": 4,
       "assigned_pilot": "Koslik, Kevin",
       "assigned_pilot_q": 0,
       "assigned_tactical_nr": 4,
@@ -1370,27 +1408,46 @@
       "ship": {
         "meldung": {
           "nr": "7",
-          "time": "Thu May 07 09:00:00 CEST 2026",
-          "draft": "1.0",
-          "q_gruppe": "5",
+          "time": "Wed May 06 21:05:00 CEST 2026",
+          "draft": "6.2",
+          "q_gruppe": "4",
           "lotsen_anzahl": 1,
           "confirmed": false,
-          "from": "LEM",
-          "to": "HOS",
-          "remark": "meldet sich 2 Stunden vorher, holt in LEM 3 Seehunde ab  ---> HOS"
+          "from": "RÜB",
+          "to": "HOS"
         },
         "summary": {
-          "route": "HOR → LEM",
+          "route": "HOS → KLT",
           "routes": [
-            "HOR → LEM",
-            "LEM → HOS"
+            "HOS → KLT",
+            "RÜB → HOS"
           ],
-          "q_gruppe": "5",
-          "draft": "1.0"
+          "q_gruppe": "4",
+          "vg": "4",
+          "draft": "6.20",
+          "length_m": "104.97",
+          "beam_m": "15",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "U",
+          "pilot_1_name": "Sewastjanow, Nikolai",
+          "travel_status": "SAILING_NOK",
+          "makler": "UCA",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Bulk"
         }
       }
     }
   ],
-  "unassigned_ships": [],
+  "unassigned_ships": [
+    {
+      "ship_key": "LUETJE HOERN",
+      "ship_name": "LÜTJE HÖRN",
+      "eta_rueb": "2026-05-07 09:00",
+      "ship_q": 5,
+      "reason": "kein passender Lotse verfügbar"
+    }
+  ],
   "unused_pilots": []
 }
