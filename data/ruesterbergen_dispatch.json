@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-06T17:23:08",
+  "generated_at": "2026-05-06T17:25:22",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,10 +34,10 @@
   "counts": {
     "ships_for_ruesterbergen": 10,
     "pilots_total": 10,
-    "pilots_dispatchable": 7,
-    "pilots_visible_only": 3,
-    "assignments": 7,
-    "unassigned_ships": 3,
+    "pilots_dispatchable": 8,
+    "pilots_visible_only": 2,
+    "assignments": 8,
+    "unassigned_ships": 2,
     "unused_pilots": 0
   },
   "ships": [
@@ -565,6 +565,7 @@
       "nr": 3,
       "raw_time": "Wed May 06 16:06:00 CEST 2026",
       "current_ship_name": "LUNAMAR",
+      "current_ship_eta_rueb": "2026-05-06 22:11",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -588,7 +589,7 @@
       "current_ship_name": "DP WORLD LIMASSOL",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta"
     },
     {
@@ -609,7 +610,7 @@
       "current_ship_name": "FROYA",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta"
     }
   ],
@@ -766,24 +767,31 @@
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
-    }
-  ],
-  "visible_but_not_dispatchable_pilots": [
+    },
     {
       "pilot_key": "malik_christoph",
+      "vorname": "Christoph",
+      "nachname": "Malik",
       "pilot_name": "Malik, Christoph",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 3,
       "abteilungszeit": "2026-05-06 16:06",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 3,
       "aufgabe": "Kanalbört",
       "fahrzeug": "LUNAMAR",
       "from": "HOS",
       "to": "RÜB",
+      "nr": 3,
+      "raw_time": "Wed May 06 16:06:00 CEST 2026",
       "current_ship_name": "LUNAMAR",
+      "current_ship_eta_rueb": "2026-05-06 22:11",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    },
+      "availability_kind": "merged_eta"
+    }
+  ],
+  "visible_but_not_dispatchable_pilots": [
     {
       "pilot_key": "rambadt_helge",
       "pilot_name": "Rambadt, Helge",
@@ -795,7 +803,7 @@
       "from": "HOS",
       "to": "RÜB",
       "current_ship_name": "DP WORLD LIMASSOL",
-      "current_ship_source": "schiffe_merged.seelotsen",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta",
       "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
     },
@@ -810,7 +818,7 @@
       "from": "HOR",
       "to": "RÜB",
       "current_ship_name": "FROYA",
-      "current_ship_source": "schiffe_merged.seelotsen",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta",
       "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
     }
@@ -921,6 +929,17 @@
           "current_ship_name": "OLYMP TRADER",
           "current_ship_eta_rueb": "2026-05-06 18:26",
           "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Malik, Christoph",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "LUNAMAR",
+          "pilot_current_ship_eta_rueb": "2026-05-06 22:11",
+          "ship_eta_rueb": "2026-05-06 19:00",
           "availability_kind": "merged_eta"
         }
       ],
@@ -1041,6 +1060,17 @@
           "availability_kind": "merged_eta"
         }
       ],
+      "excluded": [
+        {
+          "pilot_name": "Malik, Christoph",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "LUNAMAR",
+          "pilot_current_ship_eta_rueb": "2026-05-06 22:11",
+          "ship_eta_rueb": "2026-05-06 19:36",
+          "availability_kind": "merged_eta"
+        }
+      ],
       "ship": {
         "meldung": {
           "nr": "2",
@@ -1156,6 +1186,17 @@
           "availability_kind": "merged_eta"
         }
       ],
+      "excluded": [
+        {
+          "pilot_name": "Malik, Christoph",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "LUNAMAR",
+          "pilot_current_ship_eta_rueb": "2026-05-06 22:11",
+          "ship_eta_rueb": "2026-05-06 19:43",
+          "availability_kind": "merged_eta"
+        }
+      ],
       "ship": {
         "meldung": {
           "nr": "3",
@@ -1258,6 +1299,17 @@
           "availability_kind": "merged_eta"
         }
       ],
+      "excluded": [
+        {
+          "pilot_name": "Malik, Christoph",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "LUNAMAR",
+          "pilot_current_ship_eta_rueb": "2026-05-06 22:11",
+          "ship_eta_rueb": "2026-05-06 20:21",
+          "availability_kind": "merged_eta"
+        }
+      ],
       "ship": {
         "meldung": {
           "nr": "4",
@@ -1348,6 +1400,17 @@
           "availability_kind": "merged_eta"
         }
       ],
+      "excluded": [
+        {
+          "pilot_name": "Malik, Christoph",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "LUNAMAR",
+          "pilot_current_ship_eta_rueb": "2026-05-06 22:11",
+          "ship_eta_rueb": "2026-05-06 21:10",
+          "availability_kind": "merged_eta"
+        }
+      ],
       "ship": {
         "meldung": {
           "nr": "5",
@@ -1424,6 +1487,17 @@
           "availability_kind": "merged_eta"
         }
       ],
+      "excluded": [
+        {
+          "pilot_name": "Malik, Christoph",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "LUNAMAR",
+          "pilot_current_ship_eta_rueb": "2026-05-06 22:11",
+          "ship_eta_rueb": "2026-05-06 21:19",
+          "availability_kind": "merged_eta"
+        }
+      ],
       "ship": {
         "meldung": {
           "nr": "7",
@@ -1488,6 +1562,17 @@
           "availability_kind": "merged_eta"
         }
       ],
+      "excluded": [
+        {
+          "pilot_name": "Malik, Christoph",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "LUNAMAR",
+          "pilot_current_ship_eta_rueb": "2026-05-06 22:11",
+          "ship_eta_rueb": "2026-05-06 21:55",
+          "availability_kind": "merged_eta"
+        }
+      ],
       "ship": {
         "meldung": {
           "nr": "6",
@@ -1521,6 +1606,59 @@
           "type_of_loading": "Bulk"
         }
       }
+    },
+    {
+      "ship_key": "LUETJE HOERN",
+      "ship_name": "LÜTJE HÖRN",
+      "eta_rueb": "2026-05-07 09:00",
+      "ship_q": 5,
+      "assigned_pilot": "Malik, Christoph",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 3,
+      "assigned_abteilungszeit": "2026-05-06 16:06",
+      "assigned_current_ship_name": "LUNAMAR",
+      "assigned_current_ship_eta_rueb": "2026-05-06 22:11",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "pilot_name": "Malik, Christoph",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 3,
+          "abteilungszeit": "2026-05-06 16:06",
+          "fahrzeug": "LUNAMAR",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "LUNAMAR",
+          "current_ship_eta_rueb": "2026-05-06 22:11",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "10",
+          "time": "Thu May 07 09:00:00 CEST 2026",
+          "draft": "1.0",
+          "q_gruppe": "5",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "LEM",
+          "to": "HOS",
+          "remark": "meldet sich 2 Stunden vorher, holt in LEM 3 Seehunde ab  ---> HOS"
+        },
+        "summary": {
+          "route": "HOR → LEM",
+          "routes": [
+            "HOR → LEM",
+            "LEM → HOS"
+          ],
+          "q_gruppe": "5",
+          "draft": "1.0"
+        }
+      }
     }
   ],
   "unassigned_ships": [
@@ -1529,21 +1667,36 @@
       "ship_name": "CHARLOTTE THERESA",
       "eta_rueb": "2026-05-06 21:58",
       "ship_q": 3,
-      "reason": "kein passender Lotse verfügbar"
+      "reason": "kein passender Lotse verfügbar",
+      "excluded": [
+        {
+          "pilot_name": "Malik, Christoph",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "LUNAMAR",
+          "pilot_current_ship_eta_rueb": "2026-05-06 22:11",
+          "ship_eta_rueb": "2026-05-06 21:58",
+          "availability_kind": "merged_eta"
+        }
+      ]
     },
     {
       "ship_key": "ARABELLA",
       "ship_name": "ARABELLA",
       "eta_rueb": "2026-05-06 22:01",
       "ship_q": 4,
-      "reason": "kein passender Lotse verfügbar"
-    },
-    {
-      "ship_key": "LUETJE HOERN",
-      "ship_name": "LÜTJE HÖRN",
-      "eta_rueb": "2026-05-07 09:00",
-      "ship_q": 5,
-      "reason": "kein passender Lotse verfügbar"
+      "reason": "kein passender Lotse verfügbar",
+      "excluded": [
+        {
+          "pilot_name": "Malik, Christoph",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "LUNAMAR",
+          "pilot_current_ship_eta_rueb": "2026-05-06 22:11",
+          "ship_eta_rueb": "2026-05-06 22:01",
+          "availability_kind": "merged_eta"
+        }
+      ]
     }
   ],
   "unused_pilots": []
