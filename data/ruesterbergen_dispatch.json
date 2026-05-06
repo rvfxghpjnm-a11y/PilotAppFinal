@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-06T17:29:08",
+  "generated_at": "2026-05-06T17:31:11",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,10 +34,10 @@
   "counts": {
     "ships_for_ruesterbergen": 10,
     "pilots_total": 10,
-    "pilots_dispatchable": 9,
-    "pilots_visible_only": 1,
-    "assignments": 8,
-    "unassigned_ships": 2,
+    "pilots_dispatchable": 10,
+    "pilots_visible_only": 0,
+    "assignments": 9,
+    "unassigned_ships": 1,
     "unused_pilots": 1
   },
   "ships": [
@@ -144,7 +144,7 @@
     {
       "ship_key": "RIX TANGO",
       "ship_name": "RIX TANGO",
-      "eta_rueb": "2026-05-06 20:21",
+      "eta_rueb": "2026-05-06 20:20",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
@@ -181,7 +181,7 @@
     {
       "ship_key": "OBERON",
       "ship_name": "OBERON",
-      "eta_rueb": "2026-05-06 21:10",
+      "eta_rueb": "2026-05-06 21:09",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
@@ -218,7 +218,7 @@
     {
       "ship_key": "STELLA VIRGO",
       "ship_name": "STELLA VIRGO",
-      "eta_rueb": "2026-05-06 21:19",
+      "eta_rueb": "2026-05-06 21:17",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 4,
       "meldung": {
@@ -609,9 +609,10 @@
       "nr": 1,
       "raw_time": "Wed May 06 16:23:00 CEST 2026",
       "current_ship_name": "FROYA",
+      "current_ship_eta_rueb": "2026-05-06 21:56",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     }
   ],
@@ -812,25 +813,31 @@
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
-    }
-  ],
-  "visible_but_not_dispatchable_pilots": [
+    },
     {
       "pilot_key": "kurfeld_jan",
+      "vorname": "Jan",
+      "nachname": "Kurfeld",
       "pilot_name": "Kurfeld, Jan",
-      "pilot_q": 2,
-      "pilot_tactical_nr": 1,
       "abteilungszeit": "2026-05-06 16:23",
+      "pilot_q": 2,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 1,
       "aufgabe": "Kanalbört",
       "fahrzeug": "FROYA",
       "from": "HOR",
       "to": "RÜB",
+      "nr": 1,
+      "raw_time": "Wed May 06 16:23:00 CEST 2026",
       "current_ship_name": "FROYA",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
+      "current_ship_eta_rueb": "2026-05-06 21:56",
+      "current_ship_q": 0,
+      "current_ship_route": "HOR → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
     }
   ],
+  "visible_but_not_dispatchable_pilots": [],
   "assignments": [
     {
       "ship_key": "WILSON BRUGGE",
@@ -956,6 +963,15 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "DP WORLD LIMASSOL",
           "pilot_current_ship_eta_rueb": "2026-05-06 22:14",
+          "ship_eta_rueb": "2026-05-06 19:00",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Kurfeld, Jan",
+          "pilot_tactical_nr": 1,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "FROYA",
+          "pilot_current_ship_eta_rueb": "2026-05-06 21:56",
           "ship_eta_rueb": "2026-05-06 19:00",
           "availability_kind": "merged_eta"
         }
@@ -1095,6 +1111,15 @@
           "pilot_current_ship_eta_rueb": "2026-05-06 22:14",
           "ship_eta_rueb": "2026-05-06 19:36",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Kurfeld, Jan",
+          "pilot_tactical_nr": 1,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "FROYA",
+          "pilot_current_ship_eta_rueb": "2026-05-06 21:56",
+          "ship_eta_rueb": "2026-05-06 19:36",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -1230,6 +1255,15 @@
           "pilot_current_ship_eta_rueb": "2026-05-06 22:14",
           "ship_eta_rueb": "2026-05-06 19:43",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Kurfeld, Jan",
+          "pilot_tactical_nr": 1,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "FROYA",
+          "pilot_current_ship_eta_rueb": "2026-05-06 21:56",
+          "ship_eta_rueb": "2026-05-06 19:43",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -1268,7 +1302,7 @@
     {
       "ship_key": "RIX TANGO",
       "ship_name": "RIX TANGO",
-      "eta_rueb": "2026-05-06 20:21",
+      "eta_rueb": "2026-05-06 20:20",
       "ship_q": 5,
       "assigned_pilot": "Jeske, Lutz",
       "assigned_pilot_q": 0,
@@ -1341,7 +1375,7 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "LUNAMAR",
           "pilot_current_ship_eta_rueb": "2026-05-06 22:11",
-          "ship_eta_rueb": "2026-05-06 20:21",
+          "ship_eta_rueb": "2026-05-06 20:20",
           "availability_kind": "merged_eta"
         },
         {
@@ -1350,7 +1384,16 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "DP WORLD LIMASSOL",
           "pilot_current_ship_eta_rueb": "2026-05-06 22:14",
-          "ship_eta_rueb": "2026-05-06 20:21",
+          "ship_eta_rueb": "2026-05-06 20:20",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Kurfeld, Jan",
+          "pilot_tactical_nr": 1,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "FROYA",
+          "pilot_current_ship_eta_rueb": "2026-05-06 21:56",
+          "ship_eta_rueb": "2026-05-06 20:20",
           "availability_kind": "merged_eta"
         }
       ],
@@ -1390,7 +1433,7 @@
     {
       "ship_key": "OBERON",
       "ship_name": "OBERON",
-      "eta_rueb": "2026-05-06 21:10",
+      "eta_rueb": "2026-05-06 21:09",
       "ship_q": 5,
       "assigned_pilot": "Böttger, Oleif Johann",
       "assigned_pilot_q": 0,
@@ -1451,7 +1494,7 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "LUNAMAR",
           "pilot_current_ship_eta_rueb": "2026-05-06 22:11",
-          "ship_eta_rueb": "2026-05-06 21:10",
+          "ship_eta_rueb": "2026-05-06 21:09",
           "availability_kind": "merged_eta"
         },
         {
@@ -1460,7 +1503,16 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "DP WORLD LIMASSOL",
           "pilot_current_ship_eta_rueb": "2026-05-06 22:14",
-          "ship_eta_rueb": "2026-05-06 21:10",
+          "ship_eta_rueb": "2026-05-06 21:09",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Kurfeld, Jan",
+          "pilot_tactical_nr": 1,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "FROYA",
+          "pilot_current_ship_eta_rueb": "2026-05-06 21:56",
+          "ship_eta_rueb": "2026-05-06 21:09",
           "availability_kind": "merged_eta"
         }
       ],
@@ -1500,7 +1552,7 @@
     {
       "ship_key": "STELLA VIRGO",
       "ship_name": "STELLA VIRGO",
-      "eta_rueb": "2026-05-06 21:19",
+      "eta_rueb": "2026-05-06 21:17",
       "ship_q": 4,
       "assigned_pilot": "Dalecki, Niklas",
       "assigned_pilot_q": 0,
@@ -1547,7 +1599,7 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "LUNAMAR",
           "pilot_current_ship_eta_rueb": "2026-05-06 22:11",
-          "ship_eta_rueb": "2026-05-06 21:19",
+          "ship_eta_rueb": "2026-05-06 21:17",
           "availability_kind": "merged_eta"
         },
         {
@@ -1556,7 +1608,16 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "DP WORLD LIMASSOL",
           "pilot_current_ship_eta_rueb": "2026-05-06 22:14",
-          "ship_eta_rueb": "2026-05-06 21:19",
+          "ship_eta_rueb": "2026-05-06 21:17",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Kurfeld, Jan",
+          "pilot_tactical_nr": 1,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "FROYA",
+          "pilot_current_ship_eta_rueb": "2026-05-06 21:56",
+          "ship_eta_rueb": "2026-05-06 21:17",
           "availability_kind": "merged_eta"
         }
       ],
@@ -1642,6 +1703,15 @@
           "pilot_current_ship_eta_rueb": "2026-05-06 22:14",
           "ship_eta_rueb": "2026-05-06 21:54",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Kurfeld, Jan",
+          "pilot_tactical_nr": 1,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "FROYA",
+          "pilot_current_ship_eta_rueb": "2026-05-06 21:56",
+          "ship_eta_rueb": "2026-05-06 21:54",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -1675,6 +1745,90 @@
           "makler": "UCA",
           "dangerous_vessel": "-",
           "type_of_loading": "Bulk"
+        }
+      }
+    },
+    {
+      "ship_key": "CHARLOTTE THERESA",
+      "ship_name": "CHARLOTTE THERESA",
+      "eta_rueb": "2026-05-06 21:57",
+      "ship_q": 3,
+      "assigned_pilot": "Kurfeld, Jan",
+      "assigned_pilot_q": 2,
+      "assigned_tactical_nr": 1,
+      "assigned_abteilungszeit": "2026-05-06 16:23",
+      "assigned_current_ship_name": "FROYA",
+      "assigned_current_ship_eta_rueb": "2026-05-06 21:56",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "pilot_name": "Kurfeld, Jan",
+          "pilot_q": 2,
+          "pilot_tactical_nr": 1,
+          "abteilungszeit": "2026-05-06 16:23",
+          "fahrzeug": "FROYA",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "FROYA",
+          "current_ship_eta_rueb": "2026-05-06 21:56",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Malik, Christoph",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "LUNAMAR",
+          "pilot_current_ship_eta_rueb": "2026-05-06 22:11",
+          "ship_eta_rueb": "2026-05-06 21:57",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Rambadt, Helge",
+          "pilot_tactical_nr": 2,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "DP WORLD LIMASSOL",
+          "pilot_current_ship_eta_rueb": "2026-05-06 22:14",
+          "ship_eta_rueb": "2026-05-06 21:57",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "8",
+          "time": "Wed May 06 21:15:00 CEST 2026",
+          "draft": "9.2",
+          "q_gruppe": "3",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "HOS → KLT",
+          "routes": [
+            "HOS → KLT",
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "3",
+          "vg": "4",
+          "draft": "9.20",
+          "length_m": "129.6",
+          "beam_m": "19.2",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "U",
+          "pilot_1_name": "Drumm, Christian",
+          "travel_status": "SAILING_NOK",
+          "makler": "UCA",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Chemikalien fluessig"
         }
       }
     },
@@ -1746,33 +1900,6 @@
     }
   ],
   "unassigned_ships": [
-    {
-      "ship_key": "CHARLOTTE THERESA",
-      "ship_name": "CHARLOTTE THERESA",
-      "eta_rueb": "2026-05-06 21:57",
-      "ship_q": 3,
-      "reason": "kein passender Lotse verfügbar",
-      "excluded": [
-        {
-          "pilot_name": "Malik, Christoph",
-          "pilot_tactical_nr": 3,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "LUNAMAR",
-          "pilot_current_ship_eta_rueb": "2026-05-06 22:11",
-          "ship_eta_rueb": "2026-05-06 21:57",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Rambadt, Helge",
-          "pilot_tactical_nr": 2,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "DP WORLD LIMASSOL",
-          "pilot_current_ship_eta_rueb": "2026-05-06 22:14",
-          "ship_eta_rueb": "2026-05-06 21:57",
-          "availability_kind": "merged_eta"
-        }
-      ]
-    },
     {
       "ship_key": "ARABELLA",
       "ship_name": "ARABELLA",
