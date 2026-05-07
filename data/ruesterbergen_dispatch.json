@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-07T19:27:08",
+  "generated_at": "2026-05-07T19:29:14",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 4,
     "pilots_total": 10,
-    "pilots_dispatchable": 8,
-    "pilots_visible_only": 2,
+    "pilots_dispatchable": 9,
+    "pilots_visible_only": 1,
     "assignments": 4,
     "unassigned_ships": 0,
-    "unused_pilots": 4
+    "unused_pilots": 5
   },
   "ships": [
     {
@@ -362,6 +362,7 @@
       "nr": 6,
       "raw_time": "Thu May 07 17:50:00 CEST 2026",
       "current_ship_name": "FGS DONAU - A 516",
+      "current_ship_eta_rueb": "2026-05-07 23:06",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.summary.pilot_1_name",
@@ -565,6 +566,28 @@
       "availability_kind": "merged_eta"
     },
     {
+      "pilot_key": "fricke_michell",
+      "vorname": "Michell",
+      "nachname": "Fricke",
+      "pilot_name": "Fricke, Michell",
+      "abteilungszeit": "2026-05-07 17:50",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 6,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "DONAU   A516",
+      "from": "HOR",
+      "to": "RÜB",
+      "nr": 6,
+      "raw_time": "Thu May 07 17:50:00 CEST 2026",
+      "current_ship_name": "FGS DONAU - A 516",
+      "current_ship_eta_rueb": "2026-05-07 23:06",
+      "current_ship_q": 0,
+      "current_ship_route": "HOR → RÜB",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "availability_kind": "merged_eta"
+    },
+    {
       "pilot_key": "schulz_arne",
       "vorname": "Arne",
       "nachname": "Schulz",
@@ -588,21 +611,6 @@
     }
   ],
   "visible_but_not_dispatchable_pilots": [
-    {
-      "pilot_key": "fricke_michell",
-      "pilot_name": "Fricke, Michell",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 6,
-      "abteilungszeit": "2026-05-07 17:50",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "DONAU   A516",
-      "from": "HOR",
-      "to": "RÜB",
-      "current_ship_name": "FGS DONAU - A 516",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    },
     {
       "pilot_key": "dietrich_thomas",
       "pilot_name": "Dietrich, Thomas",
@@ -714,6 +722,15 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "LADY HARRIET",
           "pilot_current_ship_eta_rueb": "2026-05-07 21:03",
+          "ship_eta_rueb": "2026-05-07 20:52",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Fricke, Michell",
+          "pilot_tactical_nr": 6,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "FGS DONAU - A 516",
+          "pilot_current_ship_eta_rueb": "2026-05-07 23:06",
           "ship_eta_rueb": "2026-05-07 20:52",
           "availability_kind": "merged_eta"
         },
@@ -845,6 +862,15 @@
           "ship_q": 0
         },
         {
+          "pilot_name": "Fricke, Michell",
+          "pilot_tactical_nr": 6,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "FGS DONAU - A 516",
+          "pilot_current_ship_eta_rueb": "2026-05-07 23:06",
+          "ship_eta_rueb": "2026-05-07 22:33",
+          "availability_kind": "merged_eta"
+        },
+        {
           "pilot_name": "Schulz, Arne",
           "pilot_tactical_nr": 5,
           "reason": "kommt nicht rechtzeitig in RÜB an",
@@ -973,6 +999,15 @@
       ],
       "excluded": [
         {
+          "pilot_name": "Fricke, Michell",
+          "pilot_tactical_nr": 6,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "FGS DONAU - A 516",
+          "pilot_current_ship_eta_rueb": "2026-05-07 23:06",
+          "ship_eta_rueb": "2026-05-07 22:39",
+          "availability_kind": "merged_eta"
+        },
+        {
           "pilot_name": "Schulz, Arne",
           "pilot_tactical_nr": 5,
           "reason": "kommt nicht rechtzeitig in RÜB an",
@@ -1031,7 +1066,7 @@
       "assigned_availability_kind": "already_in_rueb",
       "assigned_availability_hint": "Lotse gilt als bereits in RÜB",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 5,
+      "candidate_count": 6,
       "candidates": [
         {
           "pilot_name": "Merschmann, Tim",
@@ -1083,6 +1118,19 @@
           "current_ship_name": "LADY HARRIET",
           "current_ship_eta_rueb": "2026-05-07 21:03",
           "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Fricke, Michell",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 6,
+          "abteilungszeit": "2026-05-07 17:50",
+          "fahrzeug": "DONAU   A516",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "FGS DONAU - A 516",
+          "current_ship_eta_rueb": "2026-05-07 23:06",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
           "availability_kind": "merged_eta"
         },
         {
@@ -1200,6 +1248,28 @@
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "fricke_michell",
+      "vorname": "Michell",
+      "nachname": "Fricke",
+      "pilot_name": "Fricke, Michell",
+      "abteilungszeit": "2026-05-07 17:50",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 6,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "DONAU   A516",
+      "from": "HOR",
+      "to": "RÜB",
+      "nr": 6,
+      "raw_time": "Thu May 07 17:50:00 CEST 2026",
+      "current_ship_name": "FGS DONAU - A 516",
+      "current_ship_eta_rueb": "2026-05-07 23:06",
+      "current_ship_q": 0,
+      "current_ship_route": "HOR → RÜB",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta"
     },
     {
