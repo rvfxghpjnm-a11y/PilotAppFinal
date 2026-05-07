@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-07T17:11:12",
+  "generated_at": "2026-05-07T17:13:11",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 2,
     "pilots_total": 9,
-    "pilots_dispatchable": 7,
-    "pilots_visible_only": 2,
+    "pilots_dispatchable": 8,
+    "pilots_visible_only": 1,
     "assignments": 2,
     "unassigned_ships": 0,
-    "unused_pilots": 5
+    "unused_pilots": 6
   },
   "ships": [
     {
@@ -262,10 +262,11 @@
       "to": "RÜB",
       "nr": 4,
       "raw_time": "Thu May 07 15:16:00 CEST 2026",
-      "current_ship_name": "RHEIN",
+      "current_ship_name": "FGS RHEIN - A 513",
+      "current_ship_eta_rueb": "2026-05-07 21:03",
       "current_ship_q": 0,
       "current_ship_route": "A513, TENDER (HOR → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta"
     },
     {
@@ -445,6 +446,28 @@
       "availability_kind": "merged_eta"
     },
     {
+      "pilot_key": "engler_sören",
+      "vorname": "Sören",
+      "nachname": "Engler",
+      "pilot_name": "Engler, Sören",
+      "abteilungszeit": "2026-05-07 15:16",
+      "pilot_q": 3,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 4,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "RHEIN",
+      "from": "A513, TENDER (HOR",
+      "to": "RÜB",
+      "nr": 4,
+      "raw_time": "Thu May 07 15:16:00 CEST 2026",
+      "current_ship_name": "FGS RHEIN - A 513",
+      "current_ship_eta_rueb": "2026-05-07 21:03",
+      "current_ship_q": 0,
+      "current_ship_route": "A513, TENDER (HOR → RÜB",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "availability_kind": "merged_eta"
+    },
+    {
       "pilot_key": "wachs_merten",
       "vorname": "Merten",
       "nachname": "Wachs",
@@ -468,21 +491,6 @@
     }
   ],
   "visible_but_not_dispatchable_pilots": [
-    {
-      "pilot_key": "engler_sören",
-      "pilot_name": "Engler, Sören",
-      "pilot_q": 3,
-      "pilot_tactical_nr": 4,
-      "abteilungszeit": "2026-05-07 15:16",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "RHEIN",
-      "from": "A513, TENDER (HOR",
-      "to": "RÜB",
-      "current_ship_name": "RHEIN",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    },
     {
       "pilot_key": "wachsmuth_martin",
       "pilot_name": "Wachsmuth, Martin",
@@ -596,6 +604,15 @@
         }
       ],
       "excluded": [
+        {
+          "pilot_name": "Engler, Sören",
+          "pilot_tactical_nr": 4,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "FGS RHEIN - A 513",
+          "pilot_current_ship_eta_rueb": "2026-05-07 21:03",
+          "ship_eta_rueb": "2026-05-07 19:19",
+          "availability_kind": "merged_eta"
+        },
         {
           "pilot_name": "Wachs, Merten",
           "pilot_tactical_nr": 3,
@@ -722,6 +739,15 @@
         }
       ],
       "excluded": [
+        {
+          "pilot_name": "Engler, Sören",
+          "pilot_tactical_nr": 4,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "FGS RHEIN - A 513",
+          "pilot_current_ship_eta_rueb": "2026-05-07 21:03",
+          "ship_eta_rueb": "2026-05-07 20:56",
+          "availability_kind": "merged_eta"
+        },
         {
           "pilot_name": "Wachs, Merten",
           "pilot_tactical_nr": 3,
@@ -854,6 +880,28 @@
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "engler_sören",
+      "vorname": "Sören",
+      "nachname": "Engler",
+      "pilot_name": "Engler, Sören",
+      "abteilungszeit": "2026-05-07 15:16",
+      "pilot_q": 3,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 4,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "RHEIN",
+      "from": "A513, TENDER (HOR",
+      "to": "RÜB",
+      "nr": 4,
+      "raw_time": "Thu May 07 15:16:00 CEST 2026",
+      "current_ship_name": "FGS RHEIN - A 513",
+      "current_ship_eta_rueb": "2026-05-07 21:03",
+      "current_ship_q": 0,
+      "current_ship_route": "A513, TENDER (HOR → RÜB",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta"
     },
     {
