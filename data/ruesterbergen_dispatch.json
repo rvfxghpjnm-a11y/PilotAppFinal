@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-08T00:37:09",
+  "generated_at": "2026-05-08T00:39:13",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 5,
     "pilots_total": 14,
-    "pilots_dispatchable": 14,
-    "pilots_visible_only": 0,
+    "pilots_dispatchable": 13,
+    "pilots_visible_only": 1,
     "assignments": 5,
     "unassigned_ships": 0,
-    "unused_pilots": 9
+    "unused_pilots": 8
   },
   "ships": [
     {
@@ -197,7 +197,7 @@
     {
       "ship_key": "EDITH",
       "ship_name": "EDITH",
-      "eta_rueb": "2026-05-08 04:54",
+      "eta_rueb": "2026-05-08 04:53",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 2,
       "meldung": {
@@ -380,11 +380,10 @@
       "to": "RÜB",
       "nr": 9,
       "raw_time": "Thu May 07 20:28:00 CEST 2026",
-      "current_ship_name": "SWE CARRIER",
-      "current_ship_eta_rueb": "2026-05-08 01:31",
+      "current_ship_name": "SWE-CARRIER",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
@@ -675,28 +674,6 @@
       "availability_kind": "merged_eta"
     },
     {
-      "pilot_key": "woitanowski_tim",
-      "vorname": "Tim",
-      "nachname": "Woitanowski",
-      "pilot_name": "Woitanowski, Tim",
-      "abteilungszeit": "2026-05-07 20:28",
-      "pilot_q": 2,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 9,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "SWE-CARRIER",
-      "from": "HOR",
-      "to": "RÜB",
-      "nr": 9,
-      "raw_time": "Thu May 07 20:28:00 CEST 2026",
-      "current_ship_name": "SWE CARRIER",
-      "current_ship_eta_rueb": "2026-05-08 01:31",
-      "current_ship_q": 0,
-      "current_ship_route": "HOR → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-      "availability_kind": "merged_eta"
-    },
-    {
       "pilot_key": "plaisant_julian",
       "vorname": "Julian",
       "nachname": "Plaisant",
@@ -851,7 +828,23 @@
       "availability_kind": "merged_eta"
     }
   ],
-  "visible_but_not_dispatchable_pilots": [],
+  "visible_but_not_dispatchable_pilots": [
+    {
+      "pilot_key": "woitanowski_tim",
+      "pilot_name": "Woitanowski, Tim",
+      "pilot_q": 2,
+      "pilot_tactical_nr": 9,
+      "abteilungszeit": "2026-05-07 20:28",
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "SWE-CARRIER",
+      "from": "HOR",
+      "to": "RÜB",
+      "current_ship_name": "SWE-CARRIER",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta",
+      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
+    }
+  ],
   "assignments": [
     {
       "ship_key": "BITHAV",
@@ -867,7 +860,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 11,
+      "candidate_count": 10,
       "candidates": [
         {
           "pilot_name": "Wachs, Merten",
@@ -945,19 +938,6 @@
           "current_ship_name": "RUYTER",
           "current_ship_eta_rueb": "2026-05-08 01:35",
           "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Woitanowski, Tim",
-          "pilot_q": 2,
-          "pilot_tactical_nr": 9,
-          "abteilungszeit": "2026-05-07 20:28",
-          "fahrzeug": "SWE-CARRIER",
-          "to": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "SWE CARRIER",
-          "current_ship_eta_rueb": "2026-05-08 01:31",
-          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
           "availability_kind": "merged_eta"
         },
         {
@@ -1161,13 +1141,6 @@
           "ship_q": 0
         },
         {
-          "pilot_name": "Woitanowski, Tim",
-          "pilot_tactical_nr": 9,
-          "reason": "Quali passt nicht (2 > 0)",
-          "pilot_q": 2,
-          "ship_q": 0
-        },
-        {
           "pilot_name": "Plaisant, Julian",
           "pilot_tactical_nr": 7,
           "reason": "Quali passt nicht (4 > 0)",
@@ -1264,7 +1237,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 6,
+      "candidate_count": 5,
       "candidates": [
         {
           "pilot_name": "Schulz, Arne",
@@ -1303,19 +1276,6 @@
           "current_ship_name": "RUYTER",
           "current_ship_eta_rueb": "2026-05-08 01:35",
           "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Woitanowski, Tim",
-          "pilot_q": 2,
-          "pilot_tactical_nr": 9,
-          "abteilungszeit": "2026-05-07 20:28",
-          "fahrzeug": "SWE-CARRIER",
-          "to": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "SWE CARRIER",
-          "current_ship_eta_rueb": "2026-05-08 01:31",
-          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
           "availability_kind": "merged_eta"
         },
         {
@@ -1444,7 +1404,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 8,
+      "candidate_count": 7,
       "candidates": [
         {
           "pilot_name": "Wachsmuth, Martin",
@@ -1483,19 +1443,6 @@
           "current_ship_name": "RUYTER",
           "current_ship_eta_rueb": "2026-05-08 01:35",
           "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Woitanowski, Tim",
-          "pilot_q": 2,
-          "pilot_tactical_nr": 9,
-          "abteilungszeit": "2026-05-07 20:28",
-          "fahrzeug": "SWE-CARRIER",
-          "to": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "SWE CARRIER",
-          "current_ship_eta_rueb": "2026-05-08 01:31",
-          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
           "availability_kind": "merged_eta"
         },
         {
@@ -1617,7 +1564,7 @@
     {
       "ship_key": "EDITH",
       "ship_name": "EDITH",
-      "eta_rueb": "2026-05-08 04:54",
+      "eta_rueb": "2026-05-08 04:53",
       "ship_q": 2,
       "assigned_pilot": "Dietrich, Thomas",
       "assigned_pilot_q": 0,
@@ -1629,7 +1576,7 @@
       "assigned_availability_kind": "already_in_rueb",
       "assigned_availability_hint": "Lotse gilt als bereits in RÜB",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 8,
+      "candidate_count": 7,
       "candidates": [
         {
           "pilot_name": "Dietrich, Thomas",
@@ -1655,19 +1602,6 @@
           "current_ship_name": "RUYTER",
           "current_ship_eta_rueb": "2026-05-08 01:35",
           "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Woitanowski, Tim",
-          "pilot_q": 2,
-          "pilot_tactical_nr": 9,
-          "abteilungszeit": "2026-05-07 20:28",
-          "fahrzeug": "SWE-CARRIER",
-          "to": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "SWE CARRIER",
-          "current_ship_eta_rueb": "2026-05-08 01:31",
-          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
           "availability_kind": "merged_eta"
         },
         {
@@ -1809,28 +1743,6 @@
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
-    },
-    {
-      "pilot_key": "woitanowski_tim",
-      "vorname": "Tim",
-      "nachname": "Woitanowski",
-      "pilot_name": "Woitanowski, Tim",
-      "abteilungszeit": "2026-05-07 20:28",
-      "pilot_q": 2,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 9,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "SWE-CARRIER",
-      "from": "HOR",
-      "to": "RÜB",
-      "nr": 9,
-      "raw_time": "Thu May 07 20:28:00 CEST 2026",
-      "current_ship_name": "SWE CARRIER",
-      "current_ship_eta_rueb": "2026-05-08 01:31",
-      "current_ship_q": 0,
-      "current_ship_route": "HOR → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta"
     },
     {
