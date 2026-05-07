@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-07T08:59:09",
+  "generated_at": "2026-05-07T09:01:25",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,13 +32,13 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 4,
+    "ships_for_ruesterbergen": 5,
     "pilots_total": 10,
     "pilots_dispatchable": 10,
     "pilots_visible_only": 0,
-    "assignments": 4,
+    "assignments": 5,
     "unassigned_ships": 0,
-    "unused_pilots": 6
+    "unused_pilots": 5
   },
   "ships": [
     {
@@ -165,6 +165,44 @@
         "makler": "UCA",
         "dangerous_vessel": "-",
         "type_of_loading": "Bulk"
+      }
+    },
+    {
+      "ship_key": "ALANA",
+      "ship_name": "ALANA",
+      "eta_rueb": "2026-05-07 14:54",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 2,
+      "meldung": {
+        "nr": "5",
+        "time": "Thu May 07 14:50:00 CEST 2026",
+        "draft": "7.3",
+        "q_gruppe": "2",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "2",
+        "vg": "5",
+        "draft": "7.30",
+        "length_m": "149.140",
+        "beam_m": "22.74",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "U",
+        "pilot_1_name": "Schiller, David",
+        "travel_status": "SAILING_NOK",
+        "makler": "UCA",
+        "dangerous_vessel": "-",
+        "type_of_loading": "Container"
       }
     }
   ],
@@ -1228,32 +1266,135 @@
           "type_of_loading": "Bulk"
         }
       }
+    },
+    {
+      "ship_key": "ALANA",
+      "ship_name": "ALANA",
+      "eta_rueb": "2026-05-07 14:54",
+      "ship_q": 2,
+      "assigned_pilot": "Munz, Joachim",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 9,
+      "assigned_abteilungszeit": "2026-05-07 04:25",
+      "assigned_current_ship_name": "ANNIKA BRAREN",
+      "assigned_current_ship_eta_rueb": "2026-05-07 05:42",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 5,
+      "candidates": [
+        {
+          "pilot_name": "Munz, Joachim",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 9,
+          "abteilungszeit": "2026-05-07 04:25",
+          "fahrzeug": "ANNIKA BRAREN",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ANNIKA BRAREN",
+          "current_ship_eta_rueb": "2026-05-07 05:42",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Blome, Henning",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 10,
+          "abteilungszeit": "2026-05-07 04:25",
+          "fahrzeug": "NORDSTRAUM",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "NORDSTRAUM",
+          "current_ship_eta_rueb": "2026-05-07 05:51",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Skairies, Thomas",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 7,
+          "abteilungszeit": "2026-05-07 04:50",
+          "fahrzeug": "STELLA ORION",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "STELLA ORION",
+          "current_ship_eta_rueb": "2026-05-07 05:57",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Röhl, Jens",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 5,
+          "abteilungszeit": "2026-05-07 06:45",
+          "fahrzeug": "ATLANTIS ALICANTE",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ATLANTIS ALICANTE",
+          "current_ship_eta_rueb": "2026-05-07 11:03",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Meise, Gregor",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 4,
+          "abteilungszeit": "2026-05-07 06:55",
+          "fahrzeug": "ALICIA",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ALICIA",
+          "current_ship_eta_rueb": "2026-05-07 08:27",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Engel, Alexander",
+          "pilot_tactical_nr": 6,
+          "reason": "Quali passt nicht (3 > 2)",
+          "pilot_q": 3,
+          "ship_q": 2
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "5",
+          "time": "Thu May 07 14:50:00 CEST 2026",
+          "draft": "7.3",
+          "q_gruppe": "2",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "HOS → KLT",
+          "routes": [
+            "HOS → KLT",
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "2",
+          "vg": "5",
+          "draft": "7.30",
+          "length_m": "149.140",
+          "beam_m": "22.74",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "U",
+          "pilot_1_name": "Schiller, David",
+          "travel_status": "SAILING_NOK",
+          "makler": "UCA",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Container"
+        }
+      }
     }
   ],
   "unassigned_ships": [],
   "unused_pilots": [
-    {
-      "pilot_key": "munz_joachim",
-      "vorname": "Joachim",
-      "nachname": "Munz",
-      "pilot_name": "Munz, Joachim",
-      "abteilungszeit": "2026-05-07 04:25",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 9,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "ANNIKA BRAREN",
-      "from": "RÜB",
-      "to": "HOS",
-      "nr": 9,
-      "raw_time": "Thu May 07 04:25:00 CEST 2026",
-      "current_ship_name": "ANNIKA BRAREN",
-      "current_ship_eta_rueb": "2026-05-07 05:42",
-      "current_ship_q": 0,
-      "current_ship_route": "RÜB → HOS",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
-    },
     {
       "pilot_key": "blome_henning",
       "vorname": "Henning",
