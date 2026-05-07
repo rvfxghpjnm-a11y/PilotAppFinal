@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-07T04:13:11",
+  "generated_at": "2026-05-07T04:15:11",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,12 +32,12 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 5,
+    "ships_for_ruesterbergen": 6,
     "pilots_total": 5,
     "pilots_dispatchable": 3,
     "pilots_visible_only": 2,
     "assignments": 3,
-    "unassigned_ships": 2,
+    "unassigned_ships": 3,
     "unused_pilots": 0
   },
   "ships": [
@@ -81,7 +81,7 @@
     {
       "ship_key": "VERTOM ISA",
       "ship_name": "VERTOM ISA",
-      "eta_rueb": "2026-05-07 05:53",
+      "eta_rueb": "2026-05-07 05:52",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
@@ -192,13 +192,51 @@
       }
     },
     {
+      "ship_key": "ALICIA",
+      "ship_name": "ALICIA",
+      "eta_rueb": "2026-05-07 08:37",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 2,
+      "meldung": {
+        "nr": "5",
+        "time": "Thu May 07 08:30:00 CEST 2026",
+        "draft": "6.7",
+        "q_gruppe": "2",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "2",
+        "vg": "5",
+        "draft": "6.70",
+        "length_m": "147",
+        "beam_m": "22.8",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "U",
+        "pilot_1_name": "Schwabe, Philipp",
+        "travel_status": "SAILING_NOK",
+        "makler": "UCA",
+        "dangerous_vessel": "-",
+        "type_of_loading": "Ballastfahrt"
+      }
+    },
+    {
       "ship_key": "LUETJE HOERN",
       "ship_name": "LÜTJE HÖRN",
       "eta_rueb": "2026-05-07 08:40",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
-        "nr": "5",
+        "nr": "6",
         "time": "Thu May 07 08:40:00 CEST 2026",
         "draft": "1.0",
         "q_gruppe": "5",
@@ -518,7 +556,7 @@
     {
       "ship_key": "VERTOM ISA",
       "ship_name": "VERTOM ISA",
-      "eta_rueb": "2026-05-07 05:53",
+      "eta_rueb": "2026-05-07 05:52",
       "ship_q": 5,
       "assigned_pilot": "Hahn, Peter",
       "assigned_pilot_q": 0,
@@ -553,7 +591,7 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "LASCAUX",
           "pilot_current_ship_eta_rueb": "2026-05-07 06:42",
-          "ship_eta_rueb": "2026-05-07 05:53",
+          "ship_eta_rueb": "2026-05-07 05:52",
           "availability_kind": "merged_eta"
         }
       ],
@@ -622,7 +660,7 @@
       ],
       "ship": {
         "meldung": {
-          "nr": "5",
+          "nr": "6",
           "time": "Thu May 07 08:40:00 CEST 2026",
           "draft": "1.0",
           "q_gruppe": "5",
@@ -678,6 +716,22 @@
           "pilot_current_ship_eta_rueb": "2026-05-07 06:42",
           "ship_eta_rueb": "2026-05-07 06:02",
           "availability_kind": "merged_eta"
+        }
+      ]
+    },
+    {
+      "ship_key": "ALICIA",
+      "ship_name": "ALICIA",
+      "eta_rueb": "2026-05-07 08:37",
+      "ship_q": 2,
+      "reason": "kein passender Lotse verfügbar",
+      "excluded": [
+        {
+          "pilot_name": "Heyder, Justus",
+          "pilot_tactical_nr": 7,
+          "reason": "Quali passt nicht (3 > 2)",
+          "pilot_q": 3,
+          "ship_q": 2
         }
       ]
     }
