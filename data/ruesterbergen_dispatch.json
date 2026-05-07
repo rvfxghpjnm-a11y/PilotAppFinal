@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-07T12:43:09",
+  "generated_at": "2026-05-07T12:45:17",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 3,
     "pilots_total": 4,
-    "pilots_dispatchable": 3,
-    "pilots_visible_only": 1,
+    "pilots_dispatchable": 4,
+    "pilots_visible_only": 0,
     "assignments": 3,
     "unassigned_ships": 0,
-    "unused_pilots": 0
+    "unused_pilots": 1
   },
   "ships": [
     {
@@ -239,9 +239,10 @@
       "nr": 2,
       "raw_time": "Thu May 07 11:43:00 CEST 2026",
       "current_ship_name": "MERCURIUS",
+      "current_ship_eta_rueb": "2026-05-07 17:06",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     }
   ],
@@ -311,25 +312,31 @@
       "current_ship_route": "RÜB → HOS",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
-    }
-  ],
-  "visible_but_not_dispatchable_pilots": [
+    },
     {
       "pilot_key": "krause_malte",
+      "vorname": "Malte",
+      "nachname": "Krause",
       "pilot_name": "Krause, Malte",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 2,
       "abteilungszeit": "2026-05-07 11:43",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 2,
       "aufgabe": "Kanalbört",
       "fahrzeug": "MERCURIUS",
       "from": "HOS",
       "to": "RÜB",
+      "nr": 2,
+      "raw_time": "Thu May 07 11:43:00 CEST 2026",
       "current_ship_name": "MERCURIUS",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
+      "current_ship_eta_rueb": "2026-05-07 17:06",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
     }
   ],
+  "visible_but_not_dispatchable_pilots": [],
   "assignments": [
     {
       "ship_key": "ALANA",
@@ -381,6 +388,15 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "CORAL IVORY",
           "pilot_current_ship_eta_rueb": "2026-05-07 15:09",
+          "ship_eta_rueb": "2026-05-07 14:44",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Krause, Malte",
+          "pilot_tactical_nr": 2,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "MERCURIUS",
+          "pilot_current_ship_eta_rueb": "2026-05-07 17:06",
           "ship_eta_rueb": "2026-05-07 14:44",
           "availability_kind": "merged_eta"
         }
@@ -458,6 +474,15 @@
           "pilot_current_ship_eta_rueb": "2026-05-07 15:09",
           "ship_eta_rueb": "2026-05-07 14:49",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Krause, Malte",
+          "pilot_tactical_nr": 2,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "MERCURIUS",
+          "pilot_current_ship_eta_rueb": "2026-05-07 17:06",
+          "ship_eta_rueb": "2026-05-07 14:49",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -524,6 +549,17 @@
           "availability_kind": "merged_eta"
         }
       ],
+      "excluded": [
+        {
+          "pilot_name": "Krause, Malte",
+          "pilot_tactical_nr": 2,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "MERCURIUS",
+          "pilot_current_ship_eta_rueb": "2026-05-07 17:06",
+          "ship_eta_rueb": "2026-05-07 16:53",
+          "availability_kind": "merged_eta"
+        }
+      ],
       "ship": {
         "meldung": {
           "nr": "3",
@@ -560,5 +596,28 @@
     }
   ],
   "unassigned_ships": [],
-  "unused_pilots": []
+  "unused_pilots": [
+    {
+      "pilot_key": "krause_malte",
+      "vorname": "Malte",
+      "nachname": "Krause",
+      "pilot_name": "Krause, Malte",
+      "abteilungszeit": "2026-05-07 11:43",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 2,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "MERCURIUS",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 2,
+      "raw_time": "Thu May 07 11:43:00 CEST 2026",
+      "current_ship_name": "MERCURIUS",
+      "current_ship_eta_rueb": "2026-05-07 17:06",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    }
+  ]
 }
