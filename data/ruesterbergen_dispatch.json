@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-07T08:19:13",
+  "generated_at": "2026-05-07T08:21:13",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,13 +32,13 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 7,
+    "ships_for_ruesterbergen": 8,
     "pilots_total": 13,
     "pilots_dispatchable": 13,
     "pilots_visible_only": 0,
-    "assignments": 7,
+    "assignments": 8,
     "unassigned_ships": 0,
-    "unused_pilots": 6
+    "unused_pilots": 5
   },
   "ships": [
     {
@@ -209,7 +209,7 @@
     {
       "ship_key": "RIX MARINER",
       "ship_name": "RIX MARINER",
-      "eta_rueb": "2026-05-07 12:44",
+      "eta_rueb": "2026-05-07 12:42",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
@@ -241,6 +241,43 @@
         "makler": "NIK",
         "dangerous_vessel": "-",
         "type_of_loading": "Duengemittel"
+      }
+    },
+    {
+      "ship_key": "WILSON WAAL",
+      "ship_name": "WILSON WAAL",
+      "eta_rueb": "2026-05-07 12:46",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 5,
+      "meldung": {
+        "nr": "8",
+        "time": "Thu May 07 12:45:00 CEST 2026",
+        "draft": "3.8",
+        "q_gruppe": "5",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "RÜB → HOS",
+        "routes": [
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "5",
+        "vg": "3",
+        "draft": "3.80",
+        "length_m": "78.160",
+        "beam_m": "9.46",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "H",
+        "pilot_1_name": "Boyken, Boyke",
+        "travel_status": "SAILING_NOK",
+        "makler": "UCA",
+        "dangerous_vessel": "-",
+        "type_of_loading": "Bulk"
       }
     }
   ],
@@ -1857,7 +1894,7 @@
     {
       "ship_key": "RIX MARINER",
       "ship_name": "RIX MARINER",
-      "eta_rueb": "2026-05-07 12:44",
+      "eta_rueb": "2026-05-07 12:42",
       "ship_q": 5,
       "assigned_pilot": "Skairies, Thomas",
       "assigned_pilot_q": 0,
@@ -1994,32 +2031,138 @@
           "type_of_loading": "Duengemittel"
         }
       }
+    },
+    {
+      "ship_key": "WILSON WAAL",
+      "ship_name": "WILSON WAAL",
+      "eta_rueb": "2026-05-07 12:46",
+      "ship_q": 5,
+      "assigned_pilot": "Engel, Alexander",
+      "assigned_pilot_q": 3,
+      "assigned_tactical_nr": 6,
+      "assigned_abteilungszeit": "2026-05-07 05:47",
+      "assigned_current_ship_name": "LÜTJE HÖRN",
+      "assigned_current_ship_eta_rueb": "2026-05-07 08:40",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 6,
+      "candidates": [
+        {
+          "pilot_name": "Engel, Alexander",
+          "pilot_q": 3,
+          "pilot_tactical_nr": 6,
+          "abteilungszeit": "2026-05-07 05:47",
+          "fahrzeug": "LÜTJE HÖRN",
+          "to": "LEM",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "LÜTJE HÖRN",
+          "current_ship_eta_rueb": "2026-05-07 08:40",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Röhl, Jens",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 5,
+          "abteilungszeit": "2026-05-07 06:45",
+          "fahrzeug": "ATLANTIS ALICANTE",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ATLANTIS ALICANTE",
+          "current_ship_eta_rueb": "2026-05-07 11:07",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Meise, Gregor",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 4,
+          "abteilungszeit": "2026-05-07 06:55",
+          "fahrzeug": "ALICIA",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ALICIA",
+          "current_ship_eta_rueb": "2026-05-07 08:27",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Zimmermann, Martin",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 1,
+          "abteilungszeit": "2026-05-07 07:25",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-07 07:25",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
+        },
+        {
+          "pilot_name": "Spiekermann, Fred",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-05-07 07:25",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-07 07:25",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
+        },
+        {
+          "pilot_name": "Weise, Carsten",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 3,
+          "abteilungszeit": "2026-05-07 07:25",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-07 07:25",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "8",
+          "time": "Thu May 07 12:45:00 CEST 2026",
+          "draft": "3.8",
+          "q_gruppe": "5",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "RÜB → HOS",
+          "routes": [
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "5",
+          "vg": "3",
+          "draft": "3.80",
+          "length_m": "78.160",
+          "beam_m": "9.46",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "H",
+          "pilot_1_name": "Boyken, Boyke",
+          "travel_status": "SAILING_NOK",
+          "makler": "UCA",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Bulk"
+        }
+      }
     }
   ],
   "unassigned_ships": [],
   "unused_pilots": [
-    {
-      "pilot_key": "engel_alexander",
-      "vorname": "Alexander",
-      "nachname": "Engel",
-      "pilot_name": "Engel, Alexander",
-      "abteilungszeit": "2026-05-07 05:47",
-      "pilot_q": 3,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 6,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "LÜTJE HÖRN",
-      "from": "HOR",
-      "to": "LEM",
-      "nr": 6,
-      "raw_time": "Thu May 07 05:47:00 CEST 2026",
-      "current_ship_name": "LÜTJE HÖRN",
-      "current_ship_eta_rueb": "2026-05-07 08:40",
-      "current_ship_q": 5,
-      "current_ship_route": "HOR → LEM",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
-    },
     {
       "pilot_key": "röhl_jens",
       "vorname": "Jens",
