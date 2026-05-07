@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-07T05:13:09",
+  "generated_at": "2026-05-07T05:15:06",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -184,7 +184,7 @@
         "zulauf_richtung": "vom_kanal",
         "pilot_required": "true",
         "pilot_status": "U",
-        "pilot_1_name": "Wittmann, Holger",
+        "pilot_1_name": "Skairies, Thomas",
         "travel_status": "SAILING_NOK",
         "makler": "SUB",
         "dangerous_vessel": "-",
@@ -496,13 +496,12 @@
       "to": "RÜB",
       "nr": 1,
       "raw_time": "Thu May 07 04:50:00 CEST 2026",
-      "current_ship_name": "Leerfahrt",
-      "current_ship_eta_rueb": "2026-05-07 05:50",
-      "current_ship_q": 0,
-      "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-      "availability_kind": "leerfahrt_hos_rueb_plus60",
-      "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+      "current_ship_name": "STELLA ORION",
+      "current_ship_eta_rueb": "2026-05-07 05:58",
+      "current_ship_q": 4,
+      "current_ship_route": "HOS → KLT",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "availability_kind": "merged_eta"
     }
   ],
   "dispatchable_pilots": [
@@ -669,13 +668,12 @@
       "to": "RÜB",
       "nr": 1,
       "raw_time": "Thu May 07 04:50:00 CEST 2026",
-      "current_ship_name": "Leerfahrt",
-      "current_ship_eta_rueb": "2026-05-07 05:50",
-      "current_ship_q": 0,
-      "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-      "availability_kind": "leerfahrt_hos_rueb_plus60",
-      "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+      "current_ship_name": "STELLA ORION",
+      "current_ship_eta_rueb": "2026-05-07 05:58",
+      "current_ship_q": 4,
+      "current_ship_route": "HOS → KLT",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "availability_kind": "merged_eta"
     }
   ],
   "visible_but_not_dispatchable_pilots": [],
@@ -772,11 +770,10 @@
           "pilot_name": "Skairies, Thomas",
           "pilot_tactical_nr": 1,
           "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "Leerfahrt",
-          "pilot_current_ship_eta_rueb": "2026-05-07 05:50",
+          "pilot_current_ship": "STELLA ORION",
+          "pilot_current_ship_eta_rueb": "2026-05-07 05:58",
           "ship_eta_rueb": "2026-05-07 05:45",
-          "availability_kind": "leerfahrt_hos_rueb_plus60",
-          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -894,11 +891,10 @@
           "pilot_name": "Skairies, Thomas",
           "pilot_tactical_nr": 1,
           "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "Leerfahrt",
-          "pilot_current_ship_eta_rueb": "2026-05-07 05:50",
+          "pilot_current_ship": "STELLA ORION",
+          "pilot_current_ship_eta_rueb": "2026-05-07 05:58",
           "ship_eta_rueb": "2026-05-07 05:48",
-          "availability_kind": "leerfahrt_hos_rueb_plus60",
-          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -948,7 +944,7 @@
       "assigned_current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 3,
+      "candidate_count": 2,
       "candidates": [
         {
           "pilot_name": "Munz, Joachim",
@@ -973,20 +969,6 @@
           "current_ship_eta_rueb": "2026-05-07 05:53",
           "current_ship_source": "schiffe_merged.summary.pilot_1_name",
           "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Skairies, Thomas",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 1,
-          "abteilungszeit": "2026-05-07 04:50",
-          "fahrzeug": "Leerfahrt",
-          "to": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "Leerfahrt",
-          "current_ship_eta_rueb": "2026-05-07 05:50",
-          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-          "availability_kind": "leerfahrt_hos_rueb_plus60",
-          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
         }
       ],
       "excluded": [
@@ -1014,6 +996,15 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "ECO GHIBLI",
           "pilot_current_ship_eta_rueb": "2026-05-07 09:01",
+          "ship_eta_rueb": "2026-05-07 05:53",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Skairies, Thomas",
+          "pilot_tactical_nr": 1,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "STELLA ORION",
+          "pilot_current_ship_eta_rueb": "2026-05-07 05:58",
           "ship_eta_rueb": "2026-05-07 05:53",
           "availability_kind": "merged_eta"
         }
@@ -1088,11 +1079,10 @@
           "fahrzeug": "Leerfahrt",
           "to": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "Leerfahrt",
-          "current_ship_eta_rueb": "2026-05-07 05:50",
-          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-          "availability_kind": "leerfahrt_hos_rueb_plus60",
-          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+          "current_ship_name": "STELLA ORION",
+          "current_ship_eta_rueb": "2026-05-07 05:58",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
         }
       ],
       "excluded": [
@@ -1150,7 +1140,7 @@
           "zulauf_richtung": "vom_kanal",
           "pilot_required": "true",
           "pilot_status": "U",
-          "pilot_1_name": "Wittmann, Holger",
+          "pilot_1_name": "Skairies, Thomas",
           "travel_status": "SAILING_NOK",
           "makler": "SUB",
           "dangerous_vessel": "-",
@@ -1195,11 +1185,10 @@
           "fahrzeug": "Leerfahrt",
           "to": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "Leerfahrt",
-          "current_ship_eta_rueb": "2026-05-07 05:50",
-          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-          "availability_kind": "leerfahrt_hos_rueb_plus60",
-          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+          "current_ship_name": "STELLA ORION",
+          "current_ship_eta_rueb": "2026-05-07 05:58",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
         }
       ],
       "excluded": [
@@ -1291,11 +1280,10 @@
           "fahrzeug": "Leerfahrt",
           "to": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "Leerfahrt",
-          "current_ship_eta_rueb": "2026-05-07 05:50",
-          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-          "availability_kind": "leerfahrt_hos_rueb_plus60",
-          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+          "current_ship_name": "STELLA ORION",
+          "current_ship_eta_rueb": "2026-05-07 05:58",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
         }
       ],
       "excluded": [
@@ -1341,11 +1329,10 @@
       "assigned_pilot_q": 0,
       "assigned_tactical_nr": 1,
       "assigned_abteilungszeit": "2026-05-07 04:50",
-      "assigned_current_ship_name": "Leerfahrt",
-      "assigned_current_ship_eta_rueb": "2026-05-07 05:50",
-      "assigned_current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-      "assigned_availability_kind": "leerfahrt_hos_rueb_plus60",
-      "assigned_availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten",
+      "assigned_current_ship_name": "STELLA ORION",
+      "assigned_current_ship_eta_rueb": "2026-05-07 05:58",
+      "assigned_current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
       "candidate_count": 1,
       "candidates": [
@@ -1357,11 +1344,10 @@
           "fahrzeug": "Leerfahrt",
           "to": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "Leerfahrt",
-          "current_ship_eta_rueb": "2026-05-07 05:50",
-          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-          "availability_kind": "leerfahrt_hos_rueb_plus60",
-          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+          "current_ship_name": "STELLA ORION",
+          "current_ship_eta_rueb": "2026-05-07 05:58",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
         }
       ],
       "excluded": [
