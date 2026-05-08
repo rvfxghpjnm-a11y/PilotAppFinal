@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-08T20:01:15",
+  "generated_at": "2026-05-08T20:03:17",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -42,24 +42,28 @@
   },
   "ships": [
     {
-      "ship_key": "LEERFAHRT",
-      "ship_name": "Leerfahrt",
-      "eta_rueb": "2026-05-08 20:15",
+      "ship_key": "FREDO",
+      "ship_name": "FREDO",
+      "eta_rueb": "2026-05-08 21:00",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
-      "ship_q": 0,
+      "ship_q": 5,
       "meldung": {
         "nr": "1",
-        "time": "Fri May 08 20:15:00 CEST 2026",
-        "lotsen_anzahl": 2,
+        "time": "Fri May 08 21:00:00 CEST 2026",
+        "draft": "4.0",
+        "q_gruppe": "5",
+        "lotsen_anzahl": 1,
         "confirmed": false,
-        "from": "RÜB",
+        "from": "KRH",
         "to": "HOS"
       },
       "summary": {
-        "route": "RÜB → HOS",
+        "route": "KRH → HOS",
         "routes": [
-          "RÜB → HOS"
-        ]
+          "KRH → HOS"
+        ],
+        "q_gruppe": "5",
+        "draft": "4.0"
       }
     },
     {
@@ -842,10 +846,10 @@
   ],
   "assignments": [
     {
-      "ship_key": "LEERFAHRT",
-      "ship_name": "Leerfahrt",
-      "eta_rueb": "2026-05-08 20:15",
-      "ship_q": 0,
+      "ship_key": "FREDO",
+      "ship_name": "FREDO",
+      "eta_rueb": "2026-05-08 21:00",
+      "ship_q": 5,
       "assigned_pilot": "Krahn, Georg",
       "assigned_pilot_q": 0,
       "assigned_tactical_nr": 23,
@@ -855,7 +859,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 7,
+      "candidate_count": 11,
       "candidates": [
         {
           "pilot_name": "Krahn, Georg",
@@ -910,6 +914,58 @@
           "availability_kind": "merged_eta"
         },
         {
+          "pilot_name": "Buch, Helge",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 19,
+          "abteilungszeit": "2026-05-08 14:36",
+          "fahrzeug": "KAILI",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "KAILI",
+          "current_ship_eta_rueb": "2026-05-08 20:25",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Schran, Oliver",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 18,
+          "abteilungszeit": "2026-05-08 14:41",
+          "fahrzeug": "FAROMAR",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "FAROMAR",
+          "current_ship_eta_rueb": "2026-05-08 20:18",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Wald, Mark",
+          "pilot_q": 3,
+          "pilot_tactical_nr": 16,
+          "abteilungszeit": "2026-05-08 15:10",
+          "fahrzeug": "ZAPADNYY",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ZAPADNYY",
+          "current_ship_eta_rueb": "2026-05-08 20:33",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Kurfeld, Jan",
+          "pilot_q": 2,
+          "pilot_tactical_nr": 11,
+          "abteilungszeit": "2026-05-08 16:10",
+          "fahrzeug": "AMADEUS PEARL",
+          "to": "UTG",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "AMADEUS PEARL",
+          "current_ship_eta_rueb": "2026-05-08 17:49",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
           "pilot_name": "Krämer, Jonas",
           "pilot_q": 0,
           "pilot_tactical_nr": 12,
@@ -951,47 +1007,13 @@
       ],
       "excluded": [
         {
-          "pilot_name": "Buch, Helge",
-          "pilot_tactical_nr": 19,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "KAILI",
-          "pilot_current_ship_eta_rueb": "2026-05-08 20:25",
-          "ship_eta_rueb": "2026-05-08 20:15",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Schran, Oliver",
-          "pilot_tactical_nr": 18,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "FAROMAR",
-          "pilot_current_ship_eta_rueb": "2026-05-08 20:18",
-          "ship_eta_rueb": "2026-05-08 20:15",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Wald, Mark",
-          "pilot_tactical_nr": 16,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "ZAPADNYY",
-          "pilot_current_ship_eta_rueb": "2026-05-08 20:33",
-          "ship_eta_rueb": "2026-05-08 20:15",
-          "availability_kind": "merged_eta"
-        },
-        {
           "pilot_name": "Böttcher, Peter",
           "pilot_tactical_nr": 14,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "EK RIVER",
           "pilot_current_ship_eta_rueb": "2026-05-08 21:51",
-          "ship_eta_rueb": "2026-05-08 20:15",
+          "ship_eta_rueb": "2026-05-08 21:00",
           "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Kurfeld, Jan",
-          "pilot_tactical_nr": 11,
-          "reason": "Quali passt nicht (2 > 0)",
-          "pilot_q": 2,
-          "ship_q": 0
         },
         {
           "pilot_name": "Hahn, Peter",
@@ -999,7 +1021,7 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "HAAFJELL",
           "pilot_current_ship_eta_rueb": "2026-05-08 23:20",
-          "ship_eta_rueb": "2026-05-08 20:15",
+          "ship_eta_rueb": "2026-05-08 21:00",
           "availability_kind": "merged_eta"
         },
         {
@@ -1008,7 +1030,7 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "PAULIN-B",
           "pilot_current_ship_eta_rueb": "2026-05-08 23:17",
-          "ship_eta_rueb": "2026-05-08 20:15",
+          "ship_eta_rueb": "2026-05-08 21:00",
           "availability_kind": "merged_eta"
         },
         {
@@ -1017,24 +1039,28 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "LADY MATHILDE",
           "pilot_current_ship_eta_rueb": "2026-05-08 23:24",
-          "ship_eta_rueb": "2026-05-08 20:15",
+          "ship_eta_rueb": "2026-05-08 21:00",
           "availability_kind": "merged_eta"
         }
       ],
       "ship": {
         "meldung": {
           "nr": "1",
-          "time": "Fri May 08 20:15:00 CEST 2026",
-          "lotsen_anzahl": 2,
+          "time": "Fri May 08 21:00:00 CEST 2026",
+          "draft": "4.0",
+          "q_gruppe": "5",
+          "lotsen_anzahl": 1,
           "confirmed": false,
-          "from": "RÜB",
+          "from": "KRH",
           "to": "HOS"
         },
         "summary": {
-          "route": "RÜB → HOS",
+          "route": "KRH → HOS",
           "routes": [
-            "RÜB → HOS"
-          ]
+            "KRH → HOS"
+          ],
+          "q_gruppe": "5",
+          "draft": "4.0"
         }
       }
     },
