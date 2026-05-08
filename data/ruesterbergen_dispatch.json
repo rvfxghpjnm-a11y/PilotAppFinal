@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-08T16:35:09",
+  "generated_at": "2026-05-08T16:37:18",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 9,
     "pilots_total": 17,
-    "pilots_dispatchable": 13,
-    "pilots_visible_only": 4,
+    "pilots_dispatchable": 14,
+    "pilots_visible_only": 3,
     "assignments": 9,
     "unassigned_ships": 0,
-    "unused_pilots": 4
+    "unused_pilots": 5
   },
   "ships": [
     {
@@ -334,7 +334,7 @@
     {
       "ship_key": "ROLAND ESSBERGER",
       "ship_name": "ROLAND ESSBERGER",
-      "eta_rueb": "2026-05-08 21:09",
+      "eta_rueb": "2026-05-08 21:47",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 4,
       "meldung": {
@@ -539,7 +539,7 @@
       "nr": 12,
       "raw_time": "Fri May 08 12:45:00 CEST 2026",
       "current_ship_name": "BALTIC SPLIT",
-      "current_ship_eta_rueb": "2026-05-08 18:03",
+      "current_ship_eta_rueb": "2026-05-08 18:05",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -605,6 +605,7 @@
       "nr": 9,
       "raw_time": "Fri May 08 14:36:00 CEST 2026",
       "current_ship_name": "KAILI",
+      "current_ship_eta_rueb": "2026-05-08 20:31",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -650,7 +651,7 @@
       "current_ship_name": "ZAPADNYY",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta"
     },
     {
@@ -668,10 +669,10 @@
       "to": "RÜB",
       "nr": 5,
       "raw_time": "Fri May 08 15:35:00 CEST 2026",
-      "current_ship_name": "CLARA K",
+      "current_ship_name": "CLARA K.",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta"
     },
     {
@@ -912,7 +913,7 @@
       "nr": 12,
       "raw_time": "Fri May 08 12:45:00 CEST 2026",
       "current_ship_name": "BALTIC SPLIT",
-      "current_ship_eta_rueb": "2026-05-08 18:03",
+      "current_ship_eta_rueb": "2026-05-08 18:05",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -957,6 +958,28 @@
       "raw_time": "Fri May 08 13:48:00 CEST 2026",
       "current_ship_name": "BUGOE",
       "current_ship_eta_rueb": "2026-05-08 18:11",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "buch_helge",
+      "vorname": "Helge",
+      "nachname": "Buch",
+      "pilot_name": "Buch, Helge",
+      "abteilungszeit": "2026-05-08 14:36",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 9,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "KAILI",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 9,
+      "raw_time": "Fri May 08 14:36:00 CEST 2026",
+      "current_ship_name": "KAILI",
+      "current_ship_eta_rueb": "2026-05-08 20:31",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -1033,21 +1056,6 @@
   ],
   "visible_but_not_dispatchable_pilots": [
     {
-      "pilot_key": "buch_helge",
-      "pilot_name": "Buch, Helge",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 9,
-      "abteilungszeit": "2026-05-08 14:36",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "KAILI",
-      "from": "HOS",
-      "to": "RÜB",
-      "current_ship_name": "KAILI",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    },
-    {
       "pilot_key": "wald_mark",
       "pilot_name": "Wald, Mark",
       "pilot_q": 3,
@@ -1058,7 +1066,7 @@
       "from": "HOS",
       "to": "RÜB",
       "current_ship_name": "ZAPADNYY",
-      "current_ship_source": "schiffe_merged.seelotsen",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta",
       "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
     },
@@ -1072,8 +1080,8 @@
       "fahrzeug": "CLARA K",
       "from": "HOS",
       "to": "RÜB",
-      "current_ship_name": "CLARA K",
-      "current_ship_source": "schiffe_merged.seelotsen",
+      "current_ship_name": "CLARA K.",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta",
       "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
     },
@@ -1216,7 +1224,7 @@
           "pilot_tactical_nr": 12,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "BALTIC SPLIT",
-          "pilot_current_ship_eta_rueb": "2026-05-08 18:03",
+          "pilot_current_ship_eta_rueb": "2026-05-08 18:05",
           "ship_eta_rueb": "2026-05-08 17:46",
           "availability_kind": "merged_eta"
         },
@@ -1235,6 +1243,15 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "BUGOE",
           "pilot_current_ship_eta_rueb": "2026-05-08 18:11",
+          "ship_eta_rueb": "2026-05-08 17:46",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Buch, Helge",
+          "pilot_tactical_nr": 9,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "KAILI",
+          "pilot_current_ship_eta_rueb": "2026-05-08 20:31",
           "ship_eta_rueb": "2026-05-08 17:46",
           "availability_kind": "merged_eta"
         },
@@ -1418,7 +1435,7 @@
           "pilot_tactical_nr": 12,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "BALTIC SPLIT",
-          "pilot_current_ship_eta_rueb": "2026-05-08 18:03",
+          "pilot_current_ship_eta_rueb": "2026-05-08 18:05",
           "ship_eta_rueb": "2026-05-08 17:51",
           "availability_kind": "merged_eta"
         },
@@ -1437,6 +1454,15 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "BUGOE",
           "pilot_current_ship_eta_rueb": "2026-05-08 18:11",
+          "ship_eta_rueb": "2026-05-08 17:51",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Buch, Helge",
+          "pilot_tactical_nr": 9,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "KAILI",
+          "pilot_current_ship_eta_rueb": "2026-05-08 20:31",
           "ship_eta_rueb": "2026-05-08 17:51",
           "availability_kind": "merged_eta"
         },
@@ -1600,7 +1626,7 @@
           "pilot_tactical_nr": 12,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "BALTIC SPLIT",
-          "pilot_current_ship_eta_rueb": "2026-05-08 18:03",
+          "pilot_current_ship_eta_rueb": "2026-05-08 18:05",
           "ship_eta_rueb": "2026-05-08 17:57",
           "availability_kind": "merged_eta"
         },
@@ -1619,6 +1645,15 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "BUGOE",
           "pilot_current_ship_eta_rueb": "2026-05-08 18:11",
+          "ship_eta_rueb": "2026-05-08 17:57",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Buch, Helge",
+          "pilot_tactical_nr": 9,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "KAILI",
+          "pilot_current_ship_eta_rueb": "2026-05-08 20:31",
           "ship_eta_rueb": "2026-05-08 17:57",
           "availability_kind": "merged_eta"
         },
@@ -1743,7 +1778,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "BALTIC SPLIT",
-          "current_ship_eta_rueb": "2026-05-08 18:03",
+          "current_ship_eta_rueb": "2026-05-08 18:05",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1782,6 +1817,15 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "IDA RAMBOW",
           "pilot_current_ship_eta_rueb": "2026-05-08 18:45",
+          "ship_eta_rueb": "2026-05-08 18:20",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Buch, Helge",
+          "pilot_tactical_nr": 9,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "KAILI",
+          "pilot_current_ship_eta_rueb": "2026-05-08 20:31",
           "ship_eta_rueb": "2026-05-08 18:20",
           "availability_kind": "merged_eta"
         },
@@ -1888,7 +1932,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "BALTIC SPLIT",
-          "current_ship_eta_rueb": "2026-05-08 18:03",
+          "current_ship_eta_rueb": "2026-05-08 18:05",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1941,6 +1985,15 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "IDA RAMBOW",
           "pilot_current_ship_eta_rueb": "2026-05-08 18:45",
+          "ship_eta_rueb": "2026-05-08 18:23",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Buch, Helge",
+          "pilot_tactical_nr": 9,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "KAILI",
+          "pilot_current_ship_eta_rueb": "2026-05-08 20:31",
           "ship_eta_rueb": "2026-05-08 18:23",
           "availability_kind": "merged_eta"
         },
@@ -2039,7 +2092,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "BALTIC SPLIT",
-          "current_ship_eta_rueb": "2026-05-08 18:03",
+          "current_ship_eta_rueb": "2026-05-08 18:05",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -2092,6 +2145,15 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "IDA RAMBOW",
           "pilot_current_ship_eta_rueb": "2026-05-08 18:45",
+          "ship_eta_rueb": "2026-05-08 18:29",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Buch, Helge",
+          "pilot_tactical_nr": 9,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "KAILI",
+          "pilot_current_ship_eta_rueb": "2026-05-08 20:31",
           "ship_eta_rueb": "2026-05-08 18:29",
           "availability_kind": "merged_eta"
         },
@@ -2178,7 +2240,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "BALTIC SPLIT",
-          "current_ship_eta_rueb": "2026-05-08 18:03",
+          "current_ship_eta_rueb": "2026-05-08 18:05",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -2235,6 +2297,15 @@
           "availability_kind": "merged_eta"
         },
         {
+          "pilot_name": "Buch, Helge",
+          "pilot_tactical_nr": 9,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "KAILI",
+          "pilot_current_ship_eta_rueb": "2026-05-08 20:31",
+          "ship_eta_rueb": "2026-05-08 18:34",
+          "availability_kind": "merged_eta"
+        },
+        {
           "pilot_name": "Schran, Oliver",
           "pilot_tactical_nr": 8,
           "reason": "kommt nicht rechtzeitig in RÜB an",
@@ -2287,7 +2358,7 @@
       "assigned_tactical_nr": 12,
       "assigned_abteilungszeit": "2026-05-08 12:45",
       "assigned_current_ship_name": "BALTIC SPLIT",
-      "assigned_current_ship_eta_rueb": "2026-05-08 18:03",
+      "assigned_current_ship_eta_rueb": "2026-05-08 18:05",
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
@@ -2302,7 +2373,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "BALTIC SPLIT",
-          "current_ship_eta_rueb": "2026-05-08 18:03",
+          "current_ship_eta_rueb": "2026-05-08 18:05",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -2363,6 +2434,15 @@
       ],
       "excluded": [
         {
+          "pilot_name": "Buch, Helge",
+          "pilot_tactical_nr": 9,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "KAILI",
+          "pilot_current_ship_eta_rueb": "2026-05-08 20:31",
+          "ship_eta_rueb": "2026-05-08 19:30",
+          "availability_kind": "merged_eta"
+        },
+        {
           "pilot_name": "Schran, Oliver",
           "pilot_tactical_nr": 8,
           "reason": "kommt nicht rechtzeitig in RÜB an",
@@ -2408,7 +2488,7 @@
     {
       "ship_key": "ROLAND ESSBERGER",
       "ship_name": "ROLAND ESSBERGER",
-      "eta_rueb": "2026-05-08 21:09",
+      "eta_rueb": "2026-05-08 21:47",
       "ship_q": 4,
       "assigned_pilot": "Wäntig, Lutz",
       "assigned_pilot_q": 0,
@@ -2419,7 +2499,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 5,
+      "candidate_count": 6,
       "candidates": [
         {
           "pilot_name": "Wäntig, Lutz",
@@ -2444,6 +2524,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "BUGOE",
           "current_ship_eta_rueb": "2026-05-08 18:11",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Buch, Helge",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 9,
+          "abteilungszeit": "2026-05-08 14:36",
+          "fahrzeug": "KAILI",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "KAILI",
+          "current_ship_eta_rueb": "2026-05-08 20:31",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -2542,6 +2635,28 @@
       "raw_time": "Fri May 08 13:48:00 CEST 2026",
       "current_ship_name": "BUGOE",
       "current_ship_eta_rueb": "2026-05-08 18:11",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "buch_helge",
+      "vorname": "Helge",
+      "nachname": "Buch",
+      "pilot_name": "Buch, Helge",
+      "abteilungszeit": "2026-05-08 14:36",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 9,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "KAILI",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 9,
+      "raw_time": "Fri May 08 14:36:00 CEST 2026",
+      "current_ship_name": "KAILI",
+      "current_ship_eta_rueb": "2026-05-08 20:31",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
