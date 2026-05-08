@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-08T19:11:17",
+  "generated_at": "2026-05-08T19:13:14",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 2,
     "pilots_total": 18,
-    "pilots_dispatchable": 16,
-    "pilots_visible_only": 2,
+    "pilots_dispatchable": 17,
+    "pilots_visible_only": 1,
     "assignments": 2,
     "unassigned_ships": 0,
-    "unused_pilots": 14
+    "unused_pilots": 15
   },
   "ships": [
     {
@@ -442,9 +442,10 @@
       "nr": 8,
       "raw_time": "Fri May 08 17:52:00 CEST 2026",
       "current_ship_name": "HAAFJELL",
+      "current_ship_eta_rueb": "2026-05-08 23:22",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
@@ -463,7 +464,7 @@
       "nr": 7,
       "raw_time": "Fri May 08 18:04:00 CEST 2026",
       "current_ship_name": "PAULIN-B",
-      "current_ship_eta_rueb": "2026-05-08 23:16",
+      "current_ship_eta_rueb": "2026-05-08 23:18",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -823,6 +824,28 @@
       "availability_kind": "merged_eta"
     },
     {
+      "pilot_key": "hahn_peter",
+      "vorname": "Peter",
+      "nachname": "Hahn",
+      "pilot_name": "Hahn, Peter",
+      "abteilungszeit": "2026-05-08 17:52",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 8,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "HAAFJELL",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 8,
+      "raw_time": "Fri May 08 17:52:00 CEST 2026",
+      "current_ship_name": "HAAFJELL",
+      "current_ship_eta_rueb": "2026-05-08 23:22",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
       "pilot_key": "steffens_micha",
       "vorname": "Micha",
       "nachname": "Steffens",
@@ -838,7 +861,7 @@
       "nr": 7,
       "raw_time": "Fri May 08 18:04:00 CEST 2026",
       "current_ship_name": "PAULIN-B",
-      "current_ship_eta_rueb": "2026-05-08 23:16",
+      "current_ship_eta_rueb": "2026-05-08 23:18",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -868,21 +891,6 @@
     }
   ],
   "visible_but_not_dispatchable_pilots": [
-    {
-      "pilot_key": "hahn_peter",
-      "pilot_name": "Hahn, Peter",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 8,
-      "abteilungszeit": "2026-05-08 17:52",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "HAAFJELL",
-      "from": "HOS",
-      "to": "RÜB",
-      "current_ship_name": "HAAFJELL",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    },
     {
       "pilot_key": "weise_carsten",
       "pilot_name": "Weise, Carsten",
@@ -1110,11 +1118,20 @@
           "availability_kind": "merged_eta"
         },
         {
+          "pilot_name": "Hahn, Peter",
+          "pilot_tactical_nr": 8,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "HAAFJELL",
+          "pilot_current_ship_eta_rueb": "2026-05-08 23:22",
+          "ship_eta_rueb": "2026-05-08 21:22",
+          "availability_kind": "merged_eta"
+        },
+        {
           "pilot_name": "Steffens, Micha",
           "pilot_tactical_nr": 7,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "PAULIN-B",
-          "pilot_current_ship_eta_rueb": "2026-05-08 23:16",
+          "pilot_current_ship_eta_rueb": "2026-05-08 23:18",
           "ship_eta_rueb": "2026-05-08 21:22",
           "availability_kind": "merged_eta"
         }
@@ -1337,11 +1354,20 @@
           "ship_q": 1
         },
         {
+          "pilot_name": "Hahn, Peter",
+          "pilot_tactical_nr": 8,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "HAAFJELL",
+          "pilot_current_ship_eta_rueb": "2026-05-08 23:22",
+          "ship_eta_rueb": "2026-05-08 21:25",
+          "availability_kind": "merged_eta"
+        },
+        {
           "pilot_name": "Steffens, Micha",
           "pilot_tactical_nr": 7,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "PAULIN-B",
-          "pilot_current_ship_eta_rueb": "2026-05-08 23:16",
+          "pilot_current_ship_eta_rueb": "2026-05-08 23:18",
           "ship_eta_rueb": "2026-05-08 21:25",
           "availability_kind": "merged_eta"
         }
@@ -1648,6 +1674,28 @@
       "availability_kind": "merged_eta"
     },
     {
+      "pilot_key": "hahn_peter",
+      "vorname": "Peter",
+      "nachname": "Hahn",
+      "pilot_name": "Hahn, Peter",
+      "abteilungszeit": "2026-05-08 17:52",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 8,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "HAAFJELL",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 8,
+      "raw_time": "Fri May 08 17:52:00 CEST 2026",
+      "current_ship_name": "HAAFJELL",
+      "current_ship_eta_rueb": "2026-05-08 23:22",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
       "pilot_key": "steffens_micha",
       "vorname": "Micha",
       "nachname": "Steffens",
@@ -1663,7 +1711,7 @@
       "nr": 7,
       "raw_time": "Fri May 08 18:04:00 CEST 2026",
       "current_ship_name": "PAULIN-B",
-      "current_ship_eta_rueb": "2026-05-08 23:16",
+      "current_ship_eta_rueb": "2026-05-08 23:18",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
