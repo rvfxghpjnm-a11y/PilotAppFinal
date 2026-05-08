@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-08T16:01:10",
+  "generated_at": "2026-05-08T16:03:12",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,13 +32,13 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 8,
+    "ships_for_ruesterbergen": 9,
     "pilots_total": 15,
     "pilots_dispatchable": 10,
     "pilots_visible_only": 5,
-    "assignments": 8,
+    "assignments": 9,
     "unassigned_ships": 0,
-    "unused_pilots": 2
+    "unused_pilots": 1
   },
   "ships": [
     {
@@ -329,6 +329,43 @@
         "makler": "UCA",
         "dangerous_vessel": "-",
         "type_of_loading": "Bulk"
+      }
+    },
+    {
+      "ship_key": "ROLAND ESSBERGER",
+      "ship_name": "ROLAND ESSBERGER",
+      "eta_rueb": "2026-05-08 20:20",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 4,
+      "meldung": {
+        "nr": "9",
+        "time": "Fri May 08 20:20:00 CEST 2026",
+        "draft": "6.7",
+        "q_gruppe": "4",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "RÜB → HOS",
+        "routes": [
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "4",
+        "vg": "4",
+        "draft": "6.70",
+        "length_m": "119.640",
+        "beam_m": "18.600",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "P",
+        "pilot_1_name": "S�tje, Kai",
+        "travel_status": "SAILING_NOK",
+        "makler": "UCA",
+        "dangerous_vessel": "ja",
+        "type_of_loading": "Chemikalien fluessig"
       }
     }
   ],
@@ -1984,32 +2021,86 @@
           "type_of_loading": "Bulk"
         }
       }
+    },
+    {
+      "ship_key": "ROLAND ESSBERGER",
+      "ship_name": "ROLAND ESSBERGER",
+      "eta_rueb": "2026-05-08 20:20",
+      "ship_q": 4,
+      "assigned_pilot": "Wäntig, Lutz",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 9,
+      "assigned_abteilungszeit": "2026-05-08 12:59",
+      "assigned_current_ship_name": "IDA RAMBOW",
+      "assigned_current_ship_eta_rueb": "2026-05-08 18:47",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 2,
+      "candidates": [
+        {
+          "pilot_name": "Wäntig, Lutz",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 9,
+          "abteilungszeit": "2026-05-08 12:59",
+          "fahrzeug": "IDA RAMBOW",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "IDA RAMBOW",
+          "current_ship_eta_rueb": "2026-05-08 18:47",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Arndt, Michael",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 8,
+          "abteilungszeit": "2026-05-08 13:48",
+          "fahrzeug": "BUGOE",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "BUGOE",
+          "current_ship_eta_rueb": "2026-05-08 18:14",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "9",
+          "time": "Fri May 08 20:20:00 CEST 2026",
+          "draft": "6.7",
+          "q_gruppe": "4",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "RÜB → HOS",
+          "routes": [
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "4",
+          "vg": "4",
+          "draft": "6.70",
+          "length_m": "119.640",
+          "beam_m": "18.600",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "P",
+          "pilot_1_name": "S�tje, Kai",
+          "travel_status": "SAILING_NOK",
+          "makler": "UCA",
+          "dangerous_vessel": "ja",
+          "type_of_loading": "Chemikalien fluessig"
+        }
+      }
     }
   ],
   "unassigned_ships": [],
   "unused_pilots": [
-    {
-      "pilot_key": "wäntig_lutz",
-      "vorname": "Lutz",
-      "nachname": "Wäntig",
-      "pilot_name": "Wäntig, Lutz",
-      "abteilungszeit": "2026-05-08 12:59",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 9,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "IDA RAMBOW",
-      "from": "HOR",
-      "to": "RÜB",
-      "nr": 9,
-      "raw_time": "Fri May 08 12:59:00 CEST 2026",
-      "current_ship_name": "IDA RAMBOW",
-      "current_ship_eta_rueb": "2026-05-08 18:47",
-      "current_ship_q": 0,
-      "current_ship_route": "HOR → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
-    },
     {
       "pilot_key": "arndt_michael",
       "vorname": "Michael",
