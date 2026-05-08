@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-08T21:53:13",
+  "generated_at": "2026-05-08T21:55:17",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 6,
     "pilots_total": 17,
-    "pilots_dispatchable": 16,
-    "pilots_visible_only": 1,
+    "pilots_dispatchable": 17,
+    "pilots_visible_only": 0,
     "assignments": 6,
     "unassigned_ships": 0,
-    "unused_pilots": 10
+    "unused_pilots": 11
   },
   "ships": [
     {
@@ -636,9 +636,10 @@
       "nr": 1,
       "raw_time": "Fri May 08 20:35:00 CEST 2026",
       "current_ship_name": "FRISIAN SEA",
+      "current_ship_eta_rueb": "2026-05-09 01:44",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     }
   ],
@@ -993,25 +994,31 @@
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
-    }
-  ],
-  "visible_but_not_dispatchable_pilots": [
+    },
     {
       "pilot_key": "röhl_jens",
+      "vorname": "Jens",
+      "nachname": "Röhl",
       "pilot_name": "Röhl, Jens",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 1,
       "abteilungszeit": "2026-05-08 20:35",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 1,
       "aufgabe": "Kanalbört",
       "fahrzeug": "FRISIAN SEA",
       "from": "HOS",
       "to": "RÜB",
+      "nr": 1,
+      "raw_time": "Fri May 08 20:35:00 CEST 2026",
       "current_ship_name": "FRISIAN SEA",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
+      "current_ship_eta_rueb": "2026-05-09 01:44",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
     }
   ],
+  "visible_but_not_dispatchable_pilots": [],
   "assignments": [
     {
       "ship_key": "BALTIC CARRIER",
@@ -1228,6 +1235,15 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "ACEROMAR",
           "pilot_current_ship_eta_rueb": "2026-05-09 01:41",
+          "ship_eta_rueb": "2026-05-09 00:46",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Röhl, Jens",
+          "pilot_tactical_nr": 1,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "FRISIAN SEA",
+          "pilot_current_ship_eta_rueb": "2026-05-09 01:44",
           "ship_eta_rueb": "2026-05-09 00:46",
           "availability_kind": "merged_eta"
         }
@@ -1469,6 +1485,15 @@
           "pilot_current_ship_eta_rueb": "2026-05-09 01:41",
           "ship_eta_rueb": "2026-05-09 00:51",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Röhl, Jens",
+          "pilot_tactical_nr": 1,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "FRISIAN SEA",
+          "pilot_current_ship_eta_rueb": "2026-05-09 01:44",
+          "ship_eta_rueb": "2026-05-09 00:51",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -1700,6 +1725,15 @@
           "pilot_current_ship_eta_rueb": "2026-05-09 01:41",
           "ship_eta_rueb": "2026-05-09 01:29",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Röhl, Jens",
+          "pilot_tactical_nr": 1,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "FRISIAN SEA",
+          "pilot_current_ship_eta_rueb": "2026-05-09 01:44",
+          "ship_eta_rueb": "2026-05-09 01:29",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -1918,6 +1952,15 @@
           "pilot_current_ship_eta_rueb": "2026-05-09 01:41",
           "ship_eta_rueb": "2026-05-09 01:39",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Röhl, Jens",
+          "pilot_tactical_nr": 1,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "FRISIAN SEA",
+          "pilot_current_ship_eta_rueb": "2026-05-09 01:44",
+          "ship_eta_rueb": "2026-05-09 01:39",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -1968,7 +2011,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 10,
+      "candidate_count": 11,
       "candidates": [
         {
           "pilot_name": "Schran, Oliver",
@@ -2099,6 +2142,19 @@
           "current_ship_eta_rueb": "2026-05-09 01:41",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Röhl, Jens",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 1,
+          "abteilungszeit": "2026-05-08 20:35",
+          "fahrzeug": "FRISIAN SEA",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "FRISIAN SEA",
+          "current_ship_eta_rueb": "2026-05-09 01:44",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
         }
       ],
       "excluded": [
@@ -2164,7 +2220,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 9,
+      "candidate_count": 10,
       "candidates": [
         {
           "pilot_name": "Klein, Sebastian",
@@ -2280,6 +2336,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "ACEROMAR",
           "current_ship_eta_rueb": "2026-05-09 01:41",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Röhl, Jens",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 1,
+          "abteilungszeit": "2026-05-08 20:35",
+          "fahrzeug": "FRISIAN SEA",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "FRISIAN SEA",
+          "current_ship_eta_rueb": "2026-05-09 01:44",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
@@ -2551,6 +2620,28 @@
       "raw_time": "Fri May 08 20:29:00 CEST 2026",
       "current_ship_name": "ACEROMAR",
       "current_ship_eta_rueb": "2026-05-09 01:41",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "röhl_jens",
+      "vorname": "Jens",
+      "nachname": "Röhl",
+      "pilot_name": "Röhl, Jens",
+      "abteilungszeit": "2026-05-08 20:35",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 1,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "FRISIAN SEA",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 1,
+      "raw_time": "Fri May 08 20:35:00 CEST 2026",
+      "current_ship_name": "FRISIAN SEA",
+      "current_ship_eta_rueb": "2026-05-09 01:44",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
