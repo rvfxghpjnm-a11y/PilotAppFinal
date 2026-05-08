@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-08T17:07:15",
+  "generated_at": "2026-05-08T17:09:13",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,13 +32,13 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 9,
+    "ships_for_ruesterbergen": 10,
     "pilots_total": 19,
     "pilots_dispatchable": 18,
     "pilots_visible_only": 1,
-    "assignments": 9,
+    "assignments": 10,
     "unassigned_ships": 0,
-    "unused_pilots": 9
+    "unused_pilots": 8
   },
   "ships": [
     {
@@ -339,7 +339,7 @@
       "ship_q": 4,
       "meldung": {
         "nr": "9",
-        "time": "Fri May 08 20:30:00 CEST 2026",
+        "time": "Fri May 08 21:00:00 CEST 2026",
         "draft": "6.7",
         "q_gruppe": "4",
         "lotsen_anzahl": 1,
@@ -366,6 +366,44 @@
         "makler": "UCA",
         "dangerous_vessel": "ja",
         "type_of_loading": "Chemikalien fluessig"
+      }
+    },
+    {
+      "ship_key": "ELBMOON",
+      "ship_name": "ELBMOON",
+      "eta_rueb": "2026-05-08 21:25",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 1,
+      "meldung": {
+        "nr": "10",
+        "time": "Fri May 08 21:05:00 CEST 2026",
+        "draft": "7.9",
+        "q_gruppe": "1",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "1",
+        "vg": "5",
+        "draft": "7.90",
+        "length_m": "170.15",
+        "beam_m": "25.20",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "U",
+        "pilot_1_name": "Duis, Jan",
+        "travel_status": "SAILING_NOK",
+        "makler": "SUB",
+        "dangerous_vessel": "-",
+        "type_of_loading": "Container"
       }
     }
   ],
@@ -3087,7 +3125,7 @@
       "ship": {
         "meldung": {
           "nr": "9",
-          "time": "Fri May 08 20:30:00 CEST 2026",
+          "time": "Fri May 08 21:00:00 CEST 2026",
           "draft": "6.7",
           "q_gruppe": "4",
           "lotsen_anzahl": 1,
@@ -3116,32 +3154,170 @@
           "type_of_loading": "Chemikalien fluessig"
         }
       }
+    },
+    {
+      "ship_key": "ELBMOON",
+      "ship_name": "ELBMOON",
+      "eta_rueb": "2026-05-08 21:25",
+      "ship_q": 1,
+      "assigned_pilot": "Arndt, Michael",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 12,
+      "assigned_abteilungszeit": "2026-05-08 13:48",
+      "assigned_current_ship_name": "BUGOE",
+      "assigned_current_ship_eta_rueb": "2026-05-08 18:08",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 7,
+      "candidates": [
+        {
+          "pilot_name": "Arndt, Michael",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 12,
+          "abteilungszeit": "2026-05-08 13:48",
+          "fahrzeug": "BUGOE",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "BUGOE",
+          "current_ship_eta_rueb": "2026-05-08 18:08",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Buch, Helge",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 11,
+          "abteilungszeit": "2026-05-08 14:36",
+          "fahrzeug": "KAILI",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "KAILI",
+          "current_ship_eta_rueb": "2026-05-08 20:29",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Schran, Oliver",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 10,
+          "abteilungszeit": "2026-05-08 14:41",
+          "fahrzeug": "FAROMAR",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "FAROMAR",
+          "current_ship_eta_rueb": "2026-05-08 20:26",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Klein, Sebastian",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 7,
+          "abteilungszeit": "2026-05-08 15:35",
+          "fahrzeug": "CLARA K",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "CLARA K.",
+          "current_ship_eta_rueb": "2026-05-08 20:33",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Krämer, Jonas",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 4,
+          "abteilungszeit": "2026-05-08 16:10",
+          "fahrzeug": "Leerfahrt",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RIX SPIRIT",
+          "current_ship_eta_rueb": "2026-05-08 17:55",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Schuh, Erskine",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 1,
+          "abteilungszeit": "2026-05-08 16:50",
+          "fahrzeug": "Leerfahrt",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "Leerfahrt",
+          "current_ship_eta_rueb": "2026-05-08 17:50",
+          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
+          "availability_kind": "leerfahrt_hos_rueb_plus60",
+          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+        },
+        {
+          "pilot_name": "Börnsen, Curt",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-05-08 16:50",
+          "fahrzeug": "Leerfahrt",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "Leerfahrt",
+          "current_ship_eta_rueb": "2026-05-08 17:50",
+          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
+          "availability_kind": "leerfahrt_hos_rueb_plus60",
+          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Wald, Mark",
+          "pilot_tactical_nr": 8,
+          "reason": "Quali passt nicht (3 > 1)",
+          "pilot_q": 3,
+          "ship_q": 1
+        },
+        {
+          "pilot_name": "Kurfeld, Jan",
+          "pilot_tactical_nr": 3,
+          "reason": "Quali passt nicht (2 > 1)",
+          "pilot_q": 2,
+          "ship_q": 1
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "10",
+          "time": "Fri May 08 21:05:00 CEST 2026",
+          "draft": "7.9",
+          "q_gruppe": "1",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "HOS → KLT",
+          "routes": [
+            "HOS → KLT",
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "1",
+          "vg": "5",
+          "draft": "7.90",
+          "length_m": "170.15",
+          "beam_m": "25.20",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "U",
+          "pilot_1_name": "Duis, Jan",
+          "travel_status": "SAILING_NOK",
+          "makler": "SUB",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Container"
+        }
+      }
     }
   ],
   "unassigned_ships": [],
   "unused_pilots": [
-    {
-      "pilot_key": "arndt_michael",
-      "vorname": "Michael",
-      "nachname": "Arndt",
-      "pilot_name": "Arndt, Michael",
-      "abteilungszeit": "2026-05-08 13:48",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 12,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "BUGOE",
-      "from": "HOS",
-      "to": "RÜB",
-      "nr": 12,
-      "raw_time": "Fri May 08 13:48:00 CEST 2026",
-      "current_ship_name": "BUGOE",
-      "current_ship_eta_rueb": "2026-05-08 18:08",
-      "current_ship_q": 0,
-      "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
-    },
     {
       "pilot_key": "buch_helge",
       "vorname": "Helge",
