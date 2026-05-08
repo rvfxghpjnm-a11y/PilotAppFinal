@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-08T08:45:12",
+  "generated_at": "2026-05-08T08:47:10",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -33,12 +33,12 @@
   },
   "counts": {
     "ships_for_ruesterbergen": 6,
-    "pilots_total": 7,
-    "pilots_dispatchable": 7,
+    "pilots_total": 8,
+    "pilots_dispatchable": 8,
     "pilots_visible_only": 0,
     "assignments": 6,
     "unassigned_ships": 0,
-    "unused_pilots": 1
+    "unused_pilots": 2
   },
   "ships": [
     {
@@ -219,7 +219,7 @@
     {
       "ship_key": "THETIS D",
       "ship_name": "THETIS D",
-      "eta_rueb": "2026-05-08 13:35",
+      "eta_rueb": "2026-05-08 13:34",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 0,
       "meldung": {
@@ -315,7 +315,7 @@
       "nr": 17,
       "raw_time": "Fri May 08 04:55:00 CEST 2026",
       "current_ship_name": "ELBWIND",
-      "current_ship_eta_rueb": "2026-05-08 10:06",
+      "current_ship_eta_rueb": "2026-05-08 10:05",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -403,9 +403,31 @@
       "nr": 9,
       "raw_time": "Fri May 08 07:19:00 CEST 2026",
       "current_ship_name": "MANGEN",
-      "current_ship_eta_rueb": "2026-05-08 12:07",
+      "current_ship_eta_rueb": "2026-05-08 12:06",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "keyser_torben",
+      "vorname": "Torben",
+      "nachname": "Keyser",
+      "pilot_name": "Keyser, Torben",
+      "abteilungszeit": "2026-05-08 08:30",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 2,
+      "aufgabe": "Seebört",
+      "fahrzeug": "MARIT",
+      "from": "HOS",
+      "to": "KLT",
+      "nr": 2,
+      "raw_time": "Fri May 08 08:30:00 CEST 2026",
+      "current_ship_name": "MARIT",
+      "current_ship_eta_rueb": "2026-05-08 02:43",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → KLT",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     }
@@ -470,7 +492,7 @@
       "nr": 17,
       "raw_time": "Fri May 08 04:55:00 CEST 2026",
       "current_ship_name": "ELBWIND",
-      "current_ship_eta_rueb": "2026-05-08 10:06",
+      "current_ship_eta_rueb": "2026-05-08 10:05",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -558,9 +580,31 @@
       "nr": 9,
       "raw_time": "Fri May 08 07:19:00 CEST 2026",
       "current_ship_name": "MANGEN",
-      "current_ship_eta_rueb": "2026-05-08 12:07",
+      "current_ship_eta_rueb": "2026-05-08 12:06",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "keyser_torben",
+      "vorname": "Torben",
+      "nachname": "Keyser",
+      "pilot_name": "Keyser, Torben",
+      "abteilungszeit": "2026-05-08 08:30",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 2,
+      "aufgabe": "Seebört",
+      "fahrzeug": "MARIT",
+      "from": "HOS",
+      "to": "KLT",
+      "nr": 2,
+      "raw_time": "Fri May 08 08:30:00 CEST 2026",
+      "current_ship_name": "MARIT",
+      "current_ship_eta_rueb": "2026-05-08 02:43",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → KLT",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     }
@@ -581,7 +625,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 2,
+      "candidate_count": 3,
       "candidates": [
         {
           "pilot_name": "Jakob, Peter",
@@ -608,6 +652,19 @@
           "current_ship_source": "special.already_in_rueb",
           "availability_kind": "already_in_rueb",
           "availability_hint": "Lotse gilt als bereits in RÜB"
+        },
+        {
+          "pilot_name": "Keyser, Torben",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-05-08 08:30",
+          "fahrzeug": "MARIT",
+          "to": "KLT",
+          "aufgabe": "Seebört",
+          "current_ship_name": "MARIT",
+          "current_ship_eta_rueb": "2026-05-08 02:43",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
         }
       ],
       "excluded": [
@@ -616,7 +673,7 @@
           "pilot_tactical_nr": 17,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "ELBWIND",
-          "pilot_current_ship_eta_rueb": "2026-05-08 10:06",
+          "pilot_current_ship_eta_rueb": "2026-05-08 10:05",
           "ship_eta_rueb": "2026-05-08 10:00",
           "availability_kind": "merged_eta"
         },
@@ -652,7 +709,7 @@
           "pilot_tactical_nr": 9,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "MANGEN",
-          "pilot_current_ship_eta_rueb": "2026-05-08 12:07",
+          "pilot_current_ship_eta_rueb": "2026-05-08 12:06",
           "ship_eta_rueb": "2026-05-08 10:00",
           "availability_kind": "merged_eta"
         }
@@ -693,7 +750,7 @@
       "assigned_availability_kind": "already_in_rueb",
       "assigned_availability_hint": "Lotse gilt als bereits in RÜB",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 3,
+      "candidate_count": 4,
       "candidates": [
         {
           "pilot_name": "Diekmann, Ulrich",
@@ -717,7 +774,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "ELBWIND",
-          "current_ship_eta_rueb": "2026-05-08 10:06",
+          "current_ship_eta_rueb": "2026-05-08 10:05",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -731,6 +788,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "CORAL PEARL",
           "current_ship_eta_rueb": "2026-05-08 10:11",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Keyser, Torben",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-05-08 08:30",
+          "fahrzeug": "MARIT",
+          "to": "KLT",
+          "aufgabe": "Seebört",
+          "current_ship_name": "MARIT",
+          "current_ship_eta_rueb": "2026-05-08 02:43",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
@@ -759,7 +829,7 @@
           "pilot_tactical_nr": 9,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "MANGEN",
-          "pilot_current_ship_eta_rueb": "2026-05-08 12:07",
+          "pilot_current_ship_eta_rueb": "2026-05-08 12:06",
           "ship_eta_rueb": "2026-05-08 10:43",
           "availability_kind": "merged_eta"
         }
@@ -807,11 +877,11 @@
       "assigned_tactical_nr": 17,
       "assigned_abteilungszeit": "2026-05-08 04:55",
       "assigned_current_ship_name": "ELBWIND",
-      "assigned_current_ship_eta_rueb": "2026-05-08 10:06",
+      "assigned_current_ship_eta_rueb": "2026-05-08 10:05",
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 2,
+      "candidate_count": 3,
       "candidates": [
         {
           "pilot_name": "Weise, Tom",
@@ -822,7 +892,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "ELBWIND",
-          "current_ship_eta_rueb": "2026-05-08 10:06",
+          "current_ship_eta_rueb": "2026-05-08 10:05",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -836,6 +906,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "CORAL PEARL",
           "current_ship_eta_rueb": "2026-05-08 10:11",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Keyser, Torben",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-05-08 08:30",
+          "fahrzeug": "MARIT",
+          "to": "KLT",
+          "aufgabe": "Seebört",
+          "current_ship_name": "MARIT",
+          "current_ship_eta_rueb": "2026-05-08 02:43",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
@@ -864,7 +947,7 @@
           "pilot_tactical_nr": 9,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "MANGEN",
-          "pilot_current_ship_eta_rueb": "2026-05-08 12:07",
+          "pilot_current_ship_eta_rueb": "2026-05-08 12:06",
           "ship_eta_rueb": "2026-05-08 10:48",
           "availability_kind": "merged_eta"
         }
@@ -917,7 +1000,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 1,
+      "candidate_count": 2,
       "candidates": [
         {
           "pilot_name": "Skawianczyk, Artur",
@@ -929,6 +1012,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "CORAL PEARL",
           "current_ship_eta_rueb": "2026-05-08 10:11",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Keyser, Torben",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-05-08 08:30",
+          "fahrzeug": "MARIT",
+          "to": "KLT",
+          "aufgabe": "Seebört",
+          "current_ship_name": "MARIT",
+          "current_ship_eta_rueb": "2026-05-08 02:43",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
@@ -957,7 +1053,7 @@
           "pilot_tactical_nr": 9,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "MANGEN",
-          "pilot_current_ship_eta_rueb": "2026-05-08 12:07",
+          "pilot_current_ship_eta_rueb": "2026-05-08 12:06",
           "ship_eta_rueb": "2026-05-08 11:44",
           "availability_kind": "merged_eta"
         }
@@ -1009,7 +1105,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 3,
+      "candidate_count": 4,
       "candidates": [
         {
           "pilot_name": "Bodmann, Christoph",
@@ -1046,7 +1142,20 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "MANGEN",
-          "current_ship_eta_rueb": "2026-05-08 12:07",
+          "current_ship_eta_rueb": "2026-05-08 12:06",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Keyser, Torben",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-05-08 08:30",
+          "fahrzeug": "MARIT",
+          "to": "KLT",
+          "aufgabe": "Seebört",
+          "current_ship_name": "MARIT",
+          "current_ship_eta_rueb": "2026-05-08 02:43",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
@@ -1088,7 +1197,7 @@
     {
       "ship_key": "THETIS D",
       "ship_name": "THETIS D",
-      "eta_rueb": "2026-05-08 13:35",
+      "eta_rueb": "2026-05-08 13:34",
       "ship_q": 0,
       "assigned_pilot": "Crotogino, Philipp",
       "assigned_pilot_q": 0,
@@ -1099,7 +1208,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 2,
+      "candidate_count": 3,
       "candidates": [
         {
           "pilot_name": "Crotogino, Philipp",
@@ -1123,7 +1232,20 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "MANGEN",
-          "current_ship_eta_rueb": "2026-05-08 12:07",
+          "current_ship_eta_rueb": "2026-05-08 12:06",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Keyser, Torben",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-05-08 08:30",
+          "fahrzeug": "MARIT",
+          "to": "KLT",
+          "aufgabe": "Seebört",
+          "current_ship_name": "MARIT",
+          "current_ship_eta_rueb": "2026-05-08 02:43",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
@@ -1181,9 +1303,31 @@
       "nr": 9,
       "raw_time": "Fri May 08 07:19:00 CEST 2026",
       "current_ship_name": "MANGEN",
-      "current_ship_eta_rueb": "2026-05-08 12:07",
+      "current_ship_eta_rueb": "2026-05-08 12:06",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "keyser_torben",
+      "vorname": "Torben",
+      "nachname": "Keyser",
+      "pilot_name": "Keyser, Torben",
+      "abteilungszeit": "2026-05-08 08:30",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 2,
+      "aufgabe": "Seebört",
+      "fahrzeug": "MARIT",
+      "from": "HOS",
+      "to": "KLT",
+      "nr": 2,
+      "raw_time": "Fri May 08 08:30:00 CEST 2026",
+      "current_ship_name": "MARIT",
+      "current_ship_eta_rueb": "2026-05-08 02:43",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → KLT",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     }
