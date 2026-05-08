@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-09T01:09:12",
+  "generated_at": "2026-05-09T01:11:11",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,13 +32,13 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 6,
+    "ships_for_ruesterbergen": 7,
     "pilots_total": 14,
     "pilots_dispatchable": 14,
     "pilots_visible_only": 0,
-    "assignments": 6,
+    "assignments": 7,
     "unassigned_ships": 0,
-    "unused_pilots": 8
+    "unused_pilots": 7
   },
   "ships": [
     {
@@ -120,7 +120,7 @@
     {
       "ship_key": "RIKKE B",
       "ship_name": "RIKKE B",
-      "eta_rueb": "2026-05-09 02:21",
+      "eta_rueb": "2026-05-09 02:20",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
@@ -227,6 +227,32 @@
         "makler": "UCA",
         "dangerous_vessel": "-",
         "type_of_loading": "Container"
+      }
+    },
+    {
+      "ship_key": "CONTAINERSHIPS 8",
+      "ship_name": "CONTAINERSHIPS 8",
+      "eta_rueb": "2026-05-09 05:25",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 1,
+      "meldung": {
+        "nr": "7",
+        "time": "Sat May 09 05:25:00 CEST 2026",
+        "draft": "8.4",
+        "q_gruppe": "1",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "1",
+        "draft": "8.4"
       }
     },
     {
@@ -1333,7 +1359,7 @@
     {
       "ship_key": "RIKKE B",
       "ship_name": "RIKKE B",
-      "eta_rueb": "2026-05-09 02:21",
+      "eta_rueb": "2026-05-09 02:20",
       "ship_q": 5,
       "assigned_pilot": "Klein, Sebastian",
       "assigned_pilot_q": 0,
@@ -1485,7 +1511,7 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "RIX TERRA",
           "pilot_current_ship_eta_rueb": "2026-05-09 04:25",
-          "ship_eta_rueb": "2026-05-09 02:21",
+          "ship_eta_rueb": "2026-05-09 02:20",
           "availability_kind": "merged_eta"
         },
         {
@@ -1494,7 +1520,7 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "SOPOT",
           "pilot_current_ship_eta_rueb": "2026-05-09 04:29",
-          "ship_eta_rueb": "2026-05-09 02:21",
+          "ship_eta_rueb": "2026-05-09 02:20",
           "availability_kind": "merged_eta"
         }
       ],
@@ -1885,6 +1911,160 @@
       }
     },
     {
+      "ship_key": "CONTAINERSHIPS 8",
+      "ship_name": "CONTAINERSHIPS 8",
+      "eta_rueb": "2026-05-09 05:25",
+      "ship_q": 1,
+      "assigned_pilot": "Blome, Henning",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 10,
+      "assigned_abteilungszeit": "2026-05-08 20:21",
+      "assigned_current_ship_name": "RÜB",
+      "assigned_current_ship_eta_rueb": "2026-05-08 20:21",
+      "assigned_current_ship_source": "special.already_in_rueb",
+      "assigned_availability_kind": "already_in_rueb",
+      "assigned_availability_hint": "Lotse gilt als bereits in RÜB",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 8,
+      "candidates": [
+        {
+          "pilot_name": "Blome, Henning",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 10,
+          "abteilungszeit": "2026-05-08 20:21",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-08 20:21",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
+        },
+        {
+          "pilot_name": "Spiekermann, Fred",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 9,
+          "abteilungszeit": "2026-05-08 20:29",
+          "fahrzeug": "ACEROMAR",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ACEROMAR",
+          "current_ship_eta_rueb": "2026-05-09 01:27",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Röhl, Jens",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 8,
+          "abteilungszeit": "2026-05-08 20:35",
+          "fahrzeug": "FRISIAN SEA",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "FRISIAN SEA",
+          "current_ship_eta_rueb": "2026-05-09 01:31",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Krause, Malte",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 7,
+          "abteilungszeit": "2026-05-08 22:52",
+          "fahrzeug": "RIX TERRA",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RIX TERRA",
+          "current_ship_eta_rueb": "2026-05-09 04:25",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Weise, Tom",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 6,
+          "abteilungszeit": "2026-05-08 22:54",
+          "fahrzeug": "SOPOT",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "SOPOT",
+          "current_ship_eta_rueb": "2026-05-09 04:29",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Skawianczyk, Artur",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 4,
+          "abteilungszeit": "2026-05-09 00:20",
+          "fahrzeug": "Leerfahrt",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "Leerfahrt",
+          "current_ship_eta_rueb": "2026-05-09 01:20",
+          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
+          "availability_kind": "leerfahrt_hos_rueb_plus60",
+          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+        },
+        {
+          "pilot_name": "Escher, Franck",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 1,
+          "abteilungszeit": "2026-05-09 00:50",
+          "fahrzeug": "ROLAND ESSBERGER",
+          "to": "KLT",
+          "aufgabe": "Seebört",
+          "current_ship_name": "ROLAND ESSBERGER",
+          "current_ship_eta_rueb": "2026-05-08 21:15",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Jeske, Lutz",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-05-09 00:50",
+          "fahrzeug": "ELBMOON",
+          "to": "KLT",
+          "aufgabe": "Seebört",
+          "current_ship_name": "ELBMOON",
+          "current_ship_eta_rueb": "2026-05-08 21:24",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Steffens, Micha",
+          "pilot_tactical_nr": 17,
+          "reason": "Quali passt nicht (4 > 1)",
+          "pilot_q": 4,
+          "ship_q": 1
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "7",
+          "time": "Sat May 09 05:25:00 CEST 2026",
+          "draft": "8.4",
+          "q_gruppe": "1",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "HOS → KLT",
+          "routes": [
+            "HOS → KLT",
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "1",
+          "draft": "8.4"
+        }
+      }
+    },
+    {
       "ship_key": "ADAMAS",
       "ship_name": "ADAMAS",
       "eta_rueb": "2026-05-09 05:33",
@@ -1898,7 +2078,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 9,
+      "candidate_count": 8,
       "candidates": [
         {
           "pilot_name": "Steffens, Micha",
@@ -1912,19 +2092,6 @@
           "current_ship_eta_rueb": "2026-05-09 01:17",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Blome, Henning",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 10,
-          "abteilungszeit": "2026-05-08 20:21",
-          "fahrzeug": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "RÜB",
-          "current_ship_eta_rueb": "2026-05-08 20:21",
-          "current_ship_source": "special.already_in_rueb",
-          "availability_kind": "already_in_rueb",
-          "availability_hint": "Lotse gilt als bereits in RÜB"
         },
         {
           "pilot_name": "Spiekermann, Fred",
@@ -2055,27 +2222,6 @@
   ],
   "unassigned_ships": [],
   "unused_pilots": [
-    {
-      "pilot_key": "blome_henning",
-      "vorname": "Henning",
-      "nachname": "Blome",
-      "pilot_name": "Blome, Henning",
-      "abteilungszeit": "2026-05-08 20:21",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 10,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "RÜB",
-      "nr": 10,
-      "raw_time": "Fri May 08 20:21:00 CEST 2026",
-      "current_ship_name": "RÜB",
-      "current_ship_eta_rueb": "2026-05-08 20:21",
-      "current_ship_q": 0,
-      "current_ship_route": "RÜB",
-      "current_ship_source": "special.already_in_rueb",
-      "availability_kind": "already_in_rueb",
-      "availability_hint": "Lotse gilt als bereits in RÜB"
-    },
     {
       "pilot_key": "spiekermann_fred",
       "vorname": "Fred",
