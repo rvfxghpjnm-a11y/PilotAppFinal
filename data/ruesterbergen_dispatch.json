@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-08T10:47:06",
+  "generated_at": "2026-05-08T10:49:14",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,10 +34,10 @@
   "counts": {
     "ships_for_ruesterbergen": 7,
     "pilots_total": 10,
-    "pilots_dispatchable": 7,
-    "pilots_visible_only": 3,
-    "assignments": 7,
-    "unassigned_ships": 0,
+    "pilots_dispatchable": 6,
+    "pilots_visible_only": 4,
+    "assignments": 6,
+    "unassigned_ships": 1,
     "unused_pilots": 0
   },
   "ships": [
@@ -307,11 +307,10 @@
       "to": "RÜB",
       "nr": 23,
       "raw_time": "Fri May 08 03:43:00 CEST 2026",
-      "current_ship_name": "FGS FULDA - M 1058",
-      "current_ship_eta_rueb": "2026-05-08 11:39",
+      "current_ship_name": "FULDA M1058",
       "current_ship_q": 0,
       "current_ship_route": "LEM → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
@@ -512,28 +511,6 @@
   ],
   "dispatchable_pilots": [
     {
-      "pilot_key": "diekmann_ulrich",
-      "vorname": "Ulrich",
-      "nachname": "Diekmann",
-      "pilot_name": "Diekmann, Ulrich",
-      "abteilungszeit": "2026-05-08 03:43",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 23,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "FULDA   M1058",
-      "from": "LEM",
-      "to": "RÜB",
-      "nr": 23,
-      "raw_time": "Fri May 08 03:43:00 CEST 2026",
-      "current_ship_name": "FGS FULDA - M 1058",
-      "current_ship_eta_rueb": "2026-05-08 11:39",
-      "current_ship_q": 0,
-      "current_ship_route": "LEM → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-      "availability_kind": "merged_eta"
-    },
-    {
       "pilot_key": "weise_tom",
       "vorname": "Tom",
       "nachname": "Weise",
@@ -668,6 +645,21 @@
   ],
   "visible_but_not_dispatchable_pilots": [
     {
+      "pilot_key": "diekmann_ulrich",
+      "pilot_name": "Diekmann, Ulrich",
+      "pilot_q": 0,
+      "pilot_tactical_nr": 23,
+      "abteilungszeit": "2026-05-08 03:43",
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "FULDA   M1058",
+      "from": "LEM",
+      "to": "RÜB",
+      "current_ship_name": "FULDA M1058",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta",
+      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
+    },
+    {
       "pilot_key": "böttger_oleif johann",
       "pilot_name": "Böttger, Oleif Johann",
       "pilot_q": 0,
@@ -772,15 +764,6 @@
       ],
       "excluded": [
         {
-          "pilot_name": "Diekmann, Ulrich",
-          "pilot_tactical_nr": 23,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "FGS FULDA - M 1058",
-          "pilot_current_ship_eta_rueb": "2026-05-08 11:39",
-          "ship_eta_rueb": "2026-05-08 11:05",
-          "availability_kind": "merged_eta"
-        },
-        {
           "pilot_name": "Bodmann, Christoph",
           "pilot_tactical_nr": 15,
           "reason": "kommt nicht rechtzeitig in RÜB an",
@@ -832,30 +815,17 @@
       "ship_name": "SUSANNE",
       "eta_rueb": "2026-05-08 11:42",
       "ship_q": 5,
-      "assigned_pilot": "Diekmann, Ulrich",
+      "assigned_pilot": "Skawianczyk, Artur",
       "assigned_pilot_q": 0,
-      "assigned_tactical_nr": 23,
-      "assigned_abteilungszeit": "2026-05-08 03:43",
-      "assigned_current_ship_name": "FGS FULDA - M 1058",
-      "assigned_current_ship_eta_rueb": "2026-05-08 11:39",
-      "assigned_current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "assigned_tactical_nr": 19,
+      "assigned_abteilungszeit": "2026-05-08 05:04",
+      "assigned_current_ship_name": "CUERA",
+      "assigned_current_ship_eta_rueb": "2026-05-08 10:42",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 3,
+      "candidate_count": 2,
       "candidates": [
-        {
-          "pilot_name": "Diekmann, Ulrich",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 23,
-          "abteilungszeit": "2026-05-08 03:43",
-          "fahrzeug": "FULDA   M1058",
-          "to": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "FGS FULDA - M 1058",
-          "current_ship_eta_rueb": "2026-05-08 11:39",
-          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-          "availability_kind": "merged_eta"
-        },
         {
           "pilot_name": "Skawianczyk, Artur",
           "pilot_q": 0,
@@ -950,30 +920,17 @@
       "ship_name": "ANTRACYTH",
       "eta_rueb": "2026-05-08 13:28",
       "ship_q": 4,
-      "assigned_pilot": "Skawianczyk, Artur",
+      "assigned_pilot": "Bodmann, Christoph",
       "assigned_pilot_q": 0,
-      "assigned_tactical_nr": 19,
-      "assigned_abteilungszeit": "2026-05-08 05:04",
-      "assigned_current_ship_name": "CUERA",
-      "assigned_current_ship_eta_rueb": "2026-05-08 10:42",
+      "assigned_tactical_nr": 15,
+      "assigned_abteilungszeit": "2026-05-08 07:04",
+      "assigned_current_ship_name": "DONIA",
+      "assigned_current_ship_eta_rueb": "2026-05-08 11:58",
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 5,
+      "candidate_count": 4,
       "candidates": [
-        {
-          "pilot_name": "Skawianczyk, Artur",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 19,
-          "abteilungszeit": "2026-05-08 05:04",
-          "fahrzeug": "CUERA",
-          "to": "HOS",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "CUERA",
-          "current_ship_eta_rueb": "2026-05-08 10:42",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
         {
           "pilot_name": "Bodmann, Christoph",
           "pilot_q": 0,
@@ -1066,30 +1023,17 @@
       "ship_name": "THETIS D",
       "eta_rueb": "2026-05-08 13:32",
       "ship_q": 0,
-      "assigned_pilot": "Bodmann, Christoph",
+      "assigned_pilot": "Crotogino, Philipp",
       "assigned_pilot_q": 0,
-      "assigned_tactical_nr": 15,
-      "assigned_abteilungszeit": "2026-05-08 07:04",
-      "assigned_current_ship_name": "DONIA",
-      "assigned_current_ship_eta_rueb": "2026-05-08 11:58",
+      "assigned_tactical_nr": 14,
+      "assigned_abteilungszeit": "2026-05-08 07:08",
+      "assigned_current_ship_name": "SCA OBBOLA",
+      "assigned_current_ship_eta_rueb": "2026-05-08 12:09",
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 4,
+      "candidate_count": 3,
       "candidates": [
-        {
-          "pilot_name": "Bodmann, Christoph",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 15,
-          "abteilungszeit": "2026-05-08 07:04",
-          "fahrzeug": "DONIA",
-          "to": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "DONIA",
-          "current_ship_eta_rueb": "2026-05-08 11:58",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
         {
           "pilot_name": "Crotogino, Philipp",
           "pilot_q": 0,
@@ -1169,30 +1113,17 @@
       "ship_name": "NORDICA HAV",
       "eta_rueb": "2026-05-08 13:37",
       "ship_q": 5,
-      "assigned_pilot": "Crotogino, Philipp",
+      "assigned_pilot": "Wulff, Stephan",
       "assigned_pilot_q": 0,
-      "assigned_tactical_nr": 14,
-      "assigned_abteilungszeit": "2026-05-08 07:08",
-      "assigned_current_ship_name": "SCA OBBOLA",
-      "assigned_current_ship_eta_rueb": "2026-05-08 12:09",
+      "assigned_tactical_nr": 13,
+      "assigned_abteilungszeit": "2026-05-08 07:19",
+      "assigned_current_ship_name": "MANGEN",
+      "assigned_current_ship_eta_rueb": "2026-05-08 12:00",
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 3,
+      "candidate_count": 2,
       "candidates": [
-        {
-          "pilot_name": "Crotogino, Philipp",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 14,
-          "abteilungszeit": "2026-05-08 07:08",
-          "fahrzeug": "SCA OBBOLA",
-          "to": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "SCA OBBOLA",
-          "current_ship_eta_rueb": "2026-05-08 12:09",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
         {
           "pilot_name": "Wulff, Stephan",
           "pilot_q": 0,
@@ -1258,30 +1189,17 @@
       "ship_name": "BBC BERGEN",
       "eta_rueb": "2026-05-08 14:37",
       "ship_q": 3,
-      "assigned_pilot": "Wulff, Stephan",
+      "assigned_pilot": "Zimmermann, Martin",
       "assigned_pilot_q": 0,
-      "assigned_tactical_nr": 13,
-      "assigned_abteilungszeit": "2026-05-08 07:19",
-      "assigned_current_ship_name": "MANGEN",
-      "assigned_current_ship_eta_rueb": "2026-05-08 12:00",
+      "assigned_tactical_nr": 1,
+      "assigned_abteilungszeit": "2026-05-08 10:05",
+      "assigned_current_ship_name": "Leerfahrt",
+      "assigned_current_ship_eta_rueb": "2026-05-08 11:05",
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 2,
+      "candidate_count": 1,
       "candidates": [
-        {
-          "pilot_name": "Wulff, Stephan",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 13,
-          "abteilungszeit": "2026-05-08 07:19",
-          "fahrzeug": "MANGEN",
-          "to": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "MANGEN",
-          "current_ship_eta_rueb": "2026-05-08 12:00",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
         {
           "pilot_name": "Zimmermann, Martin",
           "pilot_q": 0,
@@ -1329,72 +1247,16 @@
           "type_of_loading": "Ballastfahrt"
         }
       }
-    },
+    }
+  ],
+  "unassigned_ships": [
     {
       "ship_key": "BRUCE",
       "ship_name": "BRUCE",
       "eta_rueb": "2026-05-08 15:44",
       "ship_q": 2,
-      "assigned_pilot": "Zimmermann, Martin",
-      "assigned_pilot_q": 0,
-      "assigned_tactical_nr": 1,
-      "assigned_abteilungszeit": "2026-05-08 10:05",
-      "assigned_current_ship_name": "Leerfahrt",
-      "assigned_current_ship_eta_rueb": "2026-05-08 11:05",
-      "assigned_current_ship_source": "schiffe_merged.seelotsen",
-      "assigned_availability_kind": "merged_eta",
-      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 1,
-      "candidates": [
-        {
-          "pilot_name": "Zimmermann, Martin",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 1,
-          "abteilungszeit": "2026-05-08 10:05",
-          "fahrzeug": "Leerfahrt",
-          "to": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "Leerfahrt",
-          "current_ship_eta_rueb": "2026-05-08 11:05",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        }
-      ],
-      "ship": {
-        "meldung": {
-          "nr": "6",
-          "time": "Fri May 08 14:20:00 CEST 2026",
-          "draft": "6.5",
-          "q_gruppe": "2",
-          "lotsen_anzahl": 1,
-          "confirmed": false,
-          "from": "RÜB",
-          "to": "HOS"
-        },
-        "summary": {
-          "route": "HOS → KLT",
-          "routes": [
-            "HOS → KLT",
-            "RÜB → HOS"
-          ],
-          "q_gruppe": "2",
-          "vg": "5",
-          "draft": "6.50",
-          "length_m": "147.0",
-          "beam_m": "22.8",
-          "queue_title": "Zulauf vom Kanal in Kiel",
-          "zulauf_richtung": "vom_kanal",
-          "pilot_required": "true",
-          "pilot_status": "U",
-          "pilot_1_name": "Bahnsen, Thorsten",
-          "travel_status": "SAILING_NOK",
-          "makler": "UCA",
-          "dangerous_vessel": "-",
-          "type_of_loading": "Ballastfahrt"
-        }
-      }
+      "reason": "kein passender Lotse verfügbar"
     }
   ],
-  "unassigned_ships": [],
   "unused_pilots": []
 }
