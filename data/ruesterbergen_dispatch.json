@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-08T06:29:13",
+  "generated_at": "2026-05-08T06:31:14",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -42,14 +42,50 @@
   },
   "ships": [
     {
+      "ship_key": "RIX STAR",
+      "ship_name": "RIX STAR",
+      "eta_rueb": "2026-05-08 10:51",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 5,
+      "meldung": {
+        "nr": "1",
+        "time": "Fri May 08 10:30:00 CEST 2026",
+        "draft": "3.5",
+        "q_gruppe": "5",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "RÜB → HOS",
+        "routes": [
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "5",
+        "vg": "3",
+        "draft": "3.50",
+        "length_m": "87.85",
+        "beam_m": "12.800",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "false",
+        "pilot_status": "H",
+        "travel_status": "SAILING_NOK",
+        "makler": "NIK",
+        "dangerous_vessel": "-",
+        "type_of_loading": "Ballast"
+      }
+    },
+    {
       "ship_key": "CUERA",
       "ship_name": "CUERA",
-      "eta_rueb": "2026-05-08 10:43",
+      "eta_rueb": "2026-05-08 10:54",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
         "nr": "2",
-        "time": "Fri May 08 10:43:00 CEST 2026",
+        "time": "Fri May 08 10:33:00 CEST 2026",
         "draft": "5.2",
         "q_gruppe": "5",
         "lotsen_anzahl": 1,
@@ -74,42 +110,6 @@
         "pilot_status": "P",
         "travel_status": "SAILING_NOK",
         "makler": "UCA",
-        "dangerous_vessel": "-",
-        "type_of_loading": "Ballast"
-      }
-    },
-    {
-      "ship_key": "RIX STAR",
-      "ship_name": "RIX STAR",
-      "eta_rueb": "2026-05-08 10:51",
-      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
-      "ship_q": 5,
-      "meldung": {
-        "nr": "1",
-        "time": "Fri May 08 10:40:00 CEST 2026",
-        "draft": "3.5",
-        "q_gruppe": "5",
-        "lotsen_anzahl": 1,
-        "confirmed": false,
-        "from": "RÜB",
-        "to": "HOS"
-      },
-      "summary": {
-        "route": "RÜB → HOS",
-        "routes": [
-          "RÜB → HOS"
-        ],
-        "q_gruppe": "5",
-        "vg": "3",
-        "draft": "3.50",
-        "length_m": "87.85",
-        "beam_m": "12.800",
-        "queue_title": "Zulauf vom Kanal in Kiel",
-        "zulauf_richtung": "vom_kanal",
-        "pilot_required": "false",
-        "pilot_status": "H",
-        "travel_status": "SAILING_NOK",
-        "makler": "NIK",
         "dangerous_vessel": "-",
         "type_of_loading": "Ballast"
       }
@@ -266,7 +266,7 @@
       "current_ship_name": "ELBWIND",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta"
     },
     {
@@ -569,7 +569,7 @@
       "from": "HOS",
       "to": "RÜB",
       "current_ship_name": "ELBWIND",
-      "current_ship_source": "schiffe_merged.seelotsen",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta",
       "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
     },
@@ -591,9 +591,9 @@
   ],
   "assignments": [
     {
-      "ship_key": "CUERA",
-      "ship_name": "CUERA",
-      "eta_rueb": "2026-05-08 10:43",
+      "ship_key": "RIX STAR",
+      "ship_name": "RIX STAR",
+      "eta_rueb": "2026-05-08 10:51",
       "ship_q": 5,
       "assigned_pilot": "Plaisant, Julian",
       "assigned_pilot_q": 4,
@@ -726,9 +726,9 @@
       ],
       "ship": {
         "meldung": {
-          "nr": "2",
-          "time": "Fri May 08 10:43:00 CEST 2026",
-          "draft": "5.2",
+          "nr": "1",
+          "time": "Fri May 08 10:30:00 CEST 2026",
+          "draft": "3.5",
           "q_gruppe": "5",
           "lotsen_anzahl": 1,
           "confirmed": false,
@@ -736,31 +736,30 @@
           "to": "HOS"
         },
         "summary": {
-          "route": "HOS → KLT",
+          "route": "RÜB → HOS",
           "routes": [
-            "HOS → KLT",
             "RÜB → HOS"
           ],
           "q_gruppe": "5",
           "vg": "3",
-          "draft": "5.20",
-          "length_m": "89.50",
-          "beam_m": "13.69",
+          "draft": "3.50",
+          "length_m": "87.85",
+          "beam_m": "12.800",
           "queue_title": "Zulauf vom Kanal in Kiel",
           "zulauf_richtung": "vom_kanal",
-          "pilot_required": "true",
-          "pilot_status": "P",
+          "pilot_required": "false",
+          "pilot_status": "H",
           "travel_status": "SAILING_NOK",
-          "makler": "UCA",
+          "makler": "NIK",
           "dangerous_vessel": "-",
           "type_of_loading": "Ballast"
         }
       }
     },
     {
-      "ship_key": "RIX STAR",
-      "ship_name": "RIX STAR",
-      "eta_rueb": "2026-05-08 10:51",
+      "ship_key": "CUERA",
+      "ship_name": "CUERA",
+      "eta_rueb": "2026-05-08 10:54",
       "ship_q": 5,
       "assigned_pilot": "Haala, Klaus Werner",
       "assigned_pilot_q": 0,
@@ -880,9 +879,9 @@
       ],
       "ship": {
         "meldung": {
-          "nr": "1",
-          "time": "Fri May 08 10:40:00 CEST 2026",
-          "draft": "3.5",
+          "nr": "2",
+          "time": "Fri May 08 10:33:00 CEST 2026",
+          "draft": "5.2",
           "q_gruppe": "5",
           "lotsen_anzahl": 1,
           "confirmed": false,
@@ -890,21 +889,22 @@
           "to": "HOS"
         },
         "summary": {
-          "route": "RÜB → HOS",
+          "route": "HOS → KLT",
           "routes": [
+            "HOS → KLT",
             "RÜB → HOS"
           ],
           "q_gruppe": "5",
           "vg": "3",
-          "draft": "3.50",
-          "length_m": "87.85",
-          "beam_m": "12.800",
+          "draft": "5.20",
+          "length_m": "89.50",
+          "beam_m": "13.69",
           "queue_title": "Zulauf vom Kanal in Kiel",
           "zulauf_richtung": "vom_kanal",
-          "pilot_required": "false",
-          "pilot_status": "H",
+          "pilot_required": "true",
+          "pilot_status": "P",
           "travel_status": "SAILING_NOK",
-          "makler": "NIK",
+          "makler": "UCA",
           "dangerous_vessel": "-",
           "type_of_loading": "Ballast"
         }
