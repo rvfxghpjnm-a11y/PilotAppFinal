@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-08T10:57:09",
+  "generated_at": "2026-05-08T10:59:10",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 8,
     "pilots_total": 14,
-    "pilots_dispatchable": 10,
-    "pilots_visible_only": 4,
+    "pilots_dispatchable": 11,
+    "pilots_visible_only": 3,
     "assignments": 8,
     "unassigned_ships": 0,
-    "unused_pilots": 2
+    "unused_pilots": 3
   },
   "ships": [
     {
@@ -186,7 +186,7 @@
       "ship_q": 5,
       "meldung": {
         "nr": "5",
-        "time": "Fri May 08 13:25:00 CEST 2026",
+        "time": "Fri May 08 13:30:00 CEST 2026",
         "draft": "4.3",
         "q_gruppe": "5",
         "lotsen_anzahl": 1,
@@ -223,7 +223,7 @@
       "ship_q": 3,
       "meldung": {
         "nr": "7",
-        "time": "Fri May 08 14:25:00 CEST 2026",
+        "time": "Fri May 08 14:30:00 CEST 2026",
         "draft": "5.3",
         "q_gruppe": "3",
         "lotsen_anzahl": 1,
@@ -566,6 +566,7 @@
       "nr": 4,
       "raw_time": "Fri May 08 09:26:00 CEST 2026",
       "current_ship_name": "KAURI",
+      "current_ship_eta_rueb": "2026-05-08 14:31",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -836,6 +837,28 @@
       "availability_kind": "merged_eta"
     },
     {
+      "pilot_key": "böttger_oleif johann",
+      "vorname": "Oleif Johann",
+      "nachname": "Böttger",
+      "pilot_name": "Böttger, Oleif Johann",
+      "abteilungszeit": "2026-05-08 09:26",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 4,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "KAURI",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 4,
+      "raw_time": "Fri May 08 09:26:00 CEST 2026",
+      "current_ship_name": "KAURI",
+      "current_ship_eta_rueb": "2026-05-08 14:31",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
       "pilot_key": "zimmermann_martin",
       "vorname": "Martin",
       "nachname": "Zimmermann",
@@ -870,21 +893,6 @@
       "from": "LEM",
       "to": "RÜB",
       "current_ship_name": "FULDA M1058",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    },
-    {
-      "pilot_key": "böttger_oleif johann",
-      "pilot_name": "Böttger, Oleif Johann",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 4,
-      "abteilungszeit": "2026-05-08 09:26",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "KAURI",
-      "from": "HOS",
-      "to": "RÜB",
-      "current_ship_name": "KAURI",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta",
       "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
@@ -1044,6 +1052,15 @@
           "pilot_current_ship_eta_rueb": "2026-05-08 12:00",
           "ship_eta_rueb": "2026-05-08 11:05",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Böttger, Oleif Johann",
+          "pilot_tactical_nr": 4,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "KAURI",
+          "pilot_current_ship_eta_rueb": "2026-05-08 14:31",
+          "ship_eta_rueb": "2026-05-08 11:05",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -1186,6 +1203,15 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "MANGEN",
           "pilot_current_ship_eta_rueb": "2026-05-08 12:00",
+          "ship_eta_rueb": "2026-05-08 11:42",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Böttger, Oleif Johann",
+          "pilot_tactical_nr": 4,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "KAURI",
+          "pilot_current_ship_eta_rueb": "2026-05-08 14:31",
           "ship_eta_rueb": "2026-05-08 11:42",
           "availability_kind": "merged_eta"
         }
@@ -1344,6 +1370,17 @@
           "availability_kind": "merged_eta"
         }
       ],
+      "excluded": [
+        {
+          "pilot_name": "Böttger, Oleif Johann",
+          "pilot_tactical_nr": 4,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "KAURI",
+          "pilot_current_ship_eta_rueb": "2026-05-08 14:31",
+          "ship_eta_rueb": "2026-05-08 13:27",
+          "availability_kind": "merged_eta"
+        }
+      ],
       "ship": {
         "meldung": {
           "nr": "3",
@@ -1480,6 +1517,15 @@
           "reason": "Quali passt nicht (2 > 0)",
           "pilot_q": 2,
           "ship_q": 0
+        },
+        {
+          "pilot_name": "Böttger, Oleif Johann",
+          "pilot_tactical_nr": 4,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "KAURI",
+          "pilot_current_ship_eta_rueb": "2026-05-08 14:31",
+          "ship_eta_rueb": "2026-05-08 13:31",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -1611,10 +1657,21 @@
           "availability_kind": "merged_eta"
         }
       ],
+      "excluded": [
+        {
+          "pilot_name": "Böttger, Oleif Johann",
+          "pilot_tactical_nr": 4,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "KAURI",
+          "pilot_current_ship_eta_rueb": "2026-05-08 14:31",
+          "ship_eta_rueb": "2026-05-08 13:37",
+          "availability_kind": "merged_eta"
+        }
+      ],
       "ship": {
         "meldung": {
           "nr": "5",
-          "time": "Fri May 08 13:25:00 CEST 2026",
+          "time": "Fri May 08 13:30:00 CEST 2026",
           "draft": "4.3",
           "q_gruppe": "5",
           "lotsen_anzahl": 1,
@@ -1658,7 +1715,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 5,
+      "candidate_count": 6,
       "candidates": [
         {
           "pilot_name": "Bodmann, Christoph",
@@ -1713,6 +1770,19 @@
           "availability_kind": "merged_eta"
         },
         {
+          "pilot_name": "Böttger, Oleif Johann",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 4,
+          "abteilungszeit": "2026-05-08 09:26",
+          "fahrzeug": "KAURI",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "KAURI",
+          "current_ship_eta_rueb": "2026-05-08 14:31",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
           "pilot_name": "Zimmermann, Martin",
           "pilot_q": 0,
           "pilot_tactical_nr": 1,
@@ -1729,7 +1799,7 @@
       "ship": {
         "meldung": {
           "nr": "7",
-          "time": "Fri May 08 14:25:00 CEST 2026",
+          "time": "Fri May 08 14:30:00 CEST 2026",
           "draft": "5.3",
           "q_gruppe": "3",
           "lotsen_anzahl": 1,
@@ -1774,7 +1844,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 4,
+      "candidate_count": 5,
       "candidates": [
         {
           "pilot_name": "Crotogino, Philipp",
@@ -1812,6 +1882,19 @@
           "aufgabe": "Seebört",
           "current_ship_name": "Leerfahrt",
           "current_ship_eta_rueb": "2026-05-08 11:05",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Böttger, Oleif Johann",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 4,
+          "abteilungszeit": "2026-05-08 09:26",
+          "fahrzeug": "KAURI",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "KAURI",
+          "current_ship_eta_rueb": "2026-05-08 14:31",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1877,7 +1960,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 3,
+      "candidate_count": 4,
       "candidates": [
         {
           "pilot_name": "Wulff, Stephan",
@@ -1902,6 +1985,19 @@
           "aufgabe": "Seebört",
           "current_ship_name": "Leerfahrt",
           "current_ship_eta_rueb": "2026-05-08 11:05",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Böttger, Oleif Johann",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 4,
+          "abteilungszeit": "2026-05-08 09:26",
+          "fahrzeug": "KAURI",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "KAURI",
+          "current_ship_eta_rueb": "2026-05-08 14:31",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1975,6 +2071,28 @@
       "current_ship_eta_rueb": "2026-05-08 11:05",
       "current_ship_q": 0,
       "current_ship_route": "HOS → KLT",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "böttger_oleif johann",
+      "vorname": "Oleif Johann",
+      "nachname": "Böttger",
+      "pilot_name": "Böttger, Oleif Johann",
+      "abteilungszeit": "2026-05-08 09:26",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 4,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "KAURI",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 4,
+      "raw_time": "Fri May 08 09:26:00 CEST 2026",
+      "current_ship_name": "KAURI",
+      "current_ship_eta_rueb": "2026-05-08 14:31",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
