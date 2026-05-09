@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-09T11:03:13",
+  "generated_at": "2026-05-09T11:05:12",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 7,
     "pilots_total": 14,
-    "pilots_dispatchable": 11,
-    "pilots_visible_only": 3,
+    "pilots_dispatchable": 12,
+    "pilots_visible_only": 2,
     "assignments": 7,
     "unassigned_ships": 0,
-    "unused_pilots": 4
+    "unused_pilots": 5
   },
   "ships": [
     {
@@ -233,7 +233,7 @@
     {
       "ship_key": "JUDITH",
       "ship_name": "JUDITH",
-      "eta_rueb": "2026-05-09 14:18",
+      "eta_rueb": "2026-05-09 14:17",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 1,
       "meldung": {
@@ -271,7 +271,7 @@
     {
       "ship_key": "SPIRIT OF GINETTE",
       "ship_name": "SPIRIT OF GINETTE",
-      "eta_rueb": "2026-05-09 14:56",
+      "eta_rueb": "2026-05-09 14:54",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
@@ -478,7 +478,7 @@
       "current_ship_name": "VLIERBORG",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta"
     },
     {
@@ -497,7 +497,7 @@
       "nr": 7,
       "raw_time": "Sat May 09 09:35:00 CEST 2026",
       "current_ship_name": "KERDA",
-      "current_ship_eta_rueb": "2026-05-09 16:09",
+      "current_ship_eta_rueb": "2026-05-09 16:07",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -519,9 +519,10 @@
       "nr": 6,
       "raw_time": "Sat May 09 09:38:00 CEST 2026",
       "current_ship_name": "ANHOLT",
+      "current_ship_eta_rueb": "2026-05-09 16:01",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
@@ -782,7 +783,29 @@
       "nr": 7,
       "raw_time": "Sat May 09 09:35:00 CEST 2026",
       "current_ship_name": "KERDA",
-      "current_ship_eta_rueb": "2026-05-09 16:09",
+      "current_ship_eta_rueb": "2026-05-09 16:07",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "kaschke_henning",
+      "vorname": "Henning",
+      "nachname": "Kaschke",
+      "pilot_name": "Kaschke, Henning",
+      "abteilungszeit": "2026-05-09 09:38",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 6,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "ANHOLT",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 6,
+      "raw_time": "Sat May 09 09:38:00 CEST 2026",
+      "current_ship_name": "ANHOLT",
+      "current_ship_eta_rueb": "2026-05-09 16:01",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -866,21 +889,6 @@
       "from": "HOR",
       "to": "RÜB",
       "current_ship_name": "VLIERBORG",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    },
-    {
-      "pilot_key": "kaschke_henning",
-      "pilot_name": "Kaschke, Henning",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 6,
-      "abteilungszeit": "2026-05-09 09:38",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "ANHOLT",
-      "from": "HOS",
-      "to": "RÜB",
-      "current_ship_name": "ANHOLT",
       "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta",
       "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
@@ -1029,7 +1037,16 @@
           "pilot_tactical_nr": 7,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "KERDA",
-          "pilot_current_ship_eta_rueb": "2026-05-09 16:09",
+          "pilot_current_ship_eta_rueb": "2026-05-09 16:07",
+          "ship_eta_rueb": "2026-05-09 11:24",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Kaschke, Henning",
+          "pilot_tactical_nr": 6,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "ANHOLT",
+          "pilot_current_ship_eta_rueb": "2026-05-09 16:01",
           "ship_eta_rueb": "2026-05-09 11:24",
           "availability_kind": "merged_eta"
         },
@@ -1207,7 +1224,16 @@
           "pilot_tactical_nr": 7,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "KERDA",
-          "pilot_current_ship_eta_rueb": "2026-05-09 16:09",
+          "pilot_current_ship_eta_rueb": "2026-05-09 16:07",
+          "ship_eta_rueb": "2026-05-09 12:05",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Kaschke, Henning",
+          "pilot_tactical_nr": 6,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "ANHOLT",
+          "pilot_current_ship_eta_rueb": "2026-05-09 16:01",
           "ship_eta_rueb": "2026-05-09 12:05",
           "availability_kind": "merged_eta"
         }
@@ -1372,7 +1398,16 @@
           "pilot_tactical_nr": 7,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "KERDA",
-          "pilot_current_ship_eta_rueb": "2026-05-09 16:09",
+          "pilot_current_ship_eta_rueb": "2026-05-09 16:07",
+          "ship_eta_rueb": "2026-05-09 13:19",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Kaschke, Henning",
+          "pilot_tactical_nr": 6,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "ANHOLT",
+          "pilot_current_ship_eta_rueb": "2026-05-09 16:01",
           "ship_eta_rueb": "2026-05-09 13:19",
           "availability_kind": "merged_eta"
         }
@@ -1525,7 +1560,16 @@
           "pilot_tactical_nr": 7,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "KERDA",
-          "pilot_current_ship_eta_rueb": "2026-05-09 16:09",
+          "pilot_current_ship_eta_rueb": "2026-05-09 16:07",
+          "ship_eta_rueb": "2026-05-09 14:06",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Kaschke, Henning",
+          "pilot_tactical_nr": 6,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "ANHOLT",
+          "pilot_current_ship_eta_rueb": "2026-05-09 16:01",
           "ship_eta_rueb": "2026-05-09 14:06",
           "availability_kind": "merged_eta"
         }
@@ -1664,7 +1708,16 @@
           "pilot_tactical_nr": 7,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "KERDA",
-          "pilot_current_ship_eta_rueb": "2026-05-09 16:09",
+          "pilot_current_ship_eta_rueb": "2026-05-09 16:07",
+          "ship_eta_rueb": "2026-05-09 14:09",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Kaschke, Henning",
+          "pilot_tactical_nr": 6,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "ANHOLT",
+          "pilot_current_ship_eta_rueb": "2026-05-09 16:01",
           "ship_eta_rueb": "2026-05-09 14:09",
           "availability_kind": "merged_eta"
         }
@@ -1706,7 +1759,7 @@
     {
       "ship_key": "JUDITH",
       "ship_name": "JUDITH",
-      "eta_rueb": "2026-05-09 14:18",
+      "eta_rueb": "2026-05-09 14:17",
       "ship_q": 1,
       "assigned_pilot": "Meise, Gregor",
       "assigned_pilot_q": 0,
@@ -1773,8 +1826,17 @@
           "pilot_tactical_nr": 7,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "KERDA",
-          "pilot_current_ship_eta_rueb": "2026-05-09 16:09",
-          "ship_eta_rueb": "2026-05-09 14:18",
+          "pilot_current_ship_eta_rueb": "2026-05-09 16:07",
+          "ship_eta_rueb": "2026-05-09 14:17",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Kaschke, Henning",
+          "pilot_tactical_nr": 6,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "ANHOLT",
+          "pilot_current_ship_eta_rueb": "2026-05-09 16:01",
+          "ship_eta_rueb": "2026-05-09 14:17",
           "availability_kind": "merged_eta"
         },
         {
@@ -1822,7 +1884,7 @@
     {
       "ship_key": "SPIRIT OF GINETTE",
       "ship_name": "SPIRIT OF GINETTE",
-      "eta_rueb": "2026-05-09 14:56",
+      "eta_rueb": "2026-05-09 14:54",
       "ship_q": 5,
       "assigned_pilot": "Külzer, Sascha",
       "assigned_pilot_q": 2,
@@ -1894,8 +1956,17 @@
           "pilot_tactical_nr": 7,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "KERDA",
-          "pilot_current_ship_eta_rueb": "2026-05-09 16:09",
-          "ship_eta_rueb": "2026-05-09 14:56",
+          "pilot_current_ship_eta_rueb": "2026-05-09 16:07",
+          "ship_eta_rueb": "2026-05-09 14:54",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Kaschke, Henning",
+          "pilot_tactical_nr": 6,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "ANHOLT",
+          "pilot_current_ship_eta_rueb": "2026-05-09 16:01",
+          "ship_eta_rueb": "2026-05-09 14:54",
           "availability_kind": "merged_eta"
         }
       ],
@@ -1950,7 +2021,29 @@
       "nr": 7,
       "raw_time": "Sat May 09 09:35:00 CEST 2026",
       "current_ship_name": "KERDA",
-      "current_ship_eta_rueb": "2026-05-09 16:09",
+      "current_ship_eta_rueb": "2026-05-09 16:07",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "kaschke_henning",
+      "vorname": "Henning",
+      "nachname": "Kaschke",
+      "pilot_name": "Kaschke, Henning",
+      "abteilungszeit": "2026-05-09 09:38",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 6,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "ANHOLT",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 6,
+      "raw_time": "Sat May 09 09:38:00 CEST 2026",
+      "current_ship_name": "ANHOLT",
+      "current_ship_eta_rueb": "2026-05-09 16:01",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
