@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-09T03:45:16",
+  "generated_at": "2026-05-09T03:47:11",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 4,
     "pilots_total": 13,
-    "pilots_dispatchable": 12,
-    "pilots_visible_only": 1,
+    "pilots_dispatchable": 13,
+    "pilots_visible_only": 0,
     "assignments": 4,
     "unassigned_ships": 0,
-    "unused_pilots": 8
+    "unused_pilots": 9
   },
   "ships": [
     {
@@ -107,7 +107,7 @@
     {
       "ship_key": "LOVISA",
       "ship_name": "LOVISA",
-      "eta_rueb": "2026-05-09 05:39",
+      "eta_rueb": "2026-05-09 05:38",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 4,
       "meldung": {
@@ -145,7 +145,7 @@
     {
       "ship_key": "LADY DIANA",
       "ship_name": "LADY DIANA",
-      "eta_rueb": "2026-05-09 05:42",
+      "eta_rueb": "2026-05-09 05:41",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
@@ -418,7 +418,7 @@
       "nr": 4,
       "raw_time": "Sat May 09 02:07:00 CEST 2026",
       "current_ship_name": "MARBURG",
-      "current_ship_eta_rueb": "2026-05-09 07:35",
+      "current_ship_eta_rueb": "2026-05-09 07:34",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -462,9 +462,10 @@
       "nr": 2,
       "raw_time": "Sat May 09 02:39:00 CEST 2026",
       "current_ship_name": "RIX FLEVO",
+      "current_ship_eta_rueb": "2026-05-09 07:40",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     }
   ],
@@ -705,7 +706,7 @@
       "nr": 4,
       "raw_time": "Sat May 09 02:07:00 CEST 2026",
       "current_ship_name": "MARBURG",
-      "current_ship_eta_rueb": "2026-05-09 07:35",
+      "current_ship_eta_rueb": "2026-05-09 07:34",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -732,25 +733,31 @@
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
-    }
-  ],
-  "visible_but_not_dispatchable_pilots": [
+    },
     {
       "pilot_key": "köhler_olaf",
+      "vorname": "Olaf",
+      "nachname": "Köhler",
       "pilot_name": "Köhler, Olaf",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 2,
       "abteilungszeit": "2026-05-09 02:39",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 2,
       "aufgabe": "Kanalbört",
       "fahrzeug": "RIX FLEVO",
       "from": "HOS",
       "to": "RÜB",
+      "nr": 2,
+      "raw_time": "Sat May 09 02:39:00 CEST 2026",
       "current_ship_name": "RIX FLEVO",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
+      "current_ship_eta_rueb": "2026-05-09 07:40",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
     }
   ],
+  "visible_but_not_dispatchable_pilots": [],
   "assignments": [
     {
       "ship_key": "CONTAINERSHIPS 8",
@@ -893,7 +900,7 @@
           "pilot_tactical_nr": 4,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "MARBURG",
-          "pilot_current_ship_eta_rueb": "2026-05-09 07:35",
+          "pilot_current_ship_eta_rueb": "2026-05-09 07:34",
           "ship_eta_rueb": "2026-05-09 05:25",
           "availability_kind": "merged_eta"
         },
@@ -903,6 +910,15 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "CLARA",
           "pilot_current_ship_eta_rueb": "2026-05-09 07:37",
+          "ship_eta_rueb": "2026-05-09 05:25",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Köhler, Olaf",
+          "pilot_tactical_nr": 2,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "RIX FLEVO",
+          "pilot_current_ship_eta_rueb": "2026-05-09 07:40",
           "ship_eta_rueb": "2026-05-09 05:25",
           "availability_kind": "merged_eta"
         }
@@ -1069,7 +1085,7 @@
           "pilot_tactical_nr": 4,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "MARBURG",
-          "pilot_current_ship_eta_rueb": "2026-05-09 07:35",
+          "pilot_current_ship_eta_rueb": "2026-05-09 07:34",
           "ship_eta_rueb": "2026-05-09 05:29",
           "availability_kind": "merged_eta"
         },
@@ -1079,6 +1095,15 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "CLARA",
           "pilot_current_ship_eta_rueb": "2026-05-09 07:37",
+          "ship_eta_rueb": "2026-05-09 05:29",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Köhler, Olaf",
+          "pilot_tactical_nr": 2,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "RIX FLEVO",
+          "pilot_current_ship_eta_rueb": "2026-05-09 07:40",
           "ship_eta_rueb": "2026-05-09 05:29",
           "availability_kind": "merged_eta"
         }
@@ -1119,7 +1144,7 @@
     {
       "ship_key": "LOVISA",
       "ship_name": "LOVISA",
-      "eta_rueb": "2026-05-09 05:39",
+      "eta_rueb": "2026-05-09 05:38",
       "ship_q": 4,
       "assigned_pilot": "Steffens, Micha",
       "assigned_pilot_q": 4,
@@ -1243,8 +1268,8 @@
           "pilot_tactical_nr": 4,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "MARBURG",
-          "pilot_current_ship_eta_rueb": "2026-05-09 07:35",
-          "ship_eta_rueb": "2026-05-09 05:39",
+          "pilot_current_ship_eta_rueb": "2026-05-09 07:34",
+          "ship_eta_rueb": "2026-05-09 05:38",
           "availability_kind": "merged_eta"
         },
         {
@@ -1253,7 +1278,16 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "CLARA",
           "pilot_current_ship_eta_rueb": "2026-05-09 07:37",
-          "ship_eta_rueb": "2026-05-09 05:39",
+          "ship_eta_rueb": "2026-05-09 05:38",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Köhler, Olaf",
+          "pilot_tactical_nr": 2,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "RIX FLEVO",
+          "pilot_current_ship_eta_rueb": "2026-05-09 07:40",
+          "ship_eta_rueb": "2026-05-09 05:38",
           "availability_kind": "merged_eta"
         }
       ],
@@ -1294,7 +1328,7 @@
     {
       "ship_key": "LADY DIANA",
       "ship_name": "LADY DIANA",
-      "eta_rueb": "2026-05-09 05:42",
+      "eta_rueb": "2026-05-09 05:41",
       "ship_q": 5,
       "assigned_pilot": "Weise, Carsten",
       "assigned_pilot_q": 0,
@@ -1405,8 +1439,8 @@
           "pilot_tactical_nr": 4,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "MARBURG",
-          "pilot_current_ship_eta_rueb": "2026-05-09 07:35",
-          "ship_eta_rueb": "2026-05-09 05:42",
+          "pilot_current_ship_eta_rueb": "2026-05-09 07:34",
+          "ship_eta_rueb": "2026-05-09 05:41",
           "availability_kind": "merged_eta"
         },
         {
@@ -1415,7 +1449,16 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "CLARA",
           "pilot_current_ship_eta_rueb": "2026-05-09 07:37",
-          "ship_eta_rueb": "2026-05-09 05:42",
+          "ship_eta_rueb": "2026-05-09 05:41",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Köhler, Olaf",
+          "pilot_tactical_nr": 2,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "RIX FLEVO",
+          "pilot_current_ship_eta_rueb": "2026-05-09 07:40",
+          "ship_eta_rueb": "2026-05-09 05:41",
           "availability_kind": "merged_eta"
         }
       ],
@@ -1604,7 +1647,7 @@
       "nr": 4,
       "raw_time": "Sat May 09 02:07:00 CEST 2026",
       "current_ship_name": "MARBURG",
-      "current_ship_eta_rueb": "2026-05-09 07:35",
+      "current_ship_eta_rueb": "2026-05-09 07:34",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -1627,6 +1670,28 @@
       "raw_time": "Sat May 09 02:19:00 CEST 2026",
       "current_ship_name": "CLARA",
       "current_ship_eta_rueb": "2026-05-09 07:37",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "köhler_olaf",
+      "vorname": "Olaf",
+      "nachname": "Köhler",
+      "pilot_name": "Köhler, Olaf",
+      "abteilungszeit": "2026-05-09 02:39",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 2,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "RIX FLEVO",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 2,
+      "raw_time": "Sat May 09 02:39:00 CEST 2026",
+      "current_ship_name": "RIX FLEVO",
+      "current_ship_eta_rueb": "2026-05-09 07:40",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
