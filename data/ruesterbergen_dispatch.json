@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-09T17:33:10",
+  "generated_at": "2026-05-09T17:35:07",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -44,7 +44,7 @@
     {
       "ship_key": "WESTEWIND",
       "ship_name": "WESTEWIND",
-      "eta_rueb": "2026-05-09 18:30",
+      "eta_rueb": "2026-05-09 18:29",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
@@ -81,7 +81,7 @@
     {
       "ship_key": "ELBWATER",
       "ship_name": "ELBWATER",
-      "eta_rueb": "2026-05-09 18:39",
+      "eta_rueb": "2026-05-09 18:40",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 1,
       "meldung": {
@@ -119,7 +119,7 @@
     {
       "ship_key": "ODERBORG",
       "ship_name": "ODERBORG",
-      "eta_rueb": "2026-05-09 19:32",
+      "eta_rueb": "2026-05-09 19:30",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
@@ -192,6 +192,43 @@
       }
     },
     {
+      "ship_key": "EMS POWER + WULF 7 + EMS PONTON 10",
+      "ship_name": "EMS POWER + WULF 7 + EMS PONTON 10",
+      "eta_rueb": "2026-05-09 19:41",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 1,
+      "meldung": {
+        "nr": "4",
+        "time": "Sat May 09 19:40:00 CEST 2026",
+        "draft": "4.7",
+        "q_gruppe": "1",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "KRH"
+      },
+      "summary": {
+        "route": "RÜB → KRH",
+        "routes": [
+          "RÜB → KRH"
+        ],
+        "q_gruppe": "1",
+        "vg": "5",
+        "draft": "4.70",
+        "length_m": "22.64",
+        "beam_m": "7.840",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "P",
+        "pilot_1_name": "Bartsch, Holger",
+        "travel_status": "SAILING_NOK",
+        "makler": "UCA",
+        "dangerous_vessel": "-",
+        "type_of_loading": "Schiffssektionen"
+      }
+    },
+    {
       "ship_key": "GAASTBORG",
       "ship_name": "GAASTBORG",
       "eta_rueb": "2026-05-09 19:44",
@@ -227,43 +264,6 @@
         "makler": "UCA",
         "dangerous_vessel": "-",
         "type_of_loading": "Bulk"
-      }
-    },
-    {
-      "ship_key": "EMS POWER + WULF 7 + EMS PONTON 10",
-      "ship_name": "EMS POWER + WULF 7 + EMS PONTON 10",
-      "eta_rueb": "2026-05-09 19:48",
-      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
-      "ship_q": 1,
-      "meldung": {
-        "nr": "4",
-        "time": "Sat May 09 19:40:00 CEST 2026",
-        "draft": "4.7",
-        "q_gruppe": "1",
-        "lotsen_anzahl": 1,
-        "confirmed": false,
-        "from": "RÜB",
-        "to": "KRH"
-      },
-      "summary": {
-        "route": "RÜB → KRH",
-        "routes": [
-          "RÜB → KRH"
-        ],
-        "q_gruppe": "1",
-        "vg": "5",
-        "draft": "4.70",
-        "length_m": "22.64",
-        "beam_m": "7.840",
-        "queue_title": "Zulauf vom Kanal in Kiel",
-        "zulauf_richtung": "vom_kanal",
-        "pilot_required": "true",
-        "pilot_status": "P",
-        "pilot_1_name": "Bartsch, Holger",
-        "travel_status": "SAILING_NOK",
-        "makler": "UCA",
-        "dangerous_vessel": "-",
-        "type_of_loading": "Schiffssektionen"
       }
     },
     {
@@ -603,7 +603,7 @@
       "current_ship_name": "TERN ISLAND",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta"
     },
     {
@@ -616,18 +616,16 @@
       "q_source": "q_gruppen_lotsen.entries",
       "pilot_tactical_nr": 1,
       "aufgabe": "Kanalbört",
-      "fahrzeug": "Leerfahrt",
-      "from": "HOS",
-      "to": "RÜB",
+      "fahrzeug": "RÜB",
       "nr": 1,
       "raw_time": "Sat May 09 16:40:00 CEST 2026",
-      "current_ship_name": "Leerfahrt",
-      "current_ship_eta_rueb": "2026-05-09 17:40",
+      "current_ship_name": "RÜB",
+      "current_ship_eta_rueb": "2026-05-09 16:40",
       "current_ship_q": 0,
-      "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-      "availability_kind": "leerfahrt_hos_rueb_plus60",
-      "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+      "current_ship_route": "RÜB",
+      "current_ship_source": "special.already_in_rueb",
+      "availability_kind": "already_in_rueb",
+      "availability_hint": "Lotse gilt als bereits in RÜB"
     },
     {
       "pilot_key": "münker_niels",
@@ -639,18 +637,16 @@
       "q_source": "q_gruppen_lotsen.entries",
       "pilot_tactical_nr": 2,
       "aufgabe": "Kanalbört",
-      "fahrzeug": "Leerfahrt",
-      "from": "HOS",
-      "to": "RÜB",
+      "fahrzeug": "RÜB",
       "nr": 2,
       "raw_time": "Sat May 09 16:40:00 CEST 2026",
-      "current_ship_name": "Leerfahrt",
-      "current_ship_eta_rueb": "2026-05-09 17:40",
+      "current_ship_name": "RÜB",
+      "current_ship_eta_rueb": "2026-05-09 16:40",
       "current_ship_q": 0,
-      "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-      "availability_kind": "leerfahrt_hos_rueb_plus60",
-      "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+      "current_ship_route": "RÜB",
+      "current_ship_source": "special.already_in_rueb",
+      "availability_kind": "already_in_rueb",
+      "availability_hint": "Lotse gilt als bereits in RÜB"
     }
   ],
   "dispatchable_pilots": [
@@ -884,18 +880,16 @@
       "q_source": "q_gruppen_lotsen.entries",
       "pilot_tactical_nr": 1,
       "aufgabe": "Kanalbört",
-      "fahrzeug": "Leerfahrt",
-      "from": "HOS",
-      "to": "RÜB",
+      "fahrzeug": "RÜB",
       "nr": 1,
       "raw_time": "Sat May 09 16:40:00 CEST 2026",
-      "current_ship_name": "Leerfahrt",
-      "current_ship_eta_rueb": "2026-05-09 17:40",
+      "current_ship_name": "RÜB",
+      "current_ship_eta_rueb": "2026-05-09 16:40",
       "current_ship_q": 0,
-      "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-      "availability_kind": "leerfahrt_hos_rueb_plus60",
-      "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+      "current_ship_route": "RÜB",
+      "current_ship_source": "special.already_in_rueb",
+      "availability_kind": "already_in_rueb",
+      "availability_hint": "Lotse gilt als bereits in RÜB"
     },
     {
       "pilot_key": "münker_niels",
@@ -907,18 +901,16 @@
       "q_source": "q_gruppen_lotsen.entries",
       "pilot_tactical_nr": 2,
       "aufgabe": "Kanalbört",
-      "fahrzeug": "Leerfahrt",
-      "from": "HOS",
-      "to": "RÜB",
+      "fahrzeug": "RÜB",
       "nr": 2,
       "raw_time": "Sat May 09 16:40:00 CEST 2026",
-      "current_ship_name": "Leerfahrt",
-      "current_ship_eta_rueb": "2026-05-09 17:40",
+      "current_ship_name": "RÜB",
+      "current_ship_eta_rueb": "2026-05-09 16:40",
       "current_ship_q": 0,
-      "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-      "availability_kind": "leerfahrt_hos_rueb_plus60",
-      "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+      "current_ship_route": "RÜB",
+      "current_ship_source": "special.already_in_rueb",
+      "availability_kind": "already_in_rueb",
+      "availability_hint": "Lotse gilt als bereits in RÜB"
     }
   ],
   "visible_but_not_dispatchable_pilots": [
@@ -948,7 +940,7 @@
       "from": "HOS",
       "to": "RÜB",
       "current_ship_name": "TERN ISLAND",
-      "current_ship_source": "schiffe_merged.seelotsen",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta",
       "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
     }
@@ -957,7 +949,7 @@
     {
       "ship_key": "WESTEWIND",
       "ship_name": "WESTEWIND",
-      "eta_rueb": "2026-05-09 18:30",
+      "eta_rueb": "2026-05-09 18:29",
       "ship_q": 5,
       "assigned_pilot": "Külzer, Sascha",
       "assigned_pilot_q": 2,
@@ -1066,28 +1058,26 @@
           "pilot_q": 4,
           "pilot_tactical_nr": 1,
           "abteilungszeit": "2026-05-09 16:40",
-          "fahrzeug": "Leerfahrt",
-          "to": "RÜB",
+          "fahrzeug": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "Leerfahrt",
-          "current_ship_eta_rueb": "2026-05-09 17:40",
-          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-          "availability_kind": "leerfahrt_hos_rueb_plus60",
-          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-09 16:40",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
         },
         {
           "pilot_name": "Münker, Niels",
           "pilot_q": 0,
           "pilot_tactical_nr": 2,
           "abteilungszeit": "2026-05-09 16:40",
-          "fahrzeug": "Leerfahrt",
-          "to": "RÜB",
+          "fahrzeug": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "Leerfahrt",
-          "current_ship_eta_rueb": "2026-05-09 17:40",
-          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-          "availability_kind": "leerfahrt_hos_rueb_plus60",
-          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-09 16:40",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
         }
       ],
       "excluded": [
@@ -1097,7 +1087,7 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "FRIEDRICH WESSELS",
           "pilot_current_ship_eta_rueb": "2026-05-09 18:59",
-          "ship_eta_rueb": "2026-05-09 18:30",
+          "ship_eta_rueb": "2026-05-09 18:29",
           "availability_kind": "merged_eta"
         },
         {
@@ -1106,7 +1096,7 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "EKNOE",
           "pilot_current_ship_eta_rueb": "2026-05-09 19:03",
-          "ship_eta_rueb": "2026-05-09 18:30",
+          "ship_eta_rueb": "2026-05-09 18:29",
           "availability_kind": "merged_eta"
         },
         {
@@ -1115,7 +1105,7 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "KERLI",
           "pilot_current_ship_eta_rueb": "2026-05-09 19:08",
-          "ship_eta_rueb": "2026-05-09 18:30",
+          "ship_eta_rueb": "2026-05-09 18:29",
           "availability_kind": "merged_eta"
         }
       ],
@@ -1155,7 +1145,7 @@
     {
       "ship_key": "ELBWATER",
       "ship_name": "ELBWATER",
-      "eta_rueb": "2026-05-09 18:39",
+      "eta_rueb": "2026-05-09 18:40",
       "ship_q": 1,
       "assigned_pilot": "Haala, Klaus Werner",
       "assigned_pilot_q": 0,
@@ -1225,14 +1215,13 @@
           "pilot_q": 0,
           "pilot_tactical_nr": 2,
           "abteilungszeit": "2026-05-09 16:40",
-          "fahrzeug": "Leerfahrt",
-          "to": "RÜB",
+          "fahrzeug": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "Leerfahrt",
-          "current_ship_eta_rueb": "2026-05-09 17:40",
-          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-          "availability_kind": "leerfahrt_hos_rueb_plus60",
-          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-09 16:40",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
         }
       ],
       "excluded": [
@@ -1249,7 +1238,7 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "FRIEDRICH WESSELS",
           "pilot_current_ship_eta_rueb": "2026-05-09 18:59",
-          "ship_eta_rueb": "2026-05-09 18:39",
+          "ship_eta_rueb": "2026-05-09 18:40",
           "availability_kind": "merged_eta"
         },
         {
@@ -1258,7 +1247,7 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "EKNOE",
           "pilot_current_ship_eta_rueb": "2026-05-09 19:03",
-          "ship_eta_rueb": "2026-05-09 18:39",
+          "ship_eta_rueb": "2026-05-09 18:40",
           "availability_kind": "merged_eta"
         },
         {
@@ -1267,7 +1256,7 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "KERLI",
           "pilot_current_ship_eta_rueb": "2026-05-09 19:08",
-          "ship_eta_rueb": "2026-05-09 18:39",
+          "ship_eta_rueb": "2026-05-09 18:40",
           "availability_kind": "merged_eta"
         },
         {
@@ -1322,7 +1311,7 @@
     {
       "ship_key": "ODERBORG",
       "ship_name": "ODERBORG",
-      "eta_rueb": "2026-05-09 19:32",
+      "eta_rueb": "2026-05-09 19:30",
       "ship_q": 5,
       "assigned_pilot": "Hewig, Marius Paul",
       "assigned_pilot_q": 2,
@@ -1444,28 +1433,26 @@
           "pilot_q": 4,
           "pilot_tactical_nr": 1,
           "abteilungszeit": "2026-05-09 16:40",
-          "fahrzeug": "Leerfahrt",
-          "to": "RÜB",
+          "fahrzeug": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "Leerfahrt",
-          "current_ship_eta_rueb": "2026-05-09 17:40",
-          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-          "availability_kind": "leerfahrt_hos_rueb_plus60",
-          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-09 16:40",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
         },
         {
           "pilot_name": "Münker, Niels",
           "pilot_q": 0,
           "pilot_tactical_nr": 2,
           "abteilungszeit": "2026-05-09 16:40",
-          "fahrzeug": "Leerfahrt",
-          "to": "RÜB",
+          "fahrzeug": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "Leerfahrt",
-          "current_ship_eta_rueb": "2026-05-09 17:40",
-          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-          "availability_kind": "leerfahrt_hos_rueb_plus60",
-          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-09 16:40",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
         }
       ],
       "ship": {
@@ -1613,28 +1600,26 @@
           "pilot_q": 4,
           "pilot_tactical_nr": 1,
           "abteilungszeit": "2026-05-09 16:40",
-          "fahrzeug": "Leerfahrt",
-          "to": "RÜB",
+          "fahrzeug": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "Leerfahrt",
-          "current_ship_eta_rueb": "2026-05-09 17:40",
-          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-          "availability_kind": "leerfahrt_hos_rueb_plus60",
-          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-09 16:40",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
         },
         {
           "pilot_name": "Münker, Niels",
           "pilot_q": 0,
           "pilot_tactical_nr": 2,
           "abteilungszeit": "2026-05-09 16:40",
-          "fahrzeug": "Leerfahrt",
-          "to": "RÜB",
+          "fahrzeug": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "Leerfahrt",
-          "current_ship_eta_rueb": "2026-05-09 17:40",
-          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-          "availability_kind": "leerfahrt_hos_rueb_plus60",
-          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-09 16:40",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
         }
       ],
       "ship": {
@@ -1672,10 +1657,10 @@
       }
     },
     {
-      "ship_key": "GAASTBORG",
-      "ship_name": "GAASTBORG",
-      "eta_rueb": "2026-05-09 19:44",
-      "ship_q": 5,
+      "ship_key": "EMS POWER + WULF 7 + EMS PONTON 10",
+      "ship_name": "EMS POWER + WULF 7 + EMS PONTON 10",
+      "eta_rueb": "2026-05-09 19:41",
+      "ship_q": 1,
       "assigned_pilot": "Malik, Christoph",
       "assigned_pilot_q": 0,
       "assigned_tactical_nr": 11,
@@ -1685,7 +1670,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 8,
+      "candidate_count": 6,
       "candidates": [
         {
           "pilot_name": "Malik, Christoph",
@@ -1700,6 +1685,137 @@
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
+        {
+          "pilot_name": "Doering, Lars",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 10,
+          "abteilungszeit": "2026-05-09 13:49",
+          "fahrzeug": "EKNOE",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "EKNOE",
+          "current_ship_eta_rueb": "2026-05-09 19:03",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Koslik, Kevin",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 9,
+          "abteilungszeit": "2026-05-09 13:53",
+          "fahrzeug": "KERLI",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "KERLI",
+          "current_ship_eta_rueb": "2026-05-09 19:08",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Wulff, Stephan",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 6,
+          "abteilungszeit": "2026-05-09 15:35",
+          "fahrzeug": "KRISTELLA",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "KRISTELLA",
+          "current_ship_eta_rueb": "2026-05-09 17:13",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Kordt, Remo",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 7,
+          "abteilungszeit": "2026-05-09 15:35",
+          "fahrzeug": "ARKLOW WILLOW",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ARKLOW WILLOW",
+          "current_ship_eta_rueb": "2026-05-09 17:06",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Münker, Niels",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-05-09 16:40",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-09 16:40",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Krüger, Caspar-Maria",
+          "pilot_tactical_nr": 8,
+          "reason": "Quali passt nicht (4 > 1)",
+          "pilot_q": 4,
+          "ship_q": 1
+        },
+        {
+          "pilot_name": "Plaisant, Julian",
+          "pilot_tactical_nr": 1,
+          "reason": "Quali passt nicht (4 > 1)",
+          "pilot_q": 4,
+          "ship_q": 1
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "4",
+          "time": "Sat May 09 19:40:00 CEST 2026",
+          "draft": "4.7",
+          "q_gruppe": "1",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "KRH"
+        },
+        "summary": {
+          "route": "RÜB → KRH",
+          "routes": [
+            "RÜB → KRH"
+          ],
+          "q_gruppe": "1",
+          "vg": "5",
+          "draft": "4.70",
+          "length_m": "22.64",
+          "beam_m": "7.840",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "P",
+          "pilot_1_name": "Bartsch, Holger",
+          "travel_status": "SAILING_NOK",
+          "makler": "UCA",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Schiffssektionen"
+        }
+      }
+    },
+    {
+      "ship_key": "GAASTBORG",
+      "ship_name": "GAASTBORG",
+      "eta_rueb": "2026-05-09 19:44",
+      "ship_q": 5,
+      "assigned_pilot": "Doering, Lars",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 10,
+      "assigned_abteilungszeit": "2026-05-09 13:49",
+      "assigned_current_ship_name": "EKNOE",
+      "assigned_current_ship_eta_rueb": "2026-05-09 19:03",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 7,
+      "candidates": [
         {
           "pilot_name": "Doering, Lars",
           "pilot_q": 0,
@@ -1770,28 +1886,26 @@
           "pilot_q": 4,
           "pilot_tactical_nr": 1,
           "abteilungszeit": "2026-05-09 16:40",
-          "fahrzeug": "Leerfahrt",
-          "to": "RÜB",
+          "fahrzeug": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "Leerfahrt",
-          "current_ship_eta_rueb": "2026-05-09 17:40",
-          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-          "availability_kind": "leerfahrt_hos_rueb_plus60",
-          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-09 16:40",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
         },
         {
           "pilot_name": "Münker, Niels",
           "pilot_q": 0,
           "pilot_tactical_nr": 2,
           "abteilungszeit": "2026-05-09 16:40",
-          "fahrzeug": "Leerfahrt",
-          "to": "RÜB",
+          "fahrzeug": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "Leerfahrt",
-          "current_ship_eta_rueb": "2026-05-09 17:40",
-          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-          "availability_kind": "leerfahrt_hos_rueb_plus60",
-          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-09 16:40",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
         }
       ],
       "ship": {
@@ -1825,138 +1939,6 @@
           "makler": "UCA",
           "dangerous_vessel": "-",
           "type_of_loading": "Bulk"
-        }
-      }
-    },
-    {
-      "ship_key": "EMS POWER + WULF 7 + EMS PONTON 10",
-      "ship_name": "EMS POWER + WULF 7 + EMS PONTON 10",
-      "eta_rueb": "2026-05-09 19:48",
-      "ship_q": 1,
-      "assigned_pilot": "Doering, Lars",
-      "assigned_pilot_q": 0,
-      "assigned_tactical_nr": 10,
-      "assigned_abteilungszeit": "2026-05-09 13:49",
-      "assigned_current_ship_name": "EKNOE",
-      "assigned_current_ship_eta_rueb": "2026-05-09 19:03",
-      "assigned_current_ship_source": "schiffe_merged.seelotsen",
-      "assigned_availability_kind": "merged_eta",
-      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 5,
-      "candidates": [
-        {
-          "pilot_name": "Doering, Lars",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 10,
-          "abteilungszeit": "2026-05-09 13:49",
-          "fahrzeug": "EKNOE",
-          "to": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "EKNOE",
-          "current_ship_eta_rueb": "2026-05-09 19:03",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Koslik, Kevin",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 9,
-          "abteilungszeit": "2026-05-09 13:53",
-          "fahrzeug": "KERLI",
-          "to": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "KERLI",
-          "current_ship_eta_rueb": "2026-05-09 19:08",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Wulff, Stephan",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 6,
-          "abteilungszeit": "2026-05-09 15:35",
-          "fahrzeug": "KRISTELLA",
-          "to": "HOS",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "KRISTELLA",
-          "current_ship_eta_rueb": "2026-05-09 17:13",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Kordt, Remo",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 7,
-          "abteilungszeit": "2026-05-09 15:35",
-          "fahrzeug": "ARKLOW WILLOW",
-          "to": "HOS",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "ARKLOW WILLOW",
-          "current_ship_eta_rueb": "2026-05-09 17:06",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Münker, Niels",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 2,
-          "abteilungszeit": "2026-05-09 16:40",
-          "fahrzeug": "Leerfahrt",
-          "to": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "Leerfahrt",
-          "current_ship_eta_rueb": "2026-05-09 17:40",
-          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-          "availability_kind": "leerfahrt_hos_rueb_plus60",
-          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
-        }
-      ],
-      "excluded": [
-        {
-          "pilot_name": "Krüger, Caspar-Maria",
-          "pilot_tactical_nr": 8,
-          "reason": "Quali passt nicht (4 > 1)",
-          "pilot_q": 4,
-          "ship_q": 1
-        },
-        {
-          "pilot_name": "Plaisant, Julian",
-          "pilot_tactical_nr": 1,
-          "reason": "Quali passt nicht (4 > 1)",
-          "pilot_q": 4,
-          "ship_q": 1
-        }
-      ],
-      "ship": {
-        "meldung": {
-          "nr": "4",
-          "time": "Sat May 09 19:40:00 CEST 2026",
-          "draft": "4.7",
-          "q_gruppe": "1",
-          "lotsen_anzahl": 1,
-          "confirmed": false,
-          "from": "RÜB",
-          "to": "KRH"
-        },
-        "summary": {
-          "route": "RÜB → KRH",
-          "routes": [
-            "RÜB → KRH"
-          ],
-          "q_gruppe": "1",
-          "vg": "5",
-          "draft": "4.70",
-          "length_m": "22.64",
-          "beam_m": "7.840",
-          "queue_title": "Zulauf vom Kanal in Kiel",
-          "zulauf_richtung": "vom_kanal",
-          "pilot_required": "true",
-          "pilot_status": "P",
-          "pilot_1_name": "Bartsch, Holger",
-          "travel_status": "SAILING_NOK",
-          "makler": "UCA",
-          "dangerous_vessel": "-",
-          "type_of_loading": "Schiffssektionen"
         }
       }
     },
@@ -2033,28 +2015,26 @@
           "pilot_q": 4,
           "pilot_tactical_nr": 1,
           "abteilungszeit": "2026-05-09 16:40",
-          "fahrzeug": "Leerfahrt",
-          "to": "RÜB",
+          "fahrzeug": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "Leerfahrt",
-          "current_ship_eta_rueb": "2026-05-09 17:40",
-          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-          "availability_kind": "leerfahrt_hos_rueb_plus60",
-          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-09 16:40",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
         },
         {
           "pilot_name": "Münker, Niels",
           "pilot_q": 0,
           "pilot_tactical_nr": 2,
           "abteilungszeit": "2026-05-09 16:40",
-          "fahrzeug": "Leerfahrt",
-          "to": "RÜB",
+          "fahrzeug": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "Leerfahrt",
-          "current_ship_eta_rueb": "2026-05-09 17:40",
-          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-          "availability_kind": "leerfahrt_hos_rueb_plus60",
-          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-09 16:40",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
         }
       ],
       "ship": {
@@ -2151,28 +2131,26 @@
           "pilot_q": 4,
           "pilot_tactical_nr": 1,
           "abteilungszeit": "2026-05-09 16:40",
-          "fahrzeug": "Leerfahrt",
-          "to": "RÜB",
+          "fahrzeug": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "Leerfahrt",
-          "current_ship_eta_rueb": "2026-05-09 17:40",
-          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-          "availability_kind": "leerfahrt_hos_rueb_plus60",
-          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-09 16:40",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
         },
         {
           "pilot_name": "Münker, Niels",
           "pilot_q": 0,
           "pilot_tactical_nr": 2,
           "abteilungszeit": "2026-05-09 16:40",
-          "fahrzeug": "Leerfahrt",
-          "to": "RÜB",
+          "fahrzeug": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "Leerfahrt",
-          "current_ship_eta_rueb": "2026-05-09 17:40",
-          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-          "availability_kind": "leerfahrt_hos_rueb_plus60",
-          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-09 16:40",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
         }
       ],
       "ship": {
@@ -2266,18 +2244,16 @@
       "q_source": "q_gruppen_lotsen.entries",
       "pilot_tactical_nr": 1,
       "aufgabe": "Kanalbört",
-      "fahrzeug": "Leerfahrt",
-      "from": "HOS",
-      "to": "RÜB",
+      "fahrzeug": "RÜB",
       "nr": 1,
       "raw_time": "Sat May 09 16:40:00 CEST 2026",
-      "current_ship_name": "Leerfahrt",
-      "current_ship_eta_rueb": "2026-05-09 17:40",
+      "current_ship_name": "RÜB",
+      "current_ship_eta_rueb": "2026-05-09 16:40",
       "current_ship_q": 0,
-      "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-      "availability_kind": "leerfahrt_hos_rueb_plus60",
-      "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+      "current_ship_route": "RÜB",
+      "current_ship_source": "special.already_in_rueb",
+      "availability_kind": "already_in_rueb",
+      "availability_hint": "Lotse gilt als bereits in RÜB"
     },
     {
       "pilot_key": "münker_niels",
@@ -2289,18 +2265,16 @@
       "q_source": "q_gruppen_lotsen.entries",
       "pilot_tactical_nr": 2,
       "aufgabe": "Kanalbört",
-      "fahrzeug": "Leerfahrt",
-      "from": "HOS",
-      "to": "RÜB",
+      "fahrzeug": "RÜB",
       "nr": 2,
       "raw_time": "Sat May 09 16:40:00 CEST 2026",
-      "current_ship_name": "Leerfahrt",
-      "current_ship_eta_rueb": "2026-05-09 17:40",
+      "current_ship_name": "RÜB",
+      "current_ship_eta_rueb": "2026-05-09 16:40",
       "current_ship_q": 0,
-      "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-      "availability_kind": "leerfahrt_hos_rueb_plus60",
-      "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+      "current_ship_route": "RÜB",
+      "current_ship_source": "special.already_in_rueb",
+      "availability_kind": "already_in_rueb",
+      "availability_hint": "Lotse gilt als bereits in RÜB"
     }
   ]
 }
