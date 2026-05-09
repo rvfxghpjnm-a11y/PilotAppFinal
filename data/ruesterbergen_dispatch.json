@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-09T20:29:08",
+  "generated_at": "2026-05-09T20:31:10",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 5,
     "pilots_total": 17,
-    "pilots_dispatchable": 13,
-    "pilots_visible_only": 4,
+    "pilots_dispatchable": 14,
+    "pilots_visible_only": 3,
     "assignments": 5,
     "unassigned_ships": 0,
-    "unused_pilots": 8
+    "unused_pilots": 9
   },
   "ships": [
     {
@@ -554,6 +554,7 @@
       "nr": 4,
       "raw_time": "Sat May 09 19:12:00 CEST 2026",
       "current_ship_name": "LYDIA",
+      "current_ship_eta_rueb": "2026-05-10 01:22",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -577,7 +578,7 @@
       "current_ship_name": "STOLT SANDPIPER",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta"
     },
     {
@@ -888,6 +889,28 @@
       "current_ship_route": "RÜB → HOS",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "keyser_torben",
+      "vorname": "Torben",
+      "nachname": "Keyser",
+      "pilot_name": "Keyser, Torben",
+      "abteilungszeit": "2026-05-09 19:12",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 4,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "LYDIA",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 4,
+      "raw_time": "Sat May 09 19:12:00 CEST 2026",
+      "current_ship_name": "LYDIA",
+      "current_ship_eta_rueb": "2026-05-10 01:22",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
     }
   ],
   "visible_but_not_dispatchable_pilots": [
@@ -907,21 +930,6 @@
       "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
     },
     {
-      "pilot_key": "keyser_torben",
-      "pilot_name": "Keyser, Torben",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 4,
-      "abteilungszeit": "2026-05-09 19:12",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "LYDIA",
-      "from": "HOS",
-      "to": "RÜB",
-      "current_ship_name": "LYDIA",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    },
-    {
       "pilot_key": "suermann_nik",
       "pilot_name": "Suermann, Nik",
       "pilot_q": 0,
@@ -932,7 +940,7 @@
       "from": "HOS",
       "to": "RÜB",
       "current_ship_name": "STOLT SANDPIPER",
-      "current_ship_source": "schiffe_merged.seelotsen",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta",
       "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
     },
@@ -1136,6 +1144,17 @@
           "current_ship_name": "BALTIC ANKA",
           "current_ship_eta_rueb": "2026-05-09 20:00",
           "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Keyser, Torben",
+          "pilot_tactical_nr": 4,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "LYDIA",
+          "pilot_current_ship_eta_rueb": "2026-05-10 01:22",
+          "ship_eta_rueb": "2026-05-09 21:59",
           "availability_kind": "merged_eta"
         }
       ],
@@ -1346,6 +1365,17 @@
           "availability_kind": "merged_eta"
         }
       ],
+      "excluded": [
+        {
+          "pilot_name": "Keyser, Torben",
+          "pilot_tactical_nr": 4,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "LYDIA",
+          "pilot_current_ship_eta_rueb": "2026-05-10 01:22",
+          "ship_eta_rueb": "2026-05-09 22:49",
+          "availability_kind": "merged_eta"
+        }
+      ],
       "ship": {
         "meldung": {
           "nr": "2",
@@ -1527,6 +1557,15 @@
           "reason": "Quali passt nicht (4 > 1)",
           "pilot_q": 4,
           "ship_q": 1
+        },
+        {
+          "pilot_name": "Keyser, Torben",
+          "pilot_tactical_nr": 4,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "LYDIA",
+          "pilot_current_ship_eta_rueb": "2026-05-10 01:22",
+          "ship_eta_rueb": "2026-05-09 22:52",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -1710,6 +1749,17 @@
           "availability_kind": "merged_eta"
         }
       ],
+      "excluded": [
+        {
+          "pilot_name": "Keyser, Torben",
+          "pilot_tactical_nr": 4,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "LYDIA",
+          "pilot_current_ship_eta_rueb": "2026-05-10 01:22",
+          "ship_eta_rueb": "2026-05-10 00:45",
+          "availability_kind": "merged_eta"
+        }
+      ],
       "ship": {
         "meldung": {
           "nr": "4",
@@ -1865,6 +1915,15 @@
           "reason": "Quali passt nicht (4 > 1)",
           "pilot_q": 4,
           "ship_q": 1
+        },
+        {
+          "pilot_name": "Keyser, Torben",
+          "pilot_tactical_nr": 4,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "LYDIA",
+          "pilot_current_ship_eta_rueb": "2026-05-10 01:22",
+          "ship_eta_rueb": "2026-05-10 01:07",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -2077,6 +2136,28 @@
       "current_ship_eta_rueb": "2026-05-09 20:00",
       "current_ship_q": 5,
       "current_ship_route": "RÜB → HOS",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "keyser_torben",
+      "vorname": "Torben",
+      "nachname": "Keyser",
+      "pilot_name": "Keyser, Torben",
+      "abteilungszeit": "2026-05-09 19:12",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 4,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "LYDIA",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 4,
+      "raw_time": "Sat May 09 19:12:00 CEST 2026",
+      "current_ship_name": "LYDIA",
+      "current_ship_eta_rueb": "2026-05-10 01:22",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     }
