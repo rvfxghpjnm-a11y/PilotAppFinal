@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-09T15:13:16",
+  "generated_at": "2026-05-09T15:15:19",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 6,
     "pilots_total": 13,
-    "pilots_dispatchable": 12,
-    "pilots_visible_only": 1,
+    "pilots_dispatchable": 13,
+    "pilots_visible_only": 0,
     "assignments": 6,
     "unassigned_ships": 0,
-    "unused_pilots": 6
+    "unused_pilots": 7
   },
   "ships": [
     {
@@ -234,7 +234,7 @@
     {
       "ship_key": "ODERBORG",
       "ship_name": "ODERBORG",
-      "eta_rueb": "2026-05-09 19:38",
+      "eta_rueb": "2026-05-09 19:44",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
@@ -506,9 +506,10 @@
       "nr": 3,
       "raw_time": "Sat May 09 13:47:00 CEST 2026",
       "current_ship_name": "FRIEDRICH WESSELS",
+      "current_ship_eta_rueb": "2026-05-09 19:15",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
@@ -778,6 +779,28 @@
       "availability_kind": "merged_eta"
     },
     {
+      "pilot_key": "malik_christoph",
+      "vorname": "Christoph",
+      "nachname": "Malik",
+      "pilot_name": "Malik, Christoph",
+      "abteilungszeit": "2026-05-09 13:47",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 3,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "FRIEDRICH WESSELS",
+      "from": "HOR",
+      "to": "RÜB",
+      "nr": 3,
+      "raw_time": "Sat May 09 13:47:00 CEST 2026",
+      "current_ship_name": "FRIEDRICH WESSELS",
+      "current_ship_eta_rueb": "2026-05-09 19:15",
+      "current_ship_q": 0,
+      "current_ship_route": "HOR → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
       "pilot_key": "doering_lars",
       "vorname": "Lars",
       "nachname": "Doering",
@@ -822,23 +845,7 @@
       "availability_kind": "merged_eta"
     }
   ],
-  "visible_but_not_dispatchable_pilots": [
-    {
-      "pilot_key": "malik_christoph",
-      "pilot_name": "Malik, Christoph",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 3,
-      "abteilungszeit": "2026-05-09 13:47",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "FRIEDRICH WESSELS",
-      "from": "HOR",
-      "to": "RÜB",
-      "current_ship_name": "FRIEDRICH WESSELS",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    }
-  ],
+  "visible_but_not_dispatchable_pilots": [],
   "assignments": [
     {
       "ship_key": "ARKLOW WILLOW",
@@ -988,6 +995,15 @@
         }
       ],
       "excluded": [
+        {
+          "pilot_name": "Malik, Christoph",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "FRIEDRICH WESSELS",
+          "pilot_current_ship_eta_rueb": "2026-05-09 19:15",
+          "ship_eta_rueb": "2026-05-09 17:12",
+          "availability_kind": "merged_eta"
+        },
         {
           "pilot_name": "Doering, Lars",
           "pilot_tactical_nr": 2,
@@ -1177,6 +1193,15 @@
       ],
       "excluded": [
         {
+          "pilot_name": "Malik, Christoph",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "FRIEDRICH WESSELS",
+          "pilot_current_ship_eta_rueb": "2026-05-09 19:15",
+          "ship_eta_rueb": "2026-05-09 17:15",
+          "availability_kind": "merged_eta"
+        },
+        {
           "pilot_name": "Doering, Lars",
           "pilot_tactical_nr": 2,
           "reason": "kommt nicht rechtzeitig in RÜB an",
@@ -1353,6 +1378,15 @@
       ],
       "excluded": [
         {
+          "pilot_name": "Malik, Christoph",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "FRIEDRICH WESSELS",
+          "pilot_current_ship_eta_rueb": "2026-05-09 19:15",
+          "ship_eta_rueb": "2026-05-09 17:18",
+          "availability_kind": "merged_eta"
+        },
+        {
           "pilot_name": "Doering, Lars",
           "pilot_tactical_nr": 2,
           "reason": "kommt nicht rechtzeitig in RÜB an",
@@ -1515,6 +1549,15 @@
       ],
       "excluded": [
         {
+          "pilot_name": "Malik, Christoph",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "FRIEDRICH WESSELS",
+          "pilot_current_ship_eta_rueb": "2026-05-09 19:15",
+          "ship_eta_rueb": "2026-05-09 18:39",
+          "availability_kind": "merged_eta"
+        },
+        {
           "pilot_name": "Doering, Lars",
           "pilot_tactical_nr": 2,
           "reason": "kommt nicht rechtzeitig in RÜB an",
@@ -1657,6 +1700,15 @@
           "ship_q": 1
         },
         {
+          "pilot_name": "Malik, Christoph",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "FRIEDRICH WESSELS",
+          "pilot_current_ship_eta_rueb": "2026-05-09 19:15",
+          "ship_eta_rueb": "2026-05-09 18:42",
+          "availability_kind": "merged_eta"
+        },
+        {
           "pilot_name": "Doering, Lars",
           "pilot_tactical_nr": 2,
           "reason": "kommt nicht rechtzeitig in RÜB an",
@@ -1712,7 +1764,7 @@
     {
       "ship_key": "ODERBORG",
       "ship_name": "ODERBORG",
-      "eta_rueb": "2026-05-09 19:38",
+      "eta_rueb": "2026-05-09 19:44",
       "ship_q": 5,
       "assigned_pilot": "Vogel, Peter",
       "assigned_pilot_q": 0,
@@ -1723,7 +1775,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 7,
+      "candidate_count": 8,
       "candidates": [
         {
           "pilot_name": "Vogel, Peter",
@@ -1787,6 +1839,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "SPIRIT OF GINETTE",
           "current_ship_eta_rueb": "2026-05-09 14:43",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Malik, Christoph",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 3,
+          "abteilungszeit": "2026-05-09 13:47",
+          "fahrzeug": "FRIEDRICH WESSELS",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "FRIEDRICH WESSELS",
+          "current_ship_eta_rueb": "2026-05-09 19:15",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1938,6 +2003,28 @@
       "current_ship_eta_rueb": "2026-05-09 14:43",
       "current_ship_q": 0,
       "current_ship_route": "RÜB → HOS",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "malik_christoph",
+      "vorname": "Christoph",
+      "nachname": "Malik",
+      "pilot_name": "Malik, Christoph",
+      "abteilungszeit": "2026-05-09 13:47",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 3,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "FRIEDRICH WESSELS",
+      "from": "HOR",
+      "to": "RÜB",
+      "nr": 3,
+      "raw_time": "Sat May 09 13:47:00 CEST 2026",
+      "current_ship_name": "FRIEDRICH WESSELS",
+      "current_ship_eta_rueb": "2026-05-09 19:15",
+      "current_ship_q": 0,
+      "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
