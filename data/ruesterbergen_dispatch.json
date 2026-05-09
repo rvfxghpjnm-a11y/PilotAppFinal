@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-09T09:27:17",
+  "generated_at": "2026-05-09T09:29:13",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,12 +32,12 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 9,
+    "ships_for_ruesterbergen": 10,
     "pilots_total": 8,
     "pilots_dispatchable": 8,
     "pilots_visible_only": 0,
     "assignments": 8,
-    "unassigned_ships": 1,
+    "unassigned_ships": 2,
     "unused_pilots": 0
   },
   "ships": [
@@ -296,6 +296,44 @@
         "makler": "UCA",
         "dangerous_vessel": "-",
         "type_of_loading": "Stueckgueter"
+      }
+    },
+    {
+      "ship_key": "KADRI",
+      "ship_name": "KADRI",
+      "eta_rueb": "2026-05-09 13:51",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 5,
+      "meldung": {
+        "nr": "10",
+        "time": "Sat May 09 13:51:00 CEST 2026",
+        "draft": "5.6",
+        "q_gruppe": "5",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "5",
+        "vg": "3",
+        "draft": "5.60",
+        "length_m": "99.86",
+        "beam_m": "13.63",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "P",
+        "pilot_1_name": "Repschläger, Bert",
+        "travel_status": "SAILING_NOK",
+        "makler": "SUB",
+        "dangerous_vessel": "-",
+        "type_of_loading": "Duengemittel"
       }
     },
     {
@@ -1407,10 +1445,10 @@
       }
     },
     {
-      "ship_key": "JUDITH",
-      "ship_name": "JUDITH",
-      "eta_rueb": "2026-05-09 14:09",
-      "ship_q": 1,
+      "ship_key": "KADRI",
+      "ship_name": "KADRI",
+      "eta_rueb": "2026-05-09 13:51",
+      "ship_q": 5,
       "assigned_pilot": "Meise, Gregor",
       "assigned_pilot_q": 0,
       "assigned_tactical_nr": 4,
@@ -1420,7 +1458,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 1,
+      "candidate_count": 2,
       "candidates": [
         {
           "pilot_name": "Meise, Gregor",
@@ -1434,23 +1472,27 @@
           "current_ship_eta_rueb": "2026-05-09 12:17",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
-        }
-      ],
-      "excluded": [
+        },
         {
           "pilot_name": "Külzer, Sascha",
-          "pilot_tactical_nr": 3,
-          "reason": "Quali passt nicht (2 > 1)",
           "pilot_q": 2,
-          "ship_q": 1
+          "pilot_tactical_nr": 3,
+          "abteilungszeit": "2026-05-09 07:32",
+          "fahrzeug": "OLYMPIC ELECTRA",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "OLYMPIC ELECTRA",
+          "current_ship_eta_rueb": "2026-05-09 12:21",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
         "meldung": {
-          "nr": "8",
-          "time": "Sat May 09 13:45:00 CEST 2026",
-          "draft": "9.2",
-          "q_gruppe": "1",
+          "nr": "10",
+          "time": "Sat May 09 13:51:00 CEST 2026",
+          "draft": "5.6",
+          "q_gruppe": "5",
           "lotsen_anzahl": 1,
           "confirmed": false,
           "from": "RÜB",
@@ -1462,20 +1504,20 @@
             "HOS → KLT",
             "RÜB → HOS"
           ],
-          "q_gruppe": "1",
-          "vg": "5",
-          "draft": "9.20",
-          "length_m": "170.02",
-          "beam_m": "25.19",
+          "q_gruppe": "5",
+          "vg": "3",
+          "draft": "5.60",
+          "length_m": "99.86",
+          "beam_m": "13.63",
           "queue_title": "Zulauf vom Kanal in Kiel",
           "zulauf_richtung": "vom_kanal",
           "pilot_required": "true",
-          "pilot_status": "U",
-          "pilot_1_name": "Lohmann, Ralf",
+          "pilot_status": "P",
+          "pilot_1_name": "Repschläger, Bert",
           "travel_status": "SAILING_NOK",
-          "makler": "UCA",
+          "makler": "SUB",
           "dangerous_vessel": "-",
-          "type_of_loading": "Container"
+          "type_of_loading": "Duengemittel"
         }
       }
     },
@@ -1577,6 +1619,22 @@
           "pilot_current_ship_eta_rueb": "2026-05-09 12:21",
           "ship_eta_rueb": "2026-05-09 12:12",
           "availability_kind": "merged_eta"
+        }
+      ]
+    },
+    {
+      "ship_key": "JUDITH",
+      "ship_name": "JUDITH",
+      "eta_rueb": "2026-05-09 14:09",
+      "ship_q": 1,
+      "reason": "kein passender Lotse verfügbar",
+      "excluded": [
+        {
+          "pilot_name": "Külzer, Sascha",
+          "pilot_tactical_nr": 3,
+          "reason": "Quali passt nicht (2 > 1)",
+          "pilot_q": 2,
+          "ship_q": 1
         }
       ]
     }
