@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-09T08:23:16",
+  "generated_at": "2026-05-09T08:25:08",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,19 +32,19 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 5,
+    "ships_for_ruesterbergen": 6,
     "pilots_total": 12,
     "pilots_dispatchable": 9,
     "pilots_visible_only": 3,
-    "assignments": 5,
+    "assignments": 6,
     "unassigned_ships": 0,
-    "unused_pilots": 4
+    "unused_pilots": 3
   },
   "ships": [
     {
       "ship_key": "CONTAINERSHIPS STELLAR",
       "ship_name": "CONTAINERSHIPS STELLAR",
-      "eta_rueb": "2026-05-09 11:23",
+      "eta_rueb": "2026-05-09 11:22",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 1,
       "meldung": {
@@ -230,6 +230,44 @@
         "makler": "SUB",
         "dangerous_vessel": "-",
         "type_of_loading": "Ballast"
+      }
+    },
+    {
+      "ship_key": "ALAND",
+      "ship_name": "ALAND",
+      "eta_rueb": "2026-05-09 13:10",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 4,
+      "meldung": {
+        "nr": "6",
+        "time": "Sat May 09 13:10:00 CEST 2026",
+        "draft": "5.9",
+        "q_gruppe": "4",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "4",
+        "vg": "3",
+        "draft": "5.90",
+        "length_m": "117.01",
+        "beam_m": "16.79",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "U",
+        "pilot_1_name": "Schumacher, Kai-Uwe",
+        "travel_status": "SAILING_NOK",
+        "makler": "UCA",
+        "dangerous_vessel": "-",
+        "type_of_loading": "Stueckgueter"
       }
     }
   ],
@@ -449,7 +487,7 @@
       "current_ship_name": "BALTIC SUN",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta"
     },
     {
@@ -706,7 +744,7 @@
       "from": "HOR",
       "to": "RÜB",
       "current_ship_name": "BALTIC SUN",
-      "current_ship_source": "schiffe_merged.seelotsen",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta",
       "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
     },
@@ -745,7 +783,7 @@
     {
       "ship_key": "CONTAINERSHIPS STELLAR",
       "ship_name": "CONTAINERSHIPS STELLAR",
-      "eta_rueb": "2026-05-09 11:23",
+      "eta_rueb": "2026-05-09 11:22",
       "ship_q": 1,
       "assigned_pilot": "Krause, Malte",
       "assigned_pilot_q": 0,
@@ -1453,32 +1491,113 @@
           "type_of_loading": "Ballast"
         }
       }
+    },
+    {
+      "ship_key": "ALAND",
+      "ship_name": "ALAND",
+      "eta_rueb": "2026-05-09 13:10",
+      "ship_q": 4,
+      "assigned_pilot": "Jeschek, Hauke",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 7,
+      "assigned_abteilungszeit": "2026-05-09 04:05",
+      "assigned_current_ship_name": "LADY DIANA",
+      "assigned_current_ship_eta_rueb": "2026-05-09 05:40",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 4,
+      "candidates": [
+        {
+          "pilot_name": "Jeschek, Hauke",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 7,
+          "abteilungszeit": "2026-05-09 04:05",
+          "fahrzeug": "LADY DIANA",
+          "to": "KLT",
+          "aufgabe": "Seebört",
+          "current_ship_name": "LADY DIANA",
+          "current_ship_eta_rueb": "2026-05-09 05:40",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Domeier, Stefan",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 8,
+          "abteilungszeit": "2026-05-09 04:05",
+          "fahrzeug": "LOVISA",
+          "to": "KLT",
+          "aufgabe": "Seebört",
+          "current_ship_name": "LOVISA",
+          "current_ship_eta_rueb": "2026-05-09 05:37",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Krügel, Mathias",
+          "pilot_q": 1,
+          "pilot_tactical_nr": 6,
+          "abteilungszeit": "2026-05-09 04:16",
+          "fahrzeug": "SVEN D",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "SVEN D",
+          "current_ship_eta_rueb": "2026-05-09 09:27",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Merschmann, Tim",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 5,
+          "abteilungszeit": "2026-05-09 04:35",
+          "fahrzeug": "ELBRUNNER",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ELBRUNNER",
+          "current_ship_eta_rueb": "2026-05-09 09:32",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "6",
+          "time": "Sat May 09 13:10:00 CEST 2026",
+          "draft": "5.9",
+          "q_gruppe": "4",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "HOS → KLT",
+          "routes": [
+            "HOS → KLT",
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "4",
+          "vg": "3",
+          "draft": "5.90",
+          "length_m": "117.01",
+          "beam_m": "16.79",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "U",
+          "pilot_1_name": "Schumacher, Kai-Uwe",
+          "travel_status": "SAILING_NOK",
+          "makler": "UCA",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Stueckgueter"
+        }
+      }
     }
   ],
   "unassigned_ships": [],
   "unused_pilots": [
-    {
-      "pilot_key": "jeschek_hauke",
-      "vorname": "Hauke",
-      "nachname": "Jeschek",
-      "pilot_name": "Jeschek, Hauke",
-      "abteilungszeit": "2026-05-09 04:05",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 7,
-      "aufgabe": "Seebört",
-      "fahrzeug": "LADY DIANA",
-      "from": "HOS",
-      "to": "KLT",
-      "nr": 7,
-      "raw_time": "Sat May 09 04:05:00 CEST 2026",
-      "current_ship_name": "LADY DIANA",
-      "current_ship_eta_rueb": "2026-05-09 05:40",
-      "current_ship_q": 0,
-      "current_ship_route": "HOS → KLT",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
-    },
     {
       "pilot_key": "domeier_stefan",
       "vorname": "Stefan",
