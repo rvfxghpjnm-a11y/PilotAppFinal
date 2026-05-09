@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-09T20:41:10",
+  "generated_at": "2026-05-09T20:43:14",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 5,
     "pilots_total": 17,
-    "pilots_dispatchable": 16,
-    "pilots_visible_only": 1,
+    "pilots_dispatchable": 17,
+    "pilots_visible_only": 0,
     "assignments": 5,
     "unassigned_ships": 0,
-    "unused_pilots": 11
+    "unused_pilots": 12
   },
   "ships": [
     {
@@ -162,7 +162,7 @@
       "ship_q": 5,
       "meldung": {
         "nr": "4",
-        "time": "Sun May 10 00:50:00 CEST 2026",
+        "time": "Sun May 10 00:25:00 CEST 2026",
         "draft": "4.0",
         "q_gruppe": "5",
         "lotsen_anzahl": 1,
@@ -533,9 +533,10 @@
       "nr": 3,
       "raw_time": "Sat May 09 19:12:00 CEST 2026",
       "current_ship_name": "COE GISELA",
+      "current_ship_eta_rueb": "2026-05-10 01:22",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
@@ -893,6 +894,28 @@
       "availability_kind": "merged_eta"
     },
     {
+      "pilot_key": "woitanowski_tim",
+      "vorname": "Tim",
+      "nachname": "Woitanowski",
+      "pilot_name": "Woitanowski, Tim",
+      "abteilungszeit": "2026-05-09 19:12",
+      "pilot_q": 2,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 3,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "COE GISELA",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 3,
+      "raw_time": "Sat May 09 19:12:00 CEST 2026",
+      "current_ship_name": "COE GISELA",
+      "current_ship_eta_rueb": "2026-05-10 01:22",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
       "pilot_key": "keyser_torben",
       "vorname": "Torben",
       "nachname": "Keyser",
@@ -959,23 +982,7 @@
       "availability_kind": "merged_eta"
     }
   ],
-  "visible_but_not_dispatchable_pilots": [
-    {
-      "pilot_key": "woitanowski_tim",
-      "pilot_name": "Woitanowski, Tim",
-      "pilot_q": 2,
-      "pilot_tactical_nr": 3,
-      "abteilungszeit": "2026-05-09 19:12",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "COE GISELA",
-      "from": "HOS",
-      "to": "RÜB",
-      "current_ship_name": "COE GISELA",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    }
-  ],
+  "visible_but_not_dispatchable_pilots": [],
   "assignments": [
     {
       "ship_key": "RIX FJORD",
@@ -1164,6 +1171,15 @@
         }
       ],
       "excluded": [
+        {
+          "pilot_name": "Woitanowski, Tim",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "COE GISELA",
+          "pilot_current_ship_eta_rueb": "2026-05-10 01:22",
+          "ship_eta_rueb": "2026-05-09 21:59",
+          "availability_kind": "merged_eta"
+        },
         {
           "pilot_name": "Keyser, Torben",
           "pilot_tactical_nr": 4,
@@ -1401,6 +1417,15 @@
       ],
       "excluded": [
         {
+          "pilot_name": "Woitanowski, Tim",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "COE GISELA",
+          "pilot_current_ship_eta_rueb": "2026-05-10 01:22",
+          "ship_eta_rueb": "2026-05-09 22:46",
+          "availability_kind": "merged_eta"
+        },
+        {
           "pilot_name": "Keyser, Torben",
           "pilot_tactical_nr": 4,
           "reason": "kommt nicht rechtzeitig in RÜB an",
@@ -1609,6 +1634,15 @@
           "reason": "Quali passt nicht (4 > 1)",
           "pilot_q": 4,
           "ship_q": 1
+        },
+        {
+          "pilot_name": "Woitanowski, Tim",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "COE GISELA",
+          "pilot_current_ship_eta_rueb": "2026-05-10 01:22",
+          "ship_eta_rueb": "2026-05-09 22:50",
+          "availability_kind": "merged_eta"
         },
         {
           "pilot_name": "Keyser, Torben",
@@ -1821,6 +1855,15 @@
       ],
       "excluded": [
         {
+          "pilot_name": "Woitanowski, Tim",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "COE GISELA",
+          "pilot_current_ship_eta_rueb": "2026-05-10 01:22",
+          "ship_eta_rueb": "2026-05-10 00:46",
+          "availability_kind": "merged_eta"
+        },
+        {
           "pilot_name": "Keyser, Torben",
           "pilot_tactical_nr": 4,
           "reason": "kommt nicht rechtzeitig in RÜB an",
@@ -1851,7 +1894,7 @@
       "ship": {
         "meldung": {
           "nr": "4",
-          "time": "Sun May 10 00:50:00 CEST 2026",
+          "time": "Sun May 10 00:25:00 CEST 2026",
           "draft": "4.0",
           "q_gruppe": "5",
           "lotsen_anzahl": 1,
@@ -2003,6 +2046,15 @@
           "reason": "Quali passt nicht (4 > 1)",
           "pilot_q": 4,
           "ship_q": 1
+        },
+        {
+          "pilot_name": "Woitanowski, Tim",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "COE GISELA",
+          "pilot_current_ship_eta_rueb": "2026-05-10 01:22",
+          "ship_eta_rueb": "2026-05-10 01:05",
+          "availability_kind": "merged_eta"
         },
         {
           "pilot_name": "Keyser, Torben",
@@ -2242,6 +2294,28 @@
       "current_ship_eta_rueb": "2026-05-09 20:00",
       "current_ship_q": 5,
       "current_ship_route": "RÜB → HOS",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "woitanowski_tim",
+      "vorname": "Tim",
+      "nachname": "Woitanowski",
+      "pilot_name": "Woitanowski, Tim",
+      "abteilungszeit": "2026-05-09 19:12",
+      "pilot_q": 2,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 3,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "COE GISELA",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 3,
+      "raw_time": "Sat May 09 19:12:00 CEST 2026",
+      "current_ship_name": "COE GISELA",
+      "current_ship_eta_rueb": "2026-05-10 01:22",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
