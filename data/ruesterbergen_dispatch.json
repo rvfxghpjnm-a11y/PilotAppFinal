@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-09T14:47:07",
+  "generated_at": "2026-05-09T14:49:08",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,15 +32,37 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 4,
+    "ships_for_ruesterbergen": 5,
     "pilots_total": 18,
     "pilots_dispatchable": 15,
     "pilots_visible_only": 3,
-    "assignments": 4,
+    "assignments": 5,
     "unassigned_ships": 0,
-    "unused_pilots": 11
+    "unused_pilots": 10
   },
   "ships": [
+    {
+      "ship_key": "LEERFAHRT",
+      "ship_name": "Leerfahrt",
+      "eta_rueb": "2026-05-09 14:43",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 0,
+      "meldung": {
+        "nr": "1",
+        "time": "Sat May 09 14:43:00 CEST 2026",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS",
+        "remark": "6. Stunde!"
+      },
+      "summary": {
+        "route": "RÜB → HOS",
+        "routes": [
+          "RÜB → HOS"
+        ]
+      }
+    },
     {
       "ship_key": "ARKLOW WILLOW",
       "ship_name": "ARKLOW WILLOW",
@@ -48,7 +70,7 @@
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 2,
       "meldung": {
-        "nr": "1",
+        "nr": "2",
         "time": "Sat May 09 17:00:00 CEST 2026",
         "draft": "5.8",
         "q_gruppe": "2",
@@ -86,7 +108,7 @@
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
-        "nr": "2",
+        "nr": "3",
         "time": "Sat May 09 17:03:00 CEST 2026",
         "draft": "4.1",
         "q_gruppe": "5",
@@ -125,7 +147,7 @@
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 4,
       "meldung": {
-        "nr": "3",
+        "nr": "4",
         "time": "Sat May 09 17:06:00 CEST 2026",
         "draft": "5.5",
         "q_gruppe": "4",
@@ -163,7 +185,7 @@
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 1,
       "meldung": {
-        "nr": "4",
+        "nr": "5",
         "time": "Sat May 09 18:10:00 CEST 2026",
         "draft": "8.4",
         "q_gruppe": "1",
@@ -366,7 +388,7 @@
       "nr": 14,
       "raw_time": "Sat May 09 09:38:00 CEST 2026",
       "current_ship_name": "ANHOLT",
-      "current_ship_eta_rueb": "2026-05-09 16:17",
+      "current_ship_eta_rueb": "2026-05-09 16:16",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -388,7 +410,7 @@
       "nr": 13,
       "raw_time": "Sat May 09 09:43:00 CEST 2026",
       "current_ship_name": "ANINA",
-      "current_ship_eta_rueb": "2026-05-09 16:14",
+      "current_ship_eta_rueb": "2026-05-09 16:13",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -761,7 +783,7 @@
       "nr": 14,
       "raw_time": "Sat May 09 09:38:00 CEST 2026",
       "current_ship_name": "ANHOLT",
-      "current_ship_eta_rueb": "2026-05-09 16:17",
+      "current_ship_eta_rueb": "2026-05-09 16:16",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -783,7 +805,7 @@
       "nr": 13,
       "raw_time": "Sat May 09 09:43:00 CEST 2026",
       "current_ship_name": "ANINA",
-      "current_ship_eta_rueb": "2026-05-09 16:14",
+      "current_ship_eta_rueb": "2026-05-09 16:13",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -971,6 +993,198 @@
   ],
   "assignments": [
     {
+      "ship_key": "LEERFAHRT",
+      "ship_name": "Leerfahrt",
+      "eta_rueb": "2026-05-09 14:43",
+      "ship_q": 0,
+      "assigned_pilot": "Merschmann, Tim",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 20,
+      "assigned_abteilungszeit": "2026-05-09 04:35",
+      "assigned_current_ship_name": "PEAK BORDEAUX",
+      "assigned_current_ship_eta_rueb": "2026-05-09 11:16",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 7,
+      "candidates": [
+        {
+          "pilot_name": "Merschmann, Tim",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 20,
+          "abteilungszeit": "2026-05-09 04:35",
+          "fahrzeug": "PEAK BORDEAUX",
+          "to": "UTG",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "PEAK BORDEAUX",
+          "current_ship_eta_rueb": "2026-05-09 11:16",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Meise, Gregor",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 19,
+          "abteilungszeit": "2026-05-09 07:25",
+          "fahrzeug": "ALAND",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ALAND",
+          "current_ship_eta_rueb": "2026-05-09 13:09",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Wäntig, Lutz",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 17,
+          "abteilungszeit": "2026-05-09 08:30",
+          "fahrzeug": "CONTAINERSHIPS STELLAR",
+          "to": "KLT",
+          "aufgabe": "Seebört",
+          "current_ship_name": "CONTAINERSHIPS STELLAR",
+          "current_ship_eta_rueb": "2026-05-09 11:13",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Heeren, Rainer",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 12,
+          "abteilungszeit": "2026-05-09 09:45",
+          "fahrzeug": "STOLT KINGFISHER",
+          "to": "UTG",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "STOLT KINGFISHER",
+          "current_ship_eta_rueb": "2026-05-09 11:19",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Bodmann, Christoph",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 10,
+          "abteilungszeit": "2026-05-09 10:50",
+          "fahrzeug": "RAM",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RAM",
+          "current_ship_eta_rueb": "2026-05-09 12:01",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Haala, Klaus Werner",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 6,
+          "abteilungszeit": "2026-05-09 12:40",
+          "fahrzeug": "JUDITH",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "JUDITH",
+          "current_ship_eta_rueb": "2026-05-09 14:17",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Lielienthal, Jörn",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 4,
+          "abteilungszeit": "2026-05-09 13:25",
+          "fahrzeug": "SPIRIT OF GINETTE",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "SPIRIT OF GINETTE",
+          "current_ship_eta_rueb": "2026-05-09 14:43",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Krügel, Mathias",
+          "pilot_tactical_nr": 21,
+          "reason": "Quali passt nicht (1 > 0)",
+          "pilot_q": 1,
+          "ship_q": 0
+        },
+        {
+          "pilot_name": "Külzer, Sascha",
+          "pilot_tactical_nr": 18,
+          "reason": "Quali passt nicht (2 > 0)",
+          "pilot_q": 2,
+          "ship_q": 0
+        },
+        {
+          "pilot_name": "Dietrich, Thomas",
+          "pilot_tactical_nr": 16,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "VLIERBORG",
+          "pilot_current_ship_eta_rueb": "2026-05-09 16:10",
+          "ship_eta_rueb": "2026-05-09 14:43",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Wachs, Merten",
+          "pilot_tactical_nr": 15,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "KERDA",
+          "pilot_current_ship_eta_rueb": "2026-05-09 16:06",
+          "ship_eta_rueb": "2026-05-09 14:43",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Kaschke, Henning",
+          "pilot_tactical_nr": 14,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "ANHOLT",
+          "pilot_current_ship_eta_rueb": "2026-05-09 16:16",
+          "ship_eta_rueb": "2026-05-09 14:43",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Vogel, Peter",
+          "pilot_tactical_nr": 13,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "ANINA",
+          "pilot_current_ship_eta_rueb": "2026-05-09 16:13",
+          "ship_eta_rueb": "2026-05-09 14:43",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Ehlers, Sören",
+          "pilot_tactical_nr": 11,
+          "reason": "Quali passt nicht (3 > 0)",
+          "pilot_q": 3,
+          "ship_q": 0
+        },
+        {
+          "pilot_name": "Hewig, Marius Paul",
+          "pilot_tactical_nr": 5,
+          "reason": "Quali passt nicht (2 > 0)",
+          "pilot_q": 2,
+          "ship_q": 0
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "1",
+          "time": "Sat May 09 14:43:00 CEST 2026",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS",
+          "remark": "6. Stunde!"
+        },
+        "summary": {
+          "route": "RÜB → HOS",
+          "routes": [
+            "RÜB → HOS"
+          ]
+        }
+      }
+    },
+    {
       "ship_key": "ARKLOW WILLOW",
       "ship_name": "ARKLOW WILLOW",
       "eta_rueb": "2026-05-09 17:14",
@@ -984,7 +1198,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 14,
+      "candidate_count": 13,
       "candidates": [
         {
           "pilot_name": "Krügel, Mathias",
@@ -996,19 +1210,6 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "CONTAINERSHIPS STELLAR",
           "current_ship_eta_rueb": "2026-05-09 11:13",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Merschmann, Tim",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 20,
-          "abteilungszeit": "2026-05-09 04:35",
-          "fahrzeug": "PEAK BORDEAUX",
-          "to": "UTG",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "PEAK BORDEAUX",
-          "current_ship_eta_rueb": "2026-05-09 11:16",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1086,7 +1287,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "ANHOLT",
-          "current_ship_eta_rueb": "2026-05-09 16:17",
+          "current_ship_eta_rueb": "2026-05-09 16:16",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1099,7 +1300,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "ANINA",
-          "current_ship_eta_rueb": "2026-05-09 16:14",
+          "current_ship_eta_rueb": "2026-05-09 16:13",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1180,7 +1381,7 @@
       ],
       "ship": {
         "meldung": {
-          "nr": "1",
+          "nr": "2",
           "time": "Sat May 09 17:00:00 CEST 2026",
           "draft": "5.8",
           "q_gruppe": "2",
@@ -1217,240 +1418,6 @@
       "ship_name": "BRUFJELL",
       "eta_rueb": "2026-05-09 17:17",
       "ship_q": 5,
-      "assigned_pilot": "Merschmann, Tim",
-      "assigned_pilot_q": 0,
-      "assigned_tactical_nr": 20,
-      "assigned_abteilungszeit": "2026-05-09 04:35",
-      "assigned_current_ship_name": "PEAK BORDEAUX",
-      "assigned_current_ship_eta_rueb": "2026-05-09 11:16",
-      "assigned_current_ship_source": "schiffe_merged.seelotsen",
-      "assigned_availability_kind": "merged_eta",
-      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 14,
-      "candidates": [
-        {
-          "pilot_name": "Merschmann, Tim",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 20,
-          "abteilungszeit": "2026-05-09 04:35",
-          "fahrzeug": "PEAK BORDEAUX",
-          "to": "UTG",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "PEAK BORDEAUX",
-          "current_ship_eta_rueb": "2026-05-09 11:16",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Meise, Gregor",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 19,
-          "abteilungszeit": "2026-05-09 07:25",
-          "fahrzeug": "ALAND",
-          "to": "HOS",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "ALAND",
-          "current_ship_eta_rueb": "2026-05-09 13:09",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Külzer, Sascha",
-          "pilot_q": 2,
-          "pilot_tactical_nr": 18,
-          "abteilungszeit": "2026-05-09 07:32",
-          "fahrzeug": "SIMON B",
-          "to": "HOS",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "SIMON B",
-          "current_ship_eta_rueb": "2026-05-09 14:01",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Wäntig, Lutz",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 17,
-          "abteilungszeit": "2026-05-09 08:30",
-          "fahrzeug": "CONTAINERSHIPS STELLAR",
-          "to": "KLT",
-          "aufgabe": "Seebört",
-          "current_ship_name": "CONTAINERSHIPS STELLAR",
-          "current_ship_eta_rueb": "2026-05-09 11:13",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Dietrich, Thomas",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 16,
-          "abteilungszeit": "2026-05-09 09:28",
-          "fahrzeug": "VLIERBORG",
-          "to": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "VLIERBORG",
-          "current_ship_eta_rueb": "2026-05-09 16:10",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Wachs, Merten",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 15,
-          "abteilungszeit": "2026-05-09 09:35",
-          "fahrzeug": "KERDA",
-          "to": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "KERDA",
-          "current_ship_eta_rueb": "2026-05-09 16:06",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Kaschke, Henning",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 14,
-          "abteilungszeit": "2026-05-09 09:38",
-          "fahrzeug": "ANHOLT",
-          "to": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "ANHOLT",
-          "current_ship_eta_rueb": "2026-05-09 16:17",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Vogel, Peter",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 13,
-          "abteilungszeit": "2026-05-09 09:43",
-          "fahrzeug": "ANINA",
-          "to": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "ANINA",
-          "current_ship_eta_rueb": "2026-05-09 16:14",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Ehlers, Sören",
-          "pilot_q": 3,
-          "pilot_tactical_nr": 11,
-          "abteilungszeit": "2026-05-09 09:45",
-          "fahrzeug": "ALESSANDRA LEHMANN",
-          "to": "KLT",
-          "aufgabe": "Seebört",
-          "current_ship_name": "ALESSANDRA LEHMANN",
-          "current_ship_eta_rueb": "2026-05-09 11:24",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Heeren, Rainer",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 12,
-          "abteilungszeit": "2026-05-09 09:45",
-          "fahrzeug": "STOLT KINGFISHER",
-          "to": "UTG",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "STOLT KINGFISHER",
-          "current_ship_eta_rueb": "2026-05-09 11:19",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Bodmann, Christoph",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 10,
-          "abteilungszeit": "2026-05-09 10:50",
-          "fahrzeug": "RAM",
-          "to": "HOS",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "RAM",
-          "current_ship_eta_rueb": "2026-05-09 12:01",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Hewig, Marius Paul",
-          "pilot_q": 2,
-          "pilot_tactical_nr": 5,
-          "abteilungszeit": "2026-05-09 12:40",
-          "fahrzeug": "KADRI",
-          "to": "HOS",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "KADRI",
-          "current_ship_eta_rueb": "2026-05-09 14:05",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Haala, Klaus Werner",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 6,
-          "abteilungszeit": "2026-05-09 12:40",
-          "fahrzeug": "JUDITH",
-          "to": "HOS",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "JUDITH",
-          "current_ship_eta_rueb": "2026-05-09 14:17",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Lielienthal, Jörn",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 4,
-          "abteilungszeit": "2026-05-09 13:25",
-          "fahrzeug": "SPIRIT OF GINETTE",
-          "to": "HOS",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "SPIRIT OF GINETTE",
-          "current_ship_eta_rueb": "2026-05-09 14:43",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        }
-      ],
-      "ship": {
-        "meldung": {
-          "nr": "2",
-          "time": "Sat May 09 17:03:00 CEST 2026",
-          "draft": "4.1",
-          "q_gruppe": "5",
-          "lotsen_anzahl": 1,
-          "confirmed": false,
-          "from": "RÜB",
-          "to": "UTG"
-        },
-        "summary": {
-          "route": "UTG → HOS",
-          "routes": [
-            "UTG → HOS",
-            "HOS → KLT",
-            "RÜB → UTG"
-          ],
-          "q_gruppe": "5",
-          "vg": "3",
-          "draft": "4.10",
-          "length_m": "89.94",
-          "beam_m": "14.39",
-          "queue_title": "Zulauf vom Kanal in Kiel",
-          "zulauf_richtung": "vom_kanal",
-          "pilot_required": "true",
-          "pilot_status": "P",
-          "pilot_1_name": "Schmidt, Artur",
-          "travel_status": "SAILING_NOK",
-          "makler": "UCA",
-          "dangerous_vessel": "-",
-          "type_of_loading": "Ballast"
-        }
-      }
-    },
-    {
-      "ship_key": "KRISTELLA",
-      "ship_name": "KRISTELLA",
-      "eta_rueb": "2026-05-09 17:20",
-      "ship_q": 4,
       "assigned_pilot": "Meise, Gregor",
       "assigned_pilot_q": 0,
       "assigned_tactical_nr": 19,
@@ -1536,7 +1503,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "ANHOLT",
-          "current_ship_eta_rueb": "2026-05-09 16:17",
+          "current_ship_eta_rueb": "2026-05-09 16:16",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1549,7 +1516,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "ANINA",
-          "current_ship_eta_rueb": "2026-05-09 16:14",
+          "current_ship_eta_rueb": "2026-05-09 16:13",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1635,6 +1602,214 @@
       "ship": {
         "meldung": {
           "nr": "3",
+          "time": "Sat May 09 17:03:00 CEST 2026",
+          "draft": "4.1",
+          "q_gruppe": "5",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "UTG"
+        },
+        "summary": {
+          "route": "UTG → HOS",
+          "routes": [
+            "UTG → HOS",
+            "HOS → KLT",
+            "RÜB → UTG"
+          ],
+          "q_gruppe": "5",
+          "vg": "3",
+          "draft": "4.10",
+          "length_m": "89.94",
+          "beam_m": "14.39",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "P",
+          "pilot_1_name": "Schmidt, Artur",
+          "travel_status": "SAILING_NOK",
+          "makler": "UCA",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Ballast"
+        }
+      }
+    },
+    {
+      "ship_key": "KRISTELLA",
+      "ship_name": "KRISTELLA",
+      "eta_rueb": "2026-05-09 17:20",
+      "ship_q": 4,
+      "assigned_pilot": "Külzer, Sascha",
+      "assigned_pilot_q": 2,
+      "assigned_tactical_nr": 18,
+      "assigned_abteilungszeit": "2026-05-09 07:32",
+      "assigned_current_ship_name": "SIMON B",
+      "assigned_current_ship_eta_rueb": "2026-05-09 14:01",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 12,
+      "candidates": [
+        {
+          "pilot_name": "Külzer, Sascha",
+          "pilot_q": 2,
+          "pilot_tactical_nr": 18,
+          "abteilungszeit": "2026-05-09 07:32",
+          "fahrzeug": "SIMON B",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "SIMON B",
+          "current_ship_eta_rueb": "2026-05-09 14:01",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Wäntig, Lutz",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 17,
+          "abteilungszeit": "2026-05-09 08:30",
+          "fahrzeug": "CONTAINERSHIPS STELLAR",
+          "to": "KLT",
+          "aufgabe": "Seebört",
+          "current_ship_name": "CONTAINERSHIPS STELLAR",
+          "current_ship_eta_rueb": "2026-05-09 11:13",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Dietrich, Thomas",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 16,
+          "abteilungszeit": "2026-05-09 09:28",
+          "fahrzeug": "VLIERBORG",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "VLIERBORG",
+          "current_ship_eta_rueb": "2026-05-09 16:10",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Wachs, Merten",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 15,
+          "abteilungszeit": "2026-05-09 09:35",
+          "fahrzeug": "KERDA",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "KERDA",
+          "current_ship_eta_rueb": "2026-05-09 16:06",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Kaschke, Henning",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 14,
+          "abteilungszeit": "2026-05-09 09:38",
+          "fahrzeug": "ANHOLT",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ANHOLT",
+          "current_ship_eta_rueb": "2026-05-09 16:16",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Vogel, Peter",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 13,
+          "abteilungszeit": "2026-05-09 09:43",
+          "fahrzeug": "ANINA",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ANINA",
+          "current_ship_eta_rueb": "2026-05-09 16:13",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Ehlers, Sören",
+          "pilot_q": 3,
+          "pilot_tactical_nr": 11,
+          "abteilungszeit": "2026-05-09 09:45",
+          "fahrzeug": "ALESSANDRA LEHMANN",
+          "to": "KLT",
+          "aufgabe": "Seebört",
+          "current_ship_name": "ALESSANDRA LEHMANN",
+          "current_ship_eta_rueb": "2026-05-09 11:24",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Heeren, Rainer",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 12,
+          "abteilungszeit": "2026-05-09 09:45",
+          "fahrzeug": "STOLT KINGFISHER",
+          "to": "UTG",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "STOLT KINGFISHER",
+          "current_ship_eta_rueb": "2026-05-09 11:19",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Bodmann, Christoph",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 10,
+          "abteilungszeit": "2026-05-09 10:50",
+          "fahrzeug": "RAM",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RAM",
+          "current_ship_eta_rueb": "2026-05-09 12:01",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Hewig, Marius Paul",
+          "pilot_q": 2,
+          "pilot_tactical_nr": 5,
+          "abteilungszeit": "2026-05-09 12:40",
+          "fahrzeug": "KADRI",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "KADRI",
+          "current_ship_eta_rueb": "2026-05-09 14:05",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Haala, Klaus Werner",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 6,
+          "abteilungszeit": "2026-05-09 12:40",
+          "fahrzeug": "JUDITH",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "JUDITH",
+          "current_ship_eta_rueb": "2026-05-09 14:17",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Lielienthal, Jörn",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 4,
+          "abteilungszeit": "2026-05-09 13:25",
+          "fahrzeug": "SPIRIT OF GINETTE",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "SPIRIT OF GINETTE",
+          "current_ship_eta_rueb": "2026-05-09 14:43",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "4",
           "time": "Sat May 09 17:06:00 CEST 2026",
           "draft": "5.5",
           "q_gruppe": "4",
@@ -1730,7 +1905,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "ANHOLT",
-          "current_ship_eta_rueb": "2026-05-09 16:17",
+          "current_ship_eta_rueb": "2026-05-09 16:16",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1743,7 +1918,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "ANINA",
-          "current_ship_eta_rueb": "2026-05-09 16:14",
+          "current_ship_eta_rueb": "2026-05-09 16:13",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1802,13 +1977,6 @@
       ],
       "excluded": [
         {
-          "pilot_name": "Külzer, Sascha",
-          "pilot_tactical_nr": 18,
-          "reason": "Quali passt nicht (2 > 1)",
-          "pilot_q": 2,
-          "ship_q": 1
-        },
-        {
           "pilot_name": "Ehlers, Sören",
           "pilot_tactical_nr": 11,
           "reason": "Quali passt nicht (3 > 1)",
@@ -1825,7 +1993,7 @@
       ],
       "ship": {
         "meldung": {
-          "nr": "4",
+          "nr": "5",
           "time": "Sat May 09 18:10:00 CEST 2026",
           "draft": "8.4",
           "q_gruppe": "1",
@@ -1860,28 +2028,6 @@
   ],
   "unassigned_ships": [],
   "unused_pilots": [
-    {
-      "pilot_key": "külzer_sascha",
-      "vorname": "Sascha",
-      "nachname": "Külzer",
-      "pilot_name": "Külzer, Sascha",
-      "abteilungszeit": "2026-05-09 07:32",
-      "pilot_q": 2,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 18,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "SIMON B",
-      "from": "RÜB",
-      "to": "HOS",
-      "nr": 18,
-      "raw_time": "Sat May 09 07:32:00 CEST 2026",
-      "current_ship_name": "SIMON B",
-      "current_ship_eta_rueb": "2026-05-09 14:01",
-      "current_ship_q": 0,
-      "current_ship_route": "RÜB → HOS",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
-    },
     {
       "pilot_key": "dietrich_thomas",
       "vorname": "Thomas",
@@ -1942,7 +2088,7 @@
       "nr": 14,
       "raw_time": "Sat May 09 09:38:00 CEST 2026",
       "current_ship_name": "ANHOLT",
-      "current_ship_eta_rueb": "2026-05-09 16:17",
+      "current_ship_eta_rueb": "2026-05-09 16:16",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -1964,7 +2110,7 @@
       "nr": 13,
       "raw_time": "Sat May 09 09:43:00 CEST 2026",
       "current_ship_name": "ANINA",
-      "current_ship_eta_rueb": "2026-05-09 16:14",
+      "current_ship_eta_rueb": "2026-05-09 16:13",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
