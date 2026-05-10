@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-10T10:19:07",
+  "generated_at": "2026-05-10T10:21:10",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,10 +34,10 @@
   "counts": {
     "ships_for_ruesterbergen": 11,
     "pilots_total": 12,
-    "pilots_dispatchable": 10,
-    "pilots_visible_only": 2,
-    "assignments": 10,
-    "unassigned_ships": 1,
+    "pilots_dispatchable": 9,
+    "pilots_visible_only": 3,
+    "assignments": 9,
+    "unassigned_ships": 2,
     "unused_pilots": 0
   },
   "ships": [
@@ -610,11 +610,10 @@
       "to": "RÜB",
       "nr": 5,
       "raw_time": "Sun May 10 07:37:00 CEST 2026",
-      "current_ship_name": "NETA A",
-      "current_ship_eta_rueb": "2026-05-10 12:31",
+      "current_ship_name": "NETA A.",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
@@ -855,28 +854,6 @@
       "availability_kind": "merged_eta"
     },
     {
-      "pilot_key": "böttcher_peter",
-      "vorname": "Peter",
-      "nachname": "Böttcher",
-      "pilot_name": "Böttcher, Peter",
-      "abteilungszeit": "2026-05-10 07:37",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 5,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "NETA A.",
-      "from": "HOS",
-      "to": "RÜB",
-      "nr": 5,
-      "raw_time": "Sun May 10 07:37:00 CEST 2026",
-      "current_ship_name": "NETA A",
-      "current_ship_eta_rueb": "2026-05-10 12:31",
-      "current_ship_q": 0,
-      "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-      "availability_kind": "merged_eta"
-    },
-    {
       "pilot_key": "heyder_justus",
       "vorname": "Justus",
       "nachname": "Heyder",
@@ -922,6 +899,21 @@
     }
   ],
   "visible_but_not_dispatchable_pilots": [
+    {
+      "pilot_key": "böttcher_peter",
+      "pilot_name": "Böttcher, Peter",
+      "pilot_q": 0,
+      "pilot_tactical_nr": 5,
+      "abteilungszeit": "2026-05-10 07:37",
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "NETA A.",
+      "from": "HOS",
+      "to": "RÜB",
+      "current_ship_name": "NETA A.",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta",
+      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
+    },
     {
       "pilot_key": "weise_carsten",
       "pilot_name": "Weise, Carsten",
@@ -1045,15 +1037,6 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "ILKA",
           "pilot_current_ship_eta_rueb": "2026-05-10 12:21",
-          "ship_eta_rueb": "2026-05-10 11:07",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Böttcher, Peter",
-          "pilot_tactical_nr": 5,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "NETA A",
-          "pilot_current_ship_eta_rueb": "2026-05-10 12:31",
           "ship_eta_rueb": "2026-05-10 11:07",
           "availability_kind": "merged_eta"
         },
@@ -1197,15 +1180,6 @@
           "availability_kind": "merged_eta"
         },
         {
-          "pilot_name": "Böttcher, Peter",
-          "pilot_tactical_nr": 5,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "NETA A",
-          "pilot_current_ship_eta_rueb": "2026-05-10 12:31",
-          "ship_eta_rueb": "2026-05-10 11:28",
-          "availability_kind": "merged_eta"
-        },
-        {
           "pilot_name": "Heyder, Justus",
           "pilot_tactical_nr": 4,
           "reason": "kommt nicht rechtzeitig in RÜB an",
@@ -1336,15 +1310,6 @@
           "availability_kind": "merged_eta"
         },
         {
-          "pilot_name": "Böttcher, Peter",
-          "pilot_tactical_nr": 5,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "NETA A",
-          "pilot_current_ship_eta_rueb": "2026-05-10 12:31",
-          "ship_eta_rueb": "2026-05-10 11:58",
-          "availability_kind": "merged_eta"
-        },
-        {
           "pilot_name": "Heyder, Justus",
           "pilot_tactical_nr": 4,
           "reason": "kommt nicht rechtzeitig in RÜB an",
@@ -1410,7 +1375,7 @@
       "assigned_current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 6,
+      "candidate_count": 5,
       "candidates": [
         {
           "pilot_name": "Hansen, Hinnerk",
@@ -1446,19 +1411,6 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "ATLANTIS",
           "current_ship_eta_rueb": "2026-05-10 11:28",
-          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Böttcher, Peter",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 5,
-          "abteilungszeit": "2026-05-10 07:37",
-          "fahrzeug": "NETA A.",
-          "to": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "NETA A",
-          "current_ship_eta_rueb": "2026-05-10 12:31",
           "current_ship_source": "schiffe_merged.summary.pilot_1_name",
           "availability_kind": "merged_eta"
         },
@@ -1547,7 +1499,7 @@
       "assigned_availability_kind": "already_in_rueb",
       "assigned_availability_hint": "Lotse gilt als bereits in RÜB",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 6,
+      "candidate_count": 5,
       "candidates": [
         {
           "pilot_name": "Steffens, Micha",
@@ -1585,19 +1537,6 @@
           "current_ship_name": "ILKA",
           "current_ship_eta_rueb": "2026-05-10 12:21",
           "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Böttcher, Peter",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 5,
-          "abteilungszeit": "2026-05-10 07:37",
-          "fahrzeug": "NETA A.",
-          "to": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "NETA A",
-          "current_ship_eta_rueb": "2026-05-10 12:31",
-          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
           "availability_kind": "merged_eta"
         },
         {
@@ -1676,7 +1615,7 @@
       "assigned_current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 2,
+      "candidate_count": 1,
       "candidates": [
         {
           "pilot_name": "Schulz, Arne",
@@ -1687,19 +1626,6 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "ATLANTIS",
           "current_ship_eta_rueb": "2026-05-10 11:28",
-          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Böttcher, Peter",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 5,
-          "abteilungszeit": "2026-05-10 07:37",
-          "fahrzeug": "NETA A.",
-          "to": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "NETA A",
-          "current_ship_eta_rueb": "2026-05-10 12:31",
           "current_ship_source": "schiffe_merged.summary.pilot_1_name",
           "availability_kind": "merged_eta"
         }
@@ -1766,30 +1692,17 @@
       "ship_name": "LADY ELA",
       "eta_rueb": "2026-05-10 13:42",
       "ship_q": 3,
-      "assigned_pilot": "Böttcher, Peter",
-      "assigned_pilot_q": 0,
-      "assigned_tactical_nr": 5,
-      "assigned_abteilungszeit": "2026-05-10 07:37",
-      "assigned_current_ship_name": "NETA A",
-      "assigned_current_ship_eta_rueb": "2026-05-10 12:31",
-      "assigned_current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "assigned_pilot": "Heyder, Justus",
+      "assigned_pilot_q": 3,
+      "assigned_tactical_nr": 4,
+      "assigned_abteilungszeit": "2026-05-10 07:40",
+      "assigned_current_ship_name": "LAGANBORG",
+      "assigned_current_ship_eta_rueb": "2026-05-10 12:38",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 2,
+      "candidate_count": 1,
       "candidates": [
-        {
-          "pilot_name": "Böttcher, Peter",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 5,
-          "abteilungszeit": "2026-05-10 07:37",
-          "fahrzeug": "NETA A.",
-          "to": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "NETA A",
-          "current_ship_eta_rueb": "2026-05-10 12:31",
-          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-          "availability_kind": "merged_eta"
-        },
         {
           "pilot_name": "Heyder, Justus",
           "pilot_q": 3,
@@ -1859,30 +1772,17 @@
       "ship_name": "NAUTILUS",
       "eta_rueb": "2026-05-10 15:51",
       "ship_q": 4,
-      "assigned_pilot": "Heyder, Justus",
-      "assigned_pilot_q": 3,
-      "assigned_tactical_nr": 4,
-      "assigned_abteilungszeit": "2026-05-10 07:40",
-      "assigned_current_ship_name": "LAGANBORG",
-      "assigned_current_ship_eta_rueb": "2026-05-10 12:38",
+      "assigned_pilot": "Wachsmuth, Martin",
+      "assigned_pilot_q": 4,
+      "assigned_tactical_nr": 3,
+      "assigned_abteilungszeit": "2026-05-10 07:46",
+      "assigned_current_ship_name": "ZILTBORG",
+      "assigned_current_ship_eta_rueb": "2026-05-10 12:35",
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 2,
+      "candidate_count": 1,
       "candidates": [
-        {
-          "pilot_name": "Heyder, Justus",
-          "pilot_q": 3,
-          "pilot_tactical_nr": 4,
-          "abteilungszeit": "2026-05-10 07:40",
-          "fahrzeug": "LAGANBORG",
-          "to": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "LAGANBORG",
-          "current_ship_eta_rueb": "2026-05-10 12:38",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
         {
           "pilot_name": "Wachsmuth, Martin",
           "pilot_q": 4,
@@ -1954,7 +1854,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 2,
+      "candidate_count": 1,
       "candidates": [
         {
           "pilot_name": "Konietzka, Stefan",
@@ -1966,19 +1866,6 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "ILKA",
           "current_ship_eta_rueb": "2026-05-10 12:21",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Wachsmuth, Martin",
-          "pilot_q": 4,
-          "pilot_tactical_nr": 3,
-          "abteilungszeit": "2026-05-10 07:46",
-          "fahrzeug": "ZILTBORG",
-          "to": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "ZILTBORG",
-          "current_ship_eta_rueb": "2026-05-10 12:35",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
@@ -2016,59 +1903,6 @@
           "type_of_loading": "Duengemittel"
         }
       }
-    },
-    {
-      "ship_key": "JUIST",
-      "ship_name": "JUIST",
-      "eta_rueb": "2026-05-11 08:00",
-      "ship_q": 5,
-      "assigned_pilot": "Wachsmuth, Martin",
-      "assigned_pilot_q": 4,
-      "assigned_tactical_nr": 3,
-      "assigned_abteilungszeit": "2026-05-10 07:46",
-      "assigned_current_ship_name": "ZILTBORG",
-      "assigned_current_ship_eta_rueb": "2026-05-10 12:35",
-      "assigned_current_ship_source": "schiffe_merged.seelotsen",
-      "assigned_availability_kind": "merged_eta",
-      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 1,
-      "candidates": [
-        {
-          "pilot_name": "Wachsmuth, Martin",
-          "pilot_q": 4,
-          "pilot_tactical_nr": 3,
-          "abteilungszeit": "2026-05-10 07:46",
-          "fahrzeug": "ZILTBORG",
-          "to": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "ZILTBORG",
-          "current_ship_eta_rueb": "2026-05-10 12:35",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        }
-      ],
-      "ship": {
-        "meldung": {
-          "nr": "11",
-          "time": "Mon May 11 08:00:00 CEST 2026",
-          "draft": "1.0",
-          "q_gruppe": "5",
-          "lotsen_anzahl": 1,
-          "confirmed": false,
-          "from": "KRH",
-          "to": "RÜB",
-          "remark": "möchte irgendwann weiter am 11.05. !"
-        },
-        "summary": {
-          "route": "HOR → KRH",
-          "routes": [
-            "HOR → KRH",
-            "KRH → RÜB"
-          ],
-          "q_gruppe": "5",
-          "draft": "1.0"
-        }
-      }
     }
   ],
   "unassigned_ships": [
@@ -2077,16 +1911,14 @@
       "ship_name": "HEINRICH",
       "eta_rueb": "2026-05-10 15:57",
       "ship_q": 2,
-      "reason": "kein passender Lotse verfügbar",
-      "excluded": [
-        {
-          "pilot_name": "Wachsmuth, Martin",
-          "pilot_tactical_nr": 3,
-          "reason": "Quali passt nicht (4 > 2)",
-          "pilot_q": 4,
-          "ship_q": 2
-        }
-      ]
+      "reason": "kein passender Lotse verfügbar"
+    },
+    {
+      "ship_key": "JUIST",
+      "ship_name": "JUIST",
+      "eta_rueb": "2026-05-11 08:00",
+      "ship_q": 5,
+      "reason": "kein passender Lotse verfügbar"
     }
   ],
   "unused_pilots": []
