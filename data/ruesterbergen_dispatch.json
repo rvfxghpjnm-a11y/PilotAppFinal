@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-10T17:09:22",
+  "generated_at": "2026-05-10T17:11:09",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -33,12 +33,12 @@
   },
   "counts": {
     "ships_for_ruesterbergen": 3,
-    "pilots_total": 17,
-    "pilots_dispatchable": 11,
-    "pilots_visible_only": 6,
+    "pilots_total": 18,
+    "pilots_dispatchable": 13,
+    "pilots_visible_only": 5,
     "assignments": 3,
     "unassigned_ships": 0,
-    "unused_pilots": 8
+    "unused_pilots": 10
   },
   "ships": [
     {
@@ -397,6 +397,28 @@
       "availability_kind": "merged_eta"
     },
     {
+      "pilot_key": "jeske_lutz",
+      "vorname": "Lutz",
+      "nachname": "Jeske",
+      "pilot_name": "Jeske, Lutz",
+      "abteilungszeit": "2026-05-10 14:25",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 9,
+      "aufgabe": "Seebört",
+      "fahrzeug": "KATARIINA",
+      "from": "HOS",
+      "to": "KLT",
+      "nr": 9,
+      "raw_time": "Sun May 10 14:25:00 CEST 2026",
+      "current_ship_name": "KATARIINA",
+      "current_ship_eta_rueb": "2026-05-10 13:27",
+      "current_ship_q": 5,
+      "current_ship_route": "HOS → KLT",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
       "pilot_key": "engel_alexander",
       "vorname": "Alexander",
       "nachname": "Engel",
@@ -433,6 +455,7 @@
       "nr": 6,
       "raw_time": "Sun May 10 15:05:00 CEST 2026",
       "current_ship_name": "MYRTE",
+      "current_ship_eta_rueb": "2026-05-10 21:01",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -763,6 +786,50 @@
       "current_ship_route": "RÜB → HOS",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "jeske_lutz",
+      "vorname": "Lutz",
+      "nachname": "Jeske",
+      "pilot_name": "Jeske, Lutz",
+      "abteilungszeit": "2026-05-10 14:25",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 9,
+      "aufgabe": "Seebört",
+      "fahrzeug": "KATARIINA",
+      "from": "HOS",
+      "to": "KLT",
+      "nr": 9,
+      "raw_time": "Sun May 10 14:25:00 CEST 2026",
+      "current_ship_name": "KATARIINA",
+      "current_ship_eta_rueb": "2026-05-10 13:27",
+      "current_ship_q": 5,
+      "current_ship_route": "HOS → KLT",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "köhler_olaf",
+      "vorname": "Olaf",
+      "nachname": "Köhler",
+      "pilot_name": "Köhler, Olaf",
+      "abteilungszeit": "2026-05-10 15:05",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 6,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "MYRTE",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 6,
+      "raw_time": "Sun May 10 15:05:00 CEST 2026",
+      "current_ship_name": "MYRTE",
+      "current_ship_eta_rueb": "2026-05-10 21:01",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
     }
   ],
   "visible_but_not_dispatchable_pilots": [
@@ -777,21 +844,6 @@
       "from": "HOS",
       "to": "RÜB",
       "current_ship_name": "LISA LEHMANN",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    },
-    {
-      "pilot_key": "köhler_olaf",
-      "pilot_name": "Köhler, Olaf",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 6,
-      "abteilungszeit": "2026-05-10 15:05",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "MYRTE",
-      "from": "HOS",
-      "to": "RÜB",
-      "current_ship_name": "MYRTE",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta",
       "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
@@ -872,7 +924,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 10,
+      "candidate_count": 11,
       "candidates": [
         {
           "pilot_name": "Konietzka, Stefan",
@@ -1003,6 +1055,19 @@
           "current_ship_eta_rueb": "2026-05-10 15:50",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Jeske, Lutz",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 9,
+          "abteilungszeit": "2026-05-10 14:25",
+          "fahrzeug": "KATARIINA",
+          "to": "KLT",
+          "aufgabe": "Seebört",
+          "current_ship_name": "KATARIINA",
+          "current_ship_eta_rueb": "2026-05-10 13:27",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
         }
       ],
       "excluded": [
@@ -1012,6 +1077,15 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "BERGSTRAUM",
           "pilot_current_ship_eta_rueb": "2026-05-10 18:21",
+          "ship_eta_rueb": "2026-05-10 17:43",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Köhler, Olaf",
+          "pilot_tactical_nr": 6,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "MYRTE",
+          "pilot_current_ship_eta_rueb": "2026-05-10 21:01",
           "ship_eta_rueb": "2026-05-10 17:43",
           "availability_kind": "merged_eta"
         }
@@ -1063,7 +1137,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 6,
+      "candidate_count": 7,
       "candidates": [
         {
           "pilot_name": "Böttcher, Peter",
@@ -1142,6 +1216,19 @@
           "current_ship_eta_rueb": "2026-05-10 15:50",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Jeske, Lutz",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 9,
+          "abteilungszeit": "2026-05-10 14:25",
+          "fahrzeug": "KATARIINA",
+          "to": "KLT",
+          "aufgabe": "Seebört",
+          "current_ship_name": "KATARIINA",
+          "current_ship_eta_rueb": "2026-05-10 13:27",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
         }
       ],
       "excluded": [
@@ -1172,6 +1259,15 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "BERGSTRAUM",
           "pilot_current_ship_eta_rueb": "2026-05-10 18:21",
+          "ship_eta_rueb": "2026-05-10 17:51",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Köhler, Olaf",
+          "pilot_tactical_nr": 6,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "MYRTE",
+          "pilot_current_ship_eta_rueb": "2026-05-10 21:01",
           "ship_eta_rueb": "2026-05-10 17:51",
           "availability_kind": "merged_eta"
         }
@@ -1224,7 +1320,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 8,
+      "candidate_count": 9,
       "candidates": [
         {
           "pilot_name": "Heyder, Justus",
@@ -1329,6 +1425,19 @@
           "current_ship_eta_rueb": "2026-05-10 15:50",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Jeske, Lutz",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 9,
+          "abteilungszeit": "2026-05-10 14:25",
+          "fahrzeug": "KATARIINA",
+          "to": "KLT",
+          "aufgabe": "Seebört",
+          "current_ship_name": "KATARIINA",
+          "current_ship_eta_rueb": "2026-05-10 13:27",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
         }
       ],
       "excluded": [
@@ -1338,6 +1447,15 @@
           "reason": "Quali passt nicht (5 > 4)",
           "pilot_q": 5,
           "ship_q": 4
+        },
+        {
+          "pilot_name": "Köhler, Olaf",
+          "pilot_tactical_nr": 6,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "MYRTE",
+          "pilot_current_ship_eta_rueb": "2026-05-10 21:01",
+          "ship_eta_rueb": "2026-05-10 20:35",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -1548,6 +1666,50 @@
       "current_ship_eta_rueb": "2026-05-10 15:50",
       "current_ship_q": 4,
       "current_ship_route": "RÜB → HOS",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "jeske_lutz",
+      "vorname": "Lutz",
+      "nachname": "Jeske",
+      "pilot_name": "Jeske, Lutz",
+      "abteilungszeit": "2026-05-10 14:25",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 9,
+      "aufgabe": "Seebört",
+      "fahrzeug": "KATARIINA",
+      "from": "HOS",
+      "to": "KLT",
+      "nr": 9,
+      "raw_time": "Sun May 10 14:25:00 CEST 2026",
+      "current_ship_name": "KATARIINA",
+      "current_ship_eta_rueb": "2026-05-10 13:27",
+      "current_ship_q": 5,
+      "current_ship_route": "HOS → KLT",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "köhler_olaf",
+      "vorname": "Olaf",
+      "nachname": "Köhler",
+      "pilot_name": "Köhler, Olaf",
+      "abteilungszeit": "2026-05-10 15:05",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 6,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "MYRTE",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 6,
+      "raw_time": "Sun May 10 15:05:00 CEST 2026",
+      "current_ship_name": "MYRTE",
+      "current_ship_eta_rueb": "2026-05-10 21:01",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     }
