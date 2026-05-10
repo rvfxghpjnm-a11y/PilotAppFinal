@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-10T10:07:06",
+  "generated_at": "2026-05-10T10:09:11",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -304,44 +304,6 @@
       }
     },
     {
-      "ship_key": "ECHO PETRA",
-      "ship_name": "ECHO PETRA",
-      "eta_rueb": "2026-05-10 15:38",
-      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
-      "ship_q": 5,
-      "meldung": {
-        "nr": "9",
-        "time": "Sun May 10 15:38:00 CEST 2026",
-        "draft": "5.3",
-        "q_gruppe": "5",
-        "lotsen_anzahl": 1,
-        "confirmed": false,
-        "from": "RÜB",
-        "to": "HOS"
-      },
-      "summary": {
-        "route": "HOS → KLT",
-        "routes": [
-          "HOS → KLT",
-          "RÜB → HOS"
-        ],
-        "q_gruppe": "5",
-        "vg": "3",
-        "draft": "5.30",
-        "length_m": "89.43",
-        "beam_m": "13.2",
-        "queue_title": "Zulauf vom Kanal in Kiel",
-        "zulauf_richtung": "vom_kanal",
-        "pilot_required": "true",
-        "pilot_status": "P",
-        "pilot_1_name": "Rittig, Martin",
-        "travel_status": "SAILING_NOK",
-        "makler": "Bar-Karte",
-        "dangerous_vessel": "-",
-        "type_of_loading": "Duengemittel"
-      }
-    },
-    {
       "ship_key": "NAUTILUS",
       "ship_name": "NAUTILUS",
       "eta_rueb": "2026-05-10 15:51",
@@ -415,6 +377,44 @@
         "makler": "SUB",
         "dangerous_vessel": "-",
         "type_of_loading": "Erdoel und Derivate"
+      }
+    },
+    {
+      "ship_key": "ECHO PETRA",
+      "ship_name": "ECHO PETRA",
+      "eta_rueb": "2026-05-10 15:58",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 5,
+      "meldung": {
+        "nr": "9",
+        "time": "Sun May 10 15:38:00 CEST 2026",
+        "draft": "5.3",
+        "q_gruppe": "5",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "5",
+        "vg": "3",
+        "draft": "5.30",
+        "length_m": "89.43",
+        "beam_m": "13.2",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "P",
+        "pilot_1_name": "Rittig, Martin",
+        "travel_status": "SAILING_NOK",
+        "makler": "Bar-Karte",
+        "dangerous_vessel": "-",
+        "type_of_loading": "Duengemittel"
       }
     },
     {
@@ -1819,9 +1819,95 @@
       }
     },
     {
+      "ship_key": "NAUTILUS",
+      "ship_name": "NAUTILUS",
+      "eta_rueb": "2026-05-10 15:51",
+      "ship_q": 4,
+      "assigned_pilot": "Heyder, Justus",
+      "assigned_pilot_q": 3,
+      "assigned_tactical_nr": 3,
+      "assigned_abteilungszeit": "2026-05-10 07:40",
+      "assigned_current_ship_name": "LAGANBORG",
+      "assigned_current_ship_eta_rueb": "2026-05-10 12:38",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 2,
+      "candidates": [
+        {
+          "pilot_name": "Heyder, Justus",
+          "pilot_q": 3,
+          "pilot_tactical_nr": 3,
+          "abteilungszeit": "2026-05-10 07:40",
+          "fahrzeug": "LAGANBORG",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "LAGANBORG",
+          "current_ship_eta_rueb": "2026-05-10 12:38",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Wachsmuth, Martin",
+          "pilot_q": 4,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-05-10 07:46",
+          "fahrzeug": "ZILTBORG",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ZILTBORG",
+          "current_ship_eta_rueb": "2026-05-10 12:35",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Konietzka, Stefan",
+          "pilot_tactical_nr": 6,
+          "reason": "Quali passt nicht (5 > 4)",
+          "pilot_q": 5,
+          "ship_q": 4
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "8",
+          "time": "Sun May 10 15:35:00 CEST 2026",
+          "draft": "6.5",
+          "q_gruppe": "4",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "HOS → KLT",
+          "routes": [
+            "HOS → KLT",
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "4",
+          "vg": "4",
+          "draft": "6.50",
+          "length_m": "119.10",
+          "beam_m": "16.89",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "U",
+          "pilot_1_name": "Kleinfeld, Rainer",
+          "travel_status": "SAILING_NOK",
+          "makler": "UCA",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Chemikalien fluessig"
+        }
+      }
+    },
+    {
       "ship_key": "ECHO PETRA",
       "ship_name": "ECHO PETRA",
-      "eta_rueb": "2026-05-10 15:38",
+      "eta_rueb": "2026-05-10 15:58",
       "ship_q": 5,
       "assigned_pilot": "Konietzka, Stefan",
       "assigned_pilot_q": 5,
@@ -1832,7 +1918,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 3,
+      "candidate_count": 2,
       "candidates": [
         {
           "pilot_name": "Konietzka, Stefan",
@@ -1844,19 +1930,6 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "ILKA",
           "current_ship_eta_rueb": "2026-05-10 12:23",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Heyder, Justus",
-          "pilot_q": 3,
-          "pilot_tactical_nr": 3,
-          "abteilungszeit": "2026-05-10 07:40",
-          "fahrzeug": "LAGANBORG",
-          "to": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "LAGANBORG",
-          "current_ship_eta_rueb": "2026-05-10 12:38",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1905,83 +1978,6 @@
           "makler": "Bar-Karte",
           "dangerous_vessel": "-",
           "type_of_loading": "Duengemittel"
-        }
-      }
-    },
-    {
-      "ship_key": "NAUTILUS",
-      "ship_name": "NAUTILUS",
-      "eta_rueb": "2026-05-10 15:51",
-      "ship_q": 4,
-      "assigned_pilot": "Heyder, Justus",
-      "assigned_pilot_q": 3,
-      "assigned_tactical_nr": 3,
-      "assigned_abteilungszeit": "2026-05-10 07:40",
-      "assigned_current_ship_name": "LAGANBORG",
-      "assigned_current_ship_eta_rueb": "2026-05-10 12:38",
-      "assigned_current_ship_source": "schiffe_merged.seelotsen",
-      "assigned_availability_kind": "merged_eta",
-      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 2,
-      "candidates": [
-        {
-          "pilot_name": "Heyder, Justus",
-          "pilot_q": 3,
-          "pilot_tactical_nr": 3,
-          "abteilungszeit": "2026-05-10 07:40",
-          "fahrzeug": "LAGANBORG",
-          "to": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "LAGANBORG",
-          "current_ship_eta_rueb": "2026-05-10 12:38",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Wachsmuth, Martin",
-          "pilot_q": 4,
-          "pilot_tactical_nr": 2,
-          "abteilungszeit": "2026-05-10 07:46",
-          "fahrzeug": "ZILTBORG",
-          "to": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "ZILTBORG",
-          "current_ship_eta_rueb": "2026-05-10 12:35",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        }
-      ],
-      "ship": {
-        "meldung": {
-          "nr": "8",
-          "time": "Sun May 10 15:35:00 CEST 2026",
-          "draft": "6.5",
-          "q_gruppe": "4",
-          "lotsen_anzahl": 1,
-          "confirmed": false,
-          "from": "RÜB",
-          "to": "HOS"
-        },
-        "summary": {
-          "route": "HOS → KLT",
-          "routes": [
-            "HOS → KLT",
-            "RÜB → HOS"
-          ],
-          "q_gruppe": "4",
-          "vg": "4",
-          "draft": "6.50",
-          "length_m": "119.10",
-          "beam_m": "16.89",
-          "queue_title": "Zulauf vom Kanal in Kiel",
-          "zulauf_richtung": "vom_kanal",
-          "pilot_required": "true",
-          "pilot_status": "U",
-          "pilot_1_name": "Kleinfeld, Rainer",
-          "travel_status": "SAILING_NOK",
-          "makler": "UCA",
-          "dangerous_vessel": "-",
-          "type_of_loading": "Chemikalien fluessig"
         }
       }
     },
@@ -2047,6 +2043,13 @@
       "ship_q": 2,
       "reason": "kein passender Lotse verfügbar",
       "excluded": [
+        {
+          "pilot_name": "Konietzka, Stefan",
+          "pilot_tactical_nr": 6,
+          "reason": "Quali passt nicht (5 > 2)",
+          "pilot_q": 5,
+          "ship_q": 2
+        },
         {
           "pilot_name": "Wachsmuth, Martin",
           "pilot_tactical_nr": 2,
