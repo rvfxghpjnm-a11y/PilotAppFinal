@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-10T23:03:06",
+  "generated_at": "2026-05-10T23:05:08",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 5,
     "pilots_total": 13,
-    "pilots_dispatchable": 10,
-    "pilots_visible_only": 3,
+    "pilots_dispatchable": 11,
+    "pilots_visible_only": 2,
     "assignments": 5,
     "unassigned_ships": 0,
-    "unused_pilots": 5
+    "unused_pilots": 6
   },
   "ships": [
     {
@@ -82,7 +82,7 @@
     {
       "ship_key": "LUCA",
       "ship_name": "LUCA",
-      "eta_rueb": "2026-05-11 00:30",
+      "eta_rueb": "2026-05-11 00:29",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 4,
       "meldung": {
@@ -432,9 +432,10 @@
       "nr": 4,
       "raw_time": "Sun May 10 21:30:00 CEST 2026",
       "current_ship_name": "UNDEN",
+      "current_ship_eta_rueb": "2026-05-11 02:37",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
@@ -700,6 +701,28 @@
       "availability_kind": "merged_eta"
     },
     {
+      "pilot_key": "stoislow_alexander",
+      "vorname": "Alexander",
+      "nachname": "Stoislow",
+      "pilot_name": "Stoislow, Alexander",
+      "abteilungszeit": "2026-05-10 21:30",
+      "pilot_q": 4,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 4,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "UNDEN",
+      "from": "HOR",
+      "to": "RÜB",
+      "nr": 4,
+      "raw_time": "Sun May 10 21:30:00 CEST 2026",
+      "current_ship_name": "UNDEN",
+      "current_ship_eta_rueb": "2026-05-11 02:37",
+      "current_ship_q": 0,
+      "current_ship_route": "HOR → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
       "pilot_key": "koslik_kevin",
       "vorname": "Kevin",
       "nachname": "Koslik",
@@ -723,21 +746,6 @@
     }
   ],
   "visible_but_not_dispatchable_pilots": [
-    {
-      "pilot_key": "stoislow_alexander",
-      "pilot_name": "Stoislow, Alexander",
-      "pilot_q": 4,
-      "pilot_tactical_nr": 4,
-      "abteilungszeit": "2026-05-10 21:30",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "UNDEN",
-      "from": "HOR",
-      "to": "RÜB",
-      "current_ship_name": "UNDEN",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    },
     {
       "pilot_key": "doering_lars",
       "pilot_name": "Doering, Lars",
@@ -884,6 +892,15 @@
           "availability_kind": "merged_eta"
         },
         {
+          "pilot_name": "Stoislow, Alexander",
+          "pilot_tactical_nr": 4,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "UNDEN",
+          "pilot_current_ship_eta_rueb": "2026-05-11 02:37",
+          "ship_eta_rueb": "2026-05-11 00:26",
+          "availability_kind": "merged_eta"
+        },
+        {
           "pilot_name": "Koslik, Kevin",
           "pilot_tactical_nr": 3,
           "reason": "kommt nicht rechtzeitig in RÜB an",
@@ -930,7 +947,7 @@
     {
       "ship_key": "LUCA",
       "ship_name": "LUCA",
-      "eta_rueb": "2026-05-11 00:30",
+      "eta_rueb": "2026-05-11 00:29",
       "ship_q": 4,
       "assigned_pilot": "Krebs, Michael",
       "assigned_pilot_q": 0,
@@ -1003,7 +1020,7 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "EGBERT WAGENBORG",
           "pilot_current_ship_eta_rueb": "2026-05-11 00:49",
-          "ship_eta_rueb": "2026-05-11 00:30",
+          "ship_eta_rueb": "2026-05-11 00:29",
           "availability_kind": "merged_eta"
         },
         {
@@ -1012,7 +1029,7 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "HEINRICH ESSBERGER",
           "pilot_current_ship_eta_rueb": "2026-05-11 00:53",
-          "ship_eta_rueb": "2026-05-11 00:30",
+          "ship_eta_rueb": "2026-05-11 00:29",
           "availability_kind": "merged_eta"
         },
         {
@@ -1021,7 +1038,7 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "KLEER",
           "pilot_current_ship_eta_rueb": "2026-05-11 00:46",
-          "ship_eta_rueb": "2026-05-11 00:30",
+          "ship_eta_rueb": "2026-05-11 00:29",
           "availability_kind": "merged_eta"
         },
         {
@@ -1030,7 +1047,16 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "ISARTAL",
           "pilot_current_ship_eta_rueb": "2026-05-11 00:33",
-          "ship_eta_rueb": "2026-05-11 00:30",
+          "ship_eta_rueb": "2026-05-11 00:29",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Stoislow, Alexander",
+          "pilot_tactical_nr": 4,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "UNDEN",
+          "pilot_current_ship_eta_rueb": "2026-05-11 02:37",
+          "ship_eta_rueb": "2026-05-11 00:29",
           "availability_kind": "merged_eta"
         },
         {
@@ -1039,7 +1065,7 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "REYMAR",
           "pilot_current_ship_eta_rueb": "2026-05-11 02:34",
-          "ship_eta_rueb": "2026-05-11 00:30",
+          "ship_eta_rueb": "2026-05-11 00:29",
           "availability_kind": "merged_eta"
         }
       ],
@@ -1164,6 +1190,15 @@
           "ship_q": 2
         },
         {
+          "pilot_name": "Stoislow, Alexander",
+          "pilot_tactical_nr": 4,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "UNDEN",
+          "pilot_current_ship_eta_rueb": "2026-05-11 02:37",
+          "ship_eta_rueb": "2026-05-11 00:35",
+          "availability_kind": "merged_eta"
+        },
+        {
           "pilot_name": "Koslik, Kevin",
           "pilot_tactical_nr": 3,
           "reason": "kommt nicht rechtzeitig in RÜB an",
@@ -1222,7 +1257,7 @@
       "assigned_availability_kind": "already_in_rueb",
       "assigned_availability_hint": "Lotse gilt als bereits in RÜB",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 7,
+      "candidate_count": 8,
       "candidates": [
         {
           "pilot_name": "Demant, Tom",
@@ -1303,6 +1338,19 @@
           "availability_kind": "merged_eta"
         },
         {
+          "pilot_name": "Stoislow, Alexander",
+          "pilot_q": 4,
+          "pilot_tactical_nr": 4,
+          "abteilungszeit": "2026-05-10 21:30",
+          "fahrzeug": "UNDEN",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "UNDEN",
+          "current_ship_eta_rueb": "2026-05-11 02:37",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
           "pilot_name": "Koslik, Kevin",
           "pilot_q": 0,
           "pilot_tactical_nr": 3,
@@ -1364,7 +1412,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 6,
+      "candidate_count": 7,
       "candidates": [
         {
           "pilot_name": "Krügel, Mathias",
@@ -1428,6 +1476,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "ISARTAL",
           "current_ship_eta_rueb": "2026-05-11 00:33",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Stoislow, Alexander",
+          "pilot_q": 4,
+          "pilot_tactical_nr": 4,
+          "abteilungszeit": "2026-05-10 21:30",
+          "fahrzeug": "UNDEN",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "UNDEN",
+          "current_ship_eta_rueb": "2026-05-11 02:37",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1554,6 +1615,28 @@
       "current_ship_eta_rueb": "2026-05-11 00:33",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "stoislow_alexander",
+      "vorname": "Alexander",
+      "nachname": "Stoislow",
+      "pilot_name": "Stoislow, Alexander",
+      "abteilungszeit": "2026-05-10 21:30",
+      "pilot_q": 4,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 4,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "UNDEN",
+      "from": "HOR",
+      "to": "RÜB",
+      "nr": 4,
+      "raw_time": "Sun May 10 21:30:00 CEST 2026",
+      "current_ship_name": "UNDEN",
+      "current_ship_eta_rueb": "2026-05-11 02:37",
+      "current_ship_q": 0,
+      "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
