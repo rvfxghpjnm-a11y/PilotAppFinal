@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-10T23:07:13",
+  "generated_at": "2026-05-10T23:09:11",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 5,
     "pilots_total": 13,
-    "pilots_dispatchable": 11,
-    "pilots_visible_only": 2,
+    "pilots_dispatchable": 12,
+    "pilots_visible_only": 1,
     "assignments": 5,
     "unassigned_ships": 0,
-    "unused_pilots": 6
+    "unused_pilots": 7
   },
   "ships": [
     {
@@ -382,17 +382,16 @@
       "q_source": "q_gruppen_lotsen.entries",
       "pilot_tactical_nr": 8,
       "aufgabe": "Kanalbört",
-      "fahrzeug": "SAGASBANK",
-      "from": "UTG",
-      "to": "RÜB",
+      "fahrzeug": "RÜB",
       "nr": 8,
       "raw_time": "Sun May 10 19:00:00 CEST 2026",
-      "current_ship_name": "SAGASBANK",
-      "current_ship_eta_rueb": "2026-05-10 23:12",
+      "current_ship_name": "RÜB",
+      "current_ship_eta_rueb": "2026-05-10 19:00",
       "current_ship_q": 0,
-      "current_ship_route": "UTG → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
+      "current_ship_route": "RÜB",
+      "current_ship_source": "special.already_in_rueb",
+      "availability_kind": "already_in_rueb",
+      "availability_hint": "Lotse gilt als bereits in RÜB"
     },
     {
       "pilot_key": "ehlers_sören",
@@ -476,9 +475,10 @@
       "nr": 2,
       "raw_time": "Sun May 10 21:50:00 CEST 2026",
       "current_ship_name": "LIBERO",
+      "current_ship_eta_rueb": "2026-05-11 02:41",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
@@ -666,17 +666,16 @@
       "q_source": "q_gruppen_lotsen.entries",
       "pilot_tactical_nr": 8,
       "aufgabe": "Kanalbört",
-      "fahrzeug": "SAGASBANK",
-      "from": "UTG",
-      "to": "RÜB",
+      "fahrzeug": "RÜB",
       "nr": 8,
       "raw_time": "Sun May 10 19:00:00 CEST 2026",
-      "current_ship_name": "SAGASBANK",
-      "current_ship_eta_rueb": "2026-05-10 23:12",
+      "current_ship_name": "RÜB",
+      "current_ship_eta_rueb": "2026-05-10 19:00",
       "current_ship_q": 0,
-      "current_ship_route": "UTG → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
+      "current_ship_route": "RÜB",
+      "current_ship_source": "special.already_in_rueb",
+      "availability_kind": "already_in_rueb",
+      "availability_hint": "Lotse gilt als bereits in RÜB"
     },
     {
       "pilot_key": "ehlers_sören",
@@ -743,24 +742,31 @@
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
-    }
-  ],
-  "visible_but_not_dispatchable_pilots": [
+    },
     {
       "pilot_key": "doering_lars",
+      "vorname": "Lars",
+      "nachname": "Doering",
       "pilot_name": "Doering, Lars",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 2,
       "abteilungszeit": "2026-05-10 21:50",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 2,
       "aufgabe": "Kanalbört",
       "fahrzeug": "LIBERO",
       "from": "HOR",
       "to": "RÜB",
+      "nr": 2,
+      "raw_time": "Sun May 10 21:50:00 CEST 2026",
       "current_ship_name": "LIBERO",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    },
+      "current_ship_eta_rueb": "2026-05-11 02:41",
+      "current_ship_q": 0,
+      "current_ship_route": "HOR → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    }
+  ],
+  "visible_but_not_dispatchable_pilots": [
     {
       "pilot_key": "plaisant_julian",
       "pilot_name": "Plaisant, Julian",
@@ -838,13 +844,13 @@
           "pilot_q": 0,
           "pilot_tactical_nr": 8,
           "abteilungszeit": "2026-05-10 19:00",
-          "fahrzeug": "SAGASBANK",
-          "to": "RÜB",
+          "fahrzeug": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "SAGASBANK",
-          "current_ship_eta_rueb": "2026-05-10 23:12",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-10 19:00",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
         }
       ],
       "excluded": [
@@ -906,6 +912,15 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "REYMAR",
           "pilot_current_ship_eta_rueb": "2026-05-11 02:34",
+          "ship_eta_rueb": "2026-05-11 00:26",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Doering, Lars",
+          "pilot_tactical_nr": 2,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "LIBERO",
+          "pilot_current_ship_eta_rueb": "2026-05-11 02:41",
           "ship_eta_rueb": "2026-05-11 00:26",
           "availability_kind": "merged_eta"
         }
@@ -1004,13 +1019,13 @@
           "pilot_q": 0,
           "pilot_tactical_nr": 8,
           "abteilungszeit": "2026-05-10 19:00",
-          "fahrzeug": "SAGASBANK",
-          "to": "RÜB",
+          "fahrzeug": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "SAGASBANK",
-          "current_ship_eta_rueb": "2026-05-10 23:12",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-10 19:00",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
         }
       ],
       "excluded": [
@@ -1065,6 +1080,15 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "REYMAR",
           "pilot_current_ship_eta_rueb": "2026-05-11 02:34",
+          "ship_eta_rueb": "2026-05-11 00:29",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Doering, Lars",
+          "pilot_tactical_nr": 2,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "LIBERO",
+          "pilot_current_ship_eta_rueb": "2026-05-11 02:41",
           "ship_eta_rueb": "2026-05-11 00:29",
           "availability_kind": "merged_eta"
         }
@@ -1138,13 +1162,13 @@
           "pilot_q": 0,
           "pilot_tactical_nr": 8,
           "abteilungszeit": "2026-05-10 19:00",
-          "fahrzeug": "SAGASBANK",
-          "to": "RÜB",
+          "fahrzeug": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "SAGASBANK",
-          "current_ship_eta_rueb": "2026-05-10 23:12",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-10 19:00",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
         }
       ],
       "excluded": [
@@ -1206,6 +1230,15 @@
           "pilot_current_ship_eta_rueb": "2026-05-11 02:34",
           "ship_eta_rueb": "2026-05-11 00:35",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Doering, Lars",
+          "pilot_tactical_nr": 2,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "LIBERO",
+          "pilot_current_ship_eta_rueb": "2026-05-11 02:41",
+          "ship_eta_rueb": "2026-05-11 00:35",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -1257,7 +1290,7 @@
       "assigned_availability_kind": "already_in_rueb",
       "assigned_availability_hint": "Lotse gilt als bereits in RÜB",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 8,
+      "candidate_count": 9,
       "candidates": [
         {
           "pilot_name": "Demant, Tom",
@@ -1316,13 +1349,13 @@
           "pilot_q": 0,
           "pilot_tactical_nr": 8,
           "abteilungszeit": "2026-05-10 19:00",
-          "fahrzeug": "SAGASBANK",
-          "to": "RÜB",
+          "fahrzeug": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "SAGASBANK",
-          "current_ship_eta_rueb": "2026-05-10 23:12",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-10 19:00",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
         },
         {
           "pilot_name": "Ehlers, Sören",
@@ -1360,6 +1393,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "REYMAR",
           "current_ship_eta_rueb": "2026-05-11 02:34",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Doering, Lars",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-05-10 21:50",
+          "fahrzeug": "LIBERO",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "LIBERO",
+          "current_ship_eta_rueb": "2026-05-11 02:41",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
@@ -1412,7 +1458,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 7,
+      "candidate_count": 8,
       "candidates": [
         {
           "pilot_name": "Krügel, Mathias",
@@ -1458,13 +1504,13 @@
           "pilot_q": 0,
           "pilot_tactical_nr": 8,
           "abteilungszeit": "2026-05-10 19:00",
-          "fahrzeug": "SAGASBANK",
-          "to": "RÜB",
+          "fahrzeug": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "SAGASBANK",
-          "current_ship_eta_rueb": "2026-05-10 23:12",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-10 19:00",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
         },
         {
           "pilot_name": "Ehlers, Sören",
@@ -1502,6 +1548,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "REYMAR",
           "current_ship_eta_rueb": "2026-05-11 02:34",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Doering, Lars",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-05-10 21:50",
+          "fahrzeug": "LIBERO",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "LIBERO",
+          "current_ship_eta_rueb": "2026-05-11 02:41",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
@@ -1584,17 +1643,16 @@
       "q_source": "q_gruppen_lotsen.entries",
       "pilot_tactical_nr": 8,
       "aufgabe": "Kanalbört",
-      "fahrzeug": "SAGASBANK",
-      "from": "UTG",
-      "to": "RÜB",
+      "fahrzeug": "RÜB",
       "nr": 8,
       "raw_time": "Sun May 10 19:00:00 CEST 2026",
-      "current_ship_name": "SAGASBANK",
-      "current_ship_eta_rueb": "2026-05-10 23:12",
+      "current_ship_name": "RÜB",
+      "current_ship_eta_rueb": "2026-05-10 19:00",
       "current_ship_q": 0,
-      "current_ship_route": "UTG → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
+      "current_ship_route": "RÜB",
+      "current_ship_source": "special.already_in_rueb",
+      "availability_kind": "already_in_rueb",
+      "availability_hint": "Lotse gilt als bereits in RÜB"
     },
     {
       "pilot_key": "ehlers_sören",
@@ -1659,6 +1717,28 @@
       "current_ship_eta_rueb": "2026-05-11 02:34",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "doering_lars",
+      "vorname": "Lars",
+      "nachname": "Doering",
+      "pilot_name": "Doering, Lars",
+      "abteilungszeit": "2026-05-10 21:50",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 2,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "LIBERO",
+      "from": "HOR",
+      "to": "RÜB",
+      "nr": 2,
+      "raw_time": "Sun May 10 21:50:00 CEST 2026",
+      "current_ship_name": "LIBERO",
+      "current_ship_eta_rueb": "2026-05-11 02:41",
+      "current_ship_q": 0,
+      "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     }
