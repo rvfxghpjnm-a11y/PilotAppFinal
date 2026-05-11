@@ -1,47 +1,47 @@
 {
-  "generated_at": "2026-05-11T23:19:07",
+  "generated_at": "2026-05-11T23:21:11",
   "source_meta": {
     "zulauf_kiel_innen": {
       "file": "Zulauf_kiel_innen.json",
-      "generated_at": "2026-05-11 23:18",
+      "generated_at": "2026-05-11 23:20",
       "queue": "kiel_innen",
       "title": "Zulauf vom Kanal in Kiel",
       "count": 10
     },
     "zulauf_kiel_aussen": {
       "file": "Zulauf_kiel_aussen.json",
-      "generated_at": "2026-05-11 23:18",
+      "generated_at": "2026-05-11 23:20",
       "queue": "kiel_aussen",
       "title": "Zulauf von See in Kiel",
       "count": 0
     },
     "zulauf_brb_innen": {
       "file": "Zulauf_brb_innen.json",
-      "generated_at": "2026-05-11 23:18",
+      "generated_at": "2026-05-11 23:20",
       "queue": "brb_innen",
       "title": "Zulauf vom Kanal in Brunsbüttel",
       "count": 8
     },
     "zulauf_brb_aussen": {
       "file": "Zulauf_brb_aussen.json",
-      "generated_at": "2026-05-11 23:18",
+      "generated_at": "2026-05-11 23:20",
       "queue": "brb_aussen",
       "title": "Zulauf von See in Brunsbüttel",
       "count": 7
     },
     "meldungen_kiel": {
       "file": "Meldungen_Kiel.json",
-      "generated_at": "2026-05-11 23:18",
+      "generated_at": "2026-05-11 23:20",
       "count": 46
     },
     "meldungen_ruesterbergen": {
       "file": "Meldungen_Ruesterbergen.json",
-      "generated_at": "2026-05-11 23:18",
+      "generated_at": "2026-05-11 23:20",
       "count": 2
     },
     "seelotsen": {
       "file": "Seelotsen.json",
-      "generated_at": "2026-05-11 23:18",
+      "generated_at": "2026-05-11 23:20",
       "count": 19
     }
   },
@@ -2818,6 +2818,7 @@
       "name": "ELBWAVE",
       "sources": [
         "meldungen_kiel",
+        "seelotsen",
         "zulauf_kiel_innen"
       ],
       "special_entry": false,
@@ -2826,11 +2827,13 @@
         "special_entry": false,
         "sources": [
           "meldungen_kiel",
+          "seelotsen",
           "zulauf_kiel_innen"
         ],
         "route": "HOS → KLT",
         "routes": [
-          "HOS → KLT"
+          "HOS → KLT",
+          "RÜB → HOS"
         ],
         "eta_rueb": "2026-05-11 23:41",
         "eta_schleuse": "2026-05-12 03:15",
@@ -2880,6 +2883,12 @@
         "dangerous_vessel": "-",
         "port_of_departure": "DE HAM (HBG)",
         "port_of_destination": "PL GDY",
+        "assigned_pilots": [
+          "Börnsen, Curt"
+        ],
+        "aufgaben": [
+          "Kanalbört"
+        ],
         "lotsen_anzahl_kiel": 1,
         "confirmed_kiel": false,
         "passage_block": {
@@ -3217,7 +3226,19 @@
         }
       ],
       "meldungen_ruesterbergen": [],
-      "seelotsen": []
+      "seelotsen": [
+        {
+          "nr": 11,
+          "time": "2026-05-11 17:54",
+          "pilot_name": "Börnsen, Curt",
+          "nachname": "Börnsen",
+          "vorname": "Curt",
+          "aufgabe": "Kanalbört",
+          "from": "RÜB",
+          "to": "HOS",
+          "route": "RÜB → HOS"
+        }
+      ]
     },
     {
       "ship_key": "FAIRPLAY 35",
@@ -3653,10 +3674,10 @@
           "zulauf_kiel_innen"
         ],
         "eta_rueb": "2026-05-11 19:42",
-        "eta_schleuse": "2026-05-11 23:19",
-        "eta_text": "23:19",
+        "eta_schleuse": "2026-05-11 23:20",
+        "eta_text": "23:20",
         "first_seen": "2026-05-11 15:24",
-        "delta_rueb_schleuse": "03:37",
+        "delta_rueb_schleuse": "03:38",
         "delta_start_rueb": "04:18",
         "queue_key": "kiel_innen",
         "queue_title": "Zulauf vom Kanal in Kiel",
@@ -3866,10 +3887,10 @@
       "zulauf": [
         {
           "name": "FGS RHEIN - A 513",
-          "eta_schleuse": "2026-05-11 23:19",
+          "eta_schleuse": "2026-05-11 23:20",
           "eta_rueb": "2026-05-11 19:42",
           "first_seen": "2026-05-11 15:24",
-          "delta_rueb_schleuse": "03:37",
+          "delta_rueb_schleuse": "03:38",
           "delta_start_rueb": "04:18",
           "ship_name": "FGS RHEIN - A 513",
           "vg": "3",
@@ -3883,7 +3904,7 @@
           "pilot_required": "true",
           "pilot_foerde": "false",
           "pilot_order": "KS-NOK",
-          "eta_text": "23:19",
+          "eta_text": "23:20",
           "mooring_place": "Neue Süd Mittelmauer",
           "destination": "Kiel",
           "makler": "NIK",
@@ -4127,12 +4148,12 @@
         "sources": [
           "zulauf_kiel_innen"
         ],
-        "eta_rueb": "2026-05-12 01:19",
+        "eta_rueb": "2026-05-12 01:18",
         "eta_schleuse": "2026-05-12 05:10",
         "eta_text": "05:10",
         "first_seen": "2026-05-11 20:52",
-        "delta_rueb_schleuse": "03:51",
-        "delta_start_rueb": "04:27",
+        "delta_rueb_schleuse": "03:52",
+        "delta_start_rueb": "04:26",
         "queue_key": "kiel_innen",
         "queue_title": "Zulauf vom Kanal in Kiel",
         "area": "kiel",
@@ -4273,10 +4294,10 @@
         {
           "name": "FINJA",
           "eta_schleuse": "2026-05-12 05:10",
-          "eta_rueb": "2026-05-12 01:19",
+          "eta_rueb": "2026-05-12 01:18",
           "first_seen": "2026-05-11 20:52",
-          "delta_rueb_schleuse": "03:51",
-          "delta_start_rueb": "04:27",
+          "delta_rueb_schleuse": "03:52",
+          "delta_start_rueb": "04:26",
           "ship_name": "FINJA",
           "vg": "2",
           "length_m": "67.26",
@@ -5100,10 +5121,10 @@
           "zulauf_brb_innen"
         ],
         "eta_rueb": "2026-05-11 22:39",
-        "eta_schleuse": "2026-05-12 03:05",
-        "eta_text": "03:05",
+        "eta_schleuse": "2026-05-12 03:04",
+        "eta_text": "03:04",
         "first_seen": "2026-05-11 19:16",
-        "delta_rueb_schleuse": "04:27",
+        "delta_rueb_schleuse": "04:26",
         "delta_start_rueb": "03:23",
         "queue_key": "brb_innen",
         "queue_title": "Zulauf vom Kanal in Brunsbüttel",
@@ -5291,10 +5312,10 @@
       "zulauf": [
         {
           "name": "KASSANDRA",
-          "eta_schleuse": "2026-05-12 03:05",
+          "eta_schleuse": "2026-05-12 03:04",
           "eta_rueb": "2026-05-11 22:39",
           "first_seen": "2026-05-11 19:16",
-          "delta_rueb_schleuse": "04:27",
+          "delta_rueb_schleuse": "04:26",
           "delta_start_rueb": "03:23",
           "ship_name": "KASSANDRA",
           "vg": "4",
@@ -5308,7 +5329,7 @@
           "pilot_required": "true",
           "pilot_foerde": "true",
           "pilot_order": "KS-NOK-ESEE-KF",
-          "eta_text": "03:05",
+          "eta_text": "03:04",
           "destination": "Brunsbüttel",
           "makler": "SUB",
           "preferred_mooring_side": "Bb",
@@ -5833,7 +5854,7 @@
       "meldungen_kiel": [
         {
           "source": "meldungen_kiel",
-          "nr": "12",
+          "nr": "11",
           "time": "2026-05-12 01:30",
           "draft": "5.2",
           "q_gruppe": "5",
@@ -5942,7 +5963,7 @@
       "meldungen_kiel": [
         {
           "source": "meldungen_kiel",
-          "nr": "11",
+          "nr": "12",
           "time": "2026-05-12 01:30",
           "draft": "5.45",
           "q_gruppe": "5",
@@ -6602,6 +6623,9 @@
         },
         "weichenzeiten": {
           "west": {
+            "kudensee": {
+              "in": "2026-05-11 23:18"
+            },
             "duekerswisch": {
               "in": "2026-05-11 21:25",
               "out": "2026-05-11 22:27"
@@ -6673,6 +6697,9 @@
           "preferred_mooring_side": "Stb",
           "weichenzeiten": {
             "west": {
+              "kudensee": {
+                "in": "2026-05-11 23:18"
+              },
               "duekerswisch": {
                 "in": "2026-05-11 21:25",
                 "out": "2026-05-11 22:27"
@@ -8029,8 +8056,7 @@
           "seelotsen"
         ],
         "assigned_pilots": [
-          "Böttcher, Peter",
-          "Börnsen, Curt"
+          "Böttcher, Peter"
         ],
         "aufgaben": [
           "Kanalbört"
@@ -8046,14 +8072,6 @@
           "pilot_name": "Böttcher, Peter",
           "nachname": "Böttcher",
           "vorname": "Peter",
-          "aufgabe": "Kanalbört"
-        },
-        {
-          "nr": 11,
-          "time": "2026-05-11 17:54",
-          "pilot_name": "Börnsen, Curt",
-          "nachname": "Börnsen",
-          "vorname": "Curt",
           "aufgabe": "Kanalbört"
         }
       ]
@@ -8071,8 +8089,7 @@
         "sources": [
           "zulauf_brb_aussen"
         ],
-        "eta_schleuse": "2026-05-11 23:57",
-        "eta_text": "23:57",
+        "eta_schleuse": "2286-11-20 18:46",
         "first_seen": "2026-05-11 19:56",
         "queue_key": "brb_aussen",
         "queue_title": "Zulauf von See in Brunsbüttel",
@@ -8138,7 +8155,7 @@
       "zulauf": [
         {
           "name": "SCA OBBOLA",
-          "eta_schleuse": "2026-05-11 23:57",
+          "eta_schleuse": "2286-11-20 18:46",
           "first_seen": "2026-05-11 19:56",
           "ship_name": "SCA OBBOLA",
           "vg": "5",
@@ -8149,7 +8166,6 @@
           "queue_title": "Zulauf von See in Brunsbüttel",
           "area": "brb",
           "zulauf_richtung": "von_see",
-          "eta_text": "23:57",
           "preferred_mooring_side": "Stb",
           "vessel_type": "RoRo-Schiff",
           "travel_status": "APPROACHING_NOK_BRB",
