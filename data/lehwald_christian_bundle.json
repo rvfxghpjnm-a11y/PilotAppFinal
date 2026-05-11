@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-11T20:29:34",
+  "generated_at": "2026-05-11T20:31:28",
   "target": {
     "slug": "lehwald_christian",
     "display_name": "lehwald, christian",
@@ -7,27 +7,32 @@
     "vorname": "christian"
   },
   "state": {
-    "kind": "gesamtboert",
-    "source": "Gesamtboert.json",
-    "pos": "1",
-    "takt": "38,1"
+    "kind": "seelotsen",
+    "source": "Seelotsen.json",
+    "aufgabe": "Kanalbört",
+    "fahrzeug": "KERTU",
+    "time": "Mon May 11 20:29:00 CEST 2026"
   },
   "action_card": {
     "title": "lehwald, christian",
-    "subtitle": "Gesamtbört",
-    "state_kind": "gesamtboert",
-    "state_label": "Gesamtbört",
+    "subtitle": "Seelotsen",
+    "state_kind": "seelotsen",
+    "state_label": "Seelotsen",
     "q_gruppe": "4",
-    "pos": "1",
-    "takt": "38,1",
-    "workstart_label": "Start: 2026-05-11 20:30",
+    "aufgabe": "Kanalbört",
+    "fahrzeug": "KERTU",
+    "route": "HOS → RÜB",
+    "time_label": "Akt.: 2026-05-11 20:29",
+    "ship_hint": "KERTU",
     "badges": [
       "Q 4",
-      "Pos 1"
+      "Kanalbört"
     ],
     "lines": [
-      "Takt: 38,1",
-      "Start: 2026-05-11 20:30"
+      "KERTU",
+      "HOS → RÜB",
+      "Akt.: 2026-05-11 20:29",
+      "Schiff: KERTU"
     ]
   },
   "q_gruppe": "4",
@@ -47,24 +52,49 @@
     "entry_count": 730
   },
   "boert": {
-    "entry": {
-      "pos": "1",
-      "takt": "38,1",
-      "nachname": "Lehwald",
-      "vorname": "Christian",
-      "q_gruppe": "4",
-      "was": "ABR",
-      "zeit": "Mon May 11 19:54:59 CEST 2026",
-      "bemerkung": "",
-      "arrow": null
-    },
-    "entry_count": 1
-  },
-  "seelotsen": {
-    "entries": [],
+    "entry": null,
     "entry_count": 0
   },
-  "related_ships": [],
+  "seelotsen": {
+    "entries": [
+      {
+        "nr": 1,
+        "time": "Mon May 11 20:29:00 CEST 2026",
+        "nachname": "Lehwald",
+        "vorname": "Christian",
+        "aufgabe": "Kanalbört",
+        "fahrzeug": "KERTU",
+        "from": "HOS",
+        "to": "RÜB"
+      }
+    ],
+    "entry_count": 1
+  },
+  "related_ships": [
+    {
+      "name": "KERTU",
+      "summary": {
+        "name": "KERTU",
+        "special_entry": false,
+        "sources": [
+          "seelotsen"
+        ],
+        "route": "HOS → RÜB",
+        "routes": [
+          "HOS → RÜB",
+          "KLT → HOS"
+        ],
+        "assigned_pilots": [
+          "Lehwald, Christian",
+          "Lüttge, Sebastian"
+        ],
+        "aufgaben": [
+          "Kanalbört",
+          "Seebört"
+        ]
+      }
+    }
+  ],
   "person_files": {
     "status": {
       "file": "lehwald_christian_status.json",
@@ -94,54 +124,54 @@
   },
   "snapshots": {
     "pos": {
-      "pos": 1
+      "pos": null
     },
     "short": {
       "key": "lehwald_christian",
-      "status": "boert",
-      "short": "Gesamtbört – Pos 1\n20:30\n20:30\nPos/2: 20:59\nPos/3: 20:49\nAkt.: 20:29"
+      "status": "seelotse",
+      "short": "Seelotse – Kanalbört\nKERTU\nRoute: HOS → RÜB\nAkt.: 20:31"
     },
     "long": {
       "key": "lehwald_christian",
-      "status": "boert",
-      "long": "Gesamtbört\n----------\nKiel 49 / RÜB 3\n\n▶1  | Lehwald | 20:30 / 20:30 / 20:49~20:59\n      | –   | –                    \n 61 | Groen   | Di16:49~Mi02:59\n      | ↑$$ | 𝐦𝐚𝐱 𝐭𝐤𝐭.𝟕𝟎           \n 63 | Woitanowski | Di17:29~Mi03:59\n      | ↑$$ | –                    \n 77 | Kubica  | Di22:09~Mi10:59\n      | ↑$$ | –                    \n\nAkt.: 20:29"
+      "status": "seelotse",
+      "long": "Seelotse\n--------\n   Nr | ETA   | Name        | Fahrzeug         | Route      | Schl | ΔR-S | ΔS-R\n------------------------------------------------------------------------------------------\n\nKanalbört\n---------\n▶1  | –     | Lehwald    | KERTU        | HOS → RÜB  | –    | –    | –   \n 2  | –     | Buch       | ANNABA       | HOS → RÜB  | –    | –    | –   \n 4  | 22:46 | Böttcher   | KASSANDRA    | HOS → RÜB  | 03:13 | 04:27 | 03:30\n 5  | 22:42 | Börnsen    | SOUNDMAR     | HOS → RÜB  | 03:09 | 04:27 | 03:36\n 7  | 22:38 | Rohn       | ANNALISA P   | HOS → RÜB  | 03:05 | 04:27 | 03:38\n 11 | –     | Krügel     | RÜB          | –          | –    | –    | –   \n 12 | 19:45 | Jenckel    | EBERHART ESS | RÜB → UTG  | 23:25 | 03:40 | 04:21\n 13 | –     | Dalecki    | FGS RHEIN-A5 | RÜB → HOS  | –    | –    | –   \n 17 | 17:02 | Krämer     | BUGOE        | RÜB → HOS  | 21:12 | 04:10 | 04:14\n\nMeldungen Rüsterbergen\n----------------------\nETA  | Schiff            | Q | Route\n----------------------------------------------\n23:39 | ROSEBURG          | 5 | RÜB → HOS\n23:42 | FAIRPLAY 35       | 5 | RÜB → HOS\n23:47 | ELBWAVE           | 1 | RÜB → HOS\n\nAkt.: 20:31"
     }
   },
   "source_meta": {
     "gesamtboert": {
       "file": "Gesamtboert.json",
       "exists": true,
-      "generated_at": "2026-05-11 20:28",
+      "generated_at": "2026-05-11 20:30",
       "count": 80
     },
     "seelotsen": {
       "file": "Seelotsen.json",
       "exists": true,
-      "generated_at": "2026-05-11 20:28",
-      "count": 16
+      "generated_at": "2026-05-11 20:30",
+      "count": 17
     },
     "meldungen_kiel": {
       "file": "Meldungen_Kiel.json",
       "exists": true,
-      "generated_at": "2026-05-11 20:28",
-      "count": 49
+      "generated_at": "2026-05-11 20:30",
+      "count": 48
     },
     "meldungen_ruesterbergen": {
       "file": "Meldungen_Ruesterbergen.json",
       "exists": true,
-      "generated_at": "2026-05-11 20:28",
+      "generated_at": "2026-05-11 20:30",
       "count": 3
     },
     "q_gruppen": {
       "file": "q_gruppen_lotsen.json",
       "exists": true,
-      "generated_at": "2026-05-11T20:29:18",
+      "generated_at": "2026-05-11T20:31:12",
       "count": 154
     },
     "schiffe_merged": {
       "file": "schiffe_merged.json",
       "exists": true,
-      "generated_at": "2026-05-11T20:29:19",
+      "generated_at": "2026-05-11T20:31:12",
       "count": 53
     },
     "workstart_history_json": {
