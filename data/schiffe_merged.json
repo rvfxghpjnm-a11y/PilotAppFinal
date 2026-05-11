@@ -1,48 +1,48 @@
 {
-  "generated_at": "2026-05-11T14:01:19",
+  "generated_at": "2026-05-11T14:03:12",
   "source_meta": {
     "zulauf_kiel_innen": {
       "file": "Zulauf_kiel_innen.json",
-      "generated_at": "2026-05-11 14:00",
+      "generated_at": "2026-05-11 14:02",
       "queue": "kiel_innen",
       "title": "Zulauf vom Kanal in Kiel",
       "count": 17
     },
     "zulauf_kiel_aussen": {
       "file": "Zulauf_kiel_aussen.json",
-      "generated_at": "2026-05-11 14:00",
+      "generated_at": "2026-05-11 14:02",
       "queue": "kiel_aussen",
       "title": "Zulauf von See in Kiel",
       "count": 0
     },
     "zulauf_brb_innen": {
       "file": "Zulauf_brb_innen.json",
-      "generated_at": "2026-05-11 14:00",
+      "generated_at": "2026-05-11 14:02",
       "queue": "brb_innen",
       "title": "Zulauf vom Kanal in Brunsbüttel",
       "count": 12
     },
     "zulauf_brb_aussen": {
       "file": "Zulauf_brb_aussen.json",
-      "generated_at": "2026-05-11 14:00",
+      "generated_at": "2026-05-11 14:02",
       "queue": "brb_aussen",
       "title": "Zulauf von See in Brunsbüttel",
       "count": 19
     },
     "meldungen_kiel": {
       "file": "Meldungen_Kiel.json",
-      "generated_at": "2026-05-11 14:00",
+      "generated_at": "2026-05-11 14:02",
       "count": 58
     },
     "meldungen_ruesterbergen": {
       "file": "Meldungen_Ruesterbergen.json",
-      "generated_at": "2026-05-11 14:00",
-      "count": 4
+      "generated_at": "2026-05-11 14:02",
+      "count": 3
     },
     "seelotsen": {
       "file": "Seelotsen.json",
-      "generated_at": "2026-05-11 14:00",
-      "count": 19
+      "generated_at": "2026-05-11 14:02",
+      "count": 18
     }
   },
   "count": 81,
@@ -570,7 +570,7 @@
       "name": "ARAGONITH",
       "sources": [
         "meldungen_kiel",
-        "meldungen_ruesterbergen",
+        "seelotsen",
         "zulauf_kiel_innen"
       ],
       "special_entry": false,
@@ -579,7 +579,7 @@
         "special_entry": false,
         "sources": [
           "meldungen_kiel",
-          "meldungen_ruesterbergen",
+          "seelotsen",
           "zulauf_kiel_innen"
         ],
         "route": "HOS → KLT",
@@ -636,6 +636,12 @@
         "dangerous_vessel": "ja",
         "port_of_departure": "BE ANR",
         "port_of_destination": "PL SZZ",
+        "assigned_pilots": [
+          "Kubica, Gregor"
+        ],
+        "aufgaben": [
+          "Kanalbört"
+        ],
         "lotsen_anzahl_kiel": 1,
         "confirmed_kiel": false,
         "passage_block": {
@@ -685,13 +691,17 @@
           "pilot_status": "U",
           "num_of_pilots": "1",
           "num_of_pilots_kf": "1",
+          "pilot_change_off_time": "2026-05-11 14:01",
           "pilot_elbe_see": "true",
           "pilot_nok": "true",
           "pilot_ostsee": "false",
           "pilot_uebersee": "false",
           "pilot_boesch": "false",
           "pilot_1_id": "399722251136000081",
-          "pilot_1_name": "Kubica, Gregor"
+          "pilot_1_name": "Kubica, Gregor",
+          "pilot_2_id": "0",
+          "pilot_3_id": "0",
+          "pilot_4_id": "0"
         },
         "steering_block": {
           "canal_steerer": "true",
@@ -885,13 +895,17 @@
             "pilot_status": "U",
             "num_of_pilots": "1",
             "num_of_pilots_kf": "1",
+            "pilot_change_off_time": "2026-05-11 14:01",
             "pilot_elbe_see": "true",
             "pilot_nok": "true",
             "pilot_ostsee": "false",
             "pilot_uebersee": "false",
             "pilot_boesch": "false",
             "pilot_1_id": "399722251136000081",
-            "pilot_1_name": "Kubica, Gregor"
+            "pilot_1_name": "Kubica, Gregor",
+            "pilot_2_id": "0",
+            "pilot_3_id": "0",
+            "pilot_4_id": "0"
           },
           "steering": {
             "canal_steerer": "true",
@@ -960,21 +974,20 @@
           "route": "HOS → KLT"
         }
       ],
-      "meldungen_ruesterbergen": [
+      "meldungen_ruesterbergen": [],
+      "seelotsen": [
         {
-          "source": "meldungen_ruesterbergen",
-          "nr": "1",
-          "time": "2026-05-11 14:23",
-          "draft": "5.5",
-          "q_gruppe": "4",
-          "lotsen_anzahl": 1,
-          "confirmed": false,
+          "nr": 12,
+          "time": "2026-05-11 08:20",
+          "pilot_name": "Kubica, Gregor",
+          "nachname": "Kubica",
+          "vorname": "Gregor",
+          "aufgabe": "Kanalbört",
           "from": "RÜB",
           "to": "HOS",
           "route": "RÜB → HOS"
         }
-      ],
-      "seelotsen": []
+      ]
     },
     {
       "ship_key": "ATALANTA",
@@ -989,8 +1002,8 @@
         "sources": [
           "zulauf_brb_aussen"
         ],
-        "eta_schleuse": "2026-05-11 18:26",
-        "eta_text": "18:26",
+        "eta_schleuse": "2026-05-11 17:50",
+        "eta_text": "17:50",
         "first_seen": "2026-05-11 13:20",
         "queue_key": "brb_aussen",
         "queue_title": "Zulauf von See in Brunsbüttel",
@@ -1046,7 +1059,7 @@
       "zulauf": [
         {
           "name": "ATALANTA",
-          "eta_schleuse": "2026-05-11 18:26",
+          "eta_schleuse": "2026-05-11 17:50",
           "first_seen": "2026-05-11 13:20",
           "ship_name": "ATALANTA",
           "vg": "1",
@@ -1057,7 +1070,7 @@
           "queue_title": "Zulauf von See in Brunsbüttel",
           "area": "brb",
           "zulauf_richtung": "von_see",
-          "eta_text": "18:26",
+          "eta_text": "17:50",
           "preferred_mooring_side": "Stb",
           "vessel_type": "Andere",
           "travel_status": "APPROACHING_NOK_BRB",
@@ -1130,7 +1143,7 @@
         ],
         "lotsen_anzahl_kiel": 1,
         "confirmed_kiel": true,
-        "remark_kiel": "neu"
+        "remark_kiel": "evtl. ttg"
       },
       "zulauf": [],
       "meldungen_kiel": [
@@ -1145,7 +1158,7 @@
           "from": "OUH",
           "to": "KLT",
           "route": "OUH → KLT",
-          "remark": "neu"
+          "remark": "evtl. ttg"
         }
       ],
       "meldungen_ruesterbergen": [],
@@ -2511,7 +2524,7 @@
       "meldungen_ruesterbergen": [
         {
           "source": "meldungen_ruesterbergen",
-          "nr": "3",
+          "nr": "2",
           "time": "2026-05-11 15:43",
           "draft": "6.8",
           "q_gruppe": "4",
@@ -2844,7 +2857,7 @@
       "meldungen_ruesterbergen": [
         {
           "source": "meldungen_ruesterbergen",
-          "nr": "4",
+          "nr": "3",
           "time": "2026-05-11 17:00",
           "draft": "3.7",
           "q_gruppe": "4",
@@ -2870,8 +2883,8 @@
         "sources": [
           "zulauf_brb_aussen"
         ],
-        "eta_schleuse": "2026-05-11 17:23",
-        "eta_text": "17:23",
+        "eta_schleuse": "2026-05-11 17:36",
+        "eta_text": "17:36",
         "first_seen": "2026-05-11 13:16",
         "queue_key": "brb_aussen",
         "queue_title": "Zulauf von See in Brunsbüttel",
@@ -2930,7 +2943,7 @@
       "zulauf": [
         {
           "name": "BV2 VEGESACK",
-          "eta_schleuse": "2026-05-11 17:23",
+          "eta_schleuse": "2026-05-11 17:36",
           "first_seen": "2026-05-11 13:16",
           "ship_name": "BV2 VEGESACK",
           "vg": "1",
@@ -2941,7 +2954,7 @@
           "queue_title": "Zulauf von See in Brunsbüttel",
           "area": "brb",
           "zulauf_richtung": "von_see",
-          "eta_text": "17:23",
+          "eta_text": "17:36",
           "preferred_mooring_side": "Beide",
           "vessel_type": "Andere",
           "travel_status": "APPROACHING_NOK_BRB",
@@ -4045,8 +4058,8 @@
         "sources": [
           "zulauf_brb_aussen"
         ],
-        "eta_schleuse": "2026-05-11 17:08",
-        "eta_text": "17:08",
+        "eta_schleuse": "2026-05-11 16:53",
+        "eta_text": "16:53",
         "first_seen": "2026-05-11 13:34",
         "queue_key": "brb_aussen",
         "queue_title": "Zulauf von See in Brunsbüttel",
@@ -4112,7 +4125,7 @@
       "zulauf": [
         {
           "name": "DP WORLD LIMASSOL",
-          "eta_schleuse": "2026-05-11 17:08",
+          "eta_schleuse": "2026-05-11 16:53",
           "first_seen": "2026-05-11 13:34",
           "ship_name": "DP WORLD LIMASSOL",
           "vg": "5",
@@ -4123,7 +4136,7 @@
           "queue_title": "Zulauf von See in Brunsbüttel",
           "area": "brb",
           "zulauf_richtung": "von_see",
-          "eta_text": "17:08",
+          "eta_text": "16:53",
           "preferred_mooring_side": "Bb",
           "vessel_type": "Voll-Container",
           "travel_status": "APPROACHING_NOK_BRB",
@@ -4203,7 +4216,7 @@
         ],
         "lotsen_anzahl_kiel": 1,
         "confirmed_kiel": false,
-        "remark_kiel": "Parat"
+        "remark_kiel": "Parat, ttg"
       },
       "zulauf": [],
       "meldungen_kiel": [
@@ -4218,13 +4231,13 @@
           "from": "HOS",
           "to": "KLT",
           "route": "HOS → KLT",
-          "remark": "Parat"
+          "remark": "Parat, ttg"
         }
       ],
       "meldungen_ruesterbergen": [],
       "seelotsen": [
         {
-          "nr": 19,
+          "nr": 18,
           "time": "2026-05-11 05:03",
           "pilot_name": "Malik, Christoph",
           "nachname": "Malik",
@@ -4983,10 +4996,10 @@
           "zulauf_brb_innen"
         ],
         "eta_rueb": "2026-05-11 10:00",
-        "eta_schleuse": "2026-05-11 14:47",
-        "eta_text": "14:47",
+        "eta_schleuse": "2026-05-11 14:46",
+        "eta_text": "14:46",
         "first_seen": "2026-05-11 06:28",
-        "delta_rueb_schleuse": "04:47",
+        "delta_rueb_schleuse": "04:46",
         "delta_start_rueb": "03:32",
         "queue_key": "brb_innen",
         "queue_title": "Zulauf vom Kanal in Brunsbüttel",
@@ -5193,10 +5206,10 @@
       "zulauf": [
         {
           "name": "ECO PAMPERO",
-          "eta_schleuse": "2026-05-11 14:47",
+          "eta_schleuse": "2026-05-11 14:46",
           "eta_rueb": "2026-05-11 10:00",
           "first_seen": "2026-05-11 06:28",
-          "delta_rueb_schleuse": "04:47",
+          "delta_rueb_schleuse": "04:46",
           "delta_start_rueb": "03:32",
           "ship_name": "ECO PAMPERO",
           "vg": "5",
@@ -5210,7 +5223,7 @@
           "pilot_required": "true",
           "pilot_foerde": "true",
           "pilot_order": "KS-NOK-ESEE-KF",
-          "eta_text": "14:47",
+          "eta_text": "14:46",
           "mooring_place": "Neue Nord Seitenmauer",
           "destination": "Brunsbüttel",
           "makler": "SUB",
@@ -5424,7 +5437,7 @@
       "meldungen_kiel": [
         {
           "source": "meldungen_kiel",
-          "nr": "27",
+          "nr": "28",
           "time": "2026-05-11 20:00",
           "draft": "6.0",
           "q_gruppe": "4",
@@ -5916,8 +5929,8 @@
         "sources": [
           "zulauf_brb_aussen"
         ],
-        "eta_schleuse": "2026-05-11 14:59",
-        "eta_text": "14:59",
+        "eta_schleuse": "2026-05-11 15:01",
+        "eta_text": "15:01",
         "first_seen": "2026-05-11 12:50",
         "queue_key": "brb_aussen",
         "queue_title": "Zulauf von See in Brunsbüttel",
@@ -5984,7 +5997,7 @@
       "zulauf": [
         {
           "name": "ELBWAVE",
-          "eta_schleuse": "2026-05-11 14:59",
+          "eta_schleuse": "2026-05-11 15:01",
           "first_seen": "2026-05-11 12:50",
           "ship_name": "ELBWAVE",
           "vg": "5",
@@ -5995,7 +6008,7 @@
           "queue_title": "Zulauf von See in Brunsbüttel",
           "area": "brb",
           "zulauf_richtung": "von_see",
-          "eta_text": "14:59",
+          "eta_text": "15:01",
           "preferred_mooring_side": "Stb",
           "vessel_type": "Voll-Container",
           "travel_status": "APPROACHING_NOK_BRB",
@@ -6337,8 +6350,8 @@
         "sources": [
           "zulauf_brb_aussen"
         ],
-        "eta_schleuse": "2026-05-11 15:34",
-        "eta_text": "15:34",
+        "eta_schleuse": "2026-05-11 15:38",
+        "eta_text": "15:38",
         "first_seen": "2026-05-11 12:52",
         "queue_key": "brb_aussen",
         "queue_title": "Zulauf von See in Brunsbüttel",
@@ -6459,7 +6472,7 @@
       "zulauf": [
         {
           "name": "FAIRPLAY 35",
-          "eta_schleuse": "2026-05-11 15:34",
+          "eta_schleuse": "2026-05-11 15:38",
           "first_seen": "2026-05-11 12:52",
           "ship_name": "FAIRPLAY 35",
           "vg": "4",
@@ -6473,7 +6486,7 @@
           "pilot_required": "true",
           "pilot_foerde": "true",
           "pilot_order": "KS-NOK-KF",
-          "eta_text": "15:34",
+          "eta_text": "15:38",
           "destination": "Kiel",
           "makler": "SUB",
           "preferred_mooring_side": "Beide",
@@ -6882,8 +6895,8 @@
         "sources": [
           "zulauf_brb_aussen"
         ],
-        "eta_schleuse": "2026-05-11 14:24",
-        "eta_text": "14:24",
+        "eta_schleuse": "2026-05-11 14:31",
+        "eta_text": "14:31",
         "first_seen": "2026-05-11 11:56",
         "queue_key": "brb_aussen",
         "queue_title": "Zulauf von See in Brunsbüttel",
@@ -7009,7 +7022,7 @@
       "zulauf": [
         {
           "name": "FGS RHEIN - A 513",
-          "eta_schleuse": "2026-05-11 14:24",
+          "eta_schleuse": "2026-05-11 14:31",
           "first_seen": "2026-05-11 11:56",
           "ship_name": "FGS RHEIN - A 513",
           "vg": "3",
@@ -7021,7 +7034,7 @@
           "area": "brb",
           "zulauf_richtung": "von_see",
           "pilot_foerde": "false",
-          "eta_text": "14:24",
+          "eta_text": "14:31",
           "mooring_place": "Neue Nord Mittelmauer",
           "destination": "Kiel",
           "preferred_mooring_side": "Bb",
@@ -7938,8 +7951,8 @@
         "sources": [
           "zulauf_brb_aussen"
         ],
-        "eta_schleuse": "2026-05-11 17:07",
-        "eta_text": "17:07",
+        "eta_schleuse": "2026-05-11 17:32",
+        "eta_text": "17:32",
         "first_seen": "2026-05-11 13:16",
         "queue_key": "brb_aussen",
         "queue_title": "Zulauf von See in Brunsbüttel",
@@ -8005,7 +8018,7 @@
       "zulauf": [
         {
           "name": "HENDRIKA BARTELDS",
-          "eta_schleuse": "2026-05-11 17:07",
+          "eta_schleuse": "2026-05-11 17:32",
           "first_seen": "2026-05-11 13:16",
           "ship_name": "HENDRIKA BARTELDS",
           "vg": "1",
@@ -8016,7 +8029,7 @@
           "queue_title": "Zulauf von See in Brunsbüttel",
           "area": "brb",
           "zulauf_richtung": "von_see",
-          "eta_text": "17:07",
+          "eta_text": "17:32",
           "preferred_mooring_side": "Bb",
           "vessel_type": "Andere",
           "travel_status": "APPROACHING_NOK_BRB",
@@ -9456,7 +9469,7 @@
       "meldungen_kiel": [
         {
           "source": "meldungen_kiel",
-          "nr": "36",
+          "nr": "37",
           "time": "2026-05-11 23:00",
           "draft": "5.2",
           "q_gruppe": "5",
@@ -9509,7 +9522,7 @@
       "meldungen_kiel": [
         {
           "source": "meldungen_kiel",
-          "nr": "34",
+          "nr": "33",
           "time": "2026-05-11 22:00",
           "draft": "4.7",
           "q_gruppe": "5",
@@ -9645,27 +9658,18 @@
       "ship_key": "LEERFAHRT",
       "name": "Leerfahrt",
       "sources": [
-        "meldungen_kiel",
-        "seelotsen"
+        "meldungen_kiel"
       ],
       "special_entry": true,
       "summary": {
         "name": "Leerfahrt",
         "special_entry": true,
         "sources": [
-          "meldungen_kiel",
-          "seelotsen"
+          "meldungen_kiel"
         ],
         "route": "HOS → RÜB",
         "routes": [
-          "HOS → RÜB",
-          "RÜB → HOS"
-        ],
-        "assigned_pilots": [
-          "Skawianczyk, Artur"
-        ],
-        "aufgaben": [
-          "Kanalbört"
+          "HOS → RÜB"
         ],
         "lotsen_anzahl_kiel": 1,
         "confirmed_kiel": false
@@ -9684,19 +9688,7 @@
         }
       ],
       "meldungen_ruesterbergen": [],
-      "seelotsen": [
-        {
-          "nr": 18,
-          "time": "2026-05-11 05:21",
-          "pilot_name": "Skawianczyk, Artur",
-          "nachname": "Skawianczyk",
-          "vorname": "Artur",
-          "aufgabe": "Kanalbört",
-          "from": "RÜB",
-          "to": "HOS",
-          "route": "RÜB → HOS"
-        }
-      ]
+      "seelotsen": []
     },
     {
       "ship_key": "LOTH LORIEN",
@@ -9711,8 +9703,8 @@
         "sources": [
           "zulauf_brb_aussen"
         ],
-        "eta_schleuse": "2026-05-11 17:10",
-        "eta_text": "17:10",
+        "eta_schleuse": "2026-05-11 17:00",
+        "eta_text": "17:00",
         "first_seen": "2026-05-11 13:28",
         "queue_key": "brb_aussen",
         "queue_title": "Zulauf von See in Brunsbüttel",
@@ -9776,7 +9768,7 @@
       "zulauf": [
         {
           "name": "LOTH LORIEN",
-          "eta_schleuse": "2026-05-11 17:10",
+          "eta_schleuse": "2026-05-11 17:00",
           "first_seen": "2026-05-11 13:28",
           "ship_name": "LOTH LORIEN",
           "vg": "1",
@@ -9787,7 +9779,7 @@
           "queue_title": "Zulauf von See in Brunsbüttel",
           "area": "brb",
           "zulauf_richtung": "von_see",
-          "eta_text": "17:10",
+          "eta_text": "17:00",
           "preferred_mooring_side": "Bb",
           "vessel_type": "Andere",
           "travel_status": "APPROACHING_NOK_BRB",
@@ -10270,7 +10262,7 @@
       "meldungen_kiel": [
         {
           "source": "meldungen_kiel",
-          "nr": "28",
+          "nr": "27",
           "time": "2026-05-11 20:00",
           "draft": "6.1",
           "q_gruppe": "4",
@@ -11259,8 +11251,7 @@
           "seelotsen"
         ],
         "assigned_pilots": [
-          "Marth, Jürgen",
-          "Kubica, Gregor"
+          "Marth, Jürgen"
         ],
         "aufgaben": [
           "Kanalbört"
@@ -11276,14 +11267,6 @@
           "pilot_name": "Marth, Jürgen",
           "nachname": "Marth",
           "vorname": "Jürgen",
-          "aufgabe": "Kanalbört"
-        },
-        {
-          "nr": 12,
-          "time": "2026-05-11 08:20",
-          "pilot_name": "Kubica, Gregor",
-          "nachname": "Kubica",
-          "vorname": "Gregor",
           "aufgabe": "Kanalbört"
         }
       ]
@@ -11301,8 +11284,8 @@
         "sources": [
           "zulauf_brb_aussen"
         ],
-        "eta_schleuse": "2026-05-11 18:19",
-        "eta_text": "18:19",
+        "eta_schleuse": "2026-05-11 18:03",
+        "eta_text": "18:03",
         "first_seen": "2026-05-11 13:58",
         "queue_key": "brb_aussen",
         "queue_title": "Zulauf von See in Brunsbüttel",
@@ -11349,7 +11332,7 @@
       "zulauf": [
         {
           "name": "SANTANA",
-          "eta_schleuse": "2026-05-11 18:19",
+          "eta_schleuse": "2026-05-11 18:03",
           "first_seen": "2026-05-11 13:58",
           "ship_name": "SANTANA",
           "vg": "1",
@@ -11360,7 +11343,7 @@
           "queue_title": "Zulauf von See in Brunsbüttel",
           "area": "brb",
           "zulauf_richtung": "von_see",
-          "eta_text": "18:19",
+          "eta_text": "18:03",
           "vessel_type": "Sportboote",
           "travel_status": "APPROACHING_NOK_BRB",
           "pilot_status": "O",
@@ -11895,7 +11878,7 @@
       "meldungen_kiel": [
         {
           "source": "meldungen_kiel",
-          "nr": "37",
+          "nr": "36",
           "time": "2026-05-11 23:00",
           "draft": "0.1",
           "q_gruppe": "4",
@@ -11934,8 +11917,8 @@
         "sources": [
           "zulauf_brb_aussen"
         ],
-        "eta_schleuse": "2026-05-11 16:47",
-        "eta_text": "16:47",
+        "eta_schleuse": "2026-05-11 16:58",
+        "eta_text": "16:58",
         "first_seen": "2026-05-11 12:50",
         "queue_key": "brb_aussen",
         "queue_title": "Zulauf von See in Brunsbüttel",
@@ -12000,7 +11983,7 @@
       "zulauf": [
         {
           "name": "SWAENSBORGH",
-          "eta_schleuse": "2026-05-11 16:47",
+          "eta_schleuse": "2026-05-11 16:58",
           "first_seen": "2026-05-11 12:50",
           "ship_name": "SWAENSBORGH",
           "vg": "1",
@@ -12011,7 +11994,7 @@
           "queue_title": "Zulauf von See in Brunsbüttel",
           "area": "brb",
           "zulauf_richtung": "von_see",
-          "eta_text": "16:47",
+          "eta_text": "16:58",
           "preferred_mooring_side": "Bb",
           "vessel_type": "Andere",
           "travel_status": "APPROACHING_NOK_BRB",
@@ -12242,7 +12225,8 @@
         "weichenzeiten": {
           "west": {
             "kudensee": {
-              "in": "2026-05-11 13:56"
+              "in": "2026-05-11 13:56",
+              "out": "2026-05-11 14:01"
             },
             "duekerswisch": {
               "in": "2026-05-11 12:56",
@@ -12317,7 +12301,8 @@
           "weichenzeiten": {
             "west": {
               "kudensee": {
-                "in": "2026-05-11 13:56"
+                "in": "2026-05-11 13:56",
+                "out": "2026-05-11 14:01"
               },
               "duekerswisch": {
                 "in": "2026-05-11 12:56",
@@ -12528,7 +12513,7 @@
       "meldungen_kiel": [
         {
           "source": "meldungen_kiel",
-          "nr": "33",
+          "nr": "34",
           "time": "2026-05-11 22:00",
           "draft": "6.3",
           "q_gruppe": "3",
@@ -12721,6 +12706,11 @@
           "invoice_nationality": "DEU"
         },
         "weichenzeiten": {
+          "west": {
+            "breiholz": {
+              "in": "2026-05-11 14:01"
+            }
+          },
           "ost": {
             "schuelp": {
               "in": "2026-05-11 13:18",
@@ -12774,6 +12764,11 @@
           "makler": "UCA",
           "preferred_mooring_side": "Bb",
           "weichenzeiten": {
+            "west": {
+              "breiholz": {
+                "in": "2026-05-11 14:01"
+              }
+            },
             "ost": {
               "schuelp": {
                 "in": "2026-05-11 13:18",
@@ -14170,10 +14165,10 @@
           "zulauf_brb_innen"
         ],
         "eta_rueb": "2026-05-11 13:42",
-        "eta_schleuse": "2026-05-11 18:09",
-        "eta_text": "18:09",
+        "eta_schleuse": "2026-05-11 18:08",
+        "eta_text": "18:08",
         "first_seen": "2026-05-11 09:30",
-        "delta_rueb_schleuse": "04:27",
+        "delta_rueb_schleuse": "04:26",
         "delta_start_rueb": "04:12",
         "queue_key": "brb_innen",
         "queue_title": "Zulauf vom Kanal in Brunsbüttel",
@@ -14355,10 +14350,10 @@
       "zulauf": [
         {
           "name": "X-PRESS TAGUS",
-          "eta_schleuse": "2026-05-11 18:09",
+          "eta_schleuse": "2026-05-11 18:08",
           "eta_rueb": "2026-05-11 13:42",
           "first_seen": "2026-05-11 09:30",
-          "delta_rueb_schleuse": "04:27",
+          "delta_rueb_schleuse": "04:26",
           "delta_start_rueb": "04:12",
           "ship_name": "X-PRESS TAGUS",
           "vg": "4",
@@ -14372,7 +14367,7 @@
           "pilot_required": "true",
           "pilot_foerde": "true",
           "pilot_order": "KS-NOK-ESEE-KF",
-          "eta_text": "18:09",
+          "eta_text": "18:08",
           "destination": "Brunsbüttel",
           "makler": "SUB",
           "preferred_mooring_side": "Bb",
@@ -14913,7 +14908,7 @@
       "meldungen_ruesterbergen": [
         {
           "source": "meldungen_ruesterbergen",
-          "nr": "2",
+          "nr": "1",
           "time": "2026-05-11 15:40",
           "draft": "6.6",
           "q_gruppe": "4",
@@ -14939,8 +14934,8 @@
         "sources": [
           "zulauf_brb_aussen"
         ],
-        "eta_schleuse": "2026-05-11 16:32",
-        "eta_text": "16:32",
+        "eta_schleuse": "2026-05-11 16:42",
+        "eta_text": "16:42",
         "first_seen": "2026-05-11 12:04",
         "queue_key": "brb_aussen",
         "queue_title": "Zulauf von See in Brunsbüttel",
@@ -14996,7 +14991,7 @@
       "zulauf": [
         {
           "name": "ZEPHYR",
-          "eta_schleuse": "2026-05-11 16:32",
+          "eta_schleuse": "2026-05-11 16:42",
           "first_seen": "2026-05-11 12:04",
           "ship_name": "ZEPHYR",
           "vg": "1",
@@ -15007,7 +15002,7 @@
           "queue_title": "Zulauf von See in Brunsbüttel",
           "area": "brb",
           "zulauf_richtung": "von_see",
-          "eta_text": "16:32",
+          "eta_text": "16:42",
           "preferred_mooring_side": "Bb",
           "vessel_type": "Andere",
           "travel_status": "APPROACHING_NOK_BRB",
