@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-11T07:41:27",
+  "generated_at": "2026-05-11T07:43:22",
   "target": {
     "slug": "crotogino_philipp",
     "display_name": "crotogino, philipp",
@@ -8,27 +8,32 @@
     "watch_user_key": "unng2ks8z2a8jgb9uftdiun1n88cfz"
   },
   "state": {
-    "kind": "gesamtboert",
-    "source": "Gesamtboert.json",
-    "pos": "1",
-    "takt": "15,0"
+    "kind": "seelotsen",
+    "source": "Seelotsen.json",
+    "aufgabe": "Kanalbört",
+    "fahrzeug": "SCANDINAVIA",
+    "time": "Mon May 11 07:40:00 CEST 2026"
   },
   "action_card": {
     "title": "crotogino, philipp",
-    "subtitle": "Gesamtbört",
-    "state_kind": "gesamtboert",
-    "state_label": "Gesamtbört",
+    "subtitle": "Seelotsen",
+    "state_kind": "seelotsen",
+    "state_label": "Seelotsen",
     "q_gruppe": "0",
-    "pos": "1",
-    "takt": "15,0",
-    "workstart_label": "Start: 2026-05-11 08:00",
+    "aufgabe": "Kanalbört",
+    "fahrzeug": "SCANDINAVIA",
+    "route": "HOS → RÜB",
+    "time_label": "Akt.: 2026-05-11 07:40",
+    "ship_hint": "SCANDINAVIA",
     "badges": [
       "Q 0",
-      "Pos 1"
+      "Kanalbört"
     ],
     "lines": [
-      "Takt: 15,0",
-      "Start: 2026-05-11 08:00"
+      "SCANDINAVIA",
+      "HOS → RÜB",
+      "Akt.: 2026-05-11 07:40",
+      "Schiff: SCANDINAVIA"
     ]
   },
   "q_gruppe": "0",
@@ -48,29 +53,54 @@
     "entry_count": 1154
   },
   "boert": {
-    "entry": {
-      "pos": "1",
-      "takt": "15,0",
-      "nachname": "Crotogino",
-      "vorname": "Philipp",
-      "q_gruppe": "0",
-      "was": "ABR",
-      "zeit": "Mon May 11 07:15:59 CEST 2026",
-      "bemerkung": "",
-      "arrow": null
-    },
-    "entry_count": 1
-  },
-  "seelotsen": {
-    "entries": [],
+    "entry": null,
     "entry_count": 0
   },
-  "related_ships": [],
+  "seelotsen": {
+    "entries": [
+      {
+        "nr": 1,
+        "time": "Mon May 11 07:40:00 CEST 2026",
+        "nachname": "Crotogino",
+        "vorname": "Philipp",
+        "aufgabe": "Kanalbört",
+        "fahrzeug": "SCANDINAVIA",
+        "from": "HOS",
+        "to": "RÜB"
+      }
+    ],
+    "entry_count": 1
+  },
+  "related_ships": [
+    {
+      "name": "SCANDINAVIA",
+      "summary": {
+        "name": "SCANDINAVIA",
+        "special_entry": false,
+        "sources": [
+          "seelotsen"
+        ],
+        "route": "HOS → RÜB",
+        "routes": [
+          "HOS → RÜB",
+          "KLT → HOS"
+        ],
+        "assigned_pilots": [
+          "Crotogino, Philipp",
+          "Bodmann, Christoph"
+        ],
+        "aufgaben": [
+          "Kanalbört",
+          "Seebört"
+        ]
+      }
+    }
+  ],
   "person_files": {
     "status": {
       "file": "crotogino_philipp_status.json",
       "exists": true,
-      "generated_at": "2026-05-11 07:40"
+      "generated_at": "2026-05-11 07:42"
     },
     "pos": {
       "file": "crotogino_philipp_pos.json",
@@ -96,65 +126,64 @@
   },
   "snapshots": {
     "status": {
-      "generated_at": "2026-05-11 07:40",
+      "generated_at": "2026-05-11 07:42",
       "nachname": "crotogino",
       "vorname": "philipp",
       "status": {
         "willkommen": "Willkommen Philip Crotogino",
-        "zuletzt": "11.05.-07:15 ABR",
-        "naechster_urlaub": "15.06.2026",
-        "wachnummer": "1"
+        "zuletzt": "11.05.-07:40 ASS",
+        "naechster_urlaub": "15.06.2026"
       }
     },
     "pos": {
-      "pos": 1
+      "pos": null
     },
     "short": {
       "key": "crotogino_philipp",
-      "status": "boert",
-      "short": "Gesamtbört – Pos 1\n08:00\n08:00\nPos/2: 08:10\nPos/3: 08:00\nAkt.: 07:40"
+      "status": "seelotse",
+      "short": "Seelotse – Kanalbört\nSCANDINAVIA\nRoute: HOS → RÜB\nAkt.: 07:42"
     },
     "long": {
       "key": "crotogino_philipp",
-      "status": "boert",
-      "long": "Gesamtbört\n----------\nKiel 53 / RÜB 6\n\n▶1  | Crotogino | 08:00 / 08:00 / 08:00~08:10\n      | –   | –                    \n 11 | Escher  | Mo12:00 / Mo12:18 / Mo11:20~Mo13:10\n      | ↑$$ | 𝐦𝐚𝐱. 𝐭𝐤𝐭 𝟏𝟓          \n 30 | Krügel  | Mo18:00 / Mo23:00 / Mo17:40~Mo22:40\n      | ↑$$ | –                    \n 31 | Böttcher | Mo19:00 / Di02:00 / Mo18:00~Mo23:10\n      | ↑$$ | 45 min               \n 32 | Jenckel | Mo19:00 / Di03:00 / Mo18:20~Mo23:40\n      | ↑$$ | 𝐦𝐚𝐱. 𝐭𝐤𝐭 𝟏𝟑          \n 37 | Hansen  | Mo20:00 / Mo20:00~Di02:10\n      | ↑$$ | 𝐦𝐚𝐱. 𝐭𝐤𝐭.𝟏𝟓          \n 40 | Wachsmuth | Mo21:30 / Mo21:00~Di03:40\n      | ↑$$ | 𝐦𝐚𝐱. 𝐭𝐤𝐭 𝟐𝟎          \n 41 | Lehwald | Mo22:00 / Mo21:20~Di04:10\n      | ↑$$ | –                    \n\nAkt.: 07:40"
+      "status": "seelotse",
+      "long": "Seelotse\n--------\n   Nr | ETA   | Name        | Fahrzeug         | Route      | Schl | ΔR-S | ΔS-R\n------------------------------------------------------------------------------------------\n\nKanalbört\n---------\n▶1  | –     | Crotogino  | SCANDINAVIA  | HOS → RÜB  | –    | –    | –   \n 2  | –     | Suermann   | BITFLOWER    | HOS → RÜB  | –    | –    | –   \n 3  | –     | Zozulya    | WILSON GRIMS | HOR → RÜB  | –    | –    | –   \n 8  | –     | Krüger     | RÜB          | –          | –    | –    | –   \n 9  | 10:09 | Skawianczy | ECO PAMPERO  | HOS → RÜB  | 15:01 | 04:52 | 03:41\n 10 | 09:58 | Malik      | SYDSTRAUM    | HOS → RÜB  | 14:53 | 04:55 | 03:34\n 16 | –     | Woitanowsk | RÜB          | –          | –    | –    | –   \n 17 | –     | Hoffmann   | RÜB          | –          | –    | –    | –   \n 18 | 06:29 | Zimmermann | ELBSUN       | RÜB → HOS  | 10:55 | 04:26 | 04:51\n 19 | 06:24 | Plaisant   | LUNAMAR      | RÜB → HOS  | 10:47 | 04:23 | 04:42\n 20 | 06:20 | Doering    | MARLA        | RÜB → KRH  | 07:46 | 01:26 | 04:46\n 21 | 06:08 | Stoislow   | ARTEMIS      | RÜB → HOS  | 09:38 | 03:30 | 04:22\n\nMeldungen Rüsterbergen\n----------------------\nETA  | Schiff            | Q | Route\n----------------------------------------------\n09:02 | CMA CGM GOYA      | 2 | RÜB → HOS\n09:05 | GIOCONDA          | 4 | RÜB → HOS\n09:08 | OTELLO            | 4 | RÜB → HOS\n11:30 | VICTRESS          | 5 | RÜB → KRH\n11:20 | EAGLE 2           | 1 | RÜB → HOS\n11:45 | ELBRUNNER         | 2 | RÜB → HOS\n13:30 | HENRIKE           | 5 | RÜB → HOS\n\nAkt.: 07:42"
     }
   },
   "source_meta": {
     "gesamtboert": {
       "file": "Gesamtboert.json",
       "exists": true,
-      "generated_at": "2026-05-11 07:40",
-      "count": 78
+      "generated_at": "2026-05-11 07:42",
+      "count": 77
     },
     "seelotsen": {
       "file": "Seelotsen.json",
       "exists": true,
-      "generated_at": "2026-05-11 07:40",
-      "count": 20
+      "generated_at": "2026-05-11 07:42",
+      "count": 21
     },
     "meldungen_kiel": {
       "file": "Meldungen_Kiel.json",
       "exists": true,
-      "generated_at": "2026-05-11 07:40",
-      "count": 53
+      "generated_at": "2026-05-11 07:42",
+      "count": 52
     },
     "meldungen_ruesterbergen": {
       "file": "Meldungen_Ruesterbergen.json",
       "exists": true,
-      "generated_at": "2026-05-11 07:40",
-      "count": 6
+      "generated_at": "2026-05-11 07:42",
+      "count": 7
     },
     "q_gruppen": {
       "file": "q_gruppen_lotsen.json",
       "exists": true,
-      "generated_at": "2026-05-11T07:41:11",
+      "generated_at": "2026-05-11T07:43:06",
       "count": 152
     },
     "schiffe_merged": {
       "file": "schiffe_merged.json",
       "exists": true,
-      "generated_at": "2026-05-11T07:41:11",
+      "generated_at": "2026-05-11T07:43:06",
       "count": 71
     },
     "workstart_history_json": {
