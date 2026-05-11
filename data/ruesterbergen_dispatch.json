@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-11T21:33:35",
+  "generated_at": "2026-05-11T21:37:07",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 4,
     "pilots_total": 8,
-    "pilots_dispatchable": 6,
-    "pilots_visible_only": 2,
+    "pilots_dispatchable": 7,
+    "pilots_visible_only": 1,
     "assignments": 4,
     "unassigned_ships": 0,
-    "unused_pilots": 2
+    "unused_pilots": 3
   },
   "ships": [
     {
@@ -157,7 +157,7 @@
     {
       "ship_key": "CONGA",
       "ship_name": "CONGA",
-      "eta_rueb": "2026-05-12 02:00",
+      "eta_rueb": "2026-05-12 01:59",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 0,
       "meldung": {
@@ -298,7 +298,7 @@
       "nr": 5,
       "raw_time": "Mon May 11 17:54:00 CEST 2026",
       "current_ship_name": "SOUNDMAR",
-      "current_ship_eta_rueb": "2026-05-11 22:38",
+      "current_ship_eta_rueb": "2026-05-11 22:37",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -342,6 +342,7 @@
       "nr": 2,
       "raw_time": "Mon May 11 20:19:00 CEST 2026",
       "current_ship_name": "ANNABA",
+      "current_ship_eta_rueb": "2026-05-12 02:17",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -365,7 +366,7 @@
       "current_ship_name": "KERTU",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta"
     }
   ],
@@ -473,7 +474,7 @@
       "nr": 5,
       "raw_time": "Mon May 11 17:54:00 CEST 2026",
       "current_ship_name": "SOUNDMAR",
-      "current_ship_eta_rueb": "2026-05-11 22:38",
+      "current_ship_eta_rueb": "2026-05-11 22:37",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -500,24 +501,31 @@
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
-    }
-  ],
-  "visible_but_not_dispatchable_pilots": [
+    },
     {
       "pilot_key": "buch_helge",
+      "vorname": "Helge",
+      "nachname": "Buch",
       "pilot_name": "Buch, Helge",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 2,
       "abteilungszeit": "2026-05-11 20:19",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 2,
       "aufgabe": "Kanalbört",
       "fahrzeug": "ANNABA",
       "from": "HOS",
       "to": "RÜB",
+      "nr": 2,
+      "raw_time": "Mon May 11 20:19:00 CEST 2026",
       "current_ship_name": "ANNABA",
+      "current_ship_eta_rueb": "2026-05-12 02:17",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    },
+      "availability_kind": "merged_eta"
+    }
+  ],
+  "visible_but_not_dispatchable_pilots": [
     {
       "pilot_key": "lehwald_christian",
       "pilot_name": "Lehwald, Christian",
@@ -529,7 +537,7 @@
       "from": "HOS",
       "to": "RÜB",
       "current_ship_name": "KERTU",
-      "current_ship_source": "schiffe_merged.seelotsen",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta",
       "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
     }
@@ -612,7 +620,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "SOUNDMAR",
-          "current_ship_eta_rueb": "2026-05-11 22:38",
+          "current_ship_eta_rueb": "2026-05-11 22:37",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -627,6 +635,17 @@
           "current_ship_name": "KASSANDRA",
           "current_ship_eta_rueb": "2026-05-11 22:41",
           "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Buch, Helge",
+          "pilot_tactical_nr": 2,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "ANNABA",
+          "pilot_current_ship_eta_rueb": "2026-05-12 02:17",
+          "ship_eta_rueb": "2026-05-11 23:34",
           "availability_kind": "merged_eta"
         }
       ],
@@ -727,7 +746,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "SOUNDMAR",
-          "current_ship_eta_rueb": "2026-05-11 22:38",
+          "current_ship_eta_rueb": "2026-05-11 22:37",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -742,6 +761,17 @@
           "current_ship_name": "KASSANDRA",
           "current_ship_eta_rueb": "2026-05-11 22:41",
           "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Buch, Helge",
+          "pilot_tactical_nr": 2,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "ANNABA",
+          "pilot_current_ship_eta_rueb": "2026-05-12 02:17",
+          "ship_eta_rueb": "2026-05-11 23:39",
           "availability_kind": "merged_eta"
         }
       ],
@@ -831,7 +861,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "SOUNDMAR",
-          "current_ship_eta_rueb": "2026-05-11 22:38",
+          "current_ship_eta_rueb": "2026-05-11 22:37",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -846,6 +876,17 @@
           "current_ship_name": "KASSANDRA",
           "current_ship_eta_rueb": "2026-05-11 22:41",
           "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Buch, Helge",
+          "pilot_tactical_nr": 2,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "ANNABA",
+          "pilot_current_ship_eta_rueb": "2026-05-12 02:17",
+          "ship_eta_rueb": "2026-05-11 23:43",
           "availability_kind": "merged_eta"
         }
       ],
@@ -886,14 +927,14 @@
     {
       "ship_key": "CONGA",
       "ship_name": "CONGA",
-      "eta_rueb": "2026-05-12 02:00",
+      "eta_rueb": "2026-05-12 01:59",
       "ship_q": 0,
       "assigned_pilot": "Börnsen, Curt",
       "assigned_pilot_q": 0,
       "assigned_tactical_nr": 5,
       "assigned_abteilungszeit": "2026-05-11 17:54",
       "assigned_current_ship_name": "SOUNDMAR",
-      "assigned_current_ship_eta_rueb": "2026-05-11 22:38",
+      "assigned_current_ship_eta_rueb": "2026-05-11 22:37",
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
@@ -908,7 +949,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "SOUNDMAR",
-          "current_ship_eta_rueb": "2026-05-11 22:38",
+          "current_ship_eta_rueb": "2026-05-11 22:37",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -933,6 +974,15 @@
           "reason": "Quali passt nicht (1 > 0)",
           "pilot_q": 1,
           "ship_q": 0
+        },
+        {
+          "pilot_name": "Buch, Helge",
+          "pilot_tactical_nr": 2,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "ANNABA",
+          "pilot_current_ship_eta_rueb": "2026-05-12 02:17",
+          "ship_eta_rueb": "2026-05-12 01:59",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -1012,6 +1062,28 @@
       "raw_time": "Mon May 11 18:09:00 CEST 2026",
       "current_ship_name": "KASSANDRA",
       "current_ship_eta_rueb": "2026-05-11 22:41",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "buch_helge",
+      "vorname": "Helge",
+      "nachname": "Buch",
+      "pilot_name": "Buch, Helge",
+      "abteilungszeit": "2026-05-11 20:19",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 2,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "ANNABA",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 2,
+      "raw_time": "Mon May 11 20:19:00 CEST 2026",
+      "current_ship_name": "ANNABA",
+      "current_ship_eta_rueb": "2026-05-12 02:17",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
