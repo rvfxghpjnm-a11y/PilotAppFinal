@@ -1,51 +1,51 @@
 {
-  "generated_at": "2026-05-11T17:55:15",
+  "generated_at": "2026-05-11T17:57:11",
   "source_meta": {
     "zulauf_kiel_innen": {
       "file": "Zulauf_kiel_innen.json",
-      "generated_at": "2026-05-11 17:54",
+      "generated_at": "2026-05-11 17:56",
       "queue": "kiel_innen",
       "title": "Zulauf vom Kanal in Kiel",
       "count": 13
     },
     "zulauf_kiel_aussen": {
       "file": "Zulauf_kiel_aussen.json",
-      "generated_at": "2026-05-11 17:54",
+      "generated_at": "2026-05-11 17:56",
       "queue": "kiel_aussen",
       "title": "Zulauf von See in Kiel",
       "count": 0
     },
     "zulauf_brb_innen": {
       "file": "Zulauf_brb_innen.json",
-      "generated_at": "2026-05-11 17:54",
+      "generated_at": "2026-05-11 17:56",
       "queue": "brb_innen",
       "title": "Zulauf vom Kanal in Brunsbüttel",
-      "count": 10
+      "count": 9
     },
     "zulauf_brb_aussen": {
       "file": "Zulauf_brb_aussen.json",
-      "generated_at": "2026-05-11 17:54",
+      "generated_at": "2026-05-11 17:56",
       "queue": "brb_aussen",
       "title": "Zulauf von See in Brunsbüttel",
       "count": 12
     },
     "meldungen_kiel": {
       "file": "Meldungen_Kiel.json",
-      "generated_at": "2026-05-11 17:54",
+      "generated_at": "2026-05-11 17:56",
       "count": 50
     },
     "meldungen_ruesterbergen": {
       "file": "Meldungen_Ruesterbergen.json",
-      "generated_at": "2026-05-11 17:54",
+      "generated_at": "2026-05-11 17:56",
       "count": 4
     },
     "seelotsen": {
       "file": "Seelotsen.json",
-      "generated_at": "2026-05-11 17:54",
+      "generated_at": "2026-05-11 17:56",
       "count": 21
     }
   },
-  "count": 64,
+  "count": 63,
   "entries": [
     {
       "ship_key": "ALANA",
@@ -90,7 +90,7 @@
         "port_of_registry": "Madeira",
         "pilot_required": "true",
         "pilot_foerde": "true",
-        "pilot_order": "KS-BÖ-NOK-KF",
+        "pilot_order": "KS-NOK-ESEE-KF",
         "pilot_status": "U",
         "pilot_1_name": "Maydorn, Malte",
         "num_of_pilots": "1",
@@ -162,15 +162,15 @@
         "pilotage_block": {
           "pilot_required": "true",
           "pilot_foerde": "true",
-          "pilot_order": "KS-BÖ-NOK-KF",
+          "pilot_order": "KS-NOK-ESEE-KF",
           "pilot_status": "U",
           "num_of_pilots": "1",
           "num_of_pilots_kf": "1",
-          "pilot_elbe_see": "false",
+          "pilot_elbe_see": "true",
           "pilot_nok": "true",
           "pilot_ostsee": "false",
           "pilot_uebersee": "false",
-          "pilot_boesch": "true",
+          "pilot_boesch": "false",
           "pilot_1_id": "428749663077000081",
           "pilot_1_name": "Maydorn, Malte"
         },
@@ -264,7 +264,7 @@
           "zulauf_richtung": "vom_kanal",
           "pilot_required": "true",
           "pilot_foerde": "true",
-          "pilot_order": "KS-BÖ-NOK-KF",
+          "pilot_order": "KS-NOK-ESEE-KF",
           "eta_text": "00:51",
           "destination": "Brunsbüttel",
           "makler": "UCA",
@@ -345,15 +345,15 @@
           "pilotage": {
             "pilot_required": "true",
             "pilot_foerde": "true",
-            "pilot_order": "KS-BÖ-NOK-KF",
+            "pilot_order": "KS-NOK-ESEE-KF",
             "pilot_status": "U",
             "num_of_pilots": "1",
             "num_of_pilots_kf": "1",
-            "pilot_elbe_see": "false",
+            "pilot_elbe_see": "true",
             "pilot_nok": "true",
             "pilot_ostsee": "false",
             "pilot_uebersee": "false",
-            "pilot_boesch": "true",
+            "pilot_boesch": "false",
             "pilot_1_id": "428749663077000081",
             "pilot_1_name": "Maydorn, Malte"
           },
@@ -4031,10 +4031,12 @@
           "HOS → KLT",
           "RÜB → HOS"
         ],
-        "eta_rueb": "2026-05-11 23:25",
+        "eta_rueb": "2026-05-11 23:48",
         "eta_schleuse": "2026-05-12 03:22",
         "eta_text": "03:22",
         "first_seen": "2026-05-11 17:50",
+        "delta_rueb_schleuse": "03:34",
+        "delta_start_rueb": "05:58",
         "queue_key": "kiel_innen",
         "queue_title": "Zulauf vom Kanal in Kiel",
         "area": "kiel",
@@ -4185,13 +4187,23 @@
           "payer": "UCA",
           "invoice_city": "Kiel",
           "invoice_nationality": "DEU"
+        },
+        "weichenzeiten": {
+          "west": {
+            "ostermoor": {
+              "in": "2026-05-11 17:52"
+            }
+          }
         }
       },
       "zulauf": [
         {
           "name": "ELBWAVE",
           "eta_schleuse": "2026-05-12 03:22",
+          "eta_rueb": "2026-05-11 23:48",
           "first_seen": "2026-05-11 17:50",
+          "delta_rueb_schleuse": "03:34",
+          "delta_start_rueb": "05:58",
           "ship_name": "ELBWAVE",
           "vg": "5",
           "length_m": "151.720",
@@ -4208,6 +4220,13 @@
           "destination": "Kiel",
           "makler": "UCA",
           "preferred_mooring_side": "Stb",
+          "weichenzeiten": {
+            "west": {
+              "ostermoor": {
+                "in": "2026-05-11 17:52"
+              }
+            }
+          },
           "pilot_1_name": "van den Bongard, Sascha",
           "steerer_1_name": "Jahnke",
           "steerer_2_name": "Feix",
@@ -6656,7 +6675,7 @@
       "meldungen_kiel": [
         {
           "source": "meldungen_kiel",
-          "nr": "16",
+          "nr": "15",
           "time": "2026-05-11 22:00",
           "draft": "6.5",
           "q_gruppe": "5",
@@ -7807,8 +7826,8 @@
         "sources": [
           "zulauf_brb_aussen"
         ],
-        "eta_schleuse": "2026-05-11 18:13",
-        "eta_text": "18:13",
+        "eta_schleuse": "2026-05-11 18:18",
+        "eta_text": "18:18",
         "first_seen": "2026-05-11 14:44",
         "queue_key": "brb_aussen",
         "queue_title": "Zulauf von See in Brunsbüttel",
@@ -7893,7 +7912,7 @@
       "zulauf": [
         {
           "name": "MONIQUE",
-          "eta_schleuse": "2026-05-11 18:13",
+          "eta_schleuse": "2026-05-11 18:18",
           "first_seen": "2026-05-11 14:44",
           "ship_name": "MONIQUE",
           "vg": "1",
@@ -7904,7 +7923,7 @@
           "queue_title": "Zulauf von See in Brunsbüttel",
           "area": "brb",
           "zulauf_richtung": "von_see",
-          "eta_text": "18:13",
+          "eta_text": "18:18",
           "mooring_place": "Alte Süd Mittelmauer",
           "destination": "Kiel",
           "preferred_mooring_side": "Beide",
@@ -8415,7 +8434,7 @@
       "meldungen_kiel": [
         {
           "source": "meldungen_kiel",
-          "nr": "34",
+          "nr": "33",
           "time": "2026-05-12 06:00",
           "draft": "5.0",
           "q_gruppe": "4",
@@ -10073,7 +10092,7 @@
       "meldungen_kiel": [
         {
           "source": "meldungen_kiel",
-          "nr": "15",
+          "nr": "16",
           "time": "2026-05-11 22:00",
           "draft": "6.3",
           "q_gruppe": "3",
@@ -10153,456 +10172,6 @@
       "seelotsen": []
     },
     {
-      "ship_key": "TERSCHELLING",
-      "name": "TERSCHELLING",
-      "sources": [
-        "zulauf_brb_innen"
-      ],
-      "special_entry": false,
-      "summary": {
-        "name": "TERSCHELLING",
-        "special_entry": false,
-        "sources": [
-          "zulauf_brb_innen"
-        ],
-        "eta_rueb": "2026-05-11 13:33",
-        "eta_schleuse": "2026-05-11 17:55",
-        "eta_text": "17:55",
-        "first_seen": "2026-05-11 09:28",
-        "delta_rueb_schleuse": "04:22",
-        "delta_start_rueb": "04:05",
-        "queue_key": "brb_innen",
-        "queue_title": "Zulauf vom Kanal in Brunsbüttel",
-        "area": "brb",
-        "zulauf_richtung": "vom_kanal",
-        "vg": "4",
-        "draft": "6.40",
-        "length_m": "110.77",
-        "beam_m": "14",
-        "vessel_type": "Trocken-Mz-Frachter",
-        "seagoing_or_inland_vessel": "Seeschiff",
-        "shipowner": "Kustvaart Harlingen BV",
-        "callsign": "PHBA",
-        "imo": "9313826",
-        "mmsi": "246507000",
-        "country_name": "Niederlande",
-        "port_of_registry": "Harlingen                             ",
-        "pilot_required": "true",
-        "pilot_foerde": "true",
-        "pilot_order": "KS-NOK-ESEE-KF",
-        "pilot_status": "U",
-        "pilot_1_name": "Hagena, Matthias",
-        "num_of_pilots": "1",
-        "canal_steerer_required": "true",
-        "num_of_steerer": "1",
-        "steerer_1_name": "Klopp",
-        "steerer_2_name": "Rosenkranz",
-        "travel_direction": "Elbe",
-        "travel_status": "SAILING_NOK",
-        "passage_start": "Kiel Schleuse Kiel",
-        "passage_destination": "Brunsbüttel Schleuse Brb.",
-        "destination": "Brunsbüttel",
-        "mooring_area": "Schleuse Brb.",
-        "mooring_place": "Alte Süd Seitenmauer",
-        "mooring_place_short": "Schleuse Brb. / Alte Süd Seitenmauer",
-        "mooring_section": "Brunsbüttel",
-        "preferred_mooring_side": "Bb",
-        "makler": "UCA",
-        "payer": "UCA",
-        "type_of_loading": "Zellulose",
-        "dangerous_vessel": "-",
-        "port_of_departure": "SE HUS",
-        "port_of_destination": "NL VLI",
-        "passage_block": {
-          "start_text": "Kiel Schleuse Kiel",
-          "start_0": "Kiel",
-          "start_1": "Schleuse Kiel",
-          "destination_text": "Brunsbüttel Schleuse Brb.",
-          "destination_0": "Brunsbüttel",
-          "destination_1": "Schleuse Brb.",
-          "passage_start_raw": "DE - / NOK_KIEL",
-          "passage_destination_raw": "DE - / NOK_BRB",
-          "destination_km": "1.700",
-          "passage_cleared": "true",
-          "passage_created": "2026-05-11 06:49",
-          "passage_creator": "UCA",
-          "passage_printed": "2026-05-11 06:50",
-          "entry_time": "09:27"
-        },
-        "mooring_block": {
-          "area": "Schleuse Brb.",
-          "place": "Alte Süd Seitenmauer",
-          "place_full": "Brunsbüttel##Schleuse Brb.##Alte Süd Seitenmauer",
-          "place_short": "Schleuse Brb. / Alte Süd Seitenmauer",
-          "section": "Brunsbüttel",
-          "place_km": "1.700",
-          "number_of_moorings": "2",
-          "preferred_side": "Bb"
-        },
-        "voyage_info_block": {
-          "travel_direction": "Elbe",
-          "travel_status": "SAILING_NOK",
-          "operation": "Trampfahrt",
-          "type_of_loading": "Zellulose",
-          "dangerous_vessel": "-",
-          "port_of_departure": "SE HUS",
-          "port_of_destination": "NL VLI",
-          "pilot_status": "U",
-          "hebenummer": "353641",
-          "smooth_passage": "true",
-          "complete_passage": "true",
-          "free_passage": "false",
-          "via_nok": "true"
-        },
-        "pilotage_block": {
-          "pilot_required": "true",
-          "pilot_foerde": "true",
-          "pilot_order": "KS-NOK-ESEE-KF",
-          "pilot_status": "U",
-          "num_of_pilots": "1",
-          "num_of_pilots_kf": "1",
-          "pilot_change_off_time": "2026-05-11 13:29",
-          "pilot_elbe_see": "true",
-          "pilot_nok": "true",
-          "pilot_ostsee": "false",
-          "pilot_uebersee": "false",
-          "pilot_boesch": "false",
-          "pilot_1_id": "381681098383000081",
-          "pilot_1_name": "Hagena, Matthias"
-        },
-        "steering_block": {
-          "canal_steerer": "true",
-          "steerer_required": "true",
-          "num_of_steerer": "1",
-          "freifahrer_kanalsteurer": "false",
-          "steerer_1_id": "369393303698000081",
-          "steerer_1_name": "Klopp",
-          "steerer_2_id": "437333692044000081",
-          "steerer_2_name": "Rosenkranz",
-          "steerers": [
-            {
-              "slot": "steerer_1",
-              "id": "369393303698000081",
-              "name": "Klopp",
-              "time_done": "2022-03-16 02:15",
-              "time_cached": "2026-04-27 10:33"
-            },
-            {
-              "slot": "steerer_2",
-              "id": "437333692044000081",
-              "name": "Rosenkranz",
-              "time_done": "2024-05-10 11:34",
-              "time_cached": "2026-04-27 10:33"
-            }
-          ]
-        },
-        "locking_block": {
-          "locking_location": "BRB",
-          "locking_wall": "S",
-          "locking_chamber": "AS",
-          "planned_for_locking": "500505895639000461",
-          "planned_freshwater": "false",
-          "mooring_reason": "Schleusung",
-          "lock_name": "Alte",
-          "wall_name": "Seitenmauer",
-          "chamber_wall_code": "ASS"
-        },
-        "vessel_info_block": {
-          "vessel_type": "Trocken-Mz-Frachter",
-          "seagoing_or_inland_vessel": "Seeschiff",
-          "shipowner": "Kustvaart Harlingen BV",
-          "callsign": "PHBA",
-          "imo": "9313826",
-          "mmsi": "246507000",
-          "country_name": "Niederlande",
-          "port_of_registry": "Harlingen                             ",
-          "engine_type": "Dieselmotor",
-          "engine_power": "2640",
-          "construction_draught": "6.090",
-          "number_of_props": "1",
-          "bow_thruster": "true",
-          "stern_thruster": "false",
-          "verified": "1393512833750",
-          "year_of_construction": "2005"
-        },
-        "billing_block": {
-          "makler": "UCA",
-          "payer": "UCA",
-          "invoice_city": "Kiel",
-          "invoice_nationality": "DEU"
-        },
-        "weichenzeiten": {
-          "west": {
-            "ostermoor": {
-              "in": "2026-05-11 17:28"
-            },
-            "kudensee": {
-              "in": "2026-05-11 17:07",
-              "out": "2026-05-11 17:12"
-            },
-            "duekerswisch": {
-              "in": "2026-05-11 16:09",
-              "out": "2026-05-11 16:15"
-            },
-            "fischerhuette": {
-              "in": "2026-05-11 15:08",
-              "out": "2026-05-11 15:13"
-            },
-            "oldenbuettel": {
-              "in": "2026-05-11 14:41",
-              "out": "2026-05-11 14:45"
-            },
-            "breiholz": {
-              "in": "2026-05-11 14:01",
-              "out": "2026-05-11 14:08"
-            }
-          },
-          "ost": {
-            "schuelp": {
-              "in": "2026-05-11 13:18",
-              "out": "2026-05-11 13:26"
-            },
-            "audorf_rade": {
-              "in": "2026-05-11 12:05",
-              "out": "2026-05-11 12:41"
-            },
-            "koenigsfoerde": {
-              "in": "2026-05-11 11:20",
-              "out": "2026-05-11 11:30"
-            },
-            "gross_nordsee": {
-              "in": "2026-05-11 10:51",
-              "out": "2026-05-11 10:58"
-            },
-            "schwartenbek": {
-              "in": "2026-05-11 09:51",
-              "out": "2026-05-11 10:20"
-            },
-            "kiel_binnenhafen": {
-              "in": "2026-05-11 09:27",
-              "out": "2026-05-11 09:40"
-            }
-          }
-        }
-      },
-      "zulauf": [
-        {
-          "name": "TERSCHELLING",
-          "eta_schleuse": "2026-05-11 17:55",
-          "eta_rueb": "2026-05-11 13:33",
-          "first_seen": "2026-05-11 09:28",
-          "delta_rueb_schleuse": "04:22",
-          "delta_start_rueb": "04:05",
-          "ship_name": "TERSCHELLING",
-          "vg": "4",
-          "length_m": "110.77",
-          "beam_m": "14",
-          "draft_m": "6.40",
-          "queue_key": "brb_innen",
-          "queue_title": "Zulauf vom Kanal in Brunsbüttel",
-          "area": "brb",
-          "zulauf_richtung": "vom_kanal",
-          "pilot_required": "true",
-          "pilot_foerde": "true",
-          "pilot_order": "KS-NOK-ESEE-KF",
-          "eta_text": "17:55",
-          "mooring_place": "Alte Süd Seitenmauer",
-          "destination": "Brunsbüttel",
-          "makler": "UCA",
-          "preferred_mooring_side": "Bb",
-          "weichenzeiten": {
-            "west": {
-              "ostermoor": {
-                "in": "2026-05-11 17:28"
-              },
-              "kudensee": {
-                "in": "2026-05-11 17:07",
-                "out": "2026-05-11 17:12"
-              },
-              "duekerswisch": {
-                "in": "2026-05-11 16:09",
-                "out": "2026-05-11 16:15"
-              },
-              "fischerhuette": {
-                "in": "2026-05-11 15:08",
-                "out": "2026-05-11 15:13"
-              },
-              "oldenbuettel": {
-                "in": "2026-05-11 14:41",
-                "out": "2026-05-11 14:45"
-              },
-              "breiholz": {
-                "in": "2026-05-11 14:01",
-                "out": "2026-05-11 14:08"
-              }
-            },
-            "ost": {
-              "schuelp": {
-                "in": "2026-05-11 13:18",
-                "out": "2026-05-11 13:26"
-              },
-              "audorf_rade": {
-                "in": "2026-05-11 12:05",
-                "out": "2026-05-11 12:41"
-              },
-              "koenigsfoerde": {
-                "in": "2026-05-11 11:20",
-                "out": "2026-05-11 11:30"
-              },
-              "gross_nordsee": {
-                "in": "2026-05-11 10:51",
-                "out": "2026-05-11 10:58"
-              },
-              "schwartenbek": {
-                "in": "2026-05-11 09:51",
-                "out": "2026-05-11 10:20"
-              },
-              "kiel_binnenhafen": {
-                "in": "2026-05-11 09:27",
-                "out": "2026-05-11 09:40"
-              }
-            }
-          },
-          "pilot_1_name": "Hagena, Matthias",
-          "steerer_1_name": "Klopp",
-          "steerer_2_name": "Rosenkranz",
-          "vessel_type": "Trocken-Mz-Frachter",
-          "travel_direction": "Elbe",
-          "travel_status": "SAILING_NOK",
-          "mooring_area": "Schleuse Brb.",
-          "mooring_place_short": "Schleuse Brb. / Alte Süd Seitenmauer",
-          "passage_start": "Kiel Schleuse Kiel",
-          "passage_destination": "Brunsbüttel Schleuse Brb.",
-          "canal_steerer_required": "true",
-          "num_of_steerer": "1",
-          "num_of_pilots": "1",
-          "pilot_status": "U",
-          "passage": {
-            "start_text": "Kiel Schleuse Kiel",
-            "start_0": "Kiel",
-            "start_1": "Schleuse Kiel",
-            "destination_text": "Brunsbüttel Schleuse Brb.",
-            "destination_0": "Brunsbüttel",
-            "destination_1": "Schleuse Brb.",
-            "passage_start_raw": "DE - / NOK_KIEL",
-            "passage_destination_raw": "DE - / NOK_BRB",
-            "destination_km": "1.700",
-            "passage_cleared": "true",
-            "passage_created": "2026-05-11 06:49",
-            "passage_creator": "UCA",
-            "passage_printed": "2026-05-11 06:50",
-            "entry_time": "09:27"
-          },
-          "mooring": {
-            "area": "Schleuse Brb.",
-            "place": "Alte Süd Seitenmauer",
-            "place_full": "Brunsbüttel##Schleuse Brb.##Alte Süd Seitenmauer",
-            "place_short": "Schleuse Brb. / Alte Süd Seitenmauer",
-            "section": "Brunsbüttel",
-            "place_km": "1.700",
-            "number_of_moorings": "2",
-            "preferred_side": "Bb"
-          },
-          "voyage_info": {
-            "travel_direction": "Elbe",
-            "travel_status": "SAILING_NOK",
-            "operation": "Trampfahrt",
-            "type_of_loading": "Zellulose",
-            "dangerous_vessel": "-",
-            "port_of_departure": "SE HUS",
-            "port_of_destination": "NL VLI",
-            "pilot_status": "U",
-            "hebenummer": "353641",
-            "smooth_passage": "true",
-            "complete_passage": "true",
-            "free_passage": "false",
-            "via_nok": "true"
-          },
-          "pilotage": {
-            "pilot_required": "true",
-            "pilot_foerde": "true",
-            "pilot_order": "KS-NOK-ESEE-KF",
-            "pilot_status": "U",
-            "num_of_pilots": "1",
-            "num_of_pilots_kf": "1",
-            "pilot_change_off_time": "2026-05-11 13:29",
-            "pilot_elbe_see": "true",
-            "pilot_nok": "true",
-            "pilot_ostsee": "false",
-            "pilot_uebersee": "false",
-            "pilot_boesch": "false",
-            "pilot_1_id": "381681098383000081",
-            "pilot_1_name": "Hagena, Matthias"
-          },
-          "steering": {
-            "canal_steerer": "true",
-            "steerer_required": "true",
-            "num_of_steerer": "1",
-            "freifahrer_kanalsteurer": "false",
-            "steerer_1_id": "369393303698000081",
-            "steerer_1_name": "Klopp",
-            "steerer_2_id": "437333692044000081",
-            "steerer_2_name": "Rosenkranz",
-            "steerers": [
-              {
-                "slot": "steerer_1",
-                "id": "369393303698000081",
-                "name": "Klopp",
-                "time_done": "2022-03-16 02:15",
-                "time_cached": "2026-04-27 10:33"
-              },
-              {
-                "slot": "steerer_2",
-                "id": "437333692044000081",
-                "name": "Rosenkranz",
-                "time_done": "2024-05-10 11:34",
-                "time_cached": "2026-04-27 10:33"
-              }
-            ]
-          },
-          "locking": {
-            "locking_location": "BRB",
-            "locking_wall": "S",
-            "locking_chamber": "AS",
-            "planned_for_locking": "500505895639000461",
-            "planned_freshwater": "false",
-            "mooring_reason": "Schleusung",
-            "lock_name": "Alte",
-            "wall_name": "Seitenmauer",
-            "chamber_wall_code": "ASS"
-          },
-          "vessel_info": {
-            "vessel_type": "Trocken-Mz-Frachter",
-            "seagoing_or_inland_vessel": "Seeschiff",
-            "shipowner": "Kustvaart Harlingen BV",
-            "callsign": "PHBA",
-            "imo": "9313826",
-            "mmsi": "246507000",
-            "country_name": "Niederlande",
-            "port_of_registry": "Harlingen                             ",
-            "engine_type": "Dieselmotor",
-            "engine_power": "2640",
-            "construction_draught": "6.090",
-            "number_of_props": "1",
-            "bow_thruster": "true",
-            "stern_thruster": "false",
-            "verified": "1393512833750",
-            "year_of_construction": "2005"
-          },
-          "billing": {
-            "makler": "UCA",
-            "payer": "UCA",
-            "invoice_city": "Kiel",
-            "invoice_nationality": "DEU"
-          },
-          "source": "zulauf_brb_innen"
-        }
-      ],
-      "meldungen_kiel": [],
-      "meldungen_ruesterbergen": [],
-      "seelotsen": []
-    },
-    {
       "ship_key": "TRANS FJELL",
       "name": "TRANS FJELL",
       "sources": [
@@ -10629,7 +10198,7 @@
       "meldungen_kiel": [
         {
           "source": "meldungen_kiel",
-          "nr": "33",
+          "nr": "34",
           "time": "2026-05-12 06:00",
           "draft": "4.6",
           "q_gruppe": "5",
