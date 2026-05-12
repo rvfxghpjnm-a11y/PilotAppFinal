@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-12T16:07:14",
+  "generated_at": "2026-05-12T16:09:17",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -33,12 +33,12 @@
   },
   "counts": {
     "ships_for_ruesterbergen": 4,
-    "pilots_total": 8,
-    "pilots_dispatchable": 7,
-    "pilots_visible_only": 1,
+    "pilots_total": 9,
+    "pilots_dispatchable": 9,
+    "pilots_visible_only": 0,
     "assignments": 4,
     "unassigned_ships": 0,
-    "unused_pilots": 3
+    "unused_pilots": 5
   },
   "ships": [
     {
@@ -292,6 +292,28 @@
       "availability_hint": "Lotse gilt als bereits in RÜB"
     },
     {
+      "pilot_key": "feldes_marco",
+      "vorname": "Marco",
+      "nachname": "Feldes",
+      "pilot_name": "Feldes, Marco",
+      "abteilungszeit": "2026-05-12 13:35",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 6,
+      "aufgabe": "Seebört",
+      "fahrzeug": "LADY MONIQUE",
+      "from": "KLT",
+      "to": "HOS",
+      "nr": 6,
+      "raw_time": "Tue May 12 13:35:00 CEST 2026",
+      "current_ship_name": "LADY MONIQUE",
+      "current_ship_eta_rueb": "2026-05-12 19:57",
+      "current_ship_q": 0,
+      "current_ship_route": "KLT → HOS",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
       "pilot_key": "schran_oliver",
       "vorname": "Oliver",
       "nachname": "Schran",
@@ -351,9 +373,10 @@
       "nr": 3,
       "raw_time": "Tue May 12 14:50:00 CEST 2026",
       "current_ship_name": "LADY MONIQUE",
+      "current_ship_eta_rueb": "2026-05-12 19:57",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     }
   ],
@@ -468,6 +491,28 @@
       "availability_hint": "Lotse gilt als bereits in RÜB"
     },
     {
+      "pilot_key": "feldes_marco",
+      "vorname": "Marco",
+      "nachname": "Feldes",
+      "pilot_name": "Feldes, Marco",
+      "abteilungszeit": "2026-05-12 13:35",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 6,
+      "aufgabe": "Seebört",
+      "fahrzeug": "LADY MONIQUE",
+      "from": "KLT",
+      "to": "HOS",
+      "nr": 6,
+      "raw_time": "Tue May 12 13:35:00 CEST 2026",
+      "current_ship_name": "LADY MONIQUE",
+      "current_ship_eta_rueb": "2026-05-12 19:57",
+      "current_ship_q": 0,
+      "current_ship_route": "KLT → HOS",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
       "pilot_key": "schran_oliver",
       "vorname": "Oliver",
       "nachname": "Schran",
@@ -510,25 +555,31 @@
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
-    }
-  ],
-  "visible_but_not_dispatchable_pilots": [
+    },
     {
       "pilot_key": "fehse_torsten",
+      "vorname": "Torsten",
+      "nachname": "Fehse",
       "pilot_name": "Fehse, Torsten",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 3,
       "abteilungszeit": "2026-05-12 14:50",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 3,
       "aufgabe": "Kanalbört",
       "fahrzeug": "LADY MONIQUE",
       "from": "HOS",
       "to": "RÜB",
+      "nr": 3,
+      "raw_time": "Tue May 12 14:50:00 CEST 2026",
       "current_ship_name": "LADY MONIQUE",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
+      "current_ship_eta_rueb": "2026-05-12 19:57",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
     }
   ],
+  "visible_but_not_dispatchable_pilots": [],
   "assignments": [
     {
       "ship_key": "MEDEM",
@@ -614,6 +665,15 @@
       ],
       "excluded": [
         {
+          "pilot_name": "Feldes, Marco",
+          "pilot_tactical_nr": 6,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "LADY MONIQUE",
+          "pilot_current_ship_eta_rueb": "2026-05-12 19:57",
+          "ship_eta_rueb": "2026-05-12 18:41",
+          "availability_kind": "merged_eta"
+        },
+        {
           "pilot_name": "Schran, Oliver",
           "pilot_tactical_nr": 5,
           "reason": "kommt nicht rechtzeitig in RÜB an",
@@ -628,6 +688,15 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "MAXIMAR",
           "pilot_current_ship_eta_rueb": "2026-05-12 19:54",
+          "ship_eta_rueb": "2026-05-12 18:41",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Fehse, Torsten",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "LADY MONIQUE",
+          "pilot_current_ship_eta_rueb": "2026-05-12 19:57",
           "ship_eta_rueb": "2026-05-12 18:41",
           "availability_kind": "merged_eta"
         }
@@ -730,6 +799,15 @@
           "ship_q": 1
         },
         {
+          "pilot_name": "Feldes, Marco",
+          "pilot_tactical_nr": 6,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "LADY MONIQUE",
+          "pilot_current_ship_eta_rueb": "2026-05-12 19:57",
+          "ship_eta_rueb": "2026-05-12 18:44",
+          "availability_kind": "merged_eta"
+        },
+        {
           "pilot_name": "Schran, Oliver",
           "pilot_tactical_nr": 5,
           "reason": "kommt nicht rechtzeitig in RÜB an",
@@ -744,6 +822,15 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "MAXIMAR",
           "pilot_current_ship_eta_rueb": "2026-05-12 19:54",
+          "ship_eta_rueb": "2026-05-12 18:44",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Fehse, Torsten",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "LADY MONIQUE",
+          "pilot_current_ship_eta_rueb": "2026-05-12 19:57",
           "ship_eta_rueb": "2026-05-12 18:44",
           "availability_kind": "merged_eta"
         }
@@ -853,11 +940,29 @@
       ],
       "excluded": [
         {
+          "pilot_name": "Feldes, Marco",
+          "pilot_tactical_nr": 6,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "LADY MONIQUE",
+          "pilot_current_ship_eta_rueb": "2026-05-12 19:57",
+          "ship_eta_rueb": "2026-05-12 19:51",
+          "availability_kind": "merged_eta"
+        },
+        {
           "pilot_name": "Vogel, Peter",
           "pilot_tactical_nr": 4,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "MAXIMAR",
           "pilot_current_ship_eta_rueb": "2026-05-12 19:54",
+          "ship_eta_rueb": "2026-05-12 19:51",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Fehse, Torsten",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "LADY MONIQUE",
+          "pilot_current_ship_eta_rueb": "2026-05-12 19:57",
           "ship_eta_rueb": "2026-05-12 19:51",
           "availability_kind": "merged_eta"
         }
@@ -910,7 +1015,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 4,
+      "candidate_count": 6,
       "candidates": [
         {
           "pilot_name": "Skawianczyk, Artur",
@@ -939,6 +1044,19 @@
           "availability_hint": "Lotse gilt als bereits in RÜB"
         },
         {
+          "pilot_name": "Feldes, Marco",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 6,
+          "abteilungszeit": "2026-05-12 13:35",
+          "fahrzeug": "LADY MONIQUE",
+          "to": "HOS",
+          "aufgabe": "Seebört",
+          "current_ship_name": "LADY MONIQUE",
+          "current_ship_eta_rueb": "2026-05-12 19:57",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
           "pilot_name": "Schran, Oliver",
           "pilot_q": 0,
           "pilot_tactical_nr": 5,
@@ -961,6 +1079,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "MAXIMAR",
           "current_ship_eta_rueb": "2026-05-12 19:54",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Fehse, Torsten",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 3,
+          "abteilungszeit": "2026-05-12 14:50",
+          "fahrzeug": "LADY MONIQUE",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "LADY MONIQUE",
+          "current_ship_eta_rueb": "2026-05-12 19:57",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
@@ -1012,6 +1143,28 @@
       "availability_hint": "Lotse gilt als bereits in RÜB"
     },
     {
+      "pilot_key": "feldes_marco",
+      "vorname": "Marco",
+      "nachname": "Feldes",
+      "pilot_name": "Feldes, Marco",
+      "abteilungszeit": "2026-05-12 13:35",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 6,
+      "aufgabe": "Seebört",
+      "fahrzeug": "LADY MONIQUE",
+      "from": "KLT",
+      "to": "HOS",
+      "nr": 6,
+      "raw_time": "Tue May 12 13:35:00 CEST 2026",
+      "current_ship_name": "LADY MONIQUE",
+      "current_ship_eta_rueb": "2026-05-12 19:57",
+      "current_ship_q": 0,
+      "current_ship_route": "KLT → HOS",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
       "pilot_key": "schran_oliver",
       "vorname": "Oliver",
       "nachname": "Schran",
@@ -1050,6 +1203,28 @@
       "raw_time": "Tue May 12 14:45:00 CEST 2026",
       "current_ship_name": "MAXIMAR",
       "current_ship_eta_rueb": "2026-05-12 19:54",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "fehse_torsten",
+      "vorname": "Torsten",
+      "nachname": "Fehse",
+      "pilot_name": "Fehse, Torsten",
+      "abteilungszeit": "2026-05-12 14:50",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 3,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "LADY MONIQUE",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 3,
+      "raw_time": "Tue May 12 14:50:00 CEST 2026",
+      "current_ship_name": "LADY MONIQUE",
+      "current_ship_eta_rueb": "2026-05-12 19:57",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
