@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-12T23:49:13",
+  "generated_at": "2026-05-12T23:51:11",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,15 +32,36 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 3,
+    "ships_for_ruesterbergen": 4,
     "pilots_total": 7,
     "pilots_dispatchable": 6,
     "pilots_visible_only": 1,
-    "assignments": 3,
+    "assignments": 4,
     "unassigned_ships": 0,
-    "unused_pilots": 3
+    "unused_pilots": 2
   },
   "ships": [
+    {
+      "ship_key": "LEERFAHRT",
+      "ship_name": "Leerfahrt",
+      "eta_rueb": "2026-05-13 00:15",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 0,
+      "meldung": {
+        "nr": "1",
+        "time": "Wed May 13 00:15:00 CEST 2026",
+        "lotsen_anzahl": 2,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "RÜB → HOS",
+        "routes": [
+          "RÜB → HOS"
+        ]
+      }
+    },
     {
       "ship_key": "EMS HIGHWAY",
       "ship_name": "EMS HIGHWAY",
@@ -48,7 +69,7 @@
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 3,
       "meldung": {
-        "nr": "1",
+        "nr": "2",
         "time": "Wed May 13 01:15:00 CEST 2026",
         "draft": "5.3",
         "q_gruppe": "3",
@@ -81,11 +102,11 @@
     {
       "ship_key": "SOUTH ENABLER",
       "ship_name": "SOUTH ENABLER",
-      "eta_rueb": "2026-05-13 03:47",
+      "eta_rueb": "2026-05-13 03:48",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 0,
       "meldung": {
-        "nr": "2",
+        "nr": "3",
         "time": "Wed May 13 04:05:00 CEST 2026",
         "draft": "6.9",
         "q_gruppe": "0",
@@ -123,7 +144,7 @@
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
-        "nr": "3",
+        "nr": "4",
         "time": "Wed May 13 04:30:00 CEST 2026",
         "draft": "3.2",
         "q_gruppe": "5",
@@ -270,7 +291,7 @@
       "nr": 2,
       "raw_time": "Tue May 12 21:50:00 CEST 2026",
       "current_ship_name": "PASILA",
-      "current_ship_eta_rueb": "2026-05-13 02:47",
+      "current_ship_eta_rueb": "2026-05-13 02:48",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -425,7 +446,7 @@
       "nr": 2,
       "raw_time": "Tue May 12 21:50:00 CEST 2026",
       "current_ship_name": "PASILA",
-      "current_ship_eta_rueb": "2026-05-13 02:47",
+      "current_ship_eta_rueb": "2026-05-13 02:48",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -451,6 +472,100 @@
   ],
   "assignments": [
     {
+      "ship_key": "LEERFAHRT",
+      "ship_name": "Leerfahrt",
+      "eta_rueb": "2026-05-13 00:15",
+      "ship_q": 0,
+      "assigned_pilot": "Heyenga, Kai",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 6,
+      "assigned_abteilungszeit": "2026-05-12 19:26",
+      "assigned_current_ship_name": "JOLIE",
+      "assigned_current_ship_eta_rueb": "2026-05-13 00:11",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 2,
+      "candidates": [
+        {
+          "pilot_name": "Heyenga, Kai",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 6,
+          "abteilungszeit": "2026-05-12 19:26",
+          "fahrzeug": "JOLIE",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "JOLIE",
+          "current_ship_eta_rueb": "2026-05-13 00:11",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Hüpers, Peter",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 5,
+          "abteilungszeit": "2026-05-12 19:28",
+          "fahrzeug": "BOTHNIA",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "BOTHNIA",
+          "current_ship_eta_rueb": "2026-05-13 00:06",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Ehlers, Sören",
+          "pilot_tactical_nr": 11,
+          "reason": "Quali passt nicht (3 > 0)",
+          "pilot_q": 3,
+          "ship_q": 0
+        },
+        {
+          "pilot_name": "Krügel, Mathias",
+          "pilot_tactical_nr": 7,
+          "reason": "Quali passt nicht (1 > 0)",
+          "pilot_q": 1,
+          "ship_q": 0
+        },
+        {
+          "pilot_name": "Kubica, Gregor",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "NORTHERN ROCK",
+          "pilot_current_ship_eta_rueb": "2026-05-13 02:39",
+          "ship_eta_rueb": "2026-05-13 00:15",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Koslik, Kevin",
+          "pilot_tactical_nr": 2,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "PASILA",
+          "pilot_current_ship_eta_rueb": "2026-05-13 02:48",
+          "ship_eta_rueb": "2026-05-13 00:15",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "1",
+          "time": "Wed May 13 00:15:00 CEST 2026",
+          "lotsen_anzahl": 2,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "RÜB → HOS",
+          "routes": [
+            "RÜB → HOS"
+          ]
+        }
+      }
+    },
+    {
       "ship_key": "EMS HIGHWAY",
       "ship_name": "EMS HIGHWAY",
       "eta_rueb": "2026-05-13 01:26",
@@ -464,7 +579,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 4,
+      "candidate_count": 3,
       "candidates": [
         {
           "pilot_name": "Ehlers, Sören",
@@ -489,19 +604,6 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "SCOT CARRIER",
           "current_ship_eta_rueb": "2026-05-13 00:00",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Heyenga, Kai",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 6,
-          "abteilungszeit": "2026-05-12 19:26",
-          "fahrzeug": "JOLIE",
-          "to": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "JOLIE",
-          "current_ship_eta_rueb": "2026-05-13 00:11",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -534,14 +636,14 @@
           "pilot_tactical_nr": 2,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "PASILA",
-          "pilot_current_ship_eta_rueb": "2026-05-13 02:47",
+          "pilot_current_ship_eta_rueb": "2026-05-13 02:48",
           "ship_eta_rueb": "2026-05-13 01:26",
           "availability_kind": "merged_eta"
         }
       ],
       "ship": {
         "meldung": {
-          "nr": "1",
+          "nr": "2",
           "time": "Wed May 13 01:15:00 CEST 2026",
           "draft": "5.3",
           "q_gruppe": "3",
@@ -575,32 +677,19 @@
     {
       "ship_key": "SOUTH ENABLER",
       "ship_name": "SOUTH ENABLER",
-      "eta_rueb": "2026-05-13 03:47",
+      "eta_rueb": "2026-05-13 03:48",
       "ship_q": 0,
-      "assigned_pilot": "Heyenga, Kai",
+      "assigned_pilot": "Hüpers, Peter",
       "assigned_pilot_q": 0,
-      "assigned_tactical_nr": 6,
-      "assigned_abteilungszeit": "2026-05-12 19:26",
-      "assigned_current_ship_name": "JOLIE",
-      "assigned_current_ship_eta_rueb": "2026-05-13 00:11",
+      "assigned_tactical_nr": 5,
+      "assigned_abteilungszeit": "2026-05-12 19:28",
+      "assigned_current_ship_name": "BOTHNIA",
+      "assigned_current_ship_eta_rueb": "2026-05-13 00:06",
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 4,
+      "candidate_count": 3,
       "candidates": [
-        {
-          "pilot_name": "Heyenga, Kai",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 6,
-          "abteilungszeit": "2026-05-12 19:26",
-          "fahrzeug": "JOLIE",
-          "to": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "JOLIE",
-          "current_ship_eta_rueb": "2026-05-13 00:11",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
         {
           "pilot_name": "Hüpers, Peter",
           "pilot_q": 0,
@@ -636,7 +725,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "PASILA",
-          "current_ship_eta_rueb": "2026-05-13 02:47",
+          "current_ship_eta_rueb": "2026-05-13 02:48",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
@@ -652,7 +741,7 @@
       ],
       "ship": {
         "meldung": {
-          "nr": "2",
+          "nr": "3",
           "time": "Wed May 13 04:05:00 CEST 2026",
           "draft": "6.9",
           "q_gruppe": "0",
@@ -698,7 +787,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 4,
+      "candidate_count": 3,
       "candidates": [
         {
           "pilot_name": "Krügel, Mathias",
@@ -710,19 +799,6 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "SCOT CARRIER",
           "current_ship_eta_rueb": "2026-05-13 00:00",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Hüpers, Peter",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 5,
-          "abteilungszeit": "2026-05-12 19:28",
-          "fahrzeug": "BOTHNIA",
-          "to": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "BOTHNIA",
-          "current_ship_eta_rueb": "2026-05-13 00:06",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -748,14 +824,14 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "PASILA",
-          "current_ship_eta_rueb": "2026-05-13 02:47",
+          "current_ship_eta_rueb": "2026-05-13 02:48",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
       ],
       "ship": {
         "meldung": {
-          "nr": "3",
+          "nr": "4",
           "time": "Wed May 13 04:30:00 CEST 2026",
           "draft": "3.2",
           "q_gruppe": "5",
@@ -778,28 +854,6 @@
   ],
   "unassigned_ships": [],
   "unused_pilots": [
-    {
-      "pilot_key": "hüpers_peter",
-      "vorname": "Peter",
-      "nachname": "Hüpers",
-      "pilot_name": "Hüpers, Peter",
-      "abteilungszeit": "2026-05-12 19:28",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 5,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "BOTHNIA",
-      "from": "HOS",
-      "to": "RÜB",
-      "nr": 5,
-      "raw_time": "Tue May 12 19:28:00 CEST 2026",
-      "current_ship_name": "BOTHNIA",
-      "current_ship_eta_rueb": "2026-05-13 00:06",
-      "current_ship_q": 0,
-      "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
-    },
     {
       "pilot_key": "kubica_gregor",
       "vorname": "Gregor",
@@ -838,7 +892,7 @@
       "nr": 2,
       "raw_time": "Tue May 12 21:50:00 CEST 2026",
       "current_ship_name": "PASILA",
-      "current_ship_eta_rueb": "2026-05-13 02:47",
+      "current_ship_eta_rueb": "2026-05-13 02:48",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
