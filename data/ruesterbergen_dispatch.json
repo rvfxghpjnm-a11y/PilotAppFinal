@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-12T02:01:12",
+  "generated_at": "2026-05-12T02:03:23",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 3,
     "pilots_total": 12,
-    "pilots_dispatchable": 10,
-    "pilots_visible_only": 2,
+    "pilots_dispatchable": 11,
+    "pilots_visible_only": 1,
     "assignments": 3,
     "unassigned_ships": 0,
-    "unused_pilots": 7
+    "unused_pilots": 8
   },
   "ships": [
     {
@@ -277,17 +277,16 @@
       "q_source": "q_gruppen_lotsen.entries",
       "pilot_tactical_nr": 11,
       "aufgabe": "Kanalbört",
-      "fahrzeug": "KERTU",
-      "from": "HOS",
-      "to": "RÜB",
+      "fahrzeug": "RÜB",
       "nr": 11,
       "raw_time": "Mon May 11 20:29:00 CEST 2026",
-      "current_ship_name": "KERTU",
-      "current_ship_eta_rueb": "2026-05-12 02:04",
+      "current_ship_name": "RÜB",
+      "current_ship_eta_rueb": "2026-05-11 20:29",
       "current_ship_q": 0,
-      "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
+      "current_ship_route": "RÜB",
+      "current_ship_source": "special.already_in_rueb",
+      "availability_kind": "already_in_rueb",
+      "availability_hint": "Lotse gilt als bereits in RÜB"
     },
     {
       "pilot_key": "wachsmuth_martin",
@@ -393,6 +392,7 @@
       "nr": 2,
       "raw_time": "Tue May 12 00:43:00 CEST 2026",
       "current_ship_name": "STELLA ORION",
+      "current_ship_eta_rueb": "2026-05-12 05:55",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -541,17 +541,16 @@
       "q_source": "q_gruppen_lotsen.entries",
       "pilot_tactical_nr": 11,
       "aufgabe": "Kanalbört",
-      "fahrzeug": "KERTU",
-      "from": "HOS",
-      "to": "RÜB",
+      "fahrzeug": "RÜB",
       "nr": 11,
       "raw_time": "Mon May 11 20:29:00 CEST 2026",
-      "current_ship_name": "KERTU",
-      "current_ship_eta_rueb": "2026-05-12 02:04",
+      "current_ship_name": "RÜB",
+      "current_ship_eta_rueb": "2026-05-11 20:29",
       "current_ship_q": 0,
-      "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
+      "current_ship_route": "RÜB",
+      "current_ship_source": "special.already_in_rueb",
+      "availability_kind": "already_in_rueb",
+      "availability_hint": "Lotse gilt als bereits in RÜB"
     },
     {
       "pilot_key": "wachsmuth_martin",
@@ -640,24 +639,31 @@
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
-    }
-  ],
-  "visible_but_not_dispatchable_pilots": [
+    },
     {
       "pilot_key": "heeren_rainer",
+      "vorname": "Rainer",
+      "nachname": "Heeren",
       "pilot_name": "Heeren, Rainer",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 2,
       "abteilungszeit": "2026-05-12 00:43",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 2,
       "aufgabe": "Kanalbört",
       "fahrzeug": "STELLA ORION",
       "from": "HOS",
       "to": "RÜB",
+      "nr": 2,
+      "raw_time": "Tue May 12 00:43:00 CEST 2026",
       "current_ship_name": "STELLA ORION",
+      "current_ship_eta_rueb": "2026-05-12 05:55",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    },
+      "availability_kind": "merged_eta"
+    }
+  ],
+  "visible_but_not_dispatchable_pilots": [
     {
       "pilot_key": "hilpert_jan",
       "pilot_name": "Hilpert, Jan",
@@ -786,6 +792,15 @@
           "pilot_current_ship_eta_rueb": "2026-05-12 05:52",
           "ship_eta_rueb": "2026-05-12 04:00",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Heeren, Rainer",
+          "pilot_tactical_nr": 2,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "STELLA ORION",
+          "pilot_current_ship_eta_rueb": "2026-05-12 05:55",
+          "ship_eta_rueb": "2026-05-12 04:00",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -836,7 +851,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 6,
+      "candidate_count": 7,
       "candidates": [
         {
           "pilot_name": "Krügel, Mathias",
@@ -915,6 +930,19 @@
           "current_ship_eta_rueb": "2026-05-12 05:52",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Heeren, Rainer",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-05-12 00:43",
+          "fahrzeug": "STELLA ORION",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "STELLA ORION",
+          "current_ship_eta_rueb": "2026-05-12 05:55",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
         }
       ],
       "excluded": [
@@ -988,7 +1016,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 5,
+      "candidate_count": 6,
       "candidates": [
         {
           "pilot_name": "Rohn, Jens Michael",
@@ -1052,6 +1080,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "LADY ALEXANDRA",
           "current_ship_eta_rueb": "2026-05-12 05:52",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Heeren, Rainer",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-05-12 00:43",
+          "fahrzeug": "STELLA ORION",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "STELLA ORION",
+          "current_ship_eta_rueb": "2026-05-12 05:55",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
@@ -1170,17 +1211,16 @@
       "q_source": "q_gruppen_lotsen.entries",
       "pilot_tactical_nr": 11,
       "aufgabe": "Kanalbört",
-      "fahrzeug": "KERTU",
-      "from": "HOS",
-      "to": "RÜB",
+      "fahrzeug": "RÜB",
       "nr": 11,
       "raw_time": "Mon May 11 20:29:00 CEST 2026",
-      "current_ship_name": "KERTU",
-      "current_ship_eta_rueb": "2026-05-12 02:04",
+      "current_ship_name": "RÜB",
+      "current_ship_eta_rueb": "2026-05-11 20:29",
       "current_ship_q": 0,
-      "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
+      "current_ship_route": "RÜB",
+      "current_ship_source": "special.already_in_rueb",
+      "availability_kind": "already_in_rueb",
+      "availability_hint": "Lotse gilt als bereits in RÜB"
     },
     {
       "pilot_key": "wachsmuth_martin",
@@ -1265,6 +1305,28 @@
       "raw_time": "Tue May 12 00:42:00 CEST 2026",
       "current_ship_name": "LADY ALEXANDRA",
       "current_ship_eta_rueb": "2026-05-12 05:52",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "heeren_rainer",
+      "vorname": "Rainer",
+      "nachname": "Heeren",
+      "pilot_name": "Heeren, Rainer",
+      "abteilungszeit": "2026-05-12 00:43",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 2,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "STELLA ORION",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 2,
+      "raw_time": "Tue May 12 00:43:00 CEST 2026",
+      "current_ship_name": "STELLA ORION",
+      "current_ship_eta_rueb": "2026-05-12 05:55",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
