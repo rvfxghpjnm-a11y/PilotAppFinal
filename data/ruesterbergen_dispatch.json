@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-12T13:49:21",
+  "generated_at": "2026-05-12T13:51:17",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,53 +32,15 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 4,
+    "ships_for_ruesterbergen": 3,
     "pilots_total": 5,
     "pilots_dispatchable": 5,
     "pilots_visible_only": 0,
-    "assignments": 4,
+    "assignments": 3,
     "unassigned_ships": 0,
-    "unused_pilots": 1
+    "unused_pilots": 2
   },
   "ships": [
-    {
-      "ship_key": "EIRA",
-      "ship_name": "EIRA",
-      "eta_rueb": "2026-05-12 14:18",
-      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
-      "ship_q": 1,
-      "meldung": {
-        "nr": "1",
-        "time": "Tue May 12 14:15:00 CEST 2026",
-        "draft": "6.4",
-        "q_gruppe": "1",
-        "lotsen_anzahl": 1,
-        "confirmed": false,
-        "from": "RÜB",
-        "to": "HOS"
-      },
-      "summary": {
-        "route": "HOS → KLT",
-        "routes": [
-          "HOS → KLT",
-          "RÜB → HOS"
-        ],
-        "q_gruppe": "1",
-        "vg": "5",
-        "draft": "6.40",
-        "length_m": "157.00",
-        "beam_m": "24.636",
-        "queue_title": "Zulauf vom Kanal in Kiel",
-        "zulauf_richtung": "vom_kanal",
-        "pilot_required": "true",
-        "pilot_status": "U",
-        "pilot_1_name": "Röhrs, Johannes",
-        "travel_status": "SAILING_NOK",
-        "makler": "SUB",
-        "dangerous_vessel": "-",
-        "type_of_loading": "Ballastfahrt"
-      }
-    },
     {
       "ship_key": "FORTUNA B",
       "ship_name": "FORTUNA B",
@@ -86,7 +48,7 @@
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
-        "nr": "2",
+        "nr": "1",
         "time": "Tue May 12 14:45:00 CEST 2026",
         "draft": "4.4",
         "q_gruppe": "5",
@@ -123,7 +85,7 @@
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 4,
       "meldung": {
-        "nr": "3",
+        "nr": "2",
         "time": "Tue May 12 16:15:00 CEST 2026",
         "draft": "5.4",
         "q_gruppe": "4",
@@ -161,7 +123,7 @@
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
-        "nr": "4",
+        "nr": "3",
         "time": "Wed May 13 04:30:00 CEST 2026",
         "draft": "3.2",
         "q_gruppe": "5",
@@ -234,14 +196,16 @@
       "q_source": "q_gruppen_lotsen.entries",
       "pilot_tactical_nr": 8,
       "aufgabe": "Kanalbört",
-      "fahrzeug": "RÜB",
+      "fahrzeug": "EIRA",
+      "from": "RÜB",
+      "to": "HOS",
       "nr": 8,
       "raw_time": "Tue May 12 08:04:00 CEST 2026",
       "current_ship_name": "EIRA",
       "current_ship_eta_rueb": "2026-05-12 14:18",
       "current_ship_q": 1,
-      "current_ship_route": "HOS → KLT",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_route": "RÜB → HOS",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
@@ -341,14 +305,16 @@
       "q_source": "q_gruppen_lotsen.entries",
       "pilot_tactical_nr": 8,
       "aufgabe": "Kanalbört",
-      "fahrzeug": "RÜB",
+      "fahrzeug": "EIRA",
+      "from": "RÜB",
+      "to": "HOS",
       "nr": 8,
       "raw_time": "Tue May 12 08:04:00 CEST 2026",
       "current_ship_name": "EIRA",
       "current_ship_eta_rueb": "2026-05-12 14:18",
       "current_ship_q": 1,
-      "current_ship_route": "HOS → KLT",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_route": "RÜB → HOS",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
@@ -398,10 +364,10 @@
   "visible_but_not_dispatchable_pilots": [],
   "assignments": [
     {
-      "ship_key": "EIRA",
-      "ship_name": "EIRA",
-      "eta_rueb": "2026-05-12 14:18",
-      "ship_q": 1,
+      "ship_key": "FORTUNA B",
+      "ship_name": "FORTUNA B",
+      "eta_rueb": "2026-05-12 14:53",
+      "ship_q": 5,
       "assigned_pilot": "Jeske, Lutz",
       "assigned_pilot_q": 0,
       "assigned_tactical_nr": 12,
@@ -411,7 +377,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 3,
+      "candidate_count": 4,
       "candidates": [
         {
           "pilot_name": "Jeske, Lutz",
@@ -426,102 +392,6 @@
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
-        {
-          "pilot_name": "Röhrs, Johannes",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 8,
-          "abteilungszeit": "2026-05-12 08:04",
-          "fahrzeug": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "EIRA",
-          "current_ship_eta_rueb": "2026-05-12 14:18",
-          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Skawianczyk, Artur",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 6,
-          "abteilungszeit": "2026-05-12 08:45",
-          "fahrzeug": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "RÜB",
-          "current_ship_eta_rueb": "2026-05-12 08:45",
-          "current_ship_source": "special.already_in_rueb",
-          "availability_kind": "already_in_rueb",
-          "availability_hint": "Lotse gilt als bereits in RÜB"
-        }
-      ],
-      "excluded": [
-        {
-          "pilot_name": "Hewig, Marius Paul",
-          "pilot_tactical_nr": 9,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "FORTUNA B",
-          "pilot_current_ship_eta_rueb": "2026-05-12 14:53",
-          "ship_eta_rueb": "2026-05-12 14:18",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Jakob, Peter",
-          "pilot_tactical_nr": 4,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "OCEAN TRADER",
-          "pilot_current_ship_eta_rueb": "2026-05-12 15:21",
-          "ship_eta_rueb": "2026-05-12 14:18",
-          "availability_kind": "merged_eta"
-        }
-      ],
-      "ship": {
-        "meldung": {
-          "nr": "1",
-          "time": "Tue May 12 14:15:00 CEST 2026",
-          "draft": "6.4",
-          "q_gruppe": "1",
-          "lotsen_anzahl": 1,
-          "confirmed": false,
-          "from": "RÜB",
-          "to": "HOS"
-        },
-        "summary": {
-          "route": "HOS → KLT",
-          "routes": [
-            "HOS → KLT",
-            "RÜB → HOS"
-          ],
-          "q_gruppe": "1",
-          "vg": "5",
-          "draft": "6.40",
-          "length_m": "157.00",
-          "beam_m": "24.636",
-          "queue_title": "Zulauf vom Kanal in Kiel",
-          "zulauf_richtung": "vom_kanal",
-          "pilot_required": "true",
-          "pilot_status": "U",
-          "pilot_1_name": "Röhrs, Johannes",
-          "travel_status": "SAILING_NOK",
-          "makler": "SUB",
-          "dangerous_vessel": "-",
-          "type_of_loading": "Ballastfahrt"
-        }
-      }
-    },
-    {
-      "ship_key": "FORTUNA B",
-      "ship_name": "FORTUNA B",
-      "eta_rueb": "2026-05-12 14:53",
-      "ship_q": 5,
-      "assigned_pilot": "Hewig, Marius Paul",
-      "assigned_pilot_q": 2,
-      "assigned_tactical_nr": 9,
-      "assigned_abteilungszeit": "2026-05-12 07:58",
-      "assigned_current_ship_name": "FORTUNA B",
-      "assigned_current_ship_eta_rueb": "2026-05-12 14:53",
-      "assigned_current_ship_source": "schiffe_merged.summary.pilot_1_name",
-      "assigned_availability_kind": "merged_eta",
-      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 3,
-      "candidates": [
         {
           "pilot_name": "Hewig, Marius Paul",
           "pilot_q": 2,
@@ -539,11 +409,12 @@
           "pilot_q": 0,
           "pilot_tactical_nr": 8,
           "abteilungszeit": "2026-05-12 08:04",
-          "fahrzeug": "RÜB",
+          "fahrzeug": "EIRA",
+          "to": "HOS",
           "aufgabe": "Kanalbört",
           "current_ship_name": "EIRA",
           "current_ship_eta_rueb": "2026-05-12 14:18",
-          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
         {
@@ -573,7 +444,7 @@
       ],
       "ship": {
         "meldung": {
-          "nr": "2",
+          "nr": "1",
           "time": "Tue May 12 14:45:00 CEST 2026",
           "draft": "4.4",
           "q_gruppe": "5",
@@ -609,27 +480,40 @@
       "ship_name": "HEIKE LEHMANN",
       "eta_rueb": "2026-05-12 16:20",
       "ship_q": 4,
-      "assigned_pilot": "Röhrs, Johannes",
-      "assigned_pilot_q": 0,
-      "assigned_tactical_nr": 8,
-      "assigned_abteilungszeit": "2026-05-12 08:04",
-      "assigned_current_ship_name": "EIRA",
-      "assigned_current_ship_eta_rueb": "2026-05-12 14:18",
+      "assigned_pilot": "Hewig, Marius Paul",
+      "assigned_pilot_q": 2,
+      "assigned_tactical_nr": 9,
+      "assigned_abteilungszeit": "2026-05-12 07:58",
+      "assigned_current_ship_name": "FORTUNA B",
+      "assigned_current_ship_eta_rueb": "2026-05-12 14:53",
       "assigned_current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 3,
+      "candidate_count": 4,
       "candidates": [
+        {
+          "pilot_name": "Hewig, Marius Paul",
+          "pilot_q": 2,
+          "pilot_tactical_nr": 9,
+          "abteilungszeit": "2026-05-12 07:58",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "FORTUNA B",
+          "current_ship_eta_rueb": "2026-05-12 14:53",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
+        },
         {
           "pilot_name": "Röhrs, Johannes",
           "pilot_q": 0,
           "pilot_tactical_nr": 8,
           "abteilungszeit": "2026-05-12 08:04",
-          "fahrzeug": "RÜB",
+          "fahrzeug": "EIRA",
+          "to": "HOS",
           "aufgabe": "Kanalbört",
           "current_ship_name": "EIRA",
           "current_ship_eta_rueb": "2026-05-12 14:18",
-          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
         {
@@ -661,7 +545,7 @@
       ],
       "ship": {
         "meldung": {
-          "nr": "3",
+          "nr": "2",
           "time": "Tue May 12 16:15:00 CEST 2026",
           "draft": "5.4",
           "q_gruppe": "4",
@@ -698,18 +582,30 @@
       "ship_name": "DIAMOND",
       "eta_rueb": "2026-05-13 04:30",
       "ship_q": 5,
-      "assigned_pilot": "Skawianczyk, Artur",
+      "assigned_pilot": "Röhrs, Johannes",
       "assigned_pilot_q": 0,
-      "assigned_tactical_nr": 6,
-      "assigned_abteilungszeit": "2026-05-12 08:45",
-      "assigned_current_ship_name": "RÜB",
-      "assigned_current_ship_eta_rueb": "2026-05-12 08:45",
-      "assigned_current_ship_source": "special.already_in_rueb",
-      "assigned_availability_kind": "already_in_rueb",
-      "assigned_availability_hint": "Lotse gilt als bereits in RÜB",
+      "assigned_tactical_nr": 8,
+      "assigned_abteilungszeit": "2026-05-12 08:04",
+      "assigned_current_ship_name": "EIRA",
+      "assigned_current_ship_eta_rueb": "2026-05-12 14:18",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 2,
+      "candidate_count": 3,
       "candidates": [
+        {
+          "pilot_name": "Röhrs, Johannes",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 8,
+          "abteilungszeit": "2026-05-12 08:04",
+          "fahrzeug": "EIRA",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "EIRA",
+          "current_ship_eta_rueb": "2026-05-12 14:18",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
         {
           "pilot_name": "Skawianczyk, Artur",
           "pilot_q": 0,
@@ -739,7 +635,7 @@
       ],
       "ship": {
         "meldung": {
-          "nr": "4",
+          "nr": "3",
           "time": "Wed May 13 04:30:00 CEST 2026",
           "draft": "3.2",
           "q_gruppe": "5",
@@ -762,6 +658,27 @@
   ],
   "unassigned_ships": [],
   "unused_pilots": [
+    {
+      "pilot_key": "skawianczyk_artur",
+      "vorname": "Artur",
+      "nachname": "Skawianczyk",
+      "pilot_name": "Skawianczyk, Artur",
+      "abteilungszeit": "2026-05-12 08:45",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 6,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "RÜB",
+      "nr": 6,
+      "raw_time": "Tue May 12 08:45:00 CEST 2026",
+      "current_ship_name": "RÜB",
+      "current_ship_eta_rueb": "2026-05-12 08:45",
+      "current_ship_q": 0,
+      "current_ship_route": "RÜB",
+      "current_ship_source": "special.already_in_rueb",
+      "availability_kind": "already_in_rueb",
+      "availability_hint": "Lotse gilt als bereits in RÜB"
+    },
     {
       "pilot_key": "jakob_peter",
       "vorname": "Peter",
