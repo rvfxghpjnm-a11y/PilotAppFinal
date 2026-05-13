@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-13T13:27:18",
+  "generated_at": "2026-05-13T13:29:10",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,11 +32,11 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 7,
+    "ships_for_ruesterbergen": 8,
     "pilots_total": 13,
-    "pilots_dispatchable": 11,
-    "pilots_visible_only": 2,
-    "assignments": 7,
+    "pilots_dispatchable": 12,
+    "pilots_visible_only": 1,
+    "assignments": 8,
     "unassigned_ships": 0,
     "unused_pilots": 4
   },
@@ -291,6 +291,31 @@
         "dangerous_vessel": "-",
         "type_of_loading": "Container"
       }
+    },
+    {
+      "ship_key": "MEDEM",
+      "ship_name": "MEDEM",
+      "eta_rueb": "2026-05-14 06:00",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 5,
+      "meldung": {
+        "nr": "8",
+        "time": "Thu May 14 06:00:00 CEST 2026",
+        "draft": "3.2",
+        "q_gruppe": "5",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "GAK",
+        "to": "RÜB"
+      },
+      "summary": {
+        "route": "GAK → RÜB",
+        "routes": [
+          "GAK → RÜB"
+        ],
+        "q_gruppe": "5",
+        "draft": "3.2"
+      }
     }
   ],
   "pilots": [
@@ -530,6 +555,7 @@
       "nr": 5,
       "raw_time": "Wed May 13 11:55:00 CEST 2026",
       "current_ship_name": "BALTIC EXPRESS",
+      "current_ship_eta_rueb": "2026-05-13 17:31",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -802,6 +828,28 @@
       "availability_kind": "merged_eta"
     },
     {
+      "pilot_key": "suermann_nik",
+      "vorname": "Nik",
+      "nachname": "Suermann",
+      "pilot_name": "Suermann, Nik",
+      "abteilungszeit": "2026-05-13 11:55",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 5,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "BALTIC EXPRESS",
+      "from": "HOR",
+      "to": "RÜB",
+      "nr": 5,
+      "raw_time": "Wed May 13 11:55:00 CEST 2026",
+      "current_ship_name": "BALTIC EXPRESS",
+      "current_ship_eta_rueb": "2026-05-13 17:31",
+      "current_ship_q": 0,
+      "current_ship_route": "HOR → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
       "pilot_key": "keyser_torben",
       "vorname": "Torben",
       "nachname": "Keyser",
@@ -826,21 +874,6 @@
     }
   ],
   "visible_but_not_dispatchable_pilots": [
-    {
-      "pilot_key": "suermann_nik",
-      "pilot_name": "Suermann, Nik",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 5,
-      "abteilungszeit": "2026-05-13 11:55",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "BALTIC EXPRESS",
-      "from": "HOR",
-      "to": "RÜB",
-      "current_ship_name": "BALTIC EXPRESS",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    },
     {
       "pilot_key": "spiller_roman",
       "pilot_name": "Spiller, Roman",
@@ -1015,6 +1048,15 @@
           "pilot_current_ship_eta_rueb": "2026-05-13 14:49",
           "ship_eta_rueb": "2026-05-13 14:33",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Suermann, Nik",
+          "pilot_tactical_nr": 5,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "BALTIC EXPRESS",
+          "pilot_current_ship_eta_rueb": "2026-05-13 17:31",
+          "ship_eta_rueb": "2026-05-13 14:33",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -1183,6 +1225,15 @@
           "pilot_current_ship_eta_rueb": "2026-05-13 14:49",
           "ship_eta_rueb": "2026-05-13 14:35",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Suermann, Nik",
+          "pilot_tactical_nr": 5,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "BALTIC EXPRESS",
+          "pilot_current_ship_eta_rueb": "2026-05-13 17:31",
+          "ship_eta_rueb": "2026-05-13 14:35",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -1349,6 +1400,15 @@
           "pilot_current_ship_eta_rueb": "2026-05-13 14:49",
           "ship_eta_rueb": "2026-05-13 14:42",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Suermann, Nik",
+          "pilot_tactical_nr": 5,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "BALTIC EXPRESS",
+          "pilot_current_ship_eta_rueb": "2026-05-13 17:31",
+          "ship_eta_rueb": "2026-05-13 14:42",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -1502,6 +1562,15 @@
           "pilot_current_ship_eta_rueb": "2026-05-13 14:49",
           "ship_eta_rueb": "2026-05-13 14:47",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Suermann, Nik",
+          "pilot_tactical_nr": 5,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "BALTIC EXPRESS",
+          "pilot_current_ship_eta_rueb": "2026-05-13 17:31",
+          "ship_eta_rueb": "2026-05-13 14:47",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -1646,6 +1715,17 @@
           "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
         }
       ],
+      "excluded": [
+        {
+          "pilot_name": "Suermann, Nik",
+          "pilot_tactical_nr": 5,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "BALTIC EXPRESS",
+          "pilot_current_ship_eta_rueb": "2026-05-13 17:31",
+          "ship_eta_rueb": "2026-05-13 16:49",
+          "availability_kind": "merged_eta"
+        }
+      ],
       "ship": {
         "meldung": {
           "nr": "5",
@@ -1776,6 +1856,17 @@
           "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
         }
       ],
+      "excluded": [
+        {
+          "pilot_name": "Suermann, Nik",
+          "pilot_tactical_nr": 5,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "BALTIC EXPRESS",
+          "pilot_current_ship_eta_rueb": "2026-05-13 17:31",
+          "ship_eta_rueb": "2026-05-13 16:52",
+          "availability_kind": "merged_eta"
+        }
+      ],
       "ship": {
         "meldung": {
           "nr": "6",
@@ -1824,7 +1915,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 5,
+      "candidate_count": 6,
       "candidates": [
         {
           "pilot_name": "Klein, Sebastian",
@@ -1879,6 +1970,19 @@
           "availability_kind": "merged_eta"
         },
         {
+          "pilot_name": "Suermann, Nik",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 5,
+          "abteilungszeit": "2026-05-13 11:55",
+          "fahrzeug": "BALTIC EXPRESS",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "BALTIC EXPRESS",
+          "current_ship_eta_rueb": "2026-05-13 17:31",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
           "pilot_name": "Keyser, Torben",
           "pilot_q": 0,
           "pilot_tactical_nr": 1,
@@ -1926,32 +2030,114 @@
           "type_of_loading": "Container"
         }
       }
+    },
+    {
+      "ship_key": "MEDEM",
+      "ship_name": "MEDEM",
+      "eta_rueb": "2026-05-14 06:00",
+      "ship_q": 5,
+      "assigned_pilot": "Reimer, Sven",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 9,
+      "assigned_abteilungszeit": "2026-05-13 09:37",
+      "assigned_current_ship_name": "ANNETTE ESSBERGER",
+      "assigned_current_ship_eta_rueb": "2026-05-13 14:49",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 5,
+      "candidates": [
+        {
+          "pilot_name": "Reimer, Sven",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 9,
+          "abteilungszeit": "2026-05-13 09:37",
+          "fahrzeug": "ANNETTE ESSBERGER",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ANNETTE ESSBERGER",
+          "current_ship_eta_rueb": "2026-05-13 14:49",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Malik, Christoph",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 6,
+          "abteilungszeit": "2026-05-13 11:05",
+          "fahrzeug": "DINTELBORG",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "DINTELBORG",
+          "current_ship_eta_rueb": "2026-05-13 12:26",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Zozulya, Mykola",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 7,
+          "abteilungszeit": "2026-05-13 11:05",
+          "fahrzeug": "KAURI",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "KAURI",
+          "current_ship_eta_rueb": "2026-05-13 12:28",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Suermann, Nik",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 5,
+          "abteilungszeit": "2026-05-13 11:55",
+          "fahrzeug": "BALTIC EXPRESS",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "BALTIC EXPRESS",
+          "current_ship_eta_rueb": "2026-05-13 17:31",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Keyser, Torben",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 1,
+          "abteilungszeit": "2026-05-13 13:15",
+          "fahrzeug": "Leerfahrt",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "Leerfahrt",
+          "current_ship_eta_rueb": "2026-05-13 14:15",
+          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
+          "availability_kind": "leerfahrt_hos_rueb_plus60",
+          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "8",
+          "time": "Thu May 14 06:00:00 CEST 2026",
+          "draft": "3.2",
+          "q_gruppe": "5",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "GAK",
+          "to": "RÜB"
+        },
+        "summary": {
+          "route": "GAK → RÜB",
+          "routes": [
+            "GAK → RÜB"
+          ],
+          "q_gruppe": "5",
+          "draft": "3.2"
+        }
+      }
     }
   ],
   "unassigned_ships": [],
   "unused_pilots": [
-    {
-      "pilot_key": "reimer_sven",
-      "vorname": "Sven",
-      "nachname": "Reimer",
-      "pilot_name": "Reimer, Sven",
-      "abteilungszeit": "2026-05-13 09:37",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 9,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "ANNETTE ESSBERGER",
-      "from": "HOS",
-      "to": "RÜB",
-      "nr": 9,
-      "raw_time": "Wed May 13 09:37:00 CEST 2026",
-      "current_ship_name": "ANNETTE ESSBERGER",
-      "current_ship_eta_rueb": "2026-05-13 14:49",
-      "current_ship_q": 0,
-      "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
-    },
     {
       "pilot_key": "malik_christoph",
       "vorname": "Christoph",
@@ -1993,6 +2179,28 @@
       "current_ship_eta_rueb": "2026-05-13 12:28",
       "current_ship_q": 4,
       "current_ship_route": "RÜB → HOS",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "suermann_nik",
+      "vorname": "Nik",
+      "nachname": "Suermann",
+      "pilot_name": "Suermann, Nik",
+      "abteilungszeit": "2026-05-13 11:55",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 5,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "BALTIC EXPRESS",
+      "from": "HOR",
+      "to": "RÜB",
+      "nr": 5,
+      "raw_time": "Wed May 13 11:55:00 CEST 2026",
+      "current_ship_name": "BALTIC EXPRESS",
+      "current_ship_eta_rueb": "2026-05-13 17:31",
+      "current_ship_q": 0,
+      "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
