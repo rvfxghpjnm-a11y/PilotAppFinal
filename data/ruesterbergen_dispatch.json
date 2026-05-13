@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-13T15:55:16",
+  "generated_at": "2026-05-13T15:57:29",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 6,
     "pilots_total": 15,
-    "pilots_dispatchable": 13,
-    "pilots_visible_only": 2,
+    "pilots_dispatchable": 14,
+    "pilots_visible_only": 1,
     "assignments": 6,
     "unassigned_ships": 0,
-    "unused_pilots": 7
+    "unused_pilots": 8
   },
   "ships": [
     {
@@ -159,7 +159,7 @@
     {
       "ship_key": "SOUTH",
       "ship_name": "SOUTH",
-      "eta_rueb": "2026-05-13 19:11",
+      "eta_rueb": "2026-05-13 19:10",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 1,
       "meldung": {
@@ -516,9 +516,10 @@
       "nr": 5,
       "raw_time": "Wed May 13 14:22:00 CEST 2026",
       "current_ship_name": "HAV TUNA",
+      "current_ship_eta_rueb": "2026-05-13 19:30",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
@@ -539,7 +540,7 @@
       "current_ship_name": "RIX SAIL",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta"
     },
     {
@@ -831,6 +832,28 @@
       "availability_kind": "merged_eta"
     },
     {
+      "pilot_key": "sattler_olaf",
+      "vorname": "Olaf",
+      "nachname": "Sattler",
+      "pilot_name": "Sattler, Olaf",
+      "abteilungszeit": "2026-05-13 14:22",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 5,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "HAV TUNA",
+      "from": "HOR",
+      "to": "RÜB",
+      "nr": 5,
+      "raw_time": "Wed May 13 14:22:00 CEST 2026",
+      "current_ship_name": "HAV TUNA",
+      "current_ship_eta_rueb": "2026-05-13 19:30",
+      "current_ship_q": 0,
+      "current_ship_route": "HOR → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
       "pilot_key": "krämer_jonas",
       "vorname": "Jonas",
       "nachname": "Krämer",
@@ -878,21 +901,6 @@
   ],
   "visible_but_not_dispatchable_pilots": [
     {
-      "pilot_key": "sattler_olaf",
-      "pilot_name": "Sattler, Olaf",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 5,
-      "abteilungszeit": "2026-05-13 14:22",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "HAV TUNA",
-      "from": "HOR",
-      "to": "RÜB",
-      "current_ship_name": "HAV TUNA",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    },
-    {
       "pilot_key": "külzer_sascha",
       "pilot_name": "Külzer, Sascha",
       "pilot_q": 2,
@@ -903,7 +911,7 @@
       "from": "HOS",
       "to": "RÜB",
       "current_ship_name": "RIX SAIL",
-      "current_ship_source": "schiffe_merged.seelotsen",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta",
       "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
     }
@@ -1082,6 +1090,15 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "THETIS D",
           "pilot_current_ship_eta_rueb": "2026-05-13 19:39",
+          "ship_eta_rueb": "2026-05-13 16:36",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Sattler, Olaf",
+          "pilot_tactical_nr": 5,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "HAV TUNA",
+          "pilot_current_ship_eta_rueb": "2026-05-13 19:30",
           "ship_eta_rueb": "2026-05-13 16:36",
           "availability_kind": "merged_eta"
         }
@@ -1283,6 +1300,15 @@
           "pilot_current_ship_eta_rueb": "2026-05-13 19:39",
           "ship_eta_rueb": "2026-05-13 16:45",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Sattler, Olaf",
+          "pilot_tactical_nr": 5,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "HAV TUNA",
+          "pilot_current_ship_eta_rueb": "2026-05-13 19:30",
+          "ship_eta_rueb": "2026-05-13 16:45",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -1477,6 +1503,15 @@
           "pilot_current_ship_eta_rueb": "2026-05-13 19:39",
           "ship_eta_rueb": "2026-05-13 18:50",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Sattler, Olaf",
+          "pilot_tactical_nr": 5,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "HAV TUNA",
+          "pilot_current_ship_eta_rueb": "2026-05-13 19:30",
+          "ship_eta_rueb": "2026-05-13 18:50",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -1515,7 +1550,7 @@
     {
       "ship_key": "SOUTH",
       "ship_name": "SOUTH",
-      "eta_rueb": "2026-05-13 19:11",
+      "eta_rueb": "2026-05-13 19:10",
       "ship_q": 1,
       "assigned_pilot": "Klein, Sebastian",
       "assigned_pilot_q": 0,
@@ -1654,7 +1689,16 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "THETIS D",
           "pilot_current_ship_eta_rueb": "2026-05-13 19:39",
-          "ship_eta_rueb": "2026-05-13 19:11",
+          "ship_eta_rueb": "2026-05-13 19:10",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Sattler, Olaf",
+          "pilot_tactical_nr": 5,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "HAV TUNA",
+          "pilot_current_ship_eta_rueb": "2026-05-13 19:30",
+          "ship_eta_rueb": "2026-05-13 19:10",
           "availability_kind": "merged_eta"
         }
       ],
@@ -1824,6 +1868,15 @@
           "pilot_current_ship_eta_rueb": "2026-05-13 19:39",
           "ship_eta_rueb": "2026-05-13 19:14",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Sattler, Olaf",
+          "pilot_tactical_nr": 5,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "HAV TUNA",
+          "pilot_current_ship_eta_rueb": "2026-05-13 19:30",
+          "ship_eta_rueb": "2026-05-13 19:14",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -1874,7 +1927,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 8,
+      "candidate_count": 9,
       "candidates": [
         {
           "pilot_name": "Zozulya, Mykola",
@@ -1951,6 +2004,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "THETIS D",
           "current_ship_eta_rueb": "2026-05-13 19:39",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Sattler, Olaf",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 5,
+          "abteilungszeit": "2026-05-13 14:22",
+          "fahrzeug": "HAV TUNA",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "HAV TUNA",
+          "current_ship_eta_rueb": "2026-05-13 19:30",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -2113,6 +2179,28 @@
       "current_ship_eta_rueb": "2026-05-13 19:39",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "sattler_olaf",
+      "vorname": "Olaf",
+      "nachname": "Sattler",
+      "pilot_name": "Sattler, Olaf",
+      "abteilungszeit": "2026-05-13 14:22",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 5,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "HAV TUNA",
+      "from": "HOR",
+      "to": "RÜB",
+      "nr": 5,
+      "raw_time": "Wed May 13 14:22:00 CEST 2026",
+      "current_ship_name": "HAV TUNA",
+      "current_ship_eta_rueb": "2026-05-13 19:30",
+      "current_ship_q": 0,
+      "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
