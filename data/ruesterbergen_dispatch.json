@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-13T04:41:21",
+  "generated_at": "2026-05-13T04:43:14",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 3,
     "pilots_total": 7,
-    "pilots_dispatchable": 4,
-    "pilots_visible_only": 3,
+    "pilots_dispatchable": 5,
+    "pilots_visible_only": 2,
     "assignments": 3,
     "unassigned_ships": 0,
-    "unused_pilots": 1
+    "unused_pilots": 2
   },
   "ships": [
     {
@@ -238,7 +238,7 @@
       "nr": 7,
       "raw_time": "Tue May 12 23:47:00 CEST 2026",
       "current_ship_name": "FINE SCHEPERS",
-      "current_ship_eta_rueb": "2026-05-13 05:43",
+      "current_ship_eta_rueb": "2026-05-13 05:42",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -260,6 +260,7 @@
       "nr": 5,
       "raw_time": "Wed May 13 02:58:00 CEST 2026",
       "current_ship_name": "TIMBUS",
+      "current_ship_eta_rueb": "2026-05-13 08:46",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -391,29 +392,36 @@
       "nr": 7,
       "raw_time": "Tue May 12 23:47:00 CEST 2026",
       "current_ship_name": "FINE SCHEPERS",
-      "current_ship_eta_rueb": "2026-05-13 05:43",
+      "current_ship_eta_rueb": "2026-05-13 05:42",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "diekmann_ulrich",
+      "vorname": "Ulrich",
+      "nachname": "Diekmann",
+      "pilot_name": "Diekmann, Ulrich",
+      "abteilungszeit": "2026-05-13 02:58",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 5,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "TIMBUS",
+      "from": "HOR",
+      "to": "RÜB",
+      "nr": 5,
+      "raw_time": "Wed May 13 02:58:00 CEST 2026",
+      "current_ship_name": "TIMBUS",
+      "current_ship_eta_rueb": "2026-05-13 08:46",
+      "current_ship_q": 0,
+      "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     }
   ],
   "visible_but_not_dispatchable_pilots": [
-    {
-      "pilot_key": "diekmann_ulrich",
-      "pilot_name": "Diekmann, Ulrich",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 5,
-      "abteilungszeit": "2026-05-13 02:58",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "TIMBUS",
-      "from": "HOR",
-      "to": "RÜB",
-      "current_ship_name": "TIMBUS",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    },
     {
       "pilot_key": "doering_lars",
       "pilot_name": "Doering, Lars",
@@ -510,8 +518,19 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "FINE SCHEPERS",
-          "current_ship_eta_rueb": "2026-05-13 05:43",
+          "current_ship_eta_rueb": "2026-05-13 05:42",
           "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Diekmann, Ulrich",
+          "pilot_tactical_nr": 5,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "TIMBUS",
+          "pilot_current_ship_eta_rueb": "2026-05-13 08:46",
+          "ship_eta_rueb": "2026-05-13 07:23",
           "availability_kind": "merged_eta"
         }
       ],
@@ -600,8 +619,19 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "FINE SCHEPERS",
-          "current_ship_eta_rueb": "2026-05-13 05:43",
+          "current_ship_eta_rueb": "2026-05-13 05:42",
           "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Diekmann, Ulrich",
+          "pilot_tactical_nr": 5,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "TIMBUS",
+          "pilot_current_ship_eta_rueb": "2026-05-13 08:46",
+          "ship_eta_rueb": "2026-05-13 07:27",
           "availability_kind": "merged_eta"
         }
       ],
@@ -676,8 +706,19 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "FINE SCHEPERS",
-          "current_ship_eta_rueb": "2026-05-13 05:43",
+          "current_ship_eta_rueb": "2026-05-13 05:42",
           "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Diekmann, Ulrich",
+          "pilot_tactical_nr": 5,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "TIMBUS",
+          "pilot_current_ship_eta_rueb": "2026-05-13 08:46",
+          "ship_eta_rueb": "2026-05-13 07:34",
           "availability_kind": "merged_eta"
         }
       ],
@@ -734,9 +775,31 @@
       "nr": 7,
       "raw_time": "Tue May 12 23:47:00 CEST 2026",
       "current_ship_name": "FINE SCHEPERS",
-      "current_ship_eta_rueb": "2026-05-13 05:43",
+      "current_ship_eta_rueb": "2026-05-13 05:42",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "diekmann_ulrich",
+      "vorname": "Ulrich",
+      "nachname": "Diekmann",
+      "pilot_name": "Diekmann, Ulrich",
+      "abteilungszeit": "2026-05-13 02:58",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 5,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "TIMBUS",
+      "from": "HOR",
+      "to": "RÜB",
+      "nr": 5,
+      "raw_time": "Wed May 13 02:58:00 CEST 2026",
+      "current_ship_name": "TIMBUS",
+      "current_ship_eta_rueb": "2026-05-13 08:46",
+      "current_ship_q": 0,
+      "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     }
