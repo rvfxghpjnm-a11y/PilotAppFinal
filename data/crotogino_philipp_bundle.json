@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-13T07:35:27",
+  "generated_at": "2026-05-13T07:37:30",
   "target": {
     "slug": "crotogino_philipp",
     "display_name": "crotogino, philipp",
@@ -8,27 +8,32 @@
     "watch_user_key": "unng2ks8z2a8jgb9uftdiun1n88cfz"
   },
   "state": {
-    "kind": "gesamtboert",
-    "source": "Gesamtboert.json",
-    "pos": "3",
-    "takt": "100,0"
+    "kind": "seelotsen",
+    "source": "Seelotsen.json",
+    "aufgabe": "Kanalbört",
+    "fahrzeug": "Leerfahrt",
+    "time": "Wed May 13 07:35:00 CEST 2026"
   },
   "action_card": {
     "title": "crotogino, philipp",
-    "subtitle": "Gesamtbört",
-    "state_kind": "gesamtboert",
-    "state_label": "Gesamtbört",
+    "subtitle": "Seelotsen",
+    "state_kind": "seelotsen",
+    "state_label": "Seelotsen",
     "q_gruppe": "0",
-    "pos": "3",
-    "takt": "100,0",
-    "workstart_label": "Start: 2026-05-13 09:00",
+    "aufgabe": "Kanalbört",
+    "fahrzeug": "Leerfahrt",
+    "route": "HOS → RÜB",
+    "time_label": "Akt.: 2026-05-13 07:35",
+    "ship_hint": "Leerfahrt",
     "badges": [
       "Q 0",
-      "Pos 3"
+      "Kanalbört"
     ],
     "lines": [
-      "Takt: 100,0",
-      "Start: 2026-05-13 09:00"
+      "Leerfahrt",
+      "HOS → RÜB",
+      "Akt.: 2026-05-13 07:35",
+      "Schiff: Leerfahrt"
     ]
   },
   "q_gruppe": "0",
@@ -48,29 +53,58 @@
     "entry_count": 1108
   },
   "boert": {
-    "entry": {
-      "pos": "3",
-      "takt": "100,0",
-      "nachname": "Crotogino",
-      "vorname": "Philipp",
-      "q_gruppe": "0",
-      "was": "ABR",
-      "zeit": "Wed May 13 06:47:59 CEST 2026",
-      "bemerkung": "",
-      "arrow": null
-    },
-    "entry_count": 1
-  },
-  "seelotsen": {
-    "entries": [],
+    "entry": null,
     "entry_count": 0
   },
-  "related_ships": [],
+  "seelotsen": {
+    "entries": [
+      {
+        "nr": 1,
+        "time": "Wed May 13 07:35:00 CEST 2026",
+        "nachname": "Crotogino",
+        "vorname": "Philipp",
+        "aufgabe": "Kanalbört",
+        "fahrzeug": "Leerfahrt",
+        "from": "HOS",
+        "to": "RÜB"
+      }
+    ],
+    "entry_count": 1
+  },
+  "related_ships": [
+    {
+      "name": "Leerfahrt",
+      "summary": {
+        "name": "Leerfahrt",
+        "special_entry": true,
+        "sources": [
+          "meldungen_kiel",
+          "seelotsen"
+        ],
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "HOS → RÜB"
+        ],
+        "assigned_pilots": [
+          "Crotogino, Philipp",
+          "Petersen, Yannick",
+          "Plaisant, Julian"
+        ],
+        "aufgaben": [
+          "Kanalbört"
+        ],
+        "lotsen_anzahl_kiel": 1,
+        "confirmed_kiel": false,
+        "remark_kiel": "ttg"
+      }
+    }
+  ],
   "person_files": {
     "status": {
       "file": "crotogino_philipp_status.json",
       "exists": true,
-      "generated_at": "2026-05-13 07:34"
+      "generated_at": "2026-05-13 07:36"
     },
     "pos": {
       "file": "crotogino_philipp_pos.json",
@@ -96,65 +130,64 @@
   },
   "snapshots": {
     "status": {
-      "generated_at": "2026-05-13 07:34",
+      "generated_at": "2026-05-13 07:36",
       "nachname": "crotogino",
       "vorname": "philipp",
       "status": {
         "willkommen": "Willkommen Philip Crotogino",
-        "zuletzt": "13.05.-06:47 ABR",
-        "naechster_urlaub": "15.06.2026",
-        "wachnummer": "3"
+        "zuletzt": "13.05.-07:35 ASS",
+        "naechster_urlaub": "15.06.2026"
       }
     },
     "pos": {
-      "pos": 3
+      "pos": null
     },
     "short": {
       "key": "crotogino_philipp",
-      "status": "boert",
-      "short": "Gesamtbört – Pos 3\n09:00\n09:30\nPos/2: 09:04\nPos/3: 08:34\nAkt.: 07:34"
+      "status": "seelotse",
+      "short": "Seelotse – Kanalbört\nLeerfahrt\nRoute: HOS → RÜB\nAkt.: 07:36"
     },
     "long": {
       "key": "crotogino_philipp",
-      "status": "boert",
-      "long": "Gesamtbört\n----------\nKiel 39 / RÜB 6\n\n▶3  | Crotogino | 09:00 / 09:30 / 08:34~09:04\n      | –   | –                    \n 12 | Spiller | Mi12:00 / Mi12:30 / Mi11:34~Mi13:34\n      | ↑   | –                    \n 21 | Escher  | Mi13:45 / Mi17:00 / Mi14:34~Mi18:04\n      | ↑$$ | 𝗠𝗮𝘅 takt 74          \n 26 | Koch    | Mi16:00 / Do03:00 / Mi16:14~Mi20:34\n      | ↑$$ | max tk 4             \n 27 | Jenckel | Mi17:00 / Do03:00 / Mi16:34~Mi21:04\n      | ↑$$ | max tk 100           \n 34 | Böttcher | Do02:00 / Mi18:54~Do00:34\n      | ↑$$ | –                    \n 36 | Köhler  | Do03:00 / Mi19:34~Do01:34\n      | ↑$$ | –                    \n 38 | Steffens | Do06:30 / Mi20:14~Do02:34\n      | ↑$$ | –                    \n 45 | Lüdtke  | Mi22:34~Do06:04\n      | ↑$$ | –                    \n 49 | Spiekermann | Mi23:54~Do08:04\n      | ↑$$ | max tk 25            \n 65 | Groen   | Do05:14~Do16:04\n      | ↑$$ | 𝗠𝗮𝘅 takt 38          \n\nAkt.: 07:34"
+      "status": "seelotse",
+      "long": "Seelotse\n--------\n   Nr | ETA   | Name        | Fahrzeug         | Route      | Schl | ΔR-S | ΔS-R\n------------------------------------------------------------------------------------------\n\nKanalbört\n---------\n▶1  | –     | Crotogino  | Leerfahrt    | HOS → RÜB  | –    | –    | –   \n 2  | –     | Petersen   | Leerfahrt    | HOS → RÜB  | –    | –    | –   \n 3  | –     | Plaisant   | Leerfahrt    | HOS → RÜB  | –    | –    | –   \n 4  | 11:06 | Wulff      | TUNDRALAND   | HOS → RÜB  | 15:54 | 04:48 | 03:34\n 5  | 07:29 | Krüger     | FREJ         | RÜB → HOS  | 11:58 | 04:29 | 04:25\n 6  | 07:15 | Stoislow   | HAV MARLIN   | RÜB → HOS  | 11:54 | 04:39 | 04:11\n 9  | 08:47 | Zimmermann | ELBSUMMER    | HOS → RÜB  | 13:49 | 05:02 | 03:57\n 10 | 08:39 | Doering    | SOFIA        | HOS → RÜB  | 13:46 | 05:07 | 03:51\n 12 | 08:37 | Diekmann   | TIMBUS       | HOR → RÜB  | 13:42 | 05:05 | 03:55\n 14 | 07:11 | Flink      | KRISTEL      | RÜB → HOS  | 12:04 | 04:53 | 07:01\n 15 | –     | Kubica     | SOUTH ENABLE | RÜB → HOS  | –    | –    | –   \n\nMeldungen Rüsterbergen\n----------------------\nETA  | Schiff            | Q | Route\n----------------------------------------------\n09:00 | SEEHUND 6         | 5 | LEM → HOS\n09:00 | SEEHUND 8         | 5 | LEM → HOS\n09:00 | SEEHUND 9         | 6 | LEM → HOS\n10:09 | ELBINSEL          | 1 | RÜB → HOS\n10:13 | PRIMA KING        | 5 | RÜB → HOS\n10:16 | EKNOE             | 4 | RÜB → HOS\n\nAkt.: 07:36"
     }
   },
   "source_meta": {
     "gesamtboert": {
       "file": "Gesamtboert.json",
       "exists": true,
-      "generated_at": "2026-05-13 07:34",
-      "count": 83
+      "generated_at": "2026-05-13 07:36",
+      "count": 80
     },
     "seelotsen": {
       "file": "Seelotsen.json",
       "exists": true,
-      "generated_at": "2026-05-13 07:34",
-      "count": 12
+      "generated_at": "2026-05-13 07:36",
+      "count": 15
     },
     "meldungen_kiel": {
       "file": "Meldungen_Kiel.json",
       "exists": true,
-      "generated_at": "2026-05-13 07:34",
-      "count": 39
+      "generated_at": "2026-05-13 07:36",
+      "count": 38
     },
     "meldungen_ruesterbergen": {
       "file": "Meldungen_Ruesterbergen.json",
       "exists": true,
-      "generated_at": "2026-05-13 07:34",
+      "generated_at": "2026-05-13 07:36",
       "count": 6
     },
     "q_gruppen": {
       "file": "q_gruppen_lotsen.json",
       "exists": true,
-      "generated_at": "2026-05-13T07:35:11",
+      "generated_at": "2026-05-13T07:37:13",
       "count": 154
     },
     "schiffe_merged": {
       "file": "schiffe_merged.json",
       "exists": true,
-      "generated_at": "2026-05-13T07:35:11",
+      "generated_at": "2026-05-13T07:37:13",
       "count": 55
     },
     "workstart_history_json": {
