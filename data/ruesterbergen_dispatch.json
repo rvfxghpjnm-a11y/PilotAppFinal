@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-13T05:33:21",
+  "generated_at": "2026-05-13T05:35:14",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,13 +32,13 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 4,
+    "ships_for_ruesterbergen": 5,
     "pilots_total": 6,
     "pilots_dispatchable": 6,
     "pilots_visible_only": 0,
-    "assignments": 4,
+    "assignments": 5,
     "unassigned_ships": 0,
-    "unused_pilots": 2
+    "unused_pilots": 1
   },
   "ships": [
     {
@@ -155,9 +155,34 @@
       }
     },
     {
+      "ship_key": "PRIMA KING",
+      "ship_name": "PRIMA KING",
+      "eta_rueb": "2026-05-13 10:03",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 5,
+      "meldung": {
+        "nr": "5",
+        "time": "Wed May 13 10:03:00 CEST 2026",
+        "draft": "5.3",
+        "q_gruppe": "5",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "RÜB → HOS",
+        "routes": [
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "5",
+        "draft": "5.3"
+      }
+    },
+    {
       "ship_key": "ELBINSEL",
       "ship_name": "ELBINSEL",
-      "eta_rueb": "2026-05-13 10:00",
+      "eta_rueb": "2026-05-13 10:11",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 1,
       "meldung": {
@@ -781,10 +806,10 @@
       }
     },
     {
-      "ship_key": "ELBINSEL",
-      "ship_name": "ELBINSEL",
-      "eta_rueb": "2026-05-13 10:00",
-      "ship_q": 1,
+      "ship_key": "PRIMA KING",
+      "ship_name": "PRIMA KING",
+      "eta_rueb": "2026-05-13 10:03",
+      "ship_q": 5,
       "assigned_pilot": "Diekmann, Ulrich",
       "assigned_pilot_q": 0,
       "assigned_tactical_nr": 6,
@@ -809,6 +834,70 @@
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
+        {
+          "pilot_name": "Doering, Lars",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 4,
+          "abteilungszeit": "2026-05-13 03:06",
+          "fahrzeug": "SOFIA",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "SOFIA",
+          "current_ship_eta_rueb": "2026-05-13 08:45",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Zimmermann, Martin",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 3,
+          "abteilungszeit": "2026-05-13 03:21",
+          "fahrzeug": "ELBSUMMER",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ELBSUMMER",
+          "current_ship_eta_rueb": "2026-05-13 08:49",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "5",
+          "time": "Wed May 13 10:03:00 CEST 2026",
+          "draft": "5.3",
+          "q_gruppe": "5",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "RÜB → HOS",
+          "routes": [
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "5",
+          "draft": "5.3"
+        }
+      }
+    },
+    {
+      "ship_key": "ELBINSEL",
+      "ship_name": "ELBINSEL",
+      "eta_rueb": "2026-05-13 10:11",
+      "ship_q": 1,
+      "assigned_pilot": "Doering, Lars",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 4,
+      "assigned_abteilungszeit": "2026-05-13 03:06",
+      "assigned_current_ship_name": "SOFIA",
+      "assigned_current_ship_eta_rueb": "2026-05-13 08:45",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 2,
+      "candidates": [
         {
           "pilot_name": "Doering, Lars",
           "pilot_q": 0,
@@ -873,28 +962,6 @@
   ],
   "unassigned_ships": [],
   "unused_pilots": [
-    {
-      "pilot_key": "doering_lars",
-      "vorname": "Lars",
-      "nachname": "Doering",
-      "pilot_name": "Doering, Lars",
-      "abteilungszeit": "2026-05-13 03:06",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 4,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "SOFIA",
-      "from": "HOS",
-      "to": "RÜB",
-      "nr": 4,
-      "raw_time": "Wed May 13 03:06:00 CEST 2026",
-      "current_ship_name": "SOFIA",
-      "current_ship_eta_rueb": "2026-05-13 08:45",
-      "current_ship_q": 0,
-      "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
-    },
     {
       "pilot_key": "zimmermann_martin",
       "vorname": "Martin",
