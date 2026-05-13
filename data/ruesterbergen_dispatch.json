@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-13T20:15:18",
+  "generated_at": "2026-05-13T20:17:16",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 7,
     "pilots_total": 12,
-    "pilots_dispatchable": 11,
-    "pilots_visible_only": 1,
+    "pilots_dispatchable": 12,
+    "pilots_visible_only": 0,
     "assignments": 7,
     "unassigned_ships": 0,
-    "unused_pilots": 4
+    "unused_pilots": 5
   },
   "ships": [
     {
@@ -82,7 +82,7 @@
     {
       "ship_key": "ECO GHIBLI",
       "ship_name": "ECO GHIBLI",
-      "eta_rueb": "2026-05-13 21:15",
+      "eta_rueb": "2026-05-13 21:14",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 0,
       "meldung": {
@@ -118,47 +118,9 @@
       }
     },
     {
-      "ship_key": "AKACIA",
-      "ship_name": "AKACIA",
-      "eta_rueb": "2026-05-13 23:25",
-      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
-      "ship_q": 2,
-      "meldung": {
-        "nr": "3",
-        "time": "Wed May 13 23:00:00 CEST 2026",
-        "draft": "8.2",
-        "q_gruppe": "2",
-        "lotsen_anzahl": 1,
-        "confirmed": false,
-        "from": "RÜB",
-        "to": "HOS"
-      },
-      "summary": {
-        "route": "HOS → KLT",
-        "routes": [
-          "HOS → KLT",
-          "RÜB → HOS"
-        ],
-        "q_gruppe": "2",
-        "vg": "5",
-        "draft": "8.20",
-        "length_m": "149.14",
-        "beam_m": "22.5",
-        "queue_title": "Zulauf vom Kanal in Kiel",
-        "zulauf_richtung": "vom_kanal",
-        "pilot_required": "true",
-        "pilot_status": "U",
-        "pilot_1_name": "Pl�cker, Stephan",
-        "travel_status": "SAILING_NOK",
-        "makler": "UCA",
-        "dangerous_vessel": "-",
-        "type_of_loading": "Container"
-      }
-    },
-    {
       "ship_key": "LADY HABARKA",
       "ship_name": "LADY HABARKA",
-      "eta_rueb": "2026-05-13 23:28",
+      "eta_rueb": "2026-05-13 23:25",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
@@ -191,6 +153,44 @@
         "makler": "UCA",
         "dangerous_vessel": "-",
         "type_of_loading": "Stueckgueter"
+      }
+    },
+    {
+      "ship_key": "AKACIA",
+      "ship_name": "AKACIA",
+      "eta_rueb": "2026-05-13 23:28",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 2,
+      "meldung": {
+        "nr": "3",
+        "time": "Wed May 13 23:00:00 CEST 2026",
+        "draft": "8.2",
+        "q_gruppe": "2",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "2",
+        "vg": "5",
+        "draft": "8.20",
+        "length_m": "149.14",
+        "beam_m": "22.5",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "U",
+        "pilot_1_name": "Pl�cker, Stephan",
+        "travel_status": "SAILING_NOK",
+        "makler": "UCA",
+        "dangerous_vessel": "-",
+        "type_of_loading": "Container"
       }
     },
     {
@@ -528,9 +528,10 @@
       "nr": 3,
       "raw_time": "Wed May 13 18:57:00 CEST 2026",
       "current_ship_name": "ELBOCEAN",
+      "current_ship_eta_rueb": "2026-05-14 00:02",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
@@ -775,6 +776,28 @@
       "availability_kind": "merged_eta"
     },
     {
+      "pilot_key": "glenewinkel_jan-steffen",
+      "vorname": "Jan-Steffen",
+      "nachname": "Glenewinkel",
+      "pilot_name": "Glenewinkel, Jan-Steffen",
+      "abteilungszeit": "2026-05-13 18:57",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 3,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "ELBOCEAN",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 3,
+      "raw_time": "Wed May 13 18:57:00 CEST 2026",
+      "current_ship_name": "ELBOCEAN",
+      "current_ship_eta_rueb": "2026-05-14 00:02",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
       "pilot_key": "lüttge_sebastian",
       "vorname": "Sebastian",
       "nachname": "Lüttge",
@@ -797,23 +820,7 @@
       "availability_kind": "merged_eta"
     }
   ],
-  "visible_but_not_dispatchable_pilots": [
-    {
-      "pilot_key": "glenewinkel_jan-steffen",
-      "pilot_name": "Glenewinkel, Jan-Steffen",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 3,
-      "abteilungszeit": "2026-05-13 18:57",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "ELBOCEAN",
-      "from": "HOS",
-      "to": "RÜB",
-      "current_ship_name": "ELBOCEAN",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    }
-  ],
+  "visible_but_not_dispatchable_pilots": [],
   "assignments": [
     {
       "ship_key": "O7 ALSACE",
@@ -964,6 +971,15 @@
       ],
       "excluded": [
         {
+          "pilot_name": "Glenewinkel, Jan-Steffen",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "ELBOCEAN",
+          "pilot_current_ship_eta_rueb": "2026-05-14 00:02",
+          "ship_eta_rueb": "2026-05-13 21:10",
+          "availability_kind": "merged_eta"
+        },
+        {
           "pilot_name": "Lüttge, Sebastian",
           "pilot_tactical_nr": 1,
           "reason": "kommt nicht rechtzeitig in RÜB an",
@@ -1010,7 +1026,7 @@
     {
       "ship_key": "ECO GHIBLI",
       "ship_name": "ECO GHIBLI",
-      "eta_rueb": "2026-05-13 21:15",
+      "eta_rueb": "2026-05-13 21:14",
       "ship_q": 0,
       "assigned_pilot": "Suermann, Nik",
       "assigned_pilot_q": 0,
@@ -1137,12 +1153,21 @@
           "ship_q": 0
         },
         {
+          "pilot_name": "Glenewinkel, Jan-Steffen",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "ELBOCEAN",
+          "pilot_current_ship_eta_rueb": "2026-05-14 00:02",
+          "ship_eta_rueb": "2026-05-13 21:14",
+          "availability_kind": "merged_eta"
+        },
+        {
           "pilot_name": "Lüttge, Sebastian",
           "pilot_tactical_nr": 1,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "NEPTUNUS",
           "pilot_current_ship_eta_rueb": "2026-05-13 23:58",
-          "ship_eta_rueb": "2026-05-13 21:15",
+          "ship_eta_rueb": "2026-05-13 21:14",
           "availability_kind": "merged_eta"
         }
       ],
@@ -1181,10 +1206,10 @@
       }
     },
     {
-      "ship_key": "AKACIA",
-      "ship_name": "AKACIA",
+      "ship_key": "LADY HABARKA",
+      "ship_name": "LADY HABARKA",
       "eta_rueb": "2026-05-13 23:25",
-      "ship_q": 2,
+      "ship_q": 5,
       "assigned_pilot": "Spiller, Roman",
       "assigned_pilot_q": 0,
       "assigned_tactical_nr": 13,
@@ -1303,6 +1328,15 @@
       ],
       "excluded": [
         {
+          "pilot_name": "Glenewinkel, Jan-Steffen",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "ELBOCEAN",
+          "pilot_current_ship_eta_rueb": "2026-05-14 00:02",
+          "ship_eta_rueb": "2026-05-13 23:25",
+          "availability_kind": "merged_eta"
+        },
+        {
           "pilot_name": "Lüttge, Sebastian",
           "pilot_tactical_nr": 1,
           "reason": "kommt nicht rechtzeitig in RÜB an",
@@ -1314,10 +1348,10 @@
       ],
       "ship": {
         "meldung": {
-          "nr": "3",
+          "nr": "4",
           "time": "Wed May 13 23:00:00 CEST 2026",
-          "draft": "8.2",
-          "q_gruppe": "2",
+          "draft": "5.6",
+          "q_gruppe": "5",
           "lotsen_anzahl": 1,
           "confirmed": false,
           "from": "RÜB",
@@ -1329,28 +1363,28 @@
             "HOS → KLT",
             "RÜB → HOS"
           ],
-          "q_gruppe": "2",
-          "vg": "5",
-          "draft": "8.20",
-          "length_m": "149.14",
-          "beam_m": "22.5",
+          "q_gruppe": "5",
+          "vg": "3",
+          "draft": "5.60",
+          "length_m": "97.59",
+          "beam_m": "13.4",
           "queue_title": "Zulauf vom Kanal in Kiel",
           "zulauf_richtung": "vom_kanal",
           "pilot_required": "true",
-          "pilot_status": "U",
-          "pilot_1_name": "Pl�cker, Stephan",
+          "pilot_status": "P",
+          "pilot_1_name": "Haase, Stefan",
           "travel_status": "SAILING_NOK",
           "makler": "UCA",
           "dangerous_vessel": "-",
-          "type_of_loading": "Container"
+          "type_of_loading": "Stueckgueter"
         }
       }
     },
     {
-      "ship_key": "LADY HABARKA",
-      "ship_name": "LADY HABARKA",
+      "ship_key": "AKACIA",
+      "ship_name": "AKACIA",
       "eta_rueb": "2026-05-13 23:28",
-      "ship_q": 5,
+      "ship_q": 2,
       "assigned_pilot": "Marth, Jürgen",
       "assigned_pilot_q": 0,
       "assigned_tactical_nr": 9,
@@ -1457,6 +1491,15 @@
       ],
       "excluded": [
         {
+          "pilot_name": "Glenewinkel, Jan-Steffen",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "ELBOCEAN",
+          "pilot_current_ship_eta_rueb": "2026-05-14 00:02",
+          "ship_eta_rueb": "2026-05-13 23:28",
+          "availability_kind": "merged_eta"
+        },
+        {
           "pilot_name": "Lüttge, Sebastian",
           "pilot_tactical_nr": 1,
           "reason": "kommt nicht rechtzeitig in RÜB an",
@@ -1468,10 +1511,10 @@
       ],
       "ship": {
         "meldung": {
-          "nr": "4",
+          "nr": "3",
           "time": "Wed May 13 23:00:00 CEST 2026",
-          "draft": "5.6",
-          "q_gruppe": "5",
+          "draft": "8.2",
+          "q_gruppe": "2",
           "lotsen_anzahl": 1,
           "confirmed": false,
           "from": "RÜB",
@@ -1483,20 +1526,20 @@
             "HOS → KLT",
             "RÜB → HOS"
           ],
-          "q_gruppe": "5",
-          "vg": "3",
-          "draft": "5.60",
-          "length_m": "97.59",
-          "beam_m": "13.4",
+          "q_gruppe": "2",
+          "vg": "5",
+          "draft": "8.20",
+          "length_m": "149.14",
+          "beam_m": "22.5",
           "queue_title": "Zulauf vom Kanal in Kiel",
           "zulauf_richtung": "vom_kanal",
           "pilot_required": "true",
-          "pilot_status": "P",
-          "pilot_1_name": "Haase, Stefan",
+          "pilot_status": "U",
+          "pilot_1_name": "Pl�cker, Stephan",
           "travel_status": "SAILING_NOK",
           "makler": "UCA",
           "dangerous_vessel": "-",
-          "type_of_loading": "Stueckgueter"
+          "type_of_loading": "Container"
         }
       }
     },
@@ -1515,7 +1558,7 @@
       "assigned_availability_kind": "already_in_rueb",
       "assigned_availability_hint": "Lotse gilt als bereits in RÜB",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 7,
+      "candidate_count": 8,
       "candidates": [
         {
           "pilot_name": "Sattler, Olaf",
@@ -1596,6 +1639,19 @@
           "availability_kind": "merged_eta"
         },
         {
+          "pilot_name": "Glenewinkel, Jan-Steffen",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 3,
+          "abteilungszeit": "2026-05-13 18:57",
+          "fahrzeug": "ELBOCEAN",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ELBOCEAN",
+          "current_ship_eta_rueb": "2026-05-14 00:02",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
           "pilot_name": "Lüttge, Sebastian",
           "pilot_q": 4,
           "pilot_tactical_nr": 1,
@@ -1656,7 +1712,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 4,
+      "candidate_count": 5,
       "candidates": [
         {
           "pilot_name": "Krämer, Jonas",
@@ -1707,6 +1763,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "LIKYA THERESA",
           "current_ship_eta_rueb": "2026-05-13 19:07",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Glenewinkel, Jan-Steffen",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 3,
+          "abteilungszeit": "2026-05-13 18:57",
+          "fahrzeug": "ELBOCEAN",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ELBOCEAN",
+          "current_ship_eta_rueb": "2026-05-14 00:02",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
@@ -1776,7 +1845,7 @@
       "assigned_availability_kind": "already_in_rueb",
       "assigned_availability_hint": "Lotse gilt als bereits in RÜB",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 5,
+      "candidate_count": 6,
       "candidates": [
         {
           "pilot_name": "Külzer, Sascha",
@@ -1827,6 +1896,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "LIKYA THERESA",
           "current_ship_eta_rueb": "2026-05-13 19:07",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Glenewinkel, Jan-Steffen",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 3,
+          "abteilungszeit": "2026-05-13 18:57",
+          "fahrzeug": "ELBOCEAN",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ELBOCEAN",
+          "current_ship_eta_rueb": "2026-05-14 00:02",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1931,6 +2013,28 @@
       "current_ship_eta_rueb": "2026-05-13 19:07",
       "current_ship_q": 4,
       "current_ship_route": "RÜB → HOS",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "glenewinkel_jan-steffen",
+      "vorname": "Jan-Steffen",
+      "nachname": "Glenewinkel",
+      "pilot_name": "Glenewinkel, Jan-Steffen",
+      "abteilungszeit": "2026-05-13 18:57",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 3,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "ELBOCEAN",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 3,
+      "raw_time": "Wed May 13 18:57:00 CEST 2026",
+      "current_ship_name": "ELBOCEAN",
+      "current_ship_eta_rueb": "2026-05-14 00:02",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
