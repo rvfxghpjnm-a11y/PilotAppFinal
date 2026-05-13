@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-13T03:09:10",
+  "generated_at": "2026-05-13T03:11:17",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,13 +32,13 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 3,
+    "ships_for_ruesterbergen": 5,
     "pilots_total": 6,
     "pilots_dispatchable": 4,
     "pilots_visible_only": 2,
-    "assignments": 3,
-    "unassigned_ships": 0,
-    "unused_pilots": 1
+    "assignments": 4,
+    "unassigned_ships": 1,
+    "unused_pilots": 0
   },
   "ships": [
     {
@@ -108,7 +108,7 @@
     {
       "ship_key": "KRISTEL",
       "ship_name": "KRISTEL",
-      "eta_rueb": "2026-05-13 07:21",
+      "eta_rueb": "2026-05-13 07:22",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
@@ -141,6 +141,81 @@
         "makler": "SUB",
         "dangerous_vessel": "-",
         "type_of_loading": "Schrott"
+      }
+    },
+    {
+      "ship_key": "HAV MARLIN",
+      "ship_name": "HAV MARLIN",
+      "eta_rueb": "2026-05-13 07:34",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 5,
+      "meldung": {
+        "nr": "5",
+        "time": "Wed May 13 07:30:00 CEST 2026",
+        "draft": "4.5",
+        "q_gruppe": "5",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "RÜB → HOS",
+        "routes": [
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "5",
+        "vg": "3",
+        "draft": "4.50",
+        "length_m": "88.160",
+        "beam_m": "12.50",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "H",
+        "pilot_1_name": "Drumm, Christian",
+        "travel_status": "SAILING_NOK",
+        "makler": "UCA",
+        "dangerous_vessel": "-",
+        "type_of_loading": "Eisen und Stahl"
+      }
+    },
+    {
+      "ship_key": "FREJ",
+      "ship_name": "FREJ",
+      "eta_rueb": "2026-05-13 07:38",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 4,
+      "meldung": {
+        "nr": "4",
+        "time": "Wed May 13 07:25:00 CEST 2026",
+        "draft": "6.0",
+        "q_gruppe": "4",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "4",
+        "vg": "3",
+        "draft": "6.00",
+        "length_m": "97.530",
+        "beam_m": "15.900",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "U",
+        "pilot_1_name": "Hansen, Constantin",
+        "travel_status": "SAILING_NOK",
+        "makler": "UCA",
+        "dangerous_vessel": "-",
+        "type_of_loading": "Stueckgueter"
       }
     }
   ],
@@ -571,7 +646,7 @@
     {
       "ship_key": "KRISTEL",
       "ship_name": "KRISTEL",
-      "eta_rueb": "2026-05-13 07:21",
+      "eta_rueb": "2026-05-13 07:22",
       "ship_q": 5,
       "assigned_pilot": "Koslik, Kevin",
       "assigned_pilot_q": 0,
@@ -645,31 +720,79 @@
           "type_of_loading": "Schrott"
         }
       }
+    },
+    {
+      "ship_key": "HAV MARLIN",
+      "ship_name": "HAV MARLIN",
+      "eta_rueb": "2026-05-13 07:34",
+      "ship_q": 5,
+      "assigned_pilot": "Flink, Jörg",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 5,
+      "assigned_abteilungszeit": "2026-05-12 23:47",
+      "assigned_current_ship_name": "FINE SCHEPERS",
+      "assigned_current_ship_eta_rueb": "2026-05-13 05:35",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "pilot_name": "Flink, Jörg",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 5,
+          "abteilungszeit": "2026-05-12 23:47",
+          "fahrzeug": "FINE SCHEPERS",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "FINE SCHEPERS",
+          "current_ship_eta_rueb": "2026-05-13 05:35",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "5",
+          "time": "Wed May 13 07:30:00 CEST 2026",
+          "draft": "4.5",
+          "q_gruppe": "5",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "RÜB → HOS",
+          "routes": [
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "5",
+          "vg": "3",
+          "draft": "4.50",
+          "length_m": "88.160",
+          "beam_m": "12.50",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "H",
+          "pilot_1_name": "Drumm, Christian",
+          "travel_status": "SAILING_NOK",
+          "makler": "UCA",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Eisen und Stahl"
+        }
+      }
     }
   ],
-  "unassigned_ships": [],
-  "unused_pilots": [
+  "unassigned_ships": [
     {
-      "pilot_key": "flink_jörg",
-      "vorname": "Jörg",
-      "nachname": "Flink",
-      "pilot_name": "Flink, Jörg",
-      "abteilungszeit": "2026-05-12 23:47",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 5,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "FINE SCHEPERS",
-      "from": "HOS",
-      "to": "RÜB",
-      "nr": 5,
-      "raw_time": "Tue May 12 23:47:00 CEST 2026",
-      "current_ship_name": "FINE SCHEPERS",
-      "current_ship_eta_rueb": "2026-05-13 05:35",
-      "current_ship_q": 0,
-      "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
+      "ship_key": "FREJ",
+      "ship_name": "FREJ",
+      "eta_rueb": "2026-05-13 07:38",
+      "ship_q": 4,
+      "reason": "kein passender Lotse verfügbar"
     }
-  ]
+  ],
+  "unused_pilots": []
 }
