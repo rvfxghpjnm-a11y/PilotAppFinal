@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-13T15:51:26",
+  "generated_at": "2026-05-13T15:53:21",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 6,
     "pilots_total": 15,
-    "pilots_dispatchable": 12,
-    "pilots_visible_only": 3,
+    "pilots_dispatchable": 13,
+    "pilots_visible_only": 2,
     "assignments": 6,
     "unassigned_ships": 0,
-    "unused_pilots": 6
+    "unused_pilots": 7
   },
   "ships": [
     {
@@ -122,7 +122,7 @@
     {
       "ship_key": "BALTIC ARROW",
       "ship_name": "BALTIC ARROW",
-      "eta_rueb": "2026-05-13 18:51",
+      "eta_rueb": "2026-05-13 18:50",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
@@ -197,7 +197,7 @@
     {
       "ship_key": "LIKYA THERESA",
       "ship_name": "LIKYA THERESA",
-      "eta_rueb": "2026-05-13 19:15",
+      "eta_rueb": "2026-05-13 19:14",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 4,
       "meldung": {
@@ -494,9 +494,10 @@
       "nr": 4,
       "raw_time": "Wed May 13 14:22:00 CEST 2026",
       "current_ship_name": "THETIS D",
+      "current_ship_eta_rueb": "2026-05-13 19:43",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
@@ -517,7 +518,7 @@
       "current_ship_name": "HAV TUNA",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta"
     },
     {
@@ -808,6 +809,28 @@
       "availability_kind": "merged_eta"
     },
     {
+      "pilot_key": "marth_jürgen",
+      "vorname": "Jürgen",
+      "nachname": "Marth",
+      "pilot_name": "Marth, Jürgen",
+      "abteilungszeit": "2026-05-13 14:22",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 4,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "THETIS D",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 4,
+      "raw_time": "Wed May 13 14:22:00 CEST 2026",
+      "current_ship_name": "THETIS D",
+      "current_ship_eta_rueb": "2026-05-13 19:43",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
       "pilot_key": "krämer_jonas",
       "vorname": "Jonas",
       "nachname": "Krämer",
@@ -855,21 +878,6 @@
   ],
   "visible_but_not_dispatchable_pilots": [
     {
-      "pilot_key": "marth_jürgen",
-      "pilot_name": "Marth, Jürgen",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 4,
-      "abteilungszeit": "2026-05-13 14:22",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "THETIS D",
-      "from": "HOS",
-      "to": "RÜB",
-      "current_ship_name": "THETIS D",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    },
-    {
       "pilot_key": "sattler_olaf",
       "pilot_name": "Sattler, Olaf",
       "pilot_q": 0,
@@ -880,7 +888,7 @@
       "from": "HOR",
       "to": "RÜB",
       "current_ship_name": "HAV TUNA",
-      "current_ship_source": "schiffe_merged.seelotsen",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta",
       "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
     },
@@ -1065,6 +1073,15 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "BBC AMETHYST",
           "pilot_current_ship_eta_rueb": "2026-05-13 17:30",
+          "ship_eta_rueb": "2026-05-13 16:36",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Marth, Jürgen",
+          "pilot_tactical_nr": 4,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "THETIS D",
+          "pilot_current_ship_eta_rueb": "2026-05-13 19:43",
           "ship_eta_rueb": "2026-05-13 16:36",
           "availability_kind": "merged_eta"
         }
@@ -1257,6 +1274,15 @@
           "pilot_current_ship_eta_rueb": "2026-05-13 17:30",
           "ship_eta_rueb": "2026-05-13 16:45",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Marth, Jürgen",
+          "pilot_tactical_nr": 4,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "THETIS D",
+          "pilot_current_ship_eta_rueb": "2026-05-13 19:43",
+          "ship_eta_rueb": "2026-05-13 16:45",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -1297,7 +1323,7 @@
     {
       "ship_key": "BALTIC ARROW",
       "ship_name": "BALTIC ARROW",
-      "eta_rueb": "2026-05-13 18:51",
+      "eta_rueb": "2026-05-13 18:50",
       "ship_q": 5,
       "assigned_pilot": "Föhring, Nils",
       "assigned_pilot_q": 0,
@@ -1439,6 +1465,17 @@
           "current_ship_name": "WAALDIJK",
           "current_ship_eta_rueb": "2026-05-13 12:16",
           "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Marth, Jürgen",
+          "pilot_tactical_nr": 4,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "THETIS D",
+          "pilot_current_ship_eta_rueb": "2026-05-13 19:43",
+          "ship_eta_rueb": "2026-05-13 18:50",
           "availability_kind": "merged_eta"
         }
       ],
@@ -1610,6 +1647,17 @@
           "availability_kind": "merged_eta"
         }
       ],
+      "excluded": [
+        {
+          "pilot_name": "Marth, Jürgen",
+          "pilot_tactical_nr": 4,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "THETIS D",
+          "pilot_current_ship_eta_rueb": "2026-05-13 19:43",
+          "ship_eta_rueb": "2026-05-13 19:11",
+          "availability_kind": "merged_eta"
+        }
+      ],
       "ship": {
         "meldung": {
           "nr": "4",
@@ -1647,7 +1695,7 @@
     {
       "ship_key": "LIKYA THERESA",
       "ship_name": "LIKYA THERESA",
-      "eta_rueb": "2026-05-13 19:15",
+      "eta_rueb": "2026-05-13 19:14",
       "ship_q": 4,
       "assigned_pilot": "Reimer, Sven",
       "assigned_pilot_q": 0,
@@ -1767,6 +1815,17 @@
           "availability_kind": "merged_eta"
         }
       ],
+      "excluded": [
+        {
+          "pilot_name": "Marth, Jürgen",
+          "pilot_tactical_nr": 4,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "THETIS D",
+          "pilot_current_ship_eta_rueb": "2026-05-13 19:43",
+          "ship_eta_rueb": "2026-05-13 19:14",
+          "availability_kind": "merged_eta"
+        }
+      ],
       "ship": {
         "meldung": {
           "nr": "5",
@@ -1815,7 +1874,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 7,
+      "candidate_count": 8,
       "candidates": [
         {
           "pilot_name": "Zozulya, Mykola",
@@ -1879,6 +1938,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "CAROLINA",
           "current_ship_eta_rueb": "2026-05-13 14:32",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Marth, Jürgen",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 4,
+          "abteilungszeit": "2026-05-13 14:22",
+          "fahrzeug": "THETIS D",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "THETIS D",
+          "current_ship_eta_rueb": "2026-05-13 19:43",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -2019,6 +2091,28 @@
       "current_ship_eta_rueb": "2026-05-13 14:32",
       "current_ship_q": 0,
       "current_ship_route": "RÜB → HOS",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "marth_jürgen",
+      "vorname": "Jürgen",
+      "nachname": "Marth",
+      "pilot_name": "Marth, Jürgen",
+      "abteilungszeit": "2026-05-13 14:22",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 4,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "THETIS D",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 4,
+      "raw_time": "Wed May 13 14:22:00 CEST 2026",
+      "current_ship_name": "THETIS D",
+      "current_ship_eta_rueb": "2026-05-13 19:43",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
