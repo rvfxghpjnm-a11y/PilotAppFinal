@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-13T04:21:14",
+  "generated_at": "2026-05-13T04:23:23",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 3,
     "pilots_total": 7,
-    "pilots_dispatchable": 3,
-    "pilots_visible_only": 4,
+    "pilots_dispatchable": 4,
+    "pilots_visible_only": 3,
     "assignments": 3,
     "unassigned_ships": 0,
-    "unused_pilots": 0
+    "unused_pilots": 1
   },
   "ships": [
     {
@@ -216,6 +216,7 @@
       "nr": 8,
       "raw_time": "Tue May 12 21:50:00 CEST 2026",
       "current_ship_name": "DIAMOND",
+      "current_ship_eta_rueb": "2026-05-10 17:41",
       "current_ship_q": 0,
       "current_ship_route": "RDP → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -353,6 +354,28 @@
       "availability_kind": "merged_eta"
     },
     {
+      "pilot_key": "koslik_kevin",
+      "vorname": "Kevin",
+      "nachname": "Koslik",
+      "pilot_name": "Koslik, Kevin",
+      "abteilungszeit": "2026-05-12 21:50",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 8,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "DIAMOND",
+      "from": "RDP",
+      "to": "RÜB",
+      "nr": 8,
+      "raw_time": "Tue May 12 21:50:00 CEST 2026",
+      "current_ship_name": "DIAMOND",
+      "current_ship_eta_rueb": "2026-05-10 17:41",
+      "current_ship_q": 0,
+      "current_ship_route": "RDP → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
       "pilot_key": "flink_jörg",
       "vorname": "Jörg",
       "nachname": "Flink",
@@ -376,21 +399,6 @@
     }
   ],
   "visible_but_not_dispatchable_pilots": [
-    {
-      "pilot_key": "koslik_kevin",
-      "pilot_name": "Koslik, Kevin",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 8,
-      "abteilungszeit": "2026-05-12 21:50",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "DIAMOND",
-      "from": "RDP",
-      "to": "RÜB",
-      "current_ship_name": "DIAMOND",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    },
     {
       "pilot_key": "diekmann_ulrich",
       "pilot_name": "Diekmann, Ulrich",
@@ -452,7 +460,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 3,
+      "candidate_count": 4,
       "candidates": [
         {
           "pilot_name": "Hüpers, Peter",
@@ -477,6 +485,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "SOUTH ENABLER",
           "current_ship_eta_rueb": "2026-05-13 03:51",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Koslik, Kevin",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 8,
+          "abteilungszeit": "2026-05-12 21:50",
+          "fahrzeug": "DIAMOND",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "DIAMOND",
+          "current_ship_eta_rueb": "2026-05-10 17:41",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -542,7 +563,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 2,
+      "candidate_count": 3,
       "candidates": [
         {
           "pilot_name": "Kubica, Gregor",
@@ -554,6 +575,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "SOUTH ENABLER",
           "current_ship_eta_rueb": "2026-05-13 03:51",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Koslik, Kevin",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 8,
+          "abteilungszeit": "2026-05-12 21:50",
+          "fahrzeug": "DIAMOND",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "DIAMOND",
+          "current_ship_eta_rueb": "2026-05-10 17:41",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -609,17 +643,30 @@
       "ship_name": "FREJ",
       "eta_rueb": "2026-05-13 07:35",
       "ship_q": 4,
-      "assigned_pilot": "Flink, Jörg",
+      "assigned_pilot": "Koslik, Kevin",
       "assigned_pilot_q": 0,
-      "assigned_tactical_nr": 7,
-      "assigned_abteilungszeit": "2026-05-12 23:47",
-      "assigned_current_ship_name": "FINE SCHEPERS",
-      "assigned_current_ship_eta_rueb": "2026-05-13 05:43",
+      "assigned_tactical_nr": 8,
+      "assigned_abteilungszeit": "2026-05-12 21:50",
+      "assigned_current_ship_name": "DIAMOND",
+      "assigned_current_ship_eta_rueb": "2026-05-10 17:41",
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 1,
+      "candidate_count": 2,
       "candidates": [
+        {
+          "pilot_name": "Koslik, Kevin",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 8,
+          "abteilungszeit": "2026-05-12 21:50",
+          "fahrzeug": "DIAMOND",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "DIAMOND",
+          "current_ship_eta_rueb": "2026-05-10 17:41",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
         {
           "pilot_name": "Flink, Jörg",
           "pilot_q": 0,
@@ -670,5 +717,28 @@
     }
   ],
   "unassigned_ships": [],
-  "unused_pilots": []
+  "unused_pilots": [
+    {
+      "pilot_key": "flink_jörg",
+      "vorname": "Jörg",
+      "nachname": "Flink",
+      "pilot_name": "Flink, Jörg",
+      "abteilungszeit": "2026-05-12 23:47",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 7,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "FINE SCHEPERS",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 7,
+      "raw_time": "Tue May 12 23:47:00 CEST 2026",
+      "current_ship_name": "FINE SCHEPERS",
+      "current_ship_eta_rueb": "2026-05-13 05:43",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    }
+  ]
 }
