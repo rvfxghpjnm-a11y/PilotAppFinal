@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-13T08:23:12",
+  "generated_at": "2026-05-13T08:25:12",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,19 +32,19 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 5,
+    "ships_for_ruesterbergen": 6,
     "pilots_total": 7,
     "pilots_dispatchable": 7,
     "pilots_visible_only": 0,
-    "assignments": 5,
+    "assignments": 6,
     "unassigned_ships": 0,
-    "unused_pilots": 2
+    "unused_pilots": 1
   },
   "ships": [
     {
       "ship_key": "ELBINSEL",
       "ship_name": "ELBINSEL",
-      "eta_rueb": "2026-05-13 10:06",
+      "eta_rueb": "2026-05-13 10:05",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 1,
       "meldung": {
@@ -228,6 +228,44 @@
         "makler": "UCA",
         "dangerous_vessel": "-",
         "type_of_loading": "Bulk"
+      }
+    },
+    {
+      "ship_key": "KAURI",
+      "ship_name": "KAURI",
+      "eta_rueb": "2026-05-13 12:46",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 4,
+      "meldung": {
+        "nr": "6",
+        "time": "Wed May 13 12:30:00 CEST 2026",
+        "draft": "3.8",
+        "q_gruppe": "4",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "4",
+        "vg": "3",
+        "draft": "3.80",
+        "length_m": "106.60",
+        "beam_m": "13.8",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "P",
+        "pilot_1_name": "Conrad, Axel",
+        "travel_status": "SAILING_NOK",
+        "makler": "SUB",
+        "dangerous_vessel": "-",
+        "type_of_loading": "Ballast"
       }
     }
   ],
@@ -548,7 +586,7 @@
     {
       "ship_key": "ELBINSEL",
       "ship_name": "ELBINSEL",
-      "eta_rueb": "2026-05-13 10:06",
+      "eta_rueb": "2026-05-13 10:05",
       "ship_q": 1,
       "assigned_pilot": "Flink, Jörg",
       "assigned_pilot_q": 0,
@@ -635,7 +673,7 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "TUNDRALAND",
           "pilot_current_ship_eta_rueb": "2026-05-13 11:08",
-          "ship_eta_rueb": "2026-05-13 10:06",
+          "ship_eta_rueb": "2026-05-13 10:05",
           "availability_kind": "merged_eta"
         }
       ],
@@ -1095,32 +1133,87 @@
           "type_of_loading": "Bulk"
         }
       }
+    },
+    {
+      "ship_key": "KAURI",
+      "ship_name": "KAURI",
+      "eta_rueb": "2026-05-13 12:46",
+      "ship_q": 4,
+      "assigned_pilot": "Krüger, Caspar-Maria",
+      "assigned_pilot_q": 4,
+      "assigned_tactical_nr": 5,
+      "assigned_abteilungszeit": "2026-05-13 05:55",
+      "assigned_current_ship_name": "FREJ",
+      "assigned_current_ship_eta_rueb": "2026-05-13 07:29",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 2,
+      "candidates": [
+        {
+          "pilot_name": "Krüger, Caspar-Maria",
+          "pilot_q": 4,
+          "pilot_tactical_nr": 5,
+          "abteilungszeit": "2026-05-13 05:55",
+          "fahrzeug": "FREJ",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "FREJ",
+          "current_ship_eta_rueb": "2026-05-13 07:29",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Stoislow, Alexander",
+          "pilot_q": 4,
+          "pilot_tactical_nr": 6,
+          "abteilungszeit": "2026-05-13 05:55",
+          "fahrzeug": "HAV MARLIN",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "HAV MARLIN",
+          "current_ship_eta_rueb": "2026-05-13 07:15",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "6",
+          "time": "Wed May 13 12:30:00 CEST 2026",
+          "draft": "3.8",
+          "q_gruppe": "4",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "HOS → KLT",
+          "routes": [
+            "HOS → KLT",
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "4",
+          "vg": "3",
+          "draft": "3.80",
+          "length_m": "106.60",
+          "beam_m": "13.8",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "P",
+          "pilot_1_name": "Conrad, Axel",
+          "travel_status": "SAILING_NOK",
+          "makler": "SUB",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Ballast"
+        }
+      }
     }
   ],
   "unassigned_ships": [],
   "unused_pilots": [
-    {
-      "pilot_key": "krüger_caspar-maria",
-      "vorname": "Caspar-Maria",
-      "nachname": "Krüger",
-      "pilot_name": "Krüger, Caspar-Maria",
-      "abteilungszeit": "2026-05-13 05:55",
-      "pilot_q": 4,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 5,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "FREJ",
-      "from": "RÜB",
-      "to": "HOS",
-      "nr": 5,
-      "raw_time": "Wed May 13 05:55:00 CEST 2026",
-      "current_ship_name": "FREJ",
-      "current_ship_eta_rueb": "2026-05-13 07:29",
-      "current_ship_q": 4,
-      "current_ship_route": "RÜB → HOS",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
-    },
     {
       "pilot_key": "stoislow_alexander",
       "vorname": "Alexander",
