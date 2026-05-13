@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-13T09:05:22",
+  "generated_at": "2026-05-13T09:07:10",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,19 +32,19 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 7,
+    "ships_for_ruesterbergen": 8,
     "pilots_total": 7,
     "pilots_dispatchable": 7,
     "pilots_visible_only": 0,
     "assignments": 7,
-    "unassigned_ships": 0,
+    "unassigned_ships": 1,
     "unused_pilots": 0
   },
   "ships": [
     {
       "ship_key": "ELBINSEL",
       "ship_name": "ELBINSEL",
-      "eta_rueb": "2026-05-13 10:04",
+      "eta_rueb": "2026-05-13 10:03",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 1,
       "meldung": {
@@ -268,9 +268,35 @@
       }
     },
     {
+      "ship_key": "BERTHOLD K.",
+      "ship_name": "BERTHOLD K.",
+      "eta_rueb": "2026-05-13 13:30",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 5,
+      "meldung": {
+        "nr": "8",
+        "time": "Wed May 13 13:30:00 CEST 2026",
+        "draft": "5.8",
+        "q_gruppe": "5",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "5",
+        "draft": "5.8"
+      }
+    },
+    {
       "ship_key": "CAROLINA",
       "ship_name": "CAROLINA",
-      "eta_rueb": "2026-05-13 14:47",
+      "eta_rueb": "2026-05-13 14:46",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
@@ -612,7 +638,7 @@
     {
       "ship_key": "ELBINSEL",
       "ship_name": "ELBINSEL",
-      "eta_rueb": "2026-05-13 10:04",
+      "eta_rueb": "2026-05-13 10:03",
       "ship_q": 1,
       "assigned_pilot": "Flink, Jörg",
       "assigned_pilot_q": 0,
@@ -659,7 +685,7 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "PRIMA KING",
           "pilot_current_ship_eta_rueb": "2026-05-13 10:10",
-          "ship_eta_rueb": "2026-05-13 10:04",
+          "ship_eta_rueb": "2026-05-13 10:03",
           "availability_kind": "merged_eta"
         },
         {
@@ -668,7 +694,7 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "EKNOE",
           "pilot_current_ship_eta_rueb": "2026-05-13 10:13",
-          "ship_eta_rueb": "2026-05-13 10:04",
+          "ship_eta_rueb": "2026-05-13 10:03",
           "availability_kind": "merged_eta"
         },
         {
@@ -691,7 +717,7 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "TUNDRALAND",
           "pilot_current_ship_eta_rueb": "2026-05-13 11:07",
-          "ship_eta_rueb": "2026-05-13 10:04",
+          "ship_eta_rueb": "2026-05-13 10:03",
           "availability_kind": "merged_eta"
         }
       ],
@@ -1222,9 +1248,9 @@
       }
     },
     {
-      "ship_key": "CAROLINA",
-      "ship_name": "CAROLINA",
-      "eta_rueb": "2026-05-13 14:47",
+      "ship_key": "BERTHOLD K.",
+      "ship_name": "BERTHOLD K.",
+      "eta_rueb": "2026-05-13 13:30",
       "ship_q": 5,
       "assigned_pilot": "Stoislow, Alexander",
       "assigned_pilot_q": 4,
@@ -1253,9 +1279,9 @@
       ],
       "ship": {
         "meldung": {
-          "nr": "7",
-          "time": "Wed May 13 12:45:00 CEST 2026",
-          "draft": "5.3",
+          "nr": "8",
+          "time": "Wed May 13 13:30:00 CEST 2026",
+          "draft": "5.8",
           "q_gruppe": "5",
           "lotsen_anzahl": 1,
           "confirmed": false,
@@ -1263,28 +1289,25 @@
           "to": "HOS"
         },
         "summary": {
-          "route": "RÜB → HOS",
+          "route": "HOS → KLT",
           "routes": [
+            "HOS → KLT",
             "RÜB → HOS"
           ],
           "q_gruppe": "5",
-          "vg": "3",
-          "draft": "5.30",
-          "length_m": "82.500",
-          "beam_m": "12.5",
-          "queue_title": "Zulauf vom Kanal in Kiel",
-          "zulauf_richtung": "vom_kanal",
-          "pilot_required": "true",
-          "pilot_status": "H",
-          "pilot_1_name": "Marzalla, Tobias",
-          "travel_status": "SAILING_NOK",
-          "makler": "UCA",
-          "dangerous_vessel": "-",
-          "type_of_loading": "Salz"
+          "draft": "5.8"
         }
       }
     }
   ],
-  "unassigned_ships": [],
+  "unassigned_ships": [
+    {
+      "ship_key": "CAROLINA",
+      "ship_name": "CAROLINA",
+      "eta_rueb": "2026-05-13 14:46",
+      "ship_q": 5,
+      "reason": "kein passender Lotse verfügbar"
+    }
+  ],
   "unused_pilots": []
 }
