@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-14T02:41:11",
+  "generated_at": "2026-05-14T02:43:17",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,17 +34,17 @@
   "counts": {
     "ships_for_ruesterbergen": 6,
     "pilots_total": 13,
-    "pilots_dispatchable": 11,
-    "pilots_visible_only": 2,
+    "pilots_dispatchable": 12,
+    "pilots_visible_only": 1,
     "assignments": 6,
     "unassigned_ships": 0,
-    "unused_pilots": 5
+    "unused_pilots": 6
   },
   "ships": [
     {
       "ship_key": "W NORTH",
       "ship_name": "W NORTH",
-      "eta_rueb": "2026-05-14 03:49",
+      "eta_rueb": "2026-05-14 03:48",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 4,
       "meldung": {
@@ -499,9 +499,10 @@
       "nr": 2,
       "raw_time": "Thu May 14 01:04:00 CEST 2026",
       "current_ship_name": "BIT FORCE",
+      "current_ship_eta_rueb": "2026-05-14 06:14",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
@@ -522,7 +523,7 @@
       "current_ship_name": "AMADEUS RUBY",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta"
     }
   ],
@@ -763,24 +764,31 @@
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
-    }
-  ],
-  "visible_but_not_dispatchable_pilots": [
+    },
     {
       "pilot_key": "lüdtke_jan-torben",
+      "vorname": "Jan-Torben",
+      "nachname": "Lüdtke",
       "pilot_name": "Lüdtke, Jan-Torben",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 2,
       "abteilungszeit": "2026-05-14 01:04",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 2,
       "aufgabe": "Kanalbört",
       "fahrzeug": "BIT FORCE",
       "from": "HOS",
       "to": "RÜB",
+      "nr": 2,
+      "raw_time": "Thu May 14 01:04:00 CEST 2026",
       "current_ship_name": "BIT FORCE",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    },
+      "current_ship_eta_rueb": "2026-05-14 06:14",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    }
+  ],
+  "visible_but_not_dispatchable_pilots": [
     {
       "pilot_key": "hansen_hinnerk",
       "pilot_name": "Hansen, Hinnerk",
@@ -792,7 +800,7 @@
       "from": "HOS",
       "to": "RÜB",
       "current_ship_name": "AMADEUS RUBY",
-      "current_ship_source": "schiffe_merged.seelotsen",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta",
       "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
     }
@@ -801,7 +809,7 @@
     {
       "ship_key": "W NORTH",
       "ship_name": "W NORTH",
-      "eta_rueb": "2026-05-14 03:49",
+      "eta_rueb": "2026-05-14 03:48",
       "ship_q": 4,
       "assigned_pilot": "Külzer, Sascha",
       "assigned_pilot_q": 2,
@@ -952,7 +960,16 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "WULF 5",
           "pilot_current_ship_eta_rueb": "2026-05-14 05:39",
-          "ship_eta_rueb": "2026-05-14 03:49",
+          "ship_eta_rueb": "2026-05-14 03:48",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Lüdtke, Jan-Torben",
+          "pilot_tactical_nr": 2,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "BIT FORCE",
+          "pilot_current_ship_eta_rueb": "2026-05-14 06:14",
+          "ship_eta_rueb": "2026-05-14 03:48",
           "availability_kind": "merged_eta"
         }
       ],
@@ -1133,6 +1150,15 @@
           "pilot_current_ship_eta_rueb": "2026-05-14 05:39",
           "ship_eta_rueb": "2026-05-14 03:53",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Lüdtke, Jan-Torben",
+          "pilot_tactical_nr": 2,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "BIT FORCE",
+          "pilot_current_ship_eta_rueb": "2026-05-14 06:14",
+          "ship_eta_rueb": "2026-05-14 03:53",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -1304,6 +1330,17 @@
           "availability_kind": "merged_eta"
         }
       ],
+      "excluded": [
+        {
+          "pilot_name": "Lüdtke, Jan-Torben",
+          "pilot_tactical_nr": 2,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "BIT FORCE",
+          "pilot_current_ship_eta_rueb": "2026-05-14 06:14",
+          "ship_eta_rueb": "2026-05-14 05:43",
+          "availability_kind": "merged_eta"
+        }
+      ],
       "ship": {
         "meldung": {
           "nr": "4",
@@ -1445,6 +1482,17 @@
           "current_ship_name": "WULF 5",
           "current_ship_eta_rueb": "2026-05-14 05:39",
           "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Lüdtke, Jan-Torben",
+          "pilot_tactical_nr": 2,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "BIT FORCE",
+          "pilot_current_ship_eta_rueb": "2026-05-14 06:14",
+          "ship_eta_rueb": "2026-05-14 05:55",
           "availability_kind": "merged_eta"
         }
       ],
@@ -1591,6 +1639,17 @@
           "availability_kind": "merged_eta"
         }
       ],
+      "excluded": [
+        {
+          "pilot_name": "Lüdtke, Jan-Torben",
+          "pilot_tactical_nr": 2,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "BIT FORCE",
+          "pilot_current_ship_eta_rueb": "2026-05-14 06:14",
+          "ship_eta_rueb": "2026-05-14 06:00",
+          "availability_kind": "merged_eta"
+        }
+      ],
       "ship": {
         "meldung": {
           "nr": "5",
@@ -1627,7 +1686,7 @@
       "assigned_availability_kind": "already_in_rueb",
       "assigned_availability_hint": "Lotse gilt als bereits in RÜB",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 6,
+      "candidate_count": 7,
       "candidates": [
         {
           "pilot_name": "Rohn, Jens Michael",
@@ -1704,6 +1763,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "WULF 5",
           "current_ship_eta_rueb": "2026-05-14 05:39",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Lüdtke, Jan-Torben",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-05-14 01:04",
+          "fahrzeug": "BIT FORCE",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "BIT FORCE",
+          "current_ship_eta_rueb": "2026-05-14 06:14",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
@@ -1849,6 +1921,28 @@
       "raw_time": "Thu May 14 00:19:00 CEST 2026",
       "current_ship_name": "WULF 5",
       "current_ship_eta_rueb": "2026-05-14 05:39",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "lüdtke_jan-torben",
+      "vorname": "Jan-Torben",
+      "nachname": "Lüdtke",
+      "pilot_name": "Lüdtke, Jan-Torben",
+      "abteilungszeit": "2026-05-14 01:04",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 2,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "BIT FORCE",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 2,
+      "raw_time": "Thu May 14 01:04:00 CEST 2026",
+      "current_ship_name": "BIT FORCE",
+      "current_ship_eta_rueb": "2026-05-14 06:14",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
