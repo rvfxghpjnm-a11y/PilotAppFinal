@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-14T14:43:10",
+  "generated_at": "2026-05-14T14:45:18",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,13 +32,13 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 7,
+    "ships_for_ruesterbergen": 8,
     "pilots_total": 10,
     "pilots_dispatchable": 10,
     "pilots_visible_only": 0,
-    "assignments": 7,
+    "assignments": 8,
     "unassigned_ships": 0,
-    "unused_pilots": 3
+    "unused_pilots": 2
   },
   "ships": [
     {
@@ -79,13 +79,36 @@
       }
     },
     {
+      "ship_key": "LEERFAHRT",
+      "ship_name": "Leerfahrt",
+      "eta_rueb": "2026-05-14 15:30",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 0,
+      "meldung": {
+        "nr": "2",
+        "time": "Thu May 14 15:30:00 CEST 2026",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS",
+        "remark": "abgefunden"
+      },
+      "summary": {
+        "route": "HOS → RÜB",
+        "routes": [
+          "HOS → RÜB",
+          "RÜB → HOS"
+        ]
+      }
+    },
+    {
       "ship_key": "KEY SOUTH",
       "ship_name": "KEY SOUTH",
       "eta_rueb": "2026-05-14 16:40",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 4,
       "meldung": {
-        "nr": "2",
+        "nr": "3",
         "time": "Thu May 14 16:35:00 CEST 2026",
         "draft": "4.9",
         "q_gruppe": "4",
@@ -123,7 +146,7 @@
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
-        "nr": "4",
+        "nr": "5",
         "time": "Thu May 14 16:53:00 CEST 2026",
         "draft": "2.4",
         "q_gruppe": "5",
@@ -161,7 +184,7 @@
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
-        "nr": "3",
+        "nr": "4",
         "time": "Thu May 14 16:50:00 CEST 2026",
         "draft": "3.4",
         "q_gruppe": "5",
@@ -199,7 +222,7 @@
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 4,
       "meldung": {
-        "nr": "5",
+        "nr": "6",
         "time": "Thu May 14 17:10:00 CEST 2026",
         "draft": "3.9",
         "q_gruppe": "4",
@@ -237,7 +260,7 @@
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
-        "nr": "7",
+        "nr": "8",
         "time": "Thu May 14 18:15:00 CEST 2026",
         "draft": "6.3",
         "q_gruppe": "5",
@@ -275,7 +298,7 @@
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 0,
       "meldung": {
-        "nr": "6",
+        "nr": "7",
         "time": "Thu May 14 18:15:00 CEST 2026",
         "draft": "7.4",
         "q_gruppe": "0",
@@ -918,6 +941,133 @@
       }
     },
     {
+      "ship_key": "LEERFAHRT",
+      "ship_name": "Leerfahrt",
+      "eta_rueb": "2026-05-14 15:30",
+      "ship_q": 0,
+      "assigned_pilot": "Krebs, Michael",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 10,
+      "assigned_abteilungszeit": "2026-05-14 10:00",
+      "assigned_current_ship_name": "MARBURG",
+      "assigned_current_ship_eta_rueb": "2026-05-14 14:53",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 3,
+      "candidates": [
+        {
+          "pilot_name": "Krebs, Michael",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 10,
+          "abteilungszeit": "2026-05-14 10:00",
+          "fahrzeug": "MARBURG",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "MARBURG",
+          "current_ship_eta_rueb": "2026-05-14 14:53",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Hahn, Peter",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 6,
+          "abteilungszeit": "2026-05-14 11:50",
+          "fahrzeug": "COE GISELA",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "COE GISELA",
+          "current_ship_eta_rueb": "2026-05-14 13:04",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Kordt, Remo",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-05-14 12:55",
+          "fahrzeug": "BBC LISBON",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "BBC LISBON",
+          "current_ship_eta_rueb": "2026-05-14 14:24",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Bodmann, Christoph",
+          "pilot_tactical_nr": 11,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "IDA RAMBOW",
+          "pilot_current_ship_eta_rueb": "2026-05-14 15:37",
+          "ship_eta_rueb": "2026-05-14 15:30",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Groen, Nickolaj",
+          "pilot_tactical_nr": 12,
+          "reason": "Quali passt nicht (5 > 0)",
+          "pilot_q": 5,
+          "ship_q": 0
+        },
+        {
+          "pilot_name": "Crotogino, Philipp",
+          "pilot_tactical_nr": 5,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "SCA OSTRAND",
+          "pilot_current_ship_eta_rueb": "2026-05-14 17:33",
+          "ship_eta_rueb": "2026-05-14 15:30",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Rink, Hannes",
+          "pilot_tactical_nr": 4,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "ORALORA",
+          "pilot_current_ship_eta_rueb": "2026-05-14 17:24",
+          "ship_eta_rueb": "2026-05-14 15:30",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Feldes, Marco",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "BBC BERGEN",
+          "pilot_current_ship_eta_rueb": "2026-05-14 17:27",
+          "ship_eta_rueb": "2026-05-14 15:30",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Engler, Sören",
+          "pilot_tactical_nr": 1,
+          "reason": "Quali passt nicht (3 > 0)",
+          "pilot_q": 3,
+          "ship_q": 0
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "2",
+          "time": "Thu May 14 15:30:00 CEST 2026",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS",
+          "remark": "abgefunden"
+        },
+        "summary": {
+          "route": "HOS → RÜB",
+          "routes": [
+            "HOS → RÜB",
+            "RÜB → HOS"
+          ]
+        }
+      }
+    },
+    {
       "ship_key": "KEY SOUTH",
       "ship_name": "KEY SOUTH",
       "eta_rueb": "2026-05-14 16:40",
@@ -931,7 +1081,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 5,
+      "candidate_count": 4,
       "candidates": [
         {
           "pilot_name": "Bodmann, Christoph",
@@ -943,19 +1093,6 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "IDA RAMBOW",
           "current_ship_eta_rueb": "2026-05-14 15:37",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Krebs, Michael",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 10,
-          "abteilungszeit": "2026-05-14 10:00",
-          "fahrzeug": "MARBURG",
-          "to": "HOS",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "MARBURG",
-          "current_ship_eta_rueb": "2026-05-14 14:53",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1037,7 +1174,7 @@
       ],
       "ship": {
         "meldung": {
-          "nr": "2",
+          "nr": "3",
           "time": "Thu May 14 16:35:00 CEST 2026",
           "draft": "4.9",
           "q_gruppe": "4",
@@ -1084,7 +1221,7 @@
       "assigned_availability_kind": "already_in_rueb",
       "assigned_availability_hint": "Lotse gilt als bereits in RÜB",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 5,
+      "candidate_count": 4,
       "candidates": [
         {
           "pilot_name": "Groen, Nickolaj",
@@ -1098,19 +1235,6 @@
           "current_ship_source": "special.already_in_rueb",
           "availability_kind": "already_in_rueb",
           "availability_hint": "Lotse gilt als bereits in RÜB"
-        },
-        {
-          "pilot_name": "Krebs, Michael",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 10,
-          "abteilungszeit": "2026-05-14 10:00",
-          "fahrzeug": "MARBURG",
-          "to": "HOS",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "MARBURG",
-          "current_ship_eta_rueb": "2026-05-14 14:53",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
         },
         {
           "pilot_name": "Hahn, Peter",
@@ -1183,7 +1307,7 @@
       ],
       "ship": {
         "meldung": {
-          "nr": "4",
+          "nr": "5",
           "time": "Thu May 14 16:53:00 CEST 2026",
           "draft": "2.4",
           "q_gruppe": "5",
@@ -1220,138 +1344,6 @@
       "ship_name": "LEONIE",
       "eta_rueb": "2026-05-14 17:09",
       "ship_q": 5,
-      "assigned_pilot": "Krebs, Michael",
-      "assigned_pilot_q": 0,
-      "assigned_tactical_nr": 10,
-      "assigned_abteilungszeit": "2026-05-14 10:00",
-      "assigned_current_ship_name": "MARBURG",
-      "assigned_current_ship_eta_rueb": "2026-05-14 14:53",
-      "assigned_current_ship_source": "schiffe_merged.seelotsen",
-      "assigned_availability_kind": "merged_eta",
-      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 4,
-      "candidates": [
-        {
-          "pilot_name": "Krebs, Michael",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 10,
-          "abteilungszeit": "2026-05-14 10:00",
-          "fahrzeug": "MARBURG",
-          "to": "HOS",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "MARBURG",
-          "current_ship_eta_rueb": "2026-05-14 14:53",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Hahn, Peter",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 6,
-          "abteilungszeit": "2026-05-14 11:50",
-          "fahrzeug": "COE GISELA",
-          "to": "HOS",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "COE GISELA",
-          "current_ship_eta_rueb": "2026-05-14 13:04",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Engler, Sören",
-          "pilot_q": 3,
-          "pilot_tactical_nr": 1,
-          "abteilungszeit": "2026-05-14 12:55",
-          "fahrzeug": "ELEONORA",
-          "to": "UTG",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "ELEONORA",
-          "current_ship_eta_rueb": "2026-05-14 14:19",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Kordt, Remo",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 2,
-          "abteilungszeit": "2026-05-14 12:55",
-          "fahrzeug": "BBC LISBON",
-          "to": "HOS",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "BBC LISBON",
-          "current_ship_eta_rueb": "2026-05-14 14:24",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        }
-      ],
-      "excluded": [
-        {
-          "pilot_name": "Crotogino, Philipp",
-          "pilot_tactical_nr": 5,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "SCA OSTRAND",
-          "pilot_current_ship_eta_rueb": "2026-05-14 17:33",
-          "ship_eta_rueb": "2026-05-14 17:09",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Rink, Hannes",
-          "pilot_tactical_nr": 4,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "ORALORA",
-          "pilot_current_ship_eta_rueb": "2026-05-14 17:24",
-          "ship_eta_rueb": "2026-05-14 17:09",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Feldes, Marco",
-          "pilot_tactical_nr": 3,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "BBC BERGEN",
-          "pilot_current_ship_eta_rueb": "2026-05-14 17:27",
-          "ship_eta_rueb": "2026-05-14 17:09",
-          "availability_kind": "merged_eta"
-        }
-      ],
-      "ship": {
-        "meldung": {
-          "nr": "3",
-          "time": "Thu May 14 16:50:00 CEST 2026",
-          "draft": "3.4",
-          "q_gruppe": "5",
-          "lotsen_anzahl": 1,
-          "confirmed": false,
-          "from": "RÜB",
-          "to": "UTG"
-        },
-        "summary": {
-          "route": "UTG → HOS",
-          "routes": [
-            "UTG → HOS",
-            "RÜB → UTG"
-          ],
-          "q_gruppe": "5",
-          "vg": "3",
-          "draft": "3.40",
-          "length_m": "89.70",
-          "beam_m": "12.500",
-          "queue_title": "Zulauf vom Kanal in Kiel",
-          "zulauf_richtung": "vom_kanal",
-          "pilot_required": "true",
-          "pilot_status": "H",
-          "pilot_1_name": "Schilling, David Philipp Gregory",
-          "travel_status": "SAILING_NOK",
-          "makler": "SUB",
-          "dangerous_vessel": "-",
-          "type_of_loading": "Ballast"
-        }
-      }
-    },
-    {
-      "ship_key": "CARELIE",
-      "ship_name": "CARELIE",
-      "eta_rueb": "2026-05-14 17:23",
-      "ship_q": 4,
       "assigned_pilot": "Hahn, Peter",
       "assigned_pilot_q": 0,
       "assigned_tactical_nr": 6,
@@ -1410,6 +1402,112 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "SCA OSTRAND",
           "pilot_current_ship_eta_rueb": "2026-05-14 17:33",
+          "ship_eta_rueb": "2026-05-14 17:09",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Rink, Hannes",
+          "pilot_tactical_nr": 4,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "ORALORA",
+          "pilot_current_ship_eta_rueb": "2026-05-14 17:24",
+          "ship_eta_rueb": "2026-05-14 17:09",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Feldes, Marco",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "BBC BERGEN",
+          "pilot_current_ship_eta_rueb": "2026-05-14 17:27",
+          "ship_eta_rueb": "2026-05-14 17:09",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "4",
+          "time": "Thu May 14 16:50:00 CEST 2026",
+          "draft": "3.4",
+          "q_gruppe": "5",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "UTG"
+        },
+        "summary": {
+          "route": "UTG → HOS",
+          "routes": [
+            "UTG → HOS",
+            "RÜB → UTG"
+          ],
+          "q_gruppe": "5",
+          "vg": "3",
+          "draft": "3.40",
+          "length_m": "89.70",
+          "beam_m": "12.500",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "H",
+          "pilot_1_name": "Schilling, David Philipp Gregory",
+          "travel_status": "SAILING_NOK",
+          "makler": "SUB",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Ballast"
+        }
+      }
+    },
+    {
+      "ship_key": "CARELIE",
+      "ship_name": "CARELIE",
+      "eta_rueb": "2026-05-14 17:23",
+      "ship_q": 4,
+      "assigned_pilot": "Engler, Sören",
+      "assigned_pilot_q": 3,
+      "assigned_tactical_nr": 1,
+      "assigned_abteilungszeit": "2026-05-14 12:55",
+      "assigned_current_ship_name": "ELEONORA",
+      "assigned_current_ship_eta_rueb": "2026-05-14 14:19",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 2,
+      "candidates": [
+        {
+          "pilot_name": "Engler, Sören",
+          "pilot_q": 3,
+          "pilot_tactical_nr": 1,
+          "abteilungszeit": "2026-05-14 12:55",
+          "fahrzeug": "ELEONORA",
+          "to": "UTG",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ELEONORA",
+          "current_ship_eta_rueb": "2026-05-14 14:19",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Kordt, Remo",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-05-14 12:55",
+          "fahrzeug": "BBC LISBON",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "BBC LISBON",
+          "current_ship_eta_rueb": "2026-05-14 14:24",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Crotogino, Philipp",
+          "pilot_tactical_nr": 5,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "SCA OSTRAND",
+          "pilot_current_ship_eta_rueb": "2026-05-14 17:33",
           "ship_eta_rueb": "2026-05-14 17:23",
           "availability_kind": "merged_eta"
         },
@@ -1434,7 +1532,7 @@
       ],
       "ship": {
         "meldung": {
-          "nr": "5",
+          "nr": "6",
           "time": "Thu May 14 17:10:00 CEST 2026",
           "draft": "3.9",
           "q_gruppe": "4",
@@ -1480,7 +1578,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 5,
+      "candidate_count": 4,
       "candidates": [
         {
           "pilot_name": "Crotogino, Philipp",
@@ -1522,19 +1620,6 @@
           "availability_kind": "merged_eta"
         },
         {
-          "pilot_name": "Engler, Sören",
-          "pilot_q": 3,
-          "pilot_tactical_nr": 1,
-          "abteilungszeit": "2026-05-14 12:55",
-          "fahrzeug": "ELEONORA",
-          "to": "UTG",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "ELEONORA",
-          "current_ship_eta_rueb": "2026-05-14 14:19",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
           "pilot_name": "Kordt, Remo",
           "pilot_q": 0,
           "pilot_tactical_nr": 2,
@@ -1550,7 +1635,7 @@
       ],
       "ship": {
         "meldung": {
-          "nr": "7",
+          "nr": "8",
           "time": "Thu May 14 18:15:00 CEST 2026",
           "draft": "6.3",
           "q_gruppe": "5",
@@ -1638,18 +1723,9 @@
           "availability_kind": "merged_eta"
         }
       ],
-      "excluded": [
-        {
-          "pilot_name": "Engler, Sören",
-          "pilot_tactical_nr": 1,
-          "reason": "Quali passt nicht (3 > 0)",
-          "pilot_q": 3,
-          "ship_q": 0
-        }
-      ],
       "ship": {
         "meldung": {
-          "nr": "6",
+          "nr": "7",
           "time": "Thu May 14 18:15:00 CEST 2026",
           "draft": "7.4",
           "q_gruppe": "0",
@@ -1703,28 +1779,6 @@
       "current_ship_eta_rueb": "2026-05-14 17:27",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
-    },
-    {
-      "pilot_key": "engler_sören",
-      "vorname": "Sören",
-      "nachname": "Engler",
-      "pilot_name": "Engler, Sören",
-      "abteilungszeit": "2026-05-14 12:55",
-      "pilot_q": 3,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 1,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "ELEONORA",
-      "from": "RÜB",
-      "to": "UTG",
-      "nr": 1,
-      "raw_time": "Thu May 14 12:55:00 CEST 2026",
-      "current_ship_name": "ELEONORA",
-      "current_ship_eta_rueb": "2026-05-14 14:19",
-      "current_ship_q": 4,
-      "current_ship_route": "RÜB → UTG",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
