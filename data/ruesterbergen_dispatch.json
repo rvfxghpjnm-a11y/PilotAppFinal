@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-14T08:43:10",
+  "generated_at": "2026-05-14T08:45:24",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,13 +32,13 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 4,
+    "ships_for_ruesterbergen": 5,
     "pilots_total": 7,
     "pilots_dispatchable": 7,
     "pilots_visible_only": 0,
-    "assignments": 4,
+    "assignments": 5,
     "unassigned_ships": 0,
-    "unused_pilots": 3
+    "unused_pilots": 2
   },
   "ships": [
     {
@@ -190,6 +190,43 @@
         "makler": "SUB",
         "dangerous_vessel": "-",
         "type_of_loading": "Ballast"
+      }
+    },
+    {
+      "ship_key": "HAV SNAPPER",
+      "ship_name": "HAV SNAPPER",
+      "eta_rueb": "2026-05-14 13:00",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 5,
+      "meldung": {
+        "nr": "5",
+        "time": "Thu May 14 12:45:00 CEST 2026",
+        "draft": "4.7",
+        "q_gruppe": "5",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "RÜB → HOS",
+        "routes": [
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "5",
+        "vg": "3",
+        "draft": "4.70",
+        "length_m": "88.30",
+        "beam_m": "12.50",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "H",
+        "pilot_1_name": "Olf, Benjamin",
+        "travel_status": "SAILING_NOK",
+        "makler": "UCA",
+        "dangerous_vessel": "-",
+        "type_of_loading": "Eisen und Stahl"
       }
     }
   ],
@@ -963,32 +1000,99 @@
           "type_of_loading": "Ballast"
         }
       }
+    },
+    {
+      "ship_key": "HAV SNAPPER",
+      "ship_name": "HAV SNAPPER",
+      "eta_rueb": "2026-05-14 13:00",
+      "ship_q": 5,
+      "assigned_pilot": "Wachsmuth, Martin",
+      "assigned_pilot_q": 4,
+      "assigned_tactical_nr": 11,
+      "assigned_abteilungszeit": "2026-05-14 00:19",
+      "assigned_current_ship_name": "BITFJORD",
+      "assigned_current_ship_eta_rueb": "2026-05-14 06:06",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 3,
+      "candidates": [
+        {
+          "pilot_name": "Wachsmuth, Martin",
+          "pilot_q": 4,
+          "pilot_tactical_nr": 11,
+          "abteilungszeit": "2026-05-14 00:19",
+          "fahrzeug": "BITFJORD",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "BITFJORD",
+          "current_ship_eta_rueb": "2026-05-14 06:06",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Buch, Helge",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 5,
+          "abteilungszeit": "2026-05-14 06:40",
+          "fahrzeug": "CELLUS",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "CELLUS",
+          "current_ship_eta_rueb": "2026-05-14 12:42",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Hewig, Marius Paul",
+          "pilot_q": 2,
+          "pilot_tactical_nr": 3,
+          "abteilungszeit": "2026-05-14 06:45",
+          "fahrzeug": "BBC LIMA",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "BBC LIMA",
+          "current_ship_eta_rueb": "2026-05-14 08:02",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "5",
+          "time": "Thu May 14 12:45:00 CEST 2026",
+          "draft": "4.7",
+          "q_gruppe": "5",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "RÜB → HOS",
+          "routes": [
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "5",
+          "vg": "3",
+          "draft": "4.70",
+          "length_m": "88.30",
+          "beam_m": "12.50",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "H",
+          "pilot_1_name": "Olf, Benjamin",
+          "travel_status": "SAILING_NOK",
+          "makler": "UCA",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Eisen und Stahl"
+        }
+      }
     }
   ],
   "unassigned_ships": [],
   "unused_pilots": [
-    {
-      "pilot_key": "wachsmuth_martin",
-      "vorname": "Martin",
-      "nachname": "Wachsmuth",
-      "pilot_name": "Wachsmuth, Martin",
-      "abteilungszeit": "2026-05-14 00:19",
-      "pilot_q": 4,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 11,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "BITFJORD",
-      "from": "RÜB",
-      "to": "HOS",
-      "nr": 11,
-      "raw_time": "Thu May 14 00:19:00 CEST 2026",
-      "current_ship_name": "BITFJORD",
-      "current_ship_eta_rueb": "2026-05-14 06:06",
-      "current_ship_q": 4,
-      "current_ship_route": "RÜB → HOS",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
-    },
     {
       "pilot_key": "buch_helge",
       "vorname": "Helge",
