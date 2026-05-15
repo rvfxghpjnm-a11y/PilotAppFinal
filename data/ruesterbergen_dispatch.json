@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-15T11:31:04",
+  "generated_at": "2026-05-15T11:33:06",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 5,
     "pilots_total": 8,
-    "pilots_dispatchable": 6,
-    "pilots_visible_only": 2,
+    "pilots_dispatchable": 7,
+    "pilots_visible_only": 1,
     "assignments": 5,
     "unassigned_ships": 0,
-    "unused_pilots": 1
+    "unused_pilots": 2
   },
   "ships": [
     {
@@ -82,7 +82,7 @@
     {
       "ship_key": "OPTIMUS",
       "ship_name": "OPTIMUS",
-      "eta_rueb": "2026-05-15 14:00",
+      "eta_rueb": "2026-05-15 13:59",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 4,
       "meldung": {
@@ -377,9 +377,10 @@
       "nr": 3,
       "raw_time": "Fri May 15 10:12:00 CEST 2026",
       "current_ship_name": "ELBSUN",
+      "current_ship_eta_rueb": "2026-05-15 15:03",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
@@ -398,7 +399,7 @@
       "nr": 2,
       "raw_time": "Fri May 15 10:30:00 CEST 2026",
       "current_ship_name": "BBC BELEM",
-      "current_ship_eta_rueb": "2026-05-15 14:56",
+      "current_ship_eta_rueb": "2026-05-15 15:06",
       "current_ship_q": 0,
       "current_ship_route": "UTG → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -516,6 +517,28 @@
       "availability_kind": "merged_eta"
     },
     {
+      "pilot_key": "spiller_roman",
+      "vorname": "Roman",
+      "nachname": "Spiller",
+      "pilot_name": "Spiller, Roman",
+      "abteilungszeit": "2026-05-15 10:12",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 3,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "ELBSUN",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 3,
+      "raw_time": "Fri May 15 10:12:00 CEST 2026",
+      "current_ship_name": "ELBSUN",
+      "current_ship_eta_rueb": "2026-05-15 15:03",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
       "pilot_key": "czurda_crischan",
       "vorname": "Crischan",
       "nachname": "Czurda",
@@ -531,7 +554,7 @@
       "nr": 2,
       "raw_time": "Fri May 15 10:30:00 CEST 2026",
       "current_ship_name": "BBC BELEM",
-      "current_ship_eta_rueb": "2026-05-15 14:56",
+      "current_ship_eta_rueb": "2026-05-15 15:06",
       "current_ship_q": 0,
       "current_ship_route": "UTG → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -550,21 +573,6 @@
       "from": "HOR",
       "to": "RÜB",
       "current_ship_name": "WILSON LOVIISA",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    },
-    {
-      "pilot_key": "spiller_roman",
-      "pilot_name": "Spiller, Roman",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 3,
-      "abteilungszeit": "2026-05-15 10:12",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "ELBSUN",
-      "from": "HOS",
-      "to": "RÜB",
-      "current_ship_name": "ELBSUN",
       "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta",
       "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
@@ -655,11 +663,20 @@
       ],
       "excluded": [
         {
+          "pilot_name": "Spiller, Roman",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "ELBSUN",
+          "pilot_current_ship_eta_rueb": "2026-05-15 15:03",
+          "ship_eta_rueb": "2026-05-15 13:53",
+          "availability_kind": "merged_eta"
+        },
+        {
           "pilot_name": "Czurda, Crischan",
           "pilot_tactical_nr": 2,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "BBC BELEM",
-          "pilot_current_ship_eta_rueb": "2026-05-15 14:56",
+          "pilot_current_ship_eta_rueb": "2026-05-15 15:06",
           "ship_eta_rueb": "2026-05-15 13:53",
           "availability_kind": "merged_eta"
         }
@@ -701,7 +718,7 @@
     {
       "ship_key": "OPTIMUS",
       "ship_name": "OPTIMUS",
-      "eta_rueb": "2026-05-15 14:00",
+      "eta_rueb": "2026-05-15 13:59",
       "ship_q": 4,
       "assigned_pilot": "Hoffmann, Heiko",
       "assigned_pilot_q": 0,
@@ -769,12 +786,21 @@
       ],
       "excluded": [
         {
+          "pilot_name": "Spiller, Roman",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "ELBSUN",
+          "pilot_current_ship_eta_rueb": "2026-05-15 15:03",
+          "ship_eta_rueb": "2026-05-15 13:59",
+          "availability_kind": "merged_eta"
+        },
+        {
           "pilot_name": "Czurda, Crischan",
           "pilot_tactical_nr": 2,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "BBC BELEM",
-          "pilot_current_ship_eta_rueb": "2026-05-15 14:56",
-          "ship_eta_rueb": "2026-05-15 14:00",
+          "pilot_current_ship_eta_rueb": "2026-05-15 15:06",
+          "ship_eta_rueb": "2026-05-15 13:59",
           "availability_kind": "merged_eta"
         }
       ],
@@ -871,11 +897,20 @@
       ],
       "excluded": [
         {
+          "pilot_name": "Spiller, Roman",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "ELBSUN",
+          "pilot_current_ship_eta_rueb": "2026-05-15 15:03",
+          "ship_eta_rueb": "2026-05-15 14:02",
+          "availability_kind": "merged_eta"
+        },
+        {
           "pilot_name": "Czurda, Crischan",
           "pilot_tactical_nr": 2,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "BBC BELEM",
-          "pilot_current_ship_eta_rueb": "2026-05-15 14:56",
+          "pilot_current_ship_eta_rueb": "2026-05-15 15:06",
           "ship_eta_rueb": "2026-05-15 14:02",
           "availability_kind": "merged_eta"
         }
@@ -928,7 +963,7 @@
       "assigned_current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 3,
+      "candidate_count": 4,
       "candidates": [
         {
           "pilot_name": "Krämer, Jonas",
@@ -957,6 +992,19 @@
           "availability_kind": "merged_eta"
         },
         {
+          "pilot_name": "Spiller, Roman",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 3,
+          "abteilungszeit": "2026-05-15 10:12",
+          "fahrzeug": "ELBSUN",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ELBSUN",
+          "current_ship_eta_rueb": "2026-05-15 15:03",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
           "pilot_name": "Czurda, Crischan",
           "pilot_q": 0,
           "pilot_tactical_nr": 2,
@@ -965,7 +1013,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "BBC BELEM",
-          "current_ship_eta_rueb": "2026-05-15 14:56",
+          "current_ship_eta_rueb": "2026-05-15 15:06",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
@@ -1017,7 +1065,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 2,
+      "candidate_count": 3,
       "candidates": [
         {
           "pilot_name": "Suermann, Nik",
@@ -1033,6 +1081,19 @@
           "availability_kind": "merged_eta"
         },
         {
+          "pilot_name": "Spiller, Roman",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 3,
+          "abteilungszeit": "2026-05-15 10:12",
+          "fahrzeug": "ELBSUN",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ELBSUN",
+          "current_ship_eta_rueb": "2026-05-15 15:03",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
           "pilot_name": "Czurda, Crischan",
           "pilot_q": 0,
           "pilot_tactical_nr": 2,
@@ -1041,7 +1102,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "BBC BELEM",
-          "current_ship_eta_rueb": "2026-05-15 14:56",
+          "current_ship_eta_rueb": "2026-05-15 15:06",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
@@ -1083,6 +1144,28 @@
   "unassigned_ships": [],
   "unused_pilots": [
     {
+      "pilot_key": "spiller_roman",
+      "vorname": "Roman",
+      "nachname": "Spiller",
+      "pilot_name": "Spiller, Roman",
+      "abteilungszeit": "2026-05-15 10:12",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 3,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "ELBSUN",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 3,
+      "raw_time": "Fri May 15 10:12:00 CEST 2026",
+      "current_ship_name": "ELBSUN",
+      "current_ship_eta_rueb": "2026-05-15 15:03",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
       "pilot_key": "czurda_crischan",
       "vorname": "Crischan",
       "nachname": "Czurda",
@@ -1098,7 +1181,7 @@
       "nr": 2,
       "raw_time": "Fri May 15 10:30:00 CEST 2026",
       "current_ship_name": "BBC BELEM",
-      "current_ship_eta_rueb": "2026-05-15 14:56",
+      "current_ship_eta_rueb": "2026-05-15 15:06",
       "current_ship_q": 0,
       "current_ship_route": "UTG → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
