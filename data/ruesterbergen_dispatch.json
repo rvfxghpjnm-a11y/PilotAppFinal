@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-15T11:35:03",
+  "generated_at": "2026-05-15T11:37:07",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,17 +34,17 @@
   "counts": {
     "ships_for_ruesterbergen": 5,
     "pilots_total": 8,
-    "pilots_dispatchable": 7,
-    "pilots_visible_only": 1,
+    "pilots_dispatchable": 8,
+    "pilots_visible_only": 0,
     "assignments": 5,
     "unassigned_ships": 0,
-    "unused_pilots": 2
+    "unused_pilots": 3
   },
   "ships": [
     {
       "ship_key": "ANNABA",
       "ship_name": "ANNABA",
-      "eta_rueb": "2026-05-15 13:53",
+      "eta_rueb": "2026-05-15 13:52",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 1,
       "meldung": {
@@ -158,7 +158,7 @@
     {
       "ship_key": "BALTIC STEEL",
       "ship_name": "BALTIC STEEL",
-      "eta_rueb": "2026-05-15 16:12",
+      "eta_rueb": "2026-05-15 16:11",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
@@ -195,7 +195,7 @@
     {
       "ship_key": "ROALD AMUNDSEN",
       "ship_name": "ROALD AMUNDSEN",
-      "eta_rueb": "2026-05-15 16:15",
+      "eta_rueb": "2026-05-15 16:14",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
@@ -356,9 +356,10 @@
       "nr": 4,
       "raw_time": "Fri May 15 10:11:00 CEST 2026",
       "current_ship_name": "WILSON LOVIISA",
+      "current_ship_eta_rueb": "2026-05-15 15:13",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
@@ -517,6 +518,28 @@
       "availability_kind": "merged_eta"
     },
     {
+      "pilot_key": "ehlers_sören",
+      "vorname": "Sören",
+      "nachname": "Ehlers",
+      "pilot_name": "Ehlers, Sören",
+      "abteilungszeit": "2026-05-15 10:11",
+      "pilot_q": 3,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 4,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "WILSON LOVIISA",
+      "from": "HOR",
+      "to": "RÜB",
+      "nr": 4,
+      "raw_time": "Fri May 15 10:11:00 CEST 2026",
+      "current_ship_name": "WILSON LOVIISA",
+      "current_ship_eta_rueb": "2026-05-15 15:13",
+      "current_ship_q": 0,
+      "current_ship_route": "HOR → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
       "pilot_key": "spiller_roman",
       "vorname": "Roman",
       "nachname": "Spiller",
@@ -561,28 +584,12 @@
       "availability_kind": "merged_eta"
     }
   ],
-  "visible_but_not_dispatchable_pilots": [
-    {
-      "pilot_key": "ehlers_sören",
-      "pilot_name": "Ehlers, Sören",
-      "pilot_q": 3,
-      "pilot_tactical_nr": 4,
-      "abteilungszeit": "2026-05-15 10:11",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "WILSON LOVIISA",
-      "from": "HOR",
-      "to": "RÜB",
-      "current_ship_name": "WILSON LOVIISA",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    }
-  ],
+  "visible_but_not_dispatchable_pilots": [],
   "assignments": [
     {
       "ship_key": "ANNABA",
       "ship_name": "ANNABA",
-      "eta_rueb": "2026-05-15 13:53",
+      "eta_rueb": "2026-05-15 13:52",
       "ship_q": 1,
       "assigned_pilot": "Reimer, Sven",
       "assigned_pilot_q": 0,
@@ -663,12 +670,21 @@
       ],
       "excluded": [
         {
+          "pilot_name": "Ehlers, Sören",
+          "pilot_tactical_nr": 4,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "WILSON LOVIISA",
+          "pilot_current_ship_eta_rueb": "2026-05-15 15:13",
+          "ship_eta_rueb": "2026-05-15 13:52",
+          "availability_kind": "merged_eta"
+        },
+        {
           "pilot_name": "Spiller, Roman",
           "pilot_tactical_nr": 3,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "ELBSUN",
           "pilot_current_ship_eta_rueb": "2026-05-15 15:06",
-          "ship_eta_rueb": "2026-05-15 13:53",
+          "ship_eta_rueb": "2026-05-15 13:52",
           "availability_kind": "merged_eta"
         },
         {
@@ -677,7 +693,7 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "BBC BELEM",
           "pilot_current_ship_eta_rueb": "2026-05-15 15:09",
-          "ship_eta_rueb": "2026-05-15 13:53",
+          "ship_eta_rueb": "2026-05-15 13:52",
           "availability_kind": "merged_eta"
         }
       ],
@@ -785,6 +801,15 @@
         }
       ],
       "excluded": [
+        {
+          "pilot_name": "Ehlers, Sören",
+          "pilot_tactical_nr": 4,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "WILSON LOVIISA",
+          "pilot_current_ship_eta_rueb": "2026-05-15 15:13",
+          "ship_eta_rueb": "2026-05-15 13:59",
+          "availability_kind": "merged_eta"
+        },
         {
           "pilot_name": "Spiller, Roman",
           "pilot_tactical_nr": 3,
@@ -897,6 +922,15 @@
       ],
       "excluded": [
         {
+          "pilot_name": "Ehlers, Sören",
+          "pilot_tactical_nr": 4,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "WILSON LOVIISA",
+          "pilot_current_ship_eta_rueb": "2026-05-15 15:13",
+          "ship_eta_rueb": "2026-05-15 14:02",
+          "availability_kind": "merged_eta"
+        },
+        {
           "pilot_name": "Spiller, Roman",
           "pilot_tactical_nr": 3,
           "reason": "kommt nicht rechtzeitig in RÜB an",
@@ -952,7 +986,7 @@
     {
       "ship_key": "BALTIC STEEL",
       "ship_name": "BALTIC STEEL",
-      "eta_rueb": "2026-05-15 16:12",
+      "eta_rueb": "2026-05-15 16:11",
       "ship_q": 5,
       "assigned_pilot": "Krämer, Jonas",
       "assigned_pilot_q": 0,
@@ -963,7 +997,7 @@
       "assigned_current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 4,
+      "candidate_count": 5,
       "candidates": [
         {
           "pilot_name": "Krämer, Jonas",
@@ -988,6 +1022,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "EN AVANT 10 + EN AVANT 1 + H-331",
           "current_ship_eta_rueb": "2026-05-15 12:53",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Ehlers, Sören",
+          "pilot_q": 3,
+          "pilot_tactical_nr": 4,
+          "abteilungszeit": "2026-05-15 10:11",
+          "fahrzeug": "WILSON LOVIISA",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "WILSON LOVIISA",
+          "current_ship_eta_rueb": "2026-05-15 15:13",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1054,7 +1101,7 @@
     {
       "ship_key": "ROALD AMUNDSEN",
       "ship_name": "ROALD AMUNDSEN",
-      "eta_rueb": "2026-05-15 16:15",
+      "eta_rueb": "2026-05-15 16:14",
       "ship_q": 5,
       "assigned_pilot": "Suermann, Nik",
       "assigned_pilot_q": 0,
@@ -1065,7 +1112,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 3,
+      "candidate_count": 4,
       "candidates": [
         {
           "pilot_name": "Suermann, Nik",
@@ -1077,6 +1124,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "EN AVANT 10 + EN AVANT 1 + H-331",
           "current_ship_eta_rueb": "2026-05-15 12:53",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Ehlers, Sören",
+          "pilot_q": 3,
+          "pilot_tactical_nr": 4,
+          "abteilungszeit": "2026-05-15 10:11",
+          "fahrzeug": "WILSON LOVIISA",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "WILSON LOVIISA",
+          "current_ship_eta_rueb": "2026-05-15 15:13",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1143,6 +1203,28 @@
   ],
   "unassigned_ships": [],
   "unused_pilots": [
+    {
+      "pilot_key": "ehlers_sören",
+      "vorname": "Sören",
+      "nachname": "Ehlers",
+      "pilot_name": "Ehlers, Sören",
+      "abteilungszeit": "2026-05-15 10:11",
+      "pilot_q": 3,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 4,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "WILSON LOVIISA",
+      "from": "HOR",
+      "to": "RÜB",
+      "nr": 4,
+      "raw_time": "Fri May 15 10:11:00 CEST 2026",
+      "current_ship_name": "WILSON LOVIISA",
+      "current_ship_eta_rueb": "2026-05-15 15:13",
+      "current_ship_q": 0,
+      "current_ship_route": "HOR → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
     {
       "pilot_key": "spiller_roman",
       "vorname": "Roman",
