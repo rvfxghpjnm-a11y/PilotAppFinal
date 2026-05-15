@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-15T12:33:06",
+  "generated_at": "2026-05-15T12:35:03",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,13 +32,13 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 6,
+    "ships_for_ruesterbergen": 7,
     "pilots_total": 11,
     "pilots_dispatchable": 7,
     "pilots_visible_only": 4,
-    "assignments": 6,
+    "assignments": 7,
     "unassigned_ships": 0,
-    "unused_pilots": 1
+    "unused_pilots": 0
   },
   "ships": [
     {
@@ -227,6 +227,44 @@
         "makler": "NIK",
         "dangerous_vessel": "-",
         "type_of_loading": "ohne Passagiere"
+      }
+    },
+    {
+      "ship_key": "DONIA",
+      "ship_name": "DONIA",
+      "eta_rueb": "2026-05-15 17:53",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 3,
+      "meldung": {
+        "nr": "7",
+        "time": "Fri May 15 17:53:00 CEST 2026",
+        "draft": "7.4",
+        "q_gruppe": "3",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "3",
+        "vg": "4",
+        "draft": "7.40",
+        "length_m": "122.66",
+        "beam_m": "17.20",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "U",
+        "pilot_1_name": "Stumpp, Michael",
+        "travel_status": "SAILING_NOK",
+        "makler": "SUB",
+        "dangerous_vessel": "-",
+        "type_of_loading": "Chemikalien fluessig"
       }
     },
     {
@@ -1275,10 +1313,10 @@
       }
     },
     {
-      "ship_key": "CEMLUNA",
-      "ship_name": "CEMLUNA",
-      "eta_rueb": "2026-05-15 18:08",
-      "ship_q": 5,
+      "ship_key": "DONIA",
+      "ship_name": "DONIA",
+      "eta_rueb": "2026-05-15 17:53",
+      "ship_q": 3,
       "assigned_pilot": "Spiller, Roman",
       "assigned_pilot_q": 0,
       "assigned_tactical_nr": 6,
@@ -1303,6 +1341,70 @@
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
+        {
+          "pilot_name": "Czurda, Crischan",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 5,
+          "abteilungszeit": "2026-05-15 10:30",
+          "fahrzeug": "BBC BELEM",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "BBC BELEM",
+          "current_ship_eta_rueb": "2026-05-15 15:07",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "7",
+          "time": "Fri May 15 17:53:00 CEST 2026",
+          "draft": "7.4",
+          "q_gruppe": "3",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "HOS → KLT",
+          "routes": [
+            "HOS → KLT",
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "3",
+          "vg": "4",
+          "draft": "7.40",
+          "length_m": "122.66",
+          "beam_m": "17.20",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "U",
+          "pilot_1_name": "Stumpp, Michael",
+          "travel_status": "SAILING_NOK",
+          "makler": "SUB",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Chemikalien fluessig"
+        }
+      }
+    },
+    {
+      "ship_key": "CEMLUNA",
+      "ship_name": "CEMLUNA",
+      "eta_rueb": "2026-05-15 18:08",
+      "ship_q": 5,
+      "assigned_pilot": "Czurda, Crischan",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 5,
+      "assigned_abteilungszeit": "2026-05-15 10:30",
+      "assigned_current_ship_name": "BBC BELEM",
+      "assigned_current_ship_eta_rueb": "2026-05-15 15:07",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 1,
+      "candidates": [
         {
           "pilot_name": "Czurda, Crischan",
           "pilot_q": 0,
@@ -1353,28 +1455,5 @@
     }
   ],
   "unassigned_ships": [],
-  "unused_pilots": [
-    {
-      "pilot_key": "czurda_crischan",
-      "vorname": "Crischan",
-      "nachname": "Czurda",
-      "pilot_name": "Czurda, Crischan",
-      "abteilungszeit": "2026-05-15 10:30",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 5,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "BBC BELEM",
-      "from": "UTG",
-      "to": "RÜB",
-      "nr": 5,
-      "raw_time": "Fri May 15 10:30:00 CEST 2026",
-      "current_ship_name": "BBC BELEM",
-      "current_ship_eta_rueb": "2026-05-15 15:07",
-      "current_ship_q": 0,
-      "current_ship_route": "UTG → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
-    }
-  ]
+  "unused_pilots": []
 }
