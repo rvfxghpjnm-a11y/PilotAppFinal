@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-15T15:41:05",
+  "generated_at": "2026-05-15T15:43:06",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -36,9 +36,9 @@
     "pilots_total": 13,
     "pilots_dispatchable": 10,
     "pilots_visible_only": 3,
-    "assignments": 9,
-    "unassigned_ships": 0,
-    "unused_pilots": 1
+    "assignments": 8,
+    "unassigned_ships": 1,
+    "unused_pilots": 2
   },
   "ships": [
     {
@@ -268,44 +268,6 @@
       }
     },
     {
-      "ship_key": "WES GESA",
-      "ship_name": "WES GESA",
-      "eta_rueb": "2026-05-15 20:05",
-      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
-      "ship_q": 1,
-      "meldung": {
-        "nr": "9",
-        "time": "Fri May 15 20:05:00 CEST 2026",
-        "draft": "8.1",
-        "q_gruppe": "1",
-        "lotsen_anzahl": 1,
-        "confirmed": false,
-        "from": "RÜB",
-        "to": "HOS"
-      },
-      "summary": {
-        "route": "HOS → KLT",
-        "routes": [
-          "HOS → KLT",
-          "RÜB → HOS"
-        ],
-        "q_gruppe": "1",
-        "vg": "5",
-        "draft": "8.10",
-        "length_m": "151.720",
-        "beam_m": "23.800",
-        "queue_title": "Zulauf vom Kanal in Kiel",
-        "zulauf_richtung": "vom_kanal",
-        "pilot_required": "true",
-        "pilot_status": "U",
-        "pilot_1_name": "Babinsky, Ralf",
-        "travel_status": "SAILING_NOK",
-        "makler": "UCA",
-        "dangerous_vessel": "-",
-        "type_of_loading": "Container"
-      }
-    },
-    {
       "ship_key": "MOSTRAUM",
       "ship_name": "MOSTRAUM",
       "eta_rueb": "2026-05-15 20:38",
@@ -378,6 +340,44 @@
         "makler": "UCA",
         "dangerous_vessel": "-",
         "type_of_loading": "Stueckgueter"
+      }
+    },
+    {
+      "ship_key": "WES GESA",
+      "ship_name": "WES GESA",
+      "eta_rueb": "2026-05-15 20:44",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 1,
+      "meldung": {
+        "nr": "9",
+        "time": "Fri May 15 20:05:00 CEST 2026",
+        "draft": "8.1",
+        "q_gruppe": "1",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "1",
+        "vg": "5",
+        "draft": "8.10",
+        "length_m": "151.720",
+        "beam_m": "23.800",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "U",
+        "pilot_1_name": "Babinsky, Ralf",
+        "travel_status": "SAILING_NOK",
+        "makler": "UCA",
+        "dangerous_vessel": "-",
+        "type_of_loading": "Container"
       }
     }
   ],
@@ -657,7 +657,7 @@
       "current_ship_name": "LADY IRINA",
       "current_ship_q": 0,
       "current_ship_route": "UTG → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta"
     }
   ],
@@ -920,7 +920,7 @@
       "from": "UTG",
       "to": "RÜB",
       "current_ship_name": "LADY IRINA",
-      "current_ship_source": "schiffe_merged.seelotsen",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta",
       "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
     }
@@ -1756,10 +1756,10 @@
       }
     },
     {
-      "ship_key": "WES GESA",
-      "ship_name": "WES GESA",
-      "eta_rueb": "2026-05-15 20:05",
-      "ship_q": 1,
+      "ship_key": "MOSTRAUM",
+      "ship_name": "MOSTRAUM",
+      "eta_rueb": "2026-05-15 20:38",
+      "ship_q": 3,
       "assigned_pilot": "Heyenga, Kai",
       "assigned_pilot_q": 0,
       "assigned_tactical_nr": 11,
@@ -1769,7 +1769,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 2,
+      "candidate_count": 3,
       "candidates": [
         {
           "pilot_name": "Heyenga, Kai",
@@ -1784,86 +1784,6 @@
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
-        {
-          "pilot_name": "Marth, Jürgen",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 10,
-          "abteilungszeit": "2026-05-15 12:21",
-          "fahrzeug": "EXPERT",
-          "to": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "EXPERT",
-          "current_ship_eta_rueb": "2026-05-15 17:12",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        }
-      ],
-      "excluded": [
-        {
-          "pilot_name": "Heyder, Justus",
-          "pilot_tactical_nr": 9,
-          "reason": "Quali passt nicht (3 > 1)",
-          "pilot_q": 3,
-          "ship_q": 1
-        },
-        {
-          "pilot_name": "Janson, Sven",
-          "pilot_tactical_nr": 8,
-          "reason": "Quali passt nicht (4 > 1)",
-          "pilot_q": 4,
-          "ship_q": 1
-        }
-      ],
-      "ship": {
-        "meldung": {
-          "nr": "9",
-          "time": "Fri May 15 20:05:00 CEST 2026",
-          "draft": "8.1",
-          "q_gruppe": "1",
-          "lotsen_anzahl": 1,
-          "confirmed": false,
-          "from": "RÜB",
-          "to": "HOS"
-        },
-        "summary": {
-          "route": "HOS → KLT",
-          "routes": [
-            "HOS → KLT",
-            "RÜB → HOS"
-          ],
-          "q_gruppe": "1",
-          "vg": "5",
-          "draft": "8.10",
-          "length_m": "151.720",
-          "beam_m": "23.800",
-          "queue_title": "Zulauf vom Kanal in Kiel",
-          "zulauf_richtung": "vom_kanal",
-          "pilot_required": "true",
-          "pilot_status": "U",
-          "pilot_1_name": "Babinsky, Ralf",
-          "travel_status": "SAILING_NOK",
-          "makler": "UCA",
-          "dangerous_vessel": "-",
-          "type_of_loading": "Container"
-        }
-      }
-    },
-    {
-      "ship_key": "MOSTRAUM",
-      "ship_name": "MOSTRAUM",
-      "eta_rueb": "2026-05-15 20:38",
-      "ship_q": 3,
-      "assigned_pilot": "Marth, Jürgen",
-      "assigned_pilot_q": 0,
-      "assigned_tactical_nr": 10,
-      "assigned_abteilungszeit": "2026-05-15 12:21",
-      "assigned_current_ship_name": "EXPERT",
-      "assigned_current_ship_eta_rueb": "2026-05-15 17:12",
-      "assigned_current_ship_source": "schiffe_merged.seelotsen",
-      "assigned_availability_kind": "merged_eta",
-      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 2,
-      "candidates": [
         {
           "pilot_name": "Marth, Jürgen",
           "pilot_q": 0,
@@ -1939,17 +1859,30 @@
       "ship_name": "EEMS RIVER",
       "eta_rueb": "2026-05-15 20:41",
       "ship_q": 5,
-      "assigned_pilot": "Heyder, Justus",
-      "assigned_pilot_q": 3,
-      "assigned_tactical_nr": 9,
-      "assigned_abteilungszeit": "2026-05-15 12:27",
-      "assigned_current_ship_name": "RHOGAS",
-      "assigned_current_ship_eta_rueb": "2026-05-15 17:18",
+      "assigned_pilot": "Marth, Jürgen",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 10,
+      "assigned_abteilungszeit": "2026-05-15 12:21",
+      "assigned_current_ship_name": "EXPERT",
+      "assigned_current_ship_eta_rueb": "2026-05-15 17:12",
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 2,
+      "candidate_count": 3,
       "candidates": [
+        {
+          "pilot_name": "Marth, Jürgen",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 10,
+          "abteilungszeit": "2026-05-15 12:21",
+          "fahrzeug": "EXPERT",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "EXPERT",
+          "current_ship_eta_rueb": "2026-05-15 17:12",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
         {
           "pilot_name": "Heyder, Justus",
           "pilot_q": 3,
@@ -2011,8 +1944,54 @@
       }
     }
   ],
-  "unassigned_ships": [],
+  "unassigned_ships": [
+    {
+      "ship_key": "WES GESA",
+      "ship_name": "WES GESA",
+      "eta_rueb": "2026-05-15 20:44",
+      "ship_q": 1,
+      "reason": "kein passender Lotse verfügbar",
+      "excluded": [
+        {
+          "pilot_name": "Heyder, Justus",
+          "pilot_tactical_nr": 9,
+          "reason": "Quali passt nicht (3 > 1)",
+          "pilot_q": 3,
+          "ship_q": 1
+        },
+        {
+          "pilot_name": "Janson, Sven",
+          "pilot_tactical_nr": 8,
+          "reason": "Quali passt nicht (4 > 1)",
+          "pilot_q": 4,
+          "ship_q": 1
+        }
+      ]
+    }
+  ],
   "unused_pilots": [
+    {
+      "pilot_key": "heyder_justus",
+      "vorname": "Justus",
+      "nachname": "Heyder",
+      "pilot_name": "Heyder, Justus",
+      "abteilungszeit": "2026-05-15 12:27",
+      "pilot_q": 3,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 9,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "RHOGAS",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 9,
+      "raw_time": "Fri May 15 12:27:00 CEST 2026",
+      "current_ship_name": "RHOGAS",
+      "current_ship_eta_rueb": "2026-05-15 17:18",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
     {
       "pilot_key": "janson_sven",
       "vorname": "Sven",
