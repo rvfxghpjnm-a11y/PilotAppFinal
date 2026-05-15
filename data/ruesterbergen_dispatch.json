@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-15T21:41:05",
+  "generated_at": "2026-05-15T21:43:02",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,17 +34,17 @@
   "counts": {
     "ships_for_ruesterbergen": 5,
     "pilots_total": 15,
-    "pilots_dispatchable": 13,
-    "pilots_visible_only": 2,
+    "pilots_dispatchable": 15,
+    "pilots_visible_only": 0,
     "assignments": 5,
     "unassigned_ships": 0,
-    "unused_pilots": 8
+    "unused_pilots": 10
   },
   "ships": [
     {
       "ship_key": "BALTIC WHALE",
       "ship_name": "BALTIC WHALE",
-      "eta_rueb": "2026-05-15 22:55",
+      "eta_rueb": "2026-05-15 22:54",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 2,
       "meldung": {
@@ -82,7 +82,7 @@
     {
       "ship_key": "EMS MIRA",
       "ship_name": "EMS MIRA",
-      "eta_rueb": "2026-05-16 00:32",
+      "eta_rueb": "2026-05-16 00:33",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
@@ -429,16 +429,16 @@
       "q_source": "q_gruppen_lotsen.entries",
       "pilot_tactical_nr": 14,
       "aufgabe": "Kanalbört",
-      "fahrzeug": "OSTERBOTTEN",
-      "from": "HOS",
-      "to": "RÜB",
+      "fahrzeug": "RÜB",
       "nr": 14,
       "raw_time": "Fri May 15 17:00:00 CEST 2026",
-      "current_ship_name": "OSTERBOTTEN",
+      "current_ship_name": "RÜB",
+      "current_ship_eta_rueb": "2026-05-15 17:00",
       "current_ship_q": 0,
-      "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
+      "current_ship_route": "RÜB",
+      "current_ship_source": "special.already_in_rueb",
+      "availability_kind": "already_in_rueb",
+      "availability_hint": "Lotse gilt als bereits in RÜB"
     },
     {
       "pilot_key": "zozulya_mykola",
@@ -544,9 +544,10 @@
       "nr": 1,
       "raw_time": "Fri May 15 20:05:00 CEST 2026",
       "current_ship_name": "BALTIC ANKA",
+      "current_ship_eta_rueb": "2026-05-16 01:36",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     }
   ],
@@ -750,6 +751,27 @@
       "availability_kind": "merged_eta"
     },
     {
+      "pilot_key": "vogel_peter",
+      "vorname": "Peter",
+      "nachname": "Vogel",
+      "pilot_name": "Vogel, Peter",
+      "abteilungszeit": "2026-05-15 17:00",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 14,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "RÜB",
+      "nr": 14,
+      "raw_time": "Fri May 15 17:00:00 CEST 2026",
+      "current_ship_name": "RÜB",
+      "current_ship_eta_rueb": "2026-05-15 17:00",
+      "current_ship_q": 0,
+      "current_ship_route": "RÜB",
+      "current_ship_source": "special.already_in_rueb",
+      "availability_kind": "already_in_rueb",
+      "availability_hint": "Lotse gilt als bereits in RÜB"
+    },
+    {
       "pilot_key": "zozulya_mykola",
       "vorname": "Mykola",
       "nachname": "Zozulya",
@@ -836,45 +858,36 @@
       "current_ship_route": "KRH → HOS",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
-    }
-  ],
-  "visible_but_not_dispatchable_pilots": [
-    {
-      "pilot_key": "vogel_peter",
-      "pilot_name": "Vogel, Peter",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 14,
-      "abteilungszeit": "2026-05-15 17:00",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "OSTERBOTTEN",
-      "from": "HOS",
-      "to": "RÜB",
-      "current_ship_name": "OSTERBOTTEN",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
     },
     {
       "pilot_key": "blome_henning",
+      "vorname": "Henning",
+      "nachname": "Blome",
       "pilot_name": "Blome, Henning",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 1,
       "abteilungszeit": "2026-05-15 20:05",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 1,
       "aufgabe": "Kanalbört",
       "fahrzeug": "BALTIC ANKA",
       "from": "HOS",
       "to": "RÜB",
+      "nr": 1,
+      "raw_time": "Fri May 15 20:05:00 CEST 2026",
       "current_ship_name": "BALTIC ANKA",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
+      "current_ship_eta_rueb": "2026-05-16 01:36",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
     }
   ],
+  "visible_but_not_dispatchable_pilots": [],
   "assignments": [
     {
       "ship_key": "BALTIC WHALE",
       "ship_name": "BALTIC WHALE",
-      "eta_rueb": "2026-05-15 22:55",
+      "eta_rueb": "2026-05-15 22:54",
       "ship_q": 2,
       "assigned_pilot": "Spiller, Roman",
       "assigned_pilot_q": 0,
@@ -885,7 +898,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 8,
+      "candidate_count": 9,
       "candidates": [
         {
           "pilot_name": "Spiller, Roman",
@@ -966,6 +979,19 @@
           "availability_kind": "merged_eta"
         },
         {
+          "pilot_name": "Vogel, Peter",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 14,
+          "abteilungszeit": "2026-05-15 17:00",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-15 17:00",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
+        },
+        {
           "pilot_name": "Zozulya, Mykola",
           "pilot_q": 0,
           "pilot_tactical_nr": 12,
@@ -1027,6 +1053,15 @@
           "reason": "Quali passt nicht (3 > 2)",
           "pilot_q": 3,
           "ship_q": 2
+        },
+        {
+          "pilot_name": "Blome, Henning",
+          "pilot_tactical_nr": 1,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "BALTIC ANKA",
+          "pilot_current_ship_eta_rueb": "2026-05-16 01:36",
+          "ship_eta_rueb": "2026-05-15 22:54",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -1066,7 +1101,7 @@
     {
       "ship_key": "EMS MIRA",
       "ship_name": "EMS MIRA",
-      "eta_rueb": "2026-05-16 00:32",
+      "eta_rueb": "2026-05-16 00:33",
       "ship_q": 5,
       "assigned_pilot": "Heyenga, Kai",
       "assigned_pilot_q": 0,
@@ -1077,7 +1112,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 12,
+      "candidate_count": 13,
       "candidates": [
         {
           "pilot_name": "Heyenga, Kai",
@@ -1184,6 +1219,19 @@
           "availability_kind": "merged_eta"
         },
         {
+          "pilot_name": "Vogel, Peter",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 14,
+          "abteilungszeit": "2026-05-15 17:00",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-15 17:00",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
+        },
+        {
           "pilot_name": "Zozulya, Mykola",
           "pilot_q": 0,
           "pilot_tactical_nr": 12,
@@ -1236,6 +1284,17 @@
           "availability_kind": "merged_eta"
         }
       ],
+      "excluded": [
+        {
+          "pilot_name": "Blome, Henning",
+          "pilot_tactical_nr": 1,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "BALTIC ANKA",
+          "pilot_current_ship_eta_rueb": "2026-05-16 01:36",
+          "ship_eta_rueb": "2026-05-16 00:33",
+          "availability_kind": "merged_eta"
+        }
+      ],
       "ship": {
         "meldung": {
           "nr": "2",
@@ -1284,7 +1343,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 11,
+      "candidate_count": 12,
       "candidates": [
         {
           "pilot_name": "Marth, Jürgen",
@@ -1378,6 +1437,19 @@
           "availability_kind": "merged_eta"
         },
         {
+          "pilot_name": "Vogel, Peter",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 14,
+          "abteilungszeit": "2026-05-15 17:00",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-15 17:00",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
+        },
+        {
           "pilot_name": "Zozulya, Mykola",
           "pilot_q": 0,
           "pilot_tactical_nr": 12,
@@ -1430,6 +1502,17 @@
           "availability_kind": "merged_eta"
         }
       ],
+      "excluded": [
+        {
+          "pilot_name": "Blome, Henning",
+          "pilot_tactical_nr": 1,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "BALTIC ANKA",
+          "pilot_current_ship_eta_rueb": "2026-05-16 01:36",
+          "ship_eta_rueb": "2026-05-16 01:02",
+          "availability_kind": "merged_eta"
+        }
+      ],
       "ship": {
         "meldung": {
           "nr": "3",
@@ -1479,7 +1562,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 4,
+      "candidate_count": 5,
       "candidates": [
         {
           "pilot_name": "Hansen, Hinnerk",
@@ -1506,6 +1589,19 @@
           "current_ship_eta_rueb": "2026-05-15 20:41",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Vogel, Peter",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 14,
+          "abteilungszeit": "2026-05-15 17:00",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-15 17:00",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
         },
         {
           "pilot_name": "Zozulya, Mykola",
@@ -1576,6 +1672,15 @@
           "reason": "Quali passt nicht (3 > 0)",
           "pilot_q": 3,
           "ship_q": 0
+        },
+        {
+          "pilot_name": "Blome, Henning",
+          "pilot_tactical_nr": 1,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "BALTIC ANKA",
+          "pilot_current_ship_eta_rueb": "2026-05-16 01:36",
+          "ship_eta_rueb": "2026-05-16 01:19",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -1626,7 +1731,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 9,
+      "candidate_count": 11,
       "candidates": [
         {
           "pilot_name": "Heyder, Justus",
@@ -1694,6 +1799,19 @@
           "availability_kind": "merged_eta"
         },
         {
+          "pilot_name": "Vogel, Peter",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 14,
+          "abteilungszeit": "2026-05-15 17:00",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-15 17:00",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
+        },
+        {
           "pilot_name": "Zozulya, Mykola",
           "pilot_q": 0,
           "pilot_tactical_nr": 12,
@@ -1742,6 +1860,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "GOTLAND",
           "current_ship_eta_rueb": "2026-05-14 20:41",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Blome, Henning",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 1,
+          "abteilungszeit": "2026-05-15 20:05",
+          "fahrzeug": "BALTIC ANKA",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "BALTIC ANKA",
+          "current_ship_eta_rueb": "2026-05-16 01:36",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
@@ -1859,6 +1990,27 @@
       "availability_kind": "merged_eta"
     },
     {
+      "pilot_key": "vogel_peter",
+      "vorname": "Peter",
+      "nachname": "Vogel",
+      "pilot_name": "Vogel, Peter",
+      "abteilungszeit": "2026-05-15 17:00",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 14,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "RÜB",
+      "nr": 14,
+      "raw_time": "Fri May 15 17:00:00 CEST 2026",
+      "current_ship_name": "RÜB",
+      "current_ship_eta_rueb": "2026-05-15 17:00",
+      "current_ship_q": 0,
+      "current_ship_route": "RÜB",
+      "current_ship_source": "special.already_in_rueb",
+      "availability_kind": "already_in_rueb",
+      "availability_hint": "Lotse gilt als bereits in RÜB"
+    },
+    {
       "pilot_key": "zozulya_mykola",
       "vorname": "Mykola",
       "nachname": "Zozulya",
@@ -1943,6 +2095,28 @@
       "current_ship_eta_rueb": "2026-05-14 20:41",
       "current_ship_q": 0,
       "current_ship_route": "KRH → HOS",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "blome_henning",
+      "vorname": "Henning",
+      "nachname": "Blome",
+      "pilot_name": "Blome, Henning",
+      "abteilungszeit": "2026-05-15 20:05",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 1,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "BALTIC ANKA",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 1,
+      "raw_time": "Fri May 15 20:05:00 CEST 2026",
+      "current_ship_name": "BALTIC ANKA",
+      "current_ship_eta_rueb": "2026-05-16 01:36",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     }
