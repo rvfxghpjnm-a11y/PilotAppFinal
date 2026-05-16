@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-16T10:31:00",
+  "generated_at": "2026-05-16T10:33:01",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,53 +32,15 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 3,
+    "ships_for_ruesterbergen": 2,
     "pilots_total": 11,
     "pilots_dispatchable": 8,
     "pilots_visible_only": 3,
-    "assignments": 3,
+    "assignments": 2,
     "unassigned_ships": 0,
-    "unused_pilots": 5
+    "unused_pilots": 6
   },
   "ships": [
-    {
-      "ship_key": "RDJ IJSSELSTROOM",
-      "ship_name": "RDJ IJSSELSTROOM",
-      "eta_rueb": "2026-05-16 10:50",
-      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
-      "ship_q": 5,
-      "meldung": {
-        "nr": "1",
-        "time": "Sat May 16 10:45:00 CEST 2026",
-        "draft": "5.7",
-        "q_gruppe": "5",
-        "lotsen_anzahl": 1,
-        "confirmed": false,
-        "from": "RÜB",
-        "to": "UTG"
-      },
-      "summary": {
-        "route": "UTG → HOS",
-        "routes": [
-          "UTG → HOS",
-          "RÜB → UTG"
-        ],
-        "q_gruppe": "5",
-        "vg": "3",
-        "draft": "5.70",
-        "length_m": "85.97",
-        "beam_m": "12.61",
-        "queue_title": "Zulauf vom Kanal in Kiel",
-        "zulauf_richtung": "vom_kanal",
-        "pilot_required": "true",
-        "pilot_status": "H",
-        "pilot_1_name": "Spiller, Roman",
-        "travel_status": "SAILING_NOK",
-        "makler": "UCA",
-        "dangerous_vessel": "-",
-        "type_of_loading": "Futtermittel"
-      }
-    },
     {
       "ship_key": "FREDO",
       "ship_name": "FREDO",
@@ -86,7 +48,7 @@
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
-        "nr": "2",
+        "nr": "1",
         "time": "Sat May 16 17:00:00 CEST 2026",
         "draft": "2.9",
         "q_gruppe": "5",
@@ -111,7 +73,7 @@
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
-        "nr": "3",
+        "nr": "2",
         "time": "Sun May 17 07:00:00 CEST 2026",
         "draft": "2.6",
         "q_gruppe": "5",
@@ -295,14 +257,16 @@
       "q_source": "q_gruppen_lotsen.entries",
       "pilot_tactical_nr": 4,
       "aufgabe": "Kanalbört",
-      "fahrzeug": "RÜB",
+      "fahrzeug": "RDJ IJSSELSTROOM",
+      "from": "RÜB",
+      "to": "UTG",
       "nr": 4,
       "raw_time": "Sat May 16 09:15:00 CEST 2026",
       "current_ship_name": "RDJ IJSSELSTROOM",
       "current_ship_eta_rueb": "2026-05-16 10:50",
       "current_ship_q": 5,
-      "current_ship_route": "UTG → HOS",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_route": "RÜB → UTG",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
@@ -534,14 +498,16 @@
       "q_source": "q_gruppen_lotsen.entries",
       "pilot_tactical_nr": 4,
       "aufgabe": "Kanalbört",
-      "fahrzeug": "RÜB",
+      "fahrzeug": "RDJ IJSSELSTROOM",
+      "from": "RÜB",
+      "to": "UTG",
       "nr": 4,
       "raw_time": "Sat May 16 09:15:00 CEST 2026",
       "current_ship_name": "RDJ IJSSELSTROOM",
       "current_ship_eta_rueb": "2026-05-16 10:50",
       "current_ship_q": 5,
-      "current_ship_route": "UTG → HOS",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_route": "RÜB → UTG",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     }
   ],
@@ -594,9 +560,9 @@
   ],
   "assignments": [
     {
-      "ship_key": "RDJ IJSSELSTROOM",
-      "ship_name": "RDJ IJSSELSTROOM",
-      "eta_rueb": "2026-05-16 10:50",
+      "ship_key": "FREDO",
+      "ship_name": "FREDO",
+      "eta_rueb": "2026-05-16 17:00",
       "ship_q": 5,
       "assigned_pilot": "Groen, Nickolaj",
       "assigned_pilot_q": 5,
@@ -607,7 +573,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 5,
+      "candidate_count": 8,
       "candidates": [
         {
           "pilot_name": "Groen, Nickolaj",
@@ -662,85 +628,83 @@
           "availability_kind": "merged_eta"
         },
         {
-          "pilot_name": "Spiller, Roman",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 4,
-          "abteilungszeit": "2026-05-16 09:15",
-          "fahrzeug": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "RDJ IJSSELSTROOM",
-          "current_ship_eta_rueb": "2026-05-16 10:50",
-          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-          "availability_kind": "merged_eta"
-        }
-      ],
-      "excluded": [
-        {
           "pilot_name": "Jeske, Lutz",
+          "pilot_q": 0,
           "pilot_tactical_nr": 7,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "EAGLE II",
-          "pilot_current_ship_eta_rueb": "2026-05-16 12:19",
-          "ship_eta_rueb": "2026-05-16 10:50",
+          "abteilungszeit": "2026-05-16 07:02",
+          "fahrzeug": "EAGLE II",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "EAGLE II",
+          "current_ship_eta_rueb": "2026-05-16 12:19",
+          "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
         {
           "pilot_name": "Borggräfe, Hark",
+          "pilot_q": 0,
           "pilot_tactical_nr": 6,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "RIX MUNTE",
-          "pilot_current_ship_eta_rueb": "2026-05-16 12:08",
-          "ship_eta_rueb": "2026-05-16 10:50",
+          "abteilungszeit": "2026-05-16 07:03",
+          "fahrzeug": "RIX MUNTE",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RIX MUNTE",
+          "current_ship_eta_rueb": "2026-05-16 12:08",
+          "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
         {
           "pilot_name": "Külzer, Sascha",
+          "pilot_q": 2,
           "pilot_tactical_nr": 5,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "BBC LISBON",
-          "pilot_current_ship_eta_rueb": "2026-05-16 12:11",
-          "ship_eta_rueb": "2026-05-16 10:50",
+          "abteilungszeit": "2026-05-16 07:04",
+          "fahrzeug": "BBC LISBON",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "BBC LISBON",
+          "current_ship_eta_rueb": "2026-05-16 12:11",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Spiller, Roman",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 4,
+          "abteilungszeit": "2026-05-16 09:15",
+          "fahrzeug": "RDJ IJSSELSTROOM",
+          "to": "UTG",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RDJ IJSSELSTROOM",
+          "current_ship_eta_rueb": "2026-05-16 10:50",
+          "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
       ],
       "ship": {
         "meldung": {
           "nr": "1",
-          "time": "Sat May 16 10:45:00 CEST 2026",
-          "draft": "5.7",
+          "time": "Sat May 16 17:00:00 CEST 2026",
+          "draft": "2.9",
           "q_gruppe": "5",
           "lotsen_anzahl": 1,
           "confirmed": false,
-          "from": "RÜB",
-          "to": "UTG"
+          "from": "KRH",
+          "to": "HOS"
         },
         "summary": {
-          "route": "UTG → HOS",
+          "route": "KRH → HOS",
           "routes": [
-            "UTG → HOS",
-            "RÜB → UTG"
+            "KRH → HOS"
           ],
           "q_gruppe": "5",
-          "vg": "3",
-          "draft": "5.70",
-          "length_m": "85.97",
-          "beam_m": "12.61",
-          "queue_title": "Zulauf vom Kanal in Kiel",
-          "zulauf_richtung": "vom_kanal",
-          "pilot_required": "true",
-          "pilot_status": "H",
-          "pilot_1_name": "Spiller, Roman",
-          "travel_status": "SAILING_NOK",
-          "makler": "UCA",
-          "dangerous_vessel": "-",
-          "type_of_loading": "Futtermittel"
+          "draft": "2.9"
         }
       }
     },
     {
-      "ship_key": "FREDO",
-      "ship_name": "FREDO",
-      "eta_rueb": "2026-05-16 17:00",
+      "ship_key": "MARLA",
+      "ship_name": "MARLA",
+      "eta_rueb": "2026-05-17 07:00",
       "ship_q": 5,
       "assigned_pilot": "Pitschmann, Gerd",
       "assigned_pilot_q": 0,
@@ -836,132 +800,18 @@
           "pilot_q": 0,
           "pilot_tactical_nr": 4,
           "abteilungszeit": "2026-05-16 09:15",
-          "fahrzeug": "RÜB",
+          "fahrzeug": "RDJ IJSSELSTROOM",
+          "to": "UTG",
           "aufgabe": "Kanalbört",
           "current_ship_name": "RDJ IJSSELSTROOM",
           "current_ship_eta_rueb": "2026-05-16 10:50",
-          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
       ],
       "ship": {
         "meldung": {
           "nr": "2",
-          "time": "Sat May 16 17:00:00 CEST 2026",
-          "draft": "2.9",
-          "q_gruppe": "5",
-          "lotsen_anzahl": 1,
-          "confirmed": false,
-          "from": "KRH",
-          "to": "HOS"
-        },
-        "summary": {
-          "route": "KRH → HOS",
-          "routes": [
-            "KRH → HOS"
-          ],
-          "q_gruppe": "5",
-          "draft": "2.9"
-        }
-      }
-    },
-    {
-      "ship_key": "MARLA",
-      "ship_name": "MARLA",
-      "eta_rueb": "2026-05-17 07:00",
-      "ship_q": 5,
-      "assigned_pilot": "Krebs, Michael",
-      "assigned_pilot_q": 0,
-      "assigned_tactical_nr": 16,
-      "assigned_abteilungszeit": "2026-05-16 03:25",
-      "assigned_current_ship_name": "BJORG",
-      "assigned_current_ship_eta_rueb": "2026-05-16 09:42",
-      "assigned_current_ship_source": "schiffe_merged.seelotsen",
-      "assigned_availability_kind": "merged_eta",
-      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 6,
-      "candidates": [
-        {
-          "pilot_name": "Krebs, Michael",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 16,
-          "abteilungszeit": "2026-05-16 03:25",
-          "fahrzeug": "BJORG",
-          "to": "HOS",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "BJORG",
-          "current_ship_eta_rueb": "2026-05-16 09:42",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Skawianczyk, Artur",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 15,
-          "abteilungszeit": "2026-05-16 03:30",
-          "fahrzeug": "DANICA RAINBOW",
-          "to": "NHF",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "DANICA RAINBOW",
-          "current_ship_eta_rueb": "2026-05-16 10:40",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Jeske, Lutz",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 7,
-          "abteilungszeit": "2026-05-16 07:02",
-          "fahrzeug": "EAGLE II",
-          "to": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "EAGLE II",
-          "current_ship_eta_rueb": "2026-05-16 12:19",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Borggräfe, Hark",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 6,
-          "abteilungszeit": "2026-05-16 07:03",
-          "fahrzeug": "RIX MUNTE",
-          "to": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "RIX MUNTE",
-          "current_ship_eta_rueb": "2026-05-16 12:08",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Külzer, Sascha",
-          "pilot_q": 2,
-          "pilot_tactical_nr": 5,
-          "abteilungszeit": "2026-05-16 07:04",
-          "fahrzeug": "BBC LISBON",
-          "to": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "BBC LISBON",
-          "current_ship_eta_rueb": "2026-05-16 12:11",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Spiller, Roman",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 4,
-          "abteilungszeit": "2026-05-16 09:15",
-          "fahrzeug": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "RDJ IJSSELSTROOM",
-          "current_ship_eta_rueb": "2026-05-16 10:50",
-          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-          "availability_kind": "merged_eta"
-        }
-      ],
-      "ship": {
-        "meldung": {
-          "nr": "3",
           "time": "Sun May 17 07:00:00 CEST 2026",
           "draft": "2.6",
           "q_gruppe": "5",
@@ -983,6 +833,28 @@
   ],
   "unassigned_ships": [],
   "unused_pilots": [
+    {
+      "pilot_key": "krebs_michael",
+      "vorname": "Michael",
+      "nachname": "Krebs",
+      "pilot_name": "Krebs, Michael",
+      "abteilungszeit": "2026-05-16 03:25",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 16,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "BJORG",
+      "from": "RÜB",
+      "to": "HOS",
+      "nr": 16,
+      "raw_time": "Sat May 16 03:25:00 CEST 2026",
+      "current_ship_name": "BJORG",
+      "current_ship_eta_rueb": "2026-05-16 09:42",
+      "current_ship_q": 2,
+      "current_ship_route": "RÜB → HOS",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
     {
       "pilot_key": "skawianczyk_artur",
       "vorname": "Artur",
@@ -1081,14 +953,16 @@
       "q_source": "q_gruppen_lotsen.entries",
       "pilot_tactical_nr": 4,
       "aufgabe": "Kanalbört",
-      "fahrzeug": "RÜB",
+      "fahrzeug": "RDJ IJSSELSTROOM",
+      "from": "RÜB",
+      "to": "UTG",
       "nr": 4,
       "raw_time": "Sat May 16 09:15:00 CEST 2026",
       "current_ship_name": "RDJ IJSSELSTROOM",
       "current_ship_eta_rueb": "2026-05-16 10:50",
       "current_ship_q": 5,
-      "current_ship_route": "UTG → HOS",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_route": "RÜB → UTG",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     }
   ]
