@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-16T14:57:01",
+  "generated_at": "2026-05-16T14:59:00",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -42,6 +42,44 @@
   },
   "ships": [
     {
+      "ship_key": "KATRIN",
+      "ship_name": "KATRIN",
+      "eta_rueb": "2026-05-16 15:56",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 5,
+      "meldung": {
+        "nr": "1",
+        "time": "Sat May 16 15:45:00 CEST 2026",
+        "draft": "5.3",
+        "q_gruppe": "5",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "5",
+        "vg": "3",
+        "draft": "5.30",
+        "length_m": "98.90",
+        "beam_m": "13.800",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "P",
+        "pilot_1_name": "Hansen, Hinnerk",
+        "travel_status": "SAILING_NOK",
+        "makler": "SUB",
+        "dangerous_vessel": "-",
+        "type_of_loading": "Bulk"
+      }
+    },
+    {
       "ship_key": "ELBSUMMER",
       "ship_name": "ELBSUMMER",
       "eta_rueb": "2026-05-16 15:59",
@@ -77,44 +115,6 @@
         "makler": "UCA",
         "dangerous_vessel": "-",
         "type_of_loading": "Container"
-      }
-    },
-    {
-      "ship_key": "KATRIN",
-      "ship_name": "KATRIN",
-      "eta_rueb": "2026-05-16 16:02",
-      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
-      "ship_q": 5,
-      "meldung": {
-        "nr": "1",
-        "time": "Sat May 16 15:45:00 CEST 2026",
-        "draft": "5.3",
-        "q_gruppe": "5",
-        "lotsen_anzahl": 1,
-        "confirmed": false,
-        "from": "RÜB",
-        "to": "HOS"
-      },
-      "summary": {
-        "route": "HOS → KLT",
-        "routes": [
-          "HOS → KLT",
-          "RÜB → HOS"
-        ],
-        "q_gruppe": "5",
-        "vg": "3",
-        "draft": "5.30",
-        "length_m": "98.90",
-        "beam_m": "13.800",
-        "queue_title": "Zulauf vom Kanal in Kiel",
-        "zulauf_richtung": "vom_kanal",
-        "pilot_required": "true",
-        "pilot_status": "P",
-        "pilot_1_name": "Hansen, Hinnerk",
-        "travel_status": "SAILING_NOK",
-        "makler": "SUB",
-        "dangerous_vessel": "-",
-        "type_of_loading": "Bulk"
       }
     },
     {
@@ -297,7 +297,7 @@
       "nr": 16,
       "raw_time": "Sat May 16 09:42:00 CEST 2026",
       "current_ship_name": "KATRIN",
-      "current_ship_eta_rueb": "2026-05-16 16:02",
+      "current_ship_eta_rueb": "2026-05-16 15:56",
       "current_ship_q": 5,
       "current_ship_route": "HOS → KLT",
       "current_ship_source": "schiffe_merged.summary.pilot_1_name",
@@ -510,7 +510,7 @@
       "nr": 16,
       "raw_time": "Sat May 16 09:42:00 CEST 2026",
       "current_ship_name": "KATRIN",
-      "current_ship_eta_rueb": "2026-05-16 16:02",
+      "current_ship_eta_rueb": "2026-05-16 15:56",
       "current_ship_q": 5,
       "current_ship_route": "HOS → KLT",
       "current_ship_source": "schiffe_merged.summary.pilot_1_name",
@@ -688,6 +688,120 @@
   ],
   "assignments": [
     {
+      "ship_key": "KATRIN",
+      "ship_name": "KATRIN",
+      "eta_rueb": "2026-05-16 15:56",
+      "ship_q": 5,
+      "assigned_pilot": "Hansen, Hinnerk",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 16,
+      "assigned_abteilungszeit": "2026-05-16 09:42",
+      "assigned_current_ship_name": "KATRIN",
+      "assigned_current_ship_eta_rueb": "2026-05-16 15:56",
+      "assigned_current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 2,
+      "candidates": [
+        {
+          "pilot_name": "Hansen, Hinnerk",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 16,
+          "abteilungszeit": "2026-05-16 09:42",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "KATRIN",
+          "current_ship_eta_rueb": "2026-05-16 15:56",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Böttcher, Peter",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 14,
+          "abteilungszeit": "2026-05-16 09:59",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-16 09:59",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Jeschek, Hauke",
+          "pilot_tactical_nr": 15,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "ELBSUMMER",
+          "pilot_current_ship_eta_rueb": "2026-05-16 15:59",
+          "ship_eta_rueb": "2026-05-16 15:56",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Koslik, Kevin",
+          "pilot_tactical_nr": 12,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "ARKLOW ACCORD",
+          "pilot_current_ship_eta_rueb": "2026-05-16 17:00",
+          "ship_eta_rueb": "2026-05-16 15:56",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Böttger, Oleif Johann",
+          "pilot_tactical_nr": 10,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "BRAVEWIND",
+          "pilot_current_ship_eta_rueb": "2026-05-16 17:08",
+          "ship_eta_rueb": "2026-05-16 15:56",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Steffens, Micha",
+          "pilot_tactical_nr": 9,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "MAUREEN S",
+          "pilot_current_ship_eta_rueb": "2026-05-16 17:03",
+          "ship_eta_rueb": "2026-05-16 15:56",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "1",
+          "time": "Sat May 16 15:45:00 CEST 2026",
+          "draft": "5.3",
+          "q_gruppe": "5",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "HOS → KLT",
+          "routes": [
+            "HOS → KLT",
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "5",
+          "vg": "3",
+          "draft": "5.30",
+          "length_m": "98.90",
+          "beam_m": "13.800",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "P",
+          "pilot_1_name": "Hansen, Hinnerk",
+          "travel_status": "SAILING_NOK",
+          "makler": "SUB",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Bulk"
+        }
+      }
+    },
+    {
       "ship_key": "ELBSUMMER",
       "ship_name": "ELBSUMMER",
       "eta_rueb": "2026-05-16 15:59",
@@ -730,15 +844,6 @@
         }
       ],
       "excluded": [
-        {
-          "pilot_name": "Hansen, Hinnerk",
-          "pilot_tactical_nr": 16,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "KATRIN",
-          "pilot_current_ship_eta_rueb": "2026-05-16 16:02",
-          "ship_eta_rueb": "2026-05-16 15:59",
-          "availability_kind": "merged_eta"
-        },
         {
           "pilot_name": "Koslik, Kevin",
           "pilot_tactical_nr": 12,
@@ -798,111 +903,6 @@
           "makler": "UCA",
           "dangerous_vessel": "-",
           "type_of_loading": "Container"
-        }
-      }
-    },
-    {
-      "ship_key": "KATRIN",
-      "ship_name": "KATRIN",
-      "eta_rueb": "2026-05-16 16:02",
-      "ship_q": 5,
-      "assigned_pilot": "Hansen, Hinnerk",
-      "assigned_pilot_q": 0,
-      "assigned_tactical_nr": 16,
-      "assigned_abteilungszeit": "2026-05-16 09:42",
-      "assigned_current_ship_name": "KATRIN",
-      "assigned_current_ship_eta_rueb": "2026-05-16 16:02",
-      "assigned_current_ship_source": "schiffe_merged.summary.pilot_1_name",
-      "assigned_availability_kind": "merged_eta",
-      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 2,
-      "candidates": [
-        {
-          "pilot_name": "Hansen, Hinnerk",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 16,
-          "abteilungszeit": "2026-05-16 09:42",
-          "fahrzeug": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "KATRIN",
-          "current_ship_eta_rueb": "2026-05-16 16:02",
-          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Böttcher, Peter",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 14,
-          "abteilungszeit": "2026-05-16 09:59",
-          "fahrzeug": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "RÜB",
-          "current_ship_eta_rueb": "2026-05-16 09:59",
-          "current_ship_source": "special.already_in_rueb",
-          "availability_kind": "already_in_rueb",
-          "availability_hint": "Lotse gilt als bereits in RÜB"
-        }
-      ],
-      "excluded": [
-        {
-          "pilot_name": "Koslik, Kevin",
-          "pilot_tactical_nr": 12,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "ARKLOW ACCORD",
-          "pilot_current_ship_eta_rueb": "2026-05-16 17:00",
-          "ship_eta_rueb": "2026-05-16 16:02",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Böttger, Oleif Johann",
-          "pilot_tactical_nr": 10,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "BRAVEWIND",
-          "pilot_current_ship_eta_rueb": "2026-05-16 17:08",
-          "ship_eta_rueb": "2026-05-16 16:02",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Steffens, Micha",
-          "pilot_tactical_nr": 9,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "MAUREEN S",
-          "pilot_current_ship_eta_rueb": "2026-05-16 17:03",
-          "ship_eta_rueb": "2026-05-16 16:02",
-          "availability_kind": "merged_eta"
-        }
-      ],
-      "ship": {
-        "meldung": {
-          "nr": "1",
-          "time": "Sat May 16 15:45:00 CEST 2026",
-          "draft": "5.3",
-          "q_gruppe": "5",
-          "lotsen_anzahl": 1,
-          "confirmed": false,
-          "from": "RÜB",
-          "to": "HOS"
-        },
-        "summary": {
-          "route": "HOS → KLT",
-          "routes": [
-            "HOS → KLT",
-            "RÜB → HOS"
-          ],
-          "q_gruppe": "5",
-          "vg": "3",
-          "draft": "5.30",
-          "length_m": "98.90",
-          "beam_m": "13.800",
-          "queue_title": "Zulauf vom Kanal in Kiel",
-          "zulauf_richtung": "vom_kanal",
-          "pilot_required": "true",
-          "pilot_status": "P",
-          "pilot_1_name": "Hansen, Hinnerk",
-          "travel_status": "SAILING_NOK",
-          "makler": "SUB",
-          "dangerous_vessel": "-",
-          "type_of_loading": "Bulk"
         }
       }
     },
