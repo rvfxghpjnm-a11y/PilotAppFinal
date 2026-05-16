@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-16T06:34:57",
+  "generated_at": "2026-05-16T06:36:58",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 6,
     "pilots_total": 8,
-    "pilots_dispatchable": 8,
-    "pilots_visible_only": 0,
+    "pilots_dispatchable": 7,
+    "pilots_visible_only": 1,
     "assignments": 6,
     "unassigned_ships": 0,
-    "unused_pilots": 2
+    "unused_pilots": 1
   },
   "ships": [
     {
@@ -361,7 +361,6 @@
       "nr": 13,
       "raw_time": "Sat May 16 02:27:00 CEST 2026",
       "current_ship_name": "CAPELLA",
-      "current_ship_eta_rueb": "2026-05-16 08:15",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -524,28 +523,6 @@
       "availability_kind": "merged_eta"
     },
     {
-      "pilot_key": "groen_nickolaj",
-      "vorname": "Nickolaj",
-      "nachname": "Groen",
-      "pilot_name": "Groen, Nickolaj",
-      "abteilungszeit": "2026-05-16 02:27",
-      "pilot_q": 5,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 13,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "CAPELLA",
-      "from": "HOS",
-      "to": "RÜB",
-      "nr": 13,
-      "raw_time": "Sat May 16 02:27:00 CEST 2026",
-      "current_ship_name": "CAPELLA",
-      "current_ship_eta_rueb": "2026-05-16 08:15",
-      "current_ship_q": 0,
-      "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
-    },
-    {
       "pilot_key": "pitschmann_gerd",
       "vorname": "Gerd",
       "nachname": "Pitschmann",
@@ -612,7 +589,23 @@
       "availability_kind": "merged_eta"
     }
   ],
-  "visible_but_not_dispatchable_pilots": [],
+  "visible_but_not_dispatchable_pilots": [
+    {
+      "pilot_key": "groen_nickolaj",
+      "pilot_name": "Groen, Nickolaj",
+      "pilot_q": 5,
+      "pilot_tactical_nr": 13,
+      "abteilungszeit": "2026-05-16 02:27",
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "CAPELLA",
+      "from": "HOS",
+      "to": "RÜB",
+      "current_ship_name": "CAPELLA",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta",
+      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
+    }
+  ],
   "assignments": [
     {
       "ship_key": "RUYTER",
@@ -628,7 +621,7 @@
       "assigned_current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 6,
+      "candidate_count": 5,
       "candidates": [
         {
           "pilot_name": "Blome, Henning",
@@ -679,19 +672,6 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "FROLAND",
           "current_ship_eta_rueb": "2026-05-16 05:21",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Groen, Nickolaj",
-          "pilot_q": 5,
-          "pilot_tactical_nr": 13,
-          "abteilungszeit": "2026-05-16 02:27",
-          "fahrzeug": "CAPELLA",
-          "to": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "CAPELLA",
-          "current_ship_eta_rueb": "2026-05-16 08:15",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -851,13 +831,6 @@
           "reason": "Quali passt nicht (2 > 1)",
           "pilot_q": 2,
           "ship_q": 1
-        },
-        {
-          "pilot_name": "Groen, Nickolaj",
-          "pilot_tactical_nr": 13,
-          "reason": "Quali passt nicht (5 > 1)",
-          "pilot_q": 5,
-          "ship_q": 1
         }
       ],
       "ship": {
@@ -976,15 +949,6 @@
           "availability_kind": "merged_eta"
         }
       ],
-      "excluded": [
-        {
-          "pilot_name": "Groen, Nickolaj",
-          "pilot_tactical_nr": 13,
-          "reason": "Quali passt nicht (5 > 2)",
-          "pilot_q": 5,
-          "ship_q": 2
-        }
-      ],
       "ship": {
         "meldung": {
           "nr": "3",
@@ -1033,7 +997,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 5,
+      "candidate_count": 4,
       "candidates": [
         {
           "pilot_name": "Nagel, Volker",
@@ -1045,19 +1009,6 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "FROLAND",
           "current_ship_eta_rueb": "2026-05-16 05:21",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Groen, Nickolaj",
-          "pilot_q": 5,
-          "pilot_tactical_nr": 13,
-          "abteilungszeit": "2026-05-16 02:27",
-          "fahrzeug": "CAPELLA",
-          "to": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "CAPELLA",
-          "current_ship_eta_rueb": "2026-05-16 08:15",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1140,30 +1091,17 @@
       "ship_name": "RDJ IJSSELSTROOM",
       "eta_rueb": "2026-05-16 10:54",
       "ship_q": 5,
-      "assigned_pilot": "Groen, Nickolaj",
-      "assigned_pilot_q": 5,
-      "assigned_tactical_nr": 13,
-      "assigned_abteilungszeit": "2026-05-16 02:27",
-      "assigned_current_ship_name": "CAPELLA",
-      "assigned_current_ship_eta_rueb": "2026-05-16 08:15",
+      "assigned_pilot": "Pitschmann, Gerd",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 12,
+      "assigned_abteilungszeit": "2026-05-16 02:39",
+      "assigned_current_ship_name": "LEONIE",
+      "assigned_current_ship_eta_rueb": "2026-05-16 08:22",
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 4,
+      "candidate_count": 3,
       "candidates": [
-        {
-          "pilot_name": "Groen, Nickolaj",
-          "pilot_q": 5,
-          "pilot_tactical_nr": 13,
-          "abteilungszeit": "2026-05-16 02:27",
-          "fahrzeug": "CAPELLA",
-          "to": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "CAPELLA",
-          "current_ship_eta_rueb": "2026-05-16 08:15",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
         {
           "pilot_name": "Pitschmann, Gerd",
           "pilot_q": 0,
@@ -1243,30 +1181,17 @@
       "ship_name": "FREDO",
       "eta_rueb": "2026-05-16 17:00",
       "ship_q": 5,
-      "assigned_pilot": "Pitschmann, Gerd",
+      "assigned_pilot": "Krebs, Michael",
       "assigned_pilot_q": 0,
-      "assigned_tactical_nr": 12,
-      "assigned_abteilungszeit": "2026-05-16 02:39",
-      "assigned_current_ship_name": "LEONIE",
-      "assigned_current_ship_eta_rueb": "2026-05-16 08:22",
+      "assigned_tactical_nr": 9,
+      "assigned_abteilungszeit": "2026-05-16 03:25",
+      "assigned_current_ship_name": "SWAN BISCAY",
+      "assigned_current_ship_eta_rueb": "2026-05-16 08:25",
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 3,
+      "candidate_count": 2,
       "candidates": [
-        {
-          "pilot_name": "Pitschmann, Gerd",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 12,
-          "abteilungszeit": "2026-05-16 02:39",
-          "fahrzeug": "LEONIE",
-          "to": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "LEONIE",
-          "current_ship_eta_rueb": "2026-05-16 08:22",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
         {
           "pilot_name": "Krebs, Michael",
           "pilot_q": 0,
@@ -1318,28 +1243,6 @@
   ],
   "unassigned_ships": [],
   "unused_pilots": [
-    {
-      "pilot_key": "krebs_michael",
-      "vorname": "Michael",
-      "nachname": "Krebs",
-      "pilot_name": "Krebs, Michael",
-      "abteilungszeit": "2026-05-16 03:25",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 9,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "SWAN BISCAY",
-      "from": "HOS",
-      "to": "RÜB",
-      "nr": 9,
-      "raw_time": "Sat May 16 03:25:00 CEST 2026",
-      "current_ship_name": "SWAN BISCAY",
-      "current_ship_eta_rueb": "2026-05-16 08:25",
-      "current_ship_q": 0,
-      "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
-    },
     {
       "pilot_key": "skawianczyk_artur",
       "vorname": "Artur",
