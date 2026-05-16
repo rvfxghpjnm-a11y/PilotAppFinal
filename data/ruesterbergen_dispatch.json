@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-16T06:26:58",
+  "generated_at": "2026-05-16T06:28:58",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -44,7 +44,7 @@
     {
       "ship_key": "RUYTER",
       "ship_name": "RUYTER",
-      "eta_rueb": "2026-05-16 08:25",
+      "eta_rueb": "2026-05-16 08:24",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
@@ -155,43 +155,6 @@
       }
     },
     {
-      "ship_key": "RDJ IJSSELSTROOM",
-      "ship_name": "RDJ IJSSELSTROOM",
-      "eta_rueb": "2026-05-16 10:33",
-      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
-      "ship_q": 5,
-      "meldung": {
-        "nr": "5",
-        "time": "Sat May 16 10:33:00 CEST 2026",
-        "draft": "5.7",
-        "q_gruppe": "5",
-        "lotsen_anzahl": 1,
-        "confirmed": false,
-        "from": "RÜB",
-        "to": "HOS"
-      },
-      "summary": {
-        "route": "RÜB → HOS",
-        "routes": [
-          "RÜB → HOS"
-        ],
-        "q_gruppe": "5",
-        "vg": "3",
-        "draft": "5.70",
-        "length_m": "85.97",
-        "beam_m": "12.61",
-        "queue_title": "Zulauf vom Kanal in Kiel",
-        "zulauf_richtung": "vom_kanal",
-        "pilot_required": "true",
-        "pilot_status": "H",
-        "pilot_1_name": "Lilienthal, Andreas",
-        "travel_status": "SAILING_NOK",
-        "makler": "UCA",
-        "dangerous_vessel": "-",
-        "type_of_loading": "Futtermittel"
-      }
-    },
-    {
       "ship_key": "DANICA RAINBOW",
       "ship_name": "DANICA RAINBOW",
       "eta_rueb": "2026-05-16 10:51",
@@ -227,6 +190,44 @@
         "makler": "UCA",
         "dangerous_vessel": "-",
         "type_of_loading": "Ballast"
+      }
+    },
+    {
+      "ship_key": "RDJ IJSSELSTROOM",
+      "ship_name": "RDJ IJSSELSTROOM",
+      "eta_rueb": "2026-05-16 10:54",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 5,
+      "meldung": {
+        "nr": "5",
+        "time": "Sat May 16 10:33:00 CEST 2026",
+        "draft": "5.7",
+        "q_gruppe": "5",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "UTG"
+      },
+      "summary": {
+        "route": "UTG → HOS",
+        "routes": [
+          "UTG → HOS",
+          "RÜB → UTG"
+        ],
+        "q_gruppe": "5",
+        "vg": "3",
+        "draft": "5.70",
+        "length_m": "85.97",
+        "beam_m": "12.61",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "H",
+        "pilot_1_name": "Lilienthal, Andreas",
+        "travel_status": "SAILING_NOK",
+        "makler": "UCA",
+        "dangerous_vessel": "-",
+        "type_of_loading": "Futtermittel"
       }
     },
     {
@@ -616,7 +617,7 @@
     {
       "ship_key": "RUYTER",
       "ship_name": "RUYTER",
-      "eta_rueb": "2026-05-16 08:25",
+      "eta_rueb": "2026-05-16 08:24",
       "ship_q": 5,
       "assigned_pilot": "Blome, Henning",
       "assigned_pilot_q": 0,
@@ -627,7 +628,7 @@
       "assigned_current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 7,
+      "candidate_count": 6,
       "candidates": [
         {
           "pilot_name": "Blome, Henning",
@@ -706,29 +707,25 @@
           "current_ship_eta_rueb": "2026-05-16 08:22",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Krebs, Michael",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 9,
-          "abteilungszeit": "2026-05-16 03:25",
-          "fahrzeug": "SWAN BISCAY",
-          "to": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "SWAN BISCAY",
-          "current_ship_eta_rueb": "2026-05-16 08:25",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
         }
       ],
       "excluded": [
+        {
+          "pilot_name": "Krebs, Michael",
+          "pilot_tactical_nr": 9,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "SWAN BISCAY",
+          "pilot_current_ship_eta_rueb": "2026-05-16 08:25",
+          "ship_eta_rueb": "2026-05-16 08:24",
+          "availability_kind": "merged_eta"
+        },
         {
           "pilot_name": "Skawianczyk, Artur",
           "pilot_tactical_nr": 8,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "TG LEO",
           "pilot_current_ship_eta_rueb": "2026-05-16 08:44",
-          "ship_eta_rueb": "2026-05-16 08:25",
+          "ship_eta_rueb": "2026-05-16 08:24",
           "availability_kind": "merged_eta"
         }
       ],
@@ -1023,9 +1020,9 @@
       }
     },
     {
-      "ship_key": "RDJ IJSSELSTROOM",
-      "ship_name": "RDJ IJSSELSTROOM",
-      "eta_rueb": "2026-05-16 10:33",
+      "ship_key": "DANICA RAINBOW",
+      "ship_name": "DANICA RAINBOW",
+      "eta_rueb": "2026-05-16 10:51",
       "ship_q": 5,
       "assigned_pilot": "Nagel, Volker",
       "assigned_pilot_q": 2,
@@ -1051,108 +1048,6 @@
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
-        {
-          "pilot_name": "Groen, Nickolaj",
-          "pilot_q": 5,
-          "pilot_tactical_nr": 13,
-          "abteilungszeit": "2026-05-16 02:27",
-          "fahrzeug": "CAPELLA",
-          "to": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "CAPELLA",
-          "current_ship_eta_rueb": "2026-05-16 08:15",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Pitschmann, Gerd",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 12,
-          "abteilungszeit": "2026-05-16 02:39",
-          "fahrzeug": "LEONIE",
-          "to": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "LEONIE",
-          "current_ship_eta_rueb": "2026-05-16 08:22",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Krebs, Michael",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 9,
-          "abteilungszeit": "2026-05-16 03:25",
-          "fahrzeug": "SWAN BISCAY",
-          "to": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "SWAN BISCAY",
-          "current_ship_eta_rueb": "2026-05-16 08:25",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Skawianczyk, Artur",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 8,
-          "abteilungszeit": "2026-05-16 03:30",
-          "fahrzeug": "TG LEO",
-          "to": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "TG LEO",
-          "current_ship_eta_rueb": "2026-05-16 08:44",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        }
-      ],
-      "ship": {
-        "meldung": {
-          "nr": "5",
-          "time": "Sat May 16 10:33:00 CEST 2026",
-          "draft": "5.7",
-          "q_gruppe": "5",
-          "lotsen_anzahl": 1,
-          "confirmed": false,
-          "from": "RÜB",
-          "to": "HOS"
-        },
-        "summary": {
-          "route": "RÜB → HOS",
-          "routes": [
-            "RÜB → HOS"
-          ],
-          "q_gruppe": "5",
-          "vg": "3",
-          "draft": "5.70",
-          "length_m": "85.97",
-          "beam_m": "12.61",
-          "queue_title": "Zulauf vom Kanal in Kiel",
-          "zulauf_richtung": "vom_kanal",
-          "pilot_required": "true",
-          "pilot_status": "H",
-          "pilot_1_name": "Lilienthal, Andreas",
-          "travel_status": "SAILING_NOK",
-          "makler": "UCA",
-          "dangerous_vessel": "-",
-          "type_of_loading": "Futtermittel"
-        }
-      }
-    },
-    {
-      "ship_key": "DANICA RAINBOW",
-      "ship_name": "DANICA RAINBOW",
-      "eta_rueb": "2026-05-16 10:51",
-      "ship_q": 5,
-      "assigned_pilot": "Groen, Nickolaj",
-      "assigned_pilot_q": 5,
-      "assigned_tactical_nr": 13,
-      "assigned_abteilungszeit": "2026-05-16 02:27",
-      "assigned_current_ship_name": "CAPELLA",
-      "assigned_current_ship_eta_rueb": "2026-05-16 08:15",
-      "assigned_current_ship_source": "schiffe_merged.seelotsen",
-      "assigned_availability_kind": "merged_eta",
-      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 4,
-      "candidates": [
         {
           "pilot_name": "Groen, Nickolaj",
           "pilot_q": 5,
@@ -1237,6 +1132,109 @@
           "makler": "UCA",
           "dangerous_vessel": "-",
           "type_of_loading": "Ballast"
+        }
+      }
+    },
+    {
+      "ship_key": "RDJ IJSSELSTROOM",
+      "ship_name": "RDJ IJSSELSTROOM",
+      "eta_rueb": "2026-05-16 10:54",
+      "ship_q": 5,
+      "assigned_pilot": "Groen, Nickolaj",
+      "assigned_pilot_q": 5,
+      "assigned_tactical_nr": 13,
+      "assigned_abteilungszeit": "2026-05-16 02:27",
+      "assigned_current_ship_name": "CAPELLA",
+      "assigned_current_ship_eta_rueb": "2026-05-16 08:15",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 4,
+      "candidates": [
+        {
+          "pilot_name": "Groen, Nickolaj",
+          "pilot_q": 5,
+          "pilot_tactical_nr": 13,
+          "abteilungszeit": "2026-05-16 02:27",
+          "fahrzeug": "CAPELLA",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "CAPELLA",
+          "current_ship_eta_rueb": "2026-05-16 08:15",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Pitschmann, Gerd",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 12,
+          "abteilungszeit": "2026-05-16 02:39",
+          "fahrzeug": "LEONIE",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "LEONIE",
+          "current_ship_eta_rueb": "2026-05-16 08:22",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Krebs, Michael",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 9,
+          "abteilungszeit": "2026-05-16 03:25",
+          "fahrzeug": "SWAN BISCAY",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "SWAN BISCAY",
+          "current_ship_eta_rueb": "2026-05-16 08:25",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Skawianczyk, Artur",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 8,
+          "abteilungszeit": "2026-05-16 03:30",
+          "fahrzeug": "TG LEO",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "TG LEO",
+          "current_ship_eta_rueb": "2026-05-16 08:44",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "5",
+          "time": "Sat May 16 10:33:00 CEST 2026",
+          "draft": "5.7",
+          "q_gruppe": "5",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "UTG"
+        },
+        "summary": {
+          "route": "UTG → HOS",
+          "routes": [
+            "UTG → HOS",
+            "RÜB → UTG"
+          ],
+          "q_gruppe": "5",
+          "vg": "3",
+          "draft": "5.70",
+          "length_m": "85.97",
+          "beam_m": "12.61",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "H",
+          "pilot_1_name": "Lilienthal, Andreas",
+          "travel_status": "SAILING_NOK",
+          "makler": "UCA",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Futtermittel"
         }
       }
     },
