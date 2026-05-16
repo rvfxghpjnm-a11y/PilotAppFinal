@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-16T11:15:03",
+  "generated_at": "2026-05-16T11:16:59",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 4,
     "pilots_total": 11,
-    "pilots_dispatchable": 8,
-    "pilots_visible_only": 3,
+    "pilots_dispatchable": 9,
+    "pilots_visible_only": 2,
     "assignments": 4,
     "unassigned_ships": 0,
-    "unused_pilots": 4
+    "unused_pilots": 5
   },
   "ships": [
     {
@@ -382,9 +382,10 @@
       "nr": 3,
       "raw_time": "Sat May 16 09:46:00 CEST 2026",
       "current_ship_name": "VIKSTRAUM",
+      "current_ship_eta_rueb": "2026-05-16 14:56",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
@@ -405,7 +406,7 @@
       "current_ship_name": "STEN ARNOLD",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta"
     }
   ],
@@ -585,6 +586,28 @@
       "current_ship_route": "RÜB → UTG",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "jeschek_hauke",
+      "vorname": "Hauke",
+      "nachname": "Jeschek",
+      "pilot_name": "Jeschek, Hauke",
+      "abteilungszeit": "2026-05-16 09:46",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 3,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "VIKSTRAUM",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 3,
+      "raw_time": "Sat May 16 09:46:00 CEST 2026",
+      "current_ship_name": "VIKSTRAUM",
+      "current_ship_eta_rueb": "2026-05-16 14:56",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
     }
   ],
   "visible_but_not_dispatchable_pilots": [
@@ -604,21 +627,6 @@
       "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
     },
     {
-      "pilot_key": "jeschek_hauke",
-      "pilot_name": "Jeschek, Hauke",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 3,
-      "abteilungszeit": "2026-05-16 09:46",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "VIKSTRAUM",
-      "from": "HOS",
-      "to": "RÜB",
-      "current_ship_name": "VIKSTRAUM",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    },
-    {
       "pilot_key": "böttcher_peter",
       "pilot_name": "Böttcher, Peter",
       "pilot_q": 0,
@@ -629,7 +637,7 @@
       "from": "HOS",
       "to": "RÜB",
       "current_ship_name": "STEN ARNOLD",
-      "current_ship_source": "schiffe_merged.seelotsen",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta",
       "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
     }
@@ -649,7 +657,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 8,
+      "candidate_count": 9,
       "candidates": [
         {
           "pilot_name": "Groen, Nickolaj",
@@ -754,6 +762,19 @@
           "current_ship_eta_rueb": "2026-05-16 10:49",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Jeschek, Hauke",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 3,
+          "abteilungszeit": "2026-05-16 09:46",
+          "fahrzeug": "VIKSTRAUM",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "VIKSTRAUM",
+          "current_ship_eta_rueb": "2026-05-16 14:56",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -804,7 +825,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 6,
+      "candidate_count": 7,
       "candidates": [
         {
           "pilot_name": "Pitschmann, Gerd",
@@ -883,6 +904,19 @@
           "current_ship_eta_rueb": "2026-05-16 10:49",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Jeschek, Hauke",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 3,
+          "abteilungszeit": "2026-05-16 09:46",
+          "fahrzeug": "VIKSTRAUM",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "VIKSTRAUM",
+          "current_ship_eta_rueb": "2026-05-16 14:56",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
         }
       ],
       "excluded": [
@@ -942,7 +976,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 6,
+      "candidate_count": 7,
       "candidates": [
         {
           "pilot_name": "Krebs, Michael",
@@ -1021,6 +1055,19 @@
           "current_ship_eta_rueb": "2026-05-16 10:49",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Jeschek, Hauke",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 3,
+          "abteilungszeit": "2026-05-16 09:46",
+          "fahrzeug": "VIKSTRAUM",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "VIKSTRAUM",
+          "current_ship_eta_rueb": "2026-05-16 14:56",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -1058,7 +1105,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 5,
+      "candidate_count": 6,
       "candidates": [
         {
           "pilot_name": "Skawianczyk, Artur",
@@ -1122,6 +1169,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "RDJ IJSSELSTROOM",
           "current_ship_eta_rueb": "2026-05-16 10:49",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Jeschek, Hauke",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 3,
+          "abteilungszeit": "2026-05-16 09:46",
+          "fahrzeug": "VIKSTRAUM",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "VIKSTRAUM",
+          "current_ship_eta_rueb": "2026-05-16 14:56",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
@@ -1235,6 +1295,28 @@
       "current_ship_eta_rueb": "2026-05-16 10:49",
       "current_ship_q": 5,
       "current_ship_route": "RÜB → UTG",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "jeschek_hauke",
+      "vorname": "Hauke",
+      "nachname": "Jeschek",
+      "pilot_name": "Jeschek, Hauke",
+      "abteilungszeit": "2026-05-16 09:46",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 3,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "VIKSTRAUM",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 3,
+      "raw_time": "Sat May 16 09:46:00 CEST 2026",
+      "current_ship_name": "VIKSTRAUM",
+      "current_ship_eta_rueb": "2026-05-16 14:56",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     }
