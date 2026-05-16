@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-16T19:31:02",
+  "generated_at": "2026-05-16T19:33:06",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,13 +32,13 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 5,
+    "ships_for_ruesterbergen": 6,
     "pilots_total": 12,
     "pilots_dispatchable": 12,
     "pilots_visible_only": 0,
-    "assignments": 5,
+    "assignments": 6,
     "unassigned_ships": 0,
-    "unused_pilots": 7
+    "unused_pilots": 6
   },
   "ships": [
     {
@@ -191,13 +191,51 @@
       }
     },
     {
+      "ship_key": "TUNDRALAND",
+      "ship_name": "TUNDRALAND",
+      "eta_rueb": "2026-05-17 01:21",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 0,
+      "meldung": {
+        "nr": "5",
+        "time": "Sun May 17 00:45:00 CEST 2026",
+        "draft": "6.7",
+        "q_gruppe": "0",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "0",
+        "vg": "6",
+        "draft": "6.70",
+        "length_m": "190.80",
+        "beam_m": "26.44",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "U",
+        "pilot_1_name": "Neumann, Frank",
+        "travel_status": "SAILING_NOK",
+        "makler": "SUB",
+        "dangerous_vessel": "-",
+        "type_of_loading": "Stueckgueter"
+      }
+    },
+    {
       "ship_key": "MARLA",
       "ship_name": "MARLA",
       "eta_rueb": "2026-05-17 07:00",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
-        "nr": "5",
+        "nr": "6",
         "time": "Sun May 17 07:00:00 CEST 2026",
         "draft": "2.6",
         "q_gruppe": "5",
@@ -1458,34 +1496,22 @@
       }
     },
     {
-      "ship_key": "MARLA",
-      "ship_name": "MARLA",
-      "eta_rueb": "2026-05-17 07:00",
-      "ship_q": 5,
-      "assigned_pilot": "Steffens, Micha",
-      "assigned_pilot_q": 4,
-      "assigned_tactical_nr": 14,
-      "assigned_abteilungszeit": "2026-05-16 12:15",
-      "assigned_current_ship_name": "APATYTH",
-      "assigned_current_ship_eta_rueb": "2026-05-16 18:12",
-      "assigned_current_ship_source": "schiffe_merged.seelotsen",
-      "assigned_availability_kind": "merged_eta",
+      "ship_key": "TUNDRALAND",
+      "ship_name": "TUNDRALAND",
+      "eta_rueb": "2026-05-17 01:21",
+      "ship_q": 0,
+      "assigned_pilot": "Krahn, Georg",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 10,
+      "assigned_abteilungszeit": "2026-05-16 13:47",
+      "assigned_current_ship_name": "RÜB",
+      "assigned_current_ship_eta_rueb": "2026-05-16 13:47",
+      "assigned_current_ship_source": "special.already_in_rueb",
+      "assigned_availability_kind": "already_in_rueb",
+      "assigned_availability_hint": "Lotse gilt als bereits in RÜB",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 8,
+      "candidate_count": 7,
       "candidates": [
-        {
-          "pilot_name": "Steffens, Micha",
-          "pilot_q": 4,
-          "pilot_tactical_nr": 14,
-          "abteilungszeit": "2026-05-16 12:15",
-          "fahrzeug": "APATYTH",
-          "to": "HOS",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "APATYTH",
-          "current_ship_eta_rueb": "2026-05-16 18:12",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
         {
           "pilot_name": "Krahn, Georg",
           "pilot_q": 0,
@@ -1578,9 +1604,160 @@
           "availability_kind": "merged_eta"
         }
       ],
+      "excluded": [
+        {
+          "pilot_name": "Steffens, Micha",
+          "pilot_tactical_nr": 14,
+          "reason": "Quali passt nicht (4 > 0)",
+          "pilot_q": 4,
+          "ship_q": 0
+        }
+      ],
       "ship": {
         "meldung": {
           "nr": "5",
+          "time": "Sun May 17 00:45:00 CEST 2026",
+          "draft": "6.7",
+          "q_gruppe": "0",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "HOS → KLT",
+          "routes": [
+            "HOS → KLT",
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "0",
+          "vg": "6",
+          "draft": "6.70",
+          "length_m": "190.80",
+          "beam_m": "26.44",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "U",
+          "pilot_1_name": "Neumann, Frank",
+          "travel_status": "SAILING_NOK",
+          "makler": "SUB",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Stueckgueter"
+        }
+      }
+    },
+    {
+      "ship_key": "MARLA",
+      "ship_name": "MARLA",
+      "eta_rueb": "2026-05-17 07:00",
+      "ship_q": 5,
+      "assigned_pilot": "Steffens, Micha",
+      "assigned_pilot_q": 4,
+      "assigned_tactical_nr": 14,
+      "assigned_abteilungszeit": "2026-05-16 12:15",
+      "assigned_current_ship_name": "APATYTH",
+      "assigned_current_ship_eta_rueb": "2026-05-16 18:12",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 7,
+      "candidates": [
+        {
+          "pilot_name": "Steffens, Micha",
+          "pilot_q": 4,
+          "pilot_tactical_nr": 14,
+          "abteilungszeit": "2026-05-16 12:15",
+          "fahrzeug": "APATYTH",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "APATYTH",
+          "current_ship_eta_rueb": "2026-05-16 18:12",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Föhring, Nils",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 8,
+          "abteilungszeit": "2026-05-16 14:41",
+          "fahrzeug": "ALEXANDER B",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ALEXANDER B",
+          "current_ship_eta_rueb": "2026-05-16 19:49",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Rink, Hannes",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 7,
+          "abteilungszeit": "2026-05-16 14:42",
+          "fahrzeug": "NICKI",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "NICKI",
+          "current_ship_eta_rueb": "2026-05-16 19:37",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Klein, Sebastian",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 6,
+          "abteilungszeit": "2026-05-16 14:48",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-16 14:48",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
+        },
+        {
+          "pilot_name": "Wäntig, Lutz",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 4,
+          "abteilungszeit": "2026-05-16 16:22",
+          "fahrzeug": "OPTIMUS",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "OPTIMUS",
+          "current_ship_eta_rueb": "2026-05-16 21:59",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Czurda, Crischan",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 3,
+          "abteilungszeit": "2026-05-16 16:32",
+          "fahrzeug": "JENNIFER",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "JENNIFER",
+          "current_ship_eta_rueb": "2026-05-16 21:29",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Röhl, Jens",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-05-16 16:36",
+          "fahrzeug": "LORALAND",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "LORALAND",
+          "current_ship_eta_rueb": "2026-05-16 22:02",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "6",
           "time": "Sun May 17 07:00:00 CEST 2026",
           "draft": "2.6",
           "q_gruppe": "5",
@@ -1602,27 +1779,6 @@
   ],
   "unassigned_ships": [],
   "unused_pilots": [
-    {
-      "pilot_key": "krahn_georg",
-      "vorname": "Georg",
-      "nachname": "Krahn",
-      "pilot_name": "Krahn, Georg",
-      "abteilungszeit": "2026-05-16 13:47",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 10,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "RÜB",
-      "nr": 10,
-      "raw_time": "Sat May 16 13:47:00 CEST 2026",
-      "current_ship_name": "RÜB",
-      "current_ship_eta_rueb": "2026-05-16 13:47",
-      "current_ship_q": 0,
-      "current_ship_route": "RÜB",
-      "current_ship_source": "special.already_in_rueb",
-      "availability_kind": "already_in_rueb",
-      "availability_hint": "Lotse gilt als bereits in RÜB"
-    },
     {
       "pilot_key": "föhring_nils",
       "vorname": "Nils",
