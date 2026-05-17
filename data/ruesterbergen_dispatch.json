@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-17T15:41:09",
+  "generated_at": "2026-05-17T15:43:11",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 5,
     "pilots_total": 14,
-    "pilots_dispatchable": 13,
-    "pilots_visible_only": 1,
+    "pilots_dispatchable": 14,
+    "pilots_visible_only": 0,
     "assignments": 5,
     "unassigned_ships": 0,
-    "unused_pilots": 8
+    "unused_pilots": 9
   },
   "ships": [
     {
@@ -81,7 +81,7 @@
     {
       "ship_key": "MANGEN",
       "ship_name": "MANGEN",
-      "eta_rueb": "2026-05-17 19:14",
+      "eta_rueb": "2026-05-17 19:13",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
@@ -157,7 +157,7 @@
     {
       "ship_key": "TWIST",
       "ship_name": "TWIST",
-      "eta_rueb": "2026-05-17 19:30",
+      "eta_rueb": "2026-05-17 19:29",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 0,
       "meldung": {
@@ -195,7 +195,7 @@
     {
       "ship_key": "MAASBORG",
       "ship_name": "MAASBORG",
-      "eta_rueb": "2026-05-17 19:33",
+      "eta_rueb": "2026-05-17 19:32",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 4,
       "meldung": {
@@ -490,9 +490,10 @@
       "nr": 3,
       "raw_time": "Sun May 17 14:04:00 CEST 2026",
       "current_ship_name": "MARBURG",
+      "current_ship_eta_rueb": "2026-05-17 19:58",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
@@ -784,6 +785,28 @@
       "availability_kind": "merged_eta"
     },
     {
+      "pilot_key": "rambadt_helge",
+      "vorname": "Helge",
+      "nachname": "Rambadt",
+      "pilot_name": "Rambadt, Helge",
+      "abteilungszeit": "2026-05-17 14:04",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 3,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "MARBURG",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 3,
+      "raw_time": "Sun May 17 14:04:00 CEST 2026",
+      "current_ship_name": "MARBURG",
+      "current_ship_eta_rueb": "2026-05-17 19:58",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
       "pilot_key": "biedermann_johannes",
       "vorname": "Johannes",
       "nachname": "Biedermann",
@@ -828,23 +851,7 @@
       "availability_kind": "merged_eta"
     }
   ],
-  "visible_but_not_dispatchable_pilots": [
-    {
-      "pilot_key": "rambadt_helge",
-      "pilot_name": "Rambadt, Helge",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 3,
-      "abteilungszeit": "2026-05-17 14:04",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "MARBURG",
-      "from": "HOS",
-      "to": "RÜB",
-      "current_ship_name": "MARBURG",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    }
-  ],
+  "visible_but_not_dispatchable_pilots": [],
   "assignments": [
     {
       "ship_key": "UNDEN",
@@ -1004,6 +1011,15 @@
           "availability_kind": "merged_eta"
         },
         {
+          "pilot_name": "Rambadt, Helge",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "MARBURG",
+          "pilot_current_ship_eta_rueb": "2026-05-17 19:58",
+          "ship_eta_rueb": "2026-05-17 17:01",
+          "availability_kind": "merged_eta"
+        },
+        {
           "pilot_name": "Biedermann, Johannes",
           "pilot_tactical_nr": 2,
           "reason": "kommt nicht rechtzeitig in RÜB an",
@@ -1058,7 +1074,7 @@
     {
       "ship_key": "MANGEN",
       "ship_name": "MANGEN",
-      "eta_rueb": "2026-05-17 19:14",
+      "eta_rueb": "2026-05-17 19:13",
       "ship_q": 5,
       "assigned_pilot": "Koch, Florian",
       "assigned_pilot_q": 0,
@@ -1204,12 +1220,21 @@
       ],
       "excluded": [
         {
+          "pilot_name": "Rambadt, Helge",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "MARBURG",
+          "pilot_current_ship_eta_rueb": "2026-05-17 19:58",
+          "ship_eta_rueb": "2026-05-17 19:13",
+          "availability_kind": "merged_eta"
+        },
+        {
           "pilot_name": "Biedermann, Johannes",
           "pilot_tactical_nr": 2,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "VANQUISH",
           "pilot_current_ship_eta_rueb": "2026-05-17 19:53",
-          "ship_eta_rueb": "2026-05-17 19:14",
+          "ship_eta_rueb": "2026-05-17 19:13",
           "availability_kind": "merged_eta"
         },
         {
@@ -1218,7 +1243,7 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "LADY ELA",
           "pilot_current_ship_eta_rueb": "2026-05-17 19:56",
-          "ship_eta_rueb": "2026-05-17 19:14",
+          "ship_eta_rueb": "2026-05-17 19:13",
           "availability_kind": "merged_eta"
         }
       ],
@@ -1391,6 +1416,15 @@
       ],
       "excluded": [
         {
+          "pilot_name": "Rambadt, Helge",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "MARBURG",
+          "pilot_current_ship_eta_rueb": "2026-05-17 19:58",
+          "ship_eta_rueb": "2026-05-17 19:22",
+          "availability_kind": "merged_eta"
+        },
+        {
           "pilot_name": "Biedermann, Johannes",
           "pilot_tactical_nr": 2,
           "reason": "kommt nicht rechtzeitig in RÜB an",
@@ -1447,7 +1481,7 @@
     {
       "ship_key": "TWIST",
       "ship_name": "TWIST",
-      "eta_rueb": "2026-05-17 19:30",
+      "eta_rueb": "2026-05-17 19:29",
       "ship_q": 0,
       "assigned_pilot": "Jenckel, Dolf",
       "assigned_pilot_q": 0,
@@ -1555,12 +1589,21 @@
           "ship_q": 0
         },
         {
+          "pilot_name": "Rambadt, Helge",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "MARBURG",
+          "pilot_current_ship_eta_rueb": "2026-05-17 19:58",
+          "ship_eta_rueb": "2026-05-17 19:29",
+          "availability_kind": "merged_eta"
+        },
+        {
           "pilot_name": "Biedermann, Johannes",
           "pilot_tactical_nr": 2,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "VANQUISH",
           "pilot_current_ship_eta_rueb": "2026-05-17 19:53",
-          "ship_eta_rueb": "2026-05-17 19:30",
+          "ship_eta_rueb": "2026-05-17 19:29",
           "availability_kind": "merged_eta"
         },
         {
@@ -1569,7 +1612,7 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "LADY ELA",
           "pilot_current_ship_eta_rueb": "2026-05-17 19:56",
-          "ship_eta_rueb": "2026-05-17 19:30",
+          "ship_eta_rueb": "2026-05-17 19:29",
           "availability_kind": "merged_eta"
         }
       ],
@@ -1610,7 +1653,7 @@
     {
       "ship_key": "MAASBORG",
       "ship_name": "MAASBORG",
-      "eta_rueb": "2026-05-17 19:33",
+      "eta_rueb": "2026-05-17 19:32",
       "ship_q": 4,
       "assigned_pilot": "Lüttge, Sebastian",
       "assigned_pilot_q": 4,
@@ -1717,12 +1760,21 @@
       ],
       "excluded": [
         {
+          "pilot_name": "Rambadt, Helge",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "MARBURG",
+          "pilot_current_ship_eta_rueb": "2026-05-17 19:58",
+          "ship_eta_rueb": "2026-05-17 19:32",
+          "availability_kind": "merged_eta"
+        },
+        {
           "pilot_name": "Biedermann, Johannes",
           "pilot_tactical_nr": 2,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "VANQUISH",
           "pilot_current_ship_eta_rueb": "2026-05-17 19:53",
-          "ship_eta_rueb": "2026-05-17 19:33",
+          "ship_eta_rueb": "2026-05-17 19:32",
           "availability_kind": "merged_eta"
         },
         {
@@ -1731,7 +1783,7 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "LADY ELA",
           "pilot_current_ship_eta_rueb": "2026-05-17 19:56",
-          "ship_eta_rueb": "2026-05-17 19:33",
+          "ship_eta_rueb": "2026-05-17 19:32",
           "availability_kind": "merged_eta"
         }
       ],
@@ -1901,6 +1953,28 @@
       "current_ship_eta_rueb": "2026-05-17 17:15",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "rambadt_helge",
+      "vorname": "Helge",
+      "nachname": "Rambadt",
+      "pilot_name": "Rambadt, Helge",
+      "abteilungszeit": "2026-05-17 14:04",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 3,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "MARBURG",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 3,
+      "raw_time": "Sun May 17 14:04:00 CEST 2026",
+      "current_ship_name": "MARBURG",
+      "current_ship_eta_rueb": "2026-05-17 19:58",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
