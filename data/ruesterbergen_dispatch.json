@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-17T23:27:13",
+  "generated_at": "2026-05-17T23:29:11",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 4,
     "pilots_total": 18,
-    "pilots_dispatchable": 13,
-    "pilots_visible_only": 5,
+    "pilots_dispatchable": 15,
+    "pilots_visible_only": 3,
     "assignments": 4,
     "unassigned_ships": 0,
-    "unused_pilots": 9
+    "unused_pilots": 11
   },
   "ships": [
     {
@@ -432,7 +432,7 @@
       "nr": 12,
       "raw_time": "Sun May 17 19:38:00 CEST 2026",
       "current_ship_name": "LADY DIANA",
-      "current_ship_eta_rueb": "2026-05-18 00:37",
+      "current_ship_eta_rueb": "2026-05-18 00:36",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -476,6 +476,7 @@
       "nr": 7,
       "raw_time": "Sun May 17 22:02:00 CEST 2026",
       "current_ship_name": "MARFAAM",
+      "current_ship_eta_rueb": "2026-05-18 03:01",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -582,9 +583,10 @@
       "nr": 1,
       "raw_time": "Sun May 17 23:15:00 CEST 2026",
       "current_ship_name": "HAV MARLIN",
+      "current_ship_eta_rueb": "2026-05-18 02:58",
       "current_ship_q": 0,
       "current_ship_route": "UTG → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     }
   ],
@@ -825,7 +827,7 @@
       "nr": 12,
       "raw_time": "Sun May 17 19:38:00 CEST 2026",
       "current_ship_name": "LADY DIANA",
-      "current_ship_eta_rueb": "2026-05-18 00:37",
+      "current_ship_eta_rueb": "2026-05-18 00:36",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -854,6 +856,28 @@
       "availability_kind": "merged_eta"
     },
     {
+      "pilot_key": "engler_sören",
+      "vorname": "Sören",
+      "nachname": "Engler",
+      "pilot_name": "Engler, Sören",
+      "abteilungszeit": "2026-05-17 22:02",
+      "pilot_q": 3,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 7,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "MARFAAM",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 7,
+      "raw_time": "Sun May 17 22:02:00 CEST 2026",
+      "current_ship_name": "MARFAAM",
+      "current_ship_eta_rueb": "2026-05-18 03:01",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
       "pilot_key": "böttcher_peter",
       "vorname": "Peter",
       "nachname": "Böttcher",
@@ -874,24 +898,31 @@
       "current_ship_route": "RÜB → HOS",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "pitschmann_gerd",
+      "vorname": "Gerd",
+      "nachname": "Pitschmann",
+      "pilot_name": "Pitschmann, Gerd",
+      "abteilungszeit": "2026-05-17 23:15",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 1,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "HAV MARLIN",
+      "from": "UTG",
+      "to": "RÜB",
+      "nr": 1,
+      "raw_time": "Sun May 17 23:15:00 CEST 2026",
+      "current_ship_name": "HAV MARLIN",
+      "current_ship_eta_rueb": "2026-05-18 02:58",
+      "current_ship_q": 0,
+      "current_ship_route": "UTG → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
     }
   ],
   "visible_but_not_dispatchable_pilots": [
-    {
-      "pilot_key": "engler_sören",
-      "pilot_name": "Engler, Sören",
-      "pilot_q": 3,
-      "pilot_tactical_nr": 7,
-      "abteilungszeit": "2026-05-17 22:02",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "MARFAAM",
-      "from": "HOS",
-      "to": "RÜB",
-      "current_ship_name": "MARFAAM",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    },
     {
       "pilot_key": "hahn_peter",
       "pilot_name": "Hahn, Peter",
@@ -934,21 +965,6 @@
       "to": "RÜB",
       "current_ship_name": "BALTIC SHARK",
       "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    },
-    {
-      "pilot_key": "pitschmann_gerd",
-      "pilot_name": "Pitschmann, Gerd",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 1,
-      "abteilungszeit": "2026-05-17 23:15",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "HAV MARLIN",
-      "from": "UTG",
-      "to": "RÜB",
-      "current_ship_name": "HAV MARLIN",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta",
       "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
     }
@@ -1109,7 +1125,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "LADY DIANA",
-          "current_ship_eta_rueb": "2026-05-18 00:37",
+          "current_ship_eta_rueb": "2026-05-18 00:36",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1137,6 +1153,26 @@
           "current_ship_name": "OLIVIA",
           "current_ship_eta_rueb": "2026-05-17 23:47",
           "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Engler, Sören",
+          "pilot_tactical_nr": 7,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "MARFAAM",
+          "pilot_current_ship_eta_rueb": "2026-05-18 03:01",
+          "ship_eta_rueb": "2026-05-18 02:01",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Pitschmann, Gerd",
+          "pilot_tactical_nr": 1,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "HAV MARLIN",
+          "pilot_current_ship_eta_rueb": "2026-05-18 02:58",
+          "ship_eta_rueb": "2026-05-18 02:01",
           "availability_kind": "merged_eta"
         }
       ],
@@ -1316,7 +1352,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "LADY DIANA",
-          "current_ship_eta_rueb": "2026-05-18 00:37",
+          "current_ship_eta_rueb": "2026-05-18 00:36",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1344,6 +1380,26 @@
           "current_ship_name": "OLIVIA",
           "current_ship_eta_rueb": "2026-05-17 23:47",
           "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Engler, Sören",
+          "pilot_tactical_nr": 7,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "MARFAAM",
+          "pilot_current_ship_eta_rueb": "2026-05-18 03:01",
+          "ship_eta_rueb": "2026-05-18 02:05",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Pitschmann, Gerd",
+          "pilot_tactical_nr": 1,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "HAV MARLIN",
+          "pilot_current_ship_eta_rueb": "2026-05-18 02:58",
+          "ship_eta_rueb": "2026-05-18 02:05",
           "availability_kind": "merged_eta"
         }
       ],
@@ -1509,7 +1565,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "LADY DIANA",
-          "current_ship_eta_rueb": "2026-05-18 00:37",
+          "current_ship_eta_rueb": "2026-05-18 00:36",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1537,6 +1593,26 @@
           "current_ship_name": "OLIVIA",
           "current_ship_eta_rueb": "2026-05-17 23:47",
           "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Engler, Sören",
+          "pilot_tactical_nr": 7,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "MARFAAM",
+          "pilot_current_ship_eta_rueb": "2026-05-18 03:01",
+          "ship_eta_rueb": "2026-05-18 02:08",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Pitschmann, Gerd",
+          "pilot_tactical_nr": 1,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "HAV MARLIN",
+          "pilot_current_ship_eta_rueb": "2026-05-18 02:58",
+          "ship_eta_rueb": "2026-05-18 02:08",
           "availability_kind": "merged_eta"
         }
       ],
@@ -1690,7 +1766,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "LADY DIANA",
-          "current_ship_eta_rueb": "2026-05-18 00:37",
+          "current_ship_eta_rueb": "2026-05-18 00:36",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1718,6 +1794,26 @@
           "current_ship_name": "OLIVIA",
           "current_ship_eta_rueb": "2026-05-17 23:47",
           "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Engler, Sören",
+          "pilot_tactical_nr": 7,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "MARFAAM",
+          "pilot_current_ship_eta_rueb": "2026-05-18 03:01",
+          "ship_eta_rueb": "2026-05-18 02:11",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Pitschmann, Gerd",
+          "pilot_tactical_nr": 1,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "HAV MARLIN",
+          "pilot_current_ship_eta_rueb": "2026-05-18 02:58",
+          "ship_eta_rueb": "2026-05-18 02:11",
           "availability_kind": "merged_eta"
         }
       ],
@@ -1908,7 +2004,7 @@
       "nr": 12,
       "raw_time": "Sun May 17 19:38:00 CEST 2026",
       "current_ship_name": "LADY DIANA",
-      "current_ship_eta_rueb": "2026-05-18 00:37",
+      "current_ship_eta_rueb": "2026-05-18 00:36",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -1937,6 +2033,28 @@
       "availability_kind": "merged_eta"
     },
     {
+      "pilot_key": "engler_sören",
+      "vorname": "Sören",
+      "nachname": "Engler",
+      "pilot_name": "Engler, Sören",
+      "abteilungszeit": "2026-05-17 22:02",
+      "pilot_q": 3,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 7,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "MARFAAM",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 7,
+      "raw_time": "Sun May 17 22:02:00 CEST 2026",
+      "current_ship_name": "MARFAAM",
+      "current_ship_eta_rueb": "2026-05-18 03:01",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
       "pilot_key": "böttcher_peter",
       "vorname": "Peter",
       "nachname": "Böttcher",
@@ -1955,6 +2073,28 @@
       "current_ship_eta_rueb": "2026-05-17 23:47",
       "current_ship_q": 4,
       "current_ship_route": "RÜB → HOS",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "pitschmann_gerd",
+      "vorname": "Gerd",
+      "nachname": "Pitschmann",
+      "pilot_name": "Pitschmann, Gerd",
+      "abteilungszeit": "2026-05-17 23:15",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 1,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "HAV MARLIN",
+      "from": "UTG",
+      "to": "RÜB",
+      "nr": 1,
+      "raw_time": "Sun May 17 23:15:00 CEST 2026",
+      "current_ship_name": "HAV MARLIN",
+      "current_ship_eta_rueb": "2026-05-18 02:58",
+      "current_ship_q": 0,
+      "current_ship_route": "UTG → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     }
