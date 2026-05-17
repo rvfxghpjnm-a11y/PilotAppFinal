@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-17T21:09:14",
+  "generated_at": "2026-05-17T21:11:08",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 5,
     "pilots_total": 14,
-    "pilots_dispatchable": 12,
-    "pilots_visible_only": 2,
+    "pilots_dispatchable": 14,
+    "pilots_visible_only": 0,
     "assignments": 5,
     "unassigned_ships": 0,
-    "unused_pilots": 7
+    "unused_pilots": 9
   },
   "ships": [
     {
@@ -69,7 +69,7 @@
     {
       "ship_key": "ELBOCEAN",
       "ship_name": "ELBOCEAN",
-      "eta_rueb": "2026-05-17 23:44",
+      "eta_rueb": "2026-05-17 23:43",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 1,
       "meldung": {
@@ -477,9 +477,10 @@
       "nr": 4,
       "raw_time": "Sun May 17 19:38:00 CEST 2026",
       "current_ship_name": "LADY DIANA",
+      "current_ship_eta_rueb": "2026-05-18 00:42",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
@@ -498,9 +499,10 @@
       "nr": 3,
       "raw_time": "Sun May 17 20:00:00 CEST 2026",
       "current_ship_name": "KELLY",
+      "current_ship_eta_rueb": "2026-05-18 00:45",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
@@ -769,6 +771,50 @@
       "availability_kind": "merged_eta"
     },
     {
+      "pilot_key": "eidenschink_klaus",
+      "vorname": "Klaus",
+      "nachname": "Eidenschink",
+      "pilot_name": "Eidenschink, Klaus",
+      "abteilungszeit": "2026-05-17 19:38",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 4,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "LADY DIANA",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 4,
+      "raw_time": "Sun May 17 19:38:00 CEST 2026",
+      "current_ship_name": "LADY DIANA",
+      "current_ship_eta_rueb": "2026-05-18 00:42",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "migge_alexander",
+      "vorname": "Alexander",
+      "nachname": "Migge",
+      "pilot_name": "Migge, Alexander",
+      "abteilungszeit": "2026-05-17 20:00",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 3,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "KELLY",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 3,
+      "raw_time": "Sun May 17 20:00:00 CEST 2026",
+      "current_ship_name": "KELLY",
+      "current_ship_eta_rueb": "2026-05-18 00:45",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
       "pilot_key": "kordt_remo",
       "vorname": "Remo",
       "nachname": "Kordt",
@@ -791,38 +837,7 @@
       "availability_kind": "merged_eta"
     }
   ],
-  "visible_but_not_dispatchable_pilots": [
-    {
-      "pilot_key": "eidenschink_klaus",
-      "pilot_name": "Eidenschink, Klaus",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 4,
-      "abteilungszeit": "2026-05-17 19:38",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "LADY DIANA",
-      "from": "HOS",
-      "to": "RÜB",
-      "current_ship_name": "LADY DIANA",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    },
-    {
-      "pilot_key": "migge_alexander",
-      "pilot_name": "Migge, Alexander",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 3,
-      "abteilungszeit": "2026-05-17 20:00",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "KELLY",
-      "from": "HOS",
-      "to": "RÜB",
-      "current_ship_name": "KELLY",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    }
-  ],
+  "visible_but_not_dispatchable_pilots": [],
   "assignments": [
     {
       "ship_key": "PURUNPAEAE",
@@ -989,6 +1004,24 @@
           "pilot_current_ship_eta_rueb": "2026-05-18 00:39",
           "ship_eta_rueb": "2026-05-17 22:15",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Eidenschink, Klaus",
+          "pilot_tactical_nr": 4,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "LADY DIANA",
+          "pilot_current_ship_eta_rueb": "2026-05-18 00:42",
+          "ship_eta_rueb": "2026-05-17 22:15",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Migge, Alexander",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "KELLY",
+          "pilot_current_ship_eta_rueb": "2026-05-18 00:45",
+          "ship_eta_rueb": "2026-05-17 22:15",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -1015,7 +1048,7 @@
     {
       "ship_key": "ELBOCEAN",
       "ship_name": "ELBOCEAN",
-      "eta_rueb": "2026-05-17 23:44",
+      "eta_rueb": "2026-05-17 23:43",
       "ship_q": 1,
       "assigned_pilot": "Buch, Helge",
       "assigned_pilot_q": 0,
@@ -1147,7 +1180,7 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "BAYMAR",
           "pilot_current_ship_eta_rueb": "2026-05-18 00:36",
-          "ship_eta_rueb": "2026-05-17 23:44",
+          "ship_eta_rueb": "2026-05-17 23:43",
           "availability_kind": "merged_eta"
         },
         {
@@ -1156,7 +1189,25 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "BOYNE",
           "pilot_current_ship_eta_rueb": "2026-05-18 00:39",
-          "ship_eta_rueb": "2026-05-17 23:44",
+          "ship_eta_rueb": "2026-05-17 23:43",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Eidenschink, Klaus",
+          "pilot_tactical_nr": 4,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "LADY DIANA",
+          "pilot_current_ship_eta_rueb": "2026-05-18 00:42",
+          "ship_eta_rueb": "2026-05-17 23:43",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Migge, Alexander",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "KELLY",
+          "pilot_current_ship_eta_rueb": "2026-05-18 00:45",
+          "ship_eta_rueb": "2026-05-17 23:43",
           "availability_kind": "merged_eta"
         }
       ],
@@ -1333,6 +1384,24 @@
           "pilot_current_ship_eta_rueb": "2026-05-18 00:39",
           "ship_eta_rueb": "2026-05-17 23:47",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Eidenschink, Klaus",
+          "pilot_tactical_nr": 4,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "LADY DIANA",
+          "pilot_current_ship_eta_rueb": "2026-05-18 00:42",
+          "ship_eta_rueb": "2026-05-17 23:47",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Migge, Alexander",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "KELLY",
+          "pilot_current_ship_eta_rueb": "2026-05-18 00:45",
+          "ship_eta_rueb": "2026-05-17 23:47",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -1495,6 +1564,24 @@
           "pilot_current_ship_eta_rueb": "2026-05-18 00:39",
           "ship_eta_rueb": "2026-05-17 23:51",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Eidenschink, Klaus",
+          "pilot_tactical_nr": 4,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "LADY DIANA",
+          "pilot_current_ship_eta_rueb": "2026-05-18 00:42",
+          "ship_eta_rueb": "2026-05-17 23:51",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Migge, Alexander",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "KELLY",
+          "pilot_current_ship_eta_rueb": "2026-05-18 00:45",
+          "ship_eta_rueb": "2026-05-17 23:51",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -1546,7 +1633,7 @@
       "assigned_availability_kind": "already_in_rueb",
       "assigned_availability_hint": "Lotse gilt als bereits in RÜB",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 8,
+      "candidate_count": 10,
       "candidates": [
         {
           "pilot_name": "Vogel, Peter",
@@ -1636,6 +1723,32 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "BOYNE",
           "current_ship_eta_rueb": "2026-05-18 00:39",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Eidenschink, Klaus",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 4,
+          "abteilungszeit": "2026-05-17 19:38",
+          "fahrzeug": "LADY DIANA",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "LADY DIANA",
+          "current_ship_eta_rueb": "2026-05-18 00:42",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Migge, Alexander",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 3,
+          "abteilungszeit": "2026-05-17 20:00",
+          "fahrzeug": "KELLY",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "KELLY",
+          "current_ship_eta_rueb": "2026-05-18 00:45",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1817,6 +1930,50 @@
       "raw_time": "Sun May 17 19:35:00 CEST 2026",
       "current_ship_name": "BOYNE",
       "current_ship_eta_rueb": "2026-05-18 00:39",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "eidenschink_klaus",
+      "vorname": "Klaus",
+      "nachname": "Eidenschink",
+      "pilot_name": "Eidenschink, Klaus",
+      "abteilungszeit": "2026-05-17 19:38",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 4,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "LADY DIANA",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 4,
+      "raw_time": "Sun May 17 19:38:00 CEST 2026",
+      "current_ship_name": "LADY DIANA",
+      "current_ship_eta_rueb": "2026-05-18 00:42",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "migge_alexander",
+      "vorname": "Alexander",
+      "nachname": "Migge",
+      "pilot_name": "Migge, Alexander",
+      "abteilungszeit": "2026-05-17 20:00",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 3,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "KELLY",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 3,
+      "raw_time": "Sun May 17 20:00:00 CEST 2026",
+      "current_ship_name": "KELLY",
+      "current_ship_eta_rueb": "2026-05-18 00:45",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
