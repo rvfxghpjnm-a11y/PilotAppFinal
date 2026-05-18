@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-19T00:27:12",
+  "generated_at": "2026-05-19T00:29:08",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,10 +34,10 @@
   "counts": {
     "ships_for_ruesterbergen": 6,
     "pilots_total": 8,
-    "pilots_dispatchable": 5,
-    "pilots_visible_only": 3,
-    "assignments": 5,
-    "unassigned_ships": 1,
+    "pilots_dispatchable": 6,
+    "pilots_visible_only": 2,
+    "assignments": 6,
+    "unassigned_ships": 0,
     "unused_pilots": 0
   },
   "ships": [
@@ -108,7 +108,7 @@
     {
       "ship_key": "HAPPY PENGUIN",
       "ship_name": "HAPPY PENGUIN",
-      "eta_rueb": "2026-05-19 05:17",
+      "eta_rueb": "2026-05-19 05:16",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 3,
       "meldung": {
@@ -146,7 +146,7 @@
     {
       "ship_key": "ZWERVER V",
       "ship_name": "ZWERVER V",
-      "eta_rueb": "2026-05-19 05:21",
+      "eta_rueb": "2026-05-19 05:19",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 3,
       "meldung": {
@@ -184,7 +184,7 @@
     {
       "ship_key": "AFALINA",
       "ship_name": "AFALINA",
-      "eta_rueb": "2026-05-19 05:24",
+      "eta_rueb": "2026-05-19 05:22",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 4,
       "meldung": {
@@ -222,7 +222,7 @@
     {
       "ship_key": "LEVENSAU + AJUG II",
       "ship_name": "LEVENSAU + AJUG II",
-      "eta_rueb": "2026-05-19 05:27",
+      "eta_rueb": "2026-05-19 05:25",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
@@ -406,7 +406,7 @@
       "current_ship_name": "ELBWAVE",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta"
     },
     {
@@ -425,9 +425,10 @@
       "nr": 1,
       "raw_time": "Mon May 18 23:14:00 CEST 2026",
       "current_ship_name": "JSP HALMOE",
+      "current_ship_eta_rueb": "2026-05-19 04:09",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     }
   ],
@@ -541,6 +542,28 @@
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "lehwald_christian",
+      "vorname": "Christian",
+      "nachname": "Lehwald",
+      "pilot_name": "Lehwald, Christian",
+      "abteilungszeit": "2026-05-18 23:14",
+      "pilot_q": 4,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 1,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "JSP HALMOE",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 1,
+      "raw_time": "Mon May 18 23:14:00 CEST 2026",
+      "current_ship_name": "JSP HALMOE",
+      "current_ship_eta_rueb": "2026-05-19 04:09",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
     }
   ],
   "visible_but_not_dispatchable_pilots": [
@@ -570,21 +593,6 @@
       "from": "HOR",
       "to": "RÜB",
       "current_ship_name": "ELBWAVE",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    },
-    {
-      "pilot_key": "lehwald_christian",
-      "pilot_name": "Lehwald, Christian",
-      "pilot_q": 4,
-      "pilot_tactical_nr": 1,
-      "abteilungszeit": "2026-05-18 23:14",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "JSP HALMOE",
-      "from": "HOS",
-      "to": "RÜB",
-      "current_ship_name": "JSP HALMOE",
       "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta",
       "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
@@ -663,6 +671,15 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "SKAGENBANK",
           "pilot_current_ship_eta_rueb": "2026-05-19 04:05",
+          "ship_eta_rueb": "2026-05-19 01:35",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Lehwald, Christian",
+          "pilot_tactical_nr": 1,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "JSP HALMOE",
+          "pilot_current_ship_eta_rueb": "2026-05-19 04:09",
           "ship_eta_rueb": "2026-05-19 01:35",
           "availability_kind": "merged_eta"
         }
@@ -750,6 +767,15 @@
           "pilot_current_ship_eta_rueb": "2026-05-19 04:05",
           "ship_eta_rueb": "2026-05-19 01:49",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Lehwald, Christian",
+          "pilot_tactical_nr": 1,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "JSP HALMOE",
+          "pilot_current_ship_eta_rueb": "2026-05-19 04:09",
+          "ship_eta_rueb": "2026-05-19 01:49",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -789,7 +815,7 @@
     {
       "ship_key": "HAPPY PENGUIN",
       "ship_name": "HAPPY PENGUIN",
-      "eta_rueb": "2026-05-19 05:17",
+      "eta_rueb": "2026-05-19 05:16",
       "ship_q": 3,
       "assigned_pilot": "Hilpert, Jan",
       "assigned_pilot_q": 0,
@@ -842,6 +868,15 @@
           "availability_kind": "merged_eta"
         }
       ],
+      "excluded": [
+        {
+          "pilot_name": "Lehwald, Christian",
+          "pilot_tactical_nr": 1,
+          "reason": "Quali passt nicht (4 > 3)",
+          "pilot_q": 4,
+          "ship_q": 3
+        }
+      ],
       "ship": {
         "meldung": {
           "nr": "4",
@@ -879,7 +914,7 @@
     {
       "ship_key": "ZWERVER V",
       "ship_name": "ZWERVER V",
-      "eta_rueb": "2026-05-19 05:21",
+      "eta_rueb": "2026-05-19 05:19",
       "ship_q": 3,
       "assigned_pilot": "Bachholz, Carsten",
       "assigned_pilot_q": 0,
@@ -919,6 +954,15 @@
           "availability_kind": "merged_eta"
         }
       ],
+      "excluded": [
+        {
+          "pilot_name": "Lehwald, Christian",
+          "pilot_tactical_nr": 1,
+          "reason": "Quali passt nicht (4 > 3)",
+          "pilot_q": 4,
+          "ship_q": 3
+        }
+      ],
       "ship": {
         "meldung": {
           "nr": "5",
@@ -956,7 +1000,7 @@
     {
       "ship_key": "AFALINA",
       "ship_name": "AFALINA",
-      "eta_rueb": "2026-05-19 05:24",
+      "eta_rueb": "2026-05-19 05:22",
       "ship_q": 4,
       "assigned_pilot": "Woitanowski, Tim",
       "assigned_pilot_q": 2,
@@ -967,7 +1011,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 1,
+      "candidate_count": 2,
       "candidates": [
         {
           "pilot_name": "Woitanowski, Tim",
@@ -979,6 +1023,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "SKAGENBANK",
           "current_ship_eta_rueb": "2026-05-19 04:05",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Lehwald, Christian",
+          "pilot_q": 4,
+          "pilot_tactical_nr": 1,
+          "abteilungszeit": "2026-05-18 23:14",
+          "fahrzeug": "JSP HALMOE",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "JSP HALMOE",
+          "current_ship_eta_rueb": "2026-05-19 04:09",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
@@ -1016,16 +1073,70 @@
           "type_of_loading": "Holz"
         }
       }
-    }
-  ],
-  "unassigned_ships": [
+    },
     {
       "ship_key": "LEVENSAU + AJUG II",
       "ship_name": "LEVENSAU + AJUG II",
-      "eta_rueb": "2026-05-19 05:27",
+      "eta_rueb": "2026-05-19 05:25",
       "ship_q": 5,
-      "reason": "kein passender Lotse verfügbar"
+      "assigned_pilot": "Lehwald, Christian",
+      "assigned_pilot_q": 4,
+      "assigned_tactical_nr": 1,
+      "assigned_abteilungszeit": "2026-05-18 23:14",
+      "assigned_current_ship_name": "JSP HALMOE",
+      "assigned_current_ship_eta_rueb": "2026-05-19 04:09",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "pilot_name": "Lehwald, Christian",
+          "pilot_q": 4,
+          "pilot_tactical_nr": 1,
+          "abteilungszeit": "2026-05-18 23:14",
+          "fahrzeug": "JSP HALMOE",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "JSP HALMOE",
+          "current_ship_eta_rueb": "2026-05-19 04:09",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "3",
+          "time": "Tue May 19 04:45:00 CEST 2026",
+          "draft": "4.7",
+          "q_gruppe": "5",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "RÜB → HOS",
+          "routes": [
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "5",
+          "vg": "3",
+          "draft": "4.70",
+          "length_m": "33.93",
+          "beam_m": "8.56",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_1_name": "Höfs, Thede",
+          "travel_status": "SAILING_NOK",
+          "makler": "UCA",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Ballast"
+        }
+      }
     }
   ],
+  "unassigned_ships": [],
   "unused_pilots": []
 }
