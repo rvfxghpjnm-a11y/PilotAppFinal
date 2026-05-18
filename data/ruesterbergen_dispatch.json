@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-18T16:41:38",
+  "generated_at": "2026-05-18T16:43:40",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -33,12 +33,12 @@
   },
   "counts": {
     "ships_for_ruesterbergen": 7,
-    "pilots_total": 9,
-    "pilots_dispatchable": 8,
-    "pilots_visible_only": 1,
+    "pilots_total": 10,
+    "pilots_dispatchable": 10,
+    "pilots_visible_only": 0,
     "assignments": 7,
     "unassigned_ships": 0,
-    "unused_pilots": 1
+    "unused_pilots": 3
   },
   "ships": [
     {
@@ -119,7 +119,7 @@
     {
       "ship_key": "EN AVANT 10 + EN AVANT 1 + H-331",
       "ship_name": "EN AVANT 10 + EN AVANT 1 + H-331",
-      "eta_rueb": "2026-05-18 17:17",
+      "eta_rueb": "2026-05-18 17:16",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 0,
       "meldung": {
@@ -431,6 +431,28 @@
       "availability_hint": "Lotse gilt als bereits in RÜB"
     },
     {
+      "pilot_key": "zimmermann_martin",
+      "vorname": "Martin",
+      "nachname": "Zimmermann",
+      "pilot_name": "Zimmermann, Martin",
+      "abteilungszeit": "2026-05-18 13:45",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 5,
+      "aufgabe": "Seebört",
+      "fahrzeug": "PAVO J",
+      "from": "KLT",
+      "to": "HOS",
+      "nr": 5,
+      "raw_time": "Mon May 18 13:45:00 CEST 2026",
+      "current_ship_name": "PAVO J",
+      "current_ship_eta_rueb": "2026-05-18 20:14",
+      "current_ship_q": 0,
+      "current_ship_route": "KLT → HOS",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
       "pilot_key": "krahn_georg",
       "vorname": "Georg",
       "nachname": "Krahn",
@@ -468,9 +490,10 @@
       "nr": 3,
       "raw_time": "Mon May 18 15:13:00 CEST 2026",
       "current_ship_name": "PAVO J",
+      "current_ship_eta_rueb": "2026-05-18 20:14",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     }
   ],
@@ -624,6 +647,28 @@
       "availability_hint": "Lotse gilt als bereits in RÜB"
     },
     {
+      "pilot_key": "zimmermann_martin",
+      "vorname": "Martin",
+      "nachname": "Zimmermann",
+      "pilot_name": "Zimmermann, Martin",
+      "abteilungszeit": "2026-05-18 13:45",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 5,
+      "aufgabe": "Seebört",
+      "fahrzeug": "PAVO J",
+      "from": "KLT",
+      "to": "HOS",
+      "nr": 5,
+      "raw_time": "Mon May 18 13:45:00 CEST 2026",
+      "current_ship_name": "PAVO J",
+      "current_ship_eta_rueb": "2026-05-18 20:14",
+      "current_ship_q": 0,
+      "current_ship_route": "KLT → HOS",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
       "pilot_key": "krahn_georg",
       "vorname": "Georg",
       "nachname": "Krahn",
@@ -644,25 +689,31 @@
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
-    }
-  ],
-  "visible_but_not_dispatchable_pilots": [
+    },
     {
       "pilot_key": "kahler_volker",
+      "vorname": "Volker",
+      "nachname": "Kahler",
       "pilot_name": "Kahler, Volker",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 3,
       "abteilungszeit": "2026-05-18 15:13",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 3,
       "aufgabe": "Kanalbört",
       "fahrzeug": "PAVO J",
       "from": "HOS",
       "to": "RÜB",
+      "nr": 3,
+      "raw_time": "Mon May 18 15:13:00 CEST 2026",
       "current_ship_name": "PAVO J",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
+      "current_ship_eta_rueb": "2026-05-18 20:14",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
     }
   ],
+  "visible_but_not_dispatchable_pilots": [],
   "assignments": [
     {
       "ship_key": "SPARBORG",
@@ -769,11 +820,29 @@
           "availability_kind": "merged_eta"
         },
         {
+          "pilot_name": "Zimmermann, Martin",
+          "pilot_tactical_nr": 5,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "PAVO J",
+          "pilot_current_ship_eta_rueb": "2026-05-18 20:14",
+          "ship_eta_rueb": "2026-05-18 17:04",
+          "availability_kind": "merged_eta"
+        },
+        {
           "pilot_name": "Krahn, Georg",
           "pilot_tactical_nr": 4,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "SONGA ORION",
           "pilot_current_ship_eta_rueb": "2026-05-18 20:11",
+          "ship_eta_rueb": "2026-05-18 17:04",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Kahler, Volker",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "PAVO J",
+          "pilot_current_ship_eta_rueb": "2026-05-18 20:14",
           "ship_eta_rueb": "2026-05-18 17:04",
           "availability_kind": "merged_eta"
         }
@@ -907,11 +976,29 @@
       ],
       "excluded": [
         {
+          "pilot_name": "Zimmermann, Martin",
+          "pilot_tactical_nr": 5,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "PAVO J",
+          "pilot_current_ship_eta_rueb": "2026-05-18 20:14",
+          "ship_eta_rueb": "2026-05-18 17:07",
+          "availability_kind": "merged_eta"
+        },
+        {
           "pilot_name": "Krahn, Georg",
           "pilot_tactical_nr": 4,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "SONGA ORION",
           "pilot_current_ship_eta_rueb": "2026-05-18 20:11",
+          "ship_eta_rueb": "2026-05-18 17:07",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Kahler, Volker",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "PAVO J",
+          "pilot_current_ship_eta_rueb": "2026-05-18 20:14",
           "ship_eta_rueb": "2026-05-18 17:07",
           "availability_kind": "merged_eta"
         }
@@ -952,7 +1039,7 @@
     {
       "ship_key": "EN AVANT 10 + EN AVANT 1 + H-331",
       "ship_name": "EN AVANT 10 + EN AVANT 1 + H-331",
-      "eta_rueb": "2026-05-18 17:17",
+      "eta_rueb": "2026-05-18 17:16",
       "ship_q": 0,
       "assigned_pilot": "Crotogino, Philipp",
       "assigned_pilot_q": 0,
@@ -1026,12 +1113,30 @@
           "ship_q": 0
         },
         {
+          "pilot_name": "Zimmermann, Martin",
+          "pilot_tactical_nr": 5,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "PAVO J",
+          "pilot_current_ship_eta_rueb": "2026-05-18 20:14",
+          "ship_eta_rueb": "2026-05-18 17:16",
+          "availability_kind": "merged_eta"
+        },
+        {
           "pilot_name": "Krahn, Georg",
           "pilot_tactical_nr": 4,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "SONGA ORION",
           "pilot_current_ship_eta_rueb": "2026-05-18 20:11",
-          "ship_eta_rueb": "2026-05-18 17:17",
+          "ship_eta_rueb": "2026-05-18 17:16",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Kahler, Volker",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "PAVO J",
+          "pilot_current_ship_eta_rueb": "2026-05-18 20:14",
+          "ship_eta_rueb": "2026-05-18 17:16",
           "availability_kind": "merged_eta"
         }
       ],
@@ -1137,11 +1242,29 @@
       ],
       "excluded": [
         {
+          "pilot_name": "Zimmermann, Martin",
+          "pilot_tactical_nr": 5,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "PAVO J",
+          "pilot_current_ship_eta_rueb": "2026-05-18 20:14",
+          "ship_eta_rueb": "2026-05-18 18:00",
+          "availability_kind": "merged_eta"
+        },
+        {
           "pilot_name": "Krahn, Georg",
           "pilot_tactical_nr": 4,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "SONGA ORION",
           "pilot_current_ship_eta_rueb": "2026-05-18 20:11",
+          "ship_eta_rueb": "2026-05-18 18:00",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Kahler, Volker",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "PAVO J",
+          "pilot_current_ship_eta_rueb": "2026-05-18 20:14",
           "ship_eta_rueb": "2026-05-18 18:00",
           "availability_kind": "merged_eta"
         }
@@ -1224,11 +1347,29 @@
       ],
       "excluded": [
         {
+          "pilot_name": "Zimmermann, Martin",
+          "pilot_tactical_nr": 5,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "PAVO J",
+          "pilot_current_ship_eta_rueb": "2026-05-18 20:14",
+          "ship_eta_rueb": "2026-05-18 19:30",
+          "availability_kind": "merged_eta"
+        },
+        {
           "pilot_name": "Krahn, Georg",
           "pilot_tactical_nr": 4,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "SONGA ORION",
           "pilot_current_ship_eta_rueb": "2026-05-18 20:11",
+          "ship_eta_rueb": "2026-05-18 19:30",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Kahler, Volker",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "PAVO J",
+          "pilot_current_ship_eta_rueb": "2026-05-18 20:14",
           "ship_eta_rueb": "2026-05-18 19:30",
           "availability_kind": "merged_eta"
         }
@@ -1313,11 +1454,29 @@
       ],
       "excluded": [
         {
+          "pilot_name": "Zimmermann, Martin",
+          "pilot_tactical_nr": 5,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "PAVO J",
+          "pilot_current_ship_eta_rueb": "2026-05-18 20:14",
+          "ship_eta_rueb": "2026-05-18 19:34",
+          "availability_kind": "merged_eta"
+        },
+        {
           "pilot_name": "Krahn, Georg",
           "pilot_tactical_nr": 4,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "SONGA ORION",
           "pilot_current_ship_eta_rueb": "2026-05-18 20:11",
+          "ship_eta_rueb": "2026-05-18 19:34",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Kahler, Volker",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "PAVO J",
+          "pilot_current_ship_eta_rueb": "2026-05-18 20:14",
           "ship_eta_rueb": "2026-05-18 19:34",
           "availability_kind": "merged_eta"
         }
@@ -1389,11 +1548,29 @@
       ],
       "excluded": [
         {
+          "pilot_name": "Zimmermann, Martin",
+          "pilot_tactical_nr": 5,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "PAVO J",
+          "pilot_current_ship_eta_rueb": "2026-05-18 20:14",
+          "ship_eta_rueb": "2026-05-18 19:45",
+          "availability_kind": "merged_eta"
+        },
+        {
           "pilot_name": "Krahn, Georg",
           "pilot_tactical_nr": 4,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "SONGA ORION",
           "pilot_current_ship_eta_rueb": "2026-05-18 20:11",
+          "ship_eta_rueb": "2026-05-18 19:45",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Kahler, Volker",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "PAVO J",
+          "pilot_current_ship_eta_rueb": "2026-05-18 20:14",
           "ship_eta_rueb": "2026-05-18 19:45",
           "availability_kind": "merged_eta"
         }
@@ -1424,6 +1601,28 @@
   "unassigned_ships": [],
   "unused_pilots": [
     {
+      "pilot_key": "zimmermann_martin",
+      "vorname": "Martin",
+      "nachname": "Zimmermann",
+      "pilot_name": "Zimmermann, Martin",
+      "abteilungszeit": "2026-05-18 13:45",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 5,
+      "aufgabe": "Seebört",
+      "fahrzeug": "PAVO J",
+      "from": "KLT",
+      "to": "HOS",
+      "nr": 5,
+      "raw_time": "Mon May 18 13:45:00 CEST 2026",
+      "current_ship_name": "PAVO J",
+      "current_ship_eta_rueb": "2026-05-18 20:14",
+      "current_ship_q": 0,
+      "current_ship_route": "KLT → HOS",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
       "pilot_key": "krahn_georg",
       "vorname": "Georg",
       "nachname": "Krahn",
@@ -1440,6 +1639,28 @@
       "raw_time": "Mon May 18 15:06:00 CEST 2026",
       "current_ship_name": "SONGA ORION",
       "current_ship_eta_rueb": "2026-05-18 20:11",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "kahler_volker",
+      "vorname": "Volker",
+      "nachname": "Kahler",
+      "pilot_name": "Kahler, Volker",
+      "abteilungszeit": "2026-05-18 15:13",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 3,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "PAVO J",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 3,
+      "raw_time": "Mon May 18 15:13:00 CEST 2026",
+      "current_ship_name": "PAVO J",
+      "current_ship_eta_rueb": "2026-05-18 20:14",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
