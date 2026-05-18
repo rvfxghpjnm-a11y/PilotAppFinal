@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-18T07:53:27",
+  "generated_at": "2026-05-18T07:55:27",
   "target": {
     "slug": "crotogino_philipp",
     "display_name": "crotogino, philipp",
@@ -8,27 +8,32 @@
     "watch_user_key": "unng2ks8z2a8jgb9uftdiun1n88cfz"
   },
   "state": {
-    "kind": "gesamtboert",
-    "source": "Gesamtboert.json",
-    "pos": "2",
-    "takt": "60,1"
+    "kind": "seelotsen",
+    "source": "Seelotsen.json",
+    "aufgabe": "Kanalbört",
+    "fahrzeug": "ROTRA VENTE",
+    "time": "Mon May 18 07:53:00 CEST 2026"
   },
   "action_card": {
     "title": "crotogino, philipp",
-    "subtitle": "Gesamtbört",
-    "state_kind": "gesamtboert",
-    "state_label": "Gesamtbört",
+    "subtitle": "Seelotsen",
+    "state_kind": "seelotsen",
+    "state_label": "Seelotsen",
     "q_gruppe": "0",
-    "pos": "2",
-    "takt": "60,1",
-    "workstart_label": "Start: 2026-05-18 08:00",
+    "aufgabe": "Kanalbört",
+    "fahrzeug": "ROTRA VENTE",
+    "route": "HOS → RÜB",
+    "time_label": "Akt.: 2026-05-18 07:53",
+    "ship_hint": "ROTRA VENTE",
     "badges": [
       "Q 0",
-      "Pos 2"
+      "Kanalbört"
     ],
     "lines": [
-      "Takt: 60,1",
-      "Start: 2026-05-18 08:00"
+      "ROTRA VENTE",
+      "HOS → RÜB",
+      "Akt.: 2026-05-18 07:53",
+      "Schiff: ROTRA VENTE"
     ]
   },
   "q_gruppe": "0",
@@ -48,29 +53,54 @@
     "entry_count": 928
   },
   "boert": {
-    "entry": {
-      "pos": "2",
-      "takt": "60,1",
-      "nachname": "Crotogino",
-      "vorname": "Philipp",
-      "q_gruppe": "0",
-      "was": "ABR",
-      "zeit": "Mon May 18 07:34:59 CEST 2026",
-      "bemerkung": "",
-      "arrow": null
-    },
-    "entry_count": 1
-  },
-  "seelotsen": {
-    "entries": [],
+    "entry": null,
     "entry_count": 0
   },
-  "related_ships": [],
+  "seelotsen": {
+    "entries": [
+      {
+        "nr": 1,
+        "time": "Mon May 18 07:53:00 CEST 2026",
+        "nachname": "Crotogino",
+        "vorname": "Philipp",
+        "aufgabe": "Kanalbört",
+        "fahrzeug": "ROTRA VENTE",
+        "from": "HOS",
+        "to": "RÜB"
+      }
+    ],
+    "entry_count": 1
+  },
+  "related_ships": [
+    {
+      "name": "ROTRA VENTE",
+      "summary": {
+        "name": "ROTRA VENTE",
+        "special_entry": false,
+        "sources": [
+          "seelotsen"
+        ],
+        "route": "HOS → RÜB",
+        "routes": [
+          "HOS → RÜB",
+          "KLT → HOS"
+        ],
+        "assigned_pilots": [
+          "Crotogino, Philipp",
+          "Wachs, Merten"
+        ],
+        "aufgaben": [
+          "Kanalbört",
+          "Seebört"
+        ]
+      }
+    }
+  ],
   "person_files": {
     "status": {
       "file": "crotogino_philipp_status.json",
       "exists": true,
-      "generated_at": "2026-05-18 07:52"
+      "generated_at": "2026-05-18 07:54"
     },
     "pos": {
       "file": "crotogino_philipp_pos.json",
@@ -96,66 +126,65 @@
   },
   "snapshots": {
     "status": {
-      "generated_at": "2026-05-18 07:52",
+      "generated_at": "2026-05-18 07:54",
       "nachname": "crotogino",
       "vorname": "philipp",
       "status": {
         "willkommen": "Willkommen Philip Crotogino",
-        "zuletzt": "18.05.-07:34 ABR",
-        "naechster_urlaub": "16.06.2026",
-        "wachnummer": "2"
+        "zuletzt": "18.05.-07:53 ASS",
+        "naechster_urlaub": "16.06.2026"
       }
     },
     "pos": {
-      "pos": 2
+      "pos": null
     },
     "short": {
       "key": "crotogino_philipp",
-      "status": "boert",
-      "short": "Gesamtbört – Pos 2\n08:00\n09:15\nPos/2: 08:53\nPos/3: 08:33\nAkt.: 07:53"
+      "status": "seelotse",
+      "short": "Seelotse – Kanalbört\nROTRA VENTE\nRoute: HOS → RÜB\nAkt.: 07:55"
     },
     "long": {
       "key": "crotogino_philipp",
-      "status": "boert",
-      "long": "Gesamtbört\n----------\nKiel 50 / RÜB 1\n\n▶2  | Crotogino | 08:00 / 09:15 / 08:33~08:53\n      | –   | –                    \n 9  | Tontarra | Mo10:05 / Mo10:30 / Mo10:53~Mo12:23\n      | ↑   | –                    \n 28 | Stoislow | Mo16:00 / Mo22:00 / Mo17:13~Mo21:53\n      | ↑$$ | max. takt. 63        \n 36 | Sattler | Mo20:00 / Mo19:53~Di01:53\n      | ↑$$ | max.takt. 60         \n 39 | Wald    | Mo22:00 / Mo20:53~Di03:23\n      | ↑$$ | –                    \n 41 | Skawianczyk | Di00:00 / Mo21:33~Di04:23\n      | ↑$$ | –                    \n 48 | Lüdtke  | Di06:00 / Mo23:53~Di07:53\n      | ↑$$ | 𝐌𝐢𝐧𝐝. 𝐭𝐤𝐭. 𝟖𝟏        \n 58 | Krause  | Di03:13~Di12:53\n      | ↑$$ | –                    \n 77 | Schie   | Di09:33~Di22:23\n      | ↑$$ | max.takt. 85         \n 80 | Röhl    | Di10:33~Di23:53\n      | ↑$$ | –                    \n 83 | Böttcher | Di11:33~Mi01:23\n      | ↑$$ | –                    \n\nAkt.: 07:53"
+      "status": "seelotse",
+      "long": "Seelotse\n--------\n   Nr | ETA   | Name        | Fahrzeug         | Route      | Schl | ΔR-S | ΔS-R\n------------------------------------------------------------------------------------------\n\nKanalbört\n---------\n▶1  | –     | Crotogino  | ROTRA VENTE  | HOS → RÜB  | –    | –    | –   \n 2  | –     | Feldes     | FREDERIK     | HOS → RÜB  | –    | –    | –   \n 3  | –     | Malik      | RÜB          | –          | –    | –    | –   \n 9  | 10:31 | Krügel     | AGAETE       | HOR → RÜB  | 16:01 | 05:30 | 03:29\n 11 | 09:05 | Wachsmuth  | VERTOM ISA   | HOR → RÜB  | 13:49 | 04:44 | 03:55\n 12 | 09:02 | Jeske      | KRAFTCA      | HOS → RÜB  | 13:46 | 04:44 | 03:54\n 14 | 07:54 | Janson     | SCOT TRADER  | RÜB → HOS  | 12:05 | 04:11 | 04:26\n 15 | –     | Blome      | Leerfahrt    | RÜB → HOS  | –    | –    | –   \n 16 | –     | Escher     | Leerfahrt    | RÜB → HOS  | –    | –    | –   \n 18 | 06:20 | Pitschmann | CONTAINERSHI | RÜB → HOS  | 10:04 | 03:44 | 05:44\n 19 | 06:12 | Reimer     | COBALT       | RÜB → HOS  | 09:58 | 03:46 | 05:28\n 20 | –     | Dalecki    | ELISA K.     | RÜB → HOS  | –    | –    | –   \n\nMeldungen Rüsterbergen\n----------------------\nETA  | Schiff            | Q | Route\n----------------------------------------------\n08:26 | KAIROS            | 3 | RÜB → HOS\n\nAkt.: 07:55"
     }
   },
   "source_meta": {
     "gesamtboert": {
       "file": "Gesamtboert.json",
       "exists": true,
-      "generated_at": "2026-05-18 07:52",
-      "count": 87
+      "generated_at": "2026-05-18 07:54",
+      "count": 86
     },
     "seelotsen": {
       "file": "Seelotsen.json",
       "exists": true,
-      "generated_at": "2026-05-18 07:52",
-      "count": 19
+      "generated_at": "2026-05-18 07:54",
+      "count": 20
     },
     "meldungen_kiel": {
       "file": "Meldungen_Kiel.json",
       "exists": true,
-      "generated_at": "2026-05-18 07:52",
-      "count": 50
+      "generated_at": "2026-05-18 07:54",
+      "count": 49
     },
     "meldungen_ruesterbergen": {
       "file": "Meldungen_Ruesterbergen.json",
       "exists": true,
-      "generated_at": "2026-05-18 07:52",
+      "generated_at": "2026-05-18 07:54",
       "count": 1
     },
     "q_gruppen": {
       "file": "q_gruppen_lotsen.json",
       "exists": true,
-      "generated_at": "2026-05-18T07:53:11",
+      "generated_at": "2026-05-18T07:55:11",
       "count": 154
     },
     "schiffe_merged": {
       "file": "schiffe_merged.json",
       "exists": true,
-      "generated_at": "2026-05-18T07:53:11",
-      "count": 61
+      "generated_at": "2026-05-18T07:55:11",
+      "count": 62
     },
     "workstart_history_json": {
       "file": "workstart_history_crotogino_philipp.json",
