@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-19T21:09:17",
+  "generated_at": "2026-05-19T21:11:14",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 4,
     "pilots_total": 9,
-    "pilots_dispatchable": 8,
-    "pilots_visible_only": 1,
+    "pilots_dispatchable": 9,
+    "pilots_visible_only": 0,
     "assignments": 4,
     "unassigned_ships": 0,
-    "unused_pilots": 4
+    "unused_pilots": 5
   },
   "ships": [
     {
@@ -157,7 +157,7 @@
     {
       "ship_key": "BALTIC ANKA",
       "ship_name": "BALTIC ANKA",
-      "eta_rueb": "2026-05-20 01:54",
+      "eta_rueb": "2026-05-20 01:57",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
@@ -341,6 +341,7 @@
       "nr": 4,
       "raw_time": "Tue May 19 19:44:00 CEST 2026",
       "current_ship_name": "ELSBORG",
+      "current_ship_eta_rueb": "2026-05-20 00:43",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -384,7 +385,7 @@
       "nr": 3,
       "raw_time": "Tue May 19 19:49:00 CEST 2026",
       "current_ship_name": "AILA",
-      "current_ship_eta_rueb": "2026-05-20 00:45",
+      "current_ship_eta_rueb": "2026-05-20 00:46",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -524,6 +525,28 @@
       "availability_kind": "merged_eta"
     },
     {
+      "pilot_key": "buch_helge",
+      "vorname": "Helge",
+      "nachname": "Buch",
+      "pilot_name": "Buch, Helge",
+      "abteilungszeit": "2026-05-19 19:44",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 4,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "ELSBORG",
+      "from": "HOR",
+      "to": "RÜB",
+      "nr": 4,
+      "raw_time": "Tue May 19 19:44:00 CEST 2026",
+      "current_ship_name": "ELSBORG",
+      "current_ship_eta_rueb": "2026-05-20 00:43",
+      "current_ship_q": 0,
+      "current_ship_route": "HOR → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
       "pilot_key": "bodmann_christoph",
       "vorname": "Christoph",
       "nachname": "Bodmann",
@@ -561,30 +584,14 @@
       "nr": 3,
       "raw_time": "Tue May 19 19:49:00 CEST 2026",
       "current_ship_name": "AILA",
-      "current_ship_eta_rueb": "2026-05-20 00:45",
+      "current_ship_eta_rueb": "2026-05-20 00:46",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     }
   ],
-  "visible_but_not_dispatchable_pilots": [
-    {
-      "pilot_key": "buch_helge",
-      "pilot_name": "Buch, Helge",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 4,
-      "abteilungszeit": "2026-05-19 19:44",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "ELSBORG",
-      "from": "HOR",
-      "to": "RÜB",
-      "current_ship_name": "ELSBORG",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    }
-  ],
+  "visible_but_not_dispatchable_pilots": [],
   "assignments": [
     {
       "ship_key": "ISAR HIGHWAY",
@@ -677,6 +684,15 @@
           "ship_q": 3
         },
         {
+          "pilot_name": "Buch, Helge",
+          "pilot_tactical_nr": 4,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "ELSBORG",
+          "pilot_current_ship_eta_rueb": "2026-05-20 00:43",
+          "ship_eta_rueb": "2026-05-19 23:37",
+          "availability_kind": "merged_eta"
+        },
+        {
           "pilot_name": "Bodmann, Christoph",
           "pilot_tactical_nr": 5,
           "reason": "kommt nicht rechtzeitig in RÜB an",
@@ -690,7 +706,7 @@
           "pilot_tactical_nr": 3,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "AILA",
-          "pilot_current_ship_eta_rueb": "2026-05-20 00:45",
+          "pilot_current_ship_eta_rueb": "2026-05-20 00:46",
           "ship_eta_rueb": "2026-05-19 23:37",
           "availability_kind": "merged_eta"
         }
@@ -806,6 +822,15 @@
           "ship_q": 1
         },
         {
+          "pilot_name": "Buch, Helge",
+          "pilot_tactical_nr": 4,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "ELSBORG",
+          "pilot_current_ship_eta_rueb": "2026-05-20 00:43",
+          "ship_eta_rueb": "2026-05-19 23:40",
+          "availability_kind": "merged_eta"
+        },
+        {
           "pilot_name": "Bodmann, Christoph",
           "pilot_tactical_nr": 5,
           "reason": "kommt nicht rechtzeitig in RÜB an",
@@ -819,7 +844,7 @@
           "pilot_tactical_nr": 3,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "AILA",
-          "pilot_current_ship_eta_rueb": "2026-05-20 00:45",
+          "pilot_current_ship_eta_rueb": "2026-05-20 00:46",
           "ship_eta_rueb": "2026-05-19 23:40",
           "availability_kind": "merged_eta"
         }
@@ -924,6 +949,15 @@
           "ship_q": 2
         },
         {
+          "pilot_name": "Buch, Helge",
+          "pilot_tactical_nr": 4,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "ELSBORG",
+          "pilot_current_ship_eta_rueb": "2026-05-20 00:43",
+          "ship_eta_rueb": "2026-05-19 23:45",
+          "availability_kind": "merged_eta"
+        },
+        {
           "pilot_name": "Bodmann, Christoph",
           "pilot_tactical_nr": 5,
           "reason": "kommt nicht rechtzeitig in RÜB an",
@@ -937,7 +971,7 @@
           "pilot_tactical_nr": 3,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "AILA",
-          "pilot_current_ship_eta_rueb": "2026-05-20 00:45",
+          "pilot_current_ship_eta_rueb": "2026-05-20 00:46",
           "ship_eta_rueb": "2026-05-19 23:45",
           "availability_kind": "merged_eta"
         }
@@ -979,7 +1013,7 @@
     {
       "ship_key": "BALTIC ANKA",
       "ship_name": "BALTIC ANKA",
-      "eta_rueb": "2026-05-20 01:54",
+      "eta_rueb": "2026-05-20 01:57",
       "ship_q": 5,
       "assigned_pilot": "Koslik, Kevin",
       "assigned_pilot_q": 0,
@@ -990,7 +1024,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 5,
+      "candidate_count": 6,
       "candidates": [
         {
           "pilot_name": "Koslik, Kevin",
@@ -1032,6 +1066,19 @@
           "availability_kind": "merged_eta"
         },
         {
+          "pilot_name": "Buch, Helge",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 4,
+          "abteilungszeit": "2026-05-19 19:44",
+          "fahrzeug": "ELSBORG",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ELSBORG",
+          "current_ship_eta_rueb": "2026-05-20 00:43",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
           "pilot_name": "Bodmann, Christoph",
           "pilot_q": 0,
           "pilot_tactical_nr": 5,
@@ -1053,7 +1100,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "AILA",
-          "current_ship_eta_rueb": "2026-05-20 00:45",
+          "current_ship_eta_rueb": "2026-05-20 00:46",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
@@ -1140,6 +1187,28 @@
       "availability_kind": "merged_eta"
     },
     {
+      "pilot_key": "buch_helge",
+      "vorname": "Helge",
+      "nachname": "Buch",
+      "pilot_name": "Buch, Helge",
+      "abteilungszeit": "2026-05-19 19:44",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 4,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "ELSBORG",
+      "from": "HOR",
+      "to": "RÜB",
+      "nr": 4,
+      "raw_time": "Tue May 19 19:44:00 CEST 2026",
+      "current_ship_name": "ELSBORG",
+      "current_ship_eta_rueb": "2026-05-20 00:43",
+      "current_ship_q": 0,
+      "current_ship_route": "HOR → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
       "pilot_key": "bodmann_christoph",
       "vorname": "Christoph",
       "nachname": "Bodmann",
@@ -1177,7 +1246,7 @@
       "nr": 3,
       "raw_time": "Tue May 19 19:49:00 CEST 2026",
       "current_ship_name": "AILA",
-      "current_ship_eta_rueb": "2026-05-20 00:45",
+      "current_ship_eta_rueb": "2026-05-20 00:46",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
