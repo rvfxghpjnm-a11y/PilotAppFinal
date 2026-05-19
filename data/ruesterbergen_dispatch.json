@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-19T03:27:16",
+  "generated_at": "2026-05-19T03:29:11",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,13 +32,13 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 4,
+    "ships_for_ruesterbergen": 5,
     "pilots_total": 10,
     "pilots_dispatchable": 10,
     "pilots_visible_only": 0,
-    "assignments": 4,
+    "assignments": 5,
     "unassigned_ships": 0,
-    "unused_pilots": 6
+    "unused_pilots": 5
   },
   "ships": [
     {
@@ -189,6 +189,43 @@
         "makler": "NIK",
         "dangerous_vessel": "-",
         "type_of_loading": "Holz"
+      }
+    },
+    {
+      "ship_key": "OLYMP TRADER",
+      "ship_name": "OLYMP TRADER",
+      "eta_rueb": "2026-05-19 08:14",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 4,
+      "meldung": {
+        "nr": "5",
+        "time": "Tue May 19 07:40:00 CEST 2026",
+        "draft": "4.9",
+        "q_gruppe": "4",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "RÜB → HOS",
+        "routes": [
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "4",
+        "vg": "3",
+        "draft": "4.90",
+        "length_m": "104.23",
+        "beam_m": "15",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "P",
+        "pilot_1_name": "Hickmott, Oliver",
+        "travel_status": "SAILING_NOK",
+        "makler": "NIK",
+        "dangerous_vessel": "-",
+        "type_of_loading": "Futtermittel"
       }
     }
   ],
@@ -1221,32 +1258,138 @@
           "type_of_loading": "Holz"
         }
       }
+    },
+    {
+      "ship_key": "OLYMP TRADER",
+      "ship_name": "OLYMP TRADER",
+      "eta_rueb": "2026-05-19 08:14",
+      "ship_q": 4,
+      "assigned_pilot": "Woitanowski, Tim",
+      "assigned_pilot_q": 2,
+      "assigned_tactical_nr": 7,
+      "assigned_abteilungszeit": "2026-05-18 23:05",
+      "assigned_current_ship_name": "SKAGENBANK",
+      "assigned_current_ship_eta_rueb": "2026-05-19 04:00",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 6,
+      "candidates": [
+        {
+          "pilot_name": "Woitanowski, Tim",
+          "pilot_q": 2,
+          "pilot_tactical_nr": 7,
+          "abteilungszeit": "2026-05-18 23:05",
+          "fahrzeug": "SKAGENBANK",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "SKAGENBANK",
+          "current_ship_eta_rueb": "2026-05-19 04:00",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Böttcher, Peter",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 6,
+          "abteilungszeit": "2026-05-18 23:12",
+          "fahrzeug": "ELBWAVE",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ELBWAVE",
+          "current_ship_eta_rueb": "2026-05-19 04:07",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Lehwald, Christian",
+          "pilot_q": 4,
+          "pilot_tactical_nr": 5,
+          "abteilungszeit": "2026-05-18 23:14",
+          "fahrzeug": "JSP HALMOE",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "JSP HALMOE",
+          "current_ship_eta_rueb": "2026-05-19 04:03",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Schie, Christian",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 4,
+          "abteilungszeit": "2026-05-19 01:05",
+          "fahrzeug": "DROGDENBANK",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "DROGDENBANK",
+          "current_ship_eta_rueb": "2026-05-19 07:11",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Sattler, Olaf",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 3,
+          "abteilungszeit": "2026-05-19 01:30",
+          "fahrzeug": "BALTIC JONGLEUR",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "BALTIC JONGLEUR",
+          "current_ship_eta_rueb": "2026-05-19 07:08",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Pankonin, Denny",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-05-19 01:36",
+          "fahrzeug": "HAAGA",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "HAAGA",
+          "current_ship_eta_rueb": "2026-05-19 07:14",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "5",
+          "time": "Tue May 19 07:40:00 CEST 2026",
+          "draft": "4.9",
+          "q_gruppe": "4",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "RÜB → HOS",
+          "routes": [
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "4",
+          "vg": "3",
+          "draft": "4.90",
+          "length_m": "104.23",
+          "beam_m": "15",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "P",
+          "pilot_1_name": "Hickmott, Oliver",
+          "travel_status": "SAILING_NOK",
+          "makler": "NIK",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Futtermittel"
+        }
+      }
     }
   ],
   "unassigned_ships": [],
   "unused_pilots": [
-    {
-      "pilot_key": "woitanowski_tim",
-      "vorname": "Tim",
-      "nachname": "Woitanowski",
-      "pilot_name": "Woitanowski, Tim",
-      "abteilungszeit": "2026-05-18 23:05",
-      "pilot_q": 2,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 7,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "SKAGENBANK",
-      "from": "HOS",
-      "to": "RÜB",
-      "nr": 7,
-      "raw_time": "Mon May 18 23:05:00 CEST 2026",
-      "current_ship_name": "SKAGENBANK",
-      "current_ship_eta_rueb": "2026-05-19 04:00",
-      "current_ship_q": 0,
-      "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
-    },
     {
       "pilot_key": "böttcher_peter",
       "vorname": "Peter",
