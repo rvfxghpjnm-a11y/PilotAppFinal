@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-19T21:49:23",
+  "generated_at": "2026-05-19T21:51:15",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,13 +32,13 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 5,
+    "ships_for_ruesterbergen": 6,
     "pilots_total": 9,
     "pilots_dispatchable": 9,
     "pilots_visible_only": 0,
-    "assignments": 5,
+    "assignments": 6,
     "unassigned_ships": 0,
-    "unused_pilots": 4
+    "unused_pilots": 3
   },
   "ships": [
     {
@@ -227,6 +227,44 @@
         "makler": "UCA",
         "dangerous_vessel": "-",
         "type_of_loading": "Bulk"
+      }
+    },
+    {
+      "ship_key": "ROTRA VENTE",
+      "ship_name": "ROTRA VENTE",
+      "eta_rueb": "2026-05-20 02:00",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 1,
+      "meldung": {
+        "nr": "6",
+        "time": "Wed May 20 02:35:00 CEST 2026",
+        "draft": "6.6",
+        "q_gruppe": "1",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "1",
+        "vg": "5",
+        "draft": "6.60",
+        "length_m": "141.52",
+        "beam_m": "21.40",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "T",
+        "pilot_1_name": "Knoop, Jonas",
+        "travel_status": "SAILING_NOK",
+        "makler": "SUB",
+        "dangerous_vessel": "-",
+        "type_of_loading": "Stueckgueter"
       }
     }
   ],
@@ -1290,6 +1328,105 @@
           "type_of_loading": "Bulk"
         }
       }
+    },
+    {
+      "ship_key": "ROTRA VENTE",
+      "ship_name": "ROTRA VENTE",
+      "eta_rueb": "2026-05-20 02:00",
+      "ship_q": 1,
+      "assigned_pilot": "Buch, Helge",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 4,
+      "assigned_abteilungszeit": "2026-05-19 19:44",
+      "assigned_current_ship_name": "ELSBORG",
+      "assigned_current_ship_eta_rueb": "2026-05-20 00:43",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 3,
+      "candidates": [
+        {
+          "pilot_name": "Buch, Helge",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 4,
+          "abteilungszeit": "2026-05-19 19:44",
+          "fahrzeug": "ELSBORG",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ELSBORG",
+          "current_ship_eta_rueb": "2026-05-20 00:43",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Bodmann, Christoph",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 5,
+          "abteilungszeit": "2026-05-19 19:44",
+          "fahrzeug": "COE GISELA",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "COE GISELA",
+          "current_ship_eta_rueb": "2026-05-20 00:38",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Stürenburg, Jan",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 3,
+          "abteilungszeit": "2026-05-19 19:49",
+          "fahrzeug": "AILA",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "AILA",
+          "current_ship_eta_rueb": "2026-05-20 00:46",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Lüttge, Sebastian",
+          "pilot_tactical_nr": 7,
+          "reason": "Quali passt nicht (4 > 1)",
+          "pilot_q": 4,
+          "ship_q": 1
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "6",
+          "time": "Wed May 20 02:35:00 CEST 2026",
+          "draft": "6.6",
+          "q_gruppe": "1",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "HOS → KLT",
+          "routes": [
+            "HOS → KLT",
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "1",
+          "vg": "5",
+          "draft": "6.60",
+          "length_m": "141.52",
+          "beam_m": "21.40",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "T",
+          "pilot_1_name": "Knoop, Jonas",
+          "travel_status": "SAILING_NOK",
+          "makler": "SUB",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Stueckgueter"
+        }
+      }
     }
   ],
   "unassigned_ships": [],
@@ -1311,28 +1448,6 @@
       "raw_time": "Tue May 19 16:41:00 CEST 2026",
       "current_ship_name": "LADY HEDWIG",
       "current_ship_eta_rueb": "2026-05-19 21:59",
-      "current_ship_q": 0,
-      "current_ship_route": "HOR → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
-    },
-    {
-      "pilot_key": "buch_helge",
-      "vorname": "Helge",
-      "nachname": "Buch",
-      "pilot_name": "Buch, Helge",
-      "abteilungszeit": "2026-05-19 19:44",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 4,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "ELSBORG",
-      "from": "HOR",
-      "to": "RÜB",
-      "nr": 4,
-      "raw_time": "Tue May 19 19:44:00 CEST 2026",
-      "current_ship_name": "ELSBORG",
-      "current_ship_eta_rueb": "2026-05-20 00:43",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
