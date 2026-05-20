@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-20T20:57:09",
+  "generated_at": "2026-05-20T20:59:17",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,13 +32,13 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 10,
+    "ships_for_ruesterbergen": 11,
     "pilots_total": 20,
     "pilots_dispatchable": 20,
     "pilots_visible_only": 0,
-    "assignments": 10,
+    "assignments": 11,
     "unassigned_ships": 0,
-    "unused_pilots": 10
+    "unused_pilots": 9
   },
   "ships": [
     {
@@ -382,9 +382,46 @@
       }
     },
     {
+      "ship_key": "LYDIA",
+      "ship_name": "LYDIA",
+      "eta_rueb": "2026-05-21 01:06",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 4,
+      "meldung": {
+        "nr": "11",
+        "time": "Thu May 21 00:25:00 CEST 2026",
+        "draft": "4.5",
+        "q_gruppe": "4",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "4",
+        "vg": "3",
+        "draft": "4.50",
+        "length_m": "99.98",
+        "beam_m": "16.5",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "U",
+        "travel_status": "SAILING_NOK",
+        "makler": "SUB",
+        "dangerous_vessel": "-",
+        "type_of_loading": "Container"
+      }
+    },
+    {
       "ship_key": "HELGA ESSBERGER",
       "ship_name": "HELGA ESSBERGER",
-      "eta_rueb": "2026-05-21 01:03",
+      "eta_rueb": "2026-05-21 01:09",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 3,
       "meldung": {
@@ -3555,10 +3592,10 @@
       }
     },
     {
-      "ship_key": "HELGA ESSBERGER",
-      "ship_name": "HELGA ESSBERGER",
-      "eta_rueb": "2026-05-21 01:03",
-      "ship_q": 3,
+      "ship_key": "LYDIA",
+      "ship_name": "LYDIA",
+      "eta_rueb": "2026-05-21 01:06",
+      "ship_q": 4,
       "assigned_pilot": "Woitanowski, Tim",
       "assigned_pilot_q": 2,
       "assigned_tactical_nr": 13,
@@ -3707,7 +3744,186 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "ARKLOW RESOLVE",
           "pilot_current_ship_eta_rueb": "2026-05-21 01:08",
-          "ship_eta_rueb": "2026-05-21 01:03",
+          "ship_eta_rueb": "2026-05-21 01:06",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "11",
+          "time": "Thu May 21 00:25:00 CEST 2026",
+          "draft": "4.5",
+          "q_gruppe": "4",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "HOS → KLT",
+          "routes": [
+            "HOS → KLT",
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "4",
+          "vg": "3",
+          "draft": "4.50",
+          "length_m": "99.98",
+          "beam_m": "16.5",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "U",
+          "travel_status": "SAILING_NOK",
+          "makler": "SUB",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Container"
+        }
+      }
+    },
+    {
+      "ship_key": "HELGA ESSBERGER",
+      "ship_name": "HELGA ESSBERGER",
+      "eta_rueb": "2026-05-21 01:09",
+      "ship_q": 3,
+      "assigned_pilot": "Börnsen, Curt",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 10,
+      "assigned_abteilungszeit": "2026-05-20 19:05",
+      "assigned_current_ship_name": "LION A755",
+      "assigned_current_ship_eta_rueb": "2026-05-20 20:29",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 10,
+      "candidates": [
+        {
+          "pilot_name": "Börnsen, Curt",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 10,
+          "abteilungszeit": "2026-05-20 19:05",
+          "fahrzeug": "LION A755",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "LION A755",
+          "current_ship_eta_rueb": "2026-05-20 20:29",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Doering, Lars",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 11,
+          "abteilungszeit": "2026-05-20 19:05",
+          "fahrzeug": "LEOPARD A748",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "LEOPARD A748",
+          "current_ship_eta_rueb": "2026-05-20 20:23",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Kahler, Volker",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 8,
+          "abteilungszeit": "2026-05-20 19:40",
+          "fahrzeug": "ARKLOW RESOLVE",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ARKLOW RESOLVE",
+          "current_ship_eta_rueb": "2026-05-21 01:08",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Bachholz, Carsten",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 1,
+          "abteilungszeit": "2026-05-20 20:05",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-20 20:05",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
+        },
+        {
+          "pilot_name": "Hren, Alexander",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-05-20 20:05",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-20 20:05",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
+        },
+        {
+          "pilot_name": "Klüver, Knut Paul",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 3,
+          "abteilungszeit": "2026-05-20 20:05",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-20 20:05",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
+        },
+        {
+          "pilot_name": "Zimmermann, Steffen",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 4,
+          "abteilungszeit": "2026-05-20 20:05",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-20 20:05",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
+        },
+        {
+          "pilot_name": "Malik, Christoph",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 5,
+          "abteilungszeit": "2026-05-20 20:05",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-20 20:05",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
+        },
+        {
+          "pilot_name": "Otten, Janning",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 6,
+          "abteilungszeit": "2026-05-20 20:05",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-20 20:05",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
+        },
+        {
+          "pilot_name": "Thiel, Thomas",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 7,
+          "abteilungszeit": "2026-05-20 20:05",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "JAGUAR A750",
+          "current_ship_eta_rueb": "2026-05-20 21:22",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
           "availability_kind": "merged_eta"
         }
       ],
@@ -3750,28 +3966,6 @@
   ],
   "unassigned_ships": [],
   "unused_pilots": [
-    {
-      "pilot_key": "börnsen_curt",
-      "vorname": "Curt",
-      "nachname": "Börnsen",
-      "pilot_name": "Börnsen, Curt",
-      "abteilungszeit": "2026-05-20 19:05",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 10,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "LION A755",
-      "from": "RÜB",
-      "to": "HOS",
-      "nr": 10,
-      "raw_time": "Wed May 20 19:05:00 CEST 2026",
-      "current_ship_name": "LION A755",
-      "current_ship_eta_rueb": "2026-05-20 20:29",
-      "current_ship_q": 0,
-      "current_ship_route": "RÜB → HOS",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
-    },
     {
       "pilot_key": "doering_lars",
       "vorname": "Lars",
