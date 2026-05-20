@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-20T14:37:08",
+  "generated_at": "2026-05-20T14:39:10",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,13 +32,13 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 3,
+    "ships_for_ruesterbergen": 4,
     "pilots_total": 7,
     "pilots_dispatchable": 7,
     "pilots_visible_only": 0,
-    "assignments": 3,
+    "assignments": 4,
     "unassigned_ships": 0,
-    "unused_pilots": 4
+    "unused_pilots": 3
   },
   "ships": [
     {
@@ -115,6 +115,44 @@
         "makler": "UCA",
         "dangerous_vessel": "-",
         "type_of_loading": "Chemikalien fluessig"
+      }
+    },
+    {
+      "ship_key": "BBC BERGEN",
+      "ship_name": "BBC BERGEN",
+      "eta_rueb": "2026-05-20 19:01",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 3,
+      "meldung": {
+        "nr": "4",
+        "time": "Wed May 20 19:45:00 CEST 2026",
+        "draft": "5.0",
+        "q_gruppe": "3",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "3",
+        "vg": "3",
+        "draft": "5.00",
+        "length_m": "128.45",
+        "beam_m": "16.51",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "U",
+        "pilot_1_name": "Hickmott, Oliver",
+        "travel_status": "SAILING_NOK",
+        "makler": "SUB",
+        "dangerous_vessel": "-",
+        "type_of_loading": "Ballast"
       }
     },
     {
@@ -740,6 +778,113 @@
       }
     },
     {
+      "ship_key": "BBC BERGEN",
+      "ship_name": "BBC BERGEN",
+      "eta_rueb": "2026-05-20 19:01",
+      "ship_q": 3,
+      "assigned_pilot": "Külzer, Sascha",
+      "assigned_pilot_q": 2,
+      "assigned_tactical_nr": 9,
+      "assigned_abteilungszeit": "2026-05-20 08:22",
+      "assigned_current_ship_name": "RÜB",
+      "assigned_current_ship_eta_rueb": "2026-05-20 08:22",
+      "assigned_current_ship_source": "special.already_in_rueb",
+      "assigned_availability_kind": "already_in_rueb",
+      "assigned_availability_hint": "Lotse gilt als bereits in RÜB",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 3,
+      "candidates": [
+        {
+          "pilot_name": "Külzer, Sascha",
+          "pilot_q": 2,
+          "pilot_tactical_nr": 9,
+          "abteilungszeit": "2026-05-20 08:22",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-20 08:22",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
+        },
+        {
+          "pilot_name": "Lielienthal, Jörn",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 8,
+          "abteilungszeit": "2026-05-20 08:43",
+          "fahrzeug": "ELBSUN",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ELBSUN",
+          "current_ship_eta_rueb": "2026-05-20 15:02",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Schüler, Marius",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-05-20 11:31",
+          "fahrzeug": "STOLT REDSHANK",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "STOLT REDSHANK",
+          "current_ship_eta_rueb": "2026-05-20 16:52",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Stoislow, Alexander",
+          "pilot_tactical_nr": 10,
+          "reason": "Quali passt nicht (4 > 3)",
+          "pilot_q": 4,
+          "ship_q": 3
+        },
+        {
+          "pilot_name": "Janson, Sven",
+          "pilot_tactical_nr": 6,
+          "reason": "Quali passt nicht (4 > 3)",
+          "pilot_q": 4,
+          "ship_q": 3
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "4",
+          "time": "Wed May 20 19:45:00 CEST 2026",
+          "draft": "5.0",
+          "q_gruppe": "3",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "HOS → KLT",
+          "routes": [
+            "HOS → KLT",
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "3",
+          "vg": "3",
+          "draft": "5.00",
+          "length_m": "128.45",
+          "beam_m": "16.51",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "U",
+          "pilot_1_name": "Hickmott, Oliver",
+          "travel_status": "SAILING_NOK",
+          "makler": "SUB",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Ballast"
+        }
+      }
+    },
+    {
       "ship_key": "TRAVIATA",
       "ship_name": "TRAVIATA",
       "eta_rueb": "2026-05-20 19:22",
@@ -753,7 +898,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 5,
+      "candidate_count": 4,
       "candidates": [
         {
           "pilot_name": "Stoislow, Alexander",
@@ -767,19 +912,6 @@
           "current_ship_eta_rueb": "2026-05-20 14:59",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Külzer, Sascha",
-          "pilot_q": 2,
-          "pilot_tactical_nr": 9,
-          "abteilungszeit": "2026-05-20 08:22",
-          "fahrzeug": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "RÜB",
-          "current_ship_eta_rueb": "2026-05-20 08:22",
-          "current_ship_source": "special.already_in_rueb",
-          "availability_kind": "already_in_rueb",
-          "availability_hint": "Lotse gilt als bereits in RÜB"
         },
         {
           "pilot_name": "Lielienthal, Jörn",
@@ -858,27 +990,6 @@
   ],
   "unassigned_ships": [],
   "unused_pilots": [
-    {
-      "pilot_key": "külzer_sascha",
-      "vorname": "Sascha",
-      "nachname": "Külzer",
-      "pilot_name": "Külzer, Sascha",
-      "abteilungszeit": "2026-05-20 08:22",
-      "pilot_q": 2,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 9,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "RÜB",
-      "nr": 9,
-      "raw_time": "Wed May 20 08:22:00 CEST 2026",
-      "current_ship_name": "RÜB",
-      "current_ship_eta_rueb": "2026-05-20 08:22",
-      "current_ship_q": 0,
-      "current_ship_route": "RÜB",
-      "current_ship_source": "special.already_in_rueb",
-      "availability_kind": "already_in_rueb",
-      "availability_hint": "Lotse gilt als bereits in RÜB"
-    },
     {
       "pilot_key": "lielienthal_jörn",
       "vorname": "Jörn",
