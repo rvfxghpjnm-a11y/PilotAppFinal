@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-20T07:15:11",
+  "generated_at": "2026-05-20T07:17:09",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,12 +32,12 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 4,
+    "ships_for_ruesterbergen": 5,
     "pilots_total": 4,
     "pilots_dispatchable": 4,
     "pilots_visible_only": 0,
     "assignments": 2,
-    "unassigned_ships": 2,
+    "unassigned_ships": 3,
     "unused_pilots": 2
   },
   "ships": [
@@ -191,6 +191,32 @@
         "makler": "UCA",
         "dangerous_vessel": "-",
         "type_of_loading": "Ballastfahrt"
+      }
+    },
+    {
+      "ship_key": "CMA CGM GOYA",
+      "ship_name": "CMA CGM GOYA",
+      "eta_rueb": "2026-05-20 11:15",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 2,
+      "meldung": {
+        "nr": "5",
+        "time": "Wed May 20 11:15:00 CEST 2026",
+        "draft": "6.1",
+        "q_gruppe": "2",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "2",
+        "draft": "6.1"
       }
     }
   ],
@@ -608,6 +634,33 @@
           "pilot_current_ship": "O7 ALSACE",
           "pilot_current_ship_eta_rueb": "2026-05-20 11:26",
           "ship_eta_rueb": "2026-05-20 11:12",
+          "availability_kind": "merged_eta"
+        }
+      ]
+    },
+    {
+      "ship_key": "CMA CGM GOYA",
+      "ship_name": "CMA CGM GOYA",
+      "eta_rueb": "2026-05-20 11:15",
+      "ship_q": 2,
+      "reason": "kein passender Lotse verfügbar",
+      "excluded": [
+        {
+          "pilot_name": "Crotogino, Philipp",
+          "pilot_tactical_nr": 2,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "WILSON FLEX V",
+          "pilot_current_ship_eta_rueb": "2026-05-20 11:22",
+          "ship_eta_rueb": "2026-05-20 11:15",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Suermann, Nik",
+          "pilot_tactical_nr": 1,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "O7 ALSACE",
+          "pilot_current_ship_eta_rueb": "2026-05-20 11:26",
+          "ship_eta_rueb": "2026-05-20 11:15",
           "availability_kind": "merged_eta"
         }
       ]
