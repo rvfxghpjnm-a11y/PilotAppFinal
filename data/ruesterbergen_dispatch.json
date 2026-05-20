@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-20T19:37:13",
+  "generated_at": "2026-05-20T19:39:18",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 10,
     "pilots_total": 12,
-    "pilots_dispatchable": 11,
-    "pilots_visible_only": 1,
+    "pilots_dispatchable": 12,
+    "pilots_visible_only": 0,
     "assignments": 10,
     "unassigned_ships": 0,
-    "unused_pilots": 1
+    "unused_pilots": 2
   },
   "ships": [
     {
@@ -71,7 +71,7 @@
         "zulauf_richtung": "vom_kanal",
         "pilot_required": "true",
         "pilot_status": "O",
-        "pilot_1_name": "Lange, Robert",
+        "pilot_1_name": "Doering, Lars",
         "travel_status": "SAILING_NOK",
         "makler": "UCA",
         "dangerous_vessel": "-",
@@ -108,7 +108,7 @@
         "zulauf_richtung": "vom_kanal",
         "pilot_required": "true",
         "pilot_status": "P",
-        "pilot_1_name": "M�hler, Jens",
+        "pilot_1_name": "Börnsen, Curt",
         "travel_status": "SAILING_NOK",
         "makler": "UCA",
         "dangerous_vessel": "-",
@@ -183,7 +183,7 @@
         "zulauf_richtung": "vom_kanal",
         "pilot_required": "true",
         "pilot_status": "O",
-        "pilot_1_name": "Schmidt, Artur",
+        "pilot_1_name": "Zozulya, Mykola",
         "travel_status": "SAILING_NOK",
         "makler": "UCA",
         "dangerous_vessel": "-",
@@ -611,6 +611,7 @@
       "nr": 5,
       "raw_time": "Wed May 20 18:40:00 CEST 2026",
       "current_ship_name": "CELLUS",
+      "current_ship_eta_rueb": "2026-05-20 23:59",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -631,13 +632,12 @@
       "to": "RÜB",
       "nr": 1,
       "raw_time": "Wed May 20 19:05:00 CEST 2026",
-      "current_ship_name": "Leerfahrt",
-      "current_ship_eta_rueb": "2026-05-20 20:05",
-      "current_ship_q": 0,
-      "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-      "availability_kind": "leerfahrt_hos_rueb_plus60",
-      "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+      "current_ship_name": "JAGUAR A750",
+      "current_ship_eta_rueb": "2026-05-20 21:29",
+      "current_ship_q": 5,
+      "current_ship_route": "RÜB → HOS",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "availability_kind": "merged_eta"
     },
     {
       "pilot_key": "börnsen_curt",
@@ -654,13 +654,12 @@
       "to": "RÜB",
       "nr": 2,
       "raw_time": "Wed May 20 19:05:00 CEST 2026",
-      "current_ship_name": "Leerfahrt",
-      "current_ship_eta_rueb": "2026-05-20 20:05",
-      "current_ship_q": 0,
-      "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-      "availability_kind": "leerfahrt_hos_rueb_plus60",
-      "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+      "current_ship_name": "LION A755",
+      "current_ship_eta_rueb": "2026-05-20 20:30",
+      "current_ship_q": 5,
+      "current_ship_route": "RÜB → HOS",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "availability_kind": "merged_eta"
     },
     {
       "pilot_key": "doering_lars",
@@ -677,13 +676,12 @@
       "to": "RÜB",
       "nr": 3,
       "raw_time": "Wed May 20 19:05:00 CEST 2026",
-      "current_ship_name": "Leerfahrt",
-      "current_ship_eta_rueb": "2026-05-20 20:05",
-      "current_ship_q": 0,
-      "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-      "availability_kind": "leerfahrt_hos_rueb_plus60",
-      "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+      "current_ship_name": "LEOPARD A748",
+      "current_ship_eta_rueb": "2026-05-20 20:26",
+      "current_ship_q": 5,
+      "current_ship_route": "RÜB → HOS",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "availability_kind": "merged_eta"
     }
   ],
   "dispatchable_pilots": [
@@ -864,6 +862,28 @@
       "availability_kind": "merged_eta"
     },
     {
+      "pilot_key": "woitanowski_tim",
+      "vorname": "Tim",
+      "nachname": "Woitanowski",
+      "pilot_name": "Woitanowski, Tim",
+      "abteilungszeit": "2026-05-20 18:40",
+      "pilot_q": 2,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 5,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "CELLUS",
+      "from": "HOR",
+      "to": "RÜB",
+      "nr": 5,
+      "raw_time": "Wed May 20 18:40:00 CEST 2026",
+      "current_ship_name": "CELLUS",
+      "current_ship_eta_rueb": "2026-05-20 23:59",
+      "current_ship_q": 0,
+      "current_ship_route": "HOR → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
       "pilot_key": "zozulya_mykola",
       "vorname": "Mykola",
       "nachname": "Zozulya",
@@ -878,13 +898,12 @@
       "to": "RÜB",
       "nr": 1,
       "raw_time": "Wed May 20 19:05:00 CEST 2026",
-      "current_ship_name": "Leerfahrt",
-      "current_ship_eta_rueb": "2026-05-20 20:05",
-      "current_ship_q": 0,
-      "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-      "availability_kind": "leerfahrt_hos_rueb_plus60",
-      "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+      "current_ship_name": "JAGUAR A750",
+      "current_ship_eta_rueb": "2026-05-20 21:29",
+      "current_ship_q": 5,
+      "current_ship_route": "RÜB → HOS",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "availability_kind": "merged_eta"
     },
     {
       "pilot_key": "börnsen_curt",
@@ -901,13 +920,12 @@
       "to": "RÜB",
       "nr": 2,
       "raw_time": "Wed May 20 19:05:00 CEST 2026",
-      "current_ship_name": "Leerfahrt",
-      "current_ship_eta_rueb": "2026-05-20 20:05",
-      "current_ship_q": 0,
-      "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-      "availability_kind": "leerfahrt_hos_rueb_plus60",
-      "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+      "current_ship_name": "LION A755",
+      "current_ship_eta_rueb": "2026-05-20 20:30",
+      "current_ship_q": 5,
+      "current_ship_route": "RÜB → HOS",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "availability_kind": "merged_eta"
     },
     {
       "pilot_key": "doering_lars",
@@ -924,32 +942,15 @@
       "to": "RÜB",
       "nr": 3,
       "raw_time": "Wed May 20 19:05:00 CEST 2026",
-      "current_ship_name": "Leerfahrt",
-      "current_ship_eta_rueb": "2026-05-20 20:05",
-      "current_ship_q": 0,
-      "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-      "availability_kind": "leerfahrt_hos_rueb_plus60",
-      "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+      "current_ship_name": "LEOPARD A748",
+      "current_ship_eta_rueb": "2026-05-20 20:26",
+      "current_ship_q": 5,
+      "current_ship_route": "RÜB → HOS",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "availability_kind": "merged_eta"
     }
   ],
-  "visible_but_not_dispatchable_pilots": [
-    {
-      "pilot_key": "woitanowski_tim",
-      "pilot_name": "Woitanowski, Tim",
-      "pilot_q": 2,
-      "pilot_tactical_nr": 5,
-      "abteilungszeit": "2026-05-20 18:40",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "CELLUS",
-      "from": "HOR",
-      "to": "RÜB",
-      "current_ship_name": "CELLUS",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    }
-  ],
+  "visible_but_not_dispatchable_pilots": [],
   "assignments": [
     {
       "ship_key": "LEOPARD A748",
@@ -965,7 +966,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 11,
+      "candidate_count": 9,
       "candidates": [
         {
           "pilot_name": "Külzer, Sascha",
@@ -1072,34 +1073,6 @@
           "availability_kind": "merged_eta"
         },
         {
-          "pilot_name": "Zozulya, Mykola",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 1,
-          "abteilungszeit": "2026-05-20 19:05",
-          "fahrzeug": "Leerfahrt",
-          "to": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "Leerfahrt",
-          "current_ship_eta_rueb": "2026-05-20 20:05",
-          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-          "availability_kind": "leerfahrt_hos_rueb_plus60",
-          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
-        },
-        {
-          "pilot_name": "Börnsen, Curt",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 2,
-          "abteilungszeit": "2026-05-20 19:05",
-          "fahrzeug": "Leerfahrt",
-          "to": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "Leerfahrt",
-          "current_ship_eta_rueb": "2026-05-20 20:05",
-          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-          "availability_kind": "leerfahrt_hos_rueb_plus60",
-          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
-        },
-        {
           "pilot_name": "Doering, Lars",
           "pilot_q": 0,
           "pilot_tactical_nr": 3,
@@ -1107,11 +1080,39 @@
           "fahrzeug": "Leerfahrt",
           "to": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "Leerfahrt",
-          "current_ship_eta_rueb": "2026-05-20 20:05",
-          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-          "availability_kind": "leerfahrt_hos_rueb_plus60",
-          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+          "current_ship_name": "LEOPARD A748",
+          "current_ship_eta_rueb": "2026-05-20 20:26",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Woitanowski, Tim",
+          "pilot_tactical_nr": 5,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "CELLUS",
+          "pilot_current_ship_eta_rueb": "2026-05-20 23:59",
+          "ship_eta_rueb": "2026-05-20 20:26",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Zozulya, Mykola",
+          "pilot_tactical_nr": 1,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "JAGUAR A750",
+          "pilot_current_ship_eta_rueb": "2026-05-20 21:29",
+          "ship_eta_rueb": "2026-05-20 20:26",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Börnsen, Curt",
+          "pilot_tactical_nr": 2,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "LION A755",
+          "pilot_current_ship_eta_rueb": "2026-05-20 20:30",
+          "ship_eta_rueb": "2026-05-20 20:26",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -1139,7 +1140,7 @@
           "zulauf_richtung": "vom_kanal",
           "pilot_required": "true",
           "pilot_status": "O",
-          "pilot_1_name": "Lange, Robert",
+          "pilot_1_name": "Doering, Lars",
           "travel_status": "SAILING_NOK",
           "makler": "UCA",
           "dangerous_vessel": "-",
@@ -1161,7 +1162,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 10,
+      "candidate_count": 9,
       "candidates": [
         {
           "pilot_name": "Janson, Sven",
@@ -1255,20 +1256,6 @@
           "availability_kind": "merged_eta"
         },
         {
-          "pilot_name": "Zozulya, Mykola",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 1,
-          "abteilungszeit": "2026-05-20 19:05",
-          "fahrzeug": "Leerfahrt",
-          "to": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "Leerfahrt",
-          "current_ship_eta_rueb": "2026-05-20 20:05",
-          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-          "availability_kind": "leerfahrt_hos_rueb_plus60",
-          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
-        },
-        {
           "pilot_name": "Börnsen, Curt",
           "pilot_q": 0,
           "pilot_tactical_nr": 2,
@@ -1276,11 +1263,10 @@
           "fahrzeug": "Leerfahrt",
           "to": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "Leerfahrt",
-          "current_ship_eta_rueb": "2026-05-20 20:05",
-          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-          "availability_kind": "leerfahrt_hos_rueb_plus60",
-          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+          "current_ship_name": "LION A755",
+          "current_ship_eta_rueb": "2026-05-20 20:30",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
         },
         {
           "pilot_name": "Doering, Lars",
@@ -1290,11 +1276,30 @@
           "fahrzeug": "Leerfahrt",
           "to": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "Leerfahrt",
-          "current_ship_eta_rueb": "2026-05-20 20:05",
-          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-          "availability_kind": "leerfahrt_hos_rueb_plus60",
-          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+          "current_ship_name": "LEOPARD A748",
+          "current_ship_eta_rueb": "2026-05-20 20:26",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Woitanowski, Tim",
+          "pilot_tactical_nr": 5,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "CELLUS",
+          "pilot_current_ship_eta_rueb": "2026-05-20 23:59",
+          "ship_eta_rueb": "2026-05-20 20:30",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Zozulya, Mykola",
+          "pilot_tactical_nr": 1,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "JAGUAR A750",
+          "pilot_current_ship_eta_rueb": "2026-05-20 21:29",
+          "ship_eta_rueb": "2026-05-20 20:30",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -1322,7 +1327,7 @@
           "zulauf_richtung": "vom_kanal",
           "pilot_required": "true",
           "pilot_status": "P",
-          "pilot_1_name": "M�hler, Jens",
+          "pilot_1_name": "Börnsen, Curt",
           "travel_status": "SAILING_NOK",
           "makler": "UCA",
           "dangerous_vessel": "-",
@@ -1344,7 +1349,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 9,
+      "candidate_count": 8,
       "candidates": [
         {
           "pilot_name": "Schüler, Marius",
@@ -1425,20 +1430,6 @@
           "availability_kind": "merged_eta"
         },
         {
-          "pilot_name": "Zozulya, Mykola",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 1,
-          "abteilungszeit": "2026-05-20 19:05",
-          "fahrzeug": "Leerfahrt",
-          "to": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "Leerfahrt",
-          "current_ship_eta_rueb": "2026-05-20 20:05",
-          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-          "availability_kind": "leerfahrt_hos_rueb_plus60",
-          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
-        },
-        {
           "pilot_name": "Börnsen, Curt",
           "pilot_q": 0,
           "pilot_tactical_nr": 2,
@@ -1446,11 +1437,10 @@
           "fahrzeug": "Leerfahrt",
           "to": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "Leerfahrt",
-          "current_ship_eta_rueb": "2026-05-20 20:05",
-          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-          "availability_kind": "leerfahrt_hos_rueb_plus60",
-          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+          "current_ship_name": "LION A755",
+          "current_ship_eta_rueb": "2026-05-20 20:30",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
         },
         {
           "pilot_name": "Doering, Lars",
@@ -1460,11 +1450,30 @@
           "fahrzeug": "Leerfahrt",
           "to": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "Leerfahrt",
-          "current_ship_eta_rueb": "2026-05-20 20:05",
-          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-          "availability_kind": "leerfahrt_hos_rueb_plus60",
-          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+          "current_ship_name": "LEOPARD A748",
+          "current_ship_eta_rueb": "2026-05-20 20:26",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Woitanowski, Tim",
+          "pilot_tactical_nr": 5,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "CELLUS",
+          "pilot_current_ship_eta_rueb": "2026-05-20 23:59",
+          "ship_eta_rueb": "2026-05-20 20:34",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Zozulya, Mykola",
+          "pilot_tactical_nr": 1,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "JAGUAR A750",
+          "pilot_current_ship_eta_rueb": "2026-05-20 21:29",
+          "ship_eta_rueb": "2026-05-20 20:34",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -1590,11 +1599,10 @@
           "fahrzeug": "Leerfahrt",
           "to": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "Leerfahrt",
-          "current_ship_eta_rueb": "2026-05-20 20:05",
-          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-          "availability_kind": "leerfahrt_hos_rueb_plus60",
-          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+          "current_ship_name": "JAGUAR A750",
+          "current_ship_eta_rueb": "2026-05-20 21:29",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
         },
         {
           "pilot_name": "Börnsen, Curt",
@@ -1604,11 +1612,10 @@
           "fahrzeug": "Leerfahrt",
           "to": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "Leerfahrt",
-          "current_ship_eta_rueb": "2026-05-20 20:05",
-          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-          "availability_kind": "leerfahrt_hos_rueb_plus60",
-          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+          "current_ship_name": "LION A755",
+          "current_ship_eta_rueb": "2026-05-20 20:30",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
         },
         {
           "pilot_name": "Doering, Lars",
@@ -1618,11 +1625,21 @@
           "fahrzeug": "Leerfahrt",
           "to": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "Leerfahrt",
-          "current_ship_eta_rueb": "2026-05-20 20:05",
-          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-          "availability_kind": "leerfahrt_hos_rueb_plus60",
-          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+          "current_ship_name": "LEOPARD A748",
+          "current_ship_eta_rueb": "2026-05-20 20:26",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Woitanowski, Tim",
+          "pilot_tactical_nr": 5,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "CELLUS",
+          "pilot_current_ship_eta_rueb": "2026-05-20 23:59",
+          "ship_eta_rueb": "2026-05-20 21:29",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -1650,7 +1667,7 @@
           "zulauf_richtung": "vom_kanal",
           "pilot_required": "true",
           "pilot_status": "O",
-          "pilot_1_name": "Schmidt, Artur",
+          "pilot_1_name": "Zozulya, Mykola",
           "travel_status": "SAILING_NOK",
           "makler": "UCA",
           "dangerous_vessel": "-",
@@ -1734,11 +1751,10 @@
           "fahrzeug": "Leerfahrt",
           "to": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "Leerfahrt",
-          "current_ship_eta_rueb": "2026-05-20 20:05",
-          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-          "availability_kind": "leerfahrt_hos_rueb_plus60",
-          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+          "current_ship_name": "JAGUAR A750",
+          "current_ship_eta_rueb": "2026-05-20 21:29",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
         },
         {
           "pilot_name": "Börnsen, Curt",
@@ -1748,11 +1764,10 @@
           "fahrzeug": "Leerfahrt",
           "to": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "Leerfahrt",
-          "current_ship_eta_rueb": "2026-05-20 20:05",
-          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-          "availability_kind": "leerfahrt_hos_rueb_plus60",
-          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+          "current_ship_name": "LION A755",
+          "current_ship_eta_rueb": "2026-05-20 20:30",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
         },
         {
           "pilot_name": "Doering, Lars",
@@ -1762,11 +1777,21 @@
           "fahrzeug": "Leerfahrt",
           "to": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "Leerfahrt",
-          "current_ship_eta_rueb": "2026-05-20 20:05",
-          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-          "availability_kind": "leerfahrt_hos_rueb_plus60",
-          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+          "current_ship_name": "LEOPARD A748",
+          "current_ship_eta_rueb": "2026-05-20 20:26",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Woitanowski, Tim",
+          "pilot_tactical_nr": 5,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "CELLUS",
+          "pilot_current_ship_eta_rueb": "2026-05-20 23:59",
+          "ship_eta_rueb": "2026-05-20 21:35",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -1867,11 +1892,10 @@
           "fahrzeug": "Leerfahrt",
           "to": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "Leerfahrt",
-          "current_ship_eta_rueb": "2026-05-20 20:05",
-          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-          "availability_kind": "leerfahrt_hos_rueb_plus60",
-          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+          "current_ship_name": "JAGUAR A750",
+          "current_ship_eta_rueb": "2026-05-20 21:29",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
         },
         {
           "pilot_name": "Börnsen, Curt",
@@ -1881,11 +1905,10 @@
           "fahrzeug": "Leerfahrt",
           "to": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "Leerfahrt",
-          "current_ship_eta_rueb": "2026-05-20 20:05",
-          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-          "availability_kind": "leerfahrt_hos_rueb_plus60",
-          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+          "current_ship_name": "LION A755",
+          "current_ship_eta_rueb": "2026-05-20 20:30",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
         },
         {
           "pilot_name": "Doering, Lars",
@@ -1895,11 +1918,21 @@
           "fahrzeug": "Leerfahrt",
           "to": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "Leerfahrt",
-          "current_ship_eta_rueb": "2026-05-20 20:05",
-          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-          "availability_kind": "leerfahrt_hos_rueb_plus60",
-          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+          "current_ship_name": "LEOPARD A748",
+          "current_ship_eta_rueb": "2026-05-20 20:26",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Woitanowski, Tim",
+          "pilot_tactical_nr": 5,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "CELLUS",
+          "pilot_current_ship_eta_rueb": "2026-05-20 23:59",
+          "ship_eta_rueb": "2026-05-20 21:48",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -1986,11 +2019,10 @@
           "fahrzeug": "Leerfahrt",
           "to": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "Leerfahrt",
-          "current_ship_eta_rueb": "2026-05-20 20:05",
-          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-          "availability_kind": "leerfahrt_hos_rueb_plus60",
-          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+          "current_ship_name": "JAGUAR A750",
+          "current_ship_eta_rueb": "2026-05-20 21:29",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
         },
         {
           "pilot_name": "Börnsen, Curt",
@@ -2000,11 +2032,10 @@
           "fahrzeug": "Leerfahrt",
           "to": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "Leerfahrt",
-          "current_ship_eta_rueb": "2026-05-20 20:05",
-          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-          "availability_kind": "leerfahrt_hos_rueb_plus60",
-          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+          "current_ship_name": "LION A755",
+          "current_ship_eta_rueb": "2026-05-20 20:30",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
         },
         {
           "pilot_name": "Doering, Lars",
@@ -2014,11 +2045,21 @@
           "fahrzeug": "Leerfahrt",
           "to": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "Leerfahrt",
-          "current_ship_eta_rueb": "2026-05-20 20:05",
-          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-          "availability_kind": "leerfahrt_hos_rueb_plus60",
-          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+          "current_ship_name": "LEOPARD A748",
+          "current_ship_eta_rueb": "2026-05-20 20:26",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Woitanowski, Tim",
+          "pilot_tactical_nr": 5,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "CELLUS",
+          "pilot_current_ship_eta_rueb": "2026-05-20 23:59",
+          "ship_eta_rueb": "2026-05-20 21:52",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -2092,11 +2133,10 @@
           "fahrzeug": "Leerfahrt",
           "to": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "Leerfahrt",
-          "current_ship_eta_rueb": "2026-05-20 20:05",
-          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-          "availability_kind": "leerfahrt_hos_rueb_plus60",
-          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+          "current_ship_name": "JAGUAR A750",
+          "current_ship_eta_rueb": "2026-05-20 21:29",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
         },
         {
           "pilot_name": "Börnsen, Curt",
@@ -2106,11 +2146,10 @@
           "fahrzeug": "Leerfahrt",
           "to": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "Leerfahrt",
-          "current_ship_eta_rueb": "2026-05-20 20:05",
-          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-          "availability_kind": "leerfahrt_hos_rueb_plus60",
-          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+          "current_ship_name": "LION A755",
+          "current_ship_eta_rueb": "2026-05-20 20:30",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
         },
         {
           "pilot_name": "Doering, Lars",
@@ -2120,11 +2159,21 @@
           "fahrzeug": "Leerfahrt",
           "to": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "Leerfahrt",
-          "current_ship_eta_rueb": "2026-05-20 20:05",
-          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-          "availability_kind": "leerfahrt_hos_rueb_plus60",
-          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+          "current_ship_name": "LEOPARD A748",
+          "current_ship_eta_rueb": "2026-05-20 20:26",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Woitanowski, Tim",
+          "pilot_tactical_nr": 5,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "CELLUS",
+          "pilot_current_ship_eta_rueb": "2026-05-20 23:59",
+          "ship_eta_rueb": "2026-05-20 21:55",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -2169,11 +2218,10 @@
       "assigned_pilot_q": 0,
       "assigned_tactical_nr": 1,
       "assigned_abteilungszeit": "2026-05-20 19:05",
-      "assigned_current_ship_name": "Leerfahrt",
-      "assigned_current_ship_eta_rueb": "2026-05-20 20:05",
-      "assigned_current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-      "assigned_availability_kind": "leerfahrt_hos_rueb_plus60",
-      "assigned_availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten",
+      "assigned_current_ship_name": "JAGUAR A750",
+      "assigned_current_ship_eta_rueb": "2026-05-20 21:29",
+      "assigned_current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
       "candidate_count": 3,
       "candidates": [
@@ -2185,11 +2233,10 @@
           "fahrzeug": "Leerfahrt",
           "to": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "Leerfahrt",
-          "current_ship_eta_rueb": "2026-05-20 20:05",
-          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-          "availability_kind": "leerfahrt_hos_rueb_plus60",
-          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+          "current_ship_name": "JAGUAR A750",
+          "current_ship_eta_rueb": "2026-05-20 21:29",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
         },
         {
           "pilot_name": "Börnsen, Curt",
@@ -2199,11 +2246,10 @@
           "fahrzeug": "Leerfahrt",
           "to": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "Leerfahrt",
-          "current_ship_eta_rueb": "2026-05-20 20:05",
-          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-          "availability_kind": "leerfahrt_hos_rueb_plus60",
-          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+          "current_ship_name": "LION A755",
+          "current_ship_eta_rueb": "2026-05-20 20:30",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
         },
         {
           "pilot_name": "Doering, Lars",
@@ -2213,11 +2259,21 @@
           "fahrzeug": "Leerfahrt",
           "to": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "Leerfahrt",
-          "current_ship_eta_rueb": "2026-05-20 20:05",
-          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-          "availability_kind": "leerfahrt_hos_rueb_plus60",
-          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+          "current_ship_name": "LEOPARD A748",
+          "current_ship_eta_rueb": "2026-05-20 20:26",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Woitanowski, Tim",
+          "pilot_tactical_nr": 5,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "CELLUS",
+          "pilot_current_ship_eta_rueb": "2026-05-20 23:59",
+          "ship_eta_rueb": "2026-05-20 21:58",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -2262,11 +2318,10 @@
       "assigned_pilot_q": 0,
       "assigned_tactical_nr": 2,
       "assigned_abteilungszeit": "2026-05-20 19:05",
-      "assigned_current_ship_name": "Leerfahrt",
-      "assigned_current_ship_eta_rueb": "2026-05-20 20:05",
-      "assigned_current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-      "assigned_availability_kind": "leerfahrt_hos_rueb_plus60",
-      "assigned_availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten",
+      "assigned_current_ship_name": "LION A755",
+      "assigned_current_ship_eta_rueb": "2026-05-20 20:30",
+      "assigned_current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
       "candidate_count": 2,
       "candidates": [
@@ -2278,11 +2333,10 @@
           "fahrzeug": "Leerfahrt",
           "to": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "Leerfahrt",
-          "current_ship_eta_rueb": "2026-05-20 20:05",
-          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-          "availability_kind": "leerfahrt_hos_rueb_plus60",
-          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+          "current_ship_name": "LION A755",
+          "current_ship_eta_rueb": "2026-05-20 20:30",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
         },
         {
           "pilot_name": "Doering, Lars",
@@ -2292,11 +2346,21 @@
           "fahrzeug": "Leerfahrt",
           "to": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "Leerfahrt",
-          "current_ship_eta_rueb": "2026-05-20 20:05",
-          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-          "availability_kind": "leerfahrt_hos_rueb_plus60",
-          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+          "current_ship_name": "LEOPARD A748",
+          "current_ship_eta_rueb": "2026-05-20 20:26",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Woitanowski, Tim",
+          "pilot_tactical_nr": 5,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "CELLUS",
+          "pilot_current_ship_eta_rueb": "2026-05-20 23:59",
+          "ship_eta_rueb": "2026-05-20 22:09",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -2337,6 +2401,28 @@
   "unassigned_ships": [],
   "unused_pilots": [
     {
+      "pilot_key": "woitanowski_tim",
+      "vorname": "Tim",
+      "nachname": "Woitanowski",
+      "pilot_name": "Woitanowski, Tim",
+      "abteilungszeit": "2026-05-20 18:40",
+      "pilot_q": 2,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 5,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "CELLUS",
+      "from": "HOR",
+      "to": "RÜB",
+      "nr": 5,
+      "raw_time": "Wed May 20 18:40:00 CEST 2026",
+      "current_ship_name": "CELLUS",
+      "current_ship_eta_rueb": "2026-05-20 23:59",
+      "current_ship_q": 0,
+      "current_ship_route": "HOR → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
       "pilot_key": "doering_lars",
       "vorname": "Lars",
       "nachname": "Doering",
@@ -2351,13 +2437,12 @@
       "to": "RÜB",
       "nr": 3,
       "raw_time": "Wed May 20 19:05:00 CEST 2026",
-      "current_ship_name": "Leerfahrt",
-      "current_ship_eta_rueb": "2026-05-20 20:05",
-      "current_ship_q": 0,
-      "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-      "availability_kind": "leerfahrt_hos_rueb_plus60",
-      "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+      "current_ship_name": "LEOPARD A748",
+      "current_ship_eta_rueb": "2026-05-20 20:26",
+      "current_ship_q": 5,
+      "current_ship_route": "RÜB → HOS",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "availability_kind": "merged_eta"
     }
   ]
 }
