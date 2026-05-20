@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-21T01:35:20",
+  "generated_at": "2026-05-21T01:37:12",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 2,
     "pilots_total": 11,
-    "pilots_dispatchable": 9,
-    "pilots_visible_only": 2,
+    "pilots_dispatchable": 10,
+    "pilots_visible_only": 1,
     "assignments": 2,
     "unassigned_ships": 0,
-    "unused_pilots": 7
+    "unused_pilots": 8
   },
   "ships": [
     {
@@ -353,9 +353,10 @@
       "nr": 1,
       "raw_time": "Thu May 21 00:13:00 CEST 2026",
       "current_ship_name": "ANITA HAGEDORN",
+      "current_ship_eta_rueb": "2026-05-21 05:09",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     }
   ],
@@ -556,6 +557,28 @@
       "current_ship_route": "RÜB → UTG",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "hilpert_jan",
+      "vorname": "Jan",
+      "nachname": "Hilpert",
+      "pilot_name": "Hilpert, Jan",
+      "abteilungszeit": "2026-05-21 00:13",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 1,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "ANITA HAGEDORN",
+      "from": "HOR",
+      "to": "RÜB",
+      "nr": 1,
+      "raw_time": "Thu May 21 00:13:00 CEST 2026",
+      "current_ship_name": "ANITA HAGEDORN",
+      "current_ship_eta_rueb": "2026-05-21 05:09",
+      "current_ship_q": 0,
+      "current_ship_route": "HOR → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
     }
   ],
   "visible_but_not_dispatchable_pilots": [
@@ -570,21 +593,6 @@
       "from": "HOR",
       "to": "KRH",
       "current_ship_name": "WILSON WISLA",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    },
-    {
-      "pilot_key": "hilpert_jan",
-      "pilot_name": "Hilpert, Jan",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 1,
-      "abteilungszeit": "2026-05-21 00:13",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "ANITA HAGEDORN",
-      "from": "HOR",
-      "to": "RÜB",
-      "current_ship_name": "ANITA HAGEDORN",
       "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta",
       "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
@@ -720,6 +728,15 @@
           "reason": "Quali passt nicht (2 > 1)",
           "pilot_q": 2,
           "ship_q": 1
+        },
+        {
+          "pilot_name": "Hilpert, Jan",
+          "pilot_tactical_nr": 1,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "ANITA HAGEDORN",
+          "pilot_current_ship_eta_rueb": "2026-05-21 05:09",
+          "ship_eta_rueb": "2026-05-21 03:06",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -770,7 +787,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 7,
+      "candidate_count": 8,
       "candidates": [
         {
           "pilot_name": "Bachholz, Carsten",
@@ -860,6 +877,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "HELGA ESSBERGER",
           "current_ship_eta_rueb": "2026-05-21 00:55",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Hilpert, Jan",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 1,
+          "abteilungszeit": "2026-05-21 00:13",
+          "fahrzeug": "ANITA HAGEDORN",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ANITA HAGEDORN",
+          "current_ship_eta_rueb": "2026-05-21 05:09",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
@@ -1061,6 +1091,28 @@
       "current_ship_eta_rueb": "2026-05-21 00:55",
       "current_ship_q": 3,
       "current_ship_route": "RÜB → UTG",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "hilpert_jan",
+      "vorname": "Jan",
+      "nachname": "Hilpert",
+      "pilot_name": "Hilpert, Jan",
+      "abteilungszeit": "2026-05-21 00:13",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 1,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "ANITA HAGEDORN",
+      "from": "HOR",
+      "to": "RÜB",
+      "nr": 1,
+      "raw_time": "Thu May 21 00:13:00 CEST 2026",
+      "current_ship_name": "ANITA HAGEDORN",
+      "current_ship_eta_rueb": "2026-05-21 05:09",
+      "current_ship_q": 0,
+      "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     }
