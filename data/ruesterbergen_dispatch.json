@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-20T12:31:11",
+  "generated_at": "2026-05-20T12:33:16",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,53 +32,15 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 4,
+    "ships_for_ruesterbergen": 3,
     "pilots_total": 9,
     "pilots_dispatchable": 8,
     "pilots_visible_only": 1,
-    "assignments": 4,
+    "assignments": 3,
     "unassigned_ships": 0,
-    "unused_pilots": 4
+    "unused_pilots": 5
   },
   "ships": [
-    {
-      "ship_key": "CMA CGM GOYA",
-      "ship_name": "CMA CGM GOYA",
-      "eta_rueb": "2026-05-20 12:57",
-      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
-      "ship_q": 2,
-      "meldung": {
-        "nr": "1",
-        "time": "Wed May 20 12:55:00 CEST 2026",
-        "draft": "6.2",
-        "q_gruppe": "2",
-        "lotsen_anzahl": 1,
-        "confirmed": false,
-        "from": "RÜB",
-        "to": "HOS"
-      },
-      "summary": {
-        "route": "HOS → KLT",
-        "routes": [
-          "HOS → KLT",
-          "RÜB → HOS"
-        ],
-        "q_gruppe": "2",
-        "vg": "4",
-        "draft": "6.20",
-        "length_m": "141.600",
-        "beam_m": "20.600",
-        "queue_title": "Zulauf vom Kanal in Kiel",
-        "zulauf_richtung": "vom_kanal",
-        "pilot_required": "true",
-        "pilot_status": "U",
-        "pilot_1_name": "Crotogino, Philipp",
-        "travel_status": "SAILING_NOK",
-        "makler": "SUB",
-        "dangerous_vessel": "-",
-        "type_of_loading": "Container"
-      }
-    },
     {
       "ship_key": "SOFIA",
       "ship_name": "SOFIA",
@@ -86,7 +48,7 @@
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 4,
       "meldung": {
-        "nr": "2",
+        "nr": "1",
         "time": "Wed May 20 15:00:00 CEST 2026",
         "draft": "6.9",
         "q_gruppe": "4",
@@ -124,7 +86,7 @@
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
-        "nr": "3",
+        "nr": "2",
         "time": "Wed May 20 15:03:00 CEST 2026",
         "draft": "4.3",
         "q_gruppe": "5",
@@ -162,7 +124,7 @@
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 1,
       "meldung": {
-        "nr": "4",
+        "nr": "3",
         "time": "Wed May 20 15:06:00 CEST 2026",
         "draft": "8.2",
         "q_gruppe": "1",
@@ -227,14 +189,16 @@
       "q_source": "q_gruppen_lotsen.entries",
       "pilot_tactical_nr": 12,
       "aufgabe": "Kanalbört",
-      "fahrzeug": "RÜB",
+      "fahrzeug": "CMA CGM GOYA",
+      "from": "RÜB",
+      "to": "HOS",
       "nr": 12,
       "raw_time": "Wed May 20 05:54:00 CEST 2026",
       "current_ship_name": "CMA CGM GOYA",
       "current_ship_eta_rueb": "2026-05-20 12:57",
       "current_ship_q": 2,
-      "current_ship_route": "HOS → KLT",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_route": "RÜB → HOS",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
@@ -423,14 +387,16 @@
       "q_source": "q_gruppen_lotsen.entries",
       "pilot_tactical_nr": 12,
       "aufgabe": "Kanalbört",
-      "fahrzeug": "RÜB",
+      "fahrzeug": "CMA CGM GOYA",
+      "from": "RÜB",
+      "to": "HOS",
       "nr": 12,
       "raw_time": "Wed May 20 05:54:00 CEST 2026",
       "current_ship_name": "CMA CGM GOYA",
       "current_ship_eta_rueb": "2026-05-20 12:57",
       "current_ship_q": 2,
-      "current_ship_route": "HOS → KLT",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_route": "RÜB → HOS",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
@@ -584,10 +550,10 @@
   ],
   "assignments": [
     {
-      "ship_key": "CMA CGM GOYA",
-      "ship_name": "CMA CGM GOYA",
-      "eta_rueb": "2026-05-20 12:57",
-      "ship_q": 2,
+      "ship_key": "SOFIA",
+      "ship_name": "SOFIA",
+      "eta_rueb": "2026-05-20 15:05",
+      "ship_q": 4,
       "assigned_pilot": "Skairies, Thomas",
       "assigned_pilot_q": 0,
       "assigned_tactical_nr": 13,
@@ -597,7 +563,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 4,
+      "candidate_count": 6,
       "candidates": [
         {
           "pilot_name": "Skairies, Thomas",
@@ -617,138 +583,12 @@
           "pilot_q": 0,
           "pilot_tactical_nr": 12,
           "abteilungszeit": "2026-05-20 05:54",
-          "fahrzeug": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "CMA CGM GOYA",
-          "current_ship_eta_rueb": "2026-05-20 12:57",
-          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Suermann, Nik",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 11,
-          "abteilungszeit": "2026-05-20 06:02",
-          "fahrzeug": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "RÜB",
-          "current_ship_eta_rueb": "2026-05-20 06:02",
-          "current_ship_source": "special.already_in_rueb",
-          "availability_kind": "already_in_rueb",
-          "availability_hint": "Lotse gilt als bereits in RÜB"
-        },
-        {
-          "pilot_name": "Köhler, Olaf",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 7,
-          "abteilungszeit": "2026-05-20 09:45",
-          "fahrzeug": "KEY STREAM",
+          "fahrzeug": "CMA CGM GOYA",
           "to": "HOS",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "KEY STREAM",
-          "current_ship_eta_rueb": "2026-05-20 10:58",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        }
-      ],
-      "excluded": [
-        {
-          "pilot_name": "Stoislow, Alexander",
-          "pilot_tactical_nr": 10,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "FREDO",
-          "pilot_current_ship_eta_rueb": "2026-05-20 13:14",
-          "ship_eta_rueb": "2026-05-20 12:57",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Külzer, Sascha",
-          "pilot_tactical_nr": 9,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "KATJA",
-          "pilot_current_ship_eta_rueb": "2026-05-20 13:21",
-          "ship_eta_rueb": "2026-05-20 12:57",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Janson, Sven",
-          "pilot_tactical_nr": 6,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "GT PIKE",
-          "pilot_current_ship_eta_rueb": "2026-05-20 15:25",
-          "ship_eta_rueb": "2026-05-20 12:57",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Schüler, Marius",
-          "pilot_tactical_nr": 2,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "STOLT REDSHANK",
-          "pilot_current_ship_eta_rueb": "2026-05-20 17:01",
-          "ship_eta_rueb": "2026-05-20 12:57",
-          "availability_kind": "merged_eta"
-        }
-      ],
-      "ship": {
-        "meldung": {
-          "nr": "1",
-          "time": "Wed May 20 12:55:00 CEST 2026",
-          "draft": "6.2",
-          "q_gruppe": "2",
-          "lotsen_anzahl": 1,
-          "confirmed": false,
-          "from": "RÜB",
-          "to": "HOS"
-        },
-        "summary": {
-          "route": "HOS → KLT",
-          "routes": [
-            "HOS → KLT",
-            "RÜB → HOS"
-          ],
-          "q_gruppe": "2",
-          "vg": "4",
-          "draft": "6.20",
-          "length_m": "141.600",
-          "beam_m": "20.600",
-          "queue_title": "Zulauf vom Kanal in Kiel",
-          "zulauf_richtung": "vom_kanal",
-          "pilot_required": "true",
-          "pilot_status": "U",
-          "pilot_1_name": "Crotogino, Philipp",
-          "travel_status": "SAILING_NOK",
-          "makler": "SUB",
-          "dangerous_vessel": "-",
-          "type_of_loading": "Container"
-        }
-      }
-    },
-    {
-      "ship_key": "SOFIA",
-      "ship_name": "SOFIA",
-      "eta_rueb": "2026-05-20 15:05",
-      "ship_q": 4,
-      "assigned_pilot": "Crotogino, Philipp",
-      "assigned_pilot_q": 0,
-      "assigned_tactical_nr": 12,
-      "assigned_abteilungszeit": "2026-05-20 05:54",
-      "assigned_current_ship_name": "CMA CGM GOYA",
-      "assigned_current_ship_eta_rueb": "2026-05-20 12:57",
-      "assigned_current_ship_source": "schiffe_merged.summary.pilot_1_name",
-      "assigned_availability_kind": "merged_eta",
-      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 5,
-      "candidates": [
-        {
-          "pilot_name": "Crotogino, Philipp",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 12,
-          "abteilungszeit": "2026-05-20 05:54",
-          "fahrzeug": "RÜB",
-          "aufgabe": "Kanalbört",
           "current_ship_name": "CMA CGM GOYA",
           "current_ship_eta_rueb": "2026-05-20 12:57",
-          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
         {
@@ -826,7 +666,7 @@
       ],
       "ship": {
         "meldung": {
-          "nr": "2",
+          "nr": "1",
           "time": "Wed May 20 15:00:00 CEST 2026",
           "draft": "6.9",
           "q_gruppe": "4",
@@ -863,18 +703,30 @@
       "ship_name": "VERTOM RIAN",
       "eta_rueb": "2026-05-20 15:08",
       "ship_q": 5,
-      "assigned_pilot": "Suermann, Nik",
+      "assigned_pilot": "Crotogino, Philipp",
       "assigned_pilot_q": 0,
-      "assigned_tactical_nr": 11,
-      "assigned_abteilungszeit": "2026-05-20 06:02",
-      "assigned_current_ship_name": "RÜB",
-      "assigned_current_ship_eta_rueb": "2026-05-20 06:02",
-      "assigned_current_ship_source": "special.already_in_rueb",
-      "assigned_availability_kind": "already_in_rueb",
-      "assigned_availability_hint": "Lotse gilt als bereits in RÜB",
+      "assigned_tactical_nr": 12,
+      "assigned_abteilungszeit": "2026-05-20 05:54",
+      "assigned_current_ship_name": "CMA CGM GOYA",
+      "assigned_current_ship_eta_rueb": "2026-05-20 12:57",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 4,
+      "candidate_count": 5,
       "candidates": [
+        {
+          "pilot_name": "Crotogino, Philipp",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 12,
+          "abteilungszeit": "2026-05-20 05:54",
+          "fahrzeug": "CMA CGM GOYA",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "CMA CGM GOYA",
+          "current_ship_eta_rueb": "2026-05-20 12:57",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
         {
           "pilot_name": "Suermann, Nik",
           "pilot_q": 0,
@@ -950,7 +802,7 @@
       ],
       "ship": {
         "meldung": {
-          "nr": "3",
+          "nr": "2",
           "time": "Wed May 20 15:03:00 CEST 2026",
           "draft": "4.3",
           "q_gruppe": "5",
@@ -987,17 +839,31 @@
       "ship_name": "ELBSUN",
       "eta_rueb": "2026-05-20 15:11",
       "ship_q": 1,
-      "assigned_pilot": "Köhler, Olaf",
+      "assigned_pilot": "Suermann, Nik",
       "assigned_pilot_q": 0,
-      "assigned_tactical_nr": 7,
-      "assigned_abteilungszeit": "2026-05-20 09:45",
-      "assigned_current_ship_name": "KEY STREAM",
-      "assigned_current_ship_eta_rueb": "2026-05-20 10:58",
-      "assigned_current_ship_source": "schiffe_merged.seelotsen",
-      "assigned_availability_kind": "merged_eta",
+      "assigned_tactical_nr": 11,
+      "assigned_abteilungszeit": "2026-05-20 06:02",
+      "assigned_current_ship_name": "RÜB",
+      "assigned_current_ship_eta_rueb": "2026-05-20 06:02",
+      "assigned_current_ship_source": "special.already_in_rueb",
+      "assigned_availability_kind": "already_in_rueb",
+      "assigned_availability_hint": "Lotse gilt als bereits in RÜB",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 1,
+      "candidate_count": 2,
       "candidates": [
+        {
+          "pilot_name": "Suermann, Nik",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 11,
+          "abteilungszeit": "2026-05-20 06:02",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-20 06:02",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
+        },
         {
           "pilot_name": "Köhler, Olaf",
           "pilot_q": 0,
@@ -1048,7 +914,7 @@
       ],
       "ship": {
         "meldung": {
-          "nr": "4",
+          "nr": "3",
           "time": "Wed May 20 15:06:00 CEST 2026",
           "draft": "8.2",
           "q_gruppe": "1",
@@ -1124,6 +990,28 @@
       "current_ship_eta_rueb": "2026-05-20 13:21",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "köhler_olaf",
+      "vorname": "Olaf",
+      "nachname": "Köhler",
+      "pilot_name": "Köhler, Olaf",
+      "abteilungszeit": "2026-05-20 09:45",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 7,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "KEY STREAM",
+      "from": "RÜB",
+      "to": "HOS",
+      "nr": 7,
+      "raw_time": "Wed May 20 09:45:00 CEST 2026",
+      "current_ship_name": "KEY STREAM",
+      "current_ship_eta_rueb": "2026-05-20 10:58",
+      "current_ship_q": 4,
+      "current_ship_route": "RÜB → HOS",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
