@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-20T07:01:11",
+  "generated_at": "2026-05-20T07:03:09",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 4,
     "pilots_total": 4,
-    "pilots_dispatchable": 2,
-    "pilots_visible_only": 2,
+    "pilots_dispatchable": 3,
+    "pilots_visible_only": 1,
     "assignments": 2,
     "unassigned_ships": 2,
-    "unused_pilots": 0
+    "unused_pilots": 1
   },
   "ships": [
     {
@@ -254,9 +254,10 @@
       "nr": 2,
       "raw_time": "Wed May 20 05:54:00 CEST 2026",
       "current_ship_name": "WILSON FLEX V",
+      "current_ship_eta_rueb": "2026-05-20 11:23",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
@@ -324,24 +325,31 @@
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
-    }
-  ],
-  "visible_but_not_dispatchable_pilots": [
+    },
     {
       "pilot_key": "crotogino_philipp",
+      "vorname": "Philipp",
+      "nachname": "Crotogino",
       "pilot_name": "Crotogino, Philipp",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 2,
       "abteilungszeit": "2026-05-20 05:54",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 2,
       "aufgabe": "Kanalbört",
       "fahrzeug": "WILSON FLEX V",
       "from": "HOS",
       "to": "RÜB",
+      "nr": 2,
+      "raw_time": "Wed May 20 05:54:00 CEST 2026",
       "current_ship_name": "WILSON FLEX V",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    },
+      "current_ship_eta_rueb": "2026-05-20 11:23",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    }
+  ],
+  "visible_but_not_dispatchable_pilots": [
     {
       "pilot_key": "suermann_nik",
       "pilot_name": "Suermann, Nik",
@@ -400,6 +408,17 @@
           "current_ship_name": "TAVASTLAND",
           "current_ship_eta_rueb": "2026-05-20 07:24",
           "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Crotogino, Philipp",
+          "pilot_tactical_nr": 2,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "WILSON FLEX V",
+          "pilot_current_ship_eta_rueb": "2026-05-20 11:23",
+          "ship_eta_rueb": "2026-05-20 08:24",
           "availability_kind": "merged_eta"
         }
       ],
@@ -467,6 +486,17 @@
           "availability_kind": "merged_eta"
         }
       ],
+      "excluded": [
+        {
+          "pilot_name": "Crotogino, Philipp",
+          "pilot_tactical_nr": 2,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "WILSON FLEX V",
+          "pilot_current_ship_eta_rueb": "2026-05-20 11:23",
+          "ship_eta_rueb": "2026-05-20 08:27",
+          "availability_kind": "merged_eta"
+        }
+      ],
       "ship": {
         "meldung": {
           "nr": "2",
@@ -508,15 +538,60 @@
       "ship_name": "BC SERENITY",
       "eta_rueb": "2026-05-20 11:09",
       "ship_q": 0,
-      "reason": "kein passender Lotse verfügbar"
+      "reason": "kein passender Lotse verfügbar",
+      "excluded": [
+        {
+          "pilot_name": "Crotogino, Philipp",
+          "pilot_tactical_nr": 2,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "WILSON FLEX V",
+          "pilot_current_ship_eta_rueb": "2026-05-20 11:23",
+          "ship_eta_rueb": "2026-05-20 11:09",
+          "availability_kind": "merged_eta"
+        }
+      ]
     },
     {
       "ship_key": "KEY STREAM",
       "ship_name": "KEY STREAM",
       "eta_rueb": "2026-05-20 11:13",
       "ship_q": 4,
-      "reason": "kein passender Lotse verfügbar"
+      "reason": "kein passender Lotse verfügbar",
+      "excluded": [
+        {
+          "pilot_name": "Crotogino, Philipp",
+          "pilot_tactical_nr": 2,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "WILSON FLEX V",
+          "pilot_current_ship_eta_rueb": "2026-05-20 11:23",
+          "ship_eta_rueb": "2026-05-20 11:13",
+          "availability_kind": "merged_eta"
+        }
+      ]
     }
   ],
-  "unused_pilots": []
+  "unused_pilots": [
+    {
+      "pilot_key": "crotogino_philipp",
+      "vorname": "Philipp",
+      "nachname": "Crotogino",
+      "pilot_name": "Crotogino, Philipp",
+      "abteilungszeit": "2026-05-20 05:54",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 2,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "WILSON FLEX V",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 2,
+      "raw_time": "Wed May 20 05:54:00 CEST 2026",
+      "current_ship_name": "WILSON FLEX V",
+      "current_ship_eta_rueb": "2026-05-20 11:23",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    }
+  ]
 }
