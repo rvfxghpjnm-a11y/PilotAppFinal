@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-20T03:11:15",
+  "generated_at": "2026-05-20T03:13:12",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,15 +32,80 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 0,
+    "ships_for_ruesterbergen": 2,
     "pilots_total": 10,
     "pilots_dispatchable": 9,
     "pilots_visible_only": 1,
-    "assignments": 0,
+    "assignments": 2,
     "unassigned_ships": 0,
-    "unused_pilots": 9
+    "unused_pilots": 7
   },
-  "ships": [],
+  "ships": [
+    {
+      "ship_key": "LADY ELA",
+      "ship_name": "LADY ELA",
+      "eta_rueb": "2026-05-20 08:31",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 3,
+      "meldung": {
+        "nr": "1",
+        "time": "Wed May 20 08:30:00 CEST 2026",
+        "draft": "7.1",
+        "q_gruppe": "3",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "3",
+        "vg": "4",
+        "draft": "7.10",
+        "length_m": "123.50",
+        "beam_m": "17.2",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "U",
+        "pilot_1_name": "Marzalla, Tobias",
+        "travel_status": "SAILING_NOK",
+        "makler": "SUB",
+        "dangerous_vessel": "-",
+        "type_of_loading": "Chemikalien fluessig"
+      }
+    },
+    {
+      "ship_key": "AGATH",
+      "ship_name": "AGATH",
+      "eta_rueb": "2026-05-20 08:33",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 3,
+      "meldung": {
+        "nr": "2",
+        "time": "Wed May 20 08:33:00 CEST 2026",
+        "draft": "6.5",
+        "q_gruppe": "3",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "3",
+        "draft": "6.5"
+      }
+    }
+  ],
   "pilots": [
     {
       "pilot_key": "dietrich_thomas",
@@ -479,53 +544,313 @@
       "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
     }
   ],
-  "assignments": [],
+  "assignments": [
+    {
+      "ship_key": "LADY ELA",
+      "ship_name": "LADY ELA",
+      "eta_rueb": "2026-05-20 08:31",
+      "ship_q": 3,
+      "assigned_pilot": "Dietrich, Thomas",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 18,
+      "assigned_abteilungszeit": "2026-05-19 15:21",
+      "assigned_current_ship_name": "ISAR HIGHWAY",
+      "assigned_current_ship_eta_rueb": "2026-05-19 23:32",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 8,
+      "candidates": [
+        {
+          "pilot_name": "Dietrich, Thomas",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 18,
+          "abteilungszeit": "2026-05-19 15:21",
+          "fahrzeug": "ISAR HIGHWAY",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ISAR HIGHWAY",
+          "current_ship_eta_rueb": "2026-05-19 23:32",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Koslik, Kevin",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 17,
+          "abteilungszeit": "2026-05-19 16:27",
+          "fahrzeug": "VESTVIND",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "VESTVIND",
+          "current_ship_eta_rueb": "2026-05-19 23:35",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Lüdtke, Jan-Torben",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 16,
+          "abteilungszeit": "2026-05-19 16:36",
+          "fahrzeug": "ERIKA SCHULTE",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ERIKA SCHULTE",
+          "current_ship_eta_rueb": "2026-05-19 23:45",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Buch, Helge",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 12,
+          "abteilungszeit": "2026-05-19 19:44",
+          "fahrzeug": "ROTRA VENTE",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ROTRA VENTE",
+          "current_ship_eta_rueb": "2026-05-20 01:56",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Bodmann, Christoph",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 13,
+          "abteilungszeit": "2026-05-19 19:44",
+          "fahrzeug": "LADY ALIDA",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "LADY ALIDA",
+          "current_ship_eta_rueb": "2026-05-20 01:52",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Arlt, Andreas",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 5,
+          "abteilungszeit": "2026-05-20 00:03",
+          "fahrzeug": "VIKING ANNAR",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "VIKING ANNAR",
+          "current_ship_eta_rueb": "2026-05-20 05:11",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Schie, Christian",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 4,
+          "abteilungszeit": "2026-05-20 00:20",
+          "fahrzeug": "FAST OLIVIA",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "FAST OLIVIA",
+          "current_ship_eta_rueb": "2026-05-20 05:13",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Escher, Franck",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 3,
+          "abteilungszeit": "2026-05-20 00:25",
+          "fahrzeug": "SIMON B",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "SIMON B",
+          "current_ship_eta_rueb": "2026-05-20 05:16",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Lüttge, Sebastian",
+          "pilot_tactical_nr": 15,
+          "reason": "Quali passt nicht (4 > 3)",
+          "pilot_q": 4,
+          "ship_q": 3
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "1",
+          "time": "Wed May 20 08:30:00 CEST 2026",
+          "draft": "7.1",
+          "q_gruppe": "3",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "HOS → KLT",
+          "routes": [
+            "HOS → KLT",
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "3",
+          "vg": "4",
+          "draft": "7.10",
+          "length_m": "123.50",
+          "beam_m": "17.2",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "U",
+          "pilot_1_name": "Marzalla, Tobias",
+          "travel_status": "SAILING_NOK",
+          "makler": "SUB",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Chemikalien fluessig"
+        }
+      }
+    },
+    {
+      "ship_key": "AGATH",
+      "ship_name": "AGATH",
+      "eta_rueb": "2026-05-20 08:33",
+      "ship_q": 3,
+      "assigned_pilot": "Koslik, Kevin",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 17,
+      "assigned_abteilungszeit": "2026-05-19 16:27",
+      "assigned_current_ship_name": "VESTVIND",
+      "assigned_current_ship_eta_rueb": "2026-05-19 23:35",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 7,
+      "candidates": [
+        {
+          "pilot_name": "Koslik, Kevin",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 17,
+          "abteilungszeit": "2026-05-19 16:27",
+          "fahrzeug": "VESTVIND",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "VESTVIND",
+          "current_ship_eta_rueb": "2026-05-19 23:35",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Lüdtke, Jan-Torben",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 16,
+          "abteilungszeit": "2026-05-19 16:36",
+          "fahrzeug": "ERIKA SCHULTE",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ERIKA SCHULTE",
+          "current_ship_eta_rueb": "2026-05-19 23:45",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Buch, Helge",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 12,
+          "abteilungszeit": "2026-05-19 19:44",
+          "fahrzeug": "ROTRA VENTE",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ROTRA VENTE",
+          "current_ship_eta_rueb": "2026-05-20 01:56",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Bodmann, Christoph",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 13,
+          "abteilungszeit": "2026-05-19 19:44",
+          "fahrzeug": "LADY ALIDA",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "LADY ALIDA",
+          "current_ship_eta_rueb": "2026-05-20 01:52",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Arlt, Andreas",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 5,
+          "abteilungszeit": "2026-05-20 00:03",
+          "fahrzeug": "VIKING ANNAR",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "VIKING ANNAR",
+          "current_ship_eta_rueb": "2026-05-20 05:11",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Schie, Christian",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 4,
+          "abteilungszeit": "2026-05-20 00:20",
+          "fahrzeug": "FAST OLIVIA",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "FAST OLIVIA",
+          "current_ship_eta_rueb": "2026-05-20 05:13",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Escher, Franck",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 3,
+          "abteilungszeit": "2026-05-20 00:25",
+          "fahrzeug": "SIMON B",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "SIMON B",
+          "current_ship_eta_rueb": "2026-05-20 05:16",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Lüttge, Sebastian",
+          "pilot_tactical_nr": 15,
+          "reason": "Quali passt nicht (4 > 3)",
+          "pilot_q": 4,
+          "ship_q": 3
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "2",
+          "time": "Wed May 20 08:33:00 CEST 2026",
+          "draft": "6.5",
+          "q_gruppe": "3",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "HOS → KLT",
+          "routes": [
+            "HOS → KLT",
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "3",
+          "draft": "6.5"
+        }
+      }
+    }
+  ],
   "unassigned_ships": [],
   "unused_pilots": [
-    {
-      "pilot_key": "dietrich_thomas",
-      "vorname": "Thomas",
-      "nachname": "Dietrich",
-      "pilot_name": "Dietrich, Thomas",
-      "abteilungszeit": "2026-05-19 15:21",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 18,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "ISAR HIGHWAY",
-      "from": "RÜB",
-      "to": "HOS",
-      "nr": 18,
-      "raw_time": "Tue May 19 15:21:00 CEST 2026",
-      "current_ship_name": "ISAR HIGHWAY",
-      "current_ship_eta_rueb": "2026-05-19 23:32",
-      "current_ship_q": 0,
-      "current_ship_route": "RÜB → HOS",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
-    },
-    {
-      "pilot_key": "koslik_kevin",
-      "vorname": "Kevin",
-      "nachname": "Koslik",
-      "pilot_name": "Koslik, Kevin",
-      "abteilungszeit": "2026-05-19 16:27",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 17,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "VESTVIND",
-      "from": "RÜB",
-      "to": "HOS",
-      "nr": 17,
-      "raw_time": "Tue May 19 16:27:00 CEST 2026",
-      "current_ship_name": "VESTVIND",
-      "current_ship_eta_rueb": "2026-05-19 23:35",
-      "current_ship_q": 1,
-      "current_ship_route": "RÜB → HOS",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
-    },
     {
       "pilot_key": "lüdtke_jan-torben",
       "vorname": "Jan-Torben",
