@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-21T05:19:14",
+  "generated_at": "2026-05-21T05:21:10",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,13 +32,13 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 3,
+    "ships_for_ruesterbergen": 4,
     "pilots_total": 8,
     "pilots_dispatchable": 7,
     "pilots_visible_only": 1,
-    "assignments": 3,
+    "assignments": 4,
     "unassigned_ships": 0,
-    "unused_pilots": 4
+    "unused_pilots": 3
   },
   "ships": [
     {
@@ -153,6 +153,44 @@
         "dangerous_vessel": "-",
         "type_of_loading": "Container"
       }
+    },
+    {
+      "ship_key": "SOUTH ENABLER",
+      "ship_name": "SOUTH ENABLER",
+      "eta_rueb": "2026-05-21 10:51",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 0,
+      "meldung": {
+        "nr": "4",
+        "time": "Thu May 21 09:30:00 CEST 2026",
+        "draft": "6.3",
+        "q_gruppe": "0",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "0",
+        "vg": "6",
+        "draft": "6.30",
+        "length_m": "203.4",
+        "beam_m": "26.2",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "false",
+        "pilot_status": "U",
+        "pilot_1_name": "Hoepfner, Carsten",
+        "travel_status": "SAILING_NOK",
+        "makler": "SUB",
+        "dangerous_vessel": "-",
+        "type_of_loading": "Stueckgueter"
+      }
     }
   ],
   "pilots": [
@@ -260,7 +298,7 @@
       "nr": 9,
       "raw_time": "Thu May 21 02:16:00 CEST 2026",
       "current_ship_name": "RIX VENTURE",
-      "current_ship_eta_rueb": "2026-05-21 07:33",
+      "current_ship_eta_rueb": "2026-05-21 07:32",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -436,7 +474,7 @@
       "nr": 9,
       "raw_time": "Thu May 21 02:16:00 CEST 2026",
       "current_ship_name": "RIX VENTURE",
-      "current_ship_eta_rueb": "2026-05-21 07:33",
+      "current_ship_eta_rueb": "2026-05-21 07:32",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -597,7 +635,7 @@
           "pilot_tactical_nr": 9,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "RIX VENTURE",
-          "pilot_current_ship_eta_rueb": "2026-05-21 07:33",
+          "pilot_current_ship_eta_rueb": "2026-05-21 07:32",
           "ship_eta_rueb": "2026-05-21 05:53",
           "availability_kind": "merged_eta"
         }
@@ -700,7 +738,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "RIX VENTURE",
-          "current_ship_eta_rueb": "2026-05-21 07:33",
+          "current_ship_eta_rueb": "2026-05-21 07:32",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -875,32 +913,109 @@
           "type_of_loading": "Container"
         }
       }
+    },
+    {
+      "ship_key": "SOUTH ENABLER",
+      "ship_name": "SOUTH ENABLER",
+      "eta_rueb": "2026-05-21 10:51",
+      "ship_q": 0,
+      "assigned_pilot": "Czurda, Crischan",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 10,
+      "assigned_abteilungszeit": "2026-05-21 02:09",
+      "assigned_current_ship_name": "ECO GHIBLI",
+      "assigned_current_ship_eta_rueb": "2026-05-21 07:25",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 3,
+      "candidates": [
+        {
+          "pilot_name": "Czurda, Crischan",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 10,
+          "abteilungszeit": "2026-05-21 02:09",
+          "fahrzeug": "ECO GHIBLI",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ECO GHIBLI",
+          "current_ship_eta_rueb": "2026-05-21 07:25",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Krause, Malte",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 4,
+          "abteilungszeit": "2026-05-21 03:55",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-21 03:55",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
+        },
+        {
+          "pilot_name": "Arlt, Andreas",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 5,
+          "abteilungszeit": "2026-05-21 03:55",
+          "fahrzeug": "TITAN VISION",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "TITAN VISION",
+          "current_ship_eta_rueb": "2026-05-21 04:57",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Lehwald, Christian",
+          "pilot_tactical_nr": 9,
+          "reason": "Quali passt nicht (4 > 0)",
+          "pilot_q": 4,
+          "ship_q": 0
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "4",
+          "time": "Thu May 21 09:30:00 CEST 2026",
+          "draft": "6.3",
+          "q_gruppe": "0",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "HOS → KLT",
+          "routes": [
+            "HOS → KLT",
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "0",
+          "vg": "6",
+          "draft": "6.30",
+          "length_m": "203.4",
+          "beam_m": "26.2",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "false",
+          "pilot_status": "U",
+          "pilot_1_name": "Hoepfner, Carsten",
+          "travel_status": "SAILING_NOK",
+          "makler": "SUB",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Stueckgueter"
+        }
+      }
     }
   ],
   "unassigned_ships": [],
   "unused_pilots": [
-    {
-      "pilot_key": "czurda_crischan",
-      "vorname": "Crischan",
-      "nachname": "Czurda",
-      "pilot_name": "Czurda, Crischan",
-      "abteilungszeit": "2026-05-21 02:09",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 10,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "ECO GHIBLI",
-      "from": "HOS",
-      "to": "RÜB",
-      "nr": 10,
-      "raw_time": "Thu May 21 02:09:00 CEST 2026",
-      "current_ship_name": "ECO GHIBLI",
-      "current_ship_eta_rueb": "2026-05-21 07:25",
-      "current_ship_q": 0,
-      "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
-    },
     {
       "pilot_key": "lehwald_christian",
       "vorname": "Christian",
@@ -917,7 +1032,7 @@
       "nr": 9,
       "raw_time": "Thu May 21 02:16:00 CEST 2026",
       "current_ship_name": "RIX VENTURE",
-      "current_ship_eta_rueb": "2026-05-21 07:33",
+      "current_ship_eta_rueb": "2026-05-21 07:32",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
