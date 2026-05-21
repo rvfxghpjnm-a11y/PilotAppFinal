@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-21T09:47:11",
+  "generated_at": "2026-05-21T09:49:09",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,13 +32,13 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 2,
+    "ships_for_ruesterbergen": 3,
     "pilots_total": 9,
     "pilots_dispatchable": 9,
     "pilots_visible_only": 0,
-    "assignments": 2,
+    "assignments": 3,
     "unassigned_ships": 0,
-    "unused_pilots": 7
+    "unused_pilots": 6
   },
   "ships": [
     {
@@ -115,6 +115,44 @@
         "makler": "UCA",
         "dangerous_vessel": "-",
         "type_of_loading": "Ballast"
+      }
+    },
+    {
+      "ship_key": "BALTIC DREAM",
+      "ship_name": "BALTIC DREAM",
+      "eta_rueb": "2026-05-21 14:09",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 5,
+      "meldung": {
+        "nr": "3",
+        "time": "Thu May 21 13:50:00 CEST 2026",
+        "draft": "4.9",
+        "q_gruppe": "5",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "5",
+        "vg": "3",
+        "draft": "4.90",
+        "length_m": "88",
+        "beam_m": "13.35",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "P",
+        "pilot_1_name": "Lock, Janis",
+        "travel_status": "SAILING_NOK",
+        "makler": "NIK",
+        "dangerous_vessel": "-",
+        "type_of_loading": "Stueckgueter"
       }
     }
   ],
@@ -830,32 +868,152 @@
           "type_of_loading": "Ballast"
         }
       }
+    },
+    {
+      "ship_key": "BALTIC DREAM",
+      "ship_name": "BALTIC DREAM",
+      "eta_rueb": "2026-05-21 14:09",
+      "ship_q": 5,
+      "assigned_pilot": "Czurda, Crischan",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 15,
+      "assigned_abteilungszeit": "2026-05-21 02:09",
+      "assigned_current_ship_name": "DP WORLD LIMASSOL",
+      "assigned_current_ship_eta_rueb": "2026-05-21 08:21",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 7,
+      "candidates": [
+        {
+          "pilot_name": "Czurda, Crischan",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 15,
+          "abteilungszeit": "2026-05-21 02:09",
+          "fahrzeug": "DP WORLD LIMASSOL",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "DP WORLD LIMASSOL",
+          "current_ship_eta_rueb": "2026-05-21 08:21",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Lehwald, Christian",
+          "pilot_q": 4,
+          "pilot_tactical_nr": 14,
+          "abteilungszeit": "2026-05-21 02:16",
+          "fahrzeug": "DESTINY",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "DESTINY",
+          "current_ship_eta_rueb": "2026-05-21 10:10",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Krause, Malte",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 11,
+          "abteilungszeit": "2026-05-21 03:55",
+          "fahrzeug": "SCHOKLAND",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "SCHOKLAND",
+          "current_ship_eta_rueb": "2026-05-21 05:52",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Zimmermann, Martin",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 7,
+          "abteilungszeit": "2026-05-21 04:57",
+          "fahrzeug": "IDA RAMBOW",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "IDA RAMBOW",
+          "current_ship_eta_rueb": "2026-05-21 10:07",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Haala, Klaus Werner",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-05-21 07:23",
+          "fahrzeug": "FWN SEA",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "FWN SEA",
+          "current_ship_eta_rueb": "2026-05-21 13:06",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Krämer, Jonas",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 3,
+          "abteilungszeit": "2026-05-21 07:23",
+          "fahrzeug": "ANNABA",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ANNABA",
+          "current_ship_eta_rueb": "2026-05-21 13:09",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Winkler, René",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 1,
+          "abteilungszeit": "2026-05-21 08:10",
+          "fahrzeug": "SOUTH ENABLER",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "SOUTH ENABLER",
+          "current_ship_eta_rueb": "2026-05-21 09:44",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "3",
+          "time": "Thu May 21 13:50:00 CEST 2026",
+          "draft": "4.9",
+          "q_gruppe": "5",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "HOS → KLT",
+          "routes": [
+            "HOS → KLT",
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "5",
+          "vg": "3",
+          "draft": "4.90",
+          "length_m": "88",
+          "beam_m": "13.35",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "P",
+          "pilot_1_name": "Lock, Janis",
+          "travel_status": "SAILING_NOK",
+          "makler": "NIK",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Stueckgueter"
+        }
+      }
     }
   ],
   "unassigned_ships": [],
   "unused_pilots": [
-    {
-      "pilot_key": "czurda_crischan",
-      "vorname": "Crischan",
-      "nachname": "Czurda",
-      "pilot_name": "Czurda, Crischan",
-      "abteilungszeit": "2026-05-21 02:09",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 15,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "DP WORLD LIMASSOL",
-      "from": "RÜB",
-      "to": "HOS",
-      "nr": 15,
-      "raw_time": "Thu May 21 02:09:00 CEST 2026",
-      "current_ship_name": "DP WORLD LIMASSOL",
-      "current_ship_eta_rueb": "2026-05-21 08:21",
-      "current_ship_q": 0,
-      "current_ship_route": "RÜB → HOS",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
-    },
     {
       "pilot_key": "lehwald_christian",
       "vorname": "Christian",
