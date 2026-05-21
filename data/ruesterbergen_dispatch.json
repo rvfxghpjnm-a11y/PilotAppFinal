@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-21T06:05:13",
+  "generated_at": "2026-05-21T06:07:10",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,13 +32,13 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 3,
+    "ships_for_ruesterbergen": 4,
     "pilots_total": 9,
     "pilots_dispatchable": 8,
     "pilots_visible_only": 1,
-    "assignments": 3,
+    "assignments": 4,
     "unassigned_ships": 0,
-    "unused_pilots": 5
+    "unused_pilots": 4
   },
   "ships": [
     {
@@ -152,6 +152,43 @@
         "makler": "SUB",
         "dangerous_vessel": "-",
         "type_of_loading": "Stueckgueter"
+      }
+    },
+    {
+      "ship_key": "DESTINY",
+      "ship_name": "DESTINY",
+      "eta_rueb": "2026-05-21 10:17",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 5,
+      "meldung": {
+        "nr": "4",
+        "time": "Thu May 21 10:10:00 CEST 2026",
+        "draft": "1.5",
+        "q_gruppe": "5",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "RÜB → HOS",
+        "routes": [
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "5",
+        "vg": "2",
+        "draft": "1.50",
+        "length_m": "24",
+        "beam_m": "12",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "O",
+        "pilot_1_name": "Lange, Norbert",
+        "travel_status": "SAILING_NOK",
+        "makler": "Bar-Karte",
+        "dangerous_vessel": "-",
+        "type_of_loading": "Ballast"
       }
     }
   ],
@@ -966,32 +1003,125 @@
           "type_of_loading": "Stueckgueter"
         }
       }
+    },
+    {
+      "ship_key": "DESTINY",
+      "ship_name": "DESTINY",
+      "eta_rueb": "2026-05-21 10:17",
+      "ship_q": 5,
+      "assigned_pilot": "Köller, Hartmut",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 11,
+      "assigned_abteilungszeit": "2026-05-21 01:45",
+      "assigned_current_ship_name": "LONGEARTH",
+      "assigned_current_ship_eta_rueb": "2026-05-21 07:07",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 5,
+      "candidates": [
+        {
+          "pilot_name": "Köller, Hartmut",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 11,
+          "abteilungszeit": "2026-05-21 01:45",
+          "fahrzeug": "LONGEARTH",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "LONGEARTH",
+          "current_ship_eta_rueb": "2026-05-21 07:07",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Czurda, Crischan",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 10,
+          "abteilungszeit": "2026-05-21 02:09",
+          "fahrzeug": "ECO GHIBLI",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ECO GHIBLI",
+          "current_ship_eta_rueb": "2026-05-21 07:21",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Lehwald, Christian",
+          "pilot_q": 4,
+          "pilot_tactical_nr": 9,
+          "abteilungszeit": "2026-05-21 02:16",
+          "fahrzeug": "RIX VENTURE",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RIX VENTURE",
+          "current_ship_eta_rueb": "2026-05-21 07:29",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Krause, Malte",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 4,
+          "abteilungszeit": "2026-05-21 03:55",
+          "fahrzeug": "SCHOKLAND",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "SCHOKLAND",
+          "current_ship_eta_rueb": "2026-05-21 05:52",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Arlt, Andreas",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 5,
+          "abteilungszeit": "2026-05-21 03:55",
+          "fahrzeug": "TITAN VISION",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "TITAN VISION",
+          "current_ship_eta_rueb": "2026-05-21 04:57",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "4",
+          "time": "Thu May 21 10:10:00 CEST 2026",
+          "draft": "1.5",
+          "q_gruppe": "5",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "RÜB → HOS",
+          "routes": [
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "5",
+          "vg": "2",
+          "draft": "1.50",
+          "length_m": "24",
+          "beam_m": "12",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "O",
+          "pilot_1_name": "Lange, Norbert",
+          "travel_status": "SAILING_NOK",
+          "makler": "Bar-Karte",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Ballast"
+        }
+      }
     }
   ],
   "unassigned_ships": [],
   "unused_pilots": [
-    {
-      "pilot_key": "köller_hartmut",
-      "vorname": "Hartmut",
-      "nachname": "Köller",
-      "pilot_name": "Köller, Hartmut",
-      "abteilungszeit": "2026-05-21 01:45",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 11,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "LONGEARTH",
-      "from": "UTG",
-      "to": "RÜB",
-      "nr": 11,
-      "raw_time": "Thu May 21 01:45:00 CEST 2026",
-      "current_ship_name": "LONGEARTH",
-      "current_ship_eta_rueb": "2026-05-21 07:07",
-      "current_ship_q": 0,
-      "current_ship_route": "UTG → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
-    },
     {
       "pilot_key": "czurda_crischan",
       "vorname": "Crischan",
