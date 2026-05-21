@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-21T19:35:18",
+  "generated_at": "2026-05-21T19:37:16",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 9,
     "pilots_total": 22,
-    "pilots_dispatchable": 19,
-    "pilots_visible_only": 3,
+    "pilots_dispatchable": 20,
+    "pilots_visible_only": 2,
     "assignments": 9,
     "unassigned_ships": 0,
-    "unused_pilots": 10
+    "unused_pilots": 11
   },
   "ships": [
     {
@@ -327,7 +327,7 @@
     {
       "ship_key": "AURELIE",
       "ship_name": "AURELIE",
-      "eta_rueb": "2026-05-21 23:10",
+      "eta_rueb": "2026-05-21 23:30",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
@@ -347,7 +347,19 @@
           "RÜB → HOS"
         ],
         "q_gruppe": "5",
-        "draft": "3.9"
+        "vg": "3",
+        "draft": "3.90",
+        "length_m": "89.8",
+        "beam_m": "13.6",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "P",
+        "pilot_1_name": "van der Ham, Sjoerd",
+        "travel_status": "SAILING_NOK",
+        "makler": "UCA",
+        "dangerous_vessel": "-",
+        "type_of_loading": "Stueckgueter"
       }
     }
   ],
@@ -609,7 +621,7 @@
       "nr": 12,
       "raw_time": "Thu May 21 18:05:00 CEST 2026",
       "current_ship_name": "ANNALISA P",
-      "current_ship_eta_rueb": "2026-05-21 23:37",
+      "current_ship_eta_rueb": "2026-05-21 23:45",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -674,9 +686,10 @@
       "nr": 9,
       "raw_time": "Thu May 21 18:46:00 CEST 2026",
       "current_ship_name": "HUNTER",
+      "current_ship_eta_rueb": "2026-05-21 23:30",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
@@ -1075,7 +1088,7 @@
       "nr": 12,
       "raw_time": "Thu May 21 18:05:00 CEST 2026",
       "current_ship_name": "ANNALISA P",
-      "current_ship_eta_rueb": "2026-05-21 23:37",
+      "current_ship_eta_rueb": "2026-05-21 23:45",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -1100,6 +1113,28 @@
       "current_ship_eta_rueb": "2026-05-21 23:27",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "biedermann_johannes",
+      "vorname": "Johannes",
+      "nachname": "Biedermann",
+      "pilot_name": "Biedermann, Johannes",
+      "abteilungszeit": "2026-05-21 18:46",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 9,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "HUNTER",
+      "from": "HOR",
+      "to": "RÜB",
+      "nr": 9,
+      "raw_time": "Thu May 21 18:46:00 CEST 2026",
+      "current_ship_name": "HUNTER",
+      "current_ship_eta_rueb": "2026-05-21 23:30",
+      "current_ship_q": 0,
+      "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
@@ -1290,21 +1325,6 @@
       "to": "RÜB",
       "current_ship_name": "LEONIE",
       "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    },
-    {
-      "pilot_key": "biedermann_johannes",
-      "pilot_name": "Biedermann, Johannes",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 9,
-      "abteilungszeit": "2026-05-21 18:46",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "HUNTER",
-      "from": "HOR",
-      "to": "RÜB",
-      "current_ship_name": "HUNTER",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta",
       "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
     }
@@ -1529,7 +1549,7 @@
           "pilot_tactical_nr": 12,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "ANNALISA P",
-          "pilot_current_ship_eta_rueb": "2026-05-21 23:37",
+          "pilot_current_ship_eta_rueb": "2026-05-21 23:45",
           "ship_eta_rueb": "2026-05-21 20:27",
           "availability_kind": "merged_eta"
         },
@@ -1539,6 +1559,15 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "STAR CURACAO",
           "pilot_current_ship_eta_rueb": "2026-05-21 23:27",
+          "ship_eta_rueb": "2026-05-21 20:27",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Biedermann, Johannes",
+          "pilot_tactical_nr": 9,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "HUNTER",
+          "pilot_current_ship_eta_rueb": "2026-05-21 23:30",
           "ship_eta_rueb": "2026-05-21 20:27",
           "availability_kind": "merged_eta"
         },
@@ -1793,7 +1822,7 @@
           "pilot_tactical_nr": 12,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "ANNALISA P",
-          "pilot_current_ship_eta_rueb": "2026-05-21 23:37",
+          "pilot_current_ship_eta_rueb": "2026-05-21 23:45",
           "ship_eta_rueb": "2026-05-21 20:29",
           "availability_kind": "merged_eta"
         },
@@ -1803,6 +1832,15 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "STAR CURACAO",
           "pilot_current_ship_eta_rueb": "2026-05-21 23:27",
+          "ship_eta_rueb": "2026-05-21 20:29",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Biedermann, Johannes",
+          "pilot_tactical_nr": 9,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "HUNTER",
+          "pilot_current_ship_eta_rueb": "2026-05-21 23:30",
           "ship_eta_rueb": "2026-05-21 20:29",
           "availability_kind": "merged_eta"
         },
@@ -2057,7 +2095,7 @@
           "pilot_tactical_nr": 12,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "ANNALISA P",
-          "pilot_current_ship_eta_rueb": "2026-05-21 23:37",
+          "pilot_current_ship_eta_rueb": "2026-05-21 23:45",
           "ship_eta_rueb": "2026-05-21 20:34",
           "availability_kind": "merged_eta"
         },
@@ -2067,6 +2105,15 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "STAR CURACAO",
           "pilot_current_ship_eta_rueb": "2026-05-21 23:27",
+          "ship_eta_rueb": "2026-05-21 20:34",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Biedermann, Johannes",
+          "pilot_tactical_nr": 9,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "HUNTER",
+          "pilot_current_ship_eta_rueb": "2026-05-21 23:30",
           "ship_eta_rueb": "2026-05-21 20:34",
           "availability_kind": "merged_eta"
         }
@@ -2288,7 +2335,7 @@
           "pilot_tactical_nr": 12,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "ANNALISA P",
-          "pilot_current_ship_eta_rueb": "2026-05-21 23:37",
+          "pilot_current_ship_eta_rueb": "2026-05-21 23:45",
           "ship_eta_rueb": "2026-05-21 20:50",
           "availability_kind": "merged_eta"
         },
@@ -2298,6 +2345,15 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "STAR CURACAO",
           "pilot_current_ship_eta_rueb": "2026-05-21 23:27",
+          "ship_eta_rueb": "2026-05-21 20:50",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Biedermann, Johannes",
+          "pilot_tactical_nr": 9,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "HUNTER",
+          "pilot_current_ship_eta_rueb": "2026-05-21 23:30",
           "ship_eta_rueb": "2026-05-21 20:50",
           "availability_kind": "merged_eta"
         },
@@ -2527,7 +2583,7 @@
           "pilot_tactical_nr": 12,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "ANNALISA P",
-          "pilot_current_ship_eta_rueb": "2026-05-21 23:37",
+          "pilot_current_ship_eta_rueb": "2026-05-21 23:45",
           "ship_eta_rueb": "2026-05-21 20:53",
           "availability_kind": "merged_eta"
         },
@@ -2537,6 +2593,15 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "STAR CURACAO",
           "pilot_current_ship_eta_rueb": "2026-05-21 23:27",
+          "ship_eta_rueb": "2026-05-21 20:53",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Biedermann, Johannes",
+          "pilot_tactical_nr": 9,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "HUNTER",
+          "pilot_current_ship_eta_rueb": "2026-05-21 23:30",
           "ship_eta_rueb": "2026-05-21 20:53",
           "availability_kind": "merged_eta"
         }
@@ -2746,7 +2811,7 @@
           "pilot_tactical_nr": 12,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "ANNALISA P",
-          "pilot_current_ship_eta_rueb": "2026-05-21 23:37",
+          "pilot_current_ship_eta_rueb": "2026-05-21 23:45",
           "ship_eta_rueb": "2026-05-21 20:56",
           "availability_kind": "merged_eta"
         },
@@ -2756,6 +2821,15 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "STAR CURACAO",
           "pilot_current_ship_eta_rueb": "2026-05-21 23:27",
+          "ship_eta_rueb": "2026-05-21 20:56",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Biedermann, Johannes",
+          "pilot_tactical_nr": 9,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "HUNTER",
+          "pilot_current_ship_eta_rueb": "2026-05-21 23:30",
           "ship_eta_rueb": "2026-05-21 20:56",
           "availability_kind": "merged_eta"
         }
@@ -2954,7 +3028,7 @@
           "pilot_tactical_nr": 12,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "ANNALISA P",
-          "pilot_current_ship_eta_rueb": "2026-05-21 23:37",
+          "pilot_current_ship_eta_rueb": "2026-05-21 23:45",
           "ship_eta_rueb": "2026-05-21 21:00",
           "availability_kind": "merged_eta"
         },
@@ -2964,6 +3038,15 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "STAR CURACAO",
           "pilot_current_ship_eta_rueb": "2026-05-21 23:27",
+          "ship_eta_rueb": "2026-05-21 21:00",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Biedermann, Johannes",
+          "pilot_tactical_nr": 9,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "HUNTER",
+          "pilot_current_ship_eta_rueb": "2026-05-21 23:30",
           "ship_eta_rueb": "2026-05-21 21:00",
           "availability_kind": "merged_eta"
         }
@@ -3134,7 +3217,7 @@
           "pilot_tactical_nr": 12,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "ANNALISA P",
-          "pilot_current_ship_eta_rueb": "2026-05-21 23:37",
+          "pilot_current_ship_eta_rueb": "2026-05-21 23:45",
           "ship_eta_rueb": "2026-05-21 21:00",
           "availability_kind": "merged_eta"
         },
@@ -3144,6 +3227,15 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "STAR CURACAO",
           "pilot_current_ship_eta_rueb": "2026-05-21 23:27",
+          "ship_eta_rueb": "2026-05-21 21:00",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Biedermann, Johannes",
+          "pilot_tactical_nr": 9,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "HUNTER",
+          "pilot_current_ship_eta_rueb": "2026-05-21 23:30",
           "ship_eta_rueb": "2026-05-21 21:00",
           "availability_kind": "merged_eta"
         }
@@ -3174,7 +3266,7 @@
     {
       "ship_key": "AURELIE",
       "ship_name": "AURELIE",
-      "eta_rueb": "2026-05-21 23:10",
+      "eta_rueb": "2026-05-21 23:30",
       "ship_q": 5,
       "assigned_pilot": "Vogel, Peter",
       "assigned_pilot_q": 0,
@@ -3185,7 +3277,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 9,
+      "candidate_count": 11,
       "candidates": [
         {
           "pilot_name": "Vogel, Peter",
@@ -3223,6 +3315,32 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "JSP LOEJT",
           "current_ship_eta_rueb": "2026-05-21 22:40",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Kordt, Remo",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 11,
+          "abteilungszeit": "2026-05-21 18:13",
+          "fahrzeug": "STAR CURACAO",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "STAR CURACAO",
+          "current_ship_eta_rueb": "2026-05-21 23:27",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Biedermann, Johannes",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 9,
+          "abteilungszeit": "2026-05-21 18:46",
+          "fahrzeug": "HUNTER",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "HUNTER",
+          "current_ship_eta_rueb": "2026-05-21 23:30",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -3315,17 +3433,8 @@
           "pilot_tactical_nr": 12,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "ANNALISA P",
-          "pilot_current_ship_eta_rueb": "2026-05-21 23:37",
-          "ship_eta_rueb": "2026-05-21 23:10",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Kordt, Remo",
-          "pilot_tactical_nr": 11,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "STAR CURACAO",
-          "pilot_current_ship_eta_rueb": "2026-05-21 23:27",
-          "ship_eta_rueb": "2026-05-21 23:10",
+          "pilot_current_ship_eta_rueb": "2026-05-21 23:45",
+          "ship_eta_rueb": "2026-05-21 23:30",
           "availability_kind": "merged_eta"
         }
       ],
@@ -3347,7 +3456,19 @@
             "RÜB → HOS"
           ],
           "q_gruppe": "5",
-          "draft": "3.9"
+          "vg": "3",
+          "draft": "3.90",
+          "length_m": "89.8",
+          "beam_m": "13.6",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "P",
+          "pilot_1_name": "van der Ham, Sjoerd",
+          "travel_status": "SAILING_NOK",
+          "makler": "UCA",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Stueckgueter"
         }
       }
     }
@@ -3414,7 +3535,7 @@
       "nr": 12,
       "raw_time": "Thu May 21 18:05:00 CEST 2026",
       "current_ship_name": "ANNALISA P",
-      "current_ship_eta_rueb": "2026-05-21 23:37",
+      "current_ship_eta_rueb": "2026-05-21 23:45",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -3439,6 +3560,28 @@
       "current_ship_eta_rueb": "2026-05-21 23:27",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "biedermann_johannes",
+      "vorname": "Johannes",
+      "nachname": "Biedermann",
+      "pilot_name": "Biedermann, Johannes",
+      "abteilungszeit": "2026-05-21 18:46",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 9,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "HUNTER",
+      "from": "HOR",
+      "to": "RÜB",
+      "nr": 9,
+      "raw_time": "Thu May 21 18:46:00 CEST 2026",
+      "current_ship_name": "HUNTER",
+      "current_ship_eta_rueb": "2026-05-21 23:30",
+      "current_ship_q": 0,
+      "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
