@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-22T00:11:05",
+  "generated_at": "2026-05-22T00:13:13",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,53 +32,15 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 2,
+    "ships_for_ruesterbergen": 1,
     "pilots_total": 12,
     "pilots_dispatchable": 10,
     "pilots_visible_only": 2,
-    "assignments": 2,
+    "assignments": 1,
     "unassigned_ships": 0,
-    "unused_pilots": 8
+    "unused_pilots": 9
   },
   "ships": [
-    {
-      "ship_key": "PEAK BREMEN",
-      "ship_name": "PEAK BREMEN",
-      "eta_rueb": "2026-05-22 00:39",
-      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
-      "ship_q": 5,
-      "meldung": {
-        "nr": "1",
-        "time": "Fri May 22 00:35:00 CEST 2026",
-        "draft": "5.5",
-        "q_gruppe": "5",
-        "lotsen_anzahl": 1,
-        "confirmed": false,
-        "from": "RÜB",
-        "to": "HOS"
-      },
-      "summary": {
-        "route": "HOS → KLT",
-        "routes": [
-          "HOS → KLT",
-          "RÜB → HOS"
-        ],
-        "q_gruppe": "5",
-        "vg": "3",
-        "draft": "5.50",
-        "length_m": "89.95",
-        "beam_m": "14.09",
-        "queue_title": "Zulauf vom Kanal in Kiel",
-        "zulauf_richtung": "vom_kanal",
-        "pilot_required": "true",
-        "pilot_status": "U",
-        "pilot_1_name": "Biedermann, Johannes",
-        "travel_status": "SAILING_NOK",
-        "makler": "SUB",
-        "dangerous_vessel": "-",
-        "type_of_loading": "Bulk"
-      }
-    },
     {
       "ship_key": "CONTAINERSHIPS 8",
       "ship_name": "CONTAINERSHIPS 8",
@@ -86,7 +48,7 @@
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 1,
       "meldung": {
-        "nr": "2",
+        "nr": "1",
         "time": "Fri May 22 00:40:00 CEST 2026",
         "draft": "7.8",
         "q_gruppe": "1",
@@ -161,14 +123,16 @@
       "q_source": "q_gruppen_lotsen.entries",
       "pilot_tactical_nr": 12,
       "aufgabe": "Kanalbört",
-      "fahrzeug": "RÜB",
+      "fahrzeug": "PEAK BREMEN",
+      "from": "RÜB",
+      "to": "HOS",
       "nr": 12,
       "raw_time": "Thu May 21 18:46:00 CEST 2026",
       "current_ship_name": "PEAK BREMEN",
       "current_ship_eta_rueb": "2026-05-22 00:39",
       "current_ship_q": 5,
-      "current_ship_route": "HOS → KLT",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_route": "RÜB → HOS",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
@@ -420,14 +384,16 @@
       "q_source": "q_gruppen_lotsen.entries",
       "pilot_tactical_nr": 12,
       "aufgabe": "Kanalbört",
-      "fahrzeug": "RÜB",
+      "fahrzeug": "PEAK BREMEN",
+      "from": "RÜB",
+      "to": "HOS",
       "nr": 12,
       "raw_time": "Thu May 21 18:46:00 CEST 2026",
       "current_ship_name": "PEAK BREMEN",
       "current_ship_eta_rueb": "2026-05-22 00:39",
       "current_ship_q": 5,
-      "current_ship_route": "HOS → KLT",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_route": "RÜB → HOS",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
@@ -616,10 +582,10 @@
   ],
   "assignments": [
     {
-      "ship_key": "PEAK BREMEN",
-      "ship_name": "PEAK BREMEN",
-      "eta_rueb": "2026-05-22 00:39",
-      "ship_q": 5,
+      "ship_key": "CONTAINERSHIPS 8",
+      "ship_name": "CONTAINERSHIPS 8",
+      "eta_rueb": "2026-05-22 00:40",
+      "ship_q": 1,
       "assigned_pilot": "Köhler, Olaf",
       "assigned_pilot_q": 0,
       "assigned_tactical_nr": 19,
@@ -629,7 +595,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 8,
+      "candidate_count": 7,
       "candidates": [
         {
           "pilot_name": "Köhler, Olaf",
@@ -662,172 +628,12 @@
           "pilot_q": 0,
           "pilot_tactical_nr": 12,
           "abteilungszeit": "2026-05-21 18:46",
-          "fahrzeug": "RÜB",
+          "fahrzeug": "PEAK BREMEN",
+          "to": "HOS",
           "aufgabe": "Kanalbört",
           "current_ship_name": "PEAK BREMEN",
           "current_ship_eta_rueb": "2026-05-22 00:39",
-          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Hilpert, Jan",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 4,
-          "abteilungszeit": "2026-05-21 19:10",
-          "fahrzeug": "FALSTRIA SWAN",
-          "to": "KLT",
-          "aufgabe": "Seebört",
-          "current_ship_name": "FALSTRIA SWAN",
-          "current_ship_eta_rueb": "2026-05-21 20:50",
           "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Kubica, Gregor",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 5,
-          "abteilungszeit": "2026-05-21 19:10",
-          "fahrzeug": "BALTIC SHARK",
-          "to": "KLT",
-          "aufgabe": "Seebört",
-          "current_ship_name": "BALTIC SHARK",
-          "current_ship_eta_rueb": "2026-05-21 20:47",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Steffens, Micha",
-          "pilot_q": 4,
-          "pilot_tactical_nr": 7,
-          "abteilungszeit": "2026-05-21 19:10",
-          "fahrzeug": "MAUREEN S",
-          "to": "HOS",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "MAUREEN S",
-          "current_ship_eta_rueb": "2026-05-21 20:31",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Escher, Franck",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 8,
-          "abteilungszeit": "2026-05-21 19:10",
-          "fahrzeug": "BALTIC EXPRESS",
-          "to": "HOS",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "BALTIC EXPRESS",
-          "current_ship_eta_rueb": "2026-05-21 20:27",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Marth, Jürgen",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 9,
-          "abteilungszeit": "2026-05-21 19:10",
-          "fahrzeug": "REYMAR",
-          "to": "KLT",
-          "aufgabe": "Seebört",
-          "current_ship_name": "REYMAR",
-          "current_ship_eta_rueb": "2026-05-21 20:24",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        }
-      ],
-      "excluded": [
-        {
-          "pilot_name": "Heeren, Rainer",
-          "pilot_tactical_nr": 6,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "CONTAINERSHIPS VIII",
-          "pilot_current_ship_eta_rueb": "2026-05-22 00:43",
-          "ship_eta_rueb": "2026-05-22 00:39",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Töpfer, Jens-Peter",
-          "pilot_tactical_nr": 3,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "ELKE K",
-          "pilot_current_ship_eta_rueb": "2026-05-22 01:45",
-          "ship_eta_rueb": "2026-05-22 00:39",
-          "availability_kind": "merged_eta"
-        }
-      ],
-      "ship": {
-        "meldung": {
-          "nr": "1",
-          "time": "Fri May 22 00:35:00 CEST 2026",
-          "draft": "5.5",
-          "q_gruppe": "5",
-          "lotsen_anzahl": 1,
-          "confirmed": false,
-          "from": "RÜB",
-          "to": "HOS"
-        },
-        "summary": {
-          "route": "HOS → KLT",
-          "routes": [
-            "HOS → KLT",
-            "RÜB → HOS"
-          ],
-          "q_gruppe": "5",
-          "vg": "3",
-          "draft": "5.50",
-          "length_m": "89.95",
-          "beam_m": "14.09",
-          "queue_title": "Zulauf vom Kanal in Kiel",
-          "zulauf_richtung": "vom_kanal",
-          "pilot_required": "true",
-          "pilot_status": "U",
-          "pilot_1_name": "Biedermann, Johannes",
-          "travel_status": "SAILING_NOK",
-          "makler": "SUB",
-          "dangerous_vessel": "-",
-          "type_of_loading": "Bulk"
-        }
-      }
-    },
-    {
-      "ship_key": "CONTAINERSHIPS 8",
-      "ship_name": "CONTAINERSHIPS 8",
-      "eta_rueb": "2026-05-22 00:40",
-      "ship_q": 1,
-      "assigned_pilot": "Thomaßen, Stephan",
-      "assigned_pilot_q": 0,
-      "assigned_tactical_nr": 18,
-      "assigned_abteilungszeit": "2026-05-21 17:00",
-      "assigned_current_ship_name": "AURELIE",
-      "assigned_current_ship_eta_rueb": "2026-05-21 23:24",
-      "assigned_current_ship_source": "schiffe_merged.seelotsen",
-      "assigned_availability_kind": "merged_eta",
-      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 6,
-      "candidates": [
-        {
-          "pilot_name": "Thomaßen, Stephan",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 18,
-          "abteilungszeit": "2026-05-21 17:00",
-          "fahrzeug": "AURELIE",
-          "to": "HOS",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "AURELIE",
-          "current_ship_eta_rueb": "2026-05-21 23:24",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Biedermann, Johannes",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 12,
-          "abteilungszeit": "2026-05-21 18:46",
-          "fahrzeug": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "PEAK BREMEN",
-          "current_ship_eta_rueb": "2026-05-22 00:39",
-          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
           "availability_kind": "merged_eta"
         },
         {
@@ -912,7 +718,7 @@
       ],
       "ship": {
         "meldung": {
-          "nr": "2",
+          "nr": "1",
           "time": "Fri May 22 00:40:00 CEST 2026",
           "draft": "7.8",
           "q_gruppe": "1",
@@ -936,6 +742,28 @@
   "unassigned_ships": [],
   "unused_pilots": [
     {
+      "pilot_key": "thomaßen_stephan",
+      "vorname": "Stephan",
+      "nachname": "Thomaßen",
+      "pilot_name": "Thomaßen, Stephan",
+      "abteilungszeit": "2026-05-21 17:00",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 18,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "AURELIE",
+      "from": "RÜB",
+      "to": "HOS",
+      "nr": 18,
+      "raw_time": "Thu May 21 17:00:00 CEST 2026",
+      "current_ship_name": "AURELIE",
+      "current_ship_eta_rueb": "2026-05-21 23:24",
+      "current_ship_q": 5,
+      "current_ship_route": "RÜB → HOS",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
       "pilot_key": "biedermann_johannes",
       "vorname": "Johannes",
       "nachname": "Biedermann",
@@ -945,14 +773,16 @@
       "q_source": "q_gruppen_lotsen.entries",
       "pilot_tactical_nr": 12,
       "aufgabe": "Kanalbört",
-      "fahrzeug": "RÜB",
+      "fahrzeug": "PEAK BREMEN",
+      "from": "RÜB",
+      "to": "HOS",
       "nr": 12,
       "raw_time": "Thu May 21 18:46:00 CEST 2026",
       "current_ship_name": "PEAK BREMEN",
       "current_ship_eta_rueb": "2026-05-22 00:39",
       "current_ship_q": 5,
-      "current_ship_route": "HOS → KLT",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_route": "RÜB → HOS",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
