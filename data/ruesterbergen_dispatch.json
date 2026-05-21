@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-21T17:03:12",
+  "generated_at": "2026-05-21T17:05:13",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 12,
     "pilots_total": 10,
-    "pilots_dispatchable": 6,
-    "pilots_visible_only": 4,
+    "pilots_dispatchable": 7,
+    "pilots_visible_only": 3,
     "assignments": 6,
     "unassigned_ships": 6,
-    "unused_pilots": 0
+    "unused_pilots": 1
   },
   "ships": [
     {
@@ -147,7 +147,7 @@
     {
       "ship_key": "C. EPSILON",
       "ship_name": "C. EPSILON",
-      "eta_rueb": "2026-05-21 18:41",
+      "eta_rueb": "2026-05-21 18:39",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
@@ -622,6 +622,7 @@
       "nr": 4,
       "raw_time": "Thu May 21 15:16:00 CEST 2026",
       "current_ship_name": "BERGSTRAUM",
+      "current_ship_eta_rueb": "2026-05-21 21:08",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -823,24 +824,31 @@
       "current_ship_route": "M1069 (HOR → RÜB",
       "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta"
-    }
-  ],
-  "visible_but_not_dispatchable_pilots": [
+    },
     {
       "pilot_key": "vogel_peter",
+      "vorname": "Peter",
+      "nachname": "Vogel",
       "pilot_name": "Vogel, Peter",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 4,
       "abteilungszeit": "2026-05-21 15:16",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 4,
       "aufgabe": "Kanalbört",
       "fahrzeug": "BERGSTRAUM",
       "from": "HOS",
       "to": "RÜB",
+      "nr": 4,
+      "raw_time": "Thu May 21 15:16:00 CEST 2026",
       "current_ship_name": "BERGSTRAUM",
+      "current_ship_eta_rueb": "2026-05-21 21:08",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    },
+      "availability_kind": "merged_eta"
+    }
+  ],
+  "visible_but_not_dispatchable_pilots": [
     {
       "pilot_key": "köhler_olaf",
       "pilot_name": "Köhler, Olaf",
@@ -979,6 +987,15 @@
           "pilot_current_ship_eta_rueb": "2026-05-21 20:27",
           "ship_eta_rueb": "2026-05-21 18:18",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Vogel, Peter",
+          "pilot_tactical_nr": 4,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "BERGSTRAUM",
+          "pilot_current_ship_eta_rueb": "2026-05-21 21:08",
+          "ship_eta_rueb": "2026-05-21 18:18",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -1078,6 +1095,15 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "HOMBURG - M 1069",
           "pilot_current_ship_eta_rueb": "2026-05-21 20:27",
+          "ship_eta_rueb": "2026-05-21 18:22",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Vogel, Peter",
+          "pilot_tactical_nr": 4,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "BERGSTRAUM",
+          "pilot_current_ship_eta_rueb": "2026-05-21 21:08",
           "ship_eta_rueb": "2026-05-21 18:22",
           "availability_kind": "merged_eta"
         }
@@ -1183,6 +1209,15 @@
           "pilot_current_ship_eta_rueb": "2026-05-21 20:27",
           "ship_eta_rueb": "2026-05-21 18:37",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Vogel, Peter",
+          "pilot_tactical_nr": 4,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "BERGSTRAUM",
+          "pilot_current_ship_eta_rueb": "2026-05-21 21:08",
+          "ship_eta_rueb": "2026-05-21 18:37",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -1222,7 +1257,7 @@
     {
       "ship_key": "C. EPSILON",
       "ship_name": "C. EPSILON",
-      "eta_rueb": "2026-05-21 18:41",
+      "eta_rueb": "2026-05-21 18:39",
       "ship_q": 5,
       "assigned_pilot": "Meise, Gregor",
       "assigned_pilot_q": 0,
@@ -1269,7 +1304,16 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "HOMBURG - M 1069",
           "pilot_current_ship_eta_rueb": "2026-05-21 20:27",
-          "ship_eta_rueb": "2026-05-21 18:41",
+          "ship_eta_rueb": "2026-05-21 18:39",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Vogel, Peter",
+          "pilot_tactical_nr": 4,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "BERGSTRAUM",
+          "pilot_current_ship_eta_rueb": "2026-05-21 21:08",
+          "ship_eta_rueb": "2026-05-21 18:39",
           "availability_kind": "merged_eta"
         }
       ],
@@ -1346,6 +1390,15 @@
           "pilot_current_ship_eta_rueb": "2026-05-21 20:27",
           "ship_eta_rueb": "2026-05-21 18:43",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Vogel, Peter",
+          "pilot_tactical_nr": 4,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "BERGSTRAUM",
+          "pilot_current_ship_eta_rueb": "2026-05-21 21:08",
+          "ship_eta_rueb": "2026-05-21 18:43",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -1411,6 +1464,17 @@
           "availability_kind": "merged_eta"
         }
       ],
+      "excluded": [
+        {
+          "pilot_name": "Vogel, Peter",
+          "pilot_tactical_nr": 4,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "BERGSTRAUM",
+          "pilot_current_ship_eta_rueb": "2026-05-21 21:08",
+          "ship_eta_rueb": "2026-05-21 20:36",
+          "availability_kind": "merged_eta"
+        }
+      ],
       "ship": {
         "meldung": {
           "nr": "6",
@@ -1452,43 +1516,132 @@
       "ship_name": "BALTIC EXPRESS",
       "eta_rueb": "2026-05-21 20:39",
       "ship_q": 5,
-      "reason": "kein passender Lotse verfügbar"
+      "reason": "kein passender Lotse verfügbar",
+      "excluded": [
+        {
+          "pilot_name": "Vogel, Peter",
+          "pilot_tactical_nr": 4,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "BERGSTRAUM",
+          "pilot_current_ship_eta_rueb": "2026-05-21 21:08",
+          "ship_eta_rueb": "2026-05-21 20:39",
+          "availability_kind": "merged_eta"
+        }
+      ]
     },
     {
       "ship_key": "MAUREEN S",
       "ship_name": "MAUREEN S",
       "eta_rueb": "2026-05-21 20:44",
       "ship_q": 5,
-      "reason": "kein passender Lotse verfügbar"
+      "reason": "kein passender Lotse verfügbar",
+      "excluded": [
+        {
+          "pilot_name": "Vogel, Peter",
+          "pilot_tactical_nr": 4,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "BERGSTRAUM",
+          "pilot_current_ship_eta_rueb": "2026-05-21 21:08",
+          "ship_eta_rueb": "2026-05-21 20:44",
+          "availability_kind": "merged_eta"
+        }
+      ]
     },
     {
       "ship_key": "BALTIC SHARK",
       "ship_name": "BALTIC SHARK",
       "eta_rueb": "2026-05-21 20:55",
       "ship_q": 2,
-      "reason": "kein passender Lotse verfügbar"
+      "reason": "kein passender Lotse verfügbar",
+      "excluded": [
+        {
+          "pilot_name": "Vogel, Peter",
+          "pilot_tactical_nr": 4,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "BERGSTRAUM",
+          "pilot_current_ship_eta_rueb": "2026-05-21 21:08",
+          "ship_eta_rueb": "2026-05-21 20:55",
+          "availability_kind": "merged_eta"
+        }
+      ]
     },
     {
       "ship_key": "FALSTRIA SWAN",
       "ship_name": "FALSTRIA SWAN",
       "eta_rueb": "2026-05-21 20:59",
       "ship_q": 4,
-      "reason": "kein passender Lotse verfügbar"
+      "reason": "kein passender Lotse verfügbar",
+      "excluded": [
+        {
+          "pilot_name": "Vogel, Peter",
+          "pilot_tactical_nr": 4,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "BERGSTRAUM",
+          "pilot_current_ship_eta_rueb": "2026-05-21 21:08",
+          "ship_eta_rueb": "2026-05-21 20:59",
+          "availability_kind": "merged_eta"
+        }
+      ]
     },
     {
       "ship_key": "LEVENSAU",
       "ship_name": "LEVENSAU",
       "eta_rueb": "2026-05-21 21:00",
       "ship_q": 5,
-      "reason": "kein passender Lotse verfügbar"
+      "reason": "kein passender Lotse verfügbar",
+      "excluded": [
+        {
+          "pilot_name": "Vogel, Peter",
+          "pilot_tactical_nr": 4,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "BERGSTRAUM",
+          "pilot_current_ship_eta_rueb": "2026-05-21 21:08",
+          "ship_eta_rueb": "2026-05-21 21:00",
+          "availability_kind": "merged_eta"
+        }
+      ]
     },
     {
       "ship_key": "MERI",
       "ship_name": "MERI",
       "eta_rueb": "2026-05-21 21:03",
       "ship_q": 4,
-      "reason": "kein passender Lotse verfügbar"
+      "reason": "kein passender Lotse verfügbar",
+      "excluded": [
+        {
+          "pilot_name": "Vogel, Peter",
+          "pilot_tactical_nr": 4,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "BERGSTRAUM",
+          "pilot_current_ship_eta_rueb": "2026-05-21 21:08",
+          "ship_eta_rueb": "2026-05-21 21:03",
+          "availability_kind": "merged_eta"
+        }
+      ]
     }
   ],
-  "unused_pilots": []
+  "unused_pilots": [
+    {
+      "pilot_key": "vogel_peter",
+      "vorname": "Peter",
+      "nachname": "Vogel",
+      "pilot_name": "Vogel, Peter",
+      "abteilungszeit": "2026-05-21 15:16",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 4,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "BERGSTRAUM",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 4,
+      "raw_time": "Thu May 21 15:16:00 CEST 2026",
+      "current_ship_name": "BERGSTRAUM",
+      "current_ship_eta_rueb": "2026-05-21 21:08",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    }
+  ]
 }
