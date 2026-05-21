@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-21T14:07:22",
+  "generated_at": "2026-05-21T14:09:12",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,11 +32,11 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 3,
+    "ships_for_ruesterbergen": 4,
     "pilots_total": 9,
-    "pilots_dispatchable": 8,
-    "pilots_visible_only": 1,
-    "assignments": 3,
+    "pilots_dispatchable": 9,
+    "pilots_visible_only": 0,
+    "assignments": 4,
     "unassigned_ships": 0,
     "unused_pilots": 5
   },
@@ -72,7 +72,7 @@
         "zulauf_richtung": "vom_kanal",
         "pilot_required": "true",
         "pilot_status": "U",
-        "pilot_1_name": "Boyken, Boyke",
+        "pilot_1_name": "Lüdtke, Jan-Torben",
         "travel_status": "SAILING_NOK",
         "makler": "UCA",
         "dangerous_vessel": "-",
@@ -102,6 +102,44 @@
         ],
         "q_gruppe": "5",
         "draft": "5.3"
+      }
+    },
+    {
+      "ship_key": "DENIZ-M",
+      "ship_name": "DENIZ-M",
+      "eta_rueb": "2026-05-21 18:21",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 0,
+      "meldung": {
+        "nr": "4",
+        "time": "Thu May 21 18:21:00 CEST 2026",
+        "draft": "7.3",
+        "q_gruppe": "0",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "0",
+        "vg": "6",
+        "draft": "7.30",
+        "length_m": "180.000",
+        "beam_m": "30",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "U",
+        "pilot_1_name": "Kuberczyk, Cliff",
+        "travel_status": "SAILING_NOK",
+        "makler": "UCA",
+        "dangerous_vessel": "-",
+        "type_of_loading": "Eisen und Stahl"
       }
     },
     {
@@ -338,9 +376,10 @@
       "nr": 1,
       "raw_time": "Thu May 21 13:05:00 CEST 2026",
       "current_ship_name": "SPANACO LOYALTY",
+      "current_ship_eta_rueb": "2026-05-21 17:40",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     }
   ],
@@ -520,25 +559,31 @@
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
-    }
-  ],
-  "visible_but_not_dispatchable_pilots": [
+    },
     {
       "pilot_key": "weise_carsten",
+      "vorname": "Carsten",
+      "nachname": "Weise",
       "pilot_name": "Weise, Carsten",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 1,
       "abteilungszeit": "2026-05-21 13:05",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 1,
       "aufgabe": "Kanalbört",
       "fahrzeug": "SPANACO LOYALTY",
       "from": "HOS",
       "to": "RÜB",
+      "nr": 1,
+      "raw_time": "Thu May 21 13:05:00 CEST 2026",
       "current_ship_name": "SPANACO LOYALTY",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
+      "current_ship_eta_rueb": "2026-05-21 17:40",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
     }
   ],
+  "visible_but_not_dispatchable_pilots": [],
   "assignments": [
     {
       "ship_key": "AKACIA",
@@ -647,6 +692,15 @@
           "pilot_current_ship_eta_rueb": "2026-05-21 17:32",
           "ship_eta_rueb": "2026-05-21 15:29",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Weise, Carsten",
+          "pilot_tactical_nr": 1,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "SPANACO LOYALTY",
+          "pilot_current_ship_eta_rueb": "2026-05-21 17:40",
+          "ship_eta_rueb": "2026-05-21 15:29",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -675,7 +729,7 @@
           "zulauf_richtung": "vom_kanal",
           "pilot_required": "true",
           "pilot_status": "U",
-          "pilot_1_name": "Boyken, Boyke",
+          "pilot_1_name": "Lüdtke, Jan-Torben",
           "travel_status": "SAILING_NOK",
           "makler": "UCA",
           "dangerous_vessel": "-",
@@ -697,7 +751,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 7,
+      "candidate_count": 8,
       "candidates": [
         {
           "pilot_name": "Lehwald, Christian",
@@ -789,6 +843,19 @@
           "current_ship_eta_rueb": "2026-05-21 17:32",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Weise, Carsten",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 1,
+          "abteilungszeit": "2026-05-21 13:05",
+          "fahrzeug": "SPANACO LOYALTY",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "SPANACO LOYALTY",
+          "current_ship_eta_rueb": "2026-05-21 17:40",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -813,10 +880,10 @@
       }
     },
     {
-      "ship_key": "COOLWATER",
-      "ship_name": "COOLWATER",
-      "eta_rueb": "2026-05-21 18:30",
-      "ship_q": 4,
+      "ship_key": "DENIZ-M",
+      "ship_name": "DENIZ-M",
+      "eta_rueb": "2026-05-21 18:21",
+      "ship_q": 0,
       "assigned_pilot": "Haala, Klaus Werner",
       "assigned_pilot_q": 0,
       "assigned_tactical_nr": 12,
@@ -826,7 +893,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 6,
+      "candidate_count": 7,
       "candidates": [
         {
           "pilot_name": "Haala, Klaus Werner",
@@ -905,6 +972,148 @@
           "current_ship_eta_rueb": "2026-05-21 17:32",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Weise, Carsten",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 1,
+          "abteilungszeit": "2026-05-21 13:05",
+          "fahrzeug": "SPANACO LOYALTY",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "SPANACO LOYALTY",
+          "current_ship_eta_rueb": "2026-05-21 17:40",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "4",
+          "time": "Thu May 21 18:21:00 CEST 2026",
+          "draft": "7.3",
+          "q_gruppe": "0",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "HOS → KLT",
+          "routes": [
+            "HOS → KLT",
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "0",
+          "vg": "6",
+          "draft": "7.30",
+          "length_m": "180.000",
+          "beam_m": "30",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "U",
+          "pilot_1_name": "Kuberczyk, Cliff",
+          "travel_status": "SAILING_NOK",
+          "makler": "UCA",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Eisen und Stahl"
+        }
+      }
+    },
+    {
+      "ship_key": "COOLWATER",
+      "ship_name": "COOLWATER",
+      "eta_rueb": "2026-05-21 18:30",
+      "ship_q": 4,
+      "assigned_pilot": "Winkler, René",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 11,
+      "assigned_abteilungszeit": "2026-05-21 08:10",
+      "assigned_current_ship_name": "SOUTH ENABLER",
+      "assigned_current_ship_eta_rueb": "2026-05-21 09:44",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 6,
+      "candidates": [
+        {
+          "pilot_name": "Winkler, René",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 11,
+          "abteilungszeit": "2026-05-21 08:10",
+          "fahrzeug": "SOUTH ENABLER",
+          "to": "KLT",
+          "aufgabe": "Seebört",
+          "current_ship_name": "SOUTH ENABLER",
+          "current_ship_eta_rueb": "2026-05-21 09:44",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Lüdtke, Jan-Torben",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 9,
+          "abteilungszeit": "2026-05-21 09:53",
+          "fahrzeug": "FAIRPLAY 62",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "FAIRPLAY 62",
+          "current_ship_eta_rueb": "2026-05-21 14:25",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Flink, Jörg",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 7,
+          "abteilungszeit": "2026-05-21 11:20",
+          "fahrzeug": "EEMSLIFT HENDRIKA",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "EEMSLIFT HENDRIKA",
+          "current_ship_eta_rueb": "2026-05-21 12:35",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Rambadt, Helge",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 3,
+          "abteilungszeit": "2026-05-21 12:04",
+          "fahrzeug": "HEIKE LEHMANN",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "HEIKE LEHMANN",
+          "current_ship_eta_rueb": "2026-05-21 17:35",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Meise, Gregor",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 4,
+          "abteilungszeit": "2026-05-21 12:04",
+          "fahrzeug": "KIRKE",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "KIRKE",
+          "current_ship_eta_rueb": "2026-05-21 17:32",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Weise, Carsten",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 1,
+          "abteilungszeit": "2026-05-21 13:05",
+          "fahrzeug": "SPANACO LOYALTY",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "SPANACO LOYALTY",
+          "current_ship_eta_rueb": "2026-05-21 17:40",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -946,28 +1155,6 @@
   ],
   "unassigned_ships": [],
   "unused_pilots": [
-    {
-      "pilot_key": "winkler_rené",
-      "vorname": "René",
-      "nachname": "Winkler",
-      "pilot_name": "Winkler, René",
-      "abteilungszeit": "2026-05-21 08:10",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 11,
-      "aufgabe": "Seebört",
-      "fahrzeug": "SOUTH ENABLER",
-      "from": "HOS",
-      "to": "KLT",
-      "nr": 11,
-      "raw_time": "Thu May 21 08:10:00 CEST 2026",
-      "current_ship_name": "SOUTH ENABLER",
-      "current_ship_eta_rueb": "2026-05-21 09:44",
-      "current_ship_q": 0,
-      "current_ship_route": "HOS → KLT",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
-    },
     {
       "pilot_key": "lüdtke_jan-torben",
       "vorname": "Jan-Torben",
@@ -1051,6 +1238,28 @@
       "raw_time": "Thu May 21 12:04:00 CEST 2026",
       "current_ship_name": "KIRKE",
       "current_ship_eta_rueb": "2026-05-21 17:32",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "weise_carsten",
+      "vorname": "Carsten",
+      "nachname": "Weise",
+      "pilot_name": "Weise, Carsten",
+      "abteilungszeit": "2026-05-21 13:05",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 1,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "SPANACO LOYALTY",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 1,
+      "raw_time": "Thu May 21 13:05:00 CEST 2026",
+      "current_ship_name": "SPANACO LOYALTY",
+      "current_ship_eta_rueb": "2026-05-21 17:40",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
