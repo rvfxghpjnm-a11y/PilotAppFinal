@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-23T00:35:12",
+  "generated_at": "2026-05-23T00:37:07",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 5,
     "pilots_total": 17,
-    "pilots_dispatchable": 16,
-    "pilots_visible_only": 1,
+    "pilots_dispatchable": 17,
+    "pilots_visible_only": 0,
     "assignments": 5,
     "unassigned_ships": 0,
-    "unused_pilots": 11
+    "unused_pilots": 12
   },
   "ships": [
     {
@@ -405,16 +405,16 @@
       "q_source": "q_gruppen_lotsen.entries",
       "pilot_tactical_nr": 9,
       "aufgabe": "Kanalbört",
-      "fahrzeug": "VAN KINSBERGEN",
-      "from": "HOR",
-      "to": "RÜB",
+      "fahrzeug": "RÜB",
       "nr": 9,
       "raw_time": "Fri May 22 19:45:00 CEST 2026",
-      "current_ship_name": "VAN KINSBERGEN",
+      "current_ship_name": "RÜB",
+      "current_ship_eta_rueb": "2026-05-22 19:45",
       "current_ship_q": 0,
-      "current_ship_route": "HOR → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
+      "current_ship_route": "RÜB",
+      "current_ship_source": "special.already_in_rueb",
+      "availability_kind": "already_in_rueb",
+      "availability_hint": "Lotse gilt als bereits in RÜB"
     },
     {
       "pilot_key": "wäntig_lutz",
@@ -563,7 +563,7 @@
       "nr": 2,
       "raw_time": "Fri May 22 22:07:00 CEST 2026",
       "current_ship_name": "UNDEN",
-      "current_ship_eta_rueb": "2026-05-23 03:12",
+      "current_ship_eta_rueb": "2026-05-23 03:13",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -585,7 +585,7 @@
       "nr": 1,
       "raw_time": "Fri May 22 22:49:00 CEST 2026",
       "current_ship_name": "LIKYA THERESA",
-      "current_ship_eta_rueb": "2026-05-23 03:17",
+      "current_ship_eta_rueb": "2026-05-23 03:20",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -768,6 +768,27 @@
       "availability_hint": "Lotse gilt als bereits in RÜB"
     },
     {
+      "pilot_key": "escher_franck",
+      "vorname": "Franck",
+      "nachname": "Escher",
+      "pilot_name": "Escher, Franck",
+      "abteilungszeit": "2026-05-22 19:45",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 9,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "RÜB",
+      "nr": 9,
+      "raw_time": "Fri May 22 19:45:00 CEST 2026",
+      "current_ship_name": "RÜB",
+      "current_ship_eta_rueb": "2026-05-22 19:45",
+      "current_ship_q": 0,
+      "current_ship_route": "RÜB",
+      "current_ship_source": "special.already_in_rueb",
+      "availability_kind": "already_in_rueb",
+      "availability_hint": "Lotse gilt als bereits in RÜB"
+    },
+    {
       "pilot_key": "wäntig_lutz",
       "vorname": "Lutz",
       "nachname": "Wäntig",
@@ -914,7 +935,7 @@
       "nr": 2,
       "raw_time": "Fri May 22 22:07:00 CEST 2026",
       "current_ship_name": "UNDEN",
-      "current_ship_eta_rueb": "2026-05-23 03:12",
+      "current_ship_eta_rueb": "2026-05-23 03:13",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -936,30 +957,14 @@
       "nr": 1,
       "raw_time": "Fri May 22 22:49:00 CEST 2026",
       "current_ship_name": "LIKYA THERESA",
-      "current_ship_eta_rueb": "2026-05-23 03:17",
+      "current_ship_eta_rueb": "2026-05-23 03:20",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     }
   ],
-  "visible_but_not_dispatchable_pilots": [
-    {
-      "pilot_key": "escher_franck",
-      "pilot_name": "Escher, Franck",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 9,
-      "abteilungszeit": "2026-05-22 19:45",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "VAN KINSBERGEN",
-      "from": "HOR",
-      "to": "RÜB",
-      "current_ship_name": "VAN KINSBERGEN",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    }
-  ],
+  "visible_but_not_dispatchable_pilots": [],
   "assignments": [
     {
       "ship_key": "ATLANTIS ARKI",
@@ -975,7 +980,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 11,
+      "candidate_count": 12,
       "candidates": [
         {
           "pilot_name": "Zimmermann, Steffen",
@@ -1082,6 +1087,19 @@
           "availability_hint": "Lotse gilt als bereits in RÜB"
         },
         {
+          "pilot_name": "Escher, Franck",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 9,
+          "abteilungszeit": "2026-05-22 19:45",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-22 19:45",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
+        },
+        {
           "pilot_name": "Wäntig, Lutz",
           "pilot_q": 0,
           "pilot_tactical_nr": 8,
@@ -1154,7 +1172,7 @@
           "pilot_tactical_nr": 2,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "UNDEN",
-          "pilot_current_ship_eta_rueb": "2026-05-23 03:12",
+          "pilot_current_ship_eta_rueb": "2026-05-23 03:13",
           "ship_eta_rueb": "2026-05-23 02:13",
           "availability_kind": "merged_eta"
         },
@@ -1163,7 +1181,7 @@
           "pilot_tactical_nr": 1,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "LIKYA THERESA",
-          "pilot_current_ship_eta_rueb": "2026-05-23 03:17",
+          "pilot_current_ship_eta_rueb": "2026-05-23 03:20",
           "ship_eta_rueb": "2026-05-23 02:13",
           "availability_kind": "merged_eta"
         }
@@ -1215,7 +1233,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 15,
+      "candidate_count": 16,
       "candidates": [
         {
           "pilot_name": "Münker, Niels",
@@ -1309,6 +1327,19 @@
           "availability_hint": "Lotse gilt als bereits in RÜB"
         },
         {
+          "pilot_name": "Escher, Franck",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 9,
+          "abteilungszeit": "2026-05-22 19:45",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-22 19:45",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
+        },
+        {
           "pilot_name": "Wäntig, Lutz",
           "pilot_q": 0,
           "pilot_tactical_nr": 8,
@@ -1395,7 +1426,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "UNDEN",
-          "current_ship_eta_rueb": "2026-05-23 03:12",
+          "current_ship_eta_rueb": "2026-05-23 03:13",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1408,7 +1439,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "LIKYA THERESA",
-          "current_ship_eta_rueb": "2026-05-23 03:17",
+          "current_ship_eta_rueb": "2026-05-23 03:20",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
@@ -1463,7 +1494,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 14,
+      "candidate_count": 15,
       "candidates": [
         {
           "pilot_name": "Kordt, Remo",
@@ -1544,6 +1575,19 @@
           "availability_hint": "Lotse gilt als bereits in RÜB"
         },
         {
+          "pilot_name": "Escher, Franck",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 9,
+          "abteilungszeit": "2026-05-22 19:45",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-22 19:45",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
+        },
+        {
           "pilot_name": "Wäntig, Lutz",
           "pilot_q": 0,
           "pilot_tactical_nr": 8,
@@ -1630,7 +1674,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "UNDEN",
-          "current_ship_eta_rueb": "2026-05-23 03:12",
+          "current_ship_eta_rueb": "2026-05-23 03:13",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1643,7 +1687,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "LIKYA THERESA",
-          "current_ship_eta_rueb": "2026-05-23 03:17",
+          "current_ship_eta_rueb": "2026-05-23 03:20",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
@@ -1696,7 +1740,7 @@
       "assigned_current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 13,
+      "candidate_count": 14,
       "candidates": [
         {
           "pilot_name": "Stürenburg, Jan",
@@ -1764,6 +1808,19 @@
           "availability_hint": "Lotse gilt als bereits in RÜB"
         },
         {
+          "pilot_name": "Escher, Franck",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 9,
+          "abteilungszeit": "2026-05-22 19:45",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-22 19:45",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
+        },
+        {
           "pilot_name": "Wäntig, Lutz",
           "pilot_q": 0,
           "pilot_tactical_nr": 8,
@@ -1850,7 +1907,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "UNDEN",
-          "current_ship_eta_rueb": "2026-05-23 03:12",
+          "current_ship_eta_rueb": "2026-05-23 03:13",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1863,7 +1920,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "LIKYA THERESA",
-          "current_ship_eta_rueb": "2026-05-23 03:17",
+          "current_ship_eta_rueb": "2026-05-23 03:20",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
@@ -1916,7 +1973,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 12,
+      "candidate_count": 13,
       "candidates": [
         {
           "pilot_name": "Kahler, Volker",
@@ -1971,6 +2028,19 @@
           "availability_hint": "Lotse gilt als bereits in RÜB"
         },
         {
+          "pilot_name": "Escher, Franck",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 9,
+          "abteilungszeit": "2026-05-22 19:45",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-22 19:45",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
+        },
+        {
           "pilot_name": "Wäntig, Lutz",
           "pilot_q": 0,
           "pilot_tactical_nr": 8,
@@ -2057,7 +2127,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "UNDEN",
-          "current_ship_eta_rueb": "2026-05-23 03:12",
+          "current_ship_eta_rueb": "2026-05-23 03:13",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -2070,7 +2140,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "LIKYA THERESA",
-          "current_ship_eta_rueb": "2026-05-23 03:17",
+          "current_ship_eta_rueb": "2026-05-23 03:20",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
@@ -2157,6 +2227,27 @@
       "raw_time": "Fri May 22 19:43:00 CEST 2026",
       "current_ship_name": "RÜB",
       "current_ship_eta_rueb": "2026-05-22 19:43",
+      "current_ship_q": 0,
+      "current_ship_route": "RÜB",
+      "current_ship_source": "special.already_in_rueb",
+      "availability_kind": "already_in_rueb",
+      "availability_hint": "Lotse gilt als bereits in RÜB"
+    },
+    {
+      "pilot_key": "escher_franck",
+      "vorname": "Franck",
+      "nachname": "Escher",
+      "pilot_name": "Escher, Franck",
+      "abteilungszeit": "2026-05-22 19:45",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 9,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "RÜB",
+      "nr": 9,
+      "raw_time": "Fri May 22 19:45:00 CEST 2026",
+      "current_ship_name": "RÜB",
+      "current_ship_eta_rueb": "2026-05-22 19:45",
       "current_ship_q": 0,
       "current_ship_route": "RÜB",
       "current_ship_source": "special.already_in_rueb",
@@ -2310,7 +2401,7 @@
       "nr": 2,
       "raw_time": "Fri May 22 22:07:00 CEST 2026",
       "current_ship_name": "UNDEN",
-      "current_ship_eta_rueb": "2026-05-23 03:12",
+      "current_ship_eta_rueb": "2026-05-23 03:13",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -2332,7 +2423,7 @@
       "nr": 1,
       "raw_time": "Fri May 22 22:49:00 CEST 2026",
       "current_ship_name": "LIKYA THERESA",
-      "current_ship_eta_rueb": "2026-05-23 03:17",
+      "current_ship_eta_rueb": "2026-05-23 03:20",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
