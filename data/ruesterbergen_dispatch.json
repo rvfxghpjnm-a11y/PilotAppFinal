@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-22T13:25:09",
+  "generated_at": "2026-05-22T13:27:11",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,17 +34,17 @@
   "counts": {
     "ships_for_ruesterbergen": 10,
     "pilots_total": 13,
-    "pilots_dispatchable": 11,
-    "pilots_visible_only": 2,
+    "pilots_dispatchable": 12,
+    "pilots_visible_only": 1,
     "assignments": 10,
     "unassigned_ships": 0,
-    "unused_pilots": 1
+    "unused_pilots": 2
   },
   "ships": [
     {
       "ship_key": "EASTERN ROCK",
       "ship_name": "EASTERN ROCK",
-      "eta_rueb": "2026-05-22 13:44",
+      "eta_rueb": "2026-05-22 13:42",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 4,
       "meldung": {
@@ -637,9 +637,10 @@
       "nr": 3,
       "raw_time": "Fri May 22 12:05:00 CEST 2026",
       "current_ship_name": "ROTRA VENTE",
+      "current_ship_eta_rueb": "2026-05-22 18:07",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
@@ -908,6 +909,28 @@
       "availability_kind": "merged_eta"
     },
     {
+      "pilot_key": "otten_janning",
+      "vorname": "Janning",
+      "nachname": "Otten",
+      "pilot_name": "Otten, Janning",
+      "abteilungszeit": "2026-05-22 12:05",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 3,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "ROTRA VENTE",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 3,
+      "raw_time": "Fri May 22 12:05:00 CEST 2026",
+      "current_ship_name": "ROTRA VENTE",
+      "current_ship_eta_rueb": "2026-05-22 18:07",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
       "pilot_key": "thiel_thomas",
       "vorname": "Thomas",
       "nachname": "Thiel",
@@ -932,21 +955,6 @@
   ],
   "visible_but_not_dispatchable_pilots": [
     {
-      "pilot_key": "otten_janning",
-      "pilot_name": "Otten, Janning",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 3,
-      "abteilungszeit": "2026-05-22 12:05",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "ROTRA VENTE",
-      "from": "HOS",
-      "to": "RÜB",
-      "current_ship_name": "ROTRA VENTE",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    },
-    {
       "pilot_key": "ünsal_hüseyin",
       "pilot_name": "Ünsal, Hüseyin",
       "pilot_q": 0,
@@ -966,7 +974,7 @@
     {
       "ship_key": "EASTERN ROCK",
       "ship_name": "EASTERN ROCK",
-      "eta_rueb": "2026-05-22 13:44",
+      "eta_rueb": "2026-05-22 13:42",
       "ship_q": 4,
       "assigned_pilot": "Schran, Oliver",
       "assigned_pilot_q": 0,
@@ -1117,7 +1125,16 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "EN AVANT 10 + EN AVANT 1 + H-331",
           "pilot_current_ship_eta_rueb": "2026-05-22 13:57",
-          "ship_eta_rueb": "2026-05-22 13:44",
+          "ship_eta_rueb": "2026-05-22 13:42",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Otten, Janning",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "ROTRA VENTE",
+          "pilot_current_ship_eta_rueb": "2026-05-22 18:07",
+          "ship_eta_rueb": "2026-05-22 13:42",
           "availability_kind": "merged_eta"
         }
       ],
@@ -1302,6 +1319,17 @@
           "availability_kind": "merged_eta"
         }
       ],
+      "excluded": [
+        {
+          "pilot_name": "Otten, Janning",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "ROTRA VENTE",
+          "pilot_current_ship_eta_rueb": "2026-05-22 18:07",
+          "ship_eta_rueb": "2026-05-22 15:00",
+          "availability_kind": "merged_eta"
+        }
+      ],
       "ship": {
         "meldung": {
           "nr": "2",
@@ -1459,6 +1487,17 @@
           "availability_kind": "merged_eta"
         }
       ],
+      "excluded": [
+        {
+          "pilot_name": "Otten, Janning",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "ROTRA VENTE",
+          "pilot_current_ship_eta_rueb": "2026-05-22 18:07",
+          "ship_eta_rueb": "2026-05-22 15:00",
+          "availability_kind": "merged_eta"
+        }
+      ],
       "ship": {
         "meldung": {
           "nr": "10",
@@ -1603,6 +1642,17 @@
           "availability_kind": "merged_eta"
         }
       ],
+      "excluded": [
+        {
+          "pilot_name": "Otten, Janning",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "ROTRA VENTE",
+          "pilot_current_ship_eta_rueb": "2026-05-22 18:07",
+          "ship_eta_rueb": "2026-05-22 15:27",
+          "availability_kind": "merged_eta"
+        }
+      ],
       "ship": {
         "meldung": {
           "nr": "3",
@@ -1739,6 +1789,15 @@
           "reason": "Quali passt nicht (4 > 2)",
           "pilot_q": 4,
           "ship_q": 2
+        },
+        {
+          "pilot_name": "Otten, Janning",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "ROTRA VENTE",
+          "pilot_current_ship_eta_rueb": "2026-05-22 18:07",
+          "ship_eta_rueb": "2026-05-22 15:38",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -1870,6 +1929,17 @@
           "availability_kind": "merged_eta"
         }
       ],
+      "excluded": [
+        {
+          "pilot_name": "Otten, Janning",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "ROTRA VENTE",
+          "pilot_current_ship_eta_rueb": "2026-05-22 18:07",
+          "ship_eta_rueb": "2026-05-22 15:41",
+          "availability_kind": "merged_eta"
+        }
+      ],
       "ship": {
         "meldung": {
           "nr": "5",
@@ -1980,6 +2050,15 @@
           "reason": "Quali passt nicht (4 > 2)",
           "pilot_q": 4,
           "ship_q": 2
+        },
+        {
+          "pilot_name": "Otten, Janning",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "ROTRA VENTE",
+          "pilot_current_ship_eta_rueb": "2026-05-22 18:07",
+          "ship_eta_rueb": "2026-05-22 15:43",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -2085,6 +2164,17 @@
           "availability_kind": "merged_eta"
         }
       ],
+      "excluded": [
+        {
+          "pilot_name": "Otten, Janning",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "ROTRA VENTE",
+          "pilot_current_ship_eta_rueb": "2026-05-22 18:07",
+          "ship_eta_rueb": "2026-05-22 17:50",
+          "availability_kind": "merged_eta"
+        }
+      ],
       "ship": {
         "meldung": {
           "nr": "8",
@@ -2175,6 +2265,17 @@
           "availability_kind": "merged_eta"
         }
       ],
+      "excluded": [
+        {
+          "pilot_name": "Otten, Janning",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "ROTRA VENTE",
+          "pilot_current_ship_eta_rueb": "2026-05-22 18:07",
+          "ship_eta_rueb": "2026-05-22 17:53",
+          "availability_kind": "merged_eta"
+        }
+      ],
       "ship": {
         "meldung": {
           "nr": "7",
@@ -2252,6 +2353,17 @@
           "availability_kind": "merged_eta"
         }
       ],
+      "excluded": [
+        {
+          "pilot_name": "Otten, Janning",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "ROTRA VENTE",
+          "pilot_current_ship_eta_rueb": "2026-05-22 18:07",
+          "ship_eta_rueb": "2026-05-22 17:56",
+          "availability_kind": "merged_eta"
+        }
+      ],
       "ship": {
         "meldung": {
           "nr": "9",
@@ -2289,6 +2401,28 @@
   ],
   "unassigned_ships": [],
   "unused_pilots": [
+    {
+      "pilot_key": "otten_janning",
+      "vorname": "Janning",
+      "nachname": "Otten",
+      "pilot_name": "Otten, Janning",
+      "abteilungszeit": "2026-05-22 12:05",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 3,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "ROTRA VENTE",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 3,
+      "raw_time": "Fri May 22 12:05:00 CEST 2026",
+      "current_ship_name": "ROTRA VENTE",
+      "current_ship_eta_rueb": "2026-05-22 18:07",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
     {
       "pilot_key": "thiel_thomas",
       "vorname": "Thomas",
