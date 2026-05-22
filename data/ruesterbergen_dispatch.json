@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-22T10:53:07",
+  "generated_at": "2026-05-22T10:55:08",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,12 +32,12 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 8,
+    "ships_for_ruesterbergen": 10,
     "pilots_total": 7,
     "pilots_dispatchable": 7,
     "pilots_visible_only": 0,
     "assignments": 7,
-    "unassigned_ships": 1,
+    "unassigned_ships": 3,
     "unused_pilots": 0
   },
   "ships": [
@@ -226,7 +226,7 @@
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 4,
       "meldung": {
-        "nr": "8",
+        "nr": "10",
         "time": "Sat May 23 04:00:00 CEST 2026",
         "draft": "5.0",
         "q_gruppe": "4",
@@ -285,6 +285,43 @@
       }
     },
     {
+      "ship_key": "FURE VESBORG",
+      "ship_name": "FURE VESBORG",
+      "eta_rueb": "2026-05-22 15:35",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 2,
+      "meldung": {
+        "nr": "8",
+        "time": "Fri May 22 15:35:00 CEST 2026",
+        "draft": "8.9",
+        "q_gruppe": "2",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "2",
+        "vg": "5",
+        "draft": "8.90",
+        "length_m": "149.9",
+        "beam_m": "22.94",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "U",
+        "travel_status": "SAILING_NOK",
+        "makler": "SUB",
+        "dangerous_vessel": "ja",
+        "type_of_loading": "Erdoel und Derivate"
+      }
+    },
+    {
       "ship_key": "LADY HANNEKE",
       "ship_name": "LADY HANNEKE",
       "eta_rueb": "2026-05-22 15:37",
@@ -318,6 +355,44 @@
         "pilot_1_name": "Soeth, Stephan",
         "travel_status": "SAILING_NOK",
         "makler": "UCA",
+        "dangerous_vessel": "-",
+        "type_of_loading": "Bulk"
+      }
+    },
+    {
+      "ship_key": "MAI LEHMANN",
+      "ship_name": "MAI LEHMANN",
+      "eta_rueb": "2026-05-22 15:40",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 5,
+      "meldung": {
+        "nr": "9",
+        "time": "Fri May 22 15:40:00 CEST 2026",
+        "draft": "6.0",
+        "q_gruppe": "5",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "5",
+        "vg": "3",
+        "draft": "6.00",
+        "length_m": "90.44",
+        "beam_m": "13.6",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "P",
+        "pilot_1_name": "Hönisch, Gero",
+        "travel_status": "SAILING_NOK",
+        "makler": "NIK",
         "dangerous_vessel": "-",
         "type_of_loading": "Bulk"
       }
@@ -1143,7 +1218,7 @@
       ],
       "ship": {
         "meldung": {
-          "nr": "8",
+          "nr": "10",
           "time": "Sat May 23 04:00:00 CEST 2026",
           "draft": "5.0",
           "q_gruppe": "4",
@@ -1354,6 +1429,29 @@
           "ship_q": 1
         }
       ]
+    },
+    {
+      "ship_key": "FURE VESBORG",
+      "ship_name": "FURE VESBORG",
+      "eta_rueb": "2026-05-22 15:35",
+      "ship_q": 2,
+      "reason": "kein passender Lotse verfügbar",
+      "excluded": [
+        {
+          "pilot_name": "Janson, Sven",
+          "pilot_tactical_nr": 1,
+          "reason": "Quali passt nicht (4 > 2)",
+          "pilot_q": 4,
+          "ship_q": 2
+        }
+      ]
+    },
+    {
+      "ship_key": "MAI LEHMANN",
+      "ship_name": "MAI LEHMANN",
+      "eta_rueb": "2026-05-22 15:40",
+      "ship_q": 5,
+      "reason": "kein passender Lotse verfügbar"
     }
   ],
   "unused_pilots": []
