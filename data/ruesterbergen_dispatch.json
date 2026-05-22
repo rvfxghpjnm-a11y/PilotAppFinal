@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-22T18:29:13",
+  "generated_at": "2026-05-22T18:31:11",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 10,
     "pilots_total": 15,
-    "pilots_dispatchable": 11,
-    "pilots_visible_only": 4,
+    "pilots_dispatchable": 12,
+    "pilots_visible_only": 3,
     "assignments": 10,
     "unassigned_ships": 0,
-    "unused_pilots": 1
+    "unused_pilots": 2
   },
   "ships": [
     {
@@ -649,6 +649,7 @@
       "nr": 5,
       "raw_time": "Fri May 22 17:01:00 CEST 2026",
       "current_ship_name": "ADAMAS",
+      "current_ship_eta_rueb": "2026-05-22 22:45",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -956,24 +957,31 @@
       "current_ship_route": "RÜB → HOS",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
-    }
-  ],
-  "visible_but_not_dispatchable_pilots": [
+    },
     {
       "pilot_key": "münker_niels",
+      "vorname": "Niels",
+      "nachname": "Münker",
       "pilot_name": "Münker, Niels",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 5,
       "abteilungszeit": "2026-05-22 17:01",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 5,
       "aufgabe": "Kanalbört",
       "fahrzeug": "ADAMAS",
       "from": "HOR",
       "to": "RÜB",
+      "nr": 5,
+      "raw_time": "Fri May 22 17:01:00 CEST 2026",
       "current_ship_name": "ADAMAS",
+      "current_ship_eta_rueb": "2026-05-22 22:45",
+      "current_ship_q": 0,
+      "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    },
+      "availability_kind": "merged_eta"
+    }
+  ],
+  "visible_but_not_dispatchable_pilots": [
     {
       "pilot_key": "kordt_remo",
       "pilot_name": "Kordt, Remo",
@@ -1172,6 +1180,15 @@
           "pilot_current_ship_eta_rueb": "2026-05-22 20:30",
           "ship_eta_rueb": "2026-05-22 19:48",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Münker, Niels",
+          "pilot_tactical_nr": 5,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "ADAMAS",
+          "pilot_current_ship_eta_rueb": "2026-05-22 22:45",
+          "ship_eta_rueb": "2026-05-22 19:48",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -1349,6 +1366,15 @@
           "pilot_current_ship_eta_rueb": "2026-05-22 20:30",
           "ship_eta_rueb": "2026-05-22 19:51",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Münker, Niels",
+          "pilot_tactical_nr": 5,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "ADAMAS",
+          "pilot_current_ship_eta_rueb": "2026-05-22 22:45",
+          "ship_eta_rueb": "2026-05-22 19:51",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -1515,6 +1541,15 @@
           "pilot_current_ship_eta_rueb": "2026-05-22 20:30",
           "ship_eta_rueb": "2026-05-22 19:56",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Münker, Niels",
+          "pilot_tactical_nr": 5,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "ADAMAS",
+          "pilot_current_ship_eta_rueb": "2026-05-22 22:45",
+          "ship_eta_rueb": "2026-05-22 19:56",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -1668,6 +1703,15 @@
           "pilot_current_ship_eta_rueb": "2026-05-22 20:30",
           "ship_eta_rueb": "2026-05-22 20:05",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Münker, Niels",
+          "pilot_tactical_nr": 5,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "ADAMAS",
+          "pilot_current_ship_eta_rueb": "2026-05-22 22:45",
+          "ship_eta_rueb": "2026-05-22 20:05",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -1811,6 +1855,17 @@
           "availability_kind": "merged_eta"
         }
       ],
+      "excluded": [
+        {
+          "pilot_name": "Münker, Niels",
+          "pilot_tactical_nr": 5,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "ADAMAS",
+          "pilot_current_ship_eta_rueb": "2026-05-22 22:45",
+          "ship_eta_rueb": "2026-05-22 22:03",
+          "availability_kind": "merged_eta"
+        }
+      ],
       "ship": {
         "meldung": {
           "nr": "5",
@@ -1940,6 +1995,17 @@
           "availability_kind": "merged_eta"
         }
       ],
+      "excluded": [
+        {
+          "pilot_name": "Münker, Niels",
+          "pilot_tactical_nr": 5,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "ADAMAS",
+          "pilot_current_ship_eta_rueb": "2026-05-22 22:45",
+          "ship_eta_rueb": "2026-05-22 22:07",
+          "availability_kind": "merged_eta"
+        }
+      ],
       "ship": {
         "meldung": {
           "nr": "6",
@@ -2056,6 +2122,17 @@
           "availability_kind": "merged_eta"
         }
       ],
+      "excluded": [
+        {
+          "pilot_name": "Münker, Niels",
+          "pilot_tactical_nr": 5,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "ADAMAS",
+          "pilot_current_ship_eta_rueb": "2026-05-22 22:45",
+          "ship_eta_rueb": "2026-05-22 22:09",
+          "availability_kind": "merged_eta"
+        }
+      ],
       "ship": {
         "meldung": {
           "nr": "8",
@@ -2146,6 +2223,17 @@
           "availability_kind": "merged_eta"
         }
       ],
+      "excluded": [
+        {
+          "pilot_name": "Münker, Niels",
+          "pilot_tactical_nr": 5,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "ADAMAS",
+          "pilot_current_ship_eta_rueb": "2026-05-22 22:45",
+          "ship_eta_rueb": "2026-05-22 22:10",
+          "availability_kind": "merged_eta"
+        }
+      ],
       "ship": {
         "meldung": {
           "nr": "7",
@@ -2194,7 +2282,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 3,
+      "candidate_count": 4,
       "candidates": [
         {
           "pilot_name": "Staedler, Frank",
@@ -2232,6 +2320,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "ECOMAR",
           "current_ship_eta_rueb": "2026-05-22 17:41",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Münker, Niels",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 5,
+          "abteilungszeit": "2026-05-22 17:01",
+          "fahrzeug": "ADAMAS",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ADAMAS",
+          "current_ship_eta_rueb": "2026-05-22 22:45",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
@@ -2284,7 +2385,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 2,
+      "candidate_count": 3,
       "candidates": [
         {
           "pilot_name": "Migge, Alexander",
@@ -2309,6 +2410,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "ECOMAR",
           "current_ship_eta_rueb": "2026-05-22 17:41",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Münker, Niels",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 5,
+          "abteilungszeit": "2026-05-22 17:01",
+          "fahrzeug": "ADAMAS",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ADAMAS",
+          "current_ship_eta_rueb": "2026-05-22 22:45",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
@@ -2356,6 +2470,28 @@
       "current_ship_eta_rueb": "2026-05-22 17:41",
       "current_ship_q": 4,
       "current_ship_route": "RÜB → HOS",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "münker_niels",
+      "vorname": "Niels",
+      "nachname": "Münker",
+      "pilot_name": "Münker, Niels",
+      "abteilungszeit": "2026-05-22 17:01",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 5,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "ADAMAS",
+      "from": "HOR",
+      "to": "RÜB",
+      "nr": 5,
+      "raw_time": "Fri May 22 17:01:00 CEST 2026",
+      "current_ship_name": "ADAMAS",
+      "current_ship_eta_rueb": "2026-05-22 22:45",
+      "current_ship_q": 0,
+      "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     }
