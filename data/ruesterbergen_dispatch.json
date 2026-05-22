@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-22T10:45:14",
+  "generated_at": "2026-05-22T10:47:14",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,13 +32,13 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 7,
+    "ships_for_ruesterbergen": 8,
     "pilots_total": 7,
     "pilots_dispatchable": 7,
     "pilots_visible_only": 0,
-    "assignments": 6,
+    "assignments": 7,
     "unassigned_ships": 1,
-    "unused_pilots": 1
+    "unused_pilots": 0
   },
   "ships": [
     {
@@ -212,7 +212,35 @@
         "route": "HOS → KLT",
         "routes": [
           "HOS → KLT",
-          "RÜB → HOS"
+          "RÜB → HOS",
+          "KRH → HOS"
+        ],
+        "q_gruppe": "4",
+        "draft": "5.0"
+      }
+    },
+    {
+      "ship_key": "EN AVANT 19+LEVENSAU+HAVEN SEASEVEN",
+      "ship_name": "EN AVANT 19+LEVENSAU+HAVEN SEASEVEN",
+      "eta_rueb": "2026-05-22 13:30",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 4,
+      "meldung": {
+        "nr": "8",
+        "time": "Sat May 23 04:00:00 CEST 2026",
+        "draft": "5.0",
+        "q_gruppe": "4",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "KRH",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS",
+          "KRH → HOS"
         ],
         "q_gruppe": "4",
         "draft": "5.0"
@@ -1043,7 +1071,81 @@
           "route": "HOS → KLT",
           "routes": [
             "HOS → KLT",
-            "RÜB → HOS"
+            "RÜB → HOS",
+            "KRH → HOS"
+          ],
+          "q_gruppe": "4",
+          "draft": "5.0"
+        }
+      }
+    },
+    {
+      "ship_key": "EN AVANT 19+LEVENSAU+HAVEN SEASEVEN",
+      "ship_name": "EN AVANT 19+LEVENSAU+HAVEN SEASEVEN",
+      "eta_rueb": "2026-05-22 13:30",
+      "ship_q": 4,
+      "assigned_pilot": "Janson, Sven",
+      "assigned_pilot_q": 4,
+      "assigned_tactical_nr": 1,
+      "assigned_abteilungszeit": "2026-05-22 09:45",
+      "assigned_current_ship_name": "KARESSA",
+      "assigned_current_ship_eta_rueb": "2026-05-22 11:00",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "pilot_name": "Janson, Sven",
+          "pilot_q": 4,
+          "pilot_tactical_nr": 1,
+          "abteilungszeit": "2026-05-22 09:45",
+          "fahrzeug": "KARESSA",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "KARESSA",
+          "current_ship_eta_rueb": "2026-05-22 11:00",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Jeschek, Hauke",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "RIX UNION",
+          "pilot_current_ship_eta_rueb": "2026-05-22 13:46",
+          "ship_eta_rueb": "2026-05-22 13:30",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Skawianczyk, Artur",
+          "pilot_tactical_nr": 2,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "EN AVANT 10 + EN AVANT 1 + H-331",
+          "pilot_current_ship_eta_rueb": "2026-05-22 14:00",
+          "ship_eta_rueb": "2026-05-22 13:30",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "8",
+          "time": "Sat May 23 04:00:00 CEST 2026",
+          "draft": "5.0",
+          "q_gruppe": "4",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "KRH",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "HOS → KLT",
+          "routes": [
+            "HOS → KLT",
+            "RÜB → HOS",
+            "KRH → HOS"
           ],
           "q_gruppe": "4",
           "draft": "5.0"
@@ -1064,7 +1166,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 3,
+      "candidate_count": 2,
       "candidates": [
         {
           "pilot_name": "Jeschek, Hauke",
@@ -1089,19 +1191,6 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "EN AVANT 10 + EN AVANT 1 + H-331",
           "current_ship_eta_rueb": "2026-05-22 14:00",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Janson, Sven",
-          "pilot_q": 4,
-          "pilot_tactical_nr": 1,
-          "abteilungszeit": "2026-05-22 09:45",
-          "fahrzeug": "KARESSA",
-          "to": "HOS",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "KARESSA",
-          "current_ship_eta_rueb": "2026-05-22 11:00",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
@@ -1154,7 +1243,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 2,
+      "candidate_count": 1,
       "candidates": [
         {
           "pilot_name": "Skawianczyk, Artur",
@@ -1166,19 +1255,6 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "EN AVANT 10 + EN AVANT 1 + H-331",
           "current_ship_eta_rueb": "2026-05-22 14:00",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Janson, Sven",
-          "pilot_q": 4,
-          "pilot_tactical_nr": 1,
-          "abteilungszeit": "2026-05-22 09:45",
-          "fahrzeug": "KARESSA",
-          "to": "HOS",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "KARESSA",
-          "current_ship_eta_rueb": "2026-05-22 11:00",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
@@ -1268,28 +1344,5 @@
       ]
     }
   ],
-  "unused_pilots": [
-    {
-      "pilot_key": "janson_sven",
-      "vorname": "Sven",
-      "nachname": "Janson",
-      "pilot_name": "Janson, Sven",
-      "abteilungszeit": "2026-05-22 09:45",
-      "pilot_q": 4,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 1,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "KARESSA",
-      "from": "RÜB",
-      "to": "HOS",
-      "nr": 1,
-      "raw_time": "Fri May 22 09:45:00 CEST 2026",
-      "current_ship_name": "KARESSA",
-      "current_ship_eta_rueb": "2026-05-22 11:00",
-      "current_ship_q": 5,
-      "current_ship_route": "RÜB → HOS",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
-    }
-  ]
+  "unused_pilots": []
 }
