@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-22T03:37:22",
+  "generated_at": "2026-05-22T03:39:22",
   "target": {
     "slug": "crotogino_philipp",
     "display_name": "crotogino, philipp",
@@ -8,27 +8,32 @@
     "watch_user_key": "unng2ks8z2a8jgb9uftdiun1n88cfz"
   },
   "state": {
-    "kind": "gesamtboert",
-    "source": "Gesamtboert.json",
-    "pos": "2",
-    "takt": "45,0"
+    "kind": "seelotsen",
+    "source": "Seelotsen.json",
+    "aufgabe": "Kanalbört",
+    "fahrzeug": "Leerfahrt",
+    "time": "Fri May 22 03:35:00 CEST 2026"
   },
   "action_card": {
     "title": "crotogino, philipp",
-    "subtitle": "Gesamtbört",
-    "state_kind": "gesamtboert",
-    "state_label": "Gesamtbört",
+    "subtitle": "Seelotsen",
+    "state_kind": "seelotsen",
+    "state_label": "Seelotsen",
     "q_gruppe": "0",
-    "pos": "2",
-    "takt": "45,0",
-    "workstart_label": "Start: 2026-05-22 04:25",
+    "aufgabe": "Kanalbört",
+    "fahrzeug": "Leerfahrt",
+    "route": "HOS → RÜB",
+    "time_label": "Akt.: 2026-05-22 03:35",
+    "ship_hint": "Leerfahrt",
     "badges": [
       "Q 0",
-      "Pos 2"
+      "Kanalbört"
     ],
     "lines": [
-      "Takt: 45,0",
-      "Start: 2026-05-22 04:25"
+      "Leerfahrt",
+      "HOS → RÜB",
+      "Akt.: 2026-05-22 03:35",
+      "Schiff: Leerfahrt"
     ]
   },
   "q_gruppe": "0",
@@ -48,29 +53,52 @@
     "entry_count": 1112
   },
   "boert": {
-    "entry": {
-      "pos": "2",
-      "takt": "45,0",
-      "nachname": "Crotogino",
-      "vorname": "Philipp",
-      "q_gruppe": "0",
-      "was": "ABR",
-      "zeit": "Fri May 22 03:04:59 CEST 2026",
-      "bemerkung": "",
-      "arrow": null
-    },
-    "entry_count": 1
-  },
-  "seelotsen": {
-    "entries": [],
+    "entry": null,
     "entry_count": 0
   },
-  "related_ships": [],
+  "seelotsen": {
+    "entries": [
+      {
+        "nr": 2,
+        "time": "Fri May 22 03:35:00 CEST 2026",
+        "nachname": "Crotogino",
+        "vorname": "Philipp",
+        "aufgabe": "Kanalbört",
+        "fahrzeug": "Leerfahrt",
+        "from": "HOS",
+        "to": "RÜB"
+      }
+    ],
+    "entry_count": 1
+  },
+  "related_ships": [
+    {
+      "name": "Leerfahrt",
+      "summary": {
+        "name": "Leerfahrt",
+        "special_entry": true,
+        "sources": [
+          "seelotsen"
+        ],
+        "route": "HOS → RÜB",
+        "routes": [
+          "HOS → RÜB"
+        ],
+        "assigned_pilots": [
+          "Wulff, Stephan",
+          "Crotogino, Philipp"
+        ],
+        "aufgaben": [
+          "Kanalbört"
+        ]
+      }
+    }
+  ],
   "person_files": {
     "status": {
       "file": "crotogino_philipp_status.json",
       "exists": true,
-      "generated_at": "2026-05-22 03:36"
+      "generated_at": "2026-05-22 03:38"
     },
     "pos": {
       "file": "crotogino_philipp_pos.json",
@@ -96,65 +124,64 @@
   },
   "snapshots": {
     "status": {
-      "generated_at": "2026-05-22 03:36",
+      "generated_at": "2026-05-22 03:38",
       "nachname": "crotogino",
       "vorname": "philipp",
       "status": {
         "willkommen": "Willkommen Philip Crotogino",
-        "zuletzt": "22.05.-03:04 ABR",
-        "naechster_urlaub": "16.06.2026",
-        "wachnummer": "2"
+        "zuletzt": "22.05.-03:35 ASS",
+        "naechster_urlaub": "16.06.2026"
       }
     },
     "pos": {
-      "pos": 2
+      "pos": null
     },
     "short": {
       "key": "crotogino_philipp",
-      "status": "boert",
-      "short": "Gesamtbört – Pos 2\n04:25\n04:25\nPos/2: 04:36\nPos/3: 04:16\nAkt.: 03:36"
+      "status": "seelotse",
+      "short": "Seelotse – Kanalbört\nLeerfahrt\nRoute: HOS → RÜB\nAkt.: 03:38"
     },
     "long": {
       "key": "crotogino_philipp",
-      "status": "boert",
-      "long": "Gesamtbört\n----------\nKiel 56 / RÜB 5\n\n▶2  | Crotogino | 04:25 / 04:25 / 04:16~04:36\n      | –   | –                    \n 59 | Jenckel | Fr23:16~Sa09:06\n      | ↑$$ | max. takt. 60        \n 66 | Escher  | Sa01:36~Sa12:36\n      | ↑$$ | 𝗠𝗮𝘅 takt 85          \n 76 | Kubica  | Sa04:56~Sa17:36\n      | ↑$$ | –                    \n\nAkt.: 03:36"
+      "status": "seelotse",
+      "long": "Seelotse\n--------\n   Nr | ETA   | Name        | Fahrzeug         | Route      | Schl | ΔR-S | ΔS-R\n------------------------------------------------------------------------------------------\n\nKanalbört\n---------\n 1  | –     | Wulff      | Leerfahrt    | HOS → RÜB  | –    | –    | –   \n▶2  | –     | Crotogino  | Leerfahrt    | HOS → RÜB  | –    | –    | –   \n 6  | 07:22 | Schran     | SOUTH        | HOS → RÜB  | 12:50 | 05:28 | 03:50\n 8  | 03:52 | Schie      | STOC NIKE    | HOS → RÜB  | 08:23 | 04:31 | 03:22\n 9  | 03:47 | Klüver     | FINE SCHEPER | HOS → RÜB  | 08:20 | 04:33 | 03:21\n 10 | –     | Töpfer     | RÜB          | –          | –    | –    | –   \n 11 | –     | Heeren     | CONTAINERSHI | RÜB → HOS  | –    | –    | –   \n 13 | 00:39 | Biedermann | PEAK BREMEN  | RÜB → HOS  | 04:02 | 03:23 | 04:35\n\nMeldungen Rüsterbergen\n----------------------\nETA  | Schiff            | Q | Route\n----------------------------------------------\n04:45 | SULZBACH-ROSENBER | 5 | RÜB → HOS\n04:52 | THEODOR ESSBERGER | 4 | RÜB → HOS\n04:56 | LISA LEHMANN      | 4 | RÜB → HOS\n04:59 | SCHELDEBANK       | 5 | RÜB → HOS\n05:03 | MARBURG           | 1 | RÜB → HOS\n\nAkt.: 03:38"
     }
   },
   "source_meta": {
     "gesamtboert": {
       "file": "Gesamtboert.json",
       "exists": true,
-      "generated_at": "2026-05-22 03:36",
-      "count": 80
+      "generated_at": "2026-05-22 03:38",
+      "count": 78
     },
     "seelotsen": {
       "file": "Seelotsen.json",
       "exists": true,
-      "generated_at": "2026-05-22 03:36",
-      "count": 11
+      "generated_at": "2026-05-22 03:38",
+      "count": 13
     },
     "meldungen_kiel": {
       "file": "Meldungen_Kiel.json",
       "exists": true,
-      "generated_at": "2026-05-22 03:36",
-      "count": 56
+      "generated_at": "2026-05-22 03:38",
+      "count": 55
     },
     "meldungen_ruesterbergen": {
       "file": "Meldungen_Ruesterbergen.json",
       "exists": true,
-      "generated_at": "2026-05-22 03:36",
+      "generated_at": "2026-05-22 03:38",
       "count": 5
     },
     "q_gruppen": {
       "file": "q_gruppen_lotsen.json",
       "exists": true,
-      "generated_at": "2026-05-22T03:37:05",
+      "generated_at": "2026-05-22T03:39:05",
       "count": 154
     },
     "schiffe_merged": {
       "file": "schiffe_merged.json",
       "exists": true,
-      "generated_at": "2026-05-22T03:37:05",
+      "generated_at": "2026-05-22T03:39:05",
       "count": 64
     },
     "workstart_history_json": {
