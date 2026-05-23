@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-23T10:07:07",
+  "generated_at": "2026-05-23T10:09:11",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 7,
     "pilots_total": 16,
-    "pilots_dispatchable": 13,
-    "pilots_visible_only": 3,
+    "pilots_dispatchable": 14,
+    "pilots_visible_only": 2,
     "assignments": 7,
     "unassigned_ships": 0,
-    "unused_pilots": 6
+    "unused_pilots": 7
   },
   "ships": [
     {
@@ -156,7 +156,7 @@
     {
       "ship_key": "INA LEHMANN",
       "ship_name": "INA LEHMANN",
-      "eta_rueb": "2026-05-23 13:41",
+      "eta_rueb": "2026-05-23 13:40",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 4,
       "meldung": {
@@ -465,7 +465,7 @@
       "nr": 12,
       "raw_time": "Sat May 23 06:23:00 CEST 2026",
       "current_ship_name": "CAROLINA",
-      "current_ship_eta_rueb": "2026-05-23 10:52",
+      "current_ship_eta_rueb": "2026-05-23 10:51",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -529,9 +529,10 @@
       "nr": 6,
       "raw_time": "Sat May 23 08:15:00 CEST 2026",
       "current_ship_name": "RIX GULF",
+      "current_ship_eta_rueb": "2026-05-23 14:01",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
@@ -814,9 +815,31 @@
       "nr": 12,
       "raw_time": "Sat May 23 06:23:00 CEST 2026",
       "current_ship_name": "CAROLINA",
-      "current_ship_eta_rueb": "2026-05-23 10:52",
+      "current_ship_eta_rueb": "2026-05-23 10:51",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "spiller_roman",
+      "vorname": "Roman",
+      "nachname": "Spiller",
+      "pilot_name": "Spiller, Roman",
+      "abteilungszeit": "2026-05-23 08:15",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 6,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "RIX GULF",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 6,
+      "raw_time": "Sat May 23 08:15:00 CEST 2026",
+      "current_ship_name": "RIX GULF",
+      "current_ship_eta_rueb": "2026-05-23 14:01",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
@@ -959,21 +982,6 @@
       "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta",
       "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    },
-    {
-      "pilot_key": "spiller_roman",
-      "pilot_name": "Spiller, Roman",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 6,
-      "abteilungszeit": "2026-05-23 08:15",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "RIX GULF",
-      "from": "HOS",
-      "to": "RÜB",
-      "current_ship_name": "RIX GULF",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
     }
   ],
   "assignments": [
@@ -1104,7 +1112,16 @@
           "pilot_tactical_nr": 12,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "CAROLINA",
-          "pilot_current_ship_eta_rueb": "2026-05-23 10:52",
+          "pilot_current_ship_eta_rueb": "2026-05-23 10:51",
+          "ship_eta_rueb": "2026-05-23 10:41",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Spiller, Roman",
+          "pilot_tactical_nr": 6,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "RIX GULF",
+          "pilot_current_ship_eta_rueb": "2026-05-23 14:01",
           "ship_eta_rueb": "2026-05-23 10:41",
           "availability_kind": "merged_eta"
         },
@@ -1270,7 +1287,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "CAROLINA",
-          "current_ship_eta_rueb": "2026-05-23 10:52",
+          "current_ship_eta_rueb": "2026-05-23 10:51",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1314,6 +1331,15 @@
         }
       ],
       "excluded": [
+        {
+          "pilot_name": "Spiller, Roman",
+          "pilot_tactical_nr": 6,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "RIX GULF",
+          "pilot_current_ship_eta_rueb": "2026-05-23 14:01",
+          "ship_eta_rueb": "2026-05-23 11:27",
+          "availability_kind": "merged_eta"
+        },
         {
           "pilot_name": "Steffens, Micha",
           "pilot_tactical_nr": 5,
@@ -1456,7 +1482,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "CAROLINA",
-          "current_ship_eta_rueb": "2026-05-23 10:52",
+          "current_ship_eta_rueb": "2026-05-23 10:51",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1500,6 +1526,15 @@
         }
       ],
       "excluded": [
+        {
+          "pilot_name": "Spiller, Roman",
+          "pilot_tactical_nr": 6,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "RIX GULF",
+          "pilot_current_ship_eta_rueb": "2026-05-23 14:01",
+          "ship_eta_rueb": "2026-05-23 12:10",
+          "availability_kind": "merged_eta"
+        },
         {
           "pilot_name": "Steffens, Micha",
           "pilot_tactical_nr": 5,
@@ -1556,7 +1591,7 @@
     {
       "ship_key": "INA LEHMANN",
       "ship_name": "INA LEHMANN",
-      "eta_rueb": "2026-05-23 13:41",
+      "eta_rueb": "2026-05-23 13:40",
       "ship_q": 4,
       "assigned_pilot": "Haala, Klaus Werner",
       "assigned_pilot_q": 0,
@@ -1630,7 +1665,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "CAROLINA",
-          "current_ship_eta_rueb": "2026-05-23 10:52",
+          "current_ship_eta_rueb": "2026-05-23 10:51",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1699,6 +1734,17 @@
           "availability_kind": "merged_eta"
         }
       ],
+      "excluded": [
+        {
+          "pilot_name": "Spiller, Roman",
+          "pilot_tactical_nr": 6,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "RIX GULF",
+          "pilot_current_ship_eta_rueb": "2026-05-23 14:01",
+          "ship_eta_rueb": "2026-05-23 13:40",
+          "availability_kind": "merged_eta"
+        }
+      ],
       "ship": {
         "meldung": {
           "nr": "4",
@@ -1747,7 +1793,7 @@
       "assigned_current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 9,
+      "candidate_count": 10,
       "candidates": [
         {
           "pilot_name": "Hahn, Peter",
@@ -1797,7 +1843,20 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "CAROLINA",
-          "current_ship_eta_rueb": "2026-05-23 10:52",
+          "current_ship_eta_rueb": "2026-05-23 10:51",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Spiller, Roman",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 6,
+          "abteilungszeit": "2026-05-23 08:15",
+          "fahrzeug": "RIX GULF",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RIX GULF",
+          "current_ship_eta_rueb": "2026-05-23 14:01",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1902,7 +1961,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 8,
+      "candidate_count": 9,
       "candidates": [
         {
           "pilot_name": "Petersen, Yannick",
@@ -1939,7 +1998,20 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "CAROLINA",
-          "current_ship_eta_rueb": "2026-05-23 10:52",
+          "current_ship_eta_rueb": "2026-05-23 10:51",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Spiller, Roman",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 6,
+          "abteilungszeit": "2026-05-23 08:15",
+          "fahrzeug": "RIX GULF",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RIX GULF",
+          "current_ship_eta_rueb": "2026-05-23 14:01",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -2056,7 +2128,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 5,
+      "candidate_count": 6,
       "candidates": [
         {
           "pilot_name": "Matysik, Eike",
@@ -2080,7 +2152,20 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "CAROLINA",
-          "current_ship_eta_rueb": "2026-05-23 10:52",
+          "current_ship_eta_rueb": "2026-05-23 10:51",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Spiller, Roman",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 6,
+          "abteilungszeit": "2026-05-23 08:15",
+          "fahrzeug": "RIX GULF",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RIX GULF",
+          "current_ship_eta_rueb": "2026-05-23 14:01",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -2192,9 +2277,31 @@
       "nr": 12,
       "raw_time": "Sat May 23 06:23:00 CEST 2026",
       "current_ship_name": "CAROLINA",
-      "current_ship_eta_rueb": "2026-05-23 10:52",
+      "current_ship_eta_rueb": "2026-05-23 10:51",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "spiller_roman",
+      "vorname": "Roman",
+      "nachname": "Spiller",
+      "pilot_name": "Spiller, Roman",
+      "abteilungszeit": "2026-05-23 08:15",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 6,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "RIX GULF",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 6,
+      "raw_time": "Sat May 23 08:15:00 CEST 2026",
+      "current_ship_name": "RIX GULF",
+      "current_ship_eta_rueb": "2026-05-23 14:01",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
