@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-23T03:19:09",
+  "generated_at": "2026-05-23T03:21:10",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,13 +32,13 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 3,
+    "ships_for_ruesterbergen": 4,
     "pilots_total": 15,
     "pilots_dispatchable": 12,
     "pilots_visible_only": 3,
-    "assignments": 3,
+    "assignments": 4,
     "unassigned_ships": 0,
-    "unused_pilots": 9
+    "unused_pilots": 8
   },
   "ships": [
     {
@@ -138,6 +138,44 @@
         "makler": "UCA",
         "dangerous_vessel": "-",
         "type_of_loading": "Bulk"
+      }
+    },
+    {
+      "ship_key": "TRITO NAVIGATOR",
+      "ship_name": "TRITO NAVIGATOR",
+      "eta_rueb": "2026-05-23 07:23",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 4,
+      "meldung": {
+        "nr": "4",
+        "time": "Sat May 23 06:35:00 CEST 2026",
+        "draft": "5.8",
+        "q_gruppe": "4",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "4",
+        "vg": "3",
+        "draft": "5.80",
+        "length_m": "118.14",
+        "beam_m": "16.13",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "U",
+        "pilot_1_name": "Teubner, Jens",
+        "travel_status": "SAILING_NOK",
+        "makler": "UCA",
+        "dangerous_vessel": "-",
+        "type_of_loading": "Stueckgueter"
       }
     }
   ],
@@ -1344,32 +1382,178 @@
           "type_of_loading": "Bulk"
         }
       }
+    },
+    {
+      "ship_key": "TRITO NAVIGATOR",
+      "ship_name": "TRITO NAVIGATOR",
+      "eta_rueb": "2026-05-23 07:23",
+      "ship_q": 4,
+      "assigned_pilot": "Hilpert, Jan",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 16,
+      "assigned_abteilungszeit": "2026-05-22 19:30",
+      "assigned_current_ship_name": "ANITA HAGEDORN",
+      "assigned_current_ship_eta_rueb": "2026-05-23 00:21",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 9,
+      "candidates": [
+        {
+          "pilot_name": "Hilpert, Jan",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 16,
+          "abteilungszeit": "2026-05-22 19:30",
+          "fahrzeug": "ANITA HAGEDORN",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ANITA HAGEDORN",
+          "current_ship_eta_rueb": "2026-05-23 00:21",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Schie, Christian",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 15,
+          "abteilungszeit": "2026-05-22 19:33",
+          "fahrzeug": "ATLANTIS ARKI",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ATLANTIS ARKI",
+          "current_ship_eta_rueb": "2026-05-23 02:10",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Escher, Franck",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 14,
+          "abteilungszeit": "2026-05-22 19:45",
+          "fahrzeug": "JOHANNA HELENA",
+          "to": "UTG",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "JOHANNA HELENA",
+          "current_ship_eta_rueb": "2026-05-23 03:14",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Krause, Malte",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 11,
+          "abteilungszeit": "2026-05-22 21:40",
+          "fahrzeug": "LOVISA",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "LOVISA",
+          "current_ship_eta_rueb": "2026-05-23 03:20",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Marth, Jürgen",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 10,
+          "abteilungszeit": "2026-05-22 21:54",
+          "fahrzeug": "LADY DIANA",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "LADY DIANA",
+          "current_ship_eta_rueb": "2026-05-23 03:17",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Lehwald, Christian",
+          "pilot_q": 4,
+          "pilot_tactical_nr": 9,
+          "abteilungszeit": "2026-05-22 22:01",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-22 22:01",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
+        },
+        {
+          "pilot_name": "Krämer, Jonas",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 8,
+          "abteilungszeit": "2026-05-22 22:07",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-22 22:07",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
+        },
+        {
+          "pilot_name": "Woitanowski, Tim",
+          "pilot_q": 2,
+          "pilot_tactical_nr": 7,
+          "abteilungszeit": "2026-05-22 22:49",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-22 22:49",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
+        },
+        {
+          "pilot_name": "Kubica, Gregor",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 1,
+          "abteilungszeit": "2026-05-23 03:08",
+          "fahrzeug": "ALREK",
+          "to": "KLT",
+          "aufgabe": "Seebört",
+          "current_ship_name": "ALREK",
+          "current_ship_eta_rueb": "2026-05-23 00:01",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "4",
+          "time": "Sat May 23 06:35:00 CEST 2026",
+          "draft": "5.8",
+          "q_gruppe": "4",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "HOS → KLT",
+          "routes": [
+            "HOS → KLT",
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "4",
+          "vg": "3",
+          "draft": "5.80",
+          "length_m": "118.14",
+          "beam_m": "16.13",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "U",
+          "pilot_1_name": "Teubner, Jens",
+          "travel_status": "SAILING_NOK",
+          "makler": "UCA",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Stueckgueter"
+        }
+      }
     }
   ],
   "unassigned_ships": [],
   "unused_pilots": [
-    {
-      "pilot_key": "hilpert_jan",
-      "vorname": "Jan",
-      "nachname": "Hilpert",
-      "pilot_name": "Hilpert, Jan",
-      "abteilungszeit": "2026-05-22 19:30",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 16,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "ANITA HAGEDORN",
-      "from": "RÜB",
-      "to": "HOS",
-      "nr": 16,
-      "raw_time": "Fri May 22 19:30:00 CEST 2026",
-      "current_ship_name": "ANITA HAGEDORN",
-      "current_ship_eta_rueb": "2026-05-23 00:21",
-      "current_ship_q": 0,
-      "current_ship_route": "RÜB → HOS",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
-    },
     {
       "pilot_key": "schie_christian",
       "vorname": "Christian",
