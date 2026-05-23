@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-23T15:55:10",
+  "generated_at": "2026-05-23T15:57:10",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 5,
     "pilots_total": 14,
-    "pilots_dispatchable": 11,
-    "pilots_visible_only": 3,
+    "pilots_dispatchable": 12,
+    "pilots_visible_only": 2,
     "assignments": 5,
     "unassigned_ships": 0,
-    "unused_pilots": 6
+    "unused_pilots": 7
   },
   "ships": [
     {
@@ -383,16 +383,16 @@
       "q_source": "q_gruppen_lotsen.entries",
       "pilot_tactical_nr": 10,
       "aufgabe": "Kanalbört",
-      "fahrzeug": "LNG KAIROS",
-      "from": "HOS",
-      "to": "RÜB",
+      "fahrzeug": "RÜB",
       "nr": 10,
       "raw_time": "Sat May 23 10:56:00 CEST 2026",
-      "current_ship_name": "LNG KAIROS",
+      "current_ship_name": "RÜB",
+      "current_ship_eta_rueb": "2026-05-23 10:56",
       "current_ship_q": 0,
-      "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
+      "current_ship_route": "RÜB",
+      "current_ship_source": "special.already_in_rueb",
+      "availability_kind": "already_in_rueb",
+      "availability_hint": "Lotse gilt als bereits in RÜB"
     },
     {
       "pilot_key": "wald_mark",
@@ -679,6 +679,27 @@
       "availability_hint": "Lotse gilt als bereits in RÜB"
     },
     {
+      "pilot_key": "biedermann_johannes",
+      "vorname": "Johannes",
+      "nachname": "Biedermann",
+      "pilot_name": "Biedermann, Johannes",
+      "abteilungszeit": "2026-05-23 10:56",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 10,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "RÜB",
+      "nr": 10,
+      "raw_time": "Sat May 23 10:56:00 CEST 2026",
+      "current_ship_name": "RÜB",
+      "current_ship_eta_rueb": "2026-05-23 10:56",
+      "current_ship_q": 0,
+      "current_ship_route": "RÜB",
+      "current_ship_source": "special.already_in_rueb",
+      "availability_kind": "already_in_rueb",
+      "availability_hint": "Lotse gilt als bereits in RÜB"
+    },
+    {
       "pilot_key": "wald_mark",
       "vorname": "Mark",
       "nachname": "Wald",
@@ -768,21 +789,6 @@
   ],
   "visible_but_not_dispatchable_pilots": [
     {
-      "pilot_key": "biedermann_johannes",
-      "pilot_name": "Biedermann, Johannes",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 10,
-      "abteilungszeit": "2026-05-23 10:56",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "LNG KAIROS",
-      "from": "HOS",
-      "to": "RÜB",
-      "current_ship_name": "LNG KAIROS",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    },
-    {
       "pilot_key": "krahn_georg",
       "pilot_name": "Krahn, Georg",
       "pilot_q": 0,
@@ -828,7 +834,7 @@
       "assigned_current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 9,
+      "candidate_count": 10,
       "candidates": [
         {
           "pilot_name": "Rohn, Jens Michael",
@@ -904,6 +910,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "RÜB",
           "current_ship_eta_rueb": "2026-05-23 10:52",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
+        },
+        {
+          "pilot_name": "Biedermann, Johannes",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 10,
+          "abteilungszeit": "2026-05-23 10:56",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-23 10:56",
           "current_ship_source": "special.already_in_rueb",
           "availability_kind": "already_in_rueb",
           "availability_hint": "Lotse gilt als bereits in RÜB"
@@ -1000,7 +1019,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 8,
+      "candidate_count": 9,
       "candidates": [
         {
           "pilot_name": "Dietrich, Thomas",
@@ -1063,6 +1082,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "RÜB",
           "current_ship_eta_rueb": "2026-05-23 10:52",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
+        },
+        {
+          "pilot_name": "Biedermann, Johannes",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 10,
+          "abteilungszeit": "2026-05-23 10:56",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-23 10:56",
           "current_ship_source": "special.already_in_rueb",
           "availability_kind": "already_in_rueb",
           "availability_hint": "Lotse gilt als bereits in RÜB"
@@ -1171,7 +1203,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 7,
+      "candidate_count": 8,
       "candidates": [
         {
           "pilot_name": "Spiller, Roman",
@@ -1221,6 +1253,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "RÜB",
           "current_ship_eta_rueb": "2026-05-23 10:52",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
+        },
+        {
+          "pilot_name": "Biedermann, Johannes",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 10,
+          "abteilungszeit": "2026-05-23 10:56",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-23 10:56",
           "current_ship_source": "special.already_in_rueb",
           "availability_kind": "already_in_rueb",
           "availability_hint": "Lotse gilt als bereits in RÜB"
@@ -1329,7 +1374,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 8,
+      "candidate_count": 9,
       "candidates": [
         {
           "pilot_name": "Steffens, Micha",
@@ -1379,6 +1424,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "RÜB",
           "current_ship_eta_rueb": "2026-05-23 10:52",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
+        },
+        {
+          "pilot_name": "Biedermann, Johannes",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 10,
+          "abteilungszeit": "2026-05-23 10:56",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-23 10:56",
           "current_ship_source": "special.already_in_rueb",
           "availability_kind": "already_in_rueb",
           "availability_hint": "Lotse gilt als bereits in RÜB"
@@ -1483,7 +1541,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 6,
+      "candidate_count": 7,
       "candidates": [
         {
           "pilot_name": "Köhler, Olaf",
@@ -1520,6 +1578,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "RÜB",
           "current_ship_eta_rueb": "2026-05-23 10:52",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
+        },
+        {
+          "pilot_name": "Biedermann, Johannes",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 10,
+          "abteilungszeit": "2026-05-23 10:56",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-23 10:56",
           "current_ship_source": "special.already_in_rueb",
           "availability_kind": "already_in_rueb",
           "availability_hint": "Lotse gilt als bereits in RÜB"
@@ -1647,6 +1718,27 @@
       "raw_time": "Sat May 23 10:52:00 CEST 2026",
       "current_ship_name": "RÜB",
       "current_ship_eta_rueb": "2026-05-23 10:52",
+      "current_ship_q": 0,
+      "current_ship_route": "RÜB",
+      "current_ship_source": "special.already_in_rueb",
+      "availability_kind": "already_in_rueb",
+      "availability_hint": "Lotse gilt als bereits in RÜB"
+    },
+    {
+      "pilot_key": "biedermann_johannes",
+      "vorname": "Johannes",
+      "nachname": "Biedermann",
+      "pilot_name": "Biedermann, Johannes",
+      "abteilungszeit": "2026-05-23 10:56",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 10,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "RÜB",
+      "nr": 10,
+      "raw_time": "Sat May 23 10:56:00 CEST 2026",
+      "current_ship_name": "RÜB",
+      "current_ship_eta_rueb": "2026-05-23 10:56",
       "current_ship_q": 0,
       "current_ship_route": "RÜB",
       "current_ship_source": "special.already_in_rueb",
