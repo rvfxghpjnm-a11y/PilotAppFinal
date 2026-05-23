@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-23T12:15:11",
+  "generated_at": "2026-05-23T12:17:08",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 10,
     "pilots_total": 16,
-    "pilots_dispatchable": 14,
-    "pilots_visible_only": 2,
+    "pilots_dispatchable": 15,
+    "pilots_visible_only": 1,
     "assignments": 10,
     "unassigned_ships": 0,
-    "unused_pilots": 4
+    "unused_pilots": 5
   },
   "ships": [
     {
@@ -183,12 +183,12 @@
     {
       "ship_key": "CONTAINERSHIPS STELLAR",
       "ship_name": "CONTAINERSHIPS STELLAR",
-      "eta_rueb": "2026-05-23 14:57",
+      "eta_rueb": "2026-05-23 14:56",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 1,
       "meldung": {
         "nr": "5",
-        "time": "Sat May 23 14:40:00 CEST 2026",
+        "time": "Sat May 23 14:45:00 CEST 2026",
         "draft": "8.2",
         "q_gruppe": "1",
         "lotsen_anzahl": 1,
@@ -498,7 +498,7 @@
       "nr": 16,
       "raw_time": "Sat May 23 08:15:00 CEST 2026",
       "current_ship_name": "RIX GULF",
-      "current_ship_eta_rueb": "2026-05-23 13:56",
+      "current_ship_eta_rueb": "2026-05-23 13:55",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -542,6 +542,7 @@
       "nr": 14,
       "raw_time": "Sat May 23 08:53:00 CEST 2026",
       "current_ship_name": "INGRID B",
+      "current_ship_eta_rueb": "2026-05-23 13:38",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -850,7 +851,7 @@
       "nr": 16,
       "raw_time": "Sat May 23 08:15:00 CEST 2026",
       "current_ship_name": "RIX GULF",
-      "current_ship_eta_rueb": "2026-05-23 13:56",
+      "current_ship_eta_rueb": "2026-05-23 13:55",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -875,6 +876,28 @@
       "current_ship_eta_rueb": "2026-05-23 13:31",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "köhler_olaf",
+      "vorname": "Olaf",
+      "nachname": "Köhler",
+      "pilot_name": "Köhler, Olaf",
+      "abteilungszeit": "2026-05-23 08:53",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 14,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "INGRID B",
+      "from": "HOR",
+      "to": "RÜB",
+      "nr": 14,
+      "raw_time": "Sat May 23 08:53:00 CEST 2026",
+      "current_ship_name": "INGRID B",
+      "current_ship_eta_rueb": "2026-05-23 13:38",
+      "current_ship_q": 0,
+      "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
@@ -1057,21 +1080,6 @@
   ],
   "visible_but_not_dispatchable_pilots": [
     {
-      "pilot_key": "köhler_olaf",
-      "pilot_name": "Köhler, Olaf",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 14,
-      "abteilungszeit": "2026-05-23 08:53",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "INGRID B",
-      "from": "HOR",
-      "to": "RÜB",
-      "current_ship_name": "INGRID B",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    },
-    {
       "pilot_key": "biedermann_johannes",
       "pilot_name": "Biedermann, Johannes",
       "pilot_q": 0,
@@ -1224,7 +1232,16 @@
           "pilot_tactical_nr": 16,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "RIX GULF",
-          "pilot_current_ship_eta_rueb": "2026-05-23 13:56",
+          "pilot_current_ship_eta_rueb": "2026-05-23 13:55",
+          "ship_eta_rueb": "2026-05-23 13:31",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Köhler, Olaf",
+          "pilot_tactical_nr": 14,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "INGRID B",
+          "pilot_current_ship_eta_rueb": "2026-05-23 13:38",
           "ship_eta_rueb": "2026-05-23 13:31",
           "availability_kind": "merged_eta"
         },
@@ -1313,7 +1330,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 9,
+      "candidate_count": 10,
       "candidates": [
         {
           "pilot_name": "Koch, Florian",
@@ -1363,7 +1380,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "RIX GULF",
-          "current_ship_eta_rueb": "2026-05-23 13:56",
+          "current_ship_eta_rueb": "2026-05-23 13:55",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1377,6 +1394,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "CUERA",
           "current_ship_eta_rueb": "2026-05-23 13:31",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Köhler, Olaf",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 14,
+          "abteilungszeit": "2026-05-23 08:53",
+          "fahrzeug": "INGRID B",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "INGRID B",
+          "current_ship_eta_rueb": "2026-05-23 13:38",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1507,7 +1537,7 @@
       "assigned_current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 8,
+      "candidate_count": 9,
       "candidates": [
         {
           "pilot_name": "Rohn, Jens Michael",
@@ -1544,7 +1574,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "RIX GULF",
-          "current_ship_eta_rueb": "2026-05-23 13:56",
+          "current_ship_eta_rueb": "2026-05-23 13:55",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1558,6 +1588,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "CUERA",
           "current_ship_eta_rueb": "2026-05-23 13:31",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Köhler, Olaf",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 14,
+          "abteilungszeit": "2026-05-23 08:53",
+          "fahrzeug": "INGRID B",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "INGRID B",
+          "current_ship_eta_rueb": "2026-05-23 13:38",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1699,7 +1742,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 7,
+      "candidate_count": 8,
       "candidates": [
         {
           "pilot_name": "Dietrich, Thomas",
@@ -1723,7 +1766,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "RIX GULF",
-          "current_ship_eta_rueb": "2026-05-23 13:56",
+          "current_ship_eta_rueb": "2026-05-23 13:55",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1737,6 +1780,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "CUERA",
           "current_ship_eta_rueb": "2026-05-23 13:31",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Köhler, Olaf",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 14,
+          "abteilungszeit": "2026-05-23 08:53",
+          "fahrzeug": "INGRID B",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "INGRID B",
+          "current_ship_eta_rueb": "2026-05-23 13:38",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1868,18 +1924,18 @@
     {
       "ship_key": "CONTAINERSHIPS STELLAR",
       "ship_name": "CONTAINERSHIPS STELLAR",
-      "eta_rueb": "2026-05-23 14:57",
+      "eta_rueb": "2026-05-23 14:56",
       "ship_q": 1,
       "assigned_pilot": "Spiller, Roman",
       "assigned_pilot_q": 0,
       "assigned_tactical_nr": 16,
       "assigned_abteilungszeit": "2026-05-23 08:15",
       "assigned_current_ship_name": "RIX GULF",
-      "assigned_current_ship_eta_rueb": "2026-05-23 13:56",
+      "assigned_current_ship_eta_rueb": "2026-05-23 13:55",
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 4,
+      "candidate_count": 5,
       "candidates": [
         {
           "pilot_name": "Spiller, Roman",
@@ -1890,7 +1946,20 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "RIX GULF",
-          "current_ship_eta_rueb": "2026-05-23 13:56",
+          "current_ship_eta_rueb": "2026-05-23 13:55",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Köhler, Olaf",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 14,
+          "abteilungszeit": "2026-05-23 08:53",
+          "fahrzeug": "INGRID B",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "INGRID B",
+          "current_ship_eta_rueb": "2026-05-23 13:38",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1955,7 +2024,7 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "SEELAND",
           "pilot_current_ship_eta_rueb": "2026-05-23 15:54",
-          "ship_eta_rueb": "2026-05-23 14:57",
+          "ship_eta_rueb": "2026-05-23 14:56",
           "availability_kind": "merged_eta"
         },
         {
@@ -1964,7 +2033,7 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "VERTOM RIAN",
           "pilot_current_ship_eta_rueb": "2026-05-23 16:05",
-          "ship_eta_rueb": "2026-05-23 14:57",
+          "ship_eta_rueb": "2026-05-23 14:56",
           "availability_kind": "merged_eta"
         },
         {
@@ -1973,7 +2042,7 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "LADY HARRIET",
           "pilot_current_ship_eta_rueb": "2026-05-23 16:02",
-          "ship_eta_rueb": "2026-05-23 14:57",
+          "ship_eta_rueb": "2026-05-23 14:56",
           "availability_kind": "merged_eta"
         },
         {
@@ -1982,14 +2051,14 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "ELEONORA",
           "pilot_current_ship_eta_rueb": "2026-05-23 15:51",
-          "ship_eta_rueb": "2026-05-23 14:57",
+          "ship_eta_rueb": "2026-05-23 14:56",
           "availability_kind": "merged_eta"
         }
       ],
       "ship": {
         "meldung": {
           "nr": "5",
-          "time": "Sat May 23 14:40:00 CEST 2026",
+          "time": "Sat May 23 14:45:00 CEST 2026",
           "draft": "8.2",
           "q_gruppe": "1",
           "lotsen_anzahl": 1,
@@ -2034,7 +2103,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 5,
+      "candidate_count": 6,
       "candidates": [
         {
           "pilot_name": "Steffens, Micha",
@@ -2046,6 +2115,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "CUERA",
           "current_ship_eta_rueb": "2026-05-23 13:31",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Köhler, Olaf",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 14,
+          "abteilungszeit": "2026-05-23 08:53",
+          "fahrzeug": "INGRID B",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "INGRID B",
+          "current_ship_eta_rueb": "2026-05-23 13:38",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -2178,17 +2260,30 @@
       "ship_name": "NOREN",
       "eta_rueb": "2026-05-23 15:47",
       "ship_q": 4,
-      "assigned_pilot": "Richter, Ingmar",
+      "assigned_pilot": "Köhler, Olaf",
       "assigned_pilot_q": 0,
-      "assigned_tactical_nr": 11,
-      "assigned_abteilungszeit": "2026-05-23 09:00",
-      "assigned_current_ship_name": "SKALAR",
-      "assigned_current_ship_eta_rueb": "2026-05-23 10:40",
+      "assigned_tactical_nr": 14,
+      "assigned_abteilungszeit": "2026-05-23 08:53",
+      "assigned_current_ship_name": "INGRID B",
+      "assigned_current_ship_eta_rueb": "2026-05-23 13:38",
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 4,
+      "candidate_count": 5,
       "candidates": [
+        {
+          "pilot_name": "Köhler, Olaf",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 14,
+          "abteilungszeit": "2026-05-23 08:53",
+          "fahrzeug": "INGRID B",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "INGRID B",
+          "current_ship_eta_rueb": "2026-05-23 13:38",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
         {
           "pilot_name": "Richter, Ingmar",
           "pilot_q": 0,
@@ -2318,17 +2413,30 @@
       "ship_name": "ARKLOW CASTLE",
       "eta_rueb": "2026-05-23 15:50",
       "ship_q": 5,
-      "assigned_pilot": "Plaisant, Julian",
-      "assigned_pilot_q": 4,
-      "assigned_tactical_nr": 12,
+      "assigned_pilot": "Richter, Ingmar",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 11,
       "assigned_abteilungszeit": "2026-05-23 09:00",
-      "assigned_current_ship_name": "MAYA THERESA",
-      "assigned_current_ship_eta_rueb": "2026-05-23 10:30",
+      "assigned_current_ship_name": "SKALAR",
+      "assigned_current_ship_eta_rueb": "2026-05-23 10:40",
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 3,
+      "candidate_count": 4,
       "candidates": [
+        {
+          "pilot_name": "Richter, Ingmar",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 11,
+          "abteilungszeit": "2026-05-23 09:00",
+          "fahrzeug": "SKALAR",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "SKALAR",
+          "current_ship_eta_rueb": "2026-05-23 10:40",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
         {
           "pilot_name": "Plaisant, Julian",
           "pilot_q": 4,
@@ -2446,17 +2554,30 @@
       "ship_name": "WILSON DUNDEE",
       "eta_rueb": "2026-05-23 16:24",
       "ship_q": 5,
-      "assigned_pilot": "Vogel, Peter",
-      "assigned_pilot_q": 0,
-      "assigned_tactical_nr": 13,
+      "assigned_pilot": "Plaisant, Julian",
+      "assigned_pilot_q": 4,
+      "assigned_tactical_nr": 12,
       "assigned_abteilungszeit": "2026-05-23 09:00",
-      "assigned_current_ship_name": "KAILI",
-      "assigned_current_ship_eta_rueb": "2026-05-23 10:27",
+      "assigned_current_ship_name": "MAYA THERESA",
+      "assigned_current_ship_eta_rueb": "2026-05-23 10:30",
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 6,
+      "candidate_count": 7,
       "candidates": [
+        {
+          "pilot_name": "Plaisant, Julian",
+          "pilot_q": 4,
+          "pilot_tactical_nr": 12,
+          "abteilungszeit": "2026-05-23 09:00",
+          "fahrzeug": "MAYA THERESA",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "MAYA THERESA",
+          "current_ship_eta_rueb": "2026-05-23 10:30",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
         {
           "pilot_name": "Vogel, Peter",
           "pilot_q": 0,
@@ -2573,17 +2694,30 @@
       "ship_name": "EAGLE 2",
       "eta_rueb": "2026-05-23 16:40",
       "ship_q": 1,
-      "assigned_pilot": "Meise, Gregor",
+      "assigned_pilot": "Vogel, Peter",
       "assigned_pilot_q": 0,
-      "assigned_tactical_nr": 9,
-      "assigned_abteilungszeit": "2026-05-23 10:38",
-      "assigned_current_ship_name": "SEELAND",
-      "assigned_current_ship_eta_rueb": "2026-05-23 15:54",
+      "assigned_tactical_nr": 13,
+      "assigned_abteilungszeit": "2026-05-23 09:00",
+      "assigned_current_ship_name": "KAILI",
+      "assigned_current_ship_eta_rueb": "2026-05-23 10:27",
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 4,
+      "candidate_count": 5,
       "candidates": [
+        {
+          "pilot_name": "Vogel, Peter",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 13,
+          "abteilungszeit": "2026-05-23 09:00",
+          "fahrzeug": "KAILI",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "KAILI",
+          "current_ship_eta_rueb": "2026-05-23 10:27",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
         {
           "pilot_name": "Meise, Gregor",
           "pilot_q": 0,
@@ -2671,6 +2805,28 @@
   ],
   "unassigned_ships": [],
   "unused_pilots": [
+    {
+      "pilot_key": "meise_gregor",
+      "vorname": "Gregor",
+      "nachname": "Meise",
+      "pilot_name": "Meise, Gregor",
+      "abteilungszeit": "2026-05-23 10:38",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 9,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "SEELAND",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 9,
+      "raw_time": "Sat May 23 10:38:00 CEST 2026",
+      "current_ship_name": "SEELAND",
+      "current_ship_eta_rueb": "2026-05-23 15:54",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
     {
       "pilot_key": "pietsch_tobias",
       "vorname": "Tobias",
