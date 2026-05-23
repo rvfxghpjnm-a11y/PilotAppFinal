@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-23T11:35:05",
+  "generated_at": "2026-05-23T11:37:12",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 10,
     "pilots_total": 16,
-    "pilots_dispatchable": 11,
-    "pilots_visible_only": 5,
+    "pilots_dispatchable": 12,
+    "pilots_visible_only": 4,
     "assignments": 10,
     "unassigned_ships": 0,
-    "unused_pilots": 1
+    "unused_pilots": 2
   },
   "ships": [
     {
@@ -222,7 +222,7 @@
     {
       "ship_key": "CONTAINERSHIPS STELLAR",
       "ship_name": "CONTAINERSHIPS STELLAR",
-      "eta_rueb": "2026-05-23 14:58",
+      "eta_rueb": "2026-05-23 14:57",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 1,
       "meldung": {
@@ -739,6 +739,7 @@
       "nr": 1,
       "raw_time": "Sat May 23 11:15:00 CEST 2026",
       "current_ship_name": "ELEONORA",
+      "current_ship_eta_rueb": "2026-05-23 12:11",
       "current_ship_q": 0,
       "current_ship_route": "UTG → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -987,6 +988,28 @@
       "current_ship_route": "HOS → KLT",
       "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "rambadt_helge",
+      "vorname": "Helge",
+      "nachname": "Rambadt",
+      "pilot_name": "Rambadt, Helge",
+      "abteilungszeit": "2026-05-23 11:15",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 1,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "ELEONORA",
+      "from": "UTG",
+      "to": "RÜB",
+      "nr": 1,
+      "raw_time": "Sat May 23 11:15:00 CEST 2026",
+      "current_ship_name": "ELEONORA",
+      "current_ship_eta_rueb": "2026-05-23 12:11",
+      "current_ship_q": 0,
+      "current_ship_route": "UTG → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
     }
   ],
   "visible_but_not_dispatchable_pilots": [
@@ -1046,21 +1069,6 @@
       "from": "HOS",
       "to": "RÜB",
       "current_ship_name": "LADY HARRIET",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    },
-    {
-      "pilot_key": "rambadt_helge",
-      "pilot_name": "Rambadt, Helge",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 1,
-      "abteilungszeit": "2026-05-23 11:15",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "ELEONORA",
-      "from": "UTG",
-      "to": "RÜB",
-      "current_ship_name": "ELEONORA",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta",
       "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
@@ -1207,6 +1215,15 @@
           "pilot_current_ship_eta_rueb": "2026-05-23 13:38",
           "ship_eta_rueb": "2026-05-23 12:07",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Rambadt, Helge",
+          "pilot_tactical_nr": 1,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "ELEONORA",
+          "pilot_current_ship_eta_rueb": "2026-05-23 12:11",
+          "ship_eta_rueb": "2026-05-23 12:07",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -1258,7 +1275,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 7,
+      "candidate_count": 8,
       "candidates": [
         {
           "pilot_name": "Koch, Florian",
@@ -1350,6 +1367,19 @@
           "current_ship_eta_rueb": "2026-05-23 12:07",
           "current_ship_source": "schiffe_merged.summary.pilot_1_name",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Rambadt, Helge",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 1,
+          "abteilungszeit": "2026-05-23 11:15",
+          "fahrzeug": "ELEONORA",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ELEONORA",
+          "current_ship_eta_rueb": "2026-05-23 12:11",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
         }
       ],
       "excluded": [
@@ -1429,7 +1459,7 @@
       "assigned_current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 9,
+      "candidate_count": 10,
       "candidates": [
         {
           "pilot_name": "Rohn, Jens Michael",
@@ -1547,6 +1577,19 @@
           "current_ship_eta_rueb": "2026-05-23 12:07",
           "current_ship_source": "schiffe_merged.summary.pilot_1_name",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Rambadt, Helge",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 1,
+          "abteilungszeit": "2026-05-23 11:15",
+          "fahrzeug": "ELEONORA",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ELEONORA",
+          "current_ship_eta_rueb": "2026-05-23 12:11",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -1585,7 +1628,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 8,
+      "candidate_count": 9,
       "candidates": [
         {
           "pilot_name": "Dietrich, Thomas",
@@ -1690,6 +1733,19 @@
           "current_ship_eta_rueb": "2026-05-23 12:07",
           "current_ship_source": "schiffe_merged.summary.pilot_1_name",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Rambadt, Helge",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 1,
+          "abteilungszeit": "2026-05-23 11:15",
+          "fahrzeug": "ELEONORA",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ELEONORA",
+          "current_ship_eta_rueb": "2026-05-23 12:11",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -1739,7 +1795,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 7,
+      "candidate_count": 8,
       "candidates": [
         {
           "pilot_name": "Spiller, Roman",
@@ -1831,6 +1887,19 @@
           "current_ship_eta_rueb": "2026-05-23 12:07",
           "current_ship_source": "schiffe_merged.summary.pilot_1_name",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Rambadt, Helge",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 1,
+          "abteilungszeit": "2026-05-23 11:15",
+          "fahrzeug": "ELEONORA",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ELEONORA",
+          "current_ship_eta_rueb": "2026-05-23 12:11",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -1870,7 +1939,7 @@
     {
       "ship_key": "CONTAINERSHIPS STELLAR",
       "ship_name": "CONTAINERSHIPS STELLAR",
-      "eta_rueb": "2026-05-23 14:58",
+      "eta_rueb": "2026-05-23 14:57",
       "ship_q": 1,
       "assigned_pilot": "Köhler, Olaf",
       "assigned_pilot_q": 0,
@@ -1881,7 +1950,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 4,
+      "candidate_count": 5,
       "candidates": [
         {
           "pilot_name": "Köhler, Olaf",
@@ -1933,6 +2002,19 @@
           "current_ship_name": "KAILEEN",
           "current_ship_eta_rueb": "2026-05-23 12:07",
           "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Rambadt, Helge",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 1,
+          "abteilungszeit": "2026-05-23 11:15",
+          "fahrzeug": "ELEONORA",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ELEONORA",
+          "current_ship_eta_rueb": "2026-05-23 12:11",
+          "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
       ],
@@ -2000,7 +2082,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 5,
+      "candidate_count": 6,
       "candidates": [
         {
           "pilot_name": "Steffens, Micha",
@@ -2066,6 +2148,19 @@
           "current_ship_eta_rueb": "2026-05-23 12:07",
           "current_ship_source": "schiffe_merged.summary.pilot_1_name",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Rambadt, Helge",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 1,
+          "abteilungszeit": "2026-05-23 11:15",
+          "fahrzeug": "ELEONORA",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ELEONORA",
+          "current_ship_eta_rueb": "2026-05-23 12:11",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -2115,7 +2210,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 4,
+      "candidate_count": 5,
       "candidates": [
         {
           "pilot_name": "Richter, Ingmar",
@@ -2168,6 +2263,19 @@
           "current_ship_eta_rueb": "2026-05-23 12:07",
           "current_ship_source": "schiffe_merged.summary.pilot_1_name",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Rambadt, Helge",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 1,
+          "abteilungszeit": "2026-05-23 11:15",
+          "fahrzeug": "ELEONORA",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ELEONORA",
+          "current_ship_eta_rueb": "2026-05-23 12:11",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -2217,7 +2325,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 3,
+      "candidate_count": 4,
       "candidates": [
         {
           "pilot_name": "Plaisant, Julian",
@@ -2256,6 +2364,19 @@
           "current_ship_name": "KAILEEN",
           "current_ship_eta_rueb": "2026-05-23 12:07",
           "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Rambadt, Helge",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 1,
+          "abteilungszeit": "2026-05-23 11:15",
+          "fahrzeug": "ELEONORA",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ELEONORA",
+          "current_ship_eta_rueb": "2026-05-23 12:11",
+          "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
       ],
@@ -2307,7 +2428,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 2,
+      "candidate_count": 3,
       "candidates": [
         {
           "pilot_name": "Vogel, Peter",
@@ -2333,6 +2454,19 @@
           "current_ship_name": "KAILEEN",
           "current_ship_eta_rueb": "2026-05-23 12:07",
           "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Rambadt, Helge",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 1,
+          "abteilungszeit": "2026-05-23 11:15",
+          "fahrzeug": "ELEONORA",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ELEONORA",
+          "current_ship_eta_rueb": "2026-05-23 12:11",
+          "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
       ],
@@ -2381,6 +2515,28 @@
       "current_ship_q": 4,
       "current_ship_route": "HOS → KLT",
       "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "rambadt_helge",
+      "vorname": "Helge",
+      "nachname": "Rambadt",
+      "pilot_name": "Rambadt, Helge",
+      "abteilungszeit": "2026-05-23 11:15",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 1,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "ELEONORA",
+      "from": "UTG",
+      "to": "RÜB",
+      "nr": 1,
+      "raw_time": "Sat May 23 11:15:00 CEST 2026",
+      "current_ship_name": "ELEONORA",
+      "current_ship_eta_rueb": "2026-05-23 12:11",
+      "current_ship_q": 0,
+      "current_ship_route": "UTG → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     }
   ]
