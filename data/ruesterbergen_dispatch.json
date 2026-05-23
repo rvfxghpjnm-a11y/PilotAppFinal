@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-23T22:43:10",
+  "generated_at": "2026-05-23T22:45:07",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,13 +32,13 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 3,
+    "ships_for_ruesterbergen": 5,
     "pilots_total": 11,
     "pilots_dispatchable": 11,
     "pilots_visible_only": 0,
-    "assignments": 3,
+    "assignments": 5,
     "unassigned_ships": 0,
-    "unused_pilots": 8
+    "unused_pilots": 6
   },
   "ships": [
     {
@@ -153,6 +153,58 @@
         "makler": "UCA",
         "dangerous_vessel": "-",
         "type_of_loading": "Bulk"
+      }
+    },
+    {
+      "ship_key": "LADY ARIANE",
+      "ship_name": "LADY ARIANE",
+      "eta_rueb": "2026-05-24 04:15",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 5,
+      "meldung": {
+        "nr": "4",
+        "time": "Sun May 24 04:15:00 CEST 2026",
+        "draft": "4.7",
+        "q_gruppe": "5",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "5",
+        "draft": "4.7"
+      }
+    },
+    {
+      "ship_key": "ANNABA",
+      "ship_name": "ANNABA",
+      "eta_rueb": "2026-05-24 04:18",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 1,
+      "meldung": {
+        "nr": "5",
+        "time": "Sun May 24 04:18:00 CEST 2026",
+        "draft": "9.0",
+        "q_gruppe": "1",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "1",
+        "draft": "9.0"
       }
     }
   ],
@@ -1140,50 +1192,278 @@
           "type_of_loading": "Bulk"
         }
       }
+    },
+    {
+      "ship_key": "LADY ARIANE",
+      "ship_name": "LADY ARIANE",
+      "eta_rueb": "2026-05-24 04:15",
+      "ship_q": 5,
+      "assigned_pilot": "Jeschek, Hauke",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 12,
+      "assigned_abteilungszeit": "2026-05-23 17:14",
+      "assigned_current_ship_name": "ELBMOON",
+      "assigned_current_ship_eta_rueb": "2026-05-23 23:46",
+      "assigned_current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 8,
+      "candidates": [
+        {
+          "pilot_name": "Jeschek, Hauke",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 12,
+          "abteilungszeit": "2026-05-23 17:14",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ELBMOON",
+          "current_ship_eta_rueb": "2026-05-23 23:46",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Dalecki, Niklas",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 11,
+          "abteilungszeit": "2026-05-23 17:44",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "TAVASTLAND",
+          "current_ship_eta_rueb": "2026-05-24 00:12",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Wäntig, Lutz",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 10,
+          "abteilungszeit": "2026-05-23 17:49",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "LADY ANNEKE",
+          "current_ship_eta_rueb": "2026-05-24 00:19",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Escher, Franck",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 9,
+          "abteilungszeit": "2026-05-23 17:50",
+          "fahrzeug": "FREDERIK",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "FREDERIK",
+          "current_ship_eta_rueb": "2026-05-23 19:18",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Lüdtke, Jan-Torben",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 6,
+          "abteilungszeit": "2026-05-23 18:45",
+          "fahrzeug": "MAIKE",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "MAIKE",
+          "current_ship_eta_rueb": "2026-05-23 19:59",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Schie, Christian",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 4,
+          "abteilungszeit": "2026-05-23 19:50",
+          "fahrzeug": "BOTHNIABORG",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "BOTHNIABORG",
+          "current_ship_eta_rueb": "2026-05-24 00:59",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Zozulya, Mykola",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 1,
+          "abteilungszeit": "2026-05-23 21:05",
+          "fahrzeug": "JSP TORNOE",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "JSP TORNOE",
+          "current_ship_eta_rueb": "2026-05-23 22:19",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Koslik, Kevin",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-05-23 21:05",
+          "fahrzeug": "RIX VENTA",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RIX VENTA",
+          "current_ship_eta_rueb": "2026-05-23 22:30",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "4",
+          "time": "Sun May 24 04:15:00 CEST 2026",
+          "draft": "4.7",
+          "q_gruppe": "5",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "HOS → KLT",
+          "routes": [
+            "HOS → KLT",
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "5",
+          "draft": "4.7"
+        }
+      }
+    },
+    {
+      "ship_key": "ANNABA",
+      "ship_name": "ANNABA",
+      "eta_rueb": "2026-05-24 04:18",
+      "ship_q": 1,
+      "assigned_pilot": "Dalecki, Niklas",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 11,
+      "assigned_abteilungszeit": "2026-05-23 17:44",
+      "assigned_current_ship_name": "TAVASTLAND",
+      "assigned_current_ship_eta_rueb": "2026-05-24 00:12",
+      "assigned_current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 7,
+      "candidates": [
+        {
+          "pilot_name": "Dalecki, Niklas",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 11,
+          "abteilungszeit": "2026-05-23 17:44",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "TAVASTLAND",
+          "current_ship_eta_rueb": "2026-05-24 00:12",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Wäntig, Lutz",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 10,
+          "abteilungszeit": "2026-05-23 17:49",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "LADY ANNEKE",
+          "current_ship_eta_rueb": "2026-05-24 00:19",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Escher, Franck",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 9,
+          "abteilungszeit": "2026-05-23 17:50",
+          "fahrzeug": "FREDERIK",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "FREDERIK",
+          "current_ship_eta_rueb": "2026-05-23 19:18",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Lüdtke, Jan-Torben",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 6,
+          "abteilungszeit": "2026-05-23 18:45",
+          "fahrzeug": "MAIKE",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "MAIKE",
+          "current_ship_eta_rueb": "2026-05-23 19:59",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Schie, Christian",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 4,
+          "abteilungszeit": "2026-05-23 19:50",
+          "fahrzeug": "BOTHNIABORG",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "BOTHNIABORG",
+          "current_ship_eta_rueb": "2026-05-24 00:59",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Zozulya, Mykola",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 1,
+          "abteilungszeit": "2026-05-23 21:05",
+          "fahrzeug": "JSP TORNOE",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "JSP TORNOE",
+          "current_ship_eta_rueb": "2026-05-23 22:19",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Koslik, Kevin",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-05-23 21:05",
+          "fahrzeug": "RIX VENTA",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RIX VENTA",
+          "current_ship_eta_rueb": "2026-05-23 22:30",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "5",
+          "time": "Sun May 24 04:18:00 CEST 2026",
+          "draft": "9.0",
+          "q_gruppe": "1",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "HOS → KLT",
+          "routes": [
+            "HOS → KLT",
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "1",
+          "draft": "9.0"
+        }
+      }
     }
   ],
   "unassigned_ships": [],
   "unused_pilots": [
-    {
-      "pilot_key": "jeschek_hauke",
-      "vorname": "Hauke",
-      "nachname": "Jeschek",
-      "pilot_name": "Jeschek, Hauke",
-      "abteilungszeit": "2026-05-23 17:14",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 12,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "RÜB",
-      "nr": 12,
-      "raw_time": "Sat May 23 17:14:00 CEST 2026",
-      "current_ship_name": "ELBMOON",
-      "current_ship_eta_rueb": "2026-05-23 23:46",
-      "current_ship_q": 1,
-      "current_ship_route": "HOS → KLT",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-      "availability_kind": "merged_eta"
-    },
-    {
-      "pilot_key": "dalecki_niklas",
-      "vorname": "Niklas",
-      "nachname": "Dalecki",
-      "pilot_name": "Dalecki, Niklas",
-      "abteilungszeit": "2026-05-23 17:44",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 11,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "RÜB",
-      "nr": 11,
-      "raw_time": "Sat May 23 17:44:00 CEST 2026",
-      "current_ship_name": "TAVASTLAND",
-      "current_ship_eta_rueb": "2026-05-24 00:12",
-      "current_ship_q": 0,
-      "current_ship_route": "HOS → KLT",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-      "availability_kind": "merged_eta"
-    },
     {
       "pilot_key": "wäntig_lutz",
       "vorname": "Lutz",
