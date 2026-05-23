@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-23T10:23:11",
+  "generated_at": "2026-05-23T10:25:13",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 7,
     "pilots_total": 17,
-    "pilots_dispatchable": 16,
-    "pilots_visible_only": 1,
+    "pilots_dispatchable": 17,
+    "pilots_visible_only": 0,
     "assignments": 7,
     "unassigned_ships": 0,
-    "unused_pilots": 9
+    "unused_pilots": 10
   },
   "ships": [
     {
@@ -465,7 +465,7 @@
       "nr": 13,
       "raw_time": "Sat May 23 06:23:00 CEST 2026",
       "current_ship_name": "CAROLINA",
-      "current_ship_eta_rueb": "2026-05-23 10:51",
+      "current_ship_eta_rueb": "2026-05-23 10:50",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -487,6 +487,7 @@
       "nr": 8,
       "raw_time": "Sat May 23 08:12:00 CEST 2026",
       "current_ship_name": "PEGASE M644",
+      "current_ship_eta_rueb": "2026-05-23 13:30",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.summary.pilot_1_name",
@@ -840,10 +841,32 @@
       "nr": 13,
       "raw_time": "Sat May 23 06:23:00 CEST 2026",
       "current_ship_name": "CAROLINA",
-      "current_ship_eta_rueb": "2026-05-23 10:51",
+      "current_ship_eta_rueb": "2026-05-23 10:50",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "rohn_jens michael",
+      "vorname": "Jens Michael",
+      "nachname": "Rohn",
+      "pilot_name": "Rohn, Jens Michael",
+      "abteilungszeit": "2026-05-23 08:12",
+      "pilot_q": 1,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 8,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "M644 PEGASE",
+      "from": "HOR",
+      "to": "RÜB",
+      "nr": 8,
+      "raw_time": "Sat May 23 08:12:00 CEST 2026",
+      "current_ship_name": "PEGASE M644",
+      "current_ship_eta_rueb": "2026-05-23 13:30",
+      "current_ship_q": 0,
+      "current_ship_route": "HOR → RÜB",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta"
     },
     {
@@ -1023,23 +1046,7 @@
       "availability_kind": "merged_eta"
     }
   ],
-  "visible_but_not_dispatchable_pilots": [
-    {
-      "pilot_key": "rohn_jens michael",
-      "pilot_name": "Rohn, Jens Michael",
-      "pilot_q": 1,
-      "pilot_tactical_nr": 8,
-      "abteilungszeit": "2026-05-23 08:12",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "M644 PEGASE",
-      "from": "HOR",
-      "to": "RÜB",
-      "current_ship_name": "PEGASE M644",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    }
-  ],
+  "visible_but_not_dispatchable_pilots": [],
   "assignments": [
     {
       "ship_key": "WESTEWIND",
@@ -1157,7 +1164,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "CAROLINA",
-          "current_ship_eta_rueb": "2026-05-23 10:51",
+          "current_ship_eta_rueb": "2026-05-23 10:50",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1215,6 +1222,15 @@
         }
       ],
       "excluded": [
+        {
+          "pilot_name": "Rohn, Jens Michael",
+          "pilot_tactical_nr": 8,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "PEGASE M644",
+          "pilot_current_ship_eta_rueb": "2026-05-23 13:30",
+          "ship_eta_rueb": "2026-05-23 11:26",
+          "availability_kind": "merged_eta"
+        },
         {
           "pilot_name": "Dietrich, Thomas",
           "pilot_tactical_nr": 9,
@@ -1388,7 +1404,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "CAROLINA",
-          "current_ship_eta_rueb": "2026-05-23 10:51",
+          "current_ship_eta_rueb": "2026-05-23 10:50",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1446,6 +1462,15 @@
         }
       ],
       "excluded": [
+        {
+          "pilot_name": "Rohn, Jens Michael",
+          "pilot_tactical_nr": 8,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "PEGASE M644",
+          "pilot_current_ship_eta_rueb": "2026-05-23 13:30",
+          "ship_eta_rueb": "2026-05-23 12:10",
+          "availability_kind": "merged_eta"
+        },
         {
           "pilot_name": "Dietrich, Thomas",
           "pilot_tactical_nr": 9,
@@ -1531,7 +1556,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 13,
+      "candidate_count": 14,
       "candidates": [
         {
           "pilot_name": "Winkler, René",
@@ -1607,8 +1632,21 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "CAROLINA",
-          "current_ship_eta_rueb": "2026-05-23 10:51",
+          "current_ship_eta_rueb": "2026-05-23 10:50",
           "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Rohn, Jens Michael",
+          "pilot_q": 1,
+          "pilot_tactical_nr": 8,
+          "abteilungszeit": "2026-05-23 08:12",
+          "fahrzeug": "M644 PEGASE",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "PEGASE M644",
+          "current_ship_eta_rueb": "2026-05-23 13:30",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
           "availability_kind": "merged_eta"
         },
         {
@@ -1762,7 +1800,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 13,
+      "candidate_count": 14,
       "candidates": [
         {
           "pilot_name": "Haala, Klaus Werner",
@@ -1825,8 +1863,21 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "CAROLINA",
-          "current_ship_eta_rueb": "2026-05-23 10:51",
+          "current_ship_eta_rueb": "2026-05-23 10:50",
           "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Rohn, Jens Michael",
+          "pilot_q": 1,
+          "pilot_tactical_nr": 8,
+          "abteilungszeit": "2026-05-23 08:12",
+          "fahrzeug": "M644 PEGASE",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "PEGASE M644",
+          "current_ship_eta_rueb": "2026-05-23 13:30",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
           "availability_kind": "merged_eta"
         },
         {
@@ -1970,7 +2021,7 @@
       "assigned_current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 12,
+      "candidate_count": 13,
       "candidates": [
         {
           "pilot_name": "Hahn, Peter",
@@ -2020,8 +2071,21 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "CAROLINA",
-          "current_ship_eta_rueb": "2026-05-23 10:51",
+          "current_ship_eta_rueb": "2026-05-23 10:50",
           "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Rohn, Jens Michael",
+          "pilot_q": 1,
+          "pilot_tactical_nr": 8,
+          "abteilungszeit": "2026-05-23 08:12",
+          "fahrzeug": "M644 PEGASE",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "PEGASE M644",
+          "current_ship_eta_rueb": "2026-05-23 13:30",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
           "availability_kind": "merged_eta"
         },
         {
@@ -2176,7 +2240,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 11,
+      "candidate_count": 12,
       "candidates": [
         {
           "pilot_name": "Petersen, Yannick",
@@ -2213,8 +2277,21 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "CAROLINA",
-          "current_ship_eta_rueb": "2026-05-23 10:51",
+          "current_ship_eta_rueb": "2026-05-23 10:50",
           "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Rohn, Jens Michael",
+          "pilot_q": 1,
+          "pilot_tactical_nr": 8,
+          "abteilungszeit": "2026-05-23 08:12",
+          "fahrzeug": "M644 PEGASE",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "PEGASE M644",
+          "current_ship_eta_rueb": "2026-05-23 13:30",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
           "availability_kind": "merged_eta"
         },
         {
@@ -2370,7 +2447,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 8,
+      "candidate_count": 9,
       "candidates": [
         {
           "pilot_name": "Matysik, Eike",
@@ -2394,8 +2471,21 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "CAROLINA",
-          "current_ship_eta_rueb": "2026-05-23 10:51",
+          "current_ship_eta_rueb": "2026-05-23 10:50",
           "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Rohn, Jens Michael",
+          "pilot_q": 1,
+          "pilot_tactical_nr": 8,
+          "abteilungszeit": "2026-05-23 08:12",
+          "fahrzeug": "M644 PEGASE",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "PEGASE M644",
+          "current_ship_eta_rueb": "2026-05-23 13:30",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
           "availability_kind": "merged_eta"
         },
         {
@@ -2546,10 +2636,32 @@
       "nr": 13,
       "raw_time": "Sat May 23 06:23:00 CEST 2026",
       "current_ship_name": "CAROLINA",
-      "current_ship_eta_rueb": "2026-05-23 10:51",
+      "current_ship_eta_rueb": "2026-05-23 10:50",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "rohn_jens michael",
+      "vorname": "Jens Michael",
+      "nachname": "Rohn",
+      "pilot_name": "Rohn, Jens Michael",
+      "abteilungszeit": "2026-05-23 08:12",
+      "pilot_q": 1,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 8,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "M644 PEGASE",
+      "from": "HOR",
+      "to": "RÜB",
+      "nr": 8,
+      "raw_time": "Sat May 23 08:12:00 CEST 2026",
+      "current_ship_name": "PEGASE M644",
+      "current_ship_eta_rueb": "2026-05-23 13:30",
+      "current_ship_q": 0,
+      "current_ship_route": "HOR → RÜB",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta"
     },
     {
