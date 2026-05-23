@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-23T05:41:07",
+  "generated_at": "2026-05-23T05:43:06",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,13 +32,13 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 5,
+    "ships_for_ruesterbergen": 8,
     "pilots_total": 9,
     "pilots_dispatchable": 9,
     "pilots_visible_only": 0,
-    "assignments": 5,
+    "assignments": 8,
     "unassigned_ships": 0,
-    "unused_pilots": 4
+    "unused_pilots": 1
   },
   "ships": [
     {
@@ -227,6 +227,82 @@
         "makler": "UCA",
         "dangerous_vessel": "-",
         "type_of_loading": "Stueckgueter"
+      }
+    },
+    {
+      "ship_key": "KAILI",
+      "ship_name": "KAILI",
+      "eta_rueb": "2026-05-23 09:45",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 5,
+      "meldung": {
+        "nr": "7",
+        "time": "Sat May 23 09:45:00 CEST 2026",
+        "draft": "6.1",
+        "q_gruppe": "5",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "RÜB → HOS",
+        "routes": [
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "5",
+        "draft": "6.1"
+      }
+    },
+    {
+      "ship_key": "MAYA THERESA",
+      "ship_name": "MAYA THERESA",
+      "eta_rueb": "2026-05-23 09:45",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 5,
+      "meldung": {
+        "nr": "6",
+        "time": "Sat May 23 09:45:00 CEST 2026",
+        "draft": "6.4",
+        "q_gruppe": "5",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "5",
+        "draft": "6.4"
+      }
+    },
+    {
+      "ship_key": "SKALAR",
+      "ship_name": "SKALAR",
+      "eta_rueb": "2026-05-23 10:20",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 1,
+      "meldung": {
+        "nr": "8",
+        "time": "Sat May 23 10:20:00 CEST 2026",
+        "draft": "7.5",
+        "q_gruppe": "1",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "RÜB → HOS",
+        "routes": [
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "1",
+        "draft": "7.5"
       }
     }
   ],
@@ -1316,75 +1392,243 @@
           "type_of_loading": "Stueckgueter"
         }
       }
+    },
+    {
+      "ship_key": "KAILI",
+      "ship_name": "KAILI",
+      "eta_rueb": "2026-05-23 09:45",
+      "ship_q": 5,
+      "assigned_pilot": "Woitanowski, Tim",
+      "assigned_pilot_q": 2,
+      "assigned_tactical_nr": 8,
+      "assigned_abteilungszeit": "2026-05-22 22:49",
+      "assigned_current_ship_name": "RÜB",
+      "assigned_current_ship_eta_rueb": "2026-05-22 22:49",
+      "assigned_current_ship_source": "special.already_in_rueb",
+      "assigned_availability_kind": "already_in_rueb",
+      "assigned_availability_hint": "Lotse gilt als bereits in RÜB",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 4,
+      "candidates": [
+        {
+          "pilot_name": "Woitanowski, Tim",
+          "pilot_q": 2,
+          "pilot_tactical_nr": 8,
+          "abteilungszeit": "2026-05-22 22:49",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-22 22:49",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
+        },
+        {
+          "pilot_name": "Winkler, René",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 6,
+          "abteilungszeit": "2026-05-23 01:58",
+          "fahrzeug": "ELENORA",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ELENORA",
+          "current_ship_eta_rueb": "2026-05-23 06:57",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Haala, Klaus Werner",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 5,
+          "abteilungszeit": "2026-05-23 02:14",
+          "fahrzeug": "JSP FALSTER",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "JSP FALSTER",
+          "current_ship_eta_rueb": "2026-05-23 07:02",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Hahn, Peter",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 4,
+          "abteilungszeit": "2026-05-23 02:31",
+          "fahrzeug": "RADUGA LYON+DELTA 1",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RADUGA LYON + DELTA I",
+          "current_ship_eta_rueb": "2026-05-23 07:31",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "7",
+          "time": "Sat May 23 09:45:00 CEST 2026",
+          "draft": "6.1",
+          "q_gruppe": "5",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "RÜB → HOS",
+          "routes": [
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "5",
+          "draft": "6.1"
+        }
+      }
+    },
+    {
+      "ship_key": "MAYA THERESA",
+      "ship_name": "MAYA THERESA",
+      "eta_rueb": "2026-05-23 09:45",
+      "ship_q": 5,
+      "assigned_pilot": "Winkler, René",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 6,
+      "assigned_abteilungszeit": "2026-05-23 01:58",
+      "assigned_current_ship_name": "ELENORA",
+      "assigned_current_ship_eta_rueb": "2026-05-23 06:57",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 3,
+      "candidates": [
+        {
+          "pilot_name": "Winkler, René",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 6,
+          "abteilungszeit": "2026-05-23 01:58",
+          "fahrzeug": "ELENORA",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ELENORA",
+          "current_ship_eta_rueb": "2026-05-23 06:57",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Haala, Klaus Werner",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 5,
+          "abteilungszeit": "2026-05-23 02:14",
+          "fahrzeug": "JSP FALSTER",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "JSP FALSTER",
+          "current_ship_eta_rueb": "2026-05-23 07:02",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Hahn, Peter",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 4,
+          "abteilungszeit": "2026-05-23 02:31",
+          "fahrzeug": "RADUGA LYON+DELTA 1",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RADUGA LYON + DELTA I",
+          "current_ship_eta_rueb": "2026-05-23 07:31",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "6",
+          "time": "Sat May 23 09:45:00 CEST 2026",
+          "draft": "6.4",
+          "q_gruppe": "5",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "HOS → KLT",
+          "routes": [
+            "HOS → KLT",
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "5",
+          "draft": "6.4"
+        }
+      }
+    },
+    {
+      "ship_key": "SKALAR",
+      "ship_name": "SKALAR",
+      "eta_rueb": "2026-05-23 10:20",
+      "ship_q": 1,
+      "assigned_pilot": "Haala, Klaus Werner",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 5,
+      "assigned_abteilungszeit": "2026-05-23 02:14",
+      "assigned_current_ship_name": "JSP FALSTER",
+      "assigned_current_ship_eta_rueb": "2026-05-23 07:02",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 2,
+      "candidates": [
+        {
+          "pilot_name": "Haala, Klaus Werner",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 5,
+          "abteilungszeit": "2026-05-23 02:14",
+          "fahrzeug": "JSP FALSTER",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "JSP FALSTER",
+          "current_ship_eta_rueb": "2026-05-23 07:02",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Hahn, Peter",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 4,
+          "abteilungszeit": "2026-05-23 02:31",
+          "fahrzeug": "RADUGA LYON+DELTA 1",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RADUGA LYON + DELTA I",
+          "current_ship_eta_rueb": "2026-05-23 07:31",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "8",
+          "time": "Sat May 23 10:20:00 CEST 2026",
+          "draft": "7.5",
+          "q_gruppe": "1",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "RÜB → HOS",
+          "routes": [
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "1",
+          "draft": "7.5"
+        }
+      }
     }
   ],
   "unassigned_ships": [],
   "unused_pilots": [
-    {
-      "pilot_key": "woitanowski_tim",
-      "vorname": "Tim",
-      "nachname": "Woitanowski",
-      "pilot_name": "Woitanowski, Tim",
-      "abteilungszeit": "2026-05-22 22:49",
-      "pilot_q": 2,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 8,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "RÜB",
-      "nr": 8,
-      "raw_time": "Fri May 22 22:49:00 CEST 2026",
-      "current_ship_name": "RÜB",
-      "current_ship_eta_rueb": "2026-05-22 22:49",
-      "current_ship_q": 0,
-      "current_ship_route": "RÜB",
-      "current_ship_source": "special.already_in_rueb",
-      "availability_kind": "already_in_rueb",
-      "availability_hint": "Lotse gilt als bereits in RÜB"
-    },
-    {
-      "pilot_key": "winkler_rené",
-      "vorname": "René",
-      "nachname": "Winkler",
-      "pilot_name": "Winkler, René",
-      "abteilungszeit": "2026-05-23 01:58",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 6,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "ELENORA",
-      "from": "HOR",
-      "to": "RÜB",
-      "nr": 6,
-      "raw_time": "Sat May 23 01:58:00 CEST 2026",
-      "current_ship_name": "ELENORA",
-      "current_ship_eta_rueb": "2026-05-23 06:57",
-      "current_ship_q": 0,
-      "current_ship_route": "HOR → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
-    },
-    {
-      "pilot_key": "haala_klaus werner",
-      "vorname": "Klaus Werner",
-      "nachname": "Haala",
-      "pilot_name": "Haala, Klaus Werner",
-      "abteilungszeit": "2026-05-23 02:14",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 5,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "JSP FALSTER",
-      "from": "HOS",
-      "to": "RÜB",
-      "nr": 5,
-      "raw_time": "Sat May 23 02:14:00 CEST 2026",
-      "current_ship_name": "JSP FALSTER",
-      "current_ship_eta_rueb": "2026-05-23 07:02",
-      "current_ship_q": 0,
-      "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
-    },
     {
       "pilot_key": "hahn_peter",
       "vorname": "Peter",
