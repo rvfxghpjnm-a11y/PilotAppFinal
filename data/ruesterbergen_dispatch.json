@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-24T03:05:09",
+  "generated_at": "2026-05-24T03:07:09",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 5,
     "pilots_total": 12,
-    "pilots_dispatchable": 9,
-    "pilots_visible_only": 3,
+    "pilots_dispatchable": 10,
+    "pilots_visible_only": 2,
     "assignments": 5,
     "unassigned_ships": 0,
-    "unused_pilots": 4
+    "unused_pilots": 5
   },
   "ships": [
     {
@@ -445,6 +445,7 @@
       "nr": 6,
       "raw_time": "Sun May 24 01:11:00 CEST 2026",
       "current_ship_name": "MILA",
+      "current_ship_eta_rueb": "2026-05-24 07:06",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -689,24 +690,31 @@
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
-    }
-  ],
-  "visible_but_not_dispatchable_pilots": [
+    },
     {
       "pilot_key": "kordt_remo",
+      "vorname": "Remo",
+      "nachname": "Kordt",
       "pilot_name": "Kordt, Remo",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 6,
       "abteilungszeit": "2026-05-24 01:11",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 6,
       "aufgabe": "Kanalbört",
       "fahrzeug": "MILA",
       "from": "HOR",
       "to": "RÜB",
+      "nr": 6,
+      "raw_time": "Sun May 24 01:11:00 CEST 2026",
       "current_ship_name": "MILA",
+      "current_ship_eta_rueb": "2026-05-24 07:06",
+      "current_ship_q": 0,
+      "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    },
+      "availability_kind": "merged_eta"
+    }
+  ],
+  "visible_but_not_dispatchable_pilots": [
     {
       "pilot_key": "glenewinkel_jan-steffen",
       "pilot_name": "Glenewinkel, Jan-Steffen",
@@ -852,6 +860,15 @@
           "pilot_current_ship_eta_rueb": "2026-05-24 05:25",
           "ship_eta_rueb": "2026-05-24 04:24",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Kordt, Remo",
+          "pilot_tactical_nr": 6,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "MILA",
+          "pilot_current_ship_eta_rueb": "2026-05-24 07:06",
+          "ship_eta_rueb": "2026-05-24 04:24",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -986,6 +1003,15 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "LOTTALAND",
           "pilot_current_ship_eta_rueb": "2026-05-24 05:25",
+          "ship_eta_rueb": "2026-05-24 04:30",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Kordt, Remo",
+          "pilot_tactical_nr": 6,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "MILA",
+          "pilot_current_ship_eta_rueb": "2026-05-24 07:06",
           "ship_eta_rueb": "2026-05-24 04:30",
           "availability_kind": "merged_eta"
         }
@@ -1131,6 +1157,17 @@
           "availability_kind": "merged_eta"
         }
       ],
+      "excluded": [
+        {
+          "pilot_name": "Kordt, Remo",
+          "pilot_tactical_nr": 6,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "MILA",
+          "pilot_current_ship_eta_rueb": "2026-05-24 07:06",
+          "ship_eta_rueb": "2026-05-24 06:32",
+          "availability_kind": "merged_eta"
+        }
+      ],
       "ship": {
         "meldung": {
           "nr": "3",
@@ -1253,6 +1290,15 @@
           "reason": "Quali passt nicht (4 > 2)",
           "pilot_q": 4,
           "ship_q": 2
+        },
+        {
+          "pilot_name": "Kordt, Remo",
+          "pilot_tactical_nr": 6,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "MILA",
+          "pilot_current_ship_eta_rueb": "2026-05-24 07:06",
+          "ship_eta_rueb": "2026-05-24 06:35",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -1365,6 +1411,15 @@
           "reason": "Quali passt nicht (4 > 2)",
           "pilot_q": 4,
           "ship_q": 2
+        },
+        {
+          "pilot_name": "Kordt, Remo",
+          "pilot_tactical_nr": 6,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "MILA",
+          "pilot_current_ship_eta_rueb": "2026-05-24 07:06",
+          "ship_eta_rueb": "2026-05-24 06:38",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -1489,6 +1544,28 @@
       "current_ship_eta_rueb": "2026-05-24 05:25",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "kordt_remo",
+      "vorname": "Remo",
+      "nachname": "Kordt",
+      "pilot_name": "Kordt, Remo",
+      "abteilungszeit": "2026-05-24 01:11",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 6,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "MILA",
+      "from": "HOR",
+      "to": "RÜB",
+      "nr": 6,
+      "raw_time": "Sun May 24 01:11:00 CEST 2026",
+      "current_ship_name": "MILA",
+      "current_ship_eta_rueb": "2026-05-24 07:06",
+      "current_ship_q": 0,
+      "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     }
