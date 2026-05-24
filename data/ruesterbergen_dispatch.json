@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-24T20:07:08",
+  "generated_at": "2026-05-24T20:09:06",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,11 +32,11 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 4,
+    "ships_for_ruesterbergen": 5,
     "pilots_total": 8,
-    "pilots_dispatchable": 5,
-    "pilots_visible_only": 3,
-    "assignments": 4,
+    "pilots_dispatchable": 6,
+    "pilots_visible_only": 2,
+    "assignments": 5,
     "unassigned_ships": 0,
     "unused_pilots": 1
   },
@@ -189,6 +189,44 @@
         "dangerous_vessel": "-",
         "type_of_loading": "Container"
       }
+    },
+    {
+      "ship_key": "KASSANDRA",
+      "ship_name": "KASSANDRA",
+      "eta_rueb": "2026-05-25 01:30",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 4,
+      "meldung": {
+        "nr": "5",
+        "time": "Mon May 25 01:30:00 CEST 2026",
+        "draft": "4.9",
+        "q_gruppe": "4",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "4",
+        "vg": "3",
+        "draft": "4.90",
+        "length_m": "108.23",
+        "beam_m": "18.46",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "U",
+        "pilot_1_name": "Lock, Janis",
+        "travel_status": "SAILING_NOK",
+        "makler": "SUB",
+        "dangerous_vessel": "-",
+        "type_of_loading": "Ballast"
+      }
     }
   ],
   "pilots": [
@@ -294,9 +332,10 @@
       "nr": 10,
       "raw_time": "Sun May 24 18:46:00 CEST 2026",
       "current_ship_name": "KEIT",
+      "current_ship_eta_rueb": "2026-05-24 23:40",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
@@ -317,7 +356,7 @@
       "current_ship_name": "AGATH",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta"
     },
     {
@@ -453,6 +492,28 @@
       "availability_kind": "merged_eta"
     },
     {
+      "pilot_key": "lüdtke_jan-torben",
+      "vorname": "Jan-Torben",
+      "nachname": "Lüdtke",
+      "pilot_name": "Lüdtke, Jan-Torben",
+      "abteilungszeit": "2026-05-24 18:46",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 10,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "KEIT",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 10,
+      "raw_time": "Sun May 24 18:46:00 CEST 2026",
+      "current_ship_name": "KEIT",
+      "current_ship_eta_rueb": "2026-05-24 23:40",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
       "pilot_key": "schie_christian",
       "vorname": "Christian",
       "nachname": "Schie",
@@ -478,21 +539,6 @@
   ],
   "visible_but_not_dispatchable_pilots": [
     {
-      "pilot_key": "lüdtke_jan-torben",
-      "pilot_name": "Lüdtke, Jan-Torben",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 10,
-      "abteilungszeit": "2026-05-24 18:46",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "KEIT",
-      "from": "HOS",
-      "to": "RÜB",
-      "current_ship_name": "KEIT",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    },
-    {
       "pilot_key": "haala_klaus werner",
       "pilot_name": "Haala, Klaus Werner",
       "pilot_q": 0,
@@ -503,7 +549,7 @@
       "from": "HOS",
       "to": "RÜB",
       "current_ship_name": "AGATH",
-      "current_ship_source": "schiffe_merged.seelotsen",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta",
       "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
     },
@@ -605,6 +651,17 @@
           "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
           "availability_kind": "leerfahrt_hos_rueb_plus60",
           "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Lüdtke, Jan-Torben",
+          "pilot_tactical_nr": 10,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "KEIT",
+          "pilot_current_ship_eta_rueb": "2026-05-24 23:40",
+          "ship_eta_rueb": "2026-05-24 21:07",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -711,6 +768,17 @@
           "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
         }
       ],
+      "excluded": [
+        {
+          "pilot_name": "Lüdtke, Jan-Torben",
+          "pilot_tactical_nr": 10,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "KEIT",
+          "pilot_current_ship_eta_rueb": "2026-05-24 23:40",
+          "ship_eta_rueb": "2026-05-24 21:32",
+          "availability_kind": "merged_eta"
+        }
+      ],
       "ship": {
         "meldung": {
           "nr": "2",
@@ -802,6 +870,17 @@
           "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
         }
       ],
+      "excluded": [
+        {
+          "pilot_name": "Lüdtke, Jan-Torben",
+          "pilot_tactical_nr": 10,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "KEIT",
+          "pilot_current_ship_eta_rueb": "2026-05-24 23:40",
+          "ship_eta_rueb": "2026-05-24 21:36",
+          "availability_kind": "merged_eta"
+        }
+      ],
       "ship": {
         "meldung": {
           "nr": "3",
@@ -879,6 +958,17 @@
           "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
         }
       ],
+      "excluded": [
+        {
+          "pilot_name": "Lüdtke, Jan-Torben",
+          "pilot_tactical_nr": 10,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "KEIT",
+          "pilot_current_ship_eta_rueb": "2026-05-24 23:40",
+          "ship_eta_rueb": "2026-05-24 21:39",
+          "availability_kind": "merged_eta"
+        }
+      ],
       "ship": {
         "meldung": {
           "nr": "4",
@@ -910,6 +1000,84 @@
           "makler": "SUB",
           "dangerous_vessel": "-",
           "type_of_loading": "Container"
+        }
+      }
+    },
+    {
+      "ship_key": "KASSANDRA",
+      "ship_name": "KASSANDRA",
+      "eta_rueb": "2026-05-25 01:30",
+      "ship_q": 4,
+      "assigned_pilot": "Lüdtke, Jan-Torben",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 10,
+      "assigned_abteilungszeit": "2026-05-24 18:46",
+      "assigned_current_ship_name": "KEIT",
+      "assigned_current_ship_eta_rueb": "2026-05-24 23:40",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 2,
+      "candidates": [
+        {
+          "pilot_name": "Lüdtke, Jan-Torben",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 10,
+          "abteilungszeit": "2026-05-24 18:46",
+          "fahrzeug": "KEIT",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "KEIT",
+          "current_ship_eta_rueb": "2026-05-24 23:40",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Schie, Christian",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 1,
+          "abteilungszeit": "2026-05-24 20:05",
+          "fahrzeug": "Leerfahrt",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "Leerfahrt",
+          "current_ship_eta_rueb": "2026-05-24 21:05",
+          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
+          "availability_kind": "leerfahrt_hos_rueb_plus60",
+          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "5",
+          "time": "Mon May 25 01:30:00 CEST 2026",
+          "draft": "4.9",
+          "q_gruppe": "4",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "HOS → KLT",
+          "routes": [
+            "HOS → KLT",
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "4",
+          "vg": "3",
+          "draft": "4.90",
+          "length_m": "108.23",
+          "beam_m": "18.46",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "U",
+          "pilot_1_name": "Lock, Janis",
+          "travel_status": "SAILING_NOK",
+          "makler": "SUB",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Ballast"
         }
       }
     }
