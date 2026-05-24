@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-25T00:45:09",
+  "generated_at": "2026-05-25T00:47:09",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,13 +32,13 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 2,
+    "ships_for_ruesterbergen": 4,
     "pilots_total": 10,
     "pilots_dispatchable": 10,
     "pilots_visible_only": 0,
-    "assignments": 2,
+    "assignments": 4,
     "unassigned_ships": 0,
-    "unused_pilots": 8
+    "unused_pilots": 6
   },
   "ships": [
     {
@@ -114,6 +114,70 @@
         "makler": "UCA",
         "dangerous_vessel": "-",
         "type_of_loading": "Bulk"
+      }
+    },
+    {
+      "ship_key": "KOBE PIONIER",
+      "ship_name": "KOBE PIONIER",
+      "eta_rueb": "2026-05-25 05:40",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 5,
+      "meldung": {
+        "nr": "3",
+        "time": "Mon May 25 05:40:00 CEST 2026",
+        "draft": "6.4",
+        "q_gruppe": "5",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "5",
+        "vg": "4",
+        "draft": "6.40",
+        "length_m": "89.99",
+        "beam_m": "14",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "U",
+        "pilot_1_name": "Wolthoff, Enno",
+        "travel_status": "SAILING_NOK",
+        "makler": "UCA",
+        "dangerous_vessel": "ja",
+        "type_of_loading": "Chemikalien fluessig"
+      }
+    },
+    {
+      "ship_key": "PROUD",
+      "ship_name": "PROUD",
+      "eta_rueb": "2026-05-25 05:43",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 4,
+      "meldung": {
+        "nr": "4",
+        "time": "Mon May 25 05:43:00 CEST 2026",
+        "draft": "6.4",
+        "q_gruppe": "4",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "4",
+        "draft": "6.4"
       }
     }
   ],
@@ -242,7 +306,7 @@
       "nr": 5,
       "raw_time": "Sun May 24 21:33:00 CEST 2026",
       "current_ship_name": "ROCAMAR",
-      "current_ship_eta_rueb": "2026-05-25 02:26",
+      "current_ship_eta_rueb": "2026-05-25 02:24",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -462,7 +526,7 @@
       "nr": 5,
       "raw_time": "Sun May 24 21:33:00 CEST 2026",
       "current_ship_name": "ROCAMAR",
-      "current_ship_eta_rueb": "2026-05-25 02:26",
+      "current_ship_eta_rueb": "2026-05-25 02:24",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -646,7 +710,7 @@
           "pilot_tactical_nr": 5,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "ROCAMAR",
-          "pilot_current_ship_eta_rueb": "2026-05-25 02:26",
+          "pilot_current_ship_eta_rueb": "2026-05-25 02:24",
           "ship_eta_rueb": "2026-05-25 01:43",
           "availability_kind": "merged_eta"
         },
@@ -797,7 +861,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "ROCAMAR",
-          "current_ship_eta_rueb": "2026-05-25 02:26",
+          "current_ship_eta_rueb": "2026-05-25 02:24",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -880,52 +944,293 @@
           "type_of_loading": "Bulk"
         }
       }
+    },
+    {
+      "ship_key": "KOBE PIONIER",
+      "ship_name": "KOBE PIONIER",
+      "eta_rueb": "2026-05-25 05:40",
+      "ship_q": 5,
+      "assigned_pilot": "Krämer, Jonas",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 13,
+      "assigned_abteilungszeit": "2026-05-24 15:40",
+      "assigned_current_ship_name": "BALTIC MOON",
+      "assigned_current_ship_eta_rueb": "2026-05-24 21:30",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 8,
+      "candidates": [
+        {
+          "pilot_name": "Krämer, Jonas",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 13,
+          "abteilungszeit": "2026-05-24 15:40",
+          "fahrzeug": "BALTIC MOON",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "BALTIC MOON",
+          "current_ship_eta_rueb": "2026-05-24 21:30",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Fehse, Torsten",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 12,
+          "abteilungszeit": "2026-05-24 18:57",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "KASSANDRA",
+          "current_ship_eta_rueb": "2026-05-25 01:43",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Schie, Christian",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 6,
+          "abteilungszeit": "2026-05-24 20:05",
+          "fahrzeug": "ECO MAESTRO",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ECO MAESTRO",
+          "current_ship_eta_rueb": "2026-05-24 21:33",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Kordt, Remo",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 5,
+          "abteilungszeit": "2026-05-24 21:33",
+          "fahrzeug": "ROCAMAR",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ROCAMAR",
+          "current_ship_eta_rueb": "2026-05-25 02:24",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Marth, Jürgen",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 4,
+          "abteilungszeit": "2026-05-24 21:49",
+          "fahrzeug": "NORDIC ITALIA",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "NORDIC ITALIA",
+          "current_ship_eta_rueb": "2026-05-25 02:30",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Petersen, Yannick",
+          "pilot_q": 2,
+          "pilot_tactical_nr": 3,
+          "abteilungszeit": "2026-05-24 22:15",
+          "fahrzeug": "BBC BERGEN",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "BBC BERGEN",
+          "current_ship_eta_rueb": "2026-05-25 02:22",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Otten, Janning",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-05-24 23:14",
+          "fahrzeug": "X-PRESS ELBE",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "X-PRESS ELBE",
+          "current_ship_eta_rueb": "2026-05-25 04:14",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Böttcher, Peter",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 1,
+          "abteilungszeit": "2026-05-24 23:20",
+          "fahrzeug": "LADY HANNAH",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "LADY HANNAH",
+          "current_ship_eta_rueb": "2026-05-25 04:16",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "3",
+          "time": "Mon May 25 05:40:00 CEST 2026",
+          "draft": "6.4",
+          "q_gruppe": "5",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "HOS → KLT",
+          "routes": [
+            "HOS → KLT",
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "5",
+          "vg": "4",
+          "draft": "6.40",
+          "length_m": "89.99",
+          "beam_m": "14",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "U",
+          "pilot_1_name": "Wolthoff, Enno",
+          "travel_status": "SAILING_NOK",
+          "makler": "UCA",
+          "dangerous_vessel": "ja",
+          "type_of_loading": "Chemikalien fluessig"
+        }
+      }
+    },
+    {
+      "ship_key": "PROUD",
+      "ship_name": "PROUD",
+      "eta_rueb": "2026-05-25 05:43",
+      "ship_q": 4,
+      "assigned_pilot": "Fehse, Torsten",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 12,
+      "assigned_abteilungszeit": "2026-05-24 18:57",
+      "assigned_current_ship_name": "KASSANDRA",
+      "assigned_current_ship_eta_rueb": "2026-05-25 01:43",
+      "assigned_current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 7,
+      "candidates": [
+        {
+          "pilot_name": "Fehse, Torsten",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 12,
+          "abteilungszeit": "2026-05-24 18:57",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "KASSANDRA",
+          "current_ship_eta_rueb": "2026-05-25 01:43",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Schie, Christian",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 6,
+          "abteilungszeit": "2026-05-24 20:05",
+          "fahrzeug": "ECO MAESTRO",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ECO MAESTRO",
+          "current_ship_eta_rueb": "2026-05-24 21:33",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Kordt, Remo",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 5,
+          "abteilungszeit": "2026-05-24 21:33",
+          "fahrzeug": "ROCAMAR",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ROCAMAR",
+          "current_ship_eta_rueb": "2026-05-25 02:24",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Marth, Jürgen",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 4,
+          "abteilungszeit": "2026-05-24 21:49",
+          "fahrzeug": "NORDIC ITALIA",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "NORDIC ITALIA",
+          "current_ship_eta_rueb": "2026-05-25 02:30",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Petersen, Yannick",
+          "pilot_q": 2,
+          "pilot_tactical_nr": 3,
+          "abteilungszeit": "2026-05-24 22:15",
+          "fahrzeug": "BBC BERGEN",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "BBC BERGEN",
+          "current_ship_eta_rueb": "2026-05-25 02:22",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Otten, Janning",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-05-24 23:14",
+          "fahrzeug": "X-PRESS ELBE",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "X-PRESS ELBE",
+          "current_ship_eta_rueb": "2026-05-25 04:14",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Böttcher, Peter",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 1,
+          "abteilungszeit": "2026-05-24 23:20",
+          "fahrzeug": "LADY HANNAH",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "LADY HANNAH",
+          "current_ship_eta_rueb": "2026-05-25 04:16",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "4",
+          "time": "Mon May 25 05:43:00 CEST 2026",
+          "draft": "6.4",
+          "q_gruppe": "4",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "HOS → KLT",
+          "routes": [
+            "HOS → KLT",
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "4",
+          "draft": "6.4"
+        }
+      }
     }
   ],
   "unassigned_ships": [],
   "unused_pilots": [
-    {
-      "pilot_key": "krämer_jonas",
-      "vorname": "Jonas",
-      "nachname": "Krämer",
-      "pilot_name": "Krämer, Jonas",
-      "abteilungszeit": "2026-05-24 15:40",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 13,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "BALTIC MOON",
-      "from": "RÜB",
-      "to": "HOS",
-      "nr": 13,
-      "raw_time": "Sun May 24 15:40:00 CEST 2026",
-      "current_ship_name": "BALTIC MOON",
-      "current_ship_eta_rueb": "2026-05-24 21:30",
-      "current_ship_q": 0,
-      "current_ship_route": "RÜB → HOS",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
-    },
-    {
-      "pilot_key": "fehse_torsten",
-      "vorname": "Torsten",
-      "nachname": "Fehse",
-      "pilot_name": "Fehse, Torsten",
-      "abteilungszeit": "2026-05-24 18:57",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 12,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "RÜB",
-      "nr": 12,
-      "raw_time": "Sun May 24 18:57:00 CEST 2026",
-      "current_ship_name": "KASSANDRA",
-      "current_ship_eta_rueb": "2026-05-25 01:43",
-      "current_ship_q": 4,
-      "current_ship_route": "HOS → KLT",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-      "availability_kind": "merged_eta"
-    },
     {
       "pilot_key": "schie_christian",
       "vorname": "Christian",
@@ -964,7 +1269,7 @@
       "nr": 5,
       "raw_time": "Sun May 24 21:33:00 CEST 2026",
       "current_ship_name": "ROCAMAR",
-      "current_ship_eta_rueb": "2026-05-25 02:26",
+      "current_ship_eta_rueb": "2026-05-25 02:24",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
