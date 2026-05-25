@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-25T07:27:07",
+  "generated_at": "2026-05-25T07:29:07",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -33,9 +33,9 @@
   },
   "counts": {
     "ships_for_ruesterbergen": 5,
-    "pilots_total": 7,
+    "pilots_total": 6,
     "pilots_dispatchable": 6,
-    "pilots_visible_only": 1,
+    "pilots_visible_only": 0,
     "assignments": 5,
     "unassigned_ships": 0,
     "unused_pilots": 1
@@ -358,30 +358,9 @@
       "nr": 3,
       "raw_time": "Mon May 25 05:56:00 CEST 2026",
       "current_ship_name": "GAASTBORG",
+      "current_ship_eta_rueb": "2026-05-25 10:58",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-      "availability_kind": "merged_eta"
-    },
-    {
-      "pilot_key": "hilpert_jan",
-      "vorname": "Jan",
-      "nachname": "Hilpert",
-      "pilot_name": "Hilpert, Jan",
-      "abteilungszeit": "2026-05-25 06:36",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 1,
-      "aufgabe": "Seebört",
-      "fahrzeug": "LORALAND",
-      "from": "HOS",
-      "to": "KLT",
-      "nr": 1,
-      "raw_time": "Mon May 25 06:36:00 CEST 2026",
-      "current_ship_name": "LORALAND",
-      "current_ship_eta_rueb": "2026-05-25 03:42",
-      "current_ship_q": 0,
-      "current_ship_route": "HOS → KLT",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     }
@@ -498,45 +477,29 @@
       "availability_kind": "merged_eta"
     },
     {
-      "pilot_key": "hilpert_jan",
-      "vorname": "Jan",
-      "nachname": "Hilpert",
-      "pilot_name": "Hilpert, Jan",
-      "abteilungszeit": "2026-05-25 06:36",
+      "pilot_key": "köhler_olaf",
+      "vorname": "Olaf",
+      "nachname": "Köhler",
+      "pilot_name": "Köhler, Olaf",
+      "abteilungszeit": "2026-05-25 05:56",
       "pilot_q": 0,
       "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 1,
-      "aufgabe": "Seebört",
-      "fahrzeug": "LORALAND",
-      "from": "HOS",
-      "to": "KLT",
-      "nr": 1,
-      "raw_time": "Mon May 25 06:36:00 CEST 2026",
-      "current_ship_name": "LORALAND",
-      "current_ship_eta_rueb": "2026-05-25 03:42",
-      "current_ship_q": 0,
-      "current_ship_route": "HOS → KLT",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
-    }
-  ],
-  "visible_but_not_dispatchable_pilots": [
-    {
-      "pilot_key": "köhler_olaf",
-      "pilot_name": "Köhler, Olaf",
-      "pilot_q": 0,
       "pilot_tactical_nr": 3,
-      "abteilungszeit": "2026-05-25 05:56",
       "aufgabe": "Kanalbört",
       "fahrzeug": "GAASTBORG",
       "from": "HOS",
       "to": "RÜB",
+      "nr": 3,
+      "raw_time": "Mon May 25 05:56:00 CEST 2026",
       "current_ship_name": "GAASTBORG",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
+      "current_ship_eta_rueb": "2026-05-25 10:58",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
     }
   ],
+  "visible_but_not_dispatchable_pilots": [],
   "assignments": [
     {
       "ship_key": "RIX VENTURE",
@@ -552,7 +515,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 4,
+      "candidate_count": 3,
       "candidates": [
         {
           "pilot_name": "Otten, Janning",
@@ -592,19 +555,6 @@
           "current_ship_eta_rueb": "2026-05-25 07:36",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Hilpert, Jan",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 1,
-          "abteilungszeit": "2026-05-25 06:36",
-          "fahrzeug": "LORALAND",
-          "to": "KLT",
-          "aufgabe": "Seebört",
-          "current_ship_name": "LORALAND",
-          "current_ship_eta_rueb": "2026-05-25 03:42",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
         }
       ],
       "excluded": [
@@ -623,6 +573,15 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "ARTEMIS",
           "pilot_current_ship_eta_rueb": "2026-05-25 09:28",
+          "ship_eta_rueb": "2026-05-25 07:53",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Köhler, Olaf",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "GAASTBORG",
+          "pilot_current_ship_eta_rueb": "2026-05-25 10:58",
           "ship_eta_rueb": "2026-05-25 07:53",
           "availability_kind": "merged_eta"
         }
@@ -674,7 +633,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 2,
+      "candidate_count": 1,
       "candidates": [
         {
           "pilot_name": "Böttcher, Peter",
@@ -686,19 +645,6 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "PROUD",
           "current_ship_eta_rueb": "2026-05-25 05:51",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Hilpert, Jan",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 1,
-          "abteilungszeit": "2026-05-25 06:36",
-          "fahrzeug": "LORALAND",
-          "to": "KLT",
-          "aufgabe": "Seebört",
-          "current_ship_name": "LORALAND",
-          "current_ship_eta_rueb": "2026-05-25 03:42",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
@@ -724,6 +670,15 @@
           "reason": "Quali passt nicht (4 > 0)",
           "pilot_q": 4,
           "ship_q": 0
+        },
+        {
+          "pilot_name": "Köhler, Olaf",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "GAASTBORG",
+          "pilot_current_ship_eta_rueb": "2026-05-25 10:58",
+          "ship_eta_rueb": "2026-05-25 10:03",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -774,7 +729,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 3,
+      "candidate_count": 2,
       "candidates": [
         {
           "pilot_name": "Rohn, Jens Michael",
@@ -801,19 +756,6 @@
           "current_ship_eta_rueb": "2026-05-25 08:24",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Hilpert, Jan",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 1,
-          "abteilungszeit": "2026-05-25 06:36",
-          "fahrzeug": "LORALAND",
-          "to": "KLT",
-          "aufgabe": "Seebört",
-          "current_ship_name": "LORALAND",
-          "current_ship_eta_rueb": "2026-05-25 03:42",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
         }
       ],
       "excluded": [
@@ -823,6 +765,15 @@
           "reason": "Quali passt nicht (4 > 1)",
           "pilot_q": 4,
           "ship_q": 1
+        },
+        {
+          "pilot_name": "Köhler, Olaf",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "GAASTBORG",
+          "pilot_current_ship_eta_rueb": "2026-05-25 10:58",
+          "ship_eta_rueb": "2026-05-25 10:08",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -902,15 +853,15 @@
           "availability_kind": "merged_eta"
         },
         {
-          "pilot_name": "Hilpert, Jan",
+          "pilot_name": "Köhler, Olaf",
           "pilot_q": 0,
-          "pilot_tactical_nr": 1,
-          "abteilungszeit": "2026-05-25 06:36",
-          "fahrzeug": "LORALAND",
-          "to": "KLT",
-          "aufgabe": "Seebört",
-          "current_ship_name": "LORALAND",
-          "current_ship_eta_rueb": "2026-05-25 03:42",
+          "pilot_tactical_nr": 3,
+          "abteilungszeit": "2026-05-25 05:56",
+          "fahrzeug": "GAASTBORG",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "GAASTBORG",
+          "current_ship_eta_rueb": "2026-05-25 10:58",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
@@ -954,27 +905,27 @@
       "ship_name": "BBC LIVORNO",
       "eta_rueb": "2026-05-25 12:09",
       "ship_q": 3,
-      "assigned_pilot": "Hilpert, Jan",
+      "assigned_pilot": "Köhler, Olaf",
       "assigned_pilot_q": 0,
-      "assigned_tactical_nr": 1,
-      "assigned_abteilungszeit": "2026-05-25 06:36",
-      "assigned_current_ship_name": "LORALAND",
-      "assigned_current_ship_eta_rueb": "2026-05-25 03:42",
+      "assigned_tactical_nr": 3,
+      "assigned_abteilungszeit": "2026-05-25 05:56",
+      "assigned_current_ship_name": "GAASTBORG",
+      "assigned_current_ship_eta_rueb": "2026-05-25 10:58",
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
       "candidate_count": 1,
       "candidates": [
         {
-          "pilot_name": "Hilpert, Jan",
+          "pilot_name": "Köhler, Olaf",
           "pilot_q": 0,
-          "pilot_tactical_nr": 1,
-          "abteilungszeit": "2026-05-25 06:36",
-          "fahrzeug": "LORALAND",
-          "to": "KLT",
-          "aufgabe": "Seebört",
-          "current_ship_name": "LORALAND",
-          "current_ship_eta_rueb": "2026-05-25 03:42",
+          "pilot_tactical_nr": 3,
+          "abteilungszeit": "2026-05-25 05:56",
+          "fahrzeug": "GAASTBORG",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "GAASTBORG",
+          "current_ship_eta_rueb": "2026-05-25 10:58",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
