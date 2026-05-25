@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-25T03:35:10",
+  "generated_at": "2026-05-25T03:37:11",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 3,
     "pilots_total": 5,
-    "pilots_dispatchable": 4,
-    "pilots_visible_only": 1,
+    "pilots_dispatchable": 5,
+    "pilots_visible_only": 0,
     "assignments": 3,
     "unassigned_ships": 0,
-    "unused_pilots": 1
+    "unused_pilots": 2
   },
   "ships": [
     {
@@ -120,7 +120,7 @@
     {
       "ship_key": "RIX VENTURE",
       "ship_name": "RIX VENTURE",
-      "eta_rueb": "2026-05-25 07:50",
+      "eta_rueb": "2026-05-25 08:02",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
@@ -260,9 +260,10 @@
       "nr": 2,
       "raw_time": "Mon May 25 02:38:00 CEST 2026",
       "current_ship_name": "LADY HESTIA",
+      "current_ship_eta_rueb": "2026-05-25 07:47",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     }
   ],
@@ -354,25 +355,31 @@
       "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
-    }
-  ],
-  "visible_but_not_dispatchable_pilots": [
+    },
     {
       "pilot_key": "rohn_jens michael",
+      "vorname": "Jens Michael",
+      "nachname": "Rohn",
       "pilot_name": "Rohn, Jens Michael",
-      "pilot_q": 1,
-      "pilot_tactical_nr": 2,
       "abteilungszeit": "2026-05-25 02:38",
+      "pilot_q": 1,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 2,
       "aufgabe": "Kanalbört",
       "fahrzeug": "LADY HESTIA",
       "from": "HOS",
       "to": "RÜB",
+      "nr": 2,
+      "raw_time": "Mon May 25 02:38:00 CEST 2026",
       "current_ship_name": "LADY HESTIA",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
+      "current_ship_eta_rueb": "2026-05-25 07:47",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
     }
   ],
+  "visible_but_not_dispatchable_pilots": [],
   "assignments": [
     {
       "ship_key": "KOBE PIONIER",
@@ -440,6 +447,17 @@
           "current_ship_name": "LADY HANNAH",
           "current_ship_eta_rueb": "2026-05-25 04:11",
           "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Rohn, Jens Michael",
+          "pilot_tactical_nr": 2,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "LADY HESTIA",
+          "pilot_current_ship_eta_rueb": "2026-05-25 07:47",
+          "ship_eta_rueb": "2026-05-25 05:53",
           "availability_kind": "merged_eta"
         }
       ],
@@ -533,6 +551,17 @@
           "availability_kind": "merged_eta"
         }
       ],
+      "excluded": [
+        {
+          "pilot_name": "Rohn, Jens Michael",
+          "pilot_tactical_nr": 2,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "LADY HESTIA",
+          "pilot_current_ship_eta_rueb": "2026-05-25 07:47",
+          "ship_eta_rueb": "2026-05-25 05:57",
+          "availability_kind": "merged_eta"
+        }
+      ],
       "ship": {
         "meldung": {
           "nr": "2",
@@ -570,7 +599,7 @@
     {
       "ship_key": "RIX VENTURE",
       "ship_name": "RIX VENTURE",
-      "eta_rueb": "2026-05-25 07:50",
+      "eta_rueb": "2026-05-25 08:02",
       "ship_q": 5,
       "assigned_pilot": "Otten, Janning",
       "assigned_pilot_q": 0,
@@ -581,7 +610,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 2,
+      "candidate_count": 3,
       "candidates": [
         {
           "pilot_name": "Otten, Janning",
@@ -606,6 +635,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "LADY HANNAH",
           "current_ship_eta_rueb": "2026-05-25 04:11",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Rohn, Jens Michael",
+          "pilot_q": 1,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-05-25 02:38",
+          "fahrzeug": "LADY HESTIA",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "LADY HESTIA",
+          "current_ship_eta_rueb": "2026-05-25 07:47",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
@@ -665,6 +707,28 @@
       "current_ship_eta_rueb": "2026-05-25 04:11",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "rohn_jens michael",
+      "vorname": "Jens Michael",
+      "nachname": "Rohn",
+      "pilot_name": "Rohn, Jens Michael",
+      "abteilungszeit": "2026-05-25 02:38",
+      "pilot_q": 1,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 2,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "LADY HESTIA",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 2,
+      "raw_time": "Mon May 25 02:38:00 CEST 2026",
+      "current_ship_name": "LADY HESTIA",
+      "current_ship_eta_rueb": "2026-05-25 07:47",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     }
