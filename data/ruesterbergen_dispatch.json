@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-25T12:17:14",
+  "generated_at": "2026-05-25T12:19:08",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,17 +34,17 @@
   "counts": {
     "ships_for_ruesterbergen": 7,
     "pilots_total": 8,
-    "pilots_dispatchable": 5,
-    "pilots_visible_only": 3,
-    "assignments": 5,
-    "unassigned_ships": 2,
+    "pilots_dispatchable": 6,
+    "pilots_visible_only": 2,
+    "assignments": 6,
+    "unassigned_ships": 1,
     "unused_pilots": 0
   },
   "ships": [
     {
       "ship_key": "BALTIC WIND",
       "ship_name": "BALTIC WIND",
-      "eta_rueb": "2026-05-25 13:55",
+      "eta_rueb": "2026-05-25 13:54",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
@@ -440,9 +440,10 @@
       "nr": 3,
       "raw_time": "Mon May 25 10:40:00 CEST 2026",
       "current_ship_name": "VENTUMAR",
+      "current_ship_eta_rueb": "2026-05-25 15:54",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
@@ -577,6 +578,28 @@
       "current_ship_route": "RÜB → HOS",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "suermann_nik",
+      "vorname": "Nik",
+      "nachname": "Suermann",
+      "pilot_name": "Suermann, Nik",
+      "abteilungszeit": "2026-05-25 10:40",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 3,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "VENTUMAR",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 3,
+      "raw_time": "Mon May 25 10:40:00 CEST 2026",
+      "current_ship_name": "VENTUMAR",
+      "current_ship_eta_rueb": "2026-05-25 15:54",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
     }
   ],
   "visible_but_not_dispatchable_pilots": [
@@ -592,21 +615,6 @@
       "to": "RÜB",
       "current_ship_name": "LEOPARD+TRD VOYAGER+GROSSNORDSEE",
       "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    },
-    {
-      "pilot_key": "suermann_nik",
-      "pilot_name": "Suermann, Nik",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 3,
-      "abteilungszeit": "2026-05-25 10:40",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "VENTUMAR",
-      "from": "HOS",
-      "to": "RÜB",
-      "current_ship_name": "VENTUMAR",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta",
       "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
     },
@@ -630,7 +638,7 @@
     {
       "ship_key": "BALTIC WIND",
       "ship_name": "BALTIC WIND",
-      "eta_rueb": "2026-05-25 13:55",
+      "eta_rueb": "2026-05-25 13:54",
       "ship_q": 5,
       "assigned_pilot": "Pietsch, Tobias",
       "assigned_pilot_q": 1,
@@ -706,6 +714,17 @@
           "current_ship_name": "ECO KHAMSIN",
           "current_ship_eta_rueb": "2026-05-25 09:53",
           "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Suermann, Nik",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "VENTUMAR",
+          "pilot_current_ship_eta_rueb": "2026-05-25 15:54",
+          "ship_eta_rueb": "2026-05-25 13:54",
           "availability_kind": "merged_eta"
         }
       ],
@@ -805,6 +824,15 @@
           "reason": "Quali passt nicht (4 > 3)",
           "pilot_q": 4,
           "ship_q": 3
+        },
+        {
+          "pilot_name": "Suermann, Nik",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "VENTUMAR",
+          "pilot_current_ship_eta_rueb": "2026-05-25 15:54",
+          "ship_eta_rueb": "2026-05-25 14:04",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -897,6 +925,17 @@
           "availability_kind": "merged_eta"
         }
       ],
+      "excluded": [
+        {
+          "pilot_name": "Suermann, Nik",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "VENTUMAR",
+          "pilot_current_ship_eta_rueb": "2026-05-25 15:54",
+          "ship_eta_rueb": "2026-05-25 15:15",
+          "availability_kind": "merged_eta"
+        }
+      ],
       "ship": {
         "meldung": {
           "nr": "3",
@@ -974,6 +1013,17 @@
           "availability_kind": "merged_eta"
         }
       ],
+      "excluded": [
+        {
+          "pilot_name": "Suermann, Nik",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "VENTUMAR",
+          "pilot_current_ship_eta_rueb": "2026-05-25 15:54",
+          "ship_eta_rueb": "2026-05-25 15:18",
+          "availability_kind": "merged_eta"
+        }
+      ],
       "ship": {
         "meldung": {
           "nr": "4",
@@ -1037,6 +1087,17 @@
           "availability_kind": "merged_eta"
         }
       ],
+      "excluded": [
+        {
+          "pilot_name": "Suermann, Nik",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "VENTUMAR",
+          "pilot_current_ship_eta_rueb": "2026-05-25 15:54",
+          "ship_eta_rueb": "2026-05-25 15:33",
+          "availability_kind": "merged_eta"
+        }
+      ],
       "ship": {
         "meldung": {
           "nr": "5",
@@ -1069,16 +1130,61 @@
           "type_of_loading": "Erz"
         }
       }
-    }
-  ],
-  "unassigned_ships": [
+    },
     {
       "ship_key": "OSTERBOTTEN",
       "ship_name": "OSTERBOTTEN",
       "eta_rueb": "2026-05-25 16:00",
       "ship_q": 4,
-      "reason": "kein passender Lotse verfügbar"
-    },
+      "assigned_pilot": "Suermann, Nik",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 3,
+      "assigned_abteilungszeit": "2026-05-25 10:40",
+      "assigned_current_ship_name": "VENTUMAR",
+      "assigned_current_ship_eta_rueb": "2026-05-25 15:54",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "pilot_name": "Suermann, Nik",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 3,
+          "abteilungszeit": "2026-05-25 10:40",
+          "fahrzeug": "VENTUMAR",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "VENTUMAR",
+          "current_ship_eta_rueb": "2026-05-25 15:54",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "6",
+          "time": "Mon May 25 16:00:00 CEST 2026",
+          "draft": "6.5",
+          "q_gruppe": "4",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "HOS → KLT",
+          "routes": [
+            "HOS → KLT",
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "4",
+          "draft": "6.5"
+        }
+      }
+    }
+  ],
+  "unassigned_ships": [
     {
       "ship_key": "JONABORG",
       "ship_name": "JONABORG",
