@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-25T09:41:09",
+  "generated_at": "2026-05-25T09:43:07",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,13 +32,13 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 3,
+    "ships_for_ruesterbergen": 4,
     "pilots_total": 7,
     "pilots_dispatchable": 7,
     "pilots_visible_only": 0,
-    "assignments": 3,
+    "assignments": 4,
     "unassigned_ships": 0,
-    "unused_pilots": 4
+    "unused_pilots": 3
   },
   "ships": [
     {
@@ -82,7 +82,7 @@
     {
       "ship_key": "BBC LIVORNO",
       "ship_name": "BBC LIVORNO",
-      "eta_rueb": "2026-05-25 12:02",
+      "eta_rueb": "2026-05-25 12:01",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 3,
       "meldung": {
@@ -151,6 +151,44 @@
         "makler": "NIK",
         "dangerous_vessel": "-",
         "type_of_loading": "Holz"
+      }
+    },
+    {
+      "ship_key": "BERGSTRAUM",
+      "ship_name": "BERGSTRAUM",
+      "eta_rueb": "2026-05-25 14:07",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 3,
+      "meldung": {
+        "nr": "4",
+        "time": "Mon May 25 13:53:00 CEST 2026",
+        "draft": "7.4",
+        "q_gruppe": "3",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "3",
+        "vg": "4",
+        "draft": "7.40",
+        "length_m": "123.59",
+        "beam_m": "19.2",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "U",
+        "pilot_1_name": "Mähler, Jens",
+        "travel_status": "SAILING_NOK",
+        "makler": "UCA",
+        "dangerous_vessel": "-",
+        "type_of_loading": "Chemikalien fluessig"
       }
     }
   ],
@@ -605,7 +643,7 @@
     {
       "ship_key": "BBC LIVORNO",
       "ship_name": "BBC LIVORNO",
-      "eta_rueb": "2026-05-25 12:02",
+      "eta_rueb": "2026-05-25 12:01",
       "ship_q": 3,
       "assigned_pilot": "Pietsch, Tobias",
       "assigned_pilot_q": 1,
@@ -672,7 +710,7 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "ELBSUN",
           "pilot_current_ship_eta_rueb": "2026-05-25 12:56",
-          "ship_eta_rueb": "2026-05-25 12:02",
+          "ship_eta_rueb": "2026-05-25 12:01",
           "availability_kind": "merged_eta"
         },
         {
@@ -681,7 +719,7 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "LEOPARD + GROSSNORDSEE + TRD VOYAGER",
           "pilot_current_ship_eta_rueb": "2026-05-25 13:06",
-          "ship_eta_rueb": "2026-05-25 12:02",
+          "ship_eta_rueb": "2026-05-25 12:01",
           "availability_kind": "merged_eta"
         }
       ],
@@ -833,32 +871,113 @@
           "type_of_loading": "Holz"
         }
       }
+    },
+    {
+      "ship_key": "BERGSTRAUM",
+      "ship_name": "BERGSTRAUM",
+      "eta_rueb": "2026-05-25 14:07",
+      "ship_q": 3,
+      "assigned_pilot": "Köhler, Olaf",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 7,
+      "assigned_abteilungszeit": "2026-05-25 05:56",
+      "assigned_current_ship_name": "GAASTBORG",
+      "assigned_current_ship_eta_rueb": "2026-05-25 10:52",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 4,
+      "candidates": [
+        {
+          "pilot_name": "Köhler, Olaf",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 7,
+          "abteilungszeit": "2026-05-25 05:56",
+          "fahrzeug": "GAASTBORG",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "GAASTBORG",
+          "current_ship_eta_rueb": "2026-05-25 10:52",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Dietrich, Thomas",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 4,
+          "abteilungszeit": "2026-05-25 08:04",
+          "fahrzeug": "ELBSUN",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ELBSUN",
+          "current_ship_eta_rueb": "2026-05-25 12:56",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Malik, Christoph",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 3,
+          "abteilungszeit": "2026-05-25 08:35",
+          "fahrzeug": "ECO KHAMSIN",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ECO KHAMSIN",
+          "current_ship_eta_rueb": "2026-05-25 09:53",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Külzer, Sascha",
+          "pilot_q": 2,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-05-25 08:44",
+          "fahrzeug": "LEOPARD+TRD VOYAGER+GROSSNORDSEE",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "LEOPARD + GROSSNORDSEE + TRD VOYAGER",
+          "current_ship_eta_rueb": "2026-05-25 13:06",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "4",
+          "time": "Mon May 25 13:53:00 CEST 2026",
+          "draft": "7.4",
+          "q_gruppe": "3",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "HOS → KLT",
+          "routes": [
+            "HOS → KLT",
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "3",
+          "vg": "4",
+          "draft": "7.40",
+          "length_m": "123.59",
+          "beam_m": "19.2",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "U",
+          "pilot_1_name": "Mähler, Jens",
+          "travel_status": "SAILING_NOK",
+          "makler": "UCA",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Chemikalien fluessig"
+        }
+      }
     }
   ],
   "unassigned_ships": [],
   "unused_pilots": [
-    {
-      "pilot_key": "köhler_olaf",
-      "vorname": "Olaf",
-      "nachname": "Köhler",
-      "pilot_name": "Köhler, Olaf",
-      "abteilungszeit": "2026-05-25 05:56",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 7,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "GAASTBORG",
-      "from": "HOS",
-      "to": "RÜB",
-      "nr": 7,
-      "raw_time": "Mon May 25 05:56:00 CEST 2026",
-      "current_ship_name": "GAASTBORG",
-      "current_ship_eta_rueb": "2026-05-25 10:52",
-      "current_ship_q": 0,
-      "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
-    },
     {
       "pilot_key": "dietrich_thomas",
       "vorname": "Thomas",
