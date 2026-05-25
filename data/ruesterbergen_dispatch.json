@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-25T19:43:10",
+  "generated_at": "2026-05-25T19:45:08",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,11 +32,11 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 3,
+    "ships_for_ruesterbergen": 4,
     "pilots_total": 11,
-    "pilots_dispatchable": 9,
-    "pilots_visible_only": 2,
-    "assignments": 3,
+    "pilots_dispatchable": 10,
+    "pilots_visible_only": 1,
+    "assignments": 4,
     "unassigned_ships": 0,
     "unused_pilots": 6
   },
@@ -135,6 +135,43 @@
         "makler": "SUB",
         "dangerous_vessel": "-",
         "type_of_loading": "Futtermittel"
+      }
+    },
+    {
+      "ship_key": "HEYN",
+      "ship_name": "HEYN",
+      "eta_rueb": "2026-05-26 01:17",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 5,
+      "meldung": {
+        "nr": "4",
+        "time": "Tue May 26 00:05:00 CEST 2026",
+        "draft": "5.5",
+        "q_gruppe": "5",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "RÜB → HOS",
+        "routes": [
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "5",
+        "vg": "3",
+        "draft": "5.50",
+        "length_m": "89.99",
+        "beam_m": "12.69",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "H",
+        "pilot_1_name": "Kruggel, Bernd",
+        "travel_status": "SAILING_NOK",
+        "makler": "UCA",
+        "dangerous_vessel": "-",
+        "type_of_loading": "Eisen und Stahl"
       }
     }
   ],
@@ -236,17 +273,16 @@
       "q_source": "q_gruppen_lotsen.entries",
       "pilot_tactical_nr": 11,
       "aufgabe": "Kanalbört",
-      "fahrzeug": "BALTIC ARROW",
-      "from": "HOR",
-      "to": "RÜB",
+      "fahrzeug": "RÜB",
       "nr": 11,
       "raw_time": "Mon May 25 15:05:00 CEST 2026",
-      "current_ship_name": "BALTIC ARROW",
-      "current_ship_eta_rueb": "2026-05-25 19:48",
+      "current_ship_name": "RÜB",
+      "current_ship_eta_rueb": "2026-05-25 15:05",
       "current_ship_q": 0,
-      "current_ship_route": "HOR → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
+      "current_ship_route": "RÜB",
+      "current_ship_source": "special.already_in_rueb",
+      "availability_kind": "already_in_rueb",
+      "availability_hint": "Lotse gilt als bereits in RÜB"
     },
     {
       "pilot_key": "hren_alexander",
@@ -354,7 +390,7 @@
       "current_ship_name": "FWN ATLANTIC",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta"
     },
     {
@@ -373,6 +409,7 @@
       "nr": 2,
       "raw_time": "Mon May 25 18:45:00 CEST 2026",
       "current_ship_name": "SYDBORG",
+      "current_ship_eta_rueb": "2026-05-25 23:16",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -477,17 +514,16 @@
       "q_source": "q_gruppen_lotsen.entries",
       "pilot_tactical_nr": 11,
       "aufgabe": "Kanalbört",
-      "fahrzeug": "BALTIC ARROW",
-      "from": "HOR",
-      "to": "RÜB",
+      "fahrzeug": "RÜB",
       "nr": 11,
       "raw_time": "Mon May 25 15:05:00 CEST 2026",
-      "current_ship_name": "BALTIC ARROW",
-      "current_ship_eta_rueb": "2026-05-25 19:48",
+      "current_ship_name": "RÜB",
+      "current_ship_eta_rueb": "2026-05-25 15:05",
       "current_ship_q": 0,
-      "current_ship_route": "HOR → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
+      "current_ship_route": "RÜB",
+      "current_ship_source": "special.already_in_rueb",
+      "availability_kind": "already_in_rueb",
+      "availability_hint": "Lotse gilt als bereits in RÜB"
     },
     {
       "pilot_key": "hren_alexander",
@@ -576,6 +612,28 @@
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "thiel_thomas",
+      "vorname": "Thomas",
+      "nachname": "Thiel",
+      "pilot_name": "Thiel, Thomas",
+      "abteilungszeit": "2026-05-25 18:45",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 2,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "SYDBORG",
+      "from": "HOR",
+      "to": "RÜB",
+      "nr": 2,
+      "raw_time": "Mon May 25 18:45:00 CEST 2026",
+      "current_ship_name": "SYDBORG",
+      "current_ship_eta_rueb": "2026-05-25 23:16",
+      "current_ship_q": 0,
+      "current_ship_route": "HOR → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
     }
   ],
   "visible_but_not_dispatchable_pilots": [
@@ -590,22 +648,7 @@
       "from": "HOS",
       "to": "RÜB",
       "current_ship_name": "FWN ATLANTIC",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    },
-    {
-      "pilot_key": "thiel_thomas",
-      "pilot_name": "Thiel, Thomas",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 2,
-      "abteilungszeit": "2026-05-25 18:45",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "SYDBORG",
-      "from": "HOR",
-      "to": "RÜB",
-      "current_ship_name": "SYDBORG",
-      "current_ship_source": "schiffe_merged.seelotsen",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta",
       "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
     }
@@ -625,7 +668,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 4,
+      "candidate_count": 5,
       "candidates": [
         {
           "pilot_name": "Suermann, Nik",
@@ -678,18 +721,22 @@
           "current_ship_eta_rueb": "2026-05-25 19:45",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Lielienthal, Jörn",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 11,
+          "abteilungszeit": "2026-05-25 15:05",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-25 15:05",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
         }
       ],
       "excluded": [
-        {
-          "pilot_name": "Lielienthal, Jörn",
-          "pilot_tactical_nr": 11,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "BALTIC ARROW",
-          "pilot_current_ship_eta_rueb": "2026-05-25 19:48",
-          "ship_eta_rueb": "2026-05-25 19:45",
-          "availability_kind": "merged_eta"
-        },
         {
           "pilot_name": "Hren, Alexander",
           "pilot_tactical_nr": 10,
@@ -723,6 +770,15 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "ANNELIESE ESSBERGER",
           "pilot_current_ship_eta_rueb": "2026-05-25 21:25",
+          "ship_eta_rueb": "2026-05-25 19:45",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Thiel, Thomas",
+          "pilot_tactical_nr": 2,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "SYDBORG",
+          "pilot_current_ship_eta_rueb": "2026-05-25 23:16",
           "ship_eta_rueb": "2026-05-25 19:45",
           "availability_kind": "merged_eta"
         }
@@ -805,13 +861,13 @@
           "pilot_q": 0,
           "pilot_tactical_nr": 11,
           "abteilungszeit": "2026-05-25 15:05",
-          "fahrzeug": "BALTIC ARROW",
-          "to": "RÜB",
+          "fahrzeug": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "BALTIC ARROW",
-          "current_ship_eta_rueb": "2026-05-25 19:48",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-25 15:05",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
         },
         {
           "pilot_name": "Hren, Alexander",
@@ -856,6 +912,15 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "ANNELIESE ESSBERGER",
           "pilot_current_ship_eta_rueb": "2026-05-25 21:25",
+          "ship_eta_rueb": "2026-05-25 21:04",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Thiel, Thomas",
+          "pilot_tactical_nr": 2,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "SYDBORG",
+          "pilot_current_ship_eta_rueb": "2026-05-25 23:16",
           "ship_eta_rueb": "2026-05-25 21:04",
           "availability_kind": "merged_eta"
         }
@@ -941,13 +1006,13 @@
           "pilot_q": 0,
           "pilot_tactical_nr": 11,
           "abteilungszeit": "2026-05-25 15:05",
-          "fahrzeug": "BALTIC ARROW",
-          "to": "RÜB",
+          "fahrzeug": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "BALTIC ARROW",
-          "current_ship_eta_rueb": "2026-05-25 19:48",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-25 15:05",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
         },
         {
           "pilot_name": "Hren, Alexander",
@@ -994,6 +1059,15 @@
           "pilot_current_ship_eta_rueb": "2026-05-25 21:25",
           "ship_eta_rueb": "2026-05-25 21:06",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Thiel, Thomas",
+          "pilot_tactical_nr": 2,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "SYDBORG",
+          "pilot_current_ship_eta_rueb": "2026-05-25 23:16",
+          "ship_eta_rueb": "2026-05-25 21:06",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -1028,32 +1102,151 @@
           "type_of_loading": "Futtermittel"
         }
       }
+    },
+    {
+      "ship_key": "HEYN",
+      "ship_name": "HEYN",
+      "eta_rueb": "2026-05-26 01:17",
+      "ship_q": 5,
+      "assigned_pilot": "Schulz, Arne",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 12,
+      "assigned_abteilungszeit": "2026-05-25 13:45",
+      "assigned_current_ship_name": "Leerfahrt",
+      "assigned_current_ship_eta_rueb": "2026-05-25 19:45",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 7,
+      "candidates": [
+        {
+          "pilot_name": "Schulz, Arne",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 12,
+          "abteilungszeit": "2026-05-25 13:45",
+          "fahrzeug": "Leerfahrt",
+          "to": "KLT",
+          "aufgabe": "Seebört",
+          "current_ship_name": "Leerfahrt",
+          "current_ship_eta_rueb": "2026-05-25 19:45",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Lielienthal, Jörn",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 11,
+          "abteilungszeit": "2026-05-25 15:05",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-25 15:05",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
+        },
+        {
+          "pilot_name": "Hren, Alexander",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 10,
+          "abteilungszeit": "2026-05-25 15:08",
+          "fahrzeug": "GISELA ESSBERGER",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "GISELA ESSBERGER",
+          "current_ship_eta_rueb": "2026-05-25 19:52",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Plaisant, Julian",
+          "pilot_q": 4,
+          "pilot_tactical_nr": 9,
+          "abteilungszeit": "2026-05-25 15:16",
+          "fahrzeug": "KATI",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "KATI",
+          "current_ship_eta_rueb": "2026-05-25 19:57",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Wäntig, Lutz",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 4,
+          "abteilungszeit": "2026-05-25 16:35",
+          "fahrzeug": "ACEROMAR",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ACEROMAR",
+          "current_ship_eta_rueb": "2026-05-25 21:28",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Rambadt, Helge",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 5,
+          "abteilungszeit": "2026-05-25 16:35",
+          "fahrzeug": "ANNELIESE ESSBERGER",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ANNELIESE ESSBERGER",
+          "current_ship_eta_rueb": "2026-05-25 21:25",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Thiel, Thomas",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-05-25 18:45",
+          "fahrzeug": "SYDBORG",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "SYDBORG",
+          "current_ship_eta_rueb": "2026-05-25 23:16",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "4",
+          "time": "Tue May 26 00:05:00 CEST 2026",
+          "draft": "5.5",
+          "q_gruppe": "5",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "RÜB → HOS",
+          "routes": [
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "5",
+          "vg": "3",
+          "draft": "5.50",
+          "length_m": "89.99",
+          "beam_m": "12.69",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "H",
+          "pilot_1_name": "Kruggel, Bernd",
+          "travel_status": "SAILING_NOK",
+          "makler": "UCA",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Eisen und Stahl"
+        }
+      }
     }
   ],
   "unassigned_ships": [],
   "unused_pilots": [
-    {
-      "pilot_key": "schulz_arne",
-      "vorname": "Arne",
-      "nachname": "Schulz",
-      "pilot_name": "Schulz, Arne",
-      "abteilungszeit": "2026-05-25 13:45",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 12,
-      "aufgabe": "Seebört",
-      "fahrzeug": "Leerfahrt",
-      "from": "HOS",
-      "to": "KLT",
-      "nr": 12,
-      "raw_time": "Mon May 25 13:45:00 CEST 2026",
-      "current_ship_name": "Leerfahrt",
-      "current_ship_eta_rueb": "2026-05-25 19:45",
-      "current_ship_q": 0,
-      "current_ship_route": "HOS → KLT",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
-    },
     {
       "pilot_key": "lielienthal_jörn",
       "vorname": "Jörn",
@@ -1064,17 +1257,16 @@
       "q_source": "q_gruppen_lotsen.entries",
       "pilot_tactical_nr": 11,
       "aufgabe": "Kanalbört",
-      "fahrzeug": "BALTIC ARROW",
-      "from": "HOR",
-      "to": "RÜB",
+      "fahrzeug": "RÜB",
       "nr": 11,
       "raw_time": "Mon May 25 15:05:00 CEST 2026",
-      "current_ship_name": "BALTIC ARROW",
-      "current_ship_eta_rueb": "2026-05-25 19:48",
+      "current_ship_name": "RÜB",
+      "current_ship_eta_rueb": "2026-05-25 15:05",
       "current_ship_q": 0,
-      "current_ship_route": "HOR → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
+      "current_ship_route": "RÜB",
+      "current_ship_source": "special.already_in_rueb",
+      "availability_kind": "already_in_rueb",
+      "availability_hint": "Lotse gilt als bereits in RÜB"
     },
     {
       "pilot_key": "hren_alexander",
@@ -1161,6 +1353,28 @@
       "current_ship_eta_rueb": "2026-05-25 21:25",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "thiel_thomas",
+      "vorname": "Thomas",
+      "nachname": "Thiel",
+      "pilot_name": "Thiel, Thomas",
+      "abteilungszeit": "2026-05-25 18:45",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 2,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "SYDBORG",
+      "from": "HOR",
+      "to": "RÜB",
+      "nr": 2,
+      "raw_time": "Mon May 25 18:45:00 CEST 2026",
+      "current_ship_name": "SYDBORG",
+      "current_ship_eta_rueb": "2026-05-25 23:16",
+      "current_ship_q": 0,
+      "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     }
