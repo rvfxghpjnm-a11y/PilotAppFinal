@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-25T03:19:07",
+  "generated_at": "2026-05-25T03:21:09",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,52 +32,15 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 3,
+    "ships_for_ruesterbergen": 2,
     "pilots_total": 5,
     "pilots_dispatchable": 4,
     "pilots_visible_only": 1,
-    "assignments": 3,
+    "assignments": 2,
     "unassigned_ships": 0,
-    "unused_pilots": 1
+    "unused_pilots": 2
   },
   "ships": [
-    {
-      "ship_key": "LORALAND",
-      "ship_name": "LORALAND",
-      "eta_rueb": "2026-05-25 03:43",
-      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
-      "ship_q": 5,
-      "meldung": {
-        "nr": "1",
-        "time": "Mon May 25 03:40:00 CEST 2026",
-        "draft": "4.2",
-        "q_gruppe": "5",
-        "lotsen_anzahl": 1,
-        "confirmed": false,
-        "from": "RÜB",
-        "to": "HOS"
-      },
-      "summary": {
-        "route": "RÜB → HOS",
-        "routes": [
-          "RÜB → HOS"
-        ],
-        "q_gruppe": "5",
-        "vg": "3",
-        "draft": "4.20",
-        "length_m": "89.720",
-        "beam_m": "13.69",
-        "queue_title": "Zulauf vom Kanal in Kiel",
-        "zulauf_richtung": "vom_kanal",
-        "pilot_required": "true",
-        "pilot_status": "U",
-        "pilot_1_name": "Petersen, Yannick",
-        "travel_status": "SAILING_NOK",
-        "makler": "UCA",
-        "dangerous_vessel": "-",
-        "type_of_loading": "Bulk"
-      }
-    },
     {
       "ship_key": "KOBE PIONIER",
       "ship_name": "KOBE PIONIER",
@@ -85,7 +48,7 @@
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
-        "nr": "2",
+        "nr": "1",
         "time": "Mon May 25 05:50:00 CEST 2026",
         "draft": "6.4",
         "q_gruppe": "5",
@@ -123,7 +86,7 @@
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 4,
       "meldung": {
-        "nr": "3",
+        "nr": "2",
         "time": "Mon May 25 05:53:00 CEST 2026",
         "draft": "6.4",
         "q_gruppe": "4",
@@ -188,14 +151,16 @@
       "q_source": "q_gruppen_lotsen.entries",
       "pilot_tactical_nr": 5,
       "aufgabe": "Kanalbört",
-      "fahrzeug": "RÜB",
+      "fahrzeug": "LORALAND",
+      "from": "RÜB",
+      "to": "HOS",
       "nr": 5,
       "raw_time": "Sun May 24 22:15:00 CEST 2026",
       "current_ship_name": "LORALAND",
       "current_ship_eta_rueb": "2026-05-25 03:43",
-      "current_ship_q": 5,
+      "current_ship_q": 0,
       "current_ship_route": "RÜB → HOS",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
@@ -297,14 +262,16 @@
       "q_source": "q_gruppen_lotsen.entries",
       "pilot_tactical_nr": 5,
       "aufgabe": "Kanalbört",
-      "fahrzeug": "RÜB",
+      "fahrzeug": "LORALAND",
+      "from": "RÜB",
+      "to": "HOS",
       "nr": 5,
       "raw_time": "Sun May 24 22:15:00 CEST 2026",
       "current_ship_name": "LORALAND",
       "current_ship_eta_rueb": "2026-05-25 03:43",
-      "current_ship_q": 5,
+      "current_ship_q": 0,
       "current_ship_route": "RÜB → HOS",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
@@ -371,9 +338,9 @@
   ],
   "assignments": [
     {
-      "ship_key": "LORALAND",
-      "ship_name": "LORALAND",
-      "eta_rueb": "2026-05-25 03:43",
+      "ship_key": "KOBE PIONIER",
+      "ship_name": "KOBE PIONIER",
+      "eta_rueb": "2026-05-25 05:53",
       "ship_q": 5,
       "assigned_pilot": "Fehse, Torsten",
       "assigned_pilot_q": 0,
@@ -384,7 +351,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 2,
+      "candidate_count": 4,
       "candidates": [
         {
           "pilot_name": "Fehse, Torsten",
@@ -404,93 +371,12 @@
           "pilot_q": 2,
           "pilot_tactical_nr": 5,
           "abteilungszeit": "2026-05-24 22:15",
-          "fahrzeug": "RÜB",
+          "fahrzeug": "LORALAND",
+          "to": "HOS",
           "aufgabe": "Kanalbört",
           "current_ship_name": "LORALAND",
           "current_ship_eta_rueb": "2026-05-25 03:43",
-          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-          "availability_kind": "merged_eta"
-        }
-      ],
-      "excluded": [
-        {
-          "pilot_name": "Otten, Janning",
-          "pilot_tactical_nr": 4,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "X-PRESS ELBE",
-          "pilot_current_ship_eta_rueb": "2026-05-25 04:09",
-          "ship_eta_rueb": "2026-05-25 03:43",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Böttcher, Peter",
-          "pilot_tactical_nr": 3,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "LADY HANNAH",
-          "pilot_current_ship_eta_rueb": "2026-05-25 04:11",
-          "ship_eta_rueb": "2026-05-25 03:43",
-          "availability_kind": "merged_eta"
-        }
-      ],
-      "ship": {
-        "meldung": {
-          "nr": "1",
-          "time": "Mon May 25 03:40:00 CEST 2026",
-          "draft": "4.2",
-          "q_gruppe": "5",
-          "lotsen_anzahl": 1,
-          "confirmed": false,
-          "from": "RÜB",
-          "to": "HOS"
-        },
-        "summary": {
-          "route": "RÜB → HOS",
-          "routes": [
-            "RÜB → HOS"
-          ],
-          "q_gruppe": "5",
-          "vg": "3",
-          "draft": "4.20",
-          "length_m": "89.720",
-          "beam_m": "13.69",
-          "queue_title": "Zulauf vom Kanal in Kiel",
-          "zulauf_richtung": "vom_kanal",
-          "pilot_required": "true",
-          "pilot_status": "U",
-          "pilot_1_name": "Petersen, Yannick",
-          "travel_status": "SAILING_NOK",
-          "makler": "UCA",
-          "dangerous_vessel": "-",
-          "type_of_loading": "Bulk"
-        }
-      }
-    },
-    {
-      "ship_key": "KOBE PIONIER",
-      "ship_name": "KOBE PIONIER",
-      "eta_rueb": "2026-05-25 05:53",
-      "ship_q": 5,
-      "assigned_pilot": "Petersen, Yannick",
-      "assigned_pilot_q": 2,
-      "assigned_tactical_nr": 5,
-      "assigned_abteilungszeit": "2026-05-24 22:15",
-      "assigned_current_ship_name": "LORALAND",
-      "assigned_current_ship_eta_rueb": "2026-05-25 03:43",
-      "assigned_current_ship_source": "schiffe_merged.summary.pilot_1_name",
-      "assigned_availability_kind": "merged_eta",
-      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 3,
-      "candidates": [
-        {
-          "pilot_name": "Petersen, Yannick",
-          "pilot_q": 2,
-          "pilot_tactical_nr": 5,
-          "abteilungszeit": "2026-05-24 22:15",
-          "fahrzeug": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "LORALAND",
-          "current_ship_eta_rueb": "2026-05-25 03:43",
-          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
         {
@@ -522,7 +408,7 @@
       ],
       "ship": {
         "meldung": {
-          "nr": "2",
+          "nr": "1",
           "time": "Mon May 25 05:50:00 CEST 2026",
           "draft": "6.4",
           "q_gruppe": "5",
@@ -559,17 +445,30 @@
       "ship_name": "PROUD",
       "eta_rueb": "2026-05-25 05:57",
       "ship_q": 4,
-      "assigned_pilot": "Otten, Janning",
-      "assigned_pilot_q": 0,
-      "assigned_tactical_nr": 4,
-      "assigned_abteilungszeit": "2026-05-24 23:14",
-      "assigned_current_ship_name": "X-PRESS ELBE",
-      "assigned_current_ship_eta_rueb": "2026-05-25 04:09",
+      "assigned_pilot": "Petersen, Yannick",
+      "assigned_pilot_q": 2,
+      "assigned_tactical_nr": 5,
+      "assigned_abteilungszeit": "2026-05-24 22:15",
+      "assigned_current_ship_name": "LORALAND",
+      "assigned_current_ship_eta_rueb": "2026-05-25 03:43",
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 2,
+      "candidate_count": 3,
       "candidates": [
+        {
+          "pilot_name": "Petersen, Yannick",
+          "pilot_q": 2,
+          "pilot_tactical_nr": 5,
+          "abteilungszeit": "2026-05-24 22:15",
+          "fahrzeug": "LORALAND",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "LORALAND",
+          "current_ship_eta_rueb": "2026-05-25 03:43",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
         {
           "pilot_name": "Otten, Janning",
           "pilot_q": 0,
@@ -599,7 +498,7 @@
       ],
       "ship": {
         "meldung": {
-          "nr": "3",
+          "nr": "2",
           "time": "Mon May 25 05:53:00 CEST 2026",
           "draft": "6.4",
           "q_gruppe": "4",
@@ -634,6 +533,28 @@
   ],
   "unassigned_ships": [],
   "unused_pilots": [
+    {
+      "pilot_key": "otten_janning",
+      "vorname": "Janning",
+      "nachname": "Otten",
+      "pilot_name": "Otten, Janning",
+      "abteilungszeit": "2026-05-24 23:14",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 4,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "X-PRESS ELBE",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 4,
+      "raw_time": "Sun May 24 23:14:00 CEST 2026",
+      "current_ship_name": "X-PRESS ELBE",
+      "current_ship_eta_rueb": "2026-05-25 04:09",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
     {
       "pilot_key": "böttcher_peter",
       "vorname": "Peter",
