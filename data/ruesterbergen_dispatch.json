@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-25T06:19:10",
+  "generated_at": "2026-05-25T06:21:07",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,13 +32,13 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 3,
+    "ships_for_ruesterbergen": 4,
     "pilots_total": 7,
     "pilots_dispatchable": 6,
     "pilots_visible_only": 1,
-    "assignments": 3,
+    "assignments": 4,
     "unassigned_ships": 0,
-    "unused_pilots": 3
+    "unused_pilots": 2
   },
   "ships": [
     {
@@ -152,6 +152,44 @@
         "makler": "UCA",
         "dangerous_vessel": "-",
         "type_of_loading": "Container"
+      }
+    },
+    {
+      "ship_key": "BAYMAR",
+      "ship_name": "BAYMAR",
+      "eta_rueb": "2026-05-25 12:09",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 4,
+      "meldung": {
+        "nr": "4",
+        "time": "Mon May 25 11:50:00 CEST 2026",
+        "draft": "4.5",
+        "q_gruppe": "4",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "4",
+        "vg": "3",
+        "draft": "4.50",
+        "length_m": "99.78",
+        "beam_m": "15.55",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "U",
+        "pilot_1_name": "Conrad, Axel",
+        "travel_status": "SAILING_NOK",
+        "makler": "SUB",
+        "dangerous_vessel": "-",
+        "type_of_loading": "Ballast"
       }
     }
   ],
@@ -782,32 +820,100 @@
           "type_of_loading": "Container"
         }
       }
+    },
+    {
+      "ship_key": "BAYMAR",
+      "ship_name": "BAYMAR",
+      "eta_rueb": "2026-05-25 12:09",
+      "ship_q": 4,
+      "assigned_pilot": "Rohn, Jens Michael",
+      "assigned_pilot_q": 1,
+      "assigned_tactical_nr": 8,
+      "assigned_abteilungszeit": "2026-05-25 02:38",
+      "assigned_current_ship_name": "LADY HESTIA",
+      "assigned_current_ship_eta_rueb": "2026-05-25 07:39",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 3,
+      "candidates": [
+        {
+          "pilot_name": "Rohn, Jens Michael",
+          "pilot_q": 1,
+          "pilot_tactical_nr": 8,
+          "abteilungszeit": "2026-05-25 02:38",
+          "fahrzeug": "LADY HESTIA",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "LADY HESTIA",
+          "current_ship_eta_rueb": "2026-05-25 07:39",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Pietsch, Tobias",
+          "pilot_q": 1,
+          "pilot_tactical_nr": 6,
+          "abteilungszeit": "2026-05-25 03:50",
+          "fahrzeug": "ISAR HIGHWAY",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ISAR HIGHWAY",
+          "current_ship_eta_rueb": "2026-05-25 08:28",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Steffens, Micha",
+          "pilot_q": 4,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-05-25 05:03",
+          "fahrzeug": "ARTEMIS",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ARTEMIS",
+          "current_ship_eta_rueb": "2026-05-25 09:29",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "4",
+          "time": "Mon May 25 11:50:00 CEST 2026",
+          "draft": "4.5",
+          "q_gruppe": "4",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "HOS → KLT",
+          "routes": [
+            "HOS → KLT",
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "4",
+          "vg": "3",
+          "draft": "4.50",
+          "length_m": "99.78",
+          "beam_m": "15.55",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "U",
+          "pilot_1_name": "Conrad, Axel",
+          "travel_status": "SAILING_NOK",
+          "makler": "SUB",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Ballast"
+        }
+      }
     }
   ],
   "unassigned_ships": [],
   "unused_pilots": [
-    {
-      "pilot_key": "rohn_jens michael",
-      "vorname": "Jens Michael",
-      "nachname": "Rohn",
-      "pilot_name": "Rohn, Jens Michael",
-      "abteilungszeit": "2026-05-25 02:38",
-      "pilot_q": 1,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 8,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "LADY HESTIA",
-      "from": "HOS",
-      "to": "RÜB",
-      "nr": 8,
-      "raw_time": "Mon May 25 02:38:00 CEST 2026",
-      "current_ship_name": "LADY HESTIA",
-      "current_ship_eta_rueb": "2026-05-25 07:39",
-      "current_ship_q": 0,
-      "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
-    },
     {
       "pilot_key": "pietsch_tobias",
       "vorname": "Tobias",
