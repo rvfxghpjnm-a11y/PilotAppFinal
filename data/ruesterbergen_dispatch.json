@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-25T04:39:06",
+  "generated_at": "2026-05-25T04:41:10",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 5,
     "pilots_total": 6,
-    "pilots_dispatchable": 5,
-    "pilots_visible_only": 1,
+    "pilots_dispatchable": 6,
+    "pilots_visible_only": 0,
     "assignments": 5,
     "unassigned_ships": 0,
-    "unused_pilots": 0
+    "unused_pilots": 1
   },
   "ships": [
     {
@@ -356,9 +356,10 @@
       "nr": 3,
       "raw_time": "Mon May 25 03:50:00 CEST 2026",
       "current_ship_name": "ISAR HIGHWAY",
+      "current_ship_eta_rueb": "2026-05-25 08:31",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     }
   ],
@@ -470,25 +471,31 @@
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
-    }
-  ],
-  "visible_but_not_dispatchable_pilots": [
+    },
     {
       "pilot_key": "pietsch_tobias",
+      "vorname": "Tobias",
+      "nachname": "Pietsch",
       "pilot_name": "Pietsch, Tobias",
-      "pilot_q": 1,
-      "pilot_tactical_nr": 3,
       "abteilungszeit": "2026-05-25 03:50",
+      "pilot_q": 1,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 3,
       "aufgabe": "Kanalbört",
       "fahrzeug": "ISAR HIGHWAY",
       "from": "HOR",
       "to": "RÜB",
+      "nr": 3,
+      "raw_time": "Mon May 25 03:50:00 CEST 2026",
       "current_ship_name": "ISAR HIGHWAY",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
+      "current_ship_eta_rueb": "2026-05-25 08:31",
+      "current_ship_q": 0,
+      "current_ship_route": "HOR → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
     }
   ],
+  "visible_but_not_dispatchable_pilots": [],
   "assignments": [
     {
       "ship_key": "KOBE PIONIER",
@@ -566,6 +573,15 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "LADY HESTIA",
           "pilot_current_ship_eta_rueb": "2026-05-25 07:44",
+          "ship_eta_rueb": "2026-05-25 05:50",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Pietsch, Tobias",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "ISAR HIGHWAY",
+          "pilot_current_ship_eta_rueb": "2026-05-25 08:31",
           "ship_eta_rueb": "2026-05-25 05:50",
           "availability_kind": "merged_eta"
         }
@@ -669,6 +685,15 @@
           "pilot_current_ship_eta_rueb": "2026-05-25 07:44",
           "ship_eta_rueb": "2026-05-25 05:53",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Pietsch, Tobias",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "ISAR HIGHWAY",
+          "pilot_current_ship_eta_rueb": "2026-05-25 08:31",
+          "ship_eta_rueb": "2026-05-25 05:53",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -762,6 +787,17 @@
           "availability_kind": "merged_eta"
         }
       ],
+      "excluded": [
+        {
+          "pilot_name": "Pietsch, Tobias",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "ISAR HIGHWAY",
+          "pilot_current_ship_eta_rueb": "2026-05-25 08:31",
+          "ship_eta_rueb": "2026-05-25 07:59",
+          "availability_kind": "merged_eta"
+        }
+      ],
       "ship": {
         "meldung": {
           "nr": "3",
@@ -833,6 +869,13 @@
           "reason": "Quali passt nicht (1 > 0)",
           "pilot_q": 1,
           "ship_q": 0
+        },
+        {
+          "pilot_name": "Pietsch, Tobias",
+          "pilot_tactical_nr": 3,
+          "reason": "Quali passt nicht (1 > 0)",
+          "pilot_q": 1,
+          "ship_q": 0
         }
       ],
       "ship": {
@@ -883,7 +926,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 1,
+      "candidate_count": 2,
       "candidates": [
         {
           "pilot_name": "Rohn, Jens Michael",
@@ -895,6 +938,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "LADY HESTIA",
           "current_ship_eta_rueb": "2026-05-25 07:44",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Pietsch, Tobias",
+          "pilot_q": 1,
+          "pilot_tactical_nr": 3,
+          "abteilungszeit": "2026-05-25 03:50",
+          "fahrzeug": "ISAR HIGHWAY",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ISAR HIGHWAY",
+          "current_ship_eta_rueb": "2026-05-25 08:31",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
@@ -935,5 +991,28 @@
     }
   ],
   "unassigned_ships": [],
-  "unused_pilots": []
+  "unused_pilots": [
+    {
+      "pilot_key": "pietsch_tobias",
+      "vorname": "Tobias",
+      "nachname": "Pietsch",
+      "pilot_name": "Pietsch, Tobias",
+      "abteilungszeit": "2026-05-25 03:50",
+      "pilot_q": 1,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 3,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "ISAR HIGHWAY",
+      "from": "HOR",
+      "to": "RÜB",
+      "nr": 3,
+      "raw_time": "Mon May 25 03:50:00 CEST 2026",
+      "current_ship_name": "ISAR HIGHWAY",
+      "current_ship_eta_rueb": "2026-05-25 08:31",
+      "current_ship_q": 0,
+      "current_ship_route": "HOR → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    }
+  ]
 }
