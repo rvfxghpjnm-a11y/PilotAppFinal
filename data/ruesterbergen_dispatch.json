@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-25T12:55:10",
+  "generated_at": "2026-05-25T12:57:09",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 7,
     "pilots_total": 8,
-    "pilots_dispatchable": 7,
-    "pilots_visible_only": 1,
+    "pilots_dispatchable": 8,
+    "pilots_visible_only": 0,
     "assignments": 7,
     "unassigned_ships": 0,
-    "unused_pilots": 0
+    "unused_pilots": 1
   },
   "ships": [
     {
@@ -412,16 +412,16 @@
       "q_source": "q_gruppen_lotsen.entries",
       "pilot_tactical_nr": 5,
       "aufgabe": "Kanalbört",
-      "fahrzeug": "LEOPARD+TRD VOYAGER+GROSSNORDSEE",
-      "from": "HOS",
-      "to": "RÜB",
+      "fahrzeug": "RÜB",
       "nr": 5,
       "raw_time": "Mon May 25 08:44:00 CEST 2026",
-      "current_ship_name": "LEOPARD+TRD VOYAGER+GROSSNORDSEE",
+      "current_ship_name": "RÜB",
+      "current_ship_eta_rueb": "2026-05-25 08:44",
       "current_ship_q": 0,
-      "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
+      "current_ship_route": "RÜB",
+      "current_ship_source": "special.already_in_rueb",
+      "availability_kind": "already_in_rueb",
+      "availability_hint": "Lotse gilt als bereits in RÜB"
     },
     {
       "pilot_key": "suermann_nik",
@@ -579,6 +579,27 @@
       "availability_kind": "merged_eta"
     },
     {
+      "pilot_key": "külzer_sascha",
+      "vorname": "Sascha",
+      "nachname": "Külzer",
+      "pilot_name": "Külzer, Sascha",
+      "abteilungszeit": "2026-05-25 08:44",
+      "pilot_q": 2,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 5,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "RÜB",
+      "nr": 5,
+      "raw_time": "Mon May 25 08:44:00 CEST 2026",
+      "current_ship_name": "RÜB",
+      "current_ship_eta_rueb": "2026-05-25 08:44",
+      "current_ship_q": 0,
+      "current_ship_route": "RÜB",
+      "current_ship_source": "special.already_in_rueb",
+      "availability_kind": "already_in_rueb",
+      "availability_hint": "Lotse gilt als bereits in RÜB"
+    },
+    {
       "pilot_key": "suermann_nik",
       "vorname": "Nik",
       "nachname": "Suermann",
@@ -623,23 +644,7 @@
       "availability_kind": "merged_eta"
     }
   ],
-  "visible_but_not_dispatchable_pilots": [
-    {
-      "pilot_key": "külzer_sascha",
-      "pilot_name": "Külzer, Sascha",
-      "pilot_q": 2,
-      "pilot_tactical_nr": 5,
-      "abteilungszeit": "2026-05-25 08:44",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "LEOPARD+TRD VOYAGER+GROSSNORDSEE",
-      "from": "HOS",
-      "to": "RÜB",
-      "current_ship_name": "LEOPARD+TRD VOYAGER+GROSSNORDSEE",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    }
-  ],
+  "visible_but_not_dispatchable_pilots": [],
   "assignments": [
     {
       "ship_key": "BALTIC WIND",
@@ -655,7 +660,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 5,
+      "candidate_count": 6,
       "candidates": [
         {
           "pilot_name": "Pietsch, Tobias",
@@ -721,6 +726,19 @@
           "current_ship_eta_rueb": "2026-05-25 09:53",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Külzer, Sascha",
+          "pilot_q": 2,
+          "pilot_tactical_nr": 5,
+          "abteilungszeit": "2026-05-25 08:44",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-25 08:44",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
         }
       ],
       "excluded": [
@@ -790,7 +808,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 3,
+      "candidate_count": 4,
       "candidates": [
         {
           "pilot_name": "Köhler, Olaf",
@@ -830,6 +848,19 @@
           "current_ship_eta_rueb": "2026-05-25 09:53",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Külzer, Sascha",
+          "pilot_q": 2,
+          "pilot_tactical_nr": 5,
+          "abteilungszeit": "2026-05-25 08:44",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-25 08:44",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
         }
       ],
       "excluded": [
@@ -907,7 +938,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 3,
+      "candidate_count": 4,
       "candidates": [
         {
           "pilot_name": "Steffens, Micha",
@@ -947,6 +978,19 @@
           "current_ship_eta_rueb": "2026-05-25 09:53",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Külzer, Sascha",
+          "pilot_q": 2,
+          "pilot_tactical_nr": 5,
+          "abteilungszeit": "2026-05-25 08:44",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-25 08:44",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
         }
       ],
       "excluded": [
@@ -1018,7 +1062,7 @@
       "assigned_availability_kind": "already_in_rueb",
       "assigned_availability_hint": "Lotse gilt als bereits in RÜB",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 2,
+      "candidate_count": 3,
       "candidates": [
         {
           "pilot_name": "Dietrich, Thomas",
@@ -1045,6 +1089,19 @@
           "current_ship_eta_rueb": "2026-05-25 09:53",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Külzer, Sascha",
+          "pilot_q": 2,
+          "pilot_tactical_nr": 5,
+          "abteilungszeit": "2026-05-25 08:44",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-25 08:44",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
         }
       ],
       "excluded": [
@@ -1114,7 +1171,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 1,
+      "candidate_count": 2,
       "candidates": [
         {
           "pilot_name": "Malik, Christoph",
@@ -1128,6 +1185,19 @@
           "current_ship_eta_rueb": "2026-05-25 09:53",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Külzer, Sascha",
+          "pilot_q": 2,
+          "pilot_tactical_nr": 5,
+          "abteilungszeit": "2026-05-25 08:44",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-25 08:44",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
         }
       ],
       "excluded": [
@@ -1188,17 +1258,31 @@
       "ship_name": "OSTERBOTTEN",
       "eta_rueb": "2026-05-25 16:00",
       "ship_q": 4,
-      "assigned_pilot": "Suermann, Nik",
-      "assigned_pilot_q": 0,
-      "assigned_tactical_nr": 3,
-      "assigned_abteilungszeit": "2026-05-25 10:40",
-      "assigned_current_ship_name": "VENTUMAR",
-      "assigned_current_ship_eta_rueb": "2026-05-25 15:53",
-      "assigned_current_ship_source": "schiffe_merged.seelotsen",
-      "assigned_availability_kind": "merged_eta",
+      "assigned_pilot": "Külzer, Sascha",
+      "assigned_pilot_q": 2,
+      "assigned_tactical_nr": 5,
+      "assigned_abteilungszeit": "2026-05-25 08:44",
+      "assigned_current_ship_name": "RÜB",
+      "assigned_current_ship_eta_rueb": "2026-05-25 08:44",
+      "assigned_current_ship_source": "special.already_in_rueb",
+      "assigned_availability_kind": "already_in_rueb",
+      "assigned_availability_hint": "Lotse gilt als bereits in RÜB",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 2,
+      "candidate_count": 3,
       "candidates": [
+        {
+          "pilot_name": "Külzer, Sascha",
+          "pilot_q": 2,
+          "pilot_tactical_nr": 5,
+          "abteilungszeit": "2026-05-25 08:44",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-25 08:44",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
+        },
         {
           "pilot_name": "Suermann, Nik",
           "pilot_q": 0,
@@ -1253,17 +1337,30 @@
       "ship_name": "JONABORG",
       "eta_rueb": "2026-05-25 16:29",
       "ship_q": 5,
-      "assigned_pilot": "Crotogino, Philipp",
+      "assigned_pilot": "Suermann, Nik",
       "assigned_pilot_q": 0,
-      "assigned_tactical_nr": 1,
-      "assigned_abteilungszeit": "2026-05-25 11:23",
-      "assigned_current_ship_name": "SEA STEAMER",
-      "assigned_current_ship_eta_rueb": "2026-05-25 15:56",
+      "assigned_tactical_nr": 3,
+      "assigned_abteilungszeit": "2026-05-25 10:40",
+      "assigned_current_ship_name": "VENTUMAR",
+      "assigned_current_ship_eta_rueb": "2026-05-25 15:53",
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 1,
+      "candidate_count": 2,
       "candidates": [
+        {
+          "pilot_name": "Suermann, Nik",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 3,
+          "abteilungszeit": "2026-05-25 10:40",
+          "fahrzeug": "VENTUMAR",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "VENTUMAR",
+          "current_ship_eta_rueb": "2026-05-25 15:53",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
         {
           "pilot_name": "Crotogino, Philipp",
           "pilot_q": 0,
@@ -1313,5 +1410,28 @@
     }
   ],
   "unassigned_ships": [],
-  "unused_pilots": []
+  "unused_pilots": [
+    {
+      "pilot_key": "crotogino_philipp",
+      "vorname": "Philipp",
+      "nachname": "Crotogino",
+      "pilot_name": "Crotogino, Philipp",
+      "abteilungszeit": "2026-05-25 11:23",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 1,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "SEA STEAMER",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 1,
+      "raw_time": "Mon May 25 11:23:00 CEST 2026",
+      "current_ship_name": "SEA STEAMER",
+      "current_ship_eta_rueb": "2026-05-25 15:56",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    }
+  ]
 }
