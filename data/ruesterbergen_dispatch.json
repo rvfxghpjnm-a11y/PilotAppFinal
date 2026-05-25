@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-26T00:59:14",
+  "generated_at": "2026-05-26T01:01:10",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,15 +32,37 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 0,
+    "ships_for_ruesterbergen": 1,
     "pilots_total": 6,
     "pilots_dispatchable": 6,
     "pilots_visible_only": 0,
-    "assignments": 0,
+    "assignments": 1,
     "unassigned_ships": 0,
-    "unused_pilots": 6
+    "unused_pilots": 5
   },
-  "ships": [],
+  "ships": [
+    {
+      "ship_key": "LEERFAHRT",
+      "ship_name": "Leerfahrt",
+      "eta_rueb": "2026-05-26 02:00",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 0,
+      "meldung": {
+        "nr": "1",
+        "time": "Tue May 26 02:00:00 CEST 2026",
+        "lotsen_anzahl": 3,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "RÜB → HOS",
+        "routes": [
+          "RÜB → HOS"
+        ]
+      }
+    }
+  ],
   "pilots": [
     {
       "pilot_key": "börnsen_curt",
@@ -124,7 +146,7 @@
       "nr": 3,
       "raw_time": "Mon May 25 21:16:00 CEST 2026",
       "current_ship_name": "DP WORLD LIMASSOL",
-      "current_ship_eta_rueb": "2026-05-26 02:02",
+      "current_ship_eta_rueb": "2026-05-26 02:01",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -258,7 +280,7 @@
       "nr": 3,
       "raw_time": "Mon May 25 21:16:00 CEST 2026",
       "current_ship_name": "DP WORLD LIMASSOL",
-      "current_ship_eta_rueb": "2026-05-26 02:02",
+      "current_ship_eta_rueb": "2026-05-26 02:01",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -310,31 +332,112 @@
     }
   ],
   "visible_but_not_dispatchable_pilots": [],
-  "assignments": [],
+  "assignments": [
+    {
+      "ship_key": "LEERFAHRT",
+      "ship_name": "Leerfahrt",
+      "eta_rueb": "2026-05-26 02:00",
+      "ship_q": 0,
+      "assigned_pilot": "Börnsen, Curt",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 8,
+      "assigned_abteilungszeit": "2026-05-25 19:42",
+      "assigned_current_ship_name": "HEYN",
+      "assigned_current_ship_eta_rueb": "2026-05-26 00:56",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 3,
+      "candidates": [
+        {
+          "pilot_name": "Börnsen, Curt",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 8,
+          "abteilungszeit": "2026-05-25 19:42",
+          "fahrzeug": "HEYN",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "HEYN",
+          "current_ship_eta_rueb": "2026-05-26 00:56",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Heyenga, Kai",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 5,
+          "abteilungszeit": "2026-05-25 21:06",
+          "fahrzeug": "KEY SOUTH",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "KEY SOUTH",
+          "current_ship_eta_rueb": "2026-05-26 01:45",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Skawianczyk, Artur",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 4,
+          "abteilungszeit": "2026-05-25 21:10",
+          "fahrzeug": "TARNBRIS",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "TARNBRIS",
+          "current_ship_eta_rueb": "2026-05-26 01:49",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Wille, Christian",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "DP WORLD LIMASSOL",
+          "pilot_current_ship_eta_rueb": "2026-05-26 02:01",
+          "ship_eta_rueb": "2026-05-26 02:00",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Kordt, Remo",
+          "pilot_tactical_nr": 2,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "NEERBORG",
+          "pilot_current_ship_eta_rueb": "2026-05-26 03:59",
+          "ship_eta_rueb": "2026-05-26 02:00",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Woitanowski, Tim",
+          "pilot_tactical_nr": 1,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "LINK POLARIS",
+          "pilot_current_ship_eta_rueb": "2026-05-26 04:08",
+          "ship_eta_rueb": "2026-05-26 02:00",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "1",
+          "time": "Tue May 26 02:00:00 CEST 2026",
+          "lotsen_anzahl": 3,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "RÜB → HOS",
+          "routes": [
+            "RÜB → HOS"
+          ]
+        }
+      }
+    }
+  ],
   "unassigned_ships": [],
   "unused_pilots": [
-    {
-      "pilot_key": "börnsen_curt",
-      "vorname": "Curt",
-      "nachname": "Börnsen",
-      "pilot_name": "Börnsen, Curt",
-      "abteilungszeit": "2026-05-25 19:42",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 8,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "HEYN",
-      "from": "RÜB",
-      "to": "HOS",
-      "nr": 8,
-      "raw_time": "Mon May 25 19:42:00 CEST 2026",
-      "current_ship_name": "HEYN",
-      "current_ship_eta_rueb": "2026-05-26 00:56",
-      "current_ship_q": 0,
-      "current_ship_route": "RÜB → HOS",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
-    },
     {
       "pilot_key": "heyenga_kai",
       "vorname": "Kai",
@@ -395,7 +498,7 @@
       "nr": 3,
       "raw_time": "Mon May 25 21:16:00 CEST 2026",
       "current_ship_name": "DP WORLD LIMASSOL",
-      "current_ship_eta_rueb": "2026-05-26 02:02",
+      "current_ship_eta_rueb": "2026-05-26 02:01",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
