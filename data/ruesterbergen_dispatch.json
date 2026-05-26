@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-26T11:31:11",
+  "generated_at": "2026-05-26T11:33:11",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,17 +34,17 @@
   "counts": {
     "ships_for_ruesterbergen": 6,
     "pilots_total": 10,
-    "pilots_dispatchable": 9,
-    "pilots_visible_only": 1,
+    "pilots_dispatchable": 10,
+    "pilots_visible_only": 0,
     "assignments": 6,
     "unassigned_ships": 0,
-    "unused_pilots": 3
+    "unused_pilots": 4
   },
   "ships": [
     {
       "ship_key": "EMIRALP",
       "ship_name": "EMIRALP",
-      "eta_rueb": "2026-05-26 13:55",
+      "eta_rueb": "2026-05-26 13:54",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 4,
       "meldung": {
@@ -82,7 +82,7 @@
     {
       "ship_key": "ANNETTE ESSBERGER",
       "ship_name": "ANNETTE ESSBERGER",
-      "eta_rueb": "2026-05-26 13:58",
+      "eta_rueb": "2026-05-26 13:57",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 3,
       "meldung": {
@@ -481,6 +481,7 @@
       "nr": 2,
       "raw_time": "Tue May 26 11:00:00 CEST 2026",
       "current_ship_name": "LADY MARIE CHRISTINE",
+      "current_ship_eta_rueb": "2026-05-26 12:27",
       "current_ship_q": 0,
       "current_ship_route": "UTG → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -684,30 +685,36 @@
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
-    }
-  ],
-  "visible_but_not_dispatchable_pilots": [
+    },
     {
       "pilot_key": "lüdtke_jan-torben",
+      "vorname": "Jan-Torben",
+      "nachname": "Lüdtke",
       "pilot_name": "Lüdtke, Jan-Torben",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 2,
       "abteilungszeit": "2026-05-26 11:00",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 2,
       "aufgabe": "Kanalbört",
       "fahrzeug": "LADY MARIE CHRISTINE",
       "from": "UTG",
       "to": "RÜB",
+      "nr": 2,
+      "raw_time": "Tue May 26 11:00:00 CEST 2026",
       "current_ship_name": "LADY MARIE CHRISTINE",
+      "current_ship_eta_rueb": "2026-05-26 12:27",
+      "current_ship_q": 0,
+      "current_ship_route": "UTG → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
+      "availability_kind": "merged_eta"
     }
   ],
+  "visible_but_not_dispatchable_pilots": [],
   "assignments": [
     {
       "ship_key": "EMIRALP",
       "ship_name": "EMIRALP",
-      "eta_rueb": "2026-05-26 13:55",
+      "eta_rueb": "2026-05-26 13:54",
       "ship_q": 4,
       "assigned_pilot": "Woitanowski, Tim",
       "assigned_pilot_q": 2,
@@ -718,7 +725,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 7,
+      "candidate_count": 8,
       "candidates": [
         {
           "pilot_name": "Woitanowski, Tim",
@@ -810,6 +817,19 @@
           "current_ship_eta_rueb": "2026-05-26 10:06",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Lüdtke, Jan-Torben",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-05-26 11:00",
+          "fahrzeug": "LADY MARIE CHRISTINE",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "LADY MARIE CHRISTINE",
+          "current_ship_eta_rueb": "2026-05-26 12:27",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
         }
       ],
       "excluded": [
@@ -819,7 +839,7 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "RUYTER",
           "pilot_current_ship_eta_rueb": "2026-05-26 15:09",
-          "ship_eta_rueb": "2026-05-26 13:55",
+          "ship_eta_rueb": "2026-05-26 13:54",
           "availability_kind": "merged_eta"
         },
         {
@@ -828,7 +848,7 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "KRISTA",
           "pilot_current_ship_eta_rueb": "2026-05-26 15:13",
-          "ship_eta_rueb": "2026-05-26 13:55",
+          "ship_eta_rueb": "2026-05-26 13:54",
           "availability_kind": "merged_eta"
         }
       ],
@@ -869,7 +889,7 @@
     {
       "ship_key": "ANNETTE ESSBERGER",
       "ship_name": "ANNETTE ESSBERGER",
-      "eta_rueb": "2026-05-26 13:58",
+      "eta_rueb": "2026-05-26 13:57",
       "ship_q": 3,
       "assigned_pilot": "Jenckel, Dolf",
       "assigned_pilot_q": 0,
@@ -880,7 +900,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 5,
+      "candidate_count": 6,
       "candidates": [
         {
           "pilot_name": "Jenckel, Dolf",
@@ -946,6 +966,19 @@
           "current_ship_eta_rueb": "2026-05-26 10:06",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Lüdtke, Jan-Torben",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-05-26 11:00",
+          "fahrzeug": "LADY MARIE CHRISTINE",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "LADY MARIE CHRISTINE",
+          "current_ship_eta_rueb": "2026-05-26 12:27",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
         }
       ],
       "excluded": [
@@ -962,7 +995,7 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "RUYTER",
           "pilot_current_ship_eta_rueb": "2026-05-26 15:09",
-          "ship_eta_rueb": "2026-05-26 13:58",
+          "ship_eta_rueb": "2026-05-26 13:57",
           "availability_kind": "merged_eta"
         },
         {
@@ -971,7 +1004,7 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "KRISTA",
           "pilot_current_ship_eta_rueb": "2026-05-26 15:13",
-          "ship_eta_rueb": "2026-05-26 13:58",
+          "ship_eta_rueb": "2026-05-26 13:57",
           "availability_kind": "merged_eta"
         }
       ],
@@ -1024,7 +1057,7 @@
       "assigned_availability_kind": "already_in_rueb",
       "assigned_availability_hint": "Lotse gilt als bereits in RÜB",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 7,
+      "candidate_count": 8,
       "candidates": [
         {
           "pilot_name": "Janson, Sven",
@@ -1116,6 +1149,19 @@
           "current_ship_eta_rueb": "2026-05-26 15:13",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Lüdtke, Jan-Torben",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-05-26 11:00",
+          "fahrzeug": "LADY MARIE CHRISTINE",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "LADY MARIE CHRISTINE",
+          "current_ship_eta_rueb": "2026-05-26 12:27",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -1165,7 +1211,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 6,
+      "candidate_count": 7,
       "candidates": [
         {
           "pilot_name": "Zimmermann, Steffen",
@@ -1244,6 +1290,19 @@
           "current_ship_eta_rueb": "2026-05-26 15:13",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Lüdtke, Jan-Torben",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-05-26 11:00",
+          "fahrzeug": "LADY MARIE CHRISTINE",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "LADY MARIE CHRISTINE",
+          "current_ship_eta_rueb": "2026-05-26 12:27",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -1293,7 +1352,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 5,
+      "candidate_count": 6,
       "candidates": [
         {
           "pilot_name": "Meise, Gregor",
@@ -1359,6 +1418,19 @@
           "current_ship_eta_rueb": "2026-05-26 15:13",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Lüdtke, Jan-Torben",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-05-26 11:00",
+          "fahrzeug": "LADY MARIE CHRISTINE",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "LADY MARIE CHRISTINE",
+          "current_ship_eta_rueb": "2026-05-26 12:27",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -1409,7 +1481,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 4,
+      "candidate_count": 5,
       "candidates": [
         {
           "pilot_name": "Kahler, Volker",
@@ -1460,6 +1532,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "KRISTA",
           "current_ship_eta_rueb": "2026-05-26 15:13",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Lüdtke, Jan-Torben",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-05-26 11:00",
+          "fahrzeug": "LADY MARIE CHRISTINE",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "LADY MARIE CHRISTINE",
+          "current_ship_eta_rueb": "2026-05-26 12:27",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
@@ -1563,6 +1648,28 @@
       "current_ship_eta_rueb": "2026-05-26 15:13",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "lüdtke_jan-torben",
+      "vorname": "Jan-Torben",
+      "nachname": "Lüdtke",
+      "pilot_name": "Lüdtke, Jan-Torben",
+      "abteilungszeit": "2026-05-26 11:00",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 2,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "LADY MARIE CHRISTINE",
+      "from": "UTG",
+      "to": "RÜB",
+      "nr": 2,
+      "raw_time": "Tue May 26 11:00:00 CEST 2026",
+      "current_ship_name": "LADY MARIE CHRISTINE",
+      "current_ship_eta_rueb": "2026-05-26 12:27",
+      "current_ship_q": 0,
+      "current_ship_route": "UTG → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     }
