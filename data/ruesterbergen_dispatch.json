@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-26T07:17:05",
+  "generated_at": "2026-05-26T07:19:07",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,17 +34,17 @@
   "counts": {
     "ships_for_ruesterbergen": 3,
     "pilots_total": 5,
-    "pilots_dispatchable": 3,
-    "pilots_visible_only": 2,
+    "pilots_dispatchable": 4,
+    "pilots_visible_only": 1,
     "assignments": 3,
     "unassigned_ships": 0,
-    "unused_pilots": 0
+    "unused_pilots": 1
   },
   "ships": [
     {
       "ship_key": "UHL FRONTIER",
       "ship_name": "UHL FRONTIER",
-      "eta_rueb": "2026-05-26 10:20",
+      "eta_rueb": "2026-05-26 10:19",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 1,
       "meldung": {
@@ -82,7 +82,7 @@
     {
       "ship_key": "HOLGER G.",
       "ship_name": "HOLGER G.",
-      "eta_rueb": "2026-05-26 10:23",
+      "eta_rueb": "2026-05-26 10:22",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
@@ -124,7 +124,7 @@
       "ship_q": 5,
       "meldung": {
         "nr": "3",
-        "time": "Tue May 26 11:05:00 CEST 2026",
+        "time": "Tue May 26 11:10:00 CEST 2026",
         "draft": "5.1",
         "q_gruppe": "5",
         "lotsen_anzahl": 1,
@@ -236,9 +236,10 @@
       "nr": 2,
       "raw_time": "Tue May 26 06:12:00 CEST 2026",
       "current_ship_name": "LYDIA",
+      "current_ship_eta_rueb": "2026-05-26 10:49",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
@@ -328,24 +329,31 @@
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta"
-    }
-  ],
-  "visible_but_not_dispatchable_pilots": [
+    },
     {
       "pilot_key": "janson_sven",
+      "vorname": "Sven",
+      "nachname": "Janson",
       "pilot_name": "Janson, Sven",
-      "pilot_q": 4,
-      "pilot_tactical_nr": 2,
       "abteilungszeit": "2026-05-26 06:12",
+      "pilot_q": 4,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 2,
       "aufgabe": "Kanalbört",
       "fahrzeug": "LYDIA",
       "from": "HOS",
       "to": "RÜB",
+      "nr": 2,
+      "raw_time": "Tue May 26 06:12:00 CEST 2026",
       "current_ship_name": "LYDIA",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    },
+      "current_ship_eta_rueb": "2026-05-26 10:49",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    }
+  ],
+  "visible_but_not_dispatchable_pilots": [
     {
       "pilot_key": "zimmermann_steffen",
       "pilot_name": "Zimmermann, Steffen",
@@ -366,7 +374,7 @@
     {
       "ship_key": "UHL FRONTIER",
       "ship_name": "UHL FRONTIER",
-      "eta_rueb": "2026-05-26 10:20",
+      "eta_rueb": "2026-05-26 10:19",
       "ship_q": 1,
       "assigned_pilot": "Kordt, Remo",
       "assigned_pilot_q": 0,
@@ -407,7 +415,16 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "RUBIKON 202",
           "pilot_current_ship_eta_rueb": "2026-05-26 10:43",
-          "ship_eta_rueb": "2026-05-26 10:20",
+          "ship_eta_rueb": "2026-05-26 10:19",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Janson, Sven",
+          "pilot_tactical_nr": 2,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "LYDIA",
+          "pilot_current_ship_eta_rueb": "2026-05-26 10:49",
+          "ship_eta_rueb": "2026-05-26 10:19",
           "availability_kind": "merged_eta"
         }
       ],
@@ -448,7 +465,7 @@
     {
       "ship_key": "HOLGER G.",
       "ship_name": "HOLGER G.",
-      "eta_rueb": "2026-05-26 10:23",
+      "eta_rueb": "2026-05-26 10:22",
       "ship_q": 5,
       "assigned_pilot": "Woitanowski, Tim",
       "assigned_pilot_q": 2,
@@ -483,7 +500,16 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "RUBIKON 202",
           "pilot_current_ship_eta_rueb": "2026-05-26 10:43",
-          "ship_eta_rueb": "2026-05-26 10:23",
+          "ship_eta_rueb": "2026-05-26 10:22",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Janson, Sven",
+          "pilot_tactical_nr": 2,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "LYDIA",
+          "pilot_current_ship_eta_rueb": "2026-05-26 10:49",
+          "ship_eta_rueb": "2026-05-26 10:22",
           "availability_kind": "merged_eta"
         }
       ],
@@ -534,7 +560,7 @@
       "assigned_current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 1,
+      "candidate_count": 2,
       "candidates": [
         {
           "pilot_name": "Jenckel, Dolf",
@@ -548,12 +574,25 @@
           "current_ship_eta_rueb": "2026-05-26 10:43",
           "current_ship_source": "schiffe_merged.summary.pilot_1_name",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Janson, Sven",
+          "pilot_q": 4,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-05-26 06:12",
+          "fahrzeug": "LYDIA",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "LYDIA",
+          "current_ship_eta_rueb": "2026-05-26 10:49",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
         "meldung": {
           "nr": "3",
-          "time": "Tue May 26 11:05:00 CEST 2026",
+          "time": "Tue May 26 11:10:00 CEST 2026",
           "draft": "5.1",
           "q_gruppe": "5",
           "lotsen_anzahl": 1,
@@ -585,5 +624,28 @@
     }
   ],
   "unassigned_ships": [],
-  "unused_pilots": []
+  "unused_pilots": [
+    {
+      "pilot_key": "janson_sven",
+      "vorname": "Sven",
+      "nachname": "Janson",
+      "pilot_name": "Janson, Sven",
+      "abteilungszeit": "2026-05-26 06:12",
+      "pilot_q": 4,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 2,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "LYDIA",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 2,
+      "raw_time": "Tue May 26 06:12:00 CEST 2026",
+      "current_ship_name": "LYDIA",
+      "current_ship_eta_rueb": "2026-05-26 10:49",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    }
+  ]
 }
