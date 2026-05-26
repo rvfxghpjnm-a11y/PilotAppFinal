@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-26T12:39:11",
+  "generated_at": "2026-05-26T12:41:08",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,13 +32,13 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 8,
+    "ships_for_ruesterbergen": 9,
     "pilots_total": 10,
     "pilots_dispatchable": 10,
     "pilots_visible_only": 0,
-    "assignments": 8,
+    "assignments": 9,
     "unassigned_ships": 0,
-    "unused_pilots": 2
+    "unused_pilots": 1
   },
   "ships": [
     {
@@ -232,7 +232,7 @@
     {
       "ship_key": "ISABELL",
       "ship_name": "ISABELL",
-      "eta_rueb": "2026-05-26 16:11",
+      "eta_rueb": "2026-05-26 16:10",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
@@ -269,7 +269,7 @@
     {
       "ship_key": "BORE WAVE",
       "ship_name": "BORE WAVE",
-      "eta_rueb": "2026-05-26 16:14",
+      "eta_rueb": "2026-05-26 16:13",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 2,
       "meldung": {
@@ -307,7 +307,7 @@
     {
       "ship_key": "TERRAMAR",
       "ship_name": "TERRAMAR",
-      "eta_rueb": "2026-05-26 16:17",
+      "eta_rueb": "2026-05-26 16:16",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 4,
       "meldung": {
@@ -340,6 +340,42 @@
         "makler": "SUB",
         "dangerous_vessel": "-",
         "type_of_loading": "Ballastfahrt"
+      }
+    },
+    {
+      "ship_key": "SEA SHANNON",
+      "ship_name": "SEA SHANNON",
+      "eta_rueb": "2026-05-26 18:05",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 5,
+      "meldung": {
+        "nr": "9",
+        "time": "Tue May 26 17:50:00 CEST 2026",
+        "draft": "3.8",
+        "q_gruppe": "5",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "KRH"
+      },
+      "summary": {
+        "route": "RÜB → KRH",
+        "routes": [
+          "RÜB → KRH"
+        ],
+        "q_gruppe": "5",
+        "vg": "3",
+        "draft": "3.80",
+        "length_m": "82.450",
+        "beam_m": "11.38",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "H",
+        "travel_status": "SAILING_NOK",
+        "makler": "UCA",
+        "dangerous_vessel": "-",
+        "type_of_loading": "Bulk"
       }
     }
   ],
@@ -1534,7 +1570,7 @@
     {
       "ship_key": "ISABELL",
       "ship_name": "ISABELL",
-      "eta_rueb": "2026-05-26 16:11",
+      "eta_rueb": "2026-05-26 16:10",
       "ship_q": 5,
       "assigned_pilot": "Kahler, Volker",
       "assigned_pilot_q": 0,
@@ -1650,7 +1686,7 @@
     {
       "ship_key": "BORE WAVE",
       "ship_name": "BORE WAVE",
-      "eta_rueb": "2026-05-26 16:14",
+      "eta_rueb": "2026-05-26 16:13",
       "ship_q": 2,
       "assigned_pilot": "Bachholz, Carsten",
       "assigned_pilot_q": 0,
@@ -1749,7 +1785,7 @@
     {
       "ship_key": "TERRAMAR",
       "ship_name": "TERRAMAR",
-      "eta_rueb": "2026-05-26 16:17",
+      "eta_rueb": "2026-05-26 16:16",
       "ship_q": 4,
       "assigned_pilot": "Steinbach, Daniel",
       "assigned_pilot_q": 0,
@@ -1835,32 +1871,85 @@
           "type_of_loading": "Ballastfahrt"
         }
       }
+    },
+    {
+      "ship_key": "SEA SHANNON",
+      "ship_name": "SEA SHANNON",
+      "eta_rueb": "2026-05-26 18:05",
+      "ship_q": 5,
+      "assigned_pilot": "Engel, Alexander",
+      "assigned_pilot_q": 3,
+      "assigned_tactical_nr": 6,
+      "assigned_abteilungszeit": "2026-05-26 10:22",
+      "assigned_current_ship_name": "KRISTA",
+      "assigned_current_ship_eta_rueb": "2026-05-26 15:13",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 2,
+      "candidates": [
+        {
+          "pilot_name": "Engel, Alexander",
+          "pilot_q": 3,
+          "pilot_tactical_nr": 6,
+          "abteilungszeit": "2026-05-26 10:22",
+          "fahrzeug": "KRISTA",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "KRISTA",
+          "current_ship_eta_rueb": "2026-05-26 15:13",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Lüdtke, Jan-Torben",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 5,
+          "abteilungszeit": "2026-05-26 11:00",
+          "fahrzeug": "LADY MARIE CHRISTINE",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "LADY MARIE CHRISTINE",
+          "current_ship_eta_rueb": "2026-05-26 15:16",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "9",
+          "time": "Tue May 26 17:50:00 CEST 2026",
+          "draft": "3.8",
+          "q_gruppe": "5",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "KRH"
+        },
+        "summary": {
+          "route": "RÜB → KRH",
+          "routes": [
+            "RÜB → KRH"
+          ],
+          "q_gruppe": "5",
+          "vg": "3",
+          "draft": "3.80",
+          "length_m": "82.450",
+          "beam_m": "11.38",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "H",
+          "travel_status": "SAILING_NOK",
+          "makler": "UCA",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Bulk"
+        }
+      }
     }
   ],
   "unassigned_ships": [],
   "unused_pilots": [
-    {
-      "pilot_key": "engel_alexander",
-      "vorname": "Alexander",
-      "nachname": "Engel",
-      "pilot_name": "Engel, Alexander",
-      "abteilungszeit": "2026-05-26 10:22",
-      "pilot_q": 3,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 6,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "KRISTA",
-      "from": "HOS",
-      "to": "RÜB",
-      "nr": 6,
-      "raw_time": "Tue May 26 10:22:00 CEST 2026",
-      "current_ship_name": "KRISTA",
-      "current_ship_eta_rueb": "2026-05-26 15:13",
-      "current_ship_q": 0,
-      "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
-    },
     {
       "pilot_key": "lüdtke_jan-torben",
       "vorname": "Jan-Torben",
