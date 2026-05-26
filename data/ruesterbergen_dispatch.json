@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-26T19:27:09",
+  "generated_at": "2026-05-26T19:29:10",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 1,
     "pilots_total": 20,
-    "pilots_dispatchable": 15,
-    "pilots_visible_only": 5,
+    "pilots_dispatchable": 16,
+    "pilots_visible_only": 4,
     "assignments": 1,
     "unassigned_ships": 0,
-    "unused_pilots": 14
+    "unused_pilots": 15
   },
   "ships": [
     {
@@ -427,7 +427,7 @@
       "current_ship_name": "KERSTI",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta"
     },
     {
@@ -445,10 +445,11 @@
       "to": "RÜB",
       "nr": 6,
       "raw_time": "Tue May 26 18:19:00 CEST 2026",
-      "current_ship_name": "BERTHOLD K.",
+      "current_ship_name": "BERTHOLD K",
+      "current_ship_eta_rueb": "2026-05-26 23:27",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta"
     },
     {
@@ -469,7 +470,7 @@
       "current_ship_name": "HELGA ESSBERGER",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta"
     },
     {
@@ -826,6 +827,28 @@
       "availability_kind": "merged_eta"
     },
     {
+      "pilot_key": "borggräfe_hark",
+      "vorname": "Hark",
+      "nachname": "Borggräfe",
+      "pilot_name": "Borggräfe, Hark",
+      "abteilungszeit": "2026-05-26 18:19",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 6,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "BERTHOLD K.",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 6,
+      "raw_time": "Tue May 26 18:19:00 CEST 2026",
+      "current_ship_name": "BERTHOLD K",
+      "current_ship_eta_rueb": "2026-05-26 23:27",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "availability_kind": "merged_eta"
+    },
+    {
       "pilot_key": "krämer_jonas",
       "vorname": "Jonas",
       "nachname": "Krämer",
@@ -875,22 +898,7 @@
       "from": "HOS",
       "to": "RÜB",
       "current_ship_name": "KERSTI",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    },
-    {
-      "pilot_key": "borggräfe_hark",
-      "pilot_name": "Borggräfe, Hark",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 6,
-      "abteilungszeit": "2026-05-26 18:19",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "BERTHOLD K.",
-      "from": "HOS",
-      "to": "RÜB",
-      "current_ship_name": "BERTHOLD K.",
-      "current_ship_source": "schiffe_merged.seelotsen",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta",
       "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
     },
@@ -905,7 +913,7 @@
       "from": "HOS",
       "to": "RÜB",
       "current_ship_name": "HELGA ESSBERGER",
-      "current_ship_source": "schiffe_merged.seelotsen",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta",
       "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
     },
@@ -1135,6 +1143,17 @@
           "current_ship_name": "BORE WAVE",
           "current_ship_eta_rueb": "2026-05-26 16:05",
           "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Borggräfe, Hark",
+          "pilot_tactical_nr": 6,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "BERTHOLD K",
+          "pilot_current_ship_eta_rueb": "2026-05-26 23:27",
+          "ship_eta_rueb": "2026-05-26 22:06",
           "availability_kind": "merged_eta"
         }
       ],
@@ -1458,6 +1477,28 @@
       "current_ship_q": 0,
       "current_ship_route": "RÜB → HOS",
       "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "borggräfe_hark",
+      "vorname": "Hark",
+      "nachname": "Borggräfe",
+      "pilot_name": "Borggräfe, Hark",
+      "abteilungszeit": "2026-05-26 18:19",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 6,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "BERTHOLD K.",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 6,
+      "raw_time": "Tue May 26 18:19:00 CEST 2026",
+      "current_ship_name": "BERTHOLD K",
+      "current_ship_eta_rueb": "2026-05-26 23:27",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta"
     },
     {
