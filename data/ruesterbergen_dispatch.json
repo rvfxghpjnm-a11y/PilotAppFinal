@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-26T22:43:09",
+  "generated_at": "2026-05-26T22:45:07",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,13 +32,13 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 1,
+    "ships_for_ruesterbergen": 2,
     "pilots_total": 9,
     "pilots_dispatchable": 7,
     "pilots_visible_only": 2,
-    "assignments": 1,
+    "assignments": 2,
     "unassigned_ships": 0,
-    "unused_pilots": 6
+    "unused_pilots": 5
   },
   "ships": [
     {
@@ -75,6 +75,43 @@
         "pilot_1_name": "Duis, Jan",
         "travel_status": "SAILING_NOK",
         "makler": "UCA",
+        "dangerous_vessel": "-",
+        "type_of_loading": "Ballast"
+      }
+    },
+    {
+      "ship_key": "KIEL",
+      "ship_name": "KIEL",
+      "eta_rueb": "2026-05-27 03:00",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 5,
+      "meldung": {
+        "nr": "2",
+        "time": "Wed May 27 03:00:00 CEST 2026",
+        "draft": "2.5",
+        "q_gruppe": "5",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "RÜB → HOS",
+        "routes": [
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "5",
+        "vg": "1",
+        "draft": "2.50",
+        "length_m": "47.930",
+        "beam_m": "9.220",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "H",
+        "pilot_1_name": "Teubner, Jens",
+        "travel_status": "SAILING_NOK",
+        "makler": "SUB",
         "dangerous_vessel": "-",
         "type_of_loading": "Ballast"
       }
@@ -608,32 +645,138 @@
           "type_of_loading": "Ballast"
         }
       }
+    },
+    {
+      "ship_key": "KIEL",
+      "ship_name": "KIEL",
+      "eta_rueb": "2026-05-27 03:00",
+      "ship_q": 5,
+      "assigned_pilot": "Lüttge, Sebastian",
+      "assigned_pilot_q": 4,
+      "assigned_tactical_nr": 17,
+      "assigned_abteilungszeit": "2026-05-26 13:55",
+      "assigned_current_ship_name": "FREJ",
+      "assigned_current_ship_eta_rueb": "2026-05-26 19:47",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 6,
+      "candidates": [
+        {
+          "pilot_name": "Lüttge, Sebastian",
+          "pilot_q": 4,
+          "pilot_tactical_nr": 17,
+          "abteilungszeit": "2026-05-26 13:55",
+          "fahrzeug": "FREJ",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "FREJ",
+          "current_ship_eta_rueb": "2026-05-26 19:47",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Hilpert, Jan",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 13,
+          "abteilungszeit": "2026-05-26 16:25",
+          "fahrzeug": "RIX AMBER",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RIX AMBER",
+          "current_ship_eta_rueb": "2026-05-26 21:58",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Haala, Klaus Werner",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 11,
+          "abteilungszeit": "2026-05-26 18:15",
+          "fahrzeug": "KERSTI",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "KERSTI",
+          "current_ship_eta_rueb": "2026-05-26 23:25",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Borggräfe, Hark",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 10,
+          "abteilungszeit": "2026-05-26 18:19",
+          "fahrzeug": "BERTHOLD K.",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "BERTHOLD K",
+          "current_ship_eta_rueb": "2026-05-26 23:22",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Biedermann, Johannes",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 9,
+          "abteilungszeit": "2026-05-26 18:27",
+          "fahrzeug": "HELGA ESSBERGER",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "HELGA ESSBERGER",
+          "current_ship_eta_rueb": "2026-05-26 23:47",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Keyser, Torben",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 6,
+          "abteilungszeit": "2026-05-26 19:00",
+          "fahrzeug": "MARIT",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "MARIT",
+          "current_ship_eta_rueb": "2026-05-26 23:50",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "2",
+          "time": "Wed May 27 03:00:00 CEST 2026",
+          "draft": "2.5",
+          "q_gruppe": "5",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "RÜB → HOS",
+          "routes": [
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "5",
+          "vg": "1",
+          "draft": "2.50",
+          "length_m": "47.930",
+          "beam_m": "9.220",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "H",
+          "pilot_1_name": "Teubner, Jens",
+          "travel_status": "SAILING_NOK",
+          "makler": "SUB",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Ballast"
+        }
+      }
     }
   ],
   "unassigned_ships": [],
   "unused_pilots": [
-    {
-      "pilot_key": "lüttge_sebastian",
-      "vorname": "Sebastian",
-      "nachname": "Lüttge",
-      "pilot_name": "Lüttge, Sebastian",
-      "abteilungszeit": "2026-05-26 13:55",
-      "pilot_q": 4,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 17,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "FREJ",
-      "from": "RÜB",
-      "to": "HOS",
-      "nr": 17,
-      "raw_time": "Tue May 26 13:55:00 CEST 2026",
-      "current_ship_name": "FREJ",
-      "current_ship_eta_rueb": "2026-05-26 19:47",
-      "current_ship_q": 4,
-      "current_ship_route": "RÜB → HOS",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
-    },
     {
       "pilot_key": "hilpert_jan",
       "vorname": "Jan",
