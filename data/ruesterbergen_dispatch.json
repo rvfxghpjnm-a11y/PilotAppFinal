@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-27T13:01:16",
+  "generated_at": "2026-05-27T13:03:12",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 5,
     "pilots_total": 8,
-    "pilots_dispatchable": 6,
-    "pilots_visible_only": 2,
+    "pilots_dispatchable": 7,
+    "pilots_visible_only": 1,
     "assignments": 5,
     "unassigned_ships": 0,
-    "unused_pilots": 1
+    "unused_pilots": 2
   },
   "ships": [
     {
@@ -384,9 +384,10 @@
       "nr": 2,
       "raw_time": "Wed May 27 11:48:00 CEST 2026",
       "current_ship_name": "LUCA",
+      "current_ship_eta_rueb": "2026-05-27 16:32",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     }
   ],
@@ -518,6 +519,28 @@
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "suermann_nik",
+      "vorname": "Nik",
+      "nachname": "Suermann",
+      "pilot_name": "Suermann, Nik",
+      "abteilungszeit": "2026-05-27 11:48",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 2,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "LUCA",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 2,
+      "raw_time": "Wed May 27 11:48:00 CEST 2026",
+      "current_ship_name": "LUCA",
+      "current_ship_eta_rueb": "2026-05-27 16:32",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
     }
   ],
   "visible_but_not_dispatchable_pilots": [
@@ -533,21 +556,6 @@
       "to": "RÜB",
       "current_ship_name": "ECO PAMPERO",
       "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    },
-    {
-      "pilot_key": "suermann_nik",
-      "pilot_name": "Suermann, Nik",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 2,
-      "abteilungszeit": "2026-05-27 11:48",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "LUCA",
-      "from": "HOS",
-      "to": "RÜB",
-      "current_ship_name": "LUCA",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta",
       "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
     }
@@ -633,6 +641,15 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "ISABELL",
           "pilot_current_ship_eta_rueb": "2026-05-27 14:27",
+          "ship_eta_rueb": "2026-05-27 13:22",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Suermann, Nik",
+          "pilot_tactical_nr": 2,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "LUCA",
+          "pilot_current_ship_eta_rueb": "2026-05-27 16:32",
           "ship_eta_rueb": "2026-05-27 13:22",
           "availability_kind": "merged_eta"
         }
@@ -737,6 +754,15 @@
           "pilot_current_ship_eta_rueb": "2026-05-27 14:27",
           "ship_eta_rueb": "2026-05-27 13:25",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Suermann, Nik",
+          "pilot_tactical_nr": 2,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "LUCA",
+          "pilot_current_ship_eta_rueb": "2026-05-27 16:32",
+          "ship_eta_rueb": "2026-05-27 13:25",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -836,6 +862,15 @@
           "reason": "Quali passt nicht (4 > 2)",
           "pilot_q": 4,
           "ship_q": 2
+        },
+        {
+          "pilot_name": "Suermann, Nik",
+          "pilot_tactical_nr": 2,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "LUCA",
+          "pilot_current_ship_eta_rueb": "2026-05-27 16:32",
+          "ship_eta_rueb": "2026-05-27 15:41",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -886,7 +921,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 2,
+      "candidate_count": 3,
       "candidates": [
         {
           "pilot_name": "Köhler, Olaf",
@@ -911,6 +946,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "ISABELL",
           "current_ship_eta_rueb": "2026-05-27 14:27",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Suermann, Nik",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-05-27 11:48",
+          "fahrzeug": "LUCA",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "LUCA",
+          "current_ship_eta_rueb": "2026-05-27 16:32",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
@@ -972,7 +1020,7 @@
       "assigned_current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 2,
+      "candidate_count": 3,
       "candidates": [
         {
           "pilot_name": "Steffens, Micha",
@@ -996,6 +1044,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "ISABELL",
           "current_ship_eta_rueb": "2026-05-27 14:27",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Suermann, Nik",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-05-27 11:48",
+          "fahrzeug": "LUCA",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "LUCA",
+          "current_ship_eta_rueb": "2026-05-27 16:32",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
@@ -1041,6 +1102,28 @@
       "raw_time": "Wed May 27 09:14:00 CEST 2026",
       "current_ship_name": "ISABELL",
       "current_ship_eta_rueb": "2026-05-27 14:27",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "suermann_nik",
+      "vorname": "Nik",
+      "nachname": "Suermann",
+      "pilot_name": "Suermann, Nik",
+      "abteilungszeit": "2026-05-27 11:48",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 2,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "LUCA",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 2,
+      "raw_time": "Wed May 27 11:48:00 CEST 2026",
+      "current_ship_name": "LUCA",
+      "current_ship_eta_rueb": "2026-05-27 16:32",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
