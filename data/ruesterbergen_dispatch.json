@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-27T18:33:15",
+  "generated_at": "2026-05-27T18:35:10",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 5,
     "pilots_total": 9,
-    "pilots_dispatchable": 7,
-    "pilots_visible_only": 2,
+    "pilots_dispatchable": 8,
+    "pilots_visible_only": 1,
     "assignments": 5,
     "unassigned_ships": 0,
-    "unused_pilots": 2
+    "unused_pilots": 3
   },
   "ships": [
     {
@@ -48,7 +48,7 @@
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 4,
       "meldung": {
-        "nr": "3",
+        "nr": "1",
         "time": "Wed May 27 19:55:00 CEST 2026",
         "draft": "7.3",
         "q_gruppe": "4",
@@ -86,8 +86,8 @@
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 2,
       "meldung": {
-        "nr": "1",
-        "time": "Wed May 27 19:48:00 CEST 2026",
+        "nr": "2",
+        "time": "Wed May 27 19:58:00 CEST 2026",
         "draft": "8.7",
         "q_gruppe": "2",
         "lotsen_anzahl": 1,
@@ -124,8 +124,8 @@
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
-        "nr": "2",
-        "time": "Wed May 27 19:50:00 CEST 2026",
+        "nr": "3",
+        "time": "Wed May 27 19:59:00 CEST 2026",
         "draft": "5.3",
         "q_gruppe": "5",
         "lotsen_anzahl": 1,
@@ -315,16 +315,16 @@
       "q_source": "q_gruppen_lotsen.entries",
       "pilot_tactical_nr": 8,
       "aufgabe": "Kanalbört",
-      "fahrzeug": "ILKA",
-      "from": "HOR",
-      "to": "KRH",
+      "fahrzeug": "RÜB",
       "nr": 8,
       "raw_time": "Wed May 27 14:06:00 CEST 2026",
-      "current_ship_name": "ILKA",
+      "current_ship_name": "RÜB",
+      "current_ship_eta_rueb": "2026-05-27 14:06",
       "current_ship_q": 0,
-      "current_ship_route": "HOR → KRH",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
+      "current_ship_route": "RÜB",
+      "current_ship_source": "special.already_in_rueb",
+      "availability_kind": "already_in_rueb",
+      "availability_hint": "Lotse gilt als bereits in RÜB"
     },
     {
       "pilot_key": "lielienthal_jörn",
@@ -503,6 +503,27 @@
       "availability_hint": "Lotse gilt als bereits in RÜB"
     },
     {
+      "pilot_key": "schmidt_thomas",
+      "vorname": "Thomas",
+      "nachname": "Schmidt",
+      "pilot_name": "Schmidt, Thomas",
+      "abteilungszeit": "2026-05-27 14:06",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 8,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "RÜB",
+      "nr": 8,
+      "raw_time": "Wed May 27 14:06:00 CEST 2026",
+      "current_ship_name": "RÜB",
+      "current_ship_eta_rueb": "2026-05-27 14:06",
+      "current_ship_q": 0,
+      "current_ship_route": "RÜB",
+      "current_ship_source": "special.already_in_rueb",
+      "availability_kind": "already_in_rueb",
+      "availability_hint": "Lotse gilt als bereits in RÜB"
+    },
+    {
       "pilot_key": "lielienthal_jörn",
       "vorname": "Jörn",
       "nachname": "Lielienthal",
@@ -571,21 +592,6 @@
   ],
   "visible_but_not_dispatchable_pilots": [
     {
-      "pilot_key": "schmidt_thomas",
-      "pilot_name": "Schmidt, Thomas",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 8,
-      "abteilungszeit": "2026-05-27 14:06",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "ILKA",
-      "from": "HOR",
-      "to": "KRH",
-      "current_ship_name": "ILKA",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    },
-    {
       "pilot_key": "kubica_gregor",
       "pilot_name": "Kubica, Gregor",
       "pilot_q": 0,
@@ -616,7 +622,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 4,
+      "candidate_count": 5,
       "candidates": [
         {
           "pilot_name": "Köhler, Olaf",
@@ -669,6 +675,19 @@
           "current_ship_source": "special.already_in_rueb",
           "availability_kind": "already_in_rueb",
           "availability_hint": "Lotse gilt als bereits in RÜB"
+        },
+        {
+          "pilot_name": "Schmidt, Thomas",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 8,
+          "abteilungszeit": "2026-05-27 14:06",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-27 14:06",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
         }
       ],
       "excluded": [
@@ -702,7 +721,7 @@
       ],
       "ship": {
         "meldung": {
-          "nr": "3",
+          "nr": "1",
           "time": "Wed May 27 19:55:00 CEST 2026",
           "draft": "7.3",
           "q_gruppe": "4",
@@ -748,7 +767,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 3,
+      "candidate_count": 4,
       "candidates": [
         {
           "pilot_name": "Dietrich, Thomas",
@@ -788,6 +807,19 @@
           "current_ship_source": "special.already_in_rueb",
           "availability_kind": "already_in_rueb",
           "availability_hint": "Lotse gilt als bereits in RÜB"
+        },
+        {
+          "pilot_name": "Schmidt, Thomas",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 8,
+          "abteilungszeit": "2026-05-27 14:06",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-27 14:06",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
         }
       ],
       "excluded": [
@@ -821,8 +853,8 @@
       ],
       "ship": {
         "meldung": {
-          "nr": "1",
-          "time": "Wed May 27 19:48:00 CEST 2026",
+          "nr": "2",
+          "time": "Wed May 27 19:58:00 CEST 2026",
           "draft": "8.7",
           "q_gruppe": "2",
           "lotsen_anzahl": 1,
@@ -867,7 +899,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 2,
+      "candidate_count": 3,
       "candidates": [
         {
           "pilot_name": "Staedler, Frank",
@@ -891,6 +923,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "RÜB",
           "current_ship_eta_rueb": "2026-05-27 11:48",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
+        },
+        {
+          "pilot_name": "Schmidt, Thomas",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 8,
+          "abteilungszeit": "2026-05-27 14:06",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-27 14:06",
           "current_ship_source": "special.already_in_rueb",
           "availability_kind": "already_in_rueb",
           "availability_hint": "Lotse gilt als bereits in RÜB"
@@ -927,8 +972,8 @@
       ],
       "ship": {
         "meldung": {
-          "nr": "2",
-          "time": "Wed May 27 19:50:00 CEST 2026",
+          "nr": "3",
+          "time": "Wed May 27 19:59:00 CEST 2026",
           "draft": "5.3",
           "q_gruppe": "5",
           "lotsen_anzahl": 1,
@@ -973,7 +1018,7 @@
       "assigned_availability_kind": "already_in_rueb",
       "assigned_availability_hint": "Lotse gilt als bereits in RÜB",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 4,
+      "candidate_count": 5,
       "candidates": [
         {
           "pilot_name": "Suermann, Nik",
@@ -984,6 +1029,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "RÜB",
           "current_ship_eta_rueb": "2026-05-27 11:48",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
+        },
+        {
+          "pilot_name": "Schmidt, Thomas",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 8,
+          "abteilungszeit": "2026-05-27 14:06",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-27 14:06",
           "current_ship_source": "special.already_in_rueb",
           "availability_kind": "already_in_rueb",
           "availability_hint": "Lotse gilt als bereits in RÜB"
@@ -1066,17 +1124,31 @@
       "ship_name": "SEA SHANNON",
       "eta_rueb": "2026-05-27 22:00",
       "ship_q": 5,
-      "assigned_pilot": "Lielienthal, Jörn",
+      "assigned_pilot": "Schmidt, Thomas",
       "assigned_pilot_q": 0,
-      "assigned_tactical_nr": 7,
-      "assigned_abteilungszeit": "2026-05-27 14:30",
-      "assigned_current_ship_name": "MAYA THERESA",
-      "assigned_current_ship_eta_rueb": "2026-05-27 20:26",
-      "assigned_current_ship_source": "schiffe_merged.seelotsen",
-      "assigned_availability_kind": "merged_eta",
+      "assigned_tactical_nr": 8,
+      "assigned_abteilungszeit": "2026-05-27 14:06",
+      "assigned_current_ship_name": "RÜB",
+      "assigned_current_ship_eta_rueb": "2026-05-27 14:06",
+      "assigned_current_ship_source": "special.already_in_rueb",
+      "assigned_availability_kind": "already_in_rueb",
+      "assigned_availability_hint": "Lotse gilt als bereits in RÜB",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 3,
+      "candidate_count": 4,
       "candidates": [
+        {
+          "pilot_name": "Schmidt, Thomas",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 8,
+          "abteilungszeit": "2026-05-27 14:06",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-27 14:06",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
+        },
         {
           "pilot_name": "Lielienthal, Jörn",
           "pilot_q": 0,
@@ -1141,6 +1213,28 @@
   ],
   "unassigned_ships": [],
   "unused_pilots": [
+    {
+      "pilot_key": "lielienthal_jörn",
+      "vorname": "Jörn",
+      "nachname": "Lielienthal",
+      "pilot_name": "Lielienthal, Jörn",
+      "abteilungszeit": "2026-05-27 14:30",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 7,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "MAYA THERESA",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 7,
+      "raw_time": "Wed May 27 14:30:00 CEST 2026",
+      "current_ship_name": "MAYA THERESA",
+      "current_ship_eta_rueb": "2026-05-27 20:26",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
     {
       "pilot_key": "rambadt_helge",
       "vorname": "Helge",
