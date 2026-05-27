@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-27T02:27:11",
+  "generated_at": "2026-05-27T02:29:10",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,52 +32,15 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 3,
+    "ships_for_ruesterbergen": 2,
     "pilots_total": 11,
     "pilots_dispatchable": 9,
     "pilots_visible_only": 2,
-    "assignments": 3,
+    "assignments": 2,
     "unassigned_ships": 0,
-    "unused_pilots": 6
+    "unused_pilots": 7
   },
   "ships": [
-    {
-      "ship_key": "KIEL",
-      "ship_name": "KIEL",
-      "eta_rueb": "2026-05-27 02:53",
-      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
-      "ship_q": 5,
-      "meldung": {
-        "nr": "1",
-        "time": "Wed May 27 02:50:00 CEST 2026",
-        "draft": "2.5",
-        "q_gruppe": "5",
-        "lotsen_anzahl": 1,
-        "confirmed": false,
-        "from": "RÜB",
-        "to": "HOS"
-      },
-      "summary": {
-        "route": "RÜB → HOS",
-        "routes": [
-          "RÜB → HOS"
-        ],
-        "q_gruppe": "5",
-        "vg": "1",
-        "draft": "2.50",
-        "length_m": "47.930",
-        "beam_m": "9.220",
-        "queue_title": "Zulauf vom Kanal in Kiel",
-        "zulauf_richtung": "vom_kanal",
-        "pilot_required": "true",
-        "pilot_status": "H",
-        "pilot_1_name": "Borggräfe, Hark",
-        "travel_status": "SAILING_NOK",
-        "makler": "SUB",
-        "dangerous_vessel": "-",
-        "type_of_loading": "Ballast"
-      }
-    },
     {
       "ship_key": "ARABELLA",
       "ship_name": "ARABELLA",
@@ -85,7 +48,7 @@
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 4,
       "meldung": {
-        "nr": "2",
+        "nr": "1",
         "time": "Wed May 27 03:00:00 CEST 2026",
         "draft": "6.9",
         "q_gruppe": "4",
@@ -123,7 +86,7 @@
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 1,
       "meldung": {
-        "nr": "3",
+        "nr": "2",
         "time": "Wed May 27 07:00:00 CEST 2026",
         "draft": "9.4",
         "q_gruppe": "1",
@@ -188,14 +151,16 @@
       "q_source": "q_gruppen_lotsen.entries",
       "pilot_tactical_nr": 16,
       "aufgabe": "Kanalbört",
-      "fahrzeug": "RÜB",
+      "fahrzeug": "KIEL",
+      "from": "RÜB",
+      "to": "HOS",
       "nr": 16,
       "raw_time": "Tue May 26 18:19:00 CEST 2026",
       "current_ship_name": "KIEL",
       "current_ship_eta_rueb": "2026-05-27 02:53",
-      "current_ship_q": 5,
+      "current_ship_q": 0,
       "current_ship_route": "RÜB → HOS",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
@@ -426,14 +391,16 @@
       "q_source": "q_gruppen_lotsen.entries",
       "pilot_tactical_nr": 16,
       "aufgabe": "Kanalbört",
-      "fahrzeug": "RÜB",
+      "fahrzeug": "KIEL",
+      "from": "RÜB",
+      "to": "HOS",
       "nr": 16,
       "raw_time": "Tue May 26 18:19:00 CEST 2026",
       "current_ship_name": "KIEL",
       "current_ship_eta_rueb": "2026-05-27 02:53",
-      "current_ship_q": 5,
+      "current_ship_q": 0,
       "current_ship_route": "RÜB → HOS",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
@@ -623,10 +590,10 @@
   ],
   "assignments": [
     {
-      "ship_key": "KIEL",
-      "ship_name": "KIEL",
-      "eta_rueb": "2026-05-27 02:53",
-      "ship_q": 5,
+      "ship_key": "ARABELLA",
+      "ship_name": "ARABELLA",
+      "eta_rueb": "2026-05-27 03:02",
+      "ship_q": 4,
       "assigned_pilot": "Haala, Klaus Werner",
       "assigned_pilot_q": 0,
       "assigned_tactical_nr": 17,
@@ -656,11 +623,12 @@
           "pilot_q": 0,
           "pilot_tactical_nr": 16,
           "abteilungszeit": "2026-05-26 18:19",
-          "fahrzeug": "RÜB",
+          "fahrzeug": "KIEL",
+          "to": "HOS",
           "aufgabe": "Kanalbört",
           "current_ship_name": "KIEL",
           "current_ship_eta_rueb": "2026-05-27 02:53",
-          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
         {
@@ -697,7 +665,7 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "JUDITH",
           "pilot_current_ship_eta_rueb": "2026-05-27 03:21",
-          "ship_eta_rueb": "2026-05-27 02:53",
+          "ship_eta_rueb": "2026-05-27 03:02",
           "availability_kind": "merged_eta"
         },
         {
@@ -706,7 +674,7 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "OLIVIA",
           "pilot_current_ship_eta_rueb": "2026-05-27 03:25",
-          "ship_eta_rueb": "2026-05-27 02:53",
+          "ship_eta_rueb": "2026-05-27 03:02",
           "availability_kind": "merged_eta"
         },
         {
@@ -715,7 +683,7 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "BIANCA RAMBOW",
           "pilot_current_ship_eta_rueb": "2026-05-27 05:28",
-          "ship_eta_rueb": "2026-05-27 02:53",
+          "ship_eta_rueb": "2026-05-27 03:02",
           "availability_kind": "merged_eta"
         },
         {
@@ -724,7 +692,7 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "STELLA VIRGO",
           "pilot_current_ship_eta_rueb": "2026-05-27 04:52",
-          "ship_eta_rueb": "2026-05-27 02:53",
+          "ship_eta_rueb": "2026-05-27 03:02",
           "availability_kind": "merged_eta"
         },
         {
@@ -733,148 +701,13 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "BITFJORD",
           "pilot_current_ship_eta_rueb": "2026-05-27 04:56",
-          "ship_eta_rueb": "2026-05-27 02:53",
+          "ship_eta_rueb": "2026-05-27 03:02",
           "availability_kind": "merged_eta"
         }
       ],
       "ship": {
         "meldung": {
           "nr": "1",
-          "time": "Wed May 27 02:50:00 CEST 2026",
-          "draft": "2.5",
-          "q_gruppe": "5",
-          "lotsen_anzahl": 1,
-          "confirmed": false,
-          "from": "RÜB",
-          "to": "HOS"
-        },
-        "summary": {
-          "route": "RÜB → HOS",
-          "routes": [
-            "RÜB → HOS"
-          ],
-          "q_gruppe": "5",
-          "vg": "1",
-          "draft": "2.50",
-          "length_m": "47.930",
-          "beam_m": "9.220",
-          "queue_title": "Zulauf vom Kanal in Kiel",
-          "zulauf_richtung": "vom_kanal",
-          "pilot_required": "true",
-          "pilot_status": "H",
-          "pilot_1_name": "Borggräfe, Hark",
-          "travel_status": "SAILING_NOK",
-          "makler": "SUB",
-          "dangerous_vessel": "-",
-          "type_of_loading": "Ballast"
-        }
-      }
-    },
-    {
-      "ship_key": "ARABELLA",
-      "ship_name": "ARABELLA",
-      "eta_rueb": "2026-05-27 03:02",
-      "ship_q": 4,
-      "assigned_pilot": "Borggräfe, Hark",
-      "assigned_pilot_q": 0,
-      "assigned_tactical_nr": 16,
-      "assigned_abteilungszeit": "2026-05-26 18:19",
-      "assigned_current_ship_name": "KIEL",
-      "assigned_current_ship_eta_rueb": "2026-05-27 02:53",
-      "assigned_current_ship_source": "schiffe_merged.summary.pilot_1_name",
-      "assigned_availability_kind": "merged_eta",
-      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 3,
-      "candidates": [
-        {
-          "pilot_name": "Borggräfe, Hark",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 16,
-          "abteilungszeit": "2026-05-26 18:19",
-          "fahrzeug": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "KIEL",
-          "current_ship_eta_rueb": "2026-05-27 02:53",
-          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Biedermann, Johannes",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 15,
-          "abteilungszeit": "2026-05-26 18:27",
-          "fahrzeug": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "RÜB",
-          "current_ship_eta_rueb": "2026-05-26 18:27",
-          "current_ship_source": "special.already_in_rueb",
-          "availability_kind": "already_in_rueb",
-          "availability_hint": "Lotse gilt als bereits in RÜB"
-        },
-        {
-          "pilot_name": "Keyser, Torben",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 13,
-          "abteilungszeit": "2026-05-26 19:00",
-          "fahrzeug": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "RÜB",
-          "current_ship_eta_rueb": "2026-05-26 19:00",
-          "current_ship_source": "special.already_in_rueb",
-          "availability_kind": "already_in_rueb",
-          "availability_hint": "Lotse gilt als bereits in RÜB"
-        }
-      ],
-      "excluded": [
-        {
-          "pilot_name": "Krause, Malte",
-          "pilot_tactical_nr": 9,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "JUDITH",
-          "pilot_current_ship_eta_rueb": "2026-05-27 03:21",
-          "ship_eta_rueb": "2026-05-27 03:02",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Weise, Tom",
-          "pilot_tactical_nr": 8,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "OLIVIA",
-          "pilot_current_ship_eta_rueb": "2026-05-27 03:25",
-          "ship_eta_rueb": "2026-05-27 03:02",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Hüpers, Peter",
-          "pilot_tactical_nr": 5,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "BIANCA RAMBOW",
-          "pilot_current_ship_eta_rueb": "2026-05-27 05:28",
-          "ship_eta_rueb": "2026-05-27 03:02",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Fehse, Torsten",
-          "pilot_tactical_nr": 4,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "STELLA VIRGO",
-          "pilot_current_ship_eta_rueb": "2026-05-27 04:52",
-          "ship_eta_rueb": "2026-05-27 03:02",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Föhring, Nils",
-          "pilot_tactical_nr": 3,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "BITFJORD",
-          "pilot_current_ship_eta_rueb": "2026-05-27 04:56",
-          "ship_eta_rueb": "2026-05-27 03:02",
-          "availability_kind": "merged_eta"
-        }
-      ],
-      "ship": {
-        "meldung": {
-          "nr": "2",
           "time": "Wed May 27 03:00:00 CEST 2026",
           "draft": "6.9",
           "q_gruppe": "4",
@@ -911,18 +744,30 @@
       "ship_name": "STEN SKAGEN",
       "eta_rueb": "2026-05-27 07:13",
       "ship_q": 1,
-      "assigned_pilot": "Biedermann, Johannes",
+      "assigned_pilot": "Borggräfe, Hark",
       "assigned_pilot_q": 0,
-      "assigned_tactical_nr": 15,
-      "assigned_abteilungszeit": "2026-05-26 18:27",
-      "assigned_current_ship_name": "RÜB",
-      "assigned_current_ship_eta_rueb": "2026-05-26 18:27",
-      "assigned_current_ship_source": "special.already_in_rueb",
-      "assigned_availability_kind": "already_in_rueb",
-      "assigned_availability_hint": "Lotse gilt als bereits in RÜB",
+      "assigned_tactical_nr": 16,
+      "assigned_abteilungszeit": "2026-05-26 18:19",
+      "assigned_current_ship_name": "KIEL",
+      "assigned_current_ship_eta_rueb": "2026-05-27 02:53",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 7,
+      "candidate_count": 8,
       "candidates": [
+        {
+          "pilot_name": "Borggräfe, Hark",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 16,
+          "abteilungszeit": "2026-05-26 18:19",
+          "fahrzeug": "KIEL",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "KIEL",
+          "current_ship_eta_rueb": "2026-05-27 02:53",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
         {
           "pilot_name": "Biedermann, Johannes",
           "pilot_q": 0,
@@ -1017,7 +862,7 @@
       ],
       "ship": {
         "meldung": {
-          "nr": "3",
+          "nr": "2",
           "time": "Wed May 27 07:00:00 CEST 2026",
           "draft": "9.4",
           "q_gruppe": "1",
@@ -1052,6 +897,27 @@
   ],
   "unassigned_ships": [],
   "unused_pilots": [
+    {
+      "pilot_key": "biedermann_johannes",
+      "vorname": "Johannes",
+      "nachname": "Biedermann",
+      "pilot_name": "Biedermann, Johannes",
+      "abteilungszeit": "2026-05-26 18:27",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 15,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "RÜB",
+      "nr": 15,
+      "raw_time": "Tue May 26 18:27:00 CEST 2026",
+      "current_ship_name": "RÜB",
+      "current_ship_eta_rueb": "2026-05-26 18:27",
+      "current_ship_q": 0,
+      "current_ship_route": "RÜB",
+      "current_ship_source": "special.already_in_rueb",
+      "availability_kind": "already_in_rueb",
+      "availability_hint": "Lotse gilt als bereits in RÜB"
+    },
     {
       "pilot_key": "keyser_torben",
       "vorname": "Torben",
