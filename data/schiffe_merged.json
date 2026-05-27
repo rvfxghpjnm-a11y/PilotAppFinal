@@ -1,47 +1,47 @@
 {
-  "generated_at": "2026-05-27T02:33:11",
+  "generated_at": "2026-05-27T02:35:07",
   "source_meta": {
     "zulauf_kiel_innen": {
       "file": "Zulauf_kiel_innen.json",
-      "generated_at": "2026-05-27 02:32",
+      "generated_at": "2026-05-27 02:34",
       "queue": "kiel_innen",
       "title": "Zulauf vom Kanal in Kiel",
       "count": 5
     },
     "zulauf_kiel_aussen": {
       "file": "Zulauf_kiel_aussen.json",
-      "generated_at": "2026-05-27 02:32",
+      "generated_at": "2026-05-27 02:34",
       "queue": "kiel_aussen",
       "title": "Zulauf von See in Kiel",
       "count": 0
     },
     "zulauf_brb_innen": {
       "file": "Zulauf_brb_innen.json",
-      "generated_at": "2026-05-27 02:32",
+      "generated_at": "2026-05-27 02:34",
       "queue": "brb_innen",
       "title": "Zulauf vom Kanal in Brunsbüttel",
       "count": 11
     },
     "zulauf_brb_aussen": {
       "file": "Zulauf_brb_aussen.json",
-      "generated_at": "2026-05-27 02:32",
+      "generated_at": "2026-05-27 02:34",
       "queue": "brb_aussen",
       "title": "Zulauf von See in Brunsbüttel",
       "count": 3
     },
     "meldungen_kiel": {
       "file": "Meldungen_Kiel.json",
-      "generated_at": "2026-05-27 02:32",
+      "generated_at": "2026-05-27 02:34",
       "count": 38
     },
     "meldungen_ruesterbergen": {
       "file": "Meldungen_Ruesterbergen.json",
-      "generated_at": "2026-05-27 02:32",
-      "count": 2
+      "generated_at": "2026-05-27 02:34",
+      "count": 1
     },
     "seelotsen": {
       "file": "Seelotsen.json",
-      "generated_at": "2026-05-27 02:32",
+      "generated_at": "2026-05-27 02:34",
       "count": 17
     }
   },
@@ -52,7 +52,7 @@
       "name": "ARABELLA",
       "sources": [
         "meldungen_kiel",
-        "meldungen_ruesterbergen",
+        "seelotsen",
         "zulauf_kiel_innen"
       ],
       "special_entry": false,
@@ -61,7 +61,7 @@
         "special_entry": false,
         "sources": [
           "meldungen_kiel",
-          "meldungen_ruesterbergen",
+          "seelotsen",
           "zulauf_kiel_innen"
         ],
         "route": "HOS → KLT",
@@ -96,7 +96,7 @@
         "pilot_foerde": "true",
         "pilot_order": "KS-NOK-ESEE-KF",
         "pilot_status": "U",
-        "pilot_1_name": "Habermann, Arne",
+        "pilot_1_name": "Biedermann, Johannes",
         "num_of_pilots": "1",
         "canal_steerer_required": "true",
         "num_of_steerer": "2",
@@ -119,6 +119,12 @@
         "dangerous_vessel": "-",
         "port_of_departure": "BE ANR",
         "port_of_destination": "SE GVX",
+        "assigned_pilots": [
+          "Biedermann, Johannes"
+        ],
+        "aufgaben": [
+          "Kanalbört"
+        ],
         "lotsen_anzahl_kiel": 1,
         "confirmed_kiel": false,
         "passage_block": {
@@ -175,8 +181,8 @@
           "pilot_ostsee": "false",
           "pilot_uebersee": "false",
           "pilot_boesch": "false",
-          "pilot_1_id": "470972723917000081",
-          "pilot_1_name": "Habermann, Arne"
+          "pilot_1_id": "370050817967000081",
+          "pilot_1_name": "Biedermann, Johannes"
         },
         "steering_block": {
           "canal_steerer": "true",
@@ -252,7 +258,8 @@
               "out": "2026-05-27 01:52"
             },
             "breiholz": {
-              "in": "2026-05-27 02:25"
+              "in": "2026-05-27 02:25",
+              "out": "2026-05-27 02:32"
             }
           }
         }
@@ -304,11 +311,12 @@
                 "out": "2026-05-27 01:52"
               },
               "breiholz": {
-                "in": "2026-05-27 02:25"
+                "in": "2026-05-27 02:25",
+                "out": "2026-05-27 02:32"
               }
             }
           },
-          "pilot_1_name": "Habermann, Arne",
+          "pilot_1_name": "Biedermann, Johannes",
           "steerer_1_name": "Eichholz",
           "steerer_2_name": "Schmeichel",
           "vessel_type": "Chemie",
@@ -376,8 +384,8 @@
             "pilot_ostsee": "false",
             "pilot_uebersee": "false",
             "pilot_boesch": "false",
-            "pilot_1_id": "470972723917000081",
-            "pilot_1_name": "Habermann, Arne"
+            "pilot_1_id": "370050817967000081",
+            "pilot_1_name": "Biedermann, Johannes"
           },
           "steering": {
             "canal_steerer": "true",
@@ -447,21 +455,20 @@
           "route": "HOS → KLT"
         }
       ],
-      "meldungen_ruesterbergen": [
+      "meldungen_ruesterbergen": [],
+      "seelotsen": [
         {
-          "source": "meldungen_ruesterbergen",
-          "nr": "1",
-          "time": "2026-05-27 03:00",
-          "draft": "6.9",
-          "q_gruppe": "4",
-          "lotsen_anzahl": 1,
-          "confirmed": false,
+          "nr": 15,
+          "time": "2026-05-26 18:27",
+          "pilot_name": "Biedermann, Johannes",
+          "nachname": "Biedermann",
+          "vorname": "Johannes",
+          "aufgabe": "Kanalbört",
           "from": "RÜB",
           "to": "HOS",
           "route": "RÜB → HOS"
         }
-      ],
-      "seelotsen": []
+      ]
     },
     {
       "ship_key": "BEATE",
@@ -2429,10 +2436,10 @@
           "zulauf_brb_innen"
         ],
         "eta_rueb": "2026-05-26 23:25",
-        "eta_schleuse": "2026-05-27 03:44",
-        "eta_text": "03:44",
+        "eta_schleuse": "2026-05-27 03:43",
+        "eta_text": "03:43",
         "first_seen": "2026-05-26 19:28",
-        "delta_rueb_schleuse": "04:19",
+        "delta_rueb_schleuse": "04:18",
         "delta_start_rueb": "03:57",
         "queue_key": "brb_innen",
         "queue_title": "Zulauf vom Kanal in Brunsbüttel",
@@ -2619,10 +2626,10 @@
       "zulauf": [
         {
           "name": "EBBA 2",
-          "eta_schleuse": "2026-05-27 03:44",
+          "eta_schleuse": "2026-05-27 03:43",
           "eta_rueb": "2026-05-26 23:25",
           "first_seen": "2026-05-26 19:28",
-          "delta_rueb_schleuse": "04:19",
+          "delta_rueb_schleuse": "04:18",
           "delta_start_rueb": "03:57",
           "ship_name": "EBBA 2",
           "vg": "2",
@@ -2636,7 +2643,7 @@
           "pilot_required": "false",
           "pilot_foerde": "true",
           "pilot_order": "KF",
-          "eta_text": "03:44",
+          "eta_text": "03:43",
           "mooring_place": "Neue Nord Seitenmauer",
           "destination": "Brunsbüttel",
           "makler": "NIK",
@@ -4243,10 +4250,10 @@
           "zulauf_brb_innen"
         ],
         "eta_rueb": "2026-05-26 23:22",
-        "eta_schleuse": "2026-05-27 03:40",
-        "eta_text": "03:40",
+        "eta_schleuse": "2026-05-27 03:39",
+        "eta_text": "03:39",
         "first_seen": "2026-05-26 19:28",
-        "delta_rueb_schleuse": "04:18",
+        "delta_rueb_schleuse": "04:17",
         "delta_start_rueb": "03:54",
         "queue_key": "brb_innen",
         "queue_title": "Zulauf vom Kanal in Brunsbüttel",
@@ -4458,10 +4465,10 @@
       "zulauf": [
         {
           "name": "KERSTI",
-          "eta_schleuse": "2026-05-27 03:40",
+          "eta_schleuse": "2026-05-27 03:39",
           "eta_rueb": "2026-05-26 23:22",
           "first_seen": "2026-05-26 19:28",
-          "delta_rueb_schleuse": "04:18",
+          "delta_rueb_schleuse": "04:17",
           "delta_start_rueb": "03:54",
           "ship_name": "KERSTI",
           "vg": "3",
@@ -4475,7 +4482,7 @@
           "pilot_required": "true",
           "pilot_foerde": "true",
           "pilot_order": "KS-NOK-ESEE-KF",
-          "eta_text": "03:40",
+          "eta_text": "03:39",
           "mooring_place": "Neue Nord Mittelmauer",
           "destination": "Brunsbüttel",
           "makler": "SUB",
@@ -5281,7 +5288,8 @@
         "weichenzeiten": {
           "west": {
             "duekerswisch": {
-              "in": "2026-05-27 02:24"
+              "in": "2026-05-27 02:24",
+              "out": "2026-05-27 02:31"
             },
             "fischerhuette": {
               "in": "2026-05-27 01:23",
@@ -5352,7 +5360,8 @@
           "weichenzeiten": {
             "west": {
               "duekerswisch": {
-                "in": "2026-05-27 02:24"
+                "in": "2026-05-27 02:24",
+                "out": "2026-05-27 02:31"
               },
               "fischerhuette": {
                 "in": "2026-05-27 01:23",
@@ -6845,8 +6854,7 @@
           "seelotsen"
         ],
         "assigned_pilots": [
-          "Keyser, Torben",
-          "Biedermann, Johannes"
+          "Keyser, Torben"
         ],
         "aufgaben": [
           "Kanalbört"
@@ -6862,14 +6870,6 @@
           "pilot_name": "Keyser, Torben",
           "nachname": "Keyser",
           "vorname": "Torben",
-          "aufgabe": "Kanalbört"
-        },
-        {
-          "nr": 15,
-          "time": "2026-05-26 18:27",
-          "pilot_name": "Biedermann, Johannes",
-          "nachname": "Biedermann",
-          "vorname": "Johannes",
           "aufgabe": "Kanalbört"
         }
       ]
@@ -7721,7 +7721,7 @@
       "meldungen_ruesterbergen": [
         {
           "source": "meldungen_ruesterbergen",
-          "nr": "2",
+          "nr": "1",
           "time": "2026-05-27 07:00",
           "draft": "9.4",
           "q_gruppe": "1",
