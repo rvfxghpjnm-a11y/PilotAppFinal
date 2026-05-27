@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-27T23:15:09",
+  "generated_at": "2026-05-27T23:17:12",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 2,
     "pilots_total": 10,
-    "pilots_dispatchable": 9,
-    "pilots_visible_only": 1,
+    "pilots_dispatchable": 10,
+    "pilots_visible_only": 0,
     "assignments": 2,
     "unassigned_ships": 0,
-    "unused_pilots": 7
+    "unused_pilots": 8
   },
   "ships": [
     {
@@ -84,7 +84,7 @@
     {
       "ship_key": "INGA ESSBERGER",
       "ship_name": "INGA ESSBERGER",
-      "eta_rueb": "2026-05-28 00:03",
+      "eta_rueb": "2026-05-28 00:01",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 4,
       "meldung": {
@@ -243,7 +243,7 @@
       "nr": 7,
       "raw_time": "Wed May 27 18:44:00 CEST 2026",
       "current_ship_name": "INGA ESSBERGER",
-      "current_ship_eta_rueb": "2026-05-28 00:03",
+      "current_ship_eta_rueb": "2026-05-28 00:01",
       "current_ship_q": 4,
       "current_ship_route": "HOS → KLT",
       "current_ship_source": "schiffe_merged.summary.pilot_1_name",
@@ -265,7 +265,7 @@
       "nr": 4,
       "raw_time": "Wed May 27 21:11:00 CEST 2026",
       "current_ship_name": "SCOT RANGER",
-      "current_ship_eta_rueb": "2026-05-28 02:19",
+      "current_ship_eta_rueb": "2026-05-28 02:20",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -331,9 +331,10 @@
       "nr": 1,
       "raw_time": "Wed May 27 22:15:00 CEST 2026",
       "current_ship_name": "JOHN T. ESSBERGER",
+      "current_ship_eta_rueb": "2026-05-28 03:03",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     }
   ],
@@ -460,7 +461,7 @@
       "nr": 7,
       "raw_time": "Wed May 27 18:44:00 CEST 2026",
       "current_ship_name": "INGA ESSBERGER",
-      "current_ship_eta_rueb": "2026-05-28 00:03",
+      "current_ship_eta_rueb": "2026-05-28 00:01",
       "current_ship_q": 4,
       "current_ship_route": "HOS → KLT",
       "current_ship_source": "schiffe_merged.summary.pilot_1_name",
@@ -482,7 +483,7 @@
       "nr": 4,
       "raw_time": "Wed May 27 21:11:00 CEST 2026",
       "current_ship_name": "SCOT RANGER",
-      "current_ship_eta_rueb": "2026-05-28 02:19",
+      "current_ship_eta_rueb": "2026-05-28 02:20",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -531,25 +532,31 @@
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta"
-    }
-  ],
-  "visible_but_not_dispatchable_pilots": [
+    },
     {
       "pilot_key": "zimmermann_steffen",
+      "vorname": "Steffen",
+      "nachname": "Zimmermann",
       "pilot_name": "Zimmermann, Steffen",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 1,
       "abteilungszeit": "2026-05-27 22:15",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 1,
       "aufgabe": "Kanalbört",
       "fahrzeug": "JOHN T. ESSBERGER",
       "from": "HOS",
       "to": "RÜB",
+      "nr": 1,
+      "raw_time": "Wed May 27 22:15:00 CEST 2026",
       "current_ship_name": "JOHN T. ESSBERGER",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
+      "current_ship_eta_rueb": "2026-05-28 03:03",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
     }
   ],
+  "visible_but_not_dispatchable_pilots": [],
   "assignments": [
     {
       "ship_key": "DEO VOLENTE",
@@ -638,7 +645,7 @@
           "pilot_tactical_nr": 7,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "INGA ESSBERGER",
-          "pilot_current_ship_eta_rueb": "2026-05-28 00:03",
+          "pilot_current_ship_eta_rueb": "2026-05-28 00:01",
           "ship_eta_rueb": "2026-05-27 23:54",
           "availability_kind": "merged_eta"
         },
@@ -647,7 +654,7 @@
           "pilot_tactical_nr": 4,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "SCOT RANGER",
-          "pilot_current_ship_eta_rueb": "2026-05-28 02:19",
+          "pilot_current_ship_eta_rueb": "2026-05-28 02:20",
           "ship_eta_rueb": "2026-05-27 23:54",
           "availability_kind": "merged_eta"
         },
@@ -666,6 +673,15 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "VIKING FJOLVAR",
           "pilot_current_ship_eta_rueb": "2026-05-28 02:56",
+          "ship_eta_rueb": "2026-05-27 23:54",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Zimmermann, Steffen",
+          "pilot_tactical_nr": 1,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "JOHN T. ESSBERGER",
+          "pilot_current_ship_eta_rueb": "2026-05-28 03:03",
           "ship_eta_rueb": "2026-05-27 23:54",
           "availability_kind": "merged_eta"
         }
@@ -709,7 +725,7 @@
     {
       "ship_key": "INGA ESSBERGER",
       "ship_name": "INGA ESSBERGER",
-      "eta_rueb": "2026-05-28 00:03",
+      "eta_rueb": "2026-05-28 00:01",
       "ship_q": 4,
       "assigned_pilot": "Schmidt, Thomas",
       "assigned_pilot_q": 0,
@@ -781,7 +797,7 @@
           "fahrzeug": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "INGA ESSBERGER",
-          "current_ship_eta_rueb": "2026-05-28 00:03",
+          "current_ship_eta_rueb": "2026-05-28 00:01",
           "current_ship_source": "schiffe_merged.summary.pilot_1_name",
           "availability_kind": "merged_eta"
         }
@@ -792,8 +808,8 @@
           "pilot_tactical_nr": 4,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "SCOT RANGER",
-          "pilot_current_ship_eta_rueb": "2026-05-28 02:19",
-          "ship_eta_rueb": "2026-05-28 00:03",
+          "pilot_current_ship_eta_rueb": "2026-05-28 02:20",
+          "ship_eta_rueb": "2026-05-28 00:01",
           "availability_kind": "merged_eta"
         },
         {
@@ -802,7 +818,7 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "PAIVI",
           "pilot_current_ship_eta_rueb": "2026-05-28 03:00",
-          "ship_eta_rueb": "2026-05-28 00:03",
+          "ship_eta_rueb": "2026-05-28 00:01",
           "availability_kind": "merged_eta"
         },
         {
@@ -811,7 +827,16 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "VIKING FJOLVAR",
           "pilot_current_ship_eta_rueb": "2026-05-28 02:56",
-          "ship_eta_rueb": "2026-05-28 00:03",
+          "ship_eta_rueb": "2026-05-28 00:01",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Zimmermann, Steffen",
+          "pilot_tactical_nr": 1,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "JOHN T. ESSBERGER",
+          "pilot_current_ship_eta_rueb": "2026-05-28 03:03",
+          "ship_eta_rueb": "2026-05-28 00:01",
           "availability_kind": "merged_eta"
         }
       ],
@@ -930,7 +955,7 @@
       "nr": 7,
       "raw_time": "Wed May 27 18:44:00 CEST 2026",
       "current_ship_name": "INGA ESSBERGER",
-      "current_ship_eta_rueb": "2026-05-28 00:03",
+      "current_ship_eta_rueb": "2026-05-28 00:01",
       "current_ship_q": 4,
       "current_ship_route": "HOS → KLT",
       "current_ship_source": "schiffe_merged.summary.pilot_1_name",
@@ -952,7 +977,7 @@
       "nr": 4,
       "raw_time": "Wed May 27 21:11:00 CEST 2026",
       "current_ship_name": "SCOT RANGER",
-      "current_ship_eta_rueb": "2026-05-28 02:19",
+      "current_ship_eta_rueb": "2026-05-28 02:20",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -1000,6 +1025,28 @@
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "zimmermann_steffen",
+      "vorname": "Steffen",
+      "nachname": "Zimmermann",
+      "pilot_name": "Zimmermann, Steffen",
+      "abteilungszeit": "2026-05-27 22:15",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 1,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "JOHN T. ESSBERGER",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 1,
+      "raw_time": "Wed May 27 22:15:00 CEST 2026",
+      "current_ship_name": "JOHN T. ESSBERGER",
+      "current_ship_eta_rueb": "2026-05-28 03:03",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     }
   ]
