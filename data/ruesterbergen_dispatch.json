@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-27T10:59:26",
+  "generated_at": "2026-05-27T11:01:15",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 3,
     "pilots_total": 7,
-    "pilots_dispatchable": 5,
-    "pilots_visible_only": 2,
+    "pilots_dispatchable": 6,
+    "pilots_visible_only": 1,
     "assignments": 3,
     "unassigned_ships": 0,
-    "unused_pilots": 2
+    "unused_pilots": 3
   },
   "ships": [
     {
@@ -302,9 +302,10 @@
       "nr": 1,
       "raw_time": "Wed May 27 09:14:00 CEST 2026",
       "current_ship_name": "ISABELL",
+      "current_ship_eta_rueb": "2026-05-27 14:30",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     }
   ],
@@ -417,6 +418,28 @@
       "current_ship_route": "NHF → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "dietrich_thomas",
+      "vorname": "Thomas",
+      "nachname": "Dietrich",
+      "pilot_name": "Dietrich, Thomas",
+      "abteilungszeit": "2026-05-27 09:14",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 1,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "ISABELL",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 1,
+      "raw_time": "Wed May 27 09:14:00 CEST 2026",
+      "current_ship_name": "ISABELL",
+      "current_ship_eta_rueb": "2026-05-27 14:30",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
     }
   ],
   "visible_but_not_dispatchable_pilots": [
@@ -432,21 +455,6 @@
       "to": "RÜB",
       "current_ship_name": "STOLT SANDERLING",
       "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    },
-    {
-      "pilot_key": "dietrich_thomas",
-      "pilot_name": "Dietrich, Thomas",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 1,
-      "abteilungszeit": "2026-05-27 09:14",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "ISABELL",
-      "from": "HOS",
-      "to": "RÜB",
-      "current_ship_name": "ISABELL",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta",
       "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
     }
@@ -531,6 +539,17 @@
           "current_ship_name": "OSLO CARRIER 3",
           "current_ship_eta_rueb": "2026-05-27 11:52",
           "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Dietrich, Thomas",
+          "pilot_tactical_nr": 1,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "ISABELL",
+          "pilot_current_ship_eta_rueb": "2026-05-27 14:30",
+          "ship_eta_rueb": "2026-05-27 13:20",
           "availability_kind": "merged_eta"
         }
       ],
@@ -624,6 +643,15 @@
           "reason": "Quali passt nicht (4 > 1)",
           "pilot_q": 4,
           "ship_q": 1
+        },
+        {
+          "pilot_name": "Dietrich, Thomas",
+          "pilot_tactical_nr": 1,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "ISABELL",
+          "pilot_current_ship_eta_rueb": "2026-05-27 14:30",
+          "ship_eta_rueb": "2026-05-27 13:24",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -675,7 +703,7 @@
       "assigned_availability_kind": "already_in_rueb",
       "assigned_availability_hint": "Lotse gilt als bereits in RÜB",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 2,
+      "candidate_count": 3,
       "candidates": [
         {
           "pilot_name": "Petersen, Yannick",
@@ -700,6 +728,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "EXPERT",
           "current_ship_eta_rueb": "2026-05-27 12:22",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Dietrich, Thomas",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 1,
+          "abteilungszeit": "2026-05-27 09:14",
+          "fahrzeug": "ISABELL",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ISABELL",
+          "current_ship_eta_rueb": "2026-05-27 14:30",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
@@ -791,6 +832,28 @@
       "current_ship_eta_rueb": "2026-05-27 11:52",
       "current_ship_q": 0,
       "current_ship_route": "NHF → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "dietrich_thomas",
+      "vorname": "Thomas",
+      "nachname": "Dietrich",
+      "pilot_name": "Dietrich, Thomas",
+      "abteilungszeit": "2026-05-27 09:14",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 1,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "ISABELL",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 1,
+      "raw_time": "Wed May 27 09:14:00 CEST 2026",
+      "current_ship_name": "ISABELL",
+      "current_ship_eta_rueb": "2026-05-27 14:30",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     }
