@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-27T06:37:08",
+  "generated_at": "2026-05-27T06:39:10",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,53 +32,15 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 2,
-    "pilots_total": 6,
-    "pilots_dispatchable": 5,
+    "ships_for_ruesterbergen": 1,
+    "pilots_total": 4,
+    "pilots_dispatchable": 3,
     "pilots_visible_only": 1,
-    "assignments": 2,
+    "assignments": 1,
     "unassigned_ships": 0,
-    "unused_pilots": 3
+    "unused_pilots": 2
   },
   "ships": [
-    {
-      "ship_key": "STEN SKAGEN",
-      "ship_name": "STEN SKAGEN",
-      "eta_rueb": "2026-05-27 06:57",
-      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
-      "ship_q": 1,
-      "meldung": {
-        "nr": "1",
-        "time": "Wed May 27 07:00:00 CEST 2026",
-        "draft": "9.4",
-        "q_gruppe": "1",
-        "lotsen_anzahl": 1,
-        "confirmed": false,
-        "from": "RÜB",
-        "to": "HOS"
-      },
-      "summary": {
-        "route": "HOS → KLT",
-        "routes": [
-          "HOS → KLT",
-          "RÜB → HOS"
-        ],
-        "q_gruppe": "1",
-        "vg": "5",
-        "draft": "9.40",
-        "length_m": "148.71",
-        "beam_m": "23.79",
-        "queue_title": "Zulauf vom Kanal in Kiel",
-        "zulauf_richtung": "vom_kanal",
-        "pilot_required": "true",
-        "pilot_status": "U",
-        "pilot_1_name": "Föhring, Nils",
-        "travel_status": "SAILING_NOK",
-        "makler": "UCA",
-        "dangerous_vessel": "-",
-        "type_of_loading": "Erdoel und Derivate"
-      }
-    },
     {
       "ship_key": "CHRISTINA",
       "ship_name": "CHRISTINA",
@@ -86,7 +48,7 @@
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 3,
       "meldung": {
-        "nr": "2",
+        "nr": "1",
         "time": "Wed May 27 09:00:00 CEST 2026",
         "draft": "7.4",
         "q_gruppe": "3",
@@ -120,28 +82,6 @@
   ],
   "pilots": [
     {
-      "pilot_key": "biedermann_johannes",
-      "vorname": "Johannes",
-      "nachname": "Biedermann",
-      "pilot_name": "Biedermann, Johannes",
-      "abteilungszeit": "2026-05-26 18:27",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 10,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "ARABELLA",
-      "from": "RÜB",
-      "to": "HOS",
-      "nr": 10,
-      "raw_time": "Tue May 26 18:27:00 CEST 2026",
-      "current_ship_name": "ARABELLA",
-      "current_ship_eta_rueb": "2026-05-27 03:01",
-      "current_ship_q": 0,
-      "current_ship_route": "RÜB → HOS",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
-    },
-    {
       "pilot_key": "föhring_nils",
       "vorname": "Nils",
       "nachname": "Föhring",
@@ -151,14 +91,16 @@
       "q_source": "q_gruppen_lotsen.entries",
       "pilot_tactical_nr": 6,
       "aufgabe": "Kanalbört",
-      "fahrzeug": "RÜB",
+      "fahrzeug": "STEN SKAGEN",
+      "from": "RÜB",
+      "to": "HOS",
       "nr": 6,
       "raw_time": "Wed May 27 00:11:00 CEST 2026",
       "current_ship_name": "STEN SKAGEN",
       "current_ship_eta_rueb": "2026-05-27 06:57",
       "current_ship_q": 1,
-      "current_ship_route": "HOS → KLT",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_route": "RÜB → HOS",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
@@ -202,28 +144,6 @@
       "current_ship_eta_rueb": "2026-05-27 07:12",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
-    },
-    {
-      "pilot_key": "zozulya_mykola",
-      "vorname": "Mykola",
-      "nachname": "Zozulya",
-      "pilot_name": "Zozulya, Mykola",
-      "abteilungszeit": "2026-05-27 05:59",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 2,
-      "aufgabe": "Seebört",
-      "fahrzeug": "ARABELLA",
-      "from": "HOS",
-      "to": "KLT",
-      "nr": 2,
-      "raw_time": "Wed May 27 05:59:00 CEST 2026",
-      "current_ship_name": "ARABELLA",
-      "current_ship_eta_rueb": "2026-05-27 03:01",
-      "current_ship_q": 0,
-      "current_ship_route": "HOS → KLT",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
@@ -251,28 +171,6 @@
   ],
   "dispatchable_pilots": [
     {
-      "pilot_key": "biedermann_johannes",
-      "vorname": "Johannes",
-      "nachname": "Biedermann",
-      "pilot_name": "Biedermann, Johannes",
-      "abteilungszeit": "2026-05-26 18:27",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 10,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "ARABELLA",
-      "from": "RÜB",
-      "to": "HOS",
-      "nr": 10,
-      "raw_time": "Tue May 26 18:27:00 CEST 2026",
-      "current_ship_name": "ARABELLA",
-      "current_ship_eta_rueb": "2026-05-27 03:01",
-      "current_ship_q": 0,
-      "current_ship_route": "RÜB → HOS",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
-    },
-    {
       "pilot_key": "föhring_nils",
       "vorname": "Nils",
       "nachname": "Föhring",
@@ -282,14 +180,16 @@
       "q_source": "q_gruppen_lotsen.entries",
       "pilot_tactical_nr": 6,
       "aufgabe": "Kanalbört",
-      "fahrzeug": "RÜB",
+      "fahrzeug": "STEN SKAGEN",
+      "from": "RÜB",
+      "to": "HOS",
       "nr": 6,
       "raw_time": "Wed May 27 00:11:00 CEST 2026",
       "current_ship_name": "STEN SKAGEN",
       "current_ship_eta_rueb": "2026-05-27 06:57",
       "current_ship_q": 1,
-      "current_ship_route": "HOS → KLT",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_route": "RÜB → HOS",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
@@ -335,28 +235,6 @@
       "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
-    },
-    {
-      "pilot_key": "zozulya_mykola",
-      "vorname": "Mykola",
-      "nachname": "Zozulya",
-      "pilot_name": "Zozulya, Mykola",
-      "abteilungszeit": "2026-05-27 05:59",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 2,
-      "aufgabe": "Seebört",
-      "fahrzeug": "ARABELLA",
-      "from": "HOS",
-      "to": "KLT",
-      "nr": 2,
-      "raw_time": "Wed May 27 05:59:00 CEST 2026",
-      "current_ship_name": "ARABELLA",
-      "current_ship_eta_rueb": "2026-05-27 03:01",
-      "current_ship_q": 0,
-      "current_ship_route": "HOS → KLT",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
     }
   ],
   "visible_but_not_dispatchable_pilots": [
@@ -378,115 +256,6 @@
   ],
   "assignments": [
     {
-      "ship_key": "STEN SKAGEN",
-      "ship_name": "STEN SKAGEN",
-      "eta_rueb": "2026-05-27 06:57",
-      "ship_q": 1,
-      "assigned_pilot": "Biedermann, Johannes",
-      "assigned_pilot_q": 0,
-      "assigned_tactical_nr": 10,
-      "assigned_abteilungszeit": "2026-05-26 18:27",
-      "assigned_current_ship_name": "ARABELLA",
-      "assigned_current_ship_eta_rueb": "2026-05-27 03:01",
-      "assigned_current_ship_source": "schiffe_merged.seelotsen",
-      "assigned_availability_kind": "merged_eta",
-      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 3,
-      "candidates": [
-        {
-          "pilot_name": "Biedermann, Johannes",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 10,
-          "abteilungszeit": "2026-05-26 18:27",
-          "fahrzeug": "ARABELLA",
-          "to": "HOS",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "ARABELLA",
-          "current_ship_eta_rueb": "2026-05-27 03:01",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Föhring, Nils",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 6,
-          "abteilungszeit": "2026-05-27 00:11",
-          "fahrzeug": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "STEN SKAGEN",
-          "current_ship_eta_rueb": "2026-05-27 06:57",
-          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Zozulya, Mykola",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 2,
-          "abteilungszeit": "2026-05-27 05:59",
-          "fahrzeug": "ARABELLA",
-          "to": "KLT",
-          "aufgabe": "Seebört",
-          "current_ship_name": "ARABELLA",
-          "current_ship_eta_rueb": "2026-05-27 03:01",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        }
-      ],
-      "excluded": [
-        {
-          "pilot_name": "Escher, Franck",
-          "pilot_tactical_nr": 5,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "TUNDRALAND",
-          "pilot_current_ship_eta_rueb": "2026-05-27 07:15",
-          "ship_eta_rueb": "2026-05-27 06:57",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Petersen, Yannick",
-          "pilot_tactical_nr": 4,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "MERIT",
-          "pilot_current_ship_eta_rueb": "2026-05-27 07:12",
-          "ship_eta_rueb": "2026-05-27 06:57",
-          "availability_kind": "merged_eta"
-        }
-      ],
-      "ship": {
-        "meldung": {
-          "nr": "1",
-          "time": "Wed May 27 07:00:00 CEST 2026",
-          "draft": "9.4",
-          "q_gruppe": "1",
-          "lotsen_anzahl": 1,
-          "confirmed": false,
-          "from": "RÜB",
-          "to": "HOS"
-        },
-        "summary": {
-          "route": "HOS → KLT",
-          "routes": [
-            "HOS → KLT",
-            "RÜB → HOS"
-          ],
-          "q_gruppe": "1",
-          "vg": "5",
-          "draft": "9.40",
-          "length_m": "148.71",
-          "beam_m": "23.79",
-          "queue_title": "Zulauf vom Kanal in Kiel",
-          "zulauf_richtung": "vom_kanal",
-          "pilot_required": "true",
-          "pilot_status": "U",
-          "pilot_1_name": "Föhring, Nils",
-          "travel_status": "SAILING_NOK",
-          "makler": "UCA",
-          "dangerous_vessel": "-",
-          "type_of_loading": "Erdoel und Derivate"
-        }
-      }
-    },
-    {
       "ship_key": "CHRISTINA",
       "ship_name": "CHRISTINA",
       "eta_rueb": "2026-05-27 09:11",
@@ -497,21 +266,22 @@
       "assigned_abteilungszeit": "2026-05-27 00:11",
       "assigned_current_ship_name": "STEN SKAGEN",
       "assigned_current_ship_eta_rueb": "2026-05-27 06:57",
-      "assigned_current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 4,
+      "candidate_count": 3,
       "candidates": [
         {
           "pilot_name": "Föhring, Nils",
           "pilot_q": 0,
           "pilot_tactical_nr": 6,
           "abteilungszeit": "2026-05-27 00:11",
-          "fahrzeug": "RÜB",
+          "fahrzeug": "STEN SKAGEN",
+          "to": "HOS",
           "aufgabe": "Kanalbört",
           "current_ship_name": "STEN SKAGEN",
           "current_ship_eta_rueb": "2026-05-27 06:57",
-          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
         {
@@ -539,24 +309,11 @@
           "current_ship_eta_rueb": "2026-05-27 07:12",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Zozulya, Mykola",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 2,
-          "abteilungszeit": "2026-05-27 05:59",
-          "fahrzeug": "ARABELLA",
-          "to": "KLT",
-          "aufgabe": "Seebört",
-          "current_ship_name": "ARABELLA",
-          "current_ship_eta_rueb": "2026-05-27 03:01",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
         "meldung": {
-          "nr": "2",
+          "nr": "1",
           "time": "Wed May 27 09:00:00 CEST 2026",
           "draft": "7.4",
           "q_gruppe": "3",
@@ -632,28 +389,6 @@
       "current_ship_eta_rueb": "2026-05-27 07:12",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
-    },
-    {
-      "pilot_key": "zozulya_mykola",
-      "vorname": "Mykola",
-      "nachname": "Zozulya",
-      "pilot_name": "Zozulya, Mykola",
-      "abteilungszeit": "2026-05-27 05:59",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 2,
-      "aufgabe": "Seebört",
-      "fahrzeug": "ARABELLA",
-      "from": "HOS",
-      "to": "KLT",
-      "nr": 2,
-      "raw_time": "Wed May 27 05:59:00 CEST 2026",
-      "current_ship_name": "ARABELLA",
-      "current_ship_eta_rueb": "2026-05-27 03:01",
-      "current_ship_q": 0,
-      "current_ship_route": "HOS → KLT",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     }
