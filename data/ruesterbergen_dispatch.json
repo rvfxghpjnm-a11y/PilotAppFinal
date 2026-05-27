@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-27T16:29:10",
+  "generated_at": "2026-05-27T16:31:28",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,10 +34,10 @@
   "counts": {
     "ships_for_ruesterbergen": 7,
     "pilots_total": 10,
-    "pilots_dispatchable": 6,
-    "pilots_visible_only": 4,
-    "assignments": 6,
-    "unassigned_ships": 1,
+    "pilots_dispatchable": 7,
+    "pilots_visible_only": 3,
+    "assignments": 7,
+    "unassigned_ships": 0,
     "unused_pilots": 0
   },
   "ships": [
@@ -462,7 +462,7 @@
       "current_ship_name": "MAYA THERESA",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta"
     },
     {
@@ -481,9 +481,10 @@
       "nr": 2,
       "raw_time": "Wed May 27 15:02:00 CEST 2026",
       "current_ship_name": "BEATE",
+      "current_ship_eta_rueb": "2026-05-27 20:30",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
@@ -637,6 +638,28 @@
       "current_ship_source": "special.already_in_rueb",
       "availability_kind": "already_in_rueb",
       "availability_hint": "Lotse gilt als bereits in RÜB"
+    },
+    {
+      "pilot_key": "rambadt_helge",
+      "vorname": "Helge",
+      "nachname": "Rambadt",
+      "pilot_name": "Rambadt, Helge",
+      "abteilungszeit": "2026-05-27 15:02",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 2,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "BEATE",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 2,
+      "raw_time": "Wed May 27 15:02:00 CEST 2026",
+      "current_ship_name": "BEATE",
+      "current_ship_eta_rueb": "2026-05-27 20:30",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
     }
   ],
   "visible_but_not_dispatchable_pilots": [
@@ -666,21 +689,6 @@
       "from": "HOS",
       "to": "RÜB",
       "current_ship_name": "MAYA THERESA",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    },
-    {
-      "pilot_key": "rambadt_helge",
-      "pilot_name": "Rambadt, Helge",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 2,
-      "abteilungszeit": "2026-05-27 15:02",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "BEATE",
-      "from": "HOS",
-      "to": "RÜB",
-      "current_ship_name": "BEATE",
       "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta",
       "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
@@ -791,6 +799,15 @@
           "reason": "Quali passt nicht (4 > 3)",
           "pilot_q": 4,
           "ship_q": 3
+        },
+        {
+          "pilot_name": "Rambadt, Helge",
+          "pilot_tactical_nr": 2,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "BEATE",
+          "pilot_current_ship_eta_rueb": "2026-05-27 20:30",
+          "ship_eta_rueb": "2026-05-27 17:49",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -909,6 +926,17 @@
           "availability_hint": "Lotse gilt als bereits in RÜB"
         }
       ],
+      "excluded": [
+        {
+          "pilot_name": "Rambadt, Helge",
+          "pilot_tactical_nr": 2,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "BEATE",
+          "pilot_current_ship_eta_rueb": "2026-05-27 20:30",
+          "ship_eta_rueb": "2026-05-27 18:00",
+          "availability_kind": "merged_eta"
+        }
+      ],
       "ship": {
         "meldung": {
           "nr": "2",
@@ -1012,6 +1040,17 @@
           "availability_hint": "Lotse gilt als bereits in RÜB"
         }
       ],
+      "excluded": [
+        {
+          "pilot_name": "Rambadt, Helge",
+          "pilot_tactical_nr": 2,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "BEATE",
+          "pilot_current_ship_eta_rueb": "2026-05-27 20:30",
+          "ship_eta_rueb": "2026-05-27 20:08",
+          "availability_kind": "merged_eta"
+        }
+      ],
       "ship": {
         "meldung": {
           "nr": "5",
@@ -1102,6 +1141,17 @@
           "availability_hint": "Lotse gilt als bereits in RÜB"
         }
       ],
+      "excluded": [
+        {
+          "pilot_name": "Rambadt, Helge",
+          "pilot_tactical_nr": 2,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "BEATE",
+          "pilot_current_ship_eta_rueb": "2026-05-27 20:30",
+          "ship_eta_rueb": "2026-05-27 20:11",
+          "availability_kind": "merged_eta"
+        }
+      ],
       "ship": {
         "meldung": {
           "nr": "3",
@@ -1180,6 +1230,17 @@
           "availability_hint": "Lotse gilt als bereits in RÜB"
         }
       ],
+      "excluded": [
+        {
+          "pilot_name": "Rambadt, Helge",
+          "pilot_tactical_nr": 2,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "BEATE",
+          "pilot_current_ship_eta_rueb": "2026-05-27 20:30",
+          "ship_eta_rueb": "2026-05-27 20:15",
+          "availability_kind": "merged_eta"
+        }
+      ],
       "ship": {
         "meldung": {
           "nr": "4",
@@ -1229,7 +1290,7 @@
       "assigned_availability_kind": "already_in_rueb",
       "assigned_availability_hint": "Lotse gilt als bereits in RÜB",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 1,
+      "candidate_count": 2,
       "candidates": [
         {
           "pilot_name": "Suermann, Nik",
@@ -1243,6 +1304,19 @@
           "current_ship_source": "special.already_in_rueb",
           "availability_kind": "already_in_rueb",
           "availability_hint": "Lotse gilt als bereits in RÜB"
+        },
+        {
+          "pilot_name": "Rambadt, Helge",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-05-27 15:02",
+          "fahrzeug": "BEATE",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "BEATE",
+          "current_ship_eta_rueb": "2026-05-27 20:30",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -1277,16 +1351,59 @@
           "type_of_loading": "Chemikalien fluessig"
         }
       }
-    }
-  ],
-  "unassigned_ships": [
+    },
     {
       "ship_key": "SEA SHANNON",
       "ship_name": "SEA SHANNON",
       "eta_rueb": "2026-05-27 22:00",
       "ship_q": 5,
-      "reason": "kein passender Lotse verfügbar"
+      "assigned_pilot": "Rambadt, Helge",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 2,
+      "assigned_abteilungszeit": "2026-05-27 15:02",
+      "assigned_current_ship_name": "BEATE",
+      "assigned_current_ship_eta_rueb": "2026-05-27 20:30",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "pilot_name": "Rambadt, Helge",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-05-27 15:02",
+          "fahrzeug": "BEATE",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "BEATE",
+          "current_ship_eta_rueb": "2026-05-27 20:30",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "7",
+          "time": "Wed May 27 22:00:00 CEST 2026",
+          "draft": "3.8",
+          "q_gruppe": "5",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "KRH",
+          "to": "RÜB"
+        },
+        "summary": {
+          "route": "KRH → RÜB",
+          "routes": [
+            "KRH → RÜB"
+          ],
+          "q_gruppe": "5",
+          "draft": "3.8"
+        }
+      }
     }
   ],
+  "unassigned_ships": [],
   "unused_pilots": []
 }
