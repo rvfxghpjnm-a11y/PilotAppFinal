@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-27T23:09:09",
+  "generated_at": "2026-05-27T23:11:12",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 2,
     "pilots_total": 10,
-    "pilots_dispatchable": 7,
-    "pilots_visible_only": 3,
+    "pilots_dispatchable": 9,
+    "pilots_visible_only": 1,
     "assignments": 2,
     "unassigned_ships": 0,
-    "unused_pilots": 5
+    "unused_pilots": 7
   },
   "ships": [
     {
@@ -287,6 +287,7 @@
       "nr": 3,
       "raw_time": "Wed May 27 22:06:00 CEST 2026",
       "current_ship_name": "PAIVI",
+      "current_ship_eta_rueb": "2026-05-28 03:00",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -307,10 +308,11 @@
       "to": "RÜB",
       "nr": 2,
       "raw_time": "Wed May 27 22:12:00 CEST 2026",
-      "current_ship_name": "VIKING FJOLVAR? NW 592",
+      "current_ship_name": "VIKING FJOLVAR",
+      "current_ship_eta_rueb": "2026-05-28 02:56",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta"
     },
     {
@@ -331,7 +333,7 @@
       "current_ship_name": "JOHN T. ESSBERGER",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta"
     }
   ],
@@ -485,39 +487,53 @@
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
-    }
-  ],
-  "visible_but_not_dispatchable_pilots": [
+    },
     {
       "pilot_key": "arlt_andreas",
+      "vorname": "Andreas",
+      "nachname": "Arlt",
       "pilot_name": "Arlt, Andreas",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 3,
       "abteilungszeit": "2026-05-27 22:06",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 3,
       "aufgabe": "Kanalbört",
       "fahrzeug": "PAIVI",
       "from": "HOR",
       "to": "RÜB",
+      "nr": 3,
+      "raw_time": "Wed May 27 22:06:00 CEST 2026",
       "current_ship_name": "PAIVI",
+      "current_ship_eta_rueb": "2026-05-28 03:00",
+      "current_ship_q": 0,
+      "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
+      "availability_kind": "merged_eta"
     },
     {
       "pilot_key": "migge_alexander",
+      "vorname": "Alexander",
+      "nachname": "Migge",
       "pilot_name": "Migge, Alexander",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 2,
       "abteilungszeit": "2026-05-27 22:12",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 2,
       "aufgabe": "Kanalbört",
       "fahrzeug": "VIKING FJOLVAR? NW 592",
       "from": "HOS",
       "to": "RÜB",
-      "current_ship_name": "VIKING FJOLVAR? NW 592",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    },
+      "nr": 2,
+      "raw_time": "Wed May 27 22:12:00 CEST 2026",
+      "current_ship_name": "VIKING FJOLVAR",
+      "current_ship_eta_rueb": "2026-05-28 02:56",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "availability_kind": "merged_eta"
+    }
+  ],
+  "visible_but_not_dispatchable_pilots": [
     {
       "pilot_key": "zimmermann_steffen",
       "pilot_name": "Zimmermann, Steffen",
@@ -529,7 +545,7 @@
       "from": "HOS",
       "to": "RÜB",
       "current_ship_name": "JOHN T. ESSBERGER",
-      "current_ship_source": "schiffe_merged.seelotsen",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta",
       "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
     }
@@ -632,6 +648,24 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "SCOT RANGER",
           "pilot_current_ship_eta_rueb": "2026-05-28 02:19",
+          "ship_eta_rueb": "2026-05-27 23:55",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Arlt, Andreas",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "PAIVI",
+          "pilot_current_ship_eta_rueb": "2026-05-28 03:00",
+          "ship_eta_rueb": "2026-05-27 23:55",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Migge, Alexander",
+          "pilot_tactical_nr": 2,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "VIKING FJOLVAR",
+          "pilot_current_ship_eta_rueb": "2026-05-28 02:56",
           "ship_eta_rueb": "2026-05-27 23:55",
           "availability_kind": "merged_eta"
         }
@@ -759,6 +793,24 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "SCOT RANGER",
           "pilot_current_ship_eta_rueb": "2026-05-28 02:19",
+          "ship_eta_rueb": "2026-05-28 00:03",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Arlt, Andreas",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "PAIVI",
+          "pilot_current_ship_eta_rueb": "2026-05-28 03:00",
+          "ship_eta_rueb": "2026-05-28 00:03",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Migge, Alexander",
+          "pilot_tactical_nr": 2,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "VIKING FJOLVAR",
+          "pilot_current_ship_eta_rueb": "2026-05-28 02:56",
           "ship_eta_rueb": "2026-05-28 00:03",
           "availability_kind": "merged_eta"
         }
@@ -904,6 +956,50 @@
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "arlt_andreas",
+      "vorname": "Andreas",
+      "nachname": "Arlt",
+      "pilot_name": "Arlt, Andreas",
+      "abteilungszeit": "2026-05-27 22:06",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 3,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "PAIVI",
+      "from": "HOR",
+      "to": "RÜB",
+      "nr": 3,
+      "raw_time": "Wed May 27 22:06:00 CEST 2026",
+      "current_ship_name": "PAIVI",
+      "current_ship_eta_rueb": "2026-05-28 03:00",
+      "current_ship_q": 0,
+      "current_ship_route": "HOR → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "migge_alexander",
+      "vorname": "Alexander",
+      "nachname": "Migge",
+      "pilot_name": "Migge, Alexander",
+      "abteilungszeit": "2026-05-27 22:12",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 2,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "VIKING FJOLVAR? NW 592",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 2,
+      "raw_time": "Wed May 27 22:12:00 CEST 2026",
+      "current_ship_name": "VIKING FJOLVAR",
+      "current_ship_eta_rueb": "2026-05-28 02:56",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta"
     }
   ]
