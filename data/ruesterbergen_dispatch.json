@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-27T03:27:13",
+  "generated_at": "2026-05-27T03:29:10",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,17 +34,17 @@
   "counts": {
     "ships_for_ruesterbergen": 1,
     "pilots_total": 8,
-    "pilots_dispatchable": 7,
-    "pilots_visible_only": 1,
+    "pilots_dispatchable": 8,
+    "pilots_visible_only": 0,
     "assignments": 1,
     "unassigned_ships": 0,
-    "unused_pilots": 6
+    "unused_pilots": 7
   },
   "ships": [
     {
       "ship_key": "STEN SKAGEN",
       "ship_name": "STEN SKAGEN",
-      "eta_rueb": "2026-05-27 07:12",
+      "eta_rueb": "2026-05-27 07:13",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 1,
       "meldung": {
@@ -251,9 +251,10 @@
       "nr": 2,
       "raw_time": "Wed May 27 02:24:00 CEST 2026",
       "current_ship_name": "MERIT",
+      "current_ship_eta_rueb": "2026-05-27 07:27",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     }
   ],
@@ -411,30 +412,36 @@
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
-    }
-  ],
-  "visible_but_not_dispatchable_pilots": [
+    },
     {
       "pilot_key": "petersen_yannick",
+      "vorname": "Yannick",
+      "nachname": "Petersen",
       "pilot_name": "Petersen, Yannick",
-      "pilot_q": 2,
-      "pilot_tactical_nr": 2,
       "abteilungszeit": "2026-05-27 02:24",
+      "pilot_q": 2,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 2,
       "aufgabe": "Kanalbört",
       "fahrzeug": "MERIT",
       "from": "HOR",
       "to": "RÜB",
+      "nr": 2,
+      "raw_time": "Wed May 27 02:24:00 CEST 2026",
       "current_ship_name": "MERIT",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
+      "current_ship_eta_rueb": "2026-05-27 07:27",
+      "current_ship_q": 0,
+      "current_ship_route": "HOR → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
     }
   ],
+  "visible_but_not_dispatchable_pilots": [],
   "assignments": [
     {
       "ship_key": "STEN SKAGEN",
       "ship_name": "STEN SKAGEN",
-      "eta_rueb": "2026-05-27 07:12",
+      "eta_rueb": "2026-05-27 07:13",
       "ship_q": 1,
       "assigned_pilot": "Haala, Klaus Werner",
       "assigned_pilot_q": 0,
@@ -533,7 +540,16 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "TUNDRALAND",
           "pilot_current_ship_eta_rueb": "2026-05-27 07:30",
-          "ship_eta_rueb": "2026-05-27 07:12",
+          "ship_eta_rueb": "2026-05-27 07:13",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Petersen, Yannick",
+          "pilot_tactical_nr": 2,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "MERIT",
+          "pilot_current_ship_eta_rueb": "2026-05-27 07:27",
+          "ship_eta_rueb": "2026-05-27 07:13",
           "availability_kind": "merged_eta"
         }
       ],
@@ -703,6 +719,28 @@
       "current_ship_eta_rueb": "2026-05-27 07:30",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "petersen_yannick",
+      "vorname": "Yannick",
+      "nachname": "Petersen",
+      "pilot_name": "Petersen, Yannick",
+      "abteilungszeit": "2026-05-27 02:24",
+      "pilot_q": 2,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 2,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "MERIT",
+      "from": "HOR",
+      "to": "RÜB",
+      "nr": 2,
+      "raw_time": "Wed May 27 02:24:00 CEST 2026",
+      "current_ship_name": "MERIT",
+      "current_ship_eta_rueb": "2026-05-27 07:27",
+      "current_ship_q": 0,
+      "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     }
