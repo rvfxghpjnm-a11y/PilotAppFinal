@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-27T08:41:20",
+  "generated_at": "2026-05-27T08:43:06",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,10 +34,10 @@
   "counts": {
     "ships_for_ruesterbergen": 3,
     "pilots_total": 6,
-    "pilots_dispatchable": 4,
-    "pilots_visible_only": 2,
-    "assignments": 2,
-    "unassigned_ships": 1,
+    "pilots_dispatchable": 5,
+    "pilots_visible_only": 1,
+    "assignments": 3,
+    "unassigned_ships": 0,
     "unused_pilots": 2
   },
   "ships": [
@@ -236,9 +236,10 @@
       "nr": 5,
       "raw_time": "Wed May 27 06:11:00 CEST 2026",
       "current_ship_name": "EBERHART ESSBERGER",
+      "current_ship_eta_rueb": "2026-05-27 12:12",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
@@ -351,6 +352,28 @@
       "availability_hint": "Lotse gilt als bereits in RÜB"
     },
     {
+      "pilot_key": "skawianczyk_artur",
+      "vorname": "Artur",
+      "nachname": "Skawianczyk",
+      "pilot_name": "Skawianczyk, Artur",
+      "abteilungszeit": "2026-05-27 06:11",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 5,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "EBERHART ESSBERGER",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 5,
+      "raw_time": "Wed May 27 06:11:00 CEST 2026",
+      "current_ship_name": "EBERHART ESSBERGER",
+      "current_ship_eta_rueb": "2026-05-27 12:12",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
       "pilot_key": "steffens_micha",
       "vorname": "Micha",
       "nachname": "Steffens",
@@ -374,21 +397,6 @@
     }
   ],
   "visible_but_not_dispatchable_pilots": [
-    {
-      "pilot_key": "skawianczyk_artur",
-      "pilot_name": "Skawianczyk, Artur",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 5,
-      "abteilungszeit": "2026-05-27 06:11",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "EBERHART ESSBERGER",
-      "from": "HOS",
-      "to": "RÜB",
-      "current_ship_name": "EBERHART ESSBERGER",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    },
     {
       "pilot_key": "flink_jörg",
       "pilot_name": "Flink, Jörg",
@@ -464,6 +472,15 @@
       ],
       "excluded": [
         {
+          "pilot_name": "Skawianczyk, Artur",
+          "pilot_tactical_nr": 5,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "EBERHART ESSBERGER",
+          "pilot_current_ship_eta_rueb": "2026-05-27 12:12",
+          "ship_eta_rueb": "2026-05-27 09:05",
+          "availability_kind": "merged_eta"
+        },
+        {
           "pilot_name": "Steffens, Micha",
           "pilot_tactical_nr": 3,
           "reason": "kommt nicht rechtzeitig in RÜB an",
@@ -522,7 +539,7 @@
       "assigned_availability_kind": "already_in_rueb",
       "assigned_availability_hint": "Lotse gilt als bereits in RÜB",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 3,
+      "candidate_count": 4,
       "candidates": [
         {
           "pilot_name": "Escher, Franck",
@@ -549,6 +566,19 @@
           "current_ship_source": "special.already_in_rueb",
           "availability_kind": "already_in_rueb",
           "availability_hint": "Lotse gilt als bereits in RÜB"
+        },
+        {
+          "pilot_name": "Skawianczyk, Artur",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 5,
+          "abteilungszeit": "2026-05-27 06:11",
+          "fahrzeug": "EBERHART ESSBERGER",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "EBERHART ESSBERGER",
+          "current_ship_eta_rueb": "2026-05-27 12:12",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
         },
         {
           "pilot_name": "Steffens, Micha",
@@ -596,15 +626,37 @@
           "type_of_loading": "Eisen und Stahl"
         }
       }
-    }
-  ],
-  "unassigned_ships": [
+    },
     {
       "ship_key": "ANNALISA P",
       "ship_name": "ANNALISA P",
       "eta_rueb": "2026-05-27 13:31",
       "ship_q": 1,
-      "reason": "kein passender Lotse verfügbar",
+      "assigned_pilot": "Skawianczyk, Artur",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 5,
+      "assigned_abteilungszeit": "2026-05-27 06:11",
+      "assigned_current_ship_name": "EBERHART ESSBERGER",
+      "assigned_current_ship_eta_rueb": "2026-05-27 12:12",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "pilot_name": "Skawianczyk, Artur",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 5,
+          "abteilungszeit": "2026-05-27 06:11",
+          "fahrzeug": "EBERHART ESSBERGER",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "EBERHART ESSBERGER",
+          "current_ship_eta_rueb": "2026-05-27 12:12",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
       "excluded": [
         {
           "pilot_name": "Petersen, Yannick",
@@ -620,9 +672,43 @@
           "pilot_q": 4,
           "ship_q": 1
         }
-      ]
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "3",
+          "time": "Wed May 27 13:32:00 CEST 2026",
+          "draft": "8.9",
+          "q_gruppe": "1",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "HOS → KLT",
+          "routes": [
+            "HOS → KLT",
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "1",
+          "vg": "5",
+          "draft": "8.90",
+          "length_m": "166.15",
+          "beam_m": "25.26",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "U",
+          "pilot_1_name": "Stelte, Dirk",
+          "travel_status": "SAILING_NOK",
+          "makler": "UCA",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Container"
+        }
+      }
     }
   ],
+  "unassigned_ships": [],
   "unused_pilots": [
     {
       "pilot_key": "petersen_yannick",
