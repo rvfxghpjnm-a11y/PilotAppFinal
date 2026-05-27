@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-27T16:23:12",
+  "generated_at": "2026-05-27T16:25:15",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,12 +32,12 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 6,
+    "ships_for_ruesterbergen": 7,
     "pilots_total": 10,
     "pilots_dispatchable": 6,
     "pilots_visible_only": 4,
     "assignments": 6,
-    "unassigned_ships": 0,
+    "unassigned_ships": 1,
     "unused_pilots": 0
   },
   "ships": [
@@ -231,13 +231,50 @@
       }
     },
     {
+      "ship_key": "FROYA",
+      "ship_name": "FROYA",
+      "eta_rueb": "2026-05-27 20:48",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 5,
+      "meldung": {
+        "nr": "6",
+        "time": "Wed May 27 20:30:00 CEST 2026",
+        "draft": "5.0",
+        "q_gruppe": "5",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "RÜB → HOS",
+        "routes": [
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "5",
+        "vg": "3",
+        "draft": "5.00",
+        "length_m": "82.50",
+        "beam_m": "12.600",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "H",
+        "pilot_1_name": "Plücker, Stephan",
+        "travel_status": "SAILING_NOK",
+        "makler": "SUB",
+        "dangerous_vessel": "-",
+        "type_of_loading": "Chemikalien fluessig"
+      }
+    },
+    {
       "ship_key": "SEA SHANNON",
       "ship_name": "SEA SHANNON",
       "eta_rueb": "2026-05-27 22:00",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
-        "nr": "6",
+        "nr": "7",
         "time": "Wed May 27 22:00:00 CEST 2026",
         "draft": "3.8",
         "q_gruppe": "5",
@@ -1179,9 +1216,9 @@
       }
     },
     {
-      "ship_key": "SEA SHANNON",
-      "ship_name": "SEA SHANNON",
-      "eta_rueb": "2026-05-27 22:00",
+      "ship_key": "FROYA",
+      "ship_name": "FROYA",
+      "eta_rueb": "2026-05-27 20:48",
       "ship_q": 5,
       "assigned_pilot": "Suermann, Nik",
       "assigned_pilot_q": 0,
@@ -1212,25 +1249,45 @@
       "ship": {
         "meldung": {
           "nr": "6",
-          "time": "Wed May 27 22:00:00 CEST 2026",
-          "draft": "3.8",
+          "time": "Wed May 27 20:30:00 CEST 2026",
+          "draft": "5.0",
           "q_gruppe": "5",
           "lotsen_anzahl": 1,
           "confirmed": false,
-          "from": "KRH",
-          "to": "RÜB"
+          "from": "RÜB",
+          "to": "HOS"
         },
         "summary": {
-          "route": "KRH → RÜB",
+          "route": "RÜB → HOS",
           "routes": [
-            "KRH → RÜB"
+            "RÜB → HOS"
           ],
           "q_gruppe": "5",
-          "draft": "3.8"
+          "vg": "3",
+          "draft": "5.00",
+          "length_m": "82.50",
+          "beam_m": "12.600",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "H",
+          "pilot_1_name": "Plücker, Stephan",
+          "travel_status": "SAILING_NOK",
+          "makler": "SUB",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Chemikalien fluessig"
         }
       }
     }
   ],
-  "unassigned_ships": [],
+  "unassigned_ships": [
+    {
+      "ship_key": "SEA SHANNON",
+      "ship_name": "SEA SHANNON",
+      "eta_rueb": "2026-05-27 22:00",
+      "ship_q": 5,
+      "reason": "kein passender Lotse verfügbar"
+    }
+  ],
   "unused_pilots": []
 }
