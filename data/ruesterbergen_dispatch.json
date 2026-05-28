@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-28T15:27:15",
+  "generated_at": "2026-05-28T15:29:28",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -44,7 +44,7 @@
     {
       "ship_key": "PRIMA LADY",
       "ship_name": "PRIMA LADY",
-      "eta_rueb": "2026-05-28 16:39",
+      "eta_rueb": "2026-05-28 16:38",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
@@ -644,7 +644,7 @@
     {
       "ship_key": "PRIMA LADY",
       "ship_name": "PRIMA LADY",
-      "eta_rueb": "2026-05-28 16:39",
+      "eta_rueb": "2026-05-28 16:38",
       "ship_q": 5,
       "assigned_pilot": "Engel, Alexander",
       "assigned_pilot_q": 3,
@@ -655,7 +655,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 6,
+      "candidate_count": 5,
       "candidates": [
         {
           "pilot_name": "Engel, Alexander",
@@ -721,29 +721,25 @@
           "current_ship_source": "special.already_in_rueb",
           "availability_kind": "already_in_rueb",
           "availability_hint": "Lotse gilt als bereits in RÜB"
-        },
-        {
-          "pilot_name": "Tontarra, Olaf",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 4,
-          "abteilungszeit": "2026-05-28 10:30",
-          "fahrzeug": "CELLUS",
-          "to": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "CELLUS",
-          "current_ship_eta_rueb": "2026-05-28 16:39",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
         }
       ],
       "excluded": [
+        {
+          "pilot_name": "Tontarra, Olaf",
+          "pilot_tactical_nr": 4,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "CELLUS",
+          "pilot_current_ship_eta_rueb": "2026-05-28 16:39",
+          "ship_eta_rueb": "2026-05-28 16:38",
+          "availability_kind": "merged_eta"
+        },
         {
           "pilot_name": "Richter, Ingmar",
           "pilot_tactical_nr": 1,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "LADY ELA",
           "pilot_current_ship_eta_rueb": "2026-05-28 19:17",
-          "ship_eta_rueb": "2026-05-28 16:39",
+          "ship_eta_rueb": "2026-05-28 16:38",
           "availability_kind": "merged_eta"
         }
       ],
