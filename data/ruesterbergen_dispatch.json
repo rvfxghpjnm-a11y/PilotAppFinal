@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-28T11:45:12",
+  "generated_at": "2026-05-28T11:47:20",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -33,18 +33,18 @@
   },
   "counts": {
     "ships_for_ruesterbergen": 4,
-    "pilots_total": 9,
-    "pilots_dispatchable": 7,
-    "pilots_visible_only": 2,
+    "pilots_total": 10,
+    "pilots_dispatchable": 9,
+    "pilots_visible_only": 1,
     "assignments": 4,
     "unassigned_ships": 0,
-    "unused_pilots": 3
+    "unused_pilots": 5
   },
   "ships": [
     {
       "ship_key": "BRAVEWIND",
       "ship_name": "BRAVEWIND",
-      "eta_rueb": "2026-05-28 14:40",
+      "eta_rueb": "2026-05-28 14:39",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 0,
       "meldung": {
@@ -184,6 +184,7 @@
         "zulauf_richtung": "vom_kanal",
         "pilot_required": "true",
         "pilot_status": "H",
+        "pilot_1_name": "Litmeyer, Hermann",
         "travel_status": "SAILING_NOK",
         "makler": "UCA",
         "dangerous_vessel": "-",
@@ -296,7 +297,7 @@
       "nr": 8,
       "raw_time": "Thu May 28 08:40:00 CEST 2026",
       "current_ship_name": "CORAL IVORY",
-      "current_ship_eta_rueb": "2026-05-28 13:17",
+      "current_ship_eta_rueb": "2026-05-28 13:16",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -362,6 +363,7 @@
       "nr": 3,
       "raw_time": "Thu May 28 10:24:00 CEST 2026",
       "current_ship_name": "COOLWATER",
+      "current_ship_eta_rueb": "2026-05-28 15:17",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -386,6 +388,28 @@
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "janson_sven",
+      "vorname": "Sven",
+      "nachname": "Janson",
+      "pilot_name": "Janson, Sven",
+      "abteilungszeit": "2026-05-28 11:00",
+      "pilot_q": 4,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 1,
+      "aufgabe": "Seebört",
+      "fahrzeug": "WL-SEE",
+      "from": "HOS",
+      "to": "HOS",
+      "nr": 1,
+      "raw_time": "Thu May 28 11:00:00 CEST 2026",
+      "current_ship_name": "COOLWATER",
+      "current_ship_eta_rueb": "2026-05-28 15:17",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta"
     }
   ],
@@ -494,7 +518,7 @@
       "nr": 8,
       "raw_time": "Thu May 28 08:40:00 CEST 2026",
       "current_ship_name": "CORAL IVORY",
-      "current_ship_eta_rueb": "2026-05-28 13:17",
+      "current_ship_eta_rueb": "2026-05-28 13:16",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -543,24 +567,53 @@
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
-    }
-  ],
-  "visible_but_not_dispatchable_pilots": [
+    },
     {
       "pilot_key": "demant_tom",
+      "vorname": "Tom",
+      "nachname": "Demant",
       "pilot_name": "Demant, Tom",
-      "pilot_q": 4,
-      "pilot_tactical_nr": 3,
       "abteilungszeit": "2026-05-28 10:24",
+      "pilot_q": 4,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 3,
       "aufgabe": "Kanalbört",
       "fahrzeug": "COOLWATER",
       "from": "HOS",
       "to": "RÜB",
+      "nr": 3,
+      "raw_time": "Thu May 28 10:24:00 CEST 2026",
       "current_ship_name": "COOLWATER",
+      "current_ship_eta_rueb": "2026-05-28 15:17",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
+      "availability_kind": "merged_eta"
     },
+    {
+      "pilot_key": "janson_sven",
+      "vorname": "Sven",
+      "nachname": "Janson",
+      "pilot_name": "Janson, Sven",
+      "abteilungszeit": "2026-05-28 11:00",
+      "pilot_q": 4,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 1,
+      "aufgabe": "Seebört",
+      "fahrzeug": "WL-SEE",
+      "from": "HOS",
+      "to": "HOS",
+      "nr": 1,
+      "raw_time": "Thu May 28 11:00:00 CEST 2026",
+      "current_ship_name": "COOLWATER",
+      "current_ship_eta_rueb": "2026-05-28 15:17",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "availability_kind": "merged_eta"
+    }
+  ],
+  "visible_but_not_dispatchable_pilots": [
     {
       "pilot_key": "tontarra_olaf",
       "pilot_name": "Tontarra, Olaf",
@@ -581,7 +634,7 @@
     {
       "ship_key": "BRAVEWIND",
       "ship_name": "BRAVEWIND",
-      "eta_rueb": "2026-05-28 14:40",
+      "eta_rueb": "2026-05-28 14:39",
       "ship_q": 0,
       "assigned_pilot": "Weise, Tom",
       "assigned_pilot_q": 0,
@@ -642,7 +695,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "CORAL IVORY",
-          "current_ship_eta_rueb": "2026-05-28 13:17",
+          "current_ship_eta_rueb": "2026-05-28 13:16",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -680,6 +733,24 @@
           "reason": "Quali passt nicht (3 > 0)",
           "pilot_q": 3,
           "ship_q": 0
+        },
+        {
+          "pilot_name": "Demant, Tom",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "COOLWATER",
+          "pilot_current_ship_eta_rueb": "2026-05-28 15:17",
+          "ship_eta_rueb": "2026-05-28 14:39",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Janson, Sven",
+          "pilot_tactical_nr": 1,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "COOLWATER",
+          "pilot_current_ship_eta_rueb": "2026-05-28 15:17",
+          "ship_eta_rueb": "2026-05-28 14:39",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -780,7 +851,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "CORAL IVORY",
-          "current_ship_eta_rueb": "2026-05-28 13:17",
+          "current_ship_eta_rueb": "2026-05-28 13:16",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -808,6 +879,26 @@
           "current_ship_name": "IDA RAMBOW",
           "current_ship_eta_rueb": "2026-05-28 13:39",
           "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Demant, Tom",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "COOLWATER",
+          "pilot_current_ship_eta_rueb": "2026-05-28 15:17",
+          "ship_eta_rueb": "2026-05-28 14:43",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Janson, Sven",
+          "pilot_tactical_nr": 1,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "COOLWATER",
+          "pilot_current_ship_eta_rueb": "2026-05-28 15:17",
+          "ship_eta_rueb": "2026-05-28 14:43",
           "availability_kind": "merged_eta"
         }
       ],
@@ -882,7 +973,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "CORAL IVORY",
-          "current_ship_eta_rueb": "2026-05-28 13:17",
+          "current_ship_eta_rueb": "2026-05-28 13:16",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -920,6 +1011,24 @@
           "reason": "Quali passt nicht (3 > 1)",
           "pilot_q": 3,
           "ship_q": 1
+        },
+        {
+          "pilot_name": "Demant, Tom",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "COOLWATER",
+          "pilot_current_ship_eta_rueb": "2026-05-28 15:17",
+          "ship_eta_rueb": "2026-05-28 14:48",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Janson, Sven",
+          "pilot_tactical_nr": 1,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "COOLWATER",
+          "pilot_current_ship_eta_rueb": "2026-05-28 15:17",
+          "ship_eta_rueb": "2026-05-28 14:48",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -970,7 +1079,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 4,
+      "candidate_count": 6,
       "candidates": [
         {
           "pilot_name": "Engel, Alexander",
@@ -994,7 +1103,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "CORAL IVORY",
-          "current_ship_eta_rueb": "2026-05-28 13:17",
+          "current_ship_eta_rueb": "2026-05-28 13:16",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1023,6 +1132,32 @@
           "current_ship_eta_rueb": "2026-05-28 13:39",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Demant, Tom",
+          "pilot_q": 4,
+          "pilot_tactical_nr": 3,
+          "abteilungszeit": "2026-05-28 10:24",
+          "fahrzeug": "COOLWATER",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "COOLWATER",
+          "current_ship_eta_rueb": "2026-05-28 15:17",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Janson, Sven",
+          "pilot_q": 4,
+          "pilot_tactical_nr": 1,
+          "abteilungszeit": "2026-05-28 11:00",
+          "fahrzeug": "WL-SEE",
+          "to": "HOS",
+          "aufgabe": "Seebört",
+          "current_ship_name": "COOLWATER",
+          "current_ship_eta_rueb": "2026-05-28 15:17",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -1050,6 +1185,7 @@
           "zulauf_richtung": "vom_kanal",
           "pilot_required": "true",
           "pilot_status": "H",
+          "pilot_1_name": "Litmeyer, Hermann",
           "travel_status": "SAILING_NOK",
           "makler": "UCA",
           "dangerous_vessel": "-",
@@ -1076,7 +1212,7 @@
       "nr": 8,
       "raw_time": "Thu May 28 08:40:00 CEST 2026",
       "current_ship_name": "CORAL IVORY",
-      "current_ship_eta_rueb": "2026-05-28 13:17",
+      "current_ship_eta_rueb": "2026-05-28 13:16",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -1124,6 +1260,50 @@
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "demant_tom",
+      "vorname": "Tom",
+      "nachname": "Demant",
+      "pilot_name": "Demant, Tom",
+      "abteilungszeit": "2026-05-28 10:24",
+      "pilot_q": 4,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 3,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "COOLWATER",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 3,
+      "raw_time": "Thu May 28 10:24:00 CEST 2026",
+      "current_ship_name": "COOLWATER",
+      "current_ship_eta_rueb": "2026-05-28 15:17",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "janson_sven",
+      "vorname": "Sven",
+      "nachname": "Janson",
+      "pilot_name": "Janson, Sven",
+      "abteilungszeit": "2026-05-28 11:00",
+      "pilot_q": 4,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 1,
+      "aufgabe": "Seebört",
+      "fahrzeug": "WL-SEE",
+      "from": "HOS",
+      "to": "HOS",
+      "nr": 1,
+      "raw_time": "Thu May 28 11:00:00 CEST 2026",
+      "current_ship_name": "COOLWATER",
+      "current_ship_eta_rueb": "2026-05-28 15:17",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta"
     }
   ]
