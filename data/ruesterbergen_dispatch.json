@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-28T15:03:14",
+  "generated_at": "2026-05-28T15:05:16",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,11 +32,11 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 7,
+    "ships_for_ruesterbergen": 8,
     "pilots_total": 7,
-    "pilots_dispatchable": 6,
-    "pilots_visible_only": 1,
-    "assignments": 6,
+    "pilots_dispatchable": 7,
+    "pilots_visible_only": 0,
+    "assignments": 7,
     "unassigned_ships": 1,
     "unused_pilots": 0
   },
@@ -194,7 +194,7 @@
     {
       "ship_key": "HUMBER RUNNER",
       "ship_name": "HUMBER RUNNER",
-      "eta_rueb": "2026-05-28 18:45",
+      "eta_rueb": "2026-05-28 18:58",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
@@ -303,6 +303,31 @@
         "makler": "UCA",
         "dangerous_vessel": "-",
         "type_of_loading": "Bulk"
+      }
+    },
+    {
+      "ship_key": "ILKA",
+      "ship_name": "ILKA",
+      "eta_rueb": "2026-05-28 23:00",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 5,
+      "meldung": {
+        "nr": "8",
+        "time": "Thu May 28 23:00:00 CEST 2026",
+        "draft": "4.0",
+        "q_gruppe": "5",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "KRH",
+        "to": "RÜB"
+      },
+      "summary": {
+        "route": "KRH → RÜB",
+        "routes": [
+          "KRH → RÜB"
+        ],
+        "q_gruppe": "5",
+        "draft": "4.0"
       }
     }
   ],
@@ -454,9 +479,10 @@
       "nr": 1,
       "raw_time": "Thu May 28 13:35:00 CEST 2026",
       "current_ship_name": "LADY ELA",
+      "current_ship_eta_rueb": "2026-05-28 19:17",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     }
   ],
@@ -591,25 +617,31 @@
       "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
-    }
-  ],
-  "visible_but_not_dispatchable_pilots": [
+    },
     {
       "pilot_key": "richter_ingmar",
+      "vorname": "Ingmar",
+      "nachname": "Richter",
       "pilot_name": "Richter, Ingmar",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 1,
       "abteilungszeit": "2026-05-28 13:35",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 1,
       "aufgabe": "Kanalbört",
       "fahrzeug": "LADY ELA",
       "from": "HOS",
       "to": "RÜB",
+      "nr": 1,
+      "raw_time": "Thu May 28 13:35:00 CEST 2026",
       "current_ship_name": "LADY ELA",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
+      "current_ship_eta_rueb": "2026-05-28 19:17",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
     }
   ],
+  "visible_but_not_dispatchable_pilots": [],
   "assignments": [
     {
       "ship_key": "PRIMA LADY",
@@ -703,6 +735,17 @@
           "current_ship_name": "CELLUS",
           "current_ship_eta_rueb": "2026-05-28 16:39",
           "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Richter, Ingmar",
+          "pilot_tactical_nr": 1,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "LADY ELA",
+          "pilot_current_ship_eta_rueb": "2026-05-28 19:17",
+          "ship_eta_rueb": "2026-05-28 16:40",
           "availability_kind": "merged_eta"
         }
       ],
@@ -821,6 +864,17 @@
           "availability_kind": "merged_eta"
         }
       ],
+      "excluded": [
+        {
+          "pilot_name": "Richter, Ingmar",
+          "pilot_tactical_nr": 1,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "LADY ELA",
+          "pilot_current_ship_eta_rueb": "2026-05-28 19:17",
+          "ship_eta_rueb": "2026-05-28 16:45",
+          "availability_kind": "merged_eta"
+        }
+      ],
       "ship": {
         "meldung": {
           "nr": "2",
@@ -924,6 +978,17 @@
           "availability_kind": "merged_eta"
         }
       ],
+      "excluded": [
+        {
+          "pilot_name": "Richter, Ingmar",
+          "pilot_tactical_nr": 1,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "LADY ELA",
+          "pilot_current_ship_eta_rueb": "2026-05-28 19:17",
+          "ship_eta_rueb": "2026-05-28 17:57",
+          "availability_kind": "merged_eta"
+        }
+      ],
       "ship": {
         "meldung": {
           "nr": "3",
@@ -1014,6 +1079,17 @@
           "availability_kind": "merged_eta"
         }
       ],
+      "excluded": [
+        {
+          "pilot_name": "Richter, Ingmar",
+          "pilot_tactical_nr": 1,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "LADY ELA",
+          "pilot_current_ship_eta_rueb": "2026-05-28 19:17",
+          "ship_eta_rueb": "2026-05-28 18:16",
+          "availability_kind": "merged_eta"
+        }
+      ],
       "ship": {
         "meldung": {
           "nr": "4",
@@ -1051,7 +1127,7 @@
     {
       "ship_key": "HUMBER RUNNER",
       "ship_name": "HUMBER RUNNER",
-      "eta_rueb": "2026-05-28 18:45",
+      "eta_rueb": "2026-05-28 18:58",
       "ship_q": 5,
       "assigned_pilot": "Demant, Tom",
       "assigned_pilot_q": 4,
@@ -1088,6 +1164,17 @@
           "current_ship_name": "CELLUS",
           "current_ship_eta_rueb": "2026-05-28 16:39",
           "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Richter, Ingmar",
+          "pilot_tactical_nr": 1,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "LADY ELA",
+          "pilot_current_ship_eta_rueb": "2026-05-28 19:17",
+          "ship_eta_rueb": "2026-05-28 18:58",
           "availability_kind": "merged_eta"
         }
       ],
@@ -1155,6 +1242,17 @@
           "availability_kind": "merged_eta"
         }
       ],
+      "excluded": [
+        {
+          "pilot_name": "Richter, Ingmar",
+          "pilot_tactical_nr": 1,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "LADY ELA",
+          "pilot_current_ship_eta_rueb": "2026-05-28 19:17",
+          "ship_eta_rueb": "2026-05-28 19:03",
+          "availability_kind": "merged_eta"
+        }
+      ],
       "ship": {
         "meldung": {
           "nr": "5",
@@ -1188,14 +1286,78 @@
           "type_of_loading": "Container"
         }
       }
-    }
-  ],
-  "unassigned_ships": [
+    },
     {
       "ship_key": "CARELIE",
       "ship_name": "CARELIE",
       "eta_rueb": "2026-05-28 19:29",
       "ship_q": 4,
+      "assigned_pilot": "Richter, Ingmar",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 1,
+      "assigned_abteilungszeit": "2026-05-28 13:35",
+      "assigned_current_ship_name": "LADY ELA",
+      "assigned_current_ship_eta_rueb": "2026-05-28 19:17",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "pilot_name": "Richter, Ingmar",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 1,
+          "abteilungszeit": "2026-05-28 13:35",
+          "fahrzeug": "LADY ELA",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "LADY ELA",
+          "current_ship_eta_rueb": "2026-05-28 19:17",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "7",
+          "time": "Thu May 28 19:10:00 CEST 2026",
+          "draft": "3.9",
+          "q_gruppe": "4",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "HOS → KLT",
+          "routes": [
+            "HOS → KLT",
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "4",
+          "vg": "3",
+          "draft": "3.90",
+          "length_m": "110.780",
+          "beam_m": "14",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "P",
+          "pilot_1_name": "Mertens, Jochen",
+          "travel_status": "SAILING_NOK",
+          "makler": "UCA",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Bulk"
+        }
+      }
+    }
+  ],
+  "unassigned_ships": [
+    {
+      "ship_key": "ILKA",
+      "ship_name": "ILKA",
+      "eta_rueb": "2026-05-28 23:00",
+      "ship_q": 5,
       "reason": "kein passender Lotse verfügbar"
     }
   ],
