@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-29T00:23:09",
+  "generated_at": "2026-05-29T00:25:07",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,15 +32,38 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 2,
-    "pilots_total": 7,
-    "pilots_dispatchable": 7,
+    "ships_for_ruesterbergen": 3,
+    "pilots_total": 8,
+    "pilots_dispatchable": 8,
     "pilots_visible_only": 0,
-    "assignments": 2,
+    "assignments": 3,
     "unassigned_ships": 0,
     "unused_pilots": 5
   },
   "ships": [
+    {
+      "ship_key": "LEERFAHRT",
+      "ship_name": "Leerfahrt",
+      "eta_rueb": "2026-05-29 00:35",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 0,
+      "meldung": {
+        "nr": "1",
+        "time": "Fri May 29 00:35:00 CEST 2026",
+        "lotsen_anzahl": 2,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "KLT → HOS",
+        "routes": [
+          "KLT → HOS",
+          "HOS → KLT",
+          "RÜB → HOS"
+        ]
+      }
+    },
     {
       "ship_key": "BALTIC SAIL",
       "ship_name": "BALTIC SAIL",
@@ -48,7 +71,7 @@
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
-        "nr": "1",
+        "nr": "2",
         "time": "Fri May 29 03:30:00 CEST 2026",
         "draft": "4.7",
         "q_gruppe": "5",
@@ -86,7 +109,7 @@
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 2,
       "meldung": {
-        "nr": "2",
+        "nr": "3",
         "time": "Fri May 29 03:50:00 CEST 2026",
         "draft": "9.3",
         "q_gruppe": "2",
@@ -160,6 +183,28 @@
       "current_ship_eta_rueb": "2026-05-29 00:32",
       "current_ship_q": 0,
       "current_ship_route": "KRH → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "wald_mark",
+      "vorname": "Mark",
+      "nachname": "Wald",
+      "pilot_name": "Wald, Mark",
+      "abteilungszeit": "2026-05-28 17:30",
+      "pilot_q": 3,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 9,
+      "aufgabe": "Seebört",
+      "fahrzeug": "Leerfahrt",
+      "from": "KLT",
+      "to": "HOS",
+      "nr": 9,
+      "raw_time": "Thu May 28 17:30:00 CEST 2026",
+      "current_ship_name": "Leerfahrt",
+      "current_ship_eta_rueb": "2026-05-29 00:35",
+      "current_ship_q": 0,
+      "current_ship_route": "KLT → HOS",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
@@ -319,6 +364,28 @@
       "availability_kind": "merged_eta"
     },
     {
+      "pilot_key": "wald_mark",
+      "vorname": "Mark",
+      "nachname": "Wald",
+      "pilot_name": "Wald, Mark",
+      "abteilungszeit": "2026-05-28 17:30",
+      "pilot_q": 3,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 9,
+      "aufgabe": "Seebört",
+      "fahrzeug": "Leerfahrt",
+      "from": "KLT",
+      "to": "HOS",
+      "nr": 9,
+      "raw_time": "Thu May 28 17:30:00 CEST 2026",
+      "current_ship_name": "Leerfahrt",
+      "current_ship_eta_rueb": "2026-05-29 00:35",
+      "current_ship_q": 0,
+      "current_ship_route": "KLT → HOS",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
       "pilot_key": "lüttge_sebastian",
       "vorname": "Sebastian",
       "nachname": "Lüttge",
@@ -431,10 +498,10 @@
   "visible_but_not_dispatchable_pilots": [],
   "assignments": [
     {
-      "ship_key": "BALTIC SAIL",
-      "ship_name": "BALTIC SAIL",
-      "eta_rueb": "2026-05-29 03:40",
-      "ship_q": 5,
+      "ship_key": "LEERFAHRT",
+      "ship_name": "Leerfahrt",
+      "eta_rueb": "2026-05-29 00:35",
+      "ship_q": 0,
       "assigned_pilot": "Heyenga, Kai",
       "assigned_pilot_q": 0,
       "assigned_tactical_nr": 13,
@@ -444,7 +511,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 7,
+      "candidate_count": 2,
       "candidates": [
         {
           "pilot_name": "Heyenga, Kai",
@@ -469,6 +536,120 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "ILKA",
           "current_ship_eta_rueb": "2026-05-29 00:32",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Wald, Mark",
+          "pilot_tactical_nr": 9,
+          "reason": "Quali passt nicht (3 > 0)",
+          "pilot_q": 3,
+          "ship_q": 0
+        },
+        {
+          "pilot_name": "Lüttge, Sebastian",
+          "pilot_tactical_nr": 6,
+          "reason": "Quali passt nicht (4 > 0)",
+          "pilot_q": 4,
+          "ship_q": 0
+        },
+        {
+          "pilot_name": "Biedermann, Johannes",
+          "pilot_tactical_nr": 5,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "KRISLIN",
+          "pilot_current_ship_eta_rueb": "2026-05-29 00:40",
+          "ship_eta_rueb": "2026-05-29 00:35",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Zimmermann, Martin",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "WIDOR",
+          "pilot_current_ship_eta_rueb": "2026-05-29 02:46",
+          "ship_eta_rueb": "2026-05-29 00:35",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Skawianczyk, Artur",
+          "pilot_tactical_nr": 2,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "RDJ RIJNSTROOM",
+          "pilot_current_ship_eta_rueb": "2026-05-29 02:37",
+          "ship_eta_rueb": "2026-05-29 00:35",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Köhler, Olaf",
+          "pilot_tactical_nr": 1,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "BALTIC SHARK",
+          "pilot_current_ship_eta_rueb": "2026-05-29 03:00",
+          "ship_eta_rueb": "2026-05-29 00:35",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "1",
+          "time": "Fri May 29 00:35:00 CEST 2026",
+          "lotsen_anzahl": 2,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "KLT → HOS",
+          "routes": [
+            "KLT → HOS",
+            "HOS → KLT",
+            "RÜB → HOS"
+          ]
+        }
+      }
+    },
+    {
+      "ship_key": "BALTIC SAIL",
+      "ship_name": "BALTIC SAIL",
+      "eta_rueb": "2026-05-29 03:40",
+      "ship_q": 5,
+      "assigned_pilot": "Escher, Franck",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 12,
+      "assigned_abteilungszeit": "2026-05-28 17:10",
+      "assigned_current_ship_name": "ILKA",
+      "assigned_current_ship_eta_rueb": "2026-05-29 00:32",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 7,
+      "candidates": [
+        {
+          "pilot_name": "Escher, Franck",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 12,
+          "abteilungszeit": "2026-05-28 17:10",
+          "fahrzeug": "ILKA",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ILKA",
+          "current_ship_eta_rueb": "2026-05-29 00:32",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Wald, Mark",
+          "pilot_q": 3,
+          "pilot_tactical_nr": 9,
+          "abteilungszeit": "2026-05-28 17:30",
+          "fahrzeug": "Leerfahrt",
+          "to": "HOS",
+          "aufgabe": "Seebört",
+          "current_ship_name": "Leerfahrt",
+          "current_ship_eta_rueb": "2026-05-29 00:35",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -540,7 +721,7 @@
       ],
       "ship": {
         "meldung": {
-          "nr": "1",
+          "nr": "2",
           "time": "Fri May 29 03:30:00 CEST 2026",
           "draft": "4.7",
           "q_gruppe": "5",
@@ -577,30 +758,17 @@
       "ship_name": "BG AGNES",
       "eta_rueb": "2026-05-29 04:00",
       "ship_q": 2,
-      "assigned_pilot": "Escher, Franck",
+      "assigned_pilot": "Biedermann, Johannes",
       "assigned_pilot_q": 0,
-      "assigned_tactical_nr": 12,
-      "assigned_abteilungszeit": "2026-05-28 17:10",
-      "assigned_current_ship_name": "ILKA",
-      "assigned_current_ship_eta_rueb": "2026-05-29 00:32",
+      "assigned_tactical_nr": 5,
+      "assigned_abteilungszeit": "2026-05-28 19:50",
+      "assigned_current_ship_name": "KRISLIN",
+      "assigned_current_ship_eta_rueb": "2026-05-29 00:40",
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 5,
+      "candidate_count": 4,
       "candidates": [
-        {
-          "pilot_name": "Escher, Franck",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 12,
-          "abteilungszeit": "2026-05-28 17:10",
-          "fahrzeug": "ILKA",
-          "to": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "ILKA",
-          "current_ship_eta_rueb": "2026-05-29 00:32",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
         {
           "pilot_name": "Biedermann, Johannes",
           "pilot_q": 0,
@@ -656,6 +824,13 @@
       ],
       "excluded": [
         {
+          "pilot_name": "Wald, Mark",
+          "pilot_tactical_nr": 9,
+          "reason": "Quali passt nicht (3 > 2)",
+          "pilot_q": 3,
+          "ship_q": 2
+        },
+        {
           "pilot_name": "Lüttge, Sebastian",
           "pilot_tactical_nr": 6,
           "reason": "Quali passt nicht (4 > 2)",
@@ -665,7 +840,7 @@
       ],
       "ship": {
         "meldung": {
-          "nr": "2",
+          "nr": "3",
           "time": "Fri May 29 03:50:00 CEST 2026",
           "draft": "9.3",
           "q_gruppe": "2",
@@ -701,6 +876,28 @@
   "unassigned_ships": [],
   "unused_pilots": [
     {
+      "pilot_key": "wald_mark",
+      "vorname": "Mark",
+      "nachname": "Wald",
+      "pilot_name": "Wald, Mark",
+      "abteilungszeit": "2026-05-28 17:30",
+      "pilot_q": 3,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 9,
+      "aufgabe": "Seebört",
+      "fahrzeug": "Leerfahrt",
+      "from": "KLT",
+      "to": "HOS",
+      "nr": 9,
+      "raw_time": "Thu May 28 17:30:00 CEST 2026",
+      "current_ship_name": "Leerfahrt",
+      "current_ship_eta_rueb": "2026-05-29 00:35",
+      "current_ship_q": 0,
+      "current_ship_route": "KLT → HOS",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
       "pilot_key": "lüttge_sebastian",
       "vorname": "Sebastian",
       "nachname": "Lüttge",
@@ -720,28 +917,6 @@
       "current_ship_source": "special.already_in_rueb",
       "availability_kind": "already_in_rueb",
       "availability_hint": "Lotse gilt als bereits in RÜB"
-    },
-    {
-      "pilot_key": "biedermann_johannes",
-      "vorname": "Johannes",
-      "nachname": "Biedermann",
-      "pilot_name": "Biedermann, Johannes",
-      "abteilungszeit": "2026-05-28 19:50",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 5,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "KRISLIN",
-      "from": "RÜB",
-      "to": "HOS",
-      "nr": 5,
-      "raw_time": "Thu May 28 19:50:00 CEST 2026",
-      "current_ship_name": "KRISLIN",
-      "current_ship_eta_rueb": "2026-05-29 00:40",
-      "current_ship_q": 4,
-      "current_ship_route": "RÜB → HOS",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
     },
     {
       "pilot_key": "zimmermann_martin",
