@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-28T13:43:24",
+  "generated_at": "2026-05-28T13:45:26",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,13 +32,13 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 5,
+    "ships_for_ruesterbergen": 6,
     "pilots_total": 8,
     "pilots_dispatchable": 7,
     "pilots_visible_only": 1,
-    "assignments": 5,
+    "assignments": 6,
     "unassigned_ships": 0,
-    "unused_pilots": 2
+    "unused_pilots": 1
   },
   "ships": [
     {
@@ -164,7 +164,7 @@
       "ship_q": 5,
       "meldung": {
         "nr": "4",
-        "time": "Thu May 28 17:00:00 CEST 2026",
+        "time": "Thu May 28 16:30:00 CEST 2026",
         "draft": "5.5",
         "q_gruppe": "5",
         "lotsen_anzahl": 1,
@@ -229,6 +229,43 @@
         "makler": "SUB",
         "dangerous_vessel": "-",
         "type_of_loading": "Ballastfahrt"
+      }
+    },
+    {
+      "ship_key": "SAMIRA",
+      "ship_name": "SAMIRA",
+      "eta_rueb": "2026-05-28 18:03",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 5,
+      "meldung": {
+        "nr": "6",
+        "time": "Thu May 28 17:45:00 CEST 2026",
+        "draft": "3.6",
+        "q_gruppe": "5",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "RÜB → HOS",
+        "routes": [
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "5",
+        "vg": "2",
+        "draft": "3.60",
+        "length_m": "79.990",
+        "beam_m": "10.5",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "H",
+        "pilot_1_name": "Clau�en, Ulf",
+        "travel_status": "SAILING_NOK",
+        "makler": "UCA",
+        "dangerous_vessel": "-",
+        "type_of_loading": "NN"
       }
     }
   ],
@@ -1003,7 +1040,7 @@
       "ship": {
         "meldung": {
           "nr": "4",
-          "time": "Thu May 28 17:00:00 CEST 2026",
+          "time": "Thu May 28 16:30:00 CEST 2026",
           "draft": "5.5",
           "q_gruppe": "5",
           "lotsen_anzahl": 1,
@@ -1122,32 +1159,86 @@
           "type_of_loading": "Ballastfahrt"
         }
       }
+    },
+    {
+      "ship_key": "SAMIRA",
+      "ship_name": "SAMIRA",
+      "eta_rueb": "2026-05-28 18:03",
+      "ship_q": 5,
+      "assigned_pilot": "Tontarra, Olaf",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 4,
+      "assigned_abteilungszeit": "2026-05-28 10:30",
+      "assigned_current_ship_name": "CELLUS",
+      "assigned_current_ship_eta_rueb": "2026-05-28 16:07",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 2,
+      "candidates": [
+        {
+          "pilot_name": "Tontarra, Olaf",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 4,
+          "abteilungszeit": "2026-05-28 10:30",
+          "fahrzeug": "CELLUS",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "CELLUS",
+          "current_ship_eta_rueb": "2026-05-28 16:07",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Janson, Sven",
+          "pilot_q": 4,
+          "pilot_tactical_nr": 3,
+          "abteilungszeit": "2026-05-28 11:00",
+          "fahrzeug": "WL-SEE",
+          "to": "HOS",
+          "aufgabe": "Seebört",
+          "current_ship_name": "COOLWATER",
+          "current_ship_eta_rueb": "2026-05-28 15:15",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "6",
+          "time": "Thu May 28 17:45:00 CEST 2026",
+          "draft": "3.6",
+          "q_gruppe": "5",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "RÜB → HOS",
+          "routes": [
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "5",
+          "vg": "2",
+          "draft": "3.60",
+          "length_m": "79.990",
+          "beam_m": "10.5",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "H",
+          "pilot_1_name": "Clau�en, Ulf",
+          "travel_status": "SAILING_NOK",
+          "makler": "UCA",
+          "dangerous_vessel": "-",
+          "type_of_loading": "NN"
+        }
+      }
     }
   ],
   "unassigned_ships": [],
   "unused_pilots": [
-    {
-      "pilot_key": "tontarra_olaf",
-      "vorname": "Olaf",
-      "nachname": "Tontarra",
-      "pilot_name": "Tontarra, Olaf",
-      "abteilungszeit": "2026-05-28 10:30",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 4,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "CELLUS",
-      "from": "HOR",
-      "to": "RÜB",
-      "nr": 4,
-      "raw_time": "Thu May 28 10:30:00 CEST 2026",
-      "current_ship_name": "CELLUS",
-      "current_ship_eta_rueb": "2026-05-28 16:07",
-      "current_ship_q": 0,
-      "current_ship_route": "HOR → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
-    },
     {
       "pilot_key": "janson_sven",
       "vorname": "Sven",
