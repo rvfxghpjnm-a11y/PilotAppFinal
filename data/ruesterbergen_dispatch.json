@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-28T19:15:13",
+  "generated_at": "2026-05-28T19:17:12",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,54 +32,15 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 3,
+    "ships_for_ruesterbergen": 2,
     "pilots_total": 12,
     "pilots_dispatchable": 11,
     "pilots_visible_only": 1,
-    "assignments": 3,
+    "assignments": 2,
     "unassigned_ships": 0,
-    "unused_pilots": 8
+    "unused_pilots": 9
   },
   "ships": [
-    {
-      "ship_key": "CARELIE",
-      "ship_name": "CARELIE",
-      "eta_rueb": "2026-05-28 19:15",
-      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
-      "ship_q": 4,
-      "meldung": {
-        "nr": "1",
-        "time": "Thu May 28 19:10:00 CEST 2026",
-        "draft": "3.9",
-        "q_gruppe": "4",
-        "lotsen_anzahl": 1,
-        "confirmed": false,
-        "from": "RÜB",
-        "to": "HOS",
-        "remark": "ttg"
-      },
-      "summary": {
-        "route": "HOS → KLT",
-        "routes": [
-          "HOS → KLT",
-          "RÜB → HOS"
-        ],
-        "q_gruppe": "4",
-        "vg": "3",
-        "draft": "3.90",
-        "length_m": "110.780",
-        "beam_m": "14",
-        "queue_title": "Zulauf vom Kanal in Kiel",
-        "zulauf_richtung": "vom_kanal",
-        "pilot_required": "true",
-        "pilot_status": "P",
-        "pilot_1_name": "Richter, Ingmar",
-        "travel_status": "SAILING_NOK",
-        "makler": "UCA",
-        "dangerous_vessel": "-",
-        "type_of_loading": "Bulk"
-      }
-    },
     {
       "ship_key": "AKACIA",
       "ship_name": "AKACIA",
@@ -87,7 +48,7 @@
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 2,
       "meldung": {
-        "nr": "2",
+        "nr": "1",
         "time": "Thu May 28 22:15:00 CEST 2026",
         "draft": "8.7",
         "q_gruppe": "2",
@@ -125,7 +86,7 @@
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
-        "nr": "3",
+        "nr": "2",
         "time": "Thu May 28 23:30:00 CEST 2026",
         "draft": "4.0",
         "q_gruppe": "5",
@@ -199,16 +160,16 @@
       "q_source": "q_gruppen_lotsen.entries",
       "pilot_tactical_nr": 15,
       "aufgabe": "Kanalbört",
-      "fahrzeug": "LADY ELA",
-      "from": "HOS",
-      "to": "RÜB",
+      "fahrzeug": "CARELIE",
+      "from": "RÜB",
+      "to": "HOS",
       "nr": 15,
       "raw_time": "Thu May 28 13:35:00 CEST 2026",
       "current_ship_name": "CARELIE",
       "current_ship_eta_rueb": "2026-05-28 19:15",
       "current_ship_q": 4,
-      "current_ship_route": "HOS → KLT",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_route": "RÜB → HOS",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
@@ -464,16 +425,16 @@
       "q_source": "q_gruppen_lotsen.entries",
       "pilot_tactical_nr": 15,
       "aufgabe": "Kanalbört",
-      "fahrzeug": "LADY ELA",
-      "from": "HOS",
-      "to": "RÜB",
+      "fahrzeug": "CARELIE",
+      "from": "RÜB",
+      "to": "HOS",
       "nr": 15,
       "raw_time": "Thu May 28 13:35:00 CEST 2026",
       "current_ship_name": "CARELIE",
       "current_ship_eta_rueb": "2026-05-28 19:15",
       "current_ship_q": 4,
-      "current_ship_route": "HOS → KLT",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_route": "RÜB → HOS",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
@@ -672,10 +633,10 @@
   ],
   "assignments": [
     {
-      "ship_key": "CARELIE",
-      "ship_name": "CARELIE",
-      "eta_rueb": "2026-05-28 19:15",
-      "ship_q": 4,
+      "ship_key": "AKACIA",
+      "ship_name": "AKACIA",
+      "eta_rueb": "2026-05-28 22:44",
+      "ship_q": 2,
       "assigned_pilot": "Arndt, Michael",
       "assigned_pilot_q": 0,
       "assigned_tactical_nr": 19,
@@ -685,7 +646,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 7,
+      "candidate_count": 10,
       "candidates": [
         {
           "pilot_name": "Arndt, Michael",
@@ -701,184 +662,16 @@
           "availability_kind": "merged_eta"
         },
         {
-          "pilot_name": "Demant, Tom",
-          "pilot_q": 4,
-          "pilot_tactical_nr": 18,
-          "abteilungszeit": "2026-05-28 10:24",
-          "fahrzeug": "EMS LEADER",
-          "to": "HOS",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "EMS LEADER",
-          "current_ship_eta_rueb": "2026-05-28 16:40",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
           "pilot_name": "Richter, Ingmar",
           "pilot_q": 0,
           "pilot_tactical_nr": 15,
           "abteilungszeit": "2026-05-28 13:35",
-          "fahrzeug": "LADY ELA",
-          "to": "RÜB",
+          "fahrzeug": "CARELIE",
+          "to": "HOS",
           "aufgabe": "Kanalbört",
           "current_ship_name": "CARELIE",
           "current_ship_eta_rueb": "2026-05-28 19:15",
-          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Steinbach, Daniel",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 12,
-          "abteilungszeit": "2026-05-28 16:25",
-          "fahrzeug": "LUISE DEYMANN",
-          "to": "UTG",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "LUISE DEYMANN",
-          "current_ship_eta_rueb": "2026-05-28 18:07",
           "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Ünsal, Hüseyin",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 13,
-          "abteilungszeit": "2026-05-28 16:25",
-          "fahrzeug": "SAMIRA",
-          "to": "HOS",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "SAMIRA",
-          "current_ship_eta_rueb": "2026-05-28 17:43",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Winkler, René",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 5,
-          "abteilungszeit": "2026-05-28 17:20",
-          "fahrzeug": "ECO GHIBLI",
-          "to": "HOS",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "ECO GHIBLI",
-          "current_ship_eta_rueb": "2026-05-28 19:06",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Merschmann, Tim",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 6,
-          "abteilungszeit": "2026-05-28 17:20",
-          "fahrzeug": "HUMBER RUNNER",
-          "to": "HOS",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "HUMBER RUNNER",
-          "current_ship_eta_rueb": "2026-05-28 18:37",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        }
-      ],
-      "excluded": [
-        {
-          "pilot_name": "Vogel, Peter",
-          "pilot_tactical_nr": 10,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "ALDEBARAN J",
-          "pilot_current_ship_eta_rueb": "2026-05-28 21:39",
-          "ship_eta_rueb": "2026-05-28 19:15",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Skairies, Thomas",
-          "pilot_tactical_nr": 9,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "GERMANICA HAV",
-          "pilot_current_ship_eta_rueb": "2026-05-28 21:42",
-          "ship_eta_rueb": "2026-05-28 19:15",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Heyenga, Kai",
-          "pilot_tactical_nr": 8,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "NOSSAN",
-          "pilot_current_ship_eta_rueb": "2026-05-28 20:55",
-          "ship_eta_rueb": "2026-05-28 19:15",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Escher, Franck",
-          "pilot_tactical_nr": 7,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "SPEYK",
-          "pilot_current_ship_eta_rueb": "2026-05-28 21:45",
-          "ship_eta_rueb": "2026-05-28 19:15",
-          "availability_kind": "merged_eta"
-        }
-      ],
-      "ship": {
-        "meldung": {
-          "nr": "1",
-          "time": "Thu May 28 19:10:00 CEST 2026",
-          "draft": "3.9",
-          "q_gruppe": "4",
-          "lotsen_anzahl": 1,
-          "confirmed": false,
-          "from": "RÜB",
-          "to": "HOS",
-          "remark": "ttg"
-        },
-        "summary": {
-          "route": "HOS → KLT",
-          "routes": [
-            "HOS → KLT",
-            "RÜB → HOS"
-          ],
-          "q_gruppe": "4",
-          "vg": "3",
-          "draft": "3.90",
-          "length_m": "110.780",
-          "beam_m": "14",
-          "queue_title": "Zulauf vom Kanal in Kiel",
-          "zulauf_richtung": "vom_kanal",
-          "pilot_required": "true",
-          "pilot_status": "P",
-          "pilot_1_name": "Richter, Ingmar",
-          "travel_status": "SAILING_NOK",
-          "makler": "UCA",
-          "dangerous_vessel": "-",
-          "type_of_loading": "Bulk"
-        }
-      }
-    },
-    {
-      "ship_key": "AKACIA",
-      "ship_name": "AKACIA",
-      "eta_rueb": "2026-05-28 22:44",
-      "ship_q": 2,
-      "assigned_pilot": "Richter, Ingmar",
-      "assigned_pilot_q": 0,
-      "assigned_tactical_nr": 15,
-      "assigned_abteilungszeit": "2026-05-28 13:35",
-      "assigned_current_ship_name": "CARELIE",
-      "assigned_current_ship_eta_rueb": "2026-05-28 19:15",
-      "assigned_current_ship_source": "schiffe_merged.summary.pilot_1_name",
-      "assigned_availability_kind": "merged_eta",
-      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 9,
-      "candidates": [
-        {
-          "pilot_name": "Richter, Ingmar",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 15,
-          "abteilungszeit": "2026-05-28 13:35",
-          "fahrzeug": "LADY ELA",
-          "to": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "CARELIE",
-          "current_ship_eta_rueb": "2026-05-28 19:15",
-          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
           "availability_kind": "merged_eta"
         },
         {
@@ -997,7 +790,7 @@
       ],
       "ship": {
         "meldung": {
-          "nr": "2",
+          "nr": "1",
           "time": "Thu May 28 22:15:00 CEST 2026",
           "draft": "8.7",
           "q_gruppe": "2",
@@ -1043,7 +836,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 9,
+      "candidate_count": 10,
       "candidates": [
         {
           "pilot_name": "Demant, Tom",
@@ -1055,6 +848,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "EMS LEADER",
           "current_ship_eta_rueb": "2026-05-28 16:40",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Richter, Ingmar",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 15,
+          "abteilungszeit": "2026-05-28 13:35",
+          "fahrzeug": "CARELIE",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "CARELIE",
+          "current_ship_eta_rueb": "2026-05-28 19:15",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1165,7 +971,7 @@
       ],
       "ship": {
         "meldung": {
-          "nr": "3",
+          "nr": "2",
           "time": "Thu May 28 23:30:00 CEST 2026",
           "draft": "4.0",
           "q_gruppe": "5",
@@ -1187,6 +993,28 @@
   ],
   "unassigned_ships": [],
   "unused_pilots": [
+    {
+      "pilot_key": "richter_ingmar",
+      "vorname": "Ingmar",
+      "nachname": "Richter",
+      "pilot_name": "Richter, Ingmar",
+      "abteilungszeit": "2026-05-28 13:35",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 15,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "CARELIE",
+      "from": "RÜB",
+      "to": "HOS",
+      "nr": 15,
+      "raw_time": "Thu May 28 13:35:00 CEST 2026",
+      "current_ship_name": "CARELIE",
+      "current_ship_eta_rueb": "2026-05-28 19:15",
+      "current_ship_q": 4,
+      "current_ship_route": "RÜB → HOS",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
     {
       "pilot_key": "steinbach_daniel",
       "vorname": "Daniel",
