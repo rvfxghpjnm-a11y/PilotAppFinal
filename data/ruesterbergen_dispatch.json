@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-28T10:39:08",
+  "generated_at": "2026-05-28T10:41:09",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,15 +32,54 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 0,
+    "ships_for_ruesterbergen": 1,
     "pilots_total": 13,
     "pilots_dispatchable": 11,
     "pilots_visible_only": 2,
-    "assignments": 0,
+    "assignments": 1,
     "unassigned_ships": 0,
-    "unused_pilots": 11
+    "unused_pilots": 10
   },
-  "ships": [],
+  "ships": [
+    {
+      "ship_key": "BRAVEWIND",
+      "ship_name": "BRAVEWIND",
+      "eta_rueb": "2026-05-28 14:43",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 0,
+      "meldung": {
+        "nr": "1",
+        "time": "Thu May 28 15:30:00 CEST 2026",
+        "draft": "4.9",
+        "q_gruppe": "0",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "0",
+        "vg": "6",
+        "draft": "4.90",
+        "length_m": "148.43",
+        "beam_m": "28.03",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "U",
+        "pilot_1_name": "Zekow, Henrik",
+        "travel_status": "SAILING_NOK",
+        "makler": "UCA",
+        "dangerous_vessel": "-",
+        "type_of_loading": "Ballastfahrt"
+      }
+    }
+  ],
   "pilots": [
     {
       "pilot_key": "schran_oliver",
@@ -601,30 +640,195 @@
       "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
     }
   ],
-  "assignments": [],
+  "assignments": [
+    {
+      "ship_key": "BRAVEWIND",
+      "ship_name": "BRAVEWIND",
+      "eta_rueb": "2026-05-28 14:43",
+      "ship_q": 0,
+      "assigned_pilot": "Schran, Oliver",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 16,
+      "assigned_abteilungszeit": "2026-05-28 04:27",
+      "assigned_current_ship_name": "RÜB",
+      "assigned_current_ship_eta_rueb": "2026-05-28 04:27",
+      "assigned_current_ship_source": "special.already_in_rueb",
+      "assigned_availability_kind": "already_in_rueb",
+      "assigned_availability_hint": "Lotse gilt als bereits in RÜB",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 9,
+      "candidates": [
+        {
+          "pilot_name": "Schran, Oliver",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 16,
+          "abteilungszeit": "2026-05-28 04:27",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-28 04:27",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
+        },
+        {
+          "pilot_name": "Wille, Christian",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 15,
+          "abteilungszeit": "2026-05-28 05:40",
+          "fahrzeug": "FRANK",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "FRANK",
+          "current_ship_eta_rueb": "2026-05-28 11:16",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Meise, Gregor",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 13,
+          "abteilungszeit": "2026-05-28 05:53",
+          "fahrzeug": "SLOMAN DISPATCHER",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "SLOMAN DISPATCHER",
+          "current_ship_eta_rueb": "2026-05-28 11:19",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Weise, Tom",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 10,
+          "abteilungszeit": "2026-05-28 06:55",
+          "fahrzeug": "BALTIC WAVE",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "BALTIC WAVE",
+          "current_ship_eta_rueb": "2026-05-28 08:30",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Kordt, Remo",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 11,
+          "abteilungszeit": "2026-05-28 06:55",
+          "fahrzeug": "JOHN AUGUSTUS ESSBER",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "JOHN AUGUSTUS ESSBER",
+          "current_ship_eta_rueb": "2026-05-28 08:27",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Schulz, Arne",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 12,
+          "abteilungszeit": "2026-05-28 06:55",
+          "fahrzeug": "LADY MENNA",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "LADY MENNA",
+          "current_ship_eta_rueb": "2026-05-28 08:24",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Bachholz, Carsten",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 7,
+          "abteilungszeit": "2026-05-28 08:40",
+          "fahrzeug": "CORAL IVORY",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "CORAL IVORY",
+          "current_ship_eta_rueb": "2026-05-28 13:17",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Otten, Janning",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 6,
+          "abteilungszeit": "2026-05-28 08:41",
+          "fahrzeug": "HELENE JULIE",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "HELENE JULIE",
+          "current_ship_eta_rueb": "2026-05-28 13:36",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Arndt, Michael",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 5,
+          "abteilungszeit": "2026-05-28 08:46",
+          "fahrzeug": "IDA RAMBOW",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "IDA RAMBOW",
+          "current_ship_eta_rueb": "2026-05-28 13:43",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Groen, Nickolaj",
+          "pilot_tactical_nr": 14,
+          "reason": "Quali passt nicht (4 > 0)",
+          "pilot_q": 4,
+          "ship_q": 0
+        },
+        {
+          "pilot_name": "Engel, Alexander",
+          "pilot_tactical_nr": 8,
+          "reason": "Quali passt nicht (3 > 0)",
+          "pilot_q": 3,
+          "ship_q": 0
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "1",
+          "time": "Thu May 28 15:30:00 CEST 2026",
+          "draft": "4.9",
+          "q_gruppe": "0",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "HOS → KLT",
+          "routes": [
+            "HOS → KLT",
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "0",
+          "vg": "6",
+          "draft": "4.90",
+          "length_m": "148.43",
+          "beam_m": "28.03",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "U",
+          "pilot_1_name": "Zekow, Henrik",
+          "travel_status": "SAILING_NOK",
+          "makler": "UCA",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Ballastfahrt"
+        }
+      }
+    }
+  ],
   "unassigned_ships": [],
   "unused_pilots": [
-    {
-      "pilot_key": "schran_oliver",
-      "vorname": "Oliver",
-      "nachname": "Schran",
-      "pilot_name": "Schran, Oliver",
-      "abteilungszeit": "2026-05-28 04:27",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 16,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "RÜB",
-      "nr": 16,
-      "raw_time": "Thu May 28 04:27:00 CEST 2026",
-      "current_ship_name": "RÜB",
-      "current_ship_eta_rueb": "2026-05-28 04:27",
-      "current_ship_q": 0,
-      "current_ship_route": "RÜB",
-      "current_ship_source": "special.already_in_rueb",
-      "availability_kind": "already_in_rueb",
-      "availability_hint": "Lotse gilt als bereits in RÜB"
-    },
     {
       "pilot_key": "wille_christian",
       "vorname": "Christian",
