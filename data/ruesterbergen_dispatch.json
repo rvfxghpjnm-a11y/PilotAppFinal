@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-29T14:43:11",
+  "generated_at": "2026-05-29T14:45:13",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,53 +32,15 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 3,
+    "ships_for_ruesterbergen": 2,
     "pilots_total": 10,
     "pilots_dispatchable": 8,
     "pilots_visible_only": 2,
-    "assignments": 3,
+    "assignments": 2,
     "unassigned_ships": 0,
-    "unused_pilots": 5
+    "unused_pilots": 6
   },
   "ships": [
-    {
-      "ship_key": "SVENJA",
-      "ship_name": "SVENJA",
-      "eta_rueb": "2026-05-29 15:11",
-      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
-      "ship_q": 0,
-      "meldung": {
-        "nr": "1",
-        "time": "Fri May 29 15:03:00 CEST 2026",
-        "draft": "7.4",
-        "q_gruppe": "0",
-        "lotsen_anzahl": 1,
-        "confirmed": false,
-        "from": "RÜB",
-        "to": "HOS"
-      },
-      "summary": {
-        "route": "HOS → KLT",
-        "routes": [
-          "HOS → KLT",
-          "RÜB → HOS"
-        ],
-        "q_gruppe": "0",
-        "vg": "5",
-        "draft": "7.40",
-        "length_m": "160.50",
-        "beam_m": "27.800",
-        "queue_title": "Zulauf vom Kanal in Kiel",
-        "zulauf_richtung": "vom_kanal",
-        "pilot_required": "true",
-        "pilot_status": "U",
-        "pilot_1_name": "Flink, Jörg",
-        "travel_status": "SAILING_NOK",
-        "makler": "SUB",
-        "dangerous_vessel": "-",
-        "type_of_loading": "Ballastfahrt"
-      }
-    },
     {
       "ship_key": "LARIXBORG",
       "ship_name": "LARIXBORG",
@@ -86,7 +48,7 @@
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
-        "nr": "2",
+        "nr": "1",
         "time": "Fri May 29 18:50:00 CEST 2026",
         "draft": "5.3",
         "q_gruppe": "5",
@@ -123,7 +85,7 @@
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 1,
       "meldung": {
-        "nr": "3",
+        "nr": "2",
         "time": "Fri May 29 19:50:00 CEST 2026",
         "draft": "9.1",
         "q_gruppe": "1",
@@ -255,14 +217,16 @@
       "q_source": "q_gruppen_lotsen.entries",
       "pilot_tactical_nr": 9,
       "aufgabe": "Kanalbört",
-      "fahrzeug": "RÜB",
+      "fahrzeug": "SVENJA",
+      "from": "RÜB",
+      "to": "HOS",
       "nr": 9,
       "raw_time": "Fri May 29 08:54:00 CEST 2026",
       "current_ship_name": "SVENJA",
       "current_ship_eta_rueb": "2026-05-29 15:11",
       "current_ship_q": 0,
-      "current_ship_route": "HOS → KLT",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_route": "RÜB → HOS",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
@@ -473,14 +437,16 @@
       "q_source": "q_gruppen_lotsen.entries",
       "pilot_tactical_nr": 9,
       "aufgabe": "Kanalbört",
-      "fahrzeug": "RÜB",
+      "fahrzeug": "SVENJA",
+      "from": "RÜB",
+      "to": "HOS",
       "nr": 9,
       "raw_time": "Fri May 29 08:54:00 CEST 2026",
       "current_ship_name": "SVENJA",
       "current_ship_eta_rueb": "2026-05-29 15:11",
       "current_ship_q": 0,
-      "current_ship_route": "HOS → KLT",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_route": "RÜB → HOS",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
@@ -584,10 +550,164 @@
   ],
   "assignments": [
     {
-      "ship_key": "SVENJA",
-      "ship_name": "SVENJA",
-      "eta_rueb": "2026-05-29 15:11",
-      "ship_q": 0,
+      "ship_key": "LARIXBORG",
+      "ship_name": "LARIXBORG",
+      "eta_rueb": "2026-05-29 18:28",
+      "ship_q": 5,
+      "assigned_pilot": "Lehwald, Christian",
+      "assigned_pilot_q": 4,
+      "assigned_tactical_nr": 18,
+      "assigned_abteilungszeit": "2026-05-29 03:18",
+      "assigned_current_ship_name": "SAGASBANK",
+      "assigned_current_ship_eta_rueb": "2026-05-29 11:39",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 8,
+      "candidates": [
+        {
+          "pilot_name": "Lehwald, Christian",
+          "pilot_q": 4,
+          "pilot_tactical_nr": 18,
+          "abteilungszeit": "2026-05-29 03:18",
+          "fahrzeug": "SAGASBANK",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "SAGASBANK",
+          "current_ship_eta_rueb": "2026-05-29 11:39",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Thomsen, Gunnar",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 17,
+          "abteilungszeit": "2026-05-29 05:36",
+          "fahrzeug": "NORDICA",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "NORDICA",
+          "current_ship_eta_rueb": "2026-05-29 11:53",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Föhring, Nils",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 16,
+          "abteilungszeit": "2026-05-29 05:43",
+          "fahrzeug": "ELBSUN",
+          "to": "UTG",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ELBSUN",
+          "current_ship_eta_rueb": "2026-05-29 11:59",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Zozulya, Mykola",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 10,
+          "abteilungszeit": "2026-05-29 08:45",
+          "fahrzeug": "AGATH",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "AGATH",
+          "current_ship_eta_rueb": "2026-05-29 15:07",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Flink, Jörg",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 9,
+          "abteilungszeit": "2026-05-29 08:54",
+          "fahrzeug": "SVENJA",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "SVENJA",
+          "current_ship_eta_rueb": "2026-05-29 15:11",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Jeschek, Hauke",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 5,
+          "abteilungszeit": "2026-05-29 11:00",
+          "fahrzeug": "CORAL IVORY",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "CORAL IVORY",
+          "current_ship_eta_rueb": "2026-05-29 12:09",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Dietrich, Thomas",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 4,
+          "abteilungszeit": "2026-05-29 11:03",
+          "fahrzeug": "PATRIA",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "PATRIA",
+          "current_ship_eta_rueb": "2026-05-29 17:01",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Janson, Sven",
+          "pilot_q": 4,
+          "pilot_tactical_nr": 3,
+          "abteilungszeit": "2026-05-29 11:20",
+          "fahrzeug": "TRAVIATA",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "TRAVIATA",
+          "current_ship_eta_rueb": "2026-05-29 17:05",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "1",
+          "time": "Fri May 29 18:50:00 CEST 2026",
+          "draft": "5.3",
+          "q_gruppe": "5",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "RÜB → HOS",
+          "routes": [
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "5",
+          "vg": "3",
+          "draft": "5.30",
+          "length_m": "82.5",
+          "beam_m": "12.5",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "H",
+          "pilot_1_name": "Eghdami, Mohammad",
+          "travel_status": "SAILING_NOK",
+          "makler": "UCA",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Bulk"
+        }
+      }
+    },
+    {
+      "ship_key": "HARBOUR EXPRESS",
+      "ship_name": "HARBOUR EXPRESS",
+      "eta_rueb": "2026-05-29 19:41",
+      "ship_q": 1,
       "assigned_pilot": "Thomsen, Gunnar",
       "assigned_pilot_q": 0,
       "assigned_tactical_nr": 17,
@@ -597,7 +717,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 5,
+      "candidate_count": 6,
       "candidates": [
         {
           "pilot_name": "Thomsen, Gunnar",
@@ -643,280 +763,12 @@
           "pilot_q": 0,
           "pilot_tactical_nr": 9,
           "abteilungszeit": "2026-05-29 08:54",
-          "fahrzeug": "RÜB",
+          "fahrzeug": "SVENJA",
+          "to": "HOS",
           "aufgabe": "Kanalbört",
           "current_ship_name": "SVENJA",
           "current_ship_eta_rueb": "2026-05-29 15:11",
-          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Jeschek, Hauke",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 5,
-          "abteilungszeit": "2026-05-29 11:00",
-          "fahrzeug": "CORAL IVORY",
-          "to": "HOS",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "CORAL IVORY",
-          "current_ship_eta_rueb": "2026-05-29 12:09",
           "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        }
-      ],
-      "excluded": [
-        {
-          "pilot_name": "Lehwald, Christian",
-          "pilot_tactical_nr": 18,
-          "reason": "Quali passt nicht (4 > 0)",
-          "pilot_q": 4,
-          "ship_q": 0
-        },
-        {
-          "pilot_name": "Dietrich, Thomas",
-          "pilot_tactical_nr": 4,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "PATRIA",
-          "pilot_current_ship_eta_rueb": "2026-05-29 17:01",
-          "ship_eta_rueb": "2026-05-29 15:11",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Janson, Sven",
-          "pilot_tactical_nr": 3,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "TRAVIATA",
-          "pilot_current_ship_eta_rueb": "2026-05-29 17:05",
-          "ship_eta_rueb": "2026-05-29 15:11",
-          "availability_kind": "merged_eta"
-        }
-      ],
-      "ship": {
-        "meldung": {
-          "nr": "1",
-          "time": "Fri May 29 15:03:00 CEST 2026",
-          "draft": "7.4",
-          "q_gruppe": "0",
-          "lotsen_anzahl": 1,
-          "confirmed": false,
-          "from": "RÜB",
-          "to": "HOS"
-        },
-        "summary": {
-          "route": "HOS → KLT",
-          "routes": [
-            "HOS → KLT",
-            "RÜB → HOS"
-          ],
-          "q_gruppe": "0",
-          "vg": "5",
-          "draft": "7.40",
-          "length_m": "160.50",
-          "beam_m": "27.800",
-          "queue_title": "Zulauf vom Kanal in Kiel",
-          "zulauf_richtung": "vom_kanal",
-          "pilot_required": "true",
-          "pilot_status": "U",
-          "pilot_1_name": "Flink, Jörg",
-          "travel_status": "SAILING_NOK",
-          "makler": "SUB",
-          "dangerous_vessel": "-",
-          "type_of_loading": "Ballastfahrt"
-        }
-      }
-    },
-    {
-      "ship_key": "LARIXBORG",
-      "ship_name": "LARIXBORG",
-      "eta_rueb": "2026-05-29 18:28",
-      "ship_q": 5,
-      "assigned_pilot": "Lehwald, Christian",
-      "assigned_pilot_q": 4,
-      "assigned_tactical_nr": 18,
-      "assigned_abteilungszeit": "2026-05-29 03:18",
-      "assigned_current_ship_name": "SAGASBANK",
-      "assigned_current_ship_eta_rueb": "2026-05-29 11:39",
-      "assigned_current_ship_source": "schiffe_merged.seelotsen",
-      "assigned_availability_kind": "merged_eta",
-      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 7,
-      "candidates": [
-        {
-          "pilot_name": "Lehwald, Christian",
-          "pilot_q": 4,
-          "pilot_tactical_nr": 18,
-          "abteilungszeit": "2026-05-29 03:18",
-          "fahrzeug": "SAGASBANK",
-          "to": "HOS",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "SAGASBANK",
-          "current_ship_eta_rueb": "2026-05-29 11:39",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Föhring, Nils",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 16,
-          "abteilungszeit": "2026-05-29 05:43",
-          "fahrzeug": "ELBSUN",
-          "to": "UTG",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "ELBSUN",
-          "current_ship_eta_rueb": "2026-05-29 11:59",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Zozulya, Mykola",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 10,
-          "abteilungszeit": "2026-05-29 08:45",
-          "fahrzeug": "AGATH",
-          "to": "HOS",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "AGATH",
-          "current_ship_eta_rueb": "2026-05-29 15:07",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Flink, Jörg",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 9,
-          "abteilungszeit": "2026-05-29 08:54",
-          "fahrzeug": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "SVENJA",
-          "current_ship_eta_rueb": "2026-05-29 15:11",
-          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Jeschek, Hauke",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 5,
-          "abteilungszeit": "2026-05-29 11:00",
-          "fahrzeug": "CORAL IVORY",
-          "to": "HOS",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "CORAL IVORY",
-          "current_ship_eta_rueb": "2026-05-29 12:09",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Dietrich, Thomas",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 4,
-          "abteilungszeit": "2026-05-29 11:03",
-          "fahrzeug": "PATRIA",
-          "to": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "PATRIA",
-          "current_ship_eta_rueb": "2026-05-29 17:01",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Janson, Sven",
-          "pilot_q": 4,
-          "pilot_tactical_nr": 3,
-          "abteilungszeit": "2026-05-29 11:20",
-          "fahrzeug": "TRAVIATA",
-          "to": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "TRAVIATA",
-          "current_ship_eta_rueb": "2026-05-29 17:05",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        }
-      ],
-      "ship": {
-        "meldung": {
-          "nr": "2",
-          "time": "Fri May 29 18:50:00 CEST 2026",
-          "draft": "5.3",
-          "q_gruppe": "5",
-          "lotsen_anzahl": 1,
-          "confirmed": false,
-          "from": "RÜB",
-          "to": "HOS"
-        },
-        "summary": {
-          "route": "RÜB → HOS",
-          "routes": [
-            "RÜB → HOS"
-          ],
-          "q_gruppe": "5",
-          "vg": "3",
-          "draft": "5.30",
-          "length_m": "82.5",
-          "beam_m": "12.5",
-          "queue_title": "Zulauf vom Kanal in Kiel",
-          "zulauf_richtung": "vom_kanal",
-          "pilot_required": "true",
-          "pilot_status": "H",
-          "pilot_1_name": "Eghdami, Mohammad",
-          "travel_status": "SAILING_NOK",
-          "makler": "UCA",
-          "dangerous_vessel": "-",
-          "type_of_loading": "Bulk"
-        }
-      }
-    },
-    {
-      "ship_key": "HARBOUR EXPRESS",
-      "ship_name": "HARBOUR EXPRESS",
-      "eta_rueb": "2026-05-29 19:41",
-      "ship_q": 1,
-      "assigned_pilot": "Föhring, Nils",
-      "assigned_pilot_q": 0,
-      "assigned_tactical_nr": 16,
-      "assigned_abteilungszeit": "2026-05-29 05:43",
-      "assigned_current_ship_name": "ELBSUN",
-      "assigned_current_ship_eta_rueb": "2026-05-29 11:59",
-      "assigned_current_ship_source": "schiffe_merged.seelotsen",
-      "assigned_availability_kind": "merged_eta",
-      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 5,
-      "candidates": [
-        {
-          "pilot_name": "Föhring, Nils",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 16,
-          "abteilungszeit": "2026-05-29 05:43",
-          "fahrzeug": "ELBSUN",
-          "to": "UTG",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "ELBSUN",
-          "current_ship_eta_rueb": "2026-05-29 11:59",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Zozulya, Mykola",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 10,
-          "abteilungszeit": "2026-05-29 08:45",
-          "fahrzeug": "AGATH",
-          "to": "HOS",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "AGATH",
-          "current_ship_eta_rueb": "2026-05-29 15:07",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Flink, Jörg",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 9,
-          "abteilungszeit": "2026-05-29 08:54",
-          "fahrzeug": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "SVENJA",
-          "current_ship_eta_rueb": "2026-05-29 15:11",
-          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
           "availability_kind": "merged_eta"
         },
         {
@@ -957,7 +809,7 @@
       ],
       "ship": {
         "meldung": {
-          "nr": "3",
+          "nr": "2",
           "time": "Fri May 29 19:50:00 CEST 2026",
           "draft": "9.1",
           "q_gruppe": "1",
@@ -994,6 +846,28 @@
   "unassigned_ships": [],
   "unused_pilots": [
     {
+      "pilot_key": "föhring_nils",
+      "vorname": "Nils",
+      "nachname": "Föhring",
+      "pilot_name": "Föhring, Nils",
+      "abteilungszeit": "2026-05-29 05:43",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 16,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "ELBSUN",
+      "from": "RÜB",
+      "to": "UTG",
+      "nr": 16,
+      "raw_time": "Fri May 29 05:43:00 CEST 2026",
+      "current_ship_name": "ELBSUN",
+      "current_ship_eta_rueb": "2026-05-29 11:59",
+      "current_ship_q": 1,
+      "current_ship_route": "RÜB → UTG",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
       "pilot_key": "zozulya_mykola",
       "vorname": "Mykola",
       "nachname": "Zozulya",
@@ -1025,14 +899,16 @@
       "q_source": "q_gruppen_lotsen.entries",
       "pilot_tactical_nr": 9,
       "aufgabe": "Kanalbört",
-      "fahrzeug": "RÜB",
+      "fahrzeug": "SVENJA",
+      "from": "RÜB",
+      "to": "HOS",
       "nr": 9,
       "raw_time": "Fri May 29 08:54:00 CEST 2026",
       "current_ship_name": "SVENJA",
       "current_ship_eta_rueb": "2026-05-29 15:11",
       "current_ship_q": 0,
-      "current_ship_route": "HOS → KLT",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_route": "RÜB → HOS",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
