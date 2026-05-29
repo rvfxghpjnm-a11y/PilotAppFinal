@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-29T02:21:13",
+  "generated_at": "2026-05-29T02:23:15",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 5,
     "pilots_total": 10,
-    "pilots_dispatchable": 9,
-    "pilots_visible_only": 1,
+    "pilots_dispatchable": 10,
+    "pilots_visible_only": 0,
     "assignments": 5,
     "unassigned_ships": 0,
-    "unused_pilots": 4
+    "unused_pilots": 5
   },
   "ships": [
     {
@@ -425,9 +425,10 @@
       "nr": 4,
       "raw_time": "Fri May 29 00:57:00 CEST 2026",
       "current_ship_name": "EDITH",
+      "current_ship_eta_rueb": "2026-05-29 05:59",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
@@ -631,6 +632,28 @@
       "availability_kind": "merged_eta"
     },
     {
+      "pilot_key": "krause_malte",
+      "vorname": "Malte",
+      "nachname": "Krause",
+      "pilot_name": "Krause, Malte",
+      "abteilungszeit": "2026-05-29 00:57",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 4,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "EDITH",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 4,
+      "raw_time": "Fri May 29 00:57:00 CEST 2026",
+      "current_ship_name": "EDITH",
+      "current_ship_eta_rueb": "2026-05-29 05:59",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
       "pilot_key": "hüpers_peter",
       "vorname": "Peter",
       "nachname": "Hüpers",
@@ -653,23 +676,7 @@
       "availability_kind": "merged_eta"
     }
   ],
-  "visible_but_not_dispatchable_pilots": [
-    {
-      "pilot_key": "krause_malte",
-      "pilot_name": "Krause, Malte",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 4,
-      "abteilungszeit": "2026-05-29 00:57",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "EDITH",
-      "from": "HOS",
-      "to": "RÜB",
-      "current_ship_name": "EDITH",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    }
-  ],
+  "visible_but_not_dispatchable_pilots": [],
   "assignments": [
     {
       "ship_key": "BALTIC SAIL",
@@ -791,6 +798,15 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "LUNA-B",
           "pilot_current_ship_eta_rueb": "2026-05-29 05:52",
+          "ship_eta_rueb": "2026-05-29 03:46",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Krause, Malte",
+          "pilot_tactical_nr": 4,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "EDITH",
+          "pilot_current_ship_eta_rueb": "2026-05-29 05:59",
           "ship_eta_rueb": "2026-05-29 03:46",
           "availability_kind": "merged_eta"
         }
@@ -938,6 +954,15 @@
           "pilot_current_ship_eta_rueb": "2026-05-29 05:52",
           "ship_eta_rueb": "2026-05-29 03:57",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Krause, Malte",
+          "pilot_tactical_nr": 4,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "EDITH",
+          "pilot_current_ship_eta_rueb": "2026-05-29 05:59",
+          "ship_eta_rueb": "2026-05-29 03:57",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -988,7 +1013,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 7,
+      "candidate_count": 8,
       "candidates": [
         {
           "pilot_name": "Zimmermann, Martin",
@@ -1069,6 +1094,19 @@
           "availability_kind": "merged_eta"
         },
         {
+          "pilot_name": "Krause, Malte",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 4,
+          "abteilungszeit": "2026-05-29 00:57",
+          "fahrzeug": "EDITH",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "EDITH",
+          "current_ship_eta_rueb": "2026-05-29 05:59",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
           "pilot_name": "Hüpers, Peter",
           "pilot_q": 0,
           "pilot_tactical_nr": 1,
@@ -1130,7 +1168,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 6,
+      "candidate_count": 7,
       "candidates": [
         {
           "pilot_name": "Skawianczyk, Artur",
@@ -1198,6 +1236,19 @@
           "availability_kind": "merged_eta"
         },
         {
+          "pilot_name": "Krause, Malte",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 4,
+          "abteilungszeit": "2026-05-29 00:57",
+          "fahrzeug": "EDITH",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "EDITH",
+          "current_ship_eta_rueb": "2026-05-29 05:59",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
           "pilot_name": "Hüpers, Peter",
           "pilot_q": 0,
           "pilot_tactical_nr": 1,
@@ -1259,7 +1310,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 5,
+      "candidate_count": 6,
       "candidates": [
         {
           "pilot_name": "Köhler, Olaf",
@@ -1311,6 +1362,19 @@
           "current_ship_name": "LUNA-B",
           "current_ship_eta_rueb": "2026-05-29 05:52",
           "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Krause, Malte",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 4,
+          "abteilungszeit": "2026-05-29 00:57",
+          "fahrzeug": "EDITH",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "EDITH",
+          "current_ship_eta_rueb": "2026-05-29 05:59",
+          "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
         {
@@ -1428,6 +1492,28 @@
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "krause_malte",
+      "vorname": "Malte",
+      "nachname": "Krause",
+      "pilot_name": "Krause, Malte",
+      "abteilungszeit": "2026-05-29 00:57",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 4,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "EDITH",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 4,
+      "raw_time": "Fri May 29 00:57:00 CEST 2026",
+      "current_ship_name": "EDITH",
+      "current_ship_eta_rueb": "2026-05-29 05:59",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
