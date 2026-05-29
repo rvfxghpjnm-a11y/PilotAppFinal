@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-29T15:59:14",
+  "generated_at": "2026-05-29T16:01:11",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,13 +32,13 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 2,
+    "ships_for_ruesterbergen": 4,
     "pilots_total": 6,
     "pilots_dispatchable": 6,
     "pilots_visible_only": 0,
-    "assignments": 2,
+    "assignments": 4,
     "unassigned_ships": 0,
-    "unused_pilots": 4
+    "unused_pilots": 2
   },
   "ships": [
     {
@@ -115,6 +115,82 @@
         "makler": "SUB",
         "dangerous_vessel": "-",
         "type_of_loading": "Chemikalien fluessig"
+      }
+    },
+    {
+      "ship_key": "THETIS A785",
+      "ship_name": "THETIS A785",
+      "eta_rueb": "2026-05-29 20:30",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 5,
+      "meldung": {
+        "nr": "3",
+        "time": "Fri May 29 20:30:00 CEST 2026",
+        "draft": "4.0",
+        "q_gruppe": "5",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "5",
+        "vg": "3",
+        "draft": "4.00",
+        "length_m": "59",
+        "beam_m": "10.9",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "U",
+        "pilot_1_name": "Laufenberg, Ralf",
+        "travel_status": "SAILING_NOK",
+        "makler": "UCA",
+        "dangerous_vessel": "-",
+        "type_of_loading": "Ballast"
+      }
+    },
+    {
+      "ship_key": "MINKA C",
+      "ship_name": "MINKA C",
+      "eta_rueb": "2026-05-29 21:37",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 5,
+      "meldung": {
+        "nr": "4",
+        "time": "Fri May 29 21:30:00 CEST 2026",
+        "draft": "6.7",
+        "q_gruppe": "5",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "5",
+        "vg": "4",
+        "draft": "6.70",
+        "length_m": "99.600",
+        "beam_m": "14.50",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "U",
+        "pilot_1_name": "Boßelmann, Tobias",
+        "travel_status": "SAILING_NOK",
+        "makler": "UCA",
+        "dangerous_vessel": "-",
+        "type_of_loading": "Bulk"
       }
     }
   ],
@@ -201,7 +277,7 @@
       "nr": 4,
       "raw_time": "Fri May 29 11:20:00 CEST 2026",
       "current_ship_name": "TRAVIATA",
-      "current_ship_eta_rueb": "2026-05-29 17:05",
+      "current_ship_eta_rueb": "2026-05-29 17:06",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -335,7 +411,7 @@
       "nr": 4,
       "raw_time": "Fri May 29 11:20:00 CEST 2026",
       "current_ship_name": "TRAVIATA",
-      "current_ship_eta_rueb": "2026-05-29 17:05",
+      "current_ship_eta_rueb": "2026-05-29 17:06",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -452,7 +528,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "TRAVIATA",
-          "current_ship_eta_rueb": "2026-05-29 17:05",
+          "current_ship_eta_rueb": "2026-05-29 17:06",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
@@ -614,54 +690,203 @@
           "type_of_loading": "Chemikalien fluessig"
         }
       }
+    },
+    {
+      "ship_key": "THETIS A785",
+      "ship_name": "THETIS A785",
+      "eta_rueb": "2026-05-29 20:30",
+      "ship_q": 5,
+      "assigned_pilot": "Dietrich, Thomas",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 5,
+      "assigned_abteilungszeit": "2026-05-29 11:03",
+      "assigned_current_ship_name": "PATRIA",
+      "assigned_current_ship_eta_rueb": "2026-05-29 17:02",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 4,
+      "candidates": [
+        {
+          "pilot_name": "Dietrich, Thomas",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 5,
+          "abteilungszeit": "2026-05-29 11:03",
+          "fahrzeug": "PATRIA",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "PATRIA",
+          "current_ship_eta_rueb": "2026-05-29 17:02",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Janson, Sven",
+          "pilot_q": 4,
+          "pilot_tactical_nr": 4,
+          "abteilungszeit": "2026-05-29 11:20",
+          "fahrzeug": "TRAVIATA",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "TRAVIATA",
+          "current_ship_eta_rueb": "2026-05-29 17:06",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Thiel, Thomas",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 3,
+          "abteilungszeit": "2026-05-29 14:11",
+          "fahrzeug": "NORRLAND",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "NORRLAND",
+          "current_ship_eta_rueb": "2026-05-29 19:51",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Kahler, Volker",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-05-29 14:38",
+          "fahrzeug": "STEENBANK",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "STEENBANK",
+          "current_ship_eta_rueb": "2026-05-29 19:48",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "3",
+          "time": "Fri May 29 20:30:00 CEST 2026",
+          "draft": "4.0",
+          "q_gruppe": "5",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "HOS → KLT",
+          "routes": [
+            "HOS → KLT",
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "5",
+          "vg": "3",
+          "draft": "4.00",
+          "length_m": "59",
+          "beam_m": "10.9",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "U",
+          "pilot_1_name": "Laufenberg, Ralf",
+          "travel_status": "SAILING_NOK",
+          "makler": "UCA",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Ballast"
+        }
+      }
+    },
+    {
+      "ship_key": "MINKA C",
+      "ship_name": "MINKA C",
+      "eta_rueb": "2026-05-29 21:37",
+      "ship_q": 5,
+      "assigned_pilot": "Janson, Sven",
+      "assigned_pilot_q": 4,
+      "assigned_tactical_nr": 4,
+      "assigned_abteilungszeit": "2026-05-29 11:20",
+      "assigned_current_ship_name": "TRAVIATA",
+      "assigned_current_ship_eta_rueb": "2026-05-29 17:06",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 3,
+      "candidates": [
+        {
+          "pilot_name": "Janson, Sven",
+          "pilot_q": 4,
+          "pilot_tactical_nr": 4,
+          "abteilungszeit": "2026-05-29 11:20",
+          "fahrzeug": "TRAVIATA",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "TRAVIATA",
+          "current_ship_eta_rueb": "2026-05-29 17:06",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Thiel, Thomas",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 3,
+          "abteilungszeit": "2026-05-29 14:11",
+          "fahrzeug": "NORRLAND",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "NORRLAND",
+          "current_ship_eta_rueb": "2026-05-29 19:51",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Kahler, Volker",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-05-29 14:38",
+          "fahrzeug": "STEENBANK",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "STEENBANK",
+          "current_ship_eta_rueb": "2026-05-29 19:48",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "4",
+          "time": "Fri May 29 21:30:00 CEST 2026",
+          "draft": "6.7",
+          "q_gruppe": "5",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "HOS → KLT",
+          "routes": [
+            "HOS → KLT",
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "5",
+          "vg": "4",
+          "draft": "6.70",
+          "length_m": "99.600",
+          "beam_m": "14.50",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "U",
+          "pilot_1_name": "Boßelmann, Tobias",
+          "travel_status": "SAILING_NOK",
+          "makler": "UCA",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Bulk"
+        }
+      }
     }
   ],
   "unassigned_ships": [],
   "unused_pilots": [
-    {
-      "pilot_key": "dietrich_thomas",
-      "vorname": "Thomas",
-      "nachname": "Dietrich",
-      "pilot_name": "Dietrich, Thomas",
-      "abteilungszeit": "2026-05-29 11:03",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 5,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "PATRIA",
-      "from": "HOR",
-      "to": "RÜB",
-      "nr": 5,
-      "raw_time": "Fri May 29 11:03:00 CEST 2026",
-      "current_ship_name": "PATRIA",
-      "current_ship_eta_rueb": "2026-05-29 17:02",
-      "current_ship_q": 0,
-      "current_ship_route": "HOR → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
-    },
-    {
-      "pilot_key": "janson_sven",
-      "vorname": "Sven",
-      "nachname": "Janson",
-      "pilot_name": "Janson, Sven",
-      "abteilungszeit": "2026-05-29 11:20",
-      "pilot_q": 4,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 4,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "TRAVIATA",
-      "from": "HOS",
-      "to": "RÜB",
-      "nr": 4,
-      "raw_time": "Fri May 29 11:20:00 CEST 2026",
-      "current_ship_name": "TRAVIATA",
-      "current_ship_eta_rueb": "2026-05-29 17:05",
-      "current_ship_q": 0,
-      "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
-    },
     {
       "pilot_key": "thiel_thomas",
       "vorname": "Thomas",
