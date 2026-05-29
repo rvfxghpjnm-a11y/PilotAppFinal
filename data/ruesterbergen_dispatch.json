@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-29T08:17:12",
+  "generated_at": "2026-05-29T08:19:17",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,13 +32,13 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 6,
+    "ships_for_ruesterbergen": 7,
     "pilots_total": 9,
     "pilots_dispatchable": 9,
     "pilots_visible_only": 0,
-    "assignments": 6,
+    "assignments": 7,
     "unassigned_ships": 0,
-    "unused_pilots": 3
+    "unused_pilots": 2
   },
   "ships": [
     {
@@ -157,7 +157,7 @@
     {
       "ship_key": "SAGASBANK",
       "ship_name": "SAGASBANK",
-      "eta_rueb": "2026-05-29 11:47",
+      "eta_rueb": "2026-05-29 11:46",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
@@ -200,7 +200,7 @@
       "ship_q": 1,
       "meldung": {
         "nr": "5",
-        "time": "Fri May 29 11:45:00 CEST 2026",
+        "time": "Fri May 29 11:50:00 CEST 2026",
         "draft": "7.6",
         "q_gruppe": "1",
         "lotsen_anzahl": 1,
@@ -238,7 +238,7 @@
       "ship_q": 1,
       "meldung": {
         "nr": "6",
-        "time": "Fri May 29 11:50:00 CEST 2026",
+        "time": "Fri May 29 11:55:00 CEST 2026",
         "draft": "8.5",
         "q_gruppe": "1",
         "lotsen_anzahl": 1,
@@ -266,6 +266,44 @@
         "makler": "UCA",
         "dangerous_vessel": "-",
         "type_of_loading": "Container"
+      }
+    },
+    {
+      "ship_key": "CORAL IVORY",
+      "ship_name": "CORAL IVORY",
+      "eta_rueb": "2026-05-29 12:24",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 4,
+      "meldung": {
+        "nr": "7",
+        "time": "Fri May 29 11:59:00 CEST 2026",
+        "draft": "6.9",
+        "q_gruppe": "4",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "4",
+        "vg": "4",
+        "draft": "6.90",
+        "length_m": "115.88",
+        "beam_m": "15.98",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "U",
+        "pilot_1_name": "Möller, Christian",
+        "travel_status": "SAILING_NOK",
+        "makler": "UCA",
+        "dangerous_vessel": "-",
+        "type_of_loading": "Chemikalien fluessig"
       }
     }
   ],
@@ -1082,7 +1120,7 @@
     {
       "ship_key": "SAGASBANK",
       "ship_name": "SAGASBANK",
-      "eta_rueb": "2026-05-29 11:47",
+      "eta_rueb": "2026-05-29 11:46",
       "ship_q": 5,
       "assigned_pilot": "Krämer, Jonas",
       "assigned_pilot_q": 0,
@@ -1285,7 +1323,7 @@
       "ship": {
         "meldung": {
           "nr": "5",
-          "time": "Fri May 29 11:45:00 CEST 2026",
+          "time": "Fri May 29 11:50:00 CEST 2026",
           "draft": "7.6",
           "q_gruppe": "1",
           "lotsen_anzahl": 1,
@@ -1383,7 +1421,7 @@
       "ship": {
         "meldung": {
           "nr": "6",
-          "time": "Fri May 29 11:50:00 CEST 2026",
+          "time": "Fri May 29 11:55:00 CEST 2026",
           "draft": "8.5",
           "q_gruppe": "1",
           "lotsen_anzahl": 1,
@@ -1413,31 +1451,101 @@
           "type_of_loading": "Container"
         }
       }
+    },
+    {
+      "ship_key": "CORAL IVORY",
+      "ship_name": "CORAL IVORY",
+      "eta_rueb": "2026-05-29 12:24",
+      "ship_q": 4,
+      "assigned_pilot": "Lehwald, Christian",
+      "assigned_pilot_q": 4,
+      "assigned_tactical_nr": 9,
+      "assigned_abteilungszeit": "2026-05-29 03:18",
+      "assigned_current_ship_name": "RÜB",
+      "assigned_current_ship_eta_rueb": "2026-05-29 03:18",
+      "assigned_current_ship_source": "special.already_in_rueb",
+      "assigned_availability_kind": "already_in_rueb",
+      "assigned_availability_hint": "Lotse gilt als bereits in RÜB",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 3,
+      "candidates": [
+        {
+          "pilot_name": "Lehwald, Christian",
+          "pilot_q": 4,
+          "pilot_tactical_nr": 9,
+          "abteilungszeit": "2026-05-29 03:18",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-29 03:18",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
+        },
+        {
+          "pilot_name": "Thomsen, Gunnar",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 6,
+          "abteilungszeit": "2026-05-29 05:36",
+          "fahrzeug": "CLIO",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "CLIO",
+          "current_ship_eta_rueb": "2026-05-29 10:35",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Föhring, Nils",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 5,
+          "abteilungszeit": "2026-05-29 05:43",
+          "fahrzeug": "COE MIEKE",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "COE MIEKE",
+          "current_ship_eta_rueb": "2026-05-29 10:39",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "7",
+          "time": "Fri May 29 11:59:00 CEST 2026",
+          "draft": "6.9",
+          "q_gruppe": "4",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "HOS → KLT",
+          "routes": [
+            "HOS → KLT",
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "4",
+          "vg": "4",
+          "draft": "6.90",
+          "length_m": "115.88",
+          "beam_m": "15.98",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "U",
+          "pilot_1_name": "Möller, Christian",
+          "travel_status": "SAILING_NOK",
+          "makler": "UCA",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Chemikalien fluessig"
+        }
+      }
     }
   ],
   "unassigned_ships": [],
   "unused_pilots": [
-    {
-      "pilot_key": "lehwald_christian",
-      "vorname": "Christian",
-      "nachname": "Lehwald",
-      "pilot_name": "Lehwald, Christian",
-      "abteilungszeit": "2026-05-29 03:18",
-      "pilot_q": 4,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 9,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "RÜB",
-      "nr": 9,
-      "raw_time": "Fri May 29 03:18:00 CEST 2026",
-      "current_ship_name": "RÜB",
-      "current_ship_eta_rueb": "2026-05-29 03:18",
-      "current_ship_q": 0,
-      "current_ship_route": "RÜB",
-      "current_ship_source": "special.already_in_rueb",
-      "availability_kind": "already_in_rueb",
-      "availability_hint": "Lotse gilt als bereits in RÜB"
-    },
     {
       "pilot_key": "thomsen_gunnar",
       "vorname": "Gunnar",
