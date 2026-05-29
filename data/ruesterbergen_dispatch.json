@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-29T04:43:08",
+  "generated_at": "2026-05-29T04:45:10",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,13 +32,13 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 3,
+    "ships_for_ruesterbergen": 6,
     "pilots_total": 9,
     "pilots_dispatchable": 9,
     "pilots_visible_only": 0,
-    "assignments": 3,
+    "assignments": 6,
     "unassigned_ships": 0,
-    "unused_pilots": 6
+    "unused_pilots": 3
   },
   "ships": [
     {
@@ -153,6 +153,83 @@
         "makler": "UCA",
         "dangerous_vessel": "-",
         "type_of_loading": "Container"
+      }
+    },
+    {
+      "ship_key": "ANMIRO",
+      "ship_name": "ANMIRO",
+      "eta_rueb": "2026-05-29 09:00",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 5,
+      "meldung": {
+        "nr": "4",
+        "time": "Fri May 29 09:00:00 CEST 2026",
+        "draft": "5.3",
+        "q_gruppe": "5",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "RÜB → HOS",
+        "routes": [
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "5",
+        "draft": "5.3"
+      }
+    },
+    {
+      "ship_key": "DELFBORG",
+      "ship_name": "DELFBORG",
+      "eta_rueb": "2026-05-29 09:00",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 4,
+      "meldung": {
+        "nr": "5",
+        "time": "Fri May 29 09:00:00 CEST 2026",
+        "draft": "6.9",
+        "q_gruppe": "4",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "4",
+        "draft": "6.9"
+      }
+    },
+    {
+      "ship_key": "ELBSUMMER",
+      "ship_name": "ELBSUMMER",
+      "eta_rueb": "2026-05-29 09:00",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 1,
+      "meldung": {
+        "nr": "6",
+        "time": "Fri May 29 09:00:00 CEST 2026",
+        "draft": "7.4",
+        "q_gruppe": "1",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "1",
+        "draft": "7.4"
       }
     }
   ],
@@ -1003,76 +1080,317 @@
           "type_of_loading": "Container"
         }
       }
+    },
+    {
+      "ship_key": "ANMIRO",
+      "ship_name": "ANMIRO",
+      "eta_rueb": "2026-05-29 09:00",
+      "ship_q": 5,
+      "assigned_pilot": "Witte, Tomas",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 11,
+      "assigned_abteilungszeit": "2026-05-29 00:30",
+      "assigned_current_ship_name": "X-PRESS AGILITY",
+      "assigned_current_ship_eta_rueb": "2026-05-29 05:52",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 6,
+      "candidates": [
+        {
+          "pilot_name": "Witte, Tomas",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 11,
+          "abteilungszeit": "2026-05-29 00:30",
+          "fahrzeug": "X-PRESS AGILITY",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "X-PRESS AGILITY",
+          "current_ship_eta_rueb": "2026-05-29 05:52",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Hilpert, Jan",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 10,
+          "abteilungszeit": "2026-05-29 00:49",
+          "fahrzeug": "HAV FELLI",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "HAV FELLI",
+          "current_ship_eta_rueb": "2026-05-29 05:56",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Krämer, Jonas",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 9,
+          "abteilungszeit": "2026-05-29 00:50",
+          "fahrzeug": "LUNA B",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "LUNA-B",
+          "current_ship_eta_rueb": "2026-05-29 05:49",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Krause, Malte",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 8,
+          "abteilungszeit": "2026-05-29 00:57",
+          "fahrzeug": "EDITH",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "EDITH",
+          "current_ship_eta_rueb": "2026-05-29 06:00",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Lehwald, Christian",
+          "pilot_q": 4,
+          "pilot_tactical_nr": 3,
+          "abteilungszeit": "2026-05-29 03:18",
+          "fahrzeug": "RIX MELODY",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RIX MELODY",
+          "current_ship_eta_rueb": "2026-05-29 08:50",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Arlt, Andreas",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-05-29 03:25",
+          "fahrzeug": "EKNOE",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "EKNOE",
+          "current_ship_eta_rueb": "2026-05-29 08:53",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "4",
+          "time": "Fri May 29 09:00:00 CEST 2026",
+          "draft": "5.3",
+          "q_gruppe": "5",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "RÜB → HOS",
+          "routes": [
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "5",
+          "draft": "5.3"
+        }
+      }
+    },
+    {
+      "ship_key": "DELFBORG",
+      "ship_name": "DELFBORG",
+      "eta_rueb": "2026-05-29 09:00",
+      "ship_q": 4,
+      "assigned_pilot": "Hilpert, Jan",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 10,
+      "assigned_abteilungszeit": "2026-05-29 00:49",
+      "assigned_current_ship_name": "HAV FELLI",
+      "assigned_current_ship_eta_rueb": "2026-05-29 05:56",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 5,
+      "candidates": [
+        {
+          "pilot_name": "Hilpert, Jan",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 10,
+          "abteilungszeit": "2026-05-29 00:49",
+          "fahrzeug": "HAV FELLI",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "HAV FELLI",
+          "current_ship_eta_rueb": "2026-05-29 05:56",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Krämer, Jonas",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 9,
+          "abteilungszeit": "2026-05-29 00:50",
+          "fahrzeug": "LUNA B",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "LUNA-B",
+          "current_ship_eta_rueb": "2026-05-29 05:49",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Krause, Malte",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 8,
+          "abteilungszeit": "2026-05-29 00:57",
+          "fahrzeug": "EDITH",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "EDITH",
+          "current_ship_eta_rueb": "2026-05-29 06:00",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Lehwald, Christian",
+          "pilot_q": 4,
+          "pilot_tactical_nr": 3,
+          "abteilungszeit": "2026-05-29 03:18",
+          "fahrzeug": "RIX MELODY",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RIX MELODY",
+          "current_ship_eta_rueb": "2026-05-29 08:50",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Arlt, Andreas",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-05-29 03:25",
+          "fahrzeug": "EKNOE",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "EKNOE",
+          "current_ship_eta_rueb": "2026-05-29 08:53",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "5",
+          "time": "Fri May 29 09:00:00 CEST 2026",
+          "draft": "6.9",
+          "q_gruppe": "4",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "HOS → KLT",
+          "routes": [
+            "HOS → KLT",
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "4",
+          "draft": "6.9"
+        }
+      }
+    },
+    {
+      "ship_key": "ELBSUMMER",
+      "ship_name": "ELBSUMMER",
+      "eta_rueb": "2026-05-29 09:00",
+      "ship_q": 1,
+      "assigned_pilot": "Krämer, Jonas",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 9,
+      "assigned_abteilungszeit": "2026-05-29 00:50",
+      "assigned_current_ship_name": "LUNA-B",
+      "assigned_current_ship_eta_rueb": "2026-05-29 05:49",
+      "assigned_current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 3,
+      "candidates": [
+        {
+          "pilot_name": "Krämer, Jonas",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 9,
+          "abteilungszeit": "2026-05-29 00:50",
+          "fahrzeug": "LUNA B",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "LUNA-B",
+          "current_ship_eta_rueb": "2026-05-29 05:49",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Krause, Malte",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 8,
+          "abteilungszeit": "2026-05-29 00:57",
+          "fahrzeug": "EDITH",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "EDITH",
+          "current_ship_eta_rueb": "2026-05-29 06:00",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Arlt, Andreas",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-05-29 03:25",
+          "fahrzeug": "EKNOE",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "EKNOE",
+          "current_ship_eta_rueb": "2026-05-29 08:53",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Lehwald, Christian",
+          "pilot_tactical_nr": 3,
+          "reason": "Quali passt nicht (4 > 1)",
+          "pilot_q": 4,
+          "ship_q": 1
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "6",
+          "time": "Fri May 29 09:00:00 CEST 2026",
+          "draft": "7.4",
+          "q_gruppe": "1",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "HOS → KLT",
+          "routes": [
+            "HOS → KLT",
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "1",
+          "draft": "7.4"
+        }
+      }
     }
   ],
   "unassigned_ships": [],
   "unused_pilots": [
-    {
-      "pilot_key": "witte_tomas",
-      "vorname": "Tomas",
-      "nachname": "Witte",
-      "pilot_name": "Witte, Tomas",
-      "abteilungszeit": "2026-05-29 00:30",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 11,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "X-PRESS AGILITY",
-      "from": "HOS",
-      "to": "RÜB",
-      "nr": 11,
-      "raw_time": "Fri May 29 00:30:00 CEST 2026",
-      "current_ship_name": "X-PRESS AGILITY",
-      "current_ship_eta_rueb": "2026-05-29 05:52",
-      "current_ship_q": 0,
-      "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
-    },
-    {
-      "pilot_key": "hilpert_jan",
-      "vorname": "Jan",
-      "nachname": "Hilpert",
-      "pilot_name": "Hilpert, Jan",
-      "abteilungszeit": "2026-05-29 00:49",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 10,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "HAV FELLI",
-      "from": "HOR",
-      "to": "RÜB",
-      "nr": 10,
-      "raw_time": "Fri May 29 00:49:00 CEST 2026",
-      "current_ship_name": "HAV FELLI",
-      "current_ship_eta_rueb": "2026-05-29 05:56",
-      "current_ship_q": 0,
-      "current_ship_route": "HOR → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
-    },
-    {
-      "pilot_key": "krämer_jonas",
-      "vorname": "Jonas",
-      "nachname": "Krämer",
-      "pilot_name": "Krämer, Jonas",
-      "abteilungszeit": "2026-05-29 00:50",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 9,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "LUNA B",
-      "from": "HOR",
-      "to": "RÜB",
-      "nr": 9,
-      "raw_time": "Fri May 29 00:50:00 CEST 2026",
-      "current_ship_name": "LUNA-B",
-      "current_ship_eta_rueb": "2026-05-29 05:49",
-      "current_ship_q": 0,
-      "current_ship_route": "HOR → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-      "availability_kind": "merged_eta"
-    },
     {
       "pilot_key": "krause_malte",
       "vorname": "Malte",
