@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-30T02:45:11",
+  "generated_at": "2026-05-30T02:47:11",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 5,
     "pilots_total": 8,
-    "pilots_dispatchable": 6,
-    "pilots_visible_only": 2,
+    "pilots_dispatchable": 7,
+    "pilots_visible_only": 1,
     "assignments": 5,
     "unassigned_ships": 0,
-    "unused_pilots": 1
+    "unused_pilots": 2
   },
   "ships": [
     {
@@ -401,6 +401,7 @@
       "nr": 2,
       "raw_time": "Sat May 30 01:26:00 CEST 2026",
       "current_ship_name": "MAUREEN S",
+      "current_ship_eta_rueb": "2026-05-30 06:27",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -539,6 +540,28 @@
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "glenewinkel_jan-steffen",
+      "vorname": "Jan-Steffen",
+      "nachname": "Glenewinkel",
+      "pilot_name": "Glenewinkel, Jan-Steffen",
+      "abteilungszeit": "2026-05-30 01:26",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 2,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "MAUREEN S",
+      "from": "HOR",
+      "to": "RÜB",
+      "nr": 2,
+      "raw_time": "Sat May 30 01:26:00 CEST 2026",
+      "current_ship_name": "MAUREEN S",
+      "current_ship_eta_rueb": "2026-05-30 06:27",
+      "current_ship_q": 0,
+      "current_ship_route": "HOR → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
     }
   ],
   "visible_but_not_dispatchable_pilots": [
@@ -553,21 +576,6 @@
       "from": "HOR",
       "to": "RÜB",
       "current_ship_name": "RIX CRYSTAL",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    },
-    {
-      "pilot_key": "glenewinkel_jan-steffen",
-      "pilot_name": "Glenewinkel, Jan-Steffen",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 2,
-      "abteilungszeit": "2026-05-30 01:26",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "MAUREEN S",
-      "from": "HOR",
-      "to": "RÜB",
-      "current_ship_name": "MAUREEN S",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta",
       "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
@@ -659,6 +667,15 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "WILSON SUND",
           "pilot_current_ship_eta_rueb": "2026-05-30 06:25",
+          "ship_eta_rueb": "2026-05-30 03:50",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Glenewinkel, Jan-Steffen",
+          "pilot_tactical_nr": 2,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "MAUREEN S",
+          "pilot_current_ship_eta_rueb": "2026-05-30 06:27",
           "ship_eta_rueb": "2026-05-30 03:50",
           "availability_kind": "merged_eta"
         }
@@ -771,6 +788,15 @@
           "pilot_current_ship_eta_rueb": "2026-05-30 06:25",
           "ship_eta_rueb": "2026-05-30 03:55",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Glenewinkel, Jan-Steffen",
+          "pilot_tactical_nr": 2,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "MAUREEN S",
+          "pilot_current_ship_eta_rueb": "2026-05-30 06:27",
+          "ship_eta_rueb": "2026-05-30 03:55",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -820,7 +846,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 4,
+      "candidate_count": 5,
       "candidates": [
         {
           "pilot_name": "Hren, Alexander",
@@ -873,6 +899,19 @@
           "current_ship_eta_rueb": "2026-05-30 06:25",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Glenewinkel, Jan-Steffen",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-05-30 01:26",
+          "fahrzeug": "MAUREEN S",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "MAUREEN S",
+          "current_ship_eta_rueb": "2026-05-30 06:27",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -923,7 +962,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 3,
+      "candidate_count": 4,
       "candidates": [
         {
           "pilot_name": "Pankonin, Denny",
@@ -961,6 +1000,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "WILSON SUND",
           "current_ship_eta_rueb": "2026-05-30 06:25",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Glenewinkel, Jan-Steffen",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-05-30 01:26",
+          "fahrzeug": "MAUREEN S",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "MAUREEN S",
+          "current_ship_eta_rueb": "2026-05-30 06:27",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
@@ -1013,7 +1065,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 2,
+      "candidate_count": 3,
       "candidates": [
         {
           "pilot_name": "Bachholz, Carsten",
@@ -1038,6 +1090,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "WILSON SUND",
           "current_ship_eta_rueb": "2026-05-30 06:25",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Glenewinkel, Jan-Steffen",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-05-30 01:26",
+          "fahrzeug": "MAUREEN S",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "MAUREEN S",
+          "current_ship_eta_rueb": "2026-05-30 06:27",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
@@ -1098,6 +1163,28 @@
       "current_ship_eta_rueb": "2026-05-30 06:25",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "glenewinkel_jan-steffen",
+      "vorname": "Jan-Steffen",
+      "nachname": "Glenewinkel",
+      "pilot_name": "Glenewinkel, Jan-Steffen",
+      "abteilungszeit": "2026-05-30 01:26",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 2,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "MAUREEN S",
+      "from": "HOR",
+      "to": "RÜB",
+      "nr": 2,
+      "raw_time": "Sat May 30 01:26:00 CEST 2026",
+      "current_ship_name": "MAUREEN S",
+      "current_ship_eta_rueb": "2026-05-30 06:27",
+      "current_ship_q": 0,
+      "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     }
