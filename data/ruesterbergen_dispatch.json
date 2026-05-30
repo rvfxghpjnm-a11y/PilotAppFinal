@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-30T07:33:06",
+  "generated_at": "2026-05-30T07:35:17",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,13 +32,13 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 3,
+    "ships_for_ruesterbergen": 4,
     "pilots_total": 6,
     "pilots_dispatchable": 6,
     "pilots_visible_only": 0,
-    "assignments": 3,
+    "assignments": 4,
     "unassigned_ships": 0,
-    "unused_pilots": 3
+    "unused_pilots": 2
   },
   "ships": [
     {
@@ -114,6 +114,32 @@
         "makler": "NIK",
         "dangerous_vessel": "-",
         "type_of_loading": "Ballast"
+      }
+    },
+    {
+      "ship_key": "ECO MISTRAL",
+      "ship_name": "ECO MISTRAL",
+      "eta_rueb": "2026-05-30 11:43",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 0,
+      "meldung": {
+        "nr": "4",
+        "time": "Sat May 30 11:43:00 CEST 2026",
+        "draft": "6.7",
+        "q_gruppe": "0",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "0",
+        "draft": "6.7"
       }
     },
     {
@@ -649,10 +675,10 @@
       }
     },
     {
-      "ship_key": "SIMON B",
-      "ship_name": "SIMON B",
-      "eta_rueb": "2026-05-30 11:57",
-      "ship_q": 5,
+      "ship_key": "ECO MISTRAL",
+      "ship_name": "ECO MISTRAL",
+      "eta_rueb": "2026-05-30 11:43",
+      "ship_q": 0,
       "assigned_pilot": "Schran, Oliver",
       "assigned_pilot_q": 0,
       "assigned_tactical_nr": 17,
@@ -677,6 +703,85 @@
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
+        {
+          "pilot_name": "Glenewinkel, Jan-Steffen",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 15,
+          "abteilungszeit": "2026-05-30 01:26",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-30 01:26",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
+        },
+        {
+          "pilot_name": "Weise, Tom",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 5,
+          "abteilungszeit": "2026-05-30 05:15",
+          "fahrzeug": "SOFIA",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "SOFIA",
+          "current_ship_eta_rueb": "2026-05-30 10:20",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Kordt, Remo",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 4,
+          "abteilungszeit": "2026-05-30 05:59",
+          "fahrzeug": "ANNABA",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ANNABA",
+          "current_ship_eta_rueb": "2026-05-30 10:45",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "4",
+          "time": "Sat May 30 11:43:00 CEST 2026",
+          "draft": "6.7",
+          "q_gruppe": "0",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "HOS → KLT",
+          "routes": [
+            "HOS → KLT",
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "0",
+          "draft": "6.7"
+        }
+      }
+    },
+    {
+      "ship_key": "SIMON B",
+      "ship_name": "SIMON B",
+      "eta_rueb": "2026-05-30 11:57",
+      "ship_q": 5,
+      "assigned_pilot": "Glenewinkel, Jan-Steffen",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 15,
+      "assigned_abteilungszeit": "2026-05-30 01:26",
+      "assigned_current_ship_name": "RÜB",
+      "assigned_current_ship_eta_rueb": "2026-05-30 01:26",
+      "assigned_current_ship_source": "special.already_in_rueb",
+      "assigned_availability_kind": "already_in_rueb",
+      "assigned_availability_hint": "Lotse gilt als bereits in RÜB",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 3,
+      "candidates": [
         {
           "pilot_name": "Glenewinkel, Jan-Steffen",
           "pilot_q": 0,
@@ -753,27 +858,6 @@
   ],
   "unassigned_ships": [],
   "unused_pilots": [
-    {
-      "pilot_key": "glenewinkel_jan-steffen",
-      "vorname": "Jan-Steffen",
-      "nachname": "Glenewinkel",
-      "pilot_name": "Glenewinkel, Jan-Steffen",
-      "abteilungszeit": "2026-05-30 01:26",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 15,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "RÜB",
-      "nr": 15,
-      "raw_time": "Sat May 30 01:26:00 CEST 2026",
-      "current_ship_name": "RÜB",
-      "current_ship_eta_rueb": "2026-05-30 01:26",
-      "current_ship_q": 0,
-      "current_ship_route": "RÜB",
-      "current_ship_source": "special.already_in_rueb",
-      "availability_kind": "already_in_rueb",
-      "availability_hint": "Lotse gilt als bereits in RÜB"
-    },
     {
       "pilot_key": "weise_tom",
       "vorname": "Tom",
