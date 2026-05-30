@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-30T21:53:02",
+  "generated_at": "2026-05-30T21:55:01",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,13 +32,13 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 3,
+    "ships_for_ruesterbergen": 4,
     "pilots_total": 14,
     "pilots_dispatchable": 11,
     "pilots_visible_only": 3,
-    "assignments": 3,
+    "assignments": 4,
     "unassigned_ships": 0,
-    "unused_pilots": 8
+    "unused_pilots": 7
   },
   "ships": [
     {
@@ -118,13 +118,51 @@
       }
     },
     {
+      "ship_key": "ELBRUNNER",
+      "ship_name": "ELBRUNNER",
+      "eta_rueb": "2026-05-31 02:45",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 2,
+      "meldung": {
+        "nr": "3",
+        "time": "Sun May 31 02:45:00 CEST 2026",
+        "draft": "7.2",
+        "q_gruppe": "2",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "2",
+        "vg": "4",
+        "draft": "7.20",
+        "length_m": "139.600",
+        "beam_m": "22",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "U",
+        "pilot_1_name": "Gehrig, Matthias",
+        "travel_status": "SAILING_NOK",
+        "makler": "UCA",
+        "dangerous_vessel": "-",
+        "type_of_loading": "Container"
+      }
+    },
+    {
       "ship_key": "LEVENSAU",
       "ship_name": "LEVENSAU",
       "eta_rueb": "2026-05-31 10:00",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
-        "nr": "3",
+        "nr": "4",
         "time": "Sun May 31 10:00:00 CEST 2026",
         "draft": "4.5",
         "q_gruppe": "5",
@@ -1078,10 +1116,10 @@
       }
     },
     {
-      "ship_key": "LEVENSAU",
-      "ship_name": "LEVENSAU",
-      "eta_rueb": "2026-05-31 10:00",
-      "ship_q": 5,
+      "ship_key": "ELBRUNNER",
+      "ship_name": "ELBRUNNER",
+      "eta_rueb": "2026-05-31 02:45",
+      "ship_q": 2,
       "assigned_pilot": "Zimmermann, Martin",
       "assigned_pilot_q": 0,
       "assigned_tactical_nr": 19,
@@ -1091,7 +1129,7 @@
       "assigned_current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 9,
+      "candidate_count": 8,
       "candidates": [
         {
           "pilot_name": "Zimmermann, Martin",
@@ -1106,6 +1144,157 @@
           "current_ship_source": "schiffe_merged.summary.pilot_1_name",
           "availability_kind": "merged_eta"
         },
+        {
+          "pilot_name": "Zozulya, Mykola",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 18,
+          "abteilungszeit": "2026-05-30 14:08",
+          "fahrzeug": "CELTICA HAV",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "CELTICA HAV",
+          "current_ship_eta_rueb": "2026-05-30 20:49",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Lüdtke, Jan-Torben",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 12,
+          "abteilungszeit": "2026-05-30 16:15",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-30 16:15",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
+        },
+        {
+          "pilot_name": "Krämer, Jonas",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 11,
+          "abteilungszeit": "2026-05-30 16:20",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-30 16:20",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
+        },
+        {
+          "pilot_name": "Richter, Ingmar",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 9,
+          "abteilungszeit": "2026-05-30 18:30",
+          "fahrzeug": "WESTEWIND",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "WESTEWIND",
+          "current_ship_eta_rueb": "2026-05-31 00:51",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Hilpert, Jan",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 8,
+          "abteilungszeit": "2026-05-30 18:47",
+          "fahrzeug": "KRISTELLA",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "KRISTELLA",
+          "current_ship_eta_rueb": "2026-05-31 00:58",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Klüver, Knut Paul",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 6,
+          "abteilungszeit": "2026-05-30 19:05",
+          "fahrzeug": "FAST OLIVIA",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "FAST OLIVIA",
+          "current_ship_eta_rueb": "2026-05-31 01:01",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Jenckel, Dolf",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 5,
+          "abteilungszeit": "2026-05-30 19:18",
+          "fahrzeug": "LADY ARIANE",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "LADY ARIANE",
+          "current_ship_eta_rueb": "2026-05-31 00:54",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Steffens, Micha",
+          "pilot_tactical_nr": 10,
+          "reason": "Quali passt nicht (4 > 2)",
+          "pilot_q": 4,
+          "ship_q": 2
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "3",
+          "time": "Sun May 31 02:45:00 CEST 2026",
+          "draft": "7.2",
+          "q_gruppe": "2",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "HOS → KLT",
+          "routes": [
+            "HOS → KLT",
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "2",
+          "vg": "4",
+          "draft": "7.20",
+          "length_m": "139.600",
+          "beam_m": "22",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "U",
+          "pilot_1_name": "Gehrig, Matthias",
+          "travel_status": "SAILING_NOK",
+          "makler": "UCA",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Container"
+        }
+      }
+    },
+    {
+      "ship_key": "LEVENSAU",
+      "ship_name": "LEVENSAU",
+      "eta_rueb": "2026-05-31 10:00",
+      "ship_q": 5,
+      "assigned_pilot": "Zozulya, Mykola",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 18,
+      "assigned_abteilungszeit": "2026-05-30 14:08",
+      "assigned_current_ship_name": "CELTICA HAV",
+      "assigned_current_ship_eta_rueb": "2026-05-30 20:49",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 8,
+      "candidates": [
         {
           "pilot_name": "Zozulya, Mykola",
           "pilot_q": 0,
@@ -1213,7 +1402,7 @@
       ],
       "ship": {
         "meldung": {
-          "nr": "3",
+          "nr": "4",
           "time": "Sun May 31 10:00:00 CEST 2026",
           "draft": "4.5",
           "q_gruppe": "5",
@@ -1235,28 +1424,6 @@
   ],
   "unassigned_ships": [],
   "unused_pilots": [
-    {
-      "pilot_key": "zozulya_mykola",
-      "vorname": "Mykola",
-      "nachname": "Zozulya",
-      "pilot_name": "Zozulya, Mykola",
-      "abteilungszeit": "2026-05-30 14:08",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 18,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "CELTICA HAV",
-      "from": "RÜB",
-      "to": "HOS",
-      "nr": 18,
-      "raw_time": "Sat May 30 14:08:00 CEST 2026",
-      "current_ship_name": "CELTICA HAV",
-      "current_ship_eta_rueb": "2026-05-30 20:49",
-      "current_ship_q": 0,
-      "current_ship_route": "RÜB → HOS",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
-    },
     {
       "pilot_key": "lüdtke_jan-torben",
       "vorname": "Jan-Torben",
