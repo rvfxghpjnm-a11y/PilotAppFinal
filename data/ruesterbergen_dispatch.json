@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-30T02:41:07",
+  "generated_at": "2026-05-30T02:43:11",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 5,
     "pilots_total": 8,
-    "pilots_dispatchable": 5,
-    "pilots_visible_only": 3,
+    "pilots_dispatchable": 6,
+    "pilots_visible_only": 2,
     "assignments": 5,
     "unassigned_ships": 0,
-    "unused_pilots": 0
+    "unused_pilots": 1
   },
   "ships": [
     {
@@ -157,7 +157,7 @@
     {
       "ship_key": "HUMBER SPRINTER",
       "ship_name": "HUMBER SPRINTER",
-      "eta_rueb": "2026-05-30 07:03",
+      "eta_rueb": "2026-05-30 07:02",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
@@ -379,6 +379,7 @@
       "nr": 4,
       "raw_time": "Sat May 30 01:18:00 CEST 2026",
       "current_ship_name": "WILSON SUND",
+      "current_ship_eta_rueb": "2026-05-30 06:25",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -516,6 +517,28 @@
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "schran_oliver",
+      "vorname": "Oliver",
+      "nachname": "Schran",
+      "pilot_name": "Schran, Oliver",
+      "abteilungszeit": "2026-05-30 01:18",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 4,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "WILSON SUND",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 4,
+      "raw_time": "Sat May 30 01:18:00 CEST 2026",
+      "current_ship_name": "WILSON SUND",
+      "current_ship_eta_rueb": "2026-05-30 06:25",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
     }
   ],
   "visible_but_not_dispatchable_pilots": [
@@ -530,21 +553,6 @@
       "from": "HOR",
       "to": "RÜB",
       "current_ship_name": "RIX CRYSTAL",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    },
-    {
-      "pilot_key": "schran_oliver",
-      "pilot_name": "Schran, Oliver",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 4,
-      "abteilungszeit": "2026-05-30 01:18",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "WILSON SUND",
-      "from": "HOS",
-      "to": "RÜB",
-      "current_ship_name": "WILSON SUND",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta",
       "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
@@ -642,6 +650,15 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "SKALAR",
           "pilot_current_ship_eta_rueb": "2026-05-30 04:09",
+          "ship_eta_rueb": "2026-05-30 03:50",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Schran, Oliver",
+          "pilot_tactical_nr": 4,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "WILSON SUND",
+          "pilot_current_ship_eta_rueb": "2026-05-30 06:25",
           "ship_eta_rueb": "2026-05-30 03:50",
           "availability_kind": "merged_eta"
         }
@@ -745,6 +762,15 @@
           "pilot_current_ship_eta_rueb": "2026-05-30 04:09",
           "ship_eta_rueb": "2026-05-30 03:55",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Schran, Oliver",
+          "pilot_tactical_nr": 4,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "WILSON SUND",
+          "pilot_current_ship_eta_rueb": "2026-05-30 06:25",
+          "ship_eta_rueb": "2026-05-30 03:55",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -794,7 +820,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 3,
+      "candidate_count": 4,
       "candidates": [
         {
           "pilot_name": "Hren, Alexander",
@@ -832,6 +858,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "HAV CORAL",
           "current_ship_eta_rueb": "2026-05-30 03:24",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Schran, Oliver",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 4,
+          "abteilungszeit": "2026-05-30 01:18",
+          "fahrzeug": "WILSON SUND",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "WILSON SUND",
+          "current_ship_eta_rueb": "2026-05-30 06:25",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
@@ -873,7 +912,7 @@
     {
       "ship_key": "HUMBER SPRINTER",
       "ship_name": "HUMBER SPRINTER",
-      "eta_rueb": "2026-05-30 07:03",
+      "eta_rueb": "2026-05-30 07:02",
       "ship_q": 5,
       "assigned_pilot": "Pankonin, Denny",
       "assigned_pilot_q": 0,
@@ -884,7 +923,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 2,
+      "candidate_count": 3,
       "candidates": [
         {
           "pilot_name": "Pankonin, Denny",
@@ -909,6 +948,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "HAV CORAL",
           "current_ship_eta_rueb": "2026-05-30 03:24",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Schran, Oliver",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 4,
+          "abteilungszeit": "2026-05-30 01:18",
+          "fahrzeug": "WILSON SUND",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "WILSON SUND",
+          "current_ship_eta_rueb": "2026-05-30 06:25",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
@@ -961,7 +1013,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 1,
+      "candidate_count": 2,
       "candidates": [
         {
           "pilot_name": "Bachholz, Carsten",
@@ -973,6 +1025,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "HAV CORAL",
           "current_ship_eta_rueb": "2026-05-30 03:24",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Schran, Oliver",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 4,
+          "abteilungszeit": "2026-05-30 01:18",
+          "fahrzeug": "WILSON SUND",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "WILSON SUND",
+          "current_ship_eta_rueb": "2026-05-30 06:25",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
@@ -1013,5 +1078,28 @@
     }
   ],
   "unassigned_ships": [],
-  "unused_pilots": []
+  "unused_pilots": [
+    {
+      "pilot_key": "schran_oliver",
+      "vorname": "Oliver",
+      "nachname": "Schran",
+      "pilot_name": "Schran, Oliver",
+      "abteilungszeit": "2026-05-30 01:18",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 4,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "WILSON SUND",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 4,
+      "raw_time": "Sat May 30 01:18:00 CEST 2026",
+      "current_ship_name": "WILSON SUND",
+      "current_ship_eta_rueb": "2026-05-30 06:25",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    }
+  ]
 }
