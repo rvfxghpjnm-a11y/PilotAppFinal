@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-31T18:13:13",
+  "generated_at": "2026-05-31T18:15:19",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 3,
     "pilots_total": 14,
-    "pilots_dispatchable": 12,
-    "pilots_visible_only": 2,
+    "pilots_dispatchable": 13,
+    "pilots_visible_only": 1,
     "assignments": 3,
     "unassigned_ships": 0,
-    "unused_pilots": 9
+    "unused_pilots": 10
   },
   "ships": [
     {
@@ -120,7 +120,7 @@
     {
       "ship_key": "SNOW CRYSTAL",
       "ship_name": "SNOW CRYSTAL",
-      "eta_rueb": "2026-05-31 22:20",
+      "eta_rueb": "2026-05-31 22:19",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
@@ -239,7 +239,7 @@
       "nr": 12,
       "raw_time": "Sun May 31 13:16:00 CEST 2026",
       "current_ship_name": "ARKLOW CASTLE",
-      "current_ship_eta_rueb": "2026-05-31 19:21",
+      "current_ship_eta_rueb": "2026-05-31 19:22",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -458,9 +458,10 @@
       "nr": 1,
       "raw_time": "Sun May 31 17:45:00 CEST 2026",
       "current_ship_name": "FERROMAR",
+      "current_ship_eta_rueb": "2026-05-31 22:06",
       "current_ship_q": 0,
       "current_ship_route": "UTG → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     }
   ],
@@ -547,7 +548,7 @@
       "nr": 12,
       "raw_time": "Sun May 31 13:16:00 CEST 2026",
       "current_ship_name": "ARKLOW CASTLE",
-      "current_ship_eta_rueb": "2026-05-31 19:21",
+      "current_ship_eta_rueb": "2026-05-31 19:22",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -728,6 +729,28 @@
       "current_ship_route": "HOS → KLT",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "föhring_nils",
+      "vorname": "Nils",
+      "nachname": "Föhring",
+      "pilot_name": "Föhring, Nils",
+      "abteilungszeit": "2026-05-31 17:45",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 1,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "FERROMAR",
+      "from": "UTG",
+      "to": "RÜB",
+      "nr": 1,
+      "raw_time": "Sun May 31 17:45:00 CEST 2026",
+      "current_ship_name": "FERROMAR",
+      "current_ship_eta_rueb": "2026-05-31 22:06",
+      "current_ship_q": 0,
+      "current_ship_route": "UTG → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
     }
   ],
   "visible_but_not_dispatchable_pilots": [
@@ -743,21 +766,6 @@
       "to": "RÜB",
       "current_ship_name": "SOUTH ENABLER",
       "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    },
-    {
-      "pilot_key": "föhring_nils",
-      "pilot_name": "Föhring, Nils",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 1,
-      "abteilungszeit": "2026-05-31 17:45",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "FERROMAR",
-      "from": "UTG",
-      "to": "RÜB",
-      "current_ship_name": "FERROMAR",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta",
       "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
     }
@@ -777,7 +785,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 9,
+      "candidate_count": 10,
       "candidates": [
         {
           "pilot_name": "Staedler, Frank",
@@ -814,7 +822,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "ARKLOW CASTLE",
-          "current_ship_eta_rueb": "2026-05-31 19:21",
+          "current_ship_eta_rueb": "2026-05-31 19:22",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -893,6 +901,19 @@
           "aufgabe": "Seebört",
           "current_ship_name": "LADY HESTIA",
           "current_ship_eta_rueb": "2026-05-31 14:21",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Föhring, Nils",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 1,
+          "abteilungszeit": "2026-05-31 17:45",
+          "fahrzeug": "FERROMAR",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "FERROMAR",
+          "current_ship_eta_rueb": "2026-05-31 22:06",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
@@ -968,7 +989,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 8,
+      "candidate_count": 9,
       "candidates": [
         {
           "pilot_name": "Crotogino, Philipp",
@@ -992,7 +1013,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "ARKLOW CASTLE",
-          "current_ship_eta_rueb": "2026-05-31 19:21",
+          "current_ship_eta_rueb": "2026-05-31 19:22",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1073,6 +1094,19 @@
           "current_ship_eta_rueb": "2026-05-31 14:21",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Föhring, Nils",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 1,
+          "abteilungszeit": "2026-05-31 17:45",
+          "fahrzeug": "FERROMAR",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "FERROMAR",
+          "current_ship_eta_rueb": "2026-05-31 22:06",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
         }
       ],
       "excluded": [
@@ -1135,7 +1169,7 @@
     {
       "ship_key": "SNOW CRYSTAL",
       "ship_name": "SNOW CRYSTAL",
-      "eta_rueb": "2026-05-31 22:20",
+      "eta_rueb": "2026-05-31 22:19",
       "ship_q": 5,
       "assigned_pilot": "Heyenga, Dennis",
       "assigned_pilot_q": 4,
@@ -1146,7 +1180,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 10,
+      "candidate_count": 11,
       "candidates": [
         {
           "pilot_name": "Heyenga, Dennis",
@@ -1170,7 +1204,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "ARKLOW CASTLE",
-          "current_ship_eta_rueb": "2026-05-31 19:21",
+          "current_ship_eta_rueb": "2026-05-31 19:22",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1277,6 +1311,19 @@
           "current_ship_eta_rueb": "2026-05-31 14:21",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Föhring, Nils",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 1,
+          "abteilungszeit": "2026-05-31 17:45",
+          "fahrzeug": "FERROMAR",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "FERROMAR",
+          "current_ship_eta_rueb": "2026-05-31 22:06",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -1332,7 +1379,7 @@
       "nr": 12,
       "raw_time": "Sun May 31 13:16:00 CEST 2026",
       "current_ship_name": "ARKLOW CASTLE",
-      "current_ship_eta_rueb": "2026-05-31 19:21",
+      "current_ship_eta_rueb": "2026-05-31 19:22",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -1511,6 +1558,28 @@
       "current_ship_eta_rueb": "2026-05-31 14:21",
       "current_ship_q": 0,
       "current_ship_route": "HOS → KLT",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "föhring_nils",
+      "vorname": "Nils",
+      "nachname": "Föhring",
+      "pilot_name": "Föhring, Nils",
+      "abteilungszeit": "2026-05-31 17:45",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 1,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "FERROMAR",
+      "from": "UTG",
+      "to": "RÜB",
+      "nr": 1,
+      "raw_time": "Sun May 31 17:45:00 CEST 2026",
+      "current_ship_name": "FERROMAR",
+      "current_ship_eta_rueb": "2026-05-31 22:06",
+      "current_ship_q": 0,
+      "current_ship_route": "UTG → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     }
