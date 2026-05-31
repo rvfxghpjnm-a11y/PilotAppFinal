@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-31T20:51:17",
+  "generated_at": "2026-05-31T20:53:20",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,13 +32,13 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 5,
+    "ships_for_ruesterbergen": 6,
     "pilots_total": 8,
     "pilots_dispatchable": 8,
     "pilots_visible_only": 0,
-    "assignments": 5,
+    "assignments": 6,
     "unassigned_ships": 0,
-    "unused_pilots": 3
+    "unused_pilots": 2
   },
   "ships": [
     {
@@ -191,6 +191,31 @@
         "makler": "UCA",
         "dangerous_vessel": "-",
         "type_of_loading": "Erdoel und Derivate"
+      }
+    },
+    {
+      "ship_key": "SARAH-B",
+      "ship_name": "SARAH-B",
+      "eta_rueb": "2026-06-01 01:06",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 5,
+      "meldung": {
+        "nr": "6",
+        "time": "Mon Jun 01 01:06:00 CEST 2026",
+        "draft": "4.2",
+        "q_gruppe": "5",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "RÜB → HOS",
+        "routes": [
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "5",
+        "draft": "4.2"
       }
     },
     {
@@ -1101,10 +1126,10 @@
       }
     },
     {
-      "ship_key": "NORTH",
-      "ship_name": "NORTH",
-      "eta_rueb": "2026-06-01 01:08",
-      "ship_q": 1,
+      "ship_key": "SARAH-B",
+      "ship_name": "SARAH-B",
+      "eta_rueb": "2026-06-01 01:06",
+      "ship_q": 5,
       "assigned_pilot": "Föhring, Nils",
       "assigned_pilot_q": 0,
       "assigned_tactical_nr": 7,
@@ -1114,7 +1139,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 3,
+      "candidate_count": 4,
       "candidates": [
         {
           "pilot_name": "Föhring, Nils",
@@ -1129,6 +1154,85 @@
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
+        {
+          "pilot_name": "Zozulya, Mykola",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 4,
+          "abteilungszeit": "2026-05-31 19:10",
+          "fahrzeug": "ELBWAVE",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ELBWAVE",
+          "current_ship_eta_rueb": "2026-06-01 00:05",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Woitanowski, Tim",
+          "pilot_q": 2,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-05-31 20:45",
+          "fahrzeug": "Leerfahrt",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "Leerfahrt",
+          "current_ship_eta_rueb": "2026-05-31 21:45",
+          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
+          "availability_kind": "leerfahrt_hos_rueb_plus60",
+          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+        },
+        {
+          "pilot_name": "Rohn, Jens Michael",
+          "pilot_q": 1,
+          "pilot_tactical_nr": 3,
+          "abteilungszeit": "2026-05-31 20:45",
+          "fahrzeug": "Leerfahrt",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "Leerfahrt",
+          "current_ship_eta_rueb": "2026-05-31 21:45",
+          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
+          "availability_kind": "leerfahrt_hos_rueb_plus60",
+          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "6",
+          "time": "Mon Jun 01 01:06:00 CEST 2026",
+          "draft": "4.2",
+          "q_gruppe": "5",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "RÜB → HOS",
+          "routes": [
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "5",
+          "draft": "4.2"
+        }
+      }
+    },
+    {
+      "ship_key": "NORTH",
+      "ship_name": "NORTH",
+      "eta_rueb": "2026-06-01 01:08",
+      "ship_q": 1,
+      "assigned_pilot": "Zozulya, Mykola",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 4,
+      "assigned_abteilungszeit": "2026-05-31 19:10",
+      "assigned_current_ship_name": "ELBWAVE",
+      "assigned_current_ship_eta_rueb": "2026-06-01 00:05",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 2,
+      "candidates": [
         {
           "pilot_name": "Zozulya, Mykola",
           "pilot_q": 0,
@@ -1203,28 +1307,6 @@
   ],
   "unassigned_ships": [],
   "unused_pilots": [
-    {
-      "pilot_key": "zozulya_mykola",
-      "vorname": "Mykola",
-      "nachname": "Zozulya",
-      "pilot_name": "Zozulya, Mykola",
-      "abteilungszeit": "2026-05-31 19:10",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 4,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "ELBWAVE",
-      "from": "HOR",
-      "to": "RÜB",
-      "nr": 4,
-      "raw_time": "Sun May 31 19:10:00 CEST 2026",
-      "current_ship_name": "ELBWAVE",
-      "current_ship_eta_rueb": "2026-06-01 00:05",
-      "current_ship_q": 0,
-      "current_ship_route": "HOR → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
-    },
     {
       "pilot_key": "woitanowski_tim",
       "vorname": "Tim",
