@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-31T10:03:07",
+  "generated_at": "2026-05-31T10:05:00",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,13 +32,13 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 8,
+    "ships_for_ruesterbergen": 10,
     "pilots_total": 13,
-    "pilots_dispatchable": 12,
-    "pilots_visible_only": 1,
-    "assignments": 8,
+    "pilots_dispatchable": 13,
+    "pilots_visible_only": 0,
+    "assignments": 10,
     "unassigned_ships": 0,
-    "unused_pilots": 4
+    "unused_pilots": 3
   },
   "ships": [
     {
@@ -305,6 +305,43 @@
       }
     },
     {
+      "ship_key": "BF CARP",
+      "ship_name": "BF CARP",
+      "eta_rueb": "2026-05-31 14:20",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 2,
+      "meldung": {
+        "nr": "10",
+        "time": "Sun May 31 14:20:00 CEST 2026",
+        "draft": "8.9",
+        "q_gruppe": "2",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "2",
+        "vg": "5",
+        "draft": "8.90",
+        "length_m": "139.09",
+        "beam_m": "22.6",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "U",
+        "travel_status": "SAILING_NOK",
+        "makler": "UCA",
+        "dangerous_vessel": "-",
+        "type_of_loading": "Container"
+      }
+    },
+    {
       "ship_key": "LADY HESTIA",
       "ship_name": "LADY HESTIA",
       "eta_rueb": "2026-05-31 14:21",
@@ -340,6 +377,44 @@
         "makler": "UCA",
         "dangerous_vessel": "-",
         "type_of_loading": "Holz"
+      }
+    },
+    {
+      "ship_key": "CHARLOTTA",
+      "ship_name": "CHARLOTTA",
+      "eta_rueb": "2026-05-31 15:25",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 1,
+      "meldung": {
+        "nr": "9",
+        "time": "Sun May 31 14:15:00 CEST 2026",
+        "draft": "7.8",
+        "q_gruppe": "1",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "1",
+        "vg": "5",
+        "draft": "7.80",
+        "length_m": "140.70",
+        "beam_m": "23.530",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "U",
+        "pilot_1_name": "Bartsch, Holger",
+        "travel_status": "SAILING_NOK",
+        "makler": "SUB",
+        "dangerous_vessel": "-",
+        "type_of_loading": "Stueckgueter"
       }
     }
   ],
@@ -448,6 +523,7 @@
       "nr": 17,
       "raw_time": "Sat May 30 23:36:00 CEST 2026",
       "current_ship_name": "LEVENSAU",
+      "current_ship_eta_rueb": "2026-05-31 10:50",
       "current_ship_q": 0,
       "current_ship_route": "AHL → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -466,13 +542,12 @@
       "fahrzeug": "RÜB",
       "nr": 15,
       "raw_time": "Sun May 31 03:49:00 CEST 2026",
-      "current_ship_name": "RÜB",
-      "current_ship_eta_rueb": "2026-05-31 03:49",
+      "current_ship_name": "LEVENSAU",
+      "current_ship_eta_rueb": "2026-05-31 10:50",
       "current_ship_q": 0,
-      "current_ship_route": "RÜB",
-      "current_ship_source": "special.already_in_rueb",
-      "availability_kind": "already_in_rueb",
-      "availability_hint": "Lotse gilt als bereits in RÜB"
+      "current_ship_route": "AHL → RÜB",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "availability_kind": "merged_eta"
     },
     {
       "pilot_key": "wille_christian",
@@ -620,7 +695,7 @@
       "nr": 1,
       "raw_time": "Sun May 31 08:46:00 CEST 2026",
       "current_ship_name": "TERRAMAR",
-      "current_ship_eta_rueb": "2026-05-31 13:29",
+      "current_ship_eta_rueb": "2026-05-31 13:27",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -717,6 +792,28 @@
       "availability_kind": "merged_eta"
     },
     {
+      "pilot_key": "skawianczyk_artur",
+      "vorname": "Artur",
+      "nachname": "Skawianczyk",
+      "pilot_name": "Skawianczyk, Artur",
+      "abteilungszeit": "2026-05-30 23:36",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 17,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "LEVENSAU",
+      "from": "AHL",
+      "to": "RÜB",
+      "nr": 17,
+      "raw_time": "Sat May 30 23:36:00 CEST 2026",
+      "current_ship_name": "LEVENSAU",
+      "current_ship_eta_rueb": "2026-05-31 10:50",
+      "current_ship_q": 0,
+      "current_ship_route": "AHL → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
       "pilot_key": "flink_jörg",
       "vorname": "Jörg",
       "nachname": "Flink",
@@ -729,13 +826,12 @@
       "fahrzeug": "RÜB",
       "nr": 15,
       "raw_time": "Sun May 31 03:49:00 CEST 2026",
-      "current_ship_name": "RÜB",
-      "current_ship_eta_rueb": "2026-05-31 03:49",
+      "current_ship_name": "LEVENSAU",
+      "current_ship_eta_rueb": "2026-05-31 10:50",
       "current_ship_q": 0,
-      "current_ship_route": "RÜB",
-      "current_ship_source": "special.already_in_rueb",
-      "availability_kind": "already_in_rueb",
-      "availability_hint": "Lotse gilt als bereits in RÜB"
+      "current_ship_route": "AHL → RÜB",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "availability_kind": "merged_eta"
     },
     {
       "pilot_key": "wille_christian",
@@ -883,30 +979,14 @@
       "nr": 1,
       "raw_time": "Sun May 31 08:46:00 CEST 2026",
       "current_ship_name": "TERRAMAR",
-      "current_ship_eta_rueb": "2026-05-31 13:29",
+      "current_ship_eta_rueb": "2026-05-31 13:27",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     }
   ],
-  "visible_but_not_dispatchable_pilots": [
-    {
-      "pilot_key": "skawianczyk_artur",
-      "pilot_name": "Skawianczyk, Artur",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 17,
-      "abteilungszeit": "2026-05-30 23:36",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "LEVENSAU",
-      "from": "AHL",
-      "to": "RÜB",
-      "current_ship_name": "LEVENSAU",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    }
-  ],
+  "visible_but_not_dispatchable_pilots": [],
   "assignments": [
     {
       "ship_key": "HAV TUNA",
@@ -922,7 +1002,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 7,
+      "candidate_count": 8,
       "candidates": [
         {
           "pilot_name": "Schmidt, Thomas",
@@ -977,17 +1057,29 @@
           "availability_kind": "merged_eta"
         },
         {
+          "pilot_name": "Skawianczyk, Artur",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 17,
+          "abteilungszeit": "2026-05-30 23:36",
+          "fahrzeug": "LEVENSAU",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "LEVENSAU",
+          "current_ship_eta_rueb": "2026-05-31 10:50",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
           "pilot_name": "Flink, Jörg",
           "pilot_q": 0,
           "pilot_tactical_nr": 15,
           "abteilungszeit": "2026-05-31 03:49",
           "fahrzeug": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "RÜB",
-          "current_ship_eta_rueb": "2026-05-31 03:49",
-          "current_ship_source": "special.already_in_rueb",
-          "availability_kind": "already_in_rueb",
-          "availability_hint": "Lotse gilt als bereits in RÜB"
+          "current_ship_name": "LEVENSAU",
+          "current_ship_eta_rueb": "2026-05-31 10:50",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
         },
         {
           "pilot_name": "Wille, Christian",
@@ -1058,7 +1150,7 @@
           "pilot_tactical_nr": 1,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "TERRAMAR",
-          "pilot_current_ship_eta_rueb": "2026-05-31 13:29",
+          "pilot_current_ship_eta_rueb": "2026-05-31 13:27",
           "ship_eta_rueb": "2026-05-31 10:57",
           "availability_kind": "merged_eta"
         }
@@ -1110,7 +1202,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 6,
+      "candidate_count": 7,
       "candidates": [
         {
           "pilot_name": "Keyser, Torben",
@@ -1152,17 +1244,29 @@
           "availability_kind": "merged_eta"
         },
         {
+          "pilot_name": "Skawianczyk, Artur",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 17,
+          "abteilungszeit": "2026-05-30 23:36",
+          "fahrzeug": "LEVENSAU",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "LEVENSAU",
+          "current_ship_eta_rueb": "2026-05-31 10:50",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
           "pilot_name": "Flink, Jörg",
           "pilot_q": 0,
           "pilot_tactical_nr": 15,
           "abteilungszeit": "2026-05-31 03:49",
           "fahrzeug": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "RÜB",
-          "current_ship_eta_rueb": "2026-05-31 03:49",
-          "current_ship_source": "special.already_in_rueb",
-          "availability_kind": "already_in_rueb",
-          "availability_hint": "Lotse gilt als bereits in RÜB"
+          "current_ship_name": "LEVENSAU",
+          "current_ship_eta_rueb": "2026-05-31 10:50",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
         },
         {
           "pilot_name": "Wille, Christian",
@@ -1233,7 +1337,7 @@
           "pilot_tactical_nr": 1,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "TERRAMAR",
-          "pilot_current_ship_eta_rueb": "2026-05-31 13:29",
+          "pilot_current_ship_eta_rueb": "2026-05-31 13:27",
           "ship_eta_rueb": "2026-05-31 11:00",
           "availability_kind": "merged_eta"
         }
@@ -1285,7 +1389,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 4,
+      "candidate_count": 5,
       "candidates": [
         {
           "pilot_name": "Escher, Franck",
@@ -1301,17 +1405,29 @@
           "availability_kind": "merged_eta"
         },
         {
+          "pilot_name": "Skawianczyk, Artur",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 17,
+          "abteilungszeit": "2026-05-30 23:36",
+          "fahrzeug": "LEVENSAU",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "LEVENSAU",
+          "current_ship_eta_rueb": "2026-05-31 10:50",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
           "pilot_name": "Flink, Jörg",
           "pilot_q": 0,
           "pilot_tactical_nr": 15,
           "abteilungszeit": "2026-05-31 03:49",
           "fahrzeug": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "RÜB",
-          "current_ship_eta_rueb": "2026-05-31 03:49",
-          "current_ship_source": "special.already_in_rueb",
-          "availability_kind": "already_in_rueb",
-          "availability_hint": "Lotse gilt als bereits in RÜB"
+          "current_ship_name": "LEVENSAU",
+          "current_ship_eta_rueb": "2026-05-31 10:50",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
         },
         {
           "pilot_name": "Wille, Christian",
@@ -1389,7 +1505,7 @@
           "pilot_tactical_nr": 1,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "TERRAMAR",
-          "pilot_current_ship_eta_rueb": "2026-05-31 13:29",
+          "pilot_current_ship_eta_rueb": "2026-05-31 13:27",
           "ship_eta_rueb": "2026-05-31 11:06",
           "availability_kind": "merged_eta"
         }
@@ -1442,7 +1558,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 4,
+      "candidate_count": 5,
       "candidates": [
         {
           "pilot_name": "Petersen, Yannick",
@@ -1458,17 +1574,29 @@
           "availability_kind": "merged_eta"
         },
         {
+          "pilot_name": "Skawianczyk, Artur",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 17,
+          "abteilungszeit": "2026-05-30 23:36",
+          "fahrzeug": "LEVENSAU",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "LEVENSAU",
+          "current_ship_eta_rueb": "2026-05-31 10:50",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
           "pilot_name": "Flink, Jörg",
           "pilot_q": 0,
           "pilot_tactical_nr": 15,
           "abteilungszeit": "2026-05-31 03:49",
           "fahrzeug": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "RÜB",
-          "current_ship_eta_rueb": "2026-05-31 03:49",
-          "current_ship_source": "special.already_in_rueb",
-          "availability_kind": "already_in_rueb",
-          "availability_hint": "Lotse gilt als bereits in RÜB"
+          "current_ship_name": "LEVENSAU",
+          "current_ship_eta_rueb": "2026-05-31 10:50",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
         },
         {
           "pilot_name": "Wille, Christian",
@@ -1539,7 +1667,7 @@
           "pilot_tactical_nr": 1,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "TERRAMAR",
-          "pilot_current_ship_eta_rueb": "2026-05-31 13:29",
+          "pilot_current_ship_eta_rueb": "2026-05-31 13:27",
           "ship_eta_rueb": "2026-05-31 11:50",
           "availability_kind": "merged_eta"
         }
@@ -1582,18 +1710,30 @@
       "ship_name": "RIX UNION",
       "eta_rueb": "2026-05-31 12:33",
       "ship_q": 4,
-      "assigned_pilot": "Flink, Jörg",
+      "assigned_pilot": "Skawianczyk, Artur",
       "assigned_pilot_q": 0,
-      "assigned_tactical_nr": 15,
-      "assigned_abteilungszeit": "2026-05-31 03:49",
-      "assigned_current_ship_name": "RÜB",
-      "assigned_current_ship_eta_rueb": "2026-05-31 03:49",
-      "assigned_current_ship_source": "special.already_in_rueb",
-      "assigned_availability_kind": "already_in_rueb",
-      "assigned_availability_hint": "Lotse gilt als bereits in RÜB",
+      "assigned_tactical_nr": 17,
+      "assigned_abteilungszeit": "2026-05-30 23:36",
+      "assigned_current_ship_name": "LEVENSAU",
+      "assigned_current_ship_eta_rueb": "2026-05-31 10:50",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 6,
+      "candidate_count": 7,
       "candidates": [
+        {
+          "pilot_name": "Skawianczyk, Artur",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 17,
+          "abteilungszeit": "2026-05-30 23:36",
+          "fahrzeug": "LEVENSAU",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "LEVENSAU",
+          "current_ship_eta_rueb": "2026-05-31 10:50",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
         {
           "pilot_name": "Flink, Jörg",
           "pilot_q": 0,
@@ -1601,11 +1741,10 @@
           "abteilungszeit": "2026-05-31 03:49",
           "fahrzeug": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "RÜB",
-          "current_ship_eta_rueb": "2026-05-31 03:49",
-          "current_ship_source": "special.already_in_rueb",
-          "availability_kind": "already_in_rueb",
-          "availability_hint": "Lotse gilt als bereits in RÜB"
+          "current_ship_name": "LEVENSAU",
+          "current_ship_eta_rueb": "2026-05-31 10:50",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
         },
         {
           "pilot_name": "Wille, Christian",
@@ -1688,7 +1827,7 @@
           "pilot_tactical_nr": 1,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "TERRAMAR",
-          "pilot_current_ship_eta_rueb": "2026-05-31 13:29",
+          "pilot_current_ship_eta_rueb": "2026-05-31 13:27",
           "ship_eta_rueb": "2026-05-31 12:33",
           "availability_kind": "merged_eta"
         }
@@ -1732,18 +1871,29 @@
       "ship_name": "CONTAINERSHIPS AURORA",
       "eta_rueb": "2026-05-31 13:15",
       "ship_q": 1,
-      "assigned_pilot": "Wille, Christian",
+      "assigned_pilot": "Flink, Jörg",
       "assigned_pilot_q": 0,
-      "assigned_tactical_nr": 12,
-      "assigned_abteilungszeit": "2026-05-31 04:00",
-      "assigned_current_ship_name": "RÜB",
-      "assigned_current_ship_eta_rueb": "2026-05-31 04:00",
-      "assigned_current_ship_source": "special.already_in_rueb",
-      "assigned_availability_kind": "already_in_rueb",
-      "assigned_availability_hint": "Lotse gilt als bereits in RÜB",
+      "assigned_tactical_nr": 15,
+      "assigned_abteilungszeit": "2026-05-31 03:49",
+      "assigned_current_ship_name": "LEVENSAU",
+      "assigned_current_ship_eta_rueb": "2026-05-31 10:50",
+      "assigned_current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 4,
+      "candidate_count": 5,
       "candidates": [
+        {
+          "pilot_name": "Flink, Jörg",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 15,
+          "abteilungszeit": "2026-05-31 03:49",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "LEVENSAU",
+          "current_ship_eta_rueb": "2026-05-31 10:50",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
+        },
         {
           "pilot_name": "Wille, Christian",
           "pilot_q": 0,
@@ -1819,7 +1969,7 @@
           "pilot_tactical_nr": 1,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "TERRAMAR",
-          "pilot_current_ship_eta_rueb": "2026-05-31 13:29",
+          "pilot_current_ship_eta_rueb": "2026-05-31 13:27",
           "ship_eta_rueb": "2026-05-31 13:15",
           "availability_kind": "merged_eta"
         }
@@ -1863,18 +2013,31 @@
       "ship_name": "OLIVIA",
       "eta_rueb": "2026-05-31 13:18",
       "ship_q": 4,
-      "assigned_pilot": "Lielienthal, Jörn",
+      "assigned_pilot": "Wille, Christian",
       "assigned_pilot_q": 0,
-      "assigned_tactical_nr": 11,
-      "assigned_abteilungszeit": "2026-05-31 04:50",
+      "assigned_tactical_nr": 12,
+      "assigned_abteilungszeit": "2026-05-31 04:00",
       "assigned_current_ship_name": "RÜB",
-      "assigned_current_ship_eta_rueb": "2026-05-31 04:50",
+      "assigned_current_ship_eta_rueb": "2026-05-31 04:00",
       "assigned_current_ship_source": "special.already_in_rueb",
       "assigned_availability_kind": "already_in_rueb",
       "assigned_availability_hint": "Lotse gilt als bereits in RÜB",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 4,
+      "candidate_count": 5,
       "candidates": [
+        {
+          "pilot_name": "Wille, Christian",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 12,
+          "abteilungszeit": "2026-05-31 04:00",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-31 04:00",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
+        },
         {
           "pilot_name": "Lielienthal, Jörn",
           "pilot_q": 0,
@@ -1943,7 +2106,7 @@
           "pilot_tactical_nr": 1,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "TERRAMAR",
-          "pilot_current_ship_eta_rueb": "2026-05-31 13:29",
+          "pilot_current_ship_eta_rueb": "2026-05-31 13:27",
           "ship_eta_rueb": "2026-05-31 13:18",
           "availability_kind": "merged_eta"
         }
@@ -1979,6 +2142,125 @@
           "makler": "UCA",
           "dangerous_vessel": "-",
           "type_of_loading": "Stueckgueter"
+        }
+      }
+    },
+    {
+      "ship_key": "BF CARP",
+      "ship_name": "BF CARP",
+      "eta_rueb": "2026-05-31 14:20",
+      "ship_q": 2,
+      "assigned_pilot": "Lielienthal, Jörn",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 11,
+      "assigned_abteilungszeit": "2026-05-31 04:50",
+      "assigned_current_ship_name": "RÜB",
+      "assigned_current_ship_eta_rueb": "2026-05-31 04:50",
+      "assigned_current_ship_source": "special.already_in_rueb",
+      "assigned_availability_kind": "already_in_rueb",
+      "assigned_availability_hint": "Lotse gilt als bereits in RÜB",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 4,
+      "candidates": [
+        {
+          "pilot_name": "Lielienthal, Jörn",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 11,
+          "abteilungszeit": "2026-05-31 04:50",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-05-31 04:50",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
+        },
+        {
+          "pilot_name": "Purwin, Marko",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 6,
+          "abteilungszeit": "2026-05-31 07:01",
+          "fahrzeug": "ROLAND ESSBERGER",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ROLAND ESSBERGER",
+          "current_ship_eta_rueb": "2026-05-31 11:56",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Hartung, René",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 4,
+          "abteilungszeit": "2026-05-31 07:13",
+          "fahrzeug": "LADY HELENE",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "LADY HELENE",
+          "current_ship_eta_rueb": "2026-05-31 12:02",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Staedler, Frank",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 1,
+          "abteilungszeit": "2026-05-31 08:46",
+          "fahrzeug": "TERRAMAR",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "TERRAMAR",
+          "current_ship_eta_rueb": "2026-05-31 13:27",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Plaisant, Julian",
+          "pilot_tactical_nr": 5,
+          "reason": "Quali passt nicht (4 > 2)",
+          "pilot_q": 4,
+          "ship_q": 2
+        },
+        {
+          "pilot_name": "Heyenga, Dennis",
+          "pilot_tactical_nr": 2,
+          "reason": "Quali passt nicht (4 > 2)",
+          "pilot_q": 4,
+          "ship_q": 2
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "10",
+          "time": "Sun May 31 14:20:00 CEST 2026",
+          "draft": "8.9",
+          "q_gruppe": "2",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "HOS → KLT",
+          "routes": [
+            "HOS → KLT",
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "2",
+          "vg": "5",
+          "draft": "8.90",
+          "length_m": "139.09",
+          "beam_m": "22.6",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "U",
+          "travel_status": "SAILING_NOK",
+          "makler": "UCA",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Container"
         }
       }
     },
@@ -2059,7 +2341,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "TERRAMAR",
-          "current_ship_eta_rueb": "2026-05-31 13:29",
+          "current_ship_eta_rueb": "2026-05-31 13:27",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
@@ -2097,6 +2379,99 @@
           "type_of_loading": "Holz"
         }
       }
+    },
+    {
+      "ship_key": "CHARLOTTA",
+      "ship_name": "CHARLOTTA",
+      "eta_rueb": "2026-05-31 15:25",
+      "ship_q": 1,
+      "assigned_pilot": "Hartung, René",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 4,
+      "assigned_abteilungszeit": "2026-05-31 07:13",
+      "assigned_current_ship_name": "LADY HELENE",
+      "assigned_current_ship_eta_rueb": "2026-05-31 12:02",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 2,
+      "candidates": [
+        {
+          "pilot_name": "Hartung, René",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 4,
+          "abteilungszeit": "2026-05-31 07:13",
+          "fahrzeug": "LADY HELENE",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "LADY HELENE",
+          "current_ship_eta_rueb": "2026-05-31 12:02",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Staedler, Frank",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 1,
+          "abteilungszeit": "2026-05-31 08:46",
+          "fahrzeug": "TERRAMAR",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "TERRAMAR",
+          "current_ship_eta_rueb": "2026-05-31 13:27",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Plaisant, Julian",
+          "pilot_tactical_nr": 5,
+          "reason": "Quali passt nicht (4 > 1)",
+          "pilot_q": 4,
+          "ship_q": 1
+        },
+        {
+          "pilot_name": "Heyenga, Dennis",
+          "pilot_tactical_nr": 2,
+          "reason": "Quali passt nicht (4 > 1)",
+          "pilot_q": 4,
+          "ship_q": 1
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "9",
+          "time": "Sun May 31 14:15:00 CEST 2026",
+          "draft": "7.8",
+          "q_gruppe": "1",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "HOS → KLT",
+          "routes": [
+            "HOS → KLT",
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "1",
+          "vg": "5",
+          "draft": "7.80",
+          "length_m": "140.70",
+          "beam_m": "23.530",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "U",
+          "pilot_1_name": "Bartsch, Holger",
+          "travel_status": "SAILING_NOK",
+          "makler": "SUB",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Stueckgueter"
+        }
+      }
     }
   ],
   "unassigned_ships": [],
@@ -2118,28 +2493,6 @@
       "raw_time": "Sun May 31 07:08:00 CEST 2026",
       "current_ship_name": "OTELLO",
       "current_ship_eta_rueb": "2026-05-31 12:07",
-      "current_ship_q": 0,
-      "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
-    },
-    {
-      "pilot_key": "hartung_rené",
-      "vorname": "René",
-      "nachname": "Hartung",
-      "pilot_name": "Hartung, René",
-      "abteilungszeit": "2026-05-31 07:13",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 4,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "LADY HELENE",
-      "from": "HOS",
-      "to": "RÜB",
-      "nr": 4,
-      "raw_time": "Sun May 31 07:13:00 CEST 2026",
-      "current_ship_name": "LADY HELENE",
-      "current_ship_eta_rueb": "2026-05-31 12:02",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -2183,7 +2536,7 @@
       "nr": 1,
       "raw_time": "Sun May 31 08:46:00 CEST 2026",
       "current_ship_name": "TERRAMAR",
-      "current_ship_eta_rueb": "2026-05-31 13:29",
+      "current_ship_eta_rueb": "2026-05-31 13:27",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
