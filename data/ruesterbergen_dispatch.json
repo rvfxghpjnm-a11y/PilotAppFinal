@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-31T10:01:03",
+  "generated_at": "2026-05-31T10:03:07",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,11 +32,11 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 7,
+    "ships_for_ruesterbergen": 8,
     "pilots_total": 13,
-    "pilots_dispatchable": 11,
-    "pilots_visible_only": 2,
-    "assignments": 7,
+    "pilots_dispatchable": 12,
+    "pilots_visible_only": 1,
+    "assignments": 8,
     "unassigned_ships": 0,
     "unused_pilots": 4
   },
@@ -303,6 +303,44 @@
         "dangerous_vessel": "-",
         "type_of_loading": "Stueckgueter"
       }
+    },
+    {
+      "ship_key": "LADY HESTIA",
+      "ship_name": "LADY HESTIA",
+      "eta_rueb": "2026-05-31 14:21",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 5,
+      "meldung": {
+        "nr": "8",
+        "time": "Sun May 31 14:10:00 CEST 2026",
+        "draft": "4.6",
+        "q_gruppe": "5",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "5",
+        "vg": "3",
+        "draft": "4.60",
+        "length_m": "98.20",
+        "beam_m": "13.4",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "P",
+        "pilot_1_name": "Hagena, Matthias",
+        "travel_status": "SAILING_NOK",
+        "makler": "UCA",
+        "dangerous_vessel": "-",
+        "type_of_loading": "Holz"
+      }
     }
   ],
   "pilots": [
@@ -538,7 +576,7 @@
       "nr": 4,
       "raw_time": "Sun May 31 07:13:00 CEST 2026",
       "current_ship_name": "LADY HELENE",
-      "current_ship_eta_rueb": "2026-05-31 12:03",
+      "current_ship_eta_rueb": "2026-05-31 12:02",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -560,9 +598,10 @@
       "nr": 2,
       "raw_time": "Sun May 31 08:42:00 CEST 2026",
       "current_ship_name": "CORMORAN P677",
+      "current_ship_eta_rueb": "2026-05-31 13:33",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
@@ -800,9 +839,31 @@
       "nr": 4,
       "raw_time": "Sun May 31 07:13:00 CEST 2026",
       "current_ship_name": "LADY HELENE",
-      "current_ship_eta_rueb": "2026-05-31 12:03",
+      "current_ship_eta_rueb": "2026-05-31 12:02",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "heyenga_dennis",
+      "vorname": "Dennis",
+      "nachname": "Heyenga",
+      "pilot_name": "Heyenga, Dennis",
+      "abteilungszeit": "2026-05-31 08:42",
+      "pilot_q": 4,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 2,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "CORMORAN P677",
+      "from": "HOR",
+      "to": "RÜB",
+      "nr": 2,
+      "raw_time": "Sun May 31 08:42:00 CEST 2026",
+      "current_ship_name": "CORMORAN P677",
+      "current_ship_eta_rueb": "2026-05-31 13:33",
+      "current_ship_q": 0,
+      "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
@@ -842,21 +903,6 @@
       "to": "RÜB",
       "current_ship_name": "LEVENSAU",
       "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    },
-    {
-      "pilot_key": "heyenga_dennis",
-      "pilot_name": "Heyenga, Dennis",
-      "pilot_q": 4,
-      "pilot_tactical_nr": 2,
-      "abteilungszeit": "2026-05-31 08:42",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "CORMORAN P677",
-      "from": "HOR",
-      "to": "RÜB",
-      "current_ship_name": "CORMORAN P677",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta",
       "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
     }
@@ -994,7 +1040,16 @@
           "pilot_tactical_nr": 4,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "LADY HELENE",
-          "pilot_current_ship_eta_rueb": "2026-05-31 12:03",
+          "pilot_current_ship_eta_rueb": "2026-05-31 12:02",
+          "ship_eta_rueb": "2026-05-31 10:57",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Heyenga, Dennis",
+          "pilot_tactical_nr": 2,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "CORMORAN P677",
+          "pilot_current_ship_eta_rueb": "2026-05-31 13:33",
           "ship_eta_rueb": "2026-05-31 10:57",
           "availability_kind": "merged_eta"
         },
@@ -1160,7 +1215,16 @@
           "pilot_tactical_nr": 4,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "LADY HELENE",
-          "pilot_current_ship_eta_rueb": "2026-05-31 12:03",
+          "pilot_current_ship_eta_rueb": "2026-05-31 12:02",
+          "ship_eta_rueb": "2026-05-31 11:00",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Heyenga, Dennis",
+          "pilot_tactical_nr": 2,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "CORMORAN P677",
+          "pilot_current_ship_eta_rueb": "2026-05-31 13:33",
           "ship_eta_rueb": "2026-05-31 11:00",
           "availability_kind": "merged_eta"
         },
@@ -1307,7 +1371,16 @@
           "pilot_tactical_nr": 4,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "LADY HELENE",
-          "pilot_current_ship_eta_rueb": "2026-05-31 12:03",
+          "pilot_current_ship_eta_rueb": "2026-05-31 12:02",
+          "ship_eta_rueb": "2026-05-31 11:06",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Heyenga, Dennis",
+          "pilot_tactical_nr": 2,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "CORMORAN P677",
+          "pilot_current_ship_eta_rueb": "2026-05-31 13:33",
           "ship_eta_rueb": "2026-05-31 11:06",
           "availability_kind": "merged_eta"
         },
@@ -1448,7 +1521,16 @@
           "pilot_tactical_nr": 4,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "LADY HELENE",
-          "pilot_current_ship_eta_rueb": "2026-05-31 12:03",
+          "pilot_current_ship_eta_rueb": "2026-05-31 12:02",
+          "ship_eta_rueb": "2026-05-31 11:50",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Heyenga, Dennis",
+          "pilot_tactical_nr": 2,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "CORMORAN P677",
+          "pilot_current_ship_eta_rueb": "2026-05-31 13:33",
           "ship_eta_rueb": "2026-05-31 11:50",
           "availability_kind": "merged_eta"
         },
@@ -1586,12 +1668,21 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "LADY HELENE",
-          "current_ship_eta_rueb": "2026-05-31 12:03",
+          "current_ship_eta_rueb": "2026-05-31 12:02",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
       ],
       "excluded": [
+        {
+          "pilot_name": "Heyenga, Dennis",
+          "pilot_tactical_nr": 2,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "CORMORAN P677",
+          "pilot_current_ship_eta_rueb": "2026-05-31 13:33",
+          "ship_eta_rueb": "2026-05-31 12:33",
+          "availability_kind": "merged_eta"
+        },
         {
           "pilot_name": "Staedler, Frank",
           "pilot_tactical_nr": 1,
@@ -1701,7 +1792,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "LADY HELENE",
-          "current_ship_eta_rueb": "2026-05-31 12:03",
+          "current_ship_eta_rueb": "2026-05-31 12:02",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
@@ -1713,6 +1804,15 @@
           "reason": "Quali passt nicht (4 > 1)",
           "pilot_q": 4,
           "ship_q": 1
+        },
+        {
+          "pilot_name": "Heyenga, Dennis",
+          "pilot_tactical_nr": 2,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "CORMORAN P677",
+          "pilot_current_ship_eta_rueb": "2026-05-31 13:33",
+          "ship_eta_rueb": "2026-05-31 13:15",
+          "availability_kind": "merged_eta"
         },
         {
           "pilot_name": "Staedler, Frank",
@@ -1823,12 +1923,21 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "LADY HELENE",
-          "current_ship_eta_rueb": "2026-05-31 12:03",
+          "current_ship_eta_rueb": "2026-05-31 12:02",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
       ],
       "excluded": [
+        {
+          "pilot_name": "Heyenga, Dennis",
+          "pilot_tactical_nr": 2,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "CORMORAN P677",
+          "pilot_current_ship_eta_rueb": "2026-05-31 13:33",
+          "ship_eta_rueb": "2026-05-31 13:18",
+          "availability_kind": "merged_eta"
+        },
         {
           "pilot_name": "Staedler, Frank",
           "pilot_tactical_nr": 1,
@@ -1872,32 +1981,126 @@
           "type_of_loading": "Stueckgueter"
         }
       }
+    },
+    {
+      "ship_key": "LADY HESTIA",
+      "ship_name": "LADY HESTIA",
+      "eta_rueb": "2026-05-31 14:21",
+      "ship_q": 5,
+      "assigned_pilot": "Purwin, Marko",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 6,
+      "assigned_abteilungszeit": "2026-05-31 07:01",
+      "assigned_current_ship_name": "ROLAND ESSBERGER",
+      "assigned_current_ship_eta_rueb": "2026-05-31 11:56",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 5,
+      "candidates": [
+        {
+          "pilot_name": "Purwin, Marko",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 6,
+          "abteilungszeit": "2026-05-31 07:01",
+          "fahrzeug": "ROLAND ESSBERGER",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ROLAND ESSBERGER",
+          "current_ship_eta_rueb": "2026-05-31 11:56",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Plaisant, Julian",
+          "pilot_q": 4,
+          "pilot_tactical_nr": 5,
+          "abteilungszeit": "2026-05-31 07:08",
+          "fahrzeug": "OTELLO",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "OTELLO",
+          "current_ship_eta_rueb": "2026-05-31 12:07",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Hartung, René",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 4,
+          "abteilungszeit": "2026-05-31 07:13",
+          "fahrzeug": "LADY HELENE",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "LADY HELENE",
+          "current_ship_eta_rueb": "2026-05-31 12:02",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Heyenga, Dennis",
+          "pilot_q": 4,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-05-31 08:42",
+          "fahrzeug": "CORMORAN P677",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "CORMORAN P677",
+          "current_ship_eta_rueb": "2026-05-31 13:33",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Staedler, Frank",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 1,
+          "abteilungszeit": "2026-05-31 08:46",
+          "fahrzeug": "TERRAMAR",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "TERRAMAR",
+          "current_ship_eta_rueb": "2026-05-31 13:29",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "8",
+          "time": "Sun May 31 14:10:00 CEST 2026",
+          "draft": "4.6",
+          "q_gruppe": "5",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "HOS → KLT",
+          "routes": [
+            "HOS → KLT",
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "5",
+          "vg": "3",
+          "draft": "4.60",
+          "length_m": "98.20",
+          "beam_m": "13.4",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "P",
+          "pilot_1_name": "Hagena, Matthias",
+          "travel_status": "SAILING_NOK",
+          "makler": "UCA",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Holz"
+        }
+      }
     }
   ],
   "unassigned_ships": [],
   "unused_pilots": [
-    {
-      "pilot_key": "purwin_marko",
-      "vorname": "Marko",
-      "nachname": "Purwin",
-      "pilot_name": "Purwin, Marko",
-      "abteilungszeit": "2026-05-31 07:01",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 6,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "ROLAND ESSBERGER",
-      "from": "HOS",
-      "to": "RÜB",
-      "nr": 6,
-      "raw_time": "Sun May 31 07:01:00 CEST 2026",
-      "current_ship_name": "ROLAND ESSBERGER",
-      "current_ship_eta_rueb": "2026-05-31 11:56",
-      "current_ship_q": 0,
-      "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
-    },
     {
       "pilot_key": "plaisant_julian",
       "vorname": "Julian",
@@ -1936,9 +2139,31 @@
       "nr": 4,
       "raw_time": "Sun May 31 07:13:00 CEST 2026",
       "current_ship_name": "LADY HELENE",
-      "current_ship_eta_rueb": "2026-05-31 12:03",
+      "current_ship_eta_rueb": "2026-05-31 12:02",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "heyenga_dennis",
+      "vorname": "Dennis",
+      "nachname": "Heyenga",
+      "pilot_name": "Heyenga, Dennis",
+      "abteilungszeit": "2026-05-31 08:42",
+      "pilot_q": 4,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 2,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "CORMORAN P677",
+      "from": "HOR",
+      "to": "RÜB",
+      "nr": 2,
+      "raw_time": "Sun May 31 08:42:00 CEST 2026",
+      "current_ship_name": "CORMORAN P677",
+      "current_ship_eta_rueb": "2026-05-31 13:33",
+      "current_ship_q": 0,
+      "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
