@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-31T18:18:54",
+  "generated_at": "2026-05-31T18:21:13",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 3,
     "pilots_total": 14,
-    "pilots_dispatchable": 13,
-    "pilots_visible_only": 1,
+    "pilots_dispatchable": 14,
+    "pilots_visible_only": 0,
     "assignments": 3,
     "unassigned_ships": 0,
-    "unused_pilots": 10
+    "unused_pilots": 11
   },
   "ships": [
     {
@@ -239,7 +239,7 @@
       "nr": 12,
       "raw_time": "Sun May 31 13:16:00 CEST 2026",
       "current_ship_name": "ARKLOW CASTLE",
-      "current_ship_eta_rueb": "2026-05-31 19:22",
+      "current_ship_eta_rueb": "2026-05-31 19:25",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -415,9 +415,10 @@
       "nr": 3,
       "raw_time": "Sun May 31 16:49:00 CEST 2026",
       "current_ship_name": "SOUTH ENABLER",
+      "current_ship_eta_rueb": "2026-05-31 22:34",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
@@ -548,7 +549,7 @@
       "nr": 12,
       "raw_time": "Sun May 31 13:16:00 CEST 2026",
       "current_ship_name": "ARKLOW CASTLE",
-      "current_ship_eta_rueb": "2026-05-31 19:22",
+      "current_ship_eta_rueb": "2026-05-31 19:25",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -709,6 +710,28 @@
       "availability_kind": "merged_eta"
     },
     {
+      "pilot_key": "haala_klaus werner",
+      "vorname": "Klaus Werner",
+      "nachname": "Haala",
+      "pilot_name": "Haala, Klaus Werner",
+      "abteilungszeit": "2026-05-31 16:49",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 3,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "SOUTH ENABLER",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 3,
+      "raw_time": "Sun May 31 16:49:00 CEST 2026",
+      "current_ship_name": "SOUTH ENABLER",
+      "current_ship_eta_rueb": "2026-05-31 22:34",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
       "pilot_key": "schulz_arne",
       "vorname": "Arne",
       "nachname": "Schulz",
@@ -753,23 +776,7 @@
       "availability_kind": "merged_eta"
     }
   ],
-  "visible_but_not_dispatchable_pilots": [
-    {
-      "pilot_key": "haala_klaus werner",
-      "pilot_name": "Haala, Klaus Werner",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 3,
-      "abteilungszeit": "2026-05-31 16:49",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "SOUTH ENABLER",
-      "from": "HOS",
-      "to": "RÜB",
-      "current_ship_name": "SOUTH ENABLER",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    }
-  ],
+  "visible_but_not_dispatchable_pilots": [],
   "assignments": [
     {
       "ship_key": "NETA A.",
@@ -822,7 +829,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "ARKLOW CASTLE",
-          "current_ship_eta_rueb": "2026-05-31 19:22",
+          "current_ship_eta_rueb": "2026-05-31 19:25",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -926,6 +933,15 @@
           "reason": "Quali passt nicht (4 > 1)",
           "pilot_q": 4,
           "ship_q": 1
+        },
+        {
+          "pilot_name": "Haala, Klaus Werner",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "SOUTH ENABLER",
+          "pilot_current_ship_eta_rueb": "2026-05-31 22:34",
+          "ship_eta_rueb": "2026-05-31 22:06",
+          "availability_kind": "merged_eta"
         },
         {
           "pilot_name": "Föhring, Nils",
@@ -1009,7 +1025,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "ARKLOW CASTLE",
-          "current_ship_eta_rueb": "2026-05-31 19:22",
+          "current_ship_eta_rueb": "2026-05-31 19:25",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1115,6 +1131,15 @@
           "ship_q": 3
         },
         {
+          "pilot_name": "Haala, Klaus Werner",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "SOUTH ENABLER",
+          "pilot_current_ship_eta_rueb": "2026-05-31 22:34",
+          "ship_eta_rueb": "2026-05-31 22:15",
+          "availability_kind": "merged_eta"
+        },
+        {
           "pilot_name": "Föhring, Nils",
           "pilot_tactical_nr": 1,
           "reason": "kommt nicht rechtzeitig in RÜB an",
@@ -1196,7 +1221,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "ARKLOW CASTLE",
-          "current_ship_eta_rueb": "2026-05-31 19:22",
+          "current_ship_eta_rueb": "2026-05-31 19:25",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1307,6 +1332,15 @@
       ],
       "excluded": [
         {
+          "pilot_name": "Haala, Klaus Werner",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "SOUTH ENABLER",
+          "pilot_current_ship_eta_rueb": "2026-05-31 22:34",
+          "ship_eta_rueb": "2026-05-31 22:19",
+          "availability_kind": "merged_eta"
+        },
+        {
           "pilot_name": "Föhring, Nils",
           "pilot_tactical_nr": 1,
           "reason": "kommt nicht rechtzeitig in RÜB an",
@@ -1369,7 +1403,7 @@
       "nr": 12,
       "raw_time": "Sun May 31 13:16:00 CEST 2026",
       "current_ship_name": "ARKLOW CASTLE",
-      "current_ship_eta_rueb": "2026-05-31 19:22",
+      "current_ship_eta_rueb": "2026-05-31 19:25",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -1526,6 +1560,28 @@
       "current_ship_eta_rueb": "2026-05-31 17:08",
       "current_ship_q": 3,
       "current_ship_route": "RÜB → HOS",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "haala_klaus werner",
+      "vorname": "Klaus Werner",
+      "nachname": "Haala",
+      "pilot_name": "Haala, Klaus Werner",
+      "abteilungszeit": "2026-05-31 16:49",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 3,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "SOUTH ENABLER",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 3,
+      "raw_time": "Sun May 31 16:49:00 CEST 2026",
+      "current_ship_name": "SOUTH ENABLER",
+      "current_ship_eta_rueb": "2026-05-31 22:34",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
