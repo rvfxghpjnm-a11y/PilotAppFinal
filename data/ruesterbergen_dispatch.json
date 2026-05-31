@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-31T12:11:01",
+  "generated_at": "2026-05-31T12:13:03",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 7,
     "pilots_total": 16,
-    "pilots_dispatchable": 14,
-    "pilots_visible_only": 2,
+    "pilots_dispatchable": 15,
+    "pilots_visible_only": 1,
     "assignments": 7,
     "unassigned_ships": 0,
-    "unused_pilots": 7
+    "unused_pilots": 8
   },
   "ships": [
     {
@@ -629,6 +629,7 @@
       "nr": 3,
       "raw_time": "Sun May 31 11:40:00 CEST 2026",
       "current_ship_name": "ZAPADNYY",
+      "current_ship_eta_rueb": "2026-05-31 14:20",
       "current_ship_q": 0,
       "current_ship_route": "UTG → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -962,24 +963,31 @@
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
-    }
-  ],
-  "visible_but_not_dispatchable_pilots": [
+    },
     {
       "pilot_key": "bachholz_carsten",
+      "vorname": "Carsten",
+      "nachname": "Bachholz",
       "pilot_name": "Bachholz, Carsten",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 3,
       "abteilungszeit": "2026-05-31 11:40",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 3,
       "aufgabe": "Kanalbört",
       "fahrzeug": "ZAPADNYY",
       "from": "UTG",
       "to": "RÜB",
+      "nr": 3,
+      "raw_time": "Sun May 31 11:40:00 CEST 2026",
       "current_ship_name": "ZAPADNYY",
+      "current_ship_eta_rueb": "2026-05-31 14:20",
+      "current_ship_q": 0,
+      "current_ship_route": "UTG → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    },
+      "availability_kind": "merged_eta"
+    }
+  ],
+  "visible_but_not_dispatchable_pilots": [
     {
       "pilot_key": "tontarra_olaf",
       "pilot_name": "Tontarra, Olaf",
@@ -1170,6 +1178,15 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "MARJATTA",
           "pilot_current_ship_eta_rueb": "2026-05-31 15:36",
+          "ship_eta_rueb": "2026-05-31 13:06",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Bachholz, Carsten",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "ZAPADNYY",
+          "pilot_current_ship_eta_rueb": "2026-05-31 14:20",
           "ship_eta_rueb": "2026-05-31 13:06",
           "availability_kind": "merged_eta"
         }
@@ -1382,6 +1399,15 @@
           "pilot_current_ship_eta_rueb": "2026-05-31 15:36",
           "ship_eta_rueb": "2026-05-31 13:10",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Bachholz, Carsten",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "ZAPADNYY",
+          "pilot_current_ship_eta_rueb": "2026-05-31 14:20",
+          "ship_eta_rueb": "2026-05-31 13:10",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -1432,7 +1458,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 11,
+      "candidate_count": 12,
       "candidates": [
         {
           "pilot_name": "Escher, Franck",
@@ -1576,6 +1602,19 @@
           "current_ship_eta_rueb": "2026-05-31 11:44",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Bachholz, Carsten",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 3,
+          "abteilungszeit": "2026-05-31 11:40",
+          "fahrzeug": "ZAPADNYY",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ZAPADNYY",
+          "current_ship_eta_rueb": "2026-05-31 14:20",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
         }
       ],
       "excluded": [
@@ -1637,7 +1676,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 7,
+      "candidate_count": 8,
       "candidates": [
         {
           "pilot_name": "Flink, Jörg",
@@ -1729,6 +1768,19 @@
           "current_ship_eta_rueb": "2026-05-31 11:44",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Bachholz, Carsten",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 3,
+          "abteilungszeit": "2026-05-31 11:40",
+          "fahrzeug": "ZAPADNYY",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ZAPADNYY",
+          "current_ship_eta_rueb": "2026-05-31 14:20",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
         }
       ],
       "excluded": [
@@ -1811,7 +1863,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 7,
+      "candidate_count": 8,
       "candidates": [
         {
           "pilot_name": "Petersen, Yannick",
@@ -1903,6 +1955,19 @@
           "current_ship_eta_rueb": "2026-05-31 11:44",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Bachholz, Carsten",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 3,
+          "abteilungszeit": "2026-05-31 11:40",
+          "fahrzeug": "ZAPADNYY",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ZAPADNYY",
+          "current_ship_eta_rueb": "2026-05-31 14:20",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
         }
       ],
       "excluded": [
@@ -1978,7 +2043,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 8,
+      "candidate_count": 9,
       "candidates": [
         {
           "pilot_name": "Wille, Christian",
@@ -2083,6 +2148,19 @@
           "current_ship_eta_rueb": "2026-05-31 11:44",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Bachholz, Carsten",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 3,
+          "abteilungszeit": "2026-05-31 11:40",
+          "fahrzeug": "ZAPADNYY",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ZAPADNYY",
+          "current_ship_eta_rueb": "2026-05-31 14:20",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
         }
       ],
       "excluded": [
@@ -2143,7 +2221,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 8,
+      "candidate_count": 9,
       "candidates": [
         {
           "pilot_name": "Lielienthal, Jörn",
@@ -2246,6 +2324,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "MARJATTA",
           "current_ship_eta_rueb": "2026-05-31 15:36",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Bachholz, Carsten",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 3,
+          "abteilungszeit": "2026-05-31 11:40",
+          "fahrzeug": "ZAPADNYY",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ZAPADNYY",
+          "current_ship_eta_rueb": "2026-05-31 14:20",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
@@ -2435,6 +2526,28 @@
       "current_ship_eta_rueb": "2026-05-31 15:36",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "bachholz_carsten",
+      "vorname": "Carsten",
+      "nachname": "Bachholz",
+      "pilot_name": "Bachholz, Carsten",
+      "abteilungszeit": "2026-05-31 11:40",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 3,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "ZAPADNYY",
+      "from": "UTG",
+      "to": "RÜB",
+      "nr": 3,
+      "raw_time": "Sun May 31 11:40:00 CEST 2026",
+      "current_ship_name": "ZAPADNYY",
+      "current_ship_eta_rueb": "2026-05-31 14:20",
+      "current_ship_q": 0,
+      "current_ship_route": "UTG → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     }
