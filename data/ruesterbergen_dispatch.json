@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-31T04:59:00",
+  "generated_at": "2026-05-31T05:01:00",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 4,
     "pilots_total": 12,
-    "pilots_dispatchable": 10,
-    "pilots_visible_only": 2,
+    "pilots_dispatchable": 11,
+    "pilots_visible_only": 1,
     "assignments": 4,
     "unassigned_ships": 0,
-    "unused_pilots": 6
+    "unused_pilots": 7
   },
   "ships": [
     {
@@ -391,9 +391,10 @@
       "nr": 5,
       "raw_time": "Sun May 31 03:49:00 CEST 2026",
       "current_ship_name": "RIX BAY",
+      "current_ship_eta_rueb": "2026-05-31 09:19",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
@@ -636,6 +637,28 @@
       "availability_kind": "merged_eta"
     },
     {
+      "pilot_key": "flink_jörg",
+      "vorname": "Jörg",
+      "nachname": "Flink",
+      "pilot_name": "Flink, Jörg",
+      "abteilungszeit": "2026-05-31 03:49",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 5,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "RIX BAY",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 5,
+      "raw_time": "Sun May 31 03:49:00 CEST 2026",
+      "current_ship_name": "RIX BAY",
+      "current_ship_eta_rueb": "2026-05-31 09:19",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
       "pilot_key": "wille_christian",
       "vorname": "Christian",
       "nachname": "Wille",
@@ -659,21 +682,6 @@
     }
   ],
   "visible_but_not_dispatchable_pilots": [
-    {
-      "pilot_key": "flink_jörg",
-      "pilot_name": "Flink, Jörg",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 5,
-      "abteilungszeit": "2026-05-31 03:49",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "RIX BAY",
-      "from": "HOS",
-      "to": "RÜB",
-      "current_ship_name": "RIX BAY",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    },
     {
       "pilot_key": "lielienthal_jörn",
       "pilot_name": "Lielienthal, Jörn",
@@ -826,6 +834,15 @@
         }
       ],
       "excluded": [
+        {
+          "pilot_name": "Flink, Jörg",
+          "pilot_tactical_nr": 5,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "RIX BAY",
+          "pilot_current_ship_eta_rueb": "2026-05-31 09:19",
+          "ship_eta_rueb": "2026-05-31 09:01",
+          "availability_kind": "merged_eta"
+        },
         {
           "pilot_name": "Wille, Christian",
           "pilot_tactical_nr": 2,
@@ -987,6 +1004,15 @@
           "ship_q": 1
         },
         {
+          "pilot_name": "Flink, Jörg",
+          "pilot_tactical_nr": 5,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "RIX BAY",
+          "pilot_current_ship_eta_rueb": "2026-05-31 09:19",
+          "ship_eta_rueb": "2026-05-31 09:04",
+          "availability_kind": "merged_eta"
+        },
+        {
           "pilot_name": "Wille, Christian",
           "pilot_tactical_nr": 2,
           "reason": "kommt nicht rechtzeitig in RÜB an",
@@ -1134,6 +1160,15 @@
           "ship_q": 0
         },
         {
+          "pilot_name": "Flink, Jörg",
+          "pilot_tactical_nr": 5,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "RIX BAY",
+          "pilot_current_ship_eta_rueb": "2026-05-31 09:19",
+          "ship_eta_rueb": "2026-05-31 09:07",
+          "availability_kind": "merged_eta"
+        },
+        {
           "pilot_name": "Wille, Christian",
           "pilot_tactical_nr": 2,
           "reason": "kommt nicht rechtzeitig in RÜB an",
@@ -1190,7 +1225,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 7,
+      "candidate_count": 8,
       "candidates": [
         {
           "pilot_name": "Krause, Malte",
@@ -1267,6 +1302,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "BALTICBORG",
           "current_ship_eta_rueb": "2026-05-31 05:23",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Flink, Jörg",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 5,
+          "abteilungszeit": "2026-05-31 03:49",
+          "fahrzeug": "RIX BAY",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RIX BAY",
+          "current_ship_eta_rueb": "2026-05-31 09:19",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1411,6 +1459,28 @@
       "current_ship_eta_rueb": "2026-05-31 05:23",
       "current_ship_q": 1,
       "current_ship_route": "HOR → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "flink_jörg",
+      "vorname": "Jörg",
+      "nachname": "Flink",
+      "pilot_name": "Flink, Jörg",
+      "abteilungszeit": "2026-05-31 03:49",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 5,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "RIX BAY",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 5,
+      "raw_time": "Sun May 31 03:49:00 CEST 2026",
+      "current_ship_name": "RIX BAY",
+      "current_ship_eta_rueb": "2026-05-31 09:19",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
