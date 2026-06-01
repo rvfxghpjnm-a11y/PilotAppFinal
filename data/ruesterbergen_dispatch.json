@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-01T08:29:16",
+  "generated_at": "2026-06-01T08:31:10",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,17 +34,17 @@
   "counts": {
     "ships_for_ruesterbergen": 5,
     "pilots_total": 16,
-    "pilots_dispatchable": 12,
-    "pilots_visible_only": 4,
+    "pilots_dispatchable": 13,
+    "pilots_visible_only": 3,
     "assignments": 5,
     "unassigned_ships": 0,
-    "unused_pilots": 7
+    "unused_pilots": 8
   },
   "ships": [
     {
       "ship_key": "ARKLOW VALE",
       "ship_name": "ARKLOW VALE",
-      "eta_rueb": "2026-06-01 10:53",
+      "eta_rueb": "2026-06-01 10:52",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
@@ -475,7 +475,7 @@
       "nr": 5,
       "raw_time": "Mon Jun 01 07:00:00 CEST 2026",
       "current_ship_name": "ELBINSEL",
-      "current_ship_eta_rueb": "2026-06-01 12:06",
+      "current_ship_eta_rueb": "2026-06-01 12:08",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -497,9 +497,10 @@
       "nr": 4,
       "raw_time": "Mon Jun 01 07:02:00 CEST 2026",
       "current_ship_name": "MAI LEHMANN",
+      "current_ship_eta_rueb": "2026-06-01 12:02",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
@@ -822,7 +823,29 @@
       "nr": 5,
       "raw_time": "Mon Jun 01 07:00:00 CEST 2026",
       "current_ship_name": "ELBINSEL",
-      "current_ship_eta_rueb": "2026-06-01 12:06",
+      "current_ship_eta_rueb": "2026-06-01 12:08",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "meise_gregor",
+      "vorname": "Gregor",
+      "nachname": "Meise",
+      "pilot_name": "Meise, Gregor",
+      "abteilungszeit": "2026-06-01 07:02",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 4,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "MAI LEHMANN",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 4,
+      "raw_time": "Mon Jun 01 07:02:00 CEST 2026",
+      "current_ship_name": "MAI LEHMANN",
+      "current_ship_eta_rueb": "2026-06-01 12:02",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -830,21 +853,6 @@
     }
   ],
   "visible_but_not_dispatchable_pilots": [
-    {
-      "pilot_key": "meise_gregor",
-      "pilot_name": "Meise, Gregor",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 4,
-      "abteilungszeit": "2026-06-01 07:02",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "MAI LEHMANN",
-      "from": "HOS",
-      "to": "RÜB",
-      "current_ship_name": "MAI LEHMANN",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    },
     {
       "pilot_key": "engel_alexander",
       "pilot_name": "Engel, Alexander",
@@ -895,7 +903,7 @@
     {
       "ship_key": "ARKLOW VALE",
       "ship_name": "ARKLOW VALE",
-      "eta_rueb": "2026-06-01 10:53",
+      "eta_rueb": "2026-06-01 10:52",
       "ship_q": 5,
       "assigned_pilot": "Skawianczyk, Artur",
       "assigned_pilot_q": 0,
@@ -1057,8 +1065,17 @@
           "pilot_tactical_nr": 5,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "ELBINSEL",
-          "pilot_current_ship_eta_rueb": "2026-06-01 12:06",
-          "ship_eta_rueb": "2026-06-01 10:53",
+          "pilot_current_ship_eta_rueb": "2026-06-01 12:08",
+          "ship_eta_rueb": "2026-06-01 10:52",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Meise, Gregor",
+          "pilot_tactical_nr": 4,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "MAI LEHMANN",
+          "pilot_current_ship_eta_rueb": "2026-06-01 12:02",
+          "ship_eta_rueb": "2026-06-01 10:52",
           "availability_kind": "merged_eta"
         }
       ],
@@ -1224,7 +1241,16 @@
           "pilot_tactical_nr": 5,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "ELBINSEL",
-          "pilot_current_ship_eta_rueb": "2026-06-01 12:06",
+          "pilot_current_ship_eta_rueb": "2026-06-01 12:08",
+          "ship_eta_rueb": "2026-06-01 10:56",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Meise, Gregor",
+          "pilot_tactical_nr": 4,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "MAI LEHMANN",
+          "pilot_current_ship_eta_rueb": "2026-06-01 12:02",
           "ship_eta_rueb": "2026-06-01 10:56",
           "availability_kind": "merged_eta"
         }
@@ -1402,7 +1428,16 @@
           "pilot_tactical_nr": 5,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "ELBINSEL",
-          "pilot_current_ship_eta_rueb": "2026-06-01 12:06",
+          "pilot_current_ship_eta_rueb": "2026-06-01 12:08",
+          "ship_eta_rueb": "2026-06-01 11:40",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Meise, Gregor",
+          "pilot_tactical_nr": 4,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "MAI LEHMANN",
+          "pilot_current_ship_eta_rueb": "2026-06-01 12:02",
           "ship_eta_rueb": "2026-06-01 11:40",
           "availability_kind": "merged_eta"
         }
@@ -1443,7 +1478,7 @@
       "assigned_availability_kind": "already_in_rueb",
       "assigned_availability_hint": "Lotse gilt als bereits in RÜB",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 9,
+      "candidate_count": 10,
       "candidates": [
         {
           "pilot_name": "Demant, Tom",
@@ -1557,7 +1592,20 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "ELBINSEL",
-          "current_ship_eta_rueb": "2026-06-01 12:06",
+          "current_ship_eta_rueb": "2026-06-01 12:08",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Meise, Gregor",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 4,
+          "abteilungszeit": "2026-06-01 07:02",
+          "fahrzeug": "MAI LEHMANN",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "MAI LEHMANN",
+          "current_ship_eta_rueb": "2026-06-01 12:02",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
@@ -1610,7 +1658,7 @@
       "assigned_current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 5,
+      "candidate_count": 6,
       "candidates": [
         {
           "pilot_name": "Suermann, Nik",
@@ -1672,7 +1720,20 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "ELBINSEL",
-          "current_ship_eta_rueb": "2026-06-01 12:06",
+          "current_ship_eta_rueb": "2026-06-01 12:08",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Meise, Gregor",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 4,
+          "abteilungszeit": "2026-06-01 07:02",
+          "fahrzeug": "MAI LEHMANN",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "MAI LEHMANN",
+          "current_ship_eta_rueb": "2026-06-01 12:02",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
@@ -1885,7 +1946,29 @@
       "nr": 5,
       "raw_time": "Mon Jun 01 07:00:00 CEST 2026",
       "current_ship_name": "ELBINSEL",
-      "current_ship_eta_rueb": "2026-06-01 12:06",
+      "current_ship_eta_rueb": "2026-06-01 12:08",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "meise_gregor",
+      "vorname": "Gregor",
+      "nachname": "Meise",
+      "pilot_name": "Meise, Gregor",
+      "abteilungszeit": "2026-06-01 07:02",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 4,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "MAI LEHMANN",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 4,
+      "raw_time": "Mon Jun 01 07:02:00 CEST 2026",
+      "current_ship_name": "MAI LEHMANN",
+      "current_ship_eta_rueb": "2026-06-01 12:02",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
