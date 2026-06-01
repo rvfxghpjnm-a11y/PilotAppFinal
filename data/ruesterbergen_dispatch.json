@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-01T21:55:26",
+  "generated_at": "2026-06-01T21:57:22",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 2,
     "pilots_total": 11,
-    "pilots_dispatchable": 9,
-    "pilots_visible_only": 2,
+    "pilots_dispatchable": 10,
+    "pilots_visible_only": 1,
     "assignments": 2,
     "unassigned_ships": 0,
-    "unused_pilots": 7
+    "unused_pilots": 8
   },
   "ships": [
     {
@@ -309,7 +309,7 @@
       "nr": 8,
       "raw_time": "Mon Jun 01 18:11:00 CEST 2026",
       "current_ship_name": "AILA",
-      "current_ship_eta_rueb": "2026-06-01 23:35",
+      "current_ship_eta_rueb": "2026-06-01 23:34",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -352,6 +352,7 @@
       "nr": 2,
       "raw_time": "Mon Jun 01 20:32:00 CEST 2026",
       "current_ship_name": "KEY FJORD",
+      "current_ship_eta_rueb": "2026-06-02 01:35",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -550,7 +551,29 @@
       "nr": 8,
       "raw_time": "Mon Jun 01 18:11:00 CEST 2026",
       "current_ship_name": "AILA",
-      "current_ship_eta_rueb": "2026-06-01 23:35",
+      "current_ship_eta_rueb": "2026-06-01 23:34",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "wald_mark",
+      "vorname": "Mark",
+      "nachname": "Wald",
+      "pilot_name": "Wald, Mark",
+      "abteilungszeit": "2026-06-01 20:32",
+      "pilot_q": 3,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 2,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "KEY FJORD",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 2,
+      "raw_time": "Mon Jun 01 20:32:00 CEST 2026",
+      "current_ship_name": "KEY FJORD",
+      "current_ship_eta_rueb": "2026-06-02 01:35",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -569,21 +592,6 @@
       "from": "HOR",
       "to": "RÜB",
       "current_ship_name": "VLIELAND",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    },
-    {
-      "pilot_key": "wald_mark",
-      "pilot_name": "Wald, Mark",
-      "pilot_q": 3,
-      "pilot_tactical_nr": 2,
-      "abteilungszeit": "2026-06-01 20:32",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "KEY FJORD",
-      "from": "HOS",
-      "to": "RÜB",
-      "current_ship_name": "KEY FJORD",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta",
       "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
@@ -713,7 +721,16 @@
           "pilot_tactical_nr": 8,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "AILA",
-          "pilot_current_ship_eta_rueb": "2026-06-01 23:35",
+          "pilot_current_ship_eta_rueb": "2026-06-01 23:34",
+          "ship_eta_rueb": "2026-06-01 23:20",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Wald, Mark",
+          "pilot_tactical_nr": 2,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "KEY FJORD",
+          "pilot_current_ship_eta_rueb": "2026-06-02 01:35",
           "ship_eta_rueb": "2026-06-01 23:20",
           "availability_kind": "merged_eta"
         }
@@ -868,8 +885,19 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "AILA",
-          "current_ship_eta_rueb": "2026-06-01 23:35",
+          "current_ship_eta_rueb": "2026-06-01 23:34",
           "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Wald, Mark",
+          "pilot_tactical_nr": 2,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "KEY FJORD",
+          "pilot_current_ship_eta_rueb": "2026-06-02 01:35",
+          "ship_eta_rueb": "2026-06-02 01:22",
           "availability_kind": "merged_eta"
         }
       ],
@@ -1056,7 +1084,29 @@
       "nr": 8,
       "raw_time": "Mon Jun 01 18:11:00 CEST 2026",
       "current_ship_name": "AILA",
-      "current_ship_eta_rueb": "2026-06-01 23:35",
+      "current_ship_eta_rueb": "2026-06-01 23:34",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "wald_mark",
+      "vorname": "Mark",
+      "nachname": "Wald",
+      "pilot_name": "Wald, Mark",
+      "abteilungszeit": "2026-06-01 20:32",
+      "pilot_q": 3,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 2,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "KEY FJORD",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 2,
+      "raw_time": "Mon Jun 01 20:32:00 CEST 2026",
+      "current_ship_name": "KEY FJORD",
+      "current_ship_eta_rueb": "2026-06-02 01:35",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
