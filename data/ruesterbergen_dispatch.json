@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-02T00:49:17",
+  "generated_at": "2026-06-02T00:51:24",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 5,
     "pilots_total": 10,
-    "pilots_dispatchable": 6,
-    "pilots_visible_only": 4,
+    "pilots_dispatchable": 7,
+    "pilots_visible_only": 3,
     "assignments": 5,
     "unassigned_ships": 0,
-    "unused_pilots": 1
+    "unused_pilots": 2
   },
   "ships": [
     {
@@ -157,7 +157,7 @@
     {
       "ship_key": "WES MADITA",
       "ship_name": "WES MADITA",
-      "eta_rueb": "2026-06-02 03:38",
+      "eta_rueb": "2026-06-02 03:37",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
@@ -397,9 +397,10 @@
       "nr": 3,
       "raw_time": "Mon Jun 01 23:24:00 CEST 2026",
       "current_ship_name": "STELLA VIRGO",
+      "current_ship_eta_rueb": "2026-06-02 04:21",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
@@ -441,7 +442,7 @@
       "current_ship_name": "W NORTH",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta"
     }
   ],
@@ -574,6 +575,28 @@
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "schmidt_thomas",
+      "vorname": "Thomas",
+      "nachname": "Schmidt",
+      "pilot_name": "Schmidt, Thomas",
+      "abteilungszeit": "2026-06-01 23:24",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 3,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "STELLA VIRGO",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 3,
+      "raw_time": "Mon Jun 01 23:24:00 CEST 2026",
+      "current_ship_name": "STELLA VIRGO",
+      "current_ship_eta_rueb": "2026-06-02 04:21",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
     }
   ],
   "visible_but_not_dispatchable_pilots": [
@@ -589,21 +612,6 @@
       "to": "RÜB",
       "current_ship_name": "OHIOBORG",
       "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    },
-    {
-      "pilot_key": "schmidt_thomas",
-      "pilot_name": "Schmidt, Thomas",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 3,
-      "abteilungszeit": "2026-06-01 23:24",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "STELLA VIRGO",
-      "from": "HOS",
-      "to": "RÜB",
-      "current_ship_name": "STELLA VIRGO",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta",
       "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
     },
@@ -633,7 +641,7 @@
       "from": "HOS",
       "to": "RÜB",
       "current_ship_name": "W NORTH",
-      "current_ship_source": "schiffe_merged.seelotsen",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta",
       "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
     }
@@ -723,6 +731,15 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "KEY FJORD",
           "pilot_current_ship_eta_rueb": "2026-06-02 01:28",
+          "ship_eta_rueb": "2026-06-02 01:08",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Schmidt, Thomas",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "STELLA VIRGO",
+          "pilot_current_ship_eta_rueb": "2026-06-02 04:21",
           "ship_eta_rueb": "2026-06-02 01:08",
           "availability_kind": "merged_eta"
         }
@@ -841,6 +858,17 @@
           "availability_kind": "merged_eta"
         }
       ],
+      "excluded": [
+        {
+          "pilot_name": "Schmidt, Thomas",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "STELLA VIRGO",
+          "pilot_current_ship_eta_rueb": "2026-06-02 04:21",
+          "ship_eta_rueb": "2026-06-02 03:16",
+          "availability_kind": "merged_eta"
+        }
+      ],
       "ship": {
         "meldung": {
           "nr": "2",
@@ -939,6 +967,15 @@
           "reason": "Quali passt nicht (3 > 2)",
           "pilot_q": 3,
           "ship_q": 2
+        },
+        {
+          "pilot_name": "Schmidt, Thomas",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "STELLA VIRGO",
+          "pilot_current_ship_eta_rueb": "2026-06-02 04:21",
+          "ship_eta_rueb": "2026-06-02 03:23",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -978,7 +1015,7 @@
     {
       "ship_key": "WES MADITA",
       "ship_name": "WES MADITA",
-      "eta_rueb": "2026-06-02 03:38",
+      "eta_rueb": "2026-06-02 03:37",
       "ship_q": 5,
       "assigned_pilot": "Fricke, Michéll",
       "assigned_pilot_q": 0,
@@ -1031,6 +1068,17 @@
           "availability_kind": "merged_eta"
         }
       ],
+      "excluded": [
+        {
+          "pilot_name": "Schmidt, Thomas",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "STELLA VIRGO",
+          "pilot_current_ship_eta_rueb": "2026-06-02 04:21",
+          "ship_eta_rueb": "2026-06-02 03:37",
+          "availability_kind": "merged_eta"
+        }
+      ],
       "ship": {
         "meldung": {
           "nr": "4",
@@ -1078,7 +1126,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 1,
+      "candidate_count": 2,
       "candidates": [
         {
           "pilot_name": "Kahler, Volker",
@@ -1090,6 +1138,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "VLIELAND",
           "current_ship_eta_rueb": "2026-06-02 01:31",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Schmidt, Thomas",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 3,
+          "abteilungszeit": "2026-06-01 23:24",
+          "fahrzeug": "STELLA VIRGO",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "STELLA VIRGO",
+          "current_ship_eta_rueb": "2026-06-02 04:21",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
@@ -1157,6 +1218,28 @@
       "raw_time": "Mon Jun 01 20:32:00 CEST 2026",
       "current_ship_name": "KEY FJORD",
       "current_ship_eta_rueb": "2026-06-02 01:28",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "schmidt_thomas",
+      "vorname": "Thomas",
+      "nachname": "Schmidt",
+      "pilot_name": "Schmidt, Thomas",
+      "abteilungszeit": "2026-06-01 23:24",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 3,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "STELLA VIRGO",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 3,
+      "raw_time": "Mon Jun 01 23:24:00 CEST 2026",
+      "current_ship_name": "STELLA VIRGO",
+      "current_ship_eta_rueb": "2026-06-02 04:21",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
