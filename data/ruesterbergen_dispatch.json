@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-01T13:07:18",
+  "generated_at": "2026-06-01T13:09:17",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 6,
     "pilots_total": 12,
-    "pilots_dispatchable": 10,
-    "pilots_visible_only": 2,
+    "pilots_dispatchable": 11,
+    "pilots_visible_only": 1,
     "assignments": 6,
     "unassigned_ships": 0,
-    "unused_pilots": 4
+    "unused_pilots": 5
   },
   "ships": [
     {
@@ -416,6 +416,7 @@
       "nr": 17,
       "raw_time": "Mon Jun 01 07:54:00 CEST 2026",
       "current_ship_name": "MANGEN",
+      "current_ship_eta_rueb": "2026-06-01 13:32",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -664,6 +665,28 @@
       "availability_hint": "Lotse gilt als bereits in RÜB"
     },
     {
+      "pilot_key": "köller_hartmut",
+      "vorname": "Hartmut",
+      "nachname": "Köller",
+      "pilot_name": "Köller, Hartmut",
+      "abteilungszeit": "2026-06-01 07:54",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 17,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "MANGEN",
+      "from": "HOR",
+      "to": "RÜB",
+      "nr": 17,
+      "raw_time": "Mon Jun 01 07:54:00 CEST 2026",
+      "current_ship_name": "MANGEN",
+      "current_ship_eta_rueb": "2026-06-01 13:32",
+      "current_ship_q": 0,
+      "current_ship_route": "HOR → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
       "pilot_key": "schran_oliver",
       "vorname": "Oliver",
       "nachname": "Schran",
@@ -754,21 +777,6 @@
   ],
   "visible_but_not_dispatchable_pilots": [
     {
-      "pilot_key": "köller_hartmut",
-      "pilot_name": "Köller, Hartmut",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 17,
-      "abteilungszeit": "2026-06-01 07:54",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "MANGEN",
-      "from": "HOR",
-      "to": "RÜB",
-      "current_ship_name": "MANGEN",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    },
-    {
       "pilot_key": "biedermann_johannes",
       "pilot_name": "Biedermann, Johannes",
       "pilot_q": 0,
@@ -799,7 +807,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 7,
+      "candidate_count": 8,
       "candidates": [
         {
           "pilot_name": "Demant, Tom",
@@ -878,6 +886,19 @@
           "current_ship_source": "special.already_in_rueb",
           "availability_kind": "already_in_rueb",
           "availability_hint": "Lotse gilt als bereits in RÜB"
+        },
+        {
+          "pilot_name": "Köller, Hartmut",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 17,
+          "abteilungszeit": "2026-06-01 07:54",
+          "fahrzeug": "MANGEN",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "MANGEN",
+          "current_ship_eta_rueb": "2026-06-01 13:32",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
         },
         {
           "pilot_name": "Schran, Oliver",
@@ -970,7 +991,7 @@
       "assigned_current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 6,
+      "candidate_count": 7,
       "candidates": [
         {
           "pilot_name": "Steffens, Micha",
@@ -1036,6 +1057,19 @@
           "current_ship_source": "special.already_in_rueb",
           "availability_kind": "already_in_rueb",
           "availability_hint": "Lotse gilt als bereits in RÜB"
+        },
+        {
+          "pilot_name": "Köller, Hartmut",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 17,
+          "abteilungszeit": "2026-06-01 07:54",
+          "fahrzeug": "MANGEN",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "MANGEN",
+          "current_ship_eta_rueb": "2026-06-01 13:32",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
         },
         {
           "pilot_name": "Schran, Oliver",
@@ -1127,7 +1161,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 8,
+      "candidate_count": 9,
       "candidates": [
         {
           "pilot_name": "Winkler, René",
@@ -1180,6 +1214,19 @@
           "current_ship_source": "special.already_in_rueb",
           "availability_kind": "already_in_rueb",
           "availability_hint": "Lotse gilt als bereits in RÜB"
+        },
+        {
+          "pilot_name": "Köller, Hartmut",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 17,
+          "abteilungszeit": "2026-06-01 07:54",
+          "fahrzeug": "MANGEN",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "MANGEN",
+          "current_ship_eta_rueb": "2026-06-01 13:32",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
         },
         {
           "pilot_name": "Schran, Oliver",
@@ -1282,7 +1329,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 6,
+      "candidate_count": 7,
       "candidates": [
         {
           "pilot_name": "Thomsen, Gunnar",
@@ -1307,6 +1354,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "SUPER FAST LEVANTE",
           "current_ship_eta_rueb": "2026-06-01 12:58",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Köller, Hartmut",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 17,
+          "abteilungszeit": "2026-06-01 07:54",
+          "fahrzeug": "MANGEN",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "MANGEN",
+          "current_ship_eta_rueb": "2026-06-01 13:32",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1420,7 +1480,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 6,
+      "candidate_count": 7,
       "candidates": [
         {
           "pilot_name": "Meise, Gregor",
@@ -1447,6 +1507,19 @@
           "current_ship_source": "special.already_in_rueb",
           "availability_kind": "already_in_rueb",
           "availability_hint": "Lotse gilt als bereits in RÜB"
+        },
+        {
+          "pilot_name": "Köller, Hartmut",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 17,
+          "abteilungszeit": "2026-06-01 07:54",
+          "fahrzeug": "MANGEN",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "MANGEN",
+          "current_ship_eta_rueb": "2026-06-01 13:32",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
         },
         {
           "pilot_name": "Schran, Oliver",
@@ -1549,7 +1622,7 @@
       "assigned_availability_kind": "already_in_rueb",
       "assigned_availability_hint": "Lotse gilt als bereits in RÜB",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 5,
+      "candidate_count": 6,
       "candidates": [
         {
           "pilot_name": "Engel, Alexander",
@@ -1563,6 +1636,19 @@
           "current_ship_source": "special.already_in_rueb",
           "availability_kind": "already_in_rueb",
           "availability_hint": "Lotse gilt als bereits in RÜB"
+        },
+        {
+          "pilot_name": "Köller, Hartmut",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 17,
+          "abteilungszeit": "2026-06-01 07:54",
+          "fahrzeug": "MANGEN",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "MANGEN",
+          "current_ship_eta_rueb": "2026-06-01 13:32",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
         },
         {
           "pilot_name": "Schran, Oliver",
@@ -1654,6 +1740,28 @@
   ],
   "unassigned_ships": [],
   "unused_pilots": [
+    {
+      "pilot_key": "köller_hartmut",
+      "vorname": "Hartmut",
+      "nachname": "Köller",
+      "pilot_name": "Köller, Hartmut",
+      "abteilungszeit": "2026-06-01 07:54",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 17,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "MANGEN",
+      "from": "HOR",
+      "to": "RÜB",
+      "nr": 17,
+      "raw_time": "Mon Jun 01 07:54:00 CEST 2026",
+      "current_ship_name": "MANGEN",
+      "current_ship_eta_rueb": "2026-06-01 13:32",
+      "current_ship_q": 0,
+      "current_ship_route": "HOR → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
     {
       "pilot_key": "schran_oliver",
       "vorname": "Oliver",
