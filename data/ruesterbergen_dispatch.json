@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-01T09:11:20",
+  "generated_at": "2026-06-01T09:13:19",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -120,12 +120,12 @@
     {
       "ship_key": "THOR",
       "ship_name": "THOR",
-      "eta_rueb": "2026-06-01 11:40",
+      "eta_rueb": "2026-06-01 12:25",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
         "nr": "3",
-        "time": "Mon Jun 01 11:40:00 CEST 2026",
+        "time": "Mon Jun 01 12:25:00 CEST 2026",
         "draft": "3.4",
         "q_gruppe": "5",
         "lotsen_anzahl": 1,
@@ -221,7 +221,7 @@
     {
       "ship_key": "KATI",
       "ship_name": "KATI",
-      "eta_rueb": "2026-06-01 15:17",
+      "eta_rueb": "2026-06-01 15:16",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 4,
       "meldung": {
@@ -424,7 +424,7 @@
       "nr": 5,
       "raw_time": "Mon Jun 01 07:00:00 CEST 2026",
       "current_ship_name": "ELBINSEL",
-      "current_ship_eta_rueb": "2026-06-01 11:59",
+      "current_ship_eta_rueb": "2026-06-01 11:57",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -492,7 +492,7 @@
       "current_ship_name": "MANGEN",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta"
     },
     {
@@ -513,7 +513,7 @@
       "current_ship_name": "KERDA",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta"
     }
   ],
@@ -685,7 +685,7 @@
       "nr": 5,
       "raw_time": "Mon Jun 01 07:00:00 CEST 2026",
       "current_ship_name": "ELBINSEL",
-      "current_ship_eta_rueb": "2026-06-01 11:59",
+      "current_ship_eta_rueb": "2026-06-01 11:57",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -748,7 +748,7 @@
       "from": "HOR",
       "to": "RÜB",
       "current_ship_name": "MANGEN",
-      "current_ship_source": "schiffe_merged.seelotsen",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta",
       "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
     },
@@ -763,7 +763,7 @@
       "from": "HOS",
       "to": "RÜB",
       "current_ship_name": "KERDA",
-      "current_ship_source": "schiffe_merged.seelotsen",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta",
       "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
     }
@@ -883,7 +883,7 @@
           "pilot_tactical_nr": 5,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "ELBINSEL",
-          "pilot_current_ship_eta_rueb": "2026-06-01 11:59",
+          "pilot_current_ship_eta_rueb": "2026-06-01 11:57",
           "ship_eta_rueb": "2026-06-01 10:49",
           "availability_kind": "merged_eta"
         },
@@ -1017,7 +1017,7 @@
           "pilot_tactical_nr": 5,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "ELBINSEL",
-          "pilot_current_ship_eta_rueb": "2026-06-01 11:59",
+          "pilot_current_ship_eta_rueb": "2026-06-01 11:57",
           "ship_eta_rueb": "2026-06-01 10:52",
           "availability_kind": "merged_eta"
         },
@@ -1077,7 +1077,7 @@
     {
       "ship_key": "THOR",
       "ship_name": "THOR",
-      "eta_rueb": "2026-06-01 11:40",
+      "eta_rueb": "2026-06-01 12:25",
       "ship_q": 5,
       "assigned_pilot": "Demant, Tom",
       "assigned_pilot_q": 4,
@@ -1089,7 +1089,7 @@
       "assigned_availability_kind": "already_in_rueb",
       "assigned_availability_hint": "Lotse gilt als bereits in RÜB",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 5,
+      "candidate_count": 8,
       "candidates": [
         {
           "pilot_name": "Demant, Tom",
@@ -1155,41 +1155,51 @@
           "current_ship_eta_rueb": "2026-06-01 06:28",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
-        }
-      ],
-      "excluded": [
+        },
         {
           "pilot_name": "Thomsen, Gunnar",
+          "pilot_q": 0,
           "pilot_tactical_nr": 5,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "ELBINSEL",
-          "pilot_current_ship_eta_rueb": "2026-06-01 11:59",
-          "ship_eta_rueb": "2026-06-01 11:40",
+          "abteilungszeit": "2026-06-01 07:00",
+          "fahrzeug": "ELBINSEL",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ELBINSEL",
+          "current_ship_eta_rueb": "2026-06-01 11:57",
+          "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
         {
           "pilot_name": "Meise, Gregor",
+          "pilot_q": 0,
           "pilot_tactical_nr": 4,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "MAI LEHMANN",
-          "pilot_current_ship_eta_rueb": "2026-06-01 12:02",
-          "ship_eta_rueb": "2026-06-01 11:40",
+          "abteilungszeit": "2026-06-01 07:02",
+          "fahrzeug": "MAI LEHMANN",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "MAI LEHMANN",
+          "current_ship_eta_rueb": "2026-06-01 12:02",
+          "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
         {
           "pilot_name": "Engel, Alexander",
+          "pilot_q": 3,
           "pilot_tactical_nr": 3,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "HENDRIK S.",
-          "pilot_current_ship_eta_rueb": "2026-06-01 12:05",
-          "ship_eta_rueb": "2026-06-01 11:40",
+          "abteilungszeit": "2026-06-01 07:24",
+          "fahrzeug": "HENDRIK S",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "HENDRIK S.",
+          "current_ship_eta_rueb": "2026-06-01 12:05",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
           "availability_kind": "merged_eta"
         }
       ],
       "ship": {
         "meldung": {
           "nr": "3",
-          "time": "Mon Jun 01 11:40:00 CEST 2026",
+          "time": "Mon Jun 01 12:25:00 CEST 2026",
           "draft": "3.4",
           "q_gruppe": "5",
           "lotsen_anzahl": 1,
@@ -1285,7 +1295,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "ELBINSEL",
-          "current_ship_eta_rueb": "2026-06-01 11:59",
+          "current_ship_eta_rueb": "2026-06-01 11:57",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1389,7 +1399,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "ELBINSEL",
-          "current_ship_eta_rueb": "2026-06-01 11:59",
+          "current_ship_eta_rueb": "2026-06-01 11:57",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1467,7 +1477,7 @@
     {
       "ship_key": "KATI",
       "ship_name": "KATI",
-      "eta_rueb": "2026-06-01 15:17",
+      "eta_rueb": "2026-06-01 15:16",
       "ship_q": 4,
       "assigned_pilot": "Lehwald, Christian",
       "assigned_pilot_q": 4,
@@ -1515,7 +1525,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "ELBINSEL",
-          "current_ship_eta_rueb": "2026-06-01 11:59",
+          "current_ship_eta_rueb": "2026-06-01 11:57",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1620,7 +1630,7 @@
       "nr": 5,
       "raw_time": "Mon Jun 01 07:00:00 CEST 2026",
       "current_ship_name": "ELBINSEL",
-      "current_ship_eta_rueb": "2026-06-01 11:59",
+      "current_ship_eta_rueb": "2026-06-01 11:57",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
