@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-02T01:03:22",
+  "generated_at": "2026-06-02T01:05:29",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 4,
     "pilots_total": 10,
-    "pilots_dispatchable": 9,
-    "pilots_visible_only": 1,
+    "pilots_dispatchable": 10,
+    "pilots_visible_only": 0,
     "assignments": 4,
     "unassigned_ships": 0,
-    "unused_pilots": 5
+    "unused_pilots": 6
   },
   "ships": [
     {
@@ -341,9 +341,10 @@
       "nr": 4,
       "raw_time": "Mon Jun 01 23:09:00 CEST 2026",
       "current_ship_name": "OHIOBORG",
+      "current_ship_eta_rueb": "2026-06-02 04:36",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
@@ -362,7 +363,7 @@
       "nr": 3,
       "raw_time": "Mon Jun 01 23:24:00 CEST 2026",
       "current_ship_name": "STELLA VIRGO",
-      "current_ship_eta_rueb": "2026-06-02 04:21",
+      "current_ship_eta_rueb": "2026-06-02 04:20",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -546,6 +547,28 @@
       "availability_kind": "merged_eta"
     },
     {
+      "pilot_key": "krüger_caspar-maria",
+      "vorname": "Caspar-Maria",
+      "nachname": "Krüger",
+      "pilot_name": "Krüger, Caspar-Maria",
+      "abteilungszeit": "2026-06-01 23:09",
+      "pilot_q": 4,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 4,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "OHIOBORG",
+      "from": "HOR",
+      "to": "RÜB",
+      "nr": 4,
+      "raw_time": "Mon Jun 01 23:09:00 CEST 2026",
+      "current_ship_name": "OHIOBORG",
+      "current_ship_eta_rueb": "2026-06-02 04:36",
+      "current_ship_q": 0,
+      "current_ship_route": "HOR → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
       "pilot_key": "schmidt_thomas",
       "vorname": "Thomas",
       "nachname": "Schmidt",
@@ -561,7 +584,7 @@
       "nr": 3,
       "raw_time": "Mon Jun 01 23:24:00 CEST 2026",
       "current_ship_name": "STELLA VIRGO",
-      "current_ship_eta_rueb": "2026-06-02 04:21",
+      "current_ship_eta_rueb": "2026-06-02 04:20",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -612,23 +635,7 @@
       "availability_kind": "merged_eta"
     }
   ],
-  "visible_but_not_dispatchable_pilots": [
-    {
-      "pilot_key": "krüger_caspar-maria",
-      "pilot_name": "Krüger, Caspar-Maria",
-      "pilot_q": 4,
-      "pilot_tactical_nr": 4,
-      "abteilungszeit": "2026-06-01 23:09",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "OHIOBORG",
-      "from": "HOR",
-      "to": "RÜB",
-      "current_ship_name": "OHIOBORG",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    }
-  ],
+  "visible_but_not_dispatchable_pilots": [],
   "assignments": [
     {
       "ship_key": "JSP MOEN",
@@ -727,11 +734,20 @@
       ],
       "excluded": [
         {
+          "pilot_name": "Krüger, Caspar-Maria",
+          "pilot_tactical_nr": 4,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "OHIOBORG",
+          "pilot_current_ship_eta_rueb": "2026-06-02 04:36",
+          "ship_eta_rueb": "2026-06-02 03:16",
+          "availability_kind": "merged_eta"
+        },
+        {
           "pilot_name": "Schmidt, Thomas",
           "pilot_tactical_nr": 3,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "STELLA VIRGO",
-          "pilot_current_ship_eta_rueb": "2026-06-02 04:21",
+          "pilot_current_ship_eta_rueb": "2026-06-02 04:20",
           "ship_eta_rueb": "2026-06-02 03:16",
           "availability_kind": "merged_eta"
         },
@@ -866,11 +882,20 @@
           "ship_q": 2
         },
         {
+          "pilot_name": "Krüger, Caspar-Maria",
+          "pilot_tactical_nr": 4,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "OHIOBORG",
+          "pilot_current_ship_eta_rueb": "2026-06-02 04:36",
+          "ship_eta_rueb": "2026-06-02 03:23",
+          "availability_kind": "merged_eta"
+        },
+        {
           "pilot_name": "Schmidt, Thomas",
           "pilot_tactical_nr": 3,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "STELLA VIRGO",
-          "pilot_current_ship_eta_rueb": "2026-06-02 04:21",
+          "pilot_current_ship_eta_rueb": "2026-06-02 04:20",
           "ship_eta_rueb": "2026-06-02 03:23",
           "availability_kind": "merged_eta"
         },
@@ -999,11 +1024,20 @@
       ],
       "excluded": [
         {
+          "pilot_name": "Krüger, Caspar-Maria",
+          "pilot_tactical_nr": 4,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "OHIOBORG",
+          "pilot_current_ship_eta_rueb": "2026-06-02 04:36",
+          "ship_eta_rueb": "2026-06-02 03:37",
+          "availability_kind": "merged_eta"
+        },
+        {
           "pilot_name": "Schmidt, Thomas",
           "pilot_tactical_nr": 3,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "STELLA VIRGO",
-          "pilot_current_ship_eta_rueb": "2026-06-02 04:21",
+          "pilot_current_ship_eta_rueb": "2026-06-02 04:20",
           "ship_eta_rueb": "2026-06-02 03:37",
           "availability_kind": "merged_eta"
         },
@@ -1110,7 +1144,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "STELLA VIRGO",
-          "current_ship_eta_rueb": "2026-06-02 04:21",
+          "current_ship_eta_rueb": "2026-06-02 04:20",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1147,6 +1181,13 @@
           "pilot_tactical_nr": 9,
           "reason": "Quali passt nicht (3 > 2)",
           "pilot_q": 3,
+          "ship_q": 2
+        },
+        {
+          "pilot_name": "Krüger, Caspar-Maria",
+          "pilot_tactical_nr": 4,
+          "reason": "Quali passt nicht (4 > 2)",
+          "pilot_q": 4,
           "ship_q": 2
         }
       ],
@@ -1232,6 +1273,28 @@
       "availability_kind": "merged_eta"
     },
     {
+      "pilot_key": "krüger_caspar-maria",
+      "vorname": "Caspar-Maria",
+      "nachname": "Krüger",
+      "pilot_name": "Krüger, Caspar-Maria",
+      "abteilungszeit": "2026-06-01 23:09",
+      "pilot_q": 4,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 4,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "OHIOBORG",
+      "from": "HOR",
+      "to": "RÜB",
+      "nr": 4,
+      "raw_time": "Mon Jun 01 23:09:00 CEST 2026",
+      "current_ship_name": "OHIOBORG",
+      "current_ship_eta_rueb": "2026-06-02 04:36",
+      "current_ship_q": 0,
+      "current_ship_route": "HOR → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
       "pilot_key": "schmidt_thomas",
       "vorname": "Thomas",
       "nachname": "Schmidt",
@@ -1247,7 +1310,7 @@
       "nr": 3,
       "raw_time": "Mon Jun 01 23:24:00 CEST 2026",
       "current_ship_name": "STELLA VIRGO",
-      "current_ship_eta_rueb": "2026-06-02 04:21",
+      "current_ship_eta_rueb": "2026-06-02 04:20",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
