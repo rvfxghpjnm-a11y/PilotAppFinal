@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-02T19:05:29",
+  "generated_at": "2026-06-02T19:07:20",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,13 +32,13 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 5,
+    "ships_for_ruesterbergen": 6,
     "pilots_total": 10,
     "pilots_dispatchable": 9,
     "pilots_visible_only": 1,
-    "assignments": 5,
+    "assignments": 6,
     "unassigned_ships": 0,
-    "unused_pilots": 4
+    "unused_pilots": 3
   },
   "ships": [
     {
@@ -197,13 +197,51 @@
       }
     },
     {
+      "ship_key": "LAUNKALNE",
+      "ship_name": "LAUNKALNE",
+      "eta_rueb": "2026-06-02 23:20",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 3,
+      "meldung": {
+        "nr": "5",
+        "time": "Tue Jun 02 23:20:00 CEST 2026",
+        "draft": "5.0",
+        "q_gruppe": "3",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "3",
+        "vg": "3",
+        "draft": "5.00",
+        "length_m": "132.500",
+        "beam_m": "15.870",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "U",
+        "pilot_1_name": "Lehmann-von Tils, Ruben",
+        "travel_status": "SAILING_NOK",
+        "makler": "UCA",
+        "dangerous_vessel": "-",
+        "type_of_loading": "Ballast"
+      }
+    },
+    {
       "ship_key": "U36 S186",
       "ship_name": "U36 S186",
       "eta_rueb": "2026-06-03 11:00",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
-        "nr": "5",
+        "nr": "6",
         "time": "Wed Jun 03 11:00:00 CEST 2026",
         "draft": "5.6",
         "q_gruppe": "5",
@@ -1224,10 +1262,10 @@
       }
     },
     {
-      "ship_key": "U36 S186",
-      "ship_name": "U36 S186",
-      "eta_rueb": "2026-06-03 11:00",
-      "ship_q": 5,
+      "ship_key": "LAUNKALNE",
+      "ship_name": "LAUNKALNE",
+      "eta_rueb": "2026-06-02 23:20",
+      "ship_q": 3,
       "assigned_pilot": "Berkenheger, Michael",
       "assigned_pilot_q": 0,
       "assigned_tactical_nr": 7,
@@ -1238,7 +1276,7 @@
       "assigned_availability_kind": "already_in_rueb",
       "assigned_availability_hint": "Lotse gilt als bereits in RÜB",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 5,
+      "candidate_count": 4,
       "candidates": [
         {
           "pilot_name": "Berkenheger, Michael",
@@ -1253,6 +1291,106 @@
           "availability_kind": "already_in_rueb",
           "availability_hint": "Lotse gilt als bereits in RÜB"
         },
+        {
+          "pilot_name": "Schüler, Marius",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 6,
+          "abteilungszeit": "2026-06-02 14:10",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-06-02 14:10",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
+        },
+        {
+          "pilot_name": "Merschmann, Tim",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 5,
+          "abteilungszeit": "2026-06-02 15:14",
+          "fahrzeug": "ELBMOON",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ELBMOON",
+          "current_ship_eta_rueb": "2026-06-02 21:23",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Hahn, Peter",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 3,
+          "abteilungszeit": "2026-06-02 15:30",
+          "fahrzeug": "LAGANBORG",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "LAGANBORG",
+          "current_ship_eta_rueb": "2026-06-02 21:27",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Stoislow, Alexander",
+          "pilot_tactical_nr": 4,
+          "reason": "Quali passt nicht (4 > 3)",
+          "pilot_q": 4,
+          "ship_q": 3
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "5",
+          "time": "Tue Jun 02 23:20:00 CEST 2026",
+          "draft": "5.0",
+          "q_gruppe": "3",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "HOS → KLT",
+          "routes": [
+            "HOS → KLT",
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "3",
+          "vg": "3",
+          "draft": "5.00",
+          "length_m": "132.500",
+          "beam_m": "15.870",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "U",
+          "pilot_1_name": "Lehmann-von Tils, Ruben",
+          "travel_status": "SAILING_NOK",
+          "makler": "UCA",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Ballast"
+        }
+      }
+    },
+    {
+      "ship_key": "U36 S186",
+      "ship_name": "U36 S186",
+      "eta_rueb": "2026-06-03 11:00",
+      "ship_q": 5,
+      "assigned_pilot": "Schüler, Marius",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 6,
+      "assigned_abteilungszeit": "2026-06-02 14:10",
+      "assigned_current_ship_name": "RÜB",
+      "assigned_current_ship_eta_rueb": "2026-06-02 14:10",
+      "assigned_current_ship_source": "special.already_in_rueb",
+      "assigned_availability_kind": "already_in_rueb",
+      "assigned_availability_hint": "Lotse gilt als bereits in RÜB",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 4,
+      "candidates": [
         {
           "pilot_name": "Schüler, Marius",
           "pilot_q": 0,
@@ -1308,7 +1446,7 @@
       ],
       "ship": {
         "meldung": {
-          "nr": "5",
+          "nr": "6",
           "time": "Wed Jun 03 11:00:00 CEST 2026",
           "draft": "5.6",
           "q_gruppe": "5",
@@ -1330,27 +1468,6 @@
   ],
   "unassigned_ships": [],
   "unused_pilots": [
-    {
-      "pilot_key": "schüler_marius",
-      "vorname": "Marius",
-      "nachname": "Schüler",
-      "pilot_name": "Schüler, Marius",
-      "abteilungszeit": "2026-06-02 14:10",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 6,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "RÜB",
-      "nr": 6,
-      "raw_time": "Tue Jun 02 14:10:00 CEST 2026",
-      "current_ship_name": "RÜB",
-      "current_ship_eta_rueb": "2026-06-02 14:10",
-      "current_ship_q": 0,
-      "current_ship_route": "RÜB",
-      "current_ship_source": "special.already_in_rueb",
-      "availability_kind": "already_in_rueb",
-      "availability_hint": "Lotse gilt als bereits in RÜB"
-    },
     {
       "pilot_key": "merschmann_tim",
       "vorname": "Tim",
