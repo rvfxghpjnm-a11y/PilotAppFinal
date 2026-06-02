@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-02T06:33:26",
+  "generated_at": "2026-06-02T06:35:25",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 4,
     "pilots_total": 12,
-    "pilots_dispatchable": 11,
-    "pilots_visible_only": 1,
+    "pilots_dispatchable": 12,
+    "pilots_visible_only": 0,
     "assignments": 4,
     "unassigned_ships": 0,
-    "unused_pilots": 7
+    "unused_pilots": 8
   },
   "ships": [
     {
@@ -82,7 +82,7 @@
     {
       "ship_key": "JSP FALSTER",
       "ship_name": "JSP FALSTER",
-      "eta_rueb": "2026-06-02 07:44",
+      "eta_rueb": "2026-06-02 07:43",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 4,
       "meldung": {
@@ -449,9 +449,10 @@
       "nr": 2,
       "raw_time": "Tue Jun 02 05:34:00 CEST 2026",
       "current_ship_name": "FREJ",
+      "current_ship_eta_rueb": "2026-06-02 10:21",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     }
   ],
@@ -693,25 +694,31 @@
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
-    }
-  ],
-  "visible_but_not_dispatchable_pilots": [
+    },
     {
       "pilot_key": "skairies_thomas",
+      "vorname": "Thomas",
+      "nachname": "Skairies",
       "pilot_name": "Skairies, Thomas",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 2,
       "abteilungszeit": "2026-06-02 05:34",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 2,
       "aufgabe": "Kanalbört",
       "fahrzeug": "FREJ",
       "from": "HOS",
       "to": "RÜB",
+      "nr": 2,
+      "raw_time": "Tue Jun 02 05:34:00 CEST 2026",
       "current_ship_name": "FREJ",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
+      "current_ship_eta_rueb": "2026-06-02 10:21",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
     }
   ],
+  "visible_but_not_dispatchable_pilots": [],
   "assignments": [
     {
       "ship_key": "SINAR BUKITTINGGI",
@@ -843,6 +850,15 @@
           "pilot_current_ship_eta_rueb": "2026-06-02 10:15",
           "ship_eta_rueb": "2026-06-02 07:39",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Skairies, Thomas",
+          "pilot_tactical_nr": 2,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "FREJ",
+          "pilot_current_ship_eta_rueb": "2026-06-02 10:21",
+          "ship_eta_rueb": "2026-06-02 07:39",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -882,7 +898,7 @@
     {
       "ship_key": "JSP FALSTER",
       "ship_name": "JSP FALSTER",
-      "eta_rueb": "2026-06-02 07:44",
+      "eta_rueb": "2026-06-02 07:43",
       "ship_q": 4,
       "assigned_pilot": "Kahler, Volker",
       "assigned_pilot_q": 0,
@@ -994,7 +1010,7 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "LANGENESS",
           "pilot_current_ship_eta_rueb": "2026-06-02 08:09",
-          "ship_eta_rueb": "2026-06-02 07:44",
+          "ship_eta_rueb": "2026-06-02 07:43",
           "availability_kind": "merged_eta"
         },
         {
@@ -1003,7 +1019,7 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "LISA LEHMANN",
           "pilot_current_ship_eta_rueb": "2026-06-02 08:00",
-          "ship_eta_rueb": "2026-06-02 07:44",
+          "ship_eta_rueb": "2026-06-02 07:43",
           "availability_kind": "merged_eta"
         },
         {
@@ -1012,7 +1028,16 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "LOVISA",
           "pilot_current_ship_eta_rueb": "2026-06-02 10:15",
-          "ship_eta_rueb": "2026-06-02 07:44",
+          "ship_eta_rueb": "2026-06-02 07:43",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Skairies, Thomas",
+          "pilot_tactical_nr": 2,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "FREJ",
+          "pilot_current_ship_eta_rueb": "2026-06-02 10:21",
+          "ship_eta_rueb": "2026-06-02 07:43",
           "availability_kind": "merged_eta"
         }
       ],
@@ -1172,6 +1197,15 @@
           "pilot_current_ship_eta_rueb": "2026-06-02 10:15",
           "ship_eta_rueb": "2026-06-02 07:47",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Skairies, Thomas",
+          "pilot_tactical_nr": 2,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "FREJ",
+          "pilot_current_ship_eta_rueb": "2026-06-02 10:21",
+          "ship_eta_rueb": "2026-06-02 07:47",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -1324,6 +1358,15 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "LOVISA",
           "pilot_current_ship_eta_rueb": "2026-06-02 10:15",
+          "ship_eta_rueb": "2026-06-02 09:55",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Skairies, Thomas",
+          "pilot_tactical_nr": 2,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "FREJ",
+          "pilot_current_ship_eta_rueb": "2026-06-02 10:21",
           "ship_eta_rueb": "2026-06-02 09:55",
           "availability_kind": "merged_eta"
         }
@@ -1511,6 +1554,28 @@
       "raw_time": "Tue Jun 02 05:16:00 CEST 2026",
       "current_ship_name": "LOVISA",
       "current_ship_eta_rueb": "2026-06-02 10:15",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "skairies_thomas",
+      "vorname": "Thomas",
+      "nachname": "Skairies",
+      "pilot_name": "Skairies, Thomas",
+      "abteilungszeit": "2026-06-02 05:34",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 2,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "FREJ",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 2,
+      "raw_time": "Tue Jun 02 05:34:00 CEST 2026",
+      "current_ship_name": "FREJ",
+      "current_ship_eta_rueb": "2026-06-02 10:21",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
