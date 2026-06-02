@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-02T18:35:39",
+  "generated_at": "2026-06-02T18:37:34",
   "target": {
     "slug": "konietzka_stefan",
     "display_name": "konietzka, stefan",
@@ -8,27 +8,32 @@
     "watch_user_key": "ubgbxnv8qjmbu5mjaoksxahte2725p"
   },
   "state": {
-    "kind": "gesamtboert",
-    "source": "Gesamtboert.json",
-    "pos": "1",
-    "takt": "7,0"
+    "kind": "seelotsen",
+    "source": "Seelotsen.json",
+    "aufgabe": "Kanalbört",
+    "fahrzeug": "AAVA VG",
+    "time": "Tue Jun 02 18:30:00 CEST 2026"
   },
   "action_card": {
     "title": "konietzka, stefan",
-    "subtitle": "Gesamtbört",
-    "state_kind": "gesamtboert",
-    "state_label": "Gesamtbört",
+    "subtitle": "Seelotsen",
+    "state_kind": "seelotsen",
+    "state_label": "Seelotsen",
     "q_gruppe": "4",
-    "pos": "1",
-    "takt": "7,0",
-    "workstart_label": "Start: 2026-06-02 18:30",
+    "aufgabe": "Kanalbört",
+    "fahrzeug": "AAVA VG",
+    "route": "HOS → RÜB",
+    "time_label": "Akt.: 2026-06-02 18:30",
+    "ship_hint": "AAVA VG",
     "badges": [
       "Q 4",
-      "Pos 1"
+      "Kanalbört"
     ],
     "lines": [
-      "Takt: 7,0",
-      "Start: 2026-06-02 18:30"
+      "AAVA VG",
+      "HOS → RÜB",
+      "Akt.: 2026-06-02 18:30",
+      "Schiff: AAVA VG"
     ]
   },
   "q_gruppe": "4",
@@ -48,29 +53,54 @@
     "entry_count": 1001
   },
   "boert": {
-    "entry": {
-      "pos": "1",
-      "takt": "7,0",
-      "nachname": "Konietzka",
-      "vorname": "Stefan",
-      "q_gruppe": "4",
-      "was": "ABR",
-      "zeit": "Tue Jun 02 18:26:59 CEST 2026",
-      "bemerkung": "",
-      "arrow": null
-    },
-    "entry_count": 1
-  },
-  "seelotsen": {
-    "entries": [],
+    "entry": null,
     "entry_count": 0
   },
-  "related_ships": [],
+  "seelotsen": {
+    "entries": [
+      {
+        "nr": 1,
+        "time": "Tue Jun 02 18:30:00 CEST 2026",
+        "nachname": "Konietzka",
+        "vorname": "Stefan",
+        "aufgabe": "Kanalbört",
+        "fahrzeug": "AAVA VG",
+        "from": "HOS",
+        "to": "RÜB"
+      }
+    ],
+    "entry_count": 1
+  },
+  "related_ships": [
+    {
+      "name": "AAVA VG",
+      "summary": {
+        "name": "AAVA VG",
+        "special_entry": false,
+        "sources": [
+          "seelotsen"
+        ],
+        "route": "HOS → RÜB",
+        "routes": [
+          "HOS → RÜB",
+          "KLT → HOS"
+        ],
+        "assigned_pilots": [
+          "Konietzka, Stefan",
+          "Rink, Hannes"
+        ],
+        "aufgaben": [
+          "Kanalbört",
+          "Seebört"
+        ]
+      }
+    }
+  ],
   "person_files": {
     "status": {
       "file": "konietzka_stefan_status.json",
       "exists": true,
-      "generated_at": "2026-06-02 18:34"
+      "generated_at": "2026-06-02 18:36"
     },
     "pos": {
       "file": "konietzka_stefan_pos.json",
@@ -96,65 +126,64 @@
   },
   "snapshots": {
     "status": {
-      "generated_at": "2026-06-02 18:34",
+      "generated_at": "2026-06-02 18:36",
       "nachname": "konietzka",
       "vorname": "stefan",
       "status": {
         "willkommen": "Willkommen Stefan Konietzka",
-        "zuletzt": "02.06.-18:26 ABR",
-        "naechster_urlaub": "29.06.2026",
-        "wachnummer": "1"
+        "zuletzt": "02.06.-18:30 ASS",
+        "naechster_urlaub": "29.06.2026"
       }
     },
     "pos": {
-      "pos": 1
+      "pos": null
     },
     "short": {
       "key": "konietzka_stefan",
-      "status": "boert",
-      "short": "Gesamtbört – Pos 1\n18:30\n18:30\nPos/2: 19:04\nPos/3: 18:54\nAkt.: 18:34"
+      "status": "seelotse",
+      "short": "Seelotse – Kanalbört\nAAVA VG\nRoute: HOS → RÜB\nAkt.: 18:36"
     },
     "long": {
       "key": "konietzka_stefan",
-      "status": "boert",
-      "long": "Gesamtbört\n----------\nKiel 37 / RÜB 4\n\n▶1  | Konietzka | 18:30 / 18:30 / 18:54~19:04\n      | –   | –                    \n 35 | Biedermann | Mi16:45 / Mi06:14~Mi12:04\n      | ↑$$ | –                    \n 44 | Ünsal   | Mi09:14~Mi16:34\n      | ↑$$ | max TN 33            \n 49 | Skawianczyk | Mi10:54~Mi19:04\n      | ↑$$ | max tk.40            \n 50 | Fricke  | Mi11:14~Mi19:34\n      | ↑$$ | max tkt 24           \n 52 | Kordt   | Mi11:54~Mi20:34\n      | ↑$$ | –                    \n 66 | Purwin  | Mi16:34~Do03:34\n      | ↑$$ | –                    \n 71 | Dalecki | Mi18:14~Do06:04\n      | ↑$$ | –                    \n\nAkt.: 18:35"
+      "status": "seelotse",
+      "long": "Seelotse\n--------\n   Nr | ETA   | Name        | Fahrzeug         | Route      | Schl | ΔR-S | ΔS-R\n------------------------------------------------------------------------------------------\n\nKanalbört\n---------\n▶1  | –     | Konietzka  | AAVA VG      | HOS → RÜB  | –    | –    | –   \n 2  | 21:24 | Hahn       | LAGANBORG    | HOS → RÜB  | 01:52 | 04:28 | 04:26\n 3  | 20:05 | Stoislow   | NOREN        | HOR → RÜB  | 01:42 | 05:37 | 03:43\n 4  | 21:28 | Merschmann | ELBMOON      | HOS → RÜB  | 01:56 | 04:28 | 04:30\n 5  | –     | Schüler    | RÜB          | –          | –    | –    | –   \n 6  | –     | Berkenhege | RÜB          | –          | –    | –    | –   \n 8  | –     | Tontarra   | RÜB          | –          | –    | –    | –   \n 9  | 18:16 | Hren       | FRI LIEPAJA  | RÜB → HOS  | 21:59 | 03:43 | 05:20\n 14 | 16:26 | Meise      | WIND EVOLUTI | RÜB → HOS  | 19:53 | 03:27 | 04:46\n 15 | 16:23 | Crotogino  | UHL FAST     | RÜB → HOS  | 19:48 | 03:25 | 04:51\n\nMeldungen Rüsterbergen\n----------------------\nETA  | Schiff            | Q | Route\n----------------------------------------------\n11:00 | U36   S186        | 5 | LEM → HOS\n21:03 | SOUTH ENABLER     | 0 | RÜB → HOS\n21:07 | NEERBORG          | 4 | RÜB → HOS\n21:10 | BALTIC SHARK      | 2 | RÜB → HOS\n\nAkt.: 18:36"
     }
   },
   "source_meta": {
     "gesamtboert": {
       "file": "Gesamtboert.json",
       "exists": true,
-      "generated_at": "2026-06-02 18:34",
-      "count": 79
+      "generated_at": "2026-06-02 18:36",
+      "count": 78
     },
     "seelotsen": {
       "file": "Seelotsen.json",
       "exists": true,
-      "generated_at": "2026-06-02 18:34",
-      "count": 14
+      "generated_at": "2026-06-02 18:36",
+      "count": 15
     },
     "meldungen_kiel": {
       "file": "Meldungen_Kiel.json",
       "exists": true,
-      "generated_at": "2026-06-02 18:34",
-      "count": 37
+      "generated_at": "2026-06-02 18:36",
+      "count": 36
     },
     "meldungen_ruesterbergen": {
       "file": "Meldungen_Ruesterbergen.json",
       "exists": true,
-      "generated_at": "2026-06-02 18:34",
+      "generated_at": "2026-06-02 18:36",
       "count": 4
     },
     "q_gruppen": {
       "file": "q_gruppen_lotsen.json",
       "exists": true,
-      "generated_at": "2026-06-02T18:35:23",
+      "generated_at": "2026-06-02T18:37:18",
       "count": 155
     },
     "schiffe_merged": {
       "file": "schiffe_merged.json",
       "exists": true,
-      "generated_at": "2026-06-02T18:35:23",
+      "generated_at": "2026-06-02T18:37:18",
       "count": 45
     },
     "workstart_history_json": {
