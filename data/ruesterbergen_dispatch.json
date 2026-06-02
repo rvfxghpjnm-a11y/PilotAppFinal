@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-02T09:05:22",
+  "generated_at": "2026-06-02T09:07:24",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 2,
     "pilots_total": 9,
-    "pilots_dispatchable": 7,
-    "pilots_visible_only": 2,
+    "pilots_dispatchable": 8,
+    "pilots_visible_only": 1,
     "assignments": 2,
     "unassigned_ships": 0,
-    "unused_pilots": 5
+    "unused_pilots": 6
   },
   "ships": [
     {
@@ -83,7 +83,7 @@
     {
       "ship_key": "MARIETJE HESTER",
       "ship_name": "MARIETJE HESTER",
-      "eta_rueb": "2026-06-02 13:45",
+      "eta_rueb": "2026-06-02 13:46",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
@@ -266,9 +266,10 @@
       "nr": 3,
       "raw_time": "Tue Jun 02 07:32:00 CEST 2026",
       "current_ship_name": "HENRIKE",
+      "current_ship_eta_rueb": "2026-06-02 12:40",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
@@ -287,7 +288,7 @@
       "nr": 2,
       "raw_time": "Tue Jun 02 07:40:00 CEST 2026",
       "current_ship_name": "DANICA HAV",
-      "current_ship_eta_rueb": "2026-06-02 12:35",
+      "current_ship_eta_rueb": "2026-06-02 12:36",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -309,7 +310,7 @@
       "nr": 1,
       "raw_time": "Tue Jun 02 07:45:00 CEST 2026",
       "current_ship_name": "ANNALISA P",
-      "current_ship_eta_rueb": "2026-06-02 12:45",
+      "current_ship_eta_rueb": "2026-06-02 12:46",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -428,6 +429,28 @@
       "availability_kind": "merged_eta"
     },
     {
+      "pilot_key": "heyder_justus",
+      "vorname": "Justus",
+      "nachname": "Heyder",
+      "pilot_name": "Heyder, Justus",
+      "abteilungszeit": "2026-06-02 07:32",
+      "pilot_q": 3,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 3,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "HENRIKE",
+      "from": "HOR",
+      "to": "RÜB",
+      "nr": 3,
+      "raw_time": "Tue Jun 02 07:32:00 CEST 2026",
+      "current_ship_name": "HENRIKE",
+      "current_ship_eta_rueb": "2026-06-02 12:40",
+      "current_ship_q": 0,
+      "current_ship_route": "HOR → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
       "pilot_key": "pankonin_denny",
       "vorname": "Denny",
       "nachname": "Pankonin",
@@ -443,7 +466,7 @@
       "nr": 2,
       "raw_time": "Tue Jun 02 07:40:00 CEST 2026",
       "current_ship_name": "DANICA HAV",
-      "current_ship_eta_rueb": "2026-06-02 12:35",
+      "current_ship_eta_rueb": "2026-06-02 12:36",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -465,7 +488,7 @@
       "nr": 1,
       "raw_time": "Tue Jun 02 07:45:00 CEST 2026",
       "current_ship_name": "ANNALISA P",
-      "current_ship_eta_rueb": "2026-06-02 12:45",
+      "current_ship_eta_rueb": "2026-06-02 12:46",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -484,21 +507,6 @@
       "from": "HOR",
       "to": "RÜB",
       "current_ship_name": "HAV SAND",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    },
-    {
-      "pilot_key": "heyder_justus",
-      "pilot_name": "Heyder, Justus",
-      "pilot_q": 3,
-      "pilot_tactical_nr": 3,
-      "abteilungszeit": "2026-06-02 07:32",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "HENRIKE",
-      "from": "HOR",
-      "to": "RÜB",
-      "current_ship_name": "HENRIKE",
       "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta",
       "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
@@ -589,11 +597,20 @@
       ],
       "excluded": [
         {
+          "pilot_name": "Heyder, Justus",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "HENRIKE",
+          "pilot_current_ship_eta_rueb": "2026-06-02 12:40",
+          "ship_eta_rueb": "2026-06-02 10:30",
+          "availability_kind": "merged_eta"
+        },
+        {
           "pilot_name": "Pankonin, Denny",
           "pilot_tactical_nr": 2,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "DANICA HAV",
-          "pilot_current_ship_eta_rueb": "2026-06-02 12:35",
+          "pilot_current_ship_eta_rueb": "2026-06-02 12:36",
           "ship_eta_rueb": "2026-06-02 10:30",
           "availability_kind": "merged_eta"
         },
@@ -602,7 +619,7 @@
           "pilot_tactical_nr": 1,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "ANNALISA P",
-          "pilot_current_ship_eta_rueb": "2026-06-02 12:45",
+          "pilot_current_ship_eta_rueb": "2026-06-02 12:46",
           "ship_eta_rueb": "2026-06-02 10:30",
           "availability_kind": "merged_eta"
         }
@@ -645,7 +662,7 @@
     {
       "ship_key": "MARIETJE HESTER",
       "ship_name": "MARIETJE HESTER",
-      "eta_rueb": "2026-06-02 13:45",
+      "eta_rueb": "2026-06-02 13:46",
       "ship_q": 5,
       "assigned_pilot": "Schmidt, Thomas",
       "assigned_pilot_q": 0,
@@ -656,7 +673,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 6,
+      "candidate_count": 7,
       "candidates": [
         {
           "pilot_name": "Schmidt, Thomas",
@@ -711,6 +728,19 @@
           "availability_kind": "merged_eta"
         },
         {
+          "pilot_name": "Heyder, Justus",
+          "pilot_q": 3,
+          "pilot_tactical_nr": 3,
+          "abteilungszeit": "2026-06-02 07:32",
+          "fahrzeug": "HENRIKE",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "HENRIKE",
+          "current_ship_eta_rueb": "2026-06-02 12:40",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
           "pilot_name": "Pankonin, Denny",
           "pilot_q": 0,
           "pilot_tactical_nr": 2,
@@ -719,7 +749,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "DANICA HAV",
-          "current_ship_eta_rueb": "2026-06-02 12:35",
+          "current_ship_eta_rueb": "2026-06-02 12:36",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -732,7 +762,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "ANNALISA P",
-          "current_ship_eta_rueb": "2026-06-02 12:45",
+          "current_ship_eta_rueb": "2026-06-02 12:46",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
@@ -840,6 +870,28 @@
       "availability_kind": "merged_eta"
     },
     {
+      "pilot_key": "heyder_justus",
+      "vorname": "Justus",
+      "nachname": "Heyder",
+      "pilot_name": "Heyder, Justus",
+      "abteilungszeit": "2026-06-02 07:32",
+      "pilot_q": 3,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 3,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "HENRIKE",
+      "from": "HOR",
+      "to": "RÜB",
+      "nr": 3,
+      "raw_time": "Tue Jun 02 07:32:00 CEST 2026",
+      "current_ship_name": "HENRIKE",
+      "current_ship_eta_rueb": "2026-06-02 12:40",
+      "current_ship_q": 0,
+      "current_ship_route": "HOR → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
       "pilot_key": "pankonin_denny",
       "vorname": "Denny",
       "nachname": "Pankonin",
@@ -855,7 +907,7 @@
       "nr": 2,
       "raw_time": "Tue Jun 02 07:40:00 CEST 2026",
       "current_ship_name": "DANICA HAV",
-      "current_ship_eta_rueb": "2026-06-02 12:35",
+      "current_ship_eta_rueb": "2026-06-02 12:36",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -877,7 +929,7 @@
       "nr": 1,
       "raw_time": "Tue Jun 02 07:45:00 CEST 2026",
       "current_ship_name": "ANNALISA P",
-      "current_ship_eta_rueb": "2026-06-02 12:45",
+      "current_ship_eta_rueb": "2026-06-02 12:46",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
