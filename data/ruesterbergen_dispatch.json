@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-02T16:21:23",
+  "generated_at": "2026-06-02T16:23:20",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 3,
     "pilots_total": 11,
-    "pilots_dispatchable": 8,
-    "pilots_visible_only": 3,
+    "pilots_dispatchable": 9,
+    "pilots_visible_only": 2,
     "assignments": 3,
     "unassigned_ships": 0,
-    "unused_pilots": 5
+    "unused_pilots": 6
   },
   "ships": [
     {
@@ -314,7 +314,7 @@
       "nr": 4,
       "raw_time": "Tue Jun 02 14:10:00 CEST 2026",
       "current_ship_name": "ARKLOW MILL",
-      "current_ship_eta_rueb": "2026-06-02 18:46",
+      "current_ship_eta_rueb": "2026-06-02 18:45",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -357,6 +357,7 @@
       "nr": 2,
       "raw_time": "Tue Jun 02 15:15:00 CEST 2026",
       "current_ship_name": "NOREN",
+      "current_ship_eta_rueb": "2026-06-02 19:53",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -555,9 +556,31 @@
       "nr": 4,
       "raw_time": "Tue Jun 02 14:10:00 CEST 2026",
       "current_ship_name": "ARKLOW MILL",
-      "current_ship_eta_rueb": "2026-06-02 18:46",
+      "current_ship_eta_rueb": "2026-06-02 18:45",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "stoislow_alexander",
+      "vorname": "Alexander",
+      "nachname": "Stoislow",
+      "pilot_name": "Stoislow, Alexander",
+      "abteilungszeit": "2026-06-02 15:15",
+      "pilot_q": 4,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 2,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "NOREN",
+      "from": "HOR",
+      "to": "RÜB",
+      "nr": 2,
+      "raw_time": "Tue Jun 02 15:15:00 CEST 2026",
+      "current_ship_name": "NOREN",
+      "current_ship_eta_rueb": "2026-06-02 19:53",
+      "current_ship_q": 0,
+      "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     }
@@ -574,21 +597,6 @@
       "from": "HOS",
       "to": "RÜB",
       "current_ship_name": "ELBMOON",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    },
-    {
-      "pilot_key": "stoislow_alexander",
-      "pilot_name": "Stoislow, Alexander",
-      "pilot_q": 4,
-      "pilot_tactical_nr": 2,
-      "abteilungszeit": "2026-06-02 15:15",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "NOREN",
-      "from": "HOR",
-      "to": "RÜB",
-      "current_ship_name": "NOREN",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta",
       "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
@@ -720,7 +728,16 @@
           "pilot_tactical_nr": 4,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "ARKLOW MILL",
-          "pilot_current_ship_eta_rueb": "2026-06-02 18:46",
+          "pilot_current_ship_eta_rueb": "2026-06-02 18:45",
+          "ship_eta_rueb": "2026-06-02 18:19",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Stoislow, Alexander",
+          "pilot_tactical_nr": 2,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "NOREN",
+          "pilot_current_ship_eta_rueb": "2026-06-02 19:53",
           "ship_eta_rueb": "2026-06-02 18:19",
           "availability_kind": "merged_eta"
         }
@@ -862,9 +879,18 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "ARKLOW MILL",
-          "current_ship_eta_rueb": "2026-06-02 18:46",
+          "current_ship_eta_rueb": "2026-06-02 18:45",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Stoislow, Alexander",
+          "pilot_tactical_nr": 2,
+          "reason": "Quali passt nicht (4 > 0)",
+          "pilot_q": 4,
+          "ship_q": 0
         }
       ],
       "ship": {
@@ -915,7 +941,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 6,
+      "candidate_count": 7,
       "candidates": [
         {
           "pilot_name": "Meise, Gregor",
@@ -991,7 +1017,20 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "ARKLOW MILL",
-          "current_ship_eta_rueb": "2026-06-02 18:46",
+          "current_ship_eta_rueb": "2026-06-02 18:45",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Stoislow, Alexander",
+          "pilot_q": 4,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-06-02 15:15",
+          "fahrzeug": "NOREN",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "NOREN",
+          "current_ship_eta_rueb": "2026-06-02 19:53",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
@@ -1124,9 +1163,31 @@
       "nr": 4,
       "raw_time": "Tue Jun 02 14:10:00 CEST 2026",
       "current_ship_name": "ARKLOW MILL",
-      "current_ship_eta_rueb": "2026-06-02 18:46",
+      "current_ship_eta_rueb": "2026-06-02 18:45",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "stoislow_alexander",
+      "vorname": "Alexander",
+      "nachname": "Stoislow",
+      "pilot_name": "Stoislow, Alexander",
+      "abteilungszeit": "2026-06-02 15:15",
+      "pilot_q": 4,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 2,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "NOREN",
+      "from": "HOR",
+      "to": "RÜB",
+      "nr": 2,
+      "raw_time": "Tue Jun 02 15:15:00 CEST 2026",
+      "current_ship_name": "NOREN",
+      "current_ship_eta_rueb": "2026-06-02 19:53",
+      "current_ship_q": 0,
+      "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     }
