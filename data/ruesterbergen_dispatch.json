@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-02T07:15:20",
+  "generated_at": "2026-06-02T07:17:16",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,53 +32,15 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 3,
+    "ships_for_ruesterbergen": 2,
     "pilots_total": 14,
     "pilots_dispatchable": 14,
     "pilots_visible_only": 0,
-    "assignments": 3,
+    "assignments": 2,
     "unassigned_ships": 0,
-    "unused_pilots": 11
+    "unused_pilots": 12
   },
   "ships": [
-    {
-      "ship_key": "JSP FALSTER",
-      "ship_name": "JSP FALSTER",
-      "eta_rueb": "2026-06-02 07:40",
-      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
-      "ship_q": 4,
-      "meldung": {
-        "nr": "1",
-        "time": "Tue Jun 02 07:38:00 CEST 2026",
-        "draft": "6.7",
-        "q_gruppe": "4",
-        "lotsen_anzahl": 1,
-        "confirmed": false,
-        "from": "RÜB",
-        "to": "HOS"
-      },
-      "summary": {
-        "route": "HOS → KLT",
-        "routes": [
-          "HOS → KLT",
-          "RÜB → HOS"
-        ],
-        "q_gruppe": "4",
-        "vg": "4",
-        "draft": "6.70",
-        "length_m": "89.99",
-        "beam_m": "15.450",
-        "queue_title": "Zulauf vom Kanal in Kiel",
-        "zulauf_richtung": "vom_kanal",
-        "pilot_required": "true",
-        "pilot_status": "U",
-        "pilot_1_name": "Krüger, Caspar-Maria",
-        "travel_status": "SAILING_NOK",
-        "makler": "SUB",
-        "dangerous_vessel": "-",
-        "type_of_loading": "Eisen und Stahl"
-      }
-    },
     {
       "ship_key": "RIX GULF",
       "ship_name": "RIX GULF",
@@ -86,7 +48,7 @@
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
-        "nr": "2",
+        "nr": "1",
         "time": "Tue Jun 02 07:40:00 CEST 2026",
         "draft": "6.3",
         "q_gruppe": "5",
@@ -120,11 +82,11 @@
     {
       "ship_key": "OTELLO",
       "ship_name": "OTELLO",
-      "eta_rueb": "2026-06-02 10:31",
+      "eta_rueb": "2026-06-02 10:32",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 4,
       "meldung": {
-        "nr": "3",
+        "nr": "2",
         "time": "Tue Jun 02 09:30:00 CEST 2026",
         "draft": "6.2",
         "q_gruppe": "4",
@@ -234,14 +196,16 @@
       "q_source": "q_gruppen_lotsen.entries",
       "pilot_tactical_nr": 15,
       "aufgabe": "Kanalbört",
-      "fahrzeug": "RÜB",
+      "fahrzeug": "JSP FALSTER",
+      "from": "RÜB",
+      "to": "HOS",
       "nr": 15,
       "raw_time": "Mon Jun 01 23:09:00 CEST 2026",
       "current_ship_name": "JSP FALSTER",
       "current_ship_eta_rueb": "2026-06-02 07:40",
       "current_ship_q": 4,
-      "current_ship_route": "HOS → KLT",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_route": "RÜB → HOS",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
@@ -539,14 +503,16 @@
       "q_source": "q_gruppen_lotsen.entries",
       "pilot_tactical_nr": 15,
       "aufgabe": "Kanalbört",
-      "fahrzeug": "RÜB",
+      "fahrzeug": "JSP FALSTER",
+      "from": "RÜB",
+      "to": "HOS",
       "nr": 15,
       "raw_time": "Mon Jun 01 23:09:00 CEST 2026",
       "current_ship_name": "JSP FALSTER",
       "current_ship_eta_rueb": "2026-06-02 07:40",
       "current_ship_q": 4,
-      "current_ship_route": "HOS → KLT",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_route": "RÜB → HOS",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
@@ -770,10 +736,10 @@
   "visible_but_not_dispatchable_pilots": [],
   "assignments": [
     {
-      "ship_key": "JSP FALSTER",
-      "ship_name": "JSP FALSTER",
-      "eta_rueb": "2026-06-02 07:40",
-      "ship_q": 4,
+      "ship_key": "RIX GULF",
+      "ship_name": "RIX GULF",
+      "eta_rueb": "2026-06-02 07:45",
+      "ship_q": 5,
       "assigned_pilot": "Marth, Jürgen",
       "assigned_pilot_q": 0,
       "assigned_tactical_nr": 18,
@@ -783,7 +749,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 9,
+      "candidate_count": 10,
       "candidates": [
         {
           "pilot_name": "Marth, Jürgen",
@@ -829,212 +795,12 @@
           "pilot_q": 4,
           "pilot_tactical_nr": 15,
           "abteilungszeit": "2026-06-01 23:09",
-          "fahrzeug": "RÜB",
+          "fahrzeug": "JSP FALSTER",
+          "to": "HOS",
           "aufgabe": "Kanalbört",
           "current_ship_name": "JSP FALSTER",
           "current_ship_eta_rueb": "2026-06-02 07:40",
-          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Schmidt, Thomas",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 14,
-          "abteilungszeit": "2026-06-01 23:24",
-          "fahrzeug": "SINAR BUKITTINGGI",
-          "to": "HOS",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "SINAR BUKITTINGGI",
-          "current_ship_eta_rueb": "2026-06-02 07:36",
           "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Skawianczyk, Artur",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 13,
-          "abteilungszeit": "2026-06-01 23:30",
-          "fahrzeug": "ALDEBARAN J",
-          "to": "HOS",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "ALDEBARAN J",
-          "current_ship_eta_rueb": "2026-06-02 05:25",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Escher, Franck",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 11,
-          "abteilungszeit": "2026-06-02 01:12",
-          "fahrzeug": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "RÜB",
-          "current_ship_eta_rueb": "2026-06-02 01:12",
-          "current_ship_source": "special.already_in_rueb",
-          "availability_kind": "already_in_rueb",
-          "availability_hint": "Lotse gilt als bereits in RÜB"
-        },
-        {
-          "pilot_name": "Janson, Sven",
-          "pilot_q": 4,
-          "pilot_tactical_nr": 3,
-          "abteilungszeit": "2026-06-02 07:06",
-          "fahrzeug": "JSP MOEN",
-          "to": "KLT",
-          "aufgabe": "Seebört",
-          "current_ship_name": "JSP MOEN",
-          "current_ship_eta_rueb": "2026-06-02 03:10",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Bachholz, Carsten",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 1,
-          "abteilungszeit": "2026-06-02 07:11",
-          "fahrzeug": "IDA RAMBOW",
-          "to": "KLT",
-          "aufgabe": "Seebört",
-          "current_ship_name": "IDA RAMBOW",
-          "current_ship_eta_rueb": "2026-06-02 03:18",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        }
-      ],
-      "excluded": [
-        {
-          "pilot_name": "Petersen, Yannick",
-          "pilot_tactical_nr": 12,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "RIX GULF",
-          "pilot_current_ship_eta_rueb": "2026-06-02 07:45",
-          "ship_eta_rueb": "2026-06-02 07:40",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Flink, Jörg",
-          "pilot_tactical_nr": 9,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "LANGENESS",
-          "pilot_current_ship_eta_rueb": "2026-06-02 08:07",
-          "ship_eta_rueb": "2026-06-02 07:40",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Wille, Christian",
-          "pilot_tactical_nr": 8,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "LISA LEHMANN",
-          "pilot_current_ship_eta_rueb": "2026-06-02 07:58",
-          "ship_eta_rueb": "2026-06-02 07:40",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Dalecki, Niklas",
-          "pilot_tactical_nr": 6,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "LOVISA",
-          "pilot_current_ship_eta_rueb": "2026-06-02 10:15",
-          "ship_eta_rueb": "2026-06-02 07:40",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Skairies, Thomas",
-          "pilot_tactical_nr": 5,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "FREJ",
-          "pilot_current_ship_eta_rueb": "2026-06-02 10:18",
-          "ship_eta_rueb": "2026-06-02 07:40",
-          "availability_kind": "merged_eta"
-        }
-      ],
-      "ship": {
-        "meldung": {
-          "nr": "1",
-          "time": "Tue Jun 02 07:38:00 CEST 2026",
-          "draft": "6.7",
-          "q_gruppe": "4",
-          "lotsen_anzahl": 1,
-          "confirmed": false,
-          "from": "RÜB",
-          "to": "HOS"
-        },
-        "summary": {
-          "route": "HOS → KLT",
-          "routes": [
-            "HOS → KLT",
-            "RÜB → HOS"
-          ],
-          "q_gruppe": "4",
-          "vg": "4",
-          "draft": "6.70",
-          "length_m": "89.99",
-          "beam_m": "15.450",
-          "queue_title": "Zulauf vom Kanal in Kiel",
-          "zulauf_richtung": "vom_kanal",
-          "pilot_required": "true",
-          "pilot_status": "U",
-          "pilot_1_name": "Krüger, Caspar-Maria",
-          "travel_status": "SAILING_NOK",
-          "makler": "SUB",
-          "dangerous_vessel": "-",
-          "type_of_loading": "Eisen und Stahl"
-        }
-      }
-    },
-    {
-      "ship_key": "RIX GULF",
-      "ship_name": "RIX GULF",
-      "eta_rueb": "2026-06-02 07:45",
-      "ship_q": 5,
-      "assigned_pilot": "Kahler, Volker",
-      "assigned_pilot_q": 0,
-      "assigned_tactical_nr": 16,
-      "assigned_abteilungszeit": "2026-06-01 20:32",
-      "assigned_current_ship_name": "IDA RAMBOW",
-      "assigned_current_ship_eta_rueb": "2026-06-02 03:18",
-      "assigned_current_ship_source": "schiffe_merged.seelotsen",
-      "assigned_availability_kind": "merged_eta",
-      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 9,
-      "candidates": [
-        {
-          "pilot_name": "Kahler, Volker",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 16,
-          "abteilungszeit": "2026-06-01 20:32",
-          "fahrzeug": "IDA RAMBOW",
-          "to": "HOS",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "IDA RAMBOW",
-          "current_ship_eta_rueb": "2026-06-02 03:18",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Wald, Mark",
-          "pilot_q": 3,
-          "pilot_tactical_nr": 17,
-          "abteilungszeit": "2026-06-01 20:32",
-          "fahrzeug": "WES MADITA",
-          "to": "HOS",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "WES MADITA",
-          "current_ship_eta_rueb": "2026-06-02 03:28",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Krüger, Caspar-Maria",
-          "pilot_q": 4,
-          "pilot_tactical_nr": 15,
-          "abteilungszeit": "2026-06-01 23:09",
-          "fahrzeug": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "JSP FALSTER",
-          "current_ship_eta_rueb": "2026-06-02 07:40",
-          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
           "availability_kind": "merged_eta"
         },
         {
@@ -1155,7 +921,7 @@
       ],
       "ship": {
         "meldung": {
-          "nr": "2",
+          "nr": "1",
           "time": "Tue Jun 02 07:40:00 CEST 2026",
           "draft": "6.3",
           "q_gruppe": "5",
@@ -1190,19 +956,32 @@
     {
       "ship_key": "OTELLO",
       "ship_name": "OTELLO",
-      "eta_rueb": "2026-06-02 10:31",
+      "eta_rueb": "2026-06-02 10:32",
       "ship_q": 4,
-      "assigned_pilot": "Wald, Mark",
-      "assigned_pilot_q": 3,
-      "assigned_tactical_nr": 17,
+      "assigned_pilot": "Kahler, Volker",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 16,
       "assigned_abteilungszeit": "2026-06-01 20:32",
-      "assigned_current_ship_name": "WES MADITA",
-      "assigned_current_ship_eta_rueb": "2026-06-02 03:28",
+      "assigned_current_ship_name": "IDA RAMBOW",
+      "assigned_current_ship_eta_rueb": "2026-06-02 03:18",
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 12,
+      "candidate_count": 13,
       "candidates": [
+        {
+          "pilot_name": "Kahler, Volker",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 16,
+          "abteilungszeit": "2026-06-01 20:32",
+          "fahrzeug": "IDA RAMBOW",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "IDA RAMBOW",
+          "current_ship_eta_rueb": "2026-06-02 03:18",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
         {
           "pilot_name": "Wald, Mark",
           "pilot_q": 3,
@@ -1221,11 +1000,12 @@
           "pilot_q": 4,
           "pilot_tactical_nr": 15,
           "abteilungszeit": "2026-06-01 23:09",
-          "fahrzeug": "RÜB",
+          "fahrzeug": "JSP FALSTER",
+          "to": "HOS",
           "aufgabe": "Kanalbört",
           "current_ship_name": "JSP FALSTER",
           "current_ship_eta_rueb": "2026-06-02 07:40",
-          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
         {
@@ -1360,7 +1140,7 @@
       ],
       "ship": {
         "meldung": {
-          "nr": "3",
+          "nr": "2",
           "time": "Tue Jun 02 09:30:00 CEST 2026",
           "draft": "6.2",
           "q_gruppe": "4",
@@ -1397,6 +1177,28 @@
   "unassigned_ships": [],
   "unused_pilots": [
     {
+      "pilot_key": "wald_mark",
+      "vorname": "Mark",
+      "nachname": "Wald",
+      "pilot_name": "Wald, Mark",
+      "abteilungszeit": "2026-06-01 20:32",
+      "pilot_q": 3,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 17,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "WES MADITA",
+      "from": "RÜB",
+      "to": "HOS",
+      "nr": 17,
+      "raw_time": "Mon Jun 01 20:32:00 CEST 2026",
+      "current_ship_name": "WES MADITA",
+      "current_ship_eta_rueb": "2026-06-02 03:28",
+      "current_ship_q": 0,
+      "current_ship_route": "RÜB → HOS",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
       "pilot_key": "krüger_caspar-maria",
       "vorname": "Caspar-Maria",
       "nachname": "Krüger",
@@ -1406,14 +1208,16 @@
       "q_source": "q_gruppen_lotsen.entries",
       "pilot_tactical_nr": 15,
       "aufgabe": "Kanalbört",
-      "fahrzeug": "RÜB",
+      "fahrzeug": "JSP FALSTER",
+      "from": "RÜB",
+      "to": "HOS",
       "nr": 15,
       "raw_time": "Mon Jun 01 23:09:00 CEST 2026",
       "current_ship_name": "JSP FALSTER",
       "current_ship_eta_rueb": "2026-06-02 07:40",
       "current_ship_q": 4,
-      "current_ship_route": "HOS → KLT",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_route": "RÜB → HOS",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
