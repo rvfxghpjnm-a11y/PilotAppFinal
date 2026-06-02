@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-02T11:33:17",
+  "generated_at": "2026-06-02T11:35:22",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 2,
     "pilots_total": 11,
-    "pilots_dispatchable": 9,
-    "pilots_visible_only": 2,
+    "pilots_dispatchable": 10,
+    "pilots_visible_only": 1,
     "assignments": 2,
     "unassigned_ships": 0,
-    "unused_pilots": 7
+    "unused_pilots": 8
   },
   "ships": [
     {
@@ -318,9 +318,10 @@
       "nr": 3,
       "raw_time": "Tue Jun 02 10:04:00 CEST 2026",
       "current_ship_name": "SAGASBANK",
+      "current_ship_eta_rueb": "2026-06-02 15:05",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
@@ -542,24 +543,31 @@
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
-    }
-  ],
-  "visible_but_not_dispatchable_pilots": [
+    },
     {
       "pilot_key": "crotogino_philipp",
+      "vorname": "Philipp",
+      "nachname": "Crotogino",
       "pilot_name": "Crotogino, Philipp",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 3,
       "abteilungszeit": "2026-06-02 10:04",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 3,
       "aufgabe": "Kanalbört",
       "fahrzeug": "SAGASBANK",
       "from": "HOS",
       "to": "RÜB",
+      "nr": 3,
+      "raw_time": "Tue Jun 02 10:04:00 CEST 2026",
       "current_ship_name": "SAGASBANK",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    },
+      "current_ship_eta_rueb": "2026-06-02 15:05",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    }
+  ],
+  "visible_but_not_dispatchable_pilots": [
     {
       "pilot_key": "meise_gregor",
       "pilot_name": "Meise, Gregor",
@@ -711,6 +719,17 @@
           "availability_kind": "merged_eta"
         }
       ],
+      "excluded": [
+        {
+          "pilot_name": "Crotogino, Philipp",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "SAGASBANK",
+          "pilot_current_ship_eta_rueb": "2026-06-02 15:05",
+          "ship_eta_rueb": "2026-06-02 13:42",
+          "availability_kind": "merged_eta"
+        }
+      ],
       "ship": {
         "meldung": {
           "nr": "1",
@@ -758,7 +777,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 8,
+      "candidate_count": 9,
       "candidates": [
         {
           "pilot_name": "Petersen, Yannick",
@@ -861,6 +880,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "ANNALISA P",
           "current_ship_eta_rueb": "2026-06-02 12:43",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Crotogino, Philipp",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 3,
+          "abteilungszeit": "2026-06-02 10:04",
+          "fahrzeug": "SAGASBANK",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "SAGASBANK",
+          "current_ship_eta_rueb": "2026-06-02 15:05",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
@@ -1037,6 +1069,28 @@
       "raw_time": "Tue Jun 02 07:45:00 CEST 2026",
       "current_ship_name": "ANNALISA P",
       "current_ship_eta_rueb": "2026-06-02 12:43",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "crotogino_philipp",
+      "vorname": "Philipp",
+      "nachname": "Crotogino",
+      "pilot_name": "Crotogino, Philipp",
+      "abteilungszeit": "2026-06-02 10:04",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 3,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "SAGASBANK",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 3,
+      "raw_time": "Tue Jun 02 10:04:00 CEST 2026",
+      "current_ship_name": "SAGASBANK",
+      "current_ship_eta_rueb": "2026-06-02 15:05",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
