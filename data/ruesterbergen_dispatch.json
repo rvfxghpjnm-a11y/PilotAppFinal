@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-02T14:47:23",
+  "generated_at": "2026-06-02T14:49:24",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,10 +34,10 @@
   "counts": {
     "ships_for_ruesterbergen": 5,
     "pilots_total": 7,
-    "pilots_dispatchable": 4,
-    "pilots_visible_only": 3,
-    "assignments": 4,
-    "unassigned_ships": 1,
+    "pilots_dispatchable": 5,
+    "pilots_visible_only": 2,
+    "assignments": 5,
+    "unassigned_ships": 0,
     "unused_pilots": 0
   },
   "ships": [
@@ -324,6 +324,7 @@
       "nr": 4,
       "raw_time": "Tue Jun 02 13:40:00 CEST 2026",
       "current_ship_name": "LEVANTE",
+      "current_ship_eta_rueb": "2026-06-02 18:18",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -460,24 +461,31 @@
       "current_ship_route": "UTG → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
-    }
-  ],
-  "visible_but_not_dispatchable_pilots": [
+    },
     {
       "pilot_key": "tontarra_olaf",
+      "vorname": "Olaf",
+      "nachname": "Tontarra",
       "pilot_name": "Tontarra, Olaf",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 4,
       "abteilungszeit": "2026-06-02 13:40",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 4,
       "aufgabe": "Kanalbört",
       "fahrzeug": "LEVANTE",
       "from": "HOR",
       "to": "RÜB",
+      "nr": 4,
+      "raw_time": "Tue Jun 02 13:40:00 CEST 2026",
       "current_ship_name": "LEVANTE",
+      "current_ship_eta_rueb": "2026-06-02 18:18",
+      "current_ship_q": 0,
+      "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    },
+      "availability_kind": "merged_eta"
+    }
+  ],
+  "visible_but_not_dispatchable_pilots": [
     {
       "pilot_key": "berkenheger_michael",
       "pilot_name": "Berkenheger, Michael",
@@ -575,6 +583,15 @@
           "pilot_current_ship_eta_rueb": "2026-06-02 18:14",
           "ship_eta_rueb": "2026-06-02 16:19",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Tontarra, Olaf",
+          "pilot_tactical_nr": 4,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "LEVANTE",
+          "pilot_current_ship_eta_rueb": "2026-06-02 18:18",
+          "ship_eta_rueb": "2026-06-02 16:19",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -663,6 +680,15 @@
           "pilot_current_ship_eta_rueb": "2026-06-02 18:14",
           "ship_eta_rueb": "2026-06-02 16:24",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Tontarra, Olaf",
+          "pilot_tactical_nr": 4,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "LEVANTE",
+          "pilot_current_ship_eta_rueb": "2026-06-02 18:18",
+          "ship_eta_rueb": "2026-06-02 16:24",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -713,7 +739,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 2,
+      "candidate_count": 3,
       "candidates": [
         {
           "pilot_name": "Meise, Gregor",
@@ -738,6 +764,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "PEAK BORDEAUX",
           "current_ship_eta_rueb": "2026-06-02 18:14",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Tontarra, Olaf",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 4,
+          "abteilungszeit": "2026-06-02 13:40",
+          "fahrzeug": "LEVANTE",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "LEVANTE",
+          "current_ship_eta_rueb": "2026-06-02 18:18",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
@@ -790,7 +829,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 1,
+      "candidate_count": 2,
       "candidates": [
         {
           "pilot_name": "Hren, Alexander",
@@ -802,6 +841,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "PEAK BORDEAUX",
           "current_ship_eta_rueb": "2026-06-02 18:14",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Tontarra, Olaf",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 4,
+          "abteilungszeit": "2026-06-02 13:40",
+          "fahrzeug": "LEVANTE",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "LEVANTE",
+          "current_ship_eta_rueb": "2026-06-02 18:18",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
@@ -839,16 +891,59 @@
           "type_of_loading": "Container"
         }
       }
-    }
-  ],
-  "unassigned_ships": [
+    },
     {
       "ship_key": "U36 S186",
       "ship_name": "U36 S186",
       "eta_rueb": "2026-06-03 11:00",
       "ship_q": 5,
-      "reason": "kein passender Lotse verfügbar"
+      "assigned_pilot": "Tontarra, Olaf",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 4,
+      "assigned_abteilungszeit": "2026-06-02 13:40",
+      "assigned_current_ship_name": "LEVANTE",
+      "assigned_current_ship_eta_rueb": "2026-06-02 18:18",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "pilot_name": "Tontarra, Olaf",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 4,
+          "abteilungszeit": "2026-06-02 13:40",
+          "fahrzeug": "LEVANTE",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "LEVANTE",
+          "current_ship_eta_rueb": "2026-06-02 18:18",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "5",
+          "time": "Wed Jun 03 11:00:00 CEST 2026",
+          "draft": "5.6",
+          "q_gruppe": "5",
+          "lotsen_anzahl": 2,
+          "confirmed": false,
+          "from": "LEM",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "LEM → HOS",
+          "routes": [
+            "LEM → HOS"
+          ],
+          "q_gruppe": "5",
+          "draft": "5.6"
+        }
+      }
     }
   ],
+  "unassigned_ships": [],
   "unused_pilots": []
 }
