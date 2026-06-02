@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-02T21:55:29",
+  "generated_at": "2026-06-02T21:57:21",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,13 +32,13 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 5,
+    "ships_for_ruesterbergen": 6,
     "pilots_total": 10,
     "pilots_dispatchable": 9,
     "pilots_visible_only": 1,
-    "assignments": 5,
+    "assignments": 6,
     "unassigned_ships": 0,
-    "unused_pilots": 4
+    "unused_pilots": 3
   },
   "ships": [
     {
@@ -185,13 +185,51 @@
       }
     },
     {
+      "ship_key": "ELBWATER",
+      "ship_name": "ELBWATER",
+      "eta_rueb": "2026-06-03 02:52",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 1,
+      "meldung": {
+        "nr": "5",
+        "time": "Wed Jun 03 02:33:00 CEST 2026",
+        "draft": "8.1",
+        "q_gruppe": "1",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "1",
+        "vg": "5",
+        "draft": "8.10",
+        "length_m": "151.72",
+        "beam_m": "23.390",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "U",
+        "pilot_1_name": "Mähler, Jens",
+        "travel_status": "SAILING_NOK",
+        "makler": "UCA",
+        "dangerous_vessel": "-",
+        "type_of_loading": "Container"
+      }
+    },
+    {
       "ship_key": "U36 S186",
       "ship_name": "U36 S186",
       "eta_rueb": "2026-06-03 11:00",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
-        "nr": "5",
+        "nr": "6",
         "time": "Wed Jun 03 11:00:00 CEST 2026",
         "draft": "5.6",
         "q_gruppe": "5",
@@ -1206,10 +1244,10 @@
       }
     },
     {
-      "ship_key": "U36 S186",
-      "ship_name": "U36 S186",
-      "eta_rueb": "2026-06-03 11:00",
-      "ship_q": 5,
+      "ship_key": "ELBWATER",
+      "ship_name": "ELBWATER",
+      "eta_rueb": "2026-06-03 02:52",
+      "ship_q": 1,
       "assigned_pilot": "Merschmann, Tim",
       "assigned_pilot_q": 0,
       "assigned_tactical_nr": 12,
@@ -1219,7 +1257,7 @@
       "assigned_current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 5,
+      "candidate_count": 3,
       "candidates": [
         {
           "pilot_name": "Merschmann, Tim",
@@ -1233,6 +1271,99 @@
           "current_ship_source": "schiffe_merged.summary.pilot_1_name",
           "availability_kind": "merged_eta"
         },
+        {
+          "pilot_name": "Hahn, Peter",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 10,
+          "abteilungszeit": "2026-06-02 15:30",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "LAUNKALNE",
+          "current_ship_eta_rueb": "2026-06-02 23:47",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Skairies, Thomas",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 7,
+          "abteilungszeit": "2026-06-02 19:17",
+          "fahrzeug": "FRI LIEPAJA",
+          "to": "KLT",
+          "aufgabe": "Seebört",
+          "current_ship_name": "FRI LIEPAJA",
+          "current_ship_eta_rueb": "2026-06-02 18:16",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Stoislow, Alexander",
+          "pilot_tactical_nr": 11,
+          "reason": "Quali passt nicht (4 > 1)",
+          "pilot_q": 4,
+          "ship_q": 1
+        },
+        {
+          "pilot_name": "Konietzka, Stefan",
+          "pilot_tactical_nr": 9,
+          "reason": "Quali passt nicht (4 > 1)",
+          "pilot_q": 4,
+          "ship_q": 1
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "5",
+          "time": "Wed Jun 03 02:33:00 CEST 2026",
+          "draft": "8.1",
+          "q_gruppe": "1",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "HOS → KLT",
+          "routes": [
+            "HOS → KLT",
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "1",
+          "vg": "5",
+          "draft": "8.10",
+          "length_m": "151.72",
+          "beam_m": "23.390",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "U",
+          "pilot_1_name": "Mähler, Jens",
+          "travel_status": "SAILING_NOK",
+          "makler": "UCA",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Container"
+        }
+      }
+    },
+    {
+      "ship_key": "U36 S186",
+      "ship_name": "U36 S186",
+      "eta_rueb": "2026-06-03 11:00",
+      "ship_q": 5,
+      "assigned_pilot": "Stoislow, Alexander",
+      "assigned_pilot_q": 4,
+      "assigned_tactical_nr": 11,
+      "assigned_abteilungszeit": "2026-06-02 15:15",
+      "assigned_current_ship_name": "RÜB",
+      "assigned_current_ship_eta_rueb": "2026-06-02 15:15",
+      "assigned_current_ship_source": "special.already_in_rueb",
+      "assigned_availability_kind": "already_in_rueb",
+      "assigned_availability_hint": "Lotse gilt als bereits in RÜB",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 4,
+      "candidates": [
         {
           "pilot_name": "Stoislow, Alexander",
           "pilot_q": 4,
@@ -1287,7 +1418,7 @@
       ],
       "ship": {
         "meldung": {
-          "nr": "5",
+          "nr": "6",
           "time": "Wed Jun 03 11:00:00 CEST 2026",
           "draft": "5.6",
           "q_gruppe": "5",
@@ -1309,27 +1440,6 @@
   ],
   "unassigned_ships": [],
   "unused_pilots": [
-    {
-      "pilot_key": "stoislow_alexander",
-      "vorname": "Alexander",
-      "nachname": "Stoislow",
-      "pilot_name": "Stoislow, Alexander",
-      "abteilungszeit": "2026-06-02 15:15",
-      "pilot_q": 4,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 11,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "RÜB",
-      "nr": 11,
-      "raw_time": "Tue Jun 02 15:15:00 CEST 2026",
-      "current_ship_name": "RÜB",
-      "current_ship_eta_rueb": "2026-06-02 15:15",
-      "current_ship_q": 0,
-      "current_ship_route": "RÜB",
-      "current_ship_source": "special.already_in_rueb",
-      "availability_kind": "already_in_rueb",
-      "availability_hint": "Lotse gilt als bereits in RÜB"
-    },
     {
       "pilot_key": "hahn_peter",
       "vorname": "Peter",
