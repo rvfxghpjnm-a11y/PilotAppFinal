@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-03T17:33:21",
+  "generated_at": "2026-06-03T17:35:21",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 6,
     "pilots_total": 8,
-    "pilots_dispatchable": 7,
-    "pilots_visible_only": 1,
+    "pilots_dispatchable": 8,
+    "pilots_visible_only": 0,
     "assignments": 6,
     "unassigned_ships": 0,
-    "unused_pilots": 1
+    "unused_pilots": 2
   },
   "ships": [
     {
@@ -425,9 +425,10 @@
       "nr": 2,
       "raw_time": "Wed Jun 03 16:40:00 CEST 2026",
       "current_ship_name": "GT VELA",
+      "current_ship_eta_rueb": "2026-06-03 21:11",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     }
   ],
@@ -582,25 +583,31 @@
       "current_ship_source": "special.already_in_rueb",
       "availability_kind": "already_in_rueb",
       "availability_hint": "Lotse gilt als bereits in RÜB"
-    }
-  ],
-  "visible_but_not_dispatchable_pilots": [
+    },
     {
       "pilot_key": "pietsch_tobias",
+      "vorname": "Tobias",
+      "nachname": "Pietsch",
       "pilot_name": "Pietsch, Tobias",
-      "pilot_q": 1,
-      "pilot_tactical_nr": 2,
       "abteilungszeit": "2026-06-03 16:40",
+      "pilot_q": 1,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 2,
       "aufgabe": "Kanalbört",
       "fahrzeug": "GT VELA",
       "from": "HOR",
       "to": "RÜB",
+      "nr": 2,
+      "raw_time": "Wed Jun 03 16:40:00 CEST 2026",
       "current_ship_name": "GT VELA",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
+      "current_ship_eta_rueb": "2026-06-03 21:11",
+      "current_ship_q": 0,
+      "current_ship_route": "HOR → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
     }
   ],
+  "visible_but_not_dispatchable_pilots": [],
   "assignments": [
     {
       "ship_key": "RDJ MAASSTROOM",
@@ -708,6 +715,17 @@
           "current_ship_source": "special.already_in_rueb",
           "availability_kind": "already_in_rueb",
           "availability_hint": "Lotse gilt als bereits in RÜB"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Pietsch, Tobias",
+          "pilot_tactical_nr": 2,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "GT VELA",
+          "pilot_current_ship_eta_rueb": "2026-06-03 21:11",
+          "ship_eta_rueb": "2026-06-03 18:28",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -839,6 +857,17 @@
           "availability_hint": "Lotse gilt als bereits in RÜB"
         }
       ],
+      "excluded": [
+        {
+          "pilot_name": "Pietsch, Tobias",
+          "pilot_tactical_nr": 2,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "GT VELA",
+          "pilot_current_ship_eta_rueb": "2026-06-03 21:11",
+          "ship_eta_rueb": "2026-06-03 18:31",
+          "availability_kind": "merged_eta"
+        }
+      ],
       "ship": {
         "meldung": {
           "nr": "2",
@@ -954,6 +983,17 @@
           "availability_hint": "Lotse gilt als bereits in RÜB"
         }
       ],
+      "excluded": [
+        {
+          "pilot_name": "Pietsch, Tobias",
+          "pilot_tactical_nr": 2,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "GT VELA",
+          "pilot_current_ship_eta_rueb": "2026-06-03 21:11",
+          "ship_eta_rueb": "2026-06-03 20:34",
+          "availability_kind": "merged_eta"
+        }
+      ],
       "ship": {
         "meldung": {
           "nr": "3",
@@ -1056,6 +1096,17 @@
           "availability_hint": "Lotse gilt als bereits in RÜB"
         }
       ],
+      "excluded": [
+        {
+          "pilot_name": "Pietsch, Tobias",
+          "pilot_tactical_nr": 2,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "GT VELA",
+          "pilot_current_ship_eta_rueb": "2026-06-03 21:11",
+          "ship_eta_rueb": "2026-06-03 20:37",
+          "availability_kind": "merged_eta"
+        }
+      ],
       "ship": {
         "meldung": {
           "nr": "4",
@@ -1148,6 +1199,17 @@
           "availability_hint": "Lotse gilt als bereits in RÜB"
         }
       ],
+      "excluded": [
+        {
+          "pilot_name": "Pietsch, Tobias",
+          "pilot_tactical_nr": 2,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "GT VELA",
+          "pilot_current_ship_eta_rueb": "2026-06-03 21:11",
+          "ship_eta_rueb": "2026-06-03 20:56",
+          "availability_kind": "merged_eta"
+        }
+      ],
       "ship": {
         "meldung": {
           "nr": "5",
@@ -1197,7 +1259,7 @@
       "assigned_availability_kind": "already_in_rueb",
       "assigned_availability_hint": "Lotse gilt als bereits in RÜB",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 2,
+      "candidate_count": 3,
       "candidates": [
         {
           "pilot_name": "Lüdtke, Jan-Torben",
@@ -1224,6 +1286,19 @@
           "current_ship_source": "special.already_in_rueb",
           "availability_kind": "already_in_rueb",
           "availability_hint": "Lotse gilt als bereits in RÜB"
+        },
+        {
+          "pilot_name": "Pietsch, Tobias",
+          "pilot_q": 1,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-06-03 16:40",
+          "fahrzeug": "GT VELA",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "GT VELA",
+          "current_ship_eta_rueb": "2026-06-03 21:11",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -1271,6 +1346,28 @@
       "current_ship_source": "special.already_in_rueb",
       "availability_kind": "already_in_rueb",
       "availability_hint": "Lotse gilt als bereits in RÜB"
+    },
+    {
+      "pilot_key": "pietsch_tobias",
+      "vorname": "Tobias",
+      "nachname": "Pietsch",
+      "pilot_name": "Pietsch, Tobias",
+      "abteilungszeit": "2026-06-03 16:40",
+      "pilot_q": 1,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 2,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "GT VELA",
+      "from": "HOR",
+      "to": "RÜB",
+      "nr": 2,
+      "raw_time": "Wed Jun 03 16:40:00 CEST 2026",
+      "current_ship_name": "GT VELA",
+      "current_ship_eta_rueb": "2026-06-03 21:11",
+      "current_ship_q": 0,
+      "current_ship_route": "HOR → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
     }
   ]
 }
