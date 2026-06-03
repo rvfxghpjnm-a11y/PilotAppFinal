@@ -1,47 +1,47 @@
 {
-  "generated_at": "2026-06-03T21:29:24",
+  "generated_at": "2026-06-03T21:31:18",
   "source_meta": {
     "zulauf_kiel_innen": {
       "file": "Zulauf_kiel_innen.json",
-      "generated_at": "2026-06-03 21:28",
+      "generated_at": "2026-06-03 21:30",
       "queue": "kiel_innen",
       "title": "Zulauf vom Kanal in Kiel",
       "count": 9
     },
     "zulauf_kiel_aussen": {
       "file": "Zulauf_kiel_aussen.json",
-      "generated_at": "2026-06-03 21:28",
+      "generated_at": "2026-06-03 21:30",
       "queue": "kiel_aussen",
       "title": "Zulauf von See in Kiel",
       "count": 0
     },
     "zulauf_brb_innen": {
       "file": "Zulauf_brb_innen.json",
-      "generated_at": "2026-06-03 21:28",
+      "generated_at": "2026-06-03 21:30",
       "queue": "brb_innen",
       "title": "Zulauf vom Kanal in Brunsbüttel",
       "count": 8
     },
     "zulauf_brb_aussen": {
       "file": "Zulauf_brb_aussen.json",
-      "generated_at": "2026-06-03 21:28",
+      "generated_at": "2026-06-03 21:30",
       "queue": "brb_aussen",
       "title": "Zulauf von See in Brunsbüttel",
       "count": 5
     },
     "meldungen_kiel": {
       "file": "Meldungen_Kiel.json",
-      "generated_at": "2026-06-03 21:28",
+      "generated_at": "2026-06-03 21:30",
       "count": 38
     },
     "meldungen_ruesterbergen": {
       "file": "Meldungen_Ruesterbergen.json",
-      "generated_at": "2026-06-03 21:28",
-      "count": 3
+      "generated_at": "2026-06-03 21:30",
+      "count": 4
     },
     "seelotsen": {
       "file": "Seelotsen.json",
-      "generated_at": "2026-06-03 21:28",
+      "generated_at": "2026-06-03 21:30",
       "count": 16
     }
   },
@@ -120,10 +120,10 @@
           "RÜB → HOS"
         ],
         "eta_rueb": "2026-06-03 20:33",
-        "eta_schleuse": "2026-06-04 00:03",
-        "eta_text": "00:03",
+        "eta_schleuse": "2026-06-04 00:02",
+        "eta_text": "00:02",
         "first_seen": "2026-06-03 14:56",
-        "delta_rueb_schleuse": "03:31",
+        "delta_rueb_schleuse": "03:29",
         "delta_start_rueb": "05:37",
         "queue_key": "kiel_innen",
         "queue_title": "Zulauf vom Kanal in Kiel",
@@ -298,10 +298,10 @@
       "zulauf": [
         {
           "name": "ANOUK",
-          "eta_schleuse": "2026-06-04 00:03",
+          "eta_schleuse": "2026-06-04 00:02",
           "eta_rueb": "2026-06-03 20:33",
           "first_seen": "2026-06-03 14:56",
-          "delta_rueb_schleuse": "03:31",
+          "delta_rueb_schleuse": "03:29",
           "delta_start_rueb": "05:37",
           "ship_name": "ANOUK",
           "vg": "3",
@@ -315,7 +315,7 @@
           "pilot_required": "true",
           "pilot_foerde": "false",
           "pilot_order": "NOK",
-          "eta_text": "00:03",
+          "eta_text": "00:02",
           "destination": "Kiel",
           "makler": "SUB",
           "preferred_mooring_side": "Bb",
@@ -1101,6 +1101,7 @@
       "ship_key": "BALTIC SPLIT",
       "name": "BALTIC SPLIT",
       "sources": [
+        "meldungen_ruesterbergen",
         "zulauf_kiel_innen"
       ],
       "special_entry": false,
@@ -1108,8 +1109,14 @@
         "name": "BALTIC SPLIT",
         "special_entry": false,
         "sources": [
+          "meldungen_ruesterbergen",
           "zulauf_kiel_innen"
         ],
+        "route": "RÜB → HOS",
+        "routes": [
+          "RÜB → HOS"
+        ],
+        "eta_rueb": "2026-06-04 01:35",
         "eta_schleuse": "2026-06-04 05:31",
         "eta_text": "05:31",
         "first_seen": "2026-06-03 21:28",
@@ -1118,6 +1125,7 @@
         "area": "kiel",
         "zulauf_richtung": "vom_kanal",
         "vg": "3",
+        "q_gruppe": "5",
         "draft": "3.40",
         "length_m": "88.6",
         "beam_m": "12.66",
@@ -1348,7 +1356,20 @@
         }
       ],
       "meldungen_kiel": [],
-      "meldungen_ruesterbergen": [],
+      "meldungen_ruesterbergen": [
+        {
+          "source": "meldungen_ruesterbergen",
+          "nr": "4",
+          "time": "2026-06-04 01:35",
+          "draft": "3.4",
+          "q_gruppe": "5",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS",
+          "route": "RÜB → HOS"
+        }
+      ],
       "seelotsen": []
     },
     {
@@ -3702,6 +3723,9 @@
         },
         "weichenzeiten": {
           "west": {
+            "ostermoor": {
+              "in": "2026-06-03 21:27"
+            },
             "kudensee": {
               "in": "2026-06-03 21:05",
               "out": "2026-06-03 21:10"
@@ -3778,6 +3802,9 @@
           "preferred_mooring_side": "Stb",
           "weichenzeiten": {
             "west": {
+              "ostermoor": {
+                "in": "2026-06-03 21:27"
+              },
               "kudensee": {
                 "in": "2026-06-03 21:05",
                 "out": "2026-06-03 21:10"
@@ -3978,8 +4005,8 @@
         "sources": [
           "zulauf_brb_aussen"
         ],
-        "eta_schleuse": "2026-06-03 23:11",
-        "eta_text": "23:11",
+        "eta_schleuse": "2026-06-03 23:19",
+        "eta_text": "23:19",
         "first_seen": "2026-06-03 17:28",
         "queue_key": "brb_aussen",
         "queue_title": "Zulauf von See in Brunsbüttel",
@@ -4114,7 +4141,7 @@
       "zulauf": [
         {
           "name": "KIARA",
-          "eta_schleuse": "2026-06-03 23:11",
+          "eta_schleuse": "2026-06-03 23:19",
           "first_seen": "2026-06-03 17:28",
           "ship_name": "KIARA",
           "vg": "3",
@@ -4128,7 +4155,7 @@
           "pilot_required": "true",
           "pilot_foerde": "true",
           "pilot_order": "KS-NOK-ESEE-KF",
-          "eta_text": "23:11",
+          "eta_text": "23:19",
           "destination": "Kiel",
           "makler": "SUB",
           "preferred_mooring_side": "Stb",
@@ -5408,7 +5435,8 @@
         "weichenzeiten": {
           "ost": {
             "koenigsfoerde": {
-              "in": "2026-06-03 21:23"
+              "in": "2026-06-03 21:23",
+              "out": "2026-06-03 21:27"
             },
             "gross_nordsee": {
               "in": "2026-06-03 20:56",
@@ -5452,7 +5480,8 @@
           "weichenzeiten": {
             "ost": {
               "koenigsfoerde": {
-                "in": "2026-06-03 21:23"
+                "in": "2026-06-03 21:23",
+                "out": "2026-06-03 21:27"
               },
               "gross_nordsee": {
                 "in": "2026-06-03 20:56",
@@ -6083,8 +6112,8 @@
         "sources": [
           "zulauf_brb_aussen"
         ],
-        "eta_schleuse": "2026-06-04 02:44",
-        "eta_text": "02:44",
+        "eta_schleuse": "2026-06-04 02:43",
+        "eta_text": "02:43",
         "first_seen": "2026-06-03 19:46",
         "queue_key": "brb_aussen",
         "queue_title": "Zulauf von See in Brunsbüttel",
@@ -6150,7 +6179,7 @@
       "zulauf": [
         {
           "name": "PAIVI",
-          "eta_schleuse": "2026-06-04 02:44",
+          "eta_schleuse": "2026-06-04 02:43",
           "first_seen": "2026-06-03 19:46",
           "ship_name": "PAIVI",
           "vg": "3",
@@ -6161,7 +6190,7 @@
           "queue_title": "Zulauf von See in Brunsbüttel",
           "area": "brb",
           "zulauf_richtung": "von_see",
-          "eta_text": "02:44",
+          "eta_text": "02:43",
           "preferred_mooring_side": "Bb",
           "vessel_type": "Trocken-Mz-Frachter",
           "travel_status": "APPROACHING_NOK_BRB",
@@ -6420,6 +6449,9 @@
             "gross_nordsee": {
               "in": "2026-06-03 20:41",
               "out": "2026-06-03 21:00"
+            },
+            "schwartenbek": {
+              "in": "2026-06-03 21:28"
             }
           }
         }
@@ -6492,6 +6524,9 @@
               "gross_nordsee": {
                 "in": "2026-06-03 20:41",
                 "out": "2026-06-03 21:00"
+              },
+              "schwartenbek": {
+                "in": "2026-06-03 21:28"
               }
             }
           },
@@ -7159,8 +7194,8 @@
         "sources": [
           "zulauf_brb_aussen"
         ],
-        "eta_schleuse": "2286-11-20 18:46",
-        "eta_text": "-",
+        "eta_schleuse": "2026-06-03 22:47",
+        "eta_text": "22:47",
         "first_seen": "2026-06-03 18:28",
         "queue_key": "brb_aussen",
         "queue_title": "Zulauf von See in Brunsbüttel",
@@ -7283,7 +7318,7 @@
       "zulauf": [
         {
           "name": "T JUNGFRAU",
-          "eta_schleuse": "2286-11-20 18:46",
+          "eta_schleuse": "2026-06-03 22:47",
           "first_seen": "2026-06-03 18:28",
           "ship_name": "T JUNGFRAU",
           "vg": "6",
@@ -7297,7 +7332,7 @@
           "pilot_required": "true",
           "pilot_foerde": "true",
           "pilot_order": "KS-BÖ-NOK-KF",
-          "eta_text": "-",
+          "eta_text": "22:47",
           "destination": "Kiel",
           "makler": "UCA",
           "preferred_mooring_side": "Bb",
