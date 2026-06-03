@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-03T15:25:38",
+  "generated_at": "2026-06-03T15:27:21",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,10 +34,10 @@
   "counts": {
     "ships_for_ruesterbergen": 8,
     "pilots_total": 9,
-    "pilots_dispatchable": 7,
-    "pilots_visible_only": 2,
-    "assignments": 7,
-    "unassigned_ships": 1,
+    "pilots_dispatchable": 8,
+    "pilots_visible_only": 1,
+    "assignments": 8,
+    "unassigned_ships": 0,
     "unused_pilots": 0
   },
   "ships": [
@@ -470,16 +470,16 @@
       "q_source": "q_gruppen_lotsen.entries",
       "pilot_tactical_nr": 4,
       "aufgabe": "Kanalbört",
-      "fahrzeug": "SWE-CARRIER",
-      "from": "HOR",
-      "to": "RÜB",
+      "fahrzeug": "RÜB",
       "nr": 4,
       "raw_time": "Wed Jun 03 10:52:00 CEST 2026",
-      "current_ship_name": "SWE-CARRIER",
+      "current_ship_name": "RÜB",
+      "current_ship_eta_rueb": "2026-06-03 10:52",
       "current_ship_q": 0,
-      "current_ship_route": "HOR → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
+      "current_ship_route": "RÜB",
+      "current_ship_source": "special.already_in_rueb",
+      "availability_kind": "already_in_rueb",
+      "availability_hint": "Lotse gilt als bereits in RÜB"
     },
     {
       "pilot_key": "lüdtke_jan-torben",
@@ -497,7 +497,7 @@
       "nr": 2,
       "raw_time": "Wed Jun 03 12:13:00 CEST 2026",
       "current_ship_name": "BALTIC WHALE",
-      "current_ship_eta_rueb": "2026-06-03 17:35",
+      "current_ship_eta_rueb": "2026-06-03 17:34",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -635,6 +635,27 @@
       "availability_kind": "merged_eta"
     },
     {
+      "pilot_key": "biedermann_johannes",
+      "vorname": "Johannes",
+      "nachname": "Biedermann",
+      "pilot_name": "Biedermann, Johannes",
+      "abteilungszeit": "2026-06-03 10:52",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 4,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "RÜB",
+      "nr": 4,
+      "raw_time": "Wed Jun 03 10:52:00 CEST 2026",
+      "current_ship_name": "RÜB",
+      "current_ship_eta_rueb": "2026-06-03 10:52",
+      "current_ship_q": 0,
+      "current_ship_route": "RÜB",
+      "current_ship_source": "special.already_in_rueb",
+      "availability_kind": "already_in_rueb",
+      "availability_hint": "Lotse gilt als bereits in RÜB"
+    },
+    {
       "pilot_key": "lüdtke_jan-torben",
       "vorname": "Jan-Torben",
       "nachname": "Lüdtke",
@@ -650,7 +671,7 @@
       "nr": 2,
       "raw_time": "Wed Jun 03 12:13:00 CEST 2026",
       "current_ship_name": "BALTIC WHALE",
-      "current_ship_eta_rueb": "2026-06-03 17:35",
+      "current_ship_eta_rueb": "2026-06-03 17:34",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -694,21 +715,6 @@
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta",
       "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    },
-    {
-      "pilot_key": "biedermann_johannes",
-      "pilot_name": "Biedermann, Johannes",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 4,
-      "abteilungszeit": "2026-06-03 10:52",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "SWE-CARRIER",
-      "from": "HOR",
-      "to": "RÜB",
-      "current_ship_name": "SWE-CARRIER",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
     }
   ],
   "assignments": [
@@ -726,7 +732,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 5,
+      "candidate_count": 6,
       "candidates": [
         {
           "pilot_name": "Wulff, Stephan",
@@ -792,6 +798,19 @@
           "current_ship_eta_rueb": "2026-06-03 12:04",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Biedermann, Johannes",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 4,
+          "abteilungszeit": "2026-06-03 10:52",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-06-03 10:52",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
         }
       ],
       "excluded": [
@@ -800,7 +819,7 @@
           "pilot_tactical_nr": 2,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "BALTIC WHALE",
-          "pilot_current_ship_eta_rueb": "2026-06-03 17:35",
+          "pilot_current_ship_eta_rueb": "2026-06-03 17:34",
           "ship_eta_rueb": "2026-06-03 16:21",
           "availability_kind": "merged_eta"
         },
@@ -863,7 +882,7 @@
       "assigned_availability_kind": "already_in_rueb",
       "assigned_availability_hint": "Lotse gilt als bereits in RÜB",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 4,
+      "candidate_count": 5,
       "candidates": [
         {
           "pilot_name": "Borggräfe, Hark",
@@ -916,6 +935,19 @@
           "current_ship_eta_rueb": "2026-06-03 12:04",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Biedermann, Johannes",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 4,
+          "abteilungszeit": "2026-06-03 10:52",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-06-03 10:52",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
         }
       ],
       "excluded": [
@@ -924,7 +956,7 @@
           "pilot_tactical_nr": 2,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "BALTIC WHALE",
-          "pilot_current_ship_eta_rueb": "2026-06-03 17:35",
+          "pilot_current_ship_eta_rueb": "2026-06-03 17:34",
           "ship_eta_rueb": "2026-06-03 16:23",
           "availability_kind": "merged_eta"
         },
@@ -974,7 +1006,7 @@
       "assigned_availability_kind": "already_in_rueb",
       "assigned_availability_hint": "Lotse gilt als bereits in RÜB",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 3,
+      "candidate_count": 4,
       "candidates": [
         {
           "pilot_name": "Köller, Hartmut",
@@ -1014,6 +1046,19 @@
           "current_ship_eta_rueb": "2026-06-03 12:04",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Biedermann, Johannes",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 4,
+          "abteilungszeit": "2026-06-03 10:52",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-06-03 10:52",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
         }
       ],
       "excluded": [
@@ -1022,7 +1067,7 @@
           "pilot_tactical_nr": 2,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "BALTIC WHALE",
-          "pilot_current_ship_eta_rueb": "2026-06-03 17:35",
+          "pilot_current_ship_eta_rueb": "2026-06-03 17:34",
           "ship_eta_rueb": "2026-06-03 16:30",
           "availability_kind": "merged_eta"
         },
@@ -1085,7 +1130,7 @@
       "assigned_availability_kind": "already_in_rueb",
       "assigned_availability_hint": "Lotse gilt als bereits in RÜB",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 2,
+      "candidate_count": 3,
       "candidates": [
         {
           "pilot_name": "Thiel, Thomas",
@@ -1112,6 +1157,19 @@
           "current_ship_eta_rueb": "2026-06-03 12:04",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Biedermann, Johannes",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 4,
+          "abteilungszeit": "2026-06-03 10:52",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-06-03 10:52",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
         }
       ],
       "excluded": [
@@ -1120,7 +1178,7 @@
           "pilot_tactical_nr": 2,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "BALTIC WHALE",
-          "pilot_current_ship_eta_rueb": "2026-06-03 17:35",
+          "pilot_current_ship_eta_rueb": "2026-06-03 17:34",
           "ship_eta_rueb": "2026-06-03 16:37",
           "availability_kind": "merged_eta"
         },
@@ -1182,7 +1240,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 3,
+      "candidate_count": 4,
       "candidates": [
         {
           "pilot_name": "Steinbach, Daniel",
@@ -1198,6 +1256,19 @@
           "availability_kind": "merged_eta"
         },
         {
+          "pilot_name": "Biedermann, Johannes",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 4,
+          "abteilungszeit": "2026-06-03 10:52",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-06-03 10:52",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
+        },
+        {
           "pilot_name": "Lüdtke, Jan-Torben",
           "pilot_q": 0,
           "pilot_tactical_nr": 2,
@@ -1206,7 +1277,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "BALTIC WHALE",
-          "current_ship_eta_rueb": "2026-06-03 17:35",
+          "current_ship_eta_rueb": "2026-06-03 17:34",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1263,17 +1334,31 @@
       "ship_name": "ARCTICA HAV",
       "eta_rueb": "2026-06-03 18:37",
       "ship_q": 5,
-      "assigned_pilot": "Lüdtke, Jan-Torben",
+      "assigned_pilot": "Biedermann, Johannes",
       "assigned_pilot_q": 0,
-      "assigned_tactical_nr": 2,
-      "assigned_abteilungszeit": "2026-06-03 12:13",
-      "assigned_current_ship_name": "BALTIC WHALE",
-      "assigned_current_ship_eta_rueb": "2026-06-03 17:35",
-      "assigned_current_ship_source": "schiffe_merged.seelotsen",
-      "assigned_availability_kind": "merged_eta",
+      "assigned_tactical_nr": 4,
+      "assigned_abteilungszeit": "2026-06-03 10:52",
+      "assigned_current_ship_name": "RÜB",
+      "assigned_current_ship_eta_rueb": "2026-06-03 10:52",
+      "assigned_current_ship_source": "special.already_in_rueb",
+      "assigned_availability_kind": "already_in_rueb",
+      "assigned_availability_hint": "Lotse gilt als bereits in RÜB",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 2,
+      "candidate_count": 3,
       "candidates": [
+        {
+          "pilot_name": "Biedermann, Johannes",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 4,
+          "abteilungszeit": "2026-06-03 10:52",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-06-03 10:52",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
+        },
         {
           "pilot_name": "Lüdtke, Jan-Torben",
           "pilot_q": 0,
@@ -1283,7 +1368,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "BALTIC WHALE",
-          "current_ship_eta_rueb": "2026-06-03 17:35",
+          "current_ship_eta_rueb": "2026-06-03 17:34",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1339,17 +1424,30 @@
       "ship_name": "ANOUK",
       "eta_rueb": "2026-06-03 20:37",
       "ship_q": 5,
-      "assigned_pilot": "Skawianczyk, Artur",
+      "assigned_pilot": "Lüdtke, Jan-Torben",
       "assigned_pilot_q": 0,
-      "assigned_tactical_nr": 1,
-      "assigned_abteilungszeit": "2026-06-03 12:19",
-      "assigned_current_ship_name": "KEY SOUTH",
-      "assigned_current_ship_eta_rueb": "2026-06-03 17:38",
+      "assigned_tactical_nr": 2,
+      "assigned_abteilungszeit": "2026-06-03 12:13",
+      "assigned_current_ship_name": "BALTIC WHALE",
+      "assigned_current_ship_eta_rueb": "2026-06-03 17:34",
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 1,
+      "candidate_count": 2,
       "candidates": [
+        {
+          "pilot_name": "Lüdtke, Jan-Torben",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-06-03 12:13",
+          "fahrzeug": "BALTIC WHALE",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "BALTIC WHALE",
+          "current_ship_eta_rueb": "2026-06-03 17:34",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
         {
           "pilot_name": "Skawianczyk, Artur",
           "pilot_q": 0,
@@ -1396,16 +1494,72 @@
           "type_of_loading": "Lebensmittel"
         }
       }
-    }
-  ],
-  "unassigned_ships": [
+    },
     {
       "ship_key": "X-PRESS AGILITY",
       "ship_name": "X-PRESS AGILITY",
       "eta_rueb": "2026-06-03 21:04",
       "ship_q": 1,
-      "reason": "kein passender Lotse verfügbar"
+      "assigned_pilot": "Skawianczyk, Artur",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 1,
+      "assigned_abteilungszeit": "2026-06-03 12:19",
+      "assigned_current_ship_name": "KEY SOUTH",
+      "assigned_current_ship_eta_rueb": "2026-06-03 17:38",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "pilot_name": "Skawianczyk, Artur",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 1,
+          "abteilungszeit": "2026-06-03 12:19",
+          "fahrzeug": "KEY SOUTH",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "KEY SOUTH",
+          "current_ship_eta_rueb": "2026-06-03 17:38",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "7",
+          "time": "Wed Jun 03 20:30:00 CEST 2026",
+          "draft": "8.0",
+          "q_gruppe": "1",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "HOS → KLT",
+          "routes": [
+            "HOS → KLT",
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "1",
+          "vg": "5",
+          "draft": "8.00",
+          "length_m": "151.72",
+          "beam_m": "23.430",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "U",
+          "pilot_1_name": "Mertens, Jochen",
+          "travel_status": "SAILING_NOK",
+          "makler": "SUB",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Container"
+        }
+      }
     }
   ],
+  "unassigned_ships": [],
   "unused_pilots": []
 }
