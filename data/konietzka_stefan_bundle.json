@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-04T07:49:52",
+  "generated_at": "2026-06-04T07:51:48",
   "target": {
     "slug": "konietzka_stefan",
     "display_name": "konietzka, stefan",
@@ -8,27 +8,32 @@
     "watch_user_key": "ubgbxnv8qjmbu5mjaoksxahte2725p"
   },
   "state": {
-    "kind": "gesamtboert",
-    "source": "Gesamtboert.json",
-    "pos": "1",
-    "takt": "77,0"
+    "kind": "seelotsen",
+    "source": "Seelotsen.json",
+    "aufgabe": "Kanalbört",
+    "fahrzeug": "Leerfahrt",
+    "time": "Thu Jun 04 07:40:00 CEST 2026"
   },
   "action_card": {
     "title": "konietzka, stefan",
-    "subtitle": "Gesamtbört",
-    "state_kind": "gesamtboert",
-    "state_label": "Gesamtbört",
+    "subtitle": "Seelotsen",
+    "state_kind": "seelotsen",
+    "state_label": "Seelotsen",
     "q_gruppe": "4",
-    "pos": "1",
-    "takt": "77,0",
-    "workstart_label": "Start: 2026-06-04 07:40",
+    "aufgabe": "Kanalbört",
+    "fahrzeug": "Leerfahrt",
+    "route": "HOS → RÜB",
+    "time_label": "Akt.: 2026-06-04 07:40",
+    "ship_hint": "Leerfahrt",
     "badges": [
       "Q 4",
-      "Pos 1"
+      "Kanalbört"
     ],
     "lines": [
-      "Takt: 77,0",
-      "Start: 2026-06-04 07:40"
+      "Leerfahrt",
+      "HOS → RÜB",
+      "Akt.: 2026-06-04 07:40",
+      "Schiff: Leerfahrt"
     ]
   },
   "q_gruppe": "4",
@@ -48,29 +53,51 @@
     "entry_count": 1062
   },
   "boert": {
-    "entry": {
-      "pos": "1",
-      "takt": "77,0",
-      "nachname": "Konietzka",
-      "vorname": "Stefan",
-      "q_gruppe": "4",
-      "was": "ABR",
-      "zeit": "Thu Jun 04 07:12:59 CEST 2026",
-      "bemerkung": "",
-      "arrow": null
-    },
-    "entry_count": 1
-  },
-  "seelotsen": {
-    "entries": [],
+    "entry": null,
     "entry_count": 0
   },
-  "related_ships": [],
+  "seelotsen": {
+    "entries": [
+      {
+        "nr": 1,
+        "time": "Thu Jun 04 07:40:00 CEST 2026",
+        "nachname": "Konietzka",
+        "vorname": "Stefan",
+        "aufgabe": "Kanalbört",
+        "fahrzeug": "Leerfahrt",
+        "from": "HOS",
+        "to": "RÜB"
+      }
+    ],
+    "entry_count": 1
+  },
+  "related_ships": [
+    {
+      "name": "Leerfahrt",
+      "summary": {
+        "name": "Leerfahrt",
+        "special_entry": true,
+        "sources": [
+          "seelotsen"
+        ],
+        "route": "HOS → RÜB",
+        "routes": [
+          "HOS → RÜB"
+        ],
+        "assigned_pilots": [
+          "Konietzka, Stefan"
+        ],
+        "aufgaben": [
+          "Kanalbört"
+        ]
+      }
+    }
+  ],
   "person_files": {
     "status": {
       "file": "konietzka_stefan_status.json",
       "exists": true,
-      "generated_at": "2026-06-04 07:48"
+      "generated_at": "2026-06-04 07:50"
     },
     "pos": {
       "file": "konietzka_stefan_pos.json",
@@ -96,65 +123,64 @@
   },
   "snapshots": {
     "status": {
-      "generated_at": "2026-06-04 07:48",
+      "generated_at": "2026-06-04 07:50",
       "nachname": "konietzka",
       "vorname": "stefan",
       "status": {
         "willkommen": "Willkommen Stefan Konietzka",
-        "zuletzt": "04.06.-07:12 ABR",
-        "naechster_urlaub": "29.06.2026",
-        "wachnummer": "1"
+        "zuletzt": "04.06.-07:40 ASS",
+        "naechster_urlaub": "29.06.2026"
       }
     },
     "pos": {
-      "pos": 1
+      "pos": null
     },
     "short": {
       "key": "konietzka_stefan",
-      "status": "boert",
-      "short": "Gesamtbört – Pos 1\n07:40\n07:40\nPos/2: 08:18\nPos/3: 08:08\nAkt.: 07:48"
+      "status": "seelotse",
+      "short": "Seelotse – Kanalbört\nLeerfahrt\nRoute: HOS → RÜB\nAkt.: 07:51"
     },
     "long": {
       "key": "konietzka_stefan",
-      "status": "boert",
-      "long": "Gesamtbört\n----------\nKiel 31 / RÜB 5\n\n▶1  | Konietzka | 07:40 / 07:40 / 08:08~08:18\n      | –   | –                    \n 24 | Jenckel | Fr02:00 / Do15:48~Do19:48\n      | ↑$$ | max Tkt.80           \n 60 | Borggräfe | Fr03:48~Fr13:48\n      | ↑$$ | max takt. 10         \n 63 | Lüdtke  | Fr04:48~Fr15:18\n      | ↑$$ | max tkt 3            \n\nAkt.: 07:48"
+      "status": "seelotse",
+      "long": "Seelotse\n--------\n   Nr | ETA   | Name        | Fahrzeug         | Route      | Schl | ΔR-S | ΔS-R\n------------------------------------------------------------------------------------------\n\nKanalbört\n---------\n▶1  | –     | Konietzka  | Leerfahrt    | HOS → RÜB  | –    | –    | –   \n 2  | 11:53 | Schmidt    | GIOCONDA     | HOS → RÜB  | 16:20 | 04:27 | 04:27\n 3  | –     | Röhrs      | EN AVANT + E | HOS → RÜB  | –    | –    | –   \n 4  | 06:46 | Schie      | PEAK BERGEN  | RÜB → HOS  | 10:19 | 03:33 | 04:08\n 5  | 06:44 | Flink      | PAIVI        | RÜB → HOS  | 10:15 | 03:31 | 04:16\n 8  | 09:10 | Skairies   | ELBSUN       | HOS → RÜB  | 13:58 | 04:48 | 03:52\n 14 | 05:15 | Krüger     | LUNAMAR      | RÜB → HOS  | 08:40 | 03:25 | 04:17\n 15 | 04:20 | Woitanowsk | KIARA        | RÜB → HOS  | 07:49 | 03:29 | 04:16\n\nMeldungen Rüsterbergen\n----------------------\nETA  | Schiff            | Q | Route\n----------------------------------------------\n09:00 | SCHUB2423+RHENUS  | 4 | RDP → RÜB\n09:18 | ARTEMIS           | 5 | RÜB → HOS\n11:39 | NORDSTRAUM        | 4 | RÜB → HOS\n12:57 | ANNABA            | 1 | RÜB → HOS\n11:36 | KINSHIP           | 0 | RÜB → HOS\n\nAkt.: 07:51"
     }
   },
   "source_meta": {
     "gesamtboert": {
       "file": "Gesamtboert.json",
       "exists": true,
-      "generated_at": "2026-06-04 07:48",
-      "count": 77
+      "generated_at": "2026-06-04 07:50",
+      "count": 76
     },
     "seelotsen": {
       "file": "Seelotsen.json",
       "exists": true,
-      "generated_at": "2026-06-04 07:48",
-      "count": 14
+      "generated_at": "2026-06-04 07:50",
+      "count": 15
     },
     "meldungen_kiel": {
       "file": "Meldungen_Kiel.json",
       "exists": true,
-      "generated_at": "2026-06-04 07:48",
-      "count": 31
+      "generated_at": "2026-06-04 07:50",
+      "count": 30
     },
     "meldungen_ruesterbergen": {
       "file": "Meldungen_Ruesterbergen.json",
       "exists": true,
-      "generated_at": "2026-06-04 07:48",
+      "generated_at": "2026-06-04 07:50",
       "count": 5
     },
     "q_gruppen": {
       "file": "q_gruppen_lotsen.json",
       "exists": true,
-      "generated_at": "2026-06-04T07:49:36",
+      "generated_at": "2026-06-04T07:51:31",
       "count": 155
     },
     "schiffe_merged": {
       "file": "schiffe_merged.json",
       "exists": true,
-      "generated_at": "2026-06-04T07:49:36",
+      "generated_at": "2026-06-04T07:51:31",
       "count": 47
     },
     "workstart_history_json": {
