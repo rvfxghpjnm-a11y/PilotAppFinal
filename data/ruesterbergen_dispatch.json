@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-04T11:41:35",
+  "generated_at": "2026-06-04T11:43:24",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 6,
     "pilots_total": 9,
-    "pilots_dispatchable": 6,
-    "pilots_visible_only": 3,
+    "pilots_dispatchable": 7,
+    "pilots_visible_only": 2,
     "assignments": 6,
     "unassigned_ships": 0,
-    "unused_pilots": 0
+    "unused_pilots": 1
   },
   "ships": [
     {
@@ -463,6 +463,7 @@
       "nr": 1,
       "raw_time": "Thu Jun 04 11:15:00 CEST 2026",
       "current_ship_name": "ROBIJN",
+      "current_ship_eta_rueb": "2026-06-04 15:37",
       "current_ship_q": 0,
       "current_ship_route": "UTG → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -602,6 +603,28 @@
       "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
       "availability_kind": "leerfahrt_hos_rueb_plus60",
       "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+    },
+    {
+      "pilot_key": "engel_alexander",
+      "vorname": "Alexander",
+      "nachname": "Engel",
+      "pilot_name": "Engel, Alexander",
+      "abteilungszeit": "2026-06-04 11:15",
+      "pilot_q": 3,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 1,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "ROBIJN",
+      "from": "UTG",
+      "to": "RÜB",
+      "nr": 1,
+      "raw_time": "Thu Jun 04 11:15:00 CEST 2026",
+      "current_ship_name": "ROBIJN",
+      "current_ship_eta_rueb": "2026-06-04 15:37",
+      "current_ship_q": 0,
+      "current_ship_route": "UTG → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
     }
   ],
   "visible_but_not_dispatchable_pilots": [
@@ -631,21 +654,6 @@
       "from": "HOS",
       "to": "RÜB",
       "current_ship_name": "LADY MONIQUE",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    },
-    {
-      "pilot_key": "engel_alexander",
-      "pilot_name": "Engel, Alexander",
-      "pilot_q": 3,
-      "pilot_tactical_nr": 1,
-      "abteilungszeit": "2026-06-04 11:15",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "ROBIJN",
-      "from": "UTG",
-      "to": "RÜB",
-      "current_ship_name": "ROBIJN",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta",
       "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
@@ -736,6 +744,15 @@
           "ship_eta_rueb": "2026-06-04 11:43",
           "availability_kind": "leerfahrt_hos_rueb_plus60",
           "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+        },
+        {
+          "pilot_name": "Engel, Alexander",
+          "pilot_tactical_nr": 1,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "ROBIJN",
+          "pilot_current_ship_eta_rueb": "2026-06-04 15:37",
+          "ship_eta_rueb": "2026-06-04 11:43",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -841,6 +858,15 @@
           "pilot_current_ship_eta_rueb": "2026-06-04 13:35",
           "ship_eta_rueb": "2026-06-04 13:01",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Engel, Alexander",
+          "pilot_tactical_nr": 1,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "ROBIJN",
+          "pilot_current_ship_eta_rueb": "2026-06-04 15:37",
+          "ship_eta_rueb": "2026-06-04 13:01",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -935,6 +961,15 @@
           "pilot_current_ship_eta_rueb": "2026-06-04 13:35",
           "ship_eta_rueb": "2026-06-04 13:13",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Engel, Alexander",
+          "pilot_tactical_nr": 1,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "ROBIJN",
+          "pilot_current_ship_eta_rueb": "2026-06-04 15:37",
+          "ship_eta_rueb": "2026-06-04 13:13",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -1016,6 +1051,15 @@
           "reason": "Quali passt nicht (2 > 1)",
           "pilot_q": 2,
           "ship_q": 1
+        },
+        {
+          "pilot_name": "Engel, Alexander",
+          "pilot_tactical_nr": 1,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "ROBIJN",
+          "pilot_current_ship_eta_rueb": "2026-06-04 15:37",
+          "ship_eta_rueb": "2026-06-04 15:22",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -1089,6 +1133,15 @@
           "reason": "Quali passt nicht (4 > 3)",
           "pilot_q": 4,
           "ship_q": 3
+        },
+        {
+          "pilot_name": "Engel, Alexander",
+          "pilot_tactical_nr": 1,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "ROBIJN",
+          "pilot_current_ship_eta_rueb": "2026-06-04 15:37",
+          "ship_eta_rueb": "2026-06-04 15:25",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -1139,7 +1192,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 1,
+      "candidate_count": 2,
       "candidates": [
         {
           "pilot_name": "Konietzka, Stefan",
@@ -1151,6 +1204,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "NORDSTRAUM",
           "current_ship_eta_rueb": "2026-06-04 11:33",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Engel, Alexander",
+          "pilot_q": 3,
+          "pilot_tactical_nr": 1,
+          "abteilungszeit": "2026-06-04 11:15",
+          "fahrzeug": "ROBIJN",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ROBIJN",
+          "current_ship_eta_rueb": "2026-06-04 15:37",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
@@ -1190,5 +1256,28 @@
     }
   ],
   "unassigned_ships": [],
-  "unused_pilots": []
+  "unused_pilots": [
+    {
+      "pilot_key": "engel_alexander",
+      "vorname": "Alexander",
+      "nachname": "Engel",
+      "pilot_name": "Engel, Alexander",
+      "abteilungszeit": "2026-06-04 11:15",
+      "pilot_q": 3,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 1,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "ROBIJN",
+      "from": "UTG",
+      "to": "RÜB",
+      "nr": 1,
+      "raw_time": "Thu Jun 04 11:15:00 CEST 2026",
+      "current_ship_name": "ROBIJN",
+      "current_ship_eta_rueb": "2026-06-04 15:37",
+      "current_ship_q": 0,
+      "current_ship_route": "UTG → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    }
+  ]
 }
