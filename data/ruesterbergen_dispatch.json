@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-05T03:09:19",
+  "generated_at": "2026-06-05T03:11:19",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,13 +32,13 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 1,
+    "ships_for_ruesterbergen": 2,
     "pilots_total": 5,
     "pilots_dispatchable": 3,
     "pilots_visible_only": 2,
-    "assignments": 1,
+    "assignments": 2,
     "unassigned_ships": 0,
-    "unused_pilots": 2
+    "unused_pilots": 1
   },
   "ships": [
     {
@@ -78,6 +78,44 @@
         "dangerous_vessel": "-",
         "type_of_loading": "Ballastfahrt"
       }
+    },
+    {
+      "ship_key": "DING HENG 20",
+      "ship_name": "DING HENG 20",
+      "eta_rueb": "2026-06-05 07:25",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 4,
+      "meldung": {
+        "nr": "2",
+        "time": "Fri Jun 05 07:25:00 CEST 2026",
+        "draft": "6.0",
+        "q_gruppe": "4",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "4",
+        "vg": "3",
+        "draft": "6.00",
+        "length_m": "111.98",
+        "beam_m": "17.6",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "U",
+        "pilot_1_name": "Soeth, Stephan",
+        "travel_status": "SAILING_NOK",
+        "makler": "SUB",
+        "dangerous_vessel": "-",
+        "type_of_loading": "Chemikalien fluessig"
+      }
     }
   ],
   "pilots": [
@@ -112,16 +150,16 @@
       "pilot_q": 0,
       "q_source": "q_gruppen_lotsen.entries",
       "pilot_tactical_nr": 6,
-      "aufgabe": "Kanalbört",
+      "aufgabe": "Seebört",
       "fahrzeug": "AILA",
-      "from": "RÜB",
-      "to": "HOS",
+      "from": "HOS",
+      "to": "KLT",
       "nr": 6,
       "raw_time": "Thu Jun 04 21:55:00 CEST 2026",
       "current_ship_name": "AILA",
       "current_ship_eta_rueb": "2026-06-04 23:39",
-      "current_ship_q": 2,
-      "current_ship_route": "RÜB → HOS",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → KLT",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
@@ -222,16 +260,16 @@
       "pilot_q": 0,
       "q_source": "q_gruppen_lotsen.entries",
       "pilot_tactical_nr": 6,
-      "aufgabe": "Kanalbört",
+      "aufgabe": "Seebört",
       "fahrzeug": "AILA",
-      "from": "RÜB",
-      "to": "HOS",
+      "from": "HOS",
+      "to": "KLT",
       "nr": 6,
       "raw_time": "Thu Jun 04 21:55:00 CEST 2026",
       "current_ship_name": "AILA",
       "current_ship_eta_rueb": "2026-06-04 23:39",
-      "current_ship_q": 2,
-      "current_ship_route": "RÜB → HOS",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → KLT",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
@@ -326,8 +364,8 @@
           "pilot_tactical_nr": 6,
           "abteilungszeit": "2026-06-04 21:55",
           "fahrzeug": "AILA",
-          "to": "HOS",
-          "aufgabe": "Kanalbört",
+          "to": "KLT",
+          "aufgabe": "Seebört",
           "current_ship_name": "AILA",
           "current_ship_eta_rueb": "2026-06-04 23:39",
           "current_ship_source": "schiffe_merged.seelotsen",
@@ -380,32 +418,87 @@
           "type_of_loading": "Ballastfahrt"
         }
       }
+    },
+    {
+      "ship_key": "DING HENG 20",
+      "ship_name": "DING HENG 20",
+      "eta_rueb": "2026-06-05 07:25",
+      "ship_q": 4,
+      "assigned_pilot": "Staedler, Frank",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 6,
+      "assigned_abteilungszeit": "2026-06-04 21:55",
+      "assigned_current_ship_name": "AILA",
+      "assigned_current_ship_eta_rueb": "2026-06-04 23:39",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 2,
+      "candidates": [
+        {
+          "pilot_name": "Staedler, Frank",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 6,
+          "abteilungszeit": "2026-06-04 21:55",
+          "fahrzeug": "AILA",
+          "to": "KLT",
+          "aufgabe": "Seebört",
+          "current_ship_name": "AILA",
+          "current_ship_eta_rueb": "2026-06-04 23:39",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Migge, Alexander",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 7,
+          "abteilungszeit": "2026-06-04 21:55",
+          "fahrzeug": "SCELVERINGHE",
+          "to": "KLT",
+          "aufgabe": "Seebört",
+          "current_ship_name": "KAMELIA",
+          "current_ship_eta_rueb": "2026-06-04 23:13",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "2",
+          "time": "Fri Jun 05 07:25:00 CEST 2026",
+          "draft": "6.0",
+          "q_gruppe": "4",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "HOS → KLT",
+          "routes": [
+            "HOS → KLT",
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "4",
+          "vg": "3",
+          "draft": "6.00",
+          "length_m": "111.98",
+          "beam_m": "17.6",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "U",
+          "pilot_1_name": "Soeth, Stephan",
+          "travel_status": "SAILING_NOK",
+          "makler": "SUB",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Chemikalien fluessig"
+        }
+      }
     }
   ],
   "unassigned_ships": [],
   "unused_pilots": [
-    {
-      "pilot_key": "staedler_frank",
-      "vorname": "Frank",
-      "nachname": "Staedler",
-      "pilot_name": "Staedler, Frank",
-      "abteilungszeit": "2026-06-04 21:55",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 6,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "AILA",
-      "from": "RÜB",
-      "to": "HOS",
-      "nr": 6,
-      "raw_time": "Thu Jun 04 21:55:00 CEST 2026",
-      "current_ship_name": "AILA",
-      "current_ship_eta_rueb": "2026-06-04 23:39",
-      "current_ship_q": 2,
-      "current_ship_route": "RÜB → HOS",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
-    },
     {
       "pilot_key": "migge_alexander",
       "vorname": "Alexander",
