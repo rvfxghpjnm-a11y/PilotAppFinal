@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-05T19:33:17",
+  "generated_at": "2026-06-05T19:35:22",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,13 +32,13 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 6,
+    "ships_for_ruesterbergen": 8,
     "pilots_total": 10,
     "pilots_dispatchable": 10,
     "pilots_visible_only": 0,
-    "assignments": 6,
+    "assignments": 8,
     "unassigned_ships": 0,
-    "unused_pilots": 4
+    "unused_pilots": 2
   },
   "ships": [
     {
@@ -268,6 +268,58 @@
         "makler": "NIK",
         "dangerous_vessel": "-",
         "type_of_loading": "Ballast"
+      }
+    },
+    {
+      "ship_key": "LADY ELA",
+      "ship_name": "LADY ELA",
+      "eta_rueb": "2026-06-06 00:33",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 3,
+      "meldung": {
+        "nr": "7",
+        "time": "Sat Jun 06 00:33:00 CEST 2026",
+        "draft": "6.5",
+        "q_gruppe": "3",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "3",
+        "draft": "6.5"
+      }
+    },
+    {
+      "ship_key": "BOSFOR",
+      "ship_name": "BOSFOR",
+      "eta_rueb": "2026-06-06 00:35",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 2,
+      "meldung": {
+        "nr": "8",
+        "time": "Sat Jun 06 00:35:00 CEST 2026",
+        "draft": "7.4",
+        "q_gruppe": "2",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "2",
+        "draft": "7.4"
       }
     }
   ],
@@ -1595,32 +1647,176 @@
           "type_of_loading": "Ballast"
         }
       }
+    },
+    {
+      "ship_key": "LADY ELA",
+      "ship_name": "LADY ELA",
+      "eta_rueb": "2026-06-06 00:33",
+      "ship_q": 3,
+      "assigned_pilot": "Borggräfe, Hark",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 10,
+      "assigned_abteilungszeit": "2026-06-05 17:46",
+      "assigned_current_ship_name": "SEA CARRIER",
+      "assigned_current_ship_eta_rueb": "2026-06-05 23:21",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 3,
+      "candidates": [
+        {
+          "pilot_name": "Borggräfe, Hark",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 10,
+          "abteilungszeit": "2026-06-05 17:46",
+          "fahrzeug": "SEA CARRIER",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "SEA CARRIER",
+          "current_ship_eta_rueb": "2026-06-05 23:21",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Pietsch, Tobias",
+          "pilot_q": 1,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-06-05 19:25",
+          "fahrzeug": "Leerfahrt",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "Leerfahrt",
+          "current_ship_eta_rueb": "2026-06-05 20:25",
+          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
+          "availability_kind": "leerfahrt_hos_rueb_plus60",
+          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+        },
+        {
+          "pilot_name": "Kaschke, Henning",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 3,
+          "abteilungszeit": "2026-06-05 19:25",
+          "fahrzeug": "Leerfahrt",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "Leerfahrt",
+          "current_ship_eta_rueb": "2026-06-05 20:25",
+          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
+          "availability_kind": "leerfahrt_hos_rueb_plus60",
+          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Lüttge, Sebastian",
+          "pilot_tactical_nr": 1,
+          "reason": "Quali passt nicht (4 > 3)",
+          "pilot_q": 4,
+          "ship_q": 3
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "7",
+          "time": "Sat Jun 06 00:33:00 CEST 2026",
+          "draft": "6.5",
+          "q_gruppe": "3",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "HOS → KLT",
+          "routes": [
+            "HOS → KLT",
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "3",
+          "draft": "6.5"
+        }
+      }
+    },
+    {
+      "ship_key": "BOSFOR",
+      "ship_name": "BOSFOR",
+      "eta_rueb": "2026-06-06 00:35",
+      "ship_q": 2,
+      "assigned_pilot": "Pietsch, Tobias",
+      "assigned_pilot_q": 1,
+      "assigned_tactical_nr": 2,
+      "assigned_abteilungszeit": "2026-06-05 19:25",
+      "assigned_current_ship_name": "Leerfahrt",
+      "assigned_current_ship_eta_rueb": "2026-06-05 20:25",
+      "assigned_current_ship_source": "special.leerfahrt_hos_rueb_plus60",
+      "assigned_availability_kind": "leerfahrt_hos_rueb_plus60",
+      "assigned_availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 2,
+      "candidates": [
+        {
+          "pilot_name": "Pietsch, Tobias",
+          "pilot_q": 1,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-06-05 19:25",
+          "fahrzeug": "Leerfahrt",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "Leerfahrt",
+          "current_ship_eta_rueb": "2026-06-05 20:25",
+          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
+          "availability_kind": "leerfahrt_hos_rueb_plus60",
+          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+        },
+        {
+          "pilot_name": "Kaschke, Henning",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 3,
+          "abteilungszeit": "2026-06-05 19:25",
+          "fahrzeug": "Leerfahrt",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "Leerfahrt",
+          "current_ship_eta_rueb": "2026-06-05 20:25",
+          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
+          "availability_kind": "leerfahrt_hos_rueb_plus60",
+          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Lüttge, Sebastian",
+          "pilot_tactical_nr": 1,
+          "reason": "Quali passt nicht (4 > 2)",
+          "pilot_q": 4,
+          "ship_q": 2
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "8",
+          "time": "Sat Jun 06 00:35:00 CEST 2026",
+          "draft": "7.4",
+          "q_gruppe": "2",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "HOS → KLT",
+          "routes": [
+            "HOS → KLT",
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "2",
+          "draft": "7.4"
+        }
+      }
     }
   ],
   "unassigned_ships": [],
   "unused_pilots": [
-    {
-      "pilot_key": "borggräfe_hark",
-      "vorname": "Hark",
-      "nachname": "Borggräfe",
-      "pilot_name": "Borggräfe, Hark",
-      "abteilungszeit": "2026-06-05 17:46",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 10,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "SEA CARRIER",
-      "from": "HOS",
-      "to": "RÜB",
-      "nr": 10,
-      "raw_time": "Fri Jun 05 17:46:00 CEST 2026",
-      "current_ship_name": "SEA CARRIER",
-      "current_ship_eta_rueb": "2026-06-05 23:21",
-      "current_ship_q": 0,
-      "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
-    },
     {
       "pilot_key": "lüttge_sebastian",
       "vorname": "Sebastian",
@@ -1635,29 +1831,6 @@
       "from": "HOS",
       "to": "RÜB",
       "nr": 1,
-      "raw_time": "Fri Jun 05 19:25:00 CEST 2026",
-      "current_ship_name": "Leerfahrt",
-      "current_ship_eta_rueb": "2026-06-05 20:25",
-      "current_ship_q": 0,
-      "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-      "availability_kind": "leerfahrt_hos_rueb_plus60",
-      "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
-    },
-    {
-      "pilot_key": "pietsch_tobias",
-      "vorname": "Tobias",
-      "nachname": "Pietsch",
-      "pilot_name": "Pietsch, Tobias",
-      "abteilungszeit": "2026-06-05 19:25",
-      "pilot_q": 1,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 2,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "Leerfahrt",
-      "from": "HOS",
-      "to": "RÜB",
-      "nr": 2,
       "raw_time": "Fri Jun 05 19:25:00 CEST 2026",
       "current_ship_name": "Leerfahrt",
       "current_ship_eta_rueb": "2026-06-05 20:25",
