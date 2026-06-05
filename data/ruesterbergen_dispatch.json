@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-05T06:21:16",
+  "generated_at": "2026-06-05T06:23:19",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,10 +34,10 @@
   "counts": {
     "ships_for_ruesterbergen": 6,
     "pilots_total": 4,
-    "pilots_dispatchable": 3,
-    "pilots_visible_only": 1,
-    "assignments": 3,
-    "unassigned_ships": 3,
+    "pilots_dispatchable": 4,
+    "pilots_visible_only": 0,
+    "assignments": 4,
+    "unassigned_ships": 2,
     "unused_pilots": 0
   },
   "ships": [
@@ -307,7 +307,7 @@
       "nr": 5,
       "raw_time": "Fri Jun 05 02:43:00 CEST 2026",
       "current_ship_name": "BRAVEWIND",
-      "current_ship_eta_rueb": "2026-06-05 07:03",
+      "current_ship_eta_rueb": "2026-06-05 07:01",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -329,7 +329,7 @@
       "nr": 4,
       "raw_time": "Fri Jun 05 02:49:00 CEST 2026",
       "current_ship_name": "MARIETJE HESTER",
-      "current_ship_eta_rueb": "2026-06-05 07:46",
+      "current_ship_eta_rueb": "2026-06-05 07:44",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -351,6 +351,7 @@
       "nr": 1,
       "raw_time": "Fri Jun 05 05:25:00 CEST 2026",
       "current_ship_name": "EMS LEADER",
+      "current_ship_eta_rueb": "2026-06-05 09:53",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -396,7 +397,7 @@
       "nr": 5,
       "raw_time": "Fri Jun 05 02:43:00 CEST 2026",
       "current_ship_name": "BRAVEWIND",
-      "current_ship_eta_rueb": "2026-06-05 07:03",
+      "current_ship_eta_rueb": "2026-06-05 07:01",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -418,30 +419,36 @@
       "nr": 4,
       "raw_time": "Fri Jun 05 02:49:00 CEST 2026",
       "current_ship_name": "MARIETJE HESTER",
-      "current_ship_eta_rueb": "2026-06-05 07:46",
+      "current_ship_eta_rueb": "2026-06-05 07:44",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
-    }
-  ],
-  "visible_but_not_dispatchable_pilots": [
+    },
     {
       "pilot_key": "escher_franck",
+      "vorname": "Franck",
+      "nachname": "Escher",
       "pilot_name": "Escher, Franck",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 1,
       "abteilungszeit": "2026-06-05 05:25",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 1,
       "aufgabe": "Kanalbört",
       "fahrzeug": "EMS LEADER",
       "from": "HOS",
       "to": "RÜB",
+      "nr": 1,
+      "raw_time": "Fri Jun 05 05:25:00 CEST 2026",
       "current_ship_name": "EMS LEADER",
+      "current_ship_eta_rueb": "2026-06-05 09:53",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
+      "availability_kind": "merged_eta"
     }
   ],
+  "visible_but_not_dispatchable_pilots": [],
   "assignments": [
     {
       "ship_key": "DING HENG 20",
@@ -481,7 +488,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "BRAVEWIND",
-          "current_ship_eta_rueb": "2026-06-05 07:03",
+          "current_ship_eta_rueb": "2026-06-05 07:01",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -494,8 +501,19 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "MARIETJE HESTER",
-          "current_ship_eta_rueb": "2026-06-05 07:46",
+          "current_ship_eta_rueb": "2026-06-05 07:44",
           "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Escher, Franck",
+          "pilot_tactical_nr": 1,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "EMS LEADER",
+          "pilot_current_ship_eta_rueb": "2026-06-05 09:53",
+          "ship_eta_rueb": "2026-06-05 08:57",
           "availability_kind": "merged_eta"
         }
       ],
@@ -543,7 +561,7 @@
       "assigned_tactical_nr": 5,
       "assigned_abteilungszeit": "2026-06-05 02:43",
       "assigned_current_ship_name": "BRAVEWIND",
-      "assigned_current_ship_eta_rueb": "2026-06-05 07:03",
+      "assigned_current_ship_eta_rueb": "2026-06-05 07:01",
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
@@ -558,7 +576,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "BRAVEWIND",
-          "current_ship_eta_rueb": "2026-06-05 07:03",
+          "current_ship_eta_rueb": "2026-06-05 07:01",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -571,8 +589,19 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "MARIETJE HESTER",
-          "current_ship_eta_rueb": "2026-06-05 07:46",
+          "current_ship_eta_rueb": "2026-06-05 07:44",
           "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Escher, Franck",
+          "pilot_tactical_nr": 1,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "EMS LEADER",
+          "pilot_current_ship_eta_rueb": "2026-06-05 09:53",
+          "ship_eta_rueb": "2026-06-05 09:00",
           "availability_kind": "merged_eta"
         }
       ],
@@ -620,7 +649,7 @@
       "assigned_tactical_nr": 4,
       "assigned_abteilungszeit": "2026-06-05 02:49",
       "assigned_current_ship_name": "MARIETJE HESTER",
-      "assigned_current_ship_eta_rueb": "2026-06-05 07:46",
+      "assigned_current_ship_eta_rueb": "2026-06-05 07:44",
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
@@ -635,8 +664,19 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "MARIETJE HESTER",
-          "current_ship_eta_rueb": "2026-06-05 07:46",
+          "current_ship_eta_rueb": "2026-06-05 07:44",
           "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Escher, Franck",
+          "pilot_tactical_nr": 1,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "EMS LEADER",
+          "pilot_current_ship_eta_rueb": "2026-06-05 09:53",
+          "ship_eta_rueb": "2026-06-05 09:03",
           "availability_kind": "merged_eta"
         }
       ],
@@ -673,16 +713,72 @@
           "type_of_loading": "Schrott"
         }
       }
-    }
-  ],
-  "unassigned_ships": [
+    },
     {
       "ship_key": "SKALAR",
       "ship_name": "SKALAR",
       "eta_rueb": "2026-06-05 11:10",
       "ship_q": 1,
-      "reason": "kein passender Lotse verfügbar"
-    },
+      "assigned_pilot": "Escher, Franck",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 1,
+      "assigned_abteilungszeit": "2026-06-05 05:25",
+      "assigned_current_ship_name": "EMS LEADER",
+      "assigned_current_ship_eta_rueb": "2026-06-05 09:53",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "pilot_name": "Escher, Franck",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 1,
+          "abteilungszeit": "2026-06-05 05:25",
+          "fahrzeug": "EMS LEADER",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "EMS LEADER",
+          "current_ship_eta_rueb": "2026-06-05 09:53",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "5",
+          "time": "Fri Jun 05 11:20:00 CEST 2026",
+          "draft": "8.4",
+          "q_gruppe": "1",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "RÜB → HOS",
+          "routes": [
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "1",
+          "vg": "5",
+          "draft": "8.40",
+          "length_m": "151.72",
+          "beam_m": "23.400",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "U",
+          "pilot_1_name": "Fuerstenberg, Jendrik Wolfgang",
+          "travel_status": "SAILING_NOK",
+          "makler": "UCA",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Container"
+        }
+      }
+    }
+  ],
+  "unassigned_ships": [
     {
       "ship_key": "LEVENSAU + NOK 1",
       "ship_name": "LEVENSAU + NOK 1",
