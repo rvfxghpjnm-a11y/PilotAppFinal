@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-05T10:59:17",
+  "generated_at": "2026-06-05T11:01:18",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,53 +32,15 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 3,
+    "ships_for_ruesterbergen": 2,
     "pilots_total": 10,
     "pilots_dispatchable": 9,
     "pilots_visible_only": 1,
-    "assignments": 3,
+    "assignments": 2,
     "unassigned_ships": 0,
-    "unused_pilots": 6
+    "unused_pilots": 7
   },
   "ships": [
-    {
-      "ship_key": "STELLA VIRGO",
-      "ship_name": "STELLA VIRGO",
-      "eta_rueb": "2026-06-05 11:07",
-      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
-      "ship_q": 4,
-      "meldung": {
-        "nr": "1",
-        "time": "Fri Jun 05 11:06:00 CEST 2026",
-        "draft": "112.0",
-        "q_gruppe": "4",
-        "lotsen_anzahl": 1,
-        "confirmed": false,
-        "from": "RÜB",
-        "to": "HOS"
-      },
-      "summary": {
-        "route": "HOS → KLT",
-        "routes": [
-          "HOS → KLT",
-          "RÜB → HOS"
-        ],
-        "q_gruppe": "4",
-        "vg": "3",
-        "draft": "6.10",
-        "length_m": "104.60",
-        "beam_m": "15.2",
-        "queue_title": "Zulauf vom Kanal in Kiel",
-        "zulauf_richtung": "vom_kanal",
-        "pilot_required": "true",
-        "pilot_status": "U",
-        "pilot_1_name": "Hren, Alexander",
-        "travel_status": "SAILING_NOK",
-        "makler": "SUB",
-        "dangerous_vessel": "-",
-        "type_of_loading": "Erdoel und Derivate"
-      }
-    },
     {
       "ship_key": "WILSON GRIMSBY",
       "ship_name": "WILSON GRIMSBY",
@@ -86,7 +48,7 @@
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
-        "nr": "2",
+        "nr": "1",
         "time": "Fri Jun 05 12:55:00 CEST 2026",
         "draft": "4.2",
         "q_gruppe": "5",
@@ -123,7 +85,7 @@
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
-        "nr": "3",
+        "nr": "2",
         "time": "Fri Jun 05 15:05:00 CEST 2026",
         "draft": "4.2",
         "q_gruppe": "5",
@@ -321,14 +283,16 @@
       "q_source": "q_gruppen_lotsen.entries",
       "pilot_tactical_nr": 2,
       "aufgabe": "Kanalbört",
-      "fahrzeug": "RÜB",
+      "fahrzeug": "STELLA VIRGO",
+      "from": "RÜB",
+      "to": "HOS",
       "nr": 2,
       "raw_time": "Fri Jun 05 09:35:00 CEST 2026",
       "current_ship_name": "STELLA VIRGO",
       "current_ship_eta_rueb": "2026-06-05 11:07",
       "current_ship_q": 4,
-      "current_ship_route": "HOS → KLT",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_route": "RÜB → HOS",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
@@ -540,14 +504,16 @@
       "q_source": "q_gruppen_lotsen.entries",
       "pilot_tactical_nr": 2,
       "aufgabe": "Kanalbört",
-      "fahrzeug": "RÜB",
+      "fahrzeug": "STELLA VIRGO",
+      "from": "RÜB",
+      "to": "HOS",
       "nr": 2,
       "raw_time": "Fri Jun 05 09:35:00 CEST 2026",
       "current_ship_name": "STELLA VIRGO",
       "current_ship_eta_rueb": "2026-06-05 11:07",
       "current_ship_q": 4,
-      "current_ship_route": "HOS → KLT",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_route": "RÜB → HOS",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
@@ -592,10 +558,10 @@
   ],
   "assignments": [
     {
-      "ship_key": "STELLA VIRGO",
-      "ship_name": "STELLA VIRGO",
-      "eta_rueb": "2026-06-05 11:07",
-      "ship_q": 4,
+      "ship_key": "WILSON GRIMSBY",
+      "ship_name": "WILSON GRIMSBY",
+      "eta_rueb": "2026-06-05 13:10",
+      "ship_q": 5,
       "assigned_pilot": "Röhl, Jens",
       "assigned_pilot_q": 0,
       "assigned_tactical_nr": 16,
@@ -605,7 +571,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 6,
+      "candidate_count": 7,
       "candidates": [
         {
           "pilot_name": "Röhl, Jens",
@@ -620,150 +586,6 @@
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
-        {
-          "pilot_name": "Schüler, Marius",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 15,
-          "abteilungszeit": "2026-06-05 02:49",
-          "fahrzeug": "HEINRICH ESSBERGER",
-          "to": "HOS",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "HEINRICH ESSBERGER",
-          "current_ship_eta_rueb": "2026-06-05 08:52",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Escher, Franck",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 12,
-          "abteilungszeit": "2026-06-05 05:25",
-          "fahrzeug": "SKALAR",
-          "to": "HOS",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "SKALAR",
-          "current_ship_eta_rueb": "2026-06-05 11:00",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Lehwald, Christian",
-          "pilot_q": 4,
-          "pilot_tactical_nr": 8,
-          "abteilungszeit": "2026-06-05 07:35",
-          "fahrzeug": "SOFIA",
-          "to": "HOS",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "SOFIA",
-          "current_ship_eta_rueb": "2026-06-05 08:56",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Hren, Alexander",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 2,
-          "abteilungszeit": "2026-06-05 09:35",
-          "fahrzeug": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "STELLA VIRGO",
-          "current_ship_eta_rueb": "2026-06-05 11:07",
-          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Arndt, Michael",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 3,
-          "abteilungszeit": "2026-06-05 09:35",
-          "fahrzeug": "LEVENSAU + NOK 1",
-          "to": "AHL",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "LEVENSAU + NOK 1",
-          "current_ship_eta_rueb": "2026-06-05 11:04",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        }
-      ],
-      "excluded": [
-        {
-          "pilot_name": "Lüdtke, Jan-Torben",
-          "pilot_tactical_nr": 7,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "BRAVOLAND",
-          "pilot_current_ship_eta_rueb": "2026-06-05 11:57",
-          "ship_eta_rueb": "2026-06-05 11:07",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Demant, Tom",
-          "pilot_tactical_nr": 5,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "AMADEUS SILVER",
-          "pilot_current_ship_eta_rueb": "2026-06-05 13:44",
-          "ship_eta_rueb": "2026-06-05 11:07",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Nagel, Volker",
-          "pilot_tactical_nr": 4,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "EEMS SOLAR",
-          "pilot_current_ship_eta_rueb": "2026-06-05 13:48",
-          "ship_eta_rueb": "2026-06-05 11:07",
-          "availability_kind": "merged_eta"
-        }
-      ],
-      "ship": {
-        "meldung": {
-          "nr": "1",
-          "time": "Fri Jun 05 11:06:00 CEST 2026",
-          "draft": "112.0",
-          "q_gruppe": "4",
-          "lotsen_anzahl": 1,
-          "confirmed": false,
-          "from": "RÜB",
-          "to": "HOS"
-        },
-        "summary": {
-          "route": "HOS → KLT",
-          "routes": [
-            "HOS → KLT",
-            "RÜB → HOS"
-          ],
-          "q_gruppe": "4",
-          "vg": "3",
-          "draft": "6.10",
-          "length_m": "104.60",
-          "beam_m": "15.2",
-          "queue_title": "Zulauf vom Kanal in Kiel",
-          "zulauf_richtung": "vom_kanal",
-          "pilot_required": "true",
-          "pilot_status": "U",
-          "pilot_1_name": "Hren, Alexander",
-          "travel_status": "SAILING_NOK",
-          "makler": "SUB",
-          "dangerous_vessel": "-",
-          "type_of_loading": "Erdoel und Derivate"
-        }
-      }
-    },
-    {
-      "ship_key": "WILSON GRIMSBY",
-      "ship_name": "WILSON GRIMSBY",
-      "eta_rueb": "2026-06-05 13:10",
-      "ship_q": 5,
-      "assigned_pilot": "Schüler, Marius",
-      "assigned_pilot_q": 0,
-      "assigned_tactical_nr": 15,
-      "assigned_abteilungszeit": "2026-06-05 02:49",
-      "assigned_current_ship_name": "HEINRICH ESSBERGER",
-      "assigned_current_ship_eta_rueb": "2026-06-05 08:52",
-      "assigned_current_ship_source": "schiffe_merged.seelotsen",
-      "assigned_availability_kind": "merged_eta",
-      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 6,
-      "candidates": [
         {
           "pilot_name": "Schüler, Marius",
           "pilot_q": 0,
@@ -821,11 +643,12 @@
           "pilot_q": 0,
           "pilot_tactical_nr": 2,
           "abteilungszeit": "2026-06-05 09:35",
-          "fahrzeug": "RÜB",
+          "fahrzeug": "STELLA VIRGO",
+          "to": "HOS",
           "aufgabe": "Kanalbört",
           "current_ship_name": "STELLA VIRGO",
           "current_ship_eta_rueb": "2026-06-05 11:07",
-          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
         {
@@ -864,7 +687,7 @@
       ],
       "ship": {
         "meldung": {
-          "nr": "2",
+          "nr": "1",
           "time": "Fri Jun 05 12:55:00 CEST 2026",
           "draft": "4.2",
           "q_gruppe": "5",
@@ -900,17 +723,30 @@
       "ship_name": "SPANACO RELIABILITY",
       "eta_rueb": "2026-06-05 15:20",
       "ship_q": 5,
-      "assigned_pilot": "Escher, Franck",
+      "assigned_pilot": "Schüler, Marius",
       "assigned_pilot_q": 0,
-      "assigned_tactical_nr": 12,
-      "assigned_abteilungszeit": "2026-06-05 05:25",
-      "assigned_current_ship_name": "SKALAR",
-      "assigned_current_ship_eta_rueb": "2026-06-05 11:00",
+      "assigned_tactical_nr": 15,
+      "assigned_abteilungszeit": "2026-06-05 02:49",
+      "assigned_current_ship_name": "HEINRICH ESSBERGER",
+      "assigned_current_ship_eta_rueb": "2026-06-05 08:52",
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 7,
+      "candidate_count": 8,
       "candidates": [
+        {
+          "pilot_name": "Schüler, Marius",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 15,
+          "abteilungszeit": "2026-06-05 02:49",
+          "fahrzeug": "HEINRICH ESSBERGER",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "HEINRICH ESSBERGER",
+          "current_ship_eta_rueb": "2026-06-05 08:52",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
         {
           "pilot_name": "Escher, Franck",
           "pilot_q": 0,
@@ -981,11 +817,12 @@
           "pilot_q": 0,
           "pilot_tactical_nr": 2,
           "abteilungszeit": "2026-06-05 09:35",
-          "fahrzeug": "RÜB",
+          "fahrzeug": "STELLA VIRGO",
+          "to": "HOS",
           "aufgabe": "Kanalbört",
           "current_ship_name": "STELLA VIRGO",
           "current_ship_eta_rueb": "2026-06-05 11:07",
-          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
         {
@@ -1004,7 +841,7 @@
       ],
       "ship": {
         "meldung": {
-          "nr": "3",
+          "nr": "2",
           "time": "Fri Jun 05 15:05:00 CEST 2026",
           "draft": "4.2",
           "q_gruppe": "5",
@@ -1040,6 +877,28 @@
   ],
   "unassigned_ships": [],
   "unused_pilots": [
+    {
+      "pilot_key": "escher_franck",
+      "vorname": "Franck",
+      "nachname": "Escher",
+      "pilot_name": "Escher, Franck",
+      "abteilungszeit": "2026-06-05 05:25",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 12,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "SKALAR",
+      "from": "RÜB",
+      "to": "HOS",
+      "nr": 12,
+      "raw_time": "Fri Jun 05 05:25:00 CEST 2026",
+      "current_ship_name": "SKALAR",
+      "current_ship_eta_rueb": "2026-06-05 11:00",
+      "current_ship_q": 0,
+      "current_ship_route": "RÜB → HOS",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
     {
       "pilot_key": "lehwald_christian",
       "vorname": "Christian",
@@ -1138,14 +997,16 @@
       "q_source": "q_gruppen_lotsen.entries",
       "pilot_tactical_nr": 2,
       "aufgabe": "Kanalbört",
-      "fahrzeug": "RÜB",
+      "fahrzeug": "STELLA VIRGO",
+      "from": "RÜB",
+      "to": "HOS",
       "nr": 2,
       "raw_time": "Fri Jun 05 09:35:00 CEST 2026",
       "current_ship_name": "STELLA VIRGO",
       "current_ship_eta_rueb": "2026-06-05 11:07",
       "current_ship_q": 4,
-      "current_ship_route": "HOS → KLT",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_route": "RÜB → HOS",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
