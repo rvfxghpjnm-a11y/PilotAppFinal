@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-06T20:57:18",
+  "generated_at": "2026-06-06T20:59:16",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,13 +32,13 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 12,
+    "ships_for_ruesterbergen": 13,
     "pilots_total": 18,
     "pilots_dispatchable": 18,
     "pilots_visible_only": 0,
-    "assignments": 12,
+    "assignments": 13,
     "unassigned_ships": 0,
-    "unused_pilots": 6
+    "unused_pilots": 5
   },
   "ships": [
     {
@@ -81,7 +81,7 @@
     {
       "ship_key": "CAROLIN G.",
       "ship_name": "CAROLIN G.",
-      "eta_rueb": "2026-06-06 22:04",
+      "eta_rueb": "2026-06-06 22:03",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
@@ -485,6 +485,44 @@
         "makler": "UCA",
         "dangerous_vessel": "-",
         "type_of_loading": "Erdoel und Derivate"
+      }
+    },
+    {
+      "ship_key": "STOLT SANDERLING",
+      "ship_name": "STOLT SANDERLING",
+      "eta_rueb": "2026-06-07 01:17",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 4,
+      "meldung": {
+        "nr": "13",
+        "time": "Sun Jun 07 02:20:00 CEST 2026",
+        "draft": "6.2",
+        "q_gruppe": "4",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "4",
+        "vg": "4",
+        "draft": "6.20",
+        "length_m": "90.900",
+        "beam_m": "15.600",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "U",
+        "pilot_1_name": "Gerhardt, Ralf",
+        "travel_status": "SAILING_NOK",
+        "makler": "UCA",
+        "dangerous_vessel": "-",
+        "type_of_loading": "Chemikalien fluessig"
       }
     }
   ],
@@ -1577,7 +1615,7 @@
     {
       "ship_key": "CAROLIN G.",
       "ship_name": "CAROLIN G.",
-      "eta_rueb": "2026-06-06 22:04",
+      "eta_rueb": "2026-06-06 22:03",
       "ship_q": 5,
       "assigned_pilot": "Engel, Alexander",
       "assigned_pilot_q": 3,
@@ -1810,7 +1848,7 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "BON VIVANT",
           "pilot_current_ship_eta_rueb": "2026-06-06 22:18",
-          "ship_eta_rueb": "2026-06-06 22:04",
+          "ship_eta_rueb": "2026-06-06 22:03",
           "availability_kind": "merged_eta"
         }
       ],
@@ -3844,32 +3882,143 @@
           "type_of_loading": "Erdoel und Derivate"
         }
       }
+    },
+    {
+      "ship_key": "STOLT SANDERLING",
+      "ship_name": "STOLT SANDERLING",
+      "eta_rueb": "2026-06-07 01:17",
+      "ship_q": 4,
+      "assigned_pilot": "Zozulya, Mykola",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 7,
+      "assigned_abteilungszeit": "2026-06-06 20:31",
+      "assigned_current_ship_name": "LOVISA",
+      "assigned_current_ship_eta_rueb": "2026-06-06 17:35",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 6,
+      "candidates": [
+        {
+          "pilot_name": "Zozulya, Mykola",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 7,
+          "abteilungszeit": "2026-06-06 20:31",
+          "fahrzeug": "LOVISA",
+          "to": "KLT",
+          "aufgabe": "Seebört",
+          "current_ship_name": "LOVISA",
+          "current_ship_eta_rueb": "2026-06-06 17:35",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Ünsal, Hüseyin",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 6,
+          "abteilungszeit": "2026-06-06 20:35",
+          "fahrzeug": "DANIEL DEYMANN",
+          "to": "OUH",
+          "aufgabe": "Seebört",
+          "current_ship_name": "DANIEL DEYMANN",
+          "current_ship_eta_rueb": "2026-06-06 17:40",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Blome, Henning",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-06-06 20:45",
+          "fahrzeug": "Leerfahrt",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "Leerfahrt",
+          "current_ship_eta_rueb": "2026-06-06 21:45",
+          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
+          "availability_kind": "leerfahrt_hos_rueb_plus60",
+          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+        },
+        {
+          "pilot_name": "Nagel, Volker",
+          "pilot_q": 2,
+          "pilot_tactical_nr": 3,
+          "abteilungszeit": "2026-06-06 20:45",
+          "fahrzeug": "Leerfahrt",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "Leerfahrt",
+          "current_ship_eta_rueb": "2026-06-06 21:45",
+          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
+          "availability_kind": "leerfahrt_hos_rueb_plus60",
+          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+        },
+        {
+          "pilot_name": "Arndt, Michael",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 4,
+          "abteilungszeit": "2026-06-06 20:45",
+          "fahrzeug": "Leerfahrt",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "Leerfahrt",
+          "current_ship_eta_rueb": "2026-06-06 21:45",
+          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
+          "availability_kind": "leerfahrt_hos_rueb_plus60",
+          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+        },
+        {
+          "pilot_name": "Hren, Alexander",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 5,
+          "abteilungszeit": "2026-06-06 20:45",
+          "fahrzeug": "Leerfahrt",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "Leerfahrt",
+          "current_ship_eta_rueb": "2026-06-06 21:45",
+          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
+          "availability_kind": "leerfahrt_hos_rueb_plus60",
+          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "13",
+          "time": "Sun Jun 07 02:20:00 CEST 2026",
+          "draft": "6.2",
+          "q_gruppe": "4",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "HOS → KLT",
+          "routes": [
+            "HOS → KLT",
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "4",
+          "vg": "4",
+          "draft": "6.20",
+          "length_m": "90.900",
+          "beam_m": "15.600",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "U",
+          "pilot_1_name": "Gerhardt, Ralf",
+          "travel_status": "SAILING_NOK",
+          "makler": "UCA",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Chemikalien fluessig"
+        }
+      }
     }
   ],
   "unassigned_ships": [],
   "unused_pilots": [
-    {
-      "pilot_key": "zozulya_mykola",
-      "vorname": "Mykola",
-      "nachname": "Zozulya",
-      "pilot_name": "Zozulya, Mykola",
-      "abteilungszeit": "2026-06-06 20:31",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 7,
-      "aufgabe": "Seebört",
-      "fahrzeug": "LOVISA",
-      "from": "HOS",
-      "to": "KLT",
-      "nr": 7,
-      "raw_time": "Sat Jun 06 20:31:00 CEST 2026",
-      "current_ship_name": "LOVISA",
-      "current_ship_eta_rueb": "2026-06-06 17:35",
-      "current_ship_q": 0,
-      "current_ship_route": "HOS → KLT",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
-    },
     {
       "pilot_key": "ünsal_hüseyin",
       "vorname": "Hüseyin",
