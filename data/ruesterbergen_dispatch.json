@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-06T15:03:18",
+  "generated_at": "2026-06-06T15:05:17",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 8,
     "pilots_total": 15,
-    "pilots_dispatchable": 12,
-    "pilots_visible_only": 3,
+    "pilots_dispatchable": 13,
+    "pilots_visible_only": 2,
     "assignments": 8,
     "unassigned_ships": 0,
-    "unused_pilots": 4
+    "unused_pilots": 5
   },
   "ships": [
     {
@@ -631,9 +631,10 @@
       "nr": 2,
       "raw_time": "Sat Jun 06 13:50:00 CEST 2026",
       "current_ship_name": "RDJ MAASSTROOM",
+      "current_ship_eta_rueb": "2026-06-06 19:05",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
@@ -922,6 +923,28 @@
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "crotogino_philipp",
+      "vorname": "Philipp",
+      "nachname": "Crotogino",
+      "pilot_name": "Crotogino, Philipp",
+      "abteilungszeit": "2026-06-06 13:50",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 2,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "RDJ MAASSTROOM",
+      "from": "HOR",
+      "to": "RÜB",
+      "nr": 2,
+      "raw_time": "Sat Jun 06 13:50:00 CEST 2026",
+      "current_ship_name": "RDJ MAASSTROOM",
+      "current_ship_eta_rueb": "2026-06-06 19:05",
+      "current_ship_q": 0,
+      "current_ship_route": "HOR → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
     }
   ],
   "visible_but_not_dispatchable_pilots": [
@@ -936,21 +959,6 @@
       "from": "HOR",
       "to": "KRH",
       "current_ship_name": "MARIA G",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    },
-    {
-      "pilot_key": "crotogino_philipp",
-      "pilot_name": "Crotogino, Philipp",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 2,
-      "abteilungszeit": "2026-06-06 13:50",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "RDJ MAASSTROOM",
-      "from": "HOR",
-      "to": "RÜB",
-      "current_ship_name": "RDJ MAASSTROOM",
       "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta",
       "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
@@ -1135,6 +1143,15 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "FL STOROE",
           "pilot_current_ship_eta_rueb": "2026-06-06 18:58",
+          "ship_eta_rueb": "2026-06-06 17:42",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Crotogino, Philipp",
+          "pilot_tactical_nr": 2,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "RDJ MAASSTROOM",
+          "pilot_current_ship_eta_rueb": "2026-06-06 19:05",
           "ship_eta_rueb": "2026-06-06 17:42",
           "availability_kind": "merged_eta"
         }
@@ -1325,6 +1342,15 @@
           "pilot_current_ship_eta_rueb": "2026-06-06 18:58",
           "ship_eta_rueb": "2026-06-06 17:46",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Crotogino, Philipp",
+          "pilot_tactical_nr": 2,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "RDJ MAASSTROOM",
+          "pilot_current_ship_eta_rueb": "2026-06-06 19:05",
+          "ship_eta_rueb": "2026-06-06 17:46",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -1375,7 +1401,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 10,
+      "candidate_count": 11,
       "candidates": [
         {
           "pilot_name": "Lüdtke, Jan-Torben",
@@ -1506,6 +1532,19 @@
           "current_ship_eta_rueb": "2026-06-06 18:58",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Crotogino, Philipp",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-06-06 13:50",
+          "fahrzeug": "RDJ MAASSTROOM",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RDJ MAASSTROOM",
+          "current_ship_eta_rueb": "2026-06-06 19:05",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -1555,7 +1594,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 9,
+      "candidate_count": 10,
       "candidates": [
         {
           "pilot_name": "Lielienthal, Jörn",
@@ -1673,6 +1712,19 @@
           "current_ship_eta_rueb": "2026-06-06 18:58",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Crotogino, Philipp",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-06-06 13:50",
+          "fahrzeug": "RDJ MAASSTROOM",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RDJ MAASSTROOM",
+          "current_ship_eta_rueb": "2026-06-06 19:05",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -1722,7 +1774,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 8,
+      "candidate_count": 9,
       "candidates": [
         {
           "pilot_name": "Berkenheger, Michael",
@@ -1827,6 +1879,19 @@
           "current_ship_eta_rueb": "2026-06-06 18:58",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Crotogino, Philipp",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-06-06 13:50",
+          "fahrzeug": "RDJ MAASSTROOM",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RDJ MAASSTROOM",
+          "current_ship_eta_rueb": "2026-06-06 19:05",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -1876,7 +1941,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 7,
+      "candidate_count": 8,
       "candidates": [
         {
           "pilot_name": "Purwin, Marko",
@@ -1968,6 +2033,19 @@
           "current_ship_eta_rueb": "2026-06-06 18:58",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Crotogino, Philipp",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-06-06 13:50",
+          "fahrzeug": "RDJ MAASSTROOM",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RDJ MAASSTROOM",
+          "current_ship_eta_rueb": "2026-06-06 19:05",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -2018,7 +2096,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 6,
+      "candidate_count": 7,
       "candidates": [
         {
           "pilot_name": "Engel, Alexander",
@@ -2097,6 +2175,19 @@
           "current_ship_eta_rueb": "2026-06-06 18:58",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Crotogino, Philipp",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-06-06 13:50",
+          "fahrzeug": "RDJ MAASSTROOM",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RDJ MAASSTROOM",
+          "current_ship_eta_rueb": "2026-06-06 19:05",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -2145,7 +2236,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 5,
+      "candidate_count": 6,
       "candidates": [
         {
           "pilot_name": "Jenckel, Dolf",
@@ -2209,6 +2300,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "FL STOROE",
           "current_ship_eta_rueb": "2026-06-06 18:58",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Crotogino, Philipp",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-06-06 13:50",
+          "fahrzeug": "RDJ MAASSTROOM",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RDJ MAASSTROOM",
+          "current_ship_eta_rueb": "2026-06-06 19:05",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
@@ -2323,6 +2427,28 @@
       "current_ship_eta_rueb": "2026-06-06 18:58",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "crotogino_philipp",
+      "vorname": "Philipp",
+      "nachname": "Crotogino",
+      "pilot_name": "Crotogino, Philipp",
+      "abteilungszeit": "2026-06-06 13:50",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 2,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "RDJ MAASSTROOM",
+      "from": "HOR",
+      "to": "RÜB",
+      "nr": 2,
+      "raw_time": "Sat Jun 06 13:50:00 CEST 2026",
+      "current_ship_name": "RDJ MAASSTROOM",
+      "current_ship_eta_rueb": "2026-06-06 19:05",
+      "current_ship_q": 0,
+      "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     }
