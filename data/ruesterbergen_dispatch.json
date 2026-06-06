@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-06T13:03:16",
+  "generated_at": "2026-06-06T13:05:16",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,17 +34,17 @@
   "counts": {
     "ships_for_ruesterbergen": 4,
     "pilots_total": 15,
-    "pilots_dispatchable": 12,
-    "pilots_visible_only": 3,
+    "pilots_dispatchable": 13,
+    "pilots_visible_only": 2,
     "assignments": 4,
     "unassigned_ships": 0,
-    "unused_pilots": 8
+    "unused_pilots": 9
   },
   "ships": [
     {
       "ship_key": "CORAL IVORY",
       "ship_name": "CORAL IVORY",
-      "eta_rueb": "2026-06-06 15:18",
+      "eta_rueb": "2026-06-06 15:17",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 4,
       "meldung": {
@@ -461,6 +461,7 @@
       "nr": 6,
       "raw_time": "Sat Jun 06 11:35:00 CEST 2026",
       "current_ship_name": "BALTIC SAIL",
+      "current_ship_eta_rueb": "2026-06-06 16:38",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -733,6 +734,28 @@
       "availability_kind": "merged_eta"
     },
     {
+      "pilot_key": "jenckel_dolf",
+      "vorname": "Dolf",
+      "nachname": "Jenckel",
+      "pilot_name": "Jenckel, Dolf",
+      "abteilungszeit": "2026-06-06 11:35",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 6,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "BALTIC SAIL",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 6,
+      "raw_time": "Sat Jun 06 11:35:00 CEST 2026",
+      "current_ship_name": "BALTIC SAIL",
+      "current_ship_eta_rueb": "2026-06-06 16:38",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
       "pilot_key": "töpfer_jens-peter",
       "vorname": "Jens-Peter",
       "nachname": "Töpfer",
@@ -807,28 +830,13 @@
       "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta",
       "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    },
-    {
-      "pilot_key": "jenckel_dolf",
-      "pilot_name": "Jenckel, Dolf",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 6,
-      "abteilungszeit": "2026-06-06 11:35",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "BALTIC SAIL",
-      "from": "HOS",
-      "to": "RÜB",
-      "current_ship_name": "BALTIC SAIL",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
     }
   ],
   "assignments": [
     {
       "ship_key": "CORAL IVORY",
       "ship_name": "CORAL IVORY",
-      "eta_rueb": "2026-06-06 15:18",
+      "eta_rueb": "2026-06-06 15:17",
       "ship_q": 4,
       "assigned_pilot": "Marth, Jürgen",
       "assigned_pilot_q": 0,
@@ -992,7 +1000,16 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "ALEXANDER B",
           "pilot_current_ship_eta_rueb": "2026-06-06 16:44",
-          "ship_eta_rueb": "2026-06-06 15:18",
+          "ship_eta_rueb": "2026-06-06 15:17",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Jenckel, Dolf",
+          "pilot_tactical_nr": 6,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "BALTIC SAIL",
+          "pilot_current_ship_eta_rueb": "2026-06-06 16:38",
+          "ship_eta_rueb": "2026-06-06 15:17",
           "availability_kind": "merged_eta"
         }
       ],
@@ -1044,7 +1061,7 @@
       "assigned_current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 11,
+      "candidate_count": 12,
       "candidates": [
         {
           "pilot_name": "Skairies, Thomas",
@@ -1164,6 +1181,19 @@
           "availability_kind": "merged_eta"
         },
         {
+          "pilot_name": "Jenckel, Dolf",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 6,
+          "abteilungszeit": "2026-06-06 11:35",
+          "fahrzeug": "BALTIC SAIL",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "BALTIC SAIL",
+          "current_ship_eta_rueb": "2026-06-06 16:38",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
           "pilot_name": "Töpfer, Jens-Peter",
           "pilot_q": 0,
           "pilot_tactical_nr": 5,
@@ -1238,7 +1268,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 10,
+      "candidate_count": 11,
       "candidates": [
         {
           "pilot_name": "Flink, Jörg",
@@ -1345,6 +1375,19 @@
           "availability_kind": "merged_eta"
         },
         {
+          "pilot_name": "Jenckel, Dolf",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 6,
+          "abteilungszeit": "2026-06-06 11:35",
+          "fahrzeug": "BALTIC SAIL",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "BALTIC SAIL",
+          "current_ship_eta_rueb": "2026-06-06 16:38",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
           "pilot_name": "Töpfer, Jens-Peter",
           "pilot_q": 0,
           "pilot_tactical_nr": 5,
@@ -1419,7 +1462,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 9,
+      "candidate_count": 10,
       "candidates": [
         {
           "pilot_name": "Röhrs, Johannes",
@@ -1509,6 +1552,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "ALEXANDER B",
           "current_ship_eta_rueb": "2026-06-06 16:44",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Jenckel, Dolf",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 6,
+          "abteilungszeit": "2026-06-06 11:35",
+          "fahrzeug": "BALTIC SAIL",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "BALTIC SAIL",
+          "current_ship_eta_rueb": "2026-06-06 16:38",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1691,6 +1747,28 @@
       "raw_time": "Sat Jun 06 11:24:00 CEST 2026",
       "current_ship_name": "ALEXANDER B",
       "current_ship_eta_rueb": "2026-06-06 16:44",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "jenckel_dolf",
+      "vorname": "Dolf",
+      "nachname": "Jenckel",
+      "pilot_name": "Jenckel, Dolf",
+      "abteilungszeit": "2026-06-06 11:35",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 6,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "BALTIC SAIL",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 6,
+      "raw_time": "Sat Jun 06 11:35:00 CEST 2026",
+      "current_ship_name": "BALTIC SAIL",
+      "current_ship_eta_rueb": "2026-06-06 16:38",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
