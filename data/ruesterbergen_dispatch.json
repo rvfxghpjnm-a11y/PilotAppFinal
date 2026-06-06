@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-06T12:05:16",
+  "generated_at": "2026-06-06T12:07:20",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 3,
     "pilots_total": 14,
-    "pilots_dispatchable": 9,
-    "pilots_visible_only": 5,
+    "pilots_dispatchable": 10,
+    "pilots_visible_only": 4,
     "assignments": 3,
     "unassigned_ships": 0,
-    "unused_pilots": 6
+    "unused_pilots": 7
   },
   "ships": [
     {
@@ -82,7 +82,7 @@
     {
       "ship_key": "CORAL IVORY",
       "ship_name": "CORAL IVORY",
-      "eta_rueb": "2026-06-06 15:20",
+      "eta_rueb": "2026-06-06 15:19",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 4,
       "meldung": {
@@ -265,16 +265,16 @@
       "q_source": "q_gruppen_lotsen.entries",
       "pilot_tactical_nr": 16,
       "aufgabe": "Kanalbört",
-      "fahrzeug": "JULIA-B",
-      "from": "HOR",
-      "to": "RÜB",
+      "fahrzeug": "RÜB",
       "nr": 16,
       "raw_time": "Sat Jun 06 07:02:00 CEST 2026",
-      "current_ship_name": "JULIA-B",
+      "current_ship_name": "RÜB",
+      "current_ship_eta_rueb": "2026-06-06 07:02",
       "current_ship_q": 0,
-      "current_ship_route": "HOR → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
+      "current_ship_route": "RÜB",
+      "current_ship_source": "special.already_in_rueb",
+      "availability_kind": "already_in_rueb",
+      "availability_hint": "Lotse gilt als bereits in RÜB"
     },
     {
       "pilot_key": "pankonin_denny",
@@ -562,6 +562,27 @@
       "availability_kind": "merged_eta"
     },
     {
+      "pilot_key": "lielienthal_jörn",
+      "vorname": "Jörn",
+      "nachname": "Lielienthal",
+      "pilot_name": "Lielienthal, Jörn",
+      "abteilungszeit": "2026-06-06 07:02",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 16,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "RÜB",
+      "nr": 16,
+      "raw_time": "Sat Jun 06 07:02:00 CEST 2026",
+      "current_ship_name": "RÜB",
+      "current_ship_eta_rueb": "2026-06-06 07:02",
+      "current_ship_q": 0,
+      "current_ship_route": "RÜB",
+      "current_ship_source": "special.already_in_rueb",
+      "availability_kind": "already_in_rueb",
+      "availability_hint": "Lotse gilt als bereits in RÜB"
+    },
+    {
       "pilot_key": "pankonin_denny",
       "vorname": "Denny",
       "nachname": "Pankonin",
@@ -653,21 +674,6 @@
   ],
   "visible_but_not_dispatchable_pilots": [
     {
-      "pilot_key": "lielienthal_jörn",
-      "pilot_name": "Lielienthal, Jörn",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 16,
-      "abteilungszeit": "2026-06-06 07:02",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "JULIA-B",
-      "from": "HOR",
-      "to": "RÜB",
-      "current_ship_name": "JULIA-B",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    },
-    {
       "pilot_key": "tontarra_olaf",
       "pilot_name": "Tontarra, Olaf",
       "pilot_q": 0,
@@ -743,7 +749,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 6,
+      "candidate_count": 7,
       "candidates": [
         {
           "pilot_name": "Marth, Jürgen",
@@ -809,6 +815,19 @@
           "current_ship_eta_rueb": "2026-06-06 12:13",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Lielienthal, Jörn",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 16,
+          "abteilungszeit": "2026-06-06 07:02",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-06-06 07:02",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
         },
         {
           "pilot_name": "Töpfer, Jens-Peter",
@@ -891,7 +910,7 @@
     {
       "ship_key": "CORAL IVORY",
       "ship_name": "CORAL IVORY",
-      "eta_rueb": "2026-06-06 15:20",
+      "eta_rueb": "2026-06-06 15:19",
       "ship_q": 4,
       "assigned_pilot": "Skairies, Thomas",
       "assigned_pilot_q": 0,
@@ -902,7 +921,7 @@
       "assigned_current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 8,
+      "candidate_count": 9,
       "candidates": [
         {
           "pilot_name": "Skairies, Thomas",
@@ -955,6 +974,19 @@
           "current_ship_eta_rueb": "2026-06-06 12:13",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Lielienthal, Jörn",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 16,
+          "abteilungszeit": "2026-06-06 07:02",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-06-06 07:02",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
         },
         {
           "pilot_name": "Pankonin, Denny",
@@ -1058,7 +1090,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 7,
+      "candidate_count": 8,
       "candidates": [
         {
           "pilot_name": "Flink, Jörg",
@@ -1098,6 +1130,19 @@
           "current_ship_eta_rueb": "2026-06-06 12:13",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Lielienthal, Jörn",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 16,
+          "abteilungszeit": "2026-06-06 07:02",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-06-06 07:02",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
         },
         {
           "pilot_name": "Pankonin, Denny",
@@ -1221,6 +1266,27 @@
       "current_ship_route": "RÜB → HOS",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "lielienthal_jörn",
+      "vorname": "Jörn",
+      "nachname": "Lielienthal",
+      "pilot_name": "Lielienthal, Jörn",
+      "abteilungszeit": "2026-06-06 07:02",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 16,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "RÜB",
+      "nr": 16,
+      "raw_time": "Sat Jun 06 07:02:00 CEST 2026",
+      "current_ship_name": "RÜB",
+      "current_ship_eta_rueb": "2026-06-06 07:02",
+      "current_ship_q": 0,
+      "current_ship_route": "RÜB",
+      "current_ship_source": "special.already_in_rueb",
+      "availability_kind": "already_in_rueb",
+      "availability_hint": "Lotse gilt als bereits in RÜB"
     },
     {
       "pilot_key": "pankonin_denny",
