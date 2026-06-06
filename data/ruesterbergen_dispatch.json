@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-06T18:35:15",
+  "generated_at": "2026-06-06T18:37:15",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,10 +34,10 @@
   "counts": {
     "ships_for_ruesterbergen": 16,
     "pilots_total": 12,
-    "pilots_dispatchable": 11,
-    "pilots_visible_only": 1,
-    "assignments": 11,
-    "unassigned_ships": 5,
+    "pilots_dispatchable": 12,
+    "pilots_visible_only": 0,
+    "assignments": 12,
+    "unassigned_ships": 4,
     "unused_pilots": 0
   },
   "ships": [
@@ -526,7 +526,7 @@
     {
       "ship_key": "ODIN",
       "ship_name": "ODIN",
-      "eta_rueb": "2026-06-07 00:19",
+      "eta_rueb": "2026-06-07 00:23",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 4,
       "meldung": {
@@ -591,6 +591,7 @@
         "zulauf_richtung": "vom_kanal",
         "pilot_required": "true",
         "pilot_status": "U",
+        "pilot_1_name": "Zekow, Henrik",
         "travel_status": "SAILING_NOK",
         "makler": "SUB",
         "dangerous_vessel": "-",
@@ -728,7 +729,7 @@
       "nr": 10,
       "raw_time": "Sat Jun 06 13:35:00 CEST 2026",
       "current_ship_name": "MILA",
-      "current_ship_eta_rueb": "2026-06-06 18:55",
+      "current_ship_eta_rueb": "2026-06-06 18:54",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -882,6 +883,7 @@
       "nr": 1,
       "raw_time": "Sat Jun 06 18:00:00 CEST 2026",
       "current_ship_name": "BON VIVANT",
+      "current_ship_eta_rueb": "2026-06-06 22:05",
       "current_ship_q": 0,
       "current_ship_route": "UTG → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -992,7 +994,7 @@
       "nr": 10,
       "raw_time": "Sat Jun 06 13:35:00 CEST 2026",
       "current_ship_name": "MILA",
-      "current_ship_eta_rueb": "2026-06-06 18:55",
+      "current_ship_eta_rueb": "2026-06-06 18:54",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -1129,25 +1131,31 @@
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
-    }
-  ],
-  "visible_but_not_dispatchable_pilots": [
+    },
     {
       "pilot_key": "zimmermann_steffen",
+      "vorname": "Steffen",
+      "nachname": "Zimmermann",
       "pilot_name": "Zimmermann, Steffen",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 1,
       "abteilungszeit": "2026-06-06 18:00",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 1,
       "aufgabe": "Kanalbört",
       "fahrzeug": "BON VIVANT",
       "from": "UTG",
       "to": "RÜB",
+      "nr": 1,
+      "raw_time": "Sat Jun 06 18:00:00 CEST 2026",
       "current_ship_name": "BON VIVANT",
+      "current_ship_eta_rueb": "2026-06-06 22:05",
+      "current_ship_q": 0,
+      "current_ship_route": "UTG → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
+      "availability_kind": "merged_eta"
     }
   ],
+  "visible_but_not_dispatchable_pilots": [],
   "assignments": [
     {
       "ship_key": "INGRID B",
@@ -1226,7 +1234,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "MILA",
-          "current_ship_eta_rueb": "2026-06-06 18:55",
+          "current_ship_eta_rueb": "2026-06-06 18:54",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1295,6 +1303,15 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "SOUNDMAR",
           "pilot_current_ship_eta_rueb": "2026-06-06 21:00",
+          "ship_eta_rueb": "2026-06-06 19:55",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Zimmermann, Steffen",
+          "pilot_tactical_nr": 1,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "BON VIVANT",
+          "pilot_current_ship_eta_rueb": "2026-06-06 22:05",
           "ship_eta_rueb": "2026-06-06 19:55",
           "availability_kind": "merged_eta"
         }
@@ -1396,7 +1413,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "MILA",
-          "current_ship_eta_rueb": "2026-06-06 18:55",
+          "current_ship_eta_rueb": "2026-06-06 18:54",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1465,6 +1482,15 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "SOUNDMAR",
           "pilot_current_ship_eta_rueb": "2026-06-06 21:00",
+          "ship_eta_rueb": "2026-06-06 19:58",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Zimmermann, Steffen",
+          "pilot_tactical_nr": 1,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "BON VIVANT",
+          "pilot_current_ship_eta_rueb": "2026-06-06 22:05",
           "ship_eta_rueb": "2026-06-06 19:58",
           "availability_kind": "merged_eta"
         }
@@ -1553,7 +1579,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "MILA",
-          "current_ship_eta_rueb": "2026-06-06 18:55",
+          "current_ship_eta_rueb": "2026-06-06 18:54",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1622,6 +1648,15 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "SOUNDMAR",
           "pilot_current_ship_eta_rueb": "2026-06-06 21:00",
+          "ship_eta_rueb": "2026-06-06 20:00",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Zimmermann, Steffen",
+          "pilot_tactical_nr": 1,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "BON VIVANT",
+          "pilot_current_ship_eta_rueb": "2026-06-06 22:05",
           "ship_eta_rueb": "2026-06-06 20:00",
           "availability_kind": "merged_eta"
         }
@@ -1699,7 +1734,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "MILA",
-          "current_ship_eta_rueb": "2026-06-06 18:55",
+          "current_ship_eta_rueb": "2026-06-06 18:54",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1768,6 +1803,15 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "SOUNDMAR",
           "pilot_current_ship_eta_rueb": "2026-06-06 21:00",
+          "ship_eta_rueb": "2026-06-06 20:03",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Zimmermann, Steffen",
+          "pilot_tactical_nr": 1,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "BON VIVANT",
+          "pilot_current_ship_eta_rueb": "2026-06-06 22:05",
           "ship_eta_rueb": "2026-06-06 20:03",
           "availability_kind": "merged_eta"
         }
@@ -1815,7 +1859,7 @@
       "assigned_tactical_nr": 10,
       "assigned_abteilungszeit": "2026-06-06 13:35",
       "assigned_current_ship_name": "MILA",
-      "assigned_current_ship_eta_rueb": "2026-06-06 18:55",
+      "assigned_current_ship_eta_rueb": "2026-06-06 18:54",
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
@@ -1830,7 +1874,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "MILA",
-          "current_ship_eta_rueb": "2026-06-06 18:55",
+          "current_ship_eta_rueb": "2026-06-06 18:54",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1899,6 +1943,15 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "SOUNDMAR",
           "pilot_current_ship_eta_rueb": "2026-06-06 21:00",
+          "ship_eta_rueb": "2026-06-06 20:08",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Zimmermann, Steffen",
+          "pilot_tactical_nr": 1,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "BON VIVANT",
+          "pilot_current_ship_eta_rueb": "2026-06-06 22:05",
           "ship_eta_rueb": "2026-06-06 20:08",
           "availability_kind": "merged_eta"
         }
@@ -2020,6 +2073,15 @@
           "pilot_current_ship_eta_rueb": "2026-06-06 21:00",
           "ship_eta_rueb": "2026-06-06 20:11",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Zimmermann, Steffen",
+          "pilot_tactical_nr": 1,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "BON VIVANT",
+          "pilot_current_ship_eta_rueb": "2026-06-06 22:05",
+          "ship_eta_rueb": "2026-06-06 20:11",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -2069,7 +2131,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 5,
+      "candidate_count": 6,
       "candidates": [
         {
           "pilot_name": "Crotogino, Philipp",
@@ -2135,6 +2197,19 @@
           "current_ship_eta_rueb": "2026-06-06 21:00",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Zimmermann, Steffen",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 1,
+          "abteilungszeit": "2026-06-06 18:00",
+          "fahrzeug": "BON VIVANT",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "BON VIVANT",
+          "current_ship_eta_rueb": "2026-06-06 22:05",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -2184,7 +2259,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 4,
+      "candidate_count": 5,
       "candidates": [
         {
           "pilot_name": "Stoislow, Alexander",
@@ -2237,6 +2312,19 @@
           "current_ship_eta_rueb": "2026-06-06 21:00",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Zimmermann, Steffen",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 1,
+          "abteilungszeit": "2026-06-06 18:00",
+          "fahrzeug": "BON VIVANT",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "BON VIVANT",
+          "current_ship_eta_rueb": "2026-06-06 22:05",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -2285,7 +2373,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 3,
+      "candidate_count": 4,
       "candidates": [
         {
           "pilot_name": "Migge, Alexander",
@@ -2323,6 +2411,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "SOUNDMAR",
           "current_ship_eta_rueb": "2026-06-06 21:00",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Zimmermann, Steffen",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 1,
+          "abteilungszeit": "2026-06-06 18:00",
+          "fahrzeug": "BON VIVANT",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "BON VIVANT",
+          "current_ship_eta_rueb": "2026-06-06 22:05",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
@@ -2371,7 +2472,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 2,
+      "candidate_count": 3,
       "candidates": [
         {
           "pilot_name": "Pietsch, Tobias",
@@ -2396,6 +2497,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "SOUNDMAR",
           "current_ship_eta_rueb": "2026-06-06 21:00",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Zimmermann, Steffen",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 1,
+          "abteilungszeit": "2026-06-06 18:00",
+          "fahrzeug": "BON VIVANT",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "BON VIVANT",
+          "current_ship_eta_rueb": "2026-06-06 22:05",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
@@ -2448,7 +2562,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 1,
+      "candidate_count": 2,
       "candidates": [
         {
           "pilot_name": "Hüpers, Peter",
@@ -2460,6 +2574,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "SOUNDMAR",
           "current_ship_eta_rueb": "2026-06-06 21:00",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Zimmermann, Steffen",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 1,
+          "abteilungszeit": "2026-06-06 18:00",
+          "fahrzeug": "BON VIVANT",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "BON VIVANT",
+          "current_ship_eta_rueb": "2026-06-06 22:05",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
@@ -2497,16 +2624,72 @@
           "type_of_loading": "Ballastfahrt"
         }
       }
-    }
-  ],
-  "unassigned_ships": [
+    },
     {
       "ship_key": "TIMBUS",
       "ship_name": "TIMBUS",
       "eta_rueb": "2026-06-06 22:20",
       "ship_q": 4,
-      "reason": "kein passender Lotse verfügbar"
-    },
+      "assigned_pilot": "Zimmermann, Steffen",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 1,
+      "assigned_abteilungszeit": "2026-06-06 18:00",
+      "assigned_current_ship_name": "BON VIVANT",
+      "assigned_current_ship_eta_rueb": "2026-06-06 22:05",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "pilot_name": "Zimmermann, Steffen",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 1,
+          "abteilungszeit": "2026-06-06 18:00",
+          "fahrzeug": "BON VIVANT",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "BON VIVANT",
+          "current_ship_eta_rueb": "2026-06-06 22:05",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "13",
+          "time": "Sat Jun 06 21:40:00 CEST 2026",
+          "draft": "5.1",
+          "q_gruppe": "4",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "RÜB → HOS",
+          "routes": [
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "4",
+          "vg": "3",
+          "draft": "5.10",
+          "length_m": "99.91",
+          "beam_m": "17.200",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "T",
+          "pilot_1_name": "Scholz, Burghard",
+          "travel_status": "SAILING_NOK",
+          "makler": "UCA",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Ballastfahrt"
+        }
+      }
+    }
+  ],
+  "unassigned_ships": [
     {
       "ship_key": "BIRKHOLM",
       "ship_name": "BIRKHOLM",
@@ -2517,7 +2700,7 @@
     {
       "ship_key": "ODIN",
       "ship_name": "ODIN",
-      "eta_rueb": "2026-06-07 00:19",
+      "eta_rueb": "2026-06-07 00:23",
       "ship_q": 4,
       "reason": "kein passender Lotse verfügbar"
     },
