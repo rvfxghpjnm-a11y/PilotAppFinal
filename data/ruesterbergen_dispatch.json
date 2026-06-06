@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-06T19:13:17",
+  "generated_at": "2026-06-06T19:15:16",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -341,7 +341,7 @@
     {
       "ship_key": "JAN V",
       "ship_name": "JAN V",
-      "eta_rueb": "2026-06-06 22:10",
+      "eta_rueb": "2026-06-06 22:09",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
@@ -375,7 +375,7 @@
     {
       "ship_key": "CONTAINERSHIPS STELLAR",
       "ship_name": "CONTAINERSHIPS STELLAR",
-      "eta_rueb": "2026-06-06 22:14",
+      "eta_rueb": "2026-06-06 22:13",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 1,
       "meldung": {
@@ -857,7 +857,7 @@
       "nr": 4,
       "raw_time": "Sat Jun 06 16:16:00 CEST 2026",
       "current_ship_name": "SOUNDMAR",
-      "current_ship_eta_rueb": "2026-06-06 20:59",
+      "current_ship_eta_rueb": "2026-06-06 20:57",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -895,18 +895,16 @@
       "q_source": "q_gruppen_lotsen.entries",
       "pilot_tactical_nr": 2,
       "aufgabe": "Kanalbört",
-      "fahrzeug": "Leerfahrt",
-      "from": "HOS",
-      "to": "RÜB",
+      "fahrzeug": "RÜB",
       "nr": 2,
       "raw_time": "Sat Jun 06 18:55:00 CEST 2026",
-      "current_ship_name": "Leerfahrt",
-      "current_ship_eta_rueb": "2026-06-06 19:55",
+      "current_ship_name": "RÜB",
+      "current_ship_eta_rueb": "2026-06-06 18:55",
       "current_ship_q": 0,
-      "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-      "availability_kind": "leerfahrt_hos_rueb_plus60",
-      "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+      "current_ship_route": "RÜB",
+      "current_ship_source": "special.already_in_rueb",
+      "availability_kind": "already_in_rueb",
+      "availability_hint": "Lotse gilt als bereits in RÜB"
     }
   ],
   "dispatchable_pilots": [
@@ -1141,7 +1139,7 @@
       "nr": 4,
       "raw_time": "Sat Jun 06 16:16:00 CEST 2026",
       "current_ship_name": "SOUNDMAR",
-      "current_ship_eta_rueb": "2026-06-06 20:59",
+      "current_ship_eta_rueb": "2026-06-06 20:57",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -1179,18 +1177,16 @@
       "q_source": "q_gruppen_lotsen.entries",
       "pilot_tactical_nr": 2,
       "aufgabe": "Kanalbört",
-      "fahrzeug": "Leerfahrt",
-      "from": "HOS",
-      "to": "RÜB",
+      "fahrzeug": "RÜB",
       "nr": 2,
       "raw_time": "Sat Jun 06 18:55:00 CEST 2026",
-      "current_ship_name": "Leerfahrt",
-      "current_ship_eta_rueb": "2026-06-06 19:55",
+      "current_ship_name": "RÜB",
+      "current_ship_eta_rueb": "2026-06-06 18:55",
       "current_ship_q": 0,
-      "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-      "availability_kind": "leerfahrt_hos_rueb_plus60",
-      "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+      "current_ship_route": "RÜB",
+      "current_ship_source": "special.already_in_rueb",
+      "availability_kind": "already_in_rueb",
+      "availability_hint": "Lotse gilt als bereits in RÜB"
     }
   ],
   "visible_but_not_dispatchable_pilots": [],
@@ -1209,7 +1205,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 8,
+      "candidate_count": 9,
       "candidates": [
         {
           "pilot_name": "Berkenheger, Michael",
@@ -1314,6 +1310,19 @@
           "current_ship_source": "special.already_in_rueb",
           "availability_kind": "already_in_rueb",
           "availability_hint": "Lotse gilt als bereits in RÜB"
+        },
+        {
+          "pilot_name": "Biedermann, Johannes",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-06-06 18:55",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-06-06 18:55",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
         }
       ],
       "excluded": [
@@ -1340,7 +1349,7 @@
           "pilot_tactical_nr": 4,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "SOUNDMAR",
-          "pilot_current_ship_eta_rueb": "2026-06-06 20:59",
+          "pilot_current_ship_eta_rueb": "2026-06-06 20:57",
           "ship_eta_rueb": "2026-06-06 19:53",
           "availability_kind": "merged_eta"
         },
@@ -1352,16 +1361,6 @@
           "pilot_current_ship_eta_rueb": "2026-06-06 22:22",
           "ship_eta_rueb": "2026-06-06 19:53",
           "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Biedermann, Johannes",
-          "pilot_tactical_nr": 2,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "Leerfahrt",
-          "pilot_current_ship_eta_rueb": "2026-06-06 19:55",
-          "ship_eta_rueb": "2026-06-06 19:53",
-          "availability_kind": "leerfahrt_hos_rueb_plus60",
-          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
         }
       ],
       "ship": {
@@ -1509,14 +1508,13 @@
           "pilot_q": 0,
           "pilot_tactical_nr": 2,
           "abteilungszeit": "2026-06-06 18:55",
-          "fahrzeug": "Leerfahrt",
-          "to": "RÜB",
+          "fahrzeug": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "Leerfahrt",
-          "current_ship_eta_rueb": "2026-06-06 19:55",
-          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-          "availability_kind": "leerfahrt_hos_rueb_plus60",
-          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-06-06 18:55",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
         }
       ],
       "excluded": [
@@ -1543,7 +1541,7 @@
           "pilot_tactical_nr": 4,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "SOUNDMAR",
-          "pilot_current_ship_eta_rueb": "2026-06-06 20:59",
+          "pilot_current_ship_eta_rueb": "2026-06-06 20:57",
           "ship_eta_rueb": "2026-06-06 19:56",
           "availability_kind": "merged_eta"
         },
@@ -1689,14 +1687,13 @@
           "pilot_q": 0,
           "pilot_tactical_nr": 2,
           "abteilungszeit": "2026-06-06 18:55",
-          "fahrzeug": "Leerfahrt",
-          "to": "RÜB",
+          "fahrzeug": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "Leerfahrt",
-          "current_ship_eta_rueb": "2026-06-06 19:55",
-          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-          "availability_kind": "leerfahrt_hos_rueb_plus60",
-          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-06-06 18:55",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
         }
       ],
       "excluded": [
@@ -1723,7 +1720,7 @@
           "pilot_tactical_nr": 4,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "SOUNDMAR",
-          "pilot_current_ship_eta_rueb": "2026-06-06 20:59",
+          "pilot_current_ship_eta_rueb": "2026-06-06 20:57",
           "ship_eta_rueb": "2026-06-06 19:59",
           "availability_kind": "merged_eta"
         },
@@ -1858,14 +1855,13 @@
           "pilot_q": 0,
           "pilot_tactical_nr": 2,
           "abteilungszeit": "2026-06-06 18:55",
-          "fahrzeug": "Leerfahrt",
-          "to": "RÜB",
+          "fahrzeug": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "Leerfahrt",
-          "current_ship_eta_rueb": "2026-06-06 19:55",
-          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-          "availability_kind": "leerfahrt_hos_rueb_plus60",
-          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-06-06 18:55",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
         }
       ],
       "excluded": [
@@ -1892,7 +1888,7 @@
           "pilot_tactical_nr": 4,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "SOUNDMAR",
-          "pilot_current_ship_eta_rueb": "2026-06-06 20:59",
+          "pilot_current_ship_eta_rueb": "2026-06-06 20:57",
           "ship_eta_rueb": "2026-06-06 20:02",
           "availability_kind": "merged_eta"
         },
@@ -2013,14 +2009,13 @@
           "pilot_q": 0,
           "pilot_tactical_nr": 2,
           "abteilungszeit": "2026-06-06 18:55",
-          "fahrzeug": "Leerfahrt",
-          "to": "RÜB",
+          "fahrzeug": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "Leerfahrt",
-          "current_ship_eta_rueb": "2026-06-06 19:55",
-          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-          "availability_kind": "leerfahrt_hos_rueb_plus60",
-          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-06-06 18:55",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
         }
       ],
       "excluded": [
@@ -2047,7 +2042,7 @@
           "pilot_tactical_nr": 4,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "SOUNDMAR",
-          "pilot_current_ship_eta_rueb": "2026-06-06 20:59",
+          "pilot_current_ship_eta_rueb": "2026-06-06 20:57",
           "ship_eta_rueb": "2026-06-06 20:08",
           "availability_kind": "merged_eta"
         },
@@ -2156,14 +2151,13 @@
           "pilot_q": 0,
           "pilot_tactical_nr": 2,
           "abteilungszeit": "2026-06-06 18:55",
-          "fahrzeug": "Leerfahrt",
-          "to": "RÜB",
+          "fahrzeug": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "Leerfahrt",
-          "current_ship_eta_rueb": "2026-06-06 19:55",
-          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-          "availability_kind": "leerfahrt_hos_rueb_plus60",
-          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-06-06 18:55",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
         }
       ],
       "excluded": [
@@ -2190,7 +2184,7 @@
           "pilot_tactical_nr": 4,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "SOUNDMAR",
-          "pilot_current_ship_eta_rueb": "2026-06-06 20:59",
+          "pilot_current_ship_eta_rueb": "2026-06-06 20:57",
           "ship_eta_rueb": "2026-06-06 20:13",
           "availability_kind": "merged_eta"
         },
@@ -2315,7 +2309,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "SOUNDMAR",
-          "current_ship_eta_rueb": "2026-06-06 20:59",
+          "current_ship_eta_rueb": "2026-06-06 20:57",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -2324,14 +2318,13 @@
           "pilot_q": 0,
           "pilot_tactical_nr": 2,
           "abteilungszeit": "2026-06-06 18:55",
-          "fahrzeug": "Leerfahrt",
-          "to": "RÜB",
+          "fahrzeug": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "Leerfahrt",
-          "current_ship_eta_rueb": "2026-06-06 19:55",
-          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-          "availability_kind": "leerfahrt_hos_rueb_plus60",
-          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-06-06 18:55",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
         }
       ],
       "excluded": [
@@ -2443,7 +2436,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "SOUNDMAR",
-          "current_ship_eta_rueb": "2026-06-06 20:59",
+          "current_ship_eta_rueb": "2026-06-06 20:57",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -2452,14 +2445,13 @@
           "pilot_q": 0,
           "pilot_tactical_nr": 2,
           "abteilungszeit": "2026-06-06 18:55",
-          "fahrzeug": "Leerfahrt",
-          "to": "RÜB",
+          "fahrzeug": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "Leerfahrt",
-          "current_ship_eta_rueb": "2026-06-06 19:55",
-          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-          "availability_kind": "leerfahrt_hos_rueb_plus60",
-          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-06-06 18:55",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
         }
       ],
       "excluded": [
@@ -2508,7 +2500,7 @@
     {
       "ship_key": "JAN V",
       "ship_name": "JAN V",
-      "eta_rueb": "2026-06-06 22:10",
+      "eta_rueb": "2026-06-06 22:09",
       "ship_q": 5,
       "assigned_pilot": "Migge, Alexander",
       "assigned_pilot_q": 0,
@@ -2556,7 +2548,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "SOUNDMAR",
-          "current_ship_eta_rueb": "2026-06-06 20:59",
+          "current_ship_eta_rueb": "2026-06-06 20:57",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -2565,14 +2557,13 @@
           "pilot_q": 0,
           "pilot_tactical_nr": 2,
           "abteilungszeit": "2026-06-06 18:55",
-          "fahrzeug": "Leerfahrt",
-          "to": "RÜB",
+          "fahrzeug": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "Leerfahrt",
-          "current_ship_eta_rueb": "2026-06-06 19:55",
-          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-          "availability_kind": "leerfahrt_hos_rueb_plus60",
-          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-06-06 18:55",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
         }
       ],
       "excluded": [
@@ -2582,7 +2573,7 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "BON VIVANT",
           "pilot_current_ship_eta_rueb": "2026-06-06 22:22",
-          "ship_eta_rueb": "2026-06-06 22:10",
+          "ship_eta_rueb": "2026-06-06 22:09",
           "availability_kind": "merged_eta"
         }
       ],
@@ -2619,7 +2610,7 @@
     {
       "ship_key": "CONTAINERSHIPS STELLAR",
       "ship_name": "CONTAINERSHIPS STELLAR",
-      "eta_rueb": "2026-06-06 22:14",
+      "eta_rueb": "2026-06-06 22:13",
       "ship_q": 1,
       "assigned_pilot": "Pietsch, Tobias",
       "assigned_pilot_q": 1,
@@ -2654,7 +2645,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "SOUNDMAR",
-          "current_ship_eta_rueb": "2026-06-06 20:59",
+          "current_ship_eta_rueb": "2026-06-06 20:57",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -2663,14 +2654,13 @@
           "pilot_q": 0,
           "pilot_tactical_nr": 2,
           "abteilungszeit": "2026-06-06 18:55",
-          "fahrzeug": "Leerfahrt",
-          "to": "RÜB",
+          "fahrzeug": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "Leerfahrt",
-          "current_ship_eta_rueb": "2026-06-06 19:55",
-          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-          "availability_kind": "leerfahrt_hos_rueb_plus60",
-          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-06-06 18:55",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
         }
       ],
       "excluded": [
@@ -2680,7 +2670,7 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "BON VIVANT",
           "pilot_current_ship_eta_rueb": "2026-06-06 22:22",
-          "ship_eta_rueb": "2026-06-06 22:14",
+          "ship_eta_rueb": "2026-06-06 22:13",
           "availability_kind": "merged_eta"
         }
       ],
@@ -2728,7 +2718,7 @@
       "assigned_tactical_nr": 4,
       "assigned_abteilungszeit": "2026-06-06 16:16",
       "assigned_current_ship_name": "SOUNDMAR",
-      "assigned_current_ship_eta_rueb": "2026-06-06 20:59",
+      "assigned_current_ship_eta_rueb": "2026-06-06 20:57",
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
@@ -2743,7 +2733,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "SOUNDMAR",
-          "current_ship_eta_rueb": "2026-06-06 20:59",
+          "current_ship_eta_rueb": "2026-06-06 20:57",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -2752,14 +2742,13 @@
           "pilot_q": 0,
           "pilot_tactical_nr": 2,
           "abteilungszeit": "2026-06-06 18:55",
-          "fahrzeug": "Leerfahrt",
-          "to": "RÜB",
+          "fahrzeug": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "Leerfahrt",
-          "current_ship_eta_rueb": "2026-06-06 19:55",
-          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-          "availability_kind": "leerfahrt_hos_rueb_plus60",
-          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-06-06 18:55",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
         }
       ],
       "excluded": [
@@ -2816,11 +2805,11 @@
       "assigned_pilot_q": 0,
       "assigned_tactical_nr": 2,
       "assigned_abteilungszeit": "2026-06-06 18:55",
-      "assigned_current_ship_name": "Leerfahrt",
-      "assigned_current_ship_eta_rueb": "2026-06-06 19:55",
-      "assigned_current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-      "assigned_availability_kind": "leerfahrt_hos_rueb_plus60",
-      "assigned_availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten",
+      "assigned_current_ship_name": "RÜB",
+      "assigned_current_ship_eta_rueb": "2026-06-06 18:55",
+      "assigned_current_ship_source": "special.already_in_rueb",
+      "assigned_availability_kind": "already_in_rueb",
+      "assigned_availability_hint": "Lotse gilt als bereits in RÜB",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
       "candidate_count": 1,
       "candidates": [
@@ -2829,14 +2818,13 @@
           "pilot_q": 0,
           "pilot_tactical_nr": 2,
           "abteilungszeit": "2026-06-06 18:55",
-          "fahrzeug": "Leerfahrt",
-          "to": "RÜB",
+          "fahrzeug": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "Leerfahrt",
-          "current_ship_eta_rueb": "2026-06-06 19:55",
-          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-          "availability_kind": "leerfahrt_hos_rueb_plus60",
-          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-06-06 18:55",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
         }
       ],
       "excluded": [
