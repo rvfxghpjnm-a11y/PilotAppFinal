@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-06T17:21:17",
+  "generated_at": "2026-06-06T17:23:19",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,10 +34,10 @@
   "counts": {
     "ships_for_ruesterbergen": 14,
     "pilots_total": 13,
-    "pilots_dispatchable": 10,
-    "pilots_visible_only": 3,
-    "assignments": 10,
-    "unassigned_ships": 4,
+    "pilots_dispatchable": 11,
+    "pilots_visible_only": 2,
+    "assignments": 11,
+    "unassigned_ships": 3,
     "unused_pilots": 0
   },
   "ships": [
@@ -742,7 +742,7 @@
       "nr": 7,
       "raw_time": "Sat Jun 06 13:50:00 CEST 2026",
       "current_ship_name": "RDJ MAASSTROOM",
-      "current_ship_eta_rueb": "2026-06-06 19:01",
+      "current_ship_eta_rueb": "2026-06-06 19:00",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -786,6 +786,7 @@
       "nr": 5,
       "raw_time": "Sat Jun 06 15:45:00 CEST 2026",
       "current_ship_name": "MERSEY",
+      "current_ship_eta_rueb": "2026-06-06 21:11",
       "current_ship_q": 0,
       "current_ship_route": "HER → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -1026,7 +1027,7 @@
       "nr": 7,
       "raw_time": "Sat Jun 06 13:50:00 CEST 2026",
       "current_ship_name": "RDJ MAASSTROOM",
-      "current_ship_eta_rueb": "2026-06-06 19:01",
+      "current_ship_eta_rueb": "2026-06-06 19:00",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -1053,24 +1054,31 @@
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
-    }
-  ],
-  "visible_but_not_dispatchable_pilots": [
+    },
     {
       "pilot_key": "migge_alexander",
+      "vorname": "Alexander",
+      "nachname": "Migge",
       "pilot_name": "Migge, Alexander",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 5,
       "abteilungszeit": "2026-06-06 15:45",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 5,
       "aufgabe": "Kanalbört",
       "fahrzeug": "MERSEY",
       "from": "HER",
       "to": "RÜB",
+      "nr": 5,
+      "raw_time": "Sat Jun 06 15:45:00 CEST 2026",
       "current_ship_name": "MERSEY",
+      "current_ship_eta_rueb": "2026-06-06 21:11",
+      "current_ship_q": 0,
+      "current_ship_route": "HER → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    },
+      "availability_kind": "merged_eta"
+    }
+  ],
+  "visible_but_not_dispatchable_pilots": [
     {
       "pilot_key": "pietsch_tobias",
       "pilot_name": "Pietsch, Tobias",
@@ -1232,7 +1240,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "RDJ MAASSTROOM",
-          "current_ship_eta_rueb": "2026-06-06 19:01",
+          "current_ship_eta_rueb": "2026-06-06 19:00",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1247,6 +1255,17 @@
           "current_ship_name": "KATRE",
           "current_ship_eta_rueb": "2026-06-06 19:04",
           "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Migge, Alexander",
+          "pilot_tactical_nr": 5,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "MERSEY",
+          "pilot_current_ship_eta_rueb": "2026-06-06 21:11",
+          "ship_eta_rueb": "2026-06-06 19:56",
           "availability_kind": "merged_eta"
         }
       ],
@@ -1399,7 +1418,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "RDJ MAASSTROOM",
-          "current_ship_eta_rueb": "2026-06-06 19:01",
+          "current_ship_eta_rueb": "2026-06-06 19:00",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1414,6 +1433,17 @@
           "current_ship_name": "KATRE",
           "current_ship_eta_rueb": "2026-06-06 19:04",
           "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Migge, Alexander",
+          "pilot_tactical_nr": 5,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "MERSEY",
+          "pilot_current_ship_eta_rueb": "2026-06-06 21:11",
+          "ship_eta_rueb": "2026-06-06 20:00",
           "availability_kind": "merged_eta"
         }
       ],
@@ -1553,7 +1583,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "RDJ MAASSTROOM",
-          "current_ship_eta_rueb": "2026-06-06 19:01",
+          "current_ship_eta_rueb": "2026-06-06 19:00",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1568,6 +1598,17 @@
           "current_ship_name": "KATRE",
           "current_ship_eta_rueb": "2026-06-06 19:04",
           "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Migge, Alexander",
+          "pilot_tactical_nr": 5,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "MERSEY",
+          "pilot_current_ship_eta_rueb": "2026-06-06 21:11",
+          "ship_eta_rueb": "2026-06-06 20:02",
           "availability_kind": "merged_eta"
         }
       ],
@@ -1695,7 +1736,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "RDJ MAASSTROOM",
-          "current_ship_eta_rueb": "2026-06-06 19:01",
+          "current_ship_eta_rueb": "2026-06-06 19:00",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1710,6 +1751,17 @@
           "current_ship_name": "KATRE",
           "current_ship_eta_rueb": "2026-06-06 19:04",
           "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Migge, Alexander",
+          "pilot_tactical_nr": 5,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "MERSEY",
+          "pilot_current_ship_eta_rueb": "2026-06-06 21:11",
+          "ship_eta_rueb": "2026-06-06 20:06",
           "availability_kind": "merged_eta"
         }
       ],
@@ -1824,7 +1876,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "RDJ MAASSTROOM",
-          "current_ship_eta_rueb": "2026-06-06 19:01",
+          "current_ship_eta_rueb": "2026-06-06 19:00",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1839,6 +1891,17 @@
           "current_ship_name": "KATRE",
           "current_ship_eta_rueb": "2026-06-06 19:04",
           "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Migge, Alexander",
+          "pilot_tactical_nr": 5,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "MERSEY",
+          "pilot_current_ship_eta_rueb": "2026-06-06 21:11",
+          "ship_eta_rueb": "2026-06-06 20:09",
           "availability_kind": "merged_eta"
         }
       ],
@@ -1940,7 +2003,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "RDJ MAASSTROOM",
-          "current_ship_eta_rueb": "2026-06-06 19:01",
+          "current_ship_eta_rueb": "2026-06-06 19:00",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1955,6 +2018,17 @@
           "current_ship_name": "KATRE",
           "current_ship_eta_rueb": "2026-06-06 19:04",
           "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Migge, Alexander",
+          "pilot_tactical_nr": 5,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "MERSEY",
+          "pilot_current_ship_eta_rueb": "2026-06-06 21:11",
+          "ship_eta_rueb": "2026-06-06 20:12",
           "availability_kind": "merged_eta"
         }
       ],
@@ -2005,7 +2079,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 4,
+      "candidate_count": 5,
       "candidates": [
         {
           "pilot_name": "Haala, Klaus Werner",
@@ -2042,7 +2116,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "RDJ MAASSTROOM",
-          "current_ship_eta_rueb": "2026-06-06 19:01",
+          "current_ship_eta_rueb": "2026-06-06 19:00",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -2056,6 +2130,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "KATRE",
           "current_ship_eta_rueb": "2026-06-06 19:04",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Migge, Alexander",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 5,
+          "abteilungszeit": "2026-06-06 15:45",
+          "fahrzeug": "MERSEY",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "MERSEY",
+          "current_ship_eta_rueb": "2026-06-06 21:11",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
@@ -2107,7 +2194,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 3,
+      "candidate_count": 4,
       "candidates": [
         {
           "pilot_name": "Lüttge, Sebastian",
@@ -2131,7 +2218,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "RDJ MAASSTROOM",
-          "current_ship_eta_rueb": "2026-06-06 19:01",
+          "current_ship_eta_rueb": "2026-06-06 19:00",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -2145,6 +2232,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "KATRE",
           "current_ship_eta_rueb": "2026-06-06 19:04",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Migge, Alexander",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 5,
+          "abteilungszeit": "2026-06-06 15:45",
+          "fahrzeug": "MERSEY",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "MERSEY",
+          "current_ship_eta_rueb": "2026-06-06 21:11",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
@@ -2191,11 +2291,11 @@
       "assigned_tactical_nr": 7,
       "assigned_abteilungszeit": "2026-06-06 13:50",
       "assigned_current_ship_name": "RDJ MAASSTROOM",
-      "assigned_current_ship_eta_rueb": "2026-06-06 19:01",
+      "assigned_current_ship_eta_rueb": "2026-06-06 19:00",
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 2,
+      "candidate_count": 3,
       "candidates": [
         {
           "pilot_name": "Crotogino, Philipp",
@@ -2206,7 +2306,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "RDJ MAASSTROOM",
-          "current_ship_eta_rueb": "2026-06-06 19:01",
+          "current_ship_eta_rueb": "2026-06-06 19:00",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -2220,6 +2320,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "KATRE",
           "current_ship_eta_rueb": "2026-06-06 19:04",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Migge, Alexander",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 5,
+          "abteilungszeit": "2026-06-06 15:45",
+          "fahrzeug": "MERSEY",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "MERSEY",
+          "current_ship_eta_rueb": "2026-06-06 21:11",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
@@ -2251,6 +2364,79 @@
           "pilot_1_name": "Grafe, Kaith",
           "travel_status": "SAILING_NOK",
           "dangerous_vessel": "-"
+        }
+      }
+    },
+    {
+      "ship_key": "CONTAINERSHIPS STELLAR",
+      "ship_name": "CONTAINERSHIPS STELLAR",
+      "eta_rueb": "2026-06-06 22:17",
+      "ship_q": 1,
+      "assigned_pilot": "Migge, Alexander",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 5,
+      "assigned_abteilungszeit": "2026-06-06 15:45",
+      "assigned_current_ship_name": "MERSEY",
+      "assigned_current_ship_eta_rueb": "2026-06-06 21:11",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "pilot_name": "Migge, Alexander",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 5,
+          "abteilungszeit": "2026-06-06 15:45",
+          "fahrzeug": "MERSEY",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "MERSEY",
+          "current_ship_eta_rueb": "2026-06-06 21:11",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Stoislow, Alexander",
+          "pilot_tactical_nr": 6,
+          "reason": "Quali passt nicht (4 > 1)",
+          "pilot_q": 4,
+          "ship_q": 1
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "10",
+          "time": "Sat Jun 06 21:25:00 CEST 2026",
+          "draft": "7.9",
+          "q_gruppe": "1",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "HOS → KLT",
+          "routes": [
+            "HOS → KLT",
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "1",
+          "vg": "5",
+          "draft": "7.90",
+          "length_m": "169.95",
+          "beam_m": "26.900",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "U",
+          "pilot_1_name": "Neumann, Frank",
+          "travel_status": "SAILING_NOK",
+          "makler": "SUB",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Container"
         }
       }
     },
@@ -2320,22 +2506,6 @@
     }
   ],
   "unassigned_ships": [
-    {
-      "ship_key": "CONTAINERSHIPS STELLAR",
-      "ship_name": "CONTAINERSHIPS STELLAR",
-      "eta_rueb": "2026-06-06 22:17",
-      "ship_q": 1,
-      "reason": "kein passender Lotse verfügbar",
-      "excluded": [
-        {
-          "pilot_name": "Stoislow, Alexander",
-          "pilot_tactical_nr": 6,
-          "reason": "Quali passt nicht (4 > 1)",
-          "pilot_q": 4,
-          "ship_q": 1
-        }
-      ]
-    },
     {
       "ship_key": "FWN SPACE",
       "ship_name": "FWN SPACE",
