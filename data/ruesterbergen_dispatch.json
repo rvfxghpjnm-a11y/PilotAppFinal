@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-07T15:35:17",
+  "generated_at": "2026-06-07T15:37:16",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,13 +32,13 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 2,
+    "ships_for_ruesterbergen": 3,
     "pilots_total": 11,
     "pilots_dispatchable": 9,
     "pilots_visible_only": 2,
-    "assignments": 2,
+    "assignments": 3,
     "unassigned_ships": 0,
-    "unused_pilots": 7
+    "unused_pilots": 6
   },
   "ships": [
     {
@@ -104,6 +104,44 @@
         "q_gruppe": "5",
         "draft": "3.5"
       }
+    },
+    {
+      "ship_key": "NORDICA",
+      "ship_name": "NORDICA",
+      "eta_rueb": "2026-06-07 19:47",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 1,
+      "meldung": {
+        "nr": "3",
+        "time": "Sun Jun 07 19:30:00 CEST 2026",
+        "draft": "8.1",
+        "q_gruppe": "1",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "1",
+        "vg": "5",
+        "draft": "8.10",
+        "length_m": "151.72",
+        "beam_m": "23.4",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "U",
+        "pilot_1_name": "Regenbogen, Bert",
+        "travel_status": "SAILING_NOK",
+        "makler": "UCA",
+        "dangerous_vessel": "-",
+        "type_of_loading": "Container"
+      }
     }
   ],
   "pilots": [
@@ -145,7 +183,7 @@
       "nr": 15,
       "raw_time": "Sun Jun 07 09:09:00 CEST 2026",
       "current_ship_name": "ARKLOW VIEW",
-      "current_ship_eta_rueb": "2026-06-07 15:48",
+      "current_ship_eta_rueb": "2026-06-07 15:47",
       "current_ship_q": 4,
       "current_ship_route": "RÜB → UTG",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -388,7 +426,7 @@
       "nr": 15,
       "raw_time": "Sun Jun 07 09:09:00 CEST 2026",
       "current_ship_name": "ARKLOW VIEW",
-      "current_ship_eta_rueb": "2026-06-07 15:48",
+      "current_ship_eta_rueb": "2026-06-07 15:47",
       "current_ship_q": 4,
       "current_ship_route": "RÜB → UTG",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -621,7 +659,7 @@
           "to": "UTG",
           "aufgabe": "Kanalbört",
           "current_ship_name": "ARKLOW VIEW",
-          "current_ship_eta_rueb": "2026-06-07 15:48",
+          "current_ship_eta_rueb": "2026-06-07 15:47",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -760,7 +798,7 @@
       "assigned_tactical_nr": 15,
       "assigned_abteilungszeit": "2026-06-07 09:09",
       "assigned_current_ship_name": "ARKLOW VIEW",
-      "assigned_current_ship_eta_rueb": "2026-06-07 15:48",
+      "assigned_current_ship_eta_rueb": "2026-06-07 15:47",
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
@@ -775,7 +813,7 @@
           "to": "UTG",
           "aufgabe": "Kanalbört",
           "current_ship_name": "ARKLOW VIEW",
-          "current_ship_eta_rueb": "2026-06-07 15:48",
+          "current_ship_eta_rueb": "2026-06-07 15:47",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -893,32 +931,149 @@
           "draft": "3.5"
         }
       }
+    },
+    {
+      "ship_key": "NORDICA",
+      "ship_name": "NORDICA",
+      "eta_rueb": "2026-06-07 19:47",
+      "ship_q": 1,
+      "assigned_pilot": "Schüler, Marius",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 14,
+      "assigned_abteilungszeit": "2026-06-07 09:15",
+      "assigned_current_ship_name": "URSULA ESSBERGER",
+      "assigned_current_ship_eta_rueb": "2026-06-07 15:52",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 6,
+      "candidates": [
+        {
+          "pilot_name": "Schüler, Marius",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 14,
+          "abteilungszeit": "2026-06-07 09:15",
+          "fahrzeug": "URSULA ESSBERGER",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "URSULA ESSBERGER",
+          "current_ship_eta_rueb": "2026-06-07 15:52",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Skairies, Thomas",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 7,
+          "abteilungszeit": "2026-06-07 12:25",
+          "fahrzeug": "VLIELAND",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "VLIELAND",
+          "current_ship_eta_rueb": "2026-06-07 13:51",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Schie, Christian",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 8,
+          "abteilungszeit": "2026-06-07 12:25",
+          "fahrzeug": "GISELA ESSBERGER",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "GISELA ESSBERGER",
+          "current_ship_eta_rueb": "2026-06-07 13:46",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Marth, Jürgen",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 10,
+          "abteilungszeit": "2026-06-07 12:25",
+          "fahrzeug": "RIX BAY",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RIX BAY",
+          "current_ship_eta_rueb": "2026-06-07 13:43",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Kahler, Volker",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 6,
+          "abteilungszeit": "2026-06-07 12:52",
+          "fahrzeug": "DELAMAR",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "DELAMAR",
+          "current_ship_eta_rueb": "2026-06-07 17:42",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Witte, Tomas",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 1,
+          "abteilungszeit": "2026-06-07 15:25",
+          "fahrzeug": "Leerfahrt",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "Leerfahrt",
+          "current_ship_eta_rueb": "2026-06-07 16:25",
+          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
+          "availability_kind": "leerfahrt_hos_rueb_plus60",
+          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Külzer, Sascha",
+          "pilot_tactical_nr": 9,
+          "reason": "Quali passt nicht (2 > 1)",
+          "pilot_q": 2,
+          "ship_q": 1
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "3",
+          "time": "Sun Jun 07 19:30:00 CEST 2026",
+          "draft": "8.1",
+          "q_gruppe": "1",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "HOS → KLT",
+          "routes": [
+            "HOS → KLT",
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "1",
+          "vg": "5",
+          "draft": "8.10",
+          "length_m": "151.72",
+          "beam_m": "23.4",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "U",
+          "pilot_1_name": "Regenbogen, Bert",
+          "travel_status": "SAILING_NOK",
+          "makler": "UCA",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Container"
+        }
+      }
     }
   ],
   "unassigned_ships": [],
   "unused_pilots": [
-    {
-      "pilot_key": "schüler_marius",
-      "vorname": "Marius",
-      "nachname": "Schüler",
-      "pilot_name": "Schüler, Marius",
-      "abteilungszeit": "2026-06-07 09:15",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 14,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "URSULA ESSBERGER",
-      "from": "RÜB",
-      "to": "HOS",
-      "nr": 14,
-      "raw_time": "Sun Jun 07 09:15:00 CEST 2026",
-      "current_ship_name": "URSULA ESSBERGER",
-      "current_ship_eta_rueb": "2026-06-07 15:52",
-      "current_ship_q": 4,
-      "current_ship_route": "RÜB → HOS",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
-    },
     {
       "pilot_key": "skairies_thomas",
       "vorname": "Thomas",
