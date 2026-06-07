@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-07T17:35:20",
+  "generated_at": "2026-06-07T17:37:19",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,41 +32,15 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 2,
+    "ships_for_ruesterbergen": 1,
     "pilots_total": 6,
     "pilots_dispatchable": 6,
     "pilots_visible_only": 0,
-    "assignments": 2,
+    "assignments": 1,
     "unassigned_ships": 0,
-    "unused_pilots": 4
+    "unused_pilots": 5
   },
   "ships": [
-    {
-      "ship_key": "LEVENSAU",
-      "ship_name": "LEVENSAU",
-      "eta_rueb": "2026-06-07 18:00",
-      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
-      "ship_q": 5,
-      "meldung": {
-        "nr": "1",
-        "time": "Sun Jun 07 18:00:00 CEST 2026",
-        "draft": "3.5",
-        "q_gruppe": "5",
-        "lotsen_anzahl": 1,
-        "confirmed": false,
-        "from": "AHL",
-        "to": "HOS"
-      },
-      "summary": {
-        "route": "HOS → KLT",
-        "routes": [
-          "HOS → KLT",
-          "AHL → HOS"
-        ],
-        "q_gruppe": "5",
-        "draft": "3.5"
-      }
-    },
     {
       "ship_key": "NORDICA",
       "ship_name": "NORDICA",
@@ -74,7 +48,7 @@
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 1,
       "meldung": {
-        "nr": "2",
+        "nr": "1",
         "time": "Sun Jun 07 19:30:00 CEST 2026",
         "draft": "8.1",
         "q_gruppe": "1",
@@ -161,17 +135,16 @@
       "q_source": "q_gruppen_lotsen.entries",
       "pilot_tactical_nr": 7,
       "aufgabe": "Kanalbört",
-      "fahrzeug": "DELAMAR",
-      "from": "HOR",
-      "to": "RÜB",
+      "fahrzeug": "RÜB",
       "nr": 7,
       "raw_time": "Sun Jun 07 12:52:00 CEST 2026",
-      "current_ship_name": "DELAMAR",
-      "current_ship_eta_rueb": "2026-06-07 17:38",
+      "current_ship_name": "RÜB",
+      "current_ship_eta_rueb": "2026-06-07 12:52",
       "current_ship_q": 0,
-      "current_ship_route": "HOR → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
+      "current_ship_route": "RÜB",
+      "current_ship_source": "special.already_in_rueb",
+      "availability_kind": "already_in_rueb",
+      "availability_hint": "Lotse gilt als bereits in RÜB"
     },
     {
       "pilot_key": "konietzka_stefan",
@@ -295,17 +268,16 @@
       "q_source": "q_gruppen_lotsen.entries",
       "pilot_tactical_nr": 7,
       "aufgabe": "Kanalbört",
-      "fahrzeug": "DELAMAR",
-      "from": "HOR",
-      "to": "RÜB",
+      "fahrzeug": "RÜB",
       "nr": 7,
       "raw_time": "Sun Jun 07 12:52:00 CEST 2026",
-      "current_ship_name": "DELAMAR",
-      "current_ship_eta_rueb": "2026-06-07 17:38",
+      "current_ship_name": "RÜB",
+      "current_ship_eta_rueb": "2026-06-07 12:52",
       "current_ship_q": 0,
-      "current_ship_route": "HOR → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
+      "current_ship_route": "RÜB",
+      "current_ship_source": "special.already_in_rueb",
+      "availability_kind": "already_in_rueb",
+      "availability_hint": "Lotse gilt als bereits in RÜB"
     },
     {
       "pilot_key": "konietzka_stefan",
@@ -377,10 +349,10 @@
   "visible_but_not_dispatchable_pilots": [],
   "assignments": [
     {
-      "ship_key": "LEVENSAU",
-      "ship_name": "LEVENSAU",
-      "eta_rueb": "2026-06-07 18:00",
-      "ship_q": 5,
+      "ship_key": "NORDICA",
+      "ship_name": "NORDICA",
+      "eta_rueb": "2026-06-07 19:39",
+      "ship_q": 1,
       "assigned_pilot": "Otten, Janning",
       "assigned_pilot_q": 0,
       "assigned_tactical_nr": 14,
@@ -423,13 +395,13 @@
           "pilot_q": 0,
           "pilot_tactical_nr": 7,
           "abteilungszeit": "2026-06-07 12:52",
-          "fahrzeug": "DELAMAR",
-          "to": "RÜB",
+          "fahrzeug": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "DELAMAR",
-          "current_ship_eta_rueb": "2026-06-07 17:38",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-06-07 12:52",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
         },
         {
           "pilot_name": "Witte, Tomas",
@@ -452,7 +424,7 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "PAGANINI",
           "pilot_current_ship_eta_rueb": "2026-06-07 19:53",
-          "ship_eta_rueb": "2026-06-07 18:00",
+          "ship_eta_rueb": "2026-06-07 19:39",
           "availability_kind": "merged_eta"
         },
         {
@@ -461,111 +433,13 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "UNDEN",
           "pilot_current_ship_eta_rueb": "2026-06-07 19:56",
-          "ship_eta_rueb": "2026-06-07 18:00",
+          "ship_eta_rueb": "2026-06-07 19:39",
           "availability_kind": "merged_eta"
         }
       ],
       "ship": {
         "meldung": {
           "nr": "1",
-          "time": "Sun Jun 07 18:00:00 CEST 2026",
-          "draft": "3.5",
-          "q_gruppe": "5",
-          "lotsen_anzahl": 1,
-          "confirmed": false,
-          "from": "AHL",
-          "to": "HOS"
-        },
-        "summary": {
-          "route": "HOS → KLT",
-          "routes": [
-            "HOS → KLT",
-            "AHL → HOS"
-          ],
-          "q_gruppe": "5",
-          "draft": "3.5"
-        }
-      }
-    },
-    {
-      "ship_key": "NORDICA",
-      "ship_name": "NORDICA",
-      "eta_rueb": "2026-06-07 19:39",
-      "ship_q": 1,
-      "assigned_pilot": "Schüler, Marius",
-      "assigned_pilot_q": 0,
-      "assigned_tactical_nr": 13,
-      "assigned_abteilungszeit": "2026-06-07 09:15",
-      "assigned_current_ship_name": "URSULA ESSBERGER",
-      "assigned_current_ship_eta_rueb": "2026-06-07 15:51",
-      "assigned_current_ship_source": "schiffe_merged.seelotsen",
-      "assigned_availability_kind": "merged_eta",
-      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 3,
-      "candidates": [
-        {
-          "pilot_name": "Schüler, Marius",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 13,
-          "abteilungszeit": "2026-06-07 09:15",
-          "fahrzeug": "URSULA ESSBERGER",
-          "to": "HOS",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "URSULA ESSBERGER",
-          "current_ship_eta_rueb": "2026-06-07 15:51",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Kahler, Volker",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 7,
-          "abteilungszeit": "2026-06-07 12:52",
-          "fahrzeug": "DELAMAR",
-          "to": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "DELAMAR",
-          "current_ship_eta_rueb": "2026-06-07 17:38",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Witte, Tomas",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 2,
-          "abteilungszeit": "2026-06-07 15:25",
-          "fahrzeug": "COSTAMAR",
-          "to": "HOS",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "COSTAMAR",
-          "current_ship_eta_rueb": "2026-06-07 16:46",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        }
-      ],
-      "excluded": [
-        {
-          "pilot_name": "Konietzka, Stefan",
-          "pilot_tactical_nr": 4,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "PAGANINI",
-          "pilot_current_ship_eta_rueb": "2026-06-07 19:53",
-          "ship_eta_rueb": "2026-06-07 19:39",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Klüver, Knut Paul",
-          "pilot_tactical_nr": 3,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "UNDEN",
-          "pilot_current_ship_eta_rueb": "2026-06-07 19:56",
-          "ship_eta_rueb": "2026-06-07 19:39",
-          "availability_kind": "merged_eta"
-        }
-      ],
-      "ship": {
-        "meldung": {
-          "nr": "2",
           "time": "Sun Jun 07 19:30:00 CEST 2026",
           "draft": "8.1",
           "q_gruppe": "1",
@@ -601,6 +475,28 @@
   "unassigned_ships": [],
   "unused_pilots": [
     {
+      "pilot_key": "schüler_marius",
+      "vorname": "Marius",
+      "nachname": "Schüler",
+      "pilot_name": "Schüler, Marius",
+      "abteilungszeit": "2026-06-07 09:15",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 13,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "URSULA ESSBERGER",
+      "from": "RÜB",
+      "to": "HOS",
+      "nr": 13,
+      "raw_time": "Sun Jun 07 09:15:00 CEST 2026",
+      "current_ship_name": "URSULA ESSBERGER",
+      "current_ship_eta_rueb": "2026-06-07 15:51",
+      "current_ship_q": 4,
+      "current_ship_route": "RÜB → HOS",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
       "pilot_key": "kahler_volker",
       "vorname": "Volker",
       "nachname": "Kahler",
@@ -610,17 +506,16 @@
       "q_source": "q_gruppen_lotsen.entries",
       "pilot_tactical_nr": 7,
       "aufgabe": "Kanalbört",
-      "fahrzeug": "DELAMAR",
-      "from": "HOR",
-      "to": "RÜB",
+      "fahrzeug": "RÜB",
       "nr": 7,
       "raw_time": "Sun Jun 07 12:52:00 CEST 2026",
-      "current_ship_name": "DELAMAR",
-      "current_ship_eta_rueb": "2026-06-07 17:38",
+      "current_ship_name": "RÜB",
+      "current_ship_eta_rueb": "2026-06-07 12:52",
       "current_ship_q": 0,
-      "current_ship_route": "HOR → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
+      "current_ship_route": "RÜB",
+      "current_ship_source": "special.already_in_rueb",
+      "availability_kind": "already_in_rueb",
+      "availability_hint": "Lotse gilt als bereits in RÜB"
     },
     {
       "pilot_key": "konietzka_stefan",
