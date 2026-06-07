@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-07T21:05:17",
+  "generated_at": "2026-06-07T21:07:19",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,12 +32,12 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 4,
+    "ships_for_ruesterbergen": 5,
     "pilots_total": 6,
     "pilots_dispatchable": 5,
     "pilots_visible_only": 1,
     "assignments": 4,
-    "unassigned_ships": 0,
+    "unassigned_ships": 1,
     "unused_pilots": 1
   },
   "ships": [
@@ -48,7 +48,7 @@
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
-        "nr": "1",
+        "nr": "2",
         "time": "Sun Jun 07 22:00:00 CEST 2026",
         "draft": "5.7",
         "q_gruppe": "5",
@@ -86,7 +86,7 @@
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 0,
       "meldung": {
-        "nr": "2",
+        "nr": "3",
         "time": "Sun Jun 07 23:10:00 CEST 2026",
         "draft": "7.9",
         "q_gruppe": "0",
@@ -124,7 +124,7 @@
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
-        "nr": "3",
+        "nr": "4",
         "time": "Sun Jun 07 23:30:00 CEST 2026",
         "draft": "3.9",
         "q_gruppe": "5",
@@ -157,11 +157,11 @@
     {
       "ship_key": "CLARITY",
       "ship_name": "CLARITY",
-      "eta_rueb": "2026-06-08 00:45",
+      "eta_rueb": "2026-06-08 00:47",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
-        "nr": "4",
+        "nr": "5",
         "time": "Sun Jun 07 23:55:00 CEST 2026",
         "draft": "5.4",
         "q_gruppe": "5",
@@ -189,6 +189,44 @@
         "makler": "UCA",
         "dangerous_vessel": "-",
         "type_of_loading": "Duengemittel"
+      }
+    },
+    {
+      "ship_key": "TIMCA",
+      "ship_name": "TIMCA",
+      "eta_rueb": "2026-06-08 01:53",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 0,
+      "meldung": {
+        "nr": "1",
+        "time": "Sun Jun 07 21:04:00 CEST 2026",
+        "draft": "8.3",
+        "q_gruppe": "0",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "0",
+        "vg": "6",
+        "draft": "8.30",
+        "length_m": "205.26",
+        "beam_m": "25.83",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "U",
+        "pilot_1_name": "Reiber, Oliver",
+        "travel_status": "SAILING_NOK",
+        "makler": "UCA",
+        "dangerous_vessel": "-",
+        "type_of_loading": "Container"
       }
     }
   ],
@@ -534,7 +572,7 @@
       ],
       "ship": {
         "meldung": {
-          "nr": "1",
+          "nr": "2",
           "time": "Sun Jun 07 22:00:00 CEST 2026",
           "draft": "5.7",
           "q_gruppe": "5",
@@ -636,7 +674,7 @@
       ],
       "ship": {
         "meldung": {
-          "nr": "2",
+          "nr": "3",
           "time": "Sun Jun 07 23:10:00 CEST 2026",
           "draft": "7.9",
           "q_gruppe": "0",
@@ -724,7 +762,7 @@
       ],
       "ship": {
         "meldung": {
-          "nr": "3",
+          "nr": "4",
           "time": "Sun Jun 07 23:30:00 CEST 2026",
           "draft": "3.9",
           "q_gruppe": "5",
@@ -758,7 +796,7 @@
     {
       "ship_key": "CLARITY",
       "ship_name": "CLARITY",
-      "eta_rueb": "2026-06-08 00:45",
+      "eta_rueb": "2026-06-08 00:47",
       "ship_q": 5,
       "assigned_pilot": "Thomaßen, Stephan",
       "assigned_pilot_q": 0,
@@ -800,7 +838,7 @@
       ],
       "ship": {
         "meldung": {
-          "nr": "4",
+          "nr": "5",
           "time": "Sun Jun 07 23:55:00 CEST 2026",
           "draft": "5.4",
           "q_gruppe": "5",
@@ -832,7 +870,24 @@
       }
     }
   ],
-  "unassigned_ships": [],
+  "unassigned_ships": [
+    {
+      "ship_key": "TIMCA",
+      "ship_name": "TIMCA",
+      "eta_rueb": "2026-06-08 01:53",
+      "ship_q": 0,
+      "reason": "kein passender Lotse verfügbar",
+      "excluded": [
+        {
+          "pilot_name": "Nagel, Volker",
+          "pilot_tactical_nr": 4,
+          "reason": "Quali passt nicht (2 > 0)",
+          "pilot_q": 2,
+          "ship_q": 0
+        }
+      ]
+    }
+  ],
   "unused_pilots": [
     {
       "pilot_key": "nagel_volker",
