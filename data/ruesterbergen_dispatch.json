@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-07T19:17:22",
+  "generated_at": "2026-06-07T19:19:16",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,13 +32,13 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 3,
+    "ships_for_ruesterbergen": 4,
     "pilots_total": 8,
     "pilots_dispatchable": 7,
     "pilots_visible_only": 1,
-    "assignments": 3,
+    "assignments": 4,
     "unassigned_ships": 0,
-    "unused_pilots": 4
+    "unused_pilots": 3
   },
   "ships": [
     {
@@ -116,6 +116,42 @@
         "makler": "Bar-Karte",
         "dangerous_vessel": "-",
         "type_of_loading": "Futtermittel"
+      }
+    },
+    {
+      "ship_key": "HOHE BANK",
+      "ship_name": "HOHE BANK",
+      "eta_rueb": "2026-06-07 23:39",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 5,
+      "meldung": {
+        "nr": "4",
+        "time": "Sun Jun 07 23:30:00 CEST 2026",
+        "draft": "3.9",
+        "q_gruppe": "5",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "RÜB → HOS",
+        "routes": [
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "5",
+        "vg": "3",
+        "draft": "3.90",
+        "length_m": "86.00",
+        "beam_m": "12.39",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "H",
+        "travel_status": "SAILING_NOK",
+        "makler": "SUB",
+        "dangerous_vessel": "-",
+        "type_of_loading": "Ballast"
       }
     },
     {
@@ -763,6 +799,119 @@
       }
     },
     {
+      "ship_key": "HOHE BANK",
+      "ship_name": "HOHE BANK",
+      "eta_rueb": "2026-06-07 23:39",
+      "ship_q": 5,
+      "assigned_pilot": "Demant, Tom",
+      "assigned_pilot_q": 4,
+      "assigned_tactical_nr": 8,
+      "assigned_abteilungszeit": "2026-06-07 13:59",
+      "assigned_current_ship_name": "URSULA ESSBERGER",
+      "assigned_current_ship_eta_rueb": "2026-06-07 15:51",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 5,
+      "candidates": [
+        {
+          "pilot_name": "Demant, Tom",
+          "pilot_q": 4,
+          "pilot_tactical_nr": 8,
+          "abteilungszeit": "2026-06-07 13:59",
+          "fahrzeug": "URSULA ESSBERGER",
+          "to": "KLT",
+          "aufgabe": "Seebört",
+          "current_ship_name": "URSULA ESSBERGER",
+          "current_ship_eta_rueb": "2026-06-07 15:51",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Konietzka, Stefan",
+          "pilot_q": 4,
+          "pilot_tactical_nr": 7,
+          "abteilungszeit": "2026-06-07 14:13",
+          "fahrzeug": "PAGANINI",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "PAGANINI",
+          "current_ship_eta_rueb": "2026-06-07 19:47",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Klüver, Knut Paul",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 6,
+          "abteilungszeit": "2026-06-07 14:30",
+          "fahrzeug": "UNDEN",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "UNDEN",
+          "current_ship_eta_rueb": "2026-06-07 19:51",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Witte, Tomas",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 5,
+          "abteilungszeit": "2026-06-07 15:25",
+          "fahrzeug": "COSTAMAR",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "COSTAMAR",
+          "current_ship_eta_rueb": "2026-06-07 16:46",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Thomaßen, Stephan",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 3,
+          "abteilungszeit": "2026-06-07 18:10",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "NORDICA",
+          "current_ship_eta_rueb": "2026-06-07 19:33",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "4",
+          "time": "Sun Jun 07 23:30:00 CEST 2026",
+          "draft": "3.9",
+          "q_gruppe": "5",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "RÜB → HOS",
+          "routes": [
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "5",
+          "vg": "3",
+          "draft": "3.90",
+          "length_m": "86.00",
+          "beam_m": "12.39",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "H",
+          "travel_status": "SAILING_NOK",
+          "makler": "SUB",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Ballast"
+        }
+      }
+    },
+    {
       "ship_key": "ELBSUMMER",
       "ship_name": "ELBSUMMER",
       "eta_rueb": "2026-06-07 23:58",
@@ -819,13 +968,6 @@
       ],
       "excluded": [
         {
-          "pilot_name": "Demant, Tom",
-          "pilot_tactical_nr": 8,
-          "reason": "Quali passt nicht (4 > 0)",
-          "pilot_q": 4,
-          "ship_q": 0
-        },
-        {
           "pilot_name": "Konietzka, Stefan",
           "pilot_tactical_nr": 7,
           "reason": "Quali passt nicht (4 > 0)",
@@ -870,28 +1012,6 @@
   ],
   "unassigned_ships": [],
   "unused_pilots": [
-    {
-      "pilot_key": "demant_tom",
-      "vorname": "Tom",
-      "nachname": "Demant",
-      "pilot_name": "Demant, Tom",
-      "abteilungszeit": "2026-06-07 13:59",
-      "pilot_q": 4,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 8,
-      "aufgabe": "Seebört",
-      "fahrzeug": "URSULA ESSBERGER",
-      "from": "HOS",
-      "to": "KLT",
-      "nr": 8,
-      "raw_time": "Sun Jun 07 13:59:00 CEST 2026",
-      "current_ship_name": "URSULA ESSBERGER",
-      "current_ship_eta_rueb": "2026-06-07 15:51",
-      "current_ship_q": 0,
-      "current_ship_route": "HOS → KLT",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
-    },
     {
       "pilot_key": "konietzka_stefan",
       "vorname": "Stefan",
