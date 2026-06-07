@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-07T03:19:16",
+  "generated_at": "2026-06-07T03:21:17",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,54 +32,15 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 1,
+    "ships_for_ruesterbergen": 0,
     "pilots_total": 15,
     "pilots_dispatchable": 12,
     "pilots_visible_only": 3,
-    "assignments": 1,
+    "assignments": 0,
     "unassigned_ships": 0,
-    "unused_pilots": 11
+    "unused_pilots": 12
   },
-  "ships": [
-    {
-      "ship_key": "LADY ARIANE",
-      "ship_name": "LADY ARIANE",
-      "eta_rueb": "2026-06-07 03:44",
-      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
-      "ship_q": 5,
-      "meldung": {
-        "nr": "1",
-        "time": "Sun Jun 07 03:40:00 CEST 2026",
-        "draft": "4.7",
-        "q_gruppe": "5",
-        "lotsen_anzahl": 1,
-        "confirmed": false,
-        "from": "RÜB",
-        "to": "HOS"
-      },
-      "summary": {
-        "route": "HOS → KLT",
-        "routes": [
-          "HOS → KLT",
-          "RÜB → HOS"
-        ],
-        "q_gruppe": "5",
-        "vg": "3",
-        "draft": "4.70",
-        "length_m": "88.00",
-        "beam_m": "13.35",
-        "queue_title": "Zulauf vom Kanal in Kiel",
-        "zulauf_richtung": "vom_kanal",
-        "pilot_required": "true",
-        "pilot_status": "P",
-        "pilot_1_name": "Skawianczyk, Artur",
-        "travel_status": "SAILING_NOK",
-        "makler": "UCA",
-        "dangerous_vessel": "-",
-        "type_of_loading": "Eisen und Stahl"
-      }
-    }
-  ],
+  "ships": [],
   "pilots": [
     {
       "pilot_key": "zimmermann_steffen",
@@ -135,14 +96,16 @@
       "q_source": "q_gruppen_lotsen.entries",
       "pilot_tactical_nr": 14,
       "aufgabe": "Kanalbört",
-      "fahrzeug": "RÜB",
+      "fahrzeug": "LADY ARIANE",
+      "from": "RÜB",
+      "to": "HOS",
       "nr": 14,
       "raw_time": "Sat Jun 06 21:45:00 CEST 2026",
       "current_ship_name": "LADY ARIANE",
       "current_ship_eta_rueb": "2026-06-07 03:44",
       "current_ship_q": 5,
-      "current_ship_route": "HOS → KLT",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_route": "RÜB → HOS",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
@@ -462,14 +425,16 @@
       "q_source": "q_gruppen_lotsen.entries",
       "pilot_tactical_nr": 14,
       "aufgabe": "Kanalbört",
-      "fahrzeug": "RÜB",
+      "fahrzeug": "LADY ARIANE",
+      "from": "RÜB",
+      "to": "HOS",
       "nr": 14,
       "raw_time": "Sat Jun 06 21:45:00 CEST 2026",
       "current_ship_name": "LADY ARIANE",
       "current_ship_eta_rueb": "2026-06-07 03:44",
       "current_ship_q": 5,
-      "current_ship_route": "HOS → KLT",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_route": "RÜB → HOS",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
@@ -718,202 +683,31 @@
       "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
     }
   ],
-  "assignments": [
-    {
-      "ship_key": "LADY ARIANE",
-      "ship_name": "LADY ARIANE",
-      "eta_rueb": "2026-06-07 03:44",
-      "ship_q": 5,
-      "assigned_pilot": "Zimmermann, Steffen",
-      "assigned_pilot_q": 0,
-      "assigned_tactical_nr": 21,
-      "assigned_abteilungszeit": "2026-06-06 18:00",
-      "assigned_current_ship_name": "ODIN",
-      "assigned_current_ship_eta_rueb": "2026-06-07 00:05",
-      "assigned_current_ship_source": "schiffe_merged.seelotsen",
-      "assigned_availability_kind": "merged_eta",
-      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 8,
-      "candidates": [
-        {
-          "pilot_name": "Zimmermann, Steffen",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 21,
-          "abteilungszeit": "2026-06-06 18:00",
-          "fahrzeug": "ODIN",
-          "to": "HOS",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "ODIN",
-          "current_ship_eta_rueb": "2026-06-07 00:05",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Woitanowski, Tim",
-          "pilot_q": 2,
-          "pilot_tactical_nr": 15,
-          "abteilungszeit": "2026-06-06 20:59",
-          "fahrzeug": "GRETA C",
-          "to": "UTG",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "GRETA C",
-          "current_ship_eta_rueb": "2026-06-07 03:37",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Skawianczyk, Artur",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 14,
-          "abteilungszeit": "2026-06-06 21:45",
-          "fahrzeug": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "LADY ARIANE",
-          "current_ship_eta_rueb": "2026-06-07 03:44",
-          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Wald, Mark",
-          "pilot_q": 3,
-          "pilot_tactical_nr": 8,
-          "abteilungszeit": "2026-06-06 22:45",
-          "fahrzeug": "FORTUNA CRANE",
-          "to": "HOS",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "FORTUNA CRANE",
-          "current_ship_eta_rueb": "2026-06-07 00:11",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Wulff, Stephan",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 9,
-          "abteilungszeit": "2026-06-06 22:45",
-          "fahrzeug": "KEY FJORD",
-          "to": "KLT",
-          "aufgabe": "Seebört",
-          "current_ship_name": "KEY FJORD",
-          "current_ship_eta_rueb": "2026-06-07 00:08",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Arlt, Andreas",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 10,
-          "abteilungszeit": "2026-06-06 22:45",
-          "fahrzeug": "TAVASTLAND",
-          "to": "KLT",
-          "aufgabe": "Seebört",
-          "current_ship_name": "TAVASTLAND",
-          "current_ship_eta_rueb": "2026-06-07 00:15",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Steinbach, Daniel",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 5,
-          "abteilungszeit": "2026-06-06 23:45",
-          "fahrzeug": "NAUTILUS",
-          "to": "HOS",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "NAUTILUS",
-          "current_ship_eta_rueb": "2026-06-07 00:57",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Schran, Oliver",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 6,
-          "abteilungszeit": "2026-06-06 23:45",
-          "fahrzeug": "STOLT SANDERLING",
-          "to": "HOS",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "STOLT SANDERLING",
-          "current_ship_eta_rueb": "2026-06-07 01:01",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        }
-      ],
-      "excluded": [
-        {
-          "pilot_name": "Thomsen, Gunnar",
-          "pilot_tactical_nr": 13,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "SAMIRA",
-          "pilot_current_ship_eta_rueb": "2026-06-07 04:07",
-          "ship_eta_rueb": "2026-06-07 03:44",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Glenewinkel, Jan-Steffen",
-          "pilot_tactical_nr": 12,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "BOTHNIABORG",
-          "pilot_current_ship_eta_rueb": "2026-06-07 04:19",
-          "ship_eta_rueb": "2026-06-07 03:44",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Thiel, Thomas",
-          "pilot_tactical_nr": 11,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "BERGSTRAUM",
-          "pilot_current_ship_eta_rueb": "2026-06-07 04:25",
-          "ship_eta_rueb": "2026-06-07 03:44",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Schulz, Arne",
-          "pilot_tactical_nr": 7,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "FRISIAN SPRING",
-          "pilot_current_ship_eta_rueb": "2026-06-07 04:11",
-          "ship_eta_rueb": "2026-06-07 03:44",
-          "availability_kind": "merged_eta"
-        }
-      ],
-      "ship": {
-        "meldung": {
-          "nr": "1",
-          "time": "Sun Jun 07 03:40:00 CEST 2026",
-          "draft": "4.7",
-          "q_gruppe": "5",
-          "lotsen_anzahl": 1,
-          "confirmed": false,
-          "from": "RÜB",
-          "to": "HOS"
-        },
-        "summary": {
-          "route": "HOS → KLT",
-          "routes": [
-            "HOS → KLT",
-            "RÜB → HOS"
-          ],
-          "q_gruppe": "5",
-          "vg": "3",
-          "draft": "4.70",
-          "length_m": "88.00",
-          "beam_m": "13.35",
-          "queue_title": "Zulauf vom Kanal in Kiel",
-          "zulauf_richtung": "vom_kanal",
-          "pilot_required": "true",
-          "pilot_status": "P",
-          "pilot_1_name": "Skawianczyk, Artur",
-          "travel_status": "SAILING_NOK",
-          "makler": "UCA",
-          "dangerous_vessel": "-",
-          "type_of_loading": "Eisen und Stahl"
-        }
-      }
-    }
-  ],
+  "assignments": [],
   "unassigned_ships": [],
   "unused_pilots": [
+    {
+      "pilot_key": "zimmermann_steffen",
+      "vorname": "Steffen",
+      "nachname": "Zimmermann",
+      "pilot_name": "Zimmermann, Steffen",
+      "abteilungszeit": "2026-06-06 18:00",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 21,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "ODIN",
+      "from": "RÜB",
+      "to": "HOS",
+      "nr": 21,
+      "raw_time": "Sat Jun 06 18:00:00 CEST 2026",
+      "current_ship_name": "ODIN",
+      "current_ship_eta_rueb": "2026-06-07 00:05",
+      "current_ship_q": 0,
+      "current_ship_route": "RÜB → HOS",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
     {
       "pilot_key": "woitanowski_tim",
       "vorname": "Tim",
@@ -946,14 +740,16 @@
       "q_source": "q_gruppen_lotsen.entries",
       "pilot_tactical_nr": 14,
       "aufgabe": "Kanalbört",
-      "fahrzeug": "RÜB",
+      "fahrzeug": "LADY ARIANE",
+      "from": "RÜB",
+      "to": "HOS",
       "nr": 14,
       "raw_time": "Sat Jun 06 21:45:00 CEST 2026",
       "current_ship_name": "LADY ARIANE",
       "current_ship_eta_rueb": "2026-06-07 03:44",
       "current_ship_q": 5,
-      "current_ship_route": "HOS → KLT",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_route": "RÜB → HOS",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
