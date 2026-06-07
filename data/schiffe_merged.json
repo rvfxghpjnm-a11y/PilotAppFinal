@@ -1,47 +1,47 @@
 {
-  "generated_at": "2026-06-07T15:29:18",
+  "generated_at": "2026-06-07T15:31:19",
   "source_meta": {
     "zulauf_kiel_innen": {
       "file": "Zulauf_kiel_innen.json",
-      "generated_at": "2026-06-07 15:28",
+      "generated_at": "2026-06-07 15:30",
       "queue": "kiel_innen",
       "title": "Zulauf vom Kanal in Kiel",
       "count": 13
     },
     "zulauf_kiel_aussen": {
       "file": "Zulauf_kiel_aussen.json",
-      "generated_at": "2026-06-07 15:28",
+      "generated_at": "2026-06-07 15:30",
       "queue": "kiel_aussen",
       "title": "Zulauf von See in Kiel",
       "count": 0
     },
     "zulauf_brb_innen": {
       "file": "Zulauf_brb_innen.json",
-      "generated_at": "2026-06-07 15:28",
+      "generated_at": "2026-06-07 15:30",
       "queue": "brb_innen",
       "title": "Zulauf vom Kanal in Brunsbüttel",
       "count": 4
     },
     "zulauf_brb_aussen": {
       "file": "Zulauf_brb_aussen.json",
-      "generated_at": "2026-06-07 15:28",
+      "generated_at": "2026-06-07 15:30",
       "queue": "brb_aussen",
       "title": "Zulauf von See in Brunsbüttel",
       "count": 4
     },
     "meldungen_kiel": {
       "file": "Meldungen_Kiel.json",
-      "generated_at": "2026-06-07 15:28",
-      "count": 49
+      "generated_at": "2026-06-07 15:30",
+      "count": 50
     },
     "meldungen_ruesterbergen": {
       "file": "Meldungen_Ruesterbergen.json",
-      "generated_at": "2026-06-07 15:28",
-      "count": 4
+      "generated_at": "2026-06-07 15:30",
+      "count": 2
     },
     "seelotsen": {
       "file": "Seelotsen.json",
-      "generated_at": "2026-06-07 15:28",
+      "generated_at": "2026-06-07 15:30",
       "count": 21
     }
   },
@@ -145,7 +145,7 @@
       "name": "ARKLOW VIEW",
       "sources": [
         "meldungen_kiel",
-        "meldungen_ruesterbergen",
+        "seelotsen",
         "zulauf_kiel_innen"
       ],
       "special_entry": false,
@@ -154,7 +154,7 @@
         "special_entry": false,
         "sources": [
           "meldungen_kiel",
-          "meldungen_ruesterbergen",
+          "seelotsen",
           "zulauf_kiel_innen"
         ],
         "route": "UTG → HOS",
@@ -190,7 +190,7 @@
         "pilot_foerde": "true",
         "pilot_order": "NOK-ESEE-KF",
         "pilot_status": "P",
-        "pilot_1_name": "Bahnsen, Thorsten",
+        "pilot_1_name": "Otten, Janning",
         "num_of_pilots": "1",
         "canal_steerer_required": "false",
         "travel_direction": "KF",
@@ -209,6 +209,12 @@
         "dangerous_vessel": "-",
         "port_of_departure": "FR MN4",
         "port_of_destination": "SE SLI",
+        "assigned_pilots": [
+          "Otten, Janning"
+        ],
+        "aufgaben": [
+          "Kanalbört"
+        ],
         "lotsen_anzahl_kiel": 1,
         "confirmed_kiel": false,
         "remark_kiel": "45mt",
@@ -265,8 +271,8 @@
           "pilot_ostsee": "false",
           "pilot_uebersee": "false",
           "pilot_boesch": "false",
-          "pilot_1_id": "370563428606000081",
-          "pilot_1_name": "Bahnsen, Thorsten"
+          "pilot_1_id": "399725138845000081",
+          "pilot_1_name": "Otten, Janning"
         },
         "steering_block": {
           "canal_steerer": "false",
@@ -379,7 +385,7 @@
               }
             }
           },
-          "pilot_1_name": "Bahnsen, Thorsten",
+          "pilot_1_name": "Otten, Janning",
           "vessel_type": "Trocken-Mz-Frachter",
           "travel_direction": "KF",
           "travel_status": "SAILING_NOK",
@@ -443,8 +449,8 @@
             "pilot_ostsee": "false",
             "pilot_uebersee": "false",
             "pilot_boesch": "false",
-            "pilot_1_id": "370563428606000081",
-            "pilot_1_name": "Bahnsen, Thorsten"
+            "pilot_1_id": "399725138845000081",
+            "pilot_1_name": "Otten, Janning"
           },
           "steering": {
             "canal_steerer": "false",
@@ -506,22 +512,20 @@
           "remark": "45mt"
         }
       ],
-      "meldungen_ruesterbergen": [
+      "meldungen_ruesterbergen": [],
+      "seelotsen": [
         {
-          "source": "meldungen_ruesterbergen",
-          "nr": "1",
-          "time": "2026-06-07 15:45",
-          "draft": "6.1",
-          "q_gruppe": "4",
-          "lotsen_anzahl": 1,
-          "confirmed": false,
+          "nr": 15,
+          "time": "2026-06-07 09:09",
+          "pilot_name": "Otten, Janning",
+          "nachname": "Otten",
+          "vorname": "Janning",
+          "aufgabe": "Kanalbört",
           "from": "RÜB",
           "to": "UTG",
-          "route": "RÜB → UTG",
-          "remark": "45mt"
+          "route": "RÜB → UTG"
         }
-      ],
-      "seelotsen": []
+      ]
     },
     {
       "ship_key": "ASTARTE",
@@ -858,8 +862,8 @@
         "sources": [
           "zulauf_brb_aussen"
         ],
-        "eta_schleuse": "2026-06-07 15:48",
-        "eta_text": "15:48",
+        "eta_schleuse": "2026-06-07 15:47",
+        "eta_text": "15:47",
         "first_seen": "2026-06-07 12:00",
         "queue_key": "brb_aussen",
         "queue_title": "Zulauf von See in Brunsbüttel",
@@ -988,7 +992,7 @@
       "zulauf": [
         {
           "name": "CLARITY",
-          "eta_schleuse": "2026-06-07 15:48",
+          "eta_schleuse": "2026-06-07 15:47",
           "first_seen": "2026-06-07 12:00",
           "ship_name": "CLARITY",
           "vg": "3",
@@ -1002,7 +1006,7 @@
           "pilot_required": "true",
           "pilot_foerde": "false",
           "pilot_order": "NOK",
-          "eta_text": "15:48",
+          "eta_text": "15:47",
           "mooring_place": "Alte Nord Mittelmauer",
           "destination": "Brunsbüttel",
           "makler": "UCA",
@@ -1811,7 +1815,7 @@
       "meldungen_ruesterbergen": [
         {
           "source": "meldungen_ruesterbergen",
-          "nr": "3",
+          "nr": "1",
           "time": "2026-06-07 16:40",
           "draft": "4.0",
           "q_gruppe": "5",
@@ -2679,8 +2683,8 @@
         "sources": [
           "zulauf_brb_aussen"
         ],
-        "eta_schleuse": "2026-06-07 17:12",
-        "eta_text": "17:12",
+        "eta_schleuse": "2026-06-07 17:06",
+        "eta_text": "17:06",
         "first_seen": "2026-06-07 14:54",
         "queue_key": "brb_aussen",
         "queue_title": "Zulauf von See in Brunsbüttel",
@@ -2775,7 +2779,7 @@
       "zulauf": [
         {
           "name": "ELBSUMMER",
-          "eta_schleuse": "2026-06-07 17:12",
+          "eta_schleuse": "2026-06-07 17:06",
           "first_seen": "2026-06-07 14:54",
           "ship_name": "ELBSUMMER",
           "vg": "5",
@@ -2786,7 +2790,7 @@
           "queue_title": "Zulauf von See in Brunsbüttel",
           "area": "brb",
           "zulauf_richtung": "von_see",
-          "eta_text": "17:12",
+          "eta_text": "17:06",
           "mooring_place": "Neue Nord Mittelmauer",
           "destination": "Kiel",
           "preferred_mooring_side": "Bb",
@@ -3843,10 +3847,10 @@
           "RÜB → HOS"
         ],
         "eta_rueb": "2026-06-07 13:46",
-        "eta_schleuse": "2026-06-07 17:17",
-        "eta_text": "17:17",
+        "eta_schleuse": "2026-06-07 17:15",
+        "eta_text": "17:15",
         "first_seen": "2026-06-07 09:32",
-        "delta_rueb_schleuse": "03:31",
+        "delta_rueb_schleuse": "03:30",
         "delta_start_rueb": "04:14",
         "queue_key": "kiel_innen",
         "queue_title": "Zulauf vom Kanal in Kiel",
@@ -4054,10 +4058,10 @@
       "zulauf": [
         {
           "name": "GISELA ESSBERGER",
-          "eta_schleuse": "2026-06-07 17:17",
+          "eta_schleuse": "2026-06-07 17:15",
           "eta_rueb": "2026-06-07 13:46",
           "first_seen": "2026-06-07 09:32",
-          "delta_rueb_schleuse": "03:31",
+          "delta_rueb_schleuse": "03:30",
           "delta_start_rueb": "04:14",
           "ship_name": "GISELA ESSBERGER",
           "vg": "4",
@@ -4071,7 +4075,7 @@
           "pilot_required": "true",
           "pilot_foerde": "true",
           "pilot_order": "KS-NOK-ESEE-KF",
-          "eta_text": "17:17",
+          "eta_text": "17:15",
           "destination": "Kiel",
           "makler": "UCA",
           "preferred_mooring_side": "Bb",
@@ -4465,8 +4469,8 @@
         "sources": [
           "zulauf_brb_aussen"
         ],
-        "eta_schleuse": "2026-06-07 18:12",
-        "eta_text": "18:12",
+        "eta_schleuse": "2026-06-07 17:44",
+        "eta_text": "17:44",
         "first_seen": "2026-06-07 14:18",
         "queue_key": "brb_aussen",
         "queue_title": "Zulauf von See in Brunsbüttel",
@@ -4585,7 +4589,7 @@
       "zulauf": [
         {
           "name": "HOHE BANK",
-          "eta_schleuse": "2026-06-07 18:12",
+          "eta_schleuse": "2026-06-07 17:44",
           "first_seen": "2026-06-07 14:18",
           "ship_name": "HOHE BANK",
           "vg": "3",
@@ -4599,7 +4603,7 @@
           "pilot_required": "true",
           "pilot_foerde": "false",
           "pilot_order": "NOK",
-          "eta_text": "18:12",
+          "eta_text": "17:44",
           "destination": "Kiel",
           "makler": "SUB",
           "preferred_mooring_side": "Bb",
@@ -4695,6 +4699,40 @@
       "meldungen_kiel": [],
       "meldungen_ruesterbergen": [],
       "seelotsen": []
+    },
+    {
+      "ship_key": "HOS",
+      "name": "HOS",
+      "sources": [
+        "seelotsen"
+      ],
+      "special_entry": false,
+      "summary": {
+        "name": "HOS",
+        "special_entry": false,
+        "sources": [
+          "seelotsen"
+        ],
+        "assigned_pilots": [
+          "Föhring, Nils"
+        ],
+        "aufgaben": [
+          "Seebört"
+        ]
+      },
+      "zulauf": [],
+      "meldungen_kiel": [],
+      "meldungen_ruesterbergen": [],
+      "seelotsen": [
+        {
+          "nr": 5,
+          "time": "2026-06-07 13:09",
+          "pilot_name": "Föhring, Nils",
+          "nachname": "Föhring",
+          "vorname": "Nils",
+          "aufgabe": "Seebört"
+        }
+      ]
     },
     {
       "ship_key": "IDA RAMBOW",
@@ -4882,7 +4920,7 @@
       "meldungen_kiel": [
         {
           "source": "meldungen_kiel",
-          "nr": "46",
+          "nr": "47",
           "time": "2026-06-08 13:00",
           "draft": "6.2",
           "q_gruppe": "5",
@@ -4894,7 +4932,7 @@
         },
         {
           "source": "meldungen_kiel",
-          "nr": "48",
+          "nr": "49",
           "time": "2026-06-08 14:00",
           "draft": "6.2",
           "q_gruppe": "5",
@@ -4934,7 +4972,7 @@
       "meldungen_kiel": [
         {
           "source": "meldungen_kiel",
-          "nr": "49",
+          "nr": "50",
           "time": "2026-06-08 15:00",
           "draft": "5.0",
           "q_gruppe": "5",
@@ -5102,6 +5140,9 @@
             "oldenbuettel": {
               "in": "2026-06-07 14:51",
               "out": "2026-06-07 14:55"
+            },
+            "breiholz": {
+              "in": "2026-06-07 15:28"
             }
           }
         }
@@ -5150,6 +5191,9 @@
               "oldenbuettel": {
                 "in": "2026-06-07 14:51",
                 "out": "2026-06-07 14:55"
+              },
+              "breiholz": {
+                "in": "2026-06-07 15:28"
               }
             }
           },
@@ -5607,16 +5651,13 @@
         ],
         "route": "HOS → RÜB",
         "routes": [
-          "HOS → RÜB",
-          "KLT → HOS"
+          "HOS → RÜB"
         ],
         "assigned_pilots": [
-          "Witte, Tomas",
-          "Föhring, Nils"
+          "Witte, Tomas"
         ],
         "aufgaben": [
-          "Kanalbört",
-          "Seebört"
+          "Kanalbört"
         ]
       },
       "zulauf": [],
@@ -5633,17 +5674,6 @@
           "from": "HOS",
           "to": "RÜB",
           "route": "HOS → RÜB"
-        },
-        {
-          "nr": 5,
-          "time": "2026-06-07 13:09",
-          "pilot_name": "Föhring, Nils",
-          "nachname": "Föhring",
-          "vorname": "Nils",
-          "aufgabe": "Seebört",
-          "from": "KLT",
-          "to": "HOS",
-          "route": "KLT → HOS"
         }
       ]
     },
@@ -5691,7 +5721,7 @@
       "meldungen_ruesterbergen": [
         {
           "source": "meldungen_ruesterbergen",
-          "nr": "4",
+          "nr": "2",
           "time": "2026-06-07 18:00",
           "draft": "3.5",
           "q_gruppe": "5",
@@ -5856,7 +5886,8 @@
               "out": "2026-06-07 14:49"
             },
             "breiholz": {
-              "in": "2026-06-07 15:22"
+              "in": "2026-06-07 15:22",
+              "out": "2026-06-07 15:29"
             }
           }
         }
@@ -5908,7 +5939,8 @@
                 "out": "2026-06-07 14:49"
               },
               "breiholz": {
-                "in": "2026-06-07 15:22"
+                "in": "2026-06-07 15:22",
+                "out": "2026-06-07 15:29"
               }
             }
           },
@@ -7082,7 +7114,7 @@
       "meldungen_kiel": [
         {
           "source": "meldungen_kiel",
-          "nr": "47",
+          "nr": "48",
           "time": "2026-06-08 13:00",
           "draft": "4.6",
           "q_gruppe": "5",
@@ -7095,49 +7127,6 @@
       ],
       "meldungen_ruesterbergen": [],
       "seelotsen": []
-    },
-    {
-      "ship_key": "RUEB",
-      "name": "RÜB",
-      "sources": [
-        "seelotsen"
-      ],
-      "special_entry": true,
-      "summary": {
-        "name": "RÜB",
-        "special_entry": true,
-        "sources": [
-          "seelotsen"
-        ],
-        "assigned_pilots": [
-          "Schüler, Marius",
-          "Otten, Janning"
-        ],
-        "aufgaben": [
-          "Kanalbört"
-        ]
-      },
-      "zulauf": [],
-      "meldungen_kiel": [],
-      "meldungen_ruesterbergen": [],
-      "seelotsen": [
-        {
-          "nr": 14,
-          "time": "2026-06-07 09:15",
-          "pilot_name": "Schüler, Marius",
-          "nachname": "Schüler",
-          "vorname": "Marius",
-          "aufgabe": "Kanalbört"
-        },
-        {
-          "nr": 15,
-          "time": "2026-06-07 09:09",
-          "pilot_name": "Otten, Janning",
-          "nachname": "Otten",
-          "vorname": "Janning",
-          "aufgabe": "Kanalbört"
-        }
-      ]
     },
     {
       "ship_key": "SCA OBBOLA",
@@ -7614,7 +7603,7 @@
       "name": "URSULA ESSBERGER",
       "sources": [
         "meldungen_kiel",
-        "meldungen_ruesterbergen",
+        "seelotsen",
         "zulauf_kiel_innen"
       ],
       "special_entry": false,
@@ -7623,7 +7612,7 @@
         "special_entry": false,
         "sources": [
           "meldungen_kiel",
-          "meldungen_ruesterbergen",
+          "seelotsen",
           "zulauf_kiel_innen"
         ],
         "route": "HOS → KLT",
@@ -7658,7 +7647,7 @@
         "pilot_foerde": "true",
         "pilot_order": "KS-NOK-KF",
         "pilot_status": "U",
-        "pilot_1_name": "Schmachtel, Armin",
+        "pilot_1_name": "Schüler, Marius",
         "num_of_pilots": "1",
         "canal_steerer_required": "true",
         "num_of_steerer": "1",
@@ -7680,6 +7669,12 @@
         "dangerous_vessel": "-",
         "port_of_departure": "DE HAM (HBG)",
         "port_of_destination": "FI NLI",
+        "assigned_pilots": [
+          "Schüler, Marius"
+        ],
+        "aufgaben": [
+          "Kanalbört"
+        ],
         "lotsen_anzahl_kiel": 1,
         "confirmed_kiel": false,
         "passage_block": {
@@ -7735,8 +7730,8 @@
           "pilot_ostsee": "false",
           "pilot_uebersee": "false",
           "pilot_boesch": "false",
-          "pilot_1_id": "407573070467000081",
-          "pilot_1_name": "Schmachtel, Armin"
+          "pilot_1_id": "370044679041000081",
+          "pilot_1_name": "Schüler, Marius"
         },
         "steering_block": {
           "canal_steerer": "true",
@@ -7869,7 +7864,7 @@
               }
             }
           },
-          "pilot_1_name": "Schmachtel, Armin",
+          "pilot_1_name": "Schüler, Marius",
           "steerer_1_name": "Teran Albornoz",
           "steerer_2_name": "Grünwald",
           "vessel_type": "Chemie",
@@ -7936,8 +7931,8 @@
             "pilot_ostsee": "false",
             "pilot_uebersee": "false",
             "pilot_boesch": "false",
-            "pilot_1_id": "407573070467000081",
-            "pilot_1_name": "Schmachtel, Armin"
+            "pilot_1_id": "370044679041000081",
+            "pilot_1_name": "Schüler, Marius"
           },
           "steering": {
             "canal_steerer": "true",
@@ -8006,21 +8001,20 @@
           "route": "HOS → KLT"
         }
       ],
-      "meldungen_ruesterbergen": [
+      "meldungen_ruesterbergen": [],
+      "seelotsen": [
         {
-          "source": "meldungen_ruesterbergen",
-          "nr": "2",
-          "time": "2026-06-07 15:50",
-          "draft": "6.9",
-          "q_gruppe": "4",
-          "lotsen_anzahl": 1,
-          "confirmed": false,
+          "nr": 14,
+          "time": "2026-06-07 09:15",
+          "pilot_name": "Schüler, Marius",
+          "nachname": "Schüler",
+          "vorname": "Marius",
+          "aufgabe": "Kanalbört",
           "from": "RÜB",
           "to": "HOS",
           "route": "RÜB → HOS"
         }
-      ],
-      "seelotsen": []
+      ]
     },
     {
       "ship_key": "VARUNA VI",
@@ -8537,11 +8531,24 @@
           "draft": "0.1",
           "q_gruppe": "0",
           "lotsen_anzahl": 2,
-          "confirmed": false,
+          "confirmed": true,
           "from": "HOS",
           "to": "HOS",
           "route": "HOS → HOS",
           "remark": "WL+OP"
+        },
+        {
+          "source": "meldungen_kiel",
+          "nr": "46",
+          "time": "2026-06-08 12:00",
+          "draft": "1.0",
+          "q_gruppe": "0",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "HOS",
+          "to": "HOS",
+          "route": "HOS → HOS",
+          "remark": "OP"
         }
       ],
       "meldungen_ruesterbergen": [],
