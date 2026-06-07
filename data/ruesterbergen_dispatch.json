@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-07T11:43:14",
+  "generated_at": "2026-06-07T11:45:15",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,13 +32,13 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 6,
+    "ships_for_ruesterbergen": 7,
     "pilots_total": 8,
     "pilots_dispatchable": 8,
     "pilots_visible_only": 0,
-    "assignments": 6,
+    "assignments": 7,
     "unassigned_ships": 0,
-    "unused_pilots": 2
+    "unused_pilots": 1
   },
   "ships": [
     {
@@ -242,13 +242,14 @@
         "lotsen_anzahl": 1,
         "confirmed": false,
         "from": "RÜB",
-        "to": "HOS"
+        "to": "UTG"
       },
       "summary": {
-        "route": "HOS → KLT",
+        "route": "UTG → HOS",
         "routes": [
+          "UTG → HOS",
           "HOS → KLT",
-          "RÜB → HOS"
+          "RÜB → UTG"
         ],
         "q_gruppe": "4",
         "vg": "3",
@@ -264,6 +265,43 @@
         "makler": "SUB",
         "dangerous_vessel": "-",
         "type_of_loading": "Kohle"
+      }
+    },
+    {
+      "ship_key": "URSULA ESSBERGER",
+      "ship_name": "URSULA ESSBERGER",
+      "eta_rueb": "2026-06-07 16:04",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 4,
+      "meldung": {
+        "nr": "7",
+        "time": "Sun Jun 07 16:00:00 CEST 2026",
+        "draft": "6.9",
+        "q_gruppe": "4",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "RÜB → HOS",
+        "routes": [
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "4",
+        "vg": "4",
+        "draft": "6.90",
+        "length_m": "99.40",
+        "beam_m": "17.2",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "U",
+        "pilot_1_name": "Schmachtel, Armin",
+        "travel_status": "SAILING_NOK",
+        "makler": "UCA",
+        "dangerous_vessel": "-",
+        "type_of_loading": "Chemikalien fluessig"
       }
     }
   ],
@@ -1302,13 +1340,14 @@
           "lotsen_anzahl": 1,
           "confirmed": false,
           "from": "RÜB",
-          "to": "HOS"
+          "to": "UTG"
         },
         "summary": {
-          "route": "HOS → KLT",
+          "route": "UTG → HOS",
           "routes": [
+            "UTG → HOS",
             "HOS → KLT",
-            "RÜB → HOS"
+            "RÜB → UTG"
           ],
           "q_gruppe": "4",
           "vg": "3",
@@ -1326,32 +1365,86 @@
           "type_of_loading": "Kohle"
         }
       }
+    },
+    {
+      "ship_key": "URSULA ESSBERGER",
+      "ship_name": "URSULA ESSBERGER",
+      "eta_rueb": "2026-06-07 16:04",
+      "ship_q": 4,
+      "assigned_pilot": "Otten, Janning",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 3,
+      "assigned_abteilungszeit": "2026-06-07 09:09",
+      "assigned_current_ship_name": "EDITH",
+      "assigned_current_ship_eta_rueb": "2026-06-07 14:18",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 2,
+      "candidates": [
+        {
+          "pilot_name": "Otten, Janning",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 3,
+          "abteilungszeit": "2026-06-07 09:09",
+          "fahrzeug": "EDITH",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "EDITH",
+          "current_ship_eta_rueb": "2026-06-07 14:18",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Schüler, Marius",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-06-07 09:15",
+          "fahrzeug": "LADY HESTIA",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "LADY HESTIA",
+          "current_ship_eta_rueb": "2026-06-07 14:08",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "7",
+          "time": "Sun Jun 07 16:00:00 CEST 2026",
+          "draft": "6.9",
+          "q_gruppe": "4",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "RÜB → HOS",
+          "routes": [
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "4",
+          "vg": "4",
+          "draft": "6.90",
+          "length_m": "99.40",
+          "beam_m": "17.2",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "U",
+          "pilot_1_name": "Schmachtel, Armin",
+          "travel_status": "SAILING_NOK",
+          "makler": "UCA",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Chemikalien fluessig"
+        }
+      }
     }
   ],
   "unassigned_ships": [],
   "unused_pilots": [
-    {
-      "pilot_key": "otten_janning",
-      "vorname": "Janning",
-      "nachname": "Otten",
-      "pilot_name": "Otten, Janning",
-      "abteilungszeit": "2026-06-07 09:09",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 3,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "EDITH",
-      "from": "HOS",
-      "to": "RÜB",
-      "nr": 3,
-      "raw_time": "Sun Jun 07 09:09:00 CEST 2026",
-      "current_ship_name": "EDITH",
-      "current_ship_eta_rueb": "2026-06-07 14:18",
-      "current_ship_q": 0,
-      "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
-    },
     {
       "pilot_key": "schüler_marius",
       "vorname": "Marius",
