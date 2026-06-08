@@ -1,51 +1,51 @@
 {
-  "generated_at": "2026-06-08T12:31:18",
+  "generated_at": "2026-06-08T12:33:17",
   "source_meta": {
     "zulauf_kiel_innen": {
       "file": "Zulauf_kiel_innen.json",
-      "generated_at": "2026-06-08 12:30",
+      "generated_at": "2026-06-08 12:32",
       "queue": "kiel_innen",
       "title": "Zulauf vom Kanal in Kiel",
       "count": 11
     },
     "zulauf_kiel_aussen": {
       "file": "Zulauf_kiel_aussen.json",
-      "generated_at": "2026-06-08 12:30",
+      "generated_at": "2026-06-08 12:32",
       "queue": "kiel_aussen",
       "title": "Zulauf von See in Kiel",
       "count": 0
     },
     "zulauf_brb_innen": {
       "file": "Zulauf_brb_innen.json",
-      "generated_at": "2026-06-08 12:30",
+      "generated_at": "2026-06-08 12:32",
       "queue": "brb_innen",
       "title": "Zulauf vom Kanal in Brunsbüttel",
       "count": 13
     },
     "zulauf_brb_aussen": {
       "file": "Zulauf_brb_aussen.json",
-      "generated_at": "2026-06-08 12:30",
+      "generated_at": "2026-06-08 12:32",
       "queue": "brb_aussen",
       "title": "Zulauf von See in Brunsbüttel",
       "count": 10
     },
     "meldungen_kiel": {
       "file": "Meldungen_Kiel.json",
-      "generated_at": "2026-06-08 12:30",
+      "generated_at": "2026-06-08 12:32",
       "count": 47
     },
     "meldungen_ruesterbergen": {
       "file": "Meldungen_Ruesterbergen.json",
-      "generated_at": "2026-06-08 12:30",
-      "count": 2
+      "generated_at": "2026-06-08 12:32",
+      "count": 3
     },
     "seelotsen": {
       "file": "Seelotsen.json",
-      "generated_at": "2026-06-08 12:30",
+      "generated_at": "2026-06-08 12:32",
       "count": 18
     }
   },
-  "count": 62,
+  "count": 63,
   "entries": [
     {
       "ship_key": "AKKA",
@@ -608,6 +608,9 @@
             "gross_nordsee": {
               "in": "2026-06-08 10:53",
               "out": "2026-06-08 12:01"
+            },
+            "schwartenbek": {
+              "in": "2026-06-08 12:30"
             }
           }
         }
@@ -680,6 +683,9 @@
               "gross_nordsee": {
                 "in": "2026-06-08 10:53",
                 "out": "2026-06-08 12:01"
+              },
+              "schwartenbek": {
+                "in": "2026-06-08 12:30"
               }
             }
           },
@@ -1212,8 +1218,8 @@
         "sources": [
           "zulauf_brb_aussen"
         ],
-        "eta_schleuse": "2026-06-08 17:22",
-        "eta_text": "17:22",
+        "eta_schleuse": "2026-06-08 17:02",
+        "eta_text": "17:02",
         "first_seen": "2026-06-08 10:46",
         "queue_key": "brb_aussen",
         "queue_title": "Zulauf von See in Brunsbüttel",
@@ -1278,7 +1284,7 @@
       "zulauf": [
         {
           "name": "BONITA",
-          "eta_schleuse": "2026-06-08 17:22",
+          "eta_schleuse": "2026-06-08 17:02",
           "first_seen": "2026-06-08 10:46",
           "ship_name": "BONITA",
           "vg": "2",
@@ -1289,7 +1295,7 @@
           "queue_title": "Zulauf von See in Brunsbüttel",
           "area": "brb",
           "zulauf_richtung": "von_see",
-          "eta_text": "17:22",
+          "eta_text": "17:02",
           "preferred_mooring_side": "Bb",
           "vessel_type": "Trocken-Mz-Frachter",
           "travel_status": "APPROACHING_NOK_BRB",
@@ -1342,7 +1348,6 @@
       "ship_key": "DANIEL DEYMANN",
       "name": "DANIEL DEYMANN",
       "sources": [
-        "seelotsen",
         "zulauf_brb_innen"
       ],
       "special_entry": false,
@@ -1350,12 +1355,7 @@
         "name": "DANIEL DEYMANN",
         "special_entry": false,
         "sources": [
-          "seelotsen",
           "zulauf_brb_innen"
-        ],
-        "route": "UTG → RÜB",
-        "routes": [
-          "UTG → RÜB"
         ],
         "eta_rueb": "2026-06-08 12:22",
         "eta_schleuse": "2026-06-08 17:41",
@@ -1397,12 +1397,6 @@
         "dangerous_vessel": "-",
         "port_of_departure": "DE KEL (KOK)",
         "port_of_destination": "DE HAM (HBG)",
-        "assigned_pilots": [
-          "Winkler, René"
-        ],
-        "aufgaben": [
-          "Kanalbört"
-        ],
         "passage_block": {
           "start_text": "Kiel Schleuse Kiel",
           "start_0": "Kiel",
@@ -1659,19 +1653,7 @@
       ],
       "meldungen_kiel": [],
       "meldungen_ruesterbergen": [],
-      "seelotsen": [
-        {
-          "nr": 10,
-          "time": "2026-06-08 08:40",
-          "pilot_name": "Winkler, René",
-          "nachname": "Winkler",
-          "vorname": "René",
-          "aufgabe": "Kanalbört",
-          "from": "UTG",
-          "to": "RÜB",
-          "route": "UTG → RÜB"
-        }
-      ]
+      "seelotsen": []
     },
     {
       "ship_key": "DELFBORG",
@@ -2605,7 +2587,8 @@
           },
           "ost": {
             "schuelp": {
-              "in": "2026-06-08 12:22"
+              "in": "2026-06-08 12:22",
+              "out": "2026-06-08 12:30"
             }
           }
         }
@@ -2663,7 +2646,8 @@
             },
             "ost": {
               "schuelp": {
-                "in": "2026-06-08 12:22"
+                "in": "2026-06-08 12:22",
+                "out": "2026-06-08 12:30"
               }
             }
           },
@@ -3183,7 +3167,7 @@
       "meldungen_ruesterbergen": [
         {
           "source": "meldungen_ruesterbergen",
-          "nr": "2",
+          "nr": "3",
           "time": "2026-06-08 16:50",
           "draft": "8.5",
           "q_gruppe": "1",
@@ -3908,8 +3892,8 @@
         "sources": [
           "zulauf_brb_aussen"
         ],
-        "eta_schleuse": "2026-06-08 13:32",
-        "eta_text": "13:32",
+        "eta_schleuse": "2026-06-08 13:39",
+        "eta_text": "13:39",
         "first_seen": "2026-06-08 11:06",
         "queue_key": "brb_aussen",
         "queue_title": "Zulauf von See in Brunsbüttel",
@@ -4027,7 +4011,7 @@
       "zulauf": [
         {
           "name": "FAIRPLAY 55",
-          "eta_schleuse": "2026-06-08 13:32",
+          "eta_schleuse": "2026-06-08 13:39",
           "first_seen": "2026-06-08 11:06",
           "ship_name": "FAIRPLAY 55",
           "vg": "3",
@@ -4040,7 +4024,7 @@
           "zulauf_richtung": "von_see",
           "pilot_required": "false",
           "pilot_foerde": "false",
-          "eta_text": "13:32",
+          "eta_text": "13:39",
           "mooring_place": "Express Südseite",
           "destination": "Brunsbüttel",
           "makler": "UCA",
@@ -4141,7 +4125,6 @@
       "ship_key": "FERESA",
       "name": "FERESA",
       "sources": [
-        "seelotsen",
         "zulauf_brb_innen"
       ],
       "special_entry": false,
@@ -4149,12 +4132,7 @@
         "name": "FERESA",
         "special_entry": false,
         "sources": [
-          "seelotsen",
           "zulauf_brb_innen"
-        ],
-        "route": "HOS → RÜB",
-        "routes": [
-          "HOS → RÜB"
         ],
         "eta_rueb": "2026-06-08 12:30",
         "eta_schleuse": "2026-06-08 17:29",
@@ -4202,12 +4180,6 @@
         "dangerous_vessel": "-",
         "port_of_departure": "SE MMA",
         "port_of_destination": "DE BRB (BBB)",
-        "assigned_pilots": [
-          "Steinbach, Daniel"
-        ],
-        "aufgaben": [
-          "Kanalbört"
-        ],
         "passage_block": {
           "start_text": "Kiel Schleuse Kiel",
           "start_0": "Kiel",
@@ -4256,6 +4228,7 @@
           "pilot_status": "U",
           "num_of_pilots": "1",
           "num_of_pilots_kf": "1",
+          "pilot_change_off_time": "2026-06-08 12:31",
           "pilot_elbe_see": "false",
           "pilot_nok": "true",
           "pilot_ostsee": "false",
@@ -4451,6 +4424,7 @@
             "pilot_status": "U",
             "num_of_pilots": "1",
             "num_of_pilots_kf": "1",
+            "pilot_change_off_time": "2026-06-08 12:31",
             "pilot_elbe_see": "false",
             "pilot_nok": "true",
             "pilot_ostsee": "false",
@@ -4508,19 +4482,7 @@
       ],
       "meldungen_kiel": [],
       "meldungen_ruesterbergen": [],
-      "seelotsen": [
-        {
-          "nr": 12,
-          "time": "2026-06-08 07:52",
-          "pilot_name": "Steinbach, Daniel",
-          "nachname": "Steinbach",
-          "vorname": "Daniel",
-          "aufgabe": "Kanalbört",
-          "from": "HOS",
-          "to": "RÜB",
-          "route": "HOS → RÜB"
-        }
-      ]
+      "seelotsen": []
     },
     {
       "ship_key": "FORTUNA B",
@@ -5990,10 +5952,10 @@
           "HOS → RÜB"
         ],
         "eta_rueb": "2026-06-08 14:06",
-        "eta_schleuse": "2026-06-08 18:39",
-        "eta_text": "18:39",
+        "eta_schleuse": "2026-06-08 18:37",
+        "eta_text": "18:37",
         "first_seen": "2026-06-08 10:00",
-        "delta_rueb_schleuse": "04:33",
+        "delta_rueb_schleuse": "04:32",
         "delta_start_rueb": "04:06",
         "queue_key": "brb_innen",
         "queue_title": "Zulauf vom Kanal in Brunsbüttel",
@@ -6174,10 +6136,10 @@
       "zulauf": [
         {
           "name": "JOHANN",
-          "eta_schleuse": "2026-06-08 18:39",
+          "eta_schleuse": "2026-06-08 18:37",
           "eta_rueb": "2026-06-08 14:06",
           "first_seen": "2026-06-08 10:00",
-          "delta_rueb_schleuse": "04:33",
+          "delta_rueb_schleuse": "04:32",
           "delta_start_rueb": "04:06",
           "ship_name": "JOHANN",
           "vg": "3",
@@ -6191,7 +6153,7 @@
           "pilot_required": "true",
           "pilot_foerde": "true",
           "pilot_order": "KS-NOK-ESEE-KF",
-          "eta_text": "18:39",
+          "eta_text": "18:37",
           "destination": "Brunsbüttel",
           "makler": "UCA",
           "preferred_mooring_side": "Stb",
@@ -7612,19 +7574,23 @@
       "ship_key": "LEERFAHRT",
       "name": "Leerfahrt",
       "sources": [
-        "meldungen_kiel"
+        "meldungen_kiel",
+        "meldungen_ruesterbergen"
       ],
       "special_entry": true,
       "summary": {
         "name": "Leerfahrt",
         "special_entry": true,
         "sources": [
-          "meldungen_kiel"
+          "meldungen_kiel",
+          "meldungen_ruesterbergen"
         ],
         "route": "HOS → KLT",
         "routes": [
-          "HOS → KLT"
+          "HOS → KLT",
+          "RÜB → HOS"
         ],
+        "eta_rueb": "2026-06-08 12:23",
         "lotsen_anzahl_kiel": 1,
         "confirmed_kiel": false,
         "remark_kiel": "ttg"
@@ -7643,7 +7609,18 @@
           "remark": "ttg"
         }
       ],
-      "meldungen_ruesterbergen": [],
+      "meldungen_ruesterbergen": [
+        {
+          "source": "meldungen_ruesterbergen",
+          "nr": "1",
+          "time": "2026-06-08 12:23",
+          "lotsen_anzahl": 2,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS",
+          "route": "RÜB → HOS"
+        }
+      ],
       "seelotsen": []
     },
     {
@@ -8932,7 +8909,7 @@
       "meldungen_ruesterbergen": [
         {
           "source": "meldungen_ruesterbergen",
-          "nr": "1",
+          "nr": "2",
           "time": "2026-06-08 16:40",
           "draft": "5.1",
           "q_gruppe": "5",
@@ -9476,6 +9453,49 @@
       "meldungen_kiel": [],
       "meldungen_ruesterbergen": [],
       "seelotsen": []
+    },
+    {
+      "ship_key": "RUEB",
+      "name": "RÜB",
+      "sources": [
+        "seelotsen"
+      ],
+      "special_entry": true,
+      "summary": {
+        "name": "RÜB",
+        "special_entry": true,
+        "sources": [
+          "seelotsen"
+        ],
+        "assigned_pilots": [
+          "Winkler, René",
+          "Steinbach, Daniel"
+        ],
+        "aufgaben": [
+          "Kanalbört"
+        ]
+      },
+      "zulauf": [],
+      "meldungen_kiel": [],
+      "meldungen_ruesterbergen": [],
+      "seelotsen": [
+        {
+          "nr": 10,
+          "time": "2026-06-08 08:40",
+          "pilot_name": "Winkler, René",
+          "nachname": "Winkler",
+          "vorname": "René",
+          "aufgabe": "Kanalbört"
+        },
+        {
+          "nr": 12,
+          "time": "2026-06-08 07:52",
+          "pilot_name": "Steinbach, Daniel",
+          "nachname": "Steinbach",
+          "vorname": "Daniel",
+          "aufgabe": "Kanalbört"
+        }
+      ]
     },
     {
       "ship_key": "SEHESTEDT",
@@ -10426,10 +10446,10 @@
           "zulauf_brb_innen"
         ],
         "eta_rueb": "2026-06-08 10:22",
-        "eta_schleuse": "2026-06-08 14:42",
-        "eta_text": "14:42",
+        "eta_schleuse": "2026-06-08 14:41",
+        "eta_text": "14:41",
         "first_seen": "2026-06-08 06:58",
-        "delta_rueb_schleuse": "04:21",
+        "delta_rueb_schleuse": "04:20",
         "delta_start_rueb": "03:24",
         "queue_key": "brb_innen",
         "queue_title": "Zulauf vom Kanal in Brunsbüttel",
@@ -10576,10 +10596,10 @@
       "zulauf": [
         {
           "name": "TENDER 4",
-          "eta_schleuse": "2026-06-08 14:42",
+          "eta_schleuse": "2026-06-08 14:41",
           "eta_rueb": "2026-06-08 10:22",
           "first_seen": "2026-06-08 06:58",
-          "delta_rueb_schleuse": "04:21",
+          "delta_rueb_schleuse": "04:20",
           "delta_start_rueb": "03:24",
           "ship_name": "TENDER 4",
           "vg": "1",
@@ -10592,7 +10612,7 @@
           "zulauf_richtung": "vom_kanal",
           "pilot_required": "false",
           "pilot_foerde": "false",
-          "eta_text": "14:42",
+          "eta_text": "14:41",
           "destination": "Brunsbüttel",
           "makler": "Bar-Karte",
           "preferred_mooring_side": "Beide",
