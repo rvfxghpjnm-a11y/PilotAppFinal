@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-08T02:45:17",
+  "generated_at": "2026-06-08T02:47:17",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 1,
     "pilots_total": 9,
-    "pilots_dispatchable": 7,
-    "pilots_visible_only": 2,
+    "pilots_dispatchable": 8,
+    "pilots_visible_only": 1,
     "assignments": 1,
     "unassigned_ships": 0,
-    "unused_pilots": 6
+    "unused_pilots": 7
   },
   "ships": [
     {
@@ -229,9 +229,10 @@
       "nr": 3,
       "raw_time": "Mon Jun 08 01:21:00 CEST 2026",
       "current_ship_name": "KLARA",
+      "current_ship_eta_rueb": "2026-06-08 06:18",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
@@ -252,7 +253,7 @@
       "current_ship_name": "ELBWATER",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta"
     },
     {
@@ -411,6 +412,28 @@
       "availability_kind": "merged_eta"
     },
     {
+      "pilot_key": "kordt_remo",
+      "vorname": "Remo",
+      "nachname": "Kordt",
+      "pilot_name": "Kordt, Remo",
+      "abteilungszeit": "2026-06-08 01:21",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 3,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "KLARA",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 3,
+      "raw_time": "Mon Jun 08 01:21:00 CEST 2026",
+      "current_ship_name": "KLARA",
+      "current_ship_eta_rueb": "2026-06-08 06:18",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
       "pilot_key": "janson_sven",
       "vorname": "Sven",
       "nachname": "Janson",
@@ -435,21 +458,6 @@
   ],
   "visible_but_not_dispatchable_pilots": [
     {
-      "pilot_key": "kordt_remo",
-      "pilot_name": "Kordt, Remo",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 3,
-      "abteilungszeit": "2026-06-08 01:21",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "KLARA",
-      "from": "HOS",
-      "to": "RÜB",
-      "current_ship_name": "KLARA",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    },
-    {
       "pilot_key": "dalecki_niklas",
       "pilot_name": "Dalecki, Niklas",
       "pilot_q": 0,
@@ -460,7 +468,7 @@
       "from": "HOS",
       "to": "RÜB",
       "current_ship_name": "ELBWATER",
-      "current_ship_source": "schiffe_merged.seelotsen",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta",
       "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
     }
@@ -542,6 +550,15 @@
           "reason": "Quali passt nicht (1 > 0)",
           "pilot_q": 1,
           "ship_q": 0
+        },
+        {
+          "pilot_name": "Kordt, Remo",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "KLARA",
+          "pilot_current_ship_eta_rueb": "2026-06-08 06:18",
+          "ship_eta_rueb": "2026-06-08 03:20",
+          "availability_kind": "merged_eta"
         },
         {
           "pilot_name": "Janson, Sven",
@@ -696,6 +713,28 @@
       "current_ship_eta_rueb": "2026-06-08 02:46",
       "current_ship_q": 4,
       "current_ship_route": "RÜB → HOS",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "kordt_remo",
+      "vorname": "Remo",
+      "nachname": "Kordt",
+      "pilot_name": "Kordt, Remo",
+      "abteilungszeit": "2026-06-08 01:21",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 3,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "KLARA",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 3,
+      "raw_time": "Mon Jun 08 01:21:00 CEST 2026",
+      "current_ship_name": "KLARA",
+      "current_ship_eta_rueb": "2026-06-08 06:18",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
