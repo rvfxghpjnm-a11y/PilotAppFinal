@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-08T16:11:21",
+  "generated_at": "2026-06-08T16:13:26",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,54 +32,15 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 3,
+    "ships_for_ruesterbergen": 2,
     "pilots_total": 10,
     "pilots_dispatchable": 9,
     "pilots_visible_only": 1,
-    "assignments": 3,
+    "assignments": 2,
     "unassigned_ships": 0,
-    "unused_pilots": 6
+    "unused_pilots": 7
   },
   "ships": [
-    {
-      "ship_key": "RONJA",
-      "ship_name": "RONJA",
-      "eta_rueb": "2026-06-08 16:39",
-      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
-      "ship_q": 4,
-      "meldung": {
-        "nr": "1",
-        "time": "Mon Jun 08 16:25:00 CEST 2026",
-        "draft": "5.8",
-        "q_gruppe": "4",
-        "lotsen_anzahl": 1,
-        "confirmed": false,
-        "from": "RÜB",
-        "to": "UTG"
-      },
-      "summary": {
-        "route": "UTG → HOS",
-        "routes": [
-          "UTG → HOS",
-          "HOS → KLT",
-          "RÜB → UTG"
-        ],
-        "q_gruppe": "4",
-        "vg": "3",
-        "draft": "5.80",
-        "length_m": "89.95",
-        "beam_m": "15.25",
-        "queue_title": "Zulauf vom Kanal in Kiel",
-        "zulauf_richtung": "vom_kanal",
-        "pilot_required": "true",
-        "pilot_status": "P",
-        "pilot_1_name": "Schulz, Arne",
-        "travel_status": "SAILING_NOK",
-        "makler": "SUB",
-        "dangerous_vessel": "-",
-        "type_of_loading": "Holz"
-      }
-    },
     {
       "ship_key": "EXEBORG",
       "ship_name": "EXEBORG",
@@ -87,7 +48,7 @@
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 2,
       "meldung": {
-        "nr": "2",
+        "nr": "1",
         "time": "Mon Jun 08 18:20:00 CEST 2026",
         "draft": "8.1",
         "q_gruppe": "2",
@@ -125,7 +86,7 @@
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
-        "nr": "3",
+        "nr": "2",
         "time": "Mon Jun 08 20:20:00 CEST 2026",
         "draft": "5.0",
         "q_gruppe": "5",
@@ -343,14 +304,16 @@
       "q_source": "q_gruppen_lotsen.entries",
       "pilot_tactical_nr": 4,
       "aufgabe": "Kanalbört",
-      "fahrzeug": "RÜB",
+      "fahrzeug": "RONJA",
+      "from": "RÜB",
+      "to": "UTG",
       "nr": 4,
       "raw_time": "Mon Jun 08 15:15:00 CEST 2026",
       "current_ship_name": "RONJA",
       "current_ship_eta_rueb": "2026-06-08 16:39",
       "current_ship_q": 4,
-      "current_ship_route": "UTG → HOS",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_route": "RÜB → UTG",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
@@ -541,14 +504,16 @@
       "q_source": "q_gruppen_lotsen.entries",
       "pilot_tactical_nr": 4,
       "aufgabe": "Kanalbört",
-      "fahrzeug": "RÜB",
+      "fahrzeug": "RONJA",
+      "from": "RÜB",
+      "to": "UTG",
       "nr": 4,
       "raw_time": "Mon Jun 08 15:15:00 CEST 2026",
       "current_ship_name": "RONJA",
       "current_ship_eta_rueb": "2026-06-08 16:39",
       "current_ship_q": 4,
-      "current_ship_route": "UTG → HOS",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_route": "RÜB → UTG",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
@@ -592,156 +557,6 @@
     }
   ],
   "assignments": [
-    {
-      "ship_key": "RONJA",
-      "ship_name": "RONJA",
-      "eta_rueb": "2026-06-08 16:39",
-      "ship_q": 4,
-      "assigned_pilot": "Stoislow, Alexander",
-      "assigned_pilot_q": 4,
-      "assigned_tactical_nr": 17,
-      "assigned_abteilungszeit": "2026-06-08 08:30",
-      "assigned_current_ship_name": "RLO MERCHANT",
-      "assigned_current_ship_eta_rueb": "2026-06-08 16:32",
-      "assigned_current_ship_source": "schiffe_merged.seelotsen",
-      "assigned_availability_kind": "merged_eta",
-      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 4,
-      "candidates": [
-        {
-          "pilot_name": "Stoislow, Alexander",
-          "pilot_q": 4,
-          "pilot_tactical_nr": 17,
-          "abteilungszeit": "2026-06-08 08:30",
-          "fahrzeug": "RLO MERCHANT",
-          "to": "HOS",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "RLO MERCHANT",
-          "current_ship_eta_rueb": "2026-06-08 16:32",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Wachs, Merten",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 16,
-          "abteilungszeit": "2026-06-08 08:53",
-          "fahrzeug": "ELBSUN",
-          "to": "HOS",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "ELBSUN",
-          "current_ship_eta_rueb": "2026-06-08 16:36",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Haala, Klaus Werner",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 13,
-          "abteilungszeit": "2026-06-08 11:05",
-          "fahrzeug": "ELBRUNNER",
-          "to": "KLT",
-          "aufgabe": "Seebört",
-          "current_ship_name": "ELBRUNNER",
-          "current_ship_eta_rueb": "2026-06-08 12:16",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Schulz, Arne",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 4,
-          "abteilungszeit": "2026-06-08 15:15",
-          "fahrzeug": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "RONJA",
-          "current_ship_eta_rueb": "2026-06-08 16:39",
-          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-          "availability_kind": "merged_eta"
-        }
-      ],
-      "excluded": [
-        {
-          "pilot_name": "Crotogino, Philipp",
-          "pilot_tactical_nr": 11,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "VALENTINA",
-          "pilot_current_ship_eta_rueb": "2026-06-08 16:51",
-          "ship_eta_rueb": "2026-06-08 16:39",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Lüdtke, Jan-Torben",
-          "pilot_tactical_nr": 10,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "MADICKEN",
-          "pilot_current_ship_eta_rueb": "2026-06-08 16:54",
-          "ship_eta_rueb": "2026-06-08 16:39",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Lielienthal, Jörn",
-          "pilot_tactical_nr": 8,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "BALTIC SAILOR",
-          "pilot_current_ship_eta_rueb": "2026-06-08 19:26",
-          "ship_eta_rueb": "2026-06-08 16:39",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Tontarra, Olaf",
-          "pilot_tactical_nr": 7,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "ECO MISTRAL",
-          "pilot_current_ship_eta_rueb": "2026-06-08 19:23",
-          "ship_eta_rueb": "2026-06-08 16:39",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Zozulya, Mykola",
-          "pilot_tactical_nr": 1,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "JSP LOEJT",
-          "pilot_current_ship_eta_rueb": "2026-06-08 19:31",
-          "ship_eta_rueb": "2026-06-08 16:39",
-          "availability_kind": "merged_eta"
-        }
-      ],
-      "ship": {
-        "meldung": {
-          "nr": "1",
-          "time": "Mon Jun 08 16:25:00 CEST 2026",
-          "draft": "5.8",
-          "q_gruppe": "4",
-          "lotsen_anzahl": 1,
-          "confirmed": false,
-          "from": "RÜB",
-          "to": "UTG"
-        },
-        "summary": {
-          "route": "UTG → HOS",
-          "routes": [
-            "UTG → HOS",
-            "HOS → KLT",
-            "RÜB → UTG"
-          ],
-          "q_gruppe": "4",
-          "vg": "3",
-          "draft": "5.80",
-          "length_m": "89.95",
-          "beam_m": "15.25",
-          "queue_title": "Zulauf vom Kanal in Kiel",
-          "zulauf_richtung": "vom_kanal",
-          "pilot_required": "true",
-          "pilot_status": "P",
-          "pilot_1_name": "Schulz, Arne",
-          "travel_status": "SAILING_NOK",
-          "makler": "SUB",
-          "dangerous_vessel": "-",
-          "type_of_loading": "Holz"
-        }
-      }
-    },
     {
       "ship_key": "EXEBORG",
       "ship_name": "EXEBORG",
@@ -815,15 +630,23 @@
           "pilot_q": 0,
           "pilot_tactical_nr": 4,
           "abteilungszeit": "2026-06-08 15:15",
-          "fahrzeug": "RÜB",
+          "fahrzeug": "RONJA",
+          "to": "UTG",
           "aufgabe": "Kanalbört",
           "current_ship_name": "RONJA",
           "current_ship_eta_rueb": "2026-06-08 16:39",
-          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
       ],
       "excluded": [
+        {
+          "pilot_name": "Stoislow, Alexander",
+          "pilot_tactical_nr": 17,
+          "reason": "Quali passt nicht (4 > 2)",
+          "pilot_q": 4,
+          "ship_q": 2
+        },
         {
           "pilot_name": "Lielienthal, Jörn",
           "pilot_tactical_nr": 8,
@@ -854,7 +677,7 @@
       ],
       "ship": {
         "meldung": {
-          "nr": "2",
+          "nr": "1",
           "time": "Mon Jun 08 18:20:00 CEST 2026",
           "draft": "8.1",
           "q_gruppe": "2",
@@ -891,17 +714,30 @@
       "ship_name": "LADY AMI",
       "eta_rueb": "2026-06-08 20:40",
       "ship_q": 5,
-      "assigned_pilot": "Haala, Klaus Werner",
-      "assigned_pilot_q": 0,
-      "assigned_tactical_nr": 13,
-      "assigned_abteilungszeit": "2026-06-08 11:05",
-      "assigned_current_ship_name": "ELBRUNNER",
-      "assigned_current_ship_eta_rueb": "2026-06-08 12:16",
+      "assigned_pilot": "Stoislow, Alexander",
+      "assigned_pilot_q": 4,
+      "assigned_tactical_nr": 17,
+      "assigned_abteilungszeit": "2026-06-08 08:30",
+      "assigned_current_ship_name": "RLO MERCHANT",
+      "assigned_current_ship_eta_rueb": "2026-06-08 16:32",
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 7,
+      "candidate_count": 8,
       "candidates": [
+        {
+          "pilot_name": "Stoislow, Alexander",
+          "pilot_q": 4,
+          "pilot_tactical_nr": 17,
+          "abteilungszeit": "2026-06-08 08:30",
+          "fahrzeug": "RLO MERCHANT",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RLO MERCHANT",
+          "current_ship_eta_rueb": "2026-06-08 16:32",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
         {
           "pilot_name": "Haala, Klaus Werner",
           "pilot_q": 0,
@@ -972,11 +808,12 @@
           "pilot_q": 0,
           "pilot_tactical_nr": 4,
           "abteilungszeit": "2026-06-08 15:15",
-          "fahrzeug": "RÜB",
+          "fahrzeug": "RONJA",
+          "to": "UTG",
           "aufgabe": "Kanalbört",
           "current_ship_name": "RONJA",
           "current_ship_eta_rueb": "2026-06-08 16:39",
-          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
         {
@@ -995,7 +832,7 @@
       ],
       "ship": {
         "meldung": {
-          "nr": "3",
+          "nr": "2",
           "time": "Mon Jun 08 20:20:00 CEST 2026",
           "draft": "5.0",
           "q_gruppe": "5",
@@ -1030,6 +867,28 @@
   ],
   "unassigned_ships": [],
   "unused_pilots": [
+    {
+      "pilot_key": "haala_klaus werner",
+      "vorname": "Klaus Werner",
+      "nachname": "Haala",
+      "pilot_name": "Haala, Klaus Werner",
+      "abteilungszeit": "2026-06-08 11:05",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 13,
+      "aufgabe": "Seebört",
+      "fahrzeug": "ELBRUNNER",
+      "from": "HOS",
+      "to": "KLT",
+      "nr": 13,
+      "raw_time": "Mon Jun 08 11:05:00 CEST 2026",
+      "current_ship_name": "ELBRUNNER",
+      "current_ship_eta_rueb": "2026-06-08 12:16",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → KLT",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
     {
       "pilot_key": "crotogino_philipp",
       "vorname": "Philipp",
@@ -1128,14 +987,16 @@
       "q_source": "q_gruppen_lotsen.entries",
       "pilot_tactical_nr": 4,
       "aufgabe": "Kanalbört",
-      "fahrzeug": "RÜB",
+      "fahrzeug": "RONJA",
+      "from": "RÜB",
+      "to": "UTG",
       "nr": 4,
       "raw_time": "Mon Jun 08 15:15:00 CEST 2026",
       "current_ship_name": "RONJA",
       "current_ship_eta_rueb": "2026-06-08 16:39",
       "current_ship_q": 4,
-      "current_ship_route": "UTG → HOS",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_route": "RÜB → UTG",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
