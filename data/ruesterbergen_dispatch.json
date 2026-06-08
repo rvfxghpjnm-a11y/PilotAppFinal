@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-08T23:41:17",
+  "generated_at": "2026-06-08T23:43:20",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 5,
     "pilots_total": 9,
-    "pilots_dispatchable": 8,
-    "pilots_visible_only": 1,
+    "pilots_dispatchable": 9,
+    "pilots_visible_only": 0,
     "assignments": 5,
     "unassigned_ships": 0,
-    "unused_pilots": 3
+    "unused_pilots": 4
   },
   "ships": [
     {
@@ -397,6 +397,7 @@
       "nr": 3,
       "raw_time": "Mon Jun 08 22:28:00 CEST 2026",
       "current_ship_name": "FREDERIK",
+      "current_ship_eta_rueb": "2026-06-09 03:28",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -581,6 +582,28 @@
       "availability_kind": "merged_eta"
     },
     {
+      "pilot_key": "hoffmann_heiko",
+      "vorname": "Heiko",
+      "nachname": "Hoffmann",
+      "pilot_name": "Hoffmann, Heiko",
+      "abteilungszeit": "2026-06-08 22:28",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 3,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "FREDERIK",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 3,
+      "raw_time": "Mon Jun 08 22:28:00 CEST 2026",
+      "current_ship_name": "FREDERIK",
+      "current_ship_eta_rueb": "2026-06-09 03:28",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
       "pilot_key": "arndt_michael",
       "vorname": "Michael",
       "nachname": "Arndt",
@@ -604,23 +627,7 @@
       "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
     }
   ],
-  "visible_but_not_dispatchable_pilots": [
-    {
-      "pilot_key": "hoffmann_heiko",
-      "pilot_name": "Hoffmann, Heiko",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 3,
-      "abteilungszeit": "2026-06-08 22:28",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "FREDERIK",
-      "from": "HOS",
-      "to": "RÜB",
-      "current_ship_name": "FREDERIK",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    }
-  ],
+  "visible_but_not_dispatchable_pilots": [],
   "assignments": [
     {
       "ship_key": "CLARITY",
@@ -726,6 +733,15 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "SKAGENBANK",
           "pilot_current_ship_eta_rueb": "2026-06-09 03:03",
+          "ship_eta_rueb": "2026-06-09 00:57",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Hoffmann, Heiko",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "FREDERIK",
+          "pilot_current_ship_eta_rueb": "2026-06-09 03:28",
           "ship_eta_rueb": "2026-06-09 00:57",
           "availability_kind": "merged_eta"
         }
@@ -854,6 +870,15 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "SKAGENBANK",
           "pilot_current_ship_eta_rueb": "2026-06-09 03:03",
+          "ship_eta_rueb": "2026-06-09 01:03",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Hoffmann, Heiko",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "FREDERIK",
+          "pilot_current_ship_eta_rueb": "2026-06-09 03:28",
           "ship_eta_rueb": "2026-06-09 01:03",
           "availability_kind": "merged_eta"
         }
@@ -988,6 +1013,17 @@
           "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
         }
       ],
+      "excluded": [
+        {
+          "pilot_name": "Hoffmann, Heiko",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "FREDERIK",
+          "pilot_current_ship_eta_rueb": "2026-06-09 03:28",
+          "ship_eta_rueb": "2026-06-09 03:08",
+          "availability_kind": "merged_eta"
+        }
+      ],
       "ship": {
         "meldung": {
           "nr": "3",
@@ -1104,6 +1140,17 @@
           "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
         }
       ],
+      "excluded": [
+        {
+          "pilot_name": "Hoffmann, Heiko",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "FREDERIK",
+          "pilot_current_ship_eta_rueb": "2026-06-09 03:28",
+          "ship_eta_rueb": "2026-06-09 03:12",
+          "availability_kind": "merged_eta"
+        }
+      ],
       "ship": {
         "meldung": {
           "nr": "5",
@@ -1206,6 +1253,17 @@
           "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
         }
       ],
+      "excluded": [
+        {
+          "pilot_name": "Hoffmann, Heiko",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "FREDERIK",
+          "pilot_current_ship_eta_rueb": "2026-06-09 03:28",
+          "ship_eta_rueb": "2026-06-09 03:15",
+          "availability_kind": "merged_eta"
+        }
+      ],
       "ship": {
         "meldung": {
           "nr": "4",
@@ -1282,6 +1340,28 @@
       "raw_time": "Mon Jun 08 22:12:00 CEST 2026",
       "current_ship_name": "SKAGENBANK",
       "current_ship_eta_rueb": "2026-06-09 03:03",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "hoffmann_heiko",
+      "vorname": "Heiko",
+      "nachname": "Hoffmann",
+      "pilot_name": "Hoffmann, Heiko",
+      "abteilungszeit": "2026-06-08 22:28",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 3,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "FREDERIK",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 3,
+      "raw_time": "Mon Jun 08 22:28:00 CEST 2026",
+      "current_ship_name": "FREDERIK",
+      "current_ship_eta_rueb": "2026-06-09 03:28",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
