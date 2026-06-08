@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-08T14:05:31",
+  "generated_at": "2026-06-08T14:07:20",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,13 +32,13 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 3,
+    "ships_for_ruesterbergen": 4,
     "pilots_total": 9,
     "pilots_dispatchable": 9,
     "pilots_visible_only": 0,
-    "assignments": 3,
+    "assignments": 4,
     "unassigned_ships": 0,
-    "unused_pilots": 6
+    "unused_pilots": 5
   },
   "ships": [
     {
@@ -152,6 +152,44 @@
         "makler": "SUB",
         "dangerous_vessel": "-",
         "type_of_loading": "Holz"
+      }
+    },
+    {
+      "ship_key": "EXEBORG",
+      "ship_name": "EXEBORG",
+      "eta_rueb": "2026-06-08 18:38",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 2,
+      "meldung": {
+        "nr": "4",
+        "time": "Mon Jun 08 18:30:00 CEST 2026",
+        "draft": "8.1",
+        "q_gruppe": "2",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "2",
+        "vg": "4",
+        "draft": "8.10",
+        "length_m": "144.56",
+        "beam_m": "15.87",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "U",
+        "pilot_1_name": "Thomas, Marius",
+        "travel_status": "SAILING_NOK",
+        "makler": "UCA",
+        "dangerous_vessel": "-",
+        "type_of_loading": "Bulk"
       }
     }
   ],
@@ -982,6 +1020,131 @@
           "type_of_loading": "Holz"
         }
       }
+    },
+    {
+      "ship_key": "EXEBORG",
+      "ship_name": "EXEBORG",
+      "eta_rueb": "2026-06-08 18:38",
+      "ship_q": 2,
+      "assigned_pilot": "Wachs, Merten",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 9,
+      "assigned_abteilungszeit": "2026-06-08 08:53",
+      "assigned_current_ship_name": "SOUTH",
+      "assigned_current_ship_eta_rueb": "2026-06-08 14:12",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 5,
+      "candidates": [
+        {
+          "pilot_name": "Wachs, Merten",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 9,
+          "abteilungszeit": "2026-06-08 08:53",
+          "fahrzeug": "SOUTH",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "SOUTH",
+          "current_ship_eta_rueb": "2026-06-08 14:12",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Haala, Klaus Werner",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 5,
+          "abteilungszeit": "2026-06-08 11:05",
+          "fahrzeug": "ELBRUNNER",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ELBRUNNER",
+          "current_ship_eta_rueb": "2026-06-08 12:16",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Wille, Christian",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 4,
+          "abteilungszeit": "2026-06-08 11:08",
+          "fahrzeug": "NETA A.",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "NETA A",
+          "current_ship_eta_rueb": "2026-06-08 16:54",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Crotogino, Philipp",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 3,
+          "abteilungszeit": "2026-06-08 11:18",
+          "fahrzeug": "VALENTINA",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "VALENTINA",
+          "current_ship_eta_rueb": "2026-06-08 17:01",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Lüdtke, Jan-Torben",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-06-08 11:42",
+          "fahrzeug": "MADICKEN",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "MADICKEN",
+          "current_ship_eta_rueb": "2026-06-08 16:58",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Stoislow, Alexander",
+          "pilot_tactical_nr": 10,
+          "reason": "Quali passt nicht (4 > 2)",
+          "pilot_q": 4,
+          "ship_q": 2
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "4",
+          "time": "Mon Jun 08 18:30:00 CEST 2026",
+          "draft": "8.1",
+          "q_gruppe": "2",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "HOS → KLT",
+          "routes": [
+            "HOS → KLT",
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "2",
+          "vg": "4",
+          "draft": "8.10",
+          "length_m": "144.56",
+          "beam_m": "15.87",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "U",
+          "pilot_1_name": "Thomas, Marius",
+          "travel_status": "SAILING_NOK",
+          "makler": "UCA",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Bulk"
+        }
+      }
     }
   ],
   "unassigned_ships": [],
@@ -1006,28 +1169,6 @@
       "current_ship_source": "special.already_in_rueb",
       "availability_kind": "already_in_rueb",
       "availability_hint": "Lotse gilt als bereits in RÜB"
-    },
-    {
-      "pilot_key": "wachs_merten",
-      "vorname": "Merten",
-      "nachname": "Wachs",
-      "pilot_name": "Wachs, Merten",
-      "abteilungszeit": "2026-06-08 08:53",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 9,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "SOUTH",
-      "from": "HOS",
-      "to": "RÜB",
-      "nr": 9,
-      "raw_time": "Mon Jun 08 08:53:00 CEST 2026",
-      "current_ship_name": "SOUTH",
-      "current_ship_eta_rueb": "2026-06-08 14:12",
-      "current_ship_q": 0,
-      "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
     },
     {
       "pilot_key": "haala_klaus werner",
