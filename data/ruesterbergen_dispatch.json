@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-08T05:17:15",
+  "generated_at": "2026-06-08T05:19:16",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 2,
     "pilots_total": 7,
-    "pilots_dispatchable": 5,
-    "pilots_visible_only": 2,
+    "pilots_dispatchable": 6,
+    "pilots_visible_only": 1,
     "assignments": 2,
     "unassigned_ships": 0,
-    "unused_pilots": 3
+    "unused_pilots": 4
   },
   "ships": [
     {
@@ -243,10 +243,11 @@
       "to": "RÜB",
       "nr": 5,
       "raw_time": "Mon Jun 08 03:30:00 CEST 2026",
-      "current_ship_name": "GPS AVENGER +HEBO P82+LEVENSAU",
+      "current_ship_name": "GPS AVENGER + HEBO P82 + LEVENSAU",
+      "current_ship_eta_rueb": "2026-06-08 09:05",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta"
     },
     {
@@ -381,24 +382,31 @@
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
-    }
-  ],
-  "visible_but_not_dispatchable_pilots": [
+    },
     {
       "pilot_key": "skawianczyk_artur",
+      "vorname": "Artur",
+      "nachname": "Skawianczyk",
       "pilot_name": "Skawianczyk, Artur",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 5,
       "abteilungszeit": "2026-06-08 03:30",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 5,
       "aufgabe": "Kanalbört",
       "fahrzeug": "GPS AVENGER +HEBO P82+LEVENSAU",
       "from": "HOS",
       "to": "RÜB",
-      "current_ship_name": "GPS AVENGER +HEBO P82+LEVENSAU",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    },
+      "nr": 5,
+      "raw_time": "Mon Jun 08 03:30:00 CEST 2026",
+      "current_ship_name": "GPS AVENGER + HEBO P82 + LEVENSAU",
+      "current_ship_eta_rueb": "2026-06-08 09:05",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "availability_kind": "merged_eta"
+    }
+  ],
+  "visible_but_not_dispatchable_pilots": [
     {
       "pilot_key": "migge_alexander",
       "pilot_name": "Migge, Alexander",
@@ -495,6 +503,17 @@
           "current_ship_name": "ELBWATER",
           "current_ship_eta_rueb": "2026-06-08 06:46",
           "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Skawianczyk, Artur",
+          "pilot_tactical_nr": 5,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "GPS AVENGER + HEBO P82 + LEVENSAU",
+          "pilot_current_ship_eta_rueb": "2026-06-08 09:05",
+          "ship_eta_rueb": "2026-06-08 07:55",
           "availability_kind": "merged_eta"
         }
       ],
@@ -601,6 +620,17 @@
           "availability_kind": "merged_eta"
         }
       ],
+      "excluded": [
+        {
+          "pilot_name": "Skawianczyk, Artur",
+          "pilot_tactical_nr": 5,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "GPS AVENGER + HEBO P82 + LEVENSAU",
+          "pilot_current_ship_eta_rueb": "2026-06-08 09:05",
+          "ship_eta_rueb": "2026-06-08 07:58",
+          "availability_kind": "merged_eta"
+        }
+      ],
       "ship": {
         "meldung": {
           "nr": "2",
@@ -701,6 +731,28 @@
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "skawianczyk_artur",
+      "vorname": "Artur",
+      "nachname": "Skawianczyk",
+      "pilot_name": "Skawianczyk, Artur",
+      "abteilungszeit": "2026-06-08 03:30",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 5,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "GPS AVENGER +HEBO P82+LEVENSAU",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 5,
+      "raw_time": "Mon Jun 08 03:30:00 CEST 2026",
+      "current_ship_name": "GPS AVENGER + HEBO P82 + LEVENSAU",
+      "current_ship_eta_rueb": "2026-06-08 09:05",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta"
     }
   ]
