@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-08T20:41:20",
+  "generated_at": "2026-06-08T20:43:22",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,13 +32,13 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 3,
+    "ships_for_ruesterbergen": 4,
     "pilots_total": 7,
     "pilots_dispatchable": 5,
     "pilots_visible_only": 2,
-    "assignments": 3,
+    "assignments": 4,
     "unassigned_ships": 0,
-    "unused_pilots": 2
+    "unused_pilots": 1
   },
   "ships": [
     {
@@ -46,12 +46,12 @@
       "ship_name": "MARIA G",
       "eta_rueb": "2026-06-08 22:30",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
-      "ship_q": 0,
+      "ship_q": 5,
       "meldung": {
         "nr": "1",
         "time": "Mon Jun 08 22:30:00 CEST 2026",
         "draft": "3.8",
-        "q_gruppe": "0",
+        "q_gruppe": "5",
         "lotsen_anzahl": 1,
         "confirmed": false,
         "from": "RÜB",
@@ -62,7 +62,7 @@
         "routes": [
           "RÜB → HOS"
         ],
-        "q_gruppe": "0",
+        "q_gruppe": "5",
         "draft": "3.8"
       }
     },
@@ -101,6 +101,43 @@
         "makler": "NIK",
         "dangerous_vessel": "-",
         "type_of_loading": "Erdoel und Derivate"
+      }
+    },
+    {
+      "ship_key": "BONITA",
+      "ship_name": "BONITA",
+      "eta_rueb": "2026-06-09 00:54",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 5,
+      "meldung": {
+        "nr": "4",
+        "time": "Tue Jun 09 00:50:00 CEST 2026",
+        "draft": "3.2",
+        "q_gruppe": "5",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "RÜB → HOS",
+        "routes": [
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "5",
+        "vg": "2",
+        "draft": "3.20",
+        "length_m": "64.35",
+        "beam_m": "10.52",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "H",
+        "pilot_1_name": "Wieden, Christian",
+        "travel_status": "SAILING_NOK",
+        "makler": "UCA",
+        "dangerous_vessel": "-",
+        "type_of_loading": "Eisen und Stahl"
       }
     },
     {
@@ -202,7 +239,7 @@
       "nr": 8,
       "raw_time": "Mon Jun 08 16:39:00 CEST 2026",
       "current_ship_name": "RIX PARTNER",
-      "current_ship_eta_rueb": "2026-06-08 21:50",
+      "current_ship_eta_rueb": "2026-06-08 21:48",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -356,7 +393,7 @@
       "nr": 8,
       "raw_time": "Mon Jun 08 16:39:00 CEST 2026",
       "current_ship_name": "RIX PARTNER",
-      "current_ship_eta_rueb": "2026-06-08 21:50",
+      "current_ship_eta_rueb": "2026-06-08 21:48",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -444,7 +481,7 @@
       "ship_key": "MARIA G",
       "ship_name": "MARIA G",
       "eta_rueb": "2026-06-08 22:30",
-      "ship_q": 0,
+      "ship_q": 5,
       "assigned_pilot": "Lüdtke, Jan-Torben",
       "assigned_pilot_q": 0,
       "assigned_tactical_nr": 15,
@@ -454,7 +491,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 4,
+      "candidate_count": 5,
       "candidates": [
         {
           "pilot_name": "Lüdtke, Jan-Torben",
@@ -479,6 +516,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "LADY AMI",
           "current_ship_eta_rueb": "2026-06-08 20:27",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Wald, Mark",
+          "pilot_q": 3,
+          "pilot_tactical_nr": 8,
+          "abteilungszeit": "2026-06-08 16:39",
+          "fahrzeug": "RIX PARTNER",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RIX PARTNER",
+          "current_ship_eta_rueb": "2026-06-08 21:48",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -509,21 +559,12 @@
           "availability_kind": "merged_eta"
         }
       ],
-      "excluded": [
-        {
-          "pilot_name": "Wald, Mark",
-          "pilot_tactical_nr": 8,
-          "reason": "Quali passt nicht (3 > 0)",
-          "pilot_q": 3,
-          "ship_q": 0
-        }
-      ],
       "ship": {
         "meldung": {
           "nr": "1",
           "time": "Mon Jun 08 22:30:00 CEST 2026",
           "draft": "3.8",
-          "q_gruppe": "0",
+          "q_gruppe": "5",
           "lotsen_anzahl": 1,
           "confirmed": false,
           "from": "RÜB",
@@ -534,7 +575,7 @@
           "routes": [
             "RÜB → HOS"
           ],
-          "q_gruppe": "0",
+          "q_gruppe": "5",
           "draft": "3.8"
         }
       }
@@ -577,7 +618,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "RIX PARTNER",
-          "current_ship_eta_rueb": "2026-06-08 21:50",
+          "current_ship_eta_rueb": "2026-06-08 21:48",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -642,16 +683,16 @@
       }
     },
     {
-      "ship_key": "CLARITY",
-      "ship_name": "CLARITY",
-      "eta_rueb": "2026-06-09 01:04",
+      "ship_key": "BONITA",
+      "ship_name": "BONITA",
+      "eta_rueb": "2026-06-09 00:54",
       "ship_q": 5,
       "assigned_pilot": "Wald, Mark",
       "assigned_pilot_q": 3,
       "assigned_tactical_nr": 8,
       "assigned_abteilungszeit": "2026-06-08 16:39",
       "assigned_current_ship_name": "RIX PARTNER",
-      "assigned_current_ship_eta_rueb": "2026-06-08 21:50",
+      "assigned_current_ship_eta_rueb": "2026-06-08 21:48",
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
@@ -666,10 +707,86 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "RIX PARTNER",
-          "current_ship_eta_rueb": "2026-06-08 21:50",
+          "current_ship_eta_rueb": "2026-06-08 21:48",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
+        {
+          "pilot_name": "Zimmermann, Steffen",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 6,
+          "abteilungszeit": "2026-06-08 16:43",
+          "fahrzeug": "AKKA",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "AKKA",
+          "current_ship_eta_rueb": "2026-06-08 21:46",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Thomsen, Gunnar",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 7,
+          "abteilungszeit": "2026-06-08 16:43",
+          "fahrzeug": "KEY BREEZE",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "KEY BREEZE",
+          "current_ship_eta_rueb": "2026-06-08 21:52",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "4",
+          "time": "Tue Jun 09 00:50:00 CEST 2026",
+          "draft": "3.2",
+          "q_gruppe": "5",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "RÜB → HOS",
+          "routes": [
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "5",
+          "vg": "2",
+          "draft": "3.20",
+          "length_m": "64.35",
+          "beam_m": "10.52",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "H",
+          "pilot_1_name": "Wieden, Christian",
+          "travel_status": "SAILING_NOK",
+          "makler": "UCA",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Eisen und Stahl"
+        }
+      }
+    },
+    {
+      "ship_key": "CLARITY",
+      "ship_name": "CLARITY",
+      "eta_rueb": "2026-06-09 01:04",
+      "ship_q": 5,
+      "assigned_pilot": "Zimmermann, Steffen",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 6,
+      "assigned_abteilungszeit": "2026-06-08 16:43",
+      "assigned_current_ship_name": "AKKA",
+      "assigned_current_ship_eta_rueb": "2026-06-08 21:46",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 2,
+      "candidates": [
         {
           "pilot_name": "Zimmermann, Steffen",
           "pilot_q": 0,
@@ -733,28 +850,6 @@
   ],
   "unassigned_ships": [],
   "unused_pilots": [
-    {
-      "pilot_key": "zimmermann_steffen",
-      "vorname": "Steffen",
-      "nachname": "Zimmermann",
-      "pilot_name": "Zimmermann, Steffen",
-      "abteilungszeit": "2026-06-08 16:43",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 6,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "AKKA",
-      "from": "HOS",
-      "to": "RÜB",
-      "nr": 6,
-      "raw_time": "Mon Jun 08 16:43:00 CEST 2026",
-      "current_ship_name": "AKKA",
-      "current_ship_eta_rueb": "2026-06-08 21:46",
-      "current_ship_q": 0,
-      "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
-    },
     {
       "pilot_key": "thomsen_gunnar",
       "vorname": "Gunnar",
