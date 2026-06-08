@@ -1,51 +1,51 @@
 {
-  "generated_at": "2026-06-08T12:21:18",
+  "generated_at": "2026-06-08T12:23:17",
   "source_meta": {
     "zulauf_kiel_innen": {
       "file": "Zulauf_kiel_innen.json",
-      "generated_at": "2026-06-08 12:20",
+      "generated_at": "2026-06-08 12:22",
       "queue": "kiel_innen",
       "title": "Zulauf vom Kanal in Kiel",
       "count": 11
     },
     "zulauf_kiel_aussen": {
       "file": "Zulauf_kiel_aussen.json",
-      "generated_at": "2026-06-08 12:20",
+      "generated_at": "2026-06-08 12:22",
       "queue": "kiel_aussen",
       "title": "Zulauf von See in Kiel",
       "count": 0
     },
     "zulauf_brb_innen": {
       "file": "Zulauf_brb_innen.json",
-      "generated_at": "2026-06-08 12:20",
+      "generated_at": "2026-06-08 12:22",
       "queue": "brb_innen",
       "title": "Zulauf vom Kanal in Brunsbüttel",
       "count": 13
     },
     "zulauf_brb_aussen": {
       "file": "Zulauf_brb_aussen.json",
-      "generated_at": "2026-06-08 12:20",
+      "generated_at": "2026-06-08 12:22",
       "queue": "brb_aussen",
       "title": "Zulauf von See in Brunsbüttel",
       "count": 10
     },
     "meldungen_kiel": {
       "file": "Meldungen_Kiel.json",
-      "generated_at": "2026-06-08 12:20",
+      "generated_at": "2026-06-08 12:22",
       "count": 46
     },
     "meldungen_ruesterbergen": {
       "file": "Meldungen_Ruesterbergen.json",
-      "generated_at": "2026-06-08 12:20",
-      "count": 3
+      "generated_at": "2026-06-08 12:22",
+      "count": 2
     },
     "seelotsen": {
       "file": "Seelotsen.json",
-      "generated_at": "2026-06-08 12:20",
+      "generated_at": "2026-06-08 12:22",
       "count": 18
     }
   },
-  "count": 62,
+  "count": 61,
   "entries": [
     {
       "ship_key": "AKKA",
@@ -1437,6 +1437,7 @@
           "pilot_order": "NOK-KF",
           "num_of_pilots": "1",
           "num_of_pilots_kf": "1",
+          "pilot_change_off_time": "2026-06-08 12:21",
           "pilot_elbe_see": "false",
           "pilot_nok": "true",
           "pilot_ostsee": "false",
@@ -1607,6 +1608,7 @@
             "pilot_order": "NOK-KF",
             "num_of_pilots": "1",
             "num_of_pilots_kf": "1",
+            "pilot_change_off_time": "2026-06-08 12:21",
             "pilot_elbe_see": "false",
             "pilot_nok": "true",
             "pilot_ostsee": "false",
@@ -1781,8 +1783,8 @@
         "sources": [
           "zulauf_brb_aussen"
         ],
-        "eta_schleuse": "2026-06-08 15:32",
-        "eta_text": "15:32",
+        "eta_schleuse": "2026-06-08 15:44",
+        "eta_text": "15:44",
         "first_seen": "2026-06-08 10:18",
         "queue_key": "brb_aussen",
         "queue_title": "Zulauf von See in Brunsbüttel",
@@ -1900,7 +1902,7 @@
       "zulauf": [
         {
           "name": "EEMS SPRING",
-          "eta_schleuse": "2026-06-08 15:32",
+          "eta_schleuse": "2026-06-08 15:44",
           "first_seen": "2026-06-08 10:18",
           "ship_name": "EEMS SPRING",
           "vg": "3",
@@ -1914,7 +1916,7 @@
           "pilot_required": "true",
           "pilot_foerde": "false",
           "pilot_order": "NOK-ESEE",
-          "eta_text": "15:32",
+          "eta_text": "15:44",
           "destination": "Ostermoorer H",
           "makler": "UCA",
           "preferred_mooring_side": "Stb",
@@ -2380,7 +2382,7 @@
       "name": "ELBRUNNER",
       "sources": [
         "meldungen_kiel",
-        "meldungen_ruesterbergen",
+        "seelotsen",
         "zulauf_kiel_innen"
       ],
       "special_entry": false,
@@ -2389,7 +2391,7 @@
         "special_entry": false,
         "sources": [
           "meldungen_kiel",
-          "meldungen_ruesterbergen",
+          "seelotsen",
           "zulauf_kiel_innen"
         ],
         "route": "HOS → KLT",
@@ -2445,6 +2447,12 @@
         "dangerous_vessel": "-",
         "port_of_departure": "DE HAM (HBG)",
         "port_of_destination": "SE HEL",
+        "assigned_pilots": [
+          "Haala, Klaus Werner"
+        ],
+        "aufgaben": [
+          "Kanalbört"
+        ],
         "lotsen_anzahl_kiel": 1,
         "confirmed_kiel": false,
         "passage_block": {
@@ -2777,21 +2785,20 @@
           "route": "HOS → KLT"
         }
       ],
-      "meldungen_ruesterbergen": [
+      "meldungen_ruesterbergen": [],
+      "seelotsen": [
         {
-          "source": "meldungen_ruesterbergen",
-          "nr": "1",
-          "time": "2026-06-08 12:27",
-          "draft": "7.0",
-          "q_gruppe": "2",
-          "lotsen_anzahl": 1,
-          "confirmed": false,
+          "nr": 5,
+          "time": "2026-06-08 11:05",
+          "pilot_name": "Haala, Klaus Werner",
+          "nachname": "Haala",
+          "vorname": "Klaus Werner",
+          "aufgabe": "Kanalbört",
           "from": "RÜB",
           "to": "HOS",
           "route": "RÜB → HOS"
         }
-      ],
-      "seelotsen": []
+      ]
     },
     {
       "ship_key": "ELBSUN",
@@ -3154,7 +3161,7 @@
       "meldungen_ruesterbergen": [
         {
           "source": "meldungen_ruesterbergen",
-          "nr": "3",
+          "nr": "2",
           "time": "2026-06-08 16:50",
           "draft": "8.5",
           "q_gruppe": "1",
@@ -3877,8 +3884,8 @@
         "sources": [
           "zulauf_brb_aussen"
         ],
-        "eta_schleuse": "2026-06-08 13:42",
-        "eta_text": "13:42",
+        "eta_schleuse": "2026-06-08 13:39",
+        "eta_text": "13:39",
         "first_seen": "2026-06-08 11:06",
         "queue_key": "brb_aussen",
         "queue_title": "Zulauf von See in Brunsbüttel",
@@ -3935,7 +3942,7 @@
       "zulauf": [
         {
           "name": "FAIRPLAY 55",
-          "eta_schleuse": "2026-06-08 13:42",
+          "eta_schleuse": "2026-06-08 13:39",
           "first_seen": "2026-06-08 11:06",
           "ship_name": "FAIRPLAY 55",
           "length_m": "28.360",
@@ -3944,7 +3951,7 @@
           "queue_title": "Zulauf von See in Brunsbüttel",
           "area": "brb",
           "zulauf_richtung": "von_see",
-          "eta_text": "13:42",
+          "eta_text": "13:39",
           "preferred_mooring_side": "Beide",
           "vessel_type": "Schlepper",
           "travel_status": "APPROACHING_NOK_BRB",
@@ -4007,12 +4014,12 @@
         "routes": [
           "HOS → RÜB"
         ],
-        "eta_rueb": "2026-06-08 12:28",
+        "eta_rueb": "2026-06-08 12:29",
         "eta_schleuse": "2026-06-08 17:30",
         "eta_text": "17:30",
         "first_seen": "2026-06-08 08:58",
-        "delta_rueb_schleuse": "05:02",
-        "delta_start_rueb": "03:30",
+        "delta_rueb_schleuse": "05:01",
+        "delta_start_rueb": "03:31",
         "queue_key": "brb_innen",
         "queue_title": "Zulauf vom Kanal in Brunsbüttel",
         "area": "brb",
@@ -4191,10 +4198,10 @@
         {
           "name": "FERESA",
           "eta_schleuse": "2026-06-08 17:30",
-          "eta_rueb": "2026-06-08 12:28",
+          "eta_rueb": "2026-06-08 12:29",
           "first_seen": "2026-06-08 08:58",
-          "delta_rueb_schleuse": "05:02",
-          "delta_start_rueb": "03:30",
+          "delta_rueb_schleuse": "05:01",
+          "delta_start_rueb": "03:31",
           "ship_name": "FERESA",
           "vg": "4",
           "length_m": "119.3",
@@ -8735,7 +8742,7 @@
       "meldungen_ruesterbergen": [
         {
           "source": "meldungen_ruesterbergen",
-          "nr": "2",
+          "nr": "1",
           "time": "2026-06-08 16:40",
           "draft": "5.1",
           "q_gruppe": "5",
@@ -9279,40 +9286,6 @@
       "seelotsen": []
     },
     {
-      "ship_key": "RUEB",
-      "name": "RÜB",
-      "sources": [
-        "seelotsen"
-      ],
-      "special_entry": true,
-      "summary": {
-        "name": "RÜB",
-        "special_entry": true,
-        "sources": [
-          "seelotsen"
-        ],
-        "assigned_pilots": [
-          "Haala, Klaus Werner"
-        ],
-        "aufgaben": [
-          "Kanalbört"
-        ]
-      },
-      "zulauf": [],
-      "meldungen_kiel": [],
-      "meldungen_ruesterbergen": [],
-      "seelotsen": [
-        {
-          "nr": 5,
-          "time": "2026-06-08 11:05",
-          "pilot_name": "Haala, Klaus Werner",
-          "nachname": "Haala",
-          "vorname": "Klaus Werner",
-          "aufgabe": "Kanalbört"
-        }
-      ]
-    },
-    {
       "ship_key": "SEHESTEDT",
       "name": "SEHESTEDT",
       "sources": [
@@ -9806,6 +9779,9 @@
         },
         "weichenzeiten": {
           "ost": {
+            "audorf_rade": {
+              "in": "2026-06-08 12:21"
+            },
             "koenigsfoerde": {
               "in": "2026-06-08 11:38",
               "out": "2026-06-08 11:43"
@@ -9851,6 +9827,9 @@
           "preferred_mooring_side": "Bb",
           "weichenzeiten": {
             "ost": {
+              "audorf_rade": {
+                "in": "2026-06-08 12:21"
+              },
               "koenigsfoerde": {
                 "in": "2026-06-08 11:38",
                 "out": "2026-06-08 11:43"
