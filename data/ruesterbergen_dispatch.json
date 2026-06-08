@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-08T16:49:20",
+  "generated_at": "2026-06-08T16:51:21",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 2,
     "pilots_total": 12,
-    "pilots_dispatchable": 8,
-    "pilots_visible_only": 4,
+    "pilots_dispatchable": 9,
+    "pilots_visible_only": 3,
     "assignments": 2,
     "unassigned_ships": 0,
-    "unused_pilots": 6
+    "unused_pilots": 7
   },
   "ships": [
     {
@@ -173,16 +173,16 @@
       "q_source": "q_gruppen_lotsen.entries",
       "pilot_tactical_nr": 15,
       "aufgabe": "Kanalbört",
-      "fahrzeug": "NETA A.",
-      "from": "HOS",
-      "to": "RÜB",
+      "fahrzeug": "RÜB",
       "nr": 15,
       "raw_time": "Mon Jun 08 11:08:00 CEST 2026",
-      "current_ship_name": "NETA A.",
+      "current_ship_name": "RÜB",
+      "current_ship_eta_rueb": "2026-06-08 11:08",
       "current_ship_q": 0,
-      "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
+      "current_ship_route": "RÜB",
+      "current_ship_source": "special.already_in_rueb",
+      "availability_kind": "already_in_rueb",
+      "availability_hint": "Lotse gilt als bereits in RÜB"
     },
     {
       "pilot_key": "crotogino_philipp",
@@ -222,7 +222,7 @@
       "nr": 13,
       "raw_time": "Mon Jun 08 11:42:00 CEST 2026",
       "current_ship_name": "MADICKEN",
-      "current_ship_eta_rueb": "2026-06-08 16:59",
+      "current_ship_eta_rueb": "2026-06-08 17:01",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -426,6 +426,27 @@
       "availability_kind": "merged_eta"
     },
     {
+      "pilot_key": "wille_christian",
+      "vorname": "Christian",
+      "nachname": "Wille",
+      "pilot_name": "Wille, Christian",
+      "abteilungszeit": "2026-06-08 11:08",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 15,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "RÜB",
+      "nr": 15,
+      "raw_time": "Mon Jun 08 11:08:00 CEST 2026",
+      "current_ship_name": "RÜB",
+      "current_ship_eta_rueb": "2026-06-08 11:08",
+      "current_ship_q": 0,
+      "current_ship_route": "RÜB",
+      "current_ship_source": "special.already_in_rueb",
+      "availability_kind": "already_in_rueb",
+      "availability_hint": "Lotse gilt als bereits in RÜB"
+    },
+    {
       "pilot_key": "crotogino_philipp",
       "vorname": "Philipp",
       "nachname": "Crotogino",
@@ -463,7 +484,7 @@
       "nr": 13,
       "raw_time": "Mon Jun 08 11:42:00 CEST 2026",
       "current_ship_name": "MADICKEN",
-      "current_ship_eta_rueb": "2026-06-08 16:59",
+      "current_ship_eta_rueb": "2026-06-08 17:01",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -560,21 +581,6 @@
   ],
   "visible_but_not_dispatchable_pilots": [
     {
-      "pilot_key": "wille_christian",
-      "pilot_name": "Wille, Christian",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 15,
-      "abteilungszeit": "2026-06-08 11:08",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "NETA A.",
-      "from": "HOS",
-      "to": "RÜB",
-      "current_ship_name": "NETA A.",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    },
-    {
       "pilot_key": "wald_mark",
       "pilot_name": "Wald, Mark",
       "pilot_q": 3,
@@ -635,7 +641,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 4,
+      "candidate_count": 5,
       "candidates": [
         {
           "pilot_name": "Wachs, Merten",
@@ -649,6 +655,19 @@
           "current_ship_eta_rueb": "2026-06-08 16:35",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Wille, Christian",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 15,
+          "abteilungszeit": "2026-06-08 11:08",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-06-08 11:08",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
         },
         {
           "pilot_name": "Crotogino, Philipp",
@@ -672,7 +691,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "MADICKEN",
-          "current_ship_eta_rueb": "2026-06-08 16:59",
+          "current_ship_eta_rueb": "2026-06-08 17:01",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -774,7 +793,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 7,
+      "candidate_count": 8,
       "candidates": [
         {
           "pilot_name": "Stoislow, Alexander",
@@ -788,6 +807,19 @@
           "current_ship_eta_rueb": "2026-06-08 16:31",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Wille, Christian",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 15,
+          "abteilungszeit": "2026-06-08 11:08",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-06-08 11:08",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
         },
         {
           "pilot_name": "Crotogino, Philipp",
@@ -811,7 +843,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "MADICKEN",
-          "current_ship_eta_rueb": "2026-06-08 16:59",
+          "current_ship_eta_rueb": "2026-06-08 17:01",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -906,6 +938,27 @@
   "unassigned_ships": [],
   "unused_pilots": [
     {
+      "pilot_key": "wille_christian",
+      "vorname": "Christian",
+      "nachname": "Wille",
+      "pilot_name": "Wille, Christian",
+      "abteilungszeit": "2026-06-08 11:08",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 15,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "RÜB",
+      "nr": 15,
+      "raw_time": "Mon Jun 08 11:08:00 CEST 2026",
+      "current_ship_name": "RÜB",
+      "current_ship_eta_rueb": "2026-06-08 11:08",
+      "current_ship_q": 0,
+      "current_ship_route": "RÜB",
+      "current_ship_source": "special.already_in_rueb",
+      "availability_kind": "already_in_rueb",
+      "availability_hint": "Lotse gilt als bereits in RÜB"
+    },
+    {
       "pilot_key": "crotogino_philipp",
       "vorname": "Philipp",
       "nachname": "Crotogino",
@@ -943,7 +996,7 @@
       "nr": 13,
       "raw_time": "Mon Jun 08 11:42:00 CEST 2026",
       "current_ship_name": "MADICKEN",
-      "current_ship_eta_rueb": "2026-06-08 16:59",
+      "current_ship_eta_rueb": "2026-06-08 17:01",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
