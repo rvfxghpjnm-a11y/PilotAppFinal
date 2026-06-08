@@ -1,47 +1,47 @@
 {
-  "generated_at": "2026-06-08T07:23:20",
+  "generated_at": "2026-06-08T07:25:16",
   "source_meta": {
     "zulauf_kiel_innen": {
       "file": "Zulauf_kiel_innen.json",
-      "generated_at": "2026-06-08 07:22",
+      "generated_at": "2026-06-08 07:24",
       "queue": "kiel_innen",
       "title": "Zulauf vom Kanal in Kiel",
       "count": 8
     },
     "zulauf_kiel_aussen": {
       "file": "Zulauf_kiel_aussen.json",
-      "generated_at": "2026-06-08 07:22",
+      "generated_at": "2026-06-08 07:24",
       "queue": "kiel_aussen",
       "title": "Zulauf von See in Kiel",
       "count": 0
     },
     "zulauf_brb_innen": {
       "file": "Zulauf_brb_innen.json",
-      "generated_at": "2026-06-08 07:22",
+      "generated_at": "2026-06-08 07:24",
       "queue": "brb_innen",
       "title": "Zulauf vom Kanal in Brunsbüttel",
       "count": 9
     },
     "zulauf_brb_aussen": {
       "file": "Zulauf_brb_aussen.json",
-      "generated_at": "2026-06-08 07:22",
+      "generated_at": "2026-06-08 07:24",
       "queue": "brb_aussen",
       "title": "Zulauf von See in Brunsbüttel",
       "count": 6
     },
     "meldungen_kiel": {
       "file": "Meldungen_Kiel.json",
-      "generated_at": "2026-06-08 07:22",
+      "generated_at": "2026-06-08 07:24",
       "count": 47
     },
     "meldungen_ruesterbergen": {
       "file": "Meldungen_Ruesterbergen.json",
-      "generated_at": "2026-06-08 07:22",
-      "count": 6
+      "generated_at": "2026-06-08 07:24",
+      "count": 5
     },
     "seelotsen": {
       "file": "Seelotsen.json",
-      "generated_at": "2026-06-08 07:22",
+      "generated_at": "2026-06-08 07:24",
       "count": 13
     }
   },
@@ -161,7 +161,7 @@
       "name": "AMBERLAND",
       "sources": [
         "meldungen_kiel",
-        "meldungen_ruesterbergen",
+        "seelotsen",
         "zulauf_kiel_innen"
       ],
       "special_entry": false,
@@ -170,7 +170,7 @@
         "special_entry": false,
         "sources": [
           "meldungen_kiel",
-          "meldungen_ruesterbergen",
+          "seelotsen",
           "zulauf_kiel_innen"
         ],
         "route": "HOS → KLT",
@@ -205,7 +205,7 @@
         "pilot_foerde": "true",
         "pilot_order": "KS-NOK-ESEE-KF",
         "pilot_status": "U",
-        "pilot_1_name": "Wilczynski, Fabian",
+        "pilot_1_name": "Kordt, Remo",
         "num_of_pilots": "1",
         "canal_steerer_required": "true",
         "num_of_steerer": "1",
@@ -225,6 +225,12 @@
         "dangerous_vessel": "-",
         "port_of_departure": "FR BOL",
         "port_of_destination": "SE OXE",
+        "assigned_pilots": [
+          "Kordt, Remo"
+        ],
+        "aufgaben": [
+          "Kanalbört"
+        ],
         "lotsen_anzahl_kiel": 1,
         "confirmed_kiel": false,
         "passage_block": {
@@ -278,8 +284,8 @@
           "pilot_ostsee": "false",
           "pilot_uebersee": "false",
           "pilot_boesch": "false",
-          "pilot_1_id": "447029655194000080",
-          "pilot_1_name": "Wilczynski, Fabian"
+          "pilot_1_id": "370049604396000081",
+          "pilot_1_name": "Kordt, Remo"
         },
         "steering_block": {
           "canal_steerer": "true",
@@ -403,7 +409,7 @@
               }
             }
           },
-          "pilot_1_name": "Wilczynski, Fabian",
+          "pilot_1_name": "Kordt, Remo",
           "steerer_1_name": "Schütz",
           "vessel_type": "Trocken-Mz-Frachter",
           "travel_direction": "KF",
@@ -467,8 +473,8 @@
             "pilot_ostsee": "false",
             "pilot_uebersee": "false",
             "pilot_boesch": "false",
-            "pilot_1_id": "447029655194000080",
-            "pilot_1_name": "Wilczynski, Fabian"
+            "pilot_1_id": "370049604396000081",
+            "pilot_1_name": "Kordt, Remo"
           },
           "steering": {
             "canal_steerer": "true",
@@ -528,21 +534,20 @@
           "route": "HOS → KLT"
         }
       ],
-      "meldungen_ruesterbergen": [
+      "meldungen_ruesterbergen": [],
+      "seelotsen": [
         {
-          "source": "meldungen_ruesterbergen",
-          "nr": "1",
-          "time": "2026-06-08 07:40",
-          "draft": "6.0",
-          "q_gruppe": "4",
-          "lotsen_anzahl": 1,
-          "confirmed": false,
+          "nr": 10,
+          "time": "2026-06-08 01:21",
+          "pilot_name": "Kordt, Remo",
+          "nachname": "Kordt",
+          "vorname": "Remo",
+          "aufgabe": "Kanalbört",
           "from": "RÜB",
           "to": "HOS",
           "route": "RÜB → HOS"
         }
-      ],
-      "seelotsen": []
+      ]
     },
     {
       "ship_key": "AMS RETRIEVER",
@@ -768,8 +773,8 @@
         "sources": [
           "zulauf_brb_innen"
         ],
-        "eta_schleuse": "2026-06-08 07:37",
-        "eta_text": "07:37",
+        "eta_schleuse": "2026-06-08 07:38",
+        "eta_text": "07:38",
         "first_seen": "2026-06-08 06:54",
         "queue_key": "brb_innen",
         "queue_title": "Zulauf vom Kanal in Brunsbüttel",
@@ -870,7 +875,7 @@
       "zulauf": [
         {
           "name": "BRANDGANS",
-          "eta_schleuse": "2026-06-08 07:37",
+          "eta_schleuse": "2026-06-08 07:38",
           "first_seen": "2026-06-08 06:54",
           "ship_name": "BRANDGANS",
           "vg": "1",
@@ -882,7 +887,7 @@
           "area": "brb",
           "zulauf_richtung": "vom_kanal",
           "pilot_foerde": "false",
-          "eta_text": "07:37",
+          "eta_text": "07:38",
           "destination": "Strecke NOK",
           "weichenzeiten": {
             "west": {
@@ -1819,7 +1824,7 @@
       "meldungen_ruesterbergen": [
         {
           "source": "meldungen_ruesterbergen",
-          "nr": "3",
+          "nr": "2",
           "time": "2026-06-08 11:00",
           "draft": "3.7",
           "q_gruppe": "5",
@@ -2195,7 +2200,7 @@
       "meldungen_ruesterbergen": [
         {
           "source": "meldungen_ruesterbergen",
-          "nr": "6",
+          "nr": "5",
           "time": "2026-06-08 12:27",
           "draft": "7.0",
           "q_gruppe": "2",
@@ -2959,7 +2964,7 @@
       "meldungen_ruesterbergen": [
         {
           "source": "meldungen_ruesterbergen",
-          "nr": "5",
+          "nr": "4",
           "time": "2026-06-08 12:25",
           "draft": "7.7",
           "q_gruppe": "1",
@@ -4358,7 +4363,7 @@
       "meldungen_kiel": [
         {
           "source": "meldungen_kiel",
-          "nr": "2",
+          "nr": "3",
           "time": "2026-06-08 08:00",
           "draft": "0.1",
           "q_gruppe": "4",
@@ -5982,7 +5987,7 @@
       "meldungen_ruesterbergen": [
         {
           "source": "meldungen_ruesterbergen",
-          "nr": "4",
+          "nr": "3",
           "time": "2026-06-08 12:15",
           "draft": "4.4",
           "q_gruppe": "4",
@@ -6609,7 +6614,7 @@
         "pilot_foerde": "false",
         "pilot_order": "NOK",
         "pilot_status": "H",
-        "pilot_1_name": "Gehrig, Matthias",
+        "pilot_1_name": "Dalecki, Niklas",
         "num_of_pilots": "1",
         "canal_steerer_required": "false",
         "travel_direction": "KF",
@@ -6677,8 +6682,8 @@
           "pilot_ostsee": "false",
           "pilot_uebersee": "false",
           "pilot_boesch": "false",
-          "pilot_1_id": "370768746955000082",
-          "pilot_1_name": "Gehrig, Matthias"
+          "pilot_1_id": "370050201248000081",
+          "pilot_1_name": "Dalecki, Niklas"
         },
         "steering_block": {
           "canal_steerer": "false",
@@ -6733,7 +6738,8 @@
               "out": "2026-06-08 06:44"
             },
             "breiholz": {
-              "in": "2026-06-08 07:15"
+              "in": "2026-06-08 07:15",
+              "out": "2026-06-08 07:22"
             }
           }
         }
@@ -6785,11 +6791,12 @@
                 "out": "2026-06-08 06:44"
               },
               "breiholz": {
-                "in": "2026-06-08 07:15"
+                "in": "2026-06-08 07:15",
+                "out": "2026-06-08 07:22"
               }
             }
           },
-          "pilot_1_name": "Gehrig, Matthias",
+          "pilot_1_name": "Dalecki, Niklas",
           "vessel_type": "Trocken-Mz-Frachter",
           "travel_direction": "KF",
           "travel_status": "SAILING_NOK",
@@ -6850,8 +6857,8 @@
             "pilot_ostsee": "false",
             "pilot_uebersee": "false",
             "pilot_boesch": "false",
-            "pilot_1_id": "370768746955000082",
-            "pilot_1_name": "Gehrig, Matthias"
+            "pilot_1_id": "370050201248000081",
+            "pilot_1_name": "Dalecki, Niklas"
           },
           "steering": {
             "canal_steerer": "false",
@@ -6890,7 +6897,7 @@
       "meldungen_ruesterbergen": [
         {
           "source": "meldungen_ruesterbergen",
-          "nr": "2",
+          "nr": "1",
           "time": "2026-06-08 07:45",
           "draft": "5.5",
           "q_gruppe": "5",
@@ -7238,8 +7245,7 @@
           "seelotsen"
         ],
         "assigned_pilots": [
-          "Dalecki, Niklas",
-          "Kordt, Remo"
+          "Dalecki, Niklas"
         ],
         "aufgaben": [
           "Kanalbört"
@@ -7255,14 +7261,6 @@
           "pilot_name": "Dalecki, Niklas",
           "nachname": "Dalecki",
           "vorname": "Niklas",
-          "aufgabe": "Kanalbört"
-        },
-        {
-          "nr": 10,
-          "time": "2026-06-08 01:21",
-          "pilot_name": "Kordt, Remo",
-          "nachname": "Kordt",
-          "vorname": "Remo",
           "aufgabe": "Kanalbört"
         }
       ]
@@ -7348,7 +7346,7 @@
       "meldungen_kiel": [
         {
           "source": "meldungen_kiel",
-          "nr": "3",
+          "nr": "2",
           "time": "2026-06-08 08:00",
           "draft": "1.0",
           "q_gruppe": "1",
@@ -7389,8 +7387,8 @@
         "sources": [
           "zulauf_brb_aussen"
         ],
-        "eta_schleuse": "2026-06-08 10:54",
-        "eta_text": "10:54",
+        "eta_schleuse": "2026-06-08 11:09",
+        "eta_text": "11:09",
         "first_seen": "2026-06-08 06:32",
         "queue_key": "brb_aussen",
         "queue_title": "Zulauf von See in Brunsbüttel",
@@ -7496,7 +7494,7 @@
       "zulauf": [
         {
           "name": "STEINBURG",
-          "eta_schleuse": "2026-06-08 10:54",
+          "eta_schleuse": "2026-06-08 11:09",
           "first_seen": "2026-06-08 06:32",
           "ship_name": "STEINBURG",
           "vg": "2",
@@ -7509,7 +7507,7 @@
           "zulauf_richtung": "von_see",
           "pilot_required": "false",
           "pilot_foerde": "false",
-          "eta_text": "10:54",
+          "eta_text": "11:09",
           "destination": "Ölhafen",
           "makler": "UCA",
           "preferred_mooring_side": "Beide",
