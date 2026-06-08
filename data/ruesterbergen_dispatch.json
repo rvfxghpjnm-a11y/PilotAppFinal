@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-08T21:11:20",
+  "generated_at": "2026-06-08T21:13:24",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 4,
     "pilots_total": 7,
-    "pilots_dispatchable": 6,
-    "pilots_visible_only": 1,
+    "pilots_dispatchable": 7,
+    "pilots_visible_only": 0,
     "assignments": 4,
     "unassigned_ships": 0,
-    "unused_pilots": 2
+    "unused_pilots": 3
   },
   "ships": [
     {
@@ -305,9 +305,10 @@
       "nr": 3,
       "raw_time": "Mon Jun 08 19:41:00 CEST 2026",
       "current_ship_name": "DELFBORG",
+      "current_ship_eta_rueb": "2026-06-09 01:06",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
@@ -445,6 +446,28 @@
       "availability_kind": "merged_eta"
     },
     {
+      "pilot_key": "bachholz_carsten",
+      "vorname": "Carsten",
+      "nachname": "Bachholz",
+      "pilot_name": "Bachholz, Carsten",
+      "abteilungszeit": "2026-06-08 19:41",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 3,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "DELFBORG",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 3,
+      "raw_time": "Mon Jun 08 19:41:00 CEST 2026",
+      "current_ship_name": "DELFBORG",
+      "current_ship_eta_rueb": "2026-06-09 01:06",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
       "pilot_key": "krahn_georg",
       "vorname": "Georg",
       "nachname": "Krahn",
@@ -467,23 +490,7 @@
       "availability_kind": "merged_eta"
     }
   ],
-  "visible_but_not_dispatchable_pilots": [
-    {
-      "pilot_key": "bachholz_carsten",
-      "pilot_name": "Bachholz, Carsten",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 3,
-      "abteilungszeit": "2026-06-08 19:41",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "DELFBORG",
-      "from": "HOS",
-      "to": "RÜB",
-      "current_ship_name": "DELFBORG",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    }
-  ],
+  "visible_but_not_dispatchable_pilots": [],
   "assignments": [
     {
       "ship_key": "MARIA G",
@@ -568,6 +575,15 @@
         }
       ],
       "excluded": [
+        {
+          "pilot_name": "Bachholz, Carsten",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "DELFBORG",
+          "pilot_current_ship_eta_rueb": "2026-06-09 01:06",
+          "ship_eta_rueb": "2026-06-08 22:30",
+          "availability_kind": "merged_eta"
+        },
         {
           "pilot_name": "Krahn, Georg",
           "pilot_tactical_nr": 2,
@@ -670,6 +686,15 @@
       ],
       "excluded": [
         {
+          "pilot_name": "Bachholz, Carsten",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "DELFBORG",
+          "pilot_current_ship_eta_rueb": "2026-06-09 01:06",
+          "ship_eta_rueb": "2026-06-08 23:19",
+          "availability_kind": "merged_eta"
+        },
+        {
           "pilot_name": "Krahn, Georg",
           "pilot_tactical_nr": 2,
           "reason": "kommt nicht rechtzeitig in RÜB an",
@@ -770,6 +795,15 @@
       ],
       "excluded": [
         {
+          "pilot_name": "Bachholz, Carsten",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "DELFBORG",
+          "pilot_current_ship_eta_rueb": "2026-06-09 01:06",
+          "ship_eta_rueb": "2026-06-09 01:04",
+          "availability_kind": "merged_eta"
+        },
+        {
           "pilot_name": "Krahn, Georg",
           "pilot_tactical_nr": 2,
           "reason": "kommt nicht rechtzeitig in RÜB an",
@@ -826,7 +860,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 2,
+      "candidate_count": 3,
       "candidates": [
         {
           "pilot_name": "Zimmermann, Steffen",
@@ -851,6 +885,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "KEY BREEZE",
           "current_ship_eta_rueb": "2026-06-08 21:51",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Bachholz, Carsten",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 3,
+          "abteilungszeit": "2026-06-08 19:41",
+          "fahrzeug": "DELFBORG",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "DELFBORG",
+          "current_ship_eta_rueb": "2026-06-09 01:06",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
@@ -919,6 +966,28 @@
       "raw_time": "Mon Jun 08 16:43:00 CEST 2026",
       "current_ship_name": "KEY BREEZE",
       "current_ship_eta_rueb": "2026-06-08 21:51",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "bachholz_carsten",
+      "vorname": "Carsten",
+      "nachname": "Bachholz",
+      "pilot_name": "Bachholz, Carsten",
+      "abteilungszeit": "2026-06-08 19:41",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 3,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "DELFBORG",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 3,
+      "raw_time": "Mon Jun 08 19:41:00 CEST 2026",
+      "current_ship_name": "DELFBORG",
+      "current_ship_eta_rueb": "2026-06-09 01:06",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
