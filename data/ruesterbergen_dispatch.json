@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-08T14:09:20",
+  "generated_at": "2026-06-08T14:11:18",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 4,
     "pilots_total": 9,
-    "pilots_dispatchable": 8,
-    "pilots_visible_only": 1,
+    "pilots_dispatchable": 9,
+    "pilots_visible_only": 0,
     "assignments": 4,
     "unassigned_ships": 0,
-    "unused_pilots": 4
+    "unused_pilots": 5
   },
   "ships": [
     {
@@ -291,17 +291,16 @@
       "q_source": "q_gruppen_lotsen.entries",
       "pilot_tactical_nr": 9,
       "aufgabe": "Kanalbört",
-      "fahrzeug": "SOUTH",
-      "from": "HOS",
-      "to": "RÜB",
+      "fahrzeug": "RÜB",
       "nr": 9,
       "raw_time": "Mon Jun 08 08:53:00 CEST 2026",
-      "current_ship_name": "SOUTH",
-      "current_ship_eta_rueb": "2026-06-08 14:12",
+      "current_ship_name": "RÜB",
+      "current_ship_eta_rueb": "2026-06-08 08:53",
       "current_ship_q": 0,
-      "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
+      "current_ship_route": "RÜB",
+      "current_ship_source": "special.already_in_rueb",
+      "availability_kind": "already_in_rueb",
+      "availability_hint": "Lotse gilt als bereits in RÜB"
     },
     {
       "pilot_key": "haala_klaus werner",
@@ -340,10 +339,11 @@
       "to": "RÜB",
       "nr": 4,
       "raw_time": "Mon Jun 08 11:08:00 CEST 2026",
-      "current_ship_name": "NETA A.",
+      "current_ship_name": "NETA A",
+      "current_ship_eta_rueb": "2026-06-08 16:54",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta"
     },
     {
@@ -489,17 +489,16 @@
       "q_source": "q_gruppen_lotsen.entries",
       "pilot_tactical_nr": 9,
       "aufgabe": "Kanalbört",
-      "fahrzeug": "SOUTH",
-      "from": "HOS",
-      "to": "RÜB",
+      "fahrzeug": "RÜB",
       "nr": 9,
       "raw_time": "Mon Jun 08 08:53:00 CEST 2026",
-      "current_ship_name": "SOUTH",
-      "current_ship_eta_rueb": "2026-06-08 14:12",
+      "current_ship_name": "RÜB",
+      "current_ship_eta_rueb": "2026-06-08 08:53",
       "current_ship_q": 0,
-      "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
+      "current_ship_route": "RÜB",
+      "current_ship_source": "special.already_in_rueb",
+      "availability_kind": "already_in_rueb",
+      "availability_hint": "Lotse gilt als bereits in RÜB"
     },
     {
       "pilot_key": "haala_klaus werner",
@@ -521,6 +520,28 @@
       "current_ship_q": 2,
       "current_ship_route": "RÜB → HOS",
       "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "wille_christian",
+      "vorname": "Christian",
+      "nachname": "Wille",
+      "pilot_name": "Wille, Christian",
+      "abteilungszeit": "2026-06-08 11:08",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 4,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "NETA A.",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 4,
+      "raw_time": "Mon Jun 08 11:08:00 CEST 2026",
+      "current_ship_name": "NETA A",
+      "current_ship_eta_rueb": "2026-06-08 16:54",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta"
     },
     {
@@ -568,23 +589,7 @@
       "availability_kind": "merged_eta"
     }
   ],
-  "visible_but_not_dispatchable_pilots": [
-    {
-      "pilot_key": "wille_christian",
-      "pilot_name": "Wille, Christian",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 4,
-      "abteilungszeit": "2026-06-08 11:08",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "NETA A.",
-      "from": "HOS",
-      "to": "RÜB",
-      "current_ship_name": "NETA A.",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    }
-  ],
+  "visible_but_not_dispatchable_pilots": [],
   "assignments": [
     {
       "ship_key": "RLO MERCHANT",
@@ -659,13 +664,13 @@
           "pilot_q": 0,
           "pilot_tactical_nr": 9,
           "abteilungszeit": "2026-06-08 08:53",
-          "fahrzeug": "SOUTH",
-          "to": "RÜB",
+          "fahrzeug": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "SOUTH",
-          "current_ship_eta_rueb": "2026-06-08 14:12",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-06-08 08:53",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
         },
         {
           "pilot_name": "Haala, Klaus Werner",
@@ -682,6 +687,15 @@
         }
       ],
       "excluded": [
+        {
+          "pilot_name": "Wille, Christian",
+          "pilot_tactical_nr": 4,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "NETA A",
+          "pilot_current_ship_eta_rueb": "2026-06-08 16:54",
+          "ship_eta_rueb": "2026-06-08 16:37",
+          "availability_kind": "merged_eta"
+        },
         {
           "pilot_name": "Crotogino, Philipp",
           "pilot_tactical_nr": 3,
@@ -781,13 +795,13 @@
           "pilot_q": 0,
           "pilot_tactical_nr": 9,
           "abteilungszeit": "2026-06-08 08:53",
-          "fahrzeug": "SOUTH",
-          "to": "RÜB",
+          "fahrzeug": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "SOUTH",
-          "current_ship_eta_rueb": "2026-06-08 14:12",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-06-08 08:53",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
         },
         {
           "pilot_name": "Haala, Klaus Werner",
@@ -810,6 +824,15 @@
           "reason": "Quali passt nicht (4 > 1)",
           "pilot_q": 4,
           "ship_q": 1
+        },
+        {
+          "pilot_name": "Wille, Christian",
+          "pilot_tactical_nr": 4,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "NETA A",
+          "pilot_current_ship_eta_rueb": "2026-06-08 16:54",
+          "ship_eta_rueb": "2026-06-08 16:40",
+          "availability_kind": "merged_eta"
         },
         {
           "pilot_name": "Crotogino, Philipp",
@@ -911,13 +934,13 @@
           "pilot_q": 0,
           "pilot_tactical_nr": 9,
           "abteilungszeit": "2026-06-08 08:53",
-          "fahrzeug": "SOUTH",
-          "to": "RÜB",
+          "fahrzeug": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "SOUTH",
-          "current_ship_eta_rueb": "2026-06-08 14:12",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-06-08 08:53",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
         },
         {
           "pilot_name": "Haala, Klaus Werner",
@@ -934,6 +957,15 @@
         }
       ],
       "excluded": [
+        {
+          "pilot_name": "Wille, Christian",
+          "pilot_tactical_nr": 4,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "NETA A",
+          "pilot_current_ship_eta_rueb": "2026-06-08 16:54",
+          "ship_eta_rueb": "2026-06-08 16:43",
+          "availability_kind": "merged_eta"
+        },
         {
           "pilot_name": "Crotogino, Philipp",
           "pilot_tactical_nr": 3,
@@ -996,25 +1028,26 @@
       "assigned_pilot_q": 0,
       "assigned_tactical_nr": 9,
       "assigned_abteilungszeit": "2026-06-08 08:53",
-      "assigned_current_ship_name": "SOUTH",
-      "assigned_current_ship_eta_rueb": "2026-06-08 14:12",
-      "assigned_current_ship_source": "schiffe_merged.seelotsen",
-      "assigned_availability_kind": "merged_eta",
+      "assigned_current_ship_name": "RÜB",
+      "assigned_current_ship_eta_rueb": "2026-06-08 08:53",
+      "assigned_current_ship_source": "special.already_in_rueb",
+      "assigned_availability_kind": "already_in_rueb",
+      "assigned_availability_hint": "Lotse gilt als bereits in RÜB",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 4,
+      "candidate_count": 5,
       "candidates": [
         {
           "pilot_name": "Wachs, Merten",
           "pilot_q": 0,
           "pilot_tactical_nr": 9,
           "abteilungszeit": "2026-06-08 08:53",
-          "fahrzeug": "SOUTH",
-          "to": "RÜB",
+          "fahrzeug": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "SOUTH",
-          "current_ship_eta_rueb": "2026-06-08 14:12",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-06-08 08:53",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
         },
         {
           "pilot_name": "Haala, Klaus Werner",
@@ -1027,6 +1060,19 @@
           "current_ship_name": "ELBRUNNER",
           "current_ship_eta_rueb": "2026-06-08 12:16",
           "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Wille, Christian",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 4,
+          "abteilungszeit": "2026-06-08 11:08",
+          "fahrzeug": "NETA A.",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "NETA A",
+          "current_ship_eta_rueb": "2026-06-08 16:54",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
           "availability_kind": "merged_eta"
         },
         {
@@ -1143,6 +1189,28 @@
       "current_ship_q": 2,
       "current_ship_route": "RÜB → HOS",
       "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "wille_christian",
+      "vorname": "Christian",
+      "nachname": "Wille",
+      "pilot_name": "Wille, Christian",
+      "abteilungszeit": "2026-06-08 11:08",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 4,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "NETA A.",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 4,
+      "raw_time": "Mon Jun 08 11:08:00 CEST 2026",
+      "current_ship_name": "NETA A",
+      "current_ship_eta_rueb": "2026-06-08 16:54",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta"
     },
     {
