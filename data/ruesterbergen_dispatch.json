@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-09T05:27:14",
+  "generated_at": "2026-06-09T05:29:15",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 3,
     "pilots_total": 9,
-    "pilots_dispatchable": 5,
-    "pilots_visible_only": 4,
+    "pilots_dispatchable": 6,
+    "pilots_visible_only": 3,
     "assignments": 3,
     "unassigned_ships": 0,
-    "unused_pilots": 2
+    "unused_pilots": 3
   },
   "ships": [
     {
@@ -217,7 +217,7 @@
       "nr": 11,
       "raw_time": "Tue Jun 09 00:46:00 CEST 2026",
       "current_ship_name": "BIANCA RAMBOW",
-      "current_ship_eta_rueb": "2026-06-09 05:35",
+      "current_ship_eta_rueb": "2026-06-09 05:34",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -261,9 +261,10 @@
       "nr": 7,
       "raw_time": "Tue Jun 09 03:02:00 CEST 2026",
       "current_ship_name": "KILSTROOM",
+      "current_ship_eta_rueb": "2026-06-09 08:59",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
@@ -413,7 +414,7 @@
       "nr": 11,
       "raw_time": "Tue Jun 09 00:46:00 CEST 2026",
       "current_ship_name": "BIANCA RAMBOW",
-      "current_ship_eta_rueb": "2026-06-09 05:35",
+      "current_ship_eta_rueb": "2026-06-09 05:34",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -442,6 +443,28 @@
       "availability_kind": "merged_eta"
     },
     {
+      "pilot_key": "thiel_thomas",
+      "vorname": "Thomas",
+      "nachname": "Thiel",
+      "pilot_name": "Thiel, Thomas",
+      "abteilungszeit": "2026-06-09 03:02",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 7,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "KILSTROOM",
+      "from": "HOR",
+      "to": "RÜB",
+      "nr": 7,
+      "raw_time": "Tue Jun 09 03:02:00 CEST 2026",
+      "current_ship_name": "KILSTROOM",
+      "current_ship_eta_rueb": "2026-06-09 08:59",
+      "current_ship_q": 0,
+      "current_ship_route": "HOR → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
       "pilot_key": "lüttge_sebastian",
       "vorname": "Sebastian",
       "nachname": "Lüttge",
@@ -465,21 +488,6 @@
     }
   ],
   "visible_but_not_dispatchable_pilots": [
-    {
-      "pilot_key": "thiel_thomas",
-      "pilot_name": "Thiel, Thomas",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 7,
-      "abteilungszeit": "2026-06-09 03:02",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "KILSTROOM",
-      "from": "HOR",
-      "to": "RÜB",
-      "current_ship_name": "KILSTROOM",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    },
     {
       "pilot_key": "borggräfe_hark",
       "pilot_name": "Borggräfe, Hark",
@@ -541,7 +549,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 4,
+      "candidate_count": 5,
       "candidates": [
         {
           "pilot_name": "Krahn, Georg",
@@ -578,7 +586,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "BIANCA RAMBOW",
-          "current_ship_eta_rueb": "2026-06-09 05:35",
+          "current_ship_eta_rueb": "2026-06-09 05:34",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -592,6 +600,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "GINGA HAMMERHEAD",
           "current_ship_eta_rueb": "2026-06-09 05:56",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Thiel, Thomas",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 7,
+          "abteilungszeit": "2026-06-09 03:02",
+          "fahrzeug": "KILSTROOM",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "KILSTROOM",
+          "current_ship_eta_rueb": "2026-06-09 08:59",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
@@ -655,7 +676,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 4,
+      "candidate_count": 5,
       "candidates": [
         {
           "pilot_name": "Hüpers, Peter",
@@ -679,7 +700,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "BIANCA RAMBOW",
-          "current_ship_eta_rueb": "2026-06-09 05:35",
+          "current_ship_eta_rueb": "2026-06-09 05:34",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -693,6 +714,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "GINGA HAMMERHEAD",
           "current_ship_eta_rueb": "2026-06-09 05:56",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Thiel, Thomas",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 7,
+          "abteilungszeit": "2026-06-09 03:02",
+          "fahrzeug": "KILSTROOM",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "KILSTROOM",
+          "current_ship_eta_rueb": "2026-06-09 08:59",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -754,11 +788,11 @@
       "assigned_tactical_nr": 11,
       "assigned_abteilungszeit": "2026-06-09 00:46",
       "assigned_current_ship_name": "BIANCA RAMBOW",
-      "assigned_current_ship_eta_rueb": "2026-06-09 05:35",
+      "assigned_current_ship_eta_rueb": "2026-06-09 05:34",
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 3,
+      "candidate_count": 4,
       "candidates": [
         {
           "pilot_name": "Alt, Gerhard",
@@ -769,7 +803,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "BIANCA RAMBOW",
-          "current_ship_eta_rueb": "2026-06-09 05:35",
+          "current_ship_eta_rueb": "2026-06-09 05:34",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -783,6 +817,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "GINGA HAMMERHEAD",
           "current_ship_eta_rueb": "2026-06-09 05:56",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Thiel, Thomas",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 7,
+          "abteilungszeit": "2026-06-09 03:02",
+          "fahrzeug": "KILSTROOM",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "KILSTROOM",
+          "current_ship_eta_rueb": "2026-06-09 08:59",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -856,6 +903,28 @@
       "current_ship_eta_rueb": "2026-06-09 05:56",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "thiel_thomas",
+      "vorname": "Thomas",
+      "nachname": "Thiel",
+      "pilot_name": "Thiel, Thomas",
+      "abteilungszeit": "2026-06-09 03:02",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 7,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "KILSTROOM",
+      "from": "HOR",
+      "to": "RÜB",
+      "nr": 7,
+      "raw_time": "Tue Jun 09 03:02:00 CEST 2026",
+      "current_ship_name": "KILSTROOM",
+      "current_ship_eta_rueb": "2026-06-09 08:59",
+      "current_ship_q": 0,
+      "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
