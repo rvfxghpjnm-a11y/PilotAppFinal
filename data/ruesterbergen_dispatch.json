@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-09T13:31:22",
+  "generated_at": "2026-06-09T13:33:23",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -41,6 +41,31 @@
     "unused_pilots": 0
   },
   "ships": [
+    {
+      "ship_key": "JUIST (A1440)",
+      "ship_name": "JUIST (A1440)",
+      "eta_rueb": "2026-06-09 15:30",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 5,
+      "meldung": {
+        "nr": "1",
+        "time": "Tue Jun 09 15:30:00 CEST 2026",
+        "draft": "4.5",
+        "q_gruppe": "5",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "NOB"
+      },
+      "summary": {
+        "route": "RÜB → NOB",
+        "routes": [
+          "RÜB → NOB"
+        ],
+        "q_gruppe": "5",
+        "draft": "4.5"
+      }
+    },
     {
       "ship_key": "DREAM SYRAX",
       "ship_name": "DREAM SYRAX",
@@ -115,31 +140,6 @@
         "makler": "SUB",
         "dangerous_vessel": "-",
         "type_of_loading": "Stueckgueter"
-      }
-    },
-    {
-      "ship_key": "JUIST (A1440)",
-      "ship_name": "JUIST (A1440)",
-      "eta_rueb": "2026-06-09 15:55",
-      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
-      "ship_q": 5,
-      "meldung": {
-        "nr": "1",
-        "time": "Tue Jun 09 15:55:00 CEST 2026",
-        "draft": "4.5",
-        "q_gruppe": "5",
-        "lotsen_anzahl": 1,
-        "confirmed": false,
-        "from": "RÜB",
-        "to": "NOB"
-      },
-      "summary": {
-        "route": "RÜB → NOB",
-        "routes": [
-          "RÜB → NOB"
-        ],
-        "q_gruppe": "5",
-        "draft": "4.5"
       }
     },
     {
@@ -439,10 +439,10 @@
   ],
   "assignments": [
     {
-      "ship_key": "DREAM SYRAX",
-      "ship_name": "DREAM SYRAX",
-      "eta_rueb": "2026-06-09 15:31",
-      "ship_q": 4,
+      "ship_key": "JUIST (A1440)",
+      "ship_name": "JUIST (A1440)",
+      "eta_rueb": "2026-06-09 15:30",
+      "ship_q": 5,
       "assigned_pilot": "Köller, Hartmut",
       "assigned_pilot_q": 0,
       "assigned_tactical_nr": 14,
@@ -467,6 +467,81 @@
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
+        {
+          "pilot_name": "Staedler, Frank",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 12,
+          "abteilungszeit": "2026-06-09 09:37",
+          "fahrzeug": "SINAR BUKITTINGGI",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "SINAR BUKITTINGGI",
+          "current_ship_eta_rueb": "2026-06-09 14:28",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Suermann, Nik",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 8,
+          "abteilungszeit": "2026-06-09 12:00",
+          "fahrzeug": "KEY OCEAN",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "KEY OCEAN",
+          "current_ship_eta_rueb": "2026-06-09 13:18",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Vogel, Peter",
+          "pilot_tactical_nr": 9,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "ANNABA",
+          "pilot_current_ship_eta_rueb": "2026-06-09 16:37",
+          "ship_eta_rueb": "2026-06-09 15:30",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "1",
+          "time": "Tue Jun 09 15:30:00 CEST 2026",
+          "draft": "4.5",
+          "q_gruppe": "5",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "NOB"
+        },
+        "summary": {
+          "route": "RÜB → NOB",
+          "routes": [
+            "RÜB → NOB"
+          ],
+          "q_gruppe": "5",
+          "draft": "4.5"
+        }
+      }
+    },
+    {
+      "ship_key": "DREAM SYRAX",
+      "ship_name": "DREAM SYRAX",
+      "eta_rueb": "2026-06-09 15:31",
+      "ship_q": 4,
+      "assigned_pilot": "Staedler, Frank",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 12,
+      "assigned_abteilungszeit": "2026-06-09 09:37",
+      "assigned_current_ship_name": "SINAR BUKITTINGGI",
+      "assigned_current_ship_eta_rueb": "2026-06-09 14:28",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 2,
+      "candidates": [
         {
           "pilot_name": "Staedler, Frank",
           "pilot_q": 0,
@@ -544,30 +619,17 @@
       "ship_name": "SOUTH ENABLER",
       "eta_rueb": "2026-06-09 15:34",
       "ship_q": 0,
-      "assigned_pilot": "Staedler, Frank",
+      "assigned_pilot": "Suermann, Nik",
       "assigned_pilot_q": 0,
-      "assigned_tactical_nr": 12,
-      "assigned_abteilungszeit": "2026-06-09 09:37",
-      "assigned_current_ship_name": "SINAR BUKITTINGGI",
-      "assigned_current_ship_eta_rueb": "2026-06-09 14:28",
+      "assigned_tactical_nr": 8,
+      "assigned_abteilungszeit": "2026-06-09 12:00",
+      "assigned_current_ship_name": "KEY OCEAN",
+      "assigned_current_ship_eta_rueb": "2026-06-09 13:18",
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 2,
+      "candidate_count": 1,
       "candidates": [
-        {
-          "pilot_name": "Staedler, Frank",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 12,
-          "abteilungszeit": "2026-06-09 09:37",
-          "fahrzeug": "SINAR BUKITTINGGI",
-          "to": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "SINAR BUKITTINGGI",
-          "current_ship_eta_rueb": "2026-06-09 14:28",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
         {
           "pilot_name": "Suermann, Nik",
           "pilot_q": 0,
@@ -624,68 +686,6 @@
           "makler": "SUB",
           "dangerous_vessel": "-",
           "type_of_loading": "Stueckgueter"
-        }
-      }
-    },
-    {
-      "ship_key": "JUIST (A1440)",
-      "ship_name": "JUIST (A1440)",
-      "eta_rueb": "2026-06-09 15:55",
-      "ship_q": 5,
-      "assigned_pilot": "Suermann, Nik",
-      "assigned_pilot_q": 0,
-      "assigned_tactical_nr": 8,
-      "assigned_abteilungszeit": "2026-06-09 12:00",
-      "assigned_current_ship_name": "KEY OCEAN",
-      "assigned_current_ship_eta_rueb": "2026-06-09 13:18",
-      "assigned_current_ship_source": "schiffe_merged.seelotsen",
-      "assigned_availability_kind": "merged_eta",
-      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 1,
-      "candidates": [
-        {
-          "pilot_name": "Suermann, Nik",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 8,
-          "abteilungszeit": "2026-06-09 12:00",
-          "fahrzeug": "KEY OCEAN",
-          "to": "HOS",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "KEY OCEAN",
-          "current_ship_eta_rueb": "2026-06-09 13:18",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        }
-      ],
-      "excluded": [
-        {
-          "pilot_name": "Vogel, Peter",
-          "pilot_tactical_nr": 9,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "ANNABA",
-          "pilot_current_ship_eta_rueb": "2026-06-09 16:37",
-          "ship_eta_rueb": "2026-06-09 15:55",
-          "availability_kind": "merged_eta"
-        }
-      ],
-      "ship": {
-        "meldung": {
-          "nr": "1",
-          "time": "Tue Jun 09 15:55:00 CEST 2026",
-          "draft": "4.5",
-          "q_gruppe": "5",
-          "lotsen_anzahl": 1,
-          "confirmed": false,
-          "from": "RÜB",
-          "to": "NOB"
-        },
-        "summary": {
-          "route": "RÜB → NOB",
-          "routes": [
-            "RÜB → NOB"
-          ],
-          "q_gruppe": "5",
-          "draft": "4.5"
         }
       }
     },
