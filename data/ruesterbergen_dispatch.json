@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-10T00:43:18",
+  "generated_at": "2026-06-10T00:45:15",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -80,47 +80,9 @@
       }
     },
     {
-      "ship_key": "STOLT REDSHANK",
-      "ship_name": "STOLT REDSHANK",
-      "eta_rueb": "2026-06-10 04:03",
-      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
-      "ship_q": 4,
-      "meldung": {
-        "nr": "2",
-        "time": "Wed Jun 10 03:10:00 CEST 2026",
-        "draft": "5.9",
-        "q_gruppe": "4",
-        "lotsen_anzahl": 1,
-        "confirmed": false,
-        "from": "RÜB",
-        "to": "HOS"
-      },
-      "summary": {
-        "route": "HOS → KLT",
-        "routes": [
-          "HOS → KLT",
-          "RÜB → HOS"
-        ],
-        "q_gruppe": "4",
-        "vg": "3",
-        "draft": "5.90",
-        "length_m": "90.900",
-        "beam_m": "15.60",
-        "queue_title": "Zulauf vom Kanal in Kiel",
-        "zulauf_richtung": "vom_kanal",
-        "pilot_required": "true",
-        "pilot_status": "U",
-        "pilot_1_name": "M�ller, Christian",
-        "travel_status": "SAILING_NOK",
-        "makler": "UCA",
-        "dangerous_vessel": "-",
-        "type_of_loading": "Chemikalien fluessig"
-      }
-    },
-    {
       "ship_key": "NORD DUBAI",
       "ship_name": "NORD DUBAI",
-      "eta_rueb": "2026-06-10 04:06",
+      "eta_rueb": "2026-06-10 04:00",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 0,
       "meldung": {
@@ -153,6 +115,44 @@
         "makler": "SUB",
         "dangerous_vessel": "-",
         "type_of_loading": "Ballastfahrt"
+      }
+    },
+    {
+      "ship_key": "STOLT REDSHANK",
+      "ship_name": "STOLT REDSHANK",
+      "eta_rueb": "2026-06-10 04:06",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 4,
+      "meldung": {
+        "nr": "2",
+        "time": "Wed Jun 10 03:10:00 CEST 2026",
+        "draft": "5.9",
+        "q_gruppe": "4",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "4",
+        "vg": "3",
+        "draft": "5.90",
+        "length_m": "90.900",
+        "beam_m": "15.60",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "U",
+        "pilot_1_name": "M�ller, Christian",
+        "travel_status": "SAILING_NOK",
+        "makler": "UCA",
+        "dangerous_vessel": "-",
+        "type_of_loading": "Chemikalien fluessig"
       }
     },
     {
@@ -671,10 +671,10 @@
       }
     },
     {
-      "ship_key": "STOLT REDSHANK",
-      "ship_name": "STOLT REDSHANK",
-      "eta_rueb": "2026-06-10 04:03",
-      "ship_q": 4,
+      "ship_key": "NORD DUBAI",
+      "ship_name": "NORD DUBAI",
+      "eta_rueb": "2026-06-10 04:00",
+      "ship_q": 0,
       "assigned_pilot": "Röhl, Jens",
       "assigned_pilot_q": 0,
       "assigned_tactical_nr": 12,
@@ -684,7 +684,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 6,
+      "candidate_count": 3,
       "candidates": [
         {
           "pilot_name": "Röhl, Jens",
@@ -699,6 +699,107 @@
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
+        {
+          "pilot_name": "Sattler, Olaf",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 10,
+          "abteilungszeit": "2026-06-09 19:37",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-06-09 19:37",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
+        },
+        {
+          "pilot_name": "Biedermann, Johannes",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 6,
+          "abteilungszeit": "2026-06-09 21:08",
+          "fahrzeug": "ELBOCEAN",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ELBOCEAN",
+          "current_ship_eta_rueb": "2026-06-10 02:57",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Pietsch, Tobias",
+          "pilot_tactical_nr": 9,
+          "reason": "Quali passt nicht (1 > 0)",
+          "pilot_q": 1,
+          "ship_q": 0
+        },
+        {
+          "pilot_name": "Nagel, Volker",
+          "pilot_tactical_nr": 7,
+          "reason": "Quali passt nicht (2 > 0)",
+          "pilot_q": 2,
+          "ship_q": 0
+        },
+        {
+          "pilot_name": "Krüger, Caspar-Maria",
+          "pilot_tactical_nr": 8,
+          "reason": "Quali passt nicht (4 > 0)",
+          "pilot_q": 4,
+          "ship_q": 0
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "1",
+          "time": "Wed Jun 10 03:05:00 CEST 2026",
+          "draft": "6.4",
+          "q_gruppe": "0",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "HOS → KLT",
+          "routes": [
+            "HOS → KLT",
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "0",
+          "vg": "6",
+          "draft": "6.40",
+          "length_m": "179.97",
+          "beam_m": "29",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "U",
+          "pilot_1_name": "D�rbandt, Stefan",
+          "travel_status": "SAILING_NOK",
+          "makler": "SUB",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Ballastfahrt"
+        }
+      }
+    },
+    {
+      "ship_key": "STOLT REDSHANK",
+      "ship_name": "STOLT REDSHANK",
+      "eta_rueb": "2026-06-10 04:06",
+      "ship_q": 4,
+      "assigned_pilot": "Pietsch, Tobias",
+      "assigned_pilot_q": 1,
+      "assigned_tactical_nr": 9,
+      "assigned_abteilungszeit": "2026-06-09 19:37",
+      "assigned_current_ship_name": "RÜB",
+      "assigned_current_ship_eta_rueb": "2026-06-09 19:37",
+      "assigned_current_ship_source": "special.already_in_rueb",
+      "assigned_availability_kind": "already_in_rueb",
+      "assigned_availability_hint": "Lotse gilt als bereits in RÜB",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 5,
+      "candidates": [
         {
           "pilot_name": "Pietsch, Tobias",
           "pilot_q": 1,
@@ -800,10 +901,10 @@
       }
     },
     {
-      "ship_key": "NORD DUBAI",
-      "ship_name": "NORD DUBAI",
-      "eta_rueb": "2026-06-10 04:06",
-      "ship_q": 0,
+      "ship_key": "JUIST (A1440)",
+      "ship_name": "JUIST (A1440)",
+      "eta_rueb": "2026-06-10 07:00",
+      "ship_q": 5,
       "assigned_pilot": "Sattler, Olaf",
       "assigned_pilot_q": 0,
       "assigned_tactical_nr": 10,
@@ -814,113 +915,12 @@
       "assigned_availability_kind": "already_in_rueb",
       "assigned_availability_hint": "Lotse gilt als bereits in RÜB",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 2,
+      "candidate_count": 4,
       "candidates": [
         {
           "pilot_name": "Sattler, Olaf",
           "pilot_q": 0,
           "pilot_tactical_nr": 10,
-          "abteilungszeit": "2026-06-09 19:37",
-          "fahrzeug": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "RÜB",
-          "current_ship_eta_rueb": "2026-06-09 19:37",
-          "current_ship_source": "special.already_in_rueb",
-          "availability_kind": "already_in_rueb",
-          "availability_hint": "Lotse gilt als bereits in RÜB"
-        },
-        {
-          "pilot_name": "Biedermann, Johannes",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 6,
-          "abteilungszeit": "2026-06-09 21:08",
-          "fahrzeug": "ELBOCEAN",
-          "to": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "ELBOCEAN",
-          "current_ship_eta_rueb": "2026-06-10 02:57",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        }
-      ],
-      "excluded": [
-        {
-          "pilot_name": "Pietsch, Tobias",
-          "pilot_tactical_nr": 9,
-          "reason": "Quali passt nicht (1 > 0)",
-          "pilot_q": 1,
-          "ship_q": 0
-        },
-        {
-          "pilot_name": "Nagel, Volker",
-          "pilot_tactical_nr": 7,
-          "reason": "Quali passt nicht (2 > 0)",
-          "pilot_q": 2,
-          "ship_q": 0
-        },
-        {
-          "pilot_name": "Krüger, Caspar-Maria",
-          "pilot_tactical_nr": 8,
-          "reason": "Quali passt nicht (4 > 0)",
-          "pilot_q": 4,
-          "ship_q": 0
-        }
-      ],
-      "ship": {
-        "meldung": {
-          "nr": "1",
-          "time": "Wed Jun 10 03:05:00 CEST 2026",
-          "draft": "6.4",
-          "q_gruppe": "0",
-          "lotsen_anzahl": 1,
-          "confirmed": false,
-          "from": "RÜB",
-          "to": "HOS"
-        },
-        "summary": {
-          "route": "HOS → KLT",
-          "routes": [
-            "HOS → KLT",
-            "RÜB → HOS"
-          ],
-          "q_gruppe": "0",
-          "vg": "6",
-          "draft": "6.40",
-          "length_m": "179.97",
-          "beam_m": "29",
-          "queue_title": "Zulauf vom Kanal in Kiel",
-          "zulauf_richtung": "vom_kanal",
-          "pilot_required": "true",
-          "pilot_status": "U",
-          "pilot_1_name": "D�rbandt, Stefan",
-          "travel_status": "SAILING_NOK",
-          "makler": "SUB",
-          "dangerous_vessel": "-",
-          "type_of_loading": "Ballastfahrt"
-        }
-      }
-    },
-    {
-      "ship_key": "JUIST (A1440)",
-      "ship_name": "JUIST (A1440)",
-      "eta_rueb": "2026-06-10 07:00",
-      "ship_q": 5,
-      "assigned_pilot": "Pietsch, Tobias",
-      "assigned_pilot_q": 1,
-      "assigned_tactical_nr": 9,
-      "assigned_abteilungszeit": "2026-06-09 19:37",
-      "assigned_current_ship_name": "RÜB",
-      "assigned_current_ship_eta_rueb": "2026-06-09 19:37",
-      "assigned_current_ship_source": "special.already_in_rueb",
-      "assigned_availability_kind": "already_in_rueb",
-      "assigned_availability_hint": "Lotse gilt als bereits in RÜB",
-      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 4,
-      "candidates": [
-        {
-          "pilot_name": "Pietsch, Tobias",
-          "pilot_q": 1,
-          "pilot_tactical_nr": 9,
           "abteilungszeit": "2026-06-09 19:37",
           "fahrzeug": "RÜB",
           "aufgabe": "Kanalbört",
