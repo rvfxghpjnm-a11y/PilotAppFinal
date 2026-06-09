@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-09T13:07:19",
+  "generated_at": "2026-06-09T13:09:17",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,13 +32,13 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 4,
+    "ships_for_ruesterbergen": 5,
     "pilots_total": 9,
     "pilots_dispatchable": 8,
     "pilots_visible_only": 1,
-    "assignments": 4,
+    "assignments": 5,
     "unassigned_ships": 0,
-    "unused_pilots": 4
+    "unused_pilots": 3
   },
   "ships": [
     {
@@ -143,13 +143,51 @@
       }
     },
     {
+      "ship_key": "SKOGAFOSS",
+      "ship_name": "SKOGAFOSS",
+      "eta_rueb": "2026-06-09 17:46",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 3,
+      "meldung": {
+        "nr": "4",
+        "time": "Tue Jun 09 18:25:00 CEST 2026",
+        "draft": "6.5",
+        "q_gruppe": "3",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "3",
+        "vg": "4",
+        "draft": "6.50",
+        "length_m": "129.660",
+        "beam_m": "20.600",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "U",
+        "pilot_1_name": "Gerz, André",
+        "travel_status": "SAILING_NOK",
+        "makler": "UCA",
+        "dangerous_vessel": "-",
+        "type_of_loading": "Container"
+      }
+    },
+    {
       "ship_key": "CONTAINERSHIPS BOREALIS",
       "ship_name": "CONTAINERSHIPS BOREALIS",
       "eta_rueb": "2026-06-09 17:50",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 1,
       "meldung": {
-        "nr": "4",
+        "nr": "5",
         "time": "Tue Jun 09 18:30:00 CEST 2026",
         "draft": "7.7",
         "q_gruppe": "1",
@@ -984,10 +1022,10 @@
       }
     },
     {
-      "ship_key": "CONTAINERSHIPS BOREALIS",
-      "ship_name": "CONTAINERSHIPS BOREALIS",
-      "eta_rueb": "2026-06-09 17:50",
-      "ship_q": 1,
+      "ship_key": "SKOGAFOSS",
+      "ship_name": "SKOGAFOSS",
+      "eta_rueb": "2026-06-09 17:46",
+      "ship_q": 3,
       "assigned_pilot": "Staedler, Frank",
       "assigned_pilot_q": 0,
       "assigned_tactical_nr": 12,
@@ -1068,6 +1106,109 @@
       "ship": {
         "meldung": {
           "nr": "4",
+          "time": "Tue Jun 09 18:25:00 CEST 2026",
+          "draft": "6.5",
+          "q_gruppe": "3",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "HOS → KLT",
+          "routes": [
+            "HOS → KLT",
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "3",
+          "vg": "4",
+          "draft": "6.50",
+          "length_m": "129.660",
+          "beam_m": "20.600",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "U",
+          "pilot_1_name": "Gerz, André",
+          "travel_status": "SAILING_NOK",
+          "makler": "UCA",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Container"
+        }
+      }
+    },
+    {
+      "ship_key": "CONTAINERSHIPS BOREALIS",
+      "ship_name": "CONTAINERSHIPS BOREALIS",
+      "eta_rueb": "2026-06-09 17:50",
+      "ship_q": 1,
+      "assigned_pilot": "Vogel, Peter",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 9,
+      "assigned_abteilungszeit": "2026-06-09 11:50",
+      "assigned_current_ship_name": "ANNABA",
+      "assigned_current_ship_eta_rueb": "2026-06-09 16:37",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 4,
+      "candidates": [
+        {
+          "pilot_name": "Vogel, Peter",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 9,
+          "abteilungszeit": "2026-06-09 11:50",
+          "fahrzeug": "ANNABA",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ANNABA",
+          "current_ship_eta_rueb": "2026-06-09 16:37",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Suermann, Nik",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 6,
+          "abteilungszeit": "2026-06-09 12:00",
+          "fahrzeug": "KEY OCEAN",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "KEY OCEAN",
+          "current_ship_eta_rueb": "2026-06-09 13:18",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Escher, Franck",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-06-09 12:31",
+          "fahrzeug": "AAVA VG",
+          "to": "KLT",
+          "aufgabe": "Seebört",
+          "current_ship_name": "AAVA VG",
+          "current_ship_eta_rueb": "2026-06-09 09:10",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Marth, Jürgen",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 1,
+          "abteilungszeit": "2026-06-09 12:34",
+          "fahrzeug": "PRIMA VIKING",
+          "to": "KLT",
+          "aufgabe": "Seebört",
+          "current_ship_name": "PRIMA VIKING",
+          "current_ship_eta_rueb": "2026-06-09 09:13",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "5",
           "time": "Tue Jun 09 18:30:00 CEST 2026",
           "draft": "7.7",
           "q_gruppe": "1",
@@ -1102,28 +1243,6 @@
   ],
   "unassigned_ships": [],
   "unused_pilots": [
-    {
-      "pilot_key": "vogel_peter",
-      "vorname": "Peter",
-      "nachname": "Vogel",
-      "pilot_name": "Vogel, Peter",
-      "abteilungszeit": "2026-06-09 11:50",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 9,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "ANNABA",
-      "from": "HOS",
-      "to": "RÜB",
-      "nr": 9,
-      "raw_time": "Tue Jun 09 11:50:00 CEST 2026",
-      "current_ship_name": "ANNABA",
-      "current_ship_eta_rueb": "2026-06-09 16:37",
-      "current_ship_q": 0,
-      "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
-    },
     {
       "pilot_key": "suermann_nik",
       "vorname": "Nik",
