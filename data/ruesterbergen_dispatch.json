@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-09T23:11:17",
+  "generated_at": "2026-06-09T23:13:17",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 3,
     "pilots_total": 12,
-    "pilots_dispatchable": 11,
-    "pilots_visible_only": 1,
+    "pilots_dispatchable": 10,
+    "pilots_visible_only": 2,
     "assignments": 3,
     "unassigned_ships": 0,
-    "unused_pilots": 8
+    "unused_pilots": 7
   },
   "ships": [
     {
@@ -202,11 +202,10 @@
       "to": "RÜB",
       "nr": 13,
       "raw_time": "Tue Jun 09 17:11:00 CEST 2026",
-      "current_ship_name": "MARRY S",
-      "current_ship_eta_rueb": "2026-06-10 00:03",
+      "current_ship_name": "MARRY-S",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
@@ -268,7 +267,7 @@
       "nr": 10,
       "raw_time": "Tue Jun 09 18:10:00 CEST 2026",
       "current_ship_name": "LEVENSAU",
-      "current_ship_eta_rueb": "2026-06-10 00:00",
+      "current_ship_eta_rueb": "2026-06-09 23:59",
       "current_ship_q": 0,
       "current_ship_route": "AHL → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -453,28 +452,6 @@
       "availability_kind": "merged_eta"
     },
     {
-      "pilot_key": "demant_tom",
-      "vorname": "Tom",
-      "nachname": "Demant",
-      "pilot_name": "Demant, Tom",
-      "abteilungszeit": "2026-06-09 17:11",
-      "pilot_q": 4,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 13,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "MARRY-S",
-      "from": "HOR",
-      "to": "RÜB",
-      "nr": 13,
-      "raw_time": "Tue Jun 09 17:11:00 CEST 2026",
-      "current_ship_name": "MARRY S",
-      "current_ship_eta_rueb": "2026-06-10 00:03",
-      "current_ship_q": 0,
-      "current_ship_route": "HOR → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-      "availability_kind": "merged_eta"
-    },
-    {
       "pilot_key": "skairies_thomas",
       "vorname": "Thomas",
       "nachname": "Skairies",
@@ -512,7 +489,7 @@
       "nr": 10,
       "raw_time": "Tue Jun 09 18:10:00 CEST 2026",
       "current_ship_name": "LEVENSAU",
-      "current_ship_eta_rueb": "2026-06-10 00:00",
+      "current_ship_eta_rueb": "2026-06-09 23:59",
       "current_ship_q": 0,
       "current_ship_route": "AHL → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -653,6 +630,21 @@
   ],
   "visible_but_not_dispatchable_pilots": [
     {
+      "pilot_key": "demant_tom",
+      "pilot_name": "Demant, Tom",
+      "pilot_q": 4,
+      "pilot_tactical_nr": 13,
+      "abteilungszeit": "2026-06-09 17:11",
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "MARRY-S",
+      "from": "HOR",
+      "to": "RÜB",
+      "current_ship_name": "MARRY-S",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta",
+      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
+    },
+    {
       "pilot_key": "witte_tomas",
       "pilot_name": "Witte, Tomas",
       "pilot_q": 0,
@@ -683,7 +675,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 10,
+      "candidate_count": 9,
       "candidates": [
         {
           "pilot_name": "Otten, Janning",
@@ -712,19 +704,6 @@
           "availability_kind": "merged_eta"
         },
         {
-          "pilot_name": "Demant, Tom",
-          "pilot_q": 4,
-          "pilot_tactical_nr": 13,
-          "abteilungszeit": "2026-06-09 17:11",
-          "fahrzeug": "MARRY-S",
-          "to": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "MARRY S",
-          "current_ship_eta_rueb": "2026-06-10 00:03",
-          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-          "availability_kind": "merged_eta"
-        },
-        {
           "pilot_name": "Skairies, Thomas",
           "pilot_q": 0,
           "pilot_tactical_nr": 11,
@@ -746,7 +725,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "LEVENSAU",
-          "current_ship_eta_rueb": "2026-06-10 00:00",
+          "current_ship_eta_rueb": "2026-06-09 23:59",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -874,7 +853,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 10,
+      "candidate_count": 9,
       "candidates": [
         {
           "pilot_name": "Skawianczyk, Artur",
@@ -887,19 +866,6 @@
           "current_ship_name": "MARJATTA",
           "current_ship_eta_rueb": "2026-06-09 21:54",
           "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Demant, Tom",
-          "pilot_q": 4,
-          "pilot_tactical_nr": 13,
-          "abteilungszeit": "2026-06-09 17:11",
-          "fahrzeug": "MARRY-S",
-          "to": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "MARRY S",
-          "current_ship_eta_rueb": "2026-06-10 00:03",
-          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
           "availability_kind": "merged_eta"
         },
         {
@@ -924,7 +890,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "LEVENSAU",
-          "current_ship_eta_rueb": "2026-06-10 00:00",
+          "current_ship_eta_rueb": "2026-06-09 23:59",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1046,30 +1012,17 @@
       "ship_name": "JUIST (A1440)",
       "eta_rueb": "2026-06-10 07:00",
       "ship_q": 5,
-      "assigned_pilot": "Demant, Tom",
-      "assigned_pilot_q": 4,
-      "assigned_tactical_nr": 13,
-      "assigned_abteilungszeit": "2026-06-09 17:11",
-      "assigned_current_ship_name": "MARRY S",
-      "assigned_current_ship_eta_rueb": "2026-06-10 00:03",
-      "assigned_current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "assigned_pilot": "Skairies, Thomas",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 11,
+      "assigned_abteilungszeit": "2026-06-09 17:25",
+      "assigned_current_ship_name": "SUNSET X",
+      "assigned_current_ship_eta_rueb": "2026-06-09 23:53",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 9,
+      "candidate_count": 8,
       "candidates": [
-        {
-          "pilot_name": "Demant, Tom",
-          "pilot_q": 4,
-          "pilot_tactical_nr": 13,
-          "abteilungszeit": "2026-06-09 17:11",
-          "fahrzeug": "MARRY-S",
-          "to": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "MARRY S",
-          "current_ship_eta_rueb": "2026-06-10 00:03",
-          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-          "availability_kind": "merged_eta"
-        },
         {
           "pilot_name": "Skairies, Thomas",
           "pilot_q": 0,
@@ -1092,7 +1045,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "LEVENSAU",
-          "current_ship_eta_rueb": "2026-06-10 00:00",
+          "current_ship_eta_rueb": "2026-06-09 23:59",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1200,28 +1153,6 @@
   "unassigned_ships": [],
   "unused_pilots": [
     {
-      "pilot_key": "skairies_thomas",
-      "vorname": "Thomas",
-      "nachname": "Skairies",
-      "pilot_name": "Skairies, Thomas",
-      "abteilungszeit": "2026-06-09 17:25",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 11,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "SUNSET X",
-      "from": "HOS",
-      "to": "RÜB",
-      "nr": 11,
-      "raw_time": "Tue Jun 09 17:25:00 CEST 2026",
-      "current_ship_name": "SUNSET X",
-      "current_ship_eta_rueb": "2026-06-09 23:53",
-      "current_ship_q": 0,
-      "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
-    },
-    {
       "pilot_key": "röhl_jens",
       "vorname": "Jens",
       "nachname": "Röhl",
@@ -1237,7 +1168,7 @@
       "nr": 10,
       "raw_time": "Tue Jun 09 18:10:00 CEST 2026",
       "current_ship_name": "LEVENSAU",
-      "current_ship_eta_rueb": "2026-06-10 00:00",
+      "current_ship_eta_rueb": "2026-06-09 23:59",
       "current_ship_q": 0,
       "current_ship_route": "AHL → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
