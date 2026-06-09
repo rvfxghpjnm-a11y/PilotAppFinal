@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-09T17:01:25",
+  "generated_at": "2026-06-09T17:03:19",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,17 +34,17 @@
   "counts": {
     "ships_for_ruesterbergen": 7,
     "pilots_total": 9,
-    "pilots_dispatchable": 9,
-    "pilots_visible_only": 0,
+    "pilots_dispatchable": 8,
+    "pilots_visible_only": 1,
     "assignments": 7,
     "unassigned_ships": 0,
-    "unused_pilots": 2
+    "unused_pilots": 1
   },
   "ships": [
     {
       "ship_key": "SKOGAFOSS",
       "ship_name": "SKOGAFOSS",
-      "eta_rueb": "2026-06-09 17:37",
+      "eta_rueb": "2026-06-09 17:36",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 3,
       "meldung": {
@@ -158,7 +158,7 @@
     {
       "ship_key": "MARJATTA",
       "ship_name": "MARJATTA",
-      "eta_rueb": "2026-06-09 22:09",
+      "eta_rueb": "2026-06-09 22:08",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
@@ -195,7 +195,7 @@
     {
       "ship_key": "BALTIC WHALE",
       "ship_name": "BALTIC WHALE",
-      "eta_rueb": "2026-06-09 22:13",
+      "eta_rueb": "2026-06-09 22:12",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 2,
       "meldung": {
@@ -319,11 +319,10 @@
       "to": "KRH",
       "nr": 17,
       "raw_time": "Tue Jun 09 09:37:00 CEST 2026",
-      "current_ship_name": "FGS JUIST - A 1440",
-      "current_ship_eta_rueb": "2026-06-09 15:20",
+      "current_ship_name": "JUIST",
       "current_ship_q": 0,
       "current_ship_route": "A1440 (RÜB → KRH",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
@@ -340,7 +339,7 @@
       "nr": 14,
       "raw_time": "Tue Jun 09 11:50:00 CEST 2026",
       "current_ship_name": "SKOGAFOSS",
-      "current_ship_eta_rueb": "2026-06-09 17:37",
+      "current_ship_eta_rueb": "2026-06-09 17:36",
       "current_ship_q": 3,
       "current_ship_route": "HOS → KLT",
       "current_ship_source": "schiffe_merged.summary.pilot_1_name",
@@ -503,28 +502,6 @@
       "availability_kind": "merged_eta"
     },
     {
-      "pilot_key": "staedler_frank",
-      "vorname": "Frank",
-      "nachname": "Staedler",
-      "pilot_name": "Staedler, Frank",
-      "abteilungszeit": "2026-06-09 09:37",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 17,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "JUIST",
-      "from": "A1440 (RÜB",
-      "to": "KRH",
-      "nr": 17,
-      "raw_time": "Tue Jun 09 09:37:00 CEST 2026",
-      "current_ship_name": "FGS JUIST - A 1440",
-      "current_ship_eta_rueb": "2026-06-09 15:20",
-      "current_ship_q": 0,
-      "current_ship_route": "A1440 (RÜB → KRH",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-      "availability_kind": "merged_eta"
-    },
-    {
       "pilot_key": "vogel_peter",
       "vorname": "Peter",
       "nachname": "Vogel",
@@ -538,7 +515,7 @@
       "nr": 14,
       "raw_time": "Tue Jun 09 11:50:00 CEST 2026",
       "current_ship_name": "SKOGAFOSS",
-      "current_ship_eta_rueb": "2026-06-09 17:37",
+      "current_ship_eta_rueb": "2026-06-09 17:36",
       "current_ship_q": 3,
       "current_ship_route": "HOS → KLT",
       "current_ship_source": "schiffe_merged.summary.pilot_1_name",
@@ -677,12 +654,28 @@
       "availability_kind": "merged_eta"
     }
   ],
-  "visible_but_not_dispatchable_pilots": [],
+  "visible_but_not_dispatchable_pilots": [
+    {
+      "pilot_key": "staedler_frank",
+      "pilot_name": "Staedler, Frank",
+      "pilot_q": 0,
+      "pilot_tactical_nr": 17,
+      "abteilungszeit": "2026-06-09 09:37",
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "JUIST",
+      "from": "A1440 (RÜB",
+      "to": "KRH",
+      "current_ship_name": "JUIST",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta",
+      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
+    }
+  ],
   "assignments": [
     {
       "ship_key": "SKOGAFOSS",
       "ship_name": "SKOGAFOSS",
-      "eta_rueb": "2026-06-09 17:37",
+      "eta_rueb": "2026-06-09 17:36",
       "ship_q": 3,
       "assigned_pilot": "Köller, Hartmut",
       "assigned_pilot_q": 0,
@@ -693,7 +686,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 6,
+      "candidate_count": 5,
       "candidates": [
         {
           "pilot_name": "Köller, Hartmut",
@@ -709,19 +702,6 @@
           "availability_kind": "merged_eta"
         },
         {
-          "pilot_name": "Staedler, Frank",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 17,
-          "abteilungszeit": "2026-06-09 09:37",
-          "fahrzeug": "JUIST",
-          "to": "KRH",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "FGS JUIST - A 1440",
-          "current_ship_eta_rueb": "2026-06-09 15:20",
-          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-          "availability_kind": "merged_eta"
-        },
-        {
           "pilot_name": "Vogel, Peter",
           "pilot_q": 0,
           "pilot_tactical_nr": 14,
@@ -729,7 +709,7 @@
           "fahrzeug": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "SKOGAFOSS",
-          "current_ship_eta_rueb": "2026-06-09 17:37",
+          "current_ship_eta_rueb": "2026-06-09 17:36",
           "current_ship_source": "schiffe_merged.summary.pilot_1_name",
           "availability_kind": "merged_eta"
         },
@@ -780,7 +760,7 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "MARBURG",
           "pilot_current_ship_eta_rueb": "2026-06-09 18:47",
-          "ship_eta_rueb": "2026-06-09 17:37",
+          "ship_eta_rueb": "2026-06-09 17:36",
           "availability_kind": "merged_eta"
         },
         {
@@ -789,7 +769,7 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "BAYMAR",
           "pilot_current_ship_eta_rueb": "2026-06-09 18:34",
-          "ship_eta_rueb": "2026-06-09 17:37",
+          "ship_eta_rueb": "2026-06-09 17:36",
           "availability_kind": "merged_eta"
         },
         {
@@ -798,7 +778,7 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "CONTAINERSHIPS BOREALIS",
           "pilot_current_ship_eta_rueb": "2026-06-09 17:42",
-          "ship_eta_rueb": "2026-06-09 17:37",
+          "ship_eta_rueb": "2026-06-09 17:36",
           "availability_kind": "merged_eta"
         }
       ],
@@ -841,30 +821,17 @@
       "ship_name": "CONTAINERSHIPS BOREALIS",
       "eta_rueb": "2026-06-09 17:42",
       "ship_q": 1,
-      "assigned_pilot": "Staedler, Frank",
+      "assigned_pilot": "Vogel, Peter",
       "assigned_pilot_q": 0,
-      "assigned_tactical_nr": 17,
-      "assigned_abteilungszeit": "2026-06-09 09:37",
-      "assigned_current_ship_name": "FGS JUIST - A 1440",
-      "assigned_current_ship_eta_rueb": "2026-06-09 15:20",
+      "assigned_tactical_nr": 14,
+      "assigned_abteilungszeit": "2026-06-09 11:50",
+      "assigned_current_ship_name": "SKOGAFOSS",
+      "assigned_current_ship_eta_rueb": "2026-06-09 17:36",
       "assigned_current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 6,
+      "candidate_count": 5,
       "candidates": [
-        {
-          "pilot_name": "Staedler, Frank",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 17,
-          "abteilungszeit": "2026-06-09 09:37",
-          "fahrzeug": "JUIST",
-          "to": "KRH",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "FGS JUIST - A 1440",
-          "current_ship_eta_rueb": "2026-06-09 15:20",
-          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-          "availability_kind": "merged_eta"
-        },
         {
           "pilot_name": "Vogel, Peter",
           "pilot_q": 0,
@@ -873,7 +840,7 @@
           "fahrzeug": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "SKOGAFOSS",
-          "current_ship_eta_rueb": "2026-06-09 17:37",
+          "current_ship_eta_rueb": "2026-06-09 17:36",
           "current_ship_source": "schiffe_merged.summary.pilot_1_name",
           "availability_kind": "merged_eta"
         },
@@ -989,29 +956,17 @@
       "ship_name": "PAULA",
       "eta_rueb": "2026-06-09 20:29",
       "ship_q": 5,
-      "assigned_pilot": "Vogel, Peter",
+      "assigned_pilot": "Suermann, Nik",
       "assigned_pilot_q": 0,
-      "assigned_tactical_nr": 14,
-      "assigned_abteilungszeit": "2026-06-09 11:50",
-      "assigned_current_ship_name": "SKOGAFOSS",
-      "assigned_current_ship_eta_rueb": "2026-06-09 17:37",
-      "assigned_current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "assigned_tactical_nr": 11,
+      "assigned_abteilungszeit": "2026-06-09 12:00",
+      "assigned_current_ship_name": "KEY OCEAN",
+      "assigned_current_ship_eta_rueb": "2026-06-09 13:18",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 7,
+      "candidate_count": 6,
       "candidates": [
-        {
-          "pilot_name": "Vogel, Peter",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 14,
-          "abteilungszeit": "2026-06-09 11:50",
-          "fahrzeug": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "SKOGAFOSS",
-          "current_ship_eta_rueb": "2026-06-09 17:37",
-          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-          "availability_kind": "merged_eta"
-        },
         {
           "pilot_name": "Suermann, Nik",
           "pilot_q": 0,
@@ -1128,32 +1083,19 @@
     {
       "ship_key": "MARJATTA",
       "ship_name": "MARJATTA",
-      "eta_rueb": "2026-06-09 22:09",
+      "eta_rueb": "2026-06-09 22:08",
       "ship_q": 5,
-      "assigned_pilot": "Suermann, Nik",
+      "assigned_pilot": "Otten, Janning",
       "assigned_pilot_q": 0,
-      "assigned_tactical_nr": 11,
-      "assigned_abteilungszeit": "2026-06-09 12:00",
-      "assigned_current_ship_name": "KEY OCEAN",
-      "assigned_current_ship_eta_rueb": "2026-06-09 13:18",
+      "assigned_tactical_nr": 5,
+      "assigned_abteilungszeit": "2026-06-09 13:36",
+      "assigned_current_ship_name": "MARBURG",
+      "assigned_current_ship_eta_rueb": "2026-06-09 18:47",
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 6,
+      "candidate_count": 5,
       "candidates": [
-        {
-          "pilot_name": "Suermann, Nik",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 11,
-          "abteilungszeit": "2026-06-09 12:00",
-          "fahrzeug": "KEY OCEAN",
-          "to": "HOS",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "KEY OCEAN",
-          "current_ship_eta_rueb": "2026-06-09 13:18",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
         {
           "pilot_name": "Otten, Janning",
           "pilot_q": 0,
@@ -1256,32 +1198,19 @@
     {
       "ship_key": "BALTIC WHALE",
       "ship_name": "BALTIC WHALE",
-      "eta_rueb": "2026-06-09 22:13",
+      "eta_rueb": "2026-06-09 22:12",
       "ship_q": 2,
-      "assigned_pilot": "Otten, Janning",
+      "assigned_pilot": "Skawianczyk, Artur",
       "assigned_pilot_q": 0,
-      "assigned_tactical_nr": 5,
-      "assigned_abteilungszeit": "2026-06-09 13:36",
-      "assigned_current_ship_name": "MARBURG",
-      "assigned_current_ship_eta_rueb": "2026-06-09 18:47",
+      "assigned_tactical_nr": 4,
+      "assigned_abteilungszeit": "2026-06-09 13:49",
+      "assigned_current_ship_name": "BAYMAR",
+      "assigned_current_ship_eta_rueb": "2026-06-09 18:34",
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 5,
+      "candidate_count": 4,
       "candidates": [
-        {
-          "pilot_name": "Otten, Janning",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 5,
-          "abteilungszeit": "2026-06-09 13:36",
-          "fahrzeug": "MARBURG",
-          "to": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "MARBURG",
-          "current_ship_eta_rueb": "2026-06-09 18:47",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
         {
           "pilot_name": "Skawianczyk, Artur",
           "pilot_q": 0,
@@ -1374,30 +1303,17 @@
       "ship_name": "LEVENSAU",
       "eta_rueb": "2026-06-09 22:30",
       "ship_q": 5,
-      "assigned_pilot": "Skawianczyk, Artur",
+      "assigned_pilot": "Lüdtke, Jan-Torben",
       "assigned_pilot_q": 0,
-      "assigned_tactical_nr": 4,
-      "assigned_abteilungszeit": "2026-06-09 13:49",
-      "assigned_current_ship_name": "BAYMAR",
-      "assigned_current_ship_eta_rueb": "2026-06-09 18:34",
+      "assigned_tactical_nr": 2,
+      "assigned_abteilungszeit": "2026-06-09 14:05",
+      "assigned_current_ship_name": "DREAM SYRAX",
+      "assigned_current_ship_eta_rueb": "2026-06-09 15:25",
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 4,
+      "candidate_count": 3,
       "candidates": [
-        {
-          "pilot_name": "Skawianczyk, Artur",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 4,
-          "abteilungszeit": "2026-06-09 13:49",
-          "fahrzeug": "BAYMAR",
-          "to": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "BAYMAR",
-          "current_ship_eta_rueb": "2026-06-09 18:34",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
         {
           "pilot_name": "Lüdtke, Jan-Torben",
           "pilot_q": 0,
@@ -1464,30 +1380,17 @@
       "ship_name": "JUIST (A1440)",
       "eta_rueb": "2026-06-10 07:00",
       "ship_q": 5,
-      "assigned_pilot": "Lüdtke, Jan-Torben",
+      "assigned_pilot": "Rink, Hannes",
       "assigned_pilot_q": 0,
-      "assigned_tactical_nr": 2,
+      "assigned_tactical_nr": 3,
       "assigned_abteilungszeit": "2026-06-09 14:05",
-      "assigned_current_ship_name": "DREAM SYRAX",
-      "assigned_current_ship_eta_rueb": "2026-06-09 15:25",
+      "assigned_current_ship_name": "SOUTH ENABLER",
+      "assigned_current_ship_eta_rueb": "2026-06-09 15:31",
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 3,
+      "candidate_count": 2,
       "candidates": [
-        {
-          "pilot_name": "Lüdtke, Jan-Torben",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 2,
-          "abteilungszeit": "2026-06-09 14:05",
-          "fahrzeug": "DREAM SYRAX",
-          "to": "HOS",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "DREAM SYRAX",
-          "current_ship_eta_rueb": "2026-06-09 15:25",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
         {
           "pilot_name": "Rink, Hannes",
           "pilot_q": 0,
@@ -1539,28 +1442,6 @@
   ],
   "unassigned_ships": [],
   "unused_pilots": [
-    {
-      "pilot_key": "rink_hannes",
-      "vorname": "Hannes",
-      "nachname": "Rink",
-      "pilot_name": "Rink, Hannes",
-      "abteilungszeit": "2026-06-09 14:05",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 3,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "SOUTH ENABLER",
-      "from": "RÜB",
-      "to": "HOS",
-      "nr": 3,
-      "raw_time": "Tue Jun 09 14:05:00 CEST 2026",
-      "current_ship_name": "SOUTH ENABLER",
-      "current_ship_eta_rueb": "2026-06-09 15:31",
-      "current_ship_q": 0,
-      "current_ship_route": "RÜB → HOS",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
-    },
     {
       "pilot_key": "dietrich_thomas",
       "vorname": "Thomas",
