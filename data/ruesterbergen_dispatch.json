@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-09T15:33:21",
+  "generated_at": "2026-06-09T15:35:19",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,13 +32,13 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 2,
+    "ships_for_ruesterbergen": 3,
     "pilots_total": 9,
     "pilots_dispatchable": 8,
     "pilots_visible_only": 1,
-    "assignments": 2,
+    "assignments": 3,
     "unassigned_ships": 0,
-    "unused_pilots": 6
+    "unused_pilots": 5
   },
   "ships": [
     {
@@ -115,6 +115,31 @@
         "makler": "SUB",
         "dangerous_vessel": "-",
         "type_of_loading": "Container"
+      }
+    },
+    {
+      "ship_key": "JUIST (A1440)",
+      "ship_name": "JUIST (A1440)",
+      "eta_rueb": "2026-06-10 07:00",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 5,
+      "meldung": {
+        "nr": "3",
+        "time": "Wed Jun 10 07:00:00 CEST 2026",
+        "draft": "4.5",
+        "q_gruppe": "5",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "KRH",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "KRH → HOS",
+        "routes": [
+          "KRH → HOS"
+        ],
+        "q_gruppe": "5",
+        "draft": "4.5"
       }
     }
   ],
@@ -797,32 +822,126 @@
           "type_of_loading": "Container"
         }
       }
+    },
+    {
+      "ship_key": "JUIST (A1440)",
+      "ship_name": "JUIST (A1440)",
+      "eta_rueb": "2026-06-10 07:00",
+      "ship_q": 5,
+      "assigned_pilot": "Vogel, Peter",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 13,
+      "assigned_abteilungszeit": "2026-06-09 11:50",
+      "assigned_current_ship_name": "ANNABA",
+      "assigned_current_ship_eta_rueb": "2026-06-09 16:33",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 6,
+      "candidates": [
+        {
+          "pilot_name": "Vogel, Peter",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 13,
+          "abteilungszeit": "2026-06-09 11:50",
+          "fahrzeug": "ANNABA",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ANNABA",
+          "current_ship_eta_rueb": "2026-06-09 16:33",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Suermann, Nik",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 10,
+          "abteilungszeit": "2026-06-09 12:00",
+          "fahrzeug": "KEY OCEAN",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "KEY OCEAN",
+          "current_ship_eta_rueb": "2026-06-09 13:18",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Otten, Janning",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 4,
+          "abteilungszeit": "2026-06-09 13:36",
+          "fahrzeug": "MARBURG",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "MARBURG",
+          "current_ship_eta_rueb": "2026-06-09 18:52",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Skawianczyk, Artur",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 3,
+          "abteilungszeit": "2026-06-09 13:49",
+          "fahrzeug": "BAYMAR",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "BAYMAR",
+          "current_ship_eta_rueb": "2026-06-09 18:42",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Lüdtke, Jan-Torben",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 1,
+          "abteilungszeit": "2026-06-09 14:05",
+          "fahrzeug": "DREAM SYRAX",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "DREAM SYRAX",
+          "current_ship_eta_rueb": "2026-06-09 15:25",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Rink, Hannes",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-06-09 14:05",
+          "fahrzeug": "SOUTH ENABLER",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "SOUTH ENABLER",
+          "current_ship_eta_rueb": "2026-06-09 15:31",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "3",
+          "time": "Wed Jun 10 07:00:00 CEST 2026",
+          "draft": "4.5",
+          "q_gruppe": "5",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "KRH",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "KRH → HOS",
+          "routes": [
+            "KRH → HOS"
+          ],
+          "q_gruppe": "5",
+          "draft": "4.5"
+        }
+      }
     }
   ],
   "unassigned_ships": [],
   "unused_pilots": [
-    {
-      "pilot_key": "vogel_peter",
-      "vorname": "Peter",
-      "nachname": "Vogel",
-      "pilot_name": "Vogel, Peter",
-      "abteilungszeit": "2026-06-09 11:50",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 13,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "ANNABA",
-      "from": "HOS",
-      "to": "RÜB",
-      "nr": 13,
-      "raw_time": "Tue Jun 09 11:50:00 CEST 2026",
-      "current_ship_name": "ANNABA",
-      "current_ship_eta_rueb": "2026-06-09 16:33",
-      "current_ship_q": 0,
-      "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
-    },
     {
       "pilot_key": "suermann_nik",
       "vorname": "Nik",
