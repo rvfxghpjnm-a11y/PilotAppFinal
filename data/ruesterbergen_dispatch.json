@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-10T22:41:29",
+  "generated_at": "2026-06-10T22:43:23",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,10 +34,10 @@
   "counts": {
     "ships_for_ruesterbergen": 4,
     "pilots_total": 4,
-    "pilots_dispatchable": 2,
-    "pilots_visible_only": 2,
-    "assignments": 2,
-    "unassigned_ships": 2,
+    "pilots_dispatchable": 3,
+    "pilots_visible_only": 1,
+    "assignments": 3,
+    "unassigned_ships": 1,
     "unused_pilots": 0
   },
   "ships": [
@@ -251,9 +251,10 @@
       "nr": 2,
       "raw_time": "Wed Jun 10 21:36:00 CEST 2026",
       "current_ship_name": "GT PIKE",
+      "current_ship_eta_rueb": "2026-06-11 02:13",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
@@ -321,24 +322,31 @@
       "current_ship_source": "special.already_in_rueb",
       "availability_kind": "already_in_rueb",
       "availability_hint": "Lotse gilt als bereits in RÜB"
-    }
-  ],
-  "visible_but_not_dispatchable_pilots": [
+    },
     {
       "pilot_key": "glenewinkel_jan-steffen",
+      "vorname": "Jan-Steffen",
+      "nachname": "Glenewinkel",
       "pilot_name": "Glenewinkel, Jan-Steffen",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 2,
       "abteilungszeit": "2026-06-10 21:36",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 2,
       "aufgabe": "Kanalbört",
       "fahrzeug": "GT PIKE",
       "from": "HOR",
       "to": "RÜB",
+      "nr": 2,
+      "raw_time": "Wed Jun 10 21:36:00 CEST 2026",
       "current_ship_name": "GT PIKE",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    },
+      "current_ship_eta_rueb": "2026-06-11 02:13",
+      "current_ship_q": 0,
+      "current_ship_route": "HOR → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    }
+  ],
+  "visible_but_not_dispatchable_pilots": [
     {
       "pilot_key": "krämer_jonas",
       "pilot_name": "Krämer, Jonas",
@@ -397,6 +405,17 @@
           "current_ship_source": "special.already_in_rueb",
           "availability_kind": "already_in_rueb",
           "availability_hint": "Lotse gilt als bereits in RÜB"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Glenewinkel, Jan-Steffen",
+          "pilot_tactical_nr": 2,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "GT PIKE",
+          "pilot_current_ship_eta_rueb": "2026-06-11 02:13",
+          "ship_eta_rueb": "2026-06-11 00:12",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -463,6 +482,17 @@
           "availability_hint": "Lotse gilt als bereits in RÜB"
         }
       ],
+      "excluded": [
+        {
+          "pilot_name": "Glenewinkel, Jan-Steffen",
+          "pilot_tactical_nr": 2,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "GT PIKE",
+          "pilot_current_ship_eta_rueb": "2026-06-11 02:13",
+          "ship_eta_rueb": "2026-06-11 00:16",
+          "availability_kind": "merged_eta"
+        }
+      ],
       "ship": {
         "meldung": {
           "nr": "2",
@@ -495,6 +525,70 @@
           "type_of_loading": "Ballast"
         }
       }
+    },
+    {
+      "ship_key": "HELGA ESSBERGER",
+      "ship_name": "HELGA ESSBERGER",
+      "eta_rueb": "2026-06-11 02:17",
+      "ship_q": 3,
+      "assigned_pilot": "Glenewinkel, Jan-Steffen",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 2,
+      "assigned_abteilungszeit": "2026-06-10 21:36",
+      "assigned_current_ship_name": "GT PIKE",
+      "assigned_current_ship_eta_rueb": "2026-06-11 02:13",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "pilot_name": "Glenewinkel, Jan-Steffen",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-06-10 21:36",
+          "fahrzeug": "GT PIKE",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "GT PIKE",
+          "current_ship_eta_rueb": "2026-06-11 02:13",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "4",
+          "time": "Thu Jun 11 02:00:00 CEST 2026",
+          "draft": "8.0",
+          "q_gruppe": "3",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "HOS → KLT",
+          "routes": [
+            "HOS → KLT",
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "3",
+          "vg": "4",
+          "draft": "8.00",
+          "length_m": "126.76",
+          "beam_m": "19.700",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "U",
+          "pilot_1_name": "Wilczynski, Fabian",
+          "travel_status": "SAILING_NOK",
+          "makler": "UCA",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Chemikalien fluessig"
+        }
+      }
     }
   ],
   "unassigned_ships": [
@@ -503,14 +597,18 @@
       "ship_name": "SWE CARRIER",
       "eta_rueb": "2026-06-11 00:20",
       "ship_q": 5,
-      "reason": "kein passender Lotse verfügbar"
-    },
-    {
-      "ship_key": "HELGA ESSBERGER",
-      "ship_name": "HELGA ESSBERGER",
-      "eta_rueb": "2026-06-11 02:17",
-      "ship_q": 3,
-      "reason": "kein passender Lotse verfügbar"
+      "reason": "kein passender Lotse verfügbar",
+      "excluded": [
+        {
+          "pilot_name": "Glenewinkel, Jan-Steffen",
+          "pilot_tactical_nr": 2,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "GT PIKE",
+          "pilot_current_ship_eta_rueb": "2026-06-11 02:13",
+          "ship_eta_rueb": "2026-06-11 00:20",
+          "availability_kind": "merged_eta"
+        }
+      ]
     }
   ],
   "unused_pilots": []
