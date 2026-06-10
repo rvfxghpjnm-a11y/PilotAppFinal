@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-10T15:49:19",
+  "generated_at": "2026-06-10T15:51:22",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 3,
     "pilots_total": 13,
-    "pilots_dispatchable": 12,
-    "pilots_visible_only": 1,
+    "pilots_dispatchable": 13,
+    "pilots_visible_only": 0,
     "assignments": 3,
     "unassigned_ships": 0,
-    "unused_pilots": 9
+    "unused_pilots": 10
   },
   "ships": [
     {
@@ -218,16 +218,13 @@
       "q_source": "q_gruppen_lotsen.entries",
       "pilot_tactical_nr": 14,
       "aufgabe": "Kanalbört",
-      "fahrzeug": "COE GISELA",
-      "from": "RÜB",
-      "to": "HOS",
+      "fahrzeug": "HOS",
       "nr": 14,
       "raw_time": "Wed Jun 10 10:50:00 CEST 2026",
       "current_ship_name": "COE GISELA",
       "current_ship_eta_rueb": "2026-06-10 12:06",
       "current_ship_q": 0,
-      "current_ship_route": "RÜB → HOS",
-      "current_ship_source": "schiffe_merged.seelotsen",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta"
     },
     {
@@ -378,9 +375,10 @@
       "nr": 3,
       "raw_time": "Wed Jun 10 14:53:00 CEST 2026",
       "current_ship_name": "BALTIC COASTER",
+      "current_ship_eta_rueb": "2026-06-10 19:21",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
@@ -498,16 +496,13 @@
       "q_source": "q_gruppen_lotsen.entries",
       "pilot_tactical_nr": 14,
       "aufgabe": "Kanalbört",
-      "fahrzeug": "COE GISELA",
-      "from": "RÜB",
-      "to": "HOS",
+      "fahrzeug": "HOS",
       "nr": 14,
       "raw_time": "Wed Jun 10 10:50:00 CEST 2026",
       "current_ship_name": "COE GISELA",
       "current_ship_eta_rueb": "2026-06-10 12:06",
       "current_ship_q": 0,
-      "current_ship_route": "RÜB → HOS",
-      "current_ship_source": "schiffe_merged.seelotsen",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta"
     },
     {
@@ -643,6 +638,28 @@
       "availability_kind": "merged_eta"
     },
     {
+      "pilot_key": "dalecki_niklas",
+      "vorname": "Niklas",
+      "nachname": "Dalecki",
+      "pilot_name": "Dalecki, Niklas",
+      "abteilungszeit": "2026-06-10 14:53",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 3,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "BALTIC COASTER",
+      "from": "HOR",
+      "to": "RÜB",
+      "nr": 3,
+      "raw_time": "Wed Jun 10 14:53:00 CEST 2026",
+      "current_ship_name": "BALTIC COASTER",
+      "current_ship_eta_rueb": "2026-06-10 19:21",
+      "current_ship_q": 0,
+      "current_ship_route": "HOR → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
       "pilot_key": "heyenga_kai",
       "vorname": "Kai",
       "nachname": "Heyenga",
@@ -682,23 +699,7 @@
       "availability_kind": "merged_eta"
     }
   ],
-  "visible_but_not_dispatchable_pilots": [
-    {
-      "pilot_key": "dalecki_niklas",
-      "pilot_name": "Dalecki, Niklas",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 3,
-      "abteilungszeit": "2026-06-10 14:53",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "BALTIC COASTER",
-      "from": "HOR",
-      "to": "RÜB",
-      "current_ship_name": "BALTIC COASTER",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    }
-  ],
+  "visible_but_not_dispatchable_pilots": [],
   "assignments": [
     {
       "ship_key": "BF CARP",
@@ -759,12 +760,11 @@
           "pilot_q": 0,
           "pilot_tactical_nr": 14,
           "abteilungszeit": "2026-06-10 10:50",
-          "fahrzeug": "COE GISELA",
-          "to": "HOS",
+          "fahrzeug": "HOS",
           "aufgabe": "Kanalbört",
           "current_ship_name": "COE GISELA",
           "current_ship_eta_rueb": "2026-06-10 12:06",
-          "current_ship_source": "schiffe_merged.seelotsen",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
           "availability_kind": "merged_eta"
         }
       ],
@@ -820,6 +820,15 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "X-PRESS ELBE",
           "pilot_current_ship_eta_rueb": "2026-06-10 19:13",
+          "ship_eta_rueb": "2026-06-10 16:12",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Dalecki, Niklas",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "BALTIC COASTER",
+          "pilot_current_ship_eta_rueb": "2026-06-10 19:21",
           "ship_eta_rueb": "2026-06-10 16:12",
           "availability_kind": "merged_eta"
         },
@@ -922,12 +931,11 @@
           "pilot_q": 0,
           "pilot_tactical_nr": 14,
           "abteilungszeit": "2026-06-10 10:50",
-          "fahrzeug": "COE GISELA",
-          "to": "HOS",
+          "fahrzeug": "HOS",
           "aufgabe": "Kanalbört",
           "current_ship_name": "COE GISELA",
           "current_ship_eta_rueb": "2026-06-10 12:06",
-          "current_ship_source": "schiffe_merged.seelotsen",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
           "availability_kind": "merged_eta"
         }
       ],
@@ -983,6 +991,15 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "X-PRESS ELBE",
           "pilot_current_ship_eta_rueb": "2026-06-10 19:13",
+          "ship_eta_rueb": "2026-06-10 16:13",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Dalecki, Niklas",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "BALTIC COASTER",
+          "pilot_current_ship_eta_rueb": "2026-06-10 19:21",
           "ship_eta_rueb": "2026-06-10 16:13",
           "availability_kind": "merged_eta"
         },
@@ -1059,12 +1076,11 @@
           "pilot_q": 0,
           "pilot_tactical_nr": 14,
           "abteilungszeit": "2026-06-10 10:50",
-          "fahrzeug": "COE GISELA",
-          "to": "HOS",
+          "fahrzeug": "HOS",
           "aufgabe": "Kanalbört",
           "current_ship_name": "COE GISELA",
           "current_ship_eta_rueb": "2026-06-10 12:06",
-          "current_ship_source": "schiffe_merged.seelotsen",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
           "availability_kind": "merged_eta"
         },
         {
@@ -1146,6 +1162,15 @@
           "pilot_current_ship_eta_rueb": "2026-06-10 19:13",
           "ship_eta_rueb": "2026-06-10 16:22",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Dalecki, Niklas",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "BALTIC COASTER",
+          "pilot_current_ship_eta_rueb": "2026-06-10 19:21",
+          "ship_eta_rueb": "2026-06-10 16:22",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -1195,16 +1220,13 @@
       "q_source": "q_gruppen_lotsen.entries",
       "pilot_tactical_nr": 14,
       "aufgabe": "Kanalbört",
-      "fahrzeug": "COE GISELA",
-      "from": "RÜB",
-      "to": "HOS",
+      "fahrzeug": "HOS",
       "nr": 14,
       "raw_time": "Wed Jun 10 10:50:00 CEST 2026",
       "current_ship_name": "COE GISELA",
       "current_ship_eta_rueb": "2026-06-10 12:06",
       "current_ship_q": 0,
-      "current_ship_route": "RÜB → HOS",
-      "current_ship_source": "schiffe_merged.seelotsen",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta"
     },
     {
@@ -1336,6 +1358,28 @@
       "current_ship_eta_rueb": "2026-06-10 19:13",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "dalecki_niklas",
+      "vorname": "Niklas",
+      "nachname": "Dalecki",
+      "pilot_name": "Dalecki, Niklas",
+      "abteilungszeit": "2026-06-10 14:53",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 3,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "BALTIC COASTER",
+      "from": "HOR",
+      "to": "RÜB",
+      "nr": 3,
+      "raw_time": "Wed Jun 10 14:53:00 CEST 2026",
+      "current_ship_name": "BALTIC COASTER",
+      "current_ship_eta_rueb": "2026-06-10 19:21",
+      "current_ship_q": 0,
+      "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
