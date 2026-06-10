@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-10T16:05:20",
+  "generated_at": "2026-06-10T16:07:21",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,15 +32,37 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 0,
+    "ships_for_ruesterbergen": 1,
     "pilots_total": 11,
     "pilots_dispatchable": 11,
     "pilots_visible_only": 0,
-    "assignments": 0,
+    "assignments": 1,
     "unassigned_ships": 0,
-    "unused_pilots": 11
+    "unused_pilots": 10
   },
-  "ships": [],
+  "ships": [
+    {
+      "ship_key": "LEERFAHRT",
+      "ship_name": "Leerfahrt",
+      "eta_rueb": "2026-06-10 17:00",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 0,
+      "meldung": {
+        "nr": "1",
+        "time": "Wed Jun 10 17:00:00 CEST 2026",
+        "lotsen_anzahl": 3,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "RÜB → HOS",
+        "routes": [
+          "RÜB → HOS"
+        ]
+      }
+    }
+  ],
   "pilots": [
     {
       "pilot_key": "lielienthal_jörn",
@@ -530,31 +552,167 @@
     }
   ],
   "visible_but_not_dispatchable_pilots": [],
-  "assignments": [],
+  "assignments": [
+    {
+      "ship_key": "LEERFAHRT",
+      "ship_name": "Leerfahrt",
+      "eta_rueb": "2026-06-10 17:00",
+      "ship_q": 0,
+      "assigned_pilot": "Lielienthal, Jörn",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 16,
+      "assigned_abteilungszeit": "2026-06-10 09:30",
+      "assigned_current_ship_name": "WILSON GRIP",
+      "assigned_current_ship_eta_rueb": "2026-06-10 14:07",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 6,
+      "candidates": [
+        {
+          "pilot_name": "Lielienthal, Jörn",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 16,
+          "abteilungszeit": "2026-06-10 09:30",
+          "fahrzeug": "WILSON GRIP",
+          "to": "NHF",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "WILSON GRIP",
+          "current_ship_eta_rueb": "2026-06-10 14:07",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Wille, Christian",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 15,
+          "abteilungszeit": "2026-06-10 10:28",
+          "fahrzeug": "BF CARP",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "BF CARP",
+          "current_ship_eta_rueb": "2026-06-10 16:11",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Zozulya, Mykola",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 12,
+          "abteilungszeit": "2026-06-10 11:44",
+          "fahrzeug": "AMADEA",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "AMADEA",
+          "current_ship_eta_rueb": "2026-06-10 16:55",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Haala, Klaus Werner",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 8,
+          "abteilungszeit": "2026-06-10 12:26",
+          "fahrzeug": "TJALFE R",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "TJALFE R",
+          "current_ship_eta_rueb": "2026-06-10 16:58",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Heyenga, Kai",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 1,
+          "abteilungszeit": "2026-06-10 15:00",
+          "fahrzeug": "ALEXANDER B",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ALEXANDER B",
+          "current_ship_eta_rueb": "2026-06-10 16:22",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Schuh, Erskine",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-06-10 15:00",
+          "fahrzeug": "BGM OSWALD-ELBE1",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "BGM OSWALD ELBE1",
+          "current_ship_eta_rueb": "2026-06-10 16:15",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Engel, Alexander",
+          "pilot_tactical_nr": 11,
+          "reason": "Quali passt nicht (3 > 0)",
+          "pilot_q": 3,
+          "ship_q": 0
+        },
+        {
+          "pilot_name": "Skairies, Thomas",
+          "pilot_tactical_nr": 6,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "ARKLOW WILLOW",
+          "pilot_current_ship_eta_rueb": "2026-06-10 18:48",
+          "ship_eta_rueb": "2026-06-10 17:00",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Berkenheger, Michael",
+          "pilot_tactical_nr": 5,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "WILSON DURNESS",
+          "pilot_current_ship_eta_rueb": "2026-06-10 19:16",
+          "ship_eta_rueb": "2026-06-10 17:00",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Ünsal, Hüseyin",
+          "pilot_tactical_nr": 4,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "X-PRESS ELBE",
+          "pilot_current_ship_eta_rueb": "2026-06-10 19:12",
+          "ship_eta_rueb": "2026-06-10 17:00",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Dalecki, Niklas",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "BALTIC COASTER",
+          "pilot_current_ship_eta_rueb": "2026-06-10 19:21",
+          "ship_eta_rueb": "2026-06-10 17:00",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "1",
+          "time": "Wed Jun 10 17:00:00 CEST 2026",
+          "lotsen_anzahl": 3,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "RÜB → HOS",
+          "routes": [
+            "RÜB → HOS"
+          ]
+        }
+      }
+    }
+  ],
   "unassigned_ships": [],
   "unused_pilots": [
-    {
-      "pilot_key": "lielienthal_jörn",
-      "vorname": "Jörn",
-      "nachname": "Lielienthal",
-      "pilot_name": "Lielienthal, Jörn",
-      "abteilungszeit": "2026-06-10 09:30",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 16,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "WILSON GRIP",
-      "from": "RÜB",
-      "to": "NHF",
-      "nr": 16,
-      "raw_time": "Wed Jun 10 09:30:00 CEST 2026",
-      "current_ship_name": "WILSON GRIP",
-      "current_ship_eta_rueb": "2026-06-10 14:07",
-      "current_ship_q": 5,
-      "current_ship_route": "RÜB → NHF",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
-    },
     {
       "pilot_key": "wille_christian",
       "vorname": "Christian",
