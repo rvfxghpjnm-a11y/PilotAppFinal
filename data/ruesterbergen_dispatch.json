@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-10T15:19:22",
+  "generated_at": "2026-06-10T15:21:19",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -42,34 +42,9 @@
   },
   "ships": [
     {
-      "ship_key": "BGM OSWALD-ELBE1",
-      "ship_name": "BGM OSWALD-ELBE1",
-      "eta_rueb": "2026-06-10 16:13",
-      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
-      "ship_q": 5,
-      "meldung": {
-        "nr": "2",
-        "time": "Wed Jun 10 16:13:00 CEST 2026",
-        "draft": "4.5",
-        "q_gruppe": "5",
-        "lotsen_anzahl": 1,
-        "confirmed": false,
-        "from": "RÜB",
-        "to": "HOS"
-      },
-      "summary": {
-        "route": "RÜB → HOS",
-        "routes": [
-          "RÜB → HOS"
-        ],
-        "q_gruppe": "5",
-        "draft": "4.5"
-      }
-    },
-    {
       "ship_key": "BF CARP",
       "ship_name": "BF CARP",
-      "eta_rueb": "2026-06-10 16:14",
+      "eta_rueb": "2026-06-10 16:13",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 2,
       "meldung": {
@@ -102,6 +77,31 @@
         "makler": "UCA",
         "dangerous_vessel": "-",
         "type_of_loading": "Container"
+      }
+    },
+    {
+      "ship_key": "BGM OSWALD-ELBE1",
+      "ship_name": "BGM OSWALD-ELBE1",
+      "eta_rueb": "2026-06-10 16:13",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 5,
+      "meldung": {
+        "nr": "2",
+        "time": "Wed Jun 10 16:13:00 CEST 2026",
+        "draft": "4.5",
+        "q_gruppe": "5",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "RÜB → HOS",
+        "routes": [
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "5",
+        "draft": "4.5"
       }
     },
     {
@@ -789,6 +789,195 @@
   ],
   "assignments": [
     {
+      "ship_key": "BF CARP",
+      "ship_name": "BF CARP",
+      "eta_rueb": "2026-06-10 16:13",
+      "ship_q": 2,
+      "assigned_pilot": "Wulff, Stephan",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 19,
+      "assigned_abteilungszeit": "2026-06-10 05:16",
+      "assigned_current_ship_name": "ELBSPRING",
+      "assigned_current_ship_eta_rueb": "2026-06-10 11:58",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 7,
+      "candidates": [
+        {
+          "pilot_name": "Wulff, Stephan",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 19,
+          "abteilungszeit": "2026-06-10 05:16",
+          "fahrzeug": "ELBSPRING",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ELBSPRING",
+          "current_ship_eta_rueb": "2026-06-10 11:58",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Migge, Alexander",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 18,
+          "abteilungszeit": "2026-06-10 05:53",
+          "fahrzeug": "RDJ JOHANNA",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RDJ JOHANNA",
+          "current_ship_eta_rueb": "2026-06-10 12:01",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Lielienthal, Jörn",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 16,
+          "abteilungszeit": "2026-06-10 09:30",
+          "fahrzeug": "WILSON GRIP",
+          "to": "NHF",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "WILSON GRIP",
+          "current_ship_eta_rueb": "2026-06-10 14:07",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Wille, Christian",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 15,
+          "abteilungszeit": "2026-06-10 10:28",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-06-10 10:28",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
+        },
+        {
+          "pilot_name": "Crotogino, Philipp",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 14,
+          "abteilungszeit": "2026-06-10 10:50",
+          "fahrzeug": "COE GISELA",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "COE GISELA",
+          "current_ship_eta_rueb": "2026-06-10 12:06",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Heyenga, Kai",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 1,
+          "abteilungszeit": "2026-06-10 15:00",
+          "fahrzeug": "Leerfahrt",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "Leerfahrt",
+          "current_ship_eta_rueb": "2026-06-10 16:00",
+          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
+          "availability_kind": "leerfahrt_hos_rueb_plus60",
+          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+        },
+        {
+          "pilot_name": "Schuh, Erskine",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-06-10 15:00",
+          "fahrzeug": "Leerfahrt",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "Leerfahrt",
+          "current_ship_eta_rueb": "2026-06-10 16:00",
+          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
+          "availability_kind": "leerfahrt_hos_rueb_plus60",
+          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Heyenga, Dennis",
+          "pilot_tactical_nr": 20,
+          "reason": "Quali passt nicht (4 > 2)",
+          "pilot_q": 4,
+          "ship_q": 2
+        },
+        {
+          "pilot_name": "Zozulya, Mykola",
+          "pilot_tactical_nr": 12,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "AMADEA",
+          "pilot_current_ship_eta_rueb": "2026-06-10 16:59",
+          "ship_eta_rueb": "2026-06-10 16:13",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Engel, Alexander",
+          "pilot_tactical_nr": 11,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "PAULA",
+          "pilot_current_ship_eta_rueb": "2026-06-10 16:35",
+          "ship_eta_rueb": "2026-06-10 16:13",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Haala, Klaus Werner",
+          "pilot_tactical_nr": 8,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "TJALFE R",
+          "pilot_current_ship_eta_rueb": "2026-06-10 17:02",
+          "ship_eta_rueb": "2026-06-10 16:13",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Skairies, Thomas",
+          "pilot_tactical_nr": 6,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "ARKLOW WILLOW",
+          "pilot_current_ship_eta_rueb": "2026-06-10 18:48",
+          "ship_eta_rueb": "2026-06-10 16:13",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "1",
+          "time": "Wed Jun 10 16:10:00 CEST 2026",
+          "draft": "7.9",
+          "q_gruppe": "2",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "HOS → KLT",
+          "routes": [
+            "HOS → KLT",
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "2",
+          "vg": "5",
+          "draft": "7.90",
+          "length_m": "139.09",
+          "beam_m": "22.6",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "U",
+          "pilot_1_name": "Koch, Roland",
+          "travel_status": "SAILING_NOK",
+          "makler": "UCA",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Container"
+        }
+      }
+    },
+    {
       "ship_key": "BGM OSWALD-ELBE1",
       "ship_name": "BGM OSWALD-ELBE1",
       "eta_rueb": "2026-06-10 16:13",
@@ -802,7 +991,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 8,
+      "candidate_count": 7,
       "candidates": [
         {
           "pilot_name": "Heyenga, Dennis",
@@ -814,19 +1003,6 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "RIX SPRING",
           "current_ship_eta_rueb": "2026-06-10 11:33",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Wulff, Stephan",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 19,
-          "abteilungszeit": "2026-06-10 05:16",
-          "fahrzeug": "ELBSPRING",
-          "to": "HOS",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "ELBSPRING",
-          "current_ship_eta_rueb": "2026-06-10 11:58",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -967,188 +1143,6 @@
           ],
           "q_gruppe": "5",
           "draft": "4.5"
-        }
-      }
-    },
-    {
-      "ship_key": "BF CARP",
-      "ship_name": "BF CARP",
-      "eta_rueb": "2026-06-10 16:14",
-      "ship_q": 2,
-      "assigned_pilot": "Wulff, Stephan",
-      "assigned_pilot_q": 0,
-      "assigned_tactical_nr": 19,
-      "assigned_abteilungszeit": "2026-06-10 05:16",
-      "assigned_current_ship_name": "ELBSPRING",
-      "assigned_current_ship_eta_rueb": "2026-06-10 11:58",
-      "assigned_current_ship_source": "schiffe_merged.seelotsen",
-      "assigned_availability_kind": "merged_eta",
-      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 7,
-      "candidates": [
-        {
-          "pilot_name": "Wulff, Stephan",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 19,
-          "abteilungszeit": "2026-06-10 05:16",
-          "fahrzeug": "ELBSPRING",
-          "to": "HOS",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "ELBSPRING",
-          "current_ship_eta_rueb": "2026-06-10 11:58",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Migge, Alexander",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 18,
-          "abteilungszeit": "2026-06-10 05:53",
-          "fahrzeug": "RDJ JOHANNA",
-          "to": "HOS",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "RDJ JOHANNA",
-          "current_ship_eta_rueb": "2026-06-10 12:01",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Lielienthal, Jörn",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 16,
-          "abteilungszeit": "2026-06-10 09:30",
-          "fahrzeug": "WILSON GRIP",
-          "to": "NHF",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "WILSON GRIP",
-          "current_ship_eta_rueb": "2026-06-10 14:07",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Wille, Christian",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 15,
-          "abteilungszeit": "2026-06-10 10:28",
-          "fahrzeug": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "RÜB",
-          "current_ship_eta_rueb": "2026-06-10 10:28",
-          "current_ship_source": "special.already_in_rueb",
-          "availability_kind": "already_in_rueb",
-          "availability_hint": "Lotse gilt als bereits in RÜB"
-        },
-        {
-          "pilot_name": "Crotogino, Philipp",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 14,
-          "abteilungszeit": "2026-06-10 10:50",
-          "fahrzeug": "COE GISELA",
-          "to": "HOS",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "COE GISELA",
-          "current_ship_eta_rueb": "2026-06-10 12:06",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Heyenga, Kai",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 1,
-          "abteilungszeit": "2026-06-10 15:00",
-          "fahrzeug": "Leerfahrt",
-          "to": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "Leerfahrt",
-          "current_ship_eta_rueb": "2026-06-10 16:00",
-          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-          "availability_kind": "leerfahrt_hos_rueb_plus60",
-          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
-        },
-        {
-          "pilot_name": "Schuh, Erskine",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 2,
-          "abteilungszeit": "2026-06-10 15:00",
-          "fahrzeug": "Leerfahrt",
-          "to": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "Leerfahrt",
-          "current_ship_eta_rueb": "2026-06-10 16:00",
-          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-          "availability_kind": "leerfahrt_hos_rueb_plus60",
-          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
-        }
-      ],
-      "excluded": [
-        {
-          "pilot_name": "Zozulya, Mykola",
-          "pilot_tactical_nr": 12,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "AMADEA",
-          "pilot_current_ship_eta_rueb": "2026-06-10 16:59",
-          "ship_eta_rueb": "2026-06-10 16:14",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Engel, Alexander",
-          "pilot_tactical_nr": 11,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "PAULA",
-          "pilot_current_ship_eta_rueb": "2026-06-10 16:35",
-          "ship_eta_rueb": "2026-06-10 16:14",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Haala, Klaus Werner",
-          "pilot_tactical_nr": 8,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "TJALFE R",
-          "pilot_current_ship_eta_rueb": "2026-06-10 17:02",
-          "ship_eta_rueb": "2026-06-10 16:14",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Skairies, Thomas",
-          "pilot_tactical_nr": 6,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "ARKLOW WILLOW",
-          "pilot_current_ship_eta_rueb": "2026-06-10 18:48",
-          "ship_eta_rueb": "2026-06-10 16:14",
-          "availability_kind": "merged_eta"
-        }
-      ],
-      "ship": {
-        "meldung": {
-          "nr": "1",
-          "time": "Wed Jun 10 16:10:00 CEST 2026",
-          "draft": "7.9",
-          "q_gruppe": "2",
-          "lotsen_anzahl": 1,
-          "confirmed": false,
-          "from": "RÜB",
-          "to": "HOS"
-        },
-        "summary": {
-          "route": "HOS → KLT",
-          "routes": [
-            "HOS → KLT",
-            "RÜB → HOS"
-          ],
-          "q_gruppe": "2",
-          "vg": "5",
-          "draft": "7.90",
-          "length_m": "139.09",
-          "beam_m": "22.6",
-          "queue_title": "Zulauf vom Kanal in Kiel",
-          "zulauf_richtung": "vom_kanal",
-          "pilot_required": "true",
-          "pilot_status": "U",
-          "pilot_1_name": "Koch, Roland",
-          "travel_status": "SAILING_NOK",
-          "makler": "UCA",
-          "dangerous_vessel": "-",
-          "type_of_loading": "Container"
         }
       }
     },
