@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-10T10:11:20",
+  "generated_at": "2026-06-10T10:13:19",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 5,
     "pilots_total": 7,
-    "pilots_dispatchable": 5,
-    "pilots_visible_only": 2,
+    "pilots_dispatchable": 6,
+    "pilots_visible_only": 1,
     "assignments": 5,
     "unassigned_ships": 0,
-    "unused_pilots": 0
+    "unused_pilots": 1
   },
   "ships": [
     {
@@ -377,9 +377,10 @@
       "nr": 1,
       "raw_time": "Wed Jun 10 09:30:00 CEST 2026",
       "current_ship_name": "HOHE BANK",
+      "current_ship_eta_rueb": "2026-06-10 13:40",
       "current_ship_q": 0,
       "current_ship_route": "UTG → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     }
   ],
@@ -492,6 +493,28 @@
       "current_ship_route": "RÜB → HOS",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "lielienthal_jörn",
+      "vorname": "Jörn",
+      "nachname": "Lielienthal",
+      "pilot_name": "Lielienthal, Jörn",
+      "abteilungszeit": "2026-06-10 09:30",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 1,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "HOHE BANK",
+      "from": "UTG",
+      "to": "RÜB",
+      "nr": 1,
+      "raw_time": "Wed Jun 10 09:30:00 CEST 2026",
+      "current_ship_name": "HOHE BANK",
+      "current_ship_eta_rueb": "2026-06-10 13:40",
+      "current_ship_q": 0,
+      "current_ship_route": "UTG → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
     }
   ],
   "visible_but_not_dispatchable_pilots": [
@@ -507,21 +530,6 @@
       "to": "RÜB",
       "current_ship_name": "EN AVANT 1 + EN AVANT 10 + BARGE H331",
       "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    },
-    {
-      "pilot_key": "lielienthal_jörn",
-      "pilot_name": "Lielienthal, Jörn",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 1,
-      "abteilungszeit": "2026-06-10 09:30",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "HOHE BANK",
-      "from": "UTG",
-      "to": "RÜB",
-      "current_ship_name": "HOHE BANK",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta",
       "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
     }
@@ -606,6 +614,17 @@
           "current_ship_name": "AGNES ESSBERGER",
           "current_ship_eta_rueb": "2026-06-10 09:20",
           "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Lielienthal, Jörn",
+          "pilot_tactical_nr": 1,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "HOHE BANK",
+          "pilot_current_ship_eta_rueb": "2026-06-10 13:40",
+          "ship_eta_rueb": "2026-06-10 11:37",
           "availability_kind": "merged_eta"
         }
       ],
@@ -699,6 +718,15 @@
           "reason": "Quali passt nicht (2 > 0)",
           "pilot_q": 2,
           "ship_q": 0
+        },
+        {
+          "pilot_name": "Lielienthal, Jörn",
+          "pilot_tactical_nr": 1,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "HOHE BANK",
+          "pilot_current_ship_eta_rueb": "2026-06-10 13:40",
+          "ship_eta_rueb": "2026-06-10 12:04",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -792,6 +820,17 @@
           "availability_kind": "merged_eta"
         }
       ],
+      "excluded": [
+        {
+          "pilot_name": "Lielienthal, Jörn",
+          "pilot_tactical_nr": 1,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "HOHE BANK",
+          "pilot_current_ship_eta_rueb": "2026-06-10 13:40",
+          "ship_eta_rueb": "2026-06-10 12:07",
+          "availability_kind": "merged_eta"
+        }
+      ],
       "ship": {
         "meldung": {
           "nr": "3",
@@ -868,6 +907,17 @@
           "availability_kind": "merged_eta"
         }
       ],
+      "excluded": [
+        {
+          "pilot_name": "Lielienthal, Jörn",
+          "pilot_tactical_nr": 1,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "HOHE BANK",
+          "pilot_current_ship_eta_rueb": "2026-06-10 13:40",
+          "ship_eta_rueb": "2026-06-10 12:11",
+          "availability_kind": "merged_eta"
+        }
+      ],
       "ship": {
         "meldung": {
           "nr": "4",
@@ -915,7 +965,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 1,
+      "candidate_count": 2,
       "candidates": [
         {
           "pilot_name": "Petersen, Yannick",
@@ -927,6 +977,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "AGNES ESSBERGER",
           "current_ship_eta_rueb": "2026-06-10 09:20",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Lielienthal, Jörn",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 1,
+          "abteilungszeit": "2026-06-10 09:30",
+          "fahrzeug": "HOHE BANK",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "HOHE BANK",
+          "current_ship_eta_rueb": "2026-06-10 13:40",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
@@ -968,5 +1031,28 @@
     }
   ],
   "unassigned_ships": [],
-  "unused_pilots": []
+  "unused_pilots": [
+    {
+      "pilot_key": "lielienthal_jörn",
+      "vorname": "Jörn",
+      "nachname": "Lielienthal",
+      "pilot_name": "Lielienthal, Jörn",
+      "abteilungszeit": "2026-06-10 09:30",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 1,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "HOHE BANK",
+      "from": "UTG",
+      "to": "RÜB",
+      "nr": 1,
+      "raw_time": "Wed Jun 10 09:30:00 CEST 2026",
+      "current_ship_name": "HOHE BANK",
+      "current_ship_eta_rueb": "2026-06-10 13:40",
+      "current_ship_q": 0,
+      "current_ship_route": "UTG → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    }
+  ]
 }
