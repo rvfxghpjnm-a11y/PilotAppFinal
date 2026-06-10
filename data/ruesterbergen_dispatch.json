@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-10T02:11:17",
+  "generated_at": "2026-06-10T02:13:18",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 4,
     "pilots_total": 6,
-    "pilots_dispatchable": 5,
-    "pilots_visible_only": 1,
+    "pilots_dispatchable": 6,
+    "pilots_visible_only": 0,
     "assignments": 4,
     "unassigned_ships": 0,
-    "unused_pilots": 1
+    "unused_pilots": 2
   },
   "ships": [
     {
@@ -306,9 +306,10 @@
       "nr": 1,
       "raw_time": "Wed Jun 10 00:47:00 CEST 2026",
       "current_ship_name": "KARILIIS",
+      "current_ship_eta_rueb": "2026-06-10 05:52",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     }
   ],
@@ -420,25 +421,31 @@
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
-    }
-  ],
-  "visible_but_not_dispatchable_pilots": [
+    },
     {
       "pilot_key": "flink_jörg",
+      "vorname": "Jörg",
+      "nachname": "Flink",
       "pilot_name": "Flink, Jörg",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 1,
       "abteilungszeit": "2026-06-10 00:47",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 1,
       "aufgabe": "Kanalbört",
       "fahrzeug": "KARILIIS",
       "from": "HOS",
       "to": "RÜB",
+      "nr": 1,
+      "raw_time": "Wed Jun 10 00:47:00 CEST 2026",
       "current_ship_name": "KARILIIS",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
+      "current_ship_eta_rueb": "2026-06-10 05:52",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
     }
   ],
+  "visible_but_not_dispatchable_pilots": [],
   "assignments": [
     {
       "ship_key": "KAPPAGAS",
@@ -516,6 +523,15 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "ANNALISA P",
           "pilot_current_ship_eta_rueb": "2026-06-10 05:56",
+          "ship_eta_rueb": "2026-06-10 03:56",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Flink, Jörg",
+          "pilot_tactical_nr": 1,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "KARILIIS",
+          "pilot_current_ship_eta_rueb": "2026-06-10 05:52",
           "ship_eta_rueb": "2026-06-10 03:56",
           "availability_kind": "merged_eta"
         }
@@ -614,6 +630,15 @@
           "pilot_current_ship_eta_rueb": "2026-06-10 05:56",
           "ship_eta_rueb": "2026-06-10 03:59",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Flink, Jörg",
+          "pilot_tactical_nr": 1,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "KARILIIS",
+          "pilot_current_ship_eta_rueb": "2026-06-10 05:52",
+          "ship_eta_rueb": "2026-06-10 03:59",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -703,6 +728,15 @@
           "pilot_current_ship_eta_rueb": "2026-06-10 05:56",
           "ship_eta_rueb": "2026-06-10 04:05",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Flink, Jörg",
+          "pilot_tactical_nr": 1,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "KARILIIS",
+          "pilot_current_ship_eta_rueb": "2026-06-10 05:52",
+          "ship_eta_rueb": "2026-06-10 04:05",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -753,7 +787,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 2,
+      "candidate_count": 3,
       "candidates": [
         {
           "pilot_name": "Biedermann, Johannes",
@@ -778,6 +812,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "ANNALISA P",
           "current_ship_eta_rueb": "2026-06-10 05:56",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Flink, Jörg",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 1,
+          "abteilungszeit": "2026-06-10 00:47",
+          "fahrzeug": "KARILIIS",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "KARILIIS",
+          "current_ship_eta_rueb": "2026-06-10 05:52",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
@@ -823,6 +870,28 @@
       "raw_time": "Wed Jun 10 00:35:00 CEST 2026",
       "current_ship_name": "ANNALISA P",
       "current_ship_eta_rueb": "2026-06-10 05:56",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "flink_jörg",
+      "vorname": "Jörg",
+      "nachname": "Flink",
+      "pilot_name": "Flink, Jörg",
+      "abteilungszeit": "2026-06-10 00:47",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 1,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "KARILIIS",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 1,
+      "raw_time": "Wed Jun 10 00:47:00 CEST 2026",
+      "current_ship_name": "KARILIIS",
+      "current_ship_eta_rueb": "2026-06-10 05:52",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
