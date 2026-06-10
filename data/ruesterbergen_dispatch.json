@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-10T19:47:19",
+  "generated_at": "2026-06-10T19:49:24",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,13 +32,13 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 2,
+    "ships_for_ruesterbergen": 3,
     "pilots_total": 5,
     "pilots_dispatchable": 5,
     "pilots_visible_only": 0,
-    "assignments": 2,
+    "assignments": 3,
     "unassigned_ships": 0,
-    "unused_pilots": 3
+    "unused_pilots": 2
   },
   "ships": [
     {
@@ -82,7 +82,7 @@
     {
       "ship_key": "BEUKBORG",
       "ship_name": "BEUKBORG",
-      "eta_rueb": "2026-06-11 00:22",
+      "eta_rueb": "2026-06-11 00:20",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
@@ -114,6 +114,43 @@
         "makler": "UCA",
         "dangerous_vessel": "-",
         "type_of_loading": "Bulk"
+      }
+    },
+    {
+      "ship_key": "SEA MELODY",
+      "ship_name": "SEA MELODY",
+      "eta_rueb": "2026-06-11 00:24",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 5,
+      "meldung": {
+        "nr": "3",
+        "time": "Thu Jun 11 00:32:00 CEST 2026",
+        "draft": "3.2",
+        "q_gruppe": "5",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "RÜB → HOS",
+        "routes": [
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "5",
+        "vg": "3",
+        "draft": "3.20",
+        "length_m": "88.78",
+        "beam_m": "12.500",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "H",
+        "pilot_1_name": "Marzalla, Tobias",
+        "travel_status": "SAILING_NOK",
+        "makler": "UCA",
+        "dangerous_vessel": "-",
+        "type_of_loading": "Ballast"
       }
     }
   ],
@@ -460,7 +497,7 @@
     {
       "ship_key": "BEUKBORG",
       "ship_name": "BEUKBORG",
-      "eta_rueb": "2026-06-11 00:22",
+      "eta_rueb": "2026-06-11 00:20",
       "ship_q": 5,
       "assigned_pilot": "Dalecki, Niklas",
       "assigned_pilot_q": 0,
@@ -559,32 +596,99 @@
           "type_of_loading": "Bulk"
         }
       }
+    },
+    {
+      "ship_key": "SEA MELODY",
+      "ship_name": "SEA MELODY",
+      "eta_rueb": "2026-06-11 00:24",
+      "ship_q": 5,
+      "assigned_pilot": "Heyenga, Kai",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 3,
+      "assigned_abteilungszeit": "2026-06-10 15:00",
+      "assigned_current_ship_name": "ALEXANDER B",
+      "assigned_current_ship_eta_rueb": "2026-06-10 16:26",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 3,
+      "candidates": [
+        {
+          "pilot_name": "Heyenga, Kai",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 3,
+          "abteilungszeit": "2026-06-10 15:00",
+          "fahrzeug": "ALEXANDER B",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ALEXANDER B",
+          "current_ship_eta_rueb": "2026-06-10 16:26",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Schuh, Erskine",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 4,
+          "abteilungszeit": "2026-06-10 15:00",
+          "fahrzeug": "BGM OSWALD-ELBE1",
+          "to": "NHF",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "BGM OSWALD ELBE1",
+          "current_ship_eta_rueb": "2026-06-10 16:15",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Wald, Mark",
+          "pilot_q": 3,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-06-10 17:13",
+          "fahrzeug": "SIMON B",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "SIMON B",
+          "current_ship_eta_rueb": "2026-06-10 21:34",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "3",
+          "time": "Thu Jun 11 00:32:00 CEST 2026",
+          "draft": "3.2",
+          "q_gruppe": "5",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "RÜB → HOS",
+          "routes": [
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "5",
+          "vg": "3",
+          "draft": "3.20",
+          "length_m": "88.78",
+          "beam_m": "12.500",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "H",
+          "pilot_1_name": "Marzalla, Tobias",
+          "travel_status": "SAILING_NOK",
+          "makler": "UCA",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Ballast"
+        }
+      }
     }
   ],
   "unassigned_ships": [],
   "unused_pilots": [
-    {
-      "pilot_key": "heyenga_kai",
-      "vorname": "Kai",
-      "nachname": "Heyenga",
-      "pilot_name": "Heyenga, Kai",
-      "abteilungszeit": "2026-06-10 15:00",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 3,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "ALEXANDER B",
-      "from": "RÜB",
-      "to": "HOS",
-      "nr": 3,
-      "raw_time": "Wed Jun 10 15:00:00 CEST 2026",
-      "current_ship_name": "ALEXANDER B",
-      "current_ship_eta_rueb": "2026-06-10 16:26",
-      "current_ship_q": 1,
-      "current_ship_route": "RÜB → HOS",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
-    },
     {
       "pilot_key": "schuh_erskine",
       "vorname": "Erskine",
