@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-11T05:13:20",
+  "generated_at": "2026-06-11T05:15:19",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,12 +32,12 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 5,
+    "ships_for_ruesterbergen": 6,
     "pilots_total": 8,
     "pilots_dispatchable": 6,
     "pilots_visible_only": 2,
     "assignments": 5,
-    "unassigned_ships": 0,
+    "unassigned_ships": 1,
     "unused_pilots": 1
   },
   "ships": [
@@ -157,7 +157,7 @@
     {
       "ship_key": "KREETE",
       "ship_name": "KREETE",
-      "eta_rueb": "2026-06-11 09:30",
+      "eta_rueb": "2026-06-11 09:43",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
@@ -192,13 +192,51 @@
       }
     },
     {
+      "ship_key": "CMA CGM RUNDALE",
+      "ship_name": "CMA CGM RUNDALE",
+      "eta_rueb": "2026-06-11 09:48",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 0,
+      "meldung": {
+        "nr": "5",
+        "time": "Thu Jun 11 09:33:00 CEST 2026",
+        "draft": "7.3",
+        "q_gruppe": "0",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "0",
+        "vg": "6",
+        "draft": "7.30",
+        "length_m": "204.29",
+        "beam_m": "29.6",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "U",
+        "pilot_1_name": "Berg, Peter",
+        "travel_status": "SAILING_NOK",
+        "makler": "SUB",
+        "dangerous_vessel": "-",
+        "type_of_loading": "Container"
+      }
+    },
+    {
       "ship_key": "ELBWAVE",
       "ship_name": "ELBWAVE",
       "eta_rueb": "2026-06-11 23:00",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 1,
       "meldung": {
-        "nr": "5",
+        "nr": "6",
         "time": "Thu Jun 11 23:00:00 CEST 2026",
         "draft": "8.5",
         "q_gruppe": "1",
@@ -905,7 +943,7 @@
     {
       "ship_key": "KREETE",
       "ship_name": "KREETE",
-      "eta_rueb": "2026-06-11 09:30",
+      "eta_rueb": "2026-06-11 09:43",
       "ship_q": 5,
       "assigned_pilot": "Pankonin, Denny",
       "assigned_pilot_q": 0,
@@ -993,10 +1031,10 @@
       }
     },
     {
-      "ship_key": "ELBWAVE",
-      "ship_name": "ELBWAVE",
-      "eta_rueb": "2026-06-11 23:00",
-      "ship_q": 1,
+      "ship_key": "CMA CGM RUNDALE",
+      "ship_name": "CMA CGM RUNDALE",
+      "eta_rueb": "2026-06-11 09:48",
+      "ship_q": 0,
       "assigned_pilot": "Röhrs, Johannes",
       "assigned_pilot_q": 0,
       "assigned_tactical_nr": 5,
@@ -1026,34 +1064,64 @@
         {
           "pilot_name": "Lehwald, Christian",
           "pilot_tactical_nr": 7,
-          "reason": "Quali passt nicht (4 > 1)",
+          "reason": "Quali passt nicht (4 > 0)",
           "pilot_q": 4,
-          "ship_q": 1
+          "ship_q": 0
         }
       ],
       "ship": {
         "meldung": {
           "nr": "5",
-          "time": "Thu Jun 11 23:00:00 CEST 2026",
-          "draft": "8.5",
-          "q_gruppe": "1",
+          "time": "Thu Jun 11 09:33:00 CEST 2026",
+          "draft": "7.3",
+          "q_gruppe": "0",
           "lotsen_anzahl": 1,
           "confirmed": false,
           "from": "RÜB",
           "to": "HOS"
         },
         "summary": {
-          "route": "RÜB → HOS",
+          "route": "HOS → KLT",
           "routes": [
+            "HOS → KLT",
             "RÜB → HOS"
           ],
-          "q_gruppe": "1",
-          "draft": "8.5"
+          "q_gruppe": "0",
+          "vg": "6",
+          "draft": "7.30",
+          "length_m": "204.29",
+          "beam_m": "29.6",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "U",
+          "pilot_1_name": "Berg, Peter",
+          "travel_status": "SAILING_NOK",
+          "makler": "SUB",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Container"
         }
       }
     }
   ],
-  "unassigned_ships": [],
+  "unassigned_ships": [
+    {
+      "ship_key": "ELBWAVE",
+      "ship_name": "ELBWAVE",
+      "eta_rueb": "2026-06-11 23:00",
+      "ship_q": 1,
+      "reason": "kein passender Lotse verfügbar",
+      "excluded": [
+        {
+          "pilot_name": "Lehwald, Christian",
+          "pilot_tactical_nr": 7,
+          "reason": "Quali passt nicht (4 > 1)",
+          "pilot_q": 4,
+          "ship_q": 1
+        }
+      ]
+    }
+  ],
   "unused_pilots": [
     {
       "pilot_key": "lehwald_christian",
