@@ -1,51 +1,51 @@
 {
-  "generated_at": "2026-06-11T04:09:19",
+  "generated_at": "2026-06-11T04:11:21",
   "source_meta": {
     "zulauf_kiel_innen": {
       "file": "Zulauf_kiel_innen.json",
-      "generated_at": "2026-06-11 04:08",
+      "generated_at": "2026-06-11 04:10",
       "queue": "kiel_innen",
       "title": "Zulauf vom Kanal in Kiel",
       "count": 5
     },
     "zulauf_kiel_aussen": {
       "file": "Zulauf_kiel_aussen.json",
-      "generated_at": "2026-06-11 04:08",
+      "generated_at": "2026-06-11 04:10",
       "queue": "kiel_aussen",
       "title": "Zulauf von See in Kiel",
       "count": 0
     },
     "zulauf_brb_innen": {
       "file": "Zulauf_brb_innen.json",
-      "generated_at": "2026-06-11 04:08",
+      "generated_at": "2026-06-11 04:10",
       "queue": "brb_innen",
       "title": "Zulauf vom Kanal in Brunsbüttel",
       "count": 6
     },
     "zulauf_brb_aussen": {
       "file": "Zulauf_brb_aussen.json",
-      "generated_at": "2026-06-11 04:08",
+      "generated_at": "2026-06-11 04:10",
       "queue": "brb_aussen",
       "title": "Zulauf von See in Brunsbüttel",
       "count": 6
     },
     "meldungen_kiel": {
       "file": "Meldungen_Kiel.json",
-      "generated_at": "2026-06-11 04:08",
+      "generated_at": "2026-06-11 04:10",
       "count": 46
     },
     "meldungen_ruesterbergen": {
       "file": "Meldungen_Ruesterbergen.json",
-      "generated_at": "2026-06-11 04:08",
+      "generated_at": "2026-06-11 04:10",
       "count": 4
     },
     "seelotsen": {
       "file": "Seelotsen.json",
-      "generated_at": "2026-06-11 04:08",
-      "count": 12
+      "generated_at": "2026-06-11 04:10",
+      "count": 11
     }
   },
-  "count": 46,
+  "count": 47,
   "entries": [
     {
       "ship_key": "AKACIA",
@@ -68,7 +68,8 @@
         "q_gruppe": "2",
         "draft": "8.6",
         "lotsen_anzahl_kiel": 1,
-        "confirmed_kiel": true
+        "confirmed_kiel": true,
+        "remark_kiel": "0740 idk"
       },
       "zulauf": [],
       "meldungen_kiel": [
@@ -82,7 +83,8 @@
           "confirmed": true,
           "from": "KLT",
           "to": "HOS",
-          "route": "KLT → HOS"
+          "route": "KLT → HOS",
+          "remark": "0740 idk"
         },
         {
           "source": "meldungen_kiel",
@@ -94,7 +96,8 @@
           "confirmed": true,
           "from": "HOS",
           "to": "RÜB",
-          "route": "HOS → RÜB"
+          "route": "HOS → RÜB",
+          "remark": "0740 idk"
         }
       ],
       "meldungen_ruesterbergen": [],
@@ -154,10 +157,10 @@
           "zulauf_brb_innen"
         ],
         "eta_rueb": "2026-06-11 03:48",
-        "eta_schleuse": "2026-06-11 08:08",
-        "eta_text": "08:08",
+        "eta_schleuse": "2026-06-11 08:09",
+        "eta_text": "08:09",
         "first_seen": "2026-06-10 23:26",
-        "delta_rueb_schleuse": "04:20",
+        "delta_rueb_schleuse": "04:21",
         "delta_start_rueb": "04:22",
         "queue_key": "brb_innen",
         "queue_title": "Zulauf vom Kanal in Brunsbüttel",
@@ -309,10 +312,10 @@
       "zulauf": [
         {
           "name": "BALTIC WAVE",
-          "eta_schleuse": "2026-06-11 08:08",
+          "eta_schleuse": "2026-06-11 08:09",
           "eta_rueb": "2026-06-11 03:48",
           "first_seen": "2026-06-10 23:26",
-          "delta_rueb_schleuse": "04:20",
+          "delta_rueb_schleuse": "04:21",
           "delta_start_rueb": "04:22",
           "ship_name": "BALTIC WAVE",
           "vg": "3",
@@ -326,7 +329,7 @@
           "pilot_required": "true",
           "pilot_foerde": "true",
           "pilot_order": "NOK-ESEE-KF",
-          "eta_text": "08:08",
+          "eta_text": "08:09",
           "destination": "Brunsbüttel",
           "makler": "NIK",
           "preferred_mooring_side": "Bb",
@@ -2006,7 +2009,8 @@
               "out": "2026-06-11 03:21"
             },
             "koenigsfoerde": {
-              "in": "2026-06-11 04:03"
+              "in": "2026-06-11 04:03",
+              "out": "2026-06-11 04:08"
             }
           }
         }
@@ -2072,7 +2076,8 @@
                 "out": "2026-06-11 03:21"
               },
               "koenigsfoerde": {
-                "in": "2026-06-11 04:03"
+                "in": "2026-06-11 04:03",
+                "out": "2026-06-11 04:08"
               }
             }
           },
@@ -2644,7 +2649,6 @@
       "ship_key": "KRISTIN",
       "name": "KRISTIN",
       "sources": [
-        "seelotsen",
         "zulauf_brb_innen"
       ],
       "special_entry": false,
@@ -2652,12 +2656,7 @@
         "name": "KRISTIN",
         "special_entry": false,
         "sources": [
-          "seelotsen",
           "zulauf_brb_innen"
-        ],
-        "route": "HOR → RÜB",
-        "routes": [
-          "HOR → RÜB"
         ],
         "eta_rueb": "2026-06-11 04:13",
         "eta_schleuse": "2026-06-11 08:40",
@@ -2698,12 +2697,6 @@
         "dangerous_vessel": "-",
         "port_of_departure": "DK SKA",
         "port_of_destination": "DK TYB",
-        "assigned_pilots": [
-          "Pankonin, Denny"
-        ],
-        "aufgaben": [
-          "Kanalbört"
-        ],
         "passage_block": {
           "start_text": "Kiel Schleuse Kiel",
           "start_0": "Kiel",
@@ -2744,6 +2737,7 @@
           "pilot_foerde": "false",
           "pilot_order": "NOK",
           "num_of_pilots": "1",
+          "pilot_change_off_time": "2026-06-11 04:11",
           "pilot_elbe_see": "false",
           "pilot_nok": "true",
           "pilot_ostsee": "false",
@@ -2907,6 +2901,7 @@
             "pilot_foerde": "false",
             "pilot_order": "NOK",
             "num_of_pilots": "1",
+            "pilot_change_off_time": "2026-06-11 04:11",
             "pilot_elbe_see": "false",
             "pilot_nok": "true",
             "pilot_ostsee": "false",
@@ -2945,19 +2940,7 @@
       ],
       "meldungen_kiel": [],
       "meldungen_ruesterbergen": [],
-      "seelotsen": [
-        {
-          "nr": 7,
-          "time": "2026-06-10 23:13",
-          "pilot_name": "Pankonin, Denny",
-          "nachname": "Pankonin",
-          "vorname": "Denny",
-          "aufgabe": "Kanalbört",
-          "from": "HOR",
-          "to": "RÜB",
-          "route": "HOR → RÜB"
-        }
-      ]
+      "seelotsen": []
     },
     {
       "ship_key": "LADY MONIQUE",
@@ -4226,10 +4209,10 @@
           "RÜB → HOS"
         ],
         "eta_rueb": "2026-06-11 06:15",
-        "eta_schleuse": "2026-06-11 09:50",
-        "eta_text": "09:50",
+        "eta_schleuse": "2026-06-11 09:48",
+        "eta_text": "09:48",
         "first_seen": "2026-06-11 01:58",
-        "delta_rueb_schleuse": "03:35",
+        "delta_rueb_schleuse": "03:33",
         "delta_start_rueb": "04:17",
         "queue_key": "kiel_innen",
         "queue_title": "Zulauf vom Kanal in Kiel",
@@ -4398,10 +4381,10 @@
       "zulauf": [
         {
           "name": "NORRLAND",
-          "eta_schleuse": "2026-06-11 09:50",
+          "eta_schleuse": "2026-06-11 09:48",
           "eta_rueb": "2026-06-11 06:15",
           "first_seen": "2026-06-11 01:58",
-          "delta_rueb_schleuse": "03:35",
+          "delta_rueb_schleuse": "03:33",
           "delta_start_rueb": "04:17",
           "ship_name": "NORRLAND",
           "vg": "4",
@@ -4415,7 +4398,7 @@
           "pilot_required": "true",
           "pilot_foerde": "true",
           "pilot_order": "KS-NOK-ESEE-KF",
-          "eta_text": "09:50",
+          "eta_text": "09:48",
           "destination": "Kiel",
           "makler": "UCA",
           "preferred_mooring_side": "Stb",
@@ -4642,7 +4625,6 @@
       "ship_key": "RIX ELEONORA",
       "name": "RIX ELEONORA",
       "sources": [
-        "seelotsen",
         "zulauf_brb_innen"
       ],
       "special_entry": false,
@@ -4650,18 +4632,13 @@
         "name": "RIX ELEONORA",
         "special_entry": false,
         "sources": [
-          "seelotsen",
           "zulauf_brb_innen"
         ],
-        "route": "HOR → RÜB",
-        "routes": [
-          "HOR → RÜB"
-        ],
         "eta_rueb": "2026-06-11 04:07",
-        "eta_schleuse": "2026-06-11 08:34",
-        "eta_text": "08:34",
+        "eta_schleuse": "2026-06-11 08:35",
+        "eta_text": "08:35",
         "first_seen": "2026-06-11 00:46",
-        "delta_rueb_schleuse": "04:27",
+        "delta_rueb_schleuse": "04:29",
         "delta_start_rueb": "03:21",
         "queue_key": "brb_innen",
         "queue_title": "Zulauf vom Kanal in Brunsbüttel",
@@ -4701,12 +4678,6 @@
         "dangerous_vessel": "-",
         "port_of_departure": "PL PLC",
         "port_of_destination": "GB NHO",
-        "assigned_pilots": [
-          "Escher, Franck"
-        ],
-        "aufgaben": [
-          "Kanalbört"
-        ],
         "passage_block": {
           "start_text": "Kiel Schleuse Kiel",
           "start_0": "Kiel",
@@ -4751,6 +4722,7 @@
           "pilot_order": "NOK",
           "pilot_status": "H",
           "num_of_pilots": "1",
+          "pilot_change_off_time": "2026-06-11 04:05",
           "pilot_elbe_see": "false",
           "pilot_nok": "true",
           "pilot_ostsee": "false",
@@ -4824,10 +4796,10 @@
       "zulauf": [
         {
           "name": "RIX ELEONORA",
-          "eta_schleuse": "2026-06-11 08:34",
+          "eta_schleuse": "2026-06-11 08:35",
           "eta_rueb": "2026-06-11 04:07",
           "first_seen": "2026-06-11 00:46",
-          "delta_rueb_schleuse": "04:27",
+          "delta_rueb_schleuse": "04:29",
           "delta_start_rueb": "03:21",
           "ship_name": "RIX ELEONORA",
           "vg": "3",
@@ -4841,7 +4813,7 @@
           "pilot_required": "true",
           "pilot_foerde": "false",
           "pilot_order": "NOK",
-          "eta_text": "08:34",
+          "eta_text": "08:35",
           "destination": "Brunsbüttel",
           "makler": "NIK",
           "preferred_mooring_side": "Bb",
@@ -4928,6 +4900,7 @@
             "pilot_order": "NOK",
             "pilot_status": "H",
             "num_of_pilots": "1",
+            "pilot_change_off_time": "2026-06-11 04:05",
             "pilot_elbe_see": "false",
             "pilot_nok": "true",
             "pilot_ostsee": "false",
@@ -4974,19 +4947,7 @@
       ],
       "meldungen_kiel": [],
       "meldungen_ruesterbergen": [],
-      "seelotsen": [
-        {
-          "nr": 6,
-          "time": "2026-06-10 23:13",
-          "pilot_name": "Escher, Franck",
-          "nachname": "Escher",
-          "vorname": "Franck",
-          "aufgabe": "Kanalbört",
-          "from": "HOR",
-          "to": "RÜB",
-          "route": "HOR → RÜB"
-        }
-      ]
+      "seelotsen": []
     },
     {
       "ship_key": "RIX FJORD",
@@ -5081,6 +5042,49 @@
       ],
       "meldungen_ruesterbergen": [],
       "seelotsen": []
+    },
+    {
+      "ship_key": "RUEB",
+      "name": "RÜB",
+      "sources": [
+        "seelotsen"
+      ],
+      "special_entry": true,
+      "summary": {
+        "name": "RÜB",
+        "special_entry": true,
+        "sources": [
+          "seelotsen"
+        ],
+        "assigned_pilots": [
+          "Escher, Franck",
+          "Pankonin, Denny"
+        ],
+        "aufgaben": [
+          "Kanalbört"
+        ]
+      },
+      "zulauf": [],
+      "meldungen_kiel": [],
+      "meldungen_ruesterbergen": [],
+      "seelotsen": [
+        {
+          "nr": 6,
+          "time": "2026-06-10 23:13",
+          "pilot_name": "Escher, Franck",
+          "nachname": "Escher",
+          "vorname": "Franck",
+          "aufgabe": "Kanalbört"
+        },
+        {
+          "nr": 7,
+          "time": "2026-06-10 23:13",
+          "pilot_name": "Pankonin, Denny",
+          "nachname": "Pankonin",
+          "vorname": "Denny",
+          "aufgabe": "Kanalbört"
+        }
+      ]
     },
     {
       "ship_key": "SCHELDEBANK",
@@ -5242,8 +5246,8 @@
         "sources": [
           "zulauf_brb_aussen"
         ],
-        "eta_schleuse": "2026-06-11 05:00",
-        "eta_text": "05:00",
+        "eta_schleuse": "2026-06-11 04:58",
+        "eta_text": "04:58",
         "first_seen": "2026-06-11 01:28",
         "queue_key": "brb_aussen",
         "queue_title": "Zulauf von See in Brunsbüttel",
@@ -5364,7 +5368,7 @@
       "zulauf": [
         {
           "name": "SVENDBORG",
-          "eta_schleuse": "2026-06-11 05:00",
+          "eta_schleuse": "2026-06-11 04:58",
           "first_seen": "2026-06-11 01:28",
           "ship_name": "SVENDBORG",
           "vg": "5",
@@ -5378,7 +5382,7 @@
           "pilot_required": "true",
           "pilot_foerde": "true",
           "pilot_order": "KS-NOK-KF",
-          "eta_text": "05:00",
+          "eta_text": "04:58",
           "destination": "Kiel",
           "makler": "UCA",
           "preferred_mooring_side": "Bb",
@@ -5985,8 +5989,8 @@
         "sources": [
           "zulauf_brb_aussen"
         ],
-        "eta_schleuse": "2026-06-11 04:55",
-        "eta_text": "04:55",
+        "eta_schleuse": "2026-06-11 04:58",
+        "eta_text": "04:58",
         "first_seen": "2026-06-10 23:42",
         "queue_key": "brb_aussen",
         "queue_title": "Zulauf von See in Brunsbüttel",
@@ -6105,7 +6109,7 @@
       "zulauf": [
         {
           "name": "TUNA",
-          "eta_schleuse": "2026-06-11 04:55",
+          "eta_schleuse": "2026-06-11 04:58",
           "first_seen": "2026-06-10 23:42",
           "ship_name": "TUNA",
           "vg": "3",
@@ -6119,7 +6123,7 @@
           "pilot_required": "true",
           "pilot_foerde": "true",
           "pilot_order": "NOK-KF",
-          "eta_text": "04:55",
+          "eta_text": "04:58",
           "destination": "Kiel",
           "makler": "UCA",
           "preferred_mooring_side": "Bb",
@@ -6713,8 +6717,7 @@
         "q_gruppe": "5",
         "draft": "1.0",
         "assigned_pilots": [
-          "Hüpers, Peter",
-          "Nagel, Volker"
+          "Hüpers, Peter"
         ],
         "aufgaben": [
           "Seebört"
@@ -6769,17 +6772,6 @@
           "pilot_name": "Hüpers, Peter",
           "nachname": "Hüpers",
           "vorname": "Peter",
-          "aufgabe": "Seebört",
-          "from": "HOS",
-          "to": "HOS",
-          "route": "HOS → HOS"
-        },
-        {
-          "nr": 12,
-          "time": "2026-06-10 19:00",
-          "pilot_name": "Nagel, Volker",
-          "nachname": "Nagel",
-          "vorname": "Volker",
           "aufgabe": "Seebört",
           "from": "HOS",
           "to": "HOS",
