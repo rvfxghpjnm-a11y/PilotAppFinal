@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-11T07:53:19",
+  "generated_at": "2026-06-11T07:55:20",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 5,
     "pilots_total": 9,
-    "pilots_dispatchable": 7,
-    "pilots_visible_only": 2,
+    "pilots_dispatchable": 8,
+    "pilots_visible_only": 1,
     "assignments": 5,
     "unassigned_ships": 0,
-    "unused_pilots": 2
+    "unused_pilots": 3
   },
   "ships": [
     {
@@ -409,9 +409,10 @@
       "nr": 1,
       "raw_time": "Thu Jun 11 06:38:00 CEST 2026",
       "current_ship_name": "THEODOR ESSBERGER",
+      "current_ship_eta_rueb": "2026-06-11 11:25",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     }
   ],
@@ -568,6 +569,28 @@
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "thiel_thomas",
+      "vorname": "Thomas",
+      "nachname": "Thiel",
+      "pilot_name": "Thiel, Thomas",
+      "abteilungszeit": "2026-06-11 06:38",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 1,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "THEODOR ESSBERGER",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 1,
+      "raw_time": "Thu Jun 11 06:38:00 CEST 2026",
+      "current_ship_name": "THEODOR ESSBERGER",
+      "current_ship_eta_rueb": "2026-06-11 11:25",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
     }
   ],
   "visible_but_not_dispatchable_pilots": [
@@ -582,21 +605,6 @@
       "from": "UTG",
       "to": "KRH",
       "current_ship_name": "JOLIE",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    },
-    {
-      "pilot_key": "thiel_thomas",
-      "pilot_name": "Thiel, Thomas",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 1,
-      "abteilungszeit": "2026-06-11 06:38",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "THEODOR ESSBERGER",
-      "from": "HOS",
-      "to": "RÜB",
-      "current_ship_name": "THEODOR ESSBERGER",
       "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta",
       "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
@@ -705,6 +713,15 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "AKACIA",
           "pilot_current_ship_eta_rueb": "2026-06-11 11:22",
+          "ship_eta_rueb": "2026-06-11 09:48",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Thiel, Thomas",
+          "pilot_tactical_nr": 1,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "THEODOR ESSBERGER",
+          "pilot_current_ship_eta_rueb": "2026-06-11 11:25",
           "ship_eta_rueb": "2026-06-11 09:48",
           "availability_kind": "merged_eta"
         }
@@ -827,6 +844,15 @@
           "pilot_current_ship_eta_rueb": "2026-06-11 11:22",
           "ship_eta_rueb": "2026-06-11 09:54",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Thiel, Thomas",
+          "pilot_tactical_nr": 1,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "THEODOR ESSBERGER",
+          "pilot_current_ship_eta_rueb": "2026-06-11 11:25",
+          "ship_eta_rueb": "2026-06-11 09:54",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -941,6 +967,15 @@
           "pilot_current_ship_eta_rueb": "2026-06-11 11:22",
           "ship_eta_rueb": "2026-06-11 11:07",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Thiel, Thomas",
+          "pilot_tactical_nr": 1,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "THEODOR ESSBERGER",
+          "pilot_current_ship_eta_rueb": "2026-06-11 11:25",
+          "ship_eta_rueb": "2026-06-11 11:07",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -992,7 +1027,7 @@
       "assigned_availability_kind": "already_in_rueb",
       "assigned_availability_hint": "Lotse gilt als bereits in RÜB",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 4,
+      "candidate_count": 5,
       "candidates": [
         {
           "pilot_name": "Röhrs, Johannes",
@@ -1045,6 +1080,19 @@
           "current_ship_eta_rueb": "2026-06-11 11:22",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Thiel, Thomas",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 1,
+          "abteilungszeit": "2026-06-11 06:38",
+          "fahrzeug": "THEODOR ESSBERGER",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "THEODOR ESSBERGER",
+          "current_ship_eta_rueb": "2026-06-11 11:25",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -1095,7 +1143,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 3,
+      "candidate_count": 4,
       "candidates": [
         {
           "pilot_name": "Lüdtke, Jan-Torben",
@@ -1133,6 +1181,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "AKACIA",
           "current_ship_eta_rueb": "2026-06-11 11:22",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Thiel, Thomas",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 1,
+          "abteilungszeit": "2026-06-11 06:38",
+          "fahrzeug": "THEODOR ESSBERGER",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "THEODOR ESSBERGER",
+          "current_ship_eta_rueb": "2026-06-11 11:25",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
@@ -1200,6 +1261,28 @@
       "raw_time": "Thu Jun 11 06:28:00 CEST 2026",
       "current_ship_name": "AKACIA",
       "current_ship_eta_rueb": "2026-06-11 11:22",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "thiel_thomas",
+      "vorname": "Thomas",
+      "nachname": "Thiel",
+      "pilot_name": "Thiel, Thomas",
+      "abteilungszeit": "2026-06-11 06:38",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 1,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "THEODOR ESSBERGER",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 1,
+      "raw_time": "Thu Jun 11 06:38:00 CEST 2026",
+      "current_ship_name": "THEODOR ESSBERGER",
+      "current_ship_eta_rueb": "2026-06-11 11:25",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
