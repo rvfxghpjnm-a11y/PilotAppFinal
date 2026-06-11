@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-11T06:31:20",
+  "generated_at": "2026-06-11T06:33:17",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,13 +32,13 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 3,
+    "ships_for_ruesterbergen": 4,
     "pilots_total": 9,
     "pilots_dispatchable": 7,
     "pilots_visible_only": 2,
-    "assignments": 3,
+    "assignments": 4,
     "unassigned_ships": 0,
-    "unused_pilots": 4
+    "unused_pilots": 3
   },
   "ships": [
     {
@@ -117,13 +117,51 @@
       }
     },
     {
+      "ship_key": "SVENDBORG",
+      "ship_name": "SVENDBORG",
+      "eta_rueb": "2026-06-11 12:16",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 1,
+      "meldung": {
+        "nr": "3",
+        "time": "Thu Jun 11 12:00:00 CEST 2026",
+        "draft": "8.7",
+        "q_gruppe": "1",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "1",
+        "vg": "5",
+        "draft": "8.70",
+        "length_m": "157.93",
+        "beam_m": "23.500",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "U",
+        "pilot_1_name": "van den Bongard, Sascha",
+        "travel_status": "SAILING_NOK",
+        "makler": "UCA",
+        "dangerous_vessel": "-",
+        "type_of_loading": "Container"
+      }
+    },
+    {
       "ship_key": "ELBWAVE",
       "ship_name": "ELBWAVE",
       "eta_rueb": "2026-06-11 23:00",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 1,
       "meldung": {
-        "nr": "3",
+        "nr": "4",
         "time": "Thu Jun 11 23:00:00 CEST 2026",
         "draft": "8.5",
         "q_gruppe": "1",
@@ -794,9 +832,9 @@
       }
     },
     {
-      "ship_key": "ELBWAVE",
-      "ship_name": "ELBWAVE",
-      "eta_rueb": "2026-06-11 23:00",
+      "ship_key": "SVENDBORG",
+      "ship_name": "SVENDBORG",
+      "eta_rueb": "2026-06-11 12:16",
       "ship_q": 1,
       "assigned_pilot": "Pankonin, Denny",
       "assigned_pilot_q": 0,
@@ -874,6 +912,106 @@
       "ship": {
         "meldung": {
           "nr": "3",
+          "time": "Thu Jun 11 12:00:00 CEST 2026",
+          "draft": "8.7",
+          "q_gruppe": "1",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "HOS → KLT",
+          "routes": [
+            "HOS → KLT",
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "1",
+          "vg": "5",
+          "draft": "8.70",
+          "length_m": "157.93",
+          "beam_m": "23.500",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "U",
+          "pilot_1_name": "van den Bongard, Sascha",
+          "travel_status": "SAILING_NOK",
+          "makler": "UCA",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Container"
+        }
+      }
+    },
+    {
+      "ship_key": "ELBWAVE",
+      "ship_name": "ELBWAVE",
+      "eta_rueb": "2026-06-11 23:00",
+      "ship_q": 1,
+      "assigned_pilot": "Röhrs, Johannes",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 8,
+      "assigned_abteilungszeit": "2026-06-11 01:31",
+      "assigned_current_ship_name": "RÜB",
+      "assigned_current_ship_eta_rueb": "2026-06-11 01:31",
+      "assigned_current_ship_source": "special.already_in_rueb",
+      "assigned_availability_kind": "already_in_rueb",
+      "assigned_availability_hint": "Lotse gilt als bereits in RÜB",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 3,
+      "candidates": [
+        {
+          "pilot_name": "Röhrs, Johannes",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 8,
+          "abteilungszeit": "2026-06-11 01:31",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-06-11 01:31",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
+        },
+        {
+          "pilot_name": "Lüdtke, Jan-Torben",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 6,
+          "abteilungszeit": "2026-06-11 04:04",
+          "fahrzeug": "RIX FJORD",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RIX FJORD",
+          "current_ship_eta_rueb": "2026-06-11 08:48",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Bachholz, Carsten",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 5,
+          "abteilungszeit": "2026-06-11 04:25",
+          "fahrzeug": "SKALAR",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "SKALAR",
+          "current_ship_eta_rueb": "2026-06-11 08:58",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Lehwald, Christian",
+          "pilot_tactical_nr": 10,
+          "reason": "Quali passt nicht (4 > 1)",
+          "pilot_q": 4,
+          "ship_q": 1
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "4",
           "time": "Thu Jun 11 23:00:00 CEST 2026",
           "draft": "8.5",
           "q_gruppe": "1",
@@ -916,27 +1054,6 @@
       "current_ship_route": "RÜB → HOS",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
-    },
-    {
-      "pilot_key": "röhrs_johannes",
-      "vorname": "Johannes",
-      "nachname": "Röhrs",
-      "pilot_name": "Röhrs, Johannes",
-      "abteilungszeit": "2026-06-11 01:31",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 8,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "RÜB",
-      "nr": 8,
-      "raw_time": "Thu Jun 11 01:31:00 CEST 2026",
-      "current_ship_name": "RÜB",
-      "current_ship_eta_rueb": "2026-06-11 01:31",
-      "current_ship_q": 0,
-      "current_ship_route": "RÜB",
-      "current_ship_source": "special.already_in_rueb",
-      "availability_kind": "already_in_rueb",
-      "availability_hint": "Lotse gilt als bereits in RÜB"
     },
     {
       "pilot_key": "lüdtke_jan-torben",
