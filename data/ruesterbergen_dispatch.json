@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-11T15:23:19",
+  "generated_at": "2026-06-11T15:25:19",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 5,
     "pilots_total": 9,
-    "pilots_dispatchable": 5,
-    "pilots_visible_only": 4,
+    "pilots_dispatchable": 6,
+    "pilots_visible_only": 3,
     "assignments": 5,
     "unassigned_ships": 0,
-    "unused_pilots": 0
+    "unused_pilots": 1
   },
   "ships": [
     {
@@ -326,7 +326,7 @@
       "current_ship_name": "GT CETUS",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta"
     },
     {
@@ -366,9 +366,10 @@
       "nr": 3,
       "raw_time": "Thu Jun 11 13:42:00 CEST 2026",
       "current_ship_name": "BBC ZARATE",
+      "current_ship_eta_rueb": "2026-06-11 19:22",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
@@ -505,6 +506,28 @@
       "availability_kind": "merged_eta"
     },
     {
+      "pilot_key": "witte_tomas",
+      "vorname": "Tomas",
+      "nachname": "Witte",
+      "pilot_name": "Witte, Tomas",
+      "abteilungszeit": "2026-06-11 13:42",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 3,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "BBC ZARATE",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 3,
+      "raw_time": "Thu Jun 11 13:42:00 CEST 2026",
+      "current_ship_name": "BBC ZARATE",
+      "current_ship_eta_rueb": "2026-06-11 19:22",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
       "pilot_key": "krahn_georg",
       "vorname": "Georg",
       "nachname": "Krahn",
@@ -539,7 +562,7 @@
       "from": "HOR",
       "to": "RÜB",
       "current_ship_name": "GT CETUS",
-      "current_ship_source": "schiffe_merged.seelotsen",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta",
       "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
     },
@@ -555,21 +578,6 @@
       "to": "RÜB",
       "current_ship_name": "BALTIC JONGLEUR",
       "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    },
-    {
-      "pilot_key": "witte_tomas",
-      "pilot_name": "Witte, Tomas",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 3,
-      "abteilungszeit": "2026-06-11 13:42",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "BBC ZARATE",
-      "from": "HOS",
-      "to": "RÜB",
-      "current_ship_name": "BBC ZARATE",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta",
       "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
     },
@@ -672,6 +680,17 @@
           "availability_kind": "merged_eta"
         }
       ],
+      "excluded": [
+        {
+          "pilot_name": "Witte, Tomas",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "BBC ZARATE",
+          "pilot_current_ship_eta_rueb": "2026-06-11 19:22",
+          "ship_eta_rueb": "2026-06-11 18:38",
+          "availability_kind": "merged_eta"
+        }
+      ],
       "ship": {
         "meldung": {
           "nr": "4",
@@ -762,6 +781,17 @@
           "availability_kind": "merged_eta"
         }
       ],
+      "excluded": [
+        {
+          "pilot_name": "Witte, Tomas",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "BBC ZARATE",
+          "pilot_current_ship_eta_rueb": "2026-06-11 19:22",
+          "ship_eta_rueb": "2026-06-11 18:40",
+          "availability_kind": "merged_eta"
+        }
+      ],
       "ship": {
         "meldung": {
           "nr": "3",
@@ -845,6 +875,15 @@
           "reason": "Quali passt nicht (4 > 0)",
           "pilot_q": 4,
           "ship_q": 0
+        },
+        {
+          "pilot_name": "Witte, Tomas",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "BBC ZARATE",
+          "pilot_current_ship_eta_rueb": "2026-06-11 19:22",
+          "ship_eta_rueb": "2026-06-11 18:43",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -918,6 +957,15 @@
           "reason": "Quali passt nicht (4 > 3)",
           "pilot_q": 4,
           "ship_q": 3
+        },
+        {
+          "pilot_name": "Witte, Tomas",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "BBC ZARATE",
+          "pilot_current_ship_eta_rueb": "2026-06-11 19:22",
+          "ship_eta_rueb": "2026-06-11 18:49",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -985,6 +1033,17 @@
           "availability_kind": "merged_eta"
         }
       ],
+      "excluded": [
+        {
+          "pilot_name": "Witte, Tomas",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "BBC ZARATE",
+          "pilot_current_ship_eta_rueb": "2026-06-11 19:22",
+          "ship_eta_rueb": "2026-06-11 19:15",
+          "availability_kind": "merged_eta"
+        }
+      ],
       "ship": {
         "meldung": {
           "nr": "5",
@@ -1021,5 +1080,28 @@
     }
   ],
   "unassigned_ships": [],
-  "unused_pilots": []
+  "unused_pilots": [
+    {
+      "pilot_key": "witte_tomas",
+      "vorname": "Tomas",
+      "nachname": "Witte",
+      "pilot_name": "Witte, Tomas",
+      "abteilungszeit": "2026-06-11 13:42",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 3,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "BBC ZARATE",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 3,
+      "raw_time": "Thu Jun 11 13:42:00 CEST 2026",
+      "current_ship_name": "BBC ZARATE",
+      "current_ship_eta_rueb": "2026-06-11 19:22",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    }
+  ]
 }
