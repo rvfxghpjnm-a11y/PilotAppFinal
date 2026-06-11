@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-11T23:43:11",
+  "generated_at": "2026-06-11T23:45:11",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 4,
     "pilots_total": 9,
-    "pilots_dispatchable": 7,
-    "pilots_visible_only": 2,
+    "pilots_dispatchable": 8,
+    "pilots_visible_only": 1,
     "assignments": 4,
     "unassigned_ships": 0,
-    "unused_pilots": 3
+    "unused_pilots": 4
   },
   "ships": [
     {
@@ -49,7 +49,7 @@
       "ship_q": 5,
       "meldung": {
         "nr": "1",
-        "time": "Fri Jun 12 00:50:00 CEST 2026",
+        "time": "Fri Jun 12 00:45:00 CEST 2026",
         "draft": "3.2",
         "q_gruppe": "5",
         "lotsen_anzahl": 1,
@@ -86,7 +86,7 @@
       "ship_q": 3,
       "meldung": {
         "nr": "2",
-        "time": "Fri Jun 12 00:54:00 CEST 2026",
+        "time": "Fri Jun 12 00:50:00 CEST 2026",
         "draft": "8.5",
         "q_gruppe": "3",
         "lotsen_anzahl": 1,
@@ -119,12 +119,12 @@
     {
       "ship_key": "TITAN VISION",
       "ship_name": "TITAN VISION",
-      "eta_rueb": "2026-06-12 00:59",
+      "eta_rueb": "2026-06-12 00:58",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 1,
       "meldung": {
         "nr": "3",
-        "time": "Fri Jun 12 00:58:00 CEST 2026",
+        "time": "Fri Jun 12 00:54:00 CEST 2026",
         "draft": "7.3",
         "q_gruppe": "1",
         "lotsen_anzahl": 1,
@@ -162,7 +162,7 @@
       "ship_q": 5,
       "meldung": {
         "nr": "4",
-        "time": "Fri Jun 12 01:30:00 CEST 2026",
+        "time": "Fri Jun 12 01:25:00 CEST 2026",
         "draft": "3.8",
         "q_gruppe": "5",
         "lotsen_anzahl": 1,
@@ -319,6 +319,7 @@
       "nr": 4,
       "raw_time": "Thu Jun 11 22:17:00 CEST 2026",
       "current_ship_name": "ROSEBURG",
+      "current_ship_eta_rueb": "2026-06-12 03:28",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -503,6 +504,28 @@
       "availability_kind": "merged_eta"
     },
     {
+      "pilot_key": "schulz_arne",
+      "vorname": "Arne",
+      "nachname": "Schulz",
+      "pilot_name": "Schulz, Arne",
+      "abteilungszeit": "2026-06-11 22:17",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 4,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "ROSEBURG",
+      "from": "HOR",
+      "to": "RÜB",
+      "nr": 4,
+      "raw_time": "Thu Jun 11 22:17:00 CEST 2026",
+      "current_ship_name": "ROSEBURG",
+      "current_ship_eta_rueb": "2026-06-12 03:28",
+      "current_ship_q": 0,
+      "current_ship_route": "HOR → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
       "pilot_key": "wille_christian",
       "vorname": "Christian",
       "nachname": "Wille",
@@ -550,21 +573,6 @@
     }
   ],
   "visible_but_not_dispatchable_pilots": [
-    {
-      "pilot_key": "schulz_arne",
-      "pilot_name": "Schulz, Arne",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 4,
-      "abteilungszeit": "2026-06-11 22:17",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "ROSEBURG",
-      "from": "HOR",
-      "to": "RÜB",
-      "current_ship_name": "ROSEBURG",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    },
     {
       "pilot_key": "biedermann_johannes",
       "pilot_name": "Biedermann, Johannes",
@@ -680,12 +688,21 @@
           "pilot_current_ship_eta_rueb": "2026-06-12 01:38",
           "ship_eta_rueb": "2026-06-12 00:50",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Schulz, Arne",
+          "pilot_tactical_nr": 4,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "ROSEBURG",
+          "pilot_current_ship_eta_rueb": "2026-06-12 03:28",
+          "ship_eta_rueb": "2026-06-12 00:50",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
         "meldung": {
           "nr": "1",
-          "time": "Fri Jun 12 00:50:00 CEST 2026",
+          "time": "Fri Jun 12 00:45:00 CEST 2026",
           "draft": "3.2",
           "q_gruppe": "5",
           "lotsen_anzahl": 1,
@@ -801,12 +818,21 @@
           "pilot_current_ship_eta_rueb": "2026-06-12 01:38",
           "ship_eta_rueb": "2026-06-12 00:53",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Schulz, Arne",
+          "pilot_tactical_nr": 4,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "ROSEBURG",
+          "pilot_current_ship_eta_rueb": "2026-06-12 03:28",
+          "ship_eta_rueb": "2026-06-12 00:53",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
         "meldung": {
           "nr": "2",
-          "time": "Fri Jun 12 00:54:00 CEST 2026",
+          "time": "Fri Jun 12 00:50:00 CEST 2026",
           "draft": "8.5",
           "q_gruppe": "3",
           "lotsen_anzahl": 1,
@@ -840,7 +866,7 @@
     {
       "ship_key": "TITAN VISION",
       "ship_name": "TITAN VISION",
-      "eta_rueb": "2026-06-12 00:59",
+      "eta_rueb": "2026-06-12 00:58",
       "ship_q": 1,
       "assigned_pilot": "Wille, Christian",
       "assigned_pilot_q": 0,
@@ -890,7 +916,7 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "RAM",
           "pilot_current_ship_eta_rueb": "2026-06-12 01:07",
-          "ship_eta_rueb": "2026-06-12 00:59",
+          "ship_eta_rueb": "2026-06-12 00:58",
           "availability_kind": "merged_eta"
         },
         {
@@ -899,7 +925,7 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "ELENORA",
           "pilot_current_ship_eta_rueb": "2026-06-12 01:11",
-          "ship_eta_rueb": "2026-06-12 00:59",
+          "ship_eta_rueb": "2026-06-12 00:58",
           "availability_kind": "merged_eta"
         },
         {
@@ -908,14 +934,23 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "CM NEPTUNE",
           "pilot_current_ship_eta_rueb": "2026-06-12 01:38",
-          "ship_eta_rueb": "2026-06-12 00:59",
+          "ship_eta_rueb": "2026-06-12 00:58",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Schulz, Arne",
+          "pilot_tactical_nr": 4,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "ROSEBURG",
+          "pilot_current_ship_eta_rueb": "2026-06-12 03:28",
+          "ship_eta_rueb": "2026-06-12 00:58",
           "availability_kind": "merged_eta"
         }
       ],
       "ship": {
         "meldung": {
           "nr": "3",
-          "time": "Fri Jun 12 00:58:00 CEST 2026",
+          "time": "Fri Jun 12 00:54:00 CEST 2026",
           "draft": "7.3",
           "q_gruppe": "1",
           "lotsen_anzahl": 1,
@@ -1012,12 +1047,21 @@
           "pilot_current_ship_eta_rueb": "2026-06-12 01:38",
           "ship_eta_rueb": "2026-06-12 01:30",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Schulz, Arne",
+          "pilot_tactical_nr": 4,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "ROSEBURG",
+          "pilot_current_ship_eta_rueb": "2026-06-12 03:28",
+          "ship_eta_rueb": "2026-06-12 01:30",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
         "meldung": {
           "nr": "4",
-          "time": "Fri Jun 12 01:30:00 CEST 2026",
+          "time": "Fri Jun 12 01:25:00 CEST 2026",
           "draft": "3.8",
           "q_gruppe": "5",
           "lotsen_anzahl": 1,
@@ -1092,6 +1136,28 @@
       "current_ship_eta_rueb": "2026-06-12 01:38",
       "current_ship_q": 0,
       "current_ship_route": "UTG → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "schulz_arne",
+      "vorname": "Arne",
+      "nachname": "Schulz",
+      "pilot_name": "Schulz, Arne",
+      "abteilungszeit": "2026-06-11 22:17",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 4,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "ROSEBURG",
+      "from": "HOR",
+      "to": "RÜB",
+      "nr": 4,
+      "raw_time": "Thu Jun 11 22:17:00 CEST 2026",
+      "current_ship_name": "ROSEBURG",
+      "current_ship_eta_rueb": "2026-06-12 03:28",
+      "current_ship_q": 0,
+      "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
