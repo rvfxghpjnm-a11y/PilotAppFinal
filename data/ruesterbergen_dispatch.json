@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-11T05:21:18",
+  "generated_at": "2026-06-11T05:23:17",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,10 +34,10 @@
   "counts": {
     "ships_for_ruesterbergen": 6,
     "pilots_total": 8,
-    "pilots_dispatchable": 6,
-    "pilots_visible_only": 2,
-    "assignments": 5,
-    "unassigned_ships": 1,
+    "pilots_dispatchable": 7,
+    "pilots_visible_only": 1,
+    "assignments": 6,
+    "unassigned_ships": 0,
     "unused_pilots": 1
   },
   "ships": [
@@ -157,7 +157,7 @@
     {
       "ship_key": "KREETE",
       "ship_name": "KREETE",
-      "eta_rueb": "2026-06-11 09:44",
+      "eta_rueb": "2026-06-11 09:45",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
@@ -401,9 +401,10 @@
       "nr": 3,
       "raw_time": "Thu Jun 11 04:04:00 CEST 2026",
       "current_ship_name": "RIX FJORD",
+      "current_ship_eta_rueb": "2026-06-11 08:54",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
@@ -424,7 +425,7 @@
       "current_ship_name": "SKALAR",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta"
     }
   ],
@@ -557,24 +558,31 @@
       "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
-    }
-  ],
-  "visible_but_not_dispatchable_pilots": [
+    },
     {
       "pilot_key": "lüdtke_jan-torben",
+      "vorname": "Jan-Torben",
+      "nachname": "Lüdtke",
       "pilot_name": "Lüdtke, Jan-Torben",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 3,
       "abteilungszeit": "2026-06-11 04:04",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 3,
       "aufgabe": "Kanalbört",
       "fahrzeug": "RIX FJORD",
       "from": "HOR",
       "to": "RÜB",
+      "nr": 3,
+      "raw_time": "Thu Jun 11 04:04:00 CEST 2026",
       "current_ship_name": "RIX FJORD",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    },
+      "current_ship_eta_rueb": "2026-06-11 08:54",
+      "current_ship_q": 0,
+      "current_ship_route": "HOR → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    }
+  ],
+  "visible_but_not_dispatchable_pilots": [
     {
       "pilot_key": "bachholz_carsten",
       "pilot_name": "Bachholz, Carsten",
@@ -586,7 +594,7 @@
       "from": "HOR",
       "to": "RÜB",
       "current_ship_name": "SKALAR",
-      "current_ship_source": "schiffe_merged.seelotsen",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta",
       "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
     }
@@ -684,6 +692,17 @@
           "current_ship_name": "GOTLAND",
           "current_ship_eta_rueb": "2026-06-11 06:08",
           "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Lüdtke, Jan-Torben",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "RIX FJORD",
+          "pilot_current_ship_eta_rueb": "2026-06-11 08:54",
+          "ship_eta_rueb": "2026-06-11 06:11",
           "availability_kind": "merged_eta"
         }
       ],
@@ -803,6 +822,17 @@
           "availability_kind": "merged_eta"
         }
       ],
+      "excluded": [
+        {
+          "pilot_name": "Lüdtke, Jan-Torben",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "RIX FJORD",
+          "pilot_current_ship_eta_rueb": "2026-06-11 08:54",
+          "ship_eta_rueb": "2026-06-11 06:17",
+          "availability_kind": "merged_eta"
+        }
+      ],
       "ship": {
         "meldung": {
           "nr": "2",
@@ -907,6 +937,17 @@
           "availability_kind": "merged_eta"
         }
       ],
+      "excluded": [
+        {
+          "pilot_name": "Lüdtke, Jan-Torben",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "RIX FJORD",
+          "pilot_current_ship_eta_rueb": "2026-06-11 08:54",
+          "ship_eta_rueb": "2026-06-11 06:23",
+          "availability_kind": "merged_eta"
+        }
+      ],
       "ship": {
         "meldung": {
           "nr": "3",
@@ -943,7 +984,7 @@
     {
       "ship_key": "KREETE",
       "ship_name": "KREETE",
-      "eta_rueb": "2026-06-11 09:44",
+      "eta_rueb": "2026-06-11 09:45",
       "ship_q": 5,
       "assigned_pilot": "Pankonin, Denny",
       "assigned_pilot_q": 0,
@@ -955,7 +996,7 @@
       "assigned_availability_kind": "already_in_rueb",
       "assigned_availability_hint": "Lotse gilt als bereits in RÜB",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 3,
+      "candidate_count": 4,
       "candidates": [
         {
           "pilot_name": "Pankonin, Denny",
@@ -993,6 +1034,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "GOTLAND",
           "current_ship_eta_rueb": "2026-06-11 06:08",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Lüdtke, Jan-Torben",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 3,
+          "abteilungszeit": "2026-06-11 04:04",
+          "fahrzeug": "RIX FJORD",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RIX FJORD",
+          "current_ship_eta_rueb": "2026-06-11 08:54",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
@@ -1044,7 +1098,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 1,
+      "candidate_count": 2,
       "candidates": [
         {
           "pilot_name": "Röhrs, Johannes",
@@ -1056,6 +1110,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "GOTLAND",
           "current_ship_eta_rueb": "2026-06-11 06:08",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Lüdtke, Jan-Torben",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 3,
+          "abteilungszeit": "2026-06-11 04:04",
+          "fahrzeug": "RIX FJORD",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RIX FJORD",
+          "current_ship_eta_rueb": "2026-06-11 08:54",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
@@ -1102,15 +1169,37 @@
           "type_of_loading": "Container"
         }
       }
-    }
-  ],
-  "unassigned_ships": [
+    },
     {
       "ship_key": "ELBWAVE",
       "ship_name": "ELBWAVE",
       "eta_rueb": "2026-06-11 23:00",
       "ship_q": 1,
-      "reason": "kein passender Lotse verfügbar",
+      "assigned_pilot": "Lüdtke, Jan-Torben",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 3,
+      "assigned_abteilungszeit": "2026-06-11 04:04",
+      "assigned_current_ship_name": "RIX FJORD",
+      "assigned_current_ship_eta_rueb": "2026-06-11 08:54",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "pilot_name": "Lüdtke, Jan-Torben",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 3,
+          "abteilungszeit": "2026-06-11 04:04",
+          "fahrzeug": "RIX FJORD",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RIX FJORD",
+          "current_ship_eta_rueb": "2026-06-11 08:54",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
       "excluded": [
         {
           "pilot_name": "Lehwald, Christian",
@@ -1119,9 +1208,30 @@
           "pilot_q": 4,
           "ship_q": 1
         }
-      ]
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "6",
+          "time": "Thu Jun 11 23:00:00 CEST 2026",
+          "draft": "8.5",
+          "q_gruppe": "1",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "RÜB → HOS",
+          "routes": [
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "1",
+          "draft": "8.5"
+        }
+      }
     }
   ],
+  "unassigned_ships": [],
   "unused_pilots": [
     {
       "pilot_key": "lehwald_christian",
