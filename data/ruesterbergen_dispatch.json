@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-11T19:41:20",
+  "generated_at": "2026-06-11T19:43:20",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 1,
     "pilots_total": 9,
-    "pilots_dispatchable": 8,
-    "pilots_visible_only": 1,
+    "pilots_dispatchable": 9,
+    "pilots_visible_only": 0,
     "assignments": 1,
     "unassigned_ships": 0,
-    "unused_pilots": 7
+    "unused_pilots": 8
   },
   "ships": [
     {
@@ -273,6 +273,7 @@
       "nr": 2,
       "raw_time": "Thu Jun 11 18:38:00 CEST 2026",
       "current_ship_name": "JAN V",
+      "current_ship_eta_rueb": "2026-06-11 23:13",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -455,25 +456,31 @@
       "current_ship_route": "RÜB → UTG",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
-    }
-  ],
-  "visible_but_not_dispatchable_pilots": [
+    },
     {
       "pilot_key": "klüver_knut paul",
+      "vorname": "Knut Paul",
+      "nachname": "Klüver",
       "pilot_name": "Klüver, Knut Paul",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 2,
       "abteilungszeit": "2026-06-11 18:38",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 2,
       "aufgabe": "Kanalbört",
       "fahrzeug": "JAN V",
       "from": "HOR",
       "to": "RÜB",
+      "nr": 2,
+      "raw_time": "Thu Jun 11 18:38:00 CEST 2026",
       "current_ship_name": "JAN V",
+      "current_ship_eta_rueb": "2026-06-11 23:13",
+      "current_ship_q": 0,
+      "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
+      "availability_kind": "merged_eta"
     }
   ],
+  "visible_but_not_dispatchable_pilots": [],
   "assignments": [
     {
       "ship_key": "ELBWATER",
@@ -584,6 +591,15 @@
           "reason": "Quali passt nicht (4 > 1)",
           "pilot_q": 4,
           "ship_q": 1
+        },
+        {
+          "pilot_name": "Klüver, Knut Paul",
+          "pilot_tactical_nr": 2,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "JAN V",
+          "pilot_current_ship_eta_rueb": "2026-06-11 23:13",
+          "ship_eta_rueb": "2026-06-11 22:49",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -774,6 +790,28 @@
       "current_ship_eta_rueb": "2026-06-11 18:36",
       "current_ship_q": 3,
       "current_ship_route": "RÜB → UTG",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "klüver_knut paul",
+      "vorname": "Knut Paul",
+      "nachname": "Klüver",
+      "pilot_name": "Klüver, Knut Paul",
+      "abteilungszeit": "2026-06-11 18:38",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 2,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "JAN V",
+      "from": "HOR",
+      "to": "RÜB",
+      "nr": 2,
+      "raw_time": "Thu Jun 11 18:38:00 CEST 2026",
+      "current_ship_name": "JAN V",
+      "current_ship_eta_rueb": "2026-06-11 23:13",
+      "current_ship_q": 0,
+      "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     }
