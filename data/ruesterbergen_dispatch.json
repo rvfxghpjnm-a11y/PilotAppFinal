@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-12T17:11:17",
+  "generated_at": "2026-06-12T17:13:17",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 12,
     "pilots_total": 20,
-    "pilots_dispatchable": 19,
-    "pilots_visible_only": 1,
+    "pilots_dispatchable": 20,
+    "pilots_visible_only": 0,
     "assignments": 12,
     "unassigned_ships": 0,
-    "unused_pilots": 7
+    "unused_pilots": 8
   },
   "ships": [
     {
@@ -183,7 +183,7 @@
     {
       "ship_key": "KREBS HELIOS",
       "ship_name": "KREBS HELIOS",
-      "eta_rueb": "2026-06-12 18:25",
+      "eta_rueb": "2026-06-12 18:24",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
@@ -220,7 +220,7 @@
     {
       "ship_key": "ARKLOW VALIANT",
       "ship_name": "ARKLOW VALIANT",
-      "eta_rueb": "2026-06-12 18:28",
+      "eta_rueb": "2026-06-12 18:27",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
@@ -371,7 +371,7 @@
     {
       "ship_key": "FL STOROE",
       "ship_name": "FL STOROE",
-      "eta_rueb": "2026-06-12 20:42",
+      "eta_rueb": "2026-06-12 20:41",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 4,
       "meldung": {
@@ -409,7 +409,7 @@
     {
       "ship_key": "BBC BALBOA",
       "ship_name": "BBC BALBOA",
-      "eta_rueb": "2026-06-12 21:05",
+      "eta_rueb": "2026-06-12 21:04",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 3,
       "meldung": {
@@ -448,7 +448,7 @@
     {
       "ship_key": "EDITH",
       "ship_name": "EDITH",
-      "eta_rueb": "2026-06-12 21:43",
+      "eta_rueb": "2026-06-12 21:44",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 2,
       "meldung": {
@@ -721,9 +721,10 @@
       "nr": 11,
       "raw_time": "Fri Jun 12 15:31:00 CEST 2026",
       "current_ship_name": "SEA DISCOVERY",
+      "current_ship_eta_rueb": "2026-06-12 20:44",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
@@ -1139,6 +1140,28 @@
       "availability_kind": "merged_eta"
     },
     {
+      "pilot_key": "heeren_rainer",
+      "vorname": "Rainer",
+      "nachname": "Heeren",
+      "pilot_name": "Heeren, Rainer",
+      "abteilungszeit": "2026-06-12 15:31",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 11,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "SEA DISCOVERY",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 11,
+      "raw_time": "Fri Jun 12 15:31:00 CEST 2026",
+      "current_ship_name": "SEA DISCOVERY",
+      "current_ship_eta_rueb": "2026-06-12 20:44",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
       "pilot_key": "nagel_volker",
       "vorname": "Volker",
       "nachname": "Nagel",
@@ -1329,23 +1352,7 @@
       "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
     }
   ],
-  "visible_but_not_dispatchable_pilots": [
-    {
-      "pilot_key": "heeren_rainer",
-      "pilot_name": "Heeren, Rainer",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 11,
-      "abteilungszeit": "2026-06-12 15:31",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "SEA DISCOVERY",
-      "from": "HOS",
-      "to": "RÜB",
-      "current_ship_name": "SEA DISCOVERY",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    }
-  ],
+  "visible_but_not_dispatchable_pilots": [],
   "assignments": [
     {
       "ship_key": "EN AVANT10+H-331+EN AVANT1",
@@ -1513,6 +1520,15 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "NEERBORG",
           "pilot_current_ship_eta_rueb": "2026-06-12 20:37",
+          "ship_eta_rueb": "2026-06-12 17:40",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Heeren, Rainer",
+          "pilot_tactical_nr": 11,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "SEA DISCOVERY",
+          "pilot_current_ship_eta_rueb": "2026-06-12 20:44",
           "ship_eta_rueb": "2026-06-12 17:40",
           "availability_kind": "merged_eta"
         },
@@ -1765,6 +1781,15 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "NEERBORG",
           "pilot_current_ship_eta_rueb": "2026-06-12 20:37",
+          "ship_eta_rueb": "2026-06-12 17:48",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Heeren, Rainer",
+          "pilot_tactical_nr": 11,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "SEA DISCOVERY",
+          "pilot_current_ship_eta_rueb": "2026-06-12 20:44",
           "ship_eta_rueb": "2026-06-12 17:48",
           "availability_kind": "merged_eta"
         },
@@ -2023,6 +2048,15 @@
           "availability_kind": "merged_eta"
         },
         {
+          "pilot_name": "Heeren, Rainer",
+          "pilot_tactical_nr": 11,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "SEA DISCOVERY",
+          "pilot_current_ship_eta_rueb": "2026-06-12 20:44",
+          "ship_eta_rueb": "2026-06-12 17:50",
+          "availability_kind": "merged_eta"
+        },
+        {
           "pilot_name": "Nagel, Volker",
           "pilot_tactical_nr": 10,
           "reason": "kommt nicht rechtzeitig in RÜB an",
@@ -2266,6 +2300,15 @@
           "availability_kind": "merged_eta"
         },
         {
+          "pilot_name": "Heeren, Rainer",
+          "pilot_tactical_nr": 11,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "SEA DISCOVERY",
+          "pilot_current_ship_eta_rueb": "2026-06-12 20:44",
+          "ship_eta_rueb": "2026-06-12 17:54",
+          "availability_kind": "merged_eta"
+        },
+        {
           "pilot_name": "Nagel, Volker",
           "pilot_tactical_nr": 10,
           "reason": "kommt nicht rechtzeitig in RÜB an",
@@ -2331,7 +2374,7 @@
     {
       "ship_key": "KREBS HELIOS",
       "ship_name": "KREBS HELIOS",
-      "eta_rueb": "2026-06-12 18:25",
+      "eta_rueb": "2026-06-12 18:24",
       "ship_q": 5,
       "assigned_pilot": "Marth, Jürgen",
       "assigned_pilot_q": 0,
@@ -2506,7 +2549,16 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "NEERBORG",
           "pilot_current_ship_eta_rueb": "2026-06-12 20:37",
-          "ship_eta_rueb": "2026-06-12 18:25",
+          "ship_eta_rueb": "2026-06-12 18:24",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Heeren, Rainer",
+          "pilot_tactical_nr": 11,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "SEA DISCOVERY",
+          "pilot_current_ship_eta_rueb": "2026-06-12 20:44",
+          "ship_eta_rueb": "2026-06-12 18:24",
           "availability_kind": "merged_eta"
         },
         {
@@ -2515,7 +2567,7 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "FRAUA",
           "pilot_current_ship_eta_rueb": "2026-06-12 20:28",
-          "ship_eta_rueb": "2026-06-12 18:25",
+          "ship_eta_rueb": "2026-06-12 18:24",
           "availability_kind": "merged_eta"
         },
         {
@@ -2524,7 +2576,7 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "STEVIE",
           "pilot_current_ship_eta_rueb": "2026-06-12 20:40",
-          "ship_eta_rueb": "2026-06-12 18:25",
+          "ship_eta_rueb": "2026-06-12 18:24",
           "availability_kind": "merged_eta"
         }
       ],
@@ -2564,7 +2616,7 @@
     {
       "ship_key": "ARKLOW VALIANT",
       "ship_name": "ARKLOW VALIANT",
-      "eta_rueb": "2026-06-12 18:28",
+      "eta_rueb": "2026-06-12 18:27",
       "ship_q": 5,
       "assigned_pilot": "Lielienthal, Jörn",
       "assigned_pilot_q": 0,
@@ -2726,7 +2778,16 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "NEERBORG",
           "pilot_current_ship_eta_rueb": "2026-06-12 20:37",
-          "ship_eta_rueb": "2026-06-12 18:28",
+          "ship_eta_rueb": "2026-06-12 18:27",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Heeren, Rainer",
+          "pilot_tactical_nr": 11,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "SEA DISCOVERY",
+          "pilot_current_ship_eta_rueb": "2026-06-12 20:44",
+          "ship_eta_rueb": "2026-06-12 18:27",
           "availability_kind": "merged_eta"
         },
         {
@@ -2735,7 +2796,7 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "FRAUA",
           "pilot_current_ship_eta_rueb": "2026-06-12 20:28",
-          "ship_eta_rueb": "2026-06-12 18:28",
+          "ship_eta_rueb": "2026-06-12 18:27",
           "availability_kind": "merged_eta"
         },
         {
@@ -2744,7 +2805,7 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "STEVIE",
           "pilot_current_ship_eta_rueb": "2026-06-12 20:40",
-          "ship_eta_rueb": "2026-06-12 18:28",
+          "ship_eta_rueb": "2026-06-12 18:27",
           "availability_kind": "merged_eta"
         }
       ],
@@ -2935,6 +2996,15 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "NEERBORG",
           "pilot_current_ship_eta_rueb": "2026-06-12 20:37",
+          "ship_eta_rueb": "2026-06-12 19:18",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Heeren, Rainer",
+          "pilot_tactical_nr": 11,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "SEA DISCOVERY",
+          "pilot_current_ship_eta_rueb": "2026-06-12 20:44",
           "ship_eta_rueb": "2026-06-12 19:18",
           "availability_kind": "merged_eta"
         },
@@ -3133,6 +3203,15 @@
           "availability_kind": "merged_eta"
         },
         {
+          "pilot_name": "Heeren, Rainer",
+          "pilot_tactical_nr": 11,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "SEA DISCOVERY",
+          "pilot_current_ship_eta_rueb": "2026-06-12 20:44",
+          "ship_eta_rueb": "2026-06-12 19:48",
+          "availability_kind": "merged_eta"
+        },
+        {
           "pilot_name": "Nagel, Volker",
           "pilot_tactical_nr": 10,
           "reason": "kommt nicht rechtzeitig in RÜB an",
@@ -3288,6 +3367,15 @@
           "availability_kind": "merged_eta"
         },
         {
+          "pilot_name": "Heeren, Rainer",
+          "pilot_tactical_nr": 11,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "SEA DISCOVERY",
+          "pilot_current_ship_eta_rueb": "2026-06-12 20:44",
+          "ship_eta_rueb": "2026-06-12 20:23",
+          "availability_kind": "merged_eta"
+        },
+        {
           "pilot_name": "Nagel, Volker",
           "pilot_tactical_nr": 10,
           "reason": "kommt nicht rechtzeitig in RÜB an",
@@ -3357,7 +3445,7 @@
     {
       "ship_key": "FL STOROE",
       "ship_name": "FL STOROE",
-      "eta_rueb": "2026-06-12 20:42",
+      "eta_rueb": "2026-06-12 20:41",
       "ship_q": 4,
       "assigned_pilot": "Schuh, Erskine",
       "assigned_pilot_q": 0,
@@ -3499,6 +3587,17 @@
           "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
         }
       ],
+      "excluded": [
+        {
+          "pilot_name": "Heeren, Rainer",
+          "pilot_tactical_nr": 11,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "SEA DISCOVERY",
+          "pilot_current_ship_eta_rueb": "2026-06-12 20:44",
+          "ship_eta_rueb": "2026-06-12 20:41",
+          "availability_kind": "merged_eta"
+        }
+      ],
       "ship": {
         "meldung": {
           "nr": "10",
@@ -3536,19 +3635,32 @@
     {
       "ship_key": "BBC BALBOA",
       "ship_name": "BBC BALBOA",
-      "eta_rueb": "2026-06-12 21:05",
+      "eta_rueb": "2026-06-12 21:04",
       "ship_q": 3,
-      "assigned_pilot": "Nagel, Volker",
-      "assigned_pilot_q": 2,
-      "assigned_tactical_nr": 10,
-      "assigned_abteilungszeit": "2026-06-12 15:53",
-      "assigned_current_ship_name": "FRAUA",
-      "assigned_current_ship_eta_rueb": "2026-06-12 20:28",
+      "assigned_pilot": "Heeren, Rainer",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 11,
+      "assigned_abteilungszeit": "2026-06-12 15:31",
+      "assigned_current_ship_name": "SEA DISCOVERY",
+      "assigned_current_ship_eta_rueb": "2026-06-12 20:44",
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 8,
+      "candidate_count": 9,
       "candidates": [
+        {
+          "pilot_name": "Heeren, Rainer",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 11,
+          "abteilungszeit": "2026-06-12 15:31",
+          "fahrzeug": "SEA DISCOVERY",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "SEA DISCOVERY",
+          "current_ship_eta_rueb": "2026-06-12 20:44",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
         {
           "pilot_name": "Nagel, Volker",
           "pilot_q": 2,
@@ -3698,20 +3810,32 @@
     {
       "ship_key": "EDITH",
       "ship_name": "EDITH",
-      "eta_rueb": "2026-06-12 21:43",
+      "eta_rueb": "2026-06-12 21:44",
       "ship_q": 2,
-      "assigned_pilot": "Skawianczyk, Artur",
-      "assigned_pilot_q": 0,
-      "assigned_tactical_nr": 4,
-      "assigned_abteilungszeit": "2026-06-12 16:05",
-      "assigned_current_ship_name": "RÜB",
-      "assigned_current_ship_eta_rueb": "2026-06-12 16:05",
-      "assigned_current_ship_source": "special.already_in_rueb",
-      "assigned_availability_kind": "already_in_rueb",
-      "assigned_availability_hint": "Lotse gilt als bereits in RÜB",
+      "assigned_pilot": "Nagel, Volker",
+      "assigned_pilot_q": 2,
+      "assigned_tactical_nr": 10,
+      "assigned_abteilungszeit": "2026-06-12 15:53",
+      "assigned_current_ship_name": "FRAUA",
+      "assigned_current_ship_eta_rueb": "2026-06-12 20:28",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 6,
+      "candidate_count": 7,
       "candidates": [
+        {
+          "pilot_name": "Nagel, Volker",
+          "pilot_q": 2,
+          "pilot_tactical_nr": 10,
+          "abteilungszeit": "2026-06-12 15:53",
+          "fahrzeug": "FRAUA",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "FRAUA",
+          "current_ship_eta_rueb": "2026-06-12 20:28",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
         {
           "pilot_name": "Skawianczyk, Artur",
           "pilot_q": 0,
@@ -3842,6 +3966,27 @@
   ],
   "unassigned_ships": [],
   "unused_pilots": [
+    {
+      "pilot_key": "skawianczyk_artur",
+      "vorname": "Artur",
+      "nachname": "Skawianczyk",
+      "pilot_name": "Skawianczyk, Artur",
+      "abteilungszeit": "2026-06-12 16:05",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 4,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "RÜB",
+      "nr": 4,
+      "raw_time": "Fri Jun 12 16:05:00 CEST 2026",
+      "current_ship_name": "RÜB",
+      "current_ship_eta_rueb": "2026-06-12 16:05",
+      "current_ship_q": 0,
+      "current_ship_route": "RÜB",
+      "current_ship_source": "special.already_in_rueb",
+      "availability_kind": "already_in_rueb",
+      "availability_hint": "Lotse gilt als bereits in RÜB"
+    },
     {
       "pilot_key": "richter_ingmar",
       "vorname": "Ingmar",
