@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-12T14:11:15",
+  "generated_at": "2026-06-12T14:13:17",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -149,7 +149,7 @@
         "zulauf_richtung": "vom_kanal",
         "pilot_required": "true",
         "pilot_status": "H",
-        "pilot_1_name": "Eghdami, Mohammad",
+        "pilot_1_name": "Ünsal, Hüseyin",
         "travel_status": "SAILING_NOK",
         "makler": "UCA",
         "dangerous_vessel": "-",
@@ -159,7 +159,7 @@
     {
       "ship_key": "EKNOE",
       "ship_name": "EKNOE",
-      "eta_rueb": "2026-06-12 16:38",
+      "eta_rueb": "2026-06-12 16:39",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 4,
       "meldung": {
@@ -649,13 +649,12 @@
       "to": "RÜB",
       "nr": 3,
       "raw_time": "Fri Jun 12 13:55:00 CEST 2026",
-      "current_ship_name": "Leerfahrt",
-      "current_ship_eta_rueb": "2026-06-12 14:55",
-      "current_ship_q": 0,
-      "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-      "availability_kind": "leerfahrt_hos_rueb_plus60",
-      "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+      "current_ship_name": "WILSON GIJON",
+      "current_ship_eta_rueb": "2026-06-12 15:58",
+      "current_ship_q": 5,
+      "current_ship_route": "UTG → HOS",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "availability_kind": "merged_eta"
     }
   ],
   "dispatchable_pilots": [
@@ -872,13 +871,12 @@
       "to": "RÜB",
       "nr": 3,
       "raw_time": "Fri Jun 12 13:55:00 CEST 2026",
-      "current_ship_name": "Leerfahrt",
-      "current_ship_eta_rueb": "2026-06-12 14:55",
-      "current_ship_q": 0,
-      "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-      "availability_kind": "leerfahrt_hos_rueb_plus60",
-      "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+      "current_ship_name": "WILSON GIJON",
+      "current_ship_eta_rueb": "2026-06-12 15:58",
+      "current_ship_q": 5,
+      "current_ship_route": "UTG → HOS",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "availability_kind": "merged_eta"
     }
   ],
   "visible_but_not_dispatchable_pilots": [],
@@ -897,7 +895,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 7,
+      "candidate_count": 6,
       "candidates": [
         {
           "pilot_name": "Steinbach, Daniel",
@@ -976,20 +974,6 @@
           "current_ship_eta_rueb": "2026-06-12 15:14",
           "current_ship_source": "schiffe_merged.summary.pilot_1_name",
           "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Ünsal, Hüseyin",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 3,
-          "abteilungszeit": "2026-06-12 13:55",
-          "fahrzeug": "Leerfahrt",
-          "to": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "Leerfahrt",
-          "current_ship_eta_rueb": "2026-06-12 14:55",
-          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-          "availability_kind": "leerfahrt_hos_rueb_plus60",
-          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
         }
       ],
       "excluded": [
@@ -1017,6 +1001,15 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "DP WORLD LIMASSOL",
           "pilot_current_ship_eta_rueb": "2026-06-12 15:34",
+          "ship_eta_rueb": "2026-06-12 15:14",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Ünsal, Hüseyin",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "WILSON GIJON",
+          "pilot_current_ship_eta_rueb": "2026-06-12 15:58",
           "ship_eta_rueb": "2026-06-12 15:14",
           "availability_kind": "merged_eta"
         }
@@ -1069,7 +1062,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 5,
+      "candidate_count": 4,
       "candidates": [
         {
           "pilot_name": "Schmidt, Thomas",
@@ -1122,20 +1115,6 @@
           "current_ship_eta_rueb": "2026-06-12 15:14",
           "current_ship_source": "schiffe_merged.summary.pilot_1_name",
           "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Ünsal, Hüseyin",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 3,
-          "abteilungszeit": "2026-06-12 13:55",
-          "fahrzeug": "Leerfahrt",
-          "to": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "Leerfahrt",
-          "current_ship_eta_rueb": "2026-06-12 14:55",
-          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-          "availability_kind": "leerfahrt_hos_rueb_plus60",
-          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
         }
       ],
       "excluded": [
@@ -1168,6 +1147,15 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "BALTIC ARROW",
           "pilot_current_ship_eta_rueb": "2026-06-12 18:01",
+          "ship_eta_rueb": "2026-06-12 15:34",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Ünsal, Hüseyin",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "WILSON GIJON",
+          "pilot_current_ship_eta_rueb": "2026-06-12 15:58",
           "ship_eta_rueb": "2026-06-12 15:34",
           "availability_kind": "merged_eta"
         }
@@ -1295,11 +1283,10 @@
           "fahrzeug": "Leerfahrt",
           "to": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "Leerfahrt",
-          "current_ship_eta_rueb": "2026-06-12 14:55",
-          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-          "availability_kind": "leerfahrt_hos_rueb_plus60",
-          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+          "current_ship_name": "WILSON GIJON",
+          "current_ship_eta_rueb": "2026-06-12 15:58",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
         }
       ],
       "excluded": [
@@ -1349,7 +1336,7 @@
           "zulauf_richtung": "vom_kanal",
           "pilot_required": "true",
           "pilot_status": "H",
-          "pilot_1_name": "Eghdami, Mohammad",
+          "pilot_1_name": "Ünsal, Hüseyin",
           "travel_status": "SAILING_NOK",
           "makler": "UCA",
           "dangerous_vessel": "-",
@@ -1360,7 +1347,7 @@
     {
       "ship_key": "EKNOE",
       "ship_name": "EKNOE",
-      "eta_rueb": "2026-06-12 16:38",
+      "eta_rueb": "2026-06-12 16:39",
       "ship_q": 4,
       "assigned_pilot": "Borggräfe, Hark",
       "assigned_pilot_q": 0,
@@ -1433,11 +1420,10 @@
           "fahrzeug": "Leerfahrt",
           "to": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "Leerfahrt",
-          "current_ship_eta_rueb": "2026-06-12 14:55",
-          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-          "availability_kind": "leerfahrt_hos_rueb_plus60",
-          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+          "current_ship_name": "WILSON GIJON",
+          "current_ship_eta_rueb": "2026-06-12 15:58",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
         }
       ],
       "excluded": [
@@ -1447,7 +1433,7 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "DING HENG 20",
           "pilot_current_ship_eta_rueb": "2026-06-12 17:57",
-          "ship_eta_rueb": "2026-06-12 16:38",
+          "ship_eta_rueb": "2026-06-12 16:39",
           "availability_kind": "merged_eta"
         },
         {
@@ -1456,7 +1442,7 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "BALTIC ARROW",
           "pilot_current_ship_eta_rueb": "2026-06-12 18:01",
-          "ship_eta_rueb": "2026-06-12 16:38",
+          "ship_eta_rueb": "2026-06-12 16:39",
           "availability_kind": "merged_eta"
         }
       ],
@@ -1557,11 +1543,10 @@
           "fahrzeug": "Leerfahrt",
           "to": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "Leerfahrt",
-          "current_ship_eta_rueb": "2026-06-12 14:55",
-          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-          "availability_kind": "leerfahrt_hos_rueb_plus60",
-          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+          "current_ship_name": "WILSON GIJON",
+          "current_ship_eta_rueb": "2026-06-12 15:58",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
         }
       ],
       "excluded": [
@@ -1668,11 +1653,10 @@
           "fahrzeug": "Leerfahrt",
           "to": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "Leerfahrt",
-          "current_ship_eta_rueb": "2026-06-12 14:55",
-          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-          "availability_kind": "leerfahrt_hos_rueb_plus60",
-          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+          "current_ship_name": "WILSON GIJON",
+          "current_ship_eta_rueb": "2026-06-12 15:58",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
         }
       ],
       "excluded": [
@@ -1754,11 +1738,10 @@
           "fahrzeug": "Leerfahrt",
           "to": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "Leerfahrt",
-          "current_ship_eta_rueb": "2026-06-12 14:55",
-          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-          "availability_kind": "leerfahrt_hos_rueb_plus60",
-          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+          "current_ship_name": "WILSON GIJON",
+          "current_ship_eta_rueb": "2026-06-12 15:58",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
         }
       ],
       "excluded": [
@@ -1824,11 +1807,10 @@
       "assigned_pilot_q": 0,
       "assigned_tactical_nr": 3,
       "assigned_abteilungszeit": "2026-06-12 13:55",
-      "assigned_current_ship_name": "Leerfahrt",
-      "assigned_current_ship_eta_rueb": "2026-06-12 14:55",
-      "assigned_current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-      "assigned_availability_kind": "leerfahrt_hos_rueb_plus60",
-      "assigned_availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten",
+      "assigned_current_ship_name": "WILSON GIJON",
+      "assigned_current_ship_eta_rueb": "2026-06-12 15:58",
+      "assigned_current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
       "candidate_count": 1,
       "candidates": [
@@ -1840,11 +1822,10 @@
           "fahrzeug": "Leerfahrt",
           "to": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "Leerfahrt",
-          "current_ship_eta_rueb": "2026-06-12 14:55",
-          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-          "availability_kind": "leerfahrt_hos_rueb_plus60",
-          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+          "current_ship_name": "WILSON GIJON",
+          "current_ship_eta_rueb": "2026-06-12 15:58",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
         }
       ],
       "excluded": [
