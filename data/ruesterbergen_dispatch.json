@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-12T16:41:15",
+  "generated_at": "2026-06-12T16:43:16",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,13 +32,13 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 11,
+    "ships_for_ruesterbergen": 13,
     "pilots_total": 20,
     "pilots_dispatchable": 16,
     "pilots_visible_only": 4,
-    "assignments": 11,
+    "assignments": 13,
     "unassigned_ships": 0,
-    "unused_pilots": 5
+    "unused_pilots": 3
   },
   "ships": [
     {
@@ -440,6 +440,83 @@
         "pilot_1_name": "Mehrkens, Hauke",
         "travel_status": "SAILING_NOK",
         "makler": "NIK",
+        "dangerous_vessel": "-",
+        "type_of_loading": "Stueckgueter"
+      }
+    },
+    {
+      "ship_key": "EDITH",
+      "ship_name": "EDITH",
+      "eta_rueb": "2026-06-12 20:50",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 2,
+      "meldung": {
+        "nr": "13",
+        "time": "Fri Jun 12 20:50:00 CEST 2026",
+        "draft": "5.6",
+        "q_gruppe": "2",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "2",
+        "vg": "4",
+        "draft": "5.60",
+        "length_m": "139.81",
+        "beam_m": "19.64",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "U",
+        "pilot_1_name": "Dörbandt, Stefan",
+        "travel_status": "SAILING_NOK",
+        "makler": "UCA",
+        "dangerous_vessel": "-",
+        "type_of_loading": "Container"
+      }
+    },
+    {
+      "ship_key": "BBC BALBOA",
+      "ship_name": "BBC BALBOA",
+      "eta_rueb": "2026-06-12 21:05",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 3,
+      "meldung": {
+        "nr": "12",
+        "time": "Fri Jun 12 20:45:00 CEST 2026",
+        "draft": "5.0",
+        "q_gruppe": "3",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "UTG"
+      },
+      "summary": {
+        "route": "UTG → HOS",
+        "routes": [
+          "UTG → HOS",
+          "HOS → KLT",
+          "RÜB → UTG"
+        ],
+        "q_gruppe": "3",
+        "vg": "3",
+        "draft": "5.00",
+        "length_m": "128.45",
+        "beam_m": "16.50",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "U",
+        "pilot_1_name": "Lehmann-von Tils, Ruben",
+        "travel_status": "SAILING_NOK",
+        "makler": "SUB",
         "dangerous_vessel": "-",
         "type_of_loading": "Stueckgueter"
       }
@@ -3363,54 +3440,228 @@
           "type_of_loading": "Stueckgueter"
         }
       }
+    },
+    {
+      "ship_key": "EDITH",
+      "ship_name": "EDITH",
+      "eta_rueb": "2026-06-12 20:50",
+      "ship_q": 2,
+      "assigned_pilot": "Richter, Ingmar",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 4,
+      "assigned_abteilungszeit": "2026-06-12 16:05",
+      "assigned_current_ship_name": "KEY BAY",
+      "assigned_current_ship_eta_rueb": "2026-06-12 17:54",
+      "assigned_current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 4,
+      "candidates": [
+        {
+          "pilot_name": "Richter, Ingmar",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 4,
+          "abteilungszeit": "2026-06-12 16:05",
+          "fahrzeug": "Leerfahrt",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "KEY BAY",
+          "current_ship_eta_rueb": "2026-06-12 17:54",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Heyenga, Kai",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 5,
+          "abteilungszeit": "2026-06-12 16:05",
+          "fahrzeug": "Leerfahrt",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "HUMBER RUNNER",
+          "current_ship_eta_rueb": "2026-06-12 17:24",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Klüver, Knut Paul",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 6,
+          "abteilungszeit": "2026-06-12 16:05",
+          "fahrzeug": "Leerfahrt",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "Leerfahrt",
+          "current_ship_eta_rueb": "2026-06-12 17:05",
+          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
+          "availability_kind": "leerfahrt_hos_rueb_plus60",
+          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+        },
+        {
+          "pilot_name": "Röhl, Jens",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 8,
+          "abteilungszeit": "2026-06-12 16:05",
+          "fahrzeug": "Leerfahrt",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "EN AVANT 10 + EN AVANT 1 + H-331",
+          "current_ship_eta_rueb": "2026-06-12 17:44",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Wald, Mark",
+          "pilot_tactical_nr": 7,
+          "reason": "Quali passt nicht (3 > 2)",
+          "pilot_q": 3,
+          "ship_q": 2
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "13",
+          "time": "Fri Jun 12 20:50:00 CEST 2026",
+          "draft": "5.6",
+          "q_gruppe": "2",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "HOS → KLT",
+          "routes": [
+            "HOS → KLT",
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "2",
+          "vg": "4",
+          "draft": "5.60",
+          "length_m": "139.81",
+          "beam_m": "19.64",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "U",
+          "pilot_1_name": "Dörbandt, Stefan",
+          "travel_status": "SAILING_NOK",
+          "makler": "UCA",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Container"
+        }
+      }
+    },
+    {
+      "ship_key": "BBC BALBOA",
+      "ship_name": "BBC BALBOA",
+      "eta_rueb": "2026-06-12 21:05",
+      "ship_q": 3,
+      "assigned_pilot": "Heyenga, Kai",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 5,
+      "assigned_abteilungszeit": "2026-06-12 16:05",
+      "assigned_current_ship_name": "HUMBER RUNNER",
+      "assigned_current_ship_eta_rueb": "2026-06-12 17:24",
+      "assigned_current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 4,
+      "candidates": [
+        {
+          "pilot_name": "Heyenga, Kai",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 5,
+          "abteilungszeit": "2026-06-12 16:05",
+          "fahrzeug": "Leerfahrt",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "HUMBER RUNNER",
+          "current_ship_eta_rueb": "2026-06-12 17:24",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Klüver, Knut Paul",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 6,
+          "abteilungszeit": "2026-06-12 16:05",
+          "fahrzeug": "Leerfahrt",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "Leerfahrt",
+          "current_ship_eta_rueb": "2026-06-12 17:05",
+          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
+          "availability_kind": "leerfahrt_hos_rueb_plus60",
+          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+        },
+        {
+          "pilot_name": "Wald, Mark",
+          "pilot_q": 3,
+          "pilot_tactical_nr": 7,
+          "abteilungszeit": "2026-06-12 16:05",
+          "fahrzeug": "Leerfahrt",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "HAV TUNA",
+          "current_ship_eta_rueb": "2026-06-12 17:51",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Röhl, Jens",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 8,
+          "abteilungszeit": "2026-06-12 16:05",
+          "fahrzeug": "Leerfahrt",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "EN AVANT 10 + EN AVANT 1 + H-331",
+          "current_ship_eta_rueb": "2026-06-12 17:44",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "12",
+          "time": "Fri Jun 12 20:45:00 CEST 2026",
+          "draft": "5.0",
+          "q_gruppe": "3",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "UTG"
+        },
+        "summary": {
+          "route": "UTG → HOS",
+          "routes": [
+            "UTG → HOS",
+            "HOS → KLT",
+            "RÜB → UTG"
+          ],
+          "q_gruppe": "3",
+          "vg": "3",
+          "draft": "5.00",
+          "length_m": "128.45",
+          "beam_m": "16.50",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "U",
+          "pilot_1_name": "Lehmann-von Tils, Ruben",
+          "travel_status": "SAILING_NOK",
+          "makler": "SUB",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Stueckgueter"
+        }
+      }
     }
   ],
   "unassigned_ships": [],
   "unused_pilots": [
-    {
-      "pilot_key": "richter_ingmar",
-      "vorname": "Ingmar",
-      "nachname": "Richter",
-      "pilot_name": "Richter, Ingmar",
-      "abteilungszeit": "2026-06-12 16:05",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 4,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "Leerfahrt",
-      "from": "HOS",
-      "to": "RÜB",
-      "nr": 4,
-      "raw_time": "Fri Jun 12 16:05:00 CEST 2026",
-      "current_ship_name": "KEY BAY",
-      "current_ship_eta_rueb": "2026-06-12 17:54",
-      "current_ship_q": 5,
-      "current_ship_route": "HOS → KLT",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-      "availability_kind": "merged_eta"
-    },
-    {
-      "pilot_key": "heyenga_kai",
-      "vorname": "Kai",
-      "nachname": "Heyenga",
-      "pilot_name": "Heyenga, Kai",
-      "abteilungszeit": "2026-06-12 16:05",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 5,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "Leerfahrt",
-      "from": "HOS",
-      "to": "RÜB",
-      "nr": 5,
-      "raw_time": "Fri Jun 12 16:05:00 CEST 2026",
-      "current_ship_name": "HUMBER RUNNER",
-      "current_ship_eta_rueb": "2026-06-12 17:24",
-      "current_ship_q": 5,
-      "current_ship_route": "HOS → KLT",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-      "availability_kind": "merged_eta"
-    },
     {
       "pilot_key": "klüver_knut paul",
       "vorname": "Knut Paul",
