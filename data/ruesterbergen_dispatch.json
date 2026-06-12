@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-12T15:21:17",
+  "generated_at": "2026-06-12T15:23:18",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,12 +32,12 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 11,
+    "ships_for_ruesterbergen": 12,
     "pilots_total": 10,
     "pilots_dispatchable": 10,
     "pilots_visible_only": 0,
     "assignments": 10,
-    "unassigned_ships": 1,
+    "unassigned_ships": 2,
     "unused_pilots": 0
   },
   "ships": [
@@ -111,7 +111,7 @@
         "zulauf_richtung": "vom_kanal",
         "pilot_required": "true",
         "pilot_status": "P",
-        "pilot_1_name": "Berg, Peter",
+        "pilot_1_name": "Kahler, Volker",
         "travel_status": "SAILING_NOK",
         "makler": "NIK",
         "dangerous_vessel": "-",
@@ -444,6 +444,42 @@
         "dangerous_vessel": "-",
         "type_of_loading": "Ballastfahrt"
       }
+    },
+    {
+      "ship_key": "SUSANNE",
+      "ship_name": "SUSANNE",
+      "eta_rueb": "2026-06-12 19:33",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 5,
+      "meldung": {
+        "nr": "12",
+        "time": "Fri Jun 12 19:33:00 CEST 2026",
+        "draft": "5.5",
+        "q_gruppe": "5",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "RÜB → HOS",
+        "routes": [
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "5",
+        "vg": "3",
+        "draft": "5.50",
+        "length_m": "82.500",
+        "beam_m": "12.522",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "H",
+        "travel_status": "SAILING_NOK",
+        "makler": "UCA",
+        "dangerous_vessel": "-",
+        "type_of_loading": "Salz"
+      }
     }
   ],
   "pilots": [
@@ -658,13 +694,12 @@
       "to": "RÜB",
       "nr": 1,
       "raw_time": "Fri Jun 12 15:20:00 CEST 2026",
-      "current_ship_name": "Leerfahrt",
-      "current_ship_eta_rueb": "2026-06-12 16:20",
-      "current_ship_q": 0,
-      "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-      "availability_kind": "leerfahrt_hos_rueb_plus60",
-      "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+      "current_ship_name": "EKNOE",
+      "current_ship_eta_rueb": "2026-06-12 16:42",
+      "current_ship_q": 4,
+      "current_ship_route": "HOS → KLT",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "availability_kind": "merged_eta"
     }
   ],
   "dispatchable_pilots": [
@@ -879,13 +914,12 @@
       "to": "RÜB",
       "nr": 1,
       "raw_time": "Fri Jun 12 15:20:00 CEST 2026",
-      "current_ship_name": "Leerfahrt",
-      "current_ship_eta_rueb": "2026-06-12 16:20",
-      "current_ship_q": 0,
-      "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-      "availability_kind": "leerfahrt_hos_rueb_plus60",
-      "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+      "current_ship_name": "EKNOE",
+      "current_ship_eta_rueb": "2026-06-12 16:42",
+      "current_ship_q": 4,
+      "current_ship_route": "HOS → KLT",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "availability_kind": "merged_eta"
     }
   ],
   "visible_but_not_dispatchable_pilots": [],
@@ -1020,11 +1054,10 @@
           "pilot_name": "Kahler, Volker",
           "pilot_tactical_nr": 1,
           "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "Leerfahrt",
-          "pilot_current_ship_eta_rueb": "2026-06-12 16:20",
+          "pilot_current_ship": "EKNOE",
+          "pilot_current_ship_eta_rueb": "2026-06-12 16:42",
           "ship_eta_rueb": "2026-06-12 15:58",
-          "availability_kind": "leerfahrt_hos_rueb_plus60",
-          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -1163,11 +1196,10 @@
           "fahrzeug": "Leerfahrt",
           "to": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "Leerfahrt",
-          "current_ship_eta_rueb": "2026-06-12 16:20",
-          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-          "availability_kind": "leerfahrt_hos_rueb_plus60",
-          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+          "current_ship_name": "EKNOE",
+          "current_ship_eta_rueb": "2026-06-12 16:42",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
         }
       ],
       "excluded": [
@@ -1216,7 +1248,7 @@
           "zulauf_richtung": "vom_kanal",
           "pilot_required": "true",
           "pilot_status": "P",
-          "pilot_1_name": "Berg, Peter",
+          "pilot_1_name": "Kahler, Volker",
           "travel_status": "SAILING_NOK",
           "makler": "NIK",
           "dangerous_vessel": "-",
@@ -1312,11 +1344,10 @@
           "fahrzeug": "Leerfahrt",
           "to": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "Leerfahrt",
-          "current_ship_eta_rueb": "2026-06-12 16:20",
-          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-          "availability_kind": "leerfahrt_hos_rueb_plus60",
-          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+          "current_ship_name": "EKNOE",
+          "current_ship_eta_rueb": "2026-06-12 16:42",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
         }
       ],
       "excluded": [
@@ -1435,11 +1466,10 @@
           "fahrzeug": "Leerfahrt",
           "to": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "Leerfahrt",
-          "current_ship_eta_rueb": "2026-06-12 16:20",
-          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-          "availability_kind": "leerfahrt_hos_rueb_plus60",
-          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+          "current_ship_name": "EKNOE",
+          "current_ship_eta_rueb": "2026-06-12 16:42",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
         }
       ],
       "excluded": [
@@ -1553,11 +1583,10 @@
           "fahrzeug": "Leerfahrt",
           "to": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "Leerfahrt",
-          "current_ship_eta_rueb": "2026-06-12 16:20",
-          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-          "availability_kind": "leerfahrt_hos_rueb_plus60",
-          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+          "current_ship_name": "EKNOE",
+          "current_ship_eta_rueb": "2026-06-12 16:42",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
         }
       ],
       "excluded": [
@@ -1663,11 +1692,10 @@
           "fahrzeug": "Leerfahrt",
           "to": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "Leerfahrt",
-          "current_ship_eta_rueb": "2026-06-12 16:20",
-          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-          "availability_kind": "leerfahrt_hos_rueb_plus60",
-          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+          "current_ship_name": "EKNOE",
+          "current_ship_eta_rueb": "2026-06-12 16:42",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
         }
       ],
       "excluded": [
@@ -1772,11 +1800,10 @@
           "fahrzeug": "Leerfahrt",
           "to": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "Leerfahrt",
-          "current_ship_eta_rueb": "2026-06-12 16:20",
-          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-          "availability_kind": "leerfahrt_hos_rueb_plus60",
-          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+          "current_ship_name": "EKNOE",
+          "current_ship_eta_rueb": "2026-06-12 16:42",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
         }
       ],
       "excluded": [
@@ -1873,11 +1900,10 @@
           "fahrzeug": "Leerfahrt",
           "to": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "Leerfahrt",
-          "current_ship_eta_rueb": "2026-06-12 16:20",
-          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-          "availability_kind": "leerfahrt_hos_rueb_plus60",
-          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+          "current_ship_name": "EKNOE",
+          "current_ship_eta_rueb": "2026-06-12 16:42",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -1949,11 +1975,10 @@
           "fahrzeug": "Leerfahrt",
           "to": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "Leerfahrt",
-          "current_ship_eta_rueb": "2026-06-12 16:20",
-          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-          "availability_kind": "leerfahrt_hos_rueb_plus60",
-          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+          "current_ship_name": "EKNOE",
+          "current_ship_eta_rueb": "2026-06-12 16:42",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -2000,11 +2025,10 @@
       "assigned_pilot_q": 0,
       "assigned_tactical_nr": 1,
       "assigned_abteilungszeit": "2026-06-12 15:20",
-      "assigned_current_ship_name": "Leerfahrt",
-      "assigned_current_ship_eta_rueb": "2026-06-12 16:20",
-      "assigned_current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-      "assigned_availability_kind": "leerfahrt_hos_rueb_plus60",
-      "assigned_availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten",
+      "assigned_current_ship_name": "EKNOE",
+      "assigned_current_ship_eta_rueb": "2026-06-12 16:42",
+      "assigned_current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
       "candidate_count": 1,
       "candidates": [
@@ -2016,11 +2040,10 @@
           "fahrzeug": "Leerfahrt",
           "to": "RÜB",
           "aufgabe": "Kanalbört",
-          "current_ship_name": "Leerfahrt",
-          "current_ship_eta_rueb": "2026-06-12 16:20",
-          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
-          "availability_kind": "leerfahrt_hos_rueb_plus60",
-          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+          "current_ship_name": "EKNOE",
+          "current_ship_eta_rueb": "2026-06-12 16:42",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -2063,6 +2086,13 @@
       "ship_name": "CONNECTOR",
       "eta_rueb": "2026-06-12 19:30",
       "ship_q": 1,
+      "reason": "kein passender Lotse verfügbar"
+    },
+    {
+      "ship_key": "SUSANNE",
+      "ship_name": "SUSANNE",
+      "eta_rueb": "2026-06-12 19:33",
+      "ship_q": 5,
       "reason": "kein passender Lotse verfügbar"
     }
   ],
