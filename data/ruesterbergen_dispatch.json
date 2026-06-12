@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-12T04:29:09",
+  "generated_at": "2026-06-12T04:31:08",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,53 +32,15 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 3,
+    "ships_for_ruesterbergen": 2,
     "pilots_total": 6,
     "pilots_dispatchable": 6,
     "pilots_visible_only": 0,
-    "assignments": 3,
+    "assignments": 2,
     "unassigned_ships": 0,
-    "unused_pilots": 3
+    "unused_pilots": 4
   },
   "ships": [
-    {
-      "ship_key": "MARIELYST",
-      "ship_name": "MARIELYST",
-      "eta_rueb": "2026-06-12 04:56",
-      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
-      "ship_q": 1,
-      "meldung": {
-        "nr": "1",
-        "time": "Fri Jun 12 04:55:00 CEST 2026",
-        "draft": "8.4",
-        "q_gruppe": "1",
-        "lotsen_anzahl": 1,
-        "confirmed": false,
-        "from": "RÜB",
-        "to": "HOS"
-      },
-      "summary": {
-        "route": "HOS → KLT",
-        "routes": [
-          "HOS → KLT",
-          "RÜB → HOS"
-        ],
-        "q_gruppe": "1",
-        "vg": "5",
-        "draft": "8.40",
-        "length_m": "157.92",
-        "beam_m": "23.5",
-        "queue_title": "Zulauf vom Kanal in Kiel",
-        "zulauf_richtung": "vom_kanal",
-        "pilot_required": "true",
-        "pilot_status": "U",
-        "pilot_1_name": "Schulz, Arne",
-        "travel_status": "SAILING_NOK",
-        "makler": "UCA",
-        "dangerous_vessel": "-",
-        "type_of_loading": "Container"
-      }
-    },
     {
       "ship_key": "ECO KHAMSIN",
       "ship_name": "ECO KHAMSIN",
@@ -86,7 +48,7 @@
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 0,
       "meldung": {
-        "nr": "2",
+        "nr": "1",
         "time": "Fri Jun 12 07:00:00 CEST 2026",
         "draft": "8.0",
         "q_gruppe": "0",
@@ -120,11 +82,11 @@
     {
       "ship_key": "IEPBORG",
       "ship_name": "IEPBORG",
-      "eta_rueb": "2026-06-12 07:23",
+      "eta_rueb": "2026-06-12 07:22",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
-        "nr": "3",
+        "nr": "2",
         "time": "Fri Jun 12 07:15:00 CEST 2026",
         "draft": "3.2",
         "q_gruppe": "5",
@@ -188,14 +150,16 @@
       "q_source": "q_gruppen_lotsen.entries",
       "pilot_tactical_nr": 8,
       "aufgabe": "Kanalbört",
-      "fahrzeug": "RÜB",
+      "fahrzeug": "MARIELYST",
+      "from": "RÜB",
+      "to": "HOS",
       "nr": 8,
       "raw_time": "Thu Jun 11 22:17:00 CEST 2026",
       "current_ship_name": "MARIELYST",
       "current_ship_eta_rueb": "2026-06-12 04:56",
       "current_ship_q": 1,
-      "current_ship_route": "HOS → KLT",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_route": "RÜB → HOS",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
@@ -319,14 +283,16 @@
       "q_source": "q_gruppen_lotsen.entries",
       "pilot_tactical_nr": 8,
       "aufgabe": "Kanalbört",
-      "fahrzeug": "RÜB",
+      "fahrzeug": "MARIELYST",
+      "from": "RÜB",
+      "to": "HOS",
       "nr": 8,
       "raw_time": "Thu Jun 11 22:17:00 CEST 2026",
       "current_ship_name": "MARIELYST",
       "current_ship_eta_rueb": "2026-06-12 04:56",
       "current_ship_q": 1,
-      "current_ship_route": "HOS → KLT",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_route": "RÜB → HOS",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
@@ -420,10 +386,10 @@
   "visible_but_not_dispatchable_pilots": [],
   "assignments": [
     {
-      "ship_key": "MARIELYST",
-      "ship_name": "MARIELYST",
-      "eta_rueb": "2026-06-12 04:56",
-      "ship_q": 1,
+      "ship_key": "ECO KHAMSIN",
+      "ship_name": "ECO KHAMSIN",
+      "eta_rueb": "2026-06-12 07:08",
+      "ship_q": 0,
       "assigned_pilot": "Thomaßen, Stephan",
       "assigned_pilot_q": 0,
       "assigned_tactical_nr": 10,
@@ -433,7 +399,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 4,
+      "candidate_count": 5,
       "candidates": [
         {
           "pilot_name": "Thomaßen, Stephan",
@@ -453,120 +419,12 @@
           "pilot_q": 0,
           "pilot_tactical_nr": 8,
           "abteilungszeit": "2026-06-11 22:17",
-          "fahrzeug": "RÜB",
+          "fahrzeug": "MARIELYST",
+          "to": "HOS",
           "aufgabe": "Kanalbört",
           "current_ship_name": "MARIELYST",
           "current_ship_eta_rueb": "2026-06-12 04:56",
-          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Biedermann, Johannes",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 7,
-          "abteilungszeit": "2026-06-11 22:19",
-          "fahrzeug": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "RÜB",
-          "current_ship_eta_rueb": "2026-06-11 22:19",
-          "current_ship_source": "special.already_in_rueb",
-          "availability_kind": "already_in_rueb",
-          "availability_hint": "Lotse gilt als bereits in RÜB"
-        },
-        {
-          "pilot_name": "Wille, Christian",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 5,
-          "abteilungszeit": "2026-06-11 23:30",
-          "fahrzeug": "TITAN VISION",
-          "to": "KLT",
-          "aufgabe": "Seebört",
-          "current_ship_name": "TITAN VISION",
-          "current_ship_eta_rueb": "2026-06-12 00:55",
           "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        }
-      ],
-      "excluded": [
-        {
-          "pilot_name": "Jenckel, Dolf",
-          "pilot_tactical_nr": 3,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "ELBWAVE",
-          "pilot_current_ship_eta_rueb": "2026-06-12 05:42",
-          "ship_eta_rueb": "2026-06-12 04:56",
-          "availability_kind": "merged_eta"
-        },
-        {
-          "pilot_name": "Stoislow, Alexander",
-          "pilot_tactical_nr": 2,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "WILSON MAAS",
-          "pilot_current_ship_eta_rueb": "2026-06-12 05:36",
-          "ship_eta_rueb": "2026-06-12 04:56",
-          "availability_kind": "merged_eta"
-        }
-      ],
-      "ship": {
-        "meldung": {
-          "nr": "1",
-          "time": "Fri Jun 12 04:55:00 CEST 2026",
-          "draft": "8.4",
-          "q_gruppe": "1",
-          "lotsen_anzahl": 1,
-          "confirmed": false,
-          "from": "RÜB",
-          "to": "HOS"
-        },
-        "summary": {
-          "route": "HOS → KLT",
-          "routes": [
-            "HOS → KLT",
-            "RÜB → HOS"
-          ],
-          "q_gruppe": "1",
-          "vg": "5",
-          "draft": "8.40",
-          "length_m": "157.92",
-          "beam_m": "23.5",
-          "queue_title": "Zulauf vom Kanal in Kiel",
-          "zulauf_richtung": "vom_kanal",
-          "pilot_required": "true",
-          "pilot_status": "U",
-          "pilot_1_name": "Schulz, Arne",
-          "travel_status": "SAILING_NOK",
-          "makler": "UCA",
-          "dangerous_vessel": "-",
-          "type_of_loading": "Container"
-        }
-      }
-    },
-    {
-      "ship_key": "ECO KHAMSIN",
-      "ship_name": "ECO KHAMSIN",
-      "eta_rueb": "2026-06-12 07:08",
-      "ship_q": 0,
-      "assigned_pilot": "Schulz, Arne",
-      "assigned_pilot_q": 0,
-      "assigned_tactical_nr": 8,
-      "assigned_abteilungszeit": "2026-06-11 22:17",
-      "assigned_current_ship_name": "MARIELYST",
-      "assigned_current_ship_eta_rueb": "2026-06-12 04:56",
-      "assigned_current_ship_source": "schiffe_merged.summary.pilot_1_name",
-      "assigned_availability_kind": "merged_eta",
-      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 4,
-      "candidates": [
-        {
-          "pilot_name": "Schulz, Arne",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 8,
-          "abteilungszeit": "2026-06-11 22:17",
-          "fahrzeug": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "MARIELYST",
-          "current_ship_eta_rueb": "2026-06-12 04:56",
-          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
           "availability_kind": "merged_eta"
         },
         {
@@ -620,7 +478,7 @@
       ],
       "ship": {
         "meldung": {
-          "nr": "2",
+          "nr": "1",
           "time": "Fri Jun 12 07:00:00 CEST 2026",
           "draft": "8.0",
           "q_gruppe": "0",
@@ -655,20 +513,32 @@
     {
       "ship_key": "IEPBORG",
       "ship_name": "IEPBORG",
-      "eta_rueb": "2026-06-12 07:23",
+      "eta_rueb": "2026-06-12 07:22",
       "ship_q": 5,
-      "assigned_pilot": "Biedermann, Johannes",
+      "assigned_pilot": "Schulz, Arne",
       "assigned_pilot_q": 0,
-      "assigned_tactical_nr": 7,
-      "assigned_abteilungszeit": "2026-06-11 22:19",
-      "assigned_current_ship_name": "RÜB",
-      "assigned_current_ship_eta_rueb": "2026-06-11 22:19",
-      "assigned_current_ship_source": "special.already_in_rueb",
-      "assigned_availability_kind": "already_in_rueb",
-      "assigned_availability_hint": "Lotse gilt als bereits in RÜB",
+      "assigned_tactical_nr": 8,
+      "assigned_abteilungszeit": "2026-06-11 22:17",
+      "assigned_current_ship_name": "MARIELYST",
+      "assigned_current_ship_eta_rueb": "2026-06-12 04:56",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 4,
+      "candidate_count": 5,
       "candidates": [
+        {
+          "pilot_name": "Schulz, Arne",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 8,
+          "abteilungszeit": "2026-06-11 22:17",
+          "fahrzeug": "MARIELYST",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "MARIELYST",
+          "current_ship_eta_rueb": "2026-06-12 04:56",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
         {
           "pilot_name": "Biedermann, Johannes",
           "pilot_q": 0,
@@ -724,7 +594,7 @@
       ],
       "ship": {
         "meldung": {
-          "nr": "3",
+          "nr": "2",
           "time": "Fri Jun 12 07:15:00 CEST 2026",
           "draft": "3.2",
           "q_gruppe": "5",
@@ -758,6 +628,27 @@
   ],
   "unassigned_ships": [],
   "unused_pilots": [
+    {
+      "pilot_key": "biedermann_johannes",
+      "vorname": "Johannes",
+      "nachname": "Biedermann",
+      "pilot_name": "Biedermann, Johannes",
+      "abteilungszeit": "2026-06-11 22:19",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 7,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "RÜB",
+      "nr": 7,
+      "raw_time": "Thu Jun 11 22:19:00 CEST 2026",
+      "current_ship_name": "RÜB",
+      "current_ship_eta_rueb": "2026-06-11 22:19",
+      "current_ship_q": 0,
+      "current_ship_route": "RÜB",
+      "current_ship_source": "special.already_in_rueb",
+      "availability_kind": "already_in_rueb",
+      "availability_hint": "Lotse gilt als bereits in RÜB"
+    },
     {
       "pilot_key": "wille_christian",
       "vorname": "Christian",
