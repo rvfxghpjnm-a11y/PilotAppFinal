@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-12T10:07:07",
+  "generated_at": "2026-06-12T10:09:07",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,13 +32,13 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 3,
+    "ships_for_ruesterbergen": 4,
     "pilots_total": 8,
     "pilots_dispatchable": 7,
     "pilots_visible_only": 1,
-    "assignments": 3,
+    "assignments": 4,
     "unassigned_ships": 0,
-    "unused_pilots": 4
+    "unused_pilots": 3
   },
   "ships": [
     {
@@ -153,6 +153,43 @@
         "makler": "SUB",
         "dangerous_vessel": "-",
         "type_of_loading": "Passagiere"
+      }
+    },
+    {
+      "ship_key": "KLARA",
+      "ship_name": "KLARA",
+      "eta_rueb": "2026-06-12 14:31",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 5,
+      "meldung": {
+        "nr": "4",
+        "time": "Fri Jun 12 14:20:00 CEST 2026",
+        "draft": "4.5",
+        "q_gruppe": "5",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "RÜB → HOS",
+        "routes": [
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "5",
+        "vg": "3",
+        "draft": "4.50",
+        "length_m": "89.98",
+        "beam_m": "12.500",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "false",
+        "pilot_status": "H",
+        "pilot_1_name": "Bartsch, Holger",
+        "travel_status": "SAILING_NOK",
+        "makler": "SUB",
+        "dangerous_vessel": "-",
+        "type_of_loading": "Getreide"
       }
     }
   ],
@@ -880,32 +917,112 @@
           "type_of_loading": "Passagiere"
         }
       }
+    },
+    {
+      "ship_key": "KLARA",
+      "ship_name": "KLARA",
+      "eta_rueb": "2026-06-12 14:31",
+      "ship_q": 5,
+      "assigned_pilot": "Stoislow, Alexander",
+      "assigned_pilot_q": 4,
+      "assigned_tactical_nr": 10,
+      "assigned_abteilungszeit": "2026-06-12 00:55",
+      "assigned_current_ship_name": "IEPBORG",
+      "assigned_current_ship_eta_rueb": "2026-06-12 07:10",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 4,
+      "candidates": [
+        {
+          "pilot_name": "Stoislow, Alexander",
+          "pilot_q": 4,
+          "pilot_tactical_nr": 10,
+          "abteilungszeit": "2026-06-12 00:55",
+          "fahrzeug": "IEPBORG",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "IEPBORG",
+          "current_ship_eta_rueb": "2026-06-12 07:10",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Crotogino, Philipp",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 7,
+          "abteilungszeit": "2026-06-12 05:00",
+          "fahrzeug": "ECO KHAMSIN",
+          "to": "KLT",
+          "aufgabe": "Seebört",
+          "current_ship_name": "ECO KHAMSIN",
+          "current_ship_eta_rueb": "2026-06-12 06:56",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Winkler, René",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 6,
+          "abteilungszeit": "2026-06-12 06:40",
+          "fahrzeug": "TARNBRIS",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "TARNBRIS",
+          "current_ship_eta_rueb": "2026-06-12 11:36",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Wulff, Stephan",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 4,
+          "abteilungszeit": "2026-06-12 07:55",
+          "fahrzeug": "BRAVEWIND",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "BRAVEWIND",
+          "current_ship_eta_rueb": "2026-06-12 09:20",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "4",
+          "time": "Fri Jun 12 14:20:00 CEST 2026",
+          "draft": "4.5",
+          "q_gruppe": "5",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "RÜB → HOS",
+          "routes": [
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "5",
+          "vg": "3",
+          "draft": "4.50",
+          "length_m": "89.98",
+          "beam_m": "12.500",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "false",
+          "pilot_status": "H",
+          "pilot_1_name": "Bartsch, Holger",
+          "travel_status": "SAILING_NOK",
+          "makler": "SUB",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Getreide"
+        }
+      }
     }
   ],
   "unassigned_ships": [],
   "unused_pilots": [
-    {
-      "pilot_key": "stoislow_alexander",
-      "vorname": "Alexander",
-      "nachname": "Stoislow",
-      "pilot_name": "Stoislow, Alexander",
-      "abteilungszeit": "2026-06-12 00:55",
-      "pilot_q": 4,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 10,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "IEPBORG",
-      "from": "RÜB",
-      "to": "HOS",
-      "nr": 10,
-      "raw_time": "Fri Jun 12 00:55:00 CEST 2026",
-      "current_ship_name": "IEPBORG",
-      "current_ship_eta_rueb": "2026-06-12 07:10",
-      "current_ship_q": 0,
-      "current_ship_route": "RÜB → HOS",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
-    },
     {
       "pilot_key": "crotogino_philipp",
       "vorname": "Philipp",
