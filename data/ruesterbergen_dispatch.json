@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-12T23:01:16",
+  "generated_at": "2026-06-12T23:03:13",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -33,12 +33,12 @@
   },
   "counts": {
     "ships_for_ruesterbergen": 7,
-    "pilots_total": 13,
-    "pilots_dispatchable": 10,
+    "pilots_total": 14,
+    "pilots_dispatchable": 11,
     "pilots_visible_only": 3,
     "assignments": 7,
     "unassigned_ships": 0,
-    "unused_pilots": 3
+    "unused_pilots": 4
   },
   "ships": [
     {
@@ -119,7 +119,7 @@
     {
       "ship_key": "ALVANITH",
       "ship_name": "ALVANITH",
-      "eta_rueb": "2026-06-13 02:05",
+      "eta_rueb": "2026-06-13 02:04",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 4,
       "meldung": {
@@ -195,7 +195,7 @@
     {
       "ship_key": "SIMON B",
       "ship_name": "SIMON B",
-      "eta_rueb": "2026-06-13 02:13",
+      "eta_rueb": "2026-06-13 02:12",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
@@ -396,6 +396,28 @@
       "availability_kind": "merged_eta"
     },
     {
+      "pilot_key": "plaisant_julian",
+      "vorname": "Julian",
+      "nachname": "Plaisant",
+      "pilot_name": "Plaisant, Julian",
+      "abteilungszeit": "2026-06-12 17:05",
+      "pilot_q": 4,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 13,
+      "aufgabe": "Seebört",
+      "fahrzeug": "ARKLOW VALIANT",
+      "from": "HOS",
+      "to": "KLT",
+      "nr": 13,
+      "raw_time": "Fri Jun 12 17:05:00 CEST 2026",
+      "current_ship_name": "ARKLOW VALIANT",
+      "current_ship_eta_rueb": "2026-06-12 18:25",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → KLT",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
       "pilot_key": "krämer_jonas",
       "vorname": "Jonas",
       "nachname": "Krämer",
@@ -411,7 +433,7 @@
       "nr": 12,
       "raw_time": "Fri Jun 12 17:49:00 CEST 2026",
       "current_ship_name": "ANTJE K",
-      "current_ship_eta_rueb": "2026-06-12 23:06",
+      "current_ship_eta_rueb": "2026-06-12 23:05",
       "current_ship_q": 4,
       "current_ship_route": "RÜB → HOS",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -680,6 +702,28 @@
       "availability_kind": "merged_eta"
     },
     {
+      "pilot_key": "plaisant_julian",
+      "vorname": "Julian",
+      "nachname": "Plaisant",
+      "pilot_name": "Plaisant, Julian",
+      "abteilungszeit": "2026-06-12 17:05",
+      "pilot_q": 4,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 13,
+      "aufgabe": "Seebört",
+      "fahrzeug": "ARKLOW VALIANT",
+      "from": "HOS",
+      "to": "KLT",
+      "nr": 13,
+      "raw_time": "Fri Jun 12 17:05:00 CEST 2026",
+      "current_ship_name": "ARKLOW VALIANT",
+      "current_ship_eta_rueb": "2026-06-12 18:25",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → KLT",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
       "pilot_key": "krämer_jonas",
       "vorname": "Jonas",
       "nachname": "Krämer",
@@ -695,7 +739,7 @@
       "nr": 12,
       "raw_time": "Fri Jun 12 17:49:00 CEST 2026",
       "current_ship_name": "ANTJE K",
-      "current_ship_eta_rueb": "2026-06-12 23:06",
+      "current_ship_eta_rueb": "2026-06-12 23:05",
       "current_ship_q": 4,
       "current_ship_route": "RÜB → HOS",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -936,7 +980,7 @@
           "to": "HOS",
           "aufgabe": "Kanalbört",
           "current_ship_name": "ANTJE K",
-          "current_ship_eta_rueb": "2026-06-12 23:06",
+          "current_ship_eta_rueb": "2026-06-12 23:05",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -981,6 +1025,13 @@
         }
       ],
       "excluded": [
+        {
+          "pilot_name": "Plaisant, Julian",
+          "pilot_tactical_nr": 13,
+          "reason": "Quali passt nicht (4 > 2)",
+          "pilot_q": 4,
+          "ship_q": 2
+        },
         {
           "pilot_name": "Lüttge, Sebastian",
           "pilot_tactical_nr": 6,
@@ -1048,7 +1099,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 9,
+      "candidate_count": 10,
       "candidates": [
         {
           "pilot_name": "Heeren, Rainer",
@@ -1090,6 +1141,19 @@
           "availability_kind": "merged_eta"
         },
         {
+          "pilot_name": "Plaisant, Julian",
+          "pilot_q": 4,
+          "pilot_tactical_nr": 13,
+          "abteilungszeit": "2026-06-12 17:05",
+          "fahrzeug": "ARKLOW VALIANT",
+          "to": "KLT",
+          "aufgabe": "Seebört",
+          "current_ship_name": "ARKLOW VALIANT",
+          "current_ship_eta_rueb": "2026-06-12 18:25",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
           "pilot_name": "Krämer, Jonas",
           "pilot_q": 0,
           "pilot_tactical_nr": 12,
@@ -1098,7 +1162,7 @@
           "to": "HOS",
           "aufgabe": "Kanalbört",
           "current_ship_name": "ANTJE K",
-          "current_ship_eta_rueb": "2026-06-12 23:06",
+          "current_ship_eta_rueb": "2026-06-12 23:05",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1204,7 +1268,7 @@
     {
       "ship_key": "ALVANITH",
       "ship_name": "ALVANITH",
-      "eta_rueb": "2026-06-13 02:05",
+      "eta_rueb": "2026-06-13 02:04",
       "ship_q": 4,
       "assigned_pilot": "Nagel, Volker",
       "assigned_pilot_q": 2,
@@ -1215,7 +1279,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 8,
+      "candidate_count": 9,
       "candidates": [
         {
           "pilot_name": "Nagel, Volker",
@@ -1244,6 +1308,19 @@
           "availability_kind": "merged_eta"
         },
         {
+          "pilot_name": "Plaisant, Julian",
+          "pilot_q": 4,
+          "pilot_tactical_nr": 13,
+          "abteilungszeit": "2026-06-12 17:05",
+          "fahrzeug": "ARKLOW VALIANT",
+          "to": "KLT",
+          "aufgabe": "Seebört",
+          "current_ship_name": "ARKLOW VALIANT",
+          "current_ship_eta_rueb": "2026-06-12 18:25",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
           "pilot_name": "Krämer, Jonas",
           "pilot_q": 0,
           "pilot_tactical_nr": 12,
@@ -1252,7 +1329,7 @@
           "to": "HOS",
           "aufgabe": "Kanalbört",
           "current_ship_name": "ANTJE K",
-          "current_ship_eta_rueb": "2026-06-12 23:06",
+          "current_ship_eta_rueb": "2026-06-12 23:05",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1394,7 +1471,7 @@
           "to": "HOS",
           "aufgabe": "Kanalbört",
           "current_ship_name": "ANTJE K",
-          "current_ship_eta_rueb": "2026-06-12 23:06",
+          "current_ship_eta_rueb": "2026-06-12 23:05",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1453,6 +1530,13 @@
       ],
       "excluded": [
         {
+          "pilot_name": "Plaisant, Julian",
+          "pilot_tactical_nr": 13,
+          "reason": "Quali passt nicht (4 > 1)",
+          "pilot_q": 4,
+          "ship_q": 1
+        },
+        {
           "pilot_name": "Lüttge, Sebastian",
           "pilot_tactical_nr": 6,
           "reason": "Quali passt nicht (4 > 1)",
@@ -1497,19 +1581,32 @@
     {
       "ship_key": "SIMON B",
       "ship_name": "SIMON B",
-      "eta_rueb": "2026-06-13 02:13",
+      "eta_rueb": "2026-06-13 02:12",
       "ship_q": 5,
-      "assigned_pilot": "Krämer, Jonas",
-      "assigned_pilot_q": 0,
-      "assigned_tactical_nr": 12,
-      "assigned_abteilungszeit": "2026-06-12 17:49",
-      "assigned_current_ship_name": "ANTJE K",
-      "assigned_current_ship_eta_rueb": "2026-06-12 23:06",
+      "assigned_pilot": "Plaisant, Julian",
+      "assigned_pilot_q": 4,
+      "assigned_tactical_nr": 13,
+      "assigned_abteilungszeit": "2026-06-12 17:05",
+      "assigned_current_ship_name": "ARKLOW VALIANT",
+      "assigned_current_ship_eta_rueb": "2026-06-12 18:25",
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 6,
+      "candidate_count": 7,
       "candidates": [
+        {
+          "pilot_name": "Plaisant, Julian",
+          "pilot_q": 4,
+          "pilot_tactical_nr": 13,
+          "abteilungszeit": "2026-06-12 17:05",
+          "fahrzeug": "ARKLOW VALIANT",
+          "to": "KLT",
+          "aufgabe": "Seebört",
+          "current_ship_name": "ARKLOW VALIANT",
+          "current_ship_eta_rueb": "2026-06-12 18:25",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
         {
           "pilot_name": "Krämer, Jonas",
           "pilot_q": 0,
@@ -1519,7 +1616,7 @@
           "to": "HOS",
           "aufgabe": "Kanalbört",
           "current_ship_name": "ANTJE K",
-          "current_ship_eta_rueb": "2026-06-12 23:06",
+          "current_ship_eta_rueb": "2026-06-12 23:05",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1627,17 +1724,30 @@
       "ship_name": "YARA KARA",
       "eta_rueb": "2026-06-13 02:16",
       "ship_q": 1,
-      "assigned_pilot": "Escher, Franck",
+      "assigned_pilot": "Krämer, Jonas",
       "assigned_pilot_q": 0,
-      "assigned_tactical_nr": 11,
-      "assigned_abteilungszeit": "2026-06-12 18:00",
-      "assigned_current_ship_name": "SUSANNE",
-      "assigned_current_ship_eta_rueb": "2026-06-12 19:40",
+      "assigned_tactical_nr": 12,
+      "assigned_abteilungszeit": "2026-06-12 17:49",
+      "assigned_current_ship_name": "ANTJE K",
+      "assigned_current_ship_eta_rueb": "2026-06-12 23:05",
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 4,
+      "candidate_count": 5,
       "candidates": [
+        {
+          "pilot_name": "Krämer, Jonas",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 12,
+          "abteilungszeit": "2026-06-12 17:49",
+          "fahrzeug": "ANTJE K",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ANTJE K",
+          "current_ship_eta_rueb": "2026-06-12 23:05",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
         {
           "pilot_name": "Escher, Franck",
           "pilot_q": 0,
@@ -1739,18 +1849,30 @@
       "ship_name": "ELBOCEAN",
       "eta_rueb": "2026-06-13 04:25",
       "ship_q": 1,
-      "assigned_pilot": "Pankonin, Denny",
+      "assigned_pilot": "Escher, Franck",
       "assigned_pilot_q": 0,
-      "assigned_tactical_nr": 9,
-      "assigned_abteilungszeit": "2026-06-12 18:15",
-      "assigned_current_ship_name": "RÜB",
-      "assigned_current_ship_eta_rueb": "2026-06-12 18:15",
-      "assigned_current_ship_source": "special.already_in_rueb",
-      "assigned_availability_kind": "already_in_rueb",
-      "assigned_availability_hint": "Lotse gilt als bereits in RÜB",
+      "assigned_tactical_nr": 11,
+      "assigned_abteilungszeit": "2026-06-12 18:00",
+      "assigned_current_ship_name": "SUSANNE",
+      "assigned_current_ship_eta_rueb": "2026-06-12 19:40",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 3,
+      "candidate_count": 4,
       "candidates": [
+        {
+          "pilot_name": "Escher, Franck",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 11,
+          "abteilungszeit": "2026-06-12 18:00",
+          "fahrzeug": "SUSANNE",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "SUSANNE",
+          "current_ship_eta_rueb": "2026-06-12 19:40",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
         {
           "pilot_name": "Pankonin, Denny",
           "pilot_q": 0,
@@ -1837,6 +1959,27 @@
   ],
   "unassigned_ships": [],
   "unused_pilots": [
+    {
+      "pilot_key": "pankonin_denny",
+      "vorname": "Denny",
+      "nachname": "Pankonin",
+      "pilot_name": "Pankonin, Denny",
+      "abteilungszeit": "2026-06-12 18:15",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 9,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "RÜB",
+      "nr": 9,
+      "raw_time": "Fri Jun 12 18:15:00 CEST 2026",
+      "current_ship_name": "RÜB",
+      "current_ship_eta_rueb": "2026-06-12 18:15",
+      "current_ship_q": 0,
+      "current_ship_route": "RÜB",
+      "current_ship_source": "special.already_in_rueb",
+      "availability_kind": "already_in_rueb",
+      "availability_hint": "Lotse gilt als bereits in RÜB"
+    },
     {
       "pilot_key": "bachholz_carsten",
       "vorname": "Carsten",
