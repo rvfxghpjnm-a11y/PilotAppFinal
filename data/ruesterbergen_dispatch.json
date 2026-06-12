@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-12T19:07:17",
+  "generated_at": "2026-06-12T19:09:17",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,13 +32,13 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 7,
+    "ships_for_ruesterbergen": 8,
     "pilots_total": 23,
     "pilots_dispatchable": 21,
     "pilots_visible_only": 2,
-    "assignments": 7,
+    "assignments": 8,
     "unassigned_ships": 0,
-    "unused_pilots": 14
+    "unused_pilots": 13
   },
   "ships": [
     {
@@ -269,13 +269,51 @@
       }
     },
     {
+      "ship_key": "ANTJE K",
+      "ship_name": "ANTJE K",
+      "eta_rueb": "2026-06-12 23:25",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 4,
+      "meldung": {
+        "nr": "7",
+        "time": "Fri Jun 12 23:10:00 CEST 2026",
+        "draft": "4.8",
+        "q_gruppe": "4",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "4",
+        "vg": "3",
+        "draft": "4.80",
+        "length_m": "90.25",
+        "beam_m": "15.2",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "P",
+        "pilot_1_name": "Schilling, David Philipp Gregory",
+        "travel_status": "SAILING_NOK",
+        "makler": "SUB",
+        "dangerous_vessel": "-",
+        "type_of_loading": "Eisen und Stahl"
+      }
+    },
+    {
       "ship_key": "IDA RAMBOW",
       "ship_name": "IDA RAMBOW",
       "eta_rueb": "2026-06-13 00:03",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 2,
       "meldung": {
-        "nr": "7",
+        "nr": "8",
         "time": "Fri Jun 12 23:48:00 CEST 2026",
         "draft": "7.4",
         "q_gruppe": "2",
@@ -500,7 +538,7 @@
       "nr": 18,
       "raw_time": "Fri Jun 12 15:53:00 CEST 2026",
       "current_ship_name": "FRAUA",
-      "current_ship_eta_rueb": "2026-06-12 20:23",
+      "current_ship_eta_rueb": "2026-06-12 20:22",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -676,7 +714,7 @@
       "nr": 8,
       "raw_time": "Fri Jun 12 17:49:00 CEST 2026",
       "current_ship_name": "ELBSUN",
-      "current_ship_eta_rueb": "2026-06-12 22:51",
+      "current_ship_eta_rueb": "2026-06-12 22:50",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -1006,7 +1044,7 @@
       "nr": 18,
       "raw_time": "Fri Jun 12 15:53:00 CEST 2026",
       "current_ship_name": "FRAUA",
-      "current_ship_eta_rueb": "2026-06-12 20:23",
+      "current_ship_eta_rueb": "2026-06-12 20:22",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -1182,7 +1220,7 @@
       "nr": 8,
       "raw_time": "Fri Jun 12 17:49:00 CEST 2026",
       "current_ship_name": "ELBSUN",
-      "current_ship_eta_rueb": "2026-06-12 22:51",
+      "current_ship_eta_rueb": "2026-06-12 22:50",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -1533,7 +1571,7 @@
           "pilot_tactical_nr": 18,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "FRAUA",
-          "pilot_current_ship_eta_rueb": "2026-06-12 20:23",
+          "pilot_current_ship_eta_rueb": "2026-06-12 20:22",
           "ship_eta_rueb": "2026-06-12 19:41",
           "availability_kind": "merged_eta"
         },
@@ -1551,7 +1589,7 @@
           "pilot_tactical_nr": 8,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "ELBSUN",
-          "pilot_current_ship_eta_rueb": "2026-06-12 22:51",
+          "pilot_current_ship_eta_rueb": "2026-06-12 22:50",
           "ship_eta_rueb": "2026-06-12 19:41",
           "availability_kind": "merged_eta"
         },
@@ -1804,11 +1842,9 @@
         {
           "pilot_name": "Nagel, Volker",
           "pilot_tactical_nr": 18,
-          "reason": "kommt nicht rechtzeitig in RÜB an",
-          "pilot_current_ship": "FRAUA",
-          "pilot_current_ship_eta_rueb": "2026-06-12 20:23",
-          "ship_eta_rueb": "2026-06-12 20:22",
-          "availability_kind": "merged_eta"
+          "reason": "Quali passt nicht (2 > 1)",
+          "pilot_q": 2,
+          "ship_q": 1
         },
         {
           "pilot_name": "Wald, Mark",
@@ -1838,7 +1874,7 @@
           "pilot_tactical_nr": 8,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "ELBSUN",
-          "pilot_current_ship_eta_rueb": "2026-06-12 22:51",
+          "pilot_current_ship_eta_rueb": "2026-06-12 22:50",
           "ship_eta_rueb": "2026-06-12 20:22",
           "availability_kind": "merged_eta"
         },
@@ -1963,7 +1999,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "FRAUA",
-          "current_ship_eta_rueb": "2026-06-12 20:23",
+          "current_ship_eta_rueb": "2026-06-12 20:22",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -2119,7 +2155,7 @@
           "pilot_tactical_nr": 8,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "ELBSUN",
-          "pilot_current_ship_eta_rueb": "2026-06-12 22:51",
+          "pilot_current_ship_eta_rueb": "2026-06-12 22:50",
           "ship_eta_rueb": "2026-06-12 20:34",
           "availability_kind": "merged_eta"
         },
@@ -2257,7 +2293,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "FRAUA",
-          "current_ship_eta_rueb": "2026-06-12 20:23",
+          "current_ship_eta_rueb": "2026-06-12 20:22",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -2393,7 +2429,7 @@
           "pilot_tactical_nr": 8,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "ELBSUN",
-          "pilot_current_ship_eta_rueb": "2026-06-12 22:51",
+          "pilot_current_ship_eta_rueb": "2026-06-12 22:50",
           "ship_eta_rueb": "2026-06-12 20:56",
           "availability_kind": "merged_eta"
         },
@@ -2519,7 +2555,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "FRAUA",
-          "current_ship_eta_rueb": "2026-06-12 20:23",
+          "current_ship_eta_rueb": "2026-06-12 20:22",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -2649,7 +2685,7 @@
           "pilot_tactical_nr": 8,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "ELBSUN",
-          "pilot_current_ship_eta_rueb": "2026-06-12 22:51",
+          "pilot_current_ship_eta_rueb": "2026-06-12 22:50",
           "ship_eta_rueb": "2026-06-12 21:43",
           "availability_kind": "merged_eta"
         },
@@ -2761,7 +2797,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "FRAUA",
-          "current_ship_eta_rueb": "2026-06-12 20:23",
+          "current_ship_eta_rueb": "2026-06-12 20:22",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -2865,7 +2901,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "ELBSUN",
-          "current_ship_eta_rueb": "2026-06-12 22:51",
+          "current_ship_eta_rueb": "2026-06-12 22:50",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -2957,10 +2993,10 @@
       }
     },
     {
-      "ship_key": "IDA RAMBOW",
-      "ship_name": "IDA RAMBOW",
-      "eta_rueb": "2026-06-13 00:03",
-      "ship_q": 2,
+      "ship_key": "ANTJE K",
+      "ship_name": "ANTJE K",
+      "eta_rueb": "2026-06-12 23:25",
+      "ship_q": 4,
       "assigned_pilot": "Schuh, Erskine",
       "assigned_pilot_q": 0,
       "assigned_tactical_nr": 20,
@@ -2970,7 +3006,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 13,
+      "candidate_count": 15,
       "candidates": [
         {
           "pilot_name": "Schuh, Erskine",
@@ -3007,7 +3043,241 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "FRAUA",
-          "current_ship_eta_rueb": "2026-06-12 20:23",
+          "current_ship_eta_rueb": "2026-06-12 20:22",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Richter, Ingmar",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 13,
+          "abteilungszeit": "2026-06-12 16:05",
+          "fahrzeug": "KEY BAY",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "KEY BAY",
+          "current_ship_eta_rueb": "2026-06-12 17:54",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Heyenga, Kai",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 14,
+          "abteilungszeit": "2026-06-12 16:05",
+          "fahrzeug": "HUMBER RUNNER",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "HUMBER RUNNER",
+          "current_ship_eta_rueb": "2026-06-12 17:24",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Klüver, Knut Paul",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 15,
+          "abteilungszeit": "2026-06-12 16:05",
+          "fahrzeug": "SCANDINAVIA",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "SCANDINAVIA",
+          "current_ship_eta_rueb": "2026-06-12 17:47",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Wald, Mark",
+          "pilot_q": 3,
+          "pilot_tactical_nr": 16,
+          "abteilungszeit": "2026-06-12 16:05",
+          "fahrzeug": "HAV TUNA",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "HAV TUNA",
+          "current_ship_eta_rueb": "2026-06-12 17:50",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Röhl, Jens",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 17,
+          "abteilungszeit": "2026-06-12 16:05",
+          "fahrzeug": "EN AVANT10+H-331+EN AVANT1",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "EN AVANT 10 + EN AVANT 1 + H-331",
+          "current_ship_eta_rueb": "2026-06-12 17:43",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Thomsen, Gunnar",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 10,
+          "abteilungszeit": "2026-06-12 16:30",
+          "fahrzeug": "STEVIE",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "STEVIE",
+          "current_ship_eta_rueb": "2026-06-12 20:41",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Plaisant, Julian",
+          "pilot_q": 4,
+          "pilot_tactical_nr": 9,
+          "abteilungszeit": "2026-06-12 17:05",
+          "fahrzeug": "KREBS HELIOS",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "KREBS HELIOS",
+          "current_ship_eta_rueb": "2026-06-12 18:20",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Krämer, Jonas",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 8,
+          "abteilungszeit": "2026-06-12 17:49",
+          "fahrzeug": "ELBSUN",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ELBSUN",
+          "current_ship_eta_rueb": "2026-06-12 22:50",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Purwin, Marko",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 6,
+          "abteilungszeit": "2026-06-12 18:00",
+          "fahrzeug": "LIFE SAGA",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "LIFE SAGA",
+          "current_ship_eta_rueb": "2026-06-12 19:11",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Escher, Franck",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 7,
+          "abteilungszeit": "2026-06-12 18:00",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-06-12 18:00",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
+        },
+        {
+          "pilot_name": "Pankonin, Denny",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 5,
+          "abteilungszeit": "2026-06-12 18:15",
+          "fahrzeug": "JONABORG",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "JONABORG",
+          "current_ship_eta_rueb": "2026-06-12 22:47",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Bachholz, Carsten",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 3,
+          "abteilungszeit": "2026-06-12 19:00",
+          "fahrzeug": "Leerfahrt",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "Leerfahrt",
+          "current_ship_eta_rueb": "2026-06-12 20:00",
+          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
+          "availability_kind": "leerfahrt_hos_rueb_plus60",
+          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "7",
+          "time": "Fri Jun 12 23:10:00 CEST 2026",
+          "draft": "4.8",
+          "q_gruppe": "4",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "HOS → KLT",
+          "routes": [
+            "HOS → KLT",
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "4",
+          "vg": "3",
+          "draft": "4.80",
+          "length_m": "90.25",
+          "beam_m": "15.2",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "P",
+          "pilot_1_name": "Schilling, David Philipp Gregory",
+          "travel_status": "SAILING_NOK",
+          "makler": "SUB",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Eisen und Stahl"
+        }
+      }
+    },
+    {
+      "ship_key": "IDA RAMBOW",
+      "ship_name": "IDA RAMBOW",
+      "eta_rueb": "2026-06-13 00:03",
+      "ship_q": 2,
+      "assigned_pilot": "Heeren, Rainer",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 19,
+      "assigned_abteilungszeit": "2026-06-12 15:31",
+      "assigned_current_ship_name": "SEA DISCOVERY",
+      "assigned_current_ship_eta_rueb": "2026-06-12 20:44",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 12,
+      "candidates": [
+        {
+          "pilot_name": "Heeren, Rainer",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 19,
+          "abteilungszeit": "2026-06-12 15:31",
+          "fahrzeug": "SEA DISCOVERY",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "SEA DISCOVERY",
+          "current_ship_eta_rueb": "2026-06-12 20:44",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Nagel, Volker",
+          "pilot_q": 2,
+          "pilot_tactical_nr": 18,
+          "abteilungszeit": "2026-06-12 15:53",
+          "fahrzeug": "FRAUA",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "FRAUA",
+          "current_ship_eta_rueb": "2026-06-12 20:22",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -3085,7 +3355,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "ELBSUN",
-          "current_ship_eta_rueb": "2026-06-12 22:51",
+          "current_ship_eta_rueb": "2026-06-12 22:50",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -3161,7 +3431,7 @@
       ],
       "ship": {
         "meldung": {
-          "nr": "7",
+          "nr": "8",
           "time": "Fri Jun 12 23:48:00 CEST 2026",
           "draft": "7.4",
           "q_gruppe": "2",
@@ -3197,28 +3467,6 @@
   "unassigned_ships": [],
   "unused_pilots": [
     {
-      "pilot_key": "heeren_rainer",
-      "vorname": "Rainer",
-      "nachname": "Heeren",
-      "pilot_name": "Heeren, Rainer",
-      "abteilungszeit": "2026-06-12 15:31",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 19,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "SEA DISCOVERY",
-      "from": "HOS",
-      "to": "RÜB",
-      "nr": 19,
-      "raw_time": "Fri Jun 12 15:31:00 CEST 2026",
-      "current_ship_name": "SEA DISCOVERY",
-      "current_ship_eta_rueb": "2026-06-12 20:44",
-      "current_ship_q": 0,
-      "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
-    },
-    {
       "pilot_key": "nagel_volker",
       "vorname": "Volker",
       "nachname": "Nagel",
@@ -3234,7 +3482,7 @@
       "nr": 18,
       "raw_time": "Fri Jun 12 15:53:00 CEST 2026",
       "current_ship_name": "FRAUA",
-      "current_ship_eta_rueb": "2026-06-12 20:23",
+      "current_ship_eta_rueb": "2026-06-12 20:22",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -3410,7 +3658,7 @@
       "nr": 8,
       "raw_time": "Fri Jun 12 17:49:00 CEST 2026",
       "current_ship_name": "ELBSUN",
-      "current_ship_eta_rueb": "2026-06-12 22:51",
+      "current_ship_eta_rueb": "2026-06-12 22:50",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
