@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-13T10:29:14",
+  "generated_at": "2026-06-13T10:31:17",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 7,
     "pilots_total": 9,
-    "pilots_dispatchable": 8,
-    "pilots_visible_only": 1,
+    "pilots_dispatchable": 9,
+    "pilots_visible_only": 0,
     "assignments": 7,
     "unassigned_ships": 0,
-    "unused_pilots": 1
+    "unused_pilots": 2
   },
   "ships": [
     {
@@ -484,9 +484,10 @@
       "nr": 1,
       "raw_time": "Sat Jun 13 09:41:00 CEST 2026",
       "current_ship_name": "HEYN",
+      "current_ship_eta_rueb": "2026-06-13 14:11",
       "current_ship_q": 0,
       "current_ship_route": "HOR → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     }
   ],
@@ -666,25 +667,31 @@
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
-    }
-  ],
-  "visible_but_not_dispatchable_pilots": [
+    },
     {
       "pilot_key": "jenckel_dolf",
+      "vorname": "Dolf",
+      "nachname": "Jenckel",
       "pilot_name": "Jenckel, Dolf",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 1,
       "abteilungszeit": "2026-06-13 09:41",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 1,
       "aufgabe": "Kanalbört",
       "fahrzeug": "HEYN",
       "from": "HOR",
       "to": "RÜB",
+      "nr": 1,
+      "raw_time": "Sat Jun 13 09:41:00 CEST 2026",
       "current_ship_name": "HEYN",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
+      "current_ship_eta_rueb": "2026-06-13 14:11",
+      "current_ship_q": 0,
+      "current_ship_route": "HOR → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
     }
   ],
+  "visible_but_not_dispatchable_pilots": [],
   "assignments": [
     {
       "ship_key": "HEGEMANN 1",
@@ -804,6 +811,17 @@
           "current_ship_name": "CHARLOTTA",
           "current_ship_eta_rueb": "2026-06-13 11:43",
           "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Jenckel, Dolf",
+          "pilot_tactical_nr": 1,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "HEYN",
+          "pilot_current_ship_eta_rueb": "2026-06-13 14:11",
+          "ship_eta_rueb": "2026-06-13 12:45",
           "availability_kind": "merged_eta"
         }
       ],
@@ -949,6 +967,17 @@
           "availability_kind": "merged_eta"
         }
       ],
+      "excluded": [
+        {
+          "pilot_name": "Jenckel, Dolf",
+          "pilot_tactical_nr": 1,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "HEYN",
+          "pilot_current_ship_eta_rueb": "2026-06-13 14:11",
+          "ship_eta_rueb": "2026-06-13 12:48",
+          "availability_kind": "merged_eta"
+        }
+      ],
       "ship": {
         "meldung": {
           "nr": "2",
@@ -1077,6 +1106,17 @@
           "availability_kind": "merged_eta"
         }
       ],
+      "excluded": [
+        {
+          "pilot_name": "Jenckel, Dolf",
+          "pilot_tactical_nr": 1,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "HEYN",
+          "pilot_current_ship_eta_rueb": "2026-06-13 14:11",
+          "ship_eta_rueb": "2026-06-13 13:01",
+          "availability_kind": "merged_eta"
+        }
+      ],
       "ship": {
         "meldung": {
           "nr": "3",
@@ -1189,6 +1229,17 @@
           "availability_kind": "merged_eta"
         }
       ],
+      "excluded": [
+        {
+          "pilot_name": "Jenckel, Dolf",
+          "pilot_tactical_nr": 1,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "HEYN",
+          "pilot_current_ship_eta_rueb": "2026-06-13 14:11",
+          "ship_eta_rueb": "2026-06-13 13:07",
+          "availability_kind": "merged_eta"
+        }
+      ],
       "ship": {
         "meldung": {
           "nr": "4",
@@ -1292,6 +1343,17 @@
           "availability_kind": "merged_eta"
         }
       ],
+      "excluded": [
+        {
+          "pilot_name": "Jenckel, Dolf",
+          "pilot_tactical_nr": 1,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "HEYN",
+          "pilot_current_ship_eta_rueb": "2026-06-13 14:11",
+          "ship_eta_rueb": "2026-06-13 13:40",
+          "availability_kind": "merged_eta"
+        }
+      ],
       "ship": {
         "meldung": {
           "nr": "5",
@@ -1328,7 +1390,7 @@
       "assigned_current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 3,
+      "candidate_count": 4,
       "candidates": [
         {
           "pilot_name": "Wille, Christian",
@@ -1366,6 +1428,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "CHARLOTTA",
           "current_ship_eta_rueb": "2026-06-13 11:43",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Jenckel, Dolf",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 1,
+          "abteilungszeit": "2026-06-13 09:41",
+          "fahrzeug": "HEYN",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "HEYN",
+          "current_ship_eta_rueb": "2026-06-13 14:11",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
@@ -1417,7 +1492,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 2,
+      "candidate_count": 3,
       "candidates": [
         {
           "pilot_name": "Tontarra, Olaf",
@@ -1442,6 +1517,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "CHARLOTTA",
           "current_ship_eta_rueb": "2026-06-13 11:43",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Jenckel, Dolf",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 1,
+          "abteilungszeit": "2026-06-13 09:41",
+          "fahrzeug": "HEYN",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "HEYN",
+          "current_ship_eta_rueb": "2026-06-13 14:11",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
@@ -1503,6 +1591,28 @@
       "current_ship_eta_rueb": "2026-06-13 11:43",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "jenckel_dolf",
+      "vorname": "Dolf",
+      "nachname": "Jenckel",
+      "pilot_name": "Jenckel, Dolf",
+      "abteilungszeit": "2026-06-13 09:41",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 1,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "HEYN",
+      "from": "HOR",
+      "to": "RÜB",
+      "nr": 1,
+      "raw_time": "Sat Jun 13 09:41:00 CEST 2026",
+      "current_ship_name": "HEYN",
+      "current_ship_eta_rueb": "2026-06-13 14:11",
+      "current_ship_q": 0,
+      "current_ship_route": "HOR → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     }
