@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-13T03:21:18",
+  "generated_at": "2026-06-13T03:23:14",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,13 +32,13 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 2,
+    "ships_for_ruesterbergen": 4,
     "pilots_total": 16,
     "pilots_dispatchable": 11,
     "pilots_visible_only": 5,
-    "assignments": 2,
+    "assignments": 4,
     "unassigned_ships": 0,
-    "unused_pilots": 9
+    "unused_pilots": 7
   },
   "ships": [
     {
@@ -115,6 +115,82 @@
         "makler": "SUB",
         "dangerous_vessel": "-",
         "type_of_loading": "Stueckgueter"
+      }
+    },
+    {
+      "ship_key": "FENNO SWAN",
+      "ship_name": "FENNO SWAN",
+      "eta_rueb": "2026-06-13 08:15",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 5,
+      "meldung": {
+        "nr": "3",
+        "time": "Sat Jun 13 08:15:00 CEST 2026",
+        "draft": "5.9",
+        "q_gruppe": "5",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "5",
+        "vg": "3",
+        "draft": "5.90",
+        "length_m": "99.900",
+        "beam_m": "15.00",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "P",
+        "pilot_1_name": "Raabe, Knut",
+        "travel_status": "SAILING_NOK",
+        "makler": "SUB",
+        "dangerous_vessel": "ja",
+        "type_of_loading": "Chemikalien fluessig"
+      }
+    },
+    {
+      "ship_key": "ANNALISA P",
+      "ship_name": "ANNALISA P",
+      "eta_rueb": "2026-06-13 08:42",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 1,
+      "meldung": {
+        "nr": "4",
+        "time": "Sat Jun 13 08:45:00 CEST 2026",
+        "draft": "8.8",
+        "q_gruppe": "1",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "HOS → KLT",
+        "routes": [
+          "HOS → KLT",
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "1",
+        "vg": "5",
+        "draft": "8.80",
+        "length_m": "166.15",
+        "beam_m": "25.26",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "true",
+        "pilot_status": "U",
+        "pilot_1_name": "Boßelmann, Tobias",
+        "travel_status": "SAILING_NOK",
+        "makler": "UCA",
+        "dangerous_vessel": "-",
+        "type_of_loading": "Container"
       }
     }
   ],
@@ -1137,54 +1213,333 @@
           "type_of_loading": "Stueckgueter"
         }
       }
+    },
+    {
+      "ship_key": "FENNO SWAN",
+      "ship_name": "FENNO SWAN",
+      "eta_rueb": "2026-06-13 08:15",
+      "ship_q": 5,
+      "assigned_pilot": "Lüttge, Sebastian",
+      "assigned_pilot_q": 4,
+      "assigned_tactical_nr": 22,
+      "assigned_abteilungszeit": "2026-06-12 19:02",
+      "assigned_current_ship_name": "ANDREA",
+      "assigned_current_ship_eta_rueb": "2026-06-13 01:33",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 9,
+      "candidates": [
+        {
+          "pilot_name": "Lüttge, Sebastian",
+          "pilot_q": 4,
+          "pilot_tactical_nr": 22,
+          "abteilungszeit": "2026-06-12 19:02",
+          "fahrzeug": "ANDREA",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ANDREA",
+          "current_ship_eta_rueb": "2026-06-13 01:33",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Arndt, Michael",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 19,
+          "abteilungszeit": "2026-06-12 21:27",
+          "fahrzeug": "ELBINSEL",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ELBINSEL",
+          "current_ship_eta_rueb": "2026-06-13 04:54",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Kaschke, Henning",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 18,
+          "abteilungszeit": "2026-06-12 21:35",
+          "fahrzeug": "BELTMAR",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "BELTMAR",
+          "current_ship_eta_rueb": "2026-06-13 04:51",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Woitanowski, Tim",
+          "pilot_q": 2,
+          "pilot_tactical_nr": 17,
+          "abteilungszeit": "2026-06-12 22:46",
+          "fahrzeug": "CELTICA HAV",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "CELTICA HAV",
+          "current_ship_eta_rueb": "2026-06-13 04:31",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Hilpert, Jan",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 13,
+          "abteilungszeit": "2026-06-13 00:45",
+          "fahrzeug": "SIMON B",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "SIMON B",
+          "current_ship_eta_rueb": "2026-06-13 02:13",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Röhrs, Johannes",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 14,
+          "abteilungszeit": "2026-06-13 00:45",
+          "fahrzeug": "YARA KARA",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "YARA KARA",
+          "current_ship_eta_rueb": "2026-06-13 02:10",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Zozulya, Mykola",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 15,
+          "abteilungszeit": "2026-06-13 00:45",
+          "fahrzeug": "JUDITH",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "JUDITH",
+          "current_ship_eta_rueb": "2026-06-13 02:05",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Dietrich, Thomas",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-06-13 03:00",
+          "fahrzeug": "Leerfahrt",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "Leerfahrt",
+          "current_ship_eta_rueb": "2026-06-13 04:00",
+          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
+          "availability_kind": "leerfahrt_hos_rueb_plus60",
+          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+        },
+        {
+          "pilot_name": "Steinbach, Daniel",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 3,
+          "abteilungszeit": "2026-06-13 03:00",
+          "fahrzeug": "Leerfahrt",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "Leerfahrt",
+          "current_ship_eta_rueb": "2026-06-13 04:00",
+          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
+          "availability_kind": "leerfahrt_hos_rueb_plus60",
+          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "3",
+          "time": "Sat Jun 13 08:15:00 CEST 2026",
+          "draft": "5.9",
+          "q_gruppe": "5",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "HOS → KLT",
+          "routes": [
+            "HOS → KLT",
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "5",
+          "vg": "3",
+          "draft": "5.90",
+          "length_m": "99.900",
+          "beam_m": "15.00",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "P",
+          "pilot_1_name": "Raabe, Knut",
+          "travel_status": "SAILING_NOK",
+          "makler": "SUB",
+          "dangerous_vessel": "ja",
+          "type_of_loading": "Chemikalien fluessig"
+        }
+      }
+    },
+    {
+      "ship_key": "ANNALISA P",
+      "ship_name": "ANNALISA P",
+      "eta_rueb": "2026-06-13 08:42",
+      "ship_q": 1,
+      "assigned_pilot": "Arndt, Michael",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 19,
+      "assigned_abteilungszeit": "2026-06-12 21:27",
+      "assigned_current_ship_name": "ELBINSEL",
+      "assigned_current_ship_eta_rueb": "2026-06-13 04:54",
+      "assigned_current_ship_source": "schiffe_merged.seelotsen",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 7,
+      "candidates": [
+        {
+          "pilot_name": "Arndt, Michael",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 19,
+          "abteilungszeit": "2026-06-12 21:27",
+          "fahrzeug": "ELBINSEL",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "ELBINSEL",
+          "current_ship_eta_rueb": "2026-06-13 04:54",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Kaschke, Henning",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 18,
+          "abteilungszeit": "2026-06-12 21:35",
+          "fahrzeug": "BELTMAR",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "BELTMAR",
+          "current_ship_eta_rueb": "2026-06-13 04:51",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Hilpert, Jan",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 13,
+          "abteilungszeit": "2026-06-13 00:45",
+          "fahrzeug": "SIMON B",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "SIMON B",
+          "current_ship_eta_rueb": "2026-06-13 02:13",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Röhrs, Johannes",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 14,
+          "abteilungszeit": "2026-06-13 00:45",
+          "fahrzeug": "YARA KARA",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "YARA KARA",
+          "current_ship_eta_rueb": "2026-06-13 02:10",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Zozulya, Mykola",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 15,
+          "abteilungszeit": "2026-06-13 00:45",
+          "fahrzeug": "JUDITH",
+          "to": "HOS",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "JUDITH",
+          "current_ship_eta_rueb": "2026-06-13 02:05",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Dietrich, Thomas",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 2,
+          "abteilungszeit": "2026-06-13 03:00",
+          "fahrzeug": "Leerfahrt",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "Leerfahrt",
+          "current_ship_eta_rueb": "2026-06-13 04:00",
+          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
+          "availability_kind": "leerfahrt_hos_rueb_plus60",
+          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+        },
+        {
+          "pilot_name": "Steinbach, Daniel",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 3,
+          "abteilungszeit": "2026-06-13 03:00",
+          "fahrzeug": "Leerfahrt",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "Leerfahrt",
+          "current_ship_eta_rueb": "2026-06-13 04:00",
+          "current_ship_source": "special.leerfahrt_hos_rueb_plus60",
+          "availability_kind": "leerfahrt_hos_rueb_plus60",
+          "availability_hint": "Leerfahrt HOS → RÜB mit ETA RÜB = Abteilungszeit + 60 Minuten"
+        }
+      ],
+      "excluded": [
+        {
+          "pilot_name": "Woitanowski, Tim",
+          "pilot_tactical_nr": 17,
+          "reason": "Quali passt nicht (2 > 1)",
+          "pilot_q": 2,
+          "ship_q": 1
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "4",
+          "time": "Sat Jun 13 08:45:00 CEST 2026",
+          "draft": "8.8",
+          "q_gruppe": "1",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "HOS → KLT",
+          "routes": [
+            "HOS → KLT",
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "1",
+          "vg": "5",
+          "draft": "8.80",
+          "length_m": "166.15",
+          "beam_m": "25.26",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "true",
+          "pilot_status": "U",
+          "pilot_1_name": "Boßelmann, Tobias",
+          "travel_status": "SAILING_NOK",
+          "makler": "UCA",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Container"
+        }
+      }
     }
   ],
   "unassigned_ships": [],
   "unused_pilots": [
-    {
-      "pilot_key": "lüttge_sebastian",
-      "vorname": "Sebastian",
-      "nachname": "Lüttge",
-      "pilot_name": "Lüttge, Sebastian",
-      "abteilungszeit": "2026-06-12 19:02",
-      "pilot_q": 4,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 22,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "ANDREA",
-      "from": "RÜB",
-      "to": "HOS",
-      "nr": 22,
-      "raw_time": "Fri Jun 12 19:02:00 CEST 2026",
-      "current_ship_name": "ANDREA",
-      "current_ship_eta_rueb": "2026-06-13 01:33",
-      "current_ship_q": 0,
-      "current_ship_route": "RÜB → HOS",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
-    },
-    {
-      "pilot_key": "arndt_michael",
-      "vorname": "Michael",
-      "nachname": "Arndt",
-      "pilot_name": "Arndt, Michael",
-      "abteilungszeit": "2026-06-12 21:27",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 19,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "ELBINSEL",
-      "from": "HOS",
-      "to": "RÜB",
-      "nr": 19,
-      "raw_time": "Fri Jun 12 21:27:00 CEST 2026",
-      "current_ship_name": "ELBINSEL",
-      "current_ship_eta_rueb": "2026-06-13 04:54",
-      "current_ship_q": 0,
-      "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta"
-    },
     {
       "pilot_key": "kaschke_henning",
       "vorname": "Henning",
