@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-13T14:51:15",
+  "generated_at": "2026-06-13T14:53:15",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 7,
     "pilots_total": 15,
-    "pilots_dispatchable": 14,
-    "pilots_visible_only": 1,
+    "pilots_dispatchable": 15,
+    "pilots_visible_only": 0,
     "assignments": 7,
     "unassigned_ships": 0,
-    "unused_pilots": 7
+    "unused_pilots": 8
   },
   "ships": [
     {
@@ -590,9 +590,10 @@
       "nr": 3,
       "raw_time": "Sat Jun 13 13:10:00 CEST 2026",
       "current_ship_name": "TERNSUND",
+      "current_ship_eta_rueb": "2026-06-13 18:24",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
     },
     {
@@ -611,7 +612,7 @@
       "nr": 2,
       "raw_time": "Sat Jun 13 13:16:00 CEST 2026",
       "current_ship_name": "KEY OCEAN",
-      "current_ship_eta_rueb": "2026-06-13 18:13",
+      "current_ship_eta_rueb": "2026-06-13 18:12",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -906,6 +907,28 @@
       "availability_kind": "merged_eta"
     },
     {
+      "pilot_key": "wulff_stephan",
+      "vorname": "Stephan",
+      "nachname": "Wulff",
+      "pilot_name": "Wulff, Stephan",
+      "abteilungszeit": "2026-06-13 13:10",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 3,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "TERNSUND",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 3,
+      "raw_time": "Sat Jun 13 13:10:00 CEST 2026",
+      "current_ship_name": "TERNSUND",
+      "current_ship_eta_rueb": "2026-06-13 18:24",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
       "pilot_key": "heyenga_dennis",
       "vorname": "Dennis",
       "nachname": "Heyenga",
@@ -921,7 +944,7 @@
       "nr": 2,
       "raw_time": "Sat Jun 13 13:16:00 CEST 2026",
       "current_ship_name": "KEY OCEAN",
-      "current_ship_eta_rueb": "2026-06-13 18:13",
+      "current_ship_eta_rueb": "2026-06-13 18:12",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -950,23 +973,7 @@
       "availability_kind": "merged_eta"
     }
   ],
-  "visible_but_not_dispatchable_pilots": [
-    {
-      "pilot_key": "wulff_stephan",
-      "pilot_name": "Wulff, Stephan",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 3,
-      "abteilungszeit": "2026-06-13 13:10",
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "TERNSUND",
-      "from": "HOS",
-      "to": "RÜB",
-      "current_ship_name": "TERNSUND",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    }
-  ],
+  "visible_but_not_dispatchable_pilots": [],
   "assignments": [
     {
       "ship_key": "BALTIC STAR",
@@ -1148,11 +1155,20 @@
           "availability_kind": "merged_eta"
         },
         {
+          "pilot_name": "Wulff, Stephan",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "TERNSUND",
+          "pilot_current_ship_eta_rueb": "2026-06-13 18:24",
+          "ship_eta_rueb": "2026-06-13 17:03",
+          "availability_kind": "merged_eta"
+        },
+        {
           "pilot_name": "Heyenga, Dennis",
           "pilot_tactical_nr": 2,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "KEY OCEAN",
-          "pilot_current_ship_eta_rueb": "2026-06-13 18:13",
+          "pilot_current_ship_eta_rueb": "2026-06-13 18:12",
           "ship_eta_rueb": "2026-06-13 17:03",
           "availability_kind": "merged_eta"
         }
@@ -1358,11 +1374,20 @@
           "availability_kind": "merged_eta"
         },
         {
+          "pilot_name": "Wulff, Stephan",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "TERNSUND",
+          "pilot_current_ship_eta_rueb": "2026-06-13 18:24",
+          "ship_eta_rueb": "2026-06-13 17:06",
+          "availability_kind": "merged_eta"
+        },
+        {
           "pilot_name": "Heyenga, Dennis",
           "pilot_tactical_nr": 2,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "KEY OCEAN",
-          "pilot_current_ship_eta_rueb": "2026-06-13 18:13",
+          "pilot_current_ship_eta_rueb": "2026-06-13 18:12",
           "ship_eta_rueb": "2026-06-13 17:06",
           "availability_kind": "merged_eta"
         }
@@ -1555,11 +1580,20 @@
           "availability_kind": "merged_eta"
         },
         {
+          "pilot_name": "Wulff, Stephan",
+          "pilot_tactical_nr": 3,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "TERNSUND",
+          "pilot_current_ship_eta_rueb": "2026-06-13 18:24",
+          "ship_eta_rueb": "2026-06-13 17:12",
+          "availability_kind": "merged_eta"
+        },
+        {
           "pilot_name": "Heyenga, Dennis",
           "pilot_tactical_nr": 2,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "KEY OCEAN",
-          "pilot_current_ship_eta_rueb": "2026-06-13 18:13",
+          "pilot_current_ship_eta_rueb": "2026-06-13 18:12",
           "ship_eta_rueb": "2026-06-13 17:12",
           "availability_kind": "merged_eta"
         }
@@ -1612,7 +1646,7 @@
       "assigned_current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 11,
+      "candidate_count": 12,
       "candidates": [
         {
           "pilot_name": "Staedler, Frank",
@@ -1732,6 +1766,19 @@
           "availability_kind": "merged_eta"
         },
         {
+          "pilot_name": "Wulff, Stephan",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 3,
+          "abteilungszeit": "2026-06-13 13:10",
+          "fahrzeug": "TERNSUND",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "TERNSUND",
+          "current_ship_eta_rueb": "2026-06-13 18:24",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
           "pilot_name": "Heyenga, Dennis",
           "pilot_q": 4,
           "pilot_tactical_nr": 2,
@@ -1740,7 +1787,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "KEY OCEAN",
-          "current_ship_eta_rueb": "2026-06-13 18:13",
+          "current_ship_eta_rueb": "2026-06-13 18:12",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1807,7 +1854,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 10,
+      "candidate_count": 11,
       "candidates": [
         {
           "pilot_name": "Jenckel, Dolf",
@@ -1914,6 +1961,19 @@
           "availability_kind": "merged_eta"
         },
         {
+          "pilot_name": "Wulff, Stephan",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 3,
+          "abteilungszeit": "2026-06-13 13:10",
+          "fahrzeug": "TERNSUND",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "TERNSUND",
+          "current_ship_eta_rueb": "2026-06-13 18:24",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
           "pilot_name": "Heyenga, Dennis",
           "pilot_q": 4,
           "pilot_tactical_nr": 2,
@@ -1922,7 +1982,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "KEY OCEAN",
-          "current_ship_eta_rueb": "2026-06-13 18:13",
+          "current_ship_eta_rueb": "2026-06-13 18:12",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1988,7 +2048,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 9,
+      "candidate_count": 10,
       "candidates": [
         {
           "pilot_name": "Thomaßen, Stephan",
@@ -2082,6 +2142,19 @@
           "availability_kind": "merged_eta"
         },
         {
+          "pilot_name": "Wulff, Stephan",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 3,
+          "abteilungszeit": "2026-06-13 13:10",
+          "fahrzeug": "TERNSUND",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "TERNSUND",
+          "current_ship_eta_rueb": "2026-06-13 18:24",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
           "pilot_name": "Heyenga, Dennis",
           "pilot_q": 4,
           "pilot_tactical_nr": 2,
@@ -2090,7 +2163,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "KEY OCEAN",
-          "current_ship_eta_rueb": "2026-06-13 18:13",
+          "current_ship_eta_rueb": "2026-06-13 18:12",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -2156,7 +2229,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 7,
+      "candidate_count": 8,
       "candidates": [
         {
           "pilot_name": "Hüpers, Peter",
@@ -2233,6 +2306,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "WILSON DUNMORE",
           "current_ship_eta_rueb": "2026-06-13 18:17",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Wulff, Stephan",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 3,
+          "abteilungszeit": "2026-06-13 13:10",
+          "fahrzeug": "TERNSUND",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "TERNSUND",
+          "current_ship_eta_rueb": "2026-06-13 18:24",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -2407,6 +2493,28 @@
       "availability_kind": "merged_eta"
     },
     {
+      "pilot_key": "wulff_stephan",
+      "vorname": "Stephan",
+      "nachname": "Wulff",
+      "pilot_name": "Wulff, Stephan",
+      "abteilungszeit": "2026-06-13 13:10",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 3,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "TERNSUND",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 3,
+      "raw_time": "Sat Jun 13 13:10:00 CEST 2026",
+      "current_ship_name": "TERNSUND",
+      "current_ship_eta_rueb": "2026-06-13 18:24",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
       "pilot_key": "heyenga_dennis",
       "vorname": "Dennis",
       "nachname": "Heyenga",
@@ -2422,7 +2530,7 @@
       "nr": 2,
       "raw_time": "Sat Jun 13 13:16:00 CEST 2026",
       "current_ship_name": "KEY OCEAN",
-      "current_ship_eta_rueb": "2026-06-13 18:13",
+      "current_ship_eta_rueb": "2026-06-13 18:12",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
