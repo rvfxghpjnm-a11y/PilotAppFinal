@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-13T12:57:15",
+  "generated_at": "2026-06-13T12:59:22",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -44,12 +44,12 @@
     {
       "ship_key": "BERTHOLD K.",
       "ship_name": "BERTHOLD K.",
-      "eta_rueb": "2026-06-13 14:05",
+      "eta_rueb": "2026-06-13 14:00",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 5,
       "meldung": {
         "nr": "1",
-        "time": "Sat Jun 13 14:05:00 CEST 2026",
+        "time": "Sat Jun 13 14:00:00 CEST 2026",
         "draft": "5.8",
         "q_gruppe": "5",
         "lotsen_anzahl": 1,
@@ -75,7 +75,7 @@
       "ship_q": 5,
       "meldung": {
         "nr": "2",
-        "time": "Sat Jun 13 14:08:00 CEST 2026",
+        "time": "Sat Jun 13 14:03:00 CEST 2026",
         "draft": "3.8",
         "q_gruppe": "5",
         "lotsen_anzahl": 1,
@@ -539,7 +539,7 @@
       "nr": 6,
       "raw_time": "Sat Jun 13 10:54:00 CEST 2026",
       "current_ship_name": "BALTIC DREAM",
-      "current_ship_eta_rueb": "2026-06-13 15:38",
+      "current_ship_eta_rueb": "2026-06-13 15:37",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -870,7 +870,7 @@
       "nr": 6,
       "raw_time": "Sat Jun 13 10:54:00 CEST 2026",
       "current_ship_name": "BALTIC DREAM",
-      "current_ship_eta_rueb": "2026-06-13 15:38",
+      "current_ship_eta_rueb": "2026-06-13 15:37",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -926,7 +926,7 @@
     {
       "ship_key": "BERTHOLD K.",
       "ship_name": "BERTHOLD K.",
-      "eta_rueb": "2026-06-13 14:05",
+      "eta_rueb": "2026-06-13 14:00",
       "ship_q": 5,
       "assigned_pilot": "Steffens, Micha",
       "assigned_pilot_q": 4,
@@ -937,7 +937,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 11,
+      "candidate_count": 10,
       "candidates": [
         {
           "pilot_name": "Steffens, Micha",
@@ -1044,19 +1044,6 @@
           "availability_hint": "Lotse gilt als bereits in RÜB"
         },
         {
-          "pilot_name": "Jenckel, Dolf",
-          "pilot_q": 0,
-          "pilot_tactical_nr": 10,
-          "abteilungszeit": "2026-06-13 09:41",
-          "fahrzeug": "HEYN",
-          "to": "RÜB",
-          "aufgabe": "Kanalbört",
-          "current_ship_name": "HEYN",
-          "current_ship_eta_rueb": "2026-06-13 14:02",
-          "current_ship_source": "schiffe_merged.seelotsen",
-          "availability_kind": "merged_eta"
-        },
-        {
           "pilot_name": "Purwin, Marko",
           "pilot_q": 0,
           "pilot_tactical_nr": 2,
@@ -1085,12 +1072,21 @@
       ],
       "excluded": [
         {
+          "pilot_name": "Jenckel, Dolf",
+          "pilot_tactical_nr": 10,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "HEYN",
+          "pilot_current_ship_eta_rueb": "2026-06-13 14:02",
+          "ship_eta_rueb": "2026-06-13 14:00",
+          "availability_kind": "merged_eta"
+        },
+        {
           "pilot_name": "Thomaßen, Stephan",
           "pilot_tactical_nr": 9,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "STELLAMAR",
           "pilot_current_ship_eta_rueb": "2026-06-13 15:27",
-          "ship_eta_rueb": "2026-06-13 14:05",
+          "ship_eta_rueb": "2026-06-13 14:00",
           "availability_kind": "merged_eta"
         },
         {
@@ -1099,7 +1095,7 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "PEAK BERGEN",
           "pilot_current_ship_eta_rueb": "2026-06-13 15:30",
-          "ship_eta_rueb": "2026-06-13 14:05",
+          "ship_eta_rueb": "2026-06-13 14:00",
           "availability_kind": "merged_eta"
         },
         {
@@ -1108,7 +1104,7 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "JSP MOEN",
           "pilot_current_ship_eta_rueb": "2026-06-13 15:34",
-          "ship_eta_rueb": "2026-06-13 14:05",
+          "ship_eta_rueb": "2026-06-13 14:00",
           "availability_kind": "merged_eta"
         },
         {
@@ -1116,15 +1112,15 @@
           "pilot_tactical_nr": 6,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "BALTIC DREAM",
-          "pilot_current_ship_eta_rueb": "2026-06-13 15:38",
-          "ship_eta_rueb": "2026-06-13 14:05",
+          "pilot_current_ship_eta_rueb": "2026-06-13 15:37",
+          "ship_eta_rueb": "2026-06-13 14:00",
           "availability_kind": "merged_eta"
         }
       ],
       "ship": {
         "meldung": {
           "nr": "1",
-          "time": "Sat Jun 13 14:05:00 CEST 2026",
+          "time": "Sat Jun 13 14:00:00 CEST 2026",
           "draft": "5.8",
           "q_gruppe": "5",
           "lotsen_anzahl": 1,
@@ -1323,7 +1319,7 @@
           "pilot_tactical_nr": 6,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "BALTIC DREAM",
-          "pilot_current_ship_eta_rueb": "2026-06-13 15:38",
+          "pilot_current_ship_eta_rueb": "2026-06-13 15:37",
           "ship_eta_rueb": "2026-06-13 14:10",
           "availability_kind": "merged_eta"
         }
@@ -1331,7 +1327,7 @@
       "ship": {
         "meldung": {
           "nr": "2",
-          "time": "Sat Jun 13 14:08:00 CEST 2026",
+          "time": "Sat Jun 13 14:03:00 CEST 2026",
           "draft": "3.8",
           "q_gruppe": "5",
           "lotsen_anzahl": 1,
@@ -1528,7 +1524,7 @@
           "pilot_tactical_nr": 6,
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "BALTIC DREAM",
-          "pilot_current_ship_eta_rueb": "2026-06-13 15:38",
+          "pilot_current_ship_eta_rueb": "2026-06-13 15:37",
           "ship_eta_rueb": "2026-06-13 15:01",
           "availability_kind": "merged_eta"
         }
@@ -1711,7 +1707,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "BALTIC DREAM",
-          "current_ship_eta_rueb": "2026-06-13 15:38",
+          "current_ship_eta_rueb": "2026-06-13 15:37",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -1905,7 +1901,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "BALTIC DREAM",
-          "current_ship_eta_rueb": "2026-06-13 15:38",
+          "current_ship_eta_rueb": "2026-06-13 15:37",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -2086,7 +2082,7 @@
           "to": "RÜB",
           "aufgabe": "Kanalbört",
           "current_ship_name": "BALTIC DREAM",
-          "current_ship_eta_rueb": "2026-06-13 15:38",
+          "current_ship_eta_rueb": "2026-06-13 15:37",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         },
@@ -2301,7 +2297,7 @@
       "nr": 6,
       "raw_time": "Sat Jun 13 10:54:00 CEST 2026",
       "current_ship_name": "BALTIC DREAM",
-      "current_ship_eta_rueb": "2026-06-13 15:38",
+      "current_ship_eta_rueb": "2026-06-13 15:37",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
