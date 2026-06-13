@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-13T11:59:14",
+  "generated_at": "2026-06-13T12:01:23",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -34,11 +34,11 @@
   "counts": {
     "ships_for_ruesterbergen": 9,
     "pilots_total": 13,
-    "pilots_dispatchable": 10,
-    "pilots_visible_only": 3,
+    "pilots_dispatchable": 11,
+    "pilots_visible_only": 2,
     "assignments": 9,
     "unassigned_ships": 0,
-    "unused_pilots": 1
+    "unused_pilots": 2
   },
   "ships": [
     {
@@ -156,7 +156,7 @@
     {
       "ship_key": "LISA LEHMANN",
       "ship_name": "LISA LEHMANN",
-      "eta_rueb": "2026-06-13 12:58",
+      "eta_rueb": "2026-06-13 12:57",
       "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
       "ship_q": 4,
       "meldung": {
@@ -602,6 +602,7 @@
       "nr": 6,
       "raw_time": "Sat Jun 13 10:41:00 CEST 2026",
       "current_ship_name": "PEAK BERGEN",
+      "current_ship_eta_rueb": "2026-06-13 15:31",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
@@ -625,7 +626,7 @@
       "current_ship_name": "JSP MOEN",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
-      "current_ship_source": "schiffe_merged.seelotsen",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta"
     },
     {
@@ -865,24 +866,31 @@
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
       "availability_kind": "merged_eta"
-    }
-  ],
-  "visible_but_not_dispatchable_pilots": [
+    },
     {
       "pilot_key": "hüpers_peter",
+      "vorname": "Peter",
+      "nachname": "Hüpers",
       "pilot_name": "Hüpers, Peter",
-      "pilot_q": 0,
-      "pilot_tactical_nr": 6,
       "abteilungszeit": "2026-06-13 10:41",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 6,
       "aufgabe": "Kanalbört",
       "fahrzeug": "PEAK BERGEN",
       "from": "HOS",
       "to": "RÜB",
+      "nr": 6,
+      "raw_time": "Sat Jun 13 10:41:00 CEST 2026",
       "current_ship_name": "PEAK BERGEN",
+      "current_ship_eta_rueb": "2026-06-13 15:31",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
-      "availability_kind": "merged_eta",
-      "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
-    },
+      "availability_kind": "merged_eta"
+    }
+  ],
+  "visible_but_not_dispatchable_pilots": [
     {
       "pilot_key": "spiller_roman",
       "pilot_name": "Spiller, Roman",
@@ -894,7 +902,7 @@
       "from": "HOS",
       "to": "RÜB",
       "current_ship_name": "JSP MOEN",
-      "current_ship_source": "schiffe_merged.seelotsen",
+      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
       "availability_kind": "merged_eta",
       "hint": "Schiff bekannt, ETA RÜB aber unbekannt – nur Anzeige, keine automatische Disposition"
     },
@@ -1052,6 +1060,15 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "STELLAMAR",
           "pilot_current_ship_eta_rueb": "2026-06-13 15:28",
+          "ship_eta_rueb": "2026-06-13 12:41",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Hüpers, Peter",
+          "pilot_tactical_nr": 6,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "PEAK BERGEN",
+          "pilot_current_ship_eta_rueb": "2026-06-13 15:31",
           "ship_eta_rueb": "2026-06-13 12:41",
           "availability_kind": "merged_eta"
         }
@@ -1216,6 +1233,15 @@
           "pilot_current_ship_eta_rueb": "2026-06-13 15:28",
           "ship_eta_rueb": "2026-06-13 12:44",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Hüpers, Peter",
+          "pilot_tactical_nr": 6,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "PEAK BERGEN",
+          "pilot_current_ship_eta_rueb": "2026-06-13 15:31",
+          "ship_eta_rueb": "2026-06-13 12:44",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -1364,6 +1390,15 @@
           "pilot_current_ship_eta_rueb": "2026-06-13 15:28",
           "ship_eta_rueb": "2026-06-13 12:52",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Hüpers, Peter",
+          "pilot_tactical_nr": 6,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "PEAK BERGEN",
+          "pilot_current_ship_eta_rueb": "2026-06-13 15:31",
+          "ship_eta_rueb": "2026-06-13 12:52",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -1402,7 +1437,7 @@
     {
       "ship_key": "LISA LEHMANN",
       "ship_name": "LISA LEHMANN",
-      "eta_rueb": "2026-06-13 12:58",
+      "eta_rueb": "2026-06-13 12:57",
       "ship_q": 4,
       "assigned_pilot": "Schmidt, Thomas",
       "assigned_pilot_q": 0,
@@ -1489,7 +1524,7 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "HEYN",
           "pilot_current_ship_eta_rueb": "2026-06-13 14:07",
-          "ship_eta_rueb": "2026-06-13 12:58",
+          "ship_eta_rueb": "2026-06-13 12:57",
           "availability_kind": "merged_eta"
         },
         {
@@ -1498,7 +1533,16 @@
           "reason": "kommt nicht rechtzeitig in RÜB an",
           "pilot_current_ship": "STELLAMAR",
           "pilot_current_ship_eta_rueb": "2026-06-13 15:28",
-          "ship_eta_rueb": "2026-06-13 12:58",
+          "ship_eta_rueb": "2026-06-13 12:57",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Hüpers, Peter",
+          "pilot_tactical_nr": 6,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "PEAK BERGEN",
+          "pilot_current_ship_eta_rueb": "2026-06-13 15:31",
+          "ship_eta_rueb": "2026-06-13 12:57",
           "availability_kind": "merged_eta"
         }
       ],
@@ -1624,6 +1668,15 @@
           "pilot_current_ship_eta_rueb": "2026-06-13 15:28",
           "ship_eta_rueb": "2026-06-13 14:05",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Hüpers, Peter",
+          "pilot_tactical_nr": 6,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "PEAK BERGEN",
+          "pilot_current_ship_eta_rueb": "2026-06-13 15:31",
+          "ship_eta_rueb": "2026-06-13 14:05",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -1727,6 +1780,15 @@
           "pilot_current_ship_eta_rueb": "2026-06-13 15:28",
           "ship_eta_rueb": "2026-06-13 14:12",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Hüpers, Peter",
+          "pilot_tactical_nr": 6,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "PEAK BERGEN",
+          "pilot_current_ship_eta_rueb": "2026-06-13 15:31",
+          "ship_eta_rueb": "2026-06-13 14:12",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -1828,6 +1890,15 @@
           "pilot_current_ship_eta_rueb": "2026-06-13 15:28",
           "ship_eta_rueb": "2026-06-13 15:04",
           "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Hüpers, Peter",
+          "pilot_tactical_nr": 6,
+          "reason": "kommt nicht rechtzeitig in RÜB an",
+          "pilot_current_ship": "PEAK BERGEN",
+          "pilot_current_ship_eta_rueb": "2026-06-13 15:31",
+          "ship_eta_rueb": "2026-06-13 15:04",
+          "availability_kind": "merged_eta"
         }
       ],
       "ship": {
@@ -1880,7 +1951,7 @@
       "assigned_availability_kind": "already_in_rueb",
       "assigned_availability_hint": "Lotse gilt als bereits in RÜB",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 3,
+      "candidate_count": 4,
       "candidates": [
         {
           "pilot_name": "Staedler, Frank",
@@ -1918,6 +1989,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "STELLAMAR",
           "current_ship_eta_rueb": "2026-06-13 15:28",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Hüpers, Peter",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 6,
+          "abteilungszeit": "2026-06-13 10:41",
+          "fahrzeug": "PEAK BERGEN",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "PEAK BERGEN",
+          "current_ship_eta_rueb": "2026-06-13 15:31",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
@@ -1970,7 +2054,7 @@
       "assigned_current_ship_source": "schiffe_merged.seelotsen",
       "assigned_availability_kind": "merged_eta",
       "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
-      "candidate_count": 2,
+      "candidate_count": 3,
       "candidates": [
         {
           "pilot_name": "Jenckel, Dolf",
@@ -1995,6 +2079,19 @@
           "aufgabe": "Kanalbört",
           "current_ship_name": "STELLAMAR",
           "current_ship_eta_rueb": "2026-06-13 15:28",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Hüpers, Peter",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 6,
+          "abteilungszeit": "2026-06-13 10:41",
+          "fahrzeug": "PEAK BERGEN",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "PEAK BERGEN",
+          "current_ship_eta_rueb": "2026-06-13 15:31",
           "current_ship_source": "schiffe_merged.seelotsen",
           "availability_kind": "merged_eta"
         }
@@ -2053,6 +2150,28 @@
       "raw_time": "Sat Jun 13 10:37:00 CEST 2026",
       "current_ship_name": "STELLAMAR",
       "current_ship_eta_rueb": "2026-06-13 15:28",
+      "current_ship_q": 0,
+      "current_ship_route": "HOS → RÜB",
+      "current_ship_source": "schiffe_merged.seelotsen",
+      "availability_kind": "merged_eta"
+    },
+    {
+      "pilot_key": "hüpers_peter",
+      "vorname": "Peter",
+      "nachname": "Hüpers",
+      "pilot_name": "Hüpers, Peter",
+      "abteilungszeit": "2026-06-13 10:41",
+      "pilot_q": 0,
+      "q_source": "q_gruppen_lotsen.entries",
+      "pilot_tactical_nr": 6,
+      "aufgabe": "Kanalbört",
+      "fahrzeug": "PEAK BERGEN",
+      "from": "HOS",
+      "to": "RÜB",
+      "nr": 6,
+      "raw_time": "Sat Jun 13 10:41:00 CEST 2026",
+      "current_ship_name": "PEAK BERGEN",
+      "current_ship_eta_rueb": "2026-06-13 15:31",
       "current_ship_q": 0,
       "current_ship_route": "HOS → RÜB",
       "current_ship_source": "schiffe_merged.seelotsen",
