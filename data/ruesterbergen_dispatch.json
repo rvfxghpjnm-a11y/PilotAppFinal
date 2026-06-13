@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-13T18:05:18",
+  "generated_at": "2026-06-13T18:07:16",
   "rules_version": "v6",
   "rules": [
     "Schiffe ausschließlich aus Meldungen_Ruesterbergen.json",
@@ -32,13 +32,13 @@
     }
   },
   "counts": {
-    "ships_for_ruesterbergen": 7,
+    "ships_for_ruesterbergen": 8,
     "pilots_total": 15,
     "pilots_dispatchable": 14,
     "pilots_visible_only": 1,
-    "assignments": 7,
+    "assignments": 8,
     "unassigned_ships": 0,
-    "unused_pilots": 7
+    "unused_pilots": 6
   },
   "ships": [
     {
@@ -307,6 +307,43 @@
         "makler": "SUB",
         "dangerous_vessel": "-",
         "type_of_loading": "Container"
+      }
+    },
+    {
+      "ship_key": "CAPELLA",
+      "ship_name": "CAPELLA",
+      "eta_rueb": "2026-06-13 22:32",
+      "eta_rueb_source": "schiffe_merged.summary.eta_rueb",
+      "ship_q": 5,
+      "meldung": {
+        "nr": "8",
+        "time": "Sat Jun 13 22:10:00 CEST 2026",
+        "draft": "4.7",
+        "q_gruppe": "5",
+        "lotsen_anzahl": 1,
+        "confirmed": false,
+        "from": "RÜB",
+        "to": "HOS"
+      },
+      "summary": {
+        "route": "RÜB → HOS",
+        "routes": [
+          "RÜB → HOS"
+        ],
+        "q_gruppe": "5",
+        "vg": "3",
+        "draft": "4.70",
+        "length_m": "89.250",
+        "beam_m": "13.4",
+        "queue_title": "Zulauf vom Kanal in Kiel",
+        "zulauf_richtung": "vom_kanal",
+        "pilot_required": "false",
+        "pilot_status": "P",
+        "pilot_1_name": "Nagies, Kim Jes",
+        "travel_status": "SAILING_NOK",
+        "makler": "NIK",
+        "dangerous_vessel": "-",
+        "type_of_loading": "Futtermittel"
       }
     }
   ],
@@ -2215,30 +2252,149 @@
           "type_of_loading": "Container"
         }
       }
+    },
+    {
+      "ship_key": "CAPELLA",
+      "ship_name": "CAPELLA",
+      "eta_rueb": "2026-06-13 22:32",
+      "ship_q": 5,
+      "assigned_pilot": "Berkenheger, Michael",
+      "assigned_pilot_q": 0,
+      "assigned_tactical_nr": 10,
+      "assigned_abteilungszeit": "2026-06-13 13:06",
+      "assigned_current_ship_name": "OTELLO",
+      "assigned_current_ship_eta_rueb": "2026-06-13 19:13",
+      "assigned_current_ship_source": "schiffe_merged.summary.pilot_1_name",
+      "assigned_availability_kind": "merged_eta",
+      "reason": "strikte Reihenfolge nach Abteilungszeit, bei Gleichstand nach taktischer Nummer (mit Umlauf 1..100); Q sperrt nur unpassende Lotsen",
+      "candidate_count": 7,
+      "candidates": [
+        {
+          "pilot_name": "Berkenheger, Michael",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 10,
+          "abteilungszeit": "2026-06-13 13:06",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "OTELLO",
+          "current_ship_eta_rueb": "2026-06-13 19:13",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Wulff, Stephan",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 9,
+          "abteilungszeit": "2026-06-13 13:10",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "STEN SUOMI",
+          "current_ship_eta_rueb": "2026-06-13 19:18",
+          "current_ship_source": "schiffe_merged.summary.pilot_1_name",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Heyenga, Dennis",
+          "pilot_q": 4,
+          "pilot_tactical_nr": 8,
+          "abteilungszeit": "2026-06-13 13:16",
+          "fahrzeug": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RÜB",
+          "current_ship_eta_rueb": "2026-06-13 13:16",
+          "current_ship_source": "special.already_in_rueb",
+          "availability_kind": "already_in_rueb",
+          "availability_hint": "Lotse gilt als bereits in RÜB"
+        },
+        {
+          "pilot_name": "Töpfer, Jens-Peter",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 7,
+          "abteilungszeit": "2026-06-13 13:30",
+          "fahrzeug": "CATHY JO",
+          "to": "UTG",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "CATHY JO",
+          "current_ship_eta_rueb": "2026-06-13 14:53",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Winkler, René",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 6,
+          "abteilungszeit": "2026-06-13 15:07",
+          "fahrzeug": "RUYTER",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "RUYTER",
+          "current_ship_eta_rueb": "2026-06-13 19:55",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Escher, Franck",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 5,
+          "abteilungszeit": "2026-06-13 15:20",
+          "fahrzeug": "UHL FAST",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "UHL FAST",
+          "current_ship_eta_rueb": "2026-06-13 20:17",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        },
+        {
+          "pilot_name": "Kordt, Remo",
+          "pilot_q": 0,
+          "pilot_tactical_nr": 4,
+          "abteilungszeit": "2026-06-13 15:26",
+          "fahrzeug": "FYN",
+          "to": "RÜB",
+          "aufgabe": "Kanalbört",
+          "current_ship_name": "FYN",
+          "current_ship_eta_rueb": "2026-06-13 19:58",
+          "current_ship_source": "schiffe_merged.seelotsen",
+          "availability_kind": "merged_eta"
+        }
+      ],
+      "ship": {
+        "meldung": {
+          "nr": "8",
+          "time": "Sat Jun 13 22:10:00 CEST 2026",
+          "draft": "4.7",
+          "q_gruppe": "5",
+          "lotsen_anzahl": 1,
+          "confirmed": false,
+          "from": "RÜB",
+          "to": "HOS"
+        },
+        "summary": {
+          "route": "RÜB → HOS",
+          "routes": [
+            "RÜB → HOS"
+          ],
+          "q_gruppe": "5",
+          "vg": "3",
+          "draft": "4.70",
+          "length_m": "89.250",
+          "beam_m": "13.4",
+          "queue_title": "Zulauf vom Kanal in Kiel",
+          "zulauf_richtung": "vom_kanal",
+          "pilot_required": "false",
+          "pilot_status": "P",
+          "pilot_1_name": "Nagies, Kim Jes",
+          "travel_status": "SAILING_NOK",
+          "makler": "NIK",
+          "dangerous_vessel": "-",
+          "type_of_loading": "Futtermittel"
+        }
+      }
     }
   ],
   "unassigned_ships": [],
   "unused_pilots": [
-    {
-      "pilot_key": "berkenheger_michael",
-      "vorname": "Michael",
-      "nachname": "Berkenheger",
-      "pilot_name": "Berkenheger, Michael",
-      "abteilungszeit": "2026-06-13 13:06",
-      "pilot_q": 0,
-      "q_source": "q_gruppen_lotsen.entries",
-      "pilot_tactical_nr": 10,
-      "aufgabe": "Kanalbört",
-      "fahrzeug": "RÜB",
-      "nr": 10,
-      "raw_time": "Sat Jun 13 13:06:00 CEST 2026",
-      "current_ship_name": "OTELLO",
-      "current_ship_eta_rueb": "2026-06-13 19:13",
-      "current_ship_q": 4,
-      "current_ship_route": "HOS → KLT",
-      "current_ship_source": "schiffe_merged.summary.pilot_1_name",
-      "availability_kind": "merged_eta"
-    },
     {
       "pilot_key": "wulff_stephan",
       "vorname": "Stephan",
